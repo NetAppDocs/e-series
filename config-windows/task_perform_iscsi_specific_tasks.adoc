@@ -74,6 +74,78 @@ The graphic changes to show the controllers instead of the drives.
 +
 The controller's context menu appears.
 
+. Select *Configure iSCSI ports*.
++
+The Configure iSCSI Ports dialog box opens.
+
+. In the drop-down list, select the port you want to configure, and then click *Next*.
+. Select the configuration port settings, and then click *Next*.
++
+To see all port settings, click the *Show more port settings* link on the right of the dialog box.
++
+|===
+| Port Setting| Description
+a|
+Configured ethernet port speed
+a|
+Select the desired speed.    The options that appear in the drop-down list depend on the maximum speed that your network can support (for example, 10 Gbps).
++
+NOTE: The optional iSCSI host interface cards in the E5700 and EF570 controllers do not auto-negotiate speeds. You must set the speed for each port to either 10 Gb or 25 Gb. All ports must be set to the same speed.
+a|
+Enable IPv4 / Enable IPv6
+a|
+Select one or both options to enable support for IPv4 and IPv6 networks.
+a|
+TCP listening port     (Available by clicking *Show more port settings*.)
+a|
+    If necessary, enter a new port number.
++
+The listening port is the TCP port number that the controller uses to listen for iSCSI logins from host iSCSI initiators. The default listening port is 3260. You must enter 3260 or a value between 49152 and 65535.
+a|
+MTU size     (Available by clicking *Show more port settings*.)
+a|
+    If necessary, enter a new size in bytes for the Maximum Transmission Unit (MTU).
++
+The default Maximum Transmission Unit (MTU) size is 1500 bytes per frame. You must enter a value between 1500 and 9000.
+a|
+Enable ICMP PING responses
+a|
+Select this option to enable the Internet Control Message Protocol (ICMP). The operating systems of networked computers use this protocol to send messages. These ICMP messages determine whether a host is reachable and how long it takes to get packets to and from that host.
+|===
+If you selected *Enable IPv4*, a dialog box opens for selecting IPv4 settings after you click *Next*. If you selected *Enable IPv6*, a dialog box opens for selecting IPv6 settings after you click *Next*. If you selected both options, the dialog box for IPv4 settings opens first, and then after you click *Next*, the dialog box for IPv6 settings opens.
+
+. Configure the IPv4 and/or IPv6 settings, either automatically or manually. To see all port settings, click the *Show more settings* link on the right of the dialog box.
++
+|===
+| Port setting| Description
+a|
+Automatically obtain configuration
+a|
+Select this option to obtain the configuration automatically.
+a|
+Manually specify static configuration
+a|
+Select this option, and then enter a static address in the fields. For IPv4, include the network subnet mask and gateway. For IPv6, include the routable IP address and router IP address.
+a|
+Enable VLAN support     (Available by clicking *Show more settings*.)
+a|
+    *Important:* This option is only available in an iSCSI environment. It is not available in an NVMe over RoCE environment.
++
+Select this option to enable a VLAN and enter its ID. A VLAN is a logical network that behaves like it is physically separate from other physical and virtual local area networks (LANs) supported by the same switches, the same routers, or both.
+a|
+Enable ethernet priority    (Available by clicking *Show more settings*.)
+a|
+    *Important:* This option is only available in an iSCSI environment. It is not available in an NVMe over RoCE environment.
++
+Select this option to enable the parameter that determines the priority of accessing the network. Use the slider to select a priority between 1 and 7.
++
+In a shared local area network (LAN) environment, such as Ethernet, many stations might contend for access to the network. Access is on a first-come, first-served basis. Two stations might try to access the network at the same time, which causes both stations to back off and wait before trying again. This process is minimized for switched Ethernet, where only one station is connected to a switch port.
++
+|===
+
+. Click *Finish*.
+. Close System Manager.
+
 == Configuring host-side networking--iSCSI
 
 [.lead]
@@ -155,3 +227,33 @@ You can use this worksheet to record iSCSI storage configuration information. Yo
 Recommended configurations consist of two initiator ports and four target ports with one or more VLANs.
 
 image::../media/50001_01.gif[]
+
+=== Target IQN
+
+|===
+| Callout No.| Target port connection| IQN
+a|
+2
+a|
+Target port
+a|
+ 
+|===
+
+=== Mappings host name
+
+|===
+| Callout No.| Host information| Name and type
+a|
+1
+a|
+Mappings host name
+a|
+ 
+a|
+ 
+a|
+Host OS type
+a|
+ 
+|===

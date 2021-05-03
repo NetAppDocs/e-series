@@ -102,6 +102,10 @@ The file is saved in the Downloads folder for your browser with the name support
 
   ... Select *Tools* > *Verify and Execute*.
 The system attempts to take the controller offline.
+. Wait for SANtricity System Manager to update the controller's status to offline.
++
+IMPORTANT: Do not begin any other operations until after the status has been updated.
+
 . Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove this component.
 
 Go to link:task_replace_controller_in_duplex_configuration.md#[Remove failed controller (duplex)].

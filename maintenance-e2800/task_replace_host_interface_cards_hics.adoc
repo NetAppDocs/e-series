@@ -74,6 +74,9 @@ The file is saved in the Downloads folder for your browser with the name support
 
   ... Select *Tools* > *Verify and Execute*.
 The system attempts to take the controller offline.
+. Wait for SANtricity System Manager to update the controller's status to offline.
++
+IMPORTANT: Do not begin any other operations until after the status has been updated.
 
 Go to .
 
@@ -128,6 +131,7 @@ The green Cache Active LED on the back of the controller is on when cached data 
 . From the home page of SANtricity System Manager, select *View Operations in Progress*.
 . Confirm that all operations have completed before continuing with the next step.
 . Turn off both power switches on the controller shelf.
+. Wait for all LEDs on the controller shelf to turn off.
 
 Go to.
 

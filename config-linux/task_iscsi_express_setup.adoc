@@ -58,6 +58,10 @@ Linux Unified Host Utilities 7.1 includes tools to manage NetApp storage, includ
 +
 The versions are listed in a column within each supported configuration.
 
+. Download the Unified Host Utilities 7.1 from https://mysupport.netapp.com/site/[NetApp Support].
++
+NOTE: Alternatively, you can use the SANtricity `SMdevices` utility to perform the same functions as the Unified Host Utility tool. The `SMdevices` utility is included as part of the `SMutils` package. The `SMutils` package is a collection of utilities to verify what the host sees from the storage array. It is included as part of the SANtricity software installation.
+
 == Install SANtricity Storage Manager for SMcli (SANtricity software version 11.53 or earlier)
 
 [.lead]
@@ -75,6 +79,23 @@ IMPORTANT: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (S
 This section describes how to install SANtricity Storage Manager on both the Windows and Linux OS platforms, because both Windows and Linux are common management station platforms when Linux is used for the data host.
 
 . Download the SANtricity software release from https://mysupport.netapp.com/site/[NetApp Support]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager*.
+. Run the SANtricity installer.
++
+|===
+| Windows| Linux
+a|
+Double-click the SMIA*.exe installation package to start the installation.
+a|
+
+ .. Go to the directory where the SMIA*.bin installation package is located.
+ .. If the temp mount point does not have execute permissions, set the IATEMPDIR variable. Example: IATEMPDIR=/root ./SMIA-LINUXX64-11.25.0A00.0002.bin
+ .. Run the chmod +x SMIA*.bin command to grant execute permission to the file.
+ .. Run the ./SMIA*.bin command to start the installer.
+
++
+|===
+
+. Use the installation wizard to install the software on the management station.
 
 == Access SANtricity System Manager and use the Setup wizard
 
@@ -152,6 +173,22 @@ By default, DM-MP is disabled in RHEL and SLES. Complete the following steps to 
 If you have not already installed the operating system, use the media supplied by your operating system vendor.
 
 . If a multipath.conf file is not already created, run the # touch /etc/multipath.conf command.
+. Use the default multipath settings by leaving the multipath.conf file blank.
+. Start the multipath service.
++
+----
+# systemctl start multipathd
+----
+
+. Save your kernel version by running the uname -r command.
++
+----
+# uname -r
+3.10.0-327.el7.x86_64
+----
++
+You will use this information when you assign volumes to the host.
+
 . Do one of the following to enable the multipathd daemon on boot.
 +
 |===
@@ -166,7 +203,22 @@ a|
 systemctl enable multipathd
 |===
 
+. Rebuild the initramfs image or the initrd image under /boot directory:
++
+|===
+| If you are using....| Do this...
+a|
+RHEL 7.x and 8.x systems:
+a|
+dracut --force --add multipath
+a|
+SLES 12.x and 15.x systems:
+a|
+dracut --force --add multipath
+|===
+
 . Use the "Create host manually" procedure in the online help to check whether the hosts are defined. Verify that each host type is either *Linux DM-MP (Kernel 3.10 or later)* if you enable the Automatic Load Balancing feature, or *Linux DM-MP (Kernel 3.9 or earlier)* if you disable the Automatic Load Balancing feature. If necessary, change the selected host type to the appropriate setting.
+. Reboot the host.
 
 == Setting up the multipath.conf file
 
@@ -240,6 +292,63 @@ The graphic changes to show the controllers instead of the drives.
 . Click the controller with the iSCSI ports you want to configure.
 +
 The controller's context menu appears.
+
+. Select *Configure iSCSI ports*.
++
+The Configure iSCSI Ports dialog box opens.
+
+. In the drop-down list, select the port you want to configure, and then click *Next*.
+. Select the configuration port settings, and then click *Next*.
++
+To see all port settings, click the *Show more port settings* link on the right of the dialog box.
++
+|===
+| Port Setting| Description
+a|
+Configured ethernet port speed
+a|
+Select the desired speed.    The options that appear in the drop-down list depend on the maximum speed that your network can support (for example, 10 Gbps).
++
+NOTE: The optional 25Gb iSCSI host interface cards available on the controllers do not auto-negotiate speeds. You must set the speed for each port to either 10 Gb or 25 Gb. All ports must be set to the same speed.
+a|
+Enable IPv4 / Enable IPv6
+a|
+Select one or both options to enable support for IPv4 and IPv6 networks.
+a|
+TCP listening port     (Available by clicking *Show more port settings*.)
+a|
+    If necessary, enter a new port number.
++
+The listening port is the TCP port number that the controller uses to listen for iSCSI logins from host iSCSI initiators. The default listening port is 3260. You must enter 3260 or a value between 49152 and 65535.
+a|
+MTU size     (Available by clicking *Show more port settings*.)
+a|
+    If necessary, enter a new size in bytes for the Maximum Transmission Unit (MTU).
++
+The default Maximum Transmission Unit (MTU) size is 1500 bytes per frame. You must enter a value between 1500 and 9000.
+a|
+Enable ICMP PING responses
+a|
+Select this option to enable the Internet Control Message Protocol (ICMP). The operating systems of networked computers use this protocol to send messages. These ICMP messages determine whether a host is reachable and how long it takes to get packets to and from that host.
+|===
+If you selected *Enable IPv4*, a dialog box opens for selecting IPv4 settings after you click *Next*. If you selected *Enable IPv6*, a dialog box opens for selecting IPv6 settings after you click *Next*. If you selected both options, the dialog box for IPv4 settings opens first, and then after you click *Next*, the dialog box for IPv6 settings opens.
+
+. Configure the IPv4 and/or IPv6 settings, either automatically or manually. To see all port settings, click the *Show more settings* link on the right of the dialog box.
++
+|===
+| Port setting| Description
+a|
+Automatically obtain configuration
+a|
+Select this option to obtain the configuration automatically.
+a|
+Manually specify static configuration
+a|
+Select this option, and then enter a static address in the fields. For IPv4, include the network subnet mask and gateway. For IPv6, include the routable IP address and router IP address.
+|===
+
+. Click *Finish*.
+. Close System Manager.
 
 == Configure host-side networking
 
@@ -387,6 +496,9 @@ Ping statistics for 192.0.2.8:
 Approximate round trip times in milli-seconds:
   Minimum = 2ms, Maximum = 2ms, Average = 2ms
 ----
+. Issue a ping command from each host's initiator address (the IP address of the host Ethernet port used for iSCSI) to each controller iSCSI port. Perform this action from each host server in the configuration, changing the IP addresses as necessary.
++
+NOTE: If the command fails (for example, returns `Packet needs to be fragmented but DF set`), verify the MTU size (jumbo frame support) for the Ethernet interfaces on the host server, storage controller, and switch ports.
 
 == Create partitions and filesystems
 
@@ -430,6 +542,35 @@ up        secondary  sdat    host10       A2
 up        secondary  sdbv    host13       B1
 ----
 
+. Create a new partition according to the method appropriate for your Linux OS release.
++
+Typically, characters identifying the partition of a disk are appended to the SCSI ID (the number 1 or p3 for instance).
++
+----
+# parted -a optimal -s -- /dev/mapper/360080e5000321bb8000092b1535f887a mklabel
+gpt mkpart primary ext4 0% 100%
+----
+
+. Create a file system on the partition.
++
+The method for creating a file system varies depending on the file system chosen.
++
+----
+# mkfs.ext4 /dev/mapper/360080e5000321bb8000092b1535f887a1
+----
+
+. Create a folder to mount the new partition.
++
+----
+# mkdir /mnt/ext4
+----
+
+. Mount the partition.
++
+----
+# mount /dev/mapper/360080e5000321bb8000092b1535f887a1 /mnt/ext4
+----
+
 == Verify storage access on the host
 
 [.lead]
@@ -438,6 +579,8 @@ Before using the volume, you verify that the host can write data to the volume a
 You must have initialized the volume and formatted it with a file system.
 
 . On the host, copy one or more files to the mount point of the disk.
+. Copy the files back to a different folder on the original disk.
+. Run the diff command to compare the copied files to the originals.
 
 Remove the file and folder that you copied.
 
@@ -451,6 +594,36 @@ You can use this worksheet to record iSCSI storage configuration information. Yo
 Recommended configurations consist of two initiator ports and four target ports with one or more VLANs.
 
 image::../media/50001_01.gif[]
+
+=== Target IQN
+
+|===
+| Callout No.| Target port connection| IQN
+a|
+2
+a|
+Target port
+a|
+ 
+|===
+
+=== Mappings host name
+
+|===
+| Callout No.| Host information| Name and type
+a|
+1
+a|
+Mappings host name
+a|
+ 
+a|
+ 
+a|
+Host OS type
+a|
+ 
+|===
 
 === Recommended configuration
 

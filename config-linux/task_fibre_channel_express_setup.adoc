@@ -58,6 +58,10 @@ Linux Unified Host Utilities 7.1 includes tools to manage NetApp storage, includ
 +
 The versions are listed in a column within each supported configuration.
 
+. Download the Unified Host Utilities 7.1 from https://mysupport.netapp.com/site/[NetApp Support].
++
+NOTE: Alternatively, you can use the SANtricity `SMdevices` utility to perform the same functions as the Unified Host Utility tool. The `SMdevices` utility is included as part of the `SMutils` package. The `SMutils` package is a collection of utilities to verify what the host sees from the storage array. It is included as part of the SANtricity software installation.
+
 == Install SANtricity Storage Manager for SMcli (SANtricity software version 11.53 or earlier)
 
 [.lead]
@@ -75,6 +79,23 @@ IMPORTANT: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (S
 This section describes how to install SANtricity Storage Manager on both the Windows and Linux OS platforms, because both Windows and Linux are common management station platforms when Linux is used for the data host.
 
 . Download the SANtricity software release from https://mysupport.netapp.com/site/[NetApp Support]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager*.
+. Run the SANtricity installer.
++
+|===
+| Windows| Linux
+a|
+Double-click the SMIA*.exe installation package to start the installation.
+a|
+
+ .. Go to the directory where the SMIA*.bin installation package is located.
+ .. If the temp mount point does not have execute permissions, set the IATEMPDIR variable. Example: IATEMPDIR=/root ./SMIA-LINUXX64-11.25.0A00.0002.bin
+ .. Run the chmod +x SMIA*.bin command to grant execute permission to the file.
+ .. Run the ./SMIA*.bin command to start the installer.
+
++
+|===
+
+. Use the installation wizard to install the software on the management station.
 
 == Access SANtricity System Manager and use the Setup wizard
 
@@ -150,6 +171,22 @@ By default, DM-MP is disabled in RHEL and SLES. Complete the following steps to 
 If you have not already installed the operating system, use the media supplied by your operating system vendor.
 
 . If a multipath.conf file is not already created, run the # touch /etc/multipath.conf command.
+. Use the default multipath settings by leaving the multipath.conf file blank.
+. Start the multipath service.
++
+----
+# systemctl start multipathd
+----
+
+. Save your kernel version by running the uname -r command.
++
+----
+# uname -r
+3.10.0-327.el7.x86_64
+----
++
+You will use this information when you assign volumes to the host.
+
 . Do one of the following to enable the multipathd daemon on boot.
 +
 |===
@@ -163,6 +200,27 @@ SLES 12.x and 15.x systems:
 a|
 systemctl enable multipathd
 |===
+
+. Rebuild the initramfs image or the initrd image under /boot directory:
++
+|===
+| If you are using....| Do this...
+a|
+RHEL 7.x and 8.x systems:
+a|
+dracut --force --add multipath
+a|
+SLES 12.x and 15.x systems:
+a|
+dracut --force --add multipath
+|===
+
+. Make sure that the newly created /boot/initrams-* image or /boot/initrd-* image is selected in the boot configuration file.
++
+For example, for grub it is /boot/grub/menu.lst and for grub2 it is /boot/grub2/menu.cfg.
+
+. Use the "Create host manually" procedure in the online help to check whether the hosts are defined. Verify that each host type is either *Linux DM-MP (Kernel 3.10 or later)* if you enable the Automatic Load Balancing feature, or *Linux DM-MP (Kernel 3.9 or earlier)* if you disable the Automatic Load Balancing feature. If necessary, change the selected host type to the appropriate setting.
+. Reboot the host.
 
 == Setting up the multipath.conf file
 
@@ -186,7 +244,12 @@ Configuring (zoning) the Fibre Channel (FC) switches enables the hosts to connec
 
 For details about zoning your switches, see the switch vendor's documentation.
 
+Each initiator port must be in a separate zone with all of its corresponding target ports.
+
 . Log in to the FC switch administration program, and then select the zoning configuration option.
+. Create a new zone that includes the first host initiator port and that also includes all of the target ports that connect to the same FC switch as the initiator.
+. Create additional zones for each FC host initiator port in the switch.
+. Save the zones, and then activate the new zoning configuration.
 
 == Determine host WWPNs and make the recommended settings
 
@@ -201,6 +264,10 @@ Guidelines for HBA utilities:
 * Host I/O ports might automatically register if the host context agent is installed.
 
 . Download the appropriate utility from your HBA vendor's web site.
+. Install the utility.
+. Select the appropriate settings in the HBA utility.
++
+Appropriate settings for your configuration are listed in the Notes column of the IMT.
 
 == Create partitions and filesystems
 
@@ -244,6 +311,35 @@ up        secondary  sdat    host10       A2
 up        secondary  sdbv    host13       B1
 ----
 
+. Create a new partition according to the method appropriate for your Linux OS release.
++
+Typically, characters identifying the partition of a disk are appended to the SCSI ID (the number 1 or p3 for instance).
++
+----
+# parted -a optimal -s -- /dev/mapper/360080e5000321bb8000092b1535f887a mklabel
+gpt mkpart primary ext4 0% 100%
+----
+
+. Create a file system on the partition.
++
+The method for creating a file system varies depending on the file system chosen.
++
+----
+# mkfs.ext4 /dev/mapper/360080e5000321bb8000092b1535f887a1
+----
+
+. Create a folder to mount the new partition.
++
+----
+# mkdir /mnt/ext4
+----
+
+. Mount the partition.
++
+----
+# mount /dev/mapper/360080e5000321bb8000092b1535f887a1 /mnt/ext4
+----
+
 == Verify storage access on the host
 
 [.lead]
@@ -252,6 +348,8 @@ Before using the volume, you verify that the host can write data to the volume a
 You must have initialized the volume and formatted it with a file system.
 
 . On the host, copy one or more files to the mount point of the disk.
+. Copy the files back to a different folder on the original disk.
+. Run the diff command to compare the copied files to the originals.
 
 Remove the file and folder that you copied.
 

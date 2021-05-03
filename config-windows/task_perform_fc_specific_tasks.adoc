@@ -21,7 +21,12 @@ Configuring (zoning) the Fibre Channel (FC) switches enables the hosts to connec
 
 For details about zoning your switches, see the switch vendor's documentation.
 
+You must zone by WWPN, not by physical port. Each initiator port must be in a separate zone with all of its corresponding target ports.
+
 . Log in to the FC switch administration program, and then select the zoning configuration option.
+. Create a new zone that includes the first host initiator port and that also includes all of the target ports that connect to the same FC switch as the initiator.
+. Create additional zones for each FC host initiator port in the switch.
+. Save the zones, and then activate the new zoning configuration.
 
 == Determining host WWPNs and making the recommended settings - FC, Windows
 
@@ -36,6 +41,10 @@ Guidelines for HBA utilities:
 * Host I/O ports might automatically register if the host context agent is installed.
 
 . Download the appropriate utility from your HBA vendor's web site.
+. Install the utility.
+. Select the appropriate settings in the HBA utility.
++
+Appropriate settings for your configuration are listed in the Notes column of the IMT.
 
 == FC worksheet for Windows
 

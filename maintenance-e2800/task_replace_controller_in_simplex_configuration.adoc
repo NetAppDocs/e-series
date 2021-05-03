@@ -80,6 +80,7 @@ The green Cache Active LED on the back of the controller is on when cached data 
 . From the home page of SANtricity System Manager, select *View Operations in Progress*.
 . Confirm that all operations have completed before continuing with the next step.
 . Turn off both power switches on the controller shelf.
+. Wait for all LEDs on the controller shelf to turn off.
 . Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Detailsarea displays *Yes*, indicating that it is safe to remove this component.
 +
 Data on the storage array will not be accessible until you replace the controller canister.

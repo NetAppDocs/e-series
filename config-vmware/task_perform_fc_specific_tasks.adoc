@@ -23,7 +23,12 @@ NOTE: A vendor's HBA utility can be used to upgrade and obtain specific informat
 
 For details about zoning your switches, see the switch vendor's documentation.
 
+Each initiator port must be in a separate zone with all of its corresponding target ports.
+
 . Log in to the FC switch administration program, and then select the zoning configuration option.
+. Create a new zone that includes the first host initiator port and that also includes all of the target ports that connect to the same FC switch as the initiator.
+. Create additional zones for each FC host initiator port in the switch.
+. Save the zones, and then activate the new zoning configuration.
 
 == Determine the host port WWPNs--FC
 
