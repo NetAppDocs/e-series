@@ -9,18 +9,10 @@ summary: ''
 :imagesdir: ../media/
 
 * link:concept_overview.md#concept_overview[Overview]
- ** link:concept_overview.md#concept_installation_and_setup_workflow[Installation and setup high-level workflow]
 * xref:task_prepare_for_installation.adoc[Prepare for installation]
 * xref:task_install_the_hardware.adoc[Install the hardware]
 * xref:task_power_the_controller_shelves.adoc[Power the controller shelves]
 * link:task_complete_storage_system_setup_and_configuration.md#task_complete_storage_system_setup_and_configuration[Complete storage system setup and configuration]
- ** link:task_complete_storage_system_setup_and_configuration.md#task_cable_the_data_hosts[Cable the data hosts]
-  *** link:task_complete_storage_system_setup_and_configuration.md#task_direct_attach_topology[Direct-attach topology]
-  *** link:task_complete_storage_system_setup_and_configuration.md#task_fabric_topology[Fabric topology]
- ** link:task_complete_storage_system_setup_and_configuration.md#task_configure_the_management_connection[Connect and configure the management connection]
-  *** link:task_complete_storage_system_setup_and_configuration.md#task_configure_controllers_with_dhcp[Option 1: Management port configuration with DHCP]
-  *** link:task_complete_storage_system_setup_and_configuration.md#task_configure_controllers_with_static_ip_addresses[Option 2: Management Port Configuration with static IP addresses]
- ** link:task_complete_storage_system_setup_and_configuration.md#task_after_installing_the_hardware[After installing the hardware]
 * xref:reference_copyright_and_trademark.adoc[Copyright and trademark]
  ** xref:reference_copyright.adoc[Copyright]
  ** xref:reference_trademark.adoc[Trademark]
