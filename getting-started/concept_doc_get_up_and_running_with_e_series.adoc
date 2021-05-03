@@ -1,0 +1,63 @@
+---
+permalink: getting-started/concept_doc_get_up_and_running_with_e_series.html
+sidebar: sidebar
+keywords: 
+summary: 'To get up and running with E-Series systems, you install hardware components, configure host systems, and configure storage.'
+---
+= Get up and running with E-Series
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To get up and running with E-Series systems, you install hardware components, configure host systems, and configure storage.
+
+Deploying the storage array involves the following workflow:
+
+image::../media/doccenterworkflow.gif[]
+
+== Step 1: Install hardware
+
+To install the E-Series hardware, access the Installation and Setup instructions for your storage array and shelf type:
+
+* link:../com.netapp.doc.e-f600-hw-install/home.html[EF600 or EF300 series with 24-drive shelf]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2842063[E2800/EF280 or E5700/EF570 series with 12- or 24-drive shelves]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2842061[E2800 or E5700 series with 60-drive shelf]
+
+== Step 2: Set up cabinet
+
+If you are setting up a new cabinet for the storage array, you need to move the cabinet to its permanent location, install the hardware, and connect it to a power source. To set up the cabinet, access the following instructions:
+
+* link:../com.netapp.doc.e-hw-cabinet/home.html[Install 3040 40U cabinet]
+
+== Step 3: Install rails
+
+When shipped, each shelf includes rack-mounting hardware. For detailed instructions on installing the rails, select your rail types:
+
+* https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1652045[Install adjustable support rails]
+* https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2484194[Install 2U enclosure into a four-post rack]
+* https://mysupport.netapp.com/ecm/ecm_download_file/ECMM1280302[Install DE224C shelf into a two-post rack]
+* http://docs.netapp.com/platstor/topic/com.netapp.doc.hw-rail-superrail/home.html[Install SuperRail into a four-post rack (DE224C/DE460C shelves)]
+
+== Step 4: Connect cables
+
+The Installation and Setup instructions (Step 1) include instructions for connecting cables. However, if you need lists of supported cables and transceivers, best practices for cabling, and detailed information about the host ports for your controller, access the following instructions:
+
+* link:../com.netapp.doc.e-hw-cabling/home.html[Cable E-Series hardware]
+
+== Step 5: Configure hosts
+
+To make storage available to a host, select a guide for the host's operating system type:
+
+* link:../com.netapp.doc.ssm-exp-ic-lin/home.html[Linux express configuration]
+* link:../com.netapp.doc.ssm-exp-ic-vm/home.html[VMware express configuration]
+* link:../com.netapp.doc.ssm-exp-ic-win/home.html[Windows express configuration]
+
+== Step 6: Configure storage
+
+To configure storage, you can access the web-based interface, System Manager, by pointing a browser to the controller's IP address. A setup wizard helps you get started with system configuration. As an alternative, you can also use the command line interface (CLI).
+
+Select the interface you want to use:
+
+* link:../com.netapp.doc.ssm-sam-117/home.html[SANtricity System Manager Online Help for 11.7x]
+* link:../com.netapp.doc.ssm-sam-116/home.html[SANtricity System Manager Online Help for 11.6x]
+* link:../com.netapp.doc.ssm-cli-115/home.html[Command Line Interface (CLI) Reference]

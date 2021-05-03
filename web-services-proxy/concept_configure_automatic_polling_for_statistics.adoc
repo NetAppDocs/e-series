@@ -1,0 +1,79 @@
+---
+permalink: web-services-proxy/concept_configure_automatic_polling_for_statistics.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Manage automatic polling for statistics
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can configure automatic polling for all disk and volume statistics on discovered storage systems.
+
+== Overview of statistics
+
+[.lead]
+Statistics provide information about the data collection rates and performance of the storage systems.
+
+The Web Services Proxy provides access to the following types of statistics:
+
+* Raw statistics -- Total counters for data points at the time of data collection. Raw statistics can be used for total read operations or total write operations.
+* Analyzed statistics -- Calculated information for an interval. Examples of analyzed statistics are read input/output operations (IOPs) per second or write throughput.
+
+Raw statistics are linear, typically requiring at least two collected data points to derive usable data from them. The analyzed statistics are a derivation of the raw statistics, which provide important metrics. Many values that can be derived from the raw statistics are shown in a usable, point-in-time format in the analyzed statistics for your convenience.
+
+You can retrieve raw statistics regardless of whether the automatic polling is enabled or not. You can add the usecache=true query string to the end of the URL to retrieve cached statistics from the last poll. Using cached results greatly increases the performance of statistics retrieval. However, multiple calls at a rate equal to or less than the configured polling interval cache retrieves the same data.
+
+== Statistics functionality
+
+[.lead]
+The Web Services Proxy provides API endpoints that enable the retrieval of raw and analyzed controller and interface statistics from supported hardware models and software versions.
+
+=== Raw Statistics APIs
+
+* `+/storage-systems/{system-id}/controller-statistics+`
+* `+/storage-systems/{system-id}/drive-statistics/{optional list of disk ids}+`
+* `+/storage-systems/{system-id}/interface-statistics/{optional list of interface ids}+`
+* `+/storage-systems/{system-id}/volume-statistics/{optional list of volume ids}+`
+
+=== Analyzed Statistics APIs
+
+* `+/storage-systems/{id}/analysed-controller-statistics/+`
+* `+/storage-systems/{id}/analysed-drive-statistics/{optional list of disk ids}+`
+* `+/storage-systems/{id}/analysed-interface-statistics/{optional list of interface ids}+`
+* `+/storage-systems/{id}/analysed-volume-statistics/{optional list of volume ids}+`
+
+These URLs retrieve analyzed statistics from the last poll and are only available when polling is enabled. These URLs include the following input-output data:
+
+* Operations per second
+* Throughput in megabytes per second
+* Response times in milliseconds
+
+The calculations are based on the differences between statistical polling iterations, which are the most common measures of storage performance. These statistics are preferable to unanalyzed statistics.
+
+NOTE: When the system starts, there is no previous statistics collection to use to calculate the various metrics, so analyzed statistics require at least one polling cycle after startup to return data. In addition, if the cumulative counters are reset, the next polling cycle will have unpredictable numbers for the data.
+
+== Configure polling intervals
+
+[.lead]
+You can specify polling intervals for statistics gathering by modifying the wsconfig.xml file.
+
+* The storage systems must be discovered by the proxy.
+
+To configure polling intervals, you modify the wsconfig.xml file to specify a polling interval in seconds.
+
+NOTE: Because the statistics are cached in memory, you might see an increase of about 1.5 MB of memory-use for each storage system.
+
+. Open the wsconfig.xml file, located at:
+ ** (Windows) -- C:\Program Files\NetApp\SANtricity Web Services Proxy
+ ** (Linux) -- /opt/netapp/santricity_web_services_proxy
+. Add the following line inside the <env-entries> tag, in which _n_ is the number of seconds for the interval between polling requests:
++
+----
+<env key="stats.poll.interval">n</env>
+----
++
+For example, if 60 is entered, polling starts at 60-second intervals. That is, the system requests polling to start 60 seconds after the prior polling period was completed (regardless of the duration of the prior polling period). All statistics are time-stamped with the exact time they were retrieved. The system uses the time stamp or time difference on which to base the 60-second calculation.
+
+. Save the file.

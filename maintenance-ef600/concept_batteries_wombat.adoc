@@ -1,0 +1,12 @@
+---
+permalink: maintenance-ef600/concept_batteries_wombat.html
+sidebar: sidebar
+keywords: 
+summary: 'A battery is included with a controller and preserves cached data if the AC power fails.'
+---
+= Batteries
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+A battery is included with a controller and preserves cached data if the AC power fails.

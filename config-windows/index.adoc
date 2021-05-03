@@ -1,0 +1,39 @@
+---
+permalink: config-windows/index.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Express Configuration
+:icons: font
+:imagesdir: ../media/
+
+* xref:concept_understand_the_windows_workflow.adoc[Understand the workflow]
+* xref:task_verify_the_windows_configuration_is_supported.adoc[Verify the Windows configuration is supported]
+* xref:task_configuring_ip_addresses_using_dhcp.adoc[Configure IP addresses using DHCP]
+* xref:task_configure_multipath_software.adoc[Configure the multipath software]
+* xref:task_install_and_configure_windows_unified_host_utilities_7_0.adoc[Install and configure Windows Unified Host Utilities 7.0]
+* xref:task_install_santricity_storage_manager_for_smcli_and_hca.adoc[Install SANtricity Storage Manager for SMcli and Host Context Agent (HCA)]
+* xref:task_access_santricity_system_manager_and_use_the_setup_wizard.adoc[Access SANtricity System Manager and use the Setup wizard]
+* link:task_perform_fc_specific_tasks.md#task_perform_fc_specific_tasks[Perform FC-specific tasks]
+ ** link:task_perform_fc_specific_tasks.md#task_configuring_the_fc_switches_windows[Configuring the FC switches - Windows]
+ ** link:task_perform_fc_specific_tasks.md#task_determining_host_wwpns_and_making_the_recommended_settings_fc_windows[Determining host WWPNs and making the recommended settings - FC, Windows]
+ ** link:task_perform_fc_specific_tasks.md#concept_fc_worksheet_for_windows[FC worksheet for Windows]
+* link:task_perform_iscsi_specific_tasks.md#task_perform_iscsi_specific_tasks[Perform iSCSI-specific tasks]
+ ** link:task_perform_iscsi_specific_tasks.md#concept_configuring_the_switches_iscsi_windows[Configuring the switches - iSCSI, Windows]
+ ** link:task_perform_iscsi_specific_tasks.md#concept_configuring_networking_iscsi_windows[Configuring networking - iSCSI Windows]
+ ** link:task_perform_iscsi_specific_tasks.md#task_configuring_array_side_networking_iscsi_windows[Configuring array-side networking - iSCSI, Windows]
+ ** link:task_perform_iscsi_specific_tasks.md#task_configuring_host_side_networking_iscsi_windows_stormgr_sysmgr[Configuring host-side networking--iSCSI]
+ ** link:task_perform_iscsi_specific_tasks.md#task_verifying_ip_network_connections_iscsi_windows[Verifying IP network connections - iSCSI, Windows]
+ ** link:task_perform_iscsi_specific_tasks.md#task_recording_iscsi_specific_information_for_windows[Recording iSCSI-specific information for Windows]
+ ** link:task_perform_iscsi_specific_tasks.md#concept_iscsi_worksheet_windows[iSCSI worksheet - Windows]
+* link:task_perform_sas_specific_tasks.md#task_perform_sas_specific_tasks[Perform SAS-specific tasks]
+ ** link:task_perform_sas_specific_tasks.md#task_determining_sas_host_identifiers_windows[Determining SAS host identifiers - Windows]
+ ** link:task_perform_sas_specific_tasks.md#task_recording_sas_specific_information_for_windows[Recording SAS-specific information for Windows]
+ ** link:task_perform_sas_specific_tasks.md#concept_sas_worksheet_windows[SAS worksheet - Windows]
+* xref:task_discover_storage_on_the_host.adoc[Discover storage on the host]
+* xref:task_configure_storage_on_the_host.adoc[Configure storage on the host]
+* xref:task_verify_storage_access_on_the_host.adoc[Verify storage access on the host]
+* xref:reference_copyright.adoc[Copyright information]
+* xref:reference_trademark.adoc[Trademark information]
+* xref:concept_how_to_send_comments_about_documentation_and_receive_update_notifications_netapp_post_preface.adoc[How to send comments about documentation and receive update notifications]

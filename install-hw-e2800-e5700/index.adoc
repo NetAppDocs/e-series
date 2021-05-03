@@ -1,0 +1,39 @@
+---
+permalink: install-hw-e2800-e5700/index.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Installation and Setup Instructions
+:icons: font
+:imagesdir: ../media/
+
+* link:concept_overview.md#concept_overview[Overview]
+ ** link:concept_overview.md#concept_installation_and_setup_workflow_installation_flowchart[Installation and setup high-level workflow]
+* link:task_install_and_setup_60_drive.md#task_install_and_setup_60_drive[Installation and Setup Instructions (Supertask) (E2860, E5760 and DE460C)]
+ ** link:task_install_and_setup_60_drive.md#task_prepare_for_installation_60_drive[Prepare for Installation (E5724, EF570, EF280...)]
+ ** link:task_install_and_setup_60_drive.md#task_install_the_hardware_60_drive[Install the hardware (E5724, EF570, EF280...)]
+ ** link:task_install_and_setup_60_drive.md#task_connect_the_cables_60_drive[Power the controller shelves (E2860, E5760, and DE460C)]
+ ** link:task_install_and_setup_60_drive.md#task_complete_storage_system_setup_and_configuration_60_drive[Complete storage system setup and configuration (E2860, E5760, and DE460C)]
+  *** link:task_install_and_setup_60_drive.md#task_cable_the_data_hosts_e2860_e5760_and_de460c[Cable the data hosts (E2860, E5760, and DE460C)]
+   **** link:task_install_and_setup_60_drive.md#task_direct_attach_topology_e2860_e5760_and_de460c[Direct Attach Topology]
+   **** link:task_install_and_setup_60_drive.md#task_fabric_topology_e2860_e5760_and_de460c[Fabric Topology]
+  *** link:task_install_and_setup_60_drive.md#task_connect_and_configure_the_management_connection_e2860_e5760_and_de460c[Connect and Configure the Management Connection (E2860, E5760, and DE460C)]
+   **** link:task_install_and_setup_60_drive.md#task_management_port_configurationwith_dhcp_e2860_e5760_and_de460c[Option 1: Management port configuration with DHCP]
+   **** link:task_install_and_setup_60_drive.md#task_management_port_configuration_with_static_ip_addresses_60_drive[Management port configuration with static IP addresses]
+  *** link:task_install_and_setup_60_drive.md#task_after_installing_the_hardware_e2860_e5760_and_de460c[After installing the hardware (E2860, E5760, and DE460C)]
+* link:task_install_and_setup_12_24_drive.md#task_install_and_setup_12_24_drive[Installation and Setup Instructions for E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C]
+ ** link:task_install_and_setup_12_24_drive.md#task_prepare_for_installation_12_24_drive[Prepare for installation]
+ ** link:task_install_and_setup_12_24_drive.md#task_install_the_hardware_12_24_drive[Install the hardware]
+ ** link:task_install_and_setup_12_24_drive.md#task_connect_the_cables_12_24_drive[Connect the cables]
+ ** link:task_install_and_setup_12_24_drive.md#task_complete_storage_system_setup_and_configuration_12_24_drive[Complete storage system setup and configuration]
+  *** link:task_install_and_setup_12_24_drive.md#task_cable_the_data_hosts_12_24_drive[Cable the data hosts]
+   **** link:task_install_and_setup_12_24_drive.md#task_direct_attach_topology_e5124_ef570_ef280[Direct Attach Topology]
+   **** link:task_install_and_setup_12_24_drive.md#task_fabric_topology_e5124_ef570_ef280[Fabric Topology]
+  *** link:task_install_and_setup_12_24_drive.md#task_configure_management_connection_12_24_drive[Connect and configure the management connection]
+   **** link:task_install_and_setup_12_24_drive.md#task_management_port_configuration_with_dhcp_e5724_ef570_ef280[Option 1: Management port configuration with DHCP]
+   **** link:task_install_and_setup_12_24_drive.md#task_mgmt_port_configure_with_static_ip_addresses_12_24_drive[Option 2: Management port configuration with static IP addresses]
+  *** link:task_install_and_setup_12_24_drive.md#task_after_installing_the_hardware_12_24_drive[After installing the hardware]
+* xref:reference_copyright_and_trademark.adoc[Copyright and trademark]
+ ** xref:reference_copyright.adoc[Copyright]
+ ** xref:reference_trademark.adoc[Trademark]

@@ -1,0 +1,688 @@
+---
+permalink: config-linux/task_nvme_over_fibre_channel_express_setup.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= NVMe over Fibre Channel Express Setup
+:experimental:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use NVMe with the Fibre Channel protocol.
+
+== Verify the Linux configuration is supported
+
+[.lead]
+To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool (IMT) to verify that the entire configuration is supported.
+
+. Go to the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+. Click on the *Solution Search* tile.
+. In the menu:Protocols[SAN Host] area, click the *Add* button next to *E-Series SAN Host*.
+. Click *View Refine Search Criteria*.
++
+The *Refine Search Criteria* section is displayed. In this section you may select the protocol that applies, as well as other criteria for the configuration such as Operating System, NetApp OS, and Host Multipath driver. Select the criteria you know you want for your configuration, and then see what compatible configuration elements apply. As necessary, make the updates for your operating system and protocol that are prescribed in the tool. Detailed information for your chosen configuration is accessible on the View Supported Configurations page by clicking the *right page arrow*.
+
+=== NVMe over Fibre Channel restrictions
+
+[.lead]
+Before using NVMe over Fibre Channel, review the controller, host, and recovery restrictions.
+
+==== Verify your configuration
+
+Verify your configuration, using the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+
+==== About the hardware
+
+NVMe over Fibre Channel can be configured for the EF300, EF600, EF570, and E5700 controllers. The controllers must have the quad 32GB host port.
+
+==== Restrictions
+
+For an up-to-date listing of all restrictions, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for a complete list of requirements.
+
+==== Controller restrictions
+
+* This protocol can be used only for EF300, EF600, EF570, or E5700 controller with a minimum of 32 GB of physical memory. If the minimum memory requirements for the controllers are not met during start of day operations, a message is displayed that helps you diagnose the problem.
+* No simplex (single-controller) configurations are supported.
+* The only supported host interface card (HIC) is the quad 32GB Fibre Channel HIC.
+
+==== Host, host protocol, and host operating system restrictions
+
+* For an up-to-date listing of all compatible host, host protocol, and host operating systems, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for a complete list of requirements.
+* For a list of supported host channel adapters see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] .
+
+==== Storage and disaster recovery restrictions
+
+* Asynchronous and synchronous mirroring are not supported.
+* Thin provisioning (the creation of thin volumes) is not supported.
+
+== Configuring IP addresses using DHCP
+
+[.lead]
+In this express method for configuring communications between the management station and the storage array, you use Dynamic Host Configuration Protocol (DHCP) to provide IP addresses. Each storage array has either one controller (simplex) or two controllers (duplex), and each controller has two storage management ports. Each management port will be assigned an IP address.
+
+You have installed and configured a DHCP server on the same subnet as the storage management ports.
+
+The following instructions refer to a storage array with two controllers (a duplex configuration).
+
+. If you have not already done so, connect an Ethernet cable to the management station and to management port 1 on each controller (A and B).
++
+The DHCP server assigns an IP address to port 1 of each controller.
++
+NOTE: Do not use management port 2 on either controller. Port 2 is reserved for use by NetApp technical personnel.
++
+IMPORTANT: If you disconnect and reconnect the Ethernet cable, or if the storage array is power-cycled, DHCP assigns IP addresses again. This process occurs until static IP addresses are configured. you should avoid disconnecting the cable or power-cycling the array.
++
+If the storage array cannot get DHCP-assigned IP addresses within 30 seconds, the following default IP addresses are set:
+
+ ** Controller A, port 1: 169.254.128.101
+ ** Controller B, port 1: 169.254.128.102
+ ** Subnet mask: 255.255.0.0
+
+. Locate the MAC address label on the back of each controller, and then provide your network administrator with the MAC address for port 1 of each controller.
++
+Your network administrator needs the MAC addresses to determine the IP address for each controller. You will need the IP addresses to connect to your storage system through your browser.
+
+== Install SANtricity Storage Manager for SMcli (SANtricity software version 11.53 or earlier)
+
+[.lead]
+When you install the SANtricity Storage Manager software on your management station, a graphical user interface (GUI) and a command line interface (CLI) are installed by default. These instructions assume that you will install the SANtricity Storage Manager GUI on a management station and _not_ on the I/O host.
+
+IMPORTANT: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricty System Manager, refer to the _Download the command line interface (CLI)_ topic under the SANtricity System Manager Online Help.
+
+* You are using SANtricity software 11.53 or earlier.
+* You must have the correct administrator or superuser privileges.
+* You must have ensured that the system that will contain the SANtricity Storage Manager client has the following minimum requirements:
+ ** *RAM*: 2 GB for Java Runtime Engine
+ ** *Disk space*: 5 GB
+ ** *OS/Architecture*: Refer to https://mysupport.netapp.com/site/[NetApp Support]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager* for guidance on determining the supported operating system versions and architectures.
+
+This section describes how to install SANtricity Storage Manager on both the Windows and Linux OS platforms, because both Windows and Linux are common management station platforms when Linux is used for the data host.
+
+. Download the SANtricity software release from https://mysupport.netapp.com/site/[NetApp Support]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager*.
+
+== Access SANtricity System Manager and use Setup wizard
+
+[.lead]
+You use the Setup wizard in SANtricity System Manager to configure your storage array.
+
+* You have ensured that the device from which you will access SANtricity System Manager contains one of the following browsers:
++
+|===
+| Browser| Minimum version
+a|
+Google Chrome
+a|
+47
+a|
+Microsoft Internet Explorer
+a|
+11
+a|
+Microsoft Edge
+a|
+EdgeHTML 12
+a|
+Mozilla Firefox
+a|
+31
+a|
+Safari
+a|
+9
+|===
+
+* You are using out-of-band management.
+
+The wizard automatically relaunches when you open System Manager or refresh your browser and _at least one_ of the following conditions is met:
+
+* No pools and volume groups are detected.
+* No workloads are detected.
+* No notifications are configured.
+
+. From your browser, enter the following URL: `https://<DomainNameOrIPAddress>`
++
+IPAddress is the address for one of the storage array controllers.
++
+The first time SANtricity System Manager is opened on an array that has not been configured, the Set Administrator Password prompt appears. Role-based access management configures four local roles: admin, support, security, and monitor. The latter three roles have random passwords that cannot be guessed. After you set a password for the admin role you can change all of the passwords using the admin credentials. See _SANtricity System Manager online help_ for more information on the four local user roles.
+
+. Enter the System Manager password for the admin role in the Set Administrator Password and Confirm Password fields, and then select the *Set Password* button.
++
+When you open System Manager and no pools, volumes groups, workloads, or notifications have been configured, the Setup wizard launches.
+
+. Use the Setup wizard to perform the following tasks:
+ ** *Verify hardware (controllers and drives)* -- Verify the number of controllers and drives in the storage array. Assign a name to the array.
+ ** *Verify hosts and operating systems* -- Verify the host and operating system types that the storage array can access.
+ ** *Accept pools* -- Accept the recommended pool configuration for the express installation method. A pool is a logical group of drives.
+ ** *Configure alerts* -- Allow System Manager to receive automatic notifications when a problem occurs with the storage array.
+ ** *Enable AutoSupport* -- Automatically monitor the health of your storage array and have dispatches sent to technical support.
+. If you have not already created a volume, create one by going to *Storage* > *Volumes* > *Create* > *Volume*.
++
+For more information, see the online help for SANtricity System Manager.
+
+== Configure the FC switches
+
+[.lead]
+Configuring (zoning) the Fibre Channel (FC) switches enables the hosts to connect to the storage array and limits the number of paths. You zone the switches using the management interface for the switches.
+
+* You must have administrator credentials for the switches.
+* You must have used your HBA utility to discover the WWPN of each host initiator port and of each controller target port connected to the switch.
+
+For details about zoning your switches, see the switch vendor's documentation.
+
+. Log in to the FC switch administration program, and then select the zoning configuration option.
+
+== Set up NVMe over Fibre Channel on the host side
+
+[.lead]
+NVMe initiator configuration in a Fibre Channel environment includes installing and configuring the nvme-cli package, and enabling the NVMe/FC initiator on the host.
+
+These are the instructions for SUSE Linux Enterprise Server 12 SP4 and 32GB FC HBAs.
+
+. Install the nvme-cli package:
++
+----
+
+# zypper install nvme-cli
+----
+
+. Enable and start the nvmefc-boot-connections service.
++
+----
+systemctl enable nvmefc-boot-connections.service
+----
++
+----
+systemctl start nvmefc-boot-connections.service
+----
+
+. Set `lpfc_enable_fc4_type` to `3` to enable SLES12 SP4 as an NVMe/FC initiator.
++
+----
+# cat /etc/modprobe.d/lpfc.conf
+options lpfc lpfc_enable_fc4_type=3
+----
+
+. Re-build the initrd to get the Emulex change and the boot parameter change.
++
+----
+# dracut --force
+----
+
+. Reboot the host to reconfigure the `Ipfc` driver.
++
+----
+# reboot
+----
++
+The host is rebooted and the NVMe/FC initiator is enabled on the host.
++
+NOTE: After completing the host side setup, configuration of the NVMe over Fibre Channel ports occur automatically.
+
+== Define a host
+
+[.lead]
+Using SANtricity System Manager, you define the hosts that send data to the storage array. Defining a host is one of the steps required to let the storage array know which hosts are attached to it and to allow I/O access to the volumes.
+
+Keep these guidelines in mind when you define a host:
+
+* You must define the host identifier ports that are associated with the host.
+* Make sure that you provide the same name as the host's assigned system name.
+* This operation does not succeed if the name you choose is already in use.
+* The length of the name cannot exceed 30 characters.
+
+. Select *Storage* > *Hosts*.
+. Click *Create* > *Host*.
++
+The Create Host dialog box appears.
+
+. Select the settings for the host as appropriate.
++
+Field details
++
+|===
+| Setting| Description
+a|
+Name
+a|
+Type a name for the new host.
+a|
+Host operating system type
+a|
+Select one of the following options from the drop-down list:
+
+ ** *SANtricity 11.60 and newer*
++
+Linux
+
+ ** *Pre SANtricity 11.60*
++
+Linux DM-MP (Kernel 3.10 or later)
+
+a|
+Host interface type
+a|
+Select the host interface type that you want to use. If the array you configure only has one available host interface type, this setting might not be available to select.
+a|
+Host ports
+a|
+Do one of the following:
+
+ ** *Select I/O Interface*
++
+If the host ports have logged in, you can select host port identifiers from the list. This is the recommended method.
+
+ ** *Manual add*
++
+If the host ports have not logged in, look at `/etc/nvme/hostnqn` on the host to find the hostnqn identifiers and associate them with the host definition.
++
+You can manually enter the host port identifiers or copy/paste them from the `/etc/nvme/hostnqn` file (one at a time) into the *Host ports* field.
++
+You must add one host port identifier at a time to associate it with the host, but you can continue to select as many identifiers that are associated with the host. Each identifier is displayed in the *Host ports* field. If necessary, you also can remove an identifier by selecting the *X* next to it.
+
++
+|===
+
+. Click *Create*.
+
+After the host is successfully created, SANtricity System Manager creates a default name for each host port configured for the host.
+
+The default alias is <Hostname_Port Number>. For example, the default alias for the first port created for host IPT is IPT_1.
+
+== Assign a volume
+
+[.lead]
+You must assign a volume (namespace) to a host or host cluster so it can be used for I/O operations. This assignment grants a host or host cluster access to one or more namespaces in a storage array.
+
+Keep these guidelines in mind when you assign volumes:
+
+* You can assign a volume to only one host or host cluster at a time.
+* Assigned volumes are shared between controllers in the storage array.
+* The same namespace ID (NSID) cannot be used twice by a host or a host cluster to access a volume. You must use a unique NSID.
+
+Assigning a volume fails under these conditions:
+
+* All volumes are assigned.
+* The volume is already assigned to another host or host cluster.
+
+The ability to assign a volume is unavailable under these conditions:
+
+* No valid hosts or host clusters exist.
+* All volume assignments have been defined.
+
+All unassigned volumes are displayed, but functions for hosts with or without Data Assurance (DA) apply as follows:
+
+* For a DA-capable host, you can select volumes that are either DA-enabled or not DA-enabled.
+* For a host that is not DA-capable, if you select a volume that is DA-enabled, a warning states that the system must automatically turn off DA on the volume before assigning the volume to the host.
+
+. Select *Storage* > *Hosts*.
+
+After successfully assigning a volume or volumes to a host or a host cluster, the system performs the following actions:
+
+* The assigned volume receives the next available NSID. The host uses the NSID to access the volume.
+* The user-supplied volume name appears in volume listings associated to the host.
+
+== Display the volumes visible to the host
+
+[.lead]
+The SMdevices tool, part of the nvme-cli package, allows you to view the volumes currently visible on the host. This tool is an alternative to the `nvme list` command.
+
+. To view information about each NVMe path to an E-Series volume, use thenvme netapp smdevices [-o <format>] command. The output <format> can be normal (the default if -o is not used), column, or json.
++
+----
+# nvme netapp smdevices
+/dev/nvme1n1, Array Name ICTM0706SYS04, Volume Name NVMe2, NSID 1, Volume ID 000015bd5903df4a00a0980000af4462, Controller A, Access State unknown, 2.15GB
+/dev/nvme1n2, Array Name ICTM0706SYS04, Volume Name NVMe3, NSID 2, Volume ID 000015c05903e24000a0980000af4462, Controller A, Access State unknown, 2.15GB
+/dev/nvme1n3, Array Name ICTM0706SYS04, Volume Name NVMe4, NSID 4, Volume ID 00001bb0593a46f400a0980000af4462, Controller A, Access State unknown, 2.15GB
+/dev/nvme1n4, Array Name ICTM0706SYS04, Volume Name NVMe6, NSID 6, Volume ID 00001696593b424b00a0980000af4112, Controller A, Access State unknown, 2.15GB
+/dev/nvme2n1, Array Name ICTM0706SYS04, Volume Name NVMe2, NSID 1, Volume ID 000015bd5903df4a00a0980000af4462, Controller B, Access State unknown, 2.15GB
+/dev/nvme2n2, Array Name ICTM0706SYS04, Volume Name NVMe3, NSID 2, Volume ID 000015c05903e24000a0980000af4462, Controller B, Access State unknown, 2.15GB
+/dev/nvme2n3, Array Name ICTM0706SYS04, Volume Name NVMe4, NSID 4, Volume ID 00001bb0593a46f400a0980000af4462, Controller B, Access State unknown, 2.15GB
+/dev/nvme2n4, Array Name ICTM0706SYS04, Volume Name NVMe6, NSID 6, Volume ID 00001696593b424b00a0980000af4112, Controller B, Access State unknown, 2.15GB
+----
+
+== Set up failover on the host
+
+[.lead]
+Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. The multipath software presents the operating system with a single virtual device that represents the active physical paths to the storage. The multipath software also manages the failover process that updates the virtual device. You use the device mapper multipath (DM-MP) tool for Linux installations.
+
+=== Configuring the host to run failover
+
+[.lead]
+The SUSE Linux Enterprise Server host requires configuration changes to run failover. The failover solution uses DM-MP.
+
+* You have installed the required packages on your system.
+* For Red Hat (RHEL) hosts, verify the packages are installed by running `rpm -q device-mapper-multipath`
+* For SLES hosts, verify the packages are installed by running `rpm -q multipath-tools`
+
+By default, DM-MP is disabled in RHEL and SLES. Complete the following steps to enable DM-MP components on the host.
+
+. Add the NVMe E-Series device entry to the devices section of the `/etc/multipath.conf` file, as shown in the following example:
++
+----
+
+devices {
+        device {
+                vendor "NVME"
+                product "NetApp E-Series*"
+                path_grouping_policy group_by_prio
+                failback immediate
+                no_path_retry 30
+        }
+}
+----
+
+== Access NVMe volumes for virtual device targets
+
+[.lead]
+You can configure the I/O directed to the device target based on your Linux version. DM-MP manages the physical paths underlying these virtual targets.
+
+=== Virtual devices are I/O targets
+
+Make sure you are running I/O only to the virtual devices created by DM-MP and not to the physical device paths. If you are running I/O to the physical paths, DM-MP cannot manage a failover event and the I/O fails.
+
+You can access these block devices through the `dm` device or the `symlink` in `/dev/mapper`, for example:
+
+----
+/dev/dm-1
+/dev/mapper/eui.00001bc7593b7f5f00a0980000af4462
+----
+
+=== Example
+
+The following example output from the `nvme list` command shows the host node name and its correlation with the namespace ID.
+
+----
+
+NODE         SN           MODEL           NAMESPACE
+
+/dev/nvme1n1 021648023072 NetApp E-Series 10
+/dev/nvme1n2 021648023072 NetApp E-Series 11
+/dev/nvme1n3 021648023072 NetApp E-Series 12
+/dev/nvme1n4 021648023072 NetApp E-Series 13
+/dev/nvme2n1 021648023151 NetApp E-Series 10
+/dev/nvme2n2 021648023151 NetApp E-Series 11
+/dev/nvme2n3 021648023151 NetApp E-Series 12
+/dev/nvme2n4 021648023151 NetApp E-Series 13
+----
+
+|===
+| Column| Description
+a|
+`Node`
+
+a|
+The node name includes two parts:
+
+* The notation `nvme1` represents controller A and `nvme2` represents controller B.
+* The notation `n1`, `n2`, and so on represent the namespace identifier from the host perspective. These identifiers are repeated in the table, once for controller A and once for controller B.
+
+a|
+`Namespace`
+
+a|
+The Namespace column lists the namespace ID (NSID), which is the identifier from the storage array perspective.
+
+|===
+In the following `multipath -ll` output, the optimized paths are shown with a `prio` value of 50, while the non-optimized paths are shown with a `prio` value of 10.
+
+The Linux operating system routes I/O to the path group that is shown as `status=active`, while the path groups listed as `status=enabled` are available for failover.
+
+----
+eui.00001bc7593b7f500a0980000af4462 dm-0 NVME,NetApp E-Series
+size=15G features='1 queue_if_no_path' hwhandler='0' wp=rw
+|-+- policy='service-time 0' prio=50 status=active
+| `- #:#:#:# nvme1n1 259:5 active ready running
+`-+- policy='service-time 0' prio=10 status=enabled
+  `- #:#:#:# nvme2n1 259:9  active ready running
+
+eui.00001bc7593b7f5f00a0980000af4462 dm-0 NVME,NetApp E-Series
+size=15G features='1 queue_if_no_path' hwhandler='0' wp=rw
+|-+- policy='service-time 0' prio=0 status=enabled
+| `- #:#:#:# nvme1n1 259:5 failed faulty running
+`-+- policy='service-time 0' prio=10 status=active
+  `- #:#:#:# nvme2n1 259:9  active ready running
+----
+
+|===
+| Line item| Description
+a|
+`policy='service-time 0' prio=50 status=active`
+
+a|
+This line and the following line show that `nvme1n1`, which is the namespace with an NSID of 10, is optimized on the path with a `prio` value of 50 and a `status` value of `active`.
+
+This namespace is owned by controller A.
+
+a|
+`policy='service-time 0' prio=10 status=enabled`
+
+a|
+This line shows the failover path for namespace 10, with a `prio` value of 10 and a `status` value of `enabled`. I/O is not being directed to the namespace on this path at the moment.
+
+This namespace is owned by controller B.
+
+a|
+`policy='service-time 0' prio=0 status=enabled`
+
+a|
+This example shows ``multipath -ll``output from a different point in time, while controller A is rebooting. The path to namespace 10 is shown as `failed faulty running` with a `prio` value of 0 and a `status` value of `enabled`.
+
+a|
+`policy='service-time 0' prio=10 status=active`
+
+a|
+Note that the `active` path refers to `nvme2`, so the I/O is being directed on this path to controller B.
+
+|===
+
+== Access NVMe volumes for physical NVMe device targets
+
+[.lead]
+You can configure the I/O directed to the device target based on your Linux version. For SLES 15, I/O is directed to the physical NVMe device targets by the Linux host. A native NVMe multipathing solution manages the physical paths underlying the single apparent physical device displayed by the host.
+
+NOTE: It is best practice to use the links in /dev/disk/by-id/ rather than /dev/nvme0n1, for example:
+
+----
+# ls /dev/disk/by-id/ -l lrwxrwxrwx 1 root root 13 Oct 18 15:14
+nvme-
+eui.0000320f5cad32cf00a0980000af4112 -> ../../nvme0n1
+----
+
+=== Physical NVMe devices are I/O targets
+
+Run I/O to the physical nvme device path. There should only be one of these devices present for each namespace using the following format:
+
+----
+/dev/nvme[subsys#]n[id#]
+----
+
+All paths are virtualized using the native multipathing solution underneath this device.
+
+You can view your paths by running:
+
+----
+# nvme list-subsys
+----
+
+Example output:
+
+----
+nvme-subsys0 - NQN=nqn.1992-08.com.netapp:5700.600a098000a522500000000589aa8a6
+\
++- nvme0 rdma traddr=192.4.21.131 trsvcid=4420 live
++- nvme1 rdma traddr=192.4.22.141 trsvcid=4420 live
+----
+
+If you specify a namespace device when using the 'nvme list-subsys' command, it provides additional information about the paths to that namespace:
+
+----
+# nvme list-subsys /dev/nvme0n1
+nvme-subsys0 - NQN=nqn.1992-08.com.netapp:5700.600a098000af44620000000058d5dd96
+\
+ +- nvme0 rdma traddr=192.168.130.101 trsvcid=4420 live non-optimized
+ +- nvme1 rdma traddr=192.168.131.101 trsvcid=4420 live non-optimized
+ +- nvme2 rdma traddr=192.168.130.102 trsvcid=4420 live optimized
+ +- nvme3 rdma traddr=192.168.131.102 trsvcid=4420 live optimized
+----
+
+There are also hooks into the multipath commands to allow you to view your path information for native failover through them as well:
+
+----
+#multipath -ll
+----
+
+NOTE: To view the path information, the following must be set in `/etc/multipath.conf`:
+
+----
+
+defaults {
+        enable_foreign nvme
+}
+----
+
+Example output:
+
+----
+eui.0000a0335c05d57a00a0980000a5229d [nvme]:nvme0n9 NVMe,Netapp E-Series,08520001
+size=4194304 features='n/a' hwhandler='ANA' wp=rw
+|-+- policy='n/a' prio=50 status=optimized
+| `- 0:0:1 nvme0c0n1 0:0 n/a optimized    live
+`-+- policy='n/a' prio-10 status=non-optimized
+`- 0:1:1 nvme0c1n1 0:0 n/a non-optimized    live
+----
+
+== Create partitions and filesystems
+
+[.lead]
+You can create a partition on the multipath device, optionally create a file system on the namespace, and mount the partition.
+
+. Run the multipath -ll command to get a list of/dev/mapper/dm devices.
++
+----
+# multipath -ll
+----
++
+The result of this command shows two devices, dm-19 and dm-16 :
++
+----
+eui.00001ffe5a94ff8500a0980000af4444 dm-19 NVME,NetApp E-Series
+size=10G features='1 queue_if_no_path' hwhandler='0' wp=rw
+|-+- policy='service-time 0' prio=50 status=active
+| |- #:#:#:# nvme0n19 259:19  active ready running
+| `- #:#:#:# nvme1n19 259:115 active ready running
+`-+- policy='service-time 0' prio=10 status=enabled
+  |- #:#:#:# nvme2n19 259:51  active ready running
+  `- #:#:#:# nvme3n19 259:83  active ready running
+eui.00001fd25a94fef000a0980000af4444 dm-16 NVME,NetApp E-Series
+size=16G features='1 queue_if_no_path' hwhandler='0' wp=rw
+|-+- policy='service-time 0' prio=50 status=active
+| |- #:#:#:# nvme0n16 259:16  active ready running
+| `- #:#:#:# nvme1n16 259:112 active ready running
+`-+- policy='service-time 0' prio=10 status=enabled
+  |- #:#:#:# nvme2n16 259:48  active ready running
+  `- #:#:#:# nvme3n16 259:80  active ready running
+----
+
+== Verify storage access on the host
+
+[.lead]
+Before using the namespace, you verify that the host can write data to the namespace and read it back.
+
+. On the host, copy one or more files to the mount point of the disk.
+
+You remove the file and folder that you copied.
+
+== NVMe over Fibre Channel worksheet for Linux
+
+[.lead]
+You can use this worksheet to record NVMe over Fibre Channel storage configuration information. You need this information to perform provisioning tasks.
+
+=== Direct connect topology
+
+In a direct connect topology, one or more hosts are directly connected to the controller.
+
+image::../media/nvme_fc_direct_topology.png[]
+
+* Host 1 HBA Port 1 and Controller A Host port 1
+* Host 1 HBA Port 2 and Controller B Host port 1
+* Host 2 HBA Port 1 and Controller A Host port 2
+* Host 2 HBA Port 2 and Controller B Host port 2
+* Host 3 HBA Port 1 and Controller A Host port 3
+* Host 3 HBA Port 2 and Controller B Host port 3
+* Host 4 HBA Port 1 and Controller A Host port 4
+* Host 4 HBA Port 2 and Controller B Host port 4
+
+=== Switch connect topology
+
+In a fabric topology, one or more switches are used. See the to https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for a list of supported switches.
+
+image::../media/nvme_fc_fabric_topology.png[]
+
+=== NVMe over Fibre Channel: Host identifiers
+
+Locate and document the initiator NQN from each host.
+
+|===
+| Host port connections| Host NQN
+a|
+Host (initiator) 1
+a|
+ 
+a|
+Host (initiator) 2
+a|
+ 
+|===
+
+=== NVMe over Fibre Channel: Target NQN
+
+Document the target NQN for the storage array.
+
+|===
+| Array name| Target NQN
+a|
+Array controller (target)
+a|
+ 
+|===
+
+=== NVMe over Fibre Channel: Target NQNs
+
+Document the NQNs to be used by the array ports.
+
+|===
+| Array controller (target) port connections| NQN
+a|
+Controller A, port 1
+a|
+ 
+a|
+Controller B, port 1
+a|
+ 
+a|
+Controller A, port 2
+a|
+ 
+a|
+Controller B, port 2
+a|
+ 
+|===
+
+=== NVMe over Fibre Channel: Mapping host name
+
+NOTE: The mapping host name is created during the workflow.
+
+|===
+a|
+Mapping host name
+a|
+ 
+a|
+Host OS type
+a|
+ 
+|===

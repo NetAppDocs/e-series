@@ -1,0 +1,32 @@
+---
+permalink: getting-started/concept_doc_what_s_included.html
+sidebar: sidebar
+keywords: 
+summary: 'This site includes information for specific E-Series releases, models, and components.'
+---
+= What's included
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+This site includes information for specific E-Series releases, models, and components.
+
+|===
+| What's included| What's _not_ included
+a|
+This site includes information for the following releases and component types:
+
+* *SANtricity software* -- version 11.50 and later.
+* *Controller firmware* -- version 8.50 and later.
+* *Controller types* -- All E2800, EF280, EF300, E5700, EF570, and EF600 models.
+* *Interface types* -- Fibre Channel, iSCSI, iSER, SAS, and NVMe.
+* *Operating systems installed on hosts* -- Linux, VMware, and Windows.
++
+NOTE: Additional interfaces and operating systems might be supported. For more information, contact technical support.
+
+a|
+This site does _not_ include information for releases _earlier than_ software version 11.50 or firmware version 8.50. For earlier releases, go to the https://www.netapp.com/us/documentation/eseries-santricity.aspx[E-Series and SANtricity Document Resources] page.
+
+For information on your site preparation requirements, go to https://hwu.netapp.com/[NetApp Hardware Universe].
+
+|===

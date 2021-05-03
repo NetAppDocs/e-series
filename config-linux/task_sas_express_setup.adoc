@@ -1,0 +1,249 @@
+---
+permalink: config-linux/task_sas_express_setup.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= SAS Express Setup
+:experimental:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+== Verify the Linux configuration is supported
+
+[.lead]
+To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool (IMT) to verify that the entire configuration is supported.
+
+. Go to the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+. Click on the *Solution Search* tile.
+. In the menu:Protocols[SAN Host] area, click the *Add* button next to *E-Series SAN Host*.
+. Click *View Refine Search Criteria*.
++
+The *Refine Search Criteria* section is displayed. In this section you may select the protocol that applies, as well as other criteria for the configuration such as Operating System, NetApp OS, and Host Multipath driver. Select the criteria you know you want for your configuration, and then see what compatible configuration elements apply. As necessary, make the updates for your operating system and protocol that are prescribed in the tool. Detailed information for your chosen configuration is accessible on the View Supported Configurations page by clicking the *right page arrow*.
+
+== Configure IP addresses using DHCP
+
+[.lead]
+In this express method for configuring communications between the management station and the storage array, you use Dynamic Host Configuration Protocol (DHCP) to provide IP addresses. Each storage array has either one controller (simplex) or two controllers (duplex), and each controller has two storage management ports. Each management port will be assigned an IP address.
+
+You have installed and configured a DHCP server on the same subnet as the storage management ports.
+
+The following instructions refer to a storage array with two controllers (a duplex configuration).
+
+. If you have not already done so, connect an Ethernet cable to the management station and to management port 1 on each controller (A and B).
++
+The DHCP server assigns an IP address to port 1 of each controller.
++
+NOTE: Do not use management port 2 on either controller. Port 2 is reserved for use by NetApp technical personnel.
++
+IMPORTANT: If you disconnect and reconnect the Ethernet cable, or if the storage array is power-cycled, DHCP assigns IP addresses again. This process occurs until static IP addresses are configured. It is recommended that your avoid disconnecting the cable or power-cycling the array.
++
+If the storage array cannot get DHCP-assigned IP addresses within 30 seconds, the following default IP addresses are set:
+
+ ** Controller A, port 1: 169.254.128.101
+ ** Controller B, port 1: 169.254.128.102
+ ** Subnet mask: 255.255.0.0
+
+. Locate the MAC address label on the back of each controller, and then provide your network administrator with the MAC address for port 1 of each controller.
++
+Your network administrator needs the MAC addresses to determine the IP address for each controller. You will need the IP addresses to connect to your storage system through your browser.
+
+== Install and configure Host Utilities
+
+[.lead]
+Linux Unified Host Utilities 7.1 includes tools to manage NetApp storage, including failover policies and physical paths.
+
+. Use the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] to determine the appropriate version of Unified Host Utilities 7.1 to install.
++
+The versions are listed in a column within each supported configuration.
+
+== Install SANtricity Storage Manager for SMcli (SANtricity software version 11.53 or earlier)
+
+[.lead]
+When you install the SANtricity Storage Manager software on your management station, the command line interface (CLI) is installed to help you manage your array. By also installing the software on the host, the Host Context Agent is installed that helps the host push configuration information to the storage array controllers through the I/O path.
+
+IMPORTANT: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricty System Manager, refer to the _Download the command line interface (CLI)_ topic under the SANtricity System Manager Online Help.
+
+* You are using SANtricity software 11.53 or earlier.
+* You must have the correct administrator or superuser privileges.
+* You must have ensured that the system that will contain the SANtricity Storage Manager client has the following minimum requirements:
+ ** *RAM*: 2 GB for Java Runtime Engine
+ ** *Disk space*: 5 GB
+ ** *OS/Architecture*: Refer to https://mysupport.netapp.com/site/[NetApp Support]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager* for guidance on determining the supported operating system versions and architectures.
+
+This section describes how to install SANtricity Storage Manager on both the Windows and Linux OS platforms, because both Windows and Linux are common management station platforms when Linux is used for the data host.
+
+. Download the SANtricity software release from https://mysupport.netapp.com/site/[NetApp Support]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager*.
+
+== Access SANtricity System Manager and use the Setup wizard
+
+[.lead]
+You use the Setup wizard in SANtricity System Manager to configure your storage array.
+
+* You have ensured that the device from which you will access SANtricity System Manager contains one of the following browsers:
++
+|===
+| Browser| Minimum version
+a|
+Google Chrome
+a|
+47
+a|
+Microsoft Internet Explorer
+a|
+11
+a|
+Microsoft Edge
+a|
+EdgeHTML 12
+a|
+Mozilla Firefox
+a|
+31
+a|
+Safari
+a|
+9
+|===
+
+* You are using out-of-band management.
+
+The wizard automatically relaunches when you open System Manager or refresh your browser and _at least one_ of the following conditions is met:
+
+* No pools and volume groups are detected.
+* No workloads are detected.
+* No notifications are configured.
+
+. From your browser, enter the following URL: `https://<DomainNameOrIPAddress>`
++
+IPAddress is the address for one of the storage array controllers.
++
+The first time SANtricity System Manager is opened on an array that has not been configured, the Set Administrator Password prompt appears. Role-based access management configures four local roles: admin, support, security, and monitor. The latter three roles have random passwords that cannot be guessed. After you set a password for the admin role you can change all of the passwords using the admin credentials. See _SANtricity System Manager online help_ for more information on the four local user roles.
+
+. Enter the System Manager password for the admin role in the Set Administrator Password and Confirm Password fields, and then select the *Set Password* button.
++
+When you open System Manager and no pools, volumes groups, workloads, or notifications have been configured, the Setup wizard launches.
+
+. Use the Setup wizard to perform the following tasks:
+ ** *Verify hardware (controllers and drives)* -- Verify the number of controllers and drives in the storage array. Assign a name to the array.
+ ** *Verify hosts and operating systems* -- Verify the host and operating system types that the storage array can access.
+ ** *Accept pools* -- Accept the recommended pool configuration for the express installation method. A pool is a logical group of drives.
+ ** *Configure alerts* -- Allow System Manager to receive automatic notifications when a problem occurs with the storage array.
+ ** *Enable AutoSupport* -- Automatically monitor the health of your storage array and have dispatches sent to technical support.
+. If you have not already created a volume, create one by going to *Storage* > *Volumes* > *Create* > *Volume*.
++
+For more information, see the online help for SANtricity System Manager.
+
+== Configure the multipath software
+
+[.lead]
+Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. The multipath software presents the operating system with a single virtual device that represents the active physical paths to the storage. The multipath software also manages the failover process that updates the virtual device. You use the device mapper multipath (DM-MP) tool for Linux installations.
+
+You have installed the required packages on your system.
+
+* For Red Hat (RHEL) hosts, verify the packages are installed by running rpm -q device-mapper-multipath.
+* For SLES hosts, verify the packages are installed by running rpm -q multipath-tools.
+
+By default, DM-MP is disabled in RHEL and SLES. Complete the following steps to enable DM-MP components on the host.
+
+If you have not already installed the operating system, use the media supplied by your operating system vendor.
+
+. If a multipath.conf file is not already created, run the # touch /etc/multipath.conf command.
+. Do one of the following to enable the multipathd daemon on boot.
++
+|===
+| If you are using....| Do this...
+a|
+RHEL 7.x and 8.x systems:
+a|
+systemctl enable multipathd
+a|
+SLES 12.x and 15.x systems:
+a|
+systemctl enable multipathd
+|===
+
+== Setting up the multipath.conf file
+
+[.lead]
+The multipath.conf file is the configuration file for the multipath daemon, multipathd. The multipath.conf file overrides the built-in configuration table for multipathd. Any line in the file whose first non-white-space character is # is considered a comment line. Empty lines are ignored.
+
+NOTE: For SANtricity operating system 8.30 and newer, NetApp recommends using the default settings as provided.
+
+The multipath.conf are available in the following locations:
+
+* For SLES, /usr/share/doc/packages/multipath-tools/multipath.conf.synthetic
+* For RHEL, /usr/share/doc/device-mapper-multipath-0.4.9/multipath.conf
+
+== Determine SAS host identifiers - Linux
+
+[.lead]
+For the SAS protocol, you find the SAS addresses using the HBA utility, then use the HBA BIOS to make the appropriate configuration settings.
+
+Guidelines for HBA utilities:
+
+* Most HBA vendors offer an HBA utility. Depending on your host operating system and CPU, use either the LSI-sas2flash(6G) or sas3flash(12G) utility.
+* Host I/O ports might automatically register if the host context agent is installed.
+
+. Download the HBA utility from your HBA vendor's web site.
+
+== Create partitions and filesystems
+
+[.lead]
+A new LUN has no partition or file system when the Linux host first discovers it. You must format the LUN before it can be used. Optionally, you can create a file system on the LUN.
+
+The host must have discovered the LUN.
+
+In the /dev/mapper folder, you have run the ls command to see the available disks.
+
+You can initialize the disk as a basic disk with a GUID partition table (GPT) or Master boot record (MBR).
+
+Format the LUN with a file system such as ext4. Some applications do not require this step.
+
+. Retrieve the SCSI ID of the mapped disk by issuing the sanlun lun show -p command.
++
+The SCSI ID is a 33-character string of hexadecimal digits, beginning with the number 3. If user-friendly names are enabled, Device Mapper reports disks as mpath instead of by a SCSI ID.
++
+----
+# sanlun lun show -p
+
+                E-Series Array: ictm1619s01c01-SRP(60080e50002908b40000000054efb9d2)
+                   Volume Name:
+               Preferred Owner: Controller in Slot B
+                 Current Owner: Controller in Slot B
+                          Mode: RDAC (Active/Active)
+                       UTM LUN: None
+                           LUN: 116
+                      LUN Size:
+                       Product: E-Series
+                   Host Device: mpathr(360080e50004300ac000007575568851d)
+              Multipath Policy: round-robin 0
+            Multipath Provider: Native
+--------- ---------- ------- ------------ ----------------------------------------------
+host      controller                      controller
+path      path       /dev/   host         target
+state     type       node    adapter      port
+--------- ---------- ------- ------------ ----------------------------------------------
+up        secondary  sdcx    host14       A1
+up        secondary  sdat    host10       A2
+up        secondary  sdbv    host13       B1
+----
+
+== Verify storage access on the host
+
+[.lead]
+Before using the volume, you verify that the host can write data to the volume and read it back.
+
+You must have initialized the volume and formatted it with a file system.
+
+. On the host, copy one or more files to the mount point of the disk.
+
+Remove the file and folder that you copied.
+
+== SAS worksheet - Linux
+
+[.lead]
+You can use this worksheet to record SAS storage configuration information. You need this information to perform provisioning tasks.
+
+image::../media/sas_topology_diagram.gif[Diagram: SAS topology]

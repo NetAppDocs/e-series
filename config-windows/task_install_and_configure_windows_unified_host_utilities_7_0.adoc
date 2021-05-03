@@ -1,0 +1,30 @@
+---
+permalink: config-windows/task_install_and_configure_windows_unified_host_utilities_7_0.html
+sidebar: sidebar
+keywords: 
+summary: 'Windows Unified Host Utilities 7.0 includes tools to enable you to connect host computers to NetApp storage systems and set required parameters on host computers. You can also set appropriate disk timeouts for best read/write performance with NetApp storage.'
+---
+= Install and configure Windows Unified Host Utilities 7.0
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Windows Unified Host Utilities 7.0 includes tools to enable you to connect host computers to NetApp storage systems and set required parameters on host computers. You can also set appropriate disk timeouts for best read/write performance with NetApp storage.
+
+See the _Windows Host Utilities 7.0 Installation Guide,_ found under http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61343[NetApp Documentation: Host Utilities (current releases)].
+
+* Use the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] to determine the appropriate version of Unified Host Utilities 7.0 to install.
++
+NOTE: The versions are listed in a column within each supported configuration.
+
+* Download the Unified Host Utilities 7.0 from http://mysupport.netapp.com[NetApp Support].
+
+NOTE: This utilities package is not installed using the SANtricity Storage Manager installer.
+
+. Use the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] to determine the appropriate version of Unified Host Utilities 7.0 to install.
++
+The versions are listed in a column within each supported configuration.
+
+. Download the Unified Host Utilities 7.0 from http://mysupport.netapp.com[NetApp Support].
++
+NOTE: Alternatively, you can use the SANtricity `SMdevices` utility to perform the same functions as the Unified Host Utility tool. The `SMdevices` utility is included as part of the `SMutils` package. The `SMutils` package is a collection of utilities to verify what the host sees from the storage array. It is included as part of the SANtricity software installation.

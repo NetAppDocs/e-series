@@ -1,0 +1,12 @@
+---
+permalink: maintenance-ef600/concept_dimms_wombat.html
+sidebar: sidebar
+keywords: 
+summary: 'You must replace a DIMM when a memory mismatch is present, or you have a failed DIMM.'
+---
+= DIMMs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must replace a DIMM when a memory mismatch is present, or you have a failed DIMM.

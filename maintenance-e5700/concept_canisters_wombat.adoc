@@ -1,0 +1,12 @@
+---
+permalink: maintenance-e5700/concept_canisters_wombat.html
+sidebar: sidebar
+keywords: 
+summary: 'Canisters consist of three different types: power-fan canisters \(power supplies\) that supply a redundant power source and adequate cooling in a 12-drive or 24-drive controller shelf or drive shelf; power canisters that are used for power redundancy in a 60-drive controller shelf or drive shelf; and fan canisters that are used for cooling the 60-drive controller shelf or drive shelf.'
+---
+= Canisters
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Canisters consist of three different types: power-fan canisters (power supplies) that supply a redundant power source and adequate cooling in a 12-drive or 24-drive controller shelf or drive shelf; power canisters that are used for power redundancy in a 60-drive controller shelf or drive shelf; and fan canisters that are used for cooling the 60-drive controller shelf or drive shelf.

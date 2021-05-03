@@ -1,0 +1,113 @@
+---
+permalink: upgrade-controllers/task_prepare_to_upgrade_controller.html
+sidebar: sidebar
+keywords: 
+summary: 'You prepare to upgrade controllers by saving the drive security key, gathering support data, and taking the controller offline.'
+---
+= Prepare to upgrade controllers
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You prepare to upgrade controllers by saving the drive security key, gathering support data, and taking the controller offline.
+
+. Make sure that the existing storage array is updated to the latest released operating system (controller firmware) version available for your current controllers.
++
+NOTE: If you are upgrading to controllers that support SANtricity OS version 8.50, you must install the latest versions of SANtricity OS and the latest NVSRAM after you install and power on the new controllers. If you do not perform this upgrade, you might not be able to configure the storage array for Automatic Load Balancing (ALB).
+
+. If performing a complete controller replacement when using drive security, complete the following steps:
++
+|===
+| Security type and context| Steps
+a|
+Internal key management, one or more drives locked
+a|
+
+ .. Export the internal security key file to a known location on the management client (the system with a browser used for accessing System Manager). Use the `export storageArray securityKey` command. You must provide the pass phrase associated with the security key and specify the location where you want to save the command. For information about using this command, see the _Command Line Reference_.
+ .. Know the pass phrase associated with the internal security key.
+
+a|
+External key management, all drives locked, you are able to transition to internal key management temporarily for the controller replacement (recommended).
+a|
+    Perform the following steps, in order:
+
+ .. Record the External KMS server address and port number using the *Settings* > *System* > *Security Key Management* > *View/Edit Key Management Server Settings* dialog.
+ .. Ensure that the client and server certificates are available on your local host so the storage array and key management server can authenticate each other after the controller replacement is finished. Use the `save storageArray keyManagementCertificate` command to save the certificates. Be sure the run the command twice, once with the `certificateType` parameter set to `client`, and the other with the parameter set to `server`. For information about using this command, see the _Command Line Reference_.
+ .. Transition to internal key management by running the `disable storageArray externalKeyManagement` command.
+ .. Export the internal security key file to a known location on the management client (the system with a browser used for accessing System Manager). Use the `export storageArray securityKey` command. You must provide the pass phrase associated with the security key and specify the location where you want to save the command. For information about using this command, see the _Command Line Reference_.
+ .. Know the pass phrase associated with the internal security key.
+
+a|
+External key management, all drives locked, you are not able to transition to internal key management temporarily for the controller replacement.
+a|
+    Perform the following steps, in order:
+
+ .. Record the External KMS server address and port number using the *Settings* > *System* > *Security Key Management* > *View/Edit Key Management Server Settings* dialog.
+ .. Ensure that the client and server certificates are available on your local host so the storage array and key management server can authenticate each other after the controller replacement is finished. Use the `save storageArray keyManagementCertificate` command to save the certificates. Be sure the run the command twice, once with the `certificateType` parameter set to `client`, and the other with the parameter set to `server`. For information about using this command, see the _Command Line Reference_.
+
+a|
+External key management, partial drives locked
+a|
+    No additional steps are necessary.
++
+|===
+
+. Record the serial number for your storage array:
+ .. Open SANtricity Storage Manager. In the *EMW* tree view, double-click your storage array to launch System Manager.
+ .. From System Manager, select *Support* > *Support Center* > *Support Resources* tab.
+ .. Scroll down to *Launch detailed storage array information*, and then select *Storage Array Profile*.
++
+The Report appears on your screen.
+
+ .. To locate the chassis serial number under the storage array profile, type *serial number* in the**Find**text box, and then click *Find*.
++
+All matching terms are highlighted. To scroll through all the results one at a time, continue to click *Find*.
+
+ .. Make a record of the `Chassis Serial Number`.
++
+You need this serial number to perform the steps in link:task_complete_controller_upgrade.md#[Complete controller upgrade].
+. Gather support data about your storage array by using either the GUI or the CLI:
+ ** Use either System Manager or the Array Management Window to collect and save a support bundle of your storage array.
+  *** From System Manager, select *Support* > *Support Center* > *Diagnostics* tab. Then select **Collect Support Data**and click *Collect*.
+  *** From the Array Management Window toolbar, select *Monitor* > *Health* > *Collect Support Data Manually*. Then name and specify a location on your system where you want to store the support bundle.
+The file is saved in the Downloads folder for your browser with the name `support-data.7z`.
+
++
+If your shelf contains drawers, the diagnostics data for that shelf is archived in a separate zipped file named `tray-componet-state-capture.7z`.
+ ** Use the CLI to run the save storageArray supportDatacommand to gather comprehensive support data about the storage array.
+*Note:* Gathering support data can temporarily impact performance on your storage array.
+. Ensure that no I/O operations are occurring between the storage array and all connected hosts:
+ ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
+ ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
+ ** Unmount all file systems associated with volumes on the array.
+*Note:* The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
+
++
+IMPORTANT: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, you might lose data.
+. If the storage array participates in a mirroring relationship, stop all host I/O operations on the secondary storage array.
+. If you are using asynchronous or synchronous mirroring, delete any mirrored pairs and deactivate any mirroring relationships through the System Manager or the Array Management window.
+. If there is a thin provisioned volume that is reported to the host as a thin volume and the old array is running firmware (8.25 firmware or above) that supports the UNMAP feature, disable Write Back Caching for all thin volumes:
+ .. From System Manager, select *Storage* > *Volumes*.
+ .. Select any volume, and then select *More* > *Change cache settings*.
++
+The Change Cache Setting dialog box appears. All volumes on the storage array appear in this dialog box.
+
+ .. Select the *Basic* tab and change the settings for read caching and write caching.
+ .. Click *Save*.
+ .. Wait five minutes to allow any data in cache memory to be flushed to disk.
+. If the Security Assertion Markup Language (SAML) is enabled on the controller, disable the SAML authentication.
++
+NOTE: After SAML is enabled, you cannot disable it through the SANtricity System Manager. To disable the SAML configuration, contact Technical Support for assistance.
+
+. Wait for all operations in progress to complete before continuing to the next step.
+ .. From System Manager's *Home* page, select *View Operations in Progress*.
+ .. Make sure all operations shown on the *Operations in Progress* window are complete before continuing.
+. Turn off power to the controller-drive tray.
++
+Wait for all of the LEDs on the controller-drive tray to go dark.
+
+. Turn off power to each drive tray that is connected to the controller-drive tray.
++
+Wait two minutes for all of the drives to spin down.
+
+Go to link:task_remove_controllers_upgrading.md#[Remove controllers].

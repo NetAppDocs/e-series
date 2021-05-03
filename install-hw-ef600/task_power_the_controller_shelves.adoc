@@ -1,0 +1,39 @@
+---
+permalink: install-hw-ef600/task_power_the_controller_shelves.html
+sidebar: sidebar
+keywords: 
+summary: 'You attach the power cables and power on the drive shelves.'
+---
+= Power the controller shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You attach the power cables and power on the drive shelves.
+
+* You have installed your hardware.
+* You have taken anti-static precautions.
+
+. Plug in the power cables, one to each controller.
++
+|===
+a|
+image:../media/power_cable.png[]
+a|
+*Power cables*
+|===
+|===
+a|
+image:../media/cabling_power.png[]     *Note:* EF600 pictured above.
++
+|===
+
+. Connect the two power cables, one from each controller, to two separate power distribution units (PDUs) in the cabinet or rack.
++
+IMPORTANT: Accessing a EF300 or EF600 controller canister from the shelf can be blocked by third-party PDUs. Do not use power outlets directly behind the controller canister.
+
+. Allow the controller to boot for five minutes before completing the storage system set up and configuration.
+
+The controller boots automatically. The LEDs flash on and the fans start to indicate that the controller is powering on.
+
+NOTE: Fans are very loud when they first power on.

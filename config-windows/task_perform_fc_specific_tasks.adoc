@@ -1,0 +1,126 @@
+---
+permalink: config-windows/task_perform_fc_specific_tasks.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Perform FC-specific tasks
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+For the Fibre Channel protocol, you configure the switches and determine the host port identifiers.
+
+== Configuring the FC switches - Windows
+
+[.lead]
+Configuring (zoning) the Fibre Channel (FC) switches enables the hosts to connect to the storage array and limits the number of paths. You zone the switches using the management interface for the switches.
+
+* You must have administrator credentials for the switches.
+* You must have used your HBA utility to discover the WWPN of each host initiator port and of each controller target port connected to the switch.
+
+For details about zoning your switches, see the switch vendor's documentation.
+
+. Log in to the FC switch administration program, and then select the zoning configuration option.
+
+== Determining host WWPNs and making the recommended settings - FC, Windows
+
+[.lead]
+You install an FC HBA utility so you can view the worldwide port name (WWPN) of each host port. Additionally, you can use the HBA utility to change any settings recommended in the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for the supported configuration.
+
+Guidelines for HBA utilities:
+
+* Most HBA vendors offer an HBA utility. You will need the correct version of HBA for your host operating system and CPU. Examples of FC HBA utilities include:
+ ** Emulex OneCommand Manager for Emulex HBAs
+ ** QLogic QConverge Console for QLogic HBAs
+* Host I/O ports might automatically register if the host context agent is installed.
+
+. Download the appropriate utility from your HBA vendor's web site.
+
+== FC worksheet for Windows
+
+[.lead]
+You can use this worksheet to record FC storage configuration information. You need this information to perform provisioning tasks.
+
+The illustration shows a host connected to an E-Series storage array in two zones. One zone is indicated by the blue line; the other zone is indicated by the red line. Any single port has two paths to the storage (one to each controller).
+
+image::../media/port_identifiers_host_and_target.gif[]
+
+=== Host identifiers
+
+|===
+| Callout No.| Host (initiator) port connections| WWPN
+a|
+1
+a|
+Host
+a|
+_not applicable_
+a|
+2
+a|
+Host port 0 to FC switch zone 0
+a|
+ 
+a|
+7
+a|
+Host port 1 to FC switch zone 1
+a|
+ 
+|===
+
+=== Target identifiers
+
+|===
+| Callout No.| Array controller (target) port connections| WWPN
+a|
+3
+a|
+Switch
+a|
+_not applicable_
+a|
+6
+a|
+Array controller (target)
+a|
+_not applicable_
+a|
+5
+a|
+Controller A, port 1 to FC switch 1
+a|
+ 
+a|
+9
+a|
+Controller A, port 2 to FC switch 2
+a|
+ 
+a|
+4
+a|
+Controller B, port 1 to FC switch 1
+a|
+ 
+a|
+8
+a|
+Controller B, port 2 to FC switch 2
+a|
+ 
+|===
+
+=== Mapping host
+
+|===
+a|
+Mapping host name
+a|
+ 
+a|
+Host OS type
+a|
+ 
+|===

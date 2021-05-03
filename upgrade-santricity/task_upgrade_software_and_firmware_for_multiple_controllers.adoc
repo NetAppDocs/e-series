@@ -1,0 +1,64 @@
+---
+permalink: upgrade-santricity/task_upgrade_software_and_firmware_for_multiple_controllers.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Upgrade software and firmware for multiple controllers
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use SANtricity Unified Manager to upgrade the SANtricity OS software on multiple storage arrays of the same type to a newer version.
+
+== Perform pre-upgrade health check
+
+[.lead]
+A health check runs as part of the upgrade process, but you also can run a health check separately before you begin. The health check assesses components of the storage array to make sure that the upgrade can proceed.
+
+. From the main view, select *Manage*, and then select *Upgrade Center* > *Pre-Upgrade Health Check*.
++
+The Pre-Upgrade Health Check dialog box opens and lists all the discovered storage systems.
+
+== Download software files from support site
+
+[.lead]
+You download the SANtricity OS software package from the NetApp Support Site to your management host system.
+
+* You know whether you want to activate your software upgrade now or later.
++
+You might choose to activate later for these reasons:
+
+ ** *Time of day* -- Activating the software can take a long time, so you might want to wait until I/O loads are lighter. The controllers fail over during activation, so performance might be lower than usual until the upgrade completes.
+ ** *Type of package* -- You might want to test the new OS software on one storage array before you upgrade the files on other storage arrays.
+
+IMPORTANT: Risk of data loss or risk of damage to the storage array - Do not make changes to the storage array while the upgrade is occurring. Maintain power to the storage array.
+
+CAUTION:
+
+If you are upgrading SANtricity OS on a StorageGRID appliance (for example, SG5612 or SG5760), you need to stop I/O activity by placing the appliance into maintenance mode before continuing with this procedure, or data could be lost. For detailed steps, see the installation and maintenance instructions for your StorageGRID appliance.
+
+. If your storage array contains only one controller or a multipath driver is not in use, stop I/O activity to the storage array to prevent application errors. If your storage array has two controllers and you have a multipath driver installed, you do not need to stop I/O activity.
+
+== Transfer software files to the controllers
+
+[.lead]
+You load the SANtricity OS software file and the NVSRAM file into the repository so it is accessible to the Unified Manager Upgrade Center.
+
+IMPORTANT: Risk of data loss or risk of damage to the storage array - Do not make changes to the storage array while the upgrade is occurring. Maintain power to the storage array.
+
+. From the main view, select *Manage*, and then select one or more storage arrays that you want to upgrade.
+
+== Activate staged software files (optional)
+
+[.lead]
+You can choose to activate the software file immediately or wait until a more convenient time. This procedure assumes you chose to activate the software file at a later time.
+
+* *Time of day* -- Activating the software can take a long time, so you might want to wait until I/O loads are lighter. The controllers reboot and fail over during activation so performance might be lower than usual until the upgrade completes.
+* *Type of package* -- You might want to test the new software and firmware on one storage array before upgrading the files on other storage arrays.
+
+IMPORTANT: You cannot stop the activation process after it starts.
+
+. From the main view, select *Manage*. If necessary, click the Status column to sort, at the top of the page, all storage arrays with a status of "OS Upgrade (awaiting activation)."
+
+Your controller software upgrade is complete. You can resume normal operations.

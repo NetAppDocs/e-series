@@ -1,0 +1,158 @@
+---
+permalink: upgrade-controllers/concept_overview_and_requirements.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Overview and requirements
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can upgrade your storage array through the replacement of existing controllers. A controller consists of a board, firmware, and software. It controls the drives and implements the management software functions.
+
+You typically upgrade your storage array want to upgrade all of the controllers to a different model or platform by replacing all of the controllers in a controller-drive tray.
+
+You might also upgrade your storage array in the following situations:
+
+* When all controllers in a controller-drive tray encounter hardware failures and are no longer functional.
+* When you want to upgrade the dual inline memory modules (DIMMs) in your controller-drive tray by replacing both controllers with the same model of controllers, but with different DIMMs.
+
+NOTE: The HIC upgrade scenarios are not covered here. Instead, refer to the HIC add, upgrade and replacement procedures for your E-Series system.
+
+== When to use this procedure
+
+[.lead]
+You typically use this procedure when you want to upgrade all of the controllers to a different model or platform by replacing all of the controllers in a controller-drive tray.
+
+You might also use this procedure in the following situations:
+
+* When all controllers in a controller-drive tray encounter hardware failures and are no longer functional.
+* To upgrade the dual inline memory modules (DIMMs) in your controller-drive tray by replacing both controllers with the same model of controllers, but with different DIMMs.
+
+NOTE: The HIC upgrade scenarios are not covered within this procedure. Instead, refer to the HIC add, upgrade and replacement procedures for your E-Series system.
+
+== Upgrade considerations
+
+[.lead]
+Learn about the considerations you need to keep in mind before you upgrade your controllers.
+
+* *Duplex and simplex controller upgrades*
++
+For duplex controller-drive trays, you replace both controllers. For simplex controller-drive trays, you replace the one controller. In both cases, you must power off the controller-drive tray. As a result, you cannot access data on the storage array until you successfully complete the replacement.
+
+* *Trays and shelves*
++
+Storage arrays with an E2800 or E5700 controller shelf typically use SANtricity System Manager. You might also use the Enterprise Management Window (EMW) from SANtricity Storage Manager to manage E2800 or E5700 controller shelves. All other controller-drive trays referenced in this procedure use SANtricity Storage Manager.
+
+* *Controller batteries*
++
+A new controller is shipped without a battery installed. When possible, you should remove the battery from your old controller and then install that battery in the new controller. However, for some controller upgrades, the battery from the old controller is not compatible with the new controller. In those cases, you must order a battery along with your new controller, and have that battery available before you begin these tasks.
+
+* *Vendor Identification*
++
+Some controller upgrades result in the Vendor ID in SCSI Inquiry Data changing from `LSI` to `NETAPP`. When the Vendor ID changes from `LSI` to `NETAPP`, additional steps are required on the Windows, VMware, and AIX operating systems to reclaim devices. Steps for these operating systems are included in this upgrade procedure.
+
+* *Synchronous Mirroring and Asynchronous Mirroring*
++
+If your storage array participates in Synchronous Mirroring, only iSCSI or Fibre Channel connections are supported between the primary site and the remote site. If the host interface card (HIC) configuration in your new controllers does not include iSCSI or Fibre Channel connections, Synchronous Mirroring will not be supported.
++
+For Asynchronous Mirroring, the local storage array and remote storage array can run different versions of firmware. The minimum firmware version supported is SANtricity firmware version 7.84.
+
+* *Storage object limits*
++
+If you change your controllers from 5x00 models to 2x00 models, your new storage array configuration will support lower numbers of some storage objects (for example, volumes) in the storage management software than your old configuration. You must make sure that your old configuration does not exceed the storage object limits. See http://hwu.netapp.com/home.aspx[Netapp Hardware Universe] for more information.
+
+=== Upgrading to newer models
+
+If you are replacing the controllers to upgrade to a new model, keep in mind that your current storage array might have premium features installed that the new model cannot support. For example, E2700 controllers do not support the legacy Snapshots premium feature.
+
+If you replace E2600 controllers with E2700 controllers, and your storage array was using the legacy Snapshots feature, you must disable that feature and delete or convert all volumes (that is, snapshots, repositories) associated with that feature before you replace the controllers. You can convert legacy Snapshots to the updated Snapshots feature. Before you upgrade a controller-drive tray, you should disable any premium features used on your storage array that are not supported on the new controllers.
+
+== Upgrade compatibility
+
+[.lead]
+Learn about the supported upgrade paths.
+
+=== From E2x00 to E2x00
+
+* *Battery*- Reuse the old battery.
+* *Vendor ID* - Additional steps required.
+* *Feature Support* - Legacy snapshots are not supported on the E2700.
+* *SAS-2 shelves*: E2800 controllers must not be placed into SAS-2 shelves.
+
+=== From E2x00 to E5x00
+
+* *Battery*: Order a new battery.
+* *Vendor ID*: Additional steps are required when upgrading from E2600 to E5500 or E5600, or when upgrading from E2700 to E5400.
+* *Feature Support*: Legacy snapshots are not supported on the E5500 or E5600.
++
+Legacy RVM is not supported on the E5500 or E5600 with iSCSI HICs.
++
+Data Assurance is not supported on the E5500 or E5600 with iSCSI HICs.
++
+E5700 controllers must not be placed into SAS-2 shelves.
+
+* *SAS-3 shelves*: E5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
+
+=== From E5x00 to E2x00
+
+* *Battery*: Order a new battery.
+* *Vendor ID*: Additional steps are required when upgrading from E5500 or E5600 to E2600, or when upgrading from E5400 to E2700.
+* *Feature Support*: Legacy snapshots are not supported on the E2700.
+* *SAS-3 shelves*: E5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
+
+=== From E5x00 to o E5x00
+
+* *Battery*: Reuse the old battery.
+* *Vendor ID*:Additional steps required when upgrading from E5400 to E5500 or E5600.
+* *Feature Support*: Legacy snapshots are not supported on the E5500 or E5600.
++
+Legacy RVM is not supported on the E5400 or E5500 with iSCSI HICs.
++
+Data Assurance is not supported on the E5400 or E5500 with iSCSI HICs.
++
+E5700 controllers must not be placed into SAS-2 shelves.
+
+* *SAS-3 Shelves*: E5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
+
+=== From EF5x0 to EF5x0
+
+* *Battery*: Reuse the old battery.
+* *Vendor ID*: Additional steps required when upgrading from EF540 to EF550 or EF560.
+* *Feature Support*: No Legacy Snapshots for EF550/EF560.
++
+No Data Assurance for EF550/EF560 with iSCSI.
++
+EF570 controllers must not be placed into SAS-3 shelves.
+
+* *SAS-3 Shelves*: EF540, EF550, and EF560 controllers must not be placed into SAS-3 shelves.
+
+=== SAS enclosures
+
+The E5700 supports DE5600 and DE6600 SAS-2 enclosures via head upgrade. When utilizing a E5700 controller in SAS-2 enclosures, support for base host ports is disabled.
+
+|===
+| SAS-2 shelves| SAS-3 shelves
+a|
+SAS-2 shelves include the following models:
+
+* DE1600, DE5600, and DE6600 drive trays
+* E5400, E5500, and E5600 controller-drive trays
+* EF540, EF550 and EF560 flash arrays
+* E2600 and E2700 controller-drive trays
+
+a|
+SAS-3 shelves include the following models:
+
+* E2800 controller shelves
+* E5700 controller shelves
+* DE212C, DE224C, DE460C drive shelves
+
+|===
+
+=== SAS-2 to SAS-3 investment protection
+
+You can reconfigure your SAS-2 system to be used behind a new SAS-3 controller shelf (E57XX/EF570/E28XX).
+
+IMPORTANT: This procedure requires an FPVR. To file an FPVR contact your sales team.

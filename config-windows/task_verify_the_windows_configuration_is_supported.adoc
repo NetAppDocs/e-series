@@ -1,0 +1,14 @@
+---
+permalink: config-windows/task_verify_the_windows_configuration_is_supported.html
+sidebar: sidebar
+keywords: 
+summary: 'To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool \(IMT\) to verify that the entire configuration is supported.'
+---
+= Verify the Windows configuration is supported
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool (IMT) to verify that the entire configuration is supported.
+
+. Go to the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].

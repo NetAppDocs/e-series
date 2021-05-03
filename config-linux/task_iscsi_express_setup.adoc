@@ -1,0 +1,459 @@
+---
+permalink: config-linux/task_iscsi_express_setup.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= iSCSI Express Setup
+:experimental:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+== Verify the Linux configuration is supported
+
+[.lead]
+To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool (IMT) to verify that the entire configuration is supported.
+
+. Go to the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+. Click on the *Solution Search* tile.
+. In the menu:Protocols[SAN Host] area, click the *Add* button next to *E-Series SAN Host*.
+. Click *View Refine Search Criteria*.
++
+The *Refine Search Criteria* section is displayed. In this section you may select the protocol that applies, as well as other criteria for the configuration such as Operating System, NetApp OS, and Host Multipath driver. Select the criteria you know you want for your configuration, and then see what compatible configuration elements apply. As necessary, make the updates for your operating system and protocol that are prescribed in the tool. Detailed information for your chosen configuration is accessible on the View Supported Configurations page by clicking the *right page arrow*.
+
+== Configure IP addresses using DHCP
+
+[.lead]
+In this express method for configuring communications between the management station and the storage array, you use Dynamic Host Configuration Protocol (DHCP) to provide IP addresses. Each storage array has either one controller (simplex) or two controllers (duplex), and each controller has two storage management ports. Each management port will be assigned an IP address.
+
+You have installed and configured a DHCP server on the same subnet as the storage management ports.
+
+The following instructions refer to a storage array with two controllers (a duplex configuration).
+
+. If you have not already done so, connect an Ethernet cable to the management station and to management port 1 on each controller (A and B).
++
+The DHCP server assigns an IP address to port 1 of each controller.
++
+NOTE: Do not use management port 2 on either controller. Port 2 is reserved for use by NetApp technical personnel.
++
+IMPORTANT: If you disconnect and reconnect the Ethernet cable, or if the storage array is power-cycled, DHCP assigns IP addresses again. This process occurs until static IP addresses are configured. It is recommended that your avoid disconnecting the cable or power-cycling the array.
++
+If the storage array cannot get DHCP-assigned IP addresses within 30 seconds, the following default IP addresses are set:
+
+ ** Controller A, port 1: 169.254.128.101
+ ** Controller B, port 1: 169.254.128.102
+ ** Subnet mask: 255.255.0.0
+
+. Locate the MAC address label on the back of each controller, and then provide your network administrator with the MAC address for port 1 of each controller.
++
+Your network administrator needs the MAC addresses to determine the IP address for each controller. You will need the IP addresses to connect to your storage system through your browser.
+
+== Install and configure Host Utilities
+
+[.lead]
+Linux Unified Host Utilities 7.1 includes tools to manage NetApp storage, including failover policies and physical paths.
+
+. Use the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] to determine the appropriate version of Unified Host Utilities 7.1 to install.
++
+The versions are listed in a column within each supported configuration.
+
+== Install SANtricity Storage Manager for SMcli (SANtricity software version 11.53 or earlier)
+
+[.lead]
+When you install the SANtricity Storage Manager software on your management station, the command line interface (CLI) is installed to help you manage your array. By also installing the software on the host, the Host Context Agent is installed that helps the host push configuration information to the storage array controllers through the I/O path.
+
+IMPORTANT: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricty System Manager, refer to the _Download the command line interface (CLI)_ topic under the SANtricity System Manager Online Help.
+
+* You are using SANtricity software 11.53 or earlier.
+* You must have the correct administrator or superuser privileges.
+* You must have ensured that the system that will contain the SANtricity Storage Manager client has the following minimum requirements:
+ ** *RAM*: 2 GB for Java Runtime Engine
+ ** *Disk space*: 5 GB
+ ** *OS/Architecture*: Refer to https://mysupport.netapp.com/site/[NetApp Support]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager* for guidance on determining the supported operating system versions and architectures.
+
+This section describes how to install SANtricity Storage Manager on both the Windows and Linux OS platforms, because both Windows and Linux are common management station platforms when Linux is used for the data host.
+
+. Download the SANtricity software release from https://mysupport.netapp.com/site/[NetApp Support]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager*.
+
+== Access SANtricity System Manager and use the Setup wizard
+
+[.lead]
+You use the Setup wizard in SANtricity System Manager to configure your storage array.
+
+* You have ensured that the device from which you will access SANtricity System Manager contains one of the following browsers:
++
+|===
+| Browser| Minimum version
+a|
+Google Chrome
+a|
+47
+a|
+Microsoft Internet Explorer
+a|
+11
+a|
+Microsoft Edge
+a|
+EdgeHTML 12
+a|
+Mozilla Firefox
+a|
+31
+a|
+Safari
+a|
+9
+|===
+
+* You are using out-of-band management.
+
+If you are an iSCSI user, you closed the Setup wizard while configuring iSCSI.
+
+The wizard automatically relaunches when you open System Manager or refresh your browser and _at least one_ of the following conditions is met:
+
+* No pools and volume groups are detected.
+* No workloads are detected.
+* No notifications are configured.
+
+. From your browser, enter the following URL: `https://<DomainNameOrIPAddress>`
++
+IPAddress is the address for one of the storage array controllers.
++
+The first time SANtricity System Manager is opened on an array that has not been configured, the Set Administrator Password prompt appears. Role-based access management configures four local roles: admin, support, security, and monitor. The latter three roles have random passwords that cannot be guessed. After you set a password for the admin role you can change all of the passwords using the admin credentials. See _SANtricity System Manager online help_ for more information on the four local user roles.
+
+. Enter the System Manager password for the admin role in the Set Administrator Password and Confirm Password fields, and then select the *Set Password* button.
++
+When you open System Manager and no pools, volumes groups, workloads, or notifications have been configured, the Setup wizard launches.
+
+. Use the Setup wizard to perform the following tasks:
+ ** *Verify hardware (controllers and drives)* -- Verify the number of controllers and drives in the storage array. Assign a name to the array.
+ ** *Verify hosts and operating systems* -- Verify the host and operating system types that the storage array can access.
+ ** *Accept pools* -- Accept the recommended pool configuration for the express installation method. A pool is a logical group of drives.
+ ** *Configure alerts* -- Allow System Manager to receive automatic notifications when a problem occurs with the storage array.
+ ** *Enable AutoSupport* -- Automatically monitor the health of your storage array and have dispatches sent to technical support.
+. If you have not already created a volume, create one by going to *Storage* > *Volumes* > *Create* > *Volume*.
++
+For more information, see the online help for SANtricity System Manager.
+
+== Configure the multipath software
+
+[.lead]
+Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. The multipath software presents the operating system with a single virtual device that represents the active physical paths to the storage. The multipath software also manages the failover process that updates the virtual device. You use the device mapper multipath (DM-MP) tool for Linux installations.
+
+You have installed the required packages on your system.
+
+* For Red Hat (RHEL) hosts, verify the packages are installed by running rpm -q device-mapper-multipath.
+* For SLES hosts, verify the packages are installed by running rpm -q multipath-tools.
+
+By default, DM-MP is disabled in RHEL and SLES. Complete the following steps to enable DM-MP components on the host.
+
+If you have not already installed the operating system, use the media supplied by your operating system vendor.
+
+. If a multipath.conf file is not already created, run the # touch /etc/multipath.conf command.
+. Do one of the following to enable the multipathd daemon on boot.
++
+|===
+| If you are using....| Do this...
+a|
+RHEL 7.x and 8.x systems:
+a|
+systemctl enable multipathd
+a|
+SLES 12.x and 15.x systems:
+a|
+systemctl enable multipathd
+|===
+
+. Use the "Create host manually" procedure in the online help to check whether the hosts are defined. Verify that each host type is either *Linux DM-MP (Kernel 3.10 or later)* if you enable the Automatic Load Balancing feature, or *Linux DM-MP (Kernel 3.9 or earlier)* if you disable the Automatic Load Balancing feature. If necessary, change the selected host type to the appropriate setting.
+
+== Setting up the multipath.conf file
+
+[.lead]
+The multipath.conf file is the configuration file for the multipath daemon, multipathd. The multipath.conf file overrides the built-in configuration table for multipathd. Any line in the file whose first non-white-space character is # is considered a comment line. Empty lines are ignored.
+
+NOTE: For SANtricity operating system 8.30 and newer, NetApp recommends using the default settings as provided.
+
+The multipath.conf are available in the following locations:
+
+* For SLES, /usr/share/doc/packages/multipath-tools/multipath.conf.synthetic
+* For RHEL, /usr/share/doc/device-mapper-multipath-0.4.9/multipath.conf
+
+== Configure the switches
+
+[.lead]
+You configure the switches according to the vendor's recommendations for iSCSI. These recommendations might include both configuration directives as well as code updates.
+
+You must ensure the following:
+
+* You have two separate networks for high availability. Make sure that you isolate your iSCSI traffic to separate network segments.
+* You must enable flow control *end to end*.
+* If appropriate, you have enabled jumbo frames.
+
+NOTE: Port channels/LACP is not supported on the controller's switch ports. Host-side LACP is not recommended; multipathing provides the same, and in some cases better, benefits.
+
+== Configure networking
+
+[.lead]
+You can set up your iSCSI network in many ways, depending on your data storage requirements.
+
+Consult your network administrator for tips on selecting the best configuration for your environment.
+
+To configure an iSCSI network with basic redundancy, connect each host port and one port from each controller to separate switches, and partition each set of host ports and controller ports on separate network segments or VLANs.
+
+You must enable send and receive hardware flow control *end to end*. You must disable priority flow control.
+
+If you are using jumbo frames within the IP SAN for performance reasons, make sure to configure the array, switches, and hosts to use jumbo frames. Consult your operating system and switch documentation for information on how to enable jumbo frames on the hosts and on the switches. To enable jumbo frames on the array, complete the steps in _Configuring array-side networking--iSCSI_.
+
+NOTE: Many network switches have to be configured above 9,000 bytes for IP overhead. Consult your switch documentation for more information.
+
+== Configure array-side networking
+
+[.lead]
+You use the SANtricity System Manager GUI to configure iSCSI networking on the array side.
+
+* You must know the IP address or domain name for one of the storage array controllers.
+* You or your system administrator must have set up a password for the System Manager GUI, or you must configured Role-Based Access Control (RBAC) or LDAP and a directory service for the appropriate security access to the storage array. See the _SANtricity System Manager online help_ for more information about Access Management.
+
+This task describes how to access the iSCSI port configuration from the Hardware page. You can also access the configuration from menu:System[Settings > Configure iSCSI ports].
+
+. From your browser, enter the following URL: `https://<DomainNameOrIPAddress>`
++
+IPAddress is the address for one of the storage array controllers.
++
+The first time SANtricity System Manager is opened on an array that has not been configured, the Set Administrator Password prompt appears. Role-based access management configures four local roles: admin, support, security, and monitor. The latter three roles have random passwords that cannot be guessed. After you set a password for the admin role you can change all of the passwords using the admin credentials. See _SANtricity System Manager online help_ for more information on the four local user roles.
+
+. Enter the System Manager password for the admin role in the Set Administrator Password and Confirm Password fields, and then select the *Set Password* button.
++
+When you open System Manager and no pools, volumes groups, workloads, or notifications have been configured, the Setup wizard launches.
+
+. Close the Setup wizard.
++
+You will use the wizard later to complete additional setup tasks.
+
+. Select *Hardware*.
+. If the graphic shows the drives, click *Show back of shelf*.
++
+The graphic changes to show the controllers instead of the drives.
+
+. Click the controller with the iSCSI ports you want to configure.
++
+The controller's context menu appears.
+
+== Configure host-side networking
+
+[.lead]
+You configure iSCSI networking on the host side by setting the number of node sessions per physical path, turning on the appropriate iSCSI services, configuring the network for the iSCSI ports, creating iSCSI face bindings, and establishing the iSCSI sessions between initiators and targets.
+
+In most cases, you can use the inbox software-initiator for iSCSI CNA/NIC. You do not neet to download the latest driver, firmware, and BIOS. Refer to the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] to determine code requirements.
+
+. Check the ``node.session.nr_sessions``variable in the `/etc/iscsi/iscsid.conf` file to see the default number of sessions per physical path. If necessary, change the default number of sessions to one session.
++
+----
+node.session.nr_sessions = 1
+----
+
+. Change the `node.session.timeo.replacement_timeout` variable in the `/etc/iscsi/iscsid.conf` file to `20`, from a default value of `120`.
++
+----
+node.session.timeo.replacement_timeout=20
+----
+
+. Make sure iscsid and (open-)iscsi services are on and enabled for boot.
++
+*Red Hat Enterprise Linux 7 and 8 (RHEL 7 and RHEL 8)*
++
+----
+# systemctl start iscsi
+# systemctl start iscsid
+# systemctl enable iscsi
+# systemctl enable iscsid
+----
++
+*SUSE Linux Enterprise Server 12 and 15 (SLES 12 and SLES 15)*
++
+----
+# systemctl start iscsid.service
+# systemctl enable iscsid.service
+----
++
+Optionally, you set `node.startup = automatic` in `in /etc/iscsi/iscsid.conf` before running any `iscsiadm` commands to have sessions persist after reboot:
+
+. Get the host IQN initiator name, which will be used to configure the host to an array.
++
+----
+# cat /etc/iscsi/initiatorname.iscsi
+----
+
+. Configure the network for iSCSI ports:
++
+NOTE: In addition to the public network port, iSCSI initiators should use two NICs or more on separate private segments or vLANs.
+
+ .. Determine the iSCSI port names using the # ifconfig -a command.
+ .. Set the IP address for the iSCSI initiator ports. The initiator ports should be present on the same subnet as the iSCSI target ports.
++
+----
+# vim /etc/sysconfig/network-scripts/ifcfg-<NIC port>
+Edit:
+BOOTPROTO=none
+ONBOOT=yes
+NM_CONTROLLED=no
+Add:
+IPADDR=192.168.xxx.xxx
+NETMASK=255.255.255.0
+----
++
+NOTE: Be sure to set the address for both iSCSI initiator ports.
+
+ .. Restart network services.
++
+----
+# systemctl restart network
+----
+
+ .. Make sure the Linux server can ping _all_ of the iSCSI target ports.
+
+. Configure the iSCSI interfaces by creating two iSCSI iface bindings.
++
+----
+iscsiadm –m iface –I iface0 –o new
+iscsiadm –m iface –I iface0 –o update –n iface.net_ifacename –v <NIC port1>
+----
++
+----
+iscsiadm –m iface –I iface1 –o new
+iscsiadm –m iface –I iface1 –o update –n iface.net_ifacename –v <NIC port2>
+----
++
+NOTE: To list the interfaces, use iscsiadm --m iface.
+
+. Establish the iSCSI sessions between initiators and targets (four total).
+ .. Discover iSCSI targets. Save the IQN (it will be the same with each discovery) in the worksheet for the next step.
++
+----
+iscsiadm –m discovery –t sendtargets –p 192.168.0.1:3260 –I iface0 –P 1
+----
++
+NOTE: The IQN looks like the following:
++
+----
+iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
+----
+
+ .. Create the connection between the iSCSI initiators and iSCSI targets, using ifaces.
++
+----
+iscsiadm –m node –T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
+–p 192.168.0.1:3260 –I iface0 -l
+----
+
+ .. List the iSCSI sessions established on the host.
++
+----
+# iscsiadm -m session
+----
+
+== Verify IP network connections
+
+[.lead]
+You verify Internet Protocol (IP) network connections by using ping tests to ensure the host and array are able to communicate.
+
+. On the host, run one of the following commands, depending on whether jumbo frames are enabled:
+ ** If jumbo frames are not enabled, run this command:
++
+----
+ping -I <hostIP\> <targetIP\>
+----
+
+ ** If jumbo frames are enabled, run the ping command with a payload size of 8,972 bytes. The IP and ICMP combined headers are 28 bytes, which when added to the payload, equals 9,000 bytes. The -s switch sets the `packet size` bit. The -d switch sets the debug option. These options allow jumbo frames of 9,000 bytes to be successfully transmitted between the iSCSI initiator and the target.
++
+----
+ping -I <hostIP\> -s 8972 -d <targetIP\>
+----
+
++
+In this example, the iSCSI target IP address is `192.0.2.8`.
++
+----
+#ping -I 192.0.2.100 -s 8972 -d 192.0.2.8
+Pinging 192.0.2.8 with 8972 bytes of data:
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Ping statistics for 192.0.2.8:
+  Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+  Minimum = 2ms, Maximum = 2ms, Average = 2ms
+----
+
+== Create partitions and filesystems
+
+[.lead]
+A new LUN has no partition or file system when the Linux host first discovers it. You must format the LUN before it can be used. Optionally, you can create a file system on the LUN.
+
+The host must have discovered the LUN.
+
+In the /dev/mapper folder, you have run the ls command to see the available disks.
+
+You can initialize the disk as a basic disk with a GUID partition table (GPT) or Master boot record (MBR).
+
+Format the LUN with a file system such as ext4. Some applications do not require this step.
+
+. Retrieve the SCSI ID of the mapped disk by issuing the sanlun lun show -p command.
++
+The SCSI ID is a 33-character string of hexadecimal digits, beginning with the number 3. If user-friendly names are enabled, Device Mapper reports disks as mpath instead of by a SCSI ID.
++
+----
+# sanlun lun show -p
+
+                E-Series Array: ictm1619s01c01-SRP(60080e50002908b40000000054efb9d2)
+                   Volume Name:
+               Preferred Owner: Controller in Slot B
+                 Current Owner: Controller in Slot B
+                          Mode: RDAC (Active/Active)
+                       UTM LUN: None
+                           LUN: 116
+                      LUN Size:
+                       Product: E-Series
+                   Host Device: mpathr(360080e50004300ac000007575568851d)
+              Multipath Policy: round-robin 0
+            Multipath Provider: Native
+--------- ---------- ------- ------------ ----------------------------------------------
+host      controller                      controller
+path      path       /dev/   host         target
+state     type       node    adapter      port
+--------- ---------- ------- ------------ ----------------------------------------------
+up        secondary  sdcx    host14       A1
+up        secondary  sdat    host10       A2
+up        secondary  sdbv    host13       B1
+----
+
+== Verify storage access on the host
+
+[.lead]
+Before using the volume, you verify that the host can write data to the volume and read it back.
+
+You must have initialized the volume and formatted it with a file system.
+
+. On the host, copy one or more files to the mount point of the disk.
+
+Remove the file and folder that you copied.
+
+== iSCSI worksheet - Linux
+
+[.lead]
+You can use this worksheet to record iSCSI storage configuration information. You need this information to perform provisioning tasks.
+
+=== Recommended configuration
+
+Recommended configurations consist of two initiator ports and four target ports with one or more VLANs.
+
+image::../media/50001_01.gif[]
+
+=== Recommended configuration
+
+Recommended configurations consist of two initiator ports and four target ports with one or more VLANs.
+
+image::../media/50001_01.gif[]

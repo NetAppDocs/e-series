@@ -1,0 +1,128 @@
+---
+permalink: web-services-proxy/concept_manage_asup.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Manage AutoSupport
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can configure AutoSupport (ASUP), which collects data and then automatically sends that data to technical support for remote troubleshooting and problem analysis.
+
+== Overview of AutoSupport (ASUP)
+
+[.lead]
+The AutoSupport (ASUP) feature automatically transmits messages to NetApp based on manual and schedule-based criteria.
+
+Each AutoSupport message is a collection of log files, configuration data, state data, and performance metrics. By default, AutoSupport transmits the files listed in the following table to the NetApp Support team once each week.
+
+|===
+| File Name| Description
+a|
+`x-headers-data.txt`
+a|
+A `.txt` file containing the X-header information.
+a|
+`manifest.xml`
+a|
+An `.xml` file detailing the contents of the message.
+a|
+`arraydata.xml`
+a|
+An``.xml`` file containing the list of client persisted data.
+a|
+`appserver-config.txt`
+a|
+A `.txt` file containing application server configuration data.
+a|
+`wsconfig.txt`
+a|
+A `.txt` file containing the web service configuration data.
+a|
+`host-info.txt`
+a|
+A `.txt` file containing information about the host environment.
+a|
+`server-logs.7z`
+a|
+A `.7z` file containing every available webserver log file.
+a|
+`client-info.txt`
+a|
+A `.txt` file with arbitrary key/value pairs for application-specific counters such as method and webpage hits.
+a|
+`webservices-profile.json`
+a|
+These files contain Webservices profile data and Jersey monitoring statistical data. By default, Jersey monitoring statistics are enabled. You can enable and disable them in the wsconfig.xml file, as follows:
+
+* Enable:<env key="enable.jersey.statistics">true</env>
+* Disable: <env key="enable.jersey.statistics">false</env>
+
+a|
+`jersey-monitoring-statistics.json`
+|===
+
+== Configure AutoSupport
+
+[.lead]
+AutoSupport is enabled by default at installation; however, you can change that setting or modify the delivery types.
+
+=== Enable or disable AutoSupport
+
+[.lead]
+The AutoSupport feature is enabled or disabled during the initial installation of the Web Services Proxy, but you can change that setting in the ASUPConfig file.
+
+You can enable or disable AutoSupport through the ASUPConfig.xml file, as described in the steps below. Alternatively, you can enable or disable this feature through the API using *Configuration* and *POST/asup*, and then entering "true" or "false."
+
+. Open the ASUPConfig.xml file in the working directory.
+. Locate the lines for <asupdata enabled=`"(Boolean)`" timestamp=`"`">
+. Enter true (enable) or false (disable). For example:
++
+----
+<asupdata enabled=”false” timestamp=”0”>
+----
++
+NOTE: The timestamp entry is superfluous.
+
+. Save the file.
+
+=== Configure AutoSupport delivery method
+
+[.lead]
+You can configure the AutoSupport feature to use HTTPS, HTTP, or SMTP delivery methods. HTTPS is the default delivery method.
+
+. Access the ASUPConfig.xml file in the working directory.
+. In the string, <delivery type=`"n`">, enter 1, 2, or 3 as described in the table:
++
+|===
+| Value| Description
+a|
+1
+a|
+    HTTPS (default)
++
+<delivery type=`"1`">
+a|
+2
+a|
+    HTTP
++
+<delivery type=`"2`">
+a|
+3
+a|
+    SMTP - To properly configure the AutoSupport delivery type to SMTP, you must include the SMTP mail server address, along with the sender and recipient user emails, similar to the following example:
++
+----
+<delivery type=”3”>
+<smtp>
+<mailserver>smtp.example.com</mailserver>
+<sender>user@example.com</sender>
+<replyto>user@example.com</replyto>
+</smtp>
+</delivery>
+----
++
+|===

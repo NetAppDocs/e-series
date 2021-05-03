@@ -1,0 +1,40 @@
+---
+permalink: upgrade-controllers/index.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Upgrading E-Series Controllers
+:icons: font
+:imagesdir: ../media/
+
+* link:concept_overview_and_requirements.md#concept_overview_and_requirements[Overview and requirements]
+ ** link:concept_overview_and_requirements.md#concept_when_to_use_this_procedure[When to use this procedure]
+ ** link:concept_overview_and_requirements.md#concept_upgrade_considerations[Upgrade considerations]
+ ** link:concept_overview_and_requirements.md#concept_controller_upgrade_compatibility[Upgrade compatibility]
+* xref:task_upgrade_e_series_controllers.adoc[Upgrade E-Series controllers]
+ ** xref:task_prepare_to_upgrade_controller.adoc[Prepare to upgrade controllers]
+ ** link:task_remove_controllers_upgrading.md#task_remove_controllers_upgrading[Remove controllers]
+  *** link:task_remove_controllers_upgrading.md#task_step_1_remove_controller[Step 1: Remove controller]
+  *** link:task_remove_controllers_upgrading.md#task_step_2_remove_battery[Step 2: Remove battery]
+ ** link:task_install_controller_upgrading.md#task_install_controller_upgrading[Install new controllers]
+  *** link:task_install_controller_upgrading.md#task_step_1_install_battery[Step 1: Install battery]
+  *** link:task_install_controller_upgrading.md#task_step_2_install_new_controller_canister[Step 2: Install new controller canister]
+ ** link:task_unlock_drives.md#task_unlock_drives[Unlock drives]
+  *** link:task_unlock_drives.md#task_internal_key_management[Internal key management]
+  *** link:task_unlock_drives.md#task_external_key_management[External key management]
+ ** link:task_complete_controller_upgrade.md#task_complete_controller_upgrade[Complete controller upgrade]
+  *** link:task_complete_controller_upgrade.md#task_step_1_power_on_controller[Step 1: Power on controller]
+  *** link:task_complete_controller_upgrade.md#task_step_2_check_controller_status[Step 2: Check status of controllers and trays]
+  *** link:task_complete_controller_upgrade.md#task_step_3_validate_controller_software_version[Step 3: Validate controller software version]
+ ** link:task_remount_volumes_lsi_netapp.md#task_remount_volumes_lsi_netapp[Remount volumes after changing the vendor from LSI to NETAPP]
+  *** link:task_remount_volumes_lsi_netapp.md#task_remount_volumes_on_aix_hosts[Remounting volumes on an AIX host]
+  *** link:task_remount_volumes_lsi_netapp.md#task_remount_volumes_on_a_vmware_host[Remounting volumes on a VMware host]
+  *** link:task_remount_volumes_lsi_netapp.md#task_remount_volumes_on_a_windows_host[Remounting volumes on a Windows host]
+* link:task_reconfiguring_a_sas_2_system.md#task_reconfiguring_a_sas_2_system[Reconfigure a SAS-2 system behind a new SAS-3 controller shelf without data preservation]
+ ** link:task_reconfiguring_a_sas_2_system.md#task_step_1_power_down_the_controllers_non_data_preservation[Step 1: Power down the controllers (non-data preservation)]
+ ** link:task_reconfiguring_a_sas_2_system.md#task_step_2_install_the_controllers_non_data_preservation[Step 2: Install the controllers (non-data preservation)]
+ ** link:task_reconfiguring_a_sas_2_system.md#task_step_3_power_on_the_controllers_non_data_preservation[Step 3: Power on the controllers (non-data preservation)]
+* xref:reference_copyright.adoc[Copyright]
+* xref:reference_trademark.adoc[Trademark]
+* xref:concept_how_to_send_comments_about_documentation_and_receive_update_notifications_netapp_post_preface.adoc[How to send comments about documentation and receive update notifications]
