@@ -28,20 +28,266 @@ entries:
     url: "/config-linux/concept_overview.html"
   - title: Fibre Channel Express Setup
     url: "/config-linux/task_fibre_channel_express_setup.html"
+    entries:
+    - title: Verify the Linux configuration is supported
+      url: "/config-linux/task_verify_the_linux_configuration_is_supported_fc.html"
+    - title: Configure IP addresses using DHCP
+      url: "/config-linux/task_configuring_ip_addresses_using_dhcp_fc.html"
+    - title: Install and configure Linux Unified Host Utilities
+      url: "/config-linux/task_install_and_configure_linux_unified_host_utilities_7_0_fc.html"
+    - title: Install SANtricity Storage Manager for SMcli (SANtricity software version
+        11.53 or earlier)
+      url: "/config-linux/task_install_smcli_11_53_or_earlier_fc.html"
+    - title: Access SANtricity System Manager and use the Setup wizard
+      url: "/config-linux/task_access_santricity_system_manager_and_use_setup_wizard_fc.html"
+    - title: Configure the multipath software
+      url: "/config-linux/task_configure_the_multipath_software_fc.html"
+    - title: Setting up the multipath.conf file
+      url: "/config-linux/concept_setting_up_the_multipath_conf_file_fc.html"
+    - title: Configure the FC switches
+      url: "/config-linux/task_configure_the_fc_switches.html"
+    - title: Determine host WWPNs and make the recommended settings
+      url: "/config-linux/task_determine_host_port_wwpns_fc.html"
+    - title: Create partitions and filesystems
+      url: "/config-linux/task_create_partitions_and_filesystems_fc.html"
+    - title: Verify storage access on the host
+      url: "/config-linux/task_verify_storage_access_on_the_host_fc.html"
+    - title: FC worksheet for Linux
+      url: "/config-linux/concept_worksheet_fc.html"
   - title: SAS Express Setup
     url: "/config-linux/task_sas_express_setup.html"
+    entries:
+    - title: Verify the Linux configuration is supported
+      url: "/config-linux/task_verify_the_linux_configuration_is_supported_sas.html"
+    - title: Configure IP addresses using DHCP
+      url: "/config-linux/task_configuring_ip_addresses_using_dhcp_sas.html"
+    - title: Install and configure Host Utilities
+      url: "/config-linux/task_install_and_configure_host_utilities_sas.html"
+    - title: Install SANtricity Storage Manager for SMcli (SANtricity software version
+        11.53 or earlier)
+      url: "/config-linux/task_install_smcli_11_53_or_earlier_sas.html"
+    - title: Access SANtricity System Manager and use the Setup wizard
+      url: "/config-linux/task_access_santricity_system_manager_and_use_the_setup_wizard_sas.html"
+    - title: Configure the multipath software
+      url: "/config-linux/task_configure_the_multipath_software_sas.html"
+    - title: Setting up the multipath.conf file
+      url: "/config-linux/concept_setting_up_the_multipath_conf_file_sas.html"
+    - title: Determine SAS host identifiers - Linux
+      url: "/config-linux/task_determine_sas_host_identifiers_sas.html"
+    - title: Create partitions and filesystems
+      url: "/config-linux/task_create_partitions_and_filesystems_sas.html"
+    - title: Verify storage access on the host
+      url: "/config-linux/task_verify_storage_access_on_the_host_sas.html"
+    - title: SAS worksheet - Linux
+      url: "/config-linux/concept_worksheet_sas.html"
   - title: iSCSI Express Setup
     url: "/config-linux/task_iscsi_express_setup.html"
+    entries:
+    - title: Verify the Linux configuration is supported
+      url: "/config-linux/task_verify_the_linux_configuration_is_supported_iscsi.html"
+    - title: Configure IP addresses using DHCP
+      url: "/config-linux/task_configuring_ip_addresses_using_dhcp_iscsi.html"
+    - title: Install and configure Host Utilities
+      url: "/config-linux/task_install_and_configure_host_utilities_iscsi.html"
+    - title: Install SANtricity Storage Manager for SMcli (SANtricity software version
+        11.53 or earlier)
+      url: "/config-linux/task_install_smcli_11_53_or_earlier_iscsi.html"
+    - title: Access SANtricity System Manager and use the Setup wizard
+      url: "/config-linux/task_access_santricity_system_manager_and_use_the_setup_wizard_iscsi.html"
+    - title: Configure the multipath software
+      url: "/config-linux/task_configure_the_multipath_software_iscsi.html"
+    - title: Setting up the multipath.conf file
+      url: "/config-linux/concept_setting_up_the_multipath_conf_file_iscsi.html"
+    - title: Configure the switches
+      url: "/config-linux/concept_configure_switches_iscsi.html"
+    - title: Configure networking
+      url: "/config-linux/concept_configure_networking_iscsi.html"
+    - title: Configure array-side networking
+      url: "/config-linux/task_configure_array_side_networking_iscsi.html"
+    - title: Configure host-side networking
+      url: "/config-linux/task_configure_host_side_networking_iscsi.html"
+    - title: Verify IP network connections
+      url: "/config-linux/task_verify_ip_network_connections_iscsi.html"
+    - title: Create partitions and filesystems
+      url: "/config-linux/task_create_partitions_and_filesystems_iscsi.html"
+    - title: Verify storage access on the host
+      url: "/config-linux/task_verify_storage_access_on_the_host_iscsi.html"
+    - title: iSCSI worksheet - Linux
+      url: "/config-linux/concept_worksheet_iscsi.html"
   - title: iSER over InfiniBand Express Setup
     url: "/config-linux/task_iser_over_infiniband_express_setup.html"
+    entries:
+    - title: Verify the Linux configuration is supported
+      url: "/config-linux/task_verify_the_linux_configuration_is_supported_iser_ib.html"
+    - title: Configure IP addresses using DHCP
+      url: "/config-linux/task_configuring_ip_addresses_using_dhcp_iser_ib.html"
+    - title: Configure subnet manager
+      url: "/config-linux/task_configure_subnet_manager_iser_ib.html"
+    - title: Install and configure Host Utilities
+      url: "/config-linux/task_install_and_configure_host_utilities_iser_ib.html"
+    - title: Install SANtricity Storage Manager for SMcli (SANtricity software version
+        11.53 or earlier)
+      url: "/config-linux/task_install_smcli_11_53_or_earlier_iser_ib.html"
+    - title: Access SANtricity System Manager and use the Setup wizard
+      url: "/config-linux/task_access_santricity_system_manager_and_use_the_setup_wizard_iser_ib.html"
+    - title: Configure the multipath software
+      url: "/config-linux/task_configure_the_multipath_software_iser_ib.html"
+    - title: Setting up the multipath.conf file
+      url: "/config-linux/concept_setting_up_the_multipath_conf_file_iser_ib.html"
+    - title: Configure network connections&#8212;&#8203;iSER over Infiniband
+      url: "/config-linux/task_configure_network_connections_iser_over_infiniband.html"
+    - title: Configure networking for storage attached hosts&#8212;&#8203;iSER over
+        Infiniband
+      url: "/config-linux/task_configure_networking_for_storage_attached_hosts_iser_over_infiniband.html"
+    - title: Create partitions and filesystems
+      url: "/config-linux/task_create_partitions_and_filesystems_iser_ib.html"
+    - title: Verify storage access on the host
+      url: "/config-linux/task_verify_storage_access_on_the_host_iser_ib.html"
+    - title: iSER over InfiniBand worksheet
+      url: "/config-linux/concept_worksheet_iser_over_infiniband_iser_ib.html"
   - title: SRP over InfiniBand Express Setup
     url: "/config-linux/task_srp_over_infiniband_express_setup.html"
+    entries:
+    - title: Verify the Linux configuration is supported
+      url: "/config-linux/task_verify_the_linux_configuration_is_supported_srp_ib.html"
+    - title: Configure IP addresses using DHCP
+      url: "/config-linux/task_configuring_ip_addresses_using_dhcp_srp_ib.html"
+    - title: Configure subnet manager
+      url: "/config-linux/task_configure_subnet_manager_srp_ib.html"
+    - title: Install and configure Host Utilities
+      url: "/config-linux/task_install_and_configure_host_utilities_srp_ib.html"
+    - title: Install SANtricity Storage Manager for SMcli (SANtricity software version
+        11.53 or earlier)
+      url: "/config-linux/task_install_smcli_11_53_or_earlier_srp_ib.html"
+    - title: Access SANtricity System Manager and use the Setup wizard
+      url: "/config-linux/task_access_santricity_system_manager_and_using_setup_wizard_srp_ib.html"
+    - title: Configure the multipath software
+      url: "/config-linux/task_configure_the_multipath_software_srp_ib.html"
+    - title: Setting up the multipath.conf file
+      url: "/config-linux/concept_setting_up_the_multipath_conf_file_srp_ib.html"
+    - title: Determining host port GUIDs and making the recommended settings&#8212;&#8203;SRP
+        over Infiniband
+      url: "/config-linux/task_determine_host_port_guids_srp_over_infiniband_srp_ib.html"
+    - title: Configure network connections&#8212;&#8203;SRP over Infiniband
+      url: "/config-linux/task_configure_network_connections_srp_over_infiniband.html"
+    - title: Create partitions and filesystems
+      url: "/config-linux/task_create_partitions_and_filesystems_srp_ib.html"
+    - title: Verify storage access on the host
+      url: "/config-linux/task_verify_storage_access_on_the_host_srp_ib.html"
+    - title: SRP over Infiniband worksheet
+      url: "/config-linux/concept_worksheet_srp_over_infiniband.html"
   - title: NVMe over InfiniBand Express Setup
     url: "/config-linux/task_nvme_over_infiniband_express_setup.html"
+    entries:
+    - title: Verify the Linux configuration is supported
+      url: "/config-linux/task_verify_the_linux_configuration_is_supported_nvme_ib.html"
+    - title: Configure IP addresses using DHCP
+      url: "/config-linux/task_configure_ip_addresses_using_dhcp_nvme_ib.html"
+    - title: Install SANtricity Storage Manager for SMcli (SANtricity software version
+        11.53 or earlier)
+      url: "/config-linux/task_install_smcli_11_53_or_earlier_nvme_ib.html"
+    - title: Access SANtricity System Manager and use the Setup wizard
+      url: "/config-linux/task_access_santricity_system_manager_and_use_the_setup_wizard_nvme_ib.html"
+    - title: Configure subnet manager
+      url: "/config-linux/task_configure_subnet_manager_nvme_ib.html"
+    - title: Set up NVMe over InfiniBand on the host side
+      url: "/config-linux/task_set_up_nvme_over_infiniband_on_the_host_side_nvme_ib.html"
+    - title: Configure storage array NVMe over InfiniBand connections
+      url: "/config-linux/task_configure_storage_array_nvme_over_infiniband_connections_nvme_ib.html"
+    - title: Discover and connect to the storage from the host
+      url: "/config-linux/task_discover_and_connect_to_the_storage_from_the_host_nvme_ib.html"
+    - title: Define a host
+      url: "/config-linux/task_define_a_host_nvme_ib.html"
+    - title: Assign a volume
+      url: "/config-linux/task_assign_a_volume_nvme_ib.html"
+    - title: Display the volumes visible to the host
+      url: "/config-linux/task_display_the_devices_visible_to_the_host_nvme_ib.html"
+    - title: Set up failover
+      url: "/config-linux/task_set_up_failover_nvme_ib.html"
+    - title: Access NVMe volumes for virtual device targets
+      url: "/config-linux/concept_access_nvme_volumes_for_virtual_device_targets_nvme_ib.html"
+    - title: Access NVMe volumes for physical NVMe device targets
+      url: "/config-linux/concept_access_nvme_volumes_for_physical_nvme_device_targets_nvme_ib.html"
+    - title: Create filesystems (RHEL 7 and SLES 12)
+      url: "/config-linux/task_create_filesystems_sles_12_nvme_ib.html"
+    - title: Create filesystems (SLES 15)
+      url: "/config-linux/task_create_filesystems_sles_15_nvme_ib.html"
+    - title: Verify storage access on the host
+      url: "/config-linux/task_verify_storage_access_on_the_host_nvme_ib.html"
+    - title: NVMe over InfiniBand worksheet
+      url: "/config-linux/concept_nvme_over_infiniband_worksheet_nvme_ib.html"
   - title: NVMe over RoCE Express Setup
     url: "/config-linux/task_nvme_over_roce_express_setup.html"
+    entries:
+    - title: Verify the Linux configuration is supported
+      url: "/config-linux/task_verify_the_linux_configuration_is_supported_nvme_roce.html"
+    - title: Configuring IP addresses using DHCP
+      url: "/config-linux/task_configuring_ip_addresses_using_dhcp_nvme_roce.html"
+    - title: Install SANtricity Storage Manager for SMcli (SANtricity software version
+        11.53 or earlier)
+      url: "/config-linux/task_install_smcli_11_53_or_earlier_nvme_roce.html"
+    - title: Access SANtricity System Manager and use Setup wizard
+      url: "/config-linux/task_access_santricity_system_manager_and_use_setup_wizard_nvme_roce.html"
+    - title: Configure the switch
+      url: "/config-linux/task_configure_the_switch_nvme_roce.html"
+    - title: Set up NVMe over RoCE on the host side
+      url: "/config-linux/task_set_up_nvme_over_roce_on_the_host_side.html"
+    - title: Configure storage array NVMe over RoCE connections
+      url: "/config-linux/task_configure_storage_array_nvme_over_roce_connections.html"
+    - title: Discover and connect to the storage from the host
+      url: "/config-linux/task_discover_and_connect_to_the_storage_from_the_host_nvme_roce.html"
+    - title: Define a host
+      url: "/config-linux/task_define_a_host_nvme_roce.html"
+    - title: Assign a volume
+      url: "/config-linux/task_assign_a_volume_nvme_roce.html"
+    - title: Display the volumes visible to the host
+      url: "/config-linux/task_display_the_volumes_visible_to_the_host_nvme_roce.html"
+    - title: Set up failover on the host
+      url: "/config-linux/task_set_up_failover_on_the_host_nvme_roce.html"
+    - title: Access NVMe volumes for virtual device targets
+      url: "/config-linux/concept_access_nvme_volumes_for_virtual_device_targets_nvme_roce.html"
+    - title: Accessing NVMe volumes for physical NVMe device targets
+      url: "/config-linux/concept_access_nvme_volumes_for_physical_nvme_device_targets_nvme_roce.html"
+    - title: Create filesystems (RHEL 7 and SLES 12)
+      url: "/config-linux/task_create_filesystems_sles_12_nvme_roce.html"
+    - title: Create filesystems (SLES 15)
+      url: "/config-linux/task_create_filesystems_sles_15_nvme_roce.html"
+    - title: Verify storage access on the host
+      url: "/config-linux/task_verify_storage_access_on_the_host_nvme_roce.html"
+    - title: NVMe over RoCE worksheet for Linux
+      url: "/config-linux/concept_nvme_over_roce_worksheet_for_linux.html"
   - title: NVMe over Fibre Channel Express Setup
     url: "/config-linux/task_nvme_over_fibre_channel_express_setup.html"
+    entries:
+    - title: Configuring IP addresses using DHCP
+      url: "/config-linux/task_configuring_ip_addresses_using_dhcp_nvme_fc.html"
+    - title: Install SANtricity Storage Manager for SMcli (SANtricity software version
+        11.53 or earlier)
+      url: "/config-linux/task_install_smcli_11_53_or_earlier_nvme_fc.html"
+    - title: Access SANtricity System Manager and use Setup wizard
+      url: "/config-linux/task_access_santricity_system_manager_and_use_setup_wizard_nvme_fc.html"
+    - title: Configure the FC switches
+      url: "/config-linux/task_configure_the_fc_switches_nvme_fc.html"
+    - title: Set up NVMe over Fibre Channel on the host side
+      url: "/config-linux/task_set_up_nvme_over_fibre_channel_on_the_host_side.html"
+    - title: Define a host
+      url: "/config-linux/task_define_a_host_nvme_fc.html"
+    - title: Assign a volume
+      url: "/config-linux/task_assign_a_volume_nvme_fc.html"
+    - title: Display the volumes visible to the host
+      url: "/config-linux/task_display_the_volumes_visible_to_the_host_nvme_fc.html"
+    - title: Set up failover on the host
+      url: "/config-linux/task_set_up_failover_on_the_host_nvme_fc.html"
+    - title: Access NVMe volumes for virtual device targets
+      url: "/config-linux/concept_access_nvme_volumes_for_virtual_device_targets_nvme_fc.html"
+    - title: Access NVMe volumes for physical NVMe device targets
+      url: "/config-linux/concept_access_nvme_volumes_for_physical_nvme_device_targets_nvme_fc.html"
+    - title: Create partitions and filesystems
+      url: "/config-linux/task_create_partitions_and_filesystems_nvme_fc.html"
+    - title: Verify storage access on the host
+      url: "/config-linux/task_verify_storage_access_on_the_host_nvme_fc.html"
+    - title: NVMe over Fibre Channel worksheet for Linux
+      url: "/config-linux/concept_nvme_over_fibre_channel_worksheet_for_linux.html"
   - title: Where to find additional information - Linux
     url: "/config-linux/reference_where_to_find_additional_information_linux.html"
 - title: config-vmware
@@ -111,6 +357,17 @@ entries:
     url: "/getting-started/concept_doc_what_s_included.html"
   - title: Learn about E-Series systems
     url: "/getting-started/concept_doc_learn_about_e_series_systems.html"
+    entries:
+    - title: E-Series terminology
+      url: "/getting-started/concept_doc_e_series_terminology.html"
+    - title: E-Series hardware overview
+      url: "/getting-started/concept_doc_hardware_overview.html"
+    - title: E-Series shelf types
+      url: "/getting-started/concept_doc_shelf_types.html"
+    - title: SANtricity software overview
+      url: "/getting-started/concept_doc_santricity_software_overview.html"
+    - title: E-Series videos
+      url: "/getting-started/concept_doc_e_series_videos.html"
   - title: Get up and running with E-Series
     url: "/getting-started/concept_doc_get_up_and_running_with_e_series.html"
 - title: install-hw-cabinet
@@ -148,9 +405,27 @@ entries:
     url: "/install-hw-e2800-e5700/concept_overview.html"
   - title: Installation and Setup Instructions for E2860, E5760 and DE460C
     url: "/install-hw-e2800-e5700/task_install_and_setup_60_drive.html"
+    entries:
+    - title: Prepare for installation
+      url: "/install-hw-e2800-e5700/task_prepare_for_installation_60_drive.html"
+    - title: Install the hardware
+      url: "/install-hw-e2800-e5700/task_install_the_hardware_60_drive.html"
+    - title: Cable the shelves
+      url: "/install-hw-e2800-e5700/task_connect_the_cables_60_drive.html"
+    - title: Complete storage system setup and configuration
+      url: "/install-hw-e2800-e5700/task_complete_storage_system_setup_and_configuration_60_drive.html"
   - title: Installation and Setup Instructions for E5724, EF570, EF280, E2812, E2824,
       DE212C, and DE224C
     url: "/install-hw-e2800-e5700/task_install_and_setup_12_24_drive.html"
+    entries:
+    - title: Prepare for installation
+      url: "/install-hw-e2800-e5700/task_prepare_for_installation_12_24_drive.html"
+    - title: Install the hardware
+      url: "/install-hw-e2800-e5700/task_install_the_hardware_12_24_drive.html"
+    - title: Connect the cables
+      url: "/install-hw-e2800-e5700/task_connect_the_cables_12_24_drive.html"
+    - title: Complete storage system setup and configuration
+      url: "/install-hw-e2800-e5700/task_complete_storage_system_setup_and_configuration_12_24_drive.html"
 - title: install-hw-ef600
   url: "/install-hw-ef600/index.html"
   entries:

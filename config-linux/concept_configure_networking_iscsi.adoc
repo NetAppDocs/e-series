@@ -1,0 +1,22 @@
+---
+permalink: config-linux/concept_configure_networking_iscsi.html
+sidebar: sidebar
+keywords: 
+summary: 'You can set up your iSCSI network in many ways, depending on your data storage requirements.'
+---
+= Configure networking
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can set up your iSCSI network in many ways, depending on your data storage requirements.
+
+Consult your network administrator for tips on selecting the best configuration for your environment.
+
+To configure an iSCSI network with basic redundancy, connect each host port and one port from each controller to separate switches, and partition each set of host ports and controller ports on separate network segments or VLANs.
+
+You must enable send and receive hardware flow control *end to end*. You must disable priority flow control.
+
+If you are using jumbo frames within the IP SAN for performance reasons, make sure to configure the array, switches, and hosts to use jumbo frames. Consult your operating system and switch documentation for information on how to enable jumbo frames on the hosts and on the switches. To enable jumbo frames on the array, complete the steps in _Configuring array-side networking--iSCSI_.
+
+NOTE: Many network switches have to be configured above 9,000 bytes for IP overhead. Consult your switch documentation for more information.

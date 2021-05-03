@@ -1,0 +1,58 @@
+---
+permalink: config-linux/task_set_up_failover_on_the_host_nvme_roce.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Set up failover on the host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. There are currently two methods of multipathing available for NVMe, and which you will be using is going to be dependent on which OS version you are running. For SLES 12, device mapper multipath (DMMP) will be used. For RHEL 7 and SLES 15, a native NVMe multipathing solution will be used.
+
+== Configure the host to run failover
+
+[.lead]
+The SUSE Linux Enterprise Server host requires configuration changes to run failover. The failover solution uses DM-MP.
+
+* You have installed the required packages on your system.
+* For Red Hat (RHEL) hosts, verify the packages are installed by running `rpm -q device-mapper-multipath`
+* For SLES hosts, verify the packages are installed by running `rpm -q multipath-tools`
++
+NOTE: Refer to the NetApp Interoperability Matrix Tool (IMT) to ensure any required updates are installed as multipathing may not work correctly with the GA versions of SLES or RHEL.
+
+By default, DM-MP is disabled in RHWL and SLES. Complete the following steps to enable DM-MP components on the host.
+
+. Add the NVMe E-Series device entry to the devices section of the `/etc/multipath.conf` file, as shown in the following example:
++
+----
+
+devices {
+        device {
+                vendor "NVME"
+                product "NetApp E-Series*"
+                path_grouping_policy group_by_prio
+                failback immediate
+                no_path_retry 30
+        }
+}
+----
+
+. Configure `multipathd` to start at system boot.
++
+----
+# systemctl enable multipathd
+----
+
+. Start `multipathd` if it is not currently running.
++
+----
+# systemctl start multipathd
+----
+
+. Verify the status of `multipathd` to make sure it is active and running:
++
+----
+# systemctl status multipathd
+----

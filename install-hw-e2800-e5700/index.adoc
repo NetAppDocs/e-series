@@ -9,8 +9,16 @@ summary: ''
 :imagesdir: ../media/
 
 * link:concept_overview.md#concept_overview[Overview]
-* link:task_install_and_setup_60_drive.md#task_install_and_setup_60_drive[Installation and Setup Instructions (Supertask) (E2860, E5760 and DE460C)]
-* link:task_install_and_setup_12_24_drive.md#task_install_and_setup_12_24_drive[Installation and Setup Instructions for E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C]
+* xref:task_install_and_setup_60_drive.adoc[Installation and Setup Instructions (Supertask) (E2860, E5760 and DE460C)]
+ ** xref:task_prepare_for_installation_60_drive.adoc[Prepare for Installation (E5724, EF570, EF280...)]
+ ** xref:task_install_the_hardware_60_drive.adoc[Install the hardware (E5724, EF570, EF280...)]
+ ** xref:task_connect_the_cables_60_drive.adoc[Power the controller shelves (E2860, E5760, and DE460C)]
+ ** link:task_complete_storage_system_setup_and_configuration_60_drive.md#task_complete_storage_system_setup_and_configuration_60_drive[Complete storage system setup and configuration (E2860, E5760, and DE460C)]
+* xref:task_install_and_setup_12_24_drive.adoc[Installation and Setup Instructions for E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C]
+ ** xref:task_prepare_for_installation_12_24_drive.adoc[Prepare for installation]
+ ** xref:task_install_the_hardware_12_24_drive.adoc[Install the hardware]
+ ** xref:task_connect_the_cables_12_24_drive.adoc[Connect the cables]
+ ** link:task_complete_storage_system_setup_and_configuration_12_24_drive.md#task_complete_storage_system_setup_and_configuration_12_24_drive[Complete storage system setup and configuration]
 * xref:reference_copyright_and_trademark.adoc[Copyright and trademark]
  ** xref:reference_copyright.adoc[Copyright]
  ** xref:reference_trademark.adoc[Trademark]

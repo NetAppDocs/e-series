@@ -1,0 +1,34 @@
+---
+permalink: config-linux/task_configuring_ip_addresses_using_dhcp_iscsi.html
+sidebar: sidebar
+keywords: 
+summary: 'In this express method for configuring communications between the management station and the storage array, you use Dynamic Host Configuration Protocol \(DHCP\) to provide IP addresses. Each storage array has either one controller \(simplex\) or two controllers \(duplex\), and each controller has two storage management ports. Each management port will be assigned an IP address.'
+---
+= Configure IP addresses using DHCP
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+In this express method for configuring communications between the management station and the storage array, you use Dynamic Host Configuration Protocol (DHCP) to provide IP addresses. Each storage array has either one controller (simplex) or two controllers (duplex), and each controller has two storage management ports. Each management port will be assigned an IP address.
+
+You have installed and configured a DHCP server on the same subnet as the storage management ports.
+
+The following instructions refer to a storage array with two controllers (a duplex configuration).
+
+. If you have not already done so, connect an Ethernet cable to the management station and to management port 1 on each controller (A and B).
++
+The DHCP server assigns an IP address to port 1 of each controller.
++
+NOTE: Do not use management port 2 on either controller. Port 2 is reserved for use by NetApp technical personnel.
++
+IMPORTANT: If you disconnect and reconnect the Ethernet cable, or if the storage array is power-cycled, DHCP assigns IP addresses again. This process occurs until static IP addresses are configured. It is recommended that your avoid disconnecting the cable or power-cycling the array.
++
+If the storage array cannot get DHCP-assigned IP addresses within 30 seconds, the following default IP addresses are set:
+
+ ** Controller A, port 1: 169.254.128.101
+ ** Controller B, port 1: 169.254.128.102
+ ** Subnet mask: 255.255.0.0
+
+. Locate the MAC address label on the back of each controller, and then provide your network administrator with the MAC address for port 1 of each controller.
++
+Your network administrator needs the MAC addresses to determine the IP address for each controller. You will need the IP addresses to connect to your storage system through your browser.

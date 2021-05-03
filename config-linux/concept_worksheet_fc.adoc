@@ -1,0 +1,95 @@
+---
+permalink: config-linux/concept_worksheet_fc.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use this worksheet to record FC storage configuration information. You need this information to perform provisioning tasks.'
+---
+= FC worksheet for Linux
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use this worksheet to record FC storage configuration information. You need this information to perform provisioning tasks.
+
+The illustration shows a host connected to an E-Series storage array in two zones. One zone is indicated by the blue line; the other zone is indicated by the red line. Any single port has two paths to the storage (one to each controller).
+
+image::../media/port_identifiers_host_and_target.gif[]
+
+== Host identifiers
+
+|===
+| Callout No.| Host (initiator) port connections| WWPN
+a|
+1
+a|
+Host
+a|
+_not applicable_
+a|
+2
+a|
+Host port 0 to FC switch zone 0
+a|
+ 
+a|
+7
+a|
+Host port 1 to FC switch zone 1
+a|
+ 
+|===
+
+== Target identifiers
+
+|===
+| Callout No.| Array controller (target) port connections| WWPN
+a|
+3
+a|
+Switch
+a|
+_not applicable_
+a|
+6
+a|
+Array controller (target)
+a|
+_not applicable_
+a|
+5
+a|
+Controller A, port 1 to FC switch 1
+a|
+ 
+a|
+9
+a|
+Controller A, port 2 to FC switch 2
+a|
+ 
+a|
+4
+a|
+Controller B, port 1 to FC switch 1
+a|
+ 
+a|
+8
+a|
+Controller B, port 2 to FC switch 2
+a|
+ 
+|===
+
+== Mapping host
+
+|===
+a|
+Mapping host name
+a|
+ 
+a|
+Host OS type
+a|
+ 
+|===

@@ -1,0 +1,78 @@
+---
+permalink: config-linux/task_create_partitions_and_filesystems_iser_ib.html
+sidebar: sidebar
+keywords: 
+summary: 'A new LUN has no partition or file system when the Linux host first discovers it. You must format the LUN before it can be used. Optionally, you can create a file system on the LUN.'
+---
+= Create partitions and filesystems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+A new LUN has no partition or file system when the Linux host first discovers it. You must format the LUN before it can be used. Optionally, you can create a file system on the LUN.
+
+The host must have discovered the LUN.
+
+In the /dev/mapper folder, you have run the ls command to see the available disks.
+
+You can initialize the disk as a basic disk with a GUID partition table (GPT) or Master boot record (MBR).
+
+Format the LUN with a file system such as ext4. Some applications do not require this step.
+
+. Retrieve the SCSI ID of the mapped disk by issuing the sanlun lun show -p command.
++
+The SCSI ID is a 33-character string of hexadecimal digits, beginning with the number 3. If user-friendly names are enabled, Device Mapper reports disks as mpath instead of by a SCSI ID.
++
+----
+# sanlun lun show -p
+
+                E-Series Array: ictm1619s01c01-SRP(60080e50002908b40000000054efb9d2)
+                   Volume Name:
+               Preferred Owner: Controller in Slot B
+                 Current Owner: Controller in Slot B
+                          Mode: RDAC (Active/Active)
+                       UTM LUN: None
+                           LUN: 116
+                      LUN Size:
+                       Product: E-Series
+                   Host Device: mpathr(360080e50004300ac000007575568851d)
+              Multipath Policy: round-robin 0
+            Multipath Provider: Native
+--------- ---------- ------- ------------ ----------------------------------------------
+host      controller                      controller
+path      path       /dev/   host         target
+state     type       node    adapter      port
+--------- ---------- ------- ------------ ----------------------------------------------
+up        secondary  sdcx    host14       A1
+up        secondary  sdat    host10       A2
+up        secondary  sdbv    host13       B1
+----
+
+. Create a new partition according to the method appropriate for your Linux OS release.
++
+Typically, characters identifying the partition of a disk are appended to the SCSI ID (the number 1 or p3 for instance).
++
+----
+# parted -a optimal -s -- /dev/mapper/360080e5000321bb8000092b1535f887a mklabel
+gpt mkpart primary ext4 0% 100%
+----
+
+. Create a file system on the partition.
++
+The method for creating a file system varies depending on the file system chosen.
++
+----
+# mkfs.ext4 /dev/mapper/360080e5000321bb8000092b1535f887a1
+----
+
+. Create a folder to mount the new partition.
++
+----
+# mkdir /mnt/ext4
+----
+
+. Mount the partition.
++
+----
+# mount /dev/mapper/360080e5000321bb8000092b1535f887a1 /mnt/ext4
+----

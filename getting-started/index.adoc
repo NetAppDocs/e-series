@@ -9,7 +9,12 @@ summary: ''
 :imagesdir: ../media/
 
 * xref:concept_doc_what_s_included.adoc[What's included]
-* link:concept_doc_learn_about_e_series_systems.md#concept_doc_learn_about_e_series_systems[Learn about E-Series systems]
+* xref:concept_doc_learn_about_e_series_systems.adoc[Learn about E-Series systems]
+ ** xref:concept_doc_e_series_terminology.adoc[E-Series terminology]
+ ** xref:concept_doc_hardware_overview.adoc[E-Series hardware overview]
+ ** xref:concept_doc_shelf_types.adoc[E-Series shelf types]
+ ** xref:concept_doc_santricity_software_overview.adoc[SANtricity software overview]
+ ** link:concept_doc_e_series_videos.md#concept_doc_e_series_videos[E-Series videos]
 * xref:concept_doc_get_up_and_running_with_e_series.adoc[Get up and running with E-Series]
 * xref:reference_copyright.adoc[Copyright]
 * xref:reference_trademark.adoc[Trademark]

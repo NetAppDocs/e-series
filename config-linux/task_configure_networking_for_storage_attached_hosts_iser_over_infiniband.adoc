@@ -1,0 +1,132 @@
+---
+permalink: config-linux/task_configure_networking_for_storage_attached_hosts_iser_over_infiniband.html
+sidebar: sidebar
+keywords: 
+summary: 'The InfiniBand OFED driver stack supports running both iSER and SRP simultaneously on the same ports, so no additional hardware is required.'
+---
+= Configure networking for storage attached hosts--iSER over Infiniband
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The InfiniBand OFED driver stack supports running both iSER and SRP simultaneously on the same ports, so no additional hardware is required.
+
+A NetApp recommended OFED is installed on the system. For more information, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+
+. Enable and start iSCSI services on the host(s):
++
+*Red Hat Enterprise Linux 7 and 8 (RHEL 7 and RHEL 8)*
++
+----
+
+# systemctl start iscsi
+# systemctl start iscsid
+# systemctl enable iscsi
+# systemctl enable iscsid
+----
++
+*SUSE Linux Enterprise Server 12 and 15 (SLES 12 and SLES 15)*
++
+----
+
+# systemctl start iscsid.service
+# systemctl enable iscsid.service
+----
+
+. Configure IPoIB network interfaces:
+ .. Identify the InfiniBand ports that will be used. Document the HW Address (MAC address) of each port.
+ .. Configure persistent names for the InfiniBand network interface devices.
+ .. Configure the IP address and network information for the IPoIB interfaces identified.
++
+The specific interface configuration required might vary depending on the operating system used. Consult your vendor's operating system documentation for specific information on implementation.
+
+ .. Start the IB network interfaces by restarting the networking service or by manually restarting each interface. For example:
++
+----
+systemctl restart network
+----
+
+ .. Verify connectivity to the target ports. From the host, ping the IP addresses you configured when you configured network connections.
+. Restart services to load the iSER module.
+. Edit the iSCSI settings in /etc/iscsi/iscsid.conf.
++
+----
+node.startup = automatic replacement_timeout = 20
+----
+
+. Create iSCSI session configurations:
+ .. Create iface configuration files for each InfiniBand interface.
++
+NOTE: The directory location for the iSCSI iface files is operating system dependent. This example is for using Red Hat Enterprise Linux:
++
+----
+iscsiadm -m iface -I iser > /var/lib/iscsi/ifaces/iface-ib0
+iscsiadm -m iface -I iser > /var/lib/iscsi/ifaces/iface-ib1
+----
+
+ .. Edit each iface file to set the interface name and initiator IQN. Set the following parameters appropriately for each iface file:
++
+|===
+| Option| Value
+a|
+iface.net_ifacename
+a|
+The interface device name (ex. ib0).
+a|
+iface.initiatorname
+a|
+The host initiator IQN documented in the worksheet.
+|===
+
+ .. Create iSCSI sessions to the target.
++
+The preferred method to create the sessions is to use the SendTargets discovery method. However, this method does not work on some operating system releases.
++
+NOTE: Use *Method 2* for RHEL 6.x or SLES 11.3 or later.
+
+ ** *Method 1 - SendTargets discovery:* Use the SendTargets discovery mechanism to one of the target portal IP addresses. This will create sessions for each of the target portals.
++
+----
+iscsiadm -m discovery -t st -p 192.168.130.101 -I iser
+----
+
+ ** *Method 2 - Manual creation:* For each target portal IP address, create a session using the appropriate host interface iface configuration. In this example, interface ib0 is on subnet A and interface ib1 is on subnet B. For these variables, substitute the appropriate value from the worksheet:
+  *** <Target IQN> = storage array Target IQN
+  *** <Target Port IP> = IP address configured on the specified target port
+
++
+----
+# Controller A Port 1
+iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
+# Controller B Port 1
+iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
+# Controller A Port 2
+iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
+# Controller B Port 2
+iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
+----
+. Log in to iSCSI sessions.
++
+For each session, run the iscsiadm command to log in to the session.
++
+----
+# Controller A Port 1
+iscsiadm -m node -target <Target IQN\> -I iface -ib0 -p <Target Port IP\> -l
+# Controller B Port 1
+iscsiadm -m node -target <Target IQN\> -I iface -ib0 -p <Target Port IP\> -l
+# Controller A Port 2
+iscsiadm -m node -target <Target IQN\> -I iface -ib1 -p <Target Port IP\> -l
+# Controller B Port 2
+iscsiadm -m node -target <Target IQN\> -I iface -ib1 -p <Target Port IP\> -l
+----
+
+. Verify the iSER/iSCSI sessions.
+ .. Check the iscsi session status from the host:
++
+----
+iscsiadm -m session
+----
+
+ .. Check the iscsi session status from the array. From SANtricity System Manager, navigate to the *Storage Array* > *iSER* > *View/End Sessions*.
+
+When the OFED/RDMA service starts, the iSER kernel module(s) loads by default when the iSCSI services are running. To complete the iSER connection setup, the iSER module(s) should be loaded. Currently this requires a host reboot.

@@ -1,0 +1,58 @@
+---
+permalink: config-linux/task_verify_the_linux_configuration_is_supported_nvme_roce.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Verify the Linux configuration is supported
+:experimental:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool (IMT) to verify that the entire configuration is supported.
+
+. Go to the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+. Click on the *Solution Search* tile.
+. In the menu:Protocols[SAN Host] area, click the *Add* button next to *E-Series SAN Host*.
+. Click *View Refine Search Criteria*.
++
+The *Refine Search Criteria* section is displayed. In this section you may select the protocol that applies, as well as other criteria for the configuration such as Operating System, NetApp OS, and Host Multipath driver. Select the criteria you know you want for your configuration, and then see what compatible configuration elements apply. As necessary, make the updates for your operating system and protocol that are prescribed in the tool. Detailed information for your chosen configuration is accessible on the View Supported Configurations page by clicking the *right page arrow*.
+
+== NVMe over RoCE restrictions
+
+[.lead]
+Before using NVMe over RoCE, review the controller, host, and recovery restrictions.
+
+=== Verify your configuration
+
+Verify your configuration, using the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+
+=== About the hardware
+
+NVME over RoCE can be configured for the EF300 (100GB controllers only), EF600, EF570, and E5700 controllers. The controllers must have 100GB or 200GB host port.
+
+=== Restrictions
+
+The following restrictions are in effect for the 11.60 release. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for a complete list of requirements.
+
+=== Controller restrictions
+
+* This protocol can be used only for EF300, EF600, EF570, and E5700 controllers. A minimum of 32 GB of physical memory is required to use the protocol on EF600, EF570, and E5700 controllers. For the EF300, a minimum of 16 GB of physical memory is required. If the minimum memory requirements for the controllers are not met during start of day operations, a message is displayed that helps you diagnose the problem.
+* No simplex (single-controller) configurations are supported.
+* The only supported host interface card (HIC) is the 100G or 200G EDR HIC, which also supports NVMe over InfiniBand, iSER and SRP.
+* There is no support for mixed NVMe over RoCE with NVMe over InfiniBand or SCSI host interfaces.
+
+=== Switch restrictions
+
+IMPORTANT: *RISK OF DATA LOSS.* You must enable Priority Flow Control or Global Pause Control on the switch to eliminate the risk of data loss in an NVMe over RoCE environment.
+
+=== Host, host protocol, and host operating system restrictions
+
+* See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for a complete list of requirements.
+* For a list of supported host channel adapters see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] .
+
+=== Storage and disaster recovery restrictions
+
+* Asynchronous and synchronous mirroring are not supported.
+* Thin provisioning (the creation of thin volumes) is not supported.

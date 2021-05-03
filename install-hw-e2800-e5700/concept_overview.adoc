@@ -28,9 +28,9 @@ image:../media/drw_onlineguide_icon.gif[]
 a|
 The setup instructions described on the following pages.You must choose the correct setup instructions for your new storage system.
 
-link:task_install_and_setup_60_drive.md#[Installation and Setup Instructions for E2860, E5760 and DE460C]
+xref:task_install_and_setup_60_drive.adoc[Installation and Setup Instructions for E2860, E5760 and DE460C]
 
-link:task_install_and_setup_12_24_drive.md#[Installation and Setup Instructions for E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C]
+xref:task_install_and_setup_12_24_drive.adoc[Installation and Setup Instructions for E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C]
 
 |===
 

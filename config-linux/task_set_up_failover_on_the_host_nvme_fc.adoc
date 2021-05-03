@@ -1,0 +1,56 @@
+---
+permalink: config-linux/task_set_up_failover_on_the_host_nvme_fc.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Set up failover on the host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. The multipath software presents the operating system with a single virtual device that represents the active physical paths to the storage. The multipath software also manages the failover process that updates the virtual device. You use the device mapper multipath (DM-MP) tool for Linux installations.
+
+== Configuring the host to run failover
+
+[.lead]
+The SUSE Linux Enterprise Server host requires configuration changes to run failover. The failover solution uses DM-MP.
+
+* You have installed the required packages on your system.
+* For Red Hat (RHEL) hosts, verify the packages are installed by running `rpm -q device-mapper-multipath`
+* For SLES hosts, verify the packages are installed by running `rpm -q multipath-tools`
+
+By default, DM-MP is disabled in RHEL and SLES. Complete the following steps to enable DM-MP components on the host.
+
+. Add the NVMe E-Series device entry to the devices section of the `/etc/multipath.conf` file, as shown in the following example:
++
+----
+
+devices {
+        device {
+                vendor "NVME"
+                product "NetApp E-Series*"
+                path_grouping_policy group_by_prio
+                failback immediate
+                no_path_retry 30
+        }
+}
+----
+
+. Configure `multipathd` to start at system boot.
++
+----
+# systemctl enable multipathd
+----
+
+. Start `multipathd` if it is not currently running.
++
+----
+# systemctl start multipathd
+----
+
+. Verify the status of `multipathd` to make sure it is active and running:
++
+----
+# systemctl status multipathd
+----
