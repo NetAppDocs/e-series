@@ -1,0 +1,225 @@
+---
+permalink: getting-started/learn_hardware_concept.html
+sidebar: sidebar
+keywords: 
+summary: 'E-Series storage arrays are available in several configurations and models.'
+---
+= E-Series hardware overview
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+E-Series storage arrays are available in several configurations and models.
+
+A storage array includes shelves, controllers, drives, software, and firmware. The array can be installed in a rack or cabinet, with customizable hardware for one or two controllers, in a 12-, 24-, or 60-drive shelf. You can connect the storage array to a SAN from multiple interface types and to a variety of host operating systems.
+
+E-Series arrays are available in the following models:
+
+* E2800 series -- entry-level hybrid
+* EF280 series -- entry-level all flash
+* EF300 series -- entry-level all flash, all NVMe
+* E5700 series -- midrange hybrid
+* EF570 series -- midrange all flash
+* EF600 series -- midrange all flash, all NVMe
+
+== E2800 models
+
+|===
+a|
+*Rack sizes:*
+
+a|
+
+* 2U12 (2 rack units; 12 drives)
+* 2U24 (2 rack units; 24 drives)
++
+image::../media/e2800_2u_front.gif[]
+
+* 4U60 (4 rack units; 60 drives)
++
+image::../media/e2860_front.gif[]
+
+a|
+*Drives:*
+
+a|
+Supports the following drive types:
+
+* 3.5" NL-SAS (up to 180)
+* 2.5" SAS SSD (up to 120)
+* 2.5" SAS HDD (up to 180)
+
+a|
+*Interfaces:*
+
+a|
+Available with the following interfaces:
+
+* 12Gb SAS
+* 10Gb or 25Gb iSCSI
+* 16Gb or 32Gb Fibre Channel
+
+|===
+
+== EF280 models
+
+|===
+a|
+*Rack sizes:*
+
+a|
+2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif[]
+
+a|
+*Drives:*
+
+a|
+Supports up to 96 SSD 2.5" drives
+a|
+*Interfaces:*
+
+a|
+Available with the following interfaces:
+
+* 12Gb SAS
+* 10Gb or 25Gb iSCSI
+* 16Gb or 32Gb Fibre Channel
+
+|===
+
+== EF300 models
+
+|===
+a|
+*Rack sizes:*
+
+a|
+2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif[]
+
+a|
+*Drives and HICs:*
+
+a|
+Supports up to 24 NVMe SSDs, with a single host interface card (HIC) per controller.
+a|
+*Interfaces:*
+
+a|
+Available with the following interfaces:
+
+* 25Gb iSCSI
+* 32Gb NVMe / Fibre Channel
+* 32Gb SCSI / Fibre Channel
+* 100Gb iSER / IB
+* 100Gb SRP / IB
+* 100Gb NVMe / IB
+* 100Gb NVMe / RoCE
+
+|===
+
+== E5700 models
+
+|===
+a|
+*Rack sizes:*
+
+a|
+
+* 2U24 (2 rack units; 24 drives)
++
+image::../media/e2800_2u_front.gif[]
+
+* 4U60 (4 rack units; 60 drives)
++
+image::../media/e2860_front.gif[]
+
+a|
+*Drives:*
+
+a|
+Supports up to 480 of the following drive types:
+
+* 3.5" NL-SAS drives
+* 2.5" SAS SSD drives
+* 2.5" SAS HDD drives
+
+a|
+*Interfaces:*
+
+a|
+Available with the following interfaces:
+
+* 12Gb SAS
+* 10Gb or 25Gb iSCSI
+* 16Gb or 32Gb Fibre Channel
+* 32Gb NVMe / Fibre Channel
+* 100Gb iSER / IB
+* 100Gb SRP / IB
+* 100Gb NVMe / IB
+* 100Gb NVMe / RoCE
+
+|===
+
+== EF570 models
+
+|===
+a|
+*Rack sizes:*
+
+a|
+2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif[]
+
+a|
+*Drives:*
+
+a|
+Supports up to 120 SSD 2.5" drives
+a|
+*Interfaces:*
+
+a|
+Available with the following interfaces:
+
+* 12Gb SAS
+* 10Gb or 25Gb iSCSI
+* 16Gb or 32Gb Fibre Channel
+* 32Gb NVMe / Fibre Channel
+* 100Gb iSER / IB
+* 100Gb SRP / IB
+* 100Gb NVMe / IB
+* 100Gb NVMe / RoCE
+
+|===
+
+== EF600 models
+
+|===
+a|
+*Rack sizes:*
+
+a|
+2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif[]
+
+a|
+*Drives and HICs*
+
+a|
+Supports up to 24 NVMe SSDs, with two host interface cards (HICs) per controller.
+a|
+*Interfaces:*
+
+a|
+Available with the following interfaces:
+
+* 25Gb iSCSI
+* 32Gb NVMe / Fibre Channel
+* 32Gb SCSI / Fibre Channel
+* 100Gb iSER / IB
+* 100Gb SRP / IB
+* 100Gb NVMe / IB
+* 100Gb NVMe / RoCE
+* 200Gb iSER / IB
+* 200Gb NVMe / IB
+* 200Gb NVMe / RoCE
+
+|===

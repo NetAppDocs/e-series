@@ -1,0 +1,150 @@
+---
+permalink: cloud-connector/backup_intro_concept.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Backups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can access the Backups option in the left navigation panel of the SANtricity Cloud Connector application.. The Backups option displays the Backups page, which allows you to create new image-based or file-based backup jobs.
+
+Use the `Backups` page of the SANtricity Cloud Connector application to create and process backups of E-Series volumes. You can create image-based or file-based backups and then perform those operations immediately or at a later time. In addition, you can chose to perform full backups or incremental backups based on the last performed full backup. A maximum of six incremental backups can be performed based on the last full backup performed through the SANtricity Cloud Connector application.
+
+NOTE: All timestamps for backup and restore jobs listed under the SANtricity Cloud Connector application use local time.
+
+== Create a new image-based backup
+
+[.lead]
+You can create new image-based backups through the `Create` function on the `Backups` page of the SANtricity Cloud Connector application.
+
+* You have storage arrays from the Web Services Proxy registered to the SANtricity Cloud Connector.
+
+. In the `Backups` page, click *Create*.
++
+The `Create Backup` window is displayed.
+
+. Select *Create an image-based backup*.
+. Click *Next*.
++
+A list of available E-Series Volumes is displayed in the `Create Backup` window.
+
+. Select the desired E-Series volume and click *Next*.
++
+The `Name the backup and provide a description` page of `Create Backup` confirmation window is displayed.
+
+. To modify the auto-generated backup name, enter the desired name in the `Job Name` field.
+. If needed, add a description for the backup in the `Job Description` field.
++
+NOTE: You should enter a job description that allows you to easily identify the contents of the backup.
+
+. Click *Next*.
++
+A summary of the selected image-based backup is displayed under the `Review backup information` page of the `Create Backup` window.
+
+. Review the selected backup and click *Finish*.
++
+The confirmation page of the `Create Backup` window is displayed.
+
+. Select one of the following options:
+ ** *YES* - Initiates a full backup for the selected backup.
+ ** *NO* - A full backup for the selected image-based backup is not performed.
++
+NOTE: A full backup for the selected image-based backup can be performed at a later time through the `Run` function on the `Backups` page.
+. Click *OK*.
++
+The backup for the selected E-Series volume is initiated, and the status for the task is displayed under the result list section of the `Backups` page.
+
+== Create a new folder/file-based backup
+
+[.lead]
+You can create new folder/file-based backups through the `Create` function on the `Backups` page of the SANtricity Cloud Connector application.
+
+* You have storage arrays from the Web Services Proxy registered to the SANtricity Cloud Connector.
+
+A file-based backup unconditionally backs up all files on the filesystem you specify. However, you can perform a selective restore of files and folders.
+
+. In the `Backups`, click *Create*.
++
+The `Create Backup` window is displayed.
+
+. Select *Create a folder/file-based backup*.
+. Click *Next*.
++
+A list of volumes containing file systems available for backup is displayed in the `Create Backup` window.
+
+. Select the desired volume and click *Next*.
++
+A list of available filesystems on the selected volume is displayed in the `Create Backup` window.
++
+NOTE: If your filesystem does not appear, verify your filesystem type is supported by the SANtricity Cloud Connector application. For more information, refer to link:learn_intro_concept.md#[Supported file systems].
+
+. Select the desired filesystem containing the folder or files to backup, and click *Next*.
++
+The `Name the backup and provide a description` page of `Create Backup` confirmation window is displayed.
+
+. To modify the auto-generated backup name, enter the desired name in the `Job Name` field.
+. If needed, add a description for the backup in the `Job Description` field.
++
+NOTE: You should enter a job description that allows you to easily identify the contents of the backup.
+
+. Click *Next*.
++
+A summary of the selected folder/file-based backup is displayed under the `Review backup information` page of the `Create Backup` window.
+
+. Review the selected folder/file-based backup and click *Finish*.
++
+The confirmation page of the `Create Backup` window is displayed.
+
+. Select one of the following options:
+ ** *YES* - Initiates a full backup for the selected backup.
+ ** *NO* - A full backup for the selected backup is not performed.
++
+NOTE: A full backup for the selected file-based backup can also be performed at a later time through the `Run` function on the Backups page.
+. Click *Close.*
++
+The backup for the selected E-Series volume is initiated, and the status for the task is displayed under the result list section of the `Backup` page.
+
+== Run Full and Incremental Backups
+
+[.lead]
+You can perform full and incremental backups through the Run function on the `Backups` page. Incremental backups are only available for file-based backups.
+
+* You have created a backup job through the SANtricity Cloud Connector.
+
+. In the `Backups` tab, select the desired backup job and click *Run*.
++
+NOTE: A full backup is performed automatically whenever an image-based backup job or a backup job without a previously performed initial backup is selected.
++
+The `Run Backup` window is displayed.
+
+. Select one of the following options:
+ ** `Full` - Backs up all data for the selected file-based backup.
+ ** `Incremental` - Backs up changes made only since the last performed backup.
++
+NOTE: A maximum number of six incremental backups can be performed based on the last full backup performed through the SANtricity Cloud Connector application.
+. Click *Run*.
++
+The backup request is initiated.
+
+== Delete a backup job
+
+[.lead]
+You can use the Delete function to delete a selected backup item from the result list section of the `Backups` page.
+
+* You have a backup with a status of `Completed`, `Failed`, or `Canceled`.
+
+The Delete function deletes backed up data at the specified target location for the selected backup along with backup set.
+
+. In the `Backups` page, select the desired backup and click *Delete*.
++
+NOTE: If a full base backup is selected for deletion, all associated incremental backups are also deleted.
++
+The `Confirm Delete` window is displayed.
+
+. In the Type delete field, type `DELETE` to confirm the delete action.
+. Click *Delete*.
++
+The selected backup is deleted.

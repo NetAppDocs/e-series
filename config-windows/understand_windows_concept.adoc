@@ -1,0 +1,14 @@
+---
+permalink: config-windows/understand_windows_concept.html
+sidebar: sidebar
+keywords: 
+summary: 'This workflow guides you through the express method for configuring your storage array and SANtricity System Manager to make storage available to a host.'
+---
+= Understand the workflow
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+This workflow guides you through the express method for configuring your storage array and SANtricity System Manager to make storage available to a host.
+
+image::../media/1130_flw_sys_mgr_windows_express_guide_all_protocols.png[]

@@ -1,0 +1,21 @@
+---
+permalink: cloud-connector/index.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= SANtricity® Cloud Connector
+:icons: font
+:imagesdir: ../media/
+
+* link:learn_intro_concept.md#learn_intro_concept[Learn about Cloud Connector]
+* link:install_intro_concept.md#install_intro_concept[Install SANtricity Cloud Connector]
+* link:config_intro_concept.md#config_intro_concept[Configure the SANtricity Cloud Connector for the first time]
+* xref:login_task.adoc[Log into the SANtricity Cloud Connector]
+* link:backup_intro_concept.md#backup_intro_concept[Backups]
+* link:restore_intro_concept.md#restore_intro_concept[Restores]
+* link:modify_intro_concept.md#modify_intro_concept[Modify the SANtricity Cloud Connectors Settings]
+* link:uninstall_intro_concept.md#uninstall_intro_concept[Uninstall the SANtricity Cloud Connector]
+* xref:reference_copyright.adoc[Copyright]
+* xref:reference_trademark.adoc[Trademark]
+* xref:concept_how_to_send_comments_about_documentation_and_receive_update_notifications_netapp_post_preface.adoc[How to send comments about documentation and receive update notifications]

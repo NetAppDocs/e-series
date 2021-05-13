@@ -1,0 +1,189 @@
+---
+permalink: config-linux/nvme_ib_setup_host_side_task.html
+sidebar: sidebar
+keywords: 
+summary: 'Configuring an NVMe initiator in an InfiniBand environment includes installing and configuring the infiniband, nvme-cli, and rdma packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.'
+---
+= Set up NVMe over InfiniBand on the host side
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Configuring an NVMe initiator in an InfiniBand environment includes installing and configuring the infiniband, nvme-cli, and rdma packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
+
+* You are running the latest compatible RHEL 7, SUSE Linux Enterprise Server 12 and 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for a complete list of the latest requirements.
+
+. Install the rdma, nvme-cli, and infiniband packages:
++
+----
+
+# zypper install infiniband-diags
+# zypper install rdma-core
+# zypper install nvme-cli
+----
++
+*RHEL 7*
++
+----
+
+# yum install infiniband-diags
+# yum install rdma-core
+# yum install nvme-cli
+----
+
+. Enable ipoib. Edit the `/etc/rdma/rdma.conf` file and modify the entry for loading ipoib:
++
+----
+IPOIB_LOAD=yes
+----
+
+. Check that both ib port links are up and the State = Active:
++
+----
+ # ibstat
+----
++
+----
+CA 'mlx4_0'
+        CA type: MT4099
+        Number of ports: 2
+        Firmware version: 2.40.7000
+        Hardware version: 1
+        Node GUID: 0x0002c90300317850
+        System image GUID: 0x0002c90300317853
+        Port 1:
+                State: Active
+                Physical state: LinkUp
+                Rate: 40
+                Base lid: 4
+                LMC: 0
+                SM lid: 4
+                Capability mask: 0x0259486a
+                Port GUID: 0x0002c90300317851
+                Link layer: InfiniBand
+        Port 2:
+                State: Active
+                Physical state: LinkUp
+                Rate: 56
+                Base lid: 5
+                LMC: 0
+                SM lid: 4
+                Capability mask: 0x0259486a
+                Port GUID: 0x0002c90300317852
+                Link layer: InfiniBand
+----
+
+. Set up IPv4 IP addresses on the ib ports.
++
+For SUSE Linux Enterprise Server 12 and 15, create the file /etc/sysconfig/network/ifcfg-ib0
++
+----
+
+  BOOTPROTO='static'
+  BROADCAST=
+  ETHTOOL_OPTIONS=
+  IPADDR='10.10.10.100/24'
+  IPOIB_MODE='connected'
+  MTU='65520'
+  NAME=
+  NETWORK=
+  REMOTE_IPADDR=
+  STARTMODE='auto'
+----
++
+Then, create the file /etc/sysconfig/network/ifcfg-ib1.
++
+----
+
+  BOOTPROTO='static'
+  BROADCAST=
+  ETHTOOL_OPTIONS=
+  IPADDR='11.11.11.100/24'
+  IPOIB_MODE='connected'
+  MTU='65520'
+  NAME=
+  NETWORK=
+  REMOTE_IPADDR=
+  STARTMODE='auto'
+----
++
+For RHEL, create the file /etc/sysconfig/network-scripts/ifcfg-ib0:
++
+----
+
+  CONNECTED_MODE=no
+  TYPE=InfiniBand
+  PROXY_METHOD=none
+  BROWSER_ONLY=no
+  BOOTPROTO=static
+  IPADDR='10.10.10.100/24'
+  DEFROUTE=no
+  IPV4=FAILURE_FATAL=yes
+  IPV6INIT=no
+  NAME=ib0
+  ONBOOT=yes
+----
++
+Then, create the file /etc/sysconfig/network-scripts/ifcfg-ib1:.
++
+----
+
+  CONNECTED_MODE=no
+  TYPE=InfiniBand
+  PROXY_METHOD=none
+  BROWSER_ONLY=no
+  BOOTPROTO=static
+  IPADDR='11.11.11.100/24'
+  DEFROUTE=no
+  IPV4=FAILURE_FATAL=yes
+  IPV6INIT=no
+  NAME=ib1
+  ONBOOT=yes
+----
+
+. Enable the `ib` interface:
++
+----
+
+# ifup ib0
+# ifup ib1
+----
+
+. Verify the IP addresses you will use to connect to the array. Run this command for both `ib0` and `ib1`:
++
+----
+
+# ip addr show ib0
+# ip addr show ib1
+----
++
+As shown in the example below, the IP address for `ib0` is `10.10.10.255`.
++
+----
+10: ib0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 65520 qdisc pfifo_fast state UP group default qlen 256
+    link/infiniband 80:00:02:08:fe:80:00:00:00:00:00:00:00:02:c9:03:00:31:78:51 brd 00:ff:ff:ff:ff:12:40:1b:ff:ff:00:00:00:00:00:00:ff:ff:ff:ff
+    inet 10.10.10.255 brd 10.10.10.255 scope global ib0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::202:c903:31:7851/64 scope link
+       valid_lft forever preferred_lft forever
+----
++
+As shown in the example below, the IP address for `ib1` is `11.11.11.255`.
++
+----
+10: ib1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 65520 qdisc pfifo_fast state UP group default qlen 256
+    link/infiniband 80:00:02:08:fe:80:00:00:00:00:00:00:00:02:c9:03:00:31:78:51 brd 00:ff:ff:ff:ff:12:40:1b:ff:ff:00:00:00:00:00:00:ff:ff:ff:ff
+    inet 11.11.11.255 brd 11.11.11.255 scope global ib0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::202:c903:31:7851/64 scope link
+       valid_lft forever preferred_lft forever
+----
+
+. Set up the NVMe-oF layer on the host.
+ .. Create the following files under /etc/modules-load.d/ to load the `nvme-rdma` kernel module and make sure the kernel module will always be on, even after a reboot:
++
+----
+
+# cat /etc/modules-load.d/nvme-rdma.conf
+  nvme-rdma
+----

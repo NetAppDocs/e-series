@@ -1,0 +1,69 @@
+---
+permalink: upgrade-controllers/install_controllers_task.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Install new controllers
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After you have removed the old controllers, you can install new controllers in the controller-drive tray.
+
+If you are upgrading controllers in a duplex controller-drive tray, repeat all steps to install the second controller canister.
+
+== Step 1: Install battery
+
+[.lead]
+You install the battery that you removed from the original controller canister or a new battery that you ordered.
+
+* You have the battery from the original controller canister or a new battery that you ordered.
+* You have the new controller canister.
+
+Perform the following steps for each controller in the controller-drive tray.
+
+. Unpack the new controller canister, and set it on a flat, static-free surface so that the removable cover faces up.
+. Press down on the cover button, and slide the cover off.
+. Orient the controller canister so that the slot for the battery faces toward you.
+. Depending on your controller model, do one of the following:
+ ** For E2600 or E2700 controller models:
+  ... Insert the battery circuit board by sliding it towards the front of the new controller canister.
+  ... Tighten the thumbscrew to secure the battery circuit board in the new controller canister card.
+  ... Reinstall the top cover on the new controller canister by sliding it forward until the top latch covers click.
++
+When the latch clicks into place, the bottom of the latch hooks into a metal slot on the chassis.
+ ** For other controller models:
+  ... Insert the battery into the new controller canister.
++
+Slide the battery into the canister, making sure it stays below the rivets on the wall of the new canister.
+
+  ... Keeping the locking handle at a 45 degree angle, align the connectors at the bottom of the battery with the connectors on the canister.
+  ... Push the battery down until you hear it click, and move the locking handle up to secure the controller battery to the controller canister.
++
+IMPORTANT: To make sure that the controller battery is seated correctly in an E5XX controller-drive tray, you might need to slide it out and insert it again. It is secure when you hear it click into place, and when the locking handle does not move out of its upright position when you wiggle it.
+
+  ... Reinstall the top cover on the new controller canister by sliding it forward until the top latch covers click.
++
+When the latch clicks into place, the bottom of the latch hooks into a metal slot on the chassis.
+. Turn the controller canister over to confirm that the battery is installed correctly.
+
+Go to link:install_controllers_task.md#[Step 2: Install new controller canister].
+
+== Step 2: Install new controller canister
+
+[.lead]
+You install the new controller canister into the controller shelf.
+
+. Slide the new controller canister all the way into the controller-drive tray. Rotate the release levers towards the center of the controller canister to lock it into place.
+. If your new controller canister has a Fibre Channel HIC or an InfiniBand HIC, install the SFP+ transceivers (Fibre Channel) or QSFP+ transceiver (InfiniBand) into the controller canister.
++
+Depending on the HICs involved in your upgrade, you might be able to reuse SFP+ transceiver or QSFP+ transceivers that you removed from your old controller canister.
+
+. Reconnect all of the cables between the controller-drive tray and the drive trays.
++
+If the drive cabling configuration is the same as it was with your old controllers, use the labels that you attached to the cables to reconnect the cables correctly.
++
+NOTE: If you are upgrading to E2700 controllers from an earlier model, the drive cabling configuration might be different from the configuration used for the old controllers.
+
+Go to link:complete_upgrade_controllers_task.md#[Complete controller upgrade].

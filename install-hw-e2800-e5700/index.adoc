@@ -1,0 +1,24 @@
+---
+permalink: install-hw-e2800-e5700/index.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Installation and Setup Instructions
+:icons: font
+:imagesdir: ../media/
+
+* link:install_setup_overview_concept.md#install_setup_overview_concept[Overview]
+* xref:e2860_e5760_install_setup_task.adoc[Installation and Setup Instructions (Supertask) (E2860, E5760 and DE460C)]
+ ** xref:e2860_e5760_prepare_task.adoc[Prepare for Installation (E5724, EF570, EF280...)]
+ ** xref:e2860_e5760_install_hardware_task.adoc[Install the hardware (E5724, EF570, EF280...)]
+ ** xref:e2860_e5760_connect_cables_task.adoc[Power the controller shelves (E2860, E5760, and DE460C)]
+ ** link:e2860_e5760_complete_setup_task.md#e2860_e5760_complete_setup_task[Complete storage system setup and configuration (E2860, E5760, and DE460C)]
+* xref:e2824_e5724_install_setup_task.adoc[Installation and Setup Instructions for E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C]
+ ** xref:e2824_e5724_prepare_task.adoc[Prepare for installation]
+ ** xref:e2824_e5724_install_hardware_task.adoc[Install the hardware]
+ ** xref:e2824_e5724_connect_cables_task.adoc[Connect the cables]
+ ** link:e2824_e5724_complete_setup_task.md#e2824_e5724_complete_setup_task[Complete storage system setup and configuration]
+* xref:reference_copyright_and_trademark.adoc[Copyright and trademark]
+ ** xref:reference_copyright.adoc[Copyright]
+ ** xref:reference_trademark.adoc[Trademark]

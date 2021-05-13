@@ -1,0 +1,138 @@
+---
+permalink: config-linux/overview_concept.html
+sidebar: sidebar
+keywords: 
+summary: 'The express method for installing your storage array and accessing SANtricity System Manager is appropriate for setting up a standalone Linux host to an E-Series storage system. It is designed to get the storage system up and running as quickly as possible with minimal decision points.'
+---
+= Overview
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The express method for installing your storage array and accessing SANtricity System Manager is appropriate for setting up a standalone Linux host to an E-Series storage system. It is designed to get the storage system up and running as quickly as possible with minimal decision points.
+
+NOTE: The configuration that the express method provides might not meet the needs of your production environment. For additional options for installing and configuring the storage system, see the _SANtricity Power Guide_ for your operating system on the https://mysupport.netapp.com/info/web/ECMP1658252.html[E-Series and SANtricity Document Resources] page.
+
+The express method includes the following steps:
+
+. Setting up one of the following communication environments:
+ ** Fibre Channel (FC)
+ ** iSCSI
+ ** SAS
+ ** iSER over Infiniband
+ ** SRP over Infiniband
+ ** NVMe over Infiniband
+ ** NVMe over RoCE
+ ** NVMe over Fibre Channel
+. Creating logical volumes on the storage array.
+. Making the volumes available to the data host.
+
+This guide is based on the following assumptions:
+
+|===
+| Component| Assumptions
+a|
+Hardware
+a|
+
+* You have used the Installation and Setup Instructions included with the controller shelves to install the hardware.
+* You have connected cables between the optional drive shelves and the controllers.
+* You have applied power to the storage system.
+* You have installed all other hardware (for example, management station, switches) and made the necessary connections.
+* If you are using NVMe over Infiniband, NVMe over RoCE, or NVMe over Fibre Channel, each EF300, EF600, EF570, or E5700 controller contains at least 32 GB of RAM.
+
+a|
+Host
+a|
+
+* You have made a connection between the storage system and the data host.
+* You have installed the host operating system.
+* You are not using Linux as a virtualized guest.
+* You are not configuring the data (I/O attached) host to boot from SAN.
+* You have installed any OS updates as listed under the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+
+a|
+Storage management station
+a|
+
+* You are using a 1 Gbps or faster management network.
+* You are using a separate station for management rather than the data (I/O attached) host.
+* You are using out-of-band management, in which a storage management station sends commands to the storage system through the Ethernet connections to the controller.
+* You have attached the management station to the same subnet as the storage management ports.
+
+a|
+IP addressing
+a|
+
+* You have installed and configured a DHCP server.
+* You have *not* yet made an Ethernet connection between the management station and the storage system.
+
+a|
+Storage provisioning
+a|
+
+* You will not use shared volumes.
+* You will create pools rather than volume groups.
+
+a|
+Protocol: FC
+a|
+
+* You have made all host-side FC connections and activated switch zoning.
+* You are using NetApp-supported FC HBAs and switches.
+* You are using FC HBA driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+
+a|
+Protocol: iSCSI
+a|
+
+* You are using Ethernet switches capable of transporting iSCSI traffic.
+* You have configured the Ethernet switches according to the vendor's recommendation for iSCSI.
+
+a|
+Protocol: SAS
+a|
+
+* You are using NetApp-supported SAS HBAs.
+* You are using SAS HBA driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+
+a|
+Protocol: iSER over InfiniBand
+a|
+
+* You are using an InfiniBand fabric.
+* You are using IB-iSER HBA driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+
+a|
+Protocol: SRP over InfiniBand
+a|
+
+* You are using an InfiniBand fabric.
+* You are using IB-SRP driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+
+a|
+Protocol: NVMe over InfiniBand
+a|
+
+* You have received the 100G or 200G host interface cards in an EF300, EF600, EF570, or E5700 storage system pre-configured with the NVMe over InfiniBand protocol or the controllers were ordered with standard IB ports and need to be converted to NVMe-oF ports.
+* You are using an InfiniBand fabric.
+* You are using NVMe/IB driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+
+a|
+Protocol: NVMe over RoCE
+a|
+
+* You have received the 100G or 200G host interface cards in an EF300, EF600, EF570, or E5700 storage system pre-configured with the NVMe over RoCE protocol or the controllers were ordered with standard IB ports and need to be converted to NVMe-oF ports.
+* You are using NVMe/RoCE driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+
+a|
+Protocol: NVMe over Fibre Channel
+a|
+
+* You have received the 32G host interface cards in an EF300, EF600, EF570, or E5700 storage system pre-configured with the NVMe over Fibre Channel protocol or the controllers were ordered with standard FC ports and need to be converted to NVMe-oF ports.
+* You are using NVMe/FC driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+
+|===
+*Note:* These express method instructions include examples for SUSE Linux Enterprise Server (SLES) and for Red Hat Enterprise Linux (RHEL). Examples for RHEL are specific to RHEL7.
+
+If these assumptions are not correct for your installation, or if you want more conceptual background information, see the SANtricity Power Guide for your operating system on the https://mysupport.netapp.com/info/web/ECMP1658252.html[E-Series and SANtricity Document Resources page].

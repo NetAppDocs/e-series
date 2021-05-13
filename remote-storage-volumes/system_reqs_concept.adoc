@@ -1,0 +1,54 @@
+---
+permalink: remote-storage-volumes/system_reqs_concept.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= System requirements
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Your system must meet compatibility requirements for Remote Storage Volumes.
+
+== Supported protocols
+
+[.lead]
+For the initial release of the Remote Storage Volumes feature, support is only available for iSCSI and IPv4 protocols.
+
+Refer to the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for up-to-date support and configuration information between the host and E-Series (destination) array used for the Remote Storage Volumes feature.
+
+NOTE: The Remote Storage Volumes feature only supports 512 block sizes.
+
+== Supported E-Series systems
+
+[.lead]
+Your E-Series system must meet compatibility requirements for Remote Storage Volumes.
+
+E-Series storage systems must meet the following requirements for the initial release of the Remote Storage Volumes feature:
+
+* The E-Series storage system must support iSCSI connections.
+* The system must be running in duplex mode (both controllers present).
+* Both E-Series controllers must be able to communicate with the remote storage through one or more iSCSI connections.
+
+== Hardware requirements
+
+[.lead]
+The appropriate connections and hardware must be set up before SANtricity System Manager, or the REST API can be used to initiate a remote storage volume import operation.
+
+The minimum hardware required includes the following:
+
+* E-Series storage system (both controllers must be present)
+ ** SANtricity OS (11.71 or greater)
+ ** iSCSI interfaces
+*Note:* The Remote Target Volumes feature is only available on iSCSI supported submodel IDs.
+* Remote storage system / device
+ ** iSCSI capable interfaces
+* Both E-Series controllers must be able to communicate with the remote storage through one or more iSCSI connections
+
+== Preparation for production imports
+
+[.lead]
+A test or "dry run" import should be performed before production imports to verify proper storage and fabric configuration.
+
+There are many variables that can impact the import operation and how long it takes to complete. To ensure a production import is successful and to get an estimate on how long it will take to complete, it is recommended to first perform multiple smaller "`test`" imports. These imports can be used to ensure all connections are working as expected and the import operation is completing in an appropriate amount of time. Adjustments can then be made to achieve the desired results before the production import is initiated.

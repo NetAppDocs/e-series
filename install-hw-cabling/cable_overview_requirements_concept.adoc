@@ -1,0 +1,74 @@
+---
+permalink: install-hw-cabling/cable_overview_requirements_concept.html
+sidebar: sidebar
+keywords: 
+summary: 'You can cable a host directly to a controller or use switches to connect a host to a controller. If your storage system includes one or more drive shelves, you must cable them to your controller shelf. You can add a new drive shelf while power is still applied to other components of the storage system. In addition, you can connect your storage system to a network for out-of-band management.'
+---
+= Overview and requirements
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can cable a host directly to a controller or use switches to connect a host to a controller. If your storage system includes one or more drive shelves, you must cable them to your controller shelf. You can add a new drive shelf while power is still applied to other components of the storage system. In addition, you can connect your storage system to a network for out-of-band management.
+
+The cabling information is intended for a hardware installer or system administrator who is installing or expanding a storage system. It is assumed that you have installed the storage system as described in the _Installation and Setup Instructions_ for your hardware.
+
+== Applicable hardware model
+
+Cabling information applies to the following hardware models.
+
+|===
+a|
+*Controller Shelf*
+a|
+*Drive Shelf*
+a|
+EF600
+a|
+Not applicable.
+a|
+EF300
+a|
+ 
+a|
+E5724, EF570, E2812, E2824, EF280
+a|
+DE212C, DE224C
+a|
+E2860, E5760
+a|
+DE460C
+|===
+
+== Additional cabling information
+
+If you are cabling for the following configuration, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf.]
+
+|===
+a|
+*Controller Shelf*
+a|
+*Drive Shelf*
+a|
+E2712, E2724, E5612, E5624, EF560
+a|
+DE212C, DE224C
+a|
+E2760, E5660
+a|
+DE460C
+|===
+For information about other cabling options, see the https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2773533[E-Series Hardware Cabling Guide] for older systems.
+
+For information about cabling to support mirroring features, see the https://www.netapp.com/us/media/tr-4656.pdf[Synchronous and Asynchronous Mirroring Feature Descriptions and Deployment Guide].
+
+== Required components
+
+In addition to controller shelves and drive shelves, you might need some or all of the following components when cabling your storage system:
+
+* Cables: SAS, Fibre Channel (FC), Ethernet, InfiniBand
+* Small form-factor pluggable (SFP) or Quad SFP (QSFP) transceivers
+* Switches
+* Host bus adapters (HBAs)
+* Host channel adapters (HCAs)
+* Network interface cards (NICs)

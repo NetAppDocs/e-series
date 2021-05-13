@@ -1,0 +1,22 @@
+---
+permalink: upgrade-controllers/index.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Upgrading E-Series Controllers
+:icons: font
+:imagesdir: ../media/
+
+* link:overview_requirements_concept.md#overview_requirements_concept[Overview and requirements]
+* xref:upgrade_controllers_task.adoc[Upgrade E-Series controllers]
+ ** xref:prepare_upgrade_controllers_task.adoc[Prepare to upgrade controllers]
+ ** link:remove_controllers_task.md#remove_controllers_task[Remove controllers]
+ ** link:install_controllers_task.md#install_controllers_task[Install new controllers]
+ ** link:upgrade_unlock_drives_task.md#upgrade_unlock_drives_task[Unlock drives]
+ ** link:complete_upgrade_controllers_task.md#complete_upgrade_controllers_task[Complete controller upgrade]
+ ** link:remount_volumes_lsi_task.md#remount_volumes_lsi_task[Remount volumes after changing the vendor from LSI to NETAPP]
+* link:reconfigure_sas_task.md#reconfigure_sas_task[Reconfigure a SAS-2 system behind a new SAS-3 controller shelf without data preservation]
+* xref:reference_copyright.adoc[Copyright]
+* xref:reference_trademark.adoc[Trademark]
+* xref:how_to_send_comments_concept.adoc[How to send comments about documentation and receive update notifications]
