@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/fc_determine_host_port_wwpns_task.html
 sidebar: sidebar
-keywords: 
-summary: 'You install an FC HBA utility so you can view the worldwide port name \(WWPN\) of each host port. Additionally, you can use the HBA utility to change any settings recommended in the Notes column of the NetApp Interoperability Matrix Tool for the supported configuration.'
+keywords: install, fc, hba, utility, view, worldwide, port, name, wwpn, host, netapp, interoperability, matrix, tool, support, configuration, determine, recommend, setting
+summary: You install an FC HBA utility so you can view the worldwide port name \(WWPN\) of each host port. Additionally, you can use the HBA utility to change any settings recommended in the Notes column of the NetApp Interoperability Matrix Tool for the supported configuration.
 ---
 = Determine host WWPNs and make the recommended settings
 :icons: font

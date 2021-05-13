@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/nvme_ib_access_sam_setup_wizard_task.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You use the Setup wizard in SANtricity System Manager to configure your storage array.'
 ---
 = Access SANtricity System Manager and use the Setup wizard
@@ -13,6 +13,7 @@ You use the Setup wizard in SANtricity System Manager to configure your storage 
 
 * You have ensured that the device from which you will access SANtricity System Manager contains one of the following browsers:
 +
+[options="header"]
 |===
 | Browser| Minimum version
 a|

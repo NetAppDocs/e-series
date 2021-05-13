@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/iscsi_configure_array_side_network_task.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You use the SANtricity System Manager GUI to configure iSCSI networking on the array side.'
 ---
 = Configure array-side networking
@@ -49,6 +49,7 @@ The Configure iSCSI Ports dialog box opens.
 +
 To see all port settings, click the *Show more port settings* link on the right of the dialog box.
 +
+[options="header"]
 |===
 | Port Setting| Description
 a|
@@ -82,6 +83,7 @@ If you selected *Enable IPv4*, a dialog box opens for selecting IPv4 settings af
 
 . Configure the IPv4 and/or IPv6 settings, either automatically or manually. To see all port settings, click the *Show more settings* link on the right of the dialog box.
 +
+[options="header"]
 |===
 | Port setting| Description
 a|

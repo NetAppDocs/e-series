@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/srp_ib_install_smcli_11_53_task.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'When you install the SANtricity Storage Manager software on your management station, a graphical user interface \(GUI\) and a command line interface \(CLI\) are installed by default. These instructions assume that you will install the SANtricity Storage Manager GUI on a management station and not on the I/O host.'
 ---
 = Install SANtricity Storage Manager for SMcli (SANtricity software version 11.53 or earlier)
@@ -25,6 +25,7 @@ This section describes how to install SANtricity Storage Manager on both the Win
 . Download the SANtricity software release from https://mysupport.netapp.com/site/[NetApp Support]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager*.
 . Run the SANtricity installer.
 +
+[options="header"]
 |===
 | Windows| Linux
 a|

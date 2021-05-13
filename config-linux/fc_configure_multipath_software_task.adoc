@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/fc_configure_multipath_software_task.html
 sidebar: sidebar
-keywords: 
-summary: 'Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. The multipath software presents the operating system with a single virtual device that represents the active physical paths to the storage. The multipath software also manages the failover process that updates the virtual device. You use the device mapper multipath \(DM-MP\) tool for Linux installations.'
+keywords: multipath, software, provide, redundant, path, storage, array, physical, path, disrupt, operating, operate, virtual, device, storage, multipath, failover, mapper, dm-mp, linux, installation
+summary: Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. The multipath software presents the operating system with a single virtual device that represents the active physical paths to the storage. The multipath software also manages the failover process that updates the virtual device. You use the device mapper multipath \(DM-MP\) tool for Linux installations.
 ---
 = Configure the multipath software
 :icons: font
@@ -39,6 +39,7 @@ You will use this information when you assign volumes to the host.
 
 . Do one of the following to enable the multipathd daemon on boot.
 +
+[options="header"]
 |===
 | If you are using....| Do this...
 a|
@@ -53,6 +54,7 @@ systemctl enable multipathd
 
 . Rebuild the initramfs image or the initrd image under /boot directory:
 +
+[options="header"]
 |===
 | If you are using....| Do this...
 a|

@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/fc_worksheet_concept.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can use this worksheet to record FC storage configuration information. You need this information to perform provisioning tasks.'
 ---
 = FC worksheet for Linux
@@ -17,6 +17,7 @@ image::../media/port_identifiers_host_and_target_conf-lin.gif[]
 
 == Host identifiers
 
+[options="header"]
 |===
 | Callout No.| Host (initiator) port connections| WWPN
 a|
@@ -30,17 +31,18 @@ a|
 a|
 Host port 0 to FC switch zone 0
 a|
- 
+
 a|
 7
 a|
 Host port 1 to FC switch zone 1
 a|
- 
+
 |===
 
 == Target identifiers
 
+[options="header"]
 |===
 | Callout No.| Array controller (target) port connections| WWPN
 a|
@@ -60,36 +62,37 @@ a|
 a|
 Controller A, port 1 to FC switch 1
 a|
- 
+
 a|
 9
 a|
 Controller A, port 2 to FC switch 2
 a|
- 
+
 a|
 4
 a|
 Controller B, port 1 to FC switch 1
 a|
- 
+
 a|
 8
 a|
 Controller B, port 2 to FC switch 2
 a|
- 
+
 |===
 
 == Mapping host
 
+[options="header"]
 |===
 a|
 Mapping host name
 a|
- 
+
 a|
 Host OS type
 a|
- 
+
 |===

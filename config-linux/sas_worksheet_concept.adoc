@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/sas_worksheet_concept.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can use this worksheet to record SAS storage configuration information. You need this information to perform provisioning tasks.'
 ---
 = SAS worksheet - Linux
@@ -15,6 +15,7 @@ image::../media/sas_topology_diagram_conf-lin.gif[Diagram: SAS topology]
 
 == Host Identifiers
 
+[options="header"]
 |===
 | Callout No.| Host (initiator) port connections| SAS address
 a|
@@ -28,25 +29,25 @@ a|
 a|
 Host (initiator) port 1 connected to Controller A, port 1
 a|
- 
+
 a|
 3
 a|
 Host (initiator) port 1 connected to Controller B, port 1
 a|
- 
+
 a|
 4
 a|
 Host (initiator) port 2 connected to Controller A, port 1
 a|
- 
+
 a|
 5
 a|
 Host (initiator) port 2 connected to Controller B, port 1
 a|
- 
+
 |===
 
 == Target Identifiers
@@ -55,13 +56,14 @@ Recommended configurations consist of two target ports.
 
 == Mappings Host
 
+[options="header"]
 |===
 a|
 Mappings Host Name
 a|
- 
+
 a|
 Host OS Type
 a|
- 
+
 |===

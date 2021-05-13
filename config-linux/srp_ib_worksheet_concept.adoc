@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/srp_ib_worksheet_concept.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can use this worksheet to record SRP over Infiniband storage configuration information. You need this information to perform provisioning tasks.'
 ---
 = SRP over Infiniband worksheet
@@ -17,6 +17,7 @@ image::../media/port_identifiers_ib_srp.gif[]
 
 NOTE: The initiator GUIDs are determined in the task, xref:srp_ib_determine_host_port_guids_task.adoc[Determining host port GUIDs and making the recommended settings].
 
+[options="header"]
 |===
 | Callout No.| Host (initiator) port connections| GUID
 a|
@@ -42,13 +43,13 @@ a|
 a|
 Host port 1 to IB switch 1 ("A" path)
 a|
- 
+
 a|
 5
 a|
 Host port 2 to IB switch 2 ("B" path)
 a|
- 
+
 |===
 
 == SRP over Infiniband: Recommended configuration
@@ -59,13 +60,14 @@ Recommended configurations consist of two initiator ports and four target ports.
 
 NOTE: The mapping host name is created during the workflow.
 
+[options="header"]
 |===
 a|
 Mapping host name
 a|
- 
+
 a|
 Host OS type
 a|
- 
+
 |===

@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/nvme_ib_worksheet_concept.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can use this worksheet to record NVMe over Infiniband storage configuration information. You need this information to perform provisioning tasks.'
 ---
 = NVMe over InfiniBand worksheet
@@ -17,6 +17,7 @@ NOTE: The software initiator NQN is determined during the task, .
 
 Locate and document the initiator NQN from each host. The NQN is typically found in the /ect/nvme/hostnqn file.
 
+[options="header"]
 |===
 | Callout No.| Host port connections| Host NQN
 a|
@@ -24,31 +25,31 @@ a|
 a|
 Host (initiator) 1
 a|
- 
+
 a|
 n/a
 a|
- 
+
 a|
- 
-a|
-n/a
-a|
- 
-a|
- 
+
 a|
 n/a
 a|
- 
+
 a|
- 
+
 a|
 n/a
 a|
- 
+
 a|
- 
+
+a|
+n/a
+a|
+
+a|
+
 |===
 
 == NVMe over InfiniBand: Recommended configuration
@@ -63,6 +64,7 @@ Document the target NQN for the storage array. You will use this information in 
 
 Find the Storage Array NQN name using SANtricity: *Storage Array* > *NVMe over Infiniband* > *Manage Settings*. This information might be necessary when you create NVMe over Infiniband sessions from operating systems that do not support send targets discovery.
 
+[options="header"]
 |===
 | Callout No.| Array name| Target IQN
 a|
@@ -70,7 +72,7 @@ a|
 a|
 Array controller (target)
 a|
- 
+
 |===
 
 == NVMe over InfiniBand: Network configuration
@@ -83,15 +85,17 @@ Your network administrator can provide the following information. You use this i
 
 Define the subnet to be used.
 
+[options="header"]
 |===
 | Network Address| Netmask
 a|
- 
+
 a|
- 
+
 |===
 Document the NQNs to be used by the array ports and each host port.
 
+[options="header"]
 |===
 | Callout No.| Array controller (target) port connections| NQN
 a|
@@ -105,40 +109,42 @@ a|
 a|
 Controller A, port 1
 a|
- 
+
 a|
 4
 a|
 Controller B, port 1
 a|
- 
+
 a|
 2
 a|
 Host 1, port 1
 a|
- 
+
 a|
- 
+
 a|
 (Optional) Host 2, port 1
 a|
- 
+
 |===
 
 == Subnet B
 
 Define the subnet to be used.
 
+[options="header"]
 |===
 | Network Address| Netmask
 a|
- 
+
 a|
- 
+
 |===
 Document the IQNs to be used by the array ports and each host port.
 
+[options="header"]
 |===
 | Callout No.| Array controller (target) port connections| NQN
 a|
@@ -152,38 +158,39 @@ a|
 a|
 Controller A, port 2
 a|
- 
+
 a|
 9
 a|
 Controller B, port 2
 a|
- 
+
 a|
 7
 a|
 Host 1, port 2
 a|
- 
+
 a|
- 
+
 a|
 (Optional) Host 2, port 2
 a|
- 
+
 |===
 
 == NVMe over InfiniBand: Mapping host name
 
 NOTE: The mapping host name is created during the workflow.
 
+[options="header"]
 |===
 a|
 Mapping host name
 a|
- 
+
 a|
 Host OS type
 a|
- 
+
 |===

@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/nvme_roce_configure_storage_connections_task.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'If your controller includes a connection for NVMe over RoCE \(RDMA over Converged Ethernet\), you can configure the NVMe port settings from the Hardware page or the System page in SANtricity System Manager.'
 ---
 = Configure storage array NVMe over RoCE connections
@@ -33,6 +33,7 @@ The *Configure NVMe over RoCE ports* dialog box opens.
 +
 To see all port settings, click the *Show more port settings* link on the right of the dialog box.
 +
+[options="header"]
 |===
 | Port Setting| Description
 a|
@@ -67,6 +68,7 @@ If you selected *Enable IPv4*, a dialog box opens for selecting IPv4 settings af
 
 . Configure the IPv4 and/or IPv6 settings, either automatically or manually. To see all port settings, click the *Show more settings* link on the right of the dialog box.
 +
+[options="header"]
 |===
 | Port setting| Description
 a|
