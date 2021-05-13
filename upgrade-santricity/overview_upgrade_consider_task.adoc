@@ -1,0 +1,154 @@
+---
+permalink: upgrade-santricity/overview_upgrade_consider_task.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Overview and upgrade considerations
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Learn what you need to know before upgrading your storage array's SANtricity OS controller software and firmware and its drive firmware.
+
+== Considerations for upgrading software and firmware for a single controller
+
+[.lead]
+To ensure a successful upgrade, keep in mind some key considerations as part of your planning.
+
+The following table describes the components included in the SANtricity OS upgrade process and the software components that must be upgraded separately.
+
+|===
+| Components included in SANtricity OS upgrade| Components that must be upgraded separately
+a|
+
+* *Management software* -- System Manager is the software that manages the storage array.
+* *Controller firmware* -- Controller firmware manages the I/O between hosts and volumes.
+* *Controller NVSRAM* -- Controller NVSRAM is a controller file that specifies the default settings for the controllers.
+* *IOM firmware* -- The I/O module (IOM) firmware manages the connection between a controller and a drive shelf. It also monitors the status of the components.
+* *Supervisor software* -- Supervisor software is the virtual machine on a controller in which the software runs.
+
+a|
+
+* If your storage system is part of a storage network that includes storage systems, you might use legacy the SANtricity Storage Manager Enterprise Management Window (EMW) to provide an enterprise view of all of your storage systems. In this case, check to see if there is a newer maintenance release of SANtriciry Storage Manager.
+* As part of the upgrade process, the host's multipath/failover driver might also need to be upgraded so the host can interact with the controllers correctly. If host running operating systems other than Microsoft Windows have I/O connections to your storage system, upgrade the multipath drivers for those hosts. See the procedures in the Express Guides for your operating system).
+* SANtricity Unified Manager
+* Drive firmware
+* SANtricity Windows Host Utility
+* SANtricity Linux Host Utility
+* SANtricity Windows DSM
+
+|===
+You can view your current software and firmware versions in the SANtricity System Manager Software and Firmware Inventory dialog box. Go to *Support* > *Upgrade Center*, and then click the link for *Software and Firmware Inventory*.
+
+=== When to stop I/O
+
+If your storage array contains two controllers and you have a multipath driver installed, the storage array can continue processing I/O while the upgrade occurs. During the upgrade, controller A fails over all of its volumes to controller B, upgrades, takes back its volumes and all of controller B's volumes, and then upgrades controller B.
+
+=== Pre-upgrade health check
+
+A pre-upgrade health check runs as part of the upgrade process. The pre-upgrade health check assesses all storage array components to make sure the upgrade can proceed. The following conditions might prevent the upgrade:
+
+* Failed assigned drives
+* Hot spares in use
+* Incomplete volume groups
+* Exclusive operations running
+* Missing volumes
+* Controller in Non-optimal status
+* Excess number of event log events
+* Configuration database validation failure
+* Drives with old versions of DACstore
+
+You also can run the pre-upgrade health check separately without doing an upgrade.
+
+== Considerations for upgrading software and firmware for multiple controllers
+
+[.lead]
+Before you use SANtricity Unified Manager to upgrade multiple storage arrays, review the key considerations as part of your planning.
+
+=== Current versions
+
+You can view the current SANtricity OS software versions from the Manage page of Unified Manager for each discovered storage array. The version is shown in the SANtricity OS Software column. The controller firmware and NVSRAM information is available in a pop-up dialog box when you click on the SANtricity OS version in each row.
+
+=== Other components requiring upgrade
+
+As part of the upgrade process, you might also need to upgrade the host's multipath/failover driver or the HBA driver so that the host can interact with the controllers correctly.
+
+For compatibility information, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix]. Also, see the procedures in the Express Guides for your operating system. Express Guides are available from the https://docs.netapp.com/ess-11/index.jsp[E-Series Documentation Center].
+
+=== Dual controllers
+
+If a storage array contains two controllers and you have a multipath driver installed, the storage array can continue to process I/O while the upgrade occurs. During the upgrade, the following process occurs:
+
+. Controller A fails over all its LUNs to controller B.
+. Upgrade occurs on controller A.
+. Controller A takes back its LUNs and all of controller B's LUNs.
+. Upgrade occurs on controller B.
+
+After the upgrade completes, you might need to manually redistribute volumes between the controllers to ensure volumes return to the correct owning controller.
+
+=== Immediate or staged upgrade
+
+You can activate the upgrade immediately or stage it for a later time. You might choose to activate later for these reasons:
+
+* *Time of day* -- Activating the software can take a long time, so you might want to wait until I/O loads are lighter. Depending on the IO load and cache size, a controller upgrade can typically take between 15 to 25 minutes to complete. The controllers reboot and fail over during activation so performance might be lower than usual until the upgrade completes.
+* *Type of package* -- You might want to test the new software and firmware on one storage array before upgrading the files on other storage arrays.
+
+To activate staged software, go to *Support* > *Upgrade Center* and click *Activate* in the area labeled SANtricity OS Controller Software upgrade.
+
+=== Health check
+
+A health check runs as part of the upgrade process, but you can also run a health check separately before you begin (go to *Upgrade Center* > *Pre-Upgrade Health Check*).
+
+The health check assesses all storage system components to make sure that the upgrade can proceed. The following conditions might prevent the upgrade:
+
+* Failed assigned drives
+* Hot spares in use
+* Incomplete volume groups
+* Exclusive operations running
+* Missing volumes
+* Controller in Non-optimal status
+* Excess number of event log events
+* Configuration database validation failure
+* Drives with old versions of DACstore
+
+== Considerations for upgrading drive firmware
+
+[.lead]
+Take into account some key considerations before upgrading your drive firmware.
+
+=== Drive compatibility
+
+Each drive firmware file contains information about the drive type on which the firmware runs. You can download the specified firmware file only to a compatible drive. System Manager automatically checks compatibility during the upgrade process.
+
+=== Drive upgrade methods
+
+There are two types of drive firmware upgrade methods: online and offline.
+
+|===
+| Online upgrade| Offline upgrade
+a|
+During an online upgrade, drives are upgraded sequentially, one at a time. The storage array continues processing I/O while the upgrade occurs. You do not have to stop I/O. If a drive can do an online upgrade, the online method is used automatically.
+
+Drives that can do an online upgrade include the following:
+
+* Drives in an Optimal pool
+* Drives in an Optimal redundant volume group (RAID 1, RAID 5, and RAID 6)
+* Unassigned drives
+* Standby hot spare drives
+
+Doing an online drive firmware upgrade can take several hours exposing the storage array to potential volume failures. Volume failure could occur in these cases:
+
+* In a RAID 1 or RAID 5 volume group, one drive fails while a different drive in the volume group is being upgraded.
+* In a RAID 6 pool or volume group, two drives fail while a different drive in the pool or volume group is being upgraded.
+
+a|
+During an offline upgrade, all drives of the same drive type are upgraded at the same time. This method requires stopping I/O activity to the volumes associated with the selected drives. Because multiple drives can be upgraded concurrently (in parallel), the overall downtime is significantly reduced. If a drive can do only an offline upgrade, the offline method is used automatically.
+
+The following drives MUST use the offline method:
+
+* Drives in a non-redundant volume group (RAID 0)
+* Drives in a non-optimal pool or volume group
+* Drives in SSD cache
+
+|===

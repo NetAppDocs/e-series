@@ -1,0 +1,21 @@
+---
+permalink: getting-started/index.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Getting Started with E-Series Hardware and SANtricity® Software
+:icons: font
+:imagesdir: ../media/
+
+* xref:whats_intro_concept.adoc[What's included]
+* xref:learn_intro_concept.adoc[Learn about E-Series systems]
+ ** xref:learn_terms_concept.adoc[E-Series terminology]
+ ** xref:learn_hardware_concept.adoc[E-Series hardware overview]
+ ** xref:learn_shelf_concept.adoc[E-Series shelf types]
+ ** xref:learn_software_concept.adoc[SANtricity software overview]
+ ** link:learn_video_concept.md#learn_video_concept[E-Series videos]
+* xref:getup_run_concept.adoc[Get up and running with E-Series]
+* xref:reference_copyright.adoc[Copyright]
+* xref:reference_trademark.adoc[Trademark]
+* xref:concept_how_to_send_comments_about_documentation_and_receive_update_notifications_netapp_post_preface.adoc[How to send comments about documentation and receive update notifications]

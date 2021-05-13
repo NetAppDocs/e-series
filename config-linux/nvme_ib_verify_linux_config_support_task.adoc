@@ -1,0 +1,55 @@
+---
+permalink: config-linux/nvme_ib_verify_linux_config_support_task.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Verify the Linux configuration is supported
+:experimental:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool (IMT) to verify that the entire configuration is supported.
+
+. Go to the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+. Click on the *Solution Search* tile.
+. In the menu:Protocols[SAN Host] area, click the *Add* button next to *E-Series SAN Host*.
+. Click *View Refine Search Criteria*.
++
+The *Refine Search Criteria* section is displayed. In this section you may select the protocol that applies, as well as other criteria for the configuration such as Operating System, NetApp OS, and Host Multipath driver. Select the criteria you know you want for your configuration, and then see what compatible configuration elements apply. As necessary, make the updates for your operating system and protocol that are prescribed in the tool. Detailed information for your chosen configuration is accessible on the View Supported Configurations page by clicking the *right page arrow*.
+
+== NVMe over InfiniBand restrictions
+
+[.lead]
+Before using NVMe over InfiniBand, review the controller, host, and recovery restrictions.
+
+=== Verify your configuration
+
+Verify your configuration, using the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+
+=== About the hardware
+
+NVMe over InfiniBand can be configured for EF300 (100GB controllers only), EF600, EF570, or E5700 controllers. The controllers must have 100GB or 200GB InfiniBand host ports.
+
+=== Restrictions
+
+The following restrictions are in effect for the 11.60 release. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for a complete list of requirements.
+
+=== Controller restrictions
+
+* This protocol can be used only for EF300, EF600, EF570, or EF570 controllers. A minimum of 32 GB of physical memory is required to use this protocol on EF600, EF570, and E5700 controllers. For the EF300, a minimum of 16 GB of physical memory is required. If the minimum memory requirements for the controllers are not met during start of day operations, a message is displayed that helps you diagnose the problem.
+* No simplex (single controller) configurations are supported.
+* There is no support for mixed NVMe over InfiniBand and SCSI host interfaces.
+* For EF300 controllers, no more than 64 NVMe hosts can be supported on the IB interface.
+
+=== Host, host protocol and host operating system restrictions
+
+* The host must be running the latest compatible RHEL 7, SUSE Linux Enterprise Server 12 or 15 service pack operating system . See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for a complete list of the latest requirements.
+* The only supported host channel adapters are from Mellanox. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for more information.
+* The only supported host interface card (HIC) is the 100G or 200G EDR IB HIC, which also supports iSER and SRP (but iSER and SRP are not supported simultaneously).
+
+=== Storage and disaster recovery restrictions
+
+* Asynchronous and synchronous mirroring are not supported.
+* Thin provisioning (the creation of thin volumes) is not supported.

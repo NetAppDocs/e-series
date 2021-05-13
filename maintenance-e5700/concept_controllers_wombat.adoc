@@ -1,0 +1,12 @@
+---
+permalink: maintenance-e5700/concept_controllers_wombat.html
+sidebar: sidebar
+keywords: 
+summary: 'A controller consists of a board, firmware, and software. It controls the drives and implements the System Manager functions. This section describes how to replace a controller in a duplex configuration.'
+---
+= Controllers
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+A controller consists of a board, firmware, and software. It controls the drives and implements the System Manager functions. This section describes how to replace a controller in a duplex configuration.

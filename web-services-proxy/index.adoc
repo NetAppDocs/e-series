@@ -1,0 +1,22 @@
+---
+permalink: web-services-proxy/index.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= SANtricity® Web Services Proxy
+:icons: font
+:imagesdir: ../media/
+
+* link:overview_intro_concept.md#overview_intro_concept[Overview and requirements]
+* link:install_wsp_task.md#install_wsp_task[Install Web Services Proxy]
+* link:install_config_task.md#install_config_task[Configure Web Services Proxy]
+* link:install_uninstall_task.md#install_uninstall_task[Uninstall Web Services Proxy]
+* link:access_intro_concept.md#access_intro_concept[Manage user access]
+* link:certificates_intro_concept.md#certificates_intro_concept[Manage security and certificates]
+* link:array_intro_concept.md#array_intro_concept[Manage storage systems]
+* link:polling_intro_concept.md#polling_intro_concept[Manage automatic polling for statistics]
+* link:asup_intro_concept.md#asup_intro_concept[Manage AutoSupport]
+* xref:reference_copyright.adoc[Copyright]
+* xref:reference_trademark.adoc[Trademark]
+* xref:concept_how_to_send_comments_about_documentation_and_receive_update_notifications_netapp_post_preface.adoc[How to send comments about documentation and receive update notifications]

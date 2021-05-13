@@ -1,0 +1,157 @@
+---
+permalink: web-services-proxy/access_intro_concept.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Manage user access
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can manage user access to the Web Services API and Unified Manager for security purposes.
+
+== Overview of access management
+
+[.lead]
+Access management includes role-based logins, password encryption, basic authentication, and LDAP integration.
+
+=== Role-based access
+
+Role-based access control (RBAC) associates predefined users with roles. Each role grants permissions to a specific level of functionality.
+
+The following table describes each role.
+
+|===
+| Role| Description
+a|
+security.admin
+a|
+SSL and certificate management.
+a|
+storage.admin
+a|
+Full read/write access to storage system configuration.
+a|
+storage.monitor
+a|
+Read-only access to view storage system data.
+a|
+support.admin
+a|
+Access to all hardware resources on storage systems and support operations such as AutoSupport (ASUP) retrieval.
+|===
+Default user accounts are defined in the users.properties file. You can change user accounts by directly modifying the users.properties file or by using the Access Management functions in Unified Manager.
+
+The following table lists the user logins available for the Web Services Proxy.
+
+|===
+| Predefined user login| Description
+a|
+admin
+a|
+A super administrator who has access to all functions and includes all roles. For Unified Manager, you must set the password on first-time login.
+a|
+storage
+a|
+The administrator responsible for all storage provisioning. This user includes the following roles: storage.admin, support.admin, and storage.monitor. This account is disabled until a password is set.
+a|
+security
+a|
+The user responsible for security configuration. This user includes the following roles: security.admin and storage.monitor. This account is disabled until a password is set.
+a|
+support
+a|
+The user responsible for hardware resources, failure data, and firmware upgrades. This user includes the following roles: support.admin and storage.monitor. This account is disabled until a password is set.
+a|
+monitor
+a|
+A user with read-only access to the system. This user includes only the storage.monitor role. This account is disabled until a password is set.
+a|
+rw
+a|
+The rw (read/write) user includes the following roles: storage.admin, support.admin, and storage.monitor. This account is disabled until a password is set.
+a|
+ro
+a|
+The ro (read only) user includes only the storage.monitor role. This account is disabled until a password is set.
+|===
+
+=== Password encryption
+
+For each password, you can apply an additional encryption process using the existing SHA256 password encoding. This additional encryption process applies a random set of bytes to each password (salt) for each SHA256 hash encryption. Salted SHA256 encryption is applied to all newly created passwords.
+
+NOTE: Prior to the Web Services Proxy 3.0 release, passwords were encrypted through SHA256 hashing only. Any existing SHA256 hash-only encrypted passwords retain this encoding and are still valid under the users.properties file. However, SHA256 hash-only encrypted passwords are not as secure as those passwords with salted SHA256 encryption.
+
+=== Basic authentication
+
+By default, basic authentication is enabled, which means the server returns a basic authentication challenge. This setting can be changed in the wsconfig.xml file.
+
+=== LDAP
+
+Lightweight Directory Access Protocol (LDAP), an application protocol for accessing and maintaining distributed directory information services, is enabled for the Web Services Proxy. LDAP integration allows for user authentication and mapping of roles to groups.
+
+For information on configuring LDAP functionality, refer to configuration options in the Unified Manager interface or in the LDAP section of the interactive API documentation.
+
+== Configure user access
+
+[.lead]
+You can manage user access by applying additional encryption to passwords, setting basic authentication, and defining role-based access.
+
+=== Apply additional encryption to passwords
+
+[.lead]
+For the highest level of security, you can apply additional encryption to passwords using the existing SHA256 password encoding.
+
+This additional encryption process applies a random set of bytes to each password (salt) for each SHA256 hash encryption. Salted SHA256 encryption is applied to all newly created passwords.
+
+. Open the users.properties file, located at:
+ ** (Windows) -- C:\Program Files\NetApp\SANtricity Web Services Proxy\data\config
+ ** (Linux) -- /opt/netapp/santricity_web_services_proxy/data/config
+. Re-enter the encrypted password as plain text.
+. Run the *securepasswds* command line utility to re-encrypt the password or simply restart the Web Services Proxy. This utility is installed in the root install directory for the Web Services Proxy.
++
+NOTE: Alternatively, you can salt and hash local user passwords whenever password edits are performed through the Unified Manager.
+
+=== Configure basic authentication
+
+[.lead]
+By default basic authentication is enabled, which means the server returns a basic authentication challenge. If desired, you can change that setting in the wsconfig.xml file.
+
+. Open the wsconfig.xml file, located at:
+ ** (Windows) -- C:\Program Files\NetApp\SANtricity Web Services Proxy
+ ** (Linux) -- /opt/netapp/santricity_web_services_proxy
+. Modify the following line in the file by specifying false (not enabled) or true (enabled).
++
+For example: <env key="enable-basic-auth">true</env>
+
+. Save the file.
+. Restart the Webserver service so the change takes effect.
+
+=== Configure role-based access
+
+[.lead]
+To limit user access to specific functions, you can modify which roles are specified for each user account.
+
+The Web Services Proxy includes role-based access control (RBAC), in which roles are associated with predefined users. Each role grants permissions to a specific level of functionality. You can change the roles assigned to user accounts by directly modifying the users.properties file.
+
+NOTE: You can also change user accounts by using Access Management in Unified Manager. For more information, see the online help available with Unified Manager.
+
+. Open the users.properties file, located in:
+ ** (Windows) -- C:\Program Files\NetApp\SANtricity Web Services Proxy\data\config
+ ** (Linux) -- /opt/netapp/santricity_web_services_proxy/data/config
+. Locate the line for the user account you want to modify (storage, security, monitor, support, rw, or ro).
++
+NOTE: Do not modify the admin user. This is a super user with access to all functions.
+
+. Add or remove the specified roles, as desired.
++
+Roles include:
+
+ ** security.admin -- SSL and certificate management.
+ ** storage.admin -- Full read/write access to storage system configuration.
+ ** storage.monitor -- Read-only access to view storage system data.
+ ** support.admin -- Access to all hardware resources on storage systems and support operations such as AutoSupport (ASUP) retrieval.
+*Note:* The storage.monitor role is required for all users, including the administrator.
+
+. Save the file.

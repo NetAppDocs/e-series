@@ -1,0 +1,106 @@
+---
+permalink: cloud-connector/modify_intro_concept.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Modify the SANtricity Cloud Connectors Settings
+:experimental:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can access the Settings option in the left navigation panel of the SANtricity Cloud Connector application. The Settings option allows you to modify the application's current configurations for the S3 account, managed storage arrays and hosts, and Web Services Proxy credentials. You can also change the password for the SANtricity Cloud Connector application through the Settings option.
+
+== S3 Account Settings
+
+[.lead]
+You can modify existing S3 settings for the SANtricity Cloud Connector application in the S3 Account Settings window.
+
+When modifying the URL or S3 Bucket Label settings, be aware that access to any existing backups configured through the SANtricity Cloud Connector will be affected.
+
+. In the left toolbar, click menu:Settings[Configuration].
++
+The `Settings - Configuration` page is displayed.
+
+. Click *View/Edit Settings* for S3 Account Settings.
++
+The `S3 Account Settings` page is displayed.
+
+. In the ``URL``file, enter the URL for the S3 cloud service.
+. In the `Access Key ID` field, enter the access ID for the S3 target.
+. In the `Secret Access Key` field, enter the access key for the S3 target.
+. In the `S3 Bucket Name` field, enter the bucket name for the S3 target.
+. Select the *Use Path Style Access* check box if needed.
+. Click *Test Connection* to verify the connection for the entered S3 credentials.
+. Click *Save* to apply the modifications.
++
+The modified S3 account settings are applied.
+
+== Manage Storage Arrays
+
+[.lead]
+You can add or remove storage arrays from the Web Services Proxy registered to the SANtricity Cloud Connector host in the `Manage Storage Arrays` page.
+
+The `Manage Storage Arrays` page displays a list of storage arrays from the Web Services Proxy available for registration with the SANtricity Cloud Connector host.
+
+. In the left toolbar, click menu:Settings[Storage Arrays].
++
+The `Settings - Storage Arrays` screen is displayed.
+
+. To add storage arrays to the SANtricity Cloud Connector, click *Add*.
+ .. In the `Add Storage Arrays` window, select each checkbox next to the desired storage arrays from the result list.
+ .. Click *Add*.
++
+The selected storage array is added to the SANtricity Cloud Connector and displays in the result list section of the `Settings - Storage Arrays` screen.
+. To modify the host for an added storage array, click *Edit* for the line item in the result list section of the ``Settings - Storage Arrays``screen.
+ .. In the `Associated Host` drop-down menu, select the desired host for the storage array.
+ .. Click *Save*.
++
+The selected host is assigned to the storage array.
+. To remove an existing storage array from the SANtricity Cloud Connector host, select the desired storage arrays from the bottom result list, and click *Remove*.
+ .. In the `Confirm Remove Storage Arrays` field, type `REMOVE`.
+ .. Click *Remove*.
++
+The selected storage array is removed from the SANtricity Cloud Connector host.
+
+== Web Services Settings
+
+[.lead]
+You can modify existing Web Services Proxy settings for the SANtricity Cloud Connector application in the Web Services Proxy Settings window.
+
+* The Web Services Proxy used with the SANtricity Cloud Connector need to have the appropriate arrays added and the corresponding password set.
+
+. In the left toolbar, click menu:Settings[Configuration].
++
+The `Settings - Configuration` screen is displayed.
+
+. Click *View/Edit Settings* for Web Services Proxy.
++
+The `Web Services Proxy settings` screen is displayed.
+
+. In the URL field, enter the URL for the Web Services proxy used for the SANtricity Cloud Connector.
+. In the `User Name` field, enter the user name for the Web Services Proxy connection.
+. In the `Password` field, enter the password for the Web Services Proxy connection.
+. Click *Test Connection* to verify the connection for the entered Web Services Proxy credentials.
+. Click *Save* to apply the modifications.
+
+== Change SANtricity Cloud Connector password
+
+[.lead]
+You can change the password for the SANtricity Cloud Connector application in the Change Password screen.
+
+. In the left toolbar, click menu:Settings[Configuration].
++
+The `Settings - Configuration` screen is displayed.
+
+. Click *Change Password* for SANtricity Cloud Connector.
++
+The `Change Password` screen is displayed.
+
+. In the ``Current password``field, enter your current password for the SANtricity Cloud Connector application.
+. In the New Password field, enter your new password for the SANtricity Cloud Connector application.
+. In the Confirm new password field, re-enter the new password.
+. Click *Change* to apply the new password.
++
+The modified password is applied to the SANtricity Cloud Connector application.

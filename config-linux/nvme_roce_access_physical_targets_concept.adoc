@@ -1,0 +1,83 @@
+---
+permalink: config-linux/nvme_roce_access_physical_targets_concept.html
+sidebar: sidebar
+keywords: 
+summary: 'You can configure the I/O directed to the device target based on your Linux version. For SLES 15, I/O is directed to the physical NVMe device targets by the Linux host. A native NVMe multipathing solution manages the physical paths underlying the single apparent physical device displayed by the host.'
+---
+= Accessing NVMe volumes for physical NVMe device targets
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can configure the I/O directed to the device target based on your Linux version. For SLES 15, I/O is directed to the physical NVMe device targets by the Linux host. A native NVMe multipathing solution manages the physical paths underlying the single apparent physical device displayed by the host.
+
+NOTE: It is best practice to use the links in /dev/disk/by-id/ rather than /dev/nvme0n1, for example:
+
+----
+# ls /dev/disk/by-id/ -l lrwxrwxrwx 1 root root 13 Oct 18 15:14
+nvme-
+eui.0000320f5cad32cf00a0980000af4112 -> ../../nvme0n1
+----
+
+== Physical NVMe devices are I/O targets
+
+Run I/O to the physical nvme device path. There should only be one of these devices present for each namespace using the following format:
+
+----
+/dev/nvme[subsys#]n[id#]
+----
+
+All paths are virtualized using the native multipathing solution underneath this device.
+
+You can view your paths by running:
+
+----
+# nvme list-subsys
+----
+
+Example output:
+
+----
+nvme-subsys0 - NQN=nqn.1992-08.com.netapp:5700.600a098000a522500000000589aa8a6
+\
++- nvme0 rdma traddr=192.4.21.131 trsvcid=4420 live
++- nvme1 rdma traddr=192.4.22.141 trsvcid=4420 live
+----
+
+If you specify a namespace device when using the 'nvme list-subsys' command, it provides additional information about the paths to that namespace:
+
+----
+# nvme list-subsys /dev/nvme0n1
+nvme-subsys0 - NQN=nqn.1992-08.com.netapp:5700.600a098000af44620000000058d5dd96
+\
+ +- nvme0 rdma traddr=192.168.130.101 trsvcid=4420 live non-optimized
+ +- nvme1 rdma traddr=192.168.131.101 trsvcid=4420 live non-optimized
+ +- nvme2 rdma traddr=192.168.130.102 trsvcid=4420 live optimized
+ +- nvme3 rdma traddr=192.168.131.102 trsvcid=4420 live optimized
+----
+
+There are also hooks into the multipath commands to allow you to view your path information for native failover through them as well:
+
+----
+#multipath -ll
+----
+
+NOTE: To view the path information, the following must be set in `/etc/multipath.conf`:
+
+----
+
+defaults {
+        enable_foreign nvme
+}
+----
+
+Example output:
+
+----
+eui.0000a0335c05d57a00a0980000a5229d [nvme]:nvme0n9 NVMe,Netapp E-Series,08520001
+size=4194304 features='n/a' hwhandler='ANA' wp=rw
+|-+- policy='n/a' prio=50 status=optimized
+| `- 0:0:1 nvme0c0n1 0:0 n/a optimized    live
+`-+- policy='n/a' prio-10 status=non-optimized
+`- 0:1:1 nvme0c1n1 0:0 n/a non-optimized    live
+----

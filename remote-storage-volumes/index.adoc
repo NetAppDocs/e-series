@@ -1,0 +1,21 @@
+---
+permalink: remote-storage-volumes/index.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= SANtricity® Remote Storage Volumes
+:icons: font
+:imagesdir: ../media/
+
+* xref:overview_concept.adoc[Overview]
+* link:system_reqs_concept.md#system_reqs_concept[System requirements]
+* link:setup_remote_volumes_concept.md#setup_remote_volumes_concept[Set up Remote Storage Volumes]
+* xref:import_remote_storage_task.adoc[Import remote storage]
+* link:view_import_progress_task.md#view_import_progress_task[View import progress]
+* xref:modify_remote_storage_task.adoc[Modify remote storage connection settings]
+* xref:remove_remote_storage_task.adoc[Remove remote storage object]
+* xref:reference_copyright_and_trademark.adoc[Copyright, trademark, and machine translation]
+ ** xref:reference_copyright.adoc[Copyright]
+ ** xref:reference_trademark.adoc[Trademark]
+ ** xref:generic_machine_translation_disclaimer.adoc[Machine translation]
