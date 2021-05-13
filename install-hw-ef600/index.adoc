@@ -8,11 +8,11 @@ summary: ''
 :icons: font
 :imagesdir: ../media/
 
-* link:concept_overview.md#concept_overview[Overview]
-* xref:task_prepare_for_installation.adoc[Prepare for installation]
-* xref:task_install_the_hardware.adoc[Install the hardware]
-* xref:task_power_the_controller_shelves.adoc[Power the controller shelves]
-* link:task_complete_storage_system_setup_and_configuration.md#task_complete_storage_system_setup_and_configuration[Complete storage system setup and configuration]
+* link:overview_concept.md#overview_concept[Overview]
+* xref:prepare_for_install_task.adoc[Prepare for installation]
+* xref:install_hardware_task.adoc[Install the hardware]
+* xref:power_controller_shelves_task.adoc[Power the controller shelves]
+* link:complete_setup_task.md#complete_setup_task[Complete storage system setup and configuration]
 * xref:reference_copyright_and_trademark.adoc[Copyright and trademark]
  ** xref:reference_copyright.adoc[Copyright]
  ** xref:reference_trademark.adoc[Trademark]

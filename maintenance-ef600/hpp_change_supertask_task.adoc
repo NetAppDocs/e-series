@@ -1,0 +1,489 @@
+---
+permalink: maintenance-ef600/hpp_change_supertask_task.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Change host protocol
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you have an Infiniband (IB) HIC, or a Fibre Channel (FC) HIC you can change the host port protocol using the process in the following section.
+
+== Obtain the feature pack key
+
+[.lead]
+To obtain the feature pack, you need the serial number from the controller shelf, a Feature Activation Code, and the Feature Enable Identifier for the storage array.
+
+. Locate the serial number.
+ .. From SANtricity System Manager, select *Support* > *Support Center*.
+ .. With the *Support Resources* tab selected, scroll to the *View top storage array properties* section.
+ .. Locate the *Chassis Serial Number*, and copy this value to a text file.
++
+image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.gif[]
+. Locate the *feature pack submodel ID*.
+ .. From the SANtricity System Manager, select *Support*.
+ .. Select the *Support Center* tile.
+ .. On the Support Resources tab, locate and select the *Storage Array Profile* link.
+ .. Type *feature pack submodel ID* in the text box, and click *Find*.
+ .. Locate the feature pack submodel ID for the starting configuration.
++
+image::../media/storage_array_profile2_maint-ef600.gif[]
+. Using the feature pack submodel ID, locate the corresponding Controller submodel ID for the starting configuration and find the Feature Activation Code for the desired ending configuration within the following table. Then, copy that Feature Activation Code to a text file.
++
+|===
+| Starting configuration| Ending configuration| Feature Activation Code
+| Controller submodel ID| HIC ports| Controller submodel ID| HIC ports
+| Starting configuration| Ending configuration| Feature Activation Code
+| Controller submodel ID| HIC ports| Controller submodel ID| HIC ports
+a|
+443
+a|
+NVMe/FC     or
+
+NVMe/RoCE
+    a|
+    444
+    a|
+    NVMe/IB
+    a|
+    DH5-HB4-ZK9QH
+    a|
+    448
+    a|
+    FC
+    a|
+    7HZ-EB4-ZHAYW
+    a|
+    491
+    a|
+    iSER/IB
+    a|
+    0H1-675-Z5SII
+    a|
+    492
+    a|
+    SRP/IB
+    a|
+    NHD-V75-ZB6ZX
+    a|
+    444
+    a|
+    NVMe/FC     or
+
+NVMe/IB
+    a|
+    443
+    a|
+    NVMe/RoCE
+    a|
+    YH3-XB4-ZJRIZ
+    a|
+    448
+    a|
+    FC
+    a|
+    2HU-BB4-ZFCG5
+    a|
+    491
+    a|
+    iSER/IB
+    a|
+    2H3-P75-Z6AQG
+    a|
+    492
+    a|
+    SRP/IB
+    a|
+    5HG-G75-ZDNEZ
+    a|
+    448
+    a|
+    FC
+    a|
+    443
+    a|
+    NVMe/FC     or
+
+NVMe/RoCE
+    a|
+    JHX-UB4-ZGTP1
+    a|
+    444
+    a|
+    NVMe/FC     or
+
+NVMe/IB
+    a|
+    LHS-RB4-ZDV29
+    a|
+    491
+    a|
+    iSER/IB
+    a|
+    FH6-975-Z7Q7H
+    a|
+    492
+    a|
+    SRP/IB
+    a|
+    0HI-Z75-ZE4L5
+    a|
+    491
+    a|
+    iSER/IB
+    a|
+    443
+    a|
+    NVMe/FC or NVMe/RoCE
+    a|
+    MHQ-M85-ZIJNT
+    a|
+    444
+    a|
+    NVMe/FC or NVMe/IB
+    a|
+    4HS-685-ZJZ1U
+    a|
+    448
+    a|
+    FC
+    a|
+    YHU-P85-ZLHCX
+    a|
+    465
+    a|
+    FC/PTL
+    a|
+    AHX-985-ZMXMI
+    a|
+    492
+    a|
+    SRP/IB
+    a|
+    ZHZ-S85-ZNF4J
+    a|
+    492
+    a|
+    SRP/IB
+    a|
+    443
+    a|
+    NVMe/FC or NVMe/RoCE
+    a|
+    EH3-C85-Z0V93
+    a|
+    444
+    a|
+    NVMe/FC or NVMe/IB
+    a|
+    BH5-V85-ZQDQJ
+    a|
+    448
+    a|
+    FC
+    a|
+    1H8-F85-ZRT1V
+    a|
+    465
+    a|
+    FC/PTL
+    a|
+    1HA-Y85-ZSB7S
+    a|
+    491
+    a|
+    iSER/IB
+    a|
+    KHD-I85-ZUSMI
+    a|
+    465
+    a|
+    FC/PTL
+    a|
+    491
+    a|
+    iSER
+    a|
+    6H8-S75-Z98FH
+    a|
+    492
+    a|
+    SRP
+    a|
+    NHL-J75-ZFL3W
+    a|
+    516
+    a|
+    NVMe/RoCE
+    a|
+    517
+    a|
+    NVMe/IB
+    a|
+    LHF-285-ZV9YZ
+    a|
+    518
+    a|
+    FC
+    a|
+    IHI-L85-ZXQEP
+    a|
+    519
+    a|
+    iSER/IB
+    a|
+    RHK-585-ZY7P5
+    a|
+    520
+    a|
+    FC-PTL
+    a|
+    NHN-095-ZZ0XF
+    a|
+    521
+    a|
+    SRP/IB
+    a|
+    GHP-895-Z25BD
+    a|
+    517
+    a|
+    NVMe/IB
+    a|
+    516
+    a|
+    NVMe/RoCE
+    a|
+    7HS-R95-Z3M06
+    a|
+    518
+    a|
+    FC
+    a|
+    UHU-B95-Z43X2
+    a|
+    519
+    a|
+    FC-PTL
+    a|
+    8HX-U95-Z5K6F
+    a|
+    520
+    a|
+    iSER/IB
+    a|
+    UHZ-E95-Z71LH
+    a|
+    521
+    a|
+    SRP/IB
+    a|
+    SH2-X95-Z8IVS
+    a|
+    518
+    a|
+    FC
+    a|
+    516
+    a|
+    NVMe/FC     or
+
+NVMe/RoCE
+    a|
+    UH5-H95-Z9Z58
+    a|
+    517
+    a|
+    NVMe/FC     or
+
+NVMe/IB
+    a|
+    XH7-195-ZBGJC
+    a|
+    519
+    a|
+    FC-PTL
+    a|
+    FHA-K95-ZCXX0
+    a|
+    520
+    a|
+    iSER/IB
+    a|
+    JHC-595-ZDE3X
+    a|
+    521
+    a|
+    SRP/IB
+    a|
+    0HF-095-ZFVFN
+    a|
+    519
+    a|
+    FC-PTL
+    a|
+    516
+    a|
+    NVMe/FC or NVMe/RoCE
+    a|
+    YHH-895-ZGCXS
+    a|
+    517
+    a|
+    NVMe/FC or NVMe/IB
+    a|
+    2HK-R95-ZHT83
+    a|
+    518
+    a|
+    FC
+    a|
+    1HM-BA5-ZJALA
+    a|
+    520
+    a|
+    iSER/IB
+    a|
+    YHP-UA5-ZKRXA
+    a|
+    521
+    a|
+    SRP/IB
+    a|
+    MHR-EA5-ZL83V
+    a|
+    520
+    a|
+    iSER/IB
+    a|
+    516
+    a|
+    NVMe/FC or NVMe/RoCE
+    a|
+    HHU-XA5-ZNPLT
+    a|
+    517
+    a|
+    NVMe/FC or NVMe/IB
+    a|
+    YHW-HA5-Z07QK
+    a|
+    518
+    a|
+    FC
+    a|
+    WHZ-1A5-ZPN4U
+    a|
+    519
+    a|
+    FC/PTL
+    a|
+    7H2-KA5-ZR5C3
+    a|
+    521
+    a|
+    SRP
+    a|
+    3H5-4A5-ZSLVX
+    a|
+    521
+    a|
+    SRP/IB
+    a|
+    516
+    a|
+    NVMe/FC or NVMe/RoCE
+    a|
+    1H7-NA5-ZT31W
+    a|
+    517
+    a|
+    NVMe/FC or NVMe/IB
+    a|
+    XHA-7A5-ZVJGC
+    a|
+    518
+    a|
+    FC
+    a|
+    KHC-QA5-ZW1P3
+    a|
+    519
+    a|
+    FC/PTL
+    a|
+    CHE-AA5-ZXH2F
+    a|
+    520
+    a|
+    iSER/IB
+    a|
+    SHH-TA5-ZZYHS
+    |===
+    *Note:* If your controller submodel ID is not listed, contact https://mysupport.netapp.com/site/[NetApp Support].
+
+. In System Manager, locate the Feature Enable Identifier.
+ .. Go to *Settings* > *System*.
+ .. Scroll down to *Add-ons*.
+ .. Under *Change Feature Pack*, locate the *Feature Enable Identifier*.
+ .. Copy and paste this 32-digit number to a text file.
++
+image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-ef600.gif[]
+. Go to http://partnerspfk.netapp.com[NetApp License Activation: Storage Array Premium Feature Activation], and enter the information required to obtain the feature pack.
+ ** Chassis Serial Number
+ ** Feature Activation Code
+ ** Feature Enable Identifier
+*Important:* The Premium Feature Activation web site includes a link to "`Premium Feature Activation Instructions.`" Do not attempt to use those instructions for this procedure.
+. Choose whether to receive the key file for the feature pack in an email or download it directly from the site.
+
+Go to link:hpp_change_supertask_task.md#[Stop host I/O].
+
+== Stop host I/O
+
+[.lead]
+You must stop all I/O operations from the host before converting the protocol of the host ports. You cannot access data on the storage array until you successfully complete the conversion.
+
+. Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
+ ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
+ ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
+ ** Unmount all file systems associated with volumes on the array.
+*Note:* The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
+
++
+IMPORTANT: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, you might lose data.
+. Wait for any data in cache memory to be written to the drives.
++
+The green Cache Active LED on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
+
+. From the Home page of SANtricity System Manager, select *View Operations in Progress*.
+. Wait for all operations to complete before continuing with the next step.
+
+Go to link:hpp_change_supertask_task.md#[Change the feature pack]
+
+== Change the feature pack
+
+[.lead]
+You change the feature pack to convert the host protocol of your host ports.
+
+. From SANtricity System Manager, select *Settings* > *System*.
+. Under *Add-ons*, select *Change Feature Pack*.
++
+image::../media/sam1130_ss_system_change_feature_pack_maint-ef600.gif[]
+
+. Click *Browse*, and then select the feature pack you want to apply.
+. Type *CHANGE* in the field.
+. Click *Change*.
++
+The feature pack migration begins. Both controllers automatically reboot twice to allow the new feature pack to take effect. The storage array returns to a responsive state after the reboot is complete.
+
+. Confirm the host ports have the protocol you expect.
+ .. From SANtricity System Manager, select *Hardware*.
+ .. Click *Show back of shelf*.
+ .. Select the graphic for either Controller A or Controller B.
+ .. Select *View settings* from the context menu.
+ .. Select the *Host Interfaces* tab.
+ .. Click *Show more settings*.
+
+Go to link:hpp_complete_protocol_conversion_task.md#[Complete host protocol conversion].

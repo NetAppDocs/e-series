@@ -1,0 +1,42 @@
+---
+permalink: config-linux/iser_ib_install_smcli_11_53_task.html
+sidebar: sidebar
+keywords: 
+summary: 'When you install the SANtricity Storage Manager software on your management station, a graphical user interface \(GUI\) and a command line interface \(CLI\) are installed by default. These instructions assume that you will install the SANtricity Storage Manager GUI on a management station and not on the I/O host.'
+---
+= Install SANtricity Storage Manager for SMcli (SANtricity software version 11.53 or earlier)
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When you install the SANtricity Storage Manager software on your management station, a graphical user interface (GUI) and a command line interface (CLI) are installed by default. These instructions assume that you will install the SANtricity Storage Manager GUI on a management station and _not_ on the I/O host.
+
+IMPORTANT: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricty System Manager, refer to the _Download the command line interface (CLI)_ topic under the SANtricity System Manager Online Help.
+
+* You are using SANtricity software 11.53 or earlier.
+* You must have the correct administrator or superuser privileges.
+* You must have ensured that the system that will contain the SANtricity Storage Manager client has the following minimum requirements:
+ ** *RAM*: 2 GB for Java Runtime Engine
+ ** *Disk space*: 5 GB
+ ** *OS/Architecture*: Refer to https://mysupport.netapp.com/site/[NetApp Support]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager* for guidance on determining the supported operating system versions and architectures.
+
+This section describes how to install SANtricity Storage Manager on both the Windows and Linux OS platforms, because both Windows and Linux are common management station platforms when Linux is used for the data host.
+
+. Download the SANtricity software release from https://mysupport.netapp.com/site/[NetApp Support]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager*.
+. Run the SANtricity installer.
++
+|===
+| Windows| Linux
+a|
+Double-click the SMIA*.exe installation package to start the installation.
+a|
+
+ .. Go to the directory where the SMIA*.bin installation package is located.
+ .. If the temp mount point does not have execute permissions, set the IATEMPDIR variable. Example: IATEMPDIR=/root ./SMIA-LINUXX64-11.25.0A00.0002.bin
+ .. Run the chmod +x SMIA*.bin command to grant execute permission to the file.
+ .. Run the ./SMIA*.bin command to start the installer.
+
++
+|===
+
+. Use the installation wizard to install the software on the management station.

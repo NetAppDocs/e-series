@@ -8,13 +8,13 @@ summary: ''
 :icons: font
 :imagesdir: ../media/
 
-* xref:concept_overview.adoc[Overview]
-* link:concept_system_requirements.md#concept_system_requirements[System requirements]
-* link:concept_set_up_remote_storage_volumes.md#concept_set_up_remote_storage_volumes[Set up Remote Storage Volumes]
-* xref:task_import_remote_storage.adoc[Import remote storage]
-* link:task_view_import_progress.md#task_view_import_progress[View import progress]
-* xref:task_modify_remote_storage_connection_settings.adoc[Modify remote storage connection settings]
-* xref:task_remove_remote_storage.adoc[Remove remote storage object]
+* xref:overview_concept.adoc[Overview]
+* link:system_reqs_concept.md#system_reqs_concept[System requirements]
+* link:setup_remote_volumes_concept.md#setup_remote_volumes_concept[Set up Remote Storage Volumes]
+* xref:import_remote_storage_task.adoc[Import remote storage]
+* link:view_import_progress_task.md#view_import_progress_task[View import progress]
+* xref:modify_remote_storage_task.adoc[Modify remote storage connection settings]
+* xref:remove_remote_storage_task.adoc[Remove remote storage object]
 * xref:reference_copyright_and_trademark.adoc[Copyright, trademark, and machine translation]
  ** xref:reference_copyright.adoc[Copyright]
  ** xref:reference_trademark.adoc[Trademark]

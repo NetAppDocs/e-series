@@ -1,0 +1,82 @@
+---
+permalink: install-hw-e2800-e5700/e2824_e5724_connect_cables_task.html
+sidebar: sidebar
+keywords: 
+summary: 'You attach the power cables and power on the drive shelves.'
+---
+= Connect the cables
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You attach the power cables and power on the drive shelves.
+
+* You have installed your hardware.
+* You have taken anti-static precautions.
+
+. Cable the Shelves
++
+Cable the system according to your configuration. Examples are shown in this section. For more cabling options, see Cabling E-Series Hardware.
++
+http://docs.netapp.com/ess-11/index.jsp[Cabling E-Series Hardware]
++
+For the examples shown in this section you will need the following cables:
++
+|===
+a|
+image:../media/sas_cable.png[]
+a|
+*SAS cables*
+|===
+|===
+a|
+
+ .. Cable controller A to IOM A of the first drive shelf.
+ .. Cable IOM A of the first drive shelf to IOM A of the second drive shelf.
+ .. Cable IOM A of the second drive shelf to IOM A of the third drive shelf.
+ .. Cable controller B to IOM B of the third drive shelf.
+ .. Cable IOM B of the second drive shelf to IOM B of the third drive shelf.
+ .. Cable IOM B of the first drive shelf to IOM B of the second drive shelf.
+
+a|
+image:../media/trafford_power.png[]     Example A: An E5700 controller shelf with three DE212C/DE224 disk shelves in a standard SAS configuration.
++
+|===
+|===
+a|
+
+ .. Cable controller A to IOM A.
+ .. Cable controller B to IOM B.
+
+a|
+image:../media/trafford_power.png[]     Example B: An E5700 controller shelf with one DE212C/DE224 disk shelf in a standard SAS configuration.
++
+|===
+
+. Power the Drive Shelves
++
+You will need the following cables:
++
+|===
+a|
+image:../media/power_cable_inst-hw-e2800-e5700.png[]
+a|
+*Power cables*
+|===
+CAUTION:
++
+Confirm the drive shelf power switches are off.
+
+ .. Connect the two power cables for each shelf to different power distribution units (PDUs) in the cabinet or rack.
+ .. If you have drive shelves, turn on their two power switches first. Wait 2 minutes before applying power to the controller shelf.
+ .. Turn on the two power switches on the controller shelf.
+ .. Check the LEDs and seven-segment display on each controller.
++
+During boot, the seven-segment display shows the repeating sequence of OS, Sd, blank to indicate the controller is performing start-of-day processing. After the controller has booted up, the shelf ID is displayed.
+
++
+|===
+a|
+image:../media/trafford_power.png[]     Example: Power connections are on the rear of the shelf.
++
+|===

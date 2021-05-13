@@ -1,0 +1,29 @@
+---
+permalink: maintenance-ef600/sas_overview_supertask_concept.html
+sidebar: sidebar
+keywords: 
+summary: 'If you plan to add a SAS expansion card, keep the following requirements in mind.'
+---
+= Overview and Requirements
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you plan to add a SAS expansion card, keep the following requirements in mind.
+
+* You have followed the link:../com.netapp.doc.e-f600-hw-install/home.html[Installation and Setup Instructions for the EF600] to set up your EF300 controller.
+* You have updated your firmware to the latest version. To update your firmware follw the instructions in the link:../com.netapp.doc.ssm-sys-upg/home.html[Upgrading SANtricity OS].
+* You have scheduled a downtime maintenance window for this procedure. You cannot access data on the storage array until you have successfully completed this procedure.
+* You have an ESD wristband, or you have taken other antistatic precautions.
+* You have a #1 Phillips screwdriver.
+* You have labels to identify each cable that is connected to the controller canister.
+* You have installed SANtricity System Manager on a management station, so you can use the storage array's command line interface (CLI).
++
+If SANtricity System Manager has not yet been installed, follow the instructions in the link:../com.netapp.doc.ssm-exp-ic-lin/home.html[Linux express configuration], link:../com.netapp.doc.ssm-exp-ic-win/home.html[Windows express configuration], or link:../com.netapp.doc.ssm-exp-ic-vm/home.html[VMware express configuration] to download and install the software.
+
+* EF300 controllers may have a SAS expansion card installed in port 1 to allow for drive tray expansion.
+* To cable your SAS expansion see https://docs.netapp.com/ess-11/topic/com.netapp.doc.e-hw-cabling/home.html[Cabling E-Series hardware] for instructions.
+
+This section describes how to prepare to replace or upgrade a host interface card in the following controller shelves:
+
+* EF300 controller shelf

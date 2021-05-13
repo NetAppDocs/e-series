@@ -8,10 +8,10 @@ summary: ''
 :icons: font
 :imagesdir: ../media/
 
-* link:concept_overview_and_upgrade_considerations.md#concept_overview_and_upgrade_considerations[Overview and upgrade considerations]
-* link:task_upgrade_software_and_firmware_for_a_single_controller.md#task_upgrade_software_and_firmware_for_a_single_controller[Upgrade software and firmware for a single controller]
-* link:task_upgrade_software_and_firmware_for_multiple_controllers.md#task_upgrade_software_and_firmware_for_multiple_controllers[Upgrade software and firmware for multiple controllers]
-* link:task_upgrade_drive_firmware.md#task_upgrade_drive_firmware[Upgrade drive firmware]
+* link:overview_upgrade_consider_task.md#overview_upgrade_consider_task[Overview and upgrade considerations]
+* link:upgrade_single_controller_task.md#upgrade_single_controller_task[Upgrade software and firmware for a single controller]
+* link:upgrade_multiple_controller_task.md#upgrade_multiple_controller_task[Upgrade software and firmware for multiple controllers]
+* link:upgrade_drive_firmware_task.md#upgrade_drive_firmware_task[Upgrade drive firmware]
 * xref:reference_copyright_and_trademark.adoc[Copyright and trademark]
  ** xref:reference_copyright.adoc[Copyright]
  ** xref:reference_trademark.adoc[Trademark]

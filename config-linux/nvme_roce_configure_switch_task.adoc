@@ -1,0 +1,18 @@
+---
+permalink: config-linux/nvme_roce_configure_switch_task.html
+sidebar: sidebar
+keywords: 
+summary: 'You configure the switches according to the vendor’s recommendations for NVMe over RoCE. These recommendations might include both configuration directives as well as code updates.'
+---
+= Configure the switch
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You configure the switches according to the vendor's recommendations for NVMe over RoCE. These recommendations might include both configuration directives as well as code updates.
+
+IMPORTANT: *RISK OF DATA LOSS.* You must enable Priority Flow Control or Global Pause Control on the switch to eliminate the risk of data loss in an NVMe over RoCE environment.
+
+Enable Ethernet pause frame flow control *end to end* as the best practice configuration.
+
+Consult your network administrator for tips on selecting the best configuration for your environment.

@@ -8,12 +8,12 @@ summary: ''
 :icons: font
 :imagesdir: ../media/
 
-* xref:concept_overview_and_requirements.adoc[Overview and requirements]
-* link:task_host_cabling.md#task_host_cabling[Host cabling]
-* link:task_drive_shelf_cabling.md#task_drive_shelf_cabling[Drive shelf cabling]
-* xref:task_power_cabling.adoc[Power cabling]
-* link:task_hot_adding_a_drive_shelf.md#task_hot_adding_a_drive_shelf[Hot adding a drive shelf]
-* link:task_ethernet_cabling_for_a_management_station.md#task_ethernet_cabling_for_a_management_station[Ethernet cabling for a management station]
+* xref:cable_overview_requirements_concept.adoc[Overview and requirements]
+* link:host_cable_task.md#host_cable_task[Host cabling]
+* link:driveshelf_cable_task.md#driveshelf_cable_task[Drive shelf cabling]
+* xref:power_cable_task.adoc[Power cabling]
+* link:hotadd_drive_shelf_task.md#hotadd_drive_shelf_task[Hot adding a drive shelf]
+* link:ethernet_cable_task.md#ethernet_cable_task[Ethernet cabling for a management station]
 * xref:reference_copyright.adoc[Copyright]
 * xref:reference_trademark.adoc[Trademark]
-* xref:concept_how_to_send_comments_about_documentation_and_receive_update_notifications_netapp_post_preface.adoc[How to send comments about documentation and receive update notifications]
+* xref:how_to_send_comments_concept.adoc[How to send comments about documentation and receive update notifications]

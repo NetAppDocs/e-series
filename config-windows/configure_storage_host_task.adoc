@@ -1,0 +1,66 @@
+---
+permalink: config-windows/configure_storage_host_task.html
+sidebar: sidebar
+keywords: 
+summary: 'A new LUN is offline and has no partition or file system when a Windows host first discovers it. You must bring the volume online and initialize it in Windows. Optionally, you can format the LUN with a file system.'
+---
+= Configure storage on the host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+A new LUN is offline and has no partition or file system when a Windows host first discovers it. You must bring the volume online and initialize it in Windows. Optionally, you can format the LUN with a file system.
+
+The host must have discovered the LUN.
+
+You can initialize the disk as a basic disk with a GPT or MBR partition table. Typically, you format the LUN with a file system such as New Technology File System (NTFS).
+
+. From a Windows command prompt, enter the diskpartcontext.
++
+----
+> diskpart
+----
+
+. View the list of available disks.
++
+----
+> list disk
+----
+
+. Select the disk to bring online.
++
+----
+> select disk 1
+----
+
+. Bring the disk online.
++
+----
+> online disk
+----
+
+. Create a partition.
++
+----
+> create partition primary
+----
++
+NOTE: In Windows Server 2008 and later, you are prompted immediately after creating the partition to format the disk and give it a name. Select *Cancel* on the prompt to continue using these instructions for formatting and naming the partition.
+
+. Assign a drive letter.
++
+----
+> assign letter=f
+----
+
+. Format the disk.
++
+----
+> format FS=NTFS LABEL=”New Volume” QUICK
+----
+
+. Exit the diskpart context.
++
+----
+> exit
+----
