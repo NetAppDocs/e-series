@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/fc_install_configure_host_utilities_task.html
 sidebar: sidebar
-keywords: 
-summary: 'Linux Unified Host Utilities 7.1 includes tools to manage NetApp storage, including failover policies and physical paths.'
+keywords: linux, unified, host, utilities, tool, manage, netapp, storage, failover, policies, policy, physical, path, install, configure
+summary: Linux Unified Host Utilities 7.1 includes tools to manage NetApp storage, including failover policies and physical paths.
 ---
 = Install and configure Linux Unified Host Utilities
 :icons: font

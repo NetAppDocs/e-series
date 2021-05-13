@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/iser_ib_configure_network_attached_hosts_task.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The InfiniBand OFED driver stack supports running both iSER and SRP simultaneously on the same ports, so no additional hardware is required.'
 ---
 = Configure networking for storage attached hosts--iSER over Infiniband
@@ -66,6 +66,7 @@ iscsiadm -m iface -I iser > /var/lib/iscsi/ifaces/iface-ib1
 
  .. Edit each iface file to set the interface name and initiator IQN. Set the following parameters appropriately for each iface file:
 +
+[options="header"]
 |===
 | Option| Value
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: cloud-connector/learn_intro_concept.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: learn, general, concept, setup, installation, configuration, job, santricity, cloud, connector, application
+summary: Learn about general concepts, setup, installation, configuration, and jobs associated with the SANtricity Cloud Connector application.
 ---
 = Learn about Cloud Connector
 :icons: font
@@ -87,6 +87,7 @@ You must have a compatible operating system to use the SANtricity Cloud Connecto
 
 The SANtricity Cloud Connector 4.0 application is compatible with and supported on the following operating systems:
 
+[options="header"]
 |===
 | Operating System| Version| Architecture
 a|

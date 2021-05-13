@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/sas_install_smcli_11_53_task.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'When you install the SANtricity Storage Manager software on your management station, the command line interface \(CLI\) is installed to help you manage your array. By also installing the software on the host, the Host Context Agent is installed that helps the host push configuration information to the storage array controllers through the I/O path.'
 ---
 = Install SANtricity Storage Manager for SMcli (SANtricity software version 11.53 or earlier)
@@ -25,6 +25,7 @@ This section describes how to install SANtricity Storage Manager on both the Win
 . Download the SANtricity software release from https://mysupport.netapp.com/site/[NetApp Support]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager*.
 . Run the SANtricity installer.
 +
+[options="header"]
 |===
 | Windows| Linux
 a|
