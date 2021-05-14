@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/iscsi_configure_switches_concept.html
 sidebar: sidebar
-keywords: 
-summary: 'You configure the switches according to the vendor’s recommendations for iSCSI. These recommendations might include both configuration directives as well as code updates.'
+keywords: configure, switch, vendor, recommendation, iscsi, configuration, code, update
+summary: You configure the switches according to the vendor’s recommendations for iSCSI. These recommendations might include both configuration directives as well as code updates.
 ---
 = Configure the switches
 :icons: font

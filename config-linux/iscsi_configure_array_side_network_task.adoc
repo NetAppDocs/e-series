@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/iscsi_configure_array_side_network_task.html
 sidebar: sidebar
-keywords:
-summary: 'You use the SANtricity System Manager GUI to configure iSCSI networking on the array side.'
+keywords: santricity, system, manager, gui, configure, iscsi, network, array, side, array-side
+summary: You use the SANtricity System Manager GUI to configure iSCSI networking on the array side.
 ---
 = Configure array-side networking
 :experimental:

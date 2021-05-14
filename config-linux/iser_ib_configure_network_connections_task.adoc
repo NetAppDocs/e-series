@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/iser_ib_configure_network_connections_task.html
 sidebar: sidebar
-keywords: 
-summary: 'If your configuration uses the iSER over Infiniband protocol, perform the steps in this section.'
+keywords: configuration, iser, infiniband, protocol, section, configure, network, connection
+summary: If your configuration uses the iSER over Infiniband protocol, perform the steps in this section.
 ---
 = Configure network connections--iSER over Infiniband
 :experimental:

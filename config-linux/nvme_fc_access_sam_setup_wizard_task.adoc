@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_fc_access_sam_setup_wizard_task.html
 sidebar: sidebar
-keywords:
-summary: 'You use the Setup wizard in SANtricity System Manager to configure your storage array.'
+keywords: use, setup, wizard, santricity, system, manager, configure, storage, array, access
+summary: You use the Setup wizard in SANtricity System Manager to configure your storage array.
 ---
 = Access SANtricity System Manager and use Setup wizard
 :icons: font

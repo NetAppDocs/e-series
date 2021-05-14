@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/iser_ib_worksheet_concept.html
 sidebar: sidebar
-keywords:
-summary: 'You can use this worksheet to record iSER over Infiniband storage configuration information. You need this information to perform provisioning tasks.'
+keywords: worksheet, record, iser, infiniband, storage, configuration, information, provision, task
+summary: You can use this worksheet to record iSER over Infiniband storage configuration information. You need this information to perform provisioning tasks.
 ---
 = iSER over InfiniBand worksheet
 :icons: font
