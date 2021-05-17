@@ -56,8 +56,9 @@ a|
 Configured ethernet port speed
 a|
 Select the desired speed.    The options that appear in the drop-down list depend on the maximum speed that your network can support (for example, 10 Gbps).
-+
+
 NOTE: The optional 25Gb iSCSI host interface cards available on the controllers do not auto-negotiate speeds. You must set the speed for each port to either 10 Gb or 25 Gb. All ports must be set to the same speed.
+
 a|
 Enable IPv4 / Enable IPv6
 a|
@@ -66,13 +67,13 @@ a|
 TCP listening port     (Available by clicking *Show more port settings*.)
 a|
     If necessary, enter a new port number.
-+
+
 The listening port is the TCP port number that the controller uses to listen for iSCSI logins from host iSCSI initiators. The default listening port is 3260. You must enter 3260 or a value between 49152 and 65535.
 a|
 MTU size     (Available by clicking *Show more port settings*.)
 a|
     If necessary, enter a new size in bytes for the Maximum Transmission Unit (MTU).
-+
+
 The default Maximum Transmission Unit (MTU) size is 1500 bytes per frame. You must enter a value between 1500 and 9000.
 a|
 Enable ICMP PING responses

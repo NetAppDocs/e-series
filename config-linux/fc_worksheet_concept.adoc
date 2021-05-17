@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/fc_worksheet_concept.html
 sidebar: sidebar
-keywords: worksheet, record, fc, storage, configuration, information, perform, provision, task, linux
+keywords: worksheet, record, fc, storage, configuration, information, perform, provision, task, linux, host, identifier, target, mapping, host
 summary: You can use this worksheet to record FC storage configuration information. You need this information to perform provisioning tasks.
 ---
 = FC worksheet for Linux

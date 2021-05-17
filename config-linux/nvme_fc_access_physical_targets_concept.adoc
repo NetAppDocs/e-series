@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/nvme_fc_access_physical_targets_concept.html
 sidebar: sidebar
-keywords: configure, i/o, direct, device, target, based, linux, version, sles, physical, nvme, multipath, underly, native
+keywords: configure, i/o, direct, device, target, based, linux, version, sles, physical, nvme, multipath, underly, native, physical
 summary: You can configure the I/O directed to the device target based on your Linux version. For SLES 15, I/O is directed to the physical NVMe device targets by the Linux host. A native NVMe multipathing solution manages the physical paths underlying the single apparent physical device displayed by the host.
 ---
 = Access NVMe volumes for physical NVMe device targets
