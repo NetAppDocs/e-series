@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_fc_create_partition_files_task.html
 sidebar: sidebar
-keywords: 
-summary: 'You can create a partition on the multipath device, optionally create a file system on the namespace, and mount the partition.'
+keywords: create, partition, multipath, device, file, system, namespace, mount, filesystem
+summary: You can create a partition on the multipath device, optionally create a file system on the namespace, and mount the partition.
 ---
 = Create partitions and filesystems
 :icons: font

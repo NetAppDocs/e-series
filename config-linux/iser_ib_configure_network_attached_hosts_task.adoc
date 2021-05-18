@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/iser_ib_configure_network_attached_hosts_task.html
 sidebar: sidebar
-keywords:
-summary: 'The InfiniBand OFED driver stack supports running both iSER and SRP simultaneously on the same ports, so no additional hardware is required.'
+keywords: infiniband, ofed, driver, stack, support, iser, srp, simultaneous, same, port, hardware, require, host, storage, attach
+summary: The InfiniBand OFED driver stack supports running both iSER and SRP simultaneously on the same ports, so no additional hardware is required.
 ---
 = Configure networking for storage attached hosts--iSER over Infiniband
 :icons: font

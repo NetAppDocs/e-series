@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/iscsi_install_smcli_11_53_task.html
 sidebar: sidebar
-keywords:
-summary: 'When you install the SANtricity Storage Manager software on your management station, the command line interface \(CLI\) is installed to help you manage your array. By also installing the software on the host, the Host Context Agent is installed that helps the host push configuration information to the storage array controllers through the I/O path.'
+keywords: install, santricity, storage, manager, software, station, management, command, line, interface, cli, host, i/o, path, controller
+summary: When you install the SANtricity Storage Manager software on your management station, the command line interface \(CLI\) is installed to help you manage your array. By also installing the software on the host, the Host Context Agent is installed that helps the host push configuration information to the storage array controllers through the I/O path.
 ---
 = Install SANtricity Storage Manager for SMcli (SANtricity software version 11.53 or earlier)
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_fc_express_setup_task.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use NVMe with the Fibre Channel protocol.'
+keywords: nvme, fibre, channel, protocol, express, setup
+summary: You can use NVMe with the Fibre Channel protocol.
 ---
 = NVMe over Fibre Channel Express Setup
 :icons: font

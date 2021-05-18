@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/fc_verify_linux_config_support_task.html
 sidebar: sidebar
-keywords: 
-summary: 'To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool \(IMT\) to verify that the entire configuration is supported.'
+keywords: ensure, reliable, operation, create, implementation, plan, netapp, interoperability, matrix, tool, imt, verify, configuration, support, linux
+summary: To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool \(IMT\) to verify that the entire configuration is supported.
 ---
 = Verify the Linux configuration is supported
 :experimental:

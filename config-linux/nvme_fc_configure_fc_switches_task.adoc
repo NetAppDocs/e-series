@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_fc_configure_fc_switches_task.html
 sidebar: sidebar
-keywords: 
-summary: 'Configuring \(zoning\) the Fibre Channel \(FC\) switches enables the hosts to connect to the storage array and limits the number of paths. You zone the switches using the management interface for the switches.'
+keywords: configuring, configure, fibre, channel, fc, switch, enable, host, connect, storage, array, limit, number, path, zone, interface, management
+summary: Configuring \(zoning\) the Fibre Channel \(FC\) switches enables the hosts to connect to the storage array and limits the number of paths. You zone the switches using the management interface for the switches.
 ---
 = Configure the FC switches
 :icons: font

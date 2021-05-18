@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/iscsi_verify_ip_network_connections_task.html
 sidebar: sidebar
-keywords: 
-summary: 'You verify Internet Protocol \(IP\) network connections by using ping tests to ensure the host and array are able to communicate.'
+keywords: verify, internet, protocol, ip, network, connection, ping, test, ensure, host, array, communicate
+summary: You verify Internet Protocol \(IP\) network connections by using ping tests to ensure the host and array are able to communicate.
 ---
 = Verify IP network connections
 :icons: font
