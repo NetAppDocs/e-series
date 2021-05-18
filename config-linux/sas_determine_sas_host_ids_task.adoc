@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/sas_determine_sas_host_ids_task.html
 sidebar: sidebar
-keywords: 
-summary: 'For the SAS protocol, you find the SAS addresses using the HBA utility, then use the HBA BIOS to make the appropriate configuration settings.'
+keywords: sas, protocol, address, hba, utility, bios, configuration, setting, determine, host, identifier, linux
+summary: For the SAS protocol, you find the SAS addresses using the HBA utility, then use the HBA BIOS to make the appropriate configuration settings.
 ---
 = Determine SAS host identifiers - Linux
 :icons: font

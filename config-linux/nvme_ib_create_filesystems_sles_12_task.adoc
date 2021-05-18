@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_ib_create_filesystems_sles_12_task.html
 sidebar: sidebar
-keywords: 
-summary: 'For RHEL 7 and SLES 12, you create a file system on the namespace and mount the filesystem.'
+keywords: rhel, sles, file, system, namespace, mount, filesystem, create
+summary: For RHEL 7 and SLES 12, you create a file system on the namespace and mount the filesystem.
 ---
 = Create filesystems (RHEL 7 and SLES 12)
 :icons: font

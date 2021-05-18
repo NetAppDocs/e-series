@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/srp_ib_create_partitions_filesystems_task.html
 sidebar: sidebar
-keywords: 
-summary: 'A new LUN has no partition or file system when the Linux host first discovers it. You must format the LUN before it can be used. Optionally, you can create a file system on the LUN.'
+keywords: lun, partition, file, system, linux, host, discover, format, lun, filesystem, create
+summary: A new LUN has no partition or file system when the Linux host first discovers it. You must format the LUN before it can be used. Optionally, you can create a file system on the LUN.
 ---
 = Create partitions and filesystems
 :icons: font

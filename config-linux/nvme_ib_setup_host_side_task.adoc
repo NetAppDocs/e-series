@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_ib_setup_host_side_task.html
 sidebar: sidebar
-keywords: 
-summary: 'Configuring an NVMe initiator in an InfiniBand environment includes installing and configuring the infiniband, nvme-cli, and rdma packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.'
+keywords: configuring, configure, nvme, initiator, infiniband, environment, install, nvme-cli, rdma, package, nvme-of, layer, host, side
+summary: Configuring an NVMe initiator in an InfiniBand environment includes installing and configuring the infiniband, nvme-cli, and rdma packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
 ---
 = Set up NVMe over InfiniBand on the host side
 :icons: font

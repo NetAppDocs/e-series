@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_roce_setup_host_side_task.html
 sidebar: sidebar
-keywords: 
-summary: 'NVMe initiator configuration in a RoCE environment includes installing and configuring the rdma-core and nvme-cli packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.'
+keywords: nvme, initiator, configuration, roce, environment, install, configuring, configure, rdma-core, nvme-cli, package, ip, address, set, up, nvme-of, layer, host, nvme, roce, host, side
+summary: NVMe initiator configuration in a RoCE environment includes installing and configuring the rdma-core and nvme-cli packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
 ---
 = Set up NVMe over RoCE on the host side
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_ib_express_setup_task.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use NVMe with the InfiniBand network protocol.'
+keywords: nvme, infiniband, network, protocol, express, setup
+summary: You can use NVMe with the InfiniBand network protocol.
 ---
 = NVMe over InfiniBand Express Setup
 :icons: font

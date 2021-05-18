@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/srp_ib_worksheet_concept.html
 sidebar: sidebar
-keywords:
-summary: 'You can use this worksheet to record SRP over Infiniband storage configuration information. You need this information to perform provisioning tasks.'
+keywords: worksheet, record, srp, infiniband, storage, configuration, information, perform, provision, task, host, identifier, recommend, map, mapping, name
+summary: You can use this worksheet to record SRP over Infiniband storage configuration information. You need this information to perform provisioning tasks.
 ---
 = SRP over Infiniband worksheet
 :icons: font
