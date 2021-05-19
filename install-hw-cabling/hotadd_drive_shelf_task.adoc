@@ -1,8 +1,8 @@
 ---
 permalink: install-hw-cabling/hotadd_drive_shelf_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: drive, shelf, power, applied, component, apply, storage, system, configure, add, relocate, capacity, access, data, hot, add, prepare, power, complete
+summary: You can add a new drive shelf while power is still applied to the other components of the storage system. You can configure, reconfigure, add, or relocate storage system capacity without interrupting user access to data.
 ---
 = Hot adding a drive shelf
 :icons: font

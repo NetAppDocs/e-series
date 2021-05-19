@@ -1,8 +1,8 @@
 ---
 permalink: config-windows/fc_perform_specific_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: fibre, channel, protocol, configure, switch, host, port, identifier, perform, fc-specific, configuring, fc, windows, wwpn, worksheet
+summary: For the Fibre Channel protocol, you configure the switches and determine the host port identifiers.
 ---
 = Perform FC-specific tasks
 :icons: font
@@ -70,13 +70,13 @@ a|
 a|
 Host port 0 to FC switch zone 0
 a|
- 
+
 a|
 7
 a|
 Host port 1 to FC switch zone 1
 a|
- 
+
 |===
 
 === Target identifiers
@@ -100,25 +100,25 @@ a|
 a|
 Controller A, port 1 to FC switch 1
 a|
- 
+
 a|
 9
 a|
 Controller A, port 2 to FC switch 2
 a|
- 
+
 a|
 4
 a|
 Controller B, port 1 to FC switch 1
 a|
- 
+
 a|
 8
 a|
 Controller B, port 2 to FC switch 2
 a|
- 
+
 |===
 
 === Mapping host
@@ -127,9 +127,9 @@ a|
 a|
 Mapping host name
 a|
- 
+
 a|
 Host OS type
 a|
- 
+
 |===

@@ -1,8 +1,8 @@
 ---
 permalink: config-vmware/verify_vmware_config_support_task.html
 sidebar: sidebar
-keywords: 
-summary: 'To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool \(IMT\) to verify that the entire configuration is supported.'
+keywords: ensure, reliable, operation, create, implementation, plan, netapp, interoperability, matrix, tool, imt, verify, configuration, support, verify, vmware, support
+summary: To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool \(IMT\) to verify that the entire configuration is supported.
 ---
 = Verify the VMware configuration is supported
 :experimental:

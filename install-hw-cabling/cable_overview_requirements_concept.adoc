@@ -1,8 +1,8 @@
 ---
 permalink: install-hw-cabling/cable_overview_requirements_concept.html
 sidebar: sidebar
-keywords: 
-summary: 'You can cable a host directly to a controller or use switches to connect a host to a controller. If your storage system includes one or more drive shelves, you must cable them to your controller shelf. You can add a new drive shelf while power is still applied to other components of the storage system. In addition, you can connect your storage system to a network for out-of-band management.'
+keywords: cable, host, direct, controller, switch, connect, storage, system, drive, shelves, shelf, network, applicable, hardware, model, additional, cabling, information, require, component, overview, requirement, out-of-band
+summary: You can cable a host directly to a controller or use switches to connect a host to a controller. If your storage system includes one or more drive shelves, you must cable them to your controller shelf. You can add a new drive shelf while power is still applied to other components of the storage system. In addition, you can connect your storage system to a network for out-of-band management.
 ---
 = Overview and requirements
 :icons: font
@@ -29,7 +29,7 @@ Not applicable.
 a|
 EF300
 a|
- 
+
 a|
 E5724, EF570, E2812, E2824, EF280
 a|

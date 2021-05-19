@@ -1,8 +1,8 @@
 ---
 permalink: install-hw-cabling/host_cable_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: cable, host, direct, controller, switch, connect, cabling, switch, topology
+summary: You can cable a host directly to a controller or use switches to connect a host to a controller.
 ---
 = Host cabling
 :icons: font

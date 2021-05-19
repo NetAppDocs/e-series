@@ -1,8 +1,8 @@
 ---
 permalink: config-windows/configure_storage_host_task.html
 sidebar: sidebar
-keywords: 
-summary: 'A new LUN is offline and has no partition or file system when a Windows host first discovers it. You must bring the volume online and initialize it in Windows. Optionally, you can format the LUN with a file system.'
+keywords: lun, offline, partition, file, system, windows, host, volume, online, initialize, configure, storage
+summary: A new LUN is offline and has no partition or file system when a Windows host first discovers it. You must bring the volume online and initialize it in Windows. Optionally, you can format the LUN with a file system.
 ---
 = Configure storage on the host
 :icons: font

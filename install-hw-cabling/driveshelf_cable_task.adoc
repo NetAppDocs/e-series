@@ -1,8 +1,8 @@
 ---
 permalink: install-hw-cabling/driveshelf_cable_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: connect, controller, shelf, i/o, module, iom, drive, cabling, cable, e2800, e5700, ef300
+summary: You must connect each controller in the controller shelf to an I/O module (IOM) in a drive shelf.
 ---
 = Drive shelf cabling
 :icons: font
