@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/nvme_ib_access_virtual_targets_concept.html
 sidebar: sidebar
-keywords:
+keywords: configure, i/o, direct, device, target, base, version, sles, suse, linux, rhel, dm-mp, manage, physical, path, underly, virtual, access, nvme, volume, 
 summary: 'You can configure the I/O directed to the device target based on your version of SLES \(SUSE Linux version\). For RHEL 7 and SLES 12, I/O is directed to virtual device targets by the Linux host. DM-MP manages the physical paths underlying these virtual targets.'
 ---
 = Access NVMe volumes for virtual device targets

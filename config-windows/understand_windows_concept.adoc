@@ -1,8 +1,8 @@
 ---
 permalink: config-windows/understand_windows_concept.html
 sidebar: sidebar
-keywords: 
-summary: 'This workflow guides you through the express method for configuring your storage array and SANtricity System Manager to make storage available to a host.'
+keywords: workflow, guide, express, method, configuring, configure, storage, array, santricity, system, manager, available, host, understand
+summary: This workflow guides you through the express method for configuring your storage array and SANtricity System Manager to make storage available to a host.
 ---
 = Understand the workflow
 :icons: font

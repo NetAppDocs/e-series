@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_roce_discover_connect_storage_host_task.html
 sidebar: sidebar
-keywords: 
-summary: 'Before making definitions of each host in SANtricity System Manager, you must discover the target controller ports from the host, and then establish NVMe connections.'
+keywords: making, make, definition, host, santricity, system, manager, discover, target, controller, port, estabilish, nvme, connection, connect, host
+summary: Before making definitions of each host in SANtricity System Manager, you must discover the target controller ports from the host, and then establish NVMe connections.
 ---
 = Discover and connect to the storage from the host
 :icons: font

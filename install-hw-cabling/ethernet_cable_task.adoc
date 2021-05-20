@@ -1,8 +1,8 @@
 ---
 permalink: install-hw-cabling/ethernet_cable_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: connect, storage, system, ethernet, network, out-of-band, storage, array, management, ethernet, cable, connection, cabling, station, fabric, topology
+summary: You can connect your storage system to an Ethernet network for out-of-band storage array management. You must use Ethernet cables for all storage array management connections.
 ---
 = Ethernet cabling for a management station
 :icons: font

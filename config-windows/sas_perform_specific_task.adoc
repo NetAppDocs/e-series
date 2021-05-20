@@ -1,8 +1,8 @@
 ---
 permalink: config-windows/sas_perform_specific_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: sas, protocol, host, port, address, setting, note, column, netapp, interoperability, matrix, tool, imt, determining, identifier, windows, record, sas-specific, information, worksheet
+summary: For the SAS protocol, you determine host port addresses and make the settings recommended in the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool (IMT)].
 ---
 = Perform SAS-specific tasks
 :icons: font
@@ -54,25 +54,25 @@ a|
 a|
 Host (initiator) port 1 connected to Controller A, port 1
 a|
- 
+
 a|
 3
 a|
 Host (initiator) port 1 connected to Controller B, port 1
 a|
- 
+
 a|
 4
 a|
 Host (initiator) port 2 connected to Controller A, port 1
 a|
- 
+
 a|
 5
 a|
 Host (initiator) port 2 connected to Controller B, port 1
 a|
- 
+
 |===
 
 === Target Identifiers
@@ -85,9 +85,9 @@ Recommended configurations consist of two target ports.
 a|
 Mappings Host Name
 a|
- 
+
 a|
 Host OS Type
 a|
- 
+
 |===

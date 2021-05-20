@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_roce_configure_switch_task.html
 sidebar: sidebar
-keywords: 
-summary: 'You configure the switches according to the vendor’s recommendations for NVMe over RoCE. These recommendations might include both configuration directives as well as code updates.'
+keywords: configure, switch, accord, vendor, recommendation, nvme, roce, configuration, directive, code, update
+summary: You configure the switches according to the vendor’s recommendations for NVMe over RoCE. These recommendations might include both configuration directives as well as code updates.
 ---
 = Configure the switch
 :icons: font

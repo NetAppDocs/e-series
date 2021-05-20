@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_roce_assign_volume_task.html
 sidebar: sidebar
-keywords: 
-summary: 'You must assign a volume \(namespace\) to a host or host cluster so it can be used for I/O operations. This assignment grants a host or host cluster access to one or more namespaces in a storage array.'
+keywords: assign, volume, namespace, host, cluster, i/o, operation, assignment, access, storage, array
+summary: You must assign a volume \(namespace\) to a host or host cluster so it can be used for I/O operations. This assignment grants a host or host cluster access to one or more namespaces in a storage array.
 ---
 = Assign a volume
 :icons: font

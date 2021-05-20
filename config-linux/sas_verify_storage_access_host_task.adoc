@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/sas_verify_storage_access_host_task.html
 sidebar: sidebar
-keywords: 
-summary: 'Before using the volume, you verify that the host can write data to the volume and read it back.'
+keywords: volume, verify, host, write, data, storage, access
+summary: Before using the volume, you verify that the host can write data to the volume and read it back.
 ---
 = Verify storage access on the host
 :icons: font

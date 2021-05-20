@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_ib_configure_subnet_manager_task.html
 sidebar: sidebar
-keywords: 
-summary: 'Using an InfiniBand switch to run subnet manager might cause unexpected path loss during high loads. To avoid path loss, configure the subnet manager on one or more of your hosts using opensm.'
+keywords: infiniband, switch, subnet, manager, high, load, avoid, path, loss, opensm, configure
+summary: Using an InfiniBand switch to run subnet manager might cause unexpected path loss during high loads. To avoid path loss, configure the subnet manager on one or more of your hosts using opensm.
 ---
 = Configure subnet manager
 :icons: font

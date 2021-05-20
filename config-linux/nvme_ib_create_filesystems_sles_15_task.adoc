@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_ib_create_filesystems_sles_15_task.html
 sidebar: sidebar
-keywords: 
-summary: 'For SLES 15, you create a filesystem on the native nvme device and mount the filesystem.'
+keywords: sles, create, filesystem, native, nvme, device, filesystem, sles
+summary: For SLES 15, you create a filesystem on the native nvme device and mount the filesystem.
 ---
 = Create filesystems (SLES 15)
 :icons: font

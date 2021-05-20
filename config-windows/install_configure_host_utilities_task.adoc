@@ -1,8 +1,8 @@
 ---
 permalink: config-windows/install_configure_host_utilities_task.html
 sidebar: sidebar
-keywords: 
-summary: 'Windows Unified Host Utilities 7.0 includes tools to enable you to connect host computers to NetApp storage systems and set required parameters on host computers. You can also set appropriate disk timeouts for best read/write performance with NetApp storage.'
+keywords: windows, unified, host, utilities, tools, enable, connect, computer, netapp, storage, system, parameter, disk, timeout, netapp
+summary: Windows Unified Host Utilities 7.0 includes tools to enable you to connect host computers to NetApp storage systems and set required parameters on host computers. You can also set appropriate disk timeouts for best read/write performance with NetApp storage.
 ---
 = Install and configure Windows Unified Host Utilities 7.0
 :icons: font

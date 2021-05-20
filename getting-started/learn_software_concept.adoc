@@ -1,8 +1,8 @@
 ---
 permalink: getting-started/learn_software_concept.html
 sidebar: sidebar
-keywords: 
-summary: 'E-Series systems include SANtricity software for storage provisioning and other tasks.'
+keywords: e-series, system, santricity, software, storage, provision, task, overview, manager, unified, web, service, proxy, command, line, interface, cli
+summary: E-Series systems include SANtricity software for storage provisioning and other tasks.
 ---
 = SANtricity software overview
 :icons: font

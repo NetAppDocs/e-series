@@ -1,8 +1,8 @@
 ---
 permalink: config-vmware/discover_storage_host_task.html
 sidebar: sidebar
-keywords: 
-summary: 'After assigning volumes to the host, you perform a rescan so that the host detects and configures the volumes for multipathing.'
+keywords: assign, volume, host, perform, rescan, detect, configure, multipath, discover, storage
+summary: After assigning volumes to the host, you perform a rescan so that the host detects and configures the volumes for multipathing.
 ---
 = Discover storage on the host
 :icons: font

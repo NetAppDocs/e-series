@@ -1,15 +1,15 @@
 ---
 permalink: config-vmware/reference_where_to_find_additional_information_vmware.html
 sidebar: sidebar
-keywords: 
-summary: 'Use the resources listed here if you need additional information. You can also use the online help for SANtricity System Manager System Manager.'
+keywords: resource, list, additional, information, online, help, santricity, system, manager,
+summary: Use the resources listed here if you need additional information. You can also use the online help for SANtricity System Manager.
 ---
 = Where to find additional information
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Use the resources listed here if you need additional information. You can also use the online help for SANtricity System Manager System Manager.
+Use the resources listed here if you need additional information. You can also use the online help for SANtricity System Manager.
 
 * Online help describes how to use SANtricity System Manager to complete configuration and storage management tasks. It is available within the product.
 * https://kb.netapp.com/app/[NetApp Knowledgebase] (a database of articles) provides troubleshooting information, FAQs, and instructions for a wide range of NetApp products and technologies.
