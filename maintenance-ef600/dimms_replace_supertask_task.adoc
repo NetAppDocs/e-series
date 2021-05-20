@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-ef600/dimms_replace_supertask_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: replace, dimm, verify, cache, controller, offline, remove, install, online, storage, array, determining, determine, place, reinstall, complete, replacement
+summary: To replace your DIMM you must verify the cache size of your controller, place the controller offline, remove the controller, remove the DIMMs, and install the new DIMMs in your controller. Then you can bring your controller back online and verify the storage array is working properly.
 ---
 = Replace DIMMs
 :icons: font

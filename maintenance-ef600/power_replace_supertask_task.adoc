@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-ef600/power_replace_supertask_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: replace, power, supplies, supply, fail, ef300, ef600, controller, shelf, redundant, source, remove, install, complete, replacement
+summary: You can replace the power supplies when they fail in your EF300 or EF600 controller. If a power supply fails, you must replace it as soon as possible so the controller shelf has a redundant power source.
 ---
 = Replace a power supply
 :icons: font

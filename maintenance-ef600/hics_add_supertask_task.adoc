@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-ef600/hics_add_supertask_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: host, interface, card, hic, ef600, controller, increase, port, storage, array, place, shelf, offline, remove, canister, add, reinstall, complete, add
+summary: You add a Host Interface Card (HIC) to EF600 controllers to increase the number of host ports in your storage array.
 ---
 = Add host interface cards
 :icons: font

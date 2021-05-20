@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e5700/hpp_complete_protocol_conversion_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: convert, protocol, host, port, perform, complete, end, baseboard, hic, fc, iscsi, conversion, ib-iser, ib-srp, nvme, fiber, channel
+summary: After converting the protocol of the host ports, you need to perform additional steps before you can use the new protocol. The steps you might need to complete depend on the starting and ending protocols of the baseboard host ports and the HIC ports.
 ---
 = Complete host protocol conversion
 :icons: font

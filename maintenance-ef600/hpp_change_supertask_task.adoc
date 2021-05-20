@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-ef600/hpp_change_supertask_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: infiniband, ib, hic, fibre, channel, fc, hic, port, protocol, process, obtain, feature, pack, key
+summary: If you have an Infiniband (IB) HIC, or a Fibre Channel (FC) HIC you can change the host port protocol using the process in the following section.
 ---
 = Change host protocol
 :icons: font
