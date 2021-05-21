@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e5700/canisters_supply_replace_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: 24-drive, controller, shelf, drive, power, supplies, supply, integrate, fan, santricity, system, manager, redundant, source, cooling, prepare, replace, remove, fail, install, complete, replacement
+summary: Each 24-drive controller shelf or drive shelf includes two power supplies with integrated fans. These are referred to as _power-fan canisters_ in SANtricity System Manager. If a power-fan canister fails, you must replace it as soon as possible to ensure that the shelf has a redundant power source and adequate cooling.
 ---
 = Replace power supply (24-drive)
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e5700/drives_drawer_supertask_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: replace, fail, drive, drawer, e5760, controller, shelf, de460c, shelf, volume, loss, protection, disk, pool, loss, protection, procedure, online, i/o, activity, power, off, replacing, prepare, 60-drive, cable, chain, install, replacement
+summary: The steps to replace a failed drive drawer in an E5760 controller shelf or a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection. If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must stop all host I/O activity and power off the shelf before replacing the drive drawer.
 ---
 = Replace drive drawer (60-drive)
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: upgrade-santricity/upgrade_multiple_controller_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: santricity, unified, manager, upgrade, os, software, storage, array, version, firmware, controller, perform, pre-upgrade, health, check, download, file, support, site, transfer, activate, stage, file
+summary: You can use SANtricity Unified Manager to upgrade the SANtricity OS software on multiple storage arrays of the same type to a newer version.
 ---
 = Upgrade software and firmware for multiple controllers
 :icons: font

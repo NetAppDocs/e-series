@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e5700/hics_upgrade_supertask_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: upgrade, host, interface, card, hic, port, protocol, storage, array, remove, exist, install, reapply, power, prepare, controller, canister, reinstall, complete, upgrading
+summary: You upgrade a host interface card (HIC) to increase the number of host ports or to change host protocols. When you upgrade the HICs, you must power off the storage array, remove the existing HIC from each controller, install a new HIC, and reapply power.
 ---
 = Upgrade host interface card
 :icons: font

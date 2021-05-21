@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-ef600/batteries_replace_supertask_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: controller, canister, battery, preserve, cache, data, ac, power, fail, recovery, guru, santricity, system, manager, report, status, replacement, status, place, offline, remove, install, reinstall, complete
+summary: Each controller canister includes a battery that preserves cached data if the AC power fails. If the Recovery Guru in SANtricity System Manager reports either a Battery Failed status or a Battery Replacement Required status, you must replace the affected battery.
 ---
 = Replace battery
 :icons: font

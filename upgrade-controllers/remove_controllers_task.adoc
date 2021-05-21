@@ -1,8 +1,8 @@
 ---
 permalink: upgrade-controllers/remove_controllers_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: remove, controller, disconnect, cable, removing, sfp, transceiver, slide, canister, controller-drive, tray, battery
+summary: You remove controllers by disconnecting all cables and removing any SFP transceivers. Then, you can slide the controller canister out of the controller-drive tray.
 ---
 = Remove controllers
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e5700/hics_add_supertask_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: add, host, interface, card, hic, increase, port, storage, array, protocol, reapply, power, e5700, controller, canister, baseboard, prepare, remove, install, reinstall, complete
+summary: You add host interface cards (HICs) to increase the number of host ports in your storage array and to provide additional host protocols. When you add HICs, you must power off the storage array, install the HIC, and reapply power. You can add HICs to E5700 controller canisters that only have baseboard host ports.
 ---
 = Add host interface cards
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: upgrade-controllers/remount_volumes_lsi_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: remount, volume, controller, upgrade, result, changing, change, vendor, id, lsi, netapp, aix, host, vmware, windows
+summary: You remount volumes if your controller upgrade results in changing the vendor ID from LSI to NETAPP.
 ---
 = Remount volumes after changing the vendor from LSI to NETAPP
 :icons: font

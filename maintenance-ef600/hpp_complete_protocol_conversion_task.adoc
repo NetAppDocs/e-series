@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-ef600/hpp_complete_protocol_conversion_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: convert, protocol, host, port, complete, conversion
+summary: After converting the protocol of the host ports, you need to perform additional steps before you can use the new protocol.
 ---
 = Complete host protocol conversion
 :icons: font

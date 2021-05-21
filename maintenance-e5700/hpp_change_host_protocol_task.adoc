@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e5700/hpp_change_host_protocol_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: convert, host, port, protocol, baseboard, fibre, channel, fc, iscsi, hic, ib, iser, infiniband, srp, nvme, roce, dual-protocol, sgp, feature, pack, stop, i/o, feature, pack
+summary: You can convert the host port protocol of the baseboard host ports from Fibre Channel (FC) to iSCSI or from iSCSI to FC. If you have an Infiniband (IB) HIC, you can also convert the protocol of the IB HIC from iSER to InfiniBand, SRP to InfiniBand, NVMe to InfiniBand, or from NVMe to RoCE.
 ---
 = Change host protocol
 :icons: font

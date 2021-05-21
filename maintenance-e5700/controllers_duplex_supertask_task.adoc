@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e5700/controllers_duplex_supertask_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: replace, controller, canister, duplex, configuration, two-controller, module, storage, array, battery, hic, install, replacement, prepare, battery, host, interface, card
+summary: You can replace a controller canister in a duplex configuration, which is a two-controller module configuration within the storage array. Each controller canister contains a controller card, a battery, and an optional host interface card (HIC). When you replace a controller canister, you must remove the battery and HIC, if one is installed, from the original controller canister, and install them in the replacement controller canister.
 ---
 = Replace controller in duplex configuration
 :icons: font

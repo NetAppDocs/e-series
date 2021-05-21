@@ -1,8 +1,8 @@
 ---
 permalink: web-services-proxy/certificates_intro_concept.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: certificate, identify, website, owner, secure, connection, client, server, manage, web, services, proxy, file, api, command, unified, manager, interface, set, up
+summary: Certificates identify website owners for secure connections between clients and servers. You can manage certificates using the Web Services Proxy configuration files, using API commands, or using the Unified Manager interface.
 ---
 = Manage security and certificates
 :icons: font

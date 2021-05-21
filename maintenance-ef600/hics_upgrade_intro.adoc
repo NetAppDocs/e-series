@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-ef600/hics_upgrade_intro.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: upgrade, host, interface, card, hic, increase, number, port, protocol, place, controller, shelf, offline, remove, canister, reinstall, complete, upgrade
+summary: You upgrade a host interface card (HIC) to increase the number of host ports or to change host protocols.
 ---
 = Upgrade host interface card
 :icons: font

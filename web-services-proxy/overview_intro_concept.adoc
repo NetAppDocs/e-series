@@ -1,8 +1,8 @@
 ---
 permalink: web-services-proxy/overview_intro_concept.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: guide, describe, install, configure, santricity, web, service, proxy, unified, manager, restful, api, server, host, system, netapp, legacy, e-series, storage, web-based, interface, function, web, service, overview, requirement, compatibility, restriction, basic
+summary: This guide describes how to install and configure the SANtricity Web Services Proxy, which includes the SANtricity Unified Manager interface. The Web Services Proxy is a RESTful API server installed separately on a host system to manage hundreds of new and legacy NetApp E-Series storage systems. Unified Manager is a web-based interface that provides similar functions.
 ---
 = Overview and requirements
 :icons: font

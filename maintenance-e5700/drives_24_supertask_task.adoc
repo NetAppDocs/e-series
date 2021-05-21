@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e5700/drives_24_supertask_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: recovery, guru, santricity, system, manager, monitor, drive, storage, array, impend, drive, failure, fail, attention, led, hot-swap, i/o, prepare, replace, 24-drive, complete
+summary: The Recovery Guru in SANtricity System Manager monitors the drives in the storage array and can notify you of an impending drive failure or an actual drive failure. When a drive has failed, its amber Attention LED is on. You can hot-swap a failed drive while the storage array is receiving I/O.
 ---
 = Replace drive (24-drive)
 :icons: font
