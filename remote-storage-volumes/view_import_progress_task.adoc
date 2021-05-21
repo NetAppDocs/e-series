@@ -1,8 +1,8 @@
 ---
 permalink: remote-storage-volumes/view_import_progress_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: status, remote, storage, import, result, list, section, screen, santricity, system, manager
+summary: You can view the status of each remote storage import from the result list section of the Remote Storage screen of the SANtricity System Manager.
 ---
 = View import progress
 :icons: font

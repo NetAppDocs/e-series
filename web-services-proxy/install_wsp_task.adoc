@@ -1,8 +1,8 @@
 ---
 permalink: web-services-proxy/install_wsp_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: installation, download, file, install proxy, package, linux, windows, server, api, documentation, unified, manager, managing, storage, system, requirement, consideration, download, web, service, file, windows, linux, server, access, unified, manager
+summary: Installation involves downloading the file and then installing the proxy package on a Linux or Windows server. After installation, you can access the API documentation or Unified Manager to start managing storage systems.
 ---
 = Install Web Services Proxy
 :icons: font

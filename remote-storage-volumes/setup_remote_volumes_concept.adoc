@@ -1,8 +1,8 @@
 ---
 permalink: remote-storage-volumes/setup_remote_volumes_concept.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: initial, setup, enable, e-series, system, connect, remote, storage, support, iscsi, protocol, set, up, volume, configure, e-series, array, cable, array, port
+summary: Initial setup is required to enable the E-Series system to connect to the remote storage through the supported iSCSI protocol.
 ---
 = Set up Remote Storage Volumes
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: web-services-proxy/install_uninstall_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: remove, web, service, proxy, unified, manager, graphical, console, silent, rpm, file, regardless, install, uninstall, console, silent, linux
+summary: To remove the Web Services Proxy and Unified Manager, you can use any mode (Graphical, Console, Silent, or RPM file), regardless of what method you used to install the proxy.
 ---
 = Uninstall Web Services Proxy
 :icons: font

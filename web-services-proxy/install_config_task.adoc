@@ -1,8 +1,8 @@
 ---
 permalink: web-services-proxy/install_config_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: modify, web, service, proxy, setting, unique, operating, operate, performance, requirement, environment, stop, restart, webserver, resolve, port, conflict, configure, load-balancing, high-availability, disable, symbol, http, cross-origin, resource, sharing, share
+summary: You can modify the Web Services Proxy settings to meet the unique operating and performance requirements for your environment.
 ---
 = Configure Web Services Proxy
 :icons: font

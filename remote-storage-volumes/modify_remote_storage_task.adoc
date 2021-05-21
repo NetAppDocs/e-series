@@ -1,8 +1,8 @@
 ---
 permalink: remote-storage-volumes/modify_remote_storage_task.html
 sidebar: sidebar
-keywords: 
-summary: 'You can modify the connection settings for any configured Remote Storage import through the View/Edit Settings option under the Remote Storage screen of the SANtricity System Manager.'
+keywords: modify, connection, setting, configure, remote, storage, import, view, edit, santricity, system, manager
+summary: You can modify the connection settings for any configured Remote Storage import through the View/Edit Settings option under the Remote Storage screen of the SANtricity System Manager.
 ---
 = Modify remote storage connection settings
 :icons: font

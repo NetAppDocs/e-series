@@ -1,8 +1,8 @@
 ---
 permalink: upgrade-santricity/upgrade_single_controller_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: upgrade, storage, array, software, iom, firmware, nonvolatile, static, random, access, memory, nvsram, feature, bug, fix, controller, download, file, support, site, transfer, activate, complete
+summary: You upgrade your storage array's software and, optionally, the IOM firmware and the nonvolatile static random access memory (NVSRAM) to make sure you have all the latest features and bug fixes.
 ---
 = Upgrade software and firmware for a single controller
 :icons: font

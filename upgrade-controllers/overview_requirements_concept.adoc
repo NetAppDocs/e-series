@@ -1,8 +1,8 @@
 ---
 permalink: upgrade-controllers/overview_requirements_concept.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: upgrade, storage, array, replacement, exist, controller, board, firmware, software, implement, drive, management, function, install, battery, canister
+summary: You can upgrade your storage array through the replacement of existing controllers. A controller consists of a board, firmware, and software. It controls the drives and implements the management software functions.
 ---
 = Overview and requirements
 :icons: font
