@@ -23,6 +23,7 @@ You install your storage system in a two-post rack or a NetApp system cabinet, a
 +
 NOTE: For square hole cabinets, you must first install the provided cage nuts to secure the front and rear of the shelf with screws.
 +
+[options="header"]
 |===
 a|
     If instructions were included with your rack-mounting hardware, refer to them for detailed information on how to install the rails.
@@ -34,6 +35,7 @@ image:../media/install_rails_inst-hw-e2800-e5700.png[]
 
 . Install the shelf.
 +
+[options="header"]
 |===
 a|
 
@@ -51,6 +53,7 @@ image:../media/4_person_lift_source.png[]
 
 . Secure the shelf.
 +
+[options="header"]
 |===
 a|
     For more information, see the instructions for the rack-mounting hardware.
@@ -64,6 +67,7 @@ image:../media/secure_shelf_inst-hw-e2800-e5700.png[]
 
 . Install the drives.
 +
+[options="header"]
 |===
 a|
 

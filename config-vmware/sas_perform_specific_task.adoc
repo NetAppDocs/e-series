@@ -41,6 +41,7 @@ image::../media/sas_topology_diagram_conf-vmw.gif[Diagram: SAS topology]
 
 ==== Host Identifiers
 
+[options="header"]
 |===
 | Callout No.| Host (initiator) port connections| SAS address
 a|
@@ -81,6 +82,7 @@ Recommended configurations consist of two target ports.
 
 ==== Mappings Host
 
+[options="header"]
 |===
 a|
 Mappings Host Name

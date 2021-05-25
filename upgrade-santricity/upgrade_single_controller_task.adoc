@@ -94,6 +94,7 @@ You can complete the software and firmware upgrade by verifying the versions in 
 . If you upgraded controller NVSRAM, any custom settings that you have applied to the existing NVSRAM are lost during the process of activation. You need to apply the custom settings to the NVSRAM again after the process of activation is complete.
 . If any of the following errors occur during the upgrade procedure, take the appropriate recommended action.
 +
+[options="header"]
 |===
 | If you encounter this firmware download error...| Then do the following...
 a|

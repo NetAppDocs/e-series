@@ -24,6 +24,7 @@ You must power on the controller shelf to confirm that it is working correctly.
 . Wait three minutes for the power-up process to complete.
 . If you are performing a complete controller replacement for either E2800 or E5700 controllers, proceed to one of the following procedures based on your drive security scenario.
 +
+[options="header"]
 |===
 | Complete controller replacement type| Procedure and prerequisites
 a|

@@ -18,6 +18,7 @@ To ensure a successful upgrade, keep in mind some key considerations as part of 
 
 The following table describes the components included in the SANtricity OS upgrade process and the software components that must be upgraded separately.
 
+[options="header"]
 |===
 | Components included in SANtricity OS upgrade| Components that must be upgraded separately
 a|
@@ -125,6 +126,7 @@ Each drive firmware file contains information about the drive type on which the 
 
 There are two types of drive firmware upgrade methods: online and offline.
 
+[options="header"]
 |===
 | Online upgrade| Offline upgrade
 a|

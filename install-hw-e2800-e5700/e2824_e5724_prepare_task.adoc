@@ -14,6 +14,7 @@ To install your E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C series sto
 . Create an account and register your hardware at http://mysupport.netapp.com/[mysupport.netapp.com].
 . Ensure that the following items are in the box that you received.
 +
+[options="header"]
 |===
 a|
 image:../media/trafford_overview.png[]
@@ -26,6 +27,7 @@ Rack-mount hardware
 |===
 The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see https://hwu.netapp.com/[Hardware Universe] to locate the cable and identify its use.
 +
+[options="header"]
 |===
 | Connector type| Cable type| Use
 a|
@@ -60,6 +62,7 @@ SAS cables
 
 . Ensure that you provide the following items.
 +
+[options="header"]
 |===
 a|
 image:../media/screwdriver_inst-hw-e2800-e5700.png[]

@@ -23,6 +23,7 @@ The following example shows cabling the data hosts using a direct-attach topolog
 
 ==== Example A: Direct-attach topology
 
+[options="header"]
 |===
 a|
 image:../media/direct_topo.png[]
@@ -39,6 +40,7 @@ The following example shows cabling the data hosts using a fabric topology.
 
 ==== Example B: Fabric topology
 
+[options="header"]
 |===
 a|
 image:../media/fabric_topo.png[]
@@ -66,12 +68,14 @@ You can configure the management ports with a DHCP server.
 
 . Connect an Ethernet cable to each controller's management port, and connect the other end to your network.
 +
+[options="header"]
 |===
 a|
 image:../media/cable_ethernet_inst-hw-ef600.png[]
 a|
 RJ-45 Ethernet cables (if ordered)
 |===
+[options="header"]
 |===
 a|
 The following figure shows an example of the controller's management port location:
@@ -94,12 +98,14 @@ You configure the management ports manually by entering the IP address and the s
 +
 NOTE: Controller A is the upper controller canister, and controller B is the lower controller canister.
 +
+[options="header"]
 |===
 a|
 image:../media/cable_ethernet_inst-hw-ef600.png[]
 a|
 RJ-45 Ethernet cables (if ordered)
 |===
+[options="header"]
 |===
 a|
 The following figure shows an example of the controller's management port location:
@@ -142,6 +148,7 @@ After you have installed the EF300 or EF600 hardware, use the SANtricity softwar
 
 . Connect your controller to a web browser, and use SANtricity System Manager to manage your EF300 or EF600 series storage system.
 +
+[options="header"]
 |===
 a|
 image:../media/management_station_inst-hw-ef600_g2285.png[]

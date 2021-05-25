@@ -17,6 +17,7 @@ The cabling information is intended for a hardware installer or system administr
 
 Cabling information applies to the following hardware models.
 
+[options="header"]
 |===
 a|
 *Controller Shelf*
@@ -44,6 +45,7 @@ DE460C
 
 If you are cabling for the following configuration, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf.]
 
+[options="header"]
 |===
 a|
 *Controller Shelf*

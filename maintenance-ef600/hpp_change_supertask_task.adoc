@@ -32,6 +32,7 @@ image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.
 image::../media/storage_array_profile2_maint-ef600.gif[]
 . Using the feature pack submodel ID, locate the corresponding Controller submodel ID for the starting configuration and find the Feature Activation Code for the desired ending configuration within the following table. Then, copy that Feature Activation Code to a text file.
 +
+[options="header"]
 |===
 | Starting configuration| Ending configuration| Feature Activation Code
 | Controller submodel ID| HIC ports| Controller submodel ID| HIC ports

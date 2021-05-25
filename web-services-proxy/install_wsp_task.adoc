@@ -20,6 +20,7 @@ You can install and configure the Web Services Proxy on a Windows or Linux host 
 
 Proxy installation includes the following requirements.
 
+[options="header"]
 |===
 | Requirement| Description
 a|
@@ -208,6 +209,7 @@ The API documentation opens in the browser.
 +
 The high-level categories for endpoints are displayed. You can navigate the API documentation as described in the table.
 +
+[options="header"]
 |===
 | Area| Description
 a|
@@ -244,6 +246,7 @@ After you install the Web Services Proxy, you can access Unified Manager to mana
 
 To access Unified Manager, you open a browser and enter the URL pointing to where the proxy is installed. The following browsers and versions are supported.
 
+[options="header"]
 |===
 | Browser| Minimum version
 a|

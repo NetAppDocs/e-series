@@ -22,12 +22,14 @@ http://docs.netapp.com/ess-11/index.jsp[Cabling E-Series Hardware]
 +
 For the examples shown in this section you will need the following cables:
 +
+[options="header"]
 |===
 a|
 image:../media/sas_cable.png[]
 a|
 *SAS cables*
 |===
+[options="header"]
 |===
 a|
 
@@ -42,6 +44,7 @@ a|
 image:../media/trafford_power.png[]     Example A: An E5700 controller shelf with three DE212C/DE224 disk shelves in a standard SAS configuration.
 +
 |===
+[options="header"]
 |===
 a|
 
@@ -57,6 +60,7 @@ image:../media/trafford_power.png[]     Example B: An E5700 controller shelf wit
 +
 You will need the following cables:
 +
+[options="header"]
 |===
 a|
 image:../media/power_cable_inst-hw-e2800-e5700.png[]
@@ -75,6 +79,7 @@ Confirm the drive shelf power switches are off.
 During boot, the seven-segment display shows the repeating sequence of OS, Sd, blank to indicate the controller is performing start-of-day processing. After the controller has booted up, the shelf ID is displayed.
 
 +
+[options="header"]
 |===
 a|
 image:../media/trafford_power.png[]     Example: Power connections are on the rear of the shelf.

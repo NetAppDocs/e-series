@@ -55,6 +55,7 @@ This task describes how to discover and add storage systems using the REST API, 
  .. Click the *POST: /discovery* endpoint, and then click *Try it out*.
  .. Enter the parameters as described in the table.
 +
+[options="header"]
 |===
 a|
         startIP
@@ -114,6 +115,7 @@ The discovery process runs in the background.
  .. Click the *POST: /storage-system* endpoint, and then click *Try it out*.
  .. Enter the parameters as described in the table.
 +
+[options="header"]
 |===
 a|
         id

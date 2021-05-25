@@ -16,6 +16,7 @@ If you are cabling your EF300 for SAS expansion see the link:../com.netapp.doc.e
 . Create an account and register your hardware at http://mysupport.netapp.com/[mysupport.netapp.com].
 . Ensure that the following items are in the box that you received.
 +
+[options="header"]
 |===
 a|
 image:../media/ef600_w_faceplate.png[]
@@ -28,6 +29,7 @@ Rack-mount hardware
 |===
 The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see https://hwu.netapp.com/[Hardware Universe] to locate the cable and identify its use.
 +
+[options="header"]
 |===
 | Connector type| Cable type| Use
 a|
@@ -56,6 +58,7 @@ Powering up the storage system
 
 . Ensure that you provide the following items.
 +
+[options="header"]
 |===
 a|
 image:../media/screwdriver_inst-hw-ef600.png[]

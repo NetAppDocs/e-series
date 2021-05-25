@@ -83,6 +83,7 @@ The Configure iSCSI Ports dialog box opens.
 +
 To see all port settings, click the *Show more port settings* link on the right of the dialog box.
 +
+[options="header"]
 |===
 | Port Setting| Description
 a|
@@ -116,6 +117,7 @@ If you selected *Enable IPv4*, a dialog box opens for selecting IPv4 settings af
 
 . Configure the IPv4 and/or IPv6 settings, either automatically or manually. To see all port settings, click the *Show more settings* link on the right of the dialog box.
 +
+[options="header"]
 |===
 | Port setting| Description
 a|
@@ -230,6 +232,7 @@ image::../media/50001_01_conf-win.gif[]
 
 === Target IQN
 
+[options="header"]
 |===
 | Callout No.| Target port connection| IQN
 a|
@@ -242,6 +245,7 @@ a|
 
 === Mappings host name
 
+[options="header"]
 |===
 | Callout No.| Host information| Name and type
 a|

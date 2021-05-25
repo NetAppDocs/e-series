@@ -22,6 +22,7 @@ Role-based access control (RBAC) associates predefined users with roles. Each ro
 
 The following table describes each role.
 
+[options="header"]
 |===
 | Role| Description
 a|
@@ -45,6 +46,7 @@ Default user accounts are defined in the users.properties file. You can change u
 
 The following table lists the user logins available for the Web Services Proxy.
 
+[options="header"]
 |===
 | Predefined user login| Description
 a|

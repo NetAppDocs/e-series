@@ -23,6 +23,7 @@ You install your storage system in a two-post rack or a NetApp system cabinet, a
 +
 NOTE: To prevent the equipment from toppling over, install the hardware from the bottom of the rack or cabinet up to the top.
 +
+[options="header"]
 |===
 a|
     If instructions were included with your rack-mounting hardware, refer to them for detailed information on how to install the rails.
@@ -34,6 +35,7 @@ image:../media/install_rails_inst-hw-ef600.png[]
 
 . Install the shelf.
 +
+[options="header"]
 |===
 a|
 
@@ -51,6 +53,7 @@ image:../media/install_ef600.png[]
 
 . Secure the shelf.
 +
+[options="header"]
 |===
 a|
     For more information, see the instructions for the rack-mounting hardware.
@@ -60,6 +63,7 @@ image:../media/secure_shelf_inst-hw-ef600.png[]
 
 . Install the faceplate.
 +
+[options="header"]
 |===
 a|
 

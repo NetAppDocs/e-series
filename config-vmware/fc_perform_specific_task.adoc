@@ -62,6 +62,7 @@ image::../media/port_identifiers_host_and_target_conf-vmw.gif[]
 
 === Host identifiers
 
+[options="header"]
 |===
 | Callout No.| Host (initiator) port connections| WWPN
 a|
@@ -86,6 +87,7 @@ a|
 
 === Target identifiers
 
+[options="header"]
 |===
 | Callout No.| Array controller (target) port connections| WWPN
 a|
@@ -128,6 +130,7 @@ a|
 
 === Mapping host
 
+[options="header"]
 |===
 a|
 Mapping host name

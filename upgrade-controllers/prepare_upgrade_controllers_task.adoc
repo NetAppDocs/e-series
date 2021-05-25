@@ -17,6 +17,7 @@ NOTE: If you are upgrading to controllers that support SANtricity OS version 8.5
 
 . If performing a complete controller replacement when using drive security, complete the following steps:
 +
+[options="header"]
 |===
 | Security type and context| Steps
 a|
