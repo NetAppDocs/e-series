@@ -26,7 +26,6 @@ System Manager is web-based management software embedded on each controller. To 
 
 System Manager offers a variety of management features, including:
 
-[options="header"]
 |===
 a|
 image:../media/sam1130_icon_performance.gif[] *Performance*  a|
@@ -79,7 +78,6 @@ Unified Manager is installed on a management server along with the Web Services 
 
 Unified Manager offers a variety of management features, including:
 
-[options="header"]
 |===
 a|
 image:../media/artboard_9.png[] *Discover storage arrays*  a|

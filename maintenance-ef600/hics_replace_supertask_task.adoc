@@ -38,7 +38,6 @@ If a problem occurs when you remove a controller, you can use the saved file to 
  .. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
  .. Select the controller that you want to place offline.
  .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
-
 +
 NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
 . Wait for SANtricity System Manager to update the controller's status to offline.

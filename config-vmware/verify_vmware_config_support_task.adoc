@@ -24,7 +24,7 @@ The *Refine Search Criteria* section is displayed. In this section you may selec
 [options="header"]
 |===
 | Operating system updates| Protocol| Protocol-related updates
-a|
+.3+a|
 
  ** You might need to install out-of-box drivers to ensure proper functionality and supportability. You can install HBA drivers using the ESXi shell or a remote SSH connection to the ESXi host. To access the host using either of those methods, you must enable the ESXi shell and SSH access. For more information about the ESXi shell, refer to the VMware Knowledge Base regarding using the ESXi shell in ESXi. For installation commands, refer to the instructions that accompany the HBA drivers.
  ** Each HBA vendor has specific methods for updating boot code and firmware. Some of these methods could include the use of a vCenter plugin or the installation of CIM provider on the ESXi host. vCener plugins can be used to obtain information about the a vendor's specific HBA. Refer to the support section of the vendor's website to obtain the instructions and software necessary to update the HBA boot code or firmware. Refer to the _VMware Compatibility Guide_ or the HBA vendor's website to obtain the correct boot code or firmware.
@@ -33,8 +33,6 @@ a|
 FC
 a|
 Host bus adapter (HBA) driver, firmware, and bootcode
-a|
-NVMe over FC
 a|
 iSCSI
 a|

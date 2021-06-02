@@ -93,7 +93,7 @@ NOTE: If you are not using the IB HIC, you can ignore the _HIC Ports_ column in 
 +
 [options="header"]
 |===
-| Starting Configuration| Ending Configuration| Feature Activation Code
+2+| Starting Configuration 2+| Ending Configuration .2+| Feature Activation Code
 | Controller submodel ID| Ports to Convert| Controller Submodel ID| Ports Converted To
 a|
 360
@@ -118,13 +118,13 @@ a|
 |===
 [options="header"]
 |===
-| Starting configuration| Ending configuration| Feature Activation Code
+3+| Starting configuration 3+| Ending configuration .2+| Feature Activation Code
 | Controller Submodel ID| Baseboard Ports| HIC Ports| Controller Submodel ID| Baseboard Ports| HIC Ports
-a|
+.5+a|
 360
-a|
+.5+a|
 FC
-a|
+.5+a|
 iSER
 a|
 361
@@ -166,11 +166,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 YGH-BHK-Z8EKB
-a|
+.5+a|
 361
-a|
+.5+a|
 FC
-a|
+.5+a|
 SRP
 a|
 360
@@ -212,11 +212,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 JGM-EIK-ZAC6Q
-a|
+.5+a|
 362
-a|
+.5+a|
 iSCSI
-a|
+.5+a|
 iSER
 a|
 360
@@ -258,11 +258,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 1GW-LIK-ZG9HN
-a|
+.5+a|
 363
-a|
+.5+a|
 iSCSI
-a|
+.5+a|
 SRP
 a|
 360
@@ -304,11 +304,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 WG2-0IK-ZI75U
-a|
+.5+a|
 382
-a|
+.5+a|
 Not Available
-a|
+.5+a|
 NVMe/IB
 a|
 360
@@ -350,11 +350,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 IGR-IIK-ZDBRB
-a|
+.5+a|
 383
-a|
+.5+a|
 Not Available
-a|
+.5+a|
 NVMe/IB
 a|
 360
@@ -396,11 +396,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 5G7-RIK-ZL5PE
-a|
+.5+a|
 403
-a|
+.5+a|
 Not Available
-a|
+.5+a|
 NVMe/RoCE or NVMe/FC
 a|
 360
@@ -453,7 +453,7 @@ PG0-KJK-ZUGW5
 |===
 [options="header"]
 |===
-| Starting configuration| Ending Configuration| Feature Activation Code
+2+| Starting configuration 2+| Ending Configuration .2+| Feature Activation Code
 | Controller submodel ID| Ports to Convert| Controller Submodel ID| Ports Converted To
 a|
 365
@@ -478,13 +478,13 @@ a|
 |===
 [options="header"]
 |===
-| Starting configuration| Ending configuration| Feature Activation Code
+3+| Starting configuration 3+| Ending configuration .2+| Feature Activation Code
 | Controller submodel ID| Baseboard ports| HIC ports| Controller submodel ID| Baseboard ports| HIC ports
-a|
+.5+a|
 365
-a|
+.5+a|
 FC
-a|
+.5+a|
 iSER
 a|
 366
@@ -526,11 +526,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 WGC-GJK-Z7PU2
-a|
+.5+a|
 366
-a|
+.5+a|
 FC
-a|
+.5+a|
 SRP
 a|
 365
@@ -572,11 +572,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 3GH-JJK-ZANJQ
-a|
+.5+a|
 367
-a|
+.5+a|
 iSCSI
-a|
+.5+a|
 iSER
 a|
 365
@@ -618,11 +618,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 8GR-QKK-ZFJTP
-a|
+.5+a|
 368
-a|
+.5+a|
 iSCSI
-a|
+.5+a|
 SRP
 a|
 365
@@ -664,11 +664,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 2GV-TKK-ZIHI6
-a|
+.5+a|
 384
-a|
+.5+a|
 Not Available
-a|
+.5+a|
 NVMe/IB
 a|
 365
@@ -710,11 +710,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 VGM-NKK-ZDLDK
-a|
+.5+a|
 385
-a|
+.5+a|
 Not Available
-a|
+.5+a|
 NVMe/IB
 a|
 365
@@ -756,11 +756,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 NG1-WKK-ZLFAI
-a|
+.5+a|
 405
-a|
+.5+a|
 Not Available
-a|
+.5+a|
 NVMe/RoCE or NVMe/FC
 a|
 365

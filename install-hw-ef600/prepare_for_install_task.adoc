@@ -16,11 +16,9 @@ If you are cabling your EF300 for SAS expansion see the link:../com.netapp.doc.e
 . Create an account and register your hardware at http://mysupport.netapp.com/[mysupport.netapp.com].
 . Ensure that the following items are in the box that you received.
 +
-[options="header"]
 |===
 a|
-image:../media/ef600_w_faceplate.png[]
-a|
+image:../media/ef600_w_faceplate.png[] a|
 Shelf with drives installed     (bezel and end caps packaged separately)
 a|
 image:../media/superrails_inst-hw-ef600.png[]
@@ -35,16 +33,16 @@ The following table identifies the types of cables you might receive. If you rec
 a|
 image:../media/cable_ethernet_inst-hw-ef600.png[]
 a|
-    RJ-45 Ethernet cables
-+
+RJ-45 Ethernet cables
+
 (if ordered)
 a|
 Management connection
 a|
 image:../media/cable_io_inst-hw-ef600.png[]
 a|
-    I/O cables
-+
+I/O cables
+
 (if ordered)
 a|
 Cabling the data hosts
@@ -58,11 +56,9 @@ Powering up the storage system
 
 . Ensure that you provide the following items.
 +
-[options="header"]
 |===
 a|
-image:../media/screwdriver_inst-hw-ef600.png[]
-a|
+image:../media/screwdriver_inst-hw-ef600.png[] a|
 Phillips #2 screwdriver
 a|
 image:../media/flashlight_inst-hw-ef600.png[]
@@ -75,22 +71,21 @@ ESD strap
 a|
 image:../media/2u_rackspace_inst-hw-ef600.png[]
 a|
-    2U rack space: A standard 19 in. (48.30 cm) rack to fit 2U shelves of the following dimensions.
-+
+2U rack space: A standard 19 in. (48.30 cm) rack to fit 2U shelves of the following dimensions.
+
 *Depth*: 19.0 in. (48.3 cm)
-+
+
 *Width*: 17.6 in. (44.7 cm)
-+
+
 *Height*: 3.34 in. (8.48 cm)
-+
+
 *Shelf*: 24-drive
-+
+
 *Max Weight*: 60.5 lb (27.4 kg)
-+
+
 NOTE: Using third-party cabinets might cause the power cables to restrict access to the controller.
 a|
 image:../media/management_station_inst-hw-ef600_g60b3.png[]
 a|
-    A supported browser for the management software
-+
+A supported browser for the management software
 |===

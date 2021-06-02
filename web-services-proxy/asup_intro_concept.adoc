@@ -103,20 +103,20 @@ You can configure the AutoSupport feature to use HTTPS, HTTP, or SMTP delivery m
 a|
 1
 a|
-    HTTPS (default)
-+
+HTTPS (default)
+
 <delivery type=`"1`">
 a|
 2
 a|
-    HTTP
-+
+HTTP
+
 <delivery type=`"2`">
 a|
 3
 a|
-    SMTP - To properly configure the AutoSupport delivery type to SMTP, you must include the SMTP mail server address, along with the sender and recipient user emails, similar to the following example:
-+
+SMTP - To properly configure the AutoSupport delivery type to SMTP, you must include the SMTP mail server address, along with the sender and recipient user emails, similar to the following example:
+
 ----
 <delivery type=”3”>
 <smtp>
@@ -126,5 +126,4 @@ a|
 </smtp>
 </delivery>
 ----
-+
 |===

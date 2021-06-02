@@ -25,7 +25,6 @@ The following example shows cabling the data hosts using a direct-attach topolog
 
 ==== Example A: Direct-attach topology
 
-[options="header"]
 |===
 a|
 image:../media/trafford_direct.png[]
@@ -42,7 +41,6 @@ The following example shows cabling the data hosts using a fabric topology.
 
 ==== Example B: Fabric topology
 
-[options="header"]
 |===
 a|
 image:../media/trafford_direct.png[]
@@ -70,7 +68,6 @@ You can configure the management ports with a DHCP server.
 
 . Connect an Ethernet cable to each controller's management port, and connect the other end to your network.
 +
-[options="header"]
 |===
 a|
 image:../media/cable_ethernet_inst-hw-e2800-e5700.png[]
@@ -79,7 +76,6 @@ Ethernet cables (if ordered)
 |===
 The following figure shows an example of the controller's management port location:
 +
-[options="header"]
 |===
 a|
 image:../media/e2800_mgmt_ports.png[]     E2800 controller P1 Management Port
@@ -100,7 +96,6 @@ You configure the management ports manually by entering the IP address and the s
 
 . Using an Ethernet cable, connect controller A's management port to the Ethernet port on a laptop.
 +
-[options="header"]
 |===
 a|
 image:../media/cable_ethernet_inst-hw-e2800-e5700.png[]
@@ -109,13 +104,11 @@ Ethernet cables (if ordered)
 |===
 The following figure shows an example of the controller's management port location:
 +
-[options="header"]
 |===
 a|
 image:../media/e2800_mgmt_ports.png[]     E2800 controller P1 Management Port
 a|
 image:../media/e5700_mgmt_ports.png[]     E5700 controller P1 Management Port
-+
 |===
 
 . Open a browser and use the default IP address (169.254.128.101) to establish a connection to the controller. The controller sends back a self-signed certificate. The browser informs you that the connection is not secure.
@@ -153,7 +146,6 @@ After you have installed your hardware, use the SANtricity software to configure
 . Use the SANtricity software to configure and manage your storage arrays.
 . In the simplest network configuration, connect your controller to a web browser and use SANtricity System Manager for managing a single E2800 or E5700 series storage array.
 
-[options="header"]
 |===
 a|
 image:../media/management_s_g2285tation_inst-hw-e2800-e5700_g2285.png[]

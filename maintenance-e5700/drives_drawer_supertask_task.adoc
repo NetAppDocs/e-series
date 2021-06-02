@@ -22,7 +22,7 @@ You prepare to replace a drive drawer by determining if you can perform the repl
  ** Both fans must be installed and have a status of Optimal.
  ** All drive shelf components must be in place.
  ** The volumes in the drive drawer cannot be in a Degraded state.
-+
+
 IMPORTANT: *Possible loss of data access --* If a volume is already in a Degraded state, and you remove drives from the drive drawer, the volume can fail.
 
 . Determine if the drive shelf is powered on.
@@ -36,19 +36,18 @@ serviceAllowedIndicator=on;"
 ----
 +
 where:
-
++
  ** <ctlr_IP1> is the identifier of the controller.
  ** array_password is the password for the storage array. You must enclose the value for array_password in double quotation marks ("").
  ** [trayID] is the identifier of the drive shelf that contains the drive drawer that you want to replace. Drive shelf ID values are 0 to 99. You must enclose the value for trayIDin square brackets.
  ** [drawerID] is the identifier of the drive drawer that you want to replace. Drawer ID values are 1 (top drawer) to 5 (bottom drawer). You must enclose the value for drawerIDin square brackets.
 This command ensures you can remove the top-most drawer in drive shelf 10:
-
 +
 ----
 SMcli <ctlr_IP1\> -p "safety-1" -c "set tray [10] drawer [1]
 serviceAllowedIndicator=forceOnWarning;"
 ----
-
++
 . Determine if you need to stop host I/O activity, as follows:
  ** If the command succeeds, you do not need to stop host I/O activity. All drives in the drawer are in pools or volume groups with Drawer Loss Protection. Go to link:drives_drawer_supertask_task.md#[Remove cable chains].
 +
@@ -133,16 +132,16 @@ The figure shows the right side of the drive shelf with the fan canister removed
 
 +
 The top cable chain is attached to drive drawer 1. The bottom cable chain is attached to drive drawer 5. The callouts for drive drawer 1 are provided.
-+
+
 image::../media/trafford_cable_rail_1_maint-e5700.gif[]
-+
+
 image:../media/legend_icon_01_maint-e5700.gif[] Cable chain image:../media/legend_icon_02_maint-e5700.gif[] Vertical connector (connected to midplane) image:../media/legend_icon_03_maint-e5700.gif[] Horizontal connector (connected to drawer)
 . For easy access, use your finger to move the cable chain on the right side to the left.
 . Disconnect any of the right cable chains from their corresponding vertical guide rail.
  .. Using a flashlight, locate the orange ring on the end of the cable chain that is connected to the vertical guide rail in the enclosure.
-+
+
 image::../media/trafford_cable_rail_3_maint-e5700.gif[]
-+
+
 image:../media/legend_icon_01_maint-e5700.gif[] Orange ring on vertical guide rail image:../media/legend_icon_02_maint-e5700.gif[] Cable chain, partially removed
 
  .. To unlatch the cable chain, insert your finger into the orange ring and press towards the middle of the system.
@@ -172,7 +171,7 @@ The LED could remain on for as long as a minute after you reinstall the fan whil
 If the power is off, the fans do not run and the LED is not on.
 . From the back of the drive shelf, remove the left fan canister.
 . If the drive shelf is receiving power, ensure that the right fan goes to its maximum speed.
-+
+
 IMPORTANT: *Possible equipment damage due to overheating* -- If the shelf is powered on, do not remove both fans at the same time. Otherwise, the equipment might overheat.
 
 . Disconnect the left cable chain from its vertical guide rail:

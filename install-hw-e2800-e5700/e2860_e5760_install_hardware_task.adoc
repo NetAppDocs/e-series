@@ -23,11 +23,10 @@ You install your storage system in a two-post rack or a NetApp system cabinet, a
 +
 NOTE: For square hole cabinets, you must first install the provided cage nuts to secure the front and rear of the shelf with screws.
 +
-[options="header"]
 |===
 a|
-    If instructions were included with your rack-mounting hardware, refer to them for detailed information on how to install the rails.
-+
+If instructions were included with your rack-mounting hardware, refer to them for detailed information on how to install the rails.
+
 NOTE: For online instructions for installing SuperRails, see http://docs.netapp.com/platstor/index.jsp?topic=%2Fcom.netapp.doc.hw-rail-superrail%2Fhome.html[AFF and FAS System Documentation Center].
 a|
 image:../media/install_rails_inst-hw-e2800-e5700.png[]
@@ -35,15 +34,12 @@ image:../media/install_rails_inst-hw-e2800-e5700.png[]
 
 . Install the shelf.
 +
-[options="header"]
 |===
 a|
 
  .. If lifting the shelf by hand, attach the four lift handles. Push up on each handle until it clicks into place.
 +
-CAUTION:
-+
-An empty shelf weighs approximately 132 lb (60 kg). A mechanized lift or four people using lift handles are required to safely move an empty shelf.
+CAUTION: An empty shelf weighs approximately 132 lb (60 kg). A mechanized lift or four people using lift handles are required to safely move an empty shelf.
 
  .. Supporting the shelf from the bottom, slide it into the cabinet. If the lift handles are used, remove them one set at a time as the shelf slides into the cabinet. To remove the handles, pull back on the release latch, push down, then pull away from the shelf.
 
@@ -53,10 +49,9 @@ image:../media/4_person_lift_source.png[]
 
 . Secure the shelf.
 +
-[options="header"]
 |===
 a|
-    For more information, see the instructions for the rack-mounting hardware.
+For more information, see the instructions for the rack-mounting hardware.
 
  ** Insert screws into the first and third holes from the top of the shelf on both sides to secure it to the front of the cabinet.
  ** Place two back brackets on each side of the upper rear section of the shelf. Insert screws into the first and third holes of each bracket to secure the back of the cabinet.
@@ -67,7 +62,6 @@ image:../media/secure_shelf_inst-hw-e2800-e5700.png[]
 
 . Install the drives.
 +
-[options="header"]
 |===
 a|
 
@@ -86,6 +80,5 @@ NOTE: If you are installing fewer than 60 drives, if you have solid-state drives
 a|
 image:../media/install_faceplate_2_0_inst-hw-e2800-e5700.png[](Requires Image Replacement)
 a|
-    *Attention:* Risk of equipment damage -- Stop pushing the drawer if you feel binding. Use the release levers at the front of the drawer to slide the drawer back out. Then, carefully reinsert the drawer into the slot.
-+
+*Attention:* Risk of equipment damage -- Stop pushing the drawer if you feel binding. Use the release levers at the front of the drawer to slide the drawer back out. Then, carefully reinsert the drawer into the slot.
 |===
