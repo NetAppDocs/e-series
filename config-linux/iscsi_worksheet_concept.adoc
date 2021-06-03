@@ -48,9 +48,3 @@ Host OS type
 a|
 
 |===
-
-== Recommended configuration
-
-Recommended configurations consist of two initiator ports and four target ports with one or more VLANs.
-
-image::../media/50001_01_conf-lin.gif[]

@@ -41,13 +41,13 @@ image:../media/legend_icon_01_maint-e5700.gif[] Attention LED
 
 +
 image::../media/2860_dwg_amber_on_drive_maint-e5700.gif[]
-+
+
 image:../media/legend_icon_01_maint-e5700.gif[] Attention LED light on for the drive on the top right side
-+
+
 The drive drawer Attention LEDs are on the left side in front of each drive, with an attention icon on the drive handle just behind the LED.
-+
+
 image::../media/28_dwg_e2860_de460c_attention_led_drive_maint-e5700.gif[]
-+
+
 image:../media/legend_icon_01_maint-e5700.gif[] Attention icon image:../media/legend_icon_02_maint-e5700.gif[] Attention LED
 
 Go to link:drives_60_replace_task.md#[Remove failed drive (60-drive)].

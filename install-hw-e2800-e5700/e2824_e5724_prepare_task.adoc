@@ -16,8 +16,7 @@ To install your E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C series sto
 +
 |===
 a|
-image:../media/trafford_overview.png[]
-a|
+image:../media/trafford_overview.png[] a|
 Shelf with drives installed     (bezel packaged separately)
 a|
 image:../media/superrails_inst-hw-e2800-e5700.png[]
@@ -26,28 +25,31 @@ Rack-mount hardware
 |===
 The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see https://hwu.netapp.com/[Hardware Universe] to locate the cable and identify its use.
 +
+[options="header"]
 |===
 | Connector type| Cable type| Use
 a|
 image:../media/cable_ethernet_inst-hw-e2800-e5700.png[]
 a|
-    Ethernet cables
-+
+Ethernet cables
+
 (if ordered)
 a|
 Management connection
 a|
 image:../media/cable_io_inst-hw-e2800-e5700.png[]
 a|
-    I/O cables
-+
+I/O cables
+
 (if ordered)
 a|
 Cabling the data hosts
 a|
 image:../media/cable_power_inst-hw-e2800-e5700.png[]
 a|
-Power cables    (if ordered)
+Power cables
+
+(if ordered)
 a|
 Powering up the storage system
 a|
@@ -62,8 +64,7 @@ SAS cables
 +
 |===
 a|
-image:../media/screwdriver_inst-hw-e2800-e5700.png[]
-a|
+image:../media/screwdriver_inst-hw-e2800-e5700.png[] a|
 Phillips #2 screwdriver
 a|
 image:../media/flashlight_inst-hw-e2800-e5700.png[]
@@ -76,20 +77,20 @@ ESD strap
 a|
 image:../media/2u_rackspace_inst-hw-e2800-e5700.png[]
 a|
-    2U rack space: A standard 19 in. (48.30 cm) rack to fit 2U shelves of the following dimensions.
-+
+2U rack space: A standard 19 in. (48.30 cm) rack to fit 2U shelves of the following dimensions.
+
 *Depth*: 19.0 in. (48.3 cm)
-+
+
 *Width*: 17.6 in. (44.7 cm)
-+
+
 *Height*: 3.34 in. (8.48 cm)
-+
+
 *Shelf*: 24-drive
-+
+
 *Max Weight*: 60.5 lb (27.4 kg)
 a|
 image:../media/management_station_inst-hw-e2800-e5700_g60b3.png[]
 a|
-    A supported browser for the management software
-+
+A supported browser for the management software
+
 |===

@@ -18,6 +18,7 @@ The AutoSupport (ASUP) feature automatically transmits messages to NetApp based 
 
 Each AutoSupport message is a collection of log files, configuration data, state data, and performance metrics. By default, AutoSupport transmits the files listed in the following table to the NetApp Support team once each week.
 
+[options="header"]
 |===
 | File Name| Description
 a|
@@ -96,25 +97,26 @@ You can configure the AutoSupport feature to use HTTPS, HTTP, or SMTP delivery m
 . Access the ASUPConfig.xml file in the working directory.
 . In the string, <delivery type=`"n`">, enter 1, 2, or 3 as described in the table:
 +
+[options="header"]
 |===
 | Value| Description
 a|
 1
 a|
-    HTTPS (default)
-+
+HTTPS (default)
+
 <delivery type=`"1`">
 a|
 2
 a|
-    HTTP
-+
+HTTP
+
 <delivery type=`"2`">
 a|
 3
 a|
-    SMTP - To properly configure the AutoSupport delivery type to SMTP, you must include the SMTP mail server address, along with the sender and recipient user emails, similar to the following example:
-+
+SMTP - To properly configure the AutoSupport delivery type to SMTP, you must include the SMTP mail server address, along with the sender and recipient user emails, similar to the following example:
+
 ----
 <delivery type=”3”>
 <smtp>
@@ -124,5 +126,4 @@ a|
 </smtp>
 </delivery>
 ----
-+
 |===

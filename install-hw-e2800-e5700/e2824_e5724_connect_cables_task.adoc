@@ -36,21 +36,16 @@ a|
  .. Cable IOM A of the second drive shelf to IOM A of the third drive shelf.
  .. Cable controller B to IOM B of the third drive shelf.
  .. Cable IOM B of the second drive shelf to IOM B of the third drive shelf.
- .. Cable IOM B of the first drive shelf to IOM B of the second drive shelf.
-
-a|
+ .. Cable IOM B of the first drive shelf to IOM B of the second drive shelf. a|
 image:../media/trafford_power.png[]     Example A: An E5700 controller shelf with three DE212C/DE224 disk shelves in a standard SAS configuration.
-+
+
 |===
 |===
 a|
 
- .. Cable controller A to IOM A.
- .. Cable controller B to IOM B.
-
-a|
+.. Cable controller A to IOM A.
+.. Cable controller B to IOM B. a|
 image:../media/trafford_power.png[]     Example B: An E5700 controller shelf with one DE212C/DE224 disk shelf in a standard SAS configuration.
-+
 |===
 
 . Power the Drive Shelves
@@ -78,5 +73,4 @@ During boot, the seven-segment display shows the repeating sequence of OS, Sd, b
 |===
 a|
 image:../media/trafford_power.png[]     Example: Power connections are on the rear of the shelf.
-+
 |===

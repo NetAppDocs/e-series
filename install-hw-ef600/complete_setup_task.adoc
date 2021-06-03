@@ -77,7 +77,6 @@ a|
 The following figure shows an example of the controller's management port location:
 a|
 image:../media/ethernet_callout.png[]     *Note:* EF600 pictured above.
-+
 |===
 
 . Open a browser and connect to the storage system using one of the controller IP addresses provided to you by your network administrator.
@@ -105,7 +104,6 @@ a|
 The following figure shows an example of the controller's management port location:
 a|
 image:../media/ethernet_callout.png[]     *Note:* EF600 pictured above.
-+
 |===
 
 . Open a browser and use the default IP address (169.254.128.101) to establish a connection to the controller. The controller sends back a self-signed certificate. The browser informs you that the connection is not secure.
@@ -142,13 +140,12 @@ After you have installed the EF300 or EF600 hardware, use the SANtricity softwar
 
 . Connect your controller to a web browser, and use SANtricity System Manager to manage your EF300 or EF600 series storage system.
 +
+[options="header"]
 |===
 a|
 image:../media/management_station_inst-hw-ef600_g2285.png[]
 a|
 
- ** NOTE: You use the same IP addresses that you used to configure your management ports to access SANtricity System Manager.
-
-+
+NOTE: You use the same IP addresses that you used to configure your management ports to access SANtricity System Manager.
 |===
 If you are cabling your EF300 for SAS expansion see the link:../com.netapp.doc.e-f600-sysmaint/home.html[Maintaining EF600 Hardware] for SAS expansion card installation and the https://docs.netapp.com/ess-11/topic/com.netapp.doc.e-hw-cabling/home.html[Cabling E-Series hardware] for SAS expansion cabling.

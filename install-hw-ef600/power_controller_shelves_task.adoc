@@ -22,10 +22,12 @@ image:../media/power_cable_inst-hw-ef600.png[]
 a|
 *Power cables*
 |===
++
 |===
 a|
-image:../media/cabling_power.png[]     *Note:* EF600 pictured above.
-+
+image:../media/cabling_power.png[]
+
+*Note:* EF600 pictured above.
 |===
 
 . Connect the two power cables, one from each controller, to two separate power distribution units (PDUs) in the cabinet or rack.

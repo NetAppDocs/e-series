@@ -37,8 +37,9 @@ a|
  .. Cable controller B to IOM B of the second drive shelf.
 
 a|
-image:../media/trafford_power.png[]     Example A: An E2860 controller shelf with two DE460C disk shelves in a standard SAS configuration.
-+
+image:../media/trafford_power.png[]
+
+Example A: An E2860 controller shelf with two DE460C disk shelves in a standard SAS configuration.
 |===
 |===
 a|
@@ -47,8 +48,9 @@ a|
  .. Cable controller B to IOM B.
 
 a|
-image:../media/trafford_power.png[]     Example B: An E2860 controller shelf with one DE460C disk shelf in a standard SAS configuration.
-+
+image:../media/trafford_power.png[]
+
+Example B: An E2860 controller shelf with one DE460C disk shelf in a standard SAS configuration.
 |===
 
 . Power the Drive Shelves
@@ -76,5 +78,4 @@ During boot, the seven-segment display shows the repeating sequence of OS, Sd, b
 |===
 a|
 image:../media/trafford_power.png[]     Example: Power connections are on the rear of the shelf.
-+
 |===

@@ -68,125 +68,92 @@ The file is saved in the Downloads folder for your browser with the namedrive_up
 
 . If any of the following errors occur during the upgrade procedure, take the appropriate recommended action.
 +
+[options="header"]
 |===
 | If you encounter this firmware download error...| Then do the following...
 a|
-**    Failed assigned drives
+** Failed assigned drives
+a|
+One reason for the failure might be that the drive does not have the appropriate signature. Make sure that the affected drive is an authorized drive. Contact technical support for more information.
 
-**
-    a|
-        One reason for the failure might be that the drive does not have the appropriate signature. Make sure that the affected drive is an authorized drive. Contact technical support for more information.
+When replacing a drive, make sure that the replacement drive has a capacity equal to or greater than the failed drive you are replacing.
 
-....
- When replacing a drive, make sure that the replacement drive has a capacity equal to or greater than the failed drive you are replacing.
-
- You can replace the failed drive while the storage array is receiving I/O.
+You can replace the failed drive while the storage array is receiving I/O.
 
 
 a|
-**    Check storage array
-....
-
-**
+Check storage array
     a|
 
-....
 -   Make sure that an IP address has been assigned to each controller.
 -   Make sure that all cables connected to the controller are not damaged.
 -   Make sure that all cables are tightly connected.
 
 a|
-**    Integrated hot spare drives
-....
+Integrated hot spare drives
+a|
+This error condition must be corrected before you can upgrade the firmware. Launch System Manager and use the Recovery Guru to resolve the problem.
 
-**
-    a|
-        This error condition must be corrected before you can upgrade the firmware. Launch System Manager and use the Recovery Guru to resolve the problem.
+a|
+Incomplete volume groups
+a|
+If one or more volume groups or disk pools are incomplete, you must correct this error condition before you can upgrade the firmware. Launch System Manager and use the Recovery Guru to resolve the problem.
 
- a|
- **    Incomplete volume groups
+a|
+Exclusive operations \(other than background media/parity scan\) currently running on any volume groups
+a|
+If one or more exclusive operations are in progress, the operations must complete before the firmware can be upgraded. Use System Manager to monitor the progress of the operations.
 
-**
-    a|
-        If one or more volume groups or disk pools are incomplete, you must correct this error condition before you can upgrade the firmware. Launch System Manager and use the Recovery Guru to resolve the problem.
+a|
+Missing volumes
+a|
+You must correct the missing volume condition before the firmware can be upgraded. Launch System Manager and use the Recovery Guru to resolve the problem.
 
- a|
- **    Exclusive operations \(other than background media/parity scan\) currently running on any volume groups
+a|
+Either controller in a state other than Optimal
+a|
+One of the storage array controllers needs attention. This condition must be corrected before the firmware can be upgraded. Launch System Manager and use the Recovery Guru to resolve the problem.
 
-**
-    a|
-        If one or more exclusive operations are in progress, the operations must complete before the firmware can be upgraded. Use System Manager to monitor the progress of the operations.
+a|
+Mismatched Storage Partition information between Controller Object Graphs
+a|
+An error occurred while validating the data on the controllers. Contact technical support to resolve this issue.
 
- a|
- **    Missing volumes
+a|
+SPM Verify Database Controller check fails
+a|
+A storage partitions mapping database error occurred on a controller. Contact technical support to resolve this issue.
 
-**
-    a|
-        You must correct the missing volume condition before the firmware can be upgraded. Launch System Manager and use the Recovery Guru to resolve the problem.
+a|
+Configuration Database Validation \(If supported by the storage array’s controller version\)
+a|
+A configuration database error occurred on a controller. Contact technical support to resolve this issue.
 
- a|
- **    Either controller in a state other than Optimal
+a|
+MEL Related Checks
+a|
+Contact technical support to resolve this issue.
 
-**
-    a|
-        One of the storage array controllers needs attention. This condition must be corrected before the firmware can be upgraded. Launch System Manager and use the Recovery Guru to resolve the problem.
+a|
+More than 10 DDE Informational or Critical MEL events were reported in the last 7 days
+a|
+Contact technical support to resolve this issue.
 
- a|
- **    Mismatched Storage Partition information between Controller Object Graphs
+a|
+More than 2 Page 2C Critical MEL Events were reported in the last 7 days
+a|
+Contact technical support to resolve this issue.
 
-**
-    a|
-        An error occurred while validating the data on the controllers. Contact technical support to resolve this issue.
+a|
+More than 2 Degraded Drive Channel Critical MEL events were reported in the last 7 days
+a|
+Contact technical support to resolve this issue.
 
- a|
- **    SPM Verify Database Controller check fails
+a|
+More than 4 critical MEL entries in the last 7 days
+a|
+Contact technical support to resolve this issue.
 
-**
-    a|
-        A storage partitions mapping database error occurred on a controller. Contact technical support to resolve this issue.
-
- a|
- **    Configuration Database Validation \(If supported by the storage array’s controller version\)
-
-**
-    a|
-        A configuration database error occurred on a controller. Contact technical support to resolve this issue.
-
- a|
- **    MEL Related Checks
-
-**
-    a|
-        Contact technical support to resolve this issue.
-
- a|
- **    More than 10 DDE Informational or Critical MEL events were reported in the last 7 days
-
-**
-    a|
-        Contact technical support to resolve this issue.
-
- a|
- **    More than 2 Page 2C Critical MEL Events were reported in the last 7 days
-
-**
-    a|
-        Contact technical support to resolve this issue.
-
- a|
- **    More than 2 Degraded Drive Channel Critical MEL events were reported in the last 7 days
-
-**
-    a|
-        Contact technical support to resolve this issue.
-
- a|
- **    More than 4 critical MEL entries in the last 7 days
-
-**
-    a|
-        Contact technical support to resolve this issue.
-
- |===
+|===
 
 Your drive firmware upgrade is complete. You can resume normal operations.

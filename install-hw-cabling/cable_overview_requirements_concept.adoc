@@ -17,19 +17,13 @@ The cabling information is intended for a hardware installer or system administr
 
 Cabling information applies to the following hardware models.
 
+[options="header"]
 |===
-a|
-*Controller Shelf*
-a|
-*Drive Shelf*
+a| *Controller Shelf* a| *Drive Shelf*
 a|
 EF600
 a|
 Not applicable.
-a|
-EF300
-a|
-
 a|
 E5724, EF570, E2812, E2824, EF280
 a|
@@ -44,11 +38,9 @@ DE460C
 
 If you are cabling for the following configuration, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf.]
 
+[options="header"]
 |===
-a|
-*Controller Shelf*
-a|
-*Drive Shelf*
+a| *Controller Shelf* a| *Drive Shelf*
 a|
 E2712, E2724, E5612, E5624, EF560
 a|

@@ -57,15 +57,14 @@ This task describes how to discover and add storage systems using the REST API, 
 +
 |===
 a|
-        startIP
-+
-endIP
-a|
+startIP
+
+endIP a|
 Replace string with the starting and ending IP address range for one or more storage systems in the network.
 a|
 useAgents
 a|
-        Set this value to either:
+Set this value to either:
 
   *** true = Use in-band agents for the network scan.
   *** false = Do not use in-band agents for the network scan.
@@ -116,14 +115,13 @@ The discovery process runs in the background.
 +
 |===
 a|
-        id
-a|
+id a|
 Enter a unique name for this storage system. You can enter the label (displayed in the response for GET: /discovery), but the name can be any string you choose. If you do not provide a value for this field, Web Services automatically assigns a unique identifier.
 a|
 controllerAddresses
 a|
-        Enter the IP addresses displayed in the response for GET: /discovery. For dual controllers, separate the IP addresses with a comma. For example:
-+
+Enter the IP addresses displayed in the response for GET: /discovery. For dual controllers, separate the IP addresses with a comma. For example:
+
 "`IP address 1`",`"IP address 2`"
 a|
 validate

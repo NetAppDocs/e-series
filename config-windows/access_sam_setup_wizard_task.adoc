@@ -13,6 +13,7 @@ You use the Setup wizard in SANtricity System Manager to configure your storage 
 
 * You have ensured that the device from which you will access SANtricity System Manager contains one of the following browsers:
 +
+[options="header"]
 |===
 | Browser| Minimum version
 a|
@@ -49,7 +50,7 @@ The wizard automatically relaunches when you open System Manager or refresh your
 
 If the Setup wizard does not automatically appear, contact technical support.
 
-. From your browser, enter the following URL: `https://<DomainNameOrIPAddress>`
+. From your browser, enter the following URL: `+https://<DomainNameOrIPAddress>+`
 +
 IPAddress is the address for one of the storage array controllers.
 +

@@ -72,7 +72,8 @@ image:../media/legend_icon_01_maint-e5700.gif[] Cache Active LED
  .. Turn off both power switches on the controller shelf.
  .. Wait for all LEDs on the controller shelf to turn off.
 
-Go to .
+Go to Add host interface card.
+//link
 
 == Remove controller canister
 
@@ -215,10 +216,8 @@ If this software has not yet been installed, follow the instructions in the link
  ** The amber Attention LED on the controller turns on and then turns off, unless there is an error.
  ** The green Host Link LEDs remain off until you connect the host cables.
 *Note:* The figure shows an example controller canister. Your controller might have a different number and a different type of host ports.
-
 +
 image::../media/e5700_hic_3_callouts_maint-e5700.gif[]
-+
 image:../media/legend_icon_01_maint-e5700.gif[] Host Link LEDsimage:../media/legend_icon_02_maint-e5700.gif[]Attention LED (Amber)image:../media/legend_icon_03_maint-e5700.gif[] Seven-segment display
 . From SANtricity System Manager, confirm that the controller's status is Optimal.
 +

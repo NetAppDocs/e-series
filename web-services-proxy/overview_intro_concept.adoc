@@ -39,6 +39,7 @@ image::../media/web_services_proxy_overview.gif[]
 
 The following table provides a comparison of the proxy and the embedded version.
 
+[options="header"]
 |===
 | Consideration| Proxy| Embedded
 a|
@@ -85,6 +86,7 @@ Before installing and using the Web Services Proxy, read the compatibility and r
 
 The following compatibility and restrictions apply to using the Web Services Proxy.
 
+[options="header"]
 |===
 | Consideration| Compatibility or restriction
 a|
@@ -132,6 +134,7 @@ All requests include a URL, as in the following example, and contain the element
 
 `+https://webservices.name.com:8443/devmgr/v2/storage-systems+`
 
+[options="header"]
 |===
 | Area| Description
 a|
@@ -197,6 +200,7 @@ When a request is made to the API, a response returns two critical pieces of inf
 
 You must check the status code and the content-type header to determine what the resulting response body looks like. For HTTP status codes 200-203 and 422, Web Services returns a JSON body with the response. For other HTTP status codes, Web Services generally does not return an additional JSON body, either because the specification does not allow it (204) or because the status is self-explanatory. The table lists common HTTP status codes and definitions. It also indicates whether information associated with each HTTP code is returned in a JSON body.
 
+[options="header"]
 |===
 | HTTP status code| Description| JSON body
 a|
@@ -282,6 +286,7 @@ GitHub contains a repository for the collection and organization of sample scrip
 [.lead]
 The following terms apply to the Web Services Proxy.
 
+[options="header"]
 |===
 | Term| Definition
 a|

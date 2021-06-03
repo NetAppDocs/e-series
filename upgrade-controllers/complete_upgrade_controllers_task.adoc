@@ -24,6 +24,7 @@ You must power on the controller shelf to confirm that it is working correctly.
 . Wait three minutes for the power-up process to complete.
 . If you are performing a complete controller replacement for either E2800 or E5700 controllers, proceed to one of the following procedures based on your drive security scenario.
 +
+[options="header"]
 |===
 | Complete controller replacement type| Procedure and prerequisites
 a|
@@ -33,7 +34,7 @@ Proceed to After you finish.
 a|
 Mix of secured and unsecured drives, Internal Key Management
 a|
-    You first must create an internal security key and then import the security key manually to unlock the secured drives. After the drives are unlocked, you can access the drives.
+You first must create an internal security key and then import the security key manually to unlock the secured drives. After the drives are unlocked, you can access the drives.
 
  .. Create internal security key
  .. Controller swap with internal key management and one or more drives secured
@@ -46,12 +47,12 @@ a|
 Mix of secured and unsecured drives, External Key Management
 a|
 Proceed to After you finish.     *Attention:* After performing the controller replacement, the controllers will automatically resynchronize with the External Key Management Server and the drives will unlock and be accessible.
-+
+
 NOTE: If you receive a seven-segment display lock-down code of `L5` after performing a controller replacement of mixed secured drives with internal key management, contact technical support.
 a|
 All secured drives, External Key Management, you have temporarily switched back to Internal Key Management for the controller replacement procedure
 a|
-    You must first unlock the secured drives using the Internal Key Management procedure. After the drives are unlocked, then you transition back to External Key Management by creating a new external security key for the storage array.
+You must first unlock the secured drives using the Internal Key Management procedure. After the drives are unlocked, then you transition back to External Key Management by creating a new external security key for the storage array.
 
  .. Controller swap with internal key management and one or more drives secured
  .. Create external security key

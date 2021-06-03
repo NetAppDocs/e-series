@@ -43,10 +43,7 @@ The following figures show a front view (left) and a rear view (right) of the ca
 image::../media/83000_07_dwg_3040_cabinet_with_callouts.gif[]
 
 |===
-a|
-1.
-a|
-Ventilation cover
+a| 1. a| Ventilation cover
 a|
 2.
 a|
@@ -123,6 +120,7 @@ The power entry boxes are labeled C1, C2, and C3 where the power cords connect t
 
 === Power calculations and heat calculations for the cabinet
 
+[options="header"]
 |===
 | Component| kVA| Watts| BTU/Hr
 a|
@@ -298,6 +296,7 @@ The maximum number of trays that you can install in a 3040 40U cabinet depends o
 
 Each rack unit is 1.75 inches (4.45 cm). For example, you can install up to ten 4U trays, up to twenty 2U trays, or a combination of 2U and 4U trays, up to 40U.
 
+[options="header"]
 |===
 | Tray| Rack units (U)
 a|

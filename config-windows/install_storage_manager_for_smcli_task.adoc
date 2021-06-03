@@ -15,8 +15,8 @@ When you install the SANtricity Storage Manager software on your management stat
 * You must have ensured that the system that will contain the SANtricity Storage Manager client has the following minimum requirements:
  ** *RAM*: 2 GB for Java Runtime Engine
  ** *Disk space*: 5 GB
- ** *OS/Architecture*: Refer to http://mysupport.netapp.com[NetApp Support]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager* for guidance on determining the supported operating system versions and architectures.
+ ** *OS/Architecture*: Refer to http://mysupport.netapp.com[NetApp Support] *Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager* for guidance on determining the supported operating system versions and architectures.
 
-. Download the SANtricity software release from http://mysupport.netapp.com[NetApp Support]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager*.
+. Download the SANtricity software release from http://mysupport.netapp.com[NetApp Support] *Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager*.
 . Run the SANtricity installer. Double-click the SMIA*.exe install package to execute.
 . Use the installation wizard to install the software on the management station.

@@ -137,7 +137,7 @@ If this green LED is on, the controller is still using battery power. You must w
 +
 image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[]
 +
-image:../media/legend_icon_01_maint-e5700.gif[]Internal Cache Active LED image:../media/legend_icon_02_maint-e5700.gif[] Batteryimage:../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[]
+image:../media/legend_icon_01_maint-e5700.gif[]Internal Cache Active LED image:../media/legend_icon_02_maint-e5700.gif[] Battery
 
 . Using a #1 Phillips screwdriver, remove the screws that attach the HIC faceplate to the controller canister.
 +

@@ -132,6 +132,7 @@ EF570 controllers must not be placed into SAS-3 shelves.
 
 The E5700 supports DE5600 and DE6600 SAS-2 enclosures via head upgrade. When utilizing a E5700 controller in SAS-2 enclosures, support for base host ports is disabled.
 
+[options="header"]
 |===
 | SAS-2 shelves| SAS-3 shelves
 a|

@@ -59,7 +59,7 @@ A user-specified pass phrase is required as part of the data encryption key used
 
 . In the `Define a pass phrase` field, enter the desired pass phrase.
 . In the `Re-enter your pass phrase` field, re-enter the pass phrase from the first field.
-. Click**Next**.
+. Click **Next**.
 +
 The entered pass phrase for the SANtricity Cloud Connector application is accepted and the Select Target Type page for the configuration wizard is displayed.
 
@@ -164,7 +164,8 @@ Login and connection information for the Web Services Proxy used in conjunction 
 . In the `User Name` field, enter the user name for the Web Services Proxy connection.
 . In the `Password` field, enter the password for the Web Services Proxy connection.
 . Click *Test Connection* to verify the connection for the entered Web Services Proxy credentials.
-. After verifying the entered Web Services Proxy credentials through the test connection. click *Next*
+. After verifying the entered Web Services Proxy credentials through the test connection.
+. Click *Next*
 +
 The Web Services Proxy credentials for the SANtricity Cloud Connector is accepted and the Select Storage Arrays page is displayed in the Configuration Wizard.
 

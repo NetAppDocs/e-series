@@ -44,6 +44,7 @@ You must configure the iSCSI ports to ensure communication between the target (l
 
 The iSCSI ports can be configured multiple ways based on your subnet. The following are a few examples on how to configure the iSCSI ports for use with the Remote Storage Volumes feature.
 
+[options="header"]
 |===
 | Source A| Source B| Target A| Target B
 a|
@@ -55,6 +56,7 @@ a|
 a|
 10.10.2.101/22
 |===
+[options="header"]
 |===
 | Source A| Source B| Target A| Target B
 a|

@@ -106,7 +106,8 @@ IMPORTANT: Do not begin any other operations until after the status has been upd
 
 . Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove this component.
 
-Go to .
+Go to Remove failed controller (duplex).
+//link
 
 == Remove controller canister (duplex)
 

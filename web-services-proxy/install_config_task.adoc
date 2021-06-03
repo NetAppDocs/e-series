@@ -41,6 +41,7 @@ If the Web Services Proxy is running while another application is available at t
 +
 The following table shows the attributes that control HTTP ports and HTTPS ports.
 +
+[options="header"]
 |===
 | Name| Description| Parent Node| Attributes| Required
 a|

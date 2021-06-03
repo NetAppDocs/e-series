@@ -20,6 +20,7 @@ You can install and configure the Web Services Proxy on a Windows or Linux host 
 
 Proxy installation includes the following requirements.
 
+[options="header"]
 |===
 | Requirement| Description
 a|
@@ -208,13 +209,14 @@ The API documentation opens in the browser.
 +
 The high-level categories for endpoints are displayed. You can navigate the API documentation as described in the table.
 +
+[options="header"]
 |===
 | Area| Description
 a|
 Drop-down menu
 a|
-    At the upper right of the page, a drop-down menu provides options for switching between version 2 of the API documentation (V2), the SYMbol interface (SYMbol V2), and API utilities (utils) for logging in.
-+
+At the upper right of the page, a drop-down menu provides options for switching between version 2 of the API documentation (V2), the SYMbol interface (SYMbol V2), and API utilities (utils) for logging in.
+
 NOTE: Because version 1 of the API documentation was a prerelease and not generally available, V1 is not included in the drop-down menu.
 a|
 Categories
@@ -227,8 +229,8 @@ Select an endpoint to see its URL paths, required parameters, response bodies, a
 a|
 Try It Out
 a|
-    Interact with the endpoint directly by clicking *Try It Out*. This button is provided in each of the expanded views for endpoints.
-+
+Interact with the endpoint directly by clicking *Try It Out*. This button is provided in each of the expanded views for endpoints.
+
 When you click the button, fields appear for entering parameters (if applicable). You can then enter values and click *Execute*.
 +
 The interactive documentation uses JavaScript to make the request directly to the API; it is not a test request.
@@ -244,6 +246,7 @@ After you install the Web Services Proxy, you can access Unified Manager to mana
 
 To access Unified Manager, you open a browser and enter the URL pointing to where the proxy is installed. The following browsers and versions are supported.
 
+[options="header"]
 |===
 | Browser| Minimum version
 a|

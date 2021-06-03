@@ -21,11 +21,12 @@ The *Refine Search Criteria* section is displayed. In this section you may selec
 
 . As necessary, make the updates for your operating system and protocol as listed in the table.
 +
+[options="header"]
 |===
 | Operating system updates| Protocol| Protocol-related updates
-a|
+.3+a|
     You might need to install out-of-box drivers to ensure proper functionality and supportability.
-+
+
 Each HBA vendor has specific methods for updating boot code and firmware. Refer to the support section of the vendor's website to obtain the instructions and software necessary to update the HBA boot code and firmware.
 a|
 FC
