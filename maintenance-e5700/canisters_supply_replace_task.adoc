@@ -11,7 +11,7 @@ summary: Each 24-drive controller shelf or drive shelf includes two power suppli
 [.lead]
 Each 24-drive controller shelf or drive shelf includes two power supplies with integrated fans. These are referred to as _power-fan canisters_ in SANtricity System Manager. If a power-fan canister fails, you must replace it as soon as possible to ensure that the shelf has a redundant power source and adequate cooling.
 
-== Prepare to replace power supply
+== Step 1. Prepare to replace power supply
 
 [.lead]
 You prepare to replace a power supply in a 24-drive controller shelf or drive shelf by collecting support data about your storage array and locating the failed component. The power supply is referred to as a power-fan canister in SANtricity System Manager.
@@ -54,9 +54,7 @@ image:../media/drw_sas_power_icon_maint-e5700.gif[] Power LED: If it is *solid g
 +
 image:../media/drw_sas_fault_icon_maint-e5700.gif[] Attention LED: If it is *solid amber*, the power supply or its integrated fan has a fault.
 
-Go to link:canisters_supply_replace_task.md#[Remove failed power supply].
-
-== Remove failed power supply
+== Step 2. Remove failed power supply
 
 [.lead]
 You remove a failed power supply so you can replace it with a new one. When you remove a power supply (referred to in SANtricity System Manager as a _power-fan canister_), you turn off power, disconnect the power cord, and slide the part out of the shelf.
@@ -81,9 +79,7 @@ IMPORTANT: When removing a power supply, always use two hands to support its wei
 +
 As you remove the power supply, a flap swings into place to block the empty bay, helping to maintain air flow and cooling.
 
-Go to link:canisters_supply_replace_task.md#[Install new power supply].
-
-== Install new power supply
+== Step 3. Install new power supply
 
 [.lead]
 You install a new power supply to replace the failed one. When you install a power supply (referred to in SANtricity System Manager as a _power-fan canister_), you slide the part into the shelf, close the cam handle, reconnect the power cord, and reapply power.
@@ -104,9 +100,7 @@ IMPORTANT: Do not use excessive force when sliding the power supply into the sys
  .. Secure the power cord to the power supply using the power cord retainer.
 . Turn on the power to the new power-fan canister.
 
-Go to link:canisters_supply_replace_task.md#[Complete power supply replacement].
-
-== Complete power supply replacement
+== Step 4. Complete power supply replacement
 
 [.lead]
 You complete the power supply replacement by confirming that the new power supply (referred to in SANtricity System Manager as a _power-fan canister_) is working correctly. Then, you can gather support data and resume normal operations.

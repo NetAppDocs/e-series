@@ -11,7 +11,7 @@ summary: You can use SANtricity Unified Manager to upgrade the SANtricity OS sof
 [.lead]
 You can use SANtricity Unified Manager to upgrade the SANtricity OS software on multiple storage arrays of the same type to a newer version.
 
-== Perform pre-upgrade health check
+== Step 1. Perform pre-upgrade health check
 
 [.lead]
 A health check runs as part of the upgrade process, but you also can run a health check separately before you begin. The health check assesses components of the storage array to make sure that the upgrade can proceed.
@@ -30,7 +30,7 @@ The progress is shown in the dialog box while the health check is performed.
 +
 NOTE: If any arrays fail the health check, you can skip that particular array and continue the upgrade for the others, or you can stop the entire process and troubleshoot the arrays that did not pass.
 
-== Download software files from support site
+== Step 2. Download software files from support site
 
 [.lead]
 You download the SANtricity OS software package from the NetApp Support Site to your management host system.
@@ -61,7 +61,7 @@ The Upgrade SANtricity OS software page appears.
 +
 NOTE: Digitally signed firmware is required in version 8.42 and above. If you attempt to download unsigned firmware, an error is displayed and the download is aborted.
 
-== Transfer software files to the controllers
+==  Step 3. Transfer software files to the controllers
 
 [.lead]
 You load the SANtricity OS software file and the NVSRAM file into the repository so it is accessible to the Unified Manager Upgrade Center.
@@ -114,7 +114,7 @@ The following actions occur during the upgrade operation:
 +
 The file is saved in the Downloads folder for your browser with the name``upgrade_log-<date>.json``.
 
-== Activate staged software files (optional)
+==  Step 4. Activate staged software files (optional)
 
 [.lead]
 You can choose to activate the software file immediately or wait until a more convenient time. This procedure assumes you chose to activate the software file at a later time.

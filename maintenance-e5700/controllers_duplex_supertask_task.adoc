@@ -11,7 +11,7 @@ summary: You can replace a controller canister in a duplex configuration, which 
 [.lead]
 You can replace a controller canister in a duplex configuration, which is a two-controller module configuration within the storage array. Each controller canister contains a controller card, a battery, and an optional host interface card (HIC). When you replace a controller canister, you must remove the battery and HIC, if one is installed, from the original controller canister, and install them in the replacement controller canister.
 
-== Prepare to replace controller (duplex)
+== Step 1. Prepare to replace controller (duplex)
 
 [.lead]
 You prepare to replace a controller canister by verifying that the replacement controller canister has the correct FRU part number, backing up the configuration, and collecting support data. If the controller is still online, you must take it offline.
@@ -106,10 +106,7 @@ IMPORTANT: Do not begin any other operations until after the status has been upd
 
 . Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove this component.
 
-Go to Remove failed controller (duplex).
-//link
-
-== Remove controller canister (duplex)
+== Step 2. Remove controller canister (duplex)
 
 [.lead]
 You remove a controller canister to replace the failed canister with a new one. Perform this task only if your storage array has two controllers (duplex configuration).
@@ -152,7 +149,7 @@ If you are removing the controller canister from an E5724 controller shelf, a fl
 . Turn the controller canister over, so that the removable cover faces up.
 . Place the controller canister on a flat, static-free surface.
 
-== Remove battery (duplex)
+== Step 3. Remove battery (duplex)
 
 [.lead]
 Remove the battery so you can install the new controller.
@@ -175,9 +172,7 @@ image:../media/legend_icon_01_maint-e5700.gif[] Battery release latch image:../m
 
 . Lift up on the battery, and slide it out of the controller canister.
 
-Go to link:controllers_duplex_supertask_task.md#[Step 3: Remove host interface card].
-
-== Remove host interface card (duplex)
+== Step 4. Remove host interface card (duplex)
 
 [.lead]
 If the controller canister includes a host interface card (HIC), you must remove the HIC from the original controller canister, so you can reuse it in the new controller canister.
@@ -200,7 +195,7 @@ image:../media/legend_icon_01_maint-e5700.gif[] Host interface card (HIC) image:
 
 . Place the HIC on a static-free surface.
 
-== Install battery (duplex)
+== Step 5. Install battery (duplex)
 
 [.lead]
 You must install the battery into the replacement controller canister. You can install the battery that you removed from the original controller canister or install a new battery that you ordered.
@@ -230,9 +225,7 @@ IMPORTANT: *Possible hardware damage* -- The metal flange at the front of the ba
  ** *Correct -- The battery's metal flange is completely inserted in the slot on the controller:*image:../media/28_dwg_e2800_battery_flange_ok_maint-e5700.gif[]
  ** *Incorrect -- The battery's metal flange is not inserted into the slot on the controller:*image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e5700.gif[]
 
-Go to link:controllers_duplex_supertask_task.md#[Install host interface card (duplex)].
-
-== Install host interface card (duplex)
+== Step 6. Install host interface card (duplex)
 
 [.lead]
 If you removed a HIC from the original controller canister, you must install that HIC in the new controller canister.
@@ -262,9 +255,7 @@ Do not use a screwdriver, or you might over tighten the screws.
 +
 image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[]
 
-Go to link:controllers_duplex_supertask_task.md#[Install new controller canister (duplex)].
-
-== Install new controller canister (duplex)
+== Step 7. Install new controller canister (duplex)
 
 [.lead]
 After installing the battery and the host interface card (HIC), if one was initially installed, you can install the new controller canister into the controller shelf.
@@ -290,9 +281,7 @@ If you are using more than one host protocol, be sure to install the SFPs in the
 +
 NOTE: If the original controller did not use DHCP for the IP address, the new controller will adopt the IP address of the controller you removed.
 
-Go to link:controllers_duplex_supertask_task.md#[Complete controller replacement (duplex)].
-
-== Complete controller replacement (duplex)
+== Step 8. Complete controller replacement (duplex)
 
 [.lead]
 You complete the controller replacement by placing the controller online and confirming that the storage array is working correctly. Then, you can collect support data and resume operations.

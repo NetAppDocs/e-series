@@ -11,7 +11,7 @@ summary: Each 60-drive controller shelf or drive shelf includes two fan canister
 [.lead]
 Each 60-drive controller shelf or drive shelf includes two fan canisters. If a fan canister fails, you must replace it as soon as possible to ensure that the shelf has adequate cooling.
 
-== Prepare to replace fan canister
+== Step 1. Prepare to replace fan canister
 
 [.lead]
 You prepare to replace a fan canister in a 60-drive controller shelf or drive shelf by collecting support data about your storage array and locating the failed component.
@@ -55,9 +55,7 @@ image::../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout_maint-e
 +
 image:../media/legend_icon_01_maint-e5700.gif[]Attention LED. If this LED displays as *Solid amber*, then the fan has a fault.
 
-Go to link:canisters_fan_replace_task.md#[Remove failed power canister and install new one].
-
-== Remove failed fan canister and install new one
+== Step 2. Remove failed fan canister and install new one
 
 [.lead]
 You remove a failed fan canister so you can replace it with a new one.
@@ -83,9 +81,7 @@ image:../media/legend_icon_01_maint-e5700.gif[]Handle to pull the fan canister o
 
 . Slide the replacement fan canister all the way into the shelf, and then move the fan canister handle until it latches with the orange tab.
 
-Go to link:canisters_fan_replace_task.md#[Complete fan canister replacement].
-
-== Complete fan canister replacement
+== Step 3. Complete fan canister replacement
 
 [.lead]
 You complete the fan canister replacement by confirming that the new fan canister is working correctly. Then, you can gather support data and resume normal operations.

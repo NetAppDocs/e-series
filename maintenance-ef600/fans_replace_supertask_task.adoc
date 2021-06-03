@@ -11,7 +11,7 @@ summary: Each EF300 and EF600 controller shelf or drive shelf includes five fans
 [.lead]
 Each EF300 and EF600 controller shelf or drive shelf includes five fans. If a fan fails, you must replace it as soon as possible to ensure that the shelf has adequate cooling.
 
-== Place controller offline
+== Step 1. Place controller offline
 
 [.lead]
 You must place the controller canister offline so you can safely replace your failed fan. You must back up the configuration and collect support data first. Then, you can take the controller canister offline.
@@ -43,9 +43,7 @@ IMPORTANT: Do not begin any other operations until after the status has been upd
 
 . Select *Recheck* from the Recovery Guru, and confirm that the OK to remove field in the Details area displays Yes, indicating that it is safe to remove this component.
 
-Go to link:fans_replace_supertask_task.md#[Remove controller canister].
-
-== Remove controller canister
+== Step 2. Remove controller canister
 
 [.lead]
 You remove the controller canister so you can replace the failed fan with a new one. Disconnect all the cables then you can slide the controller out of the controller shelf.
@@ -73,9 +71,7 @@ image::../media/remove_controller_6.png[]
 
 . Place the controller canister on a flat, static-free surface.
 
-Go to link:fans_replace_supertask_task.md#[Remove failed fan].
-
-== Remove failed fan
+== Step 3. Remove failed fan
 
 [.lead]
 You remove a failed fan so you can replace it with a new one.
@@ -91,9 +87,7 @@ If this green LED is on, the controller is still using battery power. You must w
 +
 image::../media/fan_2.png[]
 
-Go to link:fans_replace_supertask_task.md#[Install new fan].
-
-== Install new fan
+== Step 4. Install new fan
 
 [.lead]
 You install a new fan to replace the failed one.
@@ -106,9 +100,7 @@ image::../media/fan_3.png[]
 +
 image::../media/fan_3_a.png[]
 
-Go to link:fans_replace_supertask_task.md#[Reinstall controller canister]
-
-== Reinstall controller canister
+== Step 5. Reinstall controller canister
 
 [.lead]
 After installing the new fan, you can reinstall the controller canister into the controller shelf.
@@ -120,9 +112,7 @@ NOTE: The controller audibly clicks when correctly installed into the shelf.
 +
 image::../media/remove_controller_7.png[]
 
-Go to link:fans_replace_supertask_task.md#[Complete fan replacement].
-
-== Complete fan replacement
+== Step 6. Complete fan replacement
 
 [.lead]
 You complete the fan replacement by confirming that the new fan is working correctly. Then, you can gather support data and resume normal operations.
