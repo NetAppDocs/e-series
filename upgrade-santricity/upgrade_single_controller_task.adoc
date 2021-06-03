@@ -67,7 +67,7 @@ You can cancel the operation during the pre-upgrade health check, but not during
 +
 The file is saved in the Downloads folder for your browser with the namedrive_upgrade_log-timestamp.txt.
 
-If you have already activated your software files, go to link:upgrade_single_controller_task.md#[Complete software and firmware upgrade]; otherwise go to link:upgrade_single_controller_task.md#[Activate software files].
+If you have already activated your software files, go to Complete software and firmware upgrade; otherwise go to Activate software files.
 
 == Activate software files
 

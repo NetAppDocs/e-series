@@ -62,8 +62,6 @@ The Shelf Component Settings dialog box appears with the *IOMs (ESMs)* tab selec
  ** Both of the ESMs/IOMs show that communication is OK.
  ** The data rate is 12Gb/s for DE212C, DE224C, and DE460C drive shelves or 6 Gb/s for other drive trays.
 
-Go to link:hotadd_drive_shelf_task.md#[Install the drive shelf].
-
 == Install the drive shelf and apply power
 
 [.lead]
@@ -78,8 +76,6 @@ If the installation history of the drive shelf that you are installing is unknow
 IMPORTANT: See the installation instructions for your model for the full procedure for physical installation and power cabling. The installation instructions for your model includes notes and warnings that you must take into account to safely install a drive shelf.
 
 . Power on the new drive shelf, and confirm that no amber attention LEDs are illuminated on the drive shelf. If possible, resolve any fault conditions before you continue with this procedure.
-
-Go to link:hotadd_drive_shelf_task.md#[Cable your system].
 
 == Cable your system
 
@@ -126,8 +122,6 @@ image::../media/hot_e5700_2.png[]
 +
 NOTE: Optimal status indicates that the loss of redundancy error associated with the new drive shelf has been resolved and the storage system is stabilized.
 
-Go to link:hotadd_drive_shelf_task.md#[Complete hot add].
-
 === Connect the drive shelf - EF300
 
 [.lead]
@@ -173,8 +167,6 @@ image::../media/hot_ef_2.png[]
 . If it is not already selected, select the *ESMs/IOMs* tab in the *Shelf Component Settings* dialog box, and then select *Show more options*. Verify that Card communications is *YES*.
 +
 NOTE: Optimal status indicates that the loss of redundancy error associated with the new drive shelf has been resolved and the storage system is stabilized.
-
-Go to link:hotadd_drive_shelf_task.md#[Complete hot add].
 
 == Complete hot add
 

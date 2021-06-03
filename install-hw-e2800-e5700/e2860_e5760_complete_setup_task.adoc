@@ -151,6 +151,6 @@ a|
 image:../media/management_s_g2285tation_inst-hw-e2800-e5700_g2285.png[]
 a|
 
-* NOTE: You use the same IP addresses that you used to configure your management ports to access SANtricity System Manager.
+NOTE: You use the same IP addresses that you used to configure your management ports to access SANtricity System Manager.
 
 |===
