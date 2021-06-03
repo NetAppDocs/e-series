@@ -60,7 +60,6 @@ Recommended configurations consist of two initiator ports and four target ports.
 
 NOTE: The mapping host name is created during the workflow.
 
-[options="header"]
 |===
 a|
 Mapping host name
