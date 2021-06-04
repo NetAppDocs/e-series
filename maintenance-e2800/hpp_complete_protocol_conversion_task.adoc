@@ -1,0 +1,201 @@
+---
+permalink: maintenance-e2800/hpp_complete_protocol_conversion_task.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Complete host protocol conversion
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After converting the protocol of the host ports, you need to perform additional steps before you can use the new protocol. The steps you might need to complete depend on the starting and ending protocols of the baseboard host ports and the HIC ports.
+
+== Complete FC to iSCSI conversion
+
+[.lead]
+If you converted all host ports from FC to iSCSI, you must configure iSCSI networking.
+
+. Configure the switches.
++
+You should configure the switches used to transport iSCSI traffic according to the vendor's recommendations for iSCSI. These recommendations might include both configuration directives as well as code updates.
+
+. From SANtricity System Manager, select *Hardware* > *Configure iSCSI ports*.
+. Select the port settings.
++
+You can set up your iSCSI network in many ways. Consult your network administrator for tips on selecting the best configuration for your environment.
+
+. Update the host definitions in SANtricity System Manager.
++
+NOTE: If you need instructions for add hosts or host clusters, refer to the online help for SANtricity System Manager.
+
+ .. Select *Storage* > *Hosts*.
+ .. Select the host to which the port will be associated, and click *View/Edit Settings*.
++
+The Host Settings dialog box appears.
+
+ .. Click the *Host Ports* tab.
++
+image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif[]
+
+ .. Click *Add*, and use the *Add Host Port* dialog box to associate a new host port identifier to the host.
++
+The length of the host port identifier name is determined by the host interface technology. FC host port identifier names must have 16 characters. iSCSI host port identifier names have a maximum of 223 characters. The port must be unique. A port number that has already been configured is not allowed.
+
+ .. Click *Delete*, and use the *Delete Host Port* dialog box to remove (unassociate) a host port identifier.
++
+The *Delete* option does not physically remove the host port. This option removes the association between the host port and the host. Unless you remove the host bus adapter or the iSCSI initiator, the host port is still recognized by the controller.
+
+ .. Click**Save** to apply your changes to the host port identifier settings.
+ .. Repeat these steps to add and remove any additional host port identifiers.
+
+. Reboot the host or perform a rescan so that the host properly discovers the LUNs.
+. Remount volumes or start using block volume.
+
+== Complete iSCSI to FC conversion
+
+[.lead]
+If you converted all host ports from iSCSI to FC, you must configure FC networking.
+
+. Install the HBA utility and determine initiator WWPNs.
+. Zone the switches.
++
+Zoning the switches enables the hosts to connect to the storage and limits the number of paths. You zone the switches using the management interface of the switches.
+
+. Update the host definitions in SANtricity System Manager.
+ .. Select *Storage* > *Hosts*.
+ .. Select the host to which the port will be associated, and click *View/Edit Settings*.
++
+The Host Settings dialog box appears.
+
+ .. Click the *Host Ports* tab.
++
+image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif[]
+
+ .. Click *Add*, and use the *Add Host Port* dialog box to associate a new host port identifier to the host.
++
+The length of the host port identifier name is determined by the host interface technology. FC host port identifier names must have 16 characters. iSCSI host port identifier names have a maximum of 223 characters. The port must be unique. A port number that has already been configured is not allowed.
+
+ .. Click *Delete*, and use the *Delete Host Port* dialog box to remove (unassociate) a host port identifier.
++
+The *Delete* option does not physically remove the host port. This option removes the association between the host port and the host. Unless you remove the host bus adapter or the iSCSI initiator, the host port is still recognized by the controller.
+
+ .. Click**Save** to apply your changes to the host port identifier settings.
+ .. Repeat these steps to add and remove any additional host port identifiers.
+. Reboot the host or perform a rescan so that the host properly discovers mapped storage.
+. Remount volumes or start using block volume.
+
+== Complete FC to FC/iSCSI conversion
+
+[.lead]
+If you previously had all FC host ports and you converted some of them to iSCSI, you might need to modify your existing configuration to support iSCSI.
+
+You can use either of the following options to use the new iSCSI ports. The exact steps depend on your current and planned network topologies.
+
+Option 1 assumes that you want to attach new iSCSI hosts to the array. Option 2 assumes that you want to convert the hosts connected to the converted ports from FC to iSCSI.
+
+=== Option 1: Move FC hosts and add new iSCSI hosts
+
+. Move any FC hosts from the new iSCSI ports to the ports that remain FC.
+. If you are not already using dual-protocol SFPs, remove any FC SFPs.
+. Attach new iSCSI hosts to these ports, either directly or by using a switch.
+. Configure iSCSI networking for the new hosts and ports. For instructions, refer to the link:../com.netapp.doc.ssm-exp-ic-lin/home.html[Linux express configuration], link:../com.netapp.doc.ssm-exp-ic-win/home.html[Windows express configuration], or link:../com.netapp.doc.ssm-exp-ic-vm/home.html[VMware express configuration].
+
+=== Option 2: Convert FC hosts to iSCSI
+
+. Shut down the FC hosts connected to the converted ports.
+. Provide an iSCSI topology for the converted ports. For example, convert any switches from FC to iSCSI.
+. If you are not already using dual-protocol SFPs, remove the FC SFPs from the converted ports, and replace them with iSCSI SFPs or dual-protocol SFPs.
+. Attach cables to the SFPs in the converted ports, and confirm they are connected to the correct iSCSI switch or host.
+. Power on the hosts.
+. Use the _NetApp Interoperability Matrix Tool_ to configure the iSCSI hosts.
+. Edit the host partition to add the iSCSI host port IDs and remove the FC host port IDs.
+. After the iSCSI hosts reboot, use the applicable procedures on the hosts to register the volumes and to make them available to your operating system.
+ ** Depending on your operating system, two utilities are included with the storage management software (hot_add and SMdevices). These utilities help register the volumes with the hosts and also show the applicable device names for the volumes.
+ ** You might need to use specific tools and options that are provided with your operating system to make the volumes available (that is, assign drive letters, create mount points, and so on). Refer to your host operating system documentation for details.
+
+== Complete iSCSI to FC/iSCSI conversion
+
+[.lead]
+If you previously had all iSCSI host ports and you converted some of them to FC, you might need to modify your existing configuration to support FC.
+
+You can use either of the following options to use the new FC ports. The exact steps depend on your current and planned network topologies.
+
+Option 1 assumes that you want to attach new FC hosts to the array. Option 2 assumes that you want to convert the hosts connected to the converted ports from iSCSI to FC.
+
+=== Option 1: Move iSCSI hosts and add new FC hosts
+
+. Move any iSCSI hosts from the new FC ports to the ports that remain iSCSI.
+. If you are not already using dual-protocol SFPs, remove any FC SFPs.
+. Attach new FC hosts to these ports, either directly or by using a switch.
+. Configure FC networking for the new hosts and ports. For instructions, refer to the link:../com.netapp.doc.ssm-exp-ic-lin/home.html[Linux express configuration], link:../com.netapp.doc.ssm-exp-ic-win/home.html[Windows express configuration], or link:../com.netapp.doc.ssm-exp-ic-vm/home.html[VMware express configuration].
+
+=== Option 2: Convert iSCSI hosts to FC
+
+. Shut down the iSCSI hosts connected to the converted ports.
+. Provide an FC topology for the converted ports. For example, convert any switches from iSCSI to FC.
+. If you are not already using dual-protocol SFPs, remove the iSCSI SFPs from the converted ports, and replace them with FC SFPs or dual-protocol SFPs.
+. Attach cables to the SFPs in the converted ports, and confirm they are connected to the correct FC switch or host.
+. Power on the hosts.
+. Use the _NetApp Interoperability Matrix Tool_ to configure the FC hosts.
+. Edit the host partition to add the FC host port IDs and remove the iSCSI host port IDs.
+. After the new FC hosts reboot, use the applicable procedures on the hosts to register the volumes and to make them available to your operating system.
+ ** Depending on your operating system, two utilities are included with the storage management software (hot_add and SMdevices). These utilities help register the volumes with the hosts and also show the applicable device names for the volumes.
+ ** You might need to use specific tools and options that are provided with your operating system to make the volumes available (that is, assign drive letters, create mount points, and so on). Refer to your host operating system documentation for details.
+
+== Complete FC/iSCSI to FC conversion
+
+[.lead]
+If you previously had a combination of FC host ports and iSCSI host ports and you converted all ports to FC, you might need to modify your existing configuration to use the new FC ports.
+
+You can use either of the following options to use the new FC ports. The exact steps depend on your current and planned network topologies.
+
+Option 1 assumes that you want to attach new FC hosts to the array. Option 2 assumes that you want to convert the hosts connected to ports 1 and 2 from iSCSI to FC.
+
+=== Option 1: Remove iSCSI hosts and add FC hosts
+
+. If you are not already using dual-protocol SFPs, remove any iSCSI SFPs, and replace them with FC SFPs or dual-protocol SFPs.
+. If you are not already using dual-protocol SFPs, remove any FC SFPs.
+. Attach new FC hosts to these ports, either directly or by using a switch
+. Configure FC networking for the new hosts and ports. For instructions, refer to the link:../com.netapp.doc.ssm-exp-ic-lin/home.html[Linux express configuration], link:../com.netapp.doc.ssm-exp-ic-win/home.html[Windows express configuration], or link:../com.netapp.doc.ssm-exp-ic-vm/home.html[VMware express configuration].
+
+=== Option 2: Convert iSCSI hosts to FC
+
+. Shut down the iSCSI hosts connected to the ports you converted.
+. Provide an FC topology for these ports. For example, convert any switches connected to those hosts from iSCSI to FC.
+. If you are not already using dual-protocol SFPs, remove the iSCSI SFPs from the ports, and replace them with FC SFPs or dual-protocol SFPs.
+. Attach cables to the SFPs, and confirm they are connected to the correct FC switch or host.
+. Power on the hosts.
+. Use the _NetApp Interoperability Matrix Tool_ to configure the FC hosts.
+. Edit the host partition to add the FC host port IDs and remove the iSCSI host port IDs.
+. After the new FC hosts reboot, use the applicable procedures on the hosts to register the volumes and to make them available to your operating system.
+ ** Depending on your operating system, two utilities are included with the storage management software (hot_add and SMdevices). These utilities help register the volumes with the hosts and also show the applicable device names for the volumes.
+ ** You might need to use specific tools and options that are provided with your operating system to make the volumes available (that is, assign drive letters, create mount points, and so on). Refer to your host operating system documentation for details.
+
+== Complete FC/iSCSI to FC conversion
+
+[.lead]
+If you previously had a combination of FC host ports and iSCSI host ports and you converted all ports to iSCSI, you might need to modify your existing configuration to use the new iSCSI ports.
+
+You can use either of the following options to use the new iSCSI ports. The exact steps depend on your current and planned network topologies.
+
+Option 1 assumes that you want to attach new iSCSI hosts to the array. Option 2 assumes that you want to convert the hosts from FC to iSCSI.
+
+=== Option 1: Remove FC hosts and add iSCSI hosts
+
+. If you are not already using dual-protocol SFPs, remove any FC SFPs, and replace them with iSCSI SFPs or dual-protocol SFPs.
+. Attach new iSCSI hosts to these ports, either directly or by using a switch.
+. Configure iSCSI networking for the new hosts and ports. For instructions, refer to the link:../com.netapp.doc.ssm-exp-ic-lin/home.html[Linux express configuration], link:../com.netapp.doc.ssm-exp-ic-win/home.html[Windows express configuration], or link:../com.netapp.doc.ssm-exp-ic-vm/home.html[VMware express configuration].
+
+=== Option 2: Convert FC hosts to iSCSI
+
+. Shut down the FC hosts connected to the ports you converted.
+. Provide an iSCSI topology for these ports. For example, convert any switches connected to those hosts from FC to iSCSI.
+. If you are not already using dual-protocol SFPs, remove the FC SFPs from the ports, and replace them with iSCSI SFPs or dual-protocol SFPs.
+. Attach cables to the SFPs, and confirm they are connected to the correct iSCSI switch or host.
+. Power on the hosts.
+. Use the _NetApp Interoperability Matrix Tool_ to configure the ISCSI hosts.
+. Edit the host partition to add the iSCSI host port IDs and remove the FC host port IDs.
+. After the new iSCSI hosts reboot, use the applicable procedures on the hosts to register the volumes and to make them available to your operating system.
+ ** Depending on your operating system, two utilities are included with the storage management software (hot_add and SMdevices). These utilities help register the volumes with the hosts and also show the applicable device names for the volumes.
+ ** You might need to use specific tools and options that are provided with your operating system to make the volumes available (that is, assign drive letters, create mount points, and so on). Refer to your host operating system documentation for details.

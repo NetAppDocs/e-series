@@ -1,0 +1,12 @@
+---
+permalink: maintenance-e2800/concept_controllers_wombat.html
+sidebar: sidebar
+keywords: 
+summary: 'A controller consists of a board, firmware, and software. It controls the drives and implements the System Manager functions. This section describes how to convert to a duplex configuration by adding a second controller and how to replace a controller in a simplex configuration and in a duplex configuration.'
+---
+= Controllers
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+A controller consists of a board, firmware, and software. It controls the drives and implements the System Manager functions. This section describes how to convert to a duplex configuration by adding a second controller and how to replace a controller in a simplex configuration and in a duplex configuration.

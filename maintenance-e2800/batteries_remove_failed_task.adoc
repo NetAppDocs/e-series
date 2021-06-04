@@ -1,0 +1,35 @@
+---
+permalink: maintenance-e2800/batteries_remove_failed_task.html
+sidebar: sidebar
+keywords: 
+summary: 'After removing the controller canister from the controller shelf, you can remove the battery.'
+---
+= Remove failed battery
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After removing the controller canister from the controller shelf, you can remove the battery.
+
+. Remove the controller canister's cover by pressing down on the button and sliding the cover off.
+. Confirm that the green LED inside the controller (between the battery and the DIMMs) is off.
++
+If this green LED is on, the controller is still using battery power. You must wait for this LED to go off before removing any components.
++
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[]
++
+image:../media/legend_icon_01_maint-e2800.gif[] Internal Cache Active LED image:../media/legend_icon_02_maint-e2800.gif[] Battery
+
+. Locate the blue release latch for the battery.
+. Unlatch the battery by pushing the release latch down and away from the controller canister.
++
+image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[]
++
+image:../media/legend_icon_01_maint-e2800.gif[]Battery release latch image:../media/legend_icon_02_maint-e2800.gif[] Battery
+
+. Lift up on the battery, and slide it out of the controller canister.
+. Follow the appropriate procedures for your location to recycle or dispose of the failed battery.
++
+WARNING: To comply with International Air Transport Association (IATA) regulations, never ship a lithium battery by air unless it is installed within the controller shelf.
+
+Go to .

@@ -481,7 +481,7 @@ entries:
       url: "/maintenance-e2800/canisters_60_replace_power_task.html"
     - title: Replace fan canister (60-drive)
       url: "/maintenance-e2800/canisters_fan_supertask_task.html"
-  - title: " Drives"
+  - title: Drives
     url: "/maintenance-e2800/concept_drives_wombat.html"
     entries:
     - title: Overview and requirements
@@ -492,7 +492,7 @@ entries:
       url: "/maintenance-e2800/drives_60_replace_task.html"
     - title: Replace drive drawer (60-drive)
       url: "/maintenance-e2800/drives_60_supertask_task.html"
-  - title: " Host interface cards"
+  - title: Host interface cards
     url: "/maintenance-e2800/concept_host_interface_cards_wombat.html"
     entries:
     - title: Add host interface cards
