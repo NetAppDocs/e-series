@@ -1,7 +1,7 @@
 ---
 permalink: config-windows/access_sam_setup_wizard_task.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You use the Setup wizard in SANtricity System Manager to configure your storage array.'
 ---
 = Access SANtricity System Manager and use the Setup wizard
@@ -49,7 +49,7 @@ The wizard automatically relaunches when you open System Manager or refresh your
 
 If the Setup wizard does not automatically appear, contact technical support.
 
-. From your browser, enter the following URL: `https://<DomainNameOrIPAddress>`
+. From your browser, enter the following URL: `+https://<DomainNameOrIPAddress>+`
 +
 IPAddress is the address for one of the storage array controllers.
 +
