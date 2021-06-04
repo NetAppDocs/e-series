@@ -1,0 +1,44 @@
+---
+permalink: maintenance-e2800/index.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Maintaining E2800 Hardware
+:icons: font
+:imagesdir: ../media/
+
+* xref:concept_batteries_wombat.adoc[Batteries]
+ ** link:batteries_overview_requirements_concept.md#batteries_overview_requirements_concept[Overview and requirements]
+ ** link:batteries_prepare_replace_task.md#batteries_prepare_replace_task[Prepare to replace battery]
+ ** xref:batteries_remove_controller_canister_task.adoc[Remove controller canister]
+ ** xref:batteries_remove_failed_task.adoc[Remove failed battery]
+ ** xref:batteries_install_new_task.adoc[Install new battery]
+ ** xref:batteries_reinstall_controller_canister_task.adoc[Re-install controller canister]
+ ** link:batteries_complete_replacement_task.md#batteries_complete_replacement_task[Complete battery replacement]
+* xref:concept_controllers_wombat.adoc[Controllers]
+ ** link:controllers_overview_supertask_concept.md#controllers_overview_supertask_concept[Overview and requirements]
+ ** link:controllers_second_add_task.md#controllers_second_add_task[Add second controller canister]
+ ** link:controllers_duplex_supertask_task.md#controllers_duplex_supertask_task[Replace controller in duplex configuration]
+ ** link:controllers_simplex_supertask_task.md#controllers_simplex_supertask_task[Replace controller in simplex configuration]
+* xref:concept_canisters_wombat.adoc[Canisters]
+ ** link:canisters_overview_supertask_concept.md#canisters_overview_supertask_concept[Overview and requirements]
+ ** link:canisters_supply_supertask_task.md#canisters_supply_supertask_task[Replace power supply (12-drive or 24-drive)]
+ ** link:canisters_60_replace_power_task.md#canisters_60_replace_power_task[Replace power canister (60-drive)]
+ ** link:canisters_fan_supertask_task.md#canisters_fan_supertask_task[Replace fan canister (60-drive)]
+* xref:concept_drives_wombat.adoc[ Drives]
+ ** link:drives_overview_supertask_concept.md#drives_overview_supertask_concept[Overview and requirements]
+ ** link:drives_12_24_supertask_task.md#drives_12_24_supertask_task[Replace drive (12-drive or 24-drive)]
+ ** link:drives_60_replace_task.md#drives_60_replace_task[Replace drive (60-drive)]
+ ** link:drives_60_supertask_task.md#drives_60_supertask_task[Replace drive drawer (60-drive)]
+* xref:concept_host_interface_cards_wombat.adoc[ Host interface cards]
+ ** link:hics_add_supertask_task.md#hics_add_supertask_task[Add host interface cards]
+ ** link:hics_upgrade_supertask_task.md#hics_upgrade_supertask_task[Upgrade host interface card]
+ ** link:hics_replace_supertask_task.md#hics_replace_supertask_task[Replace host interface card]
+* xref:concept_host_port_protocol_conversion_wombat.adoc[Host port protocol conversion]
+ ** link:hpp_overview_supertask_concept.md#hpp_overview_supertask_concept[Overview and requirements]
+ ** link:hpp_change_host_protocol_task.md#hpp_change_host_protocol_task[Change host protocol]
+ ** link:hpp_complete_protocol_conversion_task.md#hpp_complete_protocol_conversion_task[Complete host protocol conversion]
+* xref:copyright_reference.adoc[Copyright]
+* xref:trademark_reference.adoc[Trademark]
+* xref:how_to_send_comments_concept.adoc[How to send comments about documentation and receive update notifications]
