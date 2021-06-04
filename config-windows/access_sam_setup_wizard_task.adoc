@@ -1,13 +1,8 @@
 ---
 permalink: config-windows/access_sam_setup_wizard_task.html
 sidebar: sidebar
-jsnyder_admin
 keywords: setup, wizard, santricity, system, manager, configure, storage, array, access
 summary: You use the Setup wizard in SANtricity System Manager to configure your storage array.
-=======
-keywords: setup, wizard, santricity, system, manager, configure, storage, array, access
-summary: 'You use the Setup wizard in SANtricity System Manager to configure your storage array.'
-jackie_catalyst-adoc
 ---
 = Access SANtricity System Manager and use the Setup wizard
 :icons: font
