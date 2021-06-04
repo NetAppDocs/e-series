@@ -11,7 +11,7 @@ summary: Each controller canister includes a battery that preserves cached data 
 [.lead]
 Each controller canister includes a battery that preserves cached data if the AC power fails. If the Recovery Guru in SANtricity System Manager reports either a Battery Failed status or a Battery Replacement Required status, you must replace the affected battery.
 
-== Place controller offline
+== Step 1. Place controller offline
 
 [.lead]
 You must place the affected controller offline so you can safely remove the failed battery. You must back up the configuration and collect support data first. Then, you can take the affected controller offline.
@@ -42,9 +42,7 @@ IMPORTANT: Do not begin any other operations until after the status has been upd
 
 . Select *Recheck* from the Recovery Guru, and confirm that the OK to remove field in the Details area displays Yes, indicating that it is safe to remove this component.
 
-Go to link:batteries_replace_supertask_task.md#[Remove controller canister].
-
-== Remove controller canister
+== Step 2. Remove controller canister
 
 [.lead]
 You remove the controller canister so you can replace the failed battery with a new one. Disconnect all the cables then you can slide the controller out of the controller shelf.
@@ -72,9 +70,7 @@ image::../media/remove_controller_6.png[]
 
 . Place the controller canister on a flat, static-free surface.
 
-Go to link:batteries_replace_supertask_task.md#[Remove failed battery].
-
-== Remove failed battery
+== Step 3. Remove failed battery
 
 [.lead]
 You must remove the failed battery so you can install the new one. Remove the battery by squeezing the tab and disconnecting the connector housing. Then, you can pull the battery out of the controller.
@@ -101,9 +97,7 @@ image::../media/batt_4.png[]
 +
 WARNING: To comply with International Air Transport Association (IATA) regulations, never ship a lithium battery by air unless it is installed within the controller shelf.
 
-Go to link:batteries_replace_supertask_task.md#[Install new battery].
-
-== Install new battery
+== Step 4. Install new battery
 
 [.lead]
 You must install a new battery when the old one has failed. Align the new battery with the side of the controller and then plug the connector into the board.
@@ -124,9 +118,7 @@ The battery clicks into place.
 
 . Plug the battery connector back into the board.
 
-Go to link:batteries_replace_supertask_task.md#[Reinstall controller canister].
-
-== Reinstall controller canister
+== Step 5. Reinstall controller canister
 
 [.lead]
 After you install the new battery, you reinstall the controller into the controller shelf. Close the cover and use the handles to slide the controller into the controller shelf.
@@ -138,9 +130,7 @@ NOTE: The controller audibly clicks when correctly installed into the shelf.
 +
 image::../media/remove_controller_7.png[]
 
-Go to link:batteries_replace_supertask_task.md#[Complete battery replacement].
-
-== Complete battery replacement
+== Step 6. Complete battery replacement
 
 [.lead]
 You complete a battery replacement by placing the controller online to confirm the new battery is working correctly. Then, you can collect support data and resume operations.

@@ -11,7 +11,7 @@ summary: You add host interface cards (HICs) to increase the number of host port
 [.lead]
 You add host interface cards (HICs) to increase the number of host ports in your storage array and to provide additional host protocols. When you add HICs, you must power off the storage array, install the HIC, and reapply power. You can add HICs to E5700 controller canisters that only have baseboard host ports.
 
-== Prepare to add host interface cards
+== Step 1. Prepare to add host interface cards
 
 [.lead]
 You prepare to add host interface cards by backing up the storage array's configuration database, collecting support data, and stopping host I/O operations. Then, you can power down the controller shelf.
@@ -72,10 +72,7 @@ image:../media/legend_icon_01_maint-e5700.gif[] Cache Active LED
  .. Turn off both power switches on the controller shelf.
  .. Wait for all LEDs on the controller shelf to turn off.
 
-Go to Add host interface card.
-//link
-
-== Remove controller canister
+== Step 2. Remove controller canister
 
 [.lead]
 You remove the controller canister so you can add the new host interface card. When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
@@ -119,9 +116,7 @@ If you are removing the controller canister from an E5724 controller shelf, a fl
 . Turn the controller canister over, so that the removable cover faces up.
 . Place the controller canister on a flat, static-free surface.
 
-Go to link:hics_add_supertask_task.md#[Install host interface card].
-
-== Install host interface card
+== Step 3. Install host interface card
 
 [.lead]
 You install the host interface card (HIC) to increase the number of host ports in your storage array.
@@ -163,9 +158,7 @@ Do not use a screwdriver, or you might over tighten the screws.
 +
 image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[]
 
-Go to link:hics_add_supertask_task.md#[Reinstall controller canister].
-
-== Reinstall controller canister
+== Step 4. Reinstall controller canister
 
 [.lead]
 You reinstall the controller canister into the controller shelf after installing the new HIC.
@@ -192,9 +185,7 @@ IMPORTANT: Do not connect data cables to the new HIC ports at this time.
 
 . (Optional) If you are adding HICs to a duplex configuration, repeat all steps to remove the second controller canister, install the second HIC, and reinstall the second controller canister.
 
-Go to link:hics_add_supertask_task.md#[Complete adding a host interface card].
-
-== Complete adding a host interface card
+== Step 5. Complete adding a host interface card
 
 [.lead]
 You complete the process of adding a host interface card (HIC) by checking the controller LEDs and seven-segment display, and then confirming that the controller's status is Optimal.

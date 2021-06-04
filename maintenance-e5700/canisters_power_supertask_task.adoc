@@ -11,7 +11,7 @@ summary: Each 60-drive controller shelf or drive shelf includes two power canist
 [.lead]
 Each 60-drive controller shelf or drive shelf includes two power canisters for power redundancy. If a power canister fails, you must replace it as soon as possible to ensure that the shelf has a redundant power source.
 
-== Prepare to replace power canister
+== Step 1. Prepare to replace power canister
 
 [.lead]
 You prepare to replace a power canister in a 60-drive controller shelf or drive shelf by collecting support data about your storage array and locating the failed component.
@@ -59,9 +59,7 @@ image:../media/legend_icon_01_maint-e5700.gif[]Power LEDs. If it is *Solid green
 +
 image:../media/legend_icon_02_maint-e5700.gif[] Attention LED. If it is *Solid amber*, the power canister has a fault, or there is no input power to this power canister, but the other power canister is operating.
 
-Go to link:canisters_power_supertask_task.md#[Remove failed power canister].
-
-== Remove failed power canister
+== Step 2. Remove failed power canister
 
 [.lead]
 You remove a failed power canister so you can replace it with a new one. When you remove a power canister, you turn off power, disconnect the power cord, and slide the component out of the shelf.
@@ -81,9 +79,7 @@ Save all packing materials for use when returning the failed power canister.
 +
 IMPORTANT: When removing a power canister, always use two hands to support its weight.
 
-Go to link:canisters_power_supertask_task.md#[Install new power canister].
-
-== Install new power canister
+== 3. Install new power canister
 
 [.lead]
 You install a new power canister to replace the failed one. When you install a power canister, you slide the component into the shelf, close the cam handle, reconnect the power cord, and reapply power.
@@ -99,9 +95,7 @@ IMPORTANT: Do not use excessive force when sliding the power canister into the s
 . Reconnect the power cord to the power canister, and secure the power cord to the power canister using the power cord retainer.
 . Turn on the power to the new power canister.
 
-Go to link:canisters_power_supertask_task.md#[Complete power canister replacement].
-
-== Complete power canister replacement
+== 4. Complete power canister replacement
 
 [.lead]
 You complete the power canister replacement by confirming that the new power canister is working correctly. Then, you can gather support data and resume normal operations.

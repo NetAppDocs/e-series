@@ -11,7 +11,7 @@ summary: You can replace the power supplies when they fail in your EF300 or EF60
 [.lead]
 You can replace the power supplies when they fail in your EF300 or EF600 controller. If a power supply fails, you must replace it as soon as possible so the controller shelf has a redundant power source.
 
-== Remove failed power supply
+== Step 1. Remove failed power supply
 
 [.lead]
 You remove a failed power supply so you can replace it with a new one. When you remove a power supply, you slide the part out of the shelf.
@@ -38,9 +38,7 @@ IMPORTANT: When removing a power supply, always use two hands to support its wei
 +
 image::../media/psup_3.png[]
 
-Go to link:power_replace_supertask_task.md#[Install new power supply].
-
-== Install new power supply and complete power supply replacement
+== Step 2. Install new power supply and complete power supply replacement
 
 [.lead]
 You install a new power supply to replace the failed one. Install the power supply by gently sliding it into the opening of the new controller. Then complete the power supply replacement by confirming that the new power supply is working correctly.

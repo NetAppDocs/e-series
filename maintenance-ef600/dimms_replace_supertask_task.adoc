@@ -11,7 +11,7 @@ summary: To replace your DIMM you must verify the cache size of your controller,
 [.lead]
 To replace your DIMM you must verify the cache size of your controller, place the controller offline, remove the controller, remove the DIMMs, and install the new DIMMs in your controller. Then you can bring your controller back online and verify the storage array is working properly.
 
-== Determining if you need to replace DIMMs in a controller
+== Step 1. Determining if you need to replace DIMMs in a controller
 
 [.lead]
 You must verify the cache size of your controller before replacing the DIMMS.
@@ -23,9 +23,7 @@ You must verify the cache size of your controller before replacing the DIMMS.
  ** A failed DIMM, or a DIMM reporting *Data Cache Module* as not optimal.
  ** A DIMM with a mismatched *Data Cache Module* capacity.
 
-Go to link:dimms_replace_supertask_task.md#[Place controller offline].
-
-== Place controller offline
+== Step 2. Place controller offline
 
 [.lead]
 You must place the controller offline so you can safely remove and replace the DIMMs. You must back up the configuration and collect support data first. Then, you can take the controller offline.
@@ -57,9 +55,7 @@ IMPORTANT: Do not begin any other operations until after the status has been upd
 
 . Select *Recheck* from the Recovery Guru, and confirm that the OK to remove field in the Details area displays Yes, indicating that it is safe to remove this component.
 
-Go to link:dimms_replace_supertask_task.md#[Remove controller canister].
-
-== Remove controller canister
+== Step 3. Remove controller canister
 
 [.lead]
 You remove the failed controller canister so you can replace your DIMMs with new ones.
@@ -87,9 +83,7 @@ image::../media/remove_controller_6.png[]
 
 . Place the controller canister on a flat, static-free surface.
 
-Go to link:dimms_replace_supertask_task.md#[Remove DIMMs].
-
-== Remove DIMMs
+== Step 4. Remove DIMMs
 
 [.lead]
 If there is a memory mismatch present, you must replace the DIMMs in your controller.
@@ -116,9 +110,7 @@ NOTE: Carefully hold the DIMM by the edges to avoid pressure on the components o
 +
 The number and placement of system DIMMs depends on the model of your system.
 
-Go to link:dimms_replace_supertask_task.md#[Install new DIMMs].
-
-== Install new DIMMs
+== Step 5. Install new DIMMs
 
 [.lead]
 You install a new DIMM to replace the DIMM previously installed in the controller.
@@ -141,9 +133,7 @@ NOTE: DIMMs fit tightly. You might need to gently press on one side at a time an
 +
 image::../media/dimm_5.png[]
 
-Go to link:dimms_replace_supertask_task.md#[Reinstall controller canister].
-
-== Reinstall controller canister
+== Step 6. Reinstall controller canister
 
 [.lead]
 After installing the new DIMMs, you reinstall the controller canister into the controller shelf.
@@ -157,9 +147,7 @@ image::../media/remove_controller_7.png[]
 
 . Reconnect all the cables.
 
-Go to link:dimms_replace_supertask_task.md#[Complete DIMMs replacement].
-
-== Complete DIMMs replacement
+== Step 7. Complete DIMMs replacement
 
 [.lead]
 You complete a DIMM replacement by placing the controller online to confirm the storage array is working correctly. Then, you can collect support data and resume operations.
