@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-e2800/controllers_simplex_supertask_task.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: ''
 ---
 = Replace controller in simplex configuration
@@ -11,7 +11,7 @@ summary: ''
 [.lead]
 You can replace a failed controller canister in a simplex configuration, which is a single-controller module configuration within the storage array. The controller canister contains a controller card, a battery, and an optional host interface card (HIC). When you replace a failed controller canister, you must remove the battery and HIC, if one is installed, from the original controller canister, and install them in the replacement controller canister.
 
-== Prepare to replace controller (simplex)
+== Step 1: Prepare to replace controller (simplex)
 
 [.lead]
 You prepare to replace a controller canister by saving the drive security key, backing up the configuration, and collecting support data. Then, you can stop host I/O operations and power down the controller shelf.
@@ -85,9 +85,7 @@ The green Cache Active LED on the back of the controller is on when cached data 
 +
 Data on the storage array will not be accessible until you replace the controller canister.
 
-Go to link:controllers_simplex_supertask_task.md#[Remove failed controller (simplex)].
-
-== Remove failed controller (simplex)
+== Step 2: Remove failed controller (simplex)
 
 [.lead]
 You remove a controller canister to replace the failed canister with a new one. Perform this task only if your storage array has one controller (simplex configuration).
@@ -132,8 +130,6 @@ When you remove the controller canister, a flap swings into place to block the e
 . Turn the controller canister over, so that the removable cover faces up.
 . Place the controller canister on a flat, static-free surface.
 
-Go to link:controllers_simplex_supertask_task.md#[Remove battery (simplex)].
-
 === Remove battery (simplex)
 
 [.lead]
@@ -156,8 +152,6 @@ image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[]
 image:../media/legend_icon_01_maint-e2800.gif[] Battery release latch image:../media/legend_icon_02_maint-e2800.gif[] Battery
 
 . Lift up on the battery, and slide it out of the controller canister.
-
-Go to link:controllers_simplex_supertask_task.md#[Remove host interface card (simplex)].
 
 === Remove host interface card (simplex)
 
@@ -187,9 +181,7 @@ image:../media/legend_icon_01_maint-e2800.gif[] Host interface card (HIC) image:
 
 . Place the HIC on a static-free surface.
 
-Go to link:controllers_simplex_supertask_task.md#[Install new controller (simplex)].
-
-== Install new controller (simplex)
+== Step 3: Install new controller (simplex)
 
 [.lead]
 You install a new controller canister to replace the failed one. Perform this task only if your storage array has one controller (simplex configuration).
@@ -227,8 +219,6 @@ IMPORTANT: *Possible hardware damage* -- The metal flange at the front of the ba
  ** *Correct -- The battery's metal flange is completely inserted in the slot on the controller:*image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif[]
  ** *Incorrect -- The battery's metal flange is not inserted into the slot on the controller:*image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[]
 
-Go to link:controllers_simplex_supertask_task.md#[Install host interface card (simplex)].
-
 === Install host interface card (simplex)
 
 [.lead]
@@ -257,8 +247,6 @@ Do not use a screwdriver, or you might over tighten the screws.
 . Using a #1 Phillips screwdriver, attach the HIC faceplate you removed from the original controller canister to the new controller canister with four screws.
 +
 image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
-
-Go to link:controllers_simplex_supertask_task.md#[Install new controller canister (simplex)].
 
 === Install new controller canister (simplex)
 
@@ -311,9 +299,7 @@ You must set the IP address of the new controller manually. (You can reuse the I
 +
 |===
 
-Go to link:controllers_simplex_supertask_task.md#[Complete controller replacement (simplex)].
-
-== Complete controller replacement (simplex)
+== Step 4: Complete controller replacement (simplex)
 
 [.lead]
 You complete the controller replacement by powering on the controller shelf and confirming that it is working correctly. Then, you can collect support data and resume operations.

@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-e2800/controllers_duplex_supertask_task.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: ''
 ---
 = Replace controller in duplex configuration
@@ -11,7 +11,7 @@ summary: ''
 [.lead]
 You can replace a controller canister in a duplex configuration, which is a two-controller module configuration within the storage array. Each controller canister contains a controller card, a battery, and an optional host interface card (HIC). When you replace a controller canister, you must remove the battery and HIC, if one is installed, from the original controller canister, and install them in the replacement controller canister.
 
-== Prepare to replace controller (duplex)
+== Step 1: Prepare to replace controller (duplex)
 
 [.lead]
 You prepare to replace a controller canister by verifying that the replacement controller canister has the correct FRU part number, backing up the configuration, and collecting support data. If the controller is still online, you must take it offline.
@@ -108,9 +108,7 @@ IMPORTANT: Do not begin any other operations until after the status has been upd
 
 . Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove this component.
 
-Go to link:controllers_duplex_supertask_task.md#[Remove failed controller (duplex)].
-
-== Remove failed controller (duplex)
+== Step 2: Remove failed controller (duplex)
 
 [.lead]
 You remove a controller canister to replace the failed canister with a new one. Perform this task only if your storage array has two controllers (duplex configuration).
@@ -158,8 +156,6 @@ If you are removing the controller canister from an E2812 controller shelf, E282
 . Turn the controller canister over, so that the removable cover faces up.
 . Place the controller canister on a flat, static-free surface.
 
-Go to link:controllers_duplex_supertask_task.md#[Remove battery].
-
 === Remove battery (duplex)
 
 [.lead]
@@ -182,8 +178,6 @@ image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[]
 image:../media/legend_icon_01_maint-e2800.gif[] Battery release latch image:../media/legend_icon_02_maint-e2800.gif[] Battery
 
 . Lift up on the battery, and slide it out of the controller canister.
-
-Go to link:controllers_duplex_supertask_task.md#[Remove host interface card].
 
 === Remove host interface card (duplex)
 
@@ -208,9 +202,7 @@ image:../media/legend_icon_01_maint-e2800.gif[] Host interface card (HIC) image:
 
 . Place the HIC on a static-free surface.
 
-Go to link:controllers_duplex_supertask_task.md#[Install new controller (duplex)].
-
-== Install new controller (duplex)
+== Remove 3: Install new controller (duplex)
 
 [.lead]
 You install a new controller canister to replace the failed one. Perform this task only if your storage array has two controllers (duplex configuration).
@@ -245,8 +237,6 @@ IMPORTANT: *Possible hardware damage* -- The metal flange at the front of the ba
  ** *Correct -- The battery's metal flange is completely inserted in the slot on the controller:*image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif[]
  ** *Incorrect -- The battery's metal flange is not inserted into the slot on the controller:*image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[]
 
-Go to link:controllers_duplex_supertask_task.md#[Install host interface card (duplex)].
-
 === Install host interface card (duplex)
 
 [.lead]
@@ -277,8 +267,6 @@ Do not use a screwdriver, or you might over tighten the screws.
 +
 image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
 
-Go to link:controllers_duplex_supertask_task.md#[Install new controller canister (duplex)].
-
 === Install new controller canister (duplex)
 
 [.lead]
@@ -305,9 +293,7 @@ If you are using more than one host protocol, be sure to install the SFPs in the
 +
 NOTE: If the original controller did not use DHCP for the IP address, the new controller will adopt the IP address of the controller you removed.
 
-Go to link:controllers_duplex_supertask_task.md#[Complete controller replacement (duplex)].
-
-== Complete controller replacement (duplex)
+== Step 4: Complete controller replacement (duplex)
 
 [.lead]
 You complete the controller replacement by placing the controller online and confirming that the storage array is working correctly. Then, you can collect support data and resume operations.

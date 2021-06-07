@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-e2800/controllers_second_add_task.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: ''
 ---
 = Add second controller canister
@@ -11,7 +11,7 @@ summary: ''
 [.lead]
 You add a second controller to a controller shelf that has only one controller canister. You can add a second controller canister to the simplex version of either a E2812 controller shelf, E2824 controller shelf, or EF280 flash array. This procedure is also referred to as a simplex-to-duplex conversion. This is an online procedure. You can access data on the storage array while you perform this procedure.
 
-== Verify the new controller's part number
+== Step 1: Verify the new controller's part number
 
 [.lead]
 You confirm that the new controller has the same part number as the currently installed controller.
@@ -35,9 +35,7 @@ image:../media/legend_icon_02_maint-e2800.gif[] FRU part number: This number mus
 +
 IMPORTANT: *Possible loss of data access --* If the two part numbers are not the same, do not attempt this procedure. In addition, if the original controller canister includes a host interface card (HIC), you must install an identical HIC into the new controller canister. The presence of mismatched controllers or HICs will cause the new controller to lock down when you bring it online.
 
-Go to link:controllers_second_add_task.md#[Install host interface card].
-
-== Install host interface card
+== Step 2: Install host interface card
 
 [.lead]
 You install the same model of host interface card (HIC) in the second controller canister, if the currently installed controller includes a HIC.
@@ -76,9 +74,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
 . Reinstall the cover on the controller canister by sliding the cover from back to front until the button clicks.
 . Set the controller canister aside until you are ready to install it.
 
-Go to link:controllers_second_add_task.md#[Collect support data].
-
-== Collect support data
+== Step 3: Collect support data
 
 [.lead]
 You collect support data before and after replacing a component to ensure you can send a full set of logs to technical support in case the replacement does not resolve the problem.
@@ -105,9 +101,7 @@ The file is saved in the Downloads folder for your browser with the name support
 +
 IMPORTANT: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, you might lose data.
 
-Go to .
-
-== Change configuration to duplex
+== Step 4: Change configuration to duplex
 
 [.lead]
 Before adding a second controller to the controller shelf, you must change the configuration to duplex by installing a new NVSRAM file and using the command line interface to set the storage array to duplex. You change the configuration to duplex by installing a new NVSRAM file. The duplex version of the NVSRAM file is included with the download file for SANtricity OS Software (controller firmware).
@@ -177,9 +171,7 @@ The file is saved in the Downloads folder for your browser with the namelatest-u
  ** Verify the new software and firmware versions by checking the Software and Firmware Inventory dialog box (go to *Support* > *Upgrade Center*, and then click the link for *Software and Firmware Inventory*).
  ** If you upgraded controller NVSRAM, any custom settings that you have applied to the existing NVSRAM are lost during the process of activation. You need to apply the custom settings to the NVSRAM again after the process of activation is complete.
 
-Go to link:controllers_second_add_task.md#[Set the storage array to duplex].
-
-== Set the storage array to duplex
+== Step 5: Set the storage array to duplex
 
 [.lead]
 You use the script editor in the Enterprise Management Window (EMW) to set the storage array to duplex mode.
@@ -208,9 +200,7 @@ reset controller [a];
 +
 After the controller reboots, an "`alternate controller missing`" error message is displayed. This message indicates that controller A has been successfully converted to duplex mode. This message persists until you install the second controller and connect the host cables.
 
-Go to .
-
-== Remove the controller blank
+== Step 6: Remove the controller blank
 
 [.lead]
 Remove the controller blank before you install the second controller. A controller blank is installed in controller shelves that have only one controller.
@@ -220,9 +210,7 @@ Remove the controller blank before you install the second controller. A controll
 +
 When you remove the controller blank, a flap swings into place to block the empty bay.
 
-Go to link:controllers_second_add_task.md#[Install second controller canister].
-
-== Install second controller canister
+== Step 7: Install second controller canister
 
 [.lead]
 You install a second controller canister to change a simplex configuration to a duplex configuration.
@@ -243,9 +231,7 @@ image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../med
 . Move the cam handle to the left to lock the controller canister in place.
 . Insert any SFP+ transceivers, and connect cables to the new controller.
 
-Go to link:controllers_second_add_task.md#[Complete adding a second controller].
-
-== Complete adding a second controller
+== Step 8: Complete adding a second controller
 
 [.lead]
 You complete the process of adding a second controller by confirming that it is working correctly. Then, you can reinstall the duplex NVSRAM file, distribute volumes between the controllers, and collect support data.

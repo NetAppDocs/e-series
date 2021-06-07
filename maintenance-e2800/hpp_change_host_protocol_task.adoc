@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-e2800/hpp_change_host_protocol_task.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: ''
 ---
 = Change host protocol
@@ -11,7 +11,7 @@ summary: ''
 [.lead]
 If you have an E2800 storage array with SFP+ (optical) host ports, you can change the host port protocol from Fibre Channel (FC) to iSCSI or from iSCSI to FC. You can change the protocol used by the host ports built into the controller (_baseboard host ports_), the protocol used by the host ports on the host interface card (_HIC ports_), or the protocol of all host ports.
 
-== Determine whether you have dual-protocol SFPs
+== Step 1: Determine whether you have dual-protocol SFPs
 
 [.lead]
 Use SANtricity System Manager to determine what type of SFP transceivers you have. Because these SFPs can be used with both FC and iSCSI protocols, they are referred to as _dual-protocol_ or _unified_ SFPs.
@@ -61,9 +61,7 @@ NOTE: 8Gbps FC SFPs are NOT supported in the E28xx or E57xx controllers. ONLY 16
 
  ** If you have 10 Gbps SFPs, and you are converting host ports to FC, you must remove the SFPs from these ports and replace them with dual-protocol or 16 Gbps SFPs after converting the protocol.
 
-Go to link:hpp_change_host_protocol_task.md#[Obtain the feature pack key].
-
-== Obtain the feature pack
+== Step 2: Obtain the feature pack
 
 [.lead]
 To obtain the feature pack, you need the serial number from the controller shelf, a Feature Activation Code, and the Feature Enable Identifier for the storage array.
@@ -388,9 +386,7 @@ image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_c
 *Important:* The Premium Feature Activation web site includes a link to "`Premium Feature Activation Instructions.`" Do not attempt to use those instructions for this procedure.
 . Choose whether to receive the key file for the feature pack in an email or download it directly from the site.
 
-Go to link:hpp_change_host_protocol_task.md#[Stop host I/O].
-
-== Stop host I/O
+== Step 3: Stop host I/O
 
 [.lead]
 You must stop all I/O operations from the host before converting the protocol of the host ports. You cannot access data on the storage array until you successfully complete the conversion.
@@ -419,9 +415,7 @@ Cache Active LED
 . From the Home page of SANtricity System Manager, select *View Operations in Progress*.
 . Wait for all operations to complete before continuing with the next step.
 
-Go to link:hpp_change_host_protocol_task.md#[Change the feature pack]
-
-== Change the feature pack
+== Step 4: Change the feature pack
 
 [.lead]
 You change the feature pack to convert the host protocol of the baseboard host ports, the IB HIC ports, or both types of ports.
