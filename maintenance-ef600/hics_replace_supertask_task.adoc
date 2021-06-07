@@ -15,7 +15,7 @@ You replace a failed host interface card (HIC) with a new one.
 
 IMPORTANT: *Possible loss of data access*-- Never install a HIC in an EF300 or EF600 controller canister if that HIC was designed for another E-Series controller. In addition, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs causes the controllers to lock down when you apply power.
 
-== Step 1. Place the controller offline
+== Step 1: Place the controller offline
 
 [.lead]
 You must place the affected controller offline so you can safely replace the HICs. You must back up the configuration and collect support data first. Then, you can take the controller canister offline.
@@ -46,7 +46,7 @@ IMPORTANT: Do not begin any other operations until after the status has been upd
 
 . Select *Recheck* from the Recovery Guru, and confirm that the OK to remove field in the Details area displays Yes, indicating that it is safe to remove this component.
 
-== Step 2. Remove controller canister
+== Step 2: Remove controller canister
 
 [.lead]
 You remove the controller canister so you can replace the failed host interface card. When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
@@ -78,7 +78,7 @@ image::../media/remove_controller_6.png[]
 
 . Place the controller canister on a flat, static-free surface.
 
-== Step 3. Remove the host interface card
+== Step 3: Remove the host interface card
 
 [.lead]
 You remove the original host interface card (HIC) so you can replace it with an upgraded one.
@@ -116,7 +116,7 @@ NOTE: The image above is an example, the appearance of your HIC may differ.
 
 . Place the HIC on a flat, static-free surface.
 
-== Step 4. Replace host interface card
+== Step 4: Replace host interface card
 
 [.lead]
 You install a new host interface card (HIC) to replace the failed HIC with a new one.
@@ -147,7 +147,7 @@ Do not use a screwdriver, or you might over tighten the screws.
 
 . Using a #1 Phillips screwdriver, attach the HIC faceplate you removed from the original HIC with the three screws.
 
-== Step 5. Reinstall controller canister
+== Step 5: Reinstall controller canister
 
 [.lead]
 After replacing the host interface card (HIC), you reinstall the controller canister into the controller shelf.
@@ -163,7 +163,7 @@ image::../media/remove_controller_7.png[]
 +
 If you are using more than one host protocol, be sure to install the SFPs in the correct host ports.
 
-== Step 6. Complete host interface card replacement
+== Step 6: Complete host interface card replacement
 
 [.lead]
 You complete the HIC replacement by placing the controller online and confirming that the storage array is working correctly. Then, you can collect support data and resume operations.

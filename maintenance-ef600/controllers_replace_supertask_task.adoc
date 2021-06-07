@@ -18,7 +18,7 @@ You can determine if you have a failed controller canister in two ways:
 * The Recovery Guru in SANtricity System Manager directs you to replace the controller canister.
 * The amber Attention LED on the controller canister is on, indicating that the controller has a fault.
 
-== Step 1. Prepare to replace controller
+== Step 1: Prepare to replace controller
 
 [.lead]
 When a controller canister fails, you must replace it. You prepare to replace a controller canister by verifying that the replacement controller canister has the correct FRU part number, backing up the configuration, and collecting support data.
@@ -65,7 +65,7 @@ IMPORTANT: Do not begin any other operations until after the status has been upd
 
 . Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove this component.
 
-== Step 2. Remove failed controller
+== Step 2: Remove failed controller
 
 [.lead]
 You remove a controller canister to replace the failed canister with a new one. You remove the failed controller canister by removing the controller from the controller shelf and removing the battery, host interface card, power supply, DIMMs, and fans.
@@ -208,7 +208,7 @@ image::../media/fan_2.png[]
 
 . Repeat until all fans are removed.
 
-== Step 3. Install new controller
+== Step 3: Install new controller
 
 [.lead]
 You install a new controller canister to replace the failed one. You install the new controller canister after installing the battery, host interface card, power supply, DIMMs, and fans from the original controller.
@@ -345,7 +345,7 @@ If you are using more than one host protocol, be sure to install the SFPs in the
 +
 NOTE: If the original controller did not use DHCP for the IP address, the new controller adopts the IP address of the controller you removed.
 
-== Step 4. Complete controller replacement
+== Step 4: Complete controller replacement
 
 [.lead]
 You complete the controller replacement by placing the controller online and confirming that the storage array is working correctly. Then, you can collect support data and resume operations.

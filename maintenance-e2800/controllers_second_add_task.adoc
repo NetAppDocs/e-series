@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e2800/controllers_second_add_task.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: add, second, controller, shelf, canister, simplex, e2812, e2824, ef280, flash, array, simplex-to-duplex, conversion, storage, verify, number, install, host, interface, card, collect, support, data, change, configuration, duplex, change, remove, blank, second, complete
+summary: You add a second controller to a controller shelf that has only one controller canister. You can add a second controller canister to the simplex version of either a E2812 controller shelf, E2824 controller shelf, or EF280 flash array. This procedure is also referred to as a simplex-to-duplex conversion. This is an online procedure. You can access data on the storage array while you perform this procedure.
 ---
 = Add second controller canister
 :icons: font

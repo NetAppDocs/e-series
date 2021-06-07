@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e2800/hics_add_supertask_task.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: add, host, interface, card, hic, increase, number, port, storage, array, protocol, reapply, power, e2800, baseboard, prepare, remove, controller, canister, install, reinstall, complete
+summary: You add host interface cards (HICs) to increase the number of host ports in your storage array and to provide additional host protocols. When you add HICs, you must power off the storage array, install the HIC, and reapply power. You can add HICs to E2800 controller canisters that only have baseboard host ports.
 ---
 = Add host interface cards
 :icons: font

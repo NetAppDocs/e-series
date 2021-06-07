@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e2800/hics_replace_supertask_task.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: replace, host, interface, card, hic, fail, controller, present, identical, place, offline, duplex, power, down, shelf, remove, canister, install, place, online, simplex, power, up
+summary: You replace a host interface card (HIC) that has failed. If two controllers are present, each controller must have identical HICs.
 ---
 = Replace host interface card
 :icons: font

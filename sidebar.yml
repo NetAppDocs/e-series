@@ -1,13 +1,12 @@
-sidebar:
-  entries:
+entries:
     - title: E-series docs
       url: /index.html
     - title: Release notes
       entries:
         - title: What&#8217;s new
-          url:
+          url: /getting-started/learn_terms_concept.html
         - title: Known issues
-          url:
+          url: /getting-started/learn_terms_concept.html
     - title: Get started
       entries:
           - title: What&#8217;s included
