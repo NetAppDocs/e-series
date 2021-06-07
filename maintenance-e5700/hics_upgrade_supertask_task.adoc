@@ -11,7 +11,7 @@ summary: You upgrade a host interface card (HIC) to increase the number of host 
 [.lead]
 You upgrade a host interface card (HIC) to increase the number of host ports or to change host protocols. When you upgrade the HICs, you must power off the storage array, remove the existing HIC from each controller, install a new HIC, and reapply power.
 
-== Step 1. Prepare to upgrade host interface cards
+== Step 1: Prepare to upgrade host interface cards
 
 [.lead]
 You prepare to upgrade host interface cards (HICs) by backing up the storage array's configuration database, collecting support data, and stopping host I/O operations. Then, you can power down the controller shelf.
@@ -73,7 +73,7 @@ image:../media/legend_icon_01_maint-e5700.gif[] Cache Active LED
  .. Turn off both power switches on the controller shelf.
  .. Wait for all LEDs on the controller shelf to turn off.
 
-== Step 2. Remove controller canister
+== Step 2: Remove controller canister
 
 [.lead]
 You remove the controller canister so you can upgrade the new host interface card (HIC). When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
@@ -121,7 +121,7 @@ If you are removing the controller canister from an E5724 controller shelf, a fl
 . Turn the controller canister over, so that the removable cover faces up.
 . Place the controller canister on a flat, static-free surface.
 
-== Step 3. Remove a host interface card
+== Step 3: Remove a host interface card
 
 [.lead]
 You remove the original host interface card (HIC) so you can replace it with an upgraded one.
@@ -155,7 +155,7 @@ image:../media/legend_icon_01_maint-e5700.gif[] Host interface card (HIC) image:
 
 . Place the HIC on a static-free surface.
 
-== Step 4. Install host interface card
+== Step 4: Install host interface card
 
 [.lead]
 You install the new host interface card (HIC) to increase the number of host ports in your storage array.
@@ -189,7 +189,7 @@ Do not use a screwdriver, or you might over-tighten the screws.
 
 . Using a #1 Phillips screwdriver, attach the new HIC faceplate to the controller canister with the four screws you removed previously.
 
-== Step 5. Reinstall controller canister
+== Step 5: Reinstall controller canister
 
 [.lead]
 You reinstall the controller canister into the controller shelf after installing the new host interface card (HIC).
@@ -217,7 +217,7 @@ IMPORTANT: Do not connect data cables to the new HIC ports at this time.
 
 . (Optional) If you are upgrading HICs in a duplex configuration, repeat all steps to remove the other controller canister, remove the HIC, install the new HIC, and replace the second controller canister.
 
-== Step 6. Complete upgrading a host interface card upgrade
+== Step 6: Complete upgrading a host interface card upgrade
 
 [.lead]
 You complete the process of upgrading a host interface card by checking the controller LEDs and seven-segment display and confirming that the controller's status is Optimal.
