@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e2800/hpp_overview_supertask_concept.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: e2800, baseboard, host, port, requirement, convert, protocol, overview, changing, change, consideration
+summary: Learn about the E2800 baseboard host ports and the requirements you need to know about before converting the host protocol.
 ---
 = Overview and requirements
 :icons: font
