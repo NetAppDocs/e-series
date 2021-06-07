@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-e2800/hics_replace_supertask_task.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: ''
 ---
 = Replace host interface card
@@ -11,7 +11,7 @@ summary: ''
 [.lead]
 You replace a host interface card (HIC) that has failed. If two controllers are present, each controller must have identical HICs.
 
-== Place controller offline (duplex)
+== Step 1: Place controller offline (duplex)
 
 [.lead]
 If you have a duplex configuration, you must place the affected controller offline so you can safely remove the failed HIC. You must back up the configuration and collect support data first. Then, you can take the affected controller offline.
@@ -78,9 +78,7 @@ The system attempts to take the controller offline.
 +
 IMPORTANT: Do not begin any other operations until after the status has been updated.
 
-Go to .
-
-== Power down the controller shelf (simplex)
+== Step 2: Power down the controller shelf (simplex)
 
 [.lead]
 If you have a simplex configuration, you power down the controller shelf so you can safely remove the failed HIC. You must back up the configuration and collect support data first. Then, you can stop host I/O operations and power down the controller shelf.
@@ -133,9 +131,7 @@ The green Cache Active LED on the back of the controller is on when cached data 
 . Turn off both power switches on the controller shelf.
 . Wait for all LEDs on the controller shelf to turn off.
 
-Go to.
-
-== Remove controller canister
+== Step 3: Remove controller canister
 
 [.lead]
 You remove the controller canister so you can add the new host interface card (HIC). When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
@@ -180,9 +176,7 @@ If you are removing the controller canister from an E2812 controller shelf, E282
 . Turn the controller canister over, so that the removable cover faces up.
 . Place the controller canister on a flat, static-free surface.
 
-Go to link:hics_replace_supertask_task.md#[Install host interface card].
-
-== Install host interface card
+== Step 4: Install host interface card
 
 [.lead]
 You install a host interface card (HIC) to replace the failed one with a new HIC.
@@ -224,9 +218,7 @@ Do not use a screwdriver, or you might over-tighten the screws.
 +
 image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
 
-Go to link:hics_replace_supertask_task.md#[Reinstall controller canister]
-
-== Reinstall controller canister
+== Step 5: Reinstall controller canister
 
 [.lead]
 After installing the host interface card (HIC), you reinstall the controller canister into the controller shelf.
@@ -253,9 +245,7 @@ IMPORTANT: Do not connect data cables to the new HIC ports at this time.
 
 . (Optional) If you are adding HICs to a duplex configuration, repeat all steps to remove the second controller canister, install the second HIC, and reinstall the second controller canister.
 
-Go to .
-
-== Place controller online (duplex)
+== Step 6: Place controller online (duplex)
 
 [.lead]
 You bring the controller online to confirm the storage array is working correctly. Then, you can collect support data and resume operations.
@@ -320,7 +310,7 @@ Contact technical support at http://mysupport.netapp.com[NetApp Support], 888-46
 
 Your HIC replacement is complete. You can resume normal operations.
 
-== Power up controller (simplex)
+== Step 7: Power up controller (simplex)
 
 [.lead]
 You apply power to the controller shelf to confirm that it is working correctly. Then, you can collect support data and resume operations.

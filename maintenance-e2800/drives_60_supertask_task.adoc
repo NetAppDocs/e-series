@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-e2800/drives_60_supertask_task.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: ''
 ---
 = Replace drive drawer (60-drive)
@@ -11,7 +11,7 @@ summary: ''
 [.lead]
 The steps to replace a failed drive drawer in an E2860 controller shelf or a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection. If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must stop all host I/O activity and power off the shelf before replacing the drive drawer.
 
-== Prepare to replace drive drawer (60-drive)
+== Step 1: Prepare to replace drive drawer (60-drive)
 
 [.lead]
 You prepare to replace a drive drawer by determining if you can perform the replacement procedure while the drive shelf is online or if you need to stop host I/O activity and power off any of the shelves that are powered on. If you are replacing a drawer in a shelf with Drawer Loss Protection, there is no need to stop host I/O activity and power off any of the shelves.
@@ -95,9 +95,7 @@ If you are replacing a drawer in an _expansion_ drive shelf *without* Drawer Los
  .. Turn off both power switches on the drive shelf.
 Wait two minutes for drive activity to stop.
 
-Go to link:drives_60_supertask_task.md#[Remove cable chains].
-
-== Remove cable chains
+== Step 2: Remove cable chains
 
 [.lead]
 You remove both cable chains so you can remove and replace a failed drive drawer. The left and right cable chains allow the drawers to slide in and out.
@@ -189,9 +187,7 @@ If you are performing this procedure with the power on, all LEDs turn off when y
 +
 The LED could remain on for as long as a minute after you reinstall the fan while both fans settle into the correct speed.
 
-Go to link:drives_60_supertask_task.md#[Remove failed drive drawer (60-drive)].
-
-== Remove failed drive drawer (60-drive)
+== Step 3: Remove failed drive drawer (60-drive)
 
 [.lead]
 You remove a failed drive drawer to replace it with a new one. Removing a drive drawer entails sliding the drawer partially out, recording the locations of the drives, removing the drives, and removing the drive drawer.
@@ -231,9 +227,7 @@ image:../media/legend_icon_01_maint-e2800.gif[] Drive drawer release lever
  .. While holding both release levers, pull the drive drawer toward you.
  .. Remove the drive drawer from the drive shelf.
 
-Go to link:drives_60_supertask_task.md#[Install new drive drawer (60-drive)].
-
-== Install new drive drawer (60-drive)
+== Step 4: Install new drive drawer (60-drive)
 
 [.lead]
 You install a new drive drawer to replace the failed one. Installing a drive drawer into a drive tray entails sliding the drawer into the empty slot, installing the drives, and replacing the front bezel.
@@ -264,9 +258,7 @@ Experiencing a higher level of resistance is normal when pushing the drawer clos
 +
 IMPORTANT: **Risk of equipment damage --**Stop pushing the drive drawer if you feel binding. Use the release levers at the front of the drawer to slide the drawer back out. Then, reinsert the drawer into the slot, ensure the tumbler is above the rail, and the rails are aligned correctly.
 
-Go to link:drives_60_supertask_task.md#[Attach cable chains].
-
-== Attach cable chains
+== Step 5: Attach cable chains
 
 [.lead]
 You must attach the cable chains so you can safely re-install the drives in the drive drawer.
@@ -322,9 +314,7 @@ IMPORTANT: *Risk of equipment malfunction --* If the connectors are not latched,
 +
 The LED could remain on for as long as a minute after you reinstall the fan while both fans settle into the correct speed.
 
-Go to link:drives_60_supertask_task.md#[Complete drive drawer replacement].
-
-== Complete drive drawer replacement
+== Step 6: Complete drive drawer replacement
 
 [.lead]
 You complete the drive drawer replacement by reinserting the drives and replacing the front bezel in the correct order.
