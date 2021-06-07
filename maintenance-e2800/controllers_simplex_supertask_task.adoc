@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e2800/controllers_simplex_supertask_task.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: replace, fail, controller, canister, simplex, configuration, single-controller, storage, array, card, host, interface, hic, replacement
+summary: You can replace a failed controller canister in a simplex configuration, which is a single-controller module configuration within the storage array. The controller canister contains a controller card, a battery, and an optional host interface card (HIC). When you replace a failed controller canister, you must remove the battery and HIC, if one is installed, from the original controller canister, and install them in the replacement controller canister.
 ---
 = Replace controller in simplex configuration
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e2800/canisters_60_replace_power_task.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: 60-drive, controller, shelf, drive, power, canister, redundancy, fail, replace, redundant, source, prepare, remove, install, complete, replacement
+summary: Each 60-drive controller shelf or drive shelf includes two power canisters for power redundancy. If a power canister fails, you must replace it as soon as possible to ensure that the shelf has a redundant power source.
 ---
 = Replace power canister (60-drive)
 :icons: font

@@ -11,7 +11,7 @@ summary: If you have an Infiniband (IB) HIC, or a Fibre Channel (FC) HIC you can
 [.lead]
 If you have an Infiniband (IB) HIC, or a Fibre Channel (FC) HIC you can change the host port protocol using the process in the following section.
 
-== Step 1. Obtain the feature pack key
+== Step 1: Obtain the feature pack key
 
 [.lead]
 To obtain the feature pack, you need the serial number from the controller shelf, a Feature Activation Code, and the Feature Enable Identifier for the storage array.
@@ -445,7 +445,7 @@ image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_c
 *Important:* The Premium Feature Activation web site includes a link to "`Premium Feature Activation Instructions.`" Do not attempt to use those instructions for this procedure.
 . Choose whether to receive the key file for the feature pack in an email or download it directly from the site.
 
-== Step 2. Stop host I/O
+== Step 2: Stop host I/O
 
 [.lead]
 You must stop all I/O operations from the host before converting the protocol of the host ports. You cannot access data on the storage array until you successfully complete the conversion.
@@ -465,7 +465,7 @@ The green Cache Active LED on the back of each controller is on when cached data
 . From the Home page of SANtricity System Manager, select *View Operations in Progress*.
 . Wait for all operations to complete before continuing with the next step.
 
-== Step 3. Change the feature pack
+== Step 3: Change the feature pack
 
 [.lead]
 You change the feature pack to convert the host protocol of your host ports.

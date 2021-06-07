@@ -1,5 +1,5 @@
-sidebar:
-  entries:
+---
+entries:
     - title: E-series docs
       url: /index.html
     - title: Release notes
