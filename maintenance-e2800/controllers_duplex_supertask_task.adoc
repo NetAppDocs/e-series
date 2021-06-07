@@ -202,7 +202,7 @@ image:../media/legend_icon_01_maint-e2800.gif[] Host interface card (HIC) image:
 
 . Place the HIC on a static-free surface.
 
-== Remove 3: Install new controller (duplex)
+== Step 3: Install new controller (duplex)
 
 [.lead]
 You install a new controller canister to replace the failed one. Perform this task only if your storage array has two controllers (duplex configuration).
