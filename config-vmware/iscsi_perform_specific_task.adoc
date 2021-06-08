@@ -54,12 +54,16 @@ NOTE: Many network switches have to be configured above 9,000 bytes for IP overh
 [.lead]
 You use the SANtricity System Manager GUI to configure iSCSI networking on the array side.
 
+===== Before You Begin
+
 * You must know the IP address or domain name for one of the storage array controllers.
 * You or your system administrator must have set up a password for the System Manager GUI, or you must configured Role-Based Access Control (RBAC) or LDAP and a directory service for the appropriate security access to the storage array. See the _SANtricity System Manager online help_ for more information about Access Management.
 
 This task describes how to access the iSCSI port configuration from the Hardware page. You can also access the configuration from menu:System[Settings > Configure iSCSI ports].
 
 NOTE: For additional information on how to setup the array-side networking on your VMware configuration, see thehttps://www.netapp.com/us/media/tr-4789.pdf[VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.X Technical Report].
+
+===== Steps
 
 . From your browser, enter the following URL: `https://<DomainNameOrIPAddress>`
 +
@@ -148,11 +152,15 @@ Select this option, and then enter a static address in the fields. For IPv4, inc
 [.lead]
 Configuring iSCSI networking on the host side enables the VMware iSCSI initiator to establish a session with the array.
 
+===== Before You Begin
+
 In this express method for configuring iSCSI networking on the host side, you allow the ESXi host to carry iSCSI traffic over four redundant paths to the storage.
 
 After you complete this task, the host is configured with a single vSwitch containing both VMkernel ports and both VMNICs.
 
 For additional information on configuring iSCSI networking for VMware, see the vSphere Documentation Center for your version of vSphere.
+
+===== Steps
 
 . Configure the switches that will be used to carry iSCSI storage traffic.
 . Enable send and receive hardware flow control *end to end*.
@@ -167,6 +175,8 @@ The interfaces vary in functionality and the exact workflow will vary.
 
 [.lead]
 You verify Internet Protocol (IP) network connections by using ping tests to ensure the host and array are able to communicate.
+
+===== Steps
 
 . On the host, run one of the following commands, depending on whether jumbo frames are enabled:
  ** If jumbo frames are not enabled, run this command:

@@ -11,6 +11,8 @@ summary: For SLES 15, you create a filesystem on the native nvme device and moun
 [.lead]
 For SLES 15, you create a filesystem on the native nvme device and mount the filesystem.
 
+===== Steps
+
 . Run the multipath -ll command to get a list of /dev/nvme devices.
 +
 ----

@@ -11,11 +11,15 @@ summary: When you install the SANtricity Storage Manager software on your manage
 [.lead]
 When you install the SANtricity Storage Manager software on your management station, the command line interface (CLI) is installed to help you manage your array. By also installing the software on the host, the Host Context Agent is installed that helps the host push configuration information to the storage array controllers through the I/O path.
 
+===== Before You Begin
+
 * You must have the correct administrator or superuser privileges.
 * You must have ensured that the system that will contain the SANtricity Storage Manager client has the following minimum requirements:
  ** *RAM*: 2 GB for Java Runtime Engine
  ** *Disk space*: 5 GB
  ** *OS/Architecture*: Refer to http://mysupport.netapp.com[NetApp Support] *Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager* for guidance on determining the supported operating system versions and architectures.
+
+===== Steps
 
 . Download the SANtricity software release from http://mysupport.netapp.com[NetApp Support] *Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager*.
 . Run the SANtricity installer. Double-click the SMIA*.exe install package to execute.

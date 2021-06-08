@@ -13,6 +13,8 @@ NVMe initiator configuration in a Fibre Channel environment includes installing 
 
 These are the instructions for SUSE Linux Enterprise Server 12 SP4 and 32GB FC HBAs.
 
+===== Steps
+
 . Install the nvme-cli package:
 +
 ----
