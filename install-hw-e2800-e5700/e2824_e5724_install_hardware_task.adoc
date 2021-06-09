@@ -11,9 +11,13 @@ summary: You install your storage system in a two-post rack or a NetApp system c
 [.lead]
 You install your storage system in a two-post rack or a NetApp system cabinet, as applicable.
 
+===== Before You Begin
+
 * You have registered your hardware at http://mysupport.netapp.com/[mysupport.netapp.com].
 * You have prepared a flat, static-free work area.
 * You have taken anti-static precautions.
+
+===== Steps
 
 . Unpack the hardware.
 +

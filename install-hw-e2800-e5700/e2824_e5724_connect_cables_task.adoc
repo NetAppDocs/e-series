@@ -11,8 +11,12 @@ summary: You attach the power cables and power on the drive shelves.
 [.lead]
 You attach the power cables and power on the drive shelves.
 
+===== Before You Begin
+
 * You have installed your hardware.
 * You have taken anti-static precautions.
+
+===== Steps
 
 . Cable the Shelves
 +
@@ -31,23 +35,22 @@ a|
 +
 |===
 a|
-
+image:../media/trafford_power.png[]     Example A: An E5700 controller shelf with three DE212C/DE224 disk shelves in a standard SAS configuration.
+a|
  .. Cable controller A to IOM A of the first drive shelf.
  .. Cable IOM A of the first drive shelf to IOM A of the second drive shelf.
  .. Cable IOM A of the second drive shelf to IOM A of the third drive shelf.
  .. Cable controller B to IOM B of the third drive shelf.
  .. Cable IOM B of the second drive shelf to IOM B of the third drive shelf.
- .. Cable IOM B of the first drive shelf to IOM B of the second drive shelf. a|
-image:../media/trafford_power.png[]     Example A: An E5700 controller shelf with three DE212C/DE224 disk shelves in a standard SAS configuration.
-
+ .. Cable IOM B of the first drive shelf to IOM B of the second drive shelf.
 |===
 +
 |===
 a|
-
-.. Cable controller A to IOM A.
-.. Cable controller B to IOM B. a|
 image:../media/trafford_power.png[]     Example B: An E5700 controller shelf with one DE212C/DE224 disk shelf in a standard SAS configuration.
+a|
+.. Cable controller A to IOM A.
+.. Cable controller B to IOM B.
 |===
 
 . Power the Drive Shelves
@@ -60,9 +63,7 @@ image:../media/power_cable_inst-hw-e2800-e5700.png[]
 a|
 *Power cables*
 |===
-CAUTION:
-+
-Confirm the drive shelf power switches are off.
+CAUTION: Confirm the drive shelf power switches are off.
 
  .. Connect the two power cables for each shelf to different power distribution units (PDUs) in the cabinet or rack.
  .. If you have drive shelves, turn on their two power switches first. Wait 2 minutes before applying power to the controller shelf.

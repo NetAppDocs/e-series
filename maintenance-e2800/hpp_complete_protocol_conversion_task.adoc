@@ -16,6 +16,8 @@ After converting the protocol of the host ports, you need to perform additional 
 [.lead]
 If you converted all host ports from FC to iSCSI, you must configure iSCSI networking.
 
+===== Steps
+
 . Configure the switches.
 +
 You should configure the switches used to transport iSCSI traffic according to the vendor's recommendations for iSCSI. These recommendations might include both configuration directives as well as code updates.
@@ -56,6 +58,8 @@ The *Delete* option does not physically remove the host port. This option remove
 
 [.lead]
 If you converted all host ports from iSCSI to FC, you must configure FC networking.
+
+===== Steps
 
 . Install the HBA utility and determine initiator WWPNs.
 . Zone the switches.

@@ -16,10 +16,14 @@ The steps to prepare for battery replacement depend on whether you have a duplex
 [.lead]
 If you have a duplex configuration, you must place the affected controller offline so you can safely remove the failed battery. You must back up the configuration and collect support data first. Then, you can take the affected controller offline.
 
+===== Before You Begin
+
 * Your storage array must have two controllers. The controller that you are not placing offline must be online (in the optimal state).
 * Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
 
 Perform this task only if your storage array has two controllers (duplex configuration).
+
+===== Steps
 
 . From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
 . From the Details area of the Recovery Guru, determine which battery to replace.
@@ -83,9 +87,13 @@ IMPORTANT: Do not begin any other operations until after the status has been upd
 [.lead]
 If you have a simplex configuration, you power down the controller shelf so you can safely remove the failed battery. You must back up the configuration and collect support data first. Then, you can stop host I/O operations and power down the controller shelf.
 
+===== Before You Begin
+
 * You have reviewed the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
 
 Perform this task only if your storage array has one controller (simplex configuration).
+
+===== Steps
 
 . Back up the storage array's configuration database.
 +
