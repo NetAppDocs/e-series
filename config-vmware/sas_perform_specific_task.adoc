@@ -11,7 +11,7 @@ summary: For the SAS protocol, you determine host port addresses and make the se
 [.lead]
 For the SAS protocol, you determine host port addresses and make the settings recommended in the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool (IMT)]
 
-== Determine SAS host identifiers - VMware
+== Step 1: Determine SAS host identifiers - VMware
 
 [.lead]
 For the SAS protocol, you find the SAS addresses using the HBA utility, then use the HBA BIOS to make the appropriate configuration settings.
@@ -31,7 +31,7 @@ Guidelines for HBA utilities:
 +
 See the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for recommendations.
 
-== Record SAS-specific information for VMware
+== Step 2: Record SAS-specific information for VMware
 
 [.lead]
 Record your protocol-specific storage configuration information on the SAS worksheet. You need this information to perform provisioning tasks.

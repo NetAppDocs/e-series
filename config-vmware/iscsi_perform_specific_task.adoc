@@ -12,7 +12,7 @@ summary: For the iSCSI protocol, you configure the switches and configure networ
 [.lead]
 For the iSCSI protocol, you configure the switches and configure networking on the array side and the host side. Then you verify the IP network connections.
 
-== Configure the switches - iSCSI, VMware
+== Step 1: Configure the switches - iSCSI, VMware
 
 [.lead]
 You configure the switches according to the vendor's recommendations for iSCSI. These recommendations might include both configuration directives as well as code updates.
@@ -26,7 +26,7 @@ You must ensure the following:
 
 NOTE: Port channels/LACP is not supported on the controller's switch ports. Host-side LACP is not recommended; multipathing provides the same, and in some cases better, benefits.
 
-== Configure networking - iSCSI VMware
+== Step 2: Configure networking - iSCSI VMware
 
 [.lead]
 You can set up your iSCSI network in many ways, depending on your data storage requirements.
@@ -49,7 +49,7 @@ If you are using jumbo frames within the IP SAN for performance reasons, make su
 
 NOTE: Many network switches have to be configured above 9,000 bytes for IP overhead. Consult your switch documentation for more information.
 
-== Configure array-side networking - iSCSI, VMware
+== Step 3: Configure array-side networking - iSCSI, VMware
 
 [.lead]
 You use the SANtricity System Manager GUI to configure iSCSI networking on the array side.
@@ -147,7 +147,7 @@ Select this option, and then enter a static address in the fields. For IPv4, inc
 . Click *Finish*.
 . Close System Manager.
 
-== Configure host-side networking--iSCSI
+== Step 4: Configure host-side networking--iSCSI
 
 [.lead]
 Configuring iSCSI networking on the host side enables the VMware iSCSI initiator to establish a session with the array.
@@ -171,7 +171,7 @@ For additional information on configuring iSCSI networking for VMware, see the v
 +
 The interfaces vary in functionality and the exact workflow will vary.
 
-== Verify IP network connections - iSCSI, VMware
+== Step 5: Verify IP network connections - iSCSI, VMware
 
 [.lead]
 You verify Internet Protocol (IP) network connections by using ping tests to ensure the host and array are able to communicate.
@@ -212,7 +212,7 @@ NOTE: If the command fails with the message `sendto() failed (Message too long)`
 
 . Return to the iSCSI Configuration procedure to finish target discovery.
 
-== Record iSCSI-specific information for VMware
+== Step 6: Record iSCSI-specific information for VMware
 
 [.lead]
 Select the iSCSI worksheet to record your protocol-specific storage configuration information. You need this information to perform provisioning tasks.

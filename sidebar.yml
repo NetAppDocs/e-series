@@ -86,7 +86,7 @@ entries:
                 url: "/install-hw-cabinet/move_cabinet_task.html"
               - title: Complete cabinet installation
                 url: "/install-hw-cabinet/complete_cabinet_install_task.html"
-        - title: Cabling guide
+        - title: Cabling
           entries:
                 - title: Overview and requirements
                   url: "/install-hw-cabling/cable_overview_requirements_concept.html"
@@ -98,7 +98,7 @@ entries:
                   url: "/install-hw-cabling/power_cable_task.html"
                 - title: Hot add drive shelf
                   url: "/install-hw-cabling/hotadd_drive_shelf_task.html"
-                - title: Ethernet cabling for management station
+                - title: Ethernet cabling
                   url: "/install-hw-cabling/ethernet_cable_task.html"
     - title: Deploy software
       entries:
@@ -232,7 +232,7 @@ entries:
                     url: "/config-linux/srp_ib_access_sam_setup_wizard_task.html"
                   - title: Configure multipath software
                     url: "/config-linux/srp_ib_configure_multipath_software_task.html"
-                  - title: Setting up multipath.conf file
+                  - title: Set up multipath.conf file
                     url: "/config-linux/srp_ib_setup_multipath_conf_file_concept.html"
                   - title: Determine host port GUIDs
                     url: "/config-linux/srp_ib_determine_host_port_guids_task.html"
@@ -272,7 +272,7 @@ entries:
                     url: "/config-linux/nvme_ib_set_up_failover_task.html"
                   - title: Access NVMe volumes for virtual device targets
                     url: "/config-linux/nvme_ib_access_virtual_targets_concept.html"
-                  - title: Access NVMe volumes for physical NVMe device targets
+                  - title: Access NVMe volumes for physical device targets
                     url: "/config-linux/nvme_ib_access_physical_targets_concept.html"
                   - title: Create filesystems (RHEL 7 and SLES 12)
                     url: "/config-linux/nvme_ib_create_filesystems_sles_12_task.html"
@@ -296,7 +296,7 @@ entries:
                     url: "/config-linux/nvme_roce_configure_switch_task.html"
                   - title: Set up NVMe over RoCE on host
                     url: "/config-linux/nvme_roce_setup_host_side_task.html"
-                  - title: Configure storage array NVMe over RoCE connections
+                  - title: Configure NVMe port settings
                     url: "/config-linux/nvme_roce_configure_storage_connections_task.html"
                   - title: Connect to storage from host
                     url: "/config-linux/nvme_roce_discover_connect_storage_host_task.html"
@@ -310,7 +310,7 @@ entries:
                     url: "/config-linux/nvme_roce_setup_failover_host_task.html"
                   - title: Access NVMe volumes for virtual device targets
                     url: "/config-linux/nvme_roce_access_virtual_targets_concept.html"
-                  - title: Accessing NVMe volumes for physical NVMe device targets
+                  - title: Access NVMe volumes for physical device targets
                     url: "/config-linux/nvme_roce_access_physical_targets_concept.html"
                   - title: Create filesystems (RHEL 7 and SLES 12)
                     url: "/config-linux/nvme_roce_create_filesystems_sles_12_task.html"
@@ -342,7 +342,7 @@ entries:
                     url: "/config-linux/nvme_fc_setup_failover_host_task.html"
                   - title: Access NVMe volumes for virtual device targets
                     url: "/config-linux/nvme_fc_access_virtual_targets_concept.html"
-                  - title: Access NVMe volumes for physical NVMe device targets
+                  - title: Access NVMe volumes for physical device targets
                     url: "/config-linux/nvme_fc_access_physical_targets_concept.html"
                   - title: Create partitions and filesystems
                     url: "/config-linux/nvme_fc_create_partition_files_task.html"
@@ -386,7 +386,7 @@ entries:
           entries:
               - title: Understand the workflow
                 url: "/config-windows/understand_windows_concept.html"
-              - title: Verify Windows configuration is supported
+              - title: Verify Windows configuration
                 url: "/config-windows/verify_windows_config_support_task.html"
               - title: Configure IP addresses using DHCP
                 url: "/config-windows/configure_ip_address_dhcp_task.html"
@@ -632,19 +632,19 @@ entries:
         entries:
             - title: Learn about Cloud Connector
               url: "/cloud-connector/learn_intro_concept.html"
-            - title: Install SANtricity Cloud Connector
+            - title: Install Cloud Connector
               url: "/cloud-connector/install_intro_concept.html"
-            - title: Configure the SANtricity Cloud Connector for the first time
+            - title: Configure Cloud Connector for first time
               url: "/cloud-connector/config_intro_concept.html"
-            - title: Log into the SANtricity Cloud Connector
+            - title: Log into Cloud Connector
               url: "/cloud-connector/login_task.html"
             - title: Backups
               url: "/cloud-connector/backup_intro_concept.html"
             - title: Restores
               url: "/cloud-connector/restore_intro_concept.html"
-            - title: Modify the SANtricity Cloud Connectors Settings
+            - title: Modify settings
               url: "/cloud-connector/modify_intro_concept.html"
-            - title: Uninstall the SANtricity Cloud Connector
+            - title: Uninstall Cloud Connector
               url: "/cloud-connector/uninstall_intro_concept.html"
       - title: Web services proxy
         entries:
@@ -662,7 +662,7 @@ entries:
               url: "/web-services-proxy/certificates_intro_concept.html"
             - title: Manage storage systems
               url: "/web-services-proxy/array_intro_concept.html"
-            - title: Manage automatic polling for statistics
+            - title: Manage automatic polling
               url: "/web-services-proxy/polling_intro_concept.html"
             - title: Manage AutoSupport
               url: "/web-services-proxy/asup_intro_concept.html"
@@ -678,7 +678,7 @@ entries:
             url: "/remote-storage-volumes/import_remote_storage_task.html"
           - title: View import progress
             url: "/remote-storage-volumes/view_import_progress_task.html"
-          - title: Modify remote storage connection settings
+          - title: Modify connection settings
             url: "/remote-storage-volumes/modify_remote_storage_task.html"
           - title: Remove remote storage object
             url: "/remote-storage-volumes/remove_remote_storage_task.html"

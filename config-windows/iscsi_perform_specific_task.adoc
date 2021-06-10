@@ -12,7 +12,7 @@ summary: For the iSCSI protocol, you configure the switches and configure networ
 [.lead]
 For the iSCSI protocol, you configure the switches and configure networking on the array side and the host side. Then you verify the IP network connections.
 
-== Configuring the switches - iSCSI, Windows
+== Step 1: Configuring the switches - iSCSI, Windows
 
 [.lead]
 You configure the switches according to the vendor's recommendations for iSCSI. These recommendations might include both configuration directives as well as code updates.
@@ -26,7 +26,7 @@ You must ensure the following:
 
 NOTE: Port channels/LACP is not supported on the controller's switch ports. Host-side LACP is not recommended; multipathing provides the same, and in some cases better, benefits.
 
-== Configuring networking - iSCSI Windows
+== Step 2: Configuring networking - iSCSI Windows
 
 [.lead]
 You can set up your iSCSI network in many ways, depending on your data storage requirements.
@@ -41,7 +41,7 @@ If you are using jumbo frames within the IP SAN for performance reasons, make su
 
 NOTE: Many network switches have to be configured above 9,000 bytes for IP overhead. Consult your switch documentation for more information.
 
-== Configuring array-side networking - iSCSI, Windows
+== Step 3: Configuring array-side networking - iSCSI, Windows
 
 [.lead]
 You use the SANtricity System Manager GUI to configure iSCSI networking on the array side.
