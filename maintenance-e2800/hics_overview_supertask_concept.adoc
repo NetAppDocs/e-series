@@ -18,6 +18,7 @@ You can add, upgrade, or replace a HIC in the following controller shelves:
 
 The steps to replace a HIC depend on whether you have one or two controllers, as follows:
 
+[options = "header"]
 |===
 | If your storage array has...| You must...
 a|

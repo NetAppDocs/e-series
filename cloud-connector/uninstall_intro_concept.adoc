@@ -16,6 +16,8 @@ You can uninstall the SANtricity Cloud Connector through the graphical uninstall
 [.lead]
 You can use the graphical mode to uninstall the SANtricity Cloud Connector on a Linux operating system.
 
+===== Steps
+
 . From a terminal window, navigate to the directory containing the SANtricity Cloud Connector uninstall file.
 +
 The uninstall file for the SANtricity Cloud Connector is available at the following default directory location:
@@ -40,6 +42,8 @@ The uninstall process is completed, and the SANtricity Cloud Connector applicati
 
 [.lead]
 You can use the console mode to uninstall the SANtricity Cloud Connector on a Linux operating system.
+
+===== Steps
 
 . From a terminal window, navigate to the directory containing the SANtricity Cloud Connector uninstall file.
 +

@@ -11,6 +11,8 @@ summary: You use the Setup wizard in SANtricity System Manager to configure your
 [.lead]
 You use the Setup wizard in SANtricity System Manager to configure your storage array.
 
+===== Before You Begin
+
 * You have ensured that the device from which you will access SANtricity System Manager contains one of the following browsers:
 +
 [options="header"]
@@ -49,6 +51,8 @@ The wizard automatically relaunches when you open System Manager or refresh your
 * No notifications are configured.
 
 If the Setup wizard does not automatically appear, contact technical support.
+
+===== Steps
 
 . From your browser, enter the following URL: `+https://<DomainNameOrIPAddress>+`
 +

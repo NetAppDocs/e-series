@@ -11,6 +11,8 @@ summary: Multipath software provides a redundant path to the storage array in ca
 [.lead]
 Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. The multipath software presents the operating system with a single virtual device that represents the active physical paths to the storage. The multipath software also manages the failover process that updates the virtual device. You use the device mapper multipath (DM-MP) tool for Linux installations.
 
+===== Before You Begin
+
 You have installed the required packages on your system.
 
 * For Red Hat (RHEL) hosts, verify the packages are installed by running rpm -q device-mapper-multipath.
@@ -19,6 +21,8 @@ You have installed the required packages on your system.
 By default, DM-MP is disabled in RHEL and SLES. Complete the following steps to enable DM-MP components on the host.
 
 If you have not already installed the operating system, use the media supplied by your operating system vendor.
+
+===== Steps
 
 . If a multipath.conf file is not already created, run the # touch /etc/multipath.conf command.
 . Use the default multipath settings by leaving the multipath.conf file blank.

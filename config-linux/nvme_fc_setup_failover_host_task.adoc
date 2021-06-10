@@ -16,11 +16,15 @@ Multipath software provides a redundant path to the storage array in case one of
 [.lead]
 The SUSE Linux Enterprise Server host requires configuration changes to run failover. The failover solution uses DM-MP.
 
+===== Before You Begin
+
 * You have installed the required packages on your system.
 * For Red Hat (RHEL) hosts, verify the packages are installed by running `rpm -q device-mapper-multipath`
 * For SLES hosts, verify the packages are installed by running `rpm -q multipath-tools`
 
 By default, DM-MP is disabled in RHEL and SLES. Complete the following steps to enable DM-MP components on the host.
+
+===== Steps
 
 . Add the NVMe E-Series device entry to the devices section of the `/etc/multipath.conf` file, as shown in the following example:
 +

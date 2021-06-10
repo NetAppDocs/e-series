@@ -11,7 +11,7 @@ summary: You upgrade your storage array's software and, optionally, the IOM firm
 [.lead]
 You upgrade your storage array's software and, optionally, the IOM firmware and the nonvolatile static random access memory (NVSRAM) to make sure you have all the latest features and bug fixes.
 
-== Step 1. Download software files from support site
+== Step 1: Download software files from support site
 
 [.lead]
 You download the new downloadable package (DLP) software files from the NetApp Support Site to your management client.
@@ -39,7 +39,7 @@ The file to download has a filename similar to E28xx_1140 with a .zip or .tar.gz
 +
 If you have a storage array with a single controller, the IOM firmware is not upgraded.
 
-== Step 2. Transfer software files to the controllers
+== Step 2: Transfer software files to the controllers
 
 [.lead]
 You transfer the software files to your controllers so you can begin the upgrade process. The components are copied from the management client to the controllers and placed in a staging area in flash memory.
@@ -69,7 +69,7 @@ The file is saved in the Downloads folder for your browser with the namedrive_up
 
 If you have already activated your software files, go to Complete software and firmware upgrade; otherwise go to Activate software files.
 
-== Step 3. Activate software files
+== Step 3: Activate software files
 
 [.lead]
 You activate the software files only if you have software or firmware that has been transferred but not activated. When you perform the activation operation, the current software and firmware is replaced with the new software and firmware. You cannot stop the activation process after it starts.
@@ -82,7 +82,7 @@ When you have software or firmware that has been transferred but not activated, 
 +
 The file is saved in the Downloads folder for your browser with the namedrive_upgrade_log-timestamp.txt.
 
-== Step 4. Complete software and firmware upgrade
+== Step 4: Complete software and firmware upgrade
 
 [.lead]
 You can complete the software and firmware upgrade by verifying the versions in SANtricity System Manager's Software and Firmware Inventory dialog box.
