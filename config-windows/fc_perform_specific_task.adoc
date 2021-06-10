@@ -11,7 +11,7 @@ summary: For the Fibre Channel protocol, you configure the switches and determin
 [.lead]
 For the Fibre Channel protocol, you configure the switches and determine the host port identifiers.
 
-== Configuring the FC switches - Windows
+== Step 1: Configuring the FC switches - Windows
 
 [.lead]
 Configuring (zoning) the Fibre Channel (FC) switches enables the hosts to connect to the storage array and limits the number of paths. You zone the switches using the management interface for the switches.
@@ -32,7 +32,7 @@ You must zone by WWPN, not by physical port. Each initiator port must be in a se
 . Create additional zones for each FC host initiator port in the switch.
 . Save the zones, and then activate the new zoning configuration.
 
-== Determining host WWPNs and making the recommended settings - FC, Windows
+== Step 2: Determining host WWPNs and making the recommended settings - FC, Windows
 
 [.lead]
 You install an FC HBA utility so you can view the worldwide port name (WWPN) of each host port. Additionally, you can use the HBA utility to change any settings recommended in the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for the supported configuration.
@@ -54,7 +54,7 @@ Guidelines for HBA utilities:
 +
 Appropriate settings for your configuration are listed in the Notes column of the IMT.
 
-== FC worksheet for Windows
+== Step 2: FC worksheet for Windows
 
 [.lead]
 You can use this worksheet to record FC storage configuration information. You need this information to perform provisioning tasks.

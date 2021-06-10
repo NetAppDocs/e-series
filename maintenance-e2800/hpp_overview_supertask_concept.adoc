@@ -127,9 +127,9 @@ To ensure that data access remains uninterrupted, you might need to remap or rem
 |===
 | If you have...| You must...
 a|
-    DA volumes in the default cluster
+DA volumes in the default cluster
 a|
-    Remap all the DA volumes in the default cluster.
+Remap all the DA volumes in the default cluster.
 
  ** If you do not want to share DA volumes between hosts, follow these steps:
   ... Create a host partition for each set of FC host ports (unless this has already been done).
@@ -142,9 +142,9 @@ a|
 NOTE: This approach eliminates volume access to any volumes that remain in the default cluster.
 
 a|
-    DA volumes in a host cluster that contains FC-only hosts, and you want to add iSCSI-only hosts
+DA volumes in a host cluster that contains FC-only hosts, and you want to add iSCSI-only hosts
 a|
-    Remove any DA volumes belonging to the cluster, using one of these options.
+Remove any DA volumes belonging to the cluster, using one of these options.
 
 NOTE: DA volumes cannot be shared in this scenario.
 
@@ -153,14 +153,13 @@ NOTE: DA volumes cannot be shared in this scenario.
  ** Add an FC HBA to the iSCSI-only hosts to allow for sharing of both DA and non-DA volumes.
 
 a|
-    DA volumes in a host cluster that contains FC-only hosts, or DA volumes that are mapped to an individual FC host partition
+DA volumes in a host cluster that contains FC-only hosts, or DA volumes that are mapped to an individual FC host partition
 a|
-    No action is needed before applying the feature pack. DA volumes will remain mapped to their respective FC host.
+No action is needed before applying the feature pack. DA volumes will remain mapped to their respective FC host.
 a|
-    No partitions defined
+No partitions defined
 a|
-    No action is needed before applying the feature pack because no volumes are currently mapped. After converting the host protocol, follow the proper procedure to create host partitions and, if desired, host clusters.
-+
+No action is needed before applying the feature pack because no volumes are currently mapped. After converting the host protocol, follow the proper procedure to create host partitions and, if desired, host clusters.
 |===
 
 === Converting from iSCSI to FC/iSCSI
