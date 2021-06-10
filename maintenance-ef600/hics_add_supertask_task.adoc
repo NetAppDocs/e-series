@@ -20,7 +20,7 @@ This procedure applies to the following controller shelves:
 
 * EF600
 
-== Step 1. Place controller shelf offline
+== Step 1: Place controller shelf offline
 
 [.lead]
 You must place the controller shelf offline so you can safely add the HICs. You must back up the configuration and collect support data first. Then, you can take the controller shelf offline.
@@ -53,7 +53,7 @@ The green Cache Active LED on the back of each controller is on when cached data
  .. Label and then unplug both power cables from controller shelf.
  .. Wait for all LEDs on the controller shelf to turn off.
 
-== Step 2. Remove controller canister
+== Step 2: Remove controller canister
 
 [.lead]
 You remove the controller canister so you can add the new host interface card. When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
@@ -86,7 +86,7 @@ image::../media/remove_controller_6.png[]
 
 . Place the controller canister on a flat, static-free surface.
 
-== Step 3. Add the new host interface card
+== Step 3: Add the new host interface card
 
 [.lead]
 You install the host interface card (HIC) to increase the number of host ports in your storage array.
@@ -121,7 +121,7 @@ Do not use a screwdriver, or you might over tighten the screws.
 
 . Using a #1 Phillips screwdriver, attach the HIC faceplate you removed from the original controller canister to the new controller canister with the two screws.
 
-== Step 4. Reinstall the controller canister
+== Step 4: Reinstall the controller canister
 
 [.lead]
 You reinstall the controller canister into the controller shelf after installing the HIC.
@@ -137,7 +137,7 @@ image::../media/remove_controller_7.png[]
 +
 If you are using more than one host protocol, be sure to install the SFPs in the correct host ports.
 
-== Step 5. Reinstall the controller canister
+== Step 5: Reinstall the controller canister
 
 [.lead]
 You reinstall the controller canister into the controller shelf after installing the HIC.
@@ -153,7 +153,7 @@ image::../media/remove_controller_7.png[]
 +
 If you are using more than one host protocol, be sure to install the SFPs in the correct host ports.
 
-== Step 6. Complete adding host interface card
+== Step 6: Complete adding host interface card
 
 [.lead]
 You complete the HIC addition by placing the controller online and confirming that the storage array is working correctly. Then, you can collect support data and resume operations.

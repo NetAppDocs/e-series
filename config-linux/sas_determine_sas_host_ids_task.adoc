@@ -11,10 +11,14 @@ summary: For the SAS protocol, you find the SAS addresses using the HBA utility,
 [.lead]
 For the SAS protocol, you find the SAS addresses using the HBA utility, then use the HBA BIOS to make the appropriate configuration settings.
 
+===== Before You Begin
+
 Guidelines for HBA utilities:
 
 * Most HBA vendors offer an HBA utility. Depending on your host operating system and CPU, use either the LSI-sas2flash(6G) or sas3flash(12G) utility.
 * Host I/O ports might automatically register if the host context agent is installed.
+
+===== Steps
 
 . Download the HBA utility from your HBA vendor's web site.
 . Install the utility.

@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e2800/batteries_remove_failed_task.html
 sidebar: sidebar
-keywords:
-summary: 'After removing the controller canister from the controller shelf, you can remove the battery.'
+keywords: removing, remove, controller, canister, shelf, battery, fail
+summary: After removing the controller canister from the controller shelf, you can remove the battery.
 ---
 = Remove failed battery
 :icons: font
@@ -10,6 +10,8 @@ summary: 'After removing the controller canister from the controller shelf, you 
 
 [.lead]
 After removing the controller canister from the controller shelf, you can remove the battery.
+
+===== Steps
 
 . Remove the controller canister's cover by pressing down on the button and sliding the cover off.
 . Confirm that the green LED inside the controller (between the battery and the DIMMs) is off.

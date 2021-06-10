@@ -12,10 +12,14 @@ summary: You use the SANtricity System Manager GUI to configure iSCSI networking
 [.lead]
 You use the SANtricity System Manager GUI to configure iSCSI networking on the array side.
 
+===== Before You Begin
+
 * You must know the IP address or domain name for one of the storage array controllers.
 * You or your system administrator must have set up a password for the System Manager GUI, or you must configured Role-Based Access Control (RBAC) or LDAP and a directory service for the appropriate security access to the storage array. See the _SANtricity System Manager online help_ for more information about Access Management.
 
 This task describes how to access the iSCSI port configuration from the Hardware page. You can also access the configuration from menu:System[Settings > Configure iSCSI ports].
+
+===== Steps
 
 . From your browser, enter the following URL: `https://<DomainNameOrIPAddress>`
 +

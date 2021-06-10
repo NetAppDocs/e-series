@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e2800/canisters_supply_supertask_task.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: 12-drive, 24-drive, controller, shelf, drive, power, supplies, supply, integrate, fan, power-fan, canister, santricity, system, manager, replace, redundant, source, adequate, cooling, prepare, power, supply, remove, install, complete, replacement
+summary: Each 12-drive or 24-drive controller shelf or drive shelf includes two power supplies with integrated fans. These are referred to as _power-fan canisters_ in SANtricity System Manager. If a power-fan canister fails, you must replace it as soon as possible to ensure that the shelf has a redundant power source and adequate cooling.
 ---
 = Replace power supply (12-drive or 24-drive)
 :icons: font
@@ -16,6 +16,8 @@ Each 12-drive or 24-drive controller shelf or drive shelf includes two power sup
 [.lead]
 You prepare to replace a power supply in a 12-drive or 24-drive controller shelf or drive shelf by collecting support data about your storage array and locating the failed component. The power supply is referred to as a power-fan canister in SANtricity System Manager.
 
+===== Before You Begin
+
 * You have reviewed the details in the Recovery Guru to confirm that there is an issue with the power supply. Select *Recheck* from the Recovery Guru to ensure no other items must be addressed first.
 * You have checked that the amber Attention LED on the power supply is on, indicating that the power supply or its integrated fan has a fault. Contact technical support for assistance if both power supplies in the shelf have their amber Attention LEDs on.
 
@@ -28,6 +30,8 @@ This task describes how to prepare to replace a power supply for the following c
 * DE224C drive shelf
 
 You can replace a power supply while your storage array is powered on and performing host I/O operations, as long as the second power supply in the shelf has an Optimal status and the**OK to remove** field in the Details area of the Recovery Guru in SANtricity System Manager displays *Yes*.
+
+===== Steps
 
 . Collect support data for your storage array using SANtricity System Manager.
  .. Select *Support* > *Support Center* > *Diagnostics*.
@@ -66,7 +70,11 @@ image:../media/drw_sas_fault_icon_maint-e2800.gif[] Attention LED: If it is *sol
 [.lead]
 You remove a failed power supply so you can replace it with a new one. When you remove a power supply (referred to in SANtricity System Manager as a _power-fan canister_), you turn off power, disconnect the power cord, and slide the part out of the shelf.
 
+===== Before You Begin
+
 * You have an ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Unpack the new power supply, and set it on a level surface near the drive shelf.
 +
@@ -91,8 +99,12 @@ As you remove the power supply, a flap swings into place to block the empty bay,
 [.lead]
 You install a new power supply to replace the failed one. When you install a power supply (referred to in SANtricity System Manager as a _power-fan canister_), you slide the part into the shelf, close the cam handle, reconnect the power cord, and reapply power.
 
+===== Before You Begin
+
 * You have a replacement power supply that is supported for your controller shelf or drive shelf model.
 * You have unpacked the replacement power supply.
+
+===== Steps
 
 . Make sure that the on/off switch of the new power supply is in the *Off* position.
 . Using both hands, support and align the edges of the power supply with the opening in the system chassis, and then gently push the power supply into the chassis using the cam handle.
@@ -111,6 +123,8 @@ IMPORTANT: Do not use excessive force when sliding the power supply into the sys
 
 [.lead]
 You complete the power supply replacement by confirming that the new power supply (referred to in SANtricity System Manager as a _power-fan canister_) is working correctly. Then, you can gather support data and resume normal operations.
+
+===== Steps
 
 . On the new power supply, check that the green Power LED is on and the amber Attention LED is OFF.
 . From the Recovery Guru in SANtricity System Manager, select *Recheck* to ensure the problem has been resolved.

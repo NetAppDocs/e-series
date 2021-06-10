@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e2800/hics_add_supertask_task.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: add, host, interface, card, hic, increase, number, port, storage, array, protocol, reapply, power, e2800, baseboard, prepare, remove, controller, canister, install, reinstall, complete
+summary: You add host interface cards (HICs) to increase the number of host ports in your storage array and to provide additional host protocols. When you add HICs, you must power off the storage array, install the HIC, and reapply power. You can add HICs to E2800 controller canisters that only have baseboard host ports.
 ---
 = Add host interface cards
 :icons: font
@@ -16,7 +16,11 @@ You add host interface cards (HICs) to increase the number of host ports in your
 [.lead]
 You prepare to add host interface cards by backing up the storage array's configuration database, collecting support data, and stopping host I/O operations. Then, you can power down the controller shelf.
 
+===== Before You Begin
+
 * You have scheduled a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)
+
+===== Steps
 
 . From the Home of SANtricity System Manager, ensure that the storage array has Optimal status.
 +
@@ -77,8 +81,12 @@ image:../media/legend_icon_01_maint-e2800.gif[] Cache Active LED
 [.lead]
 Remove the controller canister so you can add the new host interface card. When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
 
+===== Before You Begin
+
 * You must use labels to identify each cable that is connected to the controller canister.
 * You have an ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
@@ -121,11 +129,15 @@ If you are removing the controller canister from an E2812 controller shelf, E282
 [.lead]
 Install the host interface card (HIC) to increase the number of host ports in your storage array.
 
+===== Before You Begin
+
 * You have an ESD wristband, or you have taken other antistatic precautions.
 * You have a #1 Phillips screwdriver.
 * You have one or two HICs, based on whether you have one or two controllers in your storage array. The HICs must be compatible with your controllers.
 
 IMPORTANT: *Possible loss of data access*-- Never install a HIC in an E2800 controller canister if that HIC was designed for another E-Series controller. In addition, if you have a duplex configuration, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs will cause the controllers to lock down when you apply power.
+
+===== Steps
 
 . Unpack the new HIC and the new HIC faceplate.
 . Press the button on the cover of the controller canister, and slide the cover off.
@@ -163,6 +175,8 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
 [.lead]
 You reinstall the controller canister into the controller shelf after installing the new HIC.
 
+===== Steps
+
 . Turn the controller canister over, so that the removable cover faces down.
 . With the cam handle in the open position, slide the controller canister all the way into the controller shelf.
 +
@@ -172,9 +186,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[]
 +
 image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../media/legend_icon_02_maint-e2800.gif[] Cam handle
 +
-The following figure is an example of an E2860 controller shelf:image:../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[]
-+
-image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[]
+The following figure is an example of an E2860 controller shelf: image:../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[]
 +
 image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../media/legend_icon_02_maint-e2800.gif[] Cam handle
 
@@ -190,6 +202,8 @@ IMPORTANT: Do not connect data cables to the new HIC ports at this time.
 [.lead]
 You complete the process of adding a host interface card (HIC) by checking the controller LEDs and seven-segment display, and then confirming that the controller's status is Optimal.
 
+===== Before You Begin
+
 * You have installed any new host hardware needed for the new host ports, such as switches or host bus adapters (HBAs).
 * You have all cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new host ports.
 +
@@ -199,6 +213,8 @@ For information about compatible hardware, refer to the https://mysupport.netapp
 +
 If this software has not yet been installed, follow the instructions in the link:../com.netapp.doc.ssm-exp-ic-lin/home.html[Linux express configuration], link:../com.netapp.doc.ssm-exp-ic-win/home.html[Windows express configuration], or link:../com.netapp.doc.ssm-exp-ic-vm/home.html[VMware express configuration] to download and install it.
 
+===== Steps
+
 . Turn on the two power switches at the back of the controller shelf.
  ** Do not turn off the power switches during the power-on process, which typically takes 90 seconds or less to complete.
  ** The fans in each shelf are very loud when they first start up. The loud noise during start-up is normal.
@@ -207,7 +223,6 @@ If this software has not yet been installed, follow the instructions in the link
  ** The amber Attention LED on the controller turns on and then turns off, unless there is an error.
  ** The green Host Link LEDs remain off until you connect the host cables.
 *Note:* The figure shows an example controller canister. Your controller might have a different number and a different type of host ports.
-
 +
 image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[]
 +
@@ -217,7 +232,7 @@ image:../media/legend_icon_01_maint-e2800.gif[] Attention LED (amber) image:../m
 If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated, and check that the HIC and the controller canister are installed correctly. If necessary, remove and reinstall the controller canister and the HIC.
 +
 NOTE: If you cannot resolve the problem, contact technical support.
-
++
 . If the new HIC ports require SFP+ transceivers, install these SFPs.
 . If you installed a HIC with SFP+ (optical) ports, confirm the new ports have the host protocol you expect.
  .. From SANtricity System Manager, select *Hardware*.

@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e2800/hpp_complete_protocol_conversion_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: convert, protocol, host, port, additional, step, complete, start, end, baseboard, hic, complete, fc, iscsi, conversion, fc/iscsi
+summary: After converting the protocol of the host ports, you need to perform additional steps before you can use the new protocol. The steps you might need to complete depend on the starting and ending protocols of the baseboard host ports and the HIC ports.
 ---
 = Complete host protocol conversion
 :icons: font
@@ -15,6 +15,8 @@ After converting the protocol of the host ports, you need to perform additional 
 
 [.lead]
 If you converted all host ports from FC to iSCSI, you must configure iSCSI networking.
+
+===== Steps
 
 . Configure the switches.
 +
@@ -56,6 +58,8 @@ The *Delete* option does not physically remove the host port. This option remove
 
 [.lead]
 If you converted all host ports from iSCSI to FC, you must configure FC networking.
+
+===== Steps
 
 . Install the HBA utility and determine initiator WWPNs.
 . Zone the switches.

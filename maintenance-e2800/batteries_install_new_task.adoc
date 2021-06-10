@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e2800/batteries_install_new_task.html
 sidebar: sidebar
-keywords: 
-summary: 'Install a new battery when the old one has failed.'
+keywords: install, battery, fail
+summary: Install a new battery when the old one has failed.
 ---
 = Install new battery
 :icons: font
@@ -11,8 +11,12 @@ summary: 'Install a new battery when the old one has failed.'
 [.lead]
 Install a new battery when the old one has failed.
 
+===== Before You Begin
+
 * You have the failed battery from the controller canister.
 * You have the replacement battery.
+
+===== Steps
 
 . Unpack the new battery, and set it on a flat, static-free surface.
 +

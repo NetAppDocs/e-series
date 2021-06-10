@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e2800/batteries_reinstall_controller_canister_task.html
 sidebar: sidebar
-keywords: 
-summary: 'Reinstall the controller canister into the controller shelf after installing the new battery.'
+keywords: reinstall, controller, canister, shelf, install, battery, re-install
+summary: Reinstall the controller canister into the controller shelf after installing the new battery.
 ---
 = Re-install controller canister
 :icons: font
@@ -10,6 +10,8 @@ summary: 'Reinstall the controller canister into the controller shelf after inst
 
 [.lead]
 Reinstall the controller canister into the controller shelf after installing the new battery.
+
+===== Steps
 
 . Reinstall the cover on the controller canister by sliding the cover from back to front until the button clicks.
 . Turn the controller canister over, so that the removable cover faces down.

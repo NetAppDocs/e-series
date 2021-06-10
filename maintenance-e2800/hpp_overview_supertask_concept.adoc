@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e2800/hpp_overview_supertask_concept.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: e2800, baseboard, host, port, requirement, convert, protocol, overview, changing, change, consideration
+summary: Learn about the E2800 baseboard host ports and the requirements you need to know about before converting the host protocol.
 ---
 = Overview and requirements
 :icons: font
@@ -27,9 +27,9 @@ NOTE: A two-port HIC is also available.
 [.lead]
 The E2800 controller or controllers in your storage array might have different types of baseboard host ports and different types of HIC ports. The table shows which host ports can be changed with a feature pack.
 
+[options = "header"]
 |===
-| If you have...| You can change...
-| These baseboard host ports...| And these HIC ports...
+| If you have...| You can change... | These baseboard host ports...| And these HIC ports...
 a|
 Two SFP+ (optical) ports
 a|
@@ -123,6 +123,7 @@ Data Assurance considerations
 +
 To ensure that data access remains uninterrupted, you might need to remap or remove DA volumes from host clusters before applying the feature pack.
 +
+[options = "header"]
 |===
 | If you have...| You must...
 a|
@@ -144,7 +145,7 @@ a|
     DA volumes in a host cluster that contains FC-only hosts, and you want to add iSCSI-only hosts
 a|
     Remove any DA volumes belonging to the cluster, using one of these options.
-+
+
 NOTE: DA volumes cannot be shared in this scenario.
 
  ** If you do not want to share DA volumes between hosts, remap all DA volumes to individual FC hosts within the cluster.
@@ -189,8 +190,9 @@ When you apply the feature pack, mirroring support will move from the highest-nu
 +
 image::../media/28_dwg_e2800_fc_iscsi_to_fc.gif[]
 +
+[options = "header"]
 |===
-| Before the conversion| After the conversion| Required steps
+3+| Before the conversion 3+| After the conversion .2+| Required steps
 | Baseboard ports| HIC ports| Port used for mirroring| Baseboard ports| HIC ports| Port used for mirroring
 a|
 iSCSI

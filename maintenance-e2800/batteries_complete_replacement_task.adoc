@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e2800/batteries_complete_replacement_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: step, complete, battery, replacement, duplex, configuration, controller, simplex, online, shelf, data, resume, operation, power
+summary: The steps to complete a battery replacement depend on whether you have a duplex configuration (two controllers) or a simplex configuration (one controller). If you have a duplex configuration, you place the affected controller online or, if you have a simplex configuration, you apply power to the controller shelf and confirm that all components are working correctly. Then, you can collect support data and resume operations.
 ---
 = Complete battery replacement
 :icons: font
@@ -16,7 +16,11 @@ The steps to complete a battery replacement depend on whether you have a duplex 
 [.lead]
 Place the controller online to confirm the storage array is working correctly. Then, you can collect support data and resume operations.
 
+===== Before You Begin
+
 Perform this task only if your storage array has two controllers.
+
+===== Steps
 
 . As the controller boots, check the controller LEDs and the seven-segment display.
 +
@@ -74,7 +78,11 @@ Your battery replacement is complete. You can resume normal operations.
 [.lead]
 Power up the controller shelf to confirm that it is working correctly. Then, you can collect support data and resume operations.
 
+===== Before You Begin
+
 Perform this task only if your storage array has one controller.
+
+===== Steps
 
 . Turn on the two power switches at the back of the controller shelf.
  ** Do not turn off the power switches during the power-on process, which typically takes 90 seconds or less to complete.
@@ -85,7 +93,6 @@ Perform this task only if your storage array has one controller.
  ** The green Host Link LEDs turn on.
 +
 NOTE: The figure shows an example controller canister. Your controller might have a different number and a different type of host ports.
-
 +
 image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[]
 +

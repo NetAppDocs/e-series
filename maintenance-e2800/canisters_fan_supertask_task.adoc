@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e2800/canisters_fan_supertask_task.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: 60-drive, controller, shelf, drive, fan, canister, fail, replace, adequate, cooling
+summary: Each 60-drive controller shelf or drive shelf includes two fan canisters. If a fan canister fails, you must replace it as soon as possible to ensure that the shelf has adequate cooling.
 ---
 = Replace fan canister (60-drive)
 :icons: font
@@ -16,6 +16,8 @@ Each 60-drive controller shelf or drive shelf includes two fan canisters. If a f
 [.lead]
 You prepare to replace a fan canister in a 60-drive controller shelf or drive shelf by collecting support data about your storage array and locating the failed component.
 
+===== Before You Begin
+
 * From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with the fan canister and select *Recheck* from the Recovery Guru to ensure no other items must be addressed first.
 * Check that the amber Attention LED on the fan canister is on, indicating that the fan has a fault. Contact technical support for assistance if both fan canisters in the shelf have their amber Attention LEDs on.
 
@@ -25,6 +27,8 @@ This task describes how to prepare to replace a fan canister for the following c
 * DE460C drive shelf
 
 IMPORTANT: Possible equipment damage -- If you perform this procedure with the power turned on, you must complete it within 30 minutes to prevent the possibility of overheating the equipment.
+
+===== Steps
 
 . Collect support data for your storage array using SANtricity System Manager.
  .. Select *Support* > *Support Center* > *Diagnostics*.
@@ -60,8 +64,12 @@ image:../media/legend_icon_01_maint-e2800.gif[]Attention LED. If this LED displa
 [.lead]
 You remove a failed fan canister so you can replace it with a new one.
 
+===== Before You Begin
+
 * If you do not turn off the power to your storage array, ensure that you remove and replace the fan canister within 30 minutes to prevent the system from overheating.
 * You have an ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Unpack the new fan canister, and place it on a level surface near the shelf.
 +
@@ -85,6 +93,8 @@ image:../media/legend_icon_01_maint-e2800.gif[]Handle to pull the fan canister o
 
 [.lead]
 You complete the fan canister replacement by confirming that the new fan canister is working correctly. Then, you can gather support data and resume normal operations.
+
+===== Steps
 
 . Check the amber Attention LED on the new fan canister.
 +

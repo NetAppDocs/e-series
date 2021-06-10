@@ -11,7 +11,7 @@ summary: You upgrade your drives' firmware to make sure you have all the latest 
 [.lead]
 You upgrade your drives' firmware to make sure you have all the latest features and bug fixes.
 
-== Step 1. Download drive firmware files from support site
+== Step 1: Download drive firmware files from support site
 
 [.lead]
 You download the drive firmware files from the NetApp Support Site to your management client.
@@ -22,7 +22,7 @@ You download the drive firmware files from the NetApp Support Site to your manag
 . Select *Disk Drive & Firmware Matrix*.
 . Follow the remaining instructions.
 
-== Step 2. Begin drive firmware upgrade
+== Step 2: Begin drive firmware upgrade
 
 [.lead]
 You upgrade your drives' firmware to make sure you have all the latest features and bug fixes.

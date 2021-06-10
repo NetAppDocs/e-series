@@ -16,7 +16,7 @@ You upgrade a host interface card (HIC) to increase the number of host ports or 
 
 IMPORTANT: *Possible loss of data access*-- Never install a HIC in an EF300 or EF600 controller canister if that HIC was designed for another E-Series controller. In addition, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs causes the controllers to lock down when you apply power.
 
-== Step 1. Place controller shelf offline
+== Step 1: Place controller shelf offline
 
 [.lead]
 You must place the controller shelf offline so you can safely upgrade the HICs. You must back up the configuration and collect support data first. Then, you can take the controller shelf offline.
@@ -49,7 +49,7 @@ The green Cache Active LED on the back of each controller is on when cached data
  .. Label and then unplug both power cables from controller shelf.
  .. Wait for all LEDs on the controller shelf to turn off.
 
-== Step 2. Remove controller canister
+== Step 2: Remove controller canister
 
 [.lead]
 You remove the controller canister so you can upgrade the new host interface card (HIC). When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
@@ -81,7 +81,7 @@ image::../media/remove_controller_6.png[]
 
 . Place the controller canister on a flat, static-free surface.
 
-== Step 3. Remove the host interface card
+== Step 3: Remove the host interface card
 
 [.lead]
 You remove the original host interface card (HIC) so you can replace it with an upgraded one.
@@ -119,7 +119,7 @@ NOTE: The image above is an example, the appearance of your HIC may differ.
 
 . Place the HIC on a flat, static-free surface.
 
-== Step 4. Upgrade host interface card
+== Step 4: Upgrade host interface card
 
 [.lead]
 You install the new host interface card (HIC) to increase the number of host ports or change host protocol in your storage array.
@@ -154,7 +154,7 @@ NOTE: Do not use a screwdriver, or you might over tighten the screws.
 
 . Using a #1 Phillips screwdriver, attach the HIC faceplate you removed from the original HIC with the three screws.
 
-== Step 5. Reinstall controller canister
+== Step 5: Reinstall controller canister
 
 [.lead]
 You reinstall the controller canister into the controller shelf after upgrading the HIC.
@@ -170,7 +170,7 @@ image::../media/remove_controller_7.png[]
 +
 If you are using more than one host protocol, be sure to install the SFPs in the correct host ports.
 
-== Step 6. Complete the host interface card upgrade
+== Step 6: Complete the host interface card upgrade
 
 [.lead]
 You complete the HIC upgrade by placing the controller online and confirming that the storage array is working correctly. Then, you can collect support data and resume operations.

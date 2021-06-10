@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e2800/hics_replace_supertask_task.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: replace, host, interface, card, hic, fail, controller, present, identical, place, offline, duplex, power, down, shelf, remove, canister, install, place, online, simplex, power, up
+summary: You replace a host interface card (HIC) that has failed. If two controllers are present, each controller must have identical HICs.
 ---
 = Replace host interface card
 :icons: font
@@ -16,11 +16,15 @@ You replace a host interface card (HIC) that has failed. If two controllers are 
 [.lead]
 If you have a duplex configuration, you must place the affected controller offline so you can safely remove the failed HIC. You must back up the configuration and collect support data first. Then, you can take the affected controller offline.
 
+===== Before You Begin
+
 * Your storage array must have two controllers. The controller that you are not placing offline must be online (in the optimal state).
 * Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
 * From SANtricity System Manager, review the details in the Recovery Guru to confirm that you have a failed HIC and to ensure no other items must be addressed before you can remove and replace the HIC.
 
 Perform this task only if your storage array has two controllers (duplex configuration).
+
+===== Steps
 
 . From the Details area of the Recovery Guru, determine which of the controller canisters has the failed HIC.
 . Back up the storage array's configuration database.
@@ -83,7 +87,11 @@ IMPORTANT: Do not begin any other operations until after the status has been upd
 [.lead]
 If you have a simplex configuration, you power down the controller shelf so you can safely remove the failed HIC. You must back up the configuration and collect support data first. Then, you can stop host I/O operations and power down the controller shelf.
 
+===== Before You Begin
+
 Perform this task only if your storage array has one controller (simplex configuration).
+
+===== Steps
 
 . From SANtricity System Manager, review the details in the Recovery Guru to confirm that you have a failed HIC and to ensure no other items must be addressed before you can remove and replace the HIC.
 . Back up the storage array's configuration database.
@@ -136,9 +144,13 @@ The green Cache Active LED on the back of the controller is on when cached data 
 [.lead]
 You remove the controller canister so you can add the new host interface card (HIC). When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
 
+===== Before You Begin
+
 * You have scheduled a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)
 * You must use labels to identify each cable that is connected to the controller canister.
 * You have an ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
@@ -181,11 +193,15 @@ If you are removing the controller canister from an E2812 controller shelf, E282
 [.lead]
 You install a host interface card (HIC) to replace the failed one with a new HIC.
 
+===== Before You Begin
+
 * You have an ESD wristband, or you have taken other antistatic precautions.
 * You have a #1 Phillips screwdriver.
 * You have one or two HICs, based on whether you have one or two controllers in your storage array. The HICs must be compatible with your controllers.
 
 IMPORTANT: *Possible loss of data access*-- Never install a HIC in an E2800 controller canister if that HIC was designed for another E-Series controller. In addition, if you have a duplex configuration, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs will cause the controllers to lock down when you apply power.
+
+===== Steps
 
 . Unpack the new HIC and the new HIC faceplate.
 . Press the button on the cover of the controller canister, and slide the cover off.
@@ -223,6 +239,8 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
 [.lead]
 After installing the host interface card (HIC), you reinstall the controller canister into the controller shelf.
 
+===== Steps
+
 . Turn the controller canister over, so that the removable cover faces down.
 . With the cam handle in the open position, slide the controller canister all the way into the controller shelf.
 +
@@ -250,7 +268,11 @@ IMPORTANT: Do not connect data cables to the new HIC ports at this time.
 [.lead]
 You bring the controller online to confirm the storage array is working correctly. Then, you can collect support data and resume operations.
 
+===== Before You Begin
+
 Perform this task only if your storage array has two controllers.
+
+===== Steps
 
 . As the controller boots, check the controller LEDs and the seven-segment display.
 +
@@ -315,7 +337,11 @@ Your HIC replacement is complete. You can resume normal operations.
 [.lead]
 You apply power to the controller shelf to confirm that it is working correctly. Then, you can collect support data and resume operations.
 
+===== Before You Begin
+
 Perform this task only if your storage array has one controller.
+
+===== Steps
 
 . Turn on the two power switches at the back of the controller shelf.
  ** Do not turn off the power switches during the power-on process, which typically takes 90 seconds or less to complete.
@@ -326,7 +352,6 @@ Perform this task only if your storage array has one controller.
  ** The green Host Link LEDs turn on.
 +
 NOTE: The figure shows an example controller canister. Your controller might have a different number and a different type of host ports.
-
 +
 image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[]
 +

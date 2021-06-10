@@ -11,6 +11,8 @@ summary: Using an InfiniBand switch to run subnet manager might cause unexpected
 [.lead]
 Using an InfiniBand switch to run subnet manager might cause unexpected path loss during high loads. To avoid path loss, configure the subnet manager on one or more of your hosts using opensm.
 
+===== Steps
+
 . Install the opensm package on any hosts that will be running the subnet manager.
 . Start and enable the opensm service.
 . Use the ``ibstat -p``command to find `GUID0` and `GUID1` of the HBA ports. For example:

@@ -11,6 +11,8 @@ summary: You verify Internet Protocol \(IP\) network connections by using ping t
 [.lead]
 You verify Internet Protocol (IP) network connections by using ping tests to ensure the host and array are able to communicate.
 
+===== Steps
+
 . On the host, run one of the following commands, depending on whether jumbo frames are enabled:
  ** If jumbo frames are not enabled, run this command:
 +
@@ -23,7 +25,6 @@ ping -I <hostIP\> <targetIP\>
 ----
 ping -I <hostIP\> -s 8972 -d <targetIP\>
 ----
-
 +
 In this example, the iSCSI target IP address is `192.0.2.8`.
 +

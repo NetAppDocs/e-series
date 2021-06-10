@@ -11,7 +11,11 @@ summary: Using an InfiniBand switch to run subnet manager might cause unexpected
 [.lead]
 Using an InfiniBand switch to run subnet manager might cause unexpected path loss during high loads. To avoid path loss, configure the subnet manager on one or more of your hosts using opensm.
 
+===== Before You Begin
+
 * You are running the latest compatible RHEL 7, SUSE Linux Enterprise Server 12 or 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for a complete list of the latest requirements.
+
+===== Steps
 
 . Use the ``ibstat -p``command to find `GUID0` and `GUID1` of the HCA ports. For example:
 +

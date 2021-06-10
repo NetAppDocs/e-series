@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e2800/hics_upgrade_supertask_task.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: upgrade, host, interface, card, hic, increase, number, port, protocol, storage, array, exist, reapply, power, prepare, remove, controller, canister, install, reinstall, complete
+summary: You upgrade a host interface card (HIC) to increase the number of host ports or to change host protocols. When you upgrade the HICs, you must power off the storage array, remove the existing HIC from each controller, install a new HIC, and reapply power.
 ---
 = Upgrade host interface card
 :icons: font
@@ -16,8 +16,12 @@ You upgrade a host interface card (HIC) to increase the number of host ports or 
 [.lead]
 You prepare to upgrade host interface cards (HICs) by backing up the storage array's configuration database, collecting support data, and stopping host I/O operations. Then, you can power down the controller shelf.
 
+===== Before You Begin
+
 * You have scheduled a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)
 * You have installed SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
+
+===== Steps
 
 . From the Home of SANtricity System Manager, ensure that the storage array has Optimal status.
 +
@@ -78,8 +82,12 @@ image:../media/legend_icon_01_maint-e2800.gif[] Cache Active LED
 [.lead]
 You remove the controller canister so you can upgrade the new host interface card (HIC). When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
 
+===== Before You Begin
+
 * You have labels to identify each cable that is connected to the controller canister.
 * You have an ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
@@ -126,7 +134,11 @@ If you are removing the controller canister from an E2812 controller shelf, E282
 [.lead]
 You remove the original host interface card (HIC) so you can replace it with an upgraded one.
 
+===== Before You Begin
+
 * You have a #1 Phillips screwdriver.
+
+===== Steps
 
 . Remove the controller canister's cover by pressing down on the button and sliding the cover off.
 . Confirm that the green LED inside the controller (between the battery and the DIMMs) is off.
@@ -160,11 +172,15 @@ image:../media/legend_icon_01_maint-e2800.gif[] Host interface card (HIC) image:
 [.lead]
 Install the new host interface card (HIC) to increase the number of host ports in your storage array.
 
+===== Before You Begin
+
 * You have an ESD wristband, or you have taken other antistatic precautions.
 * You have a #1 Phillips screwdriver.
 * You have one or two HICs, based on whether you have one or two controllers in your storage array. The HICs must be compatible with your controllers.
 
 IMPORTANT: *Possible loss of data access* -- Never install a HIC in an E2800 controller canister if that HIC was designed for another E-Series controller. In addition, if you have a duplex configuration, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs will cause the controllers to lock down when you apply power.
+
+===== Steps
 
 . Unpack the new HIC and the new HIC faceplate.
 . Using a #1 Phillips screwdriver, remove the four screws that attach the HIC faceplate to the controller canister, and remove the faceplate.
@@ -194,6 +210,8 @@ Do not use a screwdriver, or you might over-tighten the screws.
 [.lead]
 You reinstall the controller canister into the controller shelf after installing the new host interface card (HIC).
 
+===== Steps
+
 . Reinstall the cover on the controller canister by sliding the cover from back to front until the button clicks.
 . Turn the controller canister over, so that the removable cover faces down.
 . With the cam handle in the open position, slide the controller canister all the way into the controller shelf.
@@ -222,10 +240,14 @@ IMPORTANT: Do not connect data cables to the new HIC ports at this time.
 [.lead]
 You complete the process of upgrading a host interface card by checking the controller LEDs and seven-segment display and confirming that the controller's status is Optimal.
 
+===== Before You Begin
+
 * You have installed any new host hardware needed for the new host ports, such as switches or host bus adapters (HBAs).
 * You have all cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new host ports.
 +
 For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix] or the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe].
+
+===== Steps
 
 . Turn on the two power switches at the back of the controller shelf.
  ** Do not turn off the power switches during the power-on process, which typically takes 90 seconds or less to complete.
@@ -235,7 +257,6 @@ For information about compatible hardware, refer to the https://mysupport.netapp
  ** The amber Attention LED on the controller turns on and then turns off, unless there is an error.
  ** The green Host Link LEDs remain off until you connect the host cables.
 *Note:* The figure shows an example controller canister. Your controller might have a different number and a different type of host ports.
-
 +
 image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[]
 +

@@ -1,8 +1,8 @@
 ---
 permalink: maintenance-e2800/batteries_prepare_replace_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: prepare, battery, replacement, duplex, configuration, host, i/o, simplex, controller, shelf, replace, place, offline, power, down
+summary: The steps to prepare for battery replacement depend on whether you have a duplex configuration (two controllers) or a simplex configuration (one controller). If you have a duplex configuration, you must take the affected controller offline or, if you have a simplex configuration, you must stop host I/O operations and power down the controller shelf.
 ---
 = Prepare to replace battery
 :icons: font
@@ -16,10 +16,14 @@ The steps to prepare for battery replacement depend on whether you have a duplex
 [.lead]
 If you have a duplex configuration, you must place the affected controller offline so you can safely remove the failed battery. You must back up the configuration and collect support data first. Then, you can take the affected controller offline.
 
+===== Before You Begin
+
 * Your storage array must have two controllers. The controller that you are not placing offline must be online (in the optimal state).
 * Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
 
 Perform this task only if your storage array has two controllers (duplex configuration).
+
+===== Steps
 
 . From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
 . From the Details area of the Recovery Guru, determine which battery to replace.
@@ -78,16 +82,18 @@ The system attempts to take the controller offline.
 +
 IMPORTANT: Do not begin any other operations until after the status has been updated.
 
-Go to .
-
 == Power down the controller shelf (simplex)
 
 [.lead]
 If you have a simplex configuration, you power down the controller shelf so you can safely remove the failed battery. You must back up the configuration and collect support data first. Then, you can stop host I/O operations and power down the controller shelf.
 
+===== Before You Begin
+
 * You have reviewed the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
 
 Perform this task only if your storage array has one controller (simplex configuration).
+
+===== Steps
 
 . Back up the storage array's configuration database.
 +
@@ -133,5 +139,3 @@ The green Cache Active LED on the back of the controller is on when cached data 
 . Confirm that all operations have completed before continuing with the next step.
 . Turn off both power switches on the controller shelf.
 . Wait for all LEDs on the controller shelf to turn off.
-
-Go to .
