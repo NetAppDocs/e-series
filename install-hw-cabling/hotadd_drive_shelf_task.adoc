@@ -22,7 +22,7 @@ If you are cabling an older controller shelf to a DE212C, DE224C, or DE460, see 
 
 IMPORTANT: To maintain system integrity, you must follow the procedure exactly in the order presented.
 
-== Step 1. Prepare to add the drive shelf
+== Step 1: Prepare to add the drive shelf
 
 [.lead]
 Before you hot add a drive shelf, you must check for critical events and check the status of the IOMs.
@@ -66,7 +66,7 @@ The Shelf Component Settings dialog box appears with the *IOMs (ESMs)* tab selec
  ** Both of the ESMs/IOMs show that communication is OK.
  ** The data rate is 12Gb/s for DE212C, DE224C, and DE460C drive shelves or 6 Gb/s for other drive trays.
 
-== Step 2. Install the drive shelf and apply power
+== Step 2: Install the drive shelf and apply power
 
 [.lead]
 You install a new drive shelf or a previously installed drive shelf, turn on the power, and check for any LEDs that require attention.
@@ -83,7 +83,7 @@ IMPORTANT: See the installation instructions for your model for the full procedu
 
 . Power on the new drive shelf, and confirm that no amber attention LEDs are illuminated on the drive shelf. If possible, resolve any fault conditions before you continue with this procedure.
 
-== Step 3. Cable your system
+== Step 3: Cable your system
 
 [.lead]
 If you are cabling an older controller shelf to a DE212C, DE224C, or DE460, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf].
@@ -180,7 +180,7 @@ image::../media/hot_ef_2.png[]
 +
 NOTE: Optimal status indicates that the loss of redundancy error associated with the new drive shelf has been resolved and the storage system is stabilized.
 
-== Step 4. Complete hot add
+== Step 4: Complete hot add
 
 [.lead]
 You complete the hot add by checking for any errors and confirming that the newly added drive shelf uses the latest firmware.

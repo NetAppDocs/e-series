@@ -16,10 +16,14 @@ Each controller canister includes a battery that preserves cached data if the AC
 [.lead]
 If you have a duplex configuration, you must place the affected controller offline so you can safely remove the failed battery. You must back up the configuration and collect support data first. Then, you can take the affected controller offline.
 
+===== Before You Begin
+
 * Your storage array must have two controllers. The controller that you are not placing offline must be online (in the optimal state).
 * You have verified that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
 
 Perform this task only if your storage array has two controllers (duplex configuration).
+
+===== Steps
 
 . From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
 . From the Details area of the Recovery Guru, determine which battery to replace.
@@ -85,6 +89,8 @@ Go to link:batteries_replace_supertask_task.md#[Remove failed battery].
 [.lead]
 When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
 
+===== Steps
+
 . Put on an ESD wristband or take other antistatic precautions.
 . Label each cable that is attached to the controller canister.
 . Disconnect all of the cables from the controller canister.
@@ -123,6 +129,8 @@ Go to link:batteries_replace_supertask_task.md#[Remove failed battery].
 [.lead]
 After removing the controller canister from the controller shelf, you can remove the battery.
 
+===== Steps
+
 . Remove the controller canister's cover by pressing down on the button and sliding the cover off.
 . Confirm that the green LED inside the controller (between the battery and the DIMMs) is off.
 +
@@ -149,8 +157,12 @@ WARNING: To comply with International Air Transport Association (IATA) regulatio
 [.lead]
 Install a new battery when the old one has failed.
 
+===== Before You Begin
+
 * You have the failed battery from the controller canister.
 * You have the replacement battery.
+
+===== Steps
 
 . Unpack the new battery, and set it on a flat, static-free surface.
 +
@@ -183,6 +195,8 @@ Go to link:batteries_replace_supertask_task.md#[Re-install controller canister].
 [.lead]
 Reinstall the controller canister into the controller shelf after installing the new battery.
 
+===== Steps
+
 . You reinstall the cover on the controller canister by sliding the cover from back to front until the button clicks.
 . Turn the controller canister over, so that the removable cover faces down.
 . With the cam handle in the open position, slide the controller canister all the way into the controller shelf.
@@ -205,7 +219,11 @@ Go to link:batteries_replace_supertask_task.md#[Place controller offline (duplex
 [.lead]
 Place the controller online to confirm the storage array is working correctly. Then, you can collect support data and resume operations.
 
+===== Before You Begin
+
 Perform this task only if your storage array has two controllers.
+
+===== Steps
 
 . As the controller boots, check the controller LEDs and the seven-segment display.
 +

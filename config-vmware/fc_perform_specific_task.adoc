@@ -11,7 +11,7 @@ summary: For the Fibre Channel protocol, you configure the switches and determin
 [.lead]
 For the Fibre Channel protocol, you configure the switches and determine the host port identifiers.
 
-== Configure the FC switches - VMware
+== Step 1: Configure the FC switches - VMware
 
 [.lead]
 Configuring (zoning) the Fibre Channel (FC) switches enables the hosts to connect to the storage array and limits the number of paths. You zone the switches using the management interface for the switches.
@@ -34,7 +34,7 @@ Each initiator port must be in a separate zone with all of its corresponding tar
 . Create additional zones for each FC host initiator port in the switch.
 . Save the zones, and then activate the new zoning configuration.
 
-== Determine the host port WWPNs--FC
+== Step 2: Determine the host port WWPNs--FC
 
 [.lead]
 To configure FC zoning, you must determine the worldwide port name (WWPN) of each initiator port.
@@ -57,7 +57,7 @@ vmhba4 lpfc link-up  fc.20000090fa05e849:10000090fa05e849 (0000:03:00.1)
 Emulex Corporation Emulex LPe16000 16Gb PCIe Fibre Channel Adapter
 ----
 
-== FC worksheet for VMware
+== Step 3: FC worksheet for VMware
 
 [.lead]
 You can use this worksheet to record FC storage configuration information. You need this information to perform provisioning tasks.
