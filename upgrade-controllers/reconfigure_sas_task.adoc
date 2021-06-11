@@ -29,6 +29,8 @@ NOTE: Failure to aquire an FPVR before attempting this procedure can result in d
 [.lead]
 All operations must be shut down before you can power down the controllers.
 
+===== Steps
+
 . If the existing SAS-2 array is still accessible, delete all volume groups, power down both controllers, and remove all cables.
 . Record the serial number from the SAS-2 controller shelf that you will be converting to a drive shelf.
 . If drive security is in use for the existing array, ensure that the security key is available.
@@ -37,6 +39,8 @@ All operations must be shut down before you can power down the controllers.
 
 [.lead]
 Upon successful shut down, you can replace the controllers in the array.
+
+===== Steps
 
 . Replace both controllers in the existing array with IOMs or ESMs.
 . If possible, use the host cables and network cables from the existing array and connect them to the controllers in the new array.
@@ -53,6 +57,8 @@ NOTE: Connecting SAS-2 to SAS-3 requires SAS HD to miniSAS cables. For more deta
 
 [.lead]
 After installation is complete, power on the controllers and submit your configuration changes to NetApp Technical Support.
+
+===== Steps
 
 . Power up the new array including any attached drive shelves.
 . Configure the management port and the IP addresses by installing the https://mysupport.netapp.com/tools/info/ECMLP2563821I.html[SANtricity Quick Connect] utility.

@@ -18,7 +18,11 @@ If you are upgrading controllers in a duplex controller-drive tray, repeat all s
 [.lead]
 You remove the controller canister so you can upgrade it with a new one. You must disconnect all cables and remove any SFP transceivers. Then, you can slide the controller canister out of the controller shelf.
 
+===== Before You Begin
+
 * You must have labels to identify each cable that is connected to the controller canister.
+
+===== Steps
 
 . Put on an ESD wristband or take other antistatic precautions.
 . Label each cable that is attached to the old controller canister. Depending on the HIC configuration, you might be able to reconnect some cables after you replace the controller canister.
@@ -42,12 +46,14 @@ image:../media/legend_icon_01_upg-hw.gif[] Controller canister image:../media/le
 . Set the old controller canister on a flat, static-free surface near the controller-drive tray with the release levers up. Position the controller canister so that you can access the top cover.
 . (Conditional) If you are upgrading controllers in a duplex controller-drive tray, repeat all steps to remove the second controller canister.
 
-If you intend to use the battery from the old controller in the new controller, go to link:remove_controllers_task.md#[Step 2: Remove battery]; otherwise go to link:install_controllers_task.md#[Install new controllers].
+If you intend to use the battery from the old controller in the new controller, go to the next part of the section; otherwise go to link:install_controllers_task.md#[Install new controllers].
 
 == Step 2: Remove battery
 
 [.lead]
 You remove the battery only if you intend to use the battery from the old controller canister in the new controller canister.
+
+===== Steps
 
 . Press down on both of the top cover latch buttons on the old controller canister, and slide the top cover to the rear of the canister.
 . Perform one of the following options, depending on your model of controller-drive tray, to release the old battery:

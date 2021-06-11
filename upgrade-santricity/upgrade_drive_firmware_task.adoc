@@ -16,6 +16,8 @@ You upgrade your drives' firmware to make sure you have all the latest features 
 [.lead]
 You download the drive firmware files from the NetApp Support Site to your management client.
 
+===== Steps
+
 . In SANtricity System Manager, select *Support* > *Upgrade Center*.
 . Under Drive Firmware upgrade, click *NetApp Support*.
 . On the NetApp Support web site, click the *Downloads* tab, and then select *Firmware*.
@@ -27,11 +29,15 @@ You download the drive firmware files from the NetApp Support Site to your manag
 [.lead]
 You upgrade your drives' firmware to make sure you have all the latest features and bug fixes.
 
+===== Before You Begin
+
 * You have backed up your data using disk-to-disk backup, volume copy (to a volume group not affected by the planned firmware upgrade), or a remote mirror.
 * The storage array has an Optimal status.
 * All drives have an Optimal status.
 * No configuration changes are running on the storage array.
 * If the drives are capable of only an offline upgrade, I/O activity to all volumes associated with the drives is stopped.
+
+===== Steps
 
 . Under Drive Firmware upgrade, click *Begin Upgrade*.
 +

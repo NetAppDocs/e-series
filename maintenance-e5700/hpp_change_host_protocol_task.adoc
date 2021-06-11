@@ -16,7 +16,11 @@ You can convert the host port protocol of the baseboard host ports from Fibre Ch
 [.lead]
 Use SANtricity System Manager to determine what type of SFP transceivers you have. Because these SFPs can be used with both FC and iSCSI protocols, they are referred to as _dual-protocol_ or _unified_ SFPs.
 
+===== Before You Begin
+
 If your current SFPs support data rates of 16 Gbps and 10 Gbps, you can continue to use them after converting the host port protocol.
+
+===== Steps
 
 . From SANtricity System Manager, select *Support*.
 . Select the *Support Center* tile.
@@ -68,6 +72,8 @@ NOTE: 8Gbps FC SFPs are NOT supported in the E28xx or E57xx controllers. ONLY 16
 
 [.lead]
 To obtain the feature pack, you need the serial number from the controller shelf, a Feature Activation Code, and the Feature Enable Identifier for the storage array.
+
+===== Steps
 
 . Locate the serial number.
  .. From SANtricity System Manager, select *Support* > *Support Center*.
@@ -830,7 +836,11 @@ image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_c
 [.lead]
 You must stop all I/O operations from the host before converting the protocol of the host ports. You cannot access data on the storage array until you successfully complete the conversion.
 
+===== Before You Begin
+
 This task applies only if you are converting a storage array that has already been in use.
+
+===== Steps
 
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
@@ -852,6 +862,8 @@ The green Cache Active LEDimage:../media/legend_icon_01_maint-e5700.gif[] on the
 
 [.lead]
 You change the feature pack to convert the host protocol of the baseboard host ports, the IB HIC ports, or both types of ports.
+
+===== Steps
 
 . From SANtricity System Manager, select *Settings* > *System*.
 . Under *Add-ons*, select *Change Feature Pack*.
