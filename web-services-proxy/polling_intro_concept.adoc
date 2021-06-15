@@ -59,11 +59,15 @@ NOTE: When the system starts, there is no previous statistics collection to use 
 [.lead]
 You can specify polling intervals for statistics gathering by modifying the wsconfig.xml file.
 
+===== Before You Begin
+
 * The storage systems must be discovered by the proxy.
 
 To configure polling intervals, you modify the wsconfig.xml file to specify a polling interval in seconds.
 
 NOTE: Because the statistics are cached in memory, you might see an increase of about 1.5 MB of memory-use for each storage system.
+
+===== Steps
 
 . Open the wsconfig.xml file, located at:
  ** (Windows) -- C:\Program Files\NetApp\SANtricity Web Services Proxy

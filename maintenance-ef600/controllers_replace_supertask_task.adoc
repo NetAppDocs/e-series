@@ -23,6 +23,8 @@ You can determine if you have a failed controller canister in two ways:
 [.lead]
 When a controller canister fails, you must replace it. You prepare to replace a controller canister by verifying that the replacement controller canister has the correct FRU part number, backing up the configuration, and collecting support data.
 
+===== Steps
+
 . Unpack the new controller canister, and set it on a flat, static-free surface.
 +
 Save the packing materials to use when shipping the failed controller canister.
@@ -75,9 +77,13 @@ You remove a controller canister to replace the failed canister with a new one. 
 [.lead]
 You remove the failed controller canister so you can replace it with a new one. Disconnect all the cables then you can slide the controller out of the controller shelf.
 
+===== Before You Begin
+
 * You must use labels to identify each cable that is connected to the controller canister.
 * You have an ESD wristband, or you have taken other antistatic precautions.
 * You have prepared a flat, static free work area.
+
+===== Steps
 
 . Put on an ESD wristband or take other antistatic precautions.
 . Label each cable that is attached to the controller canister.
@@ -102,12 +108,12 @@ image::../media/remove_controller_6.png[]
 
 . Place the controller canister on a flat, static-free surface.
 
-Go to link:controllers_replace_supertask_task.md#[Remove battery].
-
 === Remove battery
 
 [.lead]
 You remove the battery from the failed controller canister so you can install it in the new controller canister. Remove the battery by squeezing the tab and disconnecting the connector housing. Then, you can lift the battery out of the controller.
+
+===== Steps
 
 . Remove the controller canister's cover by unscrewing the single thumbscrew and lifting the lid open.
 . Locate the 'press' tab on the side of the controller.
@@ -148,14 +154,16 @@ image::../media/hic_4.png[]
 
 . Place the HIC on a flat, static-free surface.
 
-Go to link:controllers_replace_supertask_task.md#[Remove power supply].
-
 === Remove power supply
 
 [.lead]
 Remove the power supply so you can install it in the new controller. When you remove a power supply, you disconnect the power cord, and slide the part out of the shelf.
 
+===== Before You Begin
+
 * You have an ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Disconnect the power cables:
  .. Open the power cord retainer, and then unplug the power cord from the power supply.
@@ -171,14 +179,16 @@ image::../media/psup_3.png[]
 +
 IMPORTANT: When removing a power supply, always use two hands to support its weight.
 
-Go to link:controllers_replace_supertask_task.md#[Remove DIMMs].
-
 === Remove DIMMs
 
 [.lead]
 Remove the DIMMs so you can install them in the new controller. To remove the DIMMs you push apart the ejector tabs and gently lift the DIMM out by its edges.
 
+===== Before You Begin
+
 * You have an ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Locate the DIMMs on your controller.
 . Note the orientation of the DIMM in the socket so that you can insert the replacement DIMM in the proper orientation.
@@ -218,9 +228,13 @@ You install a new controller canister to replace the failed one. You install the
 [.lead]
 You must install the battery into the replacement controller canister. Align the new battery with the side of the controller and then plug the connector into the board.
 
+===== Before You Begin
+
 * You have the battery from the original controller canister, or a new battery that you ordered.
 * You have the replacement controller canister.
 * You have an ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Insert the battery into the controller by lining up the battery casing with the metal latches on the side of the controller.
 +
@@ -230,16 +244,18 @@ The battery clicks into place.
 
 . Plug the battery connector back into the board.
 
-Go to link:controllers_replace_supertask_task.md#[Install host interface card].
-
 === Install host interface card
 
 [.lead]
 If you removed a HIC from the original controller canister, you must install that HIC in the new controller canister. Install the HIC by gently lowering the card into place and hand tightening the single thumbscrew.
 
+===== Before You Begin
+
 * You must have a replacement controller canister with the same part number as the controller canister you are replacing.
 * You must have a #1 Phillips screwdriver.
 * You have an ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Using a #1 Phillips screwdriver, remove the two screws that attach the blank faceplate to the replacement controller canister, and remove the faceplate.
 . Align the single thumbscrew on the HIC with the corresponding hole on the controller, and align the connector on the bottom of the HIC with the HIC interface connector on the controller card.
@@ -264,12 +280,12 @@ NOTE: The image above is an example, the appearance of your HIC may differ.
 
 . Using a #1 Phillips screwdriver, attach the HIC faceplate you removed from the original controller canister to the new controller canister with the two screws.
 
-Go to link:controllers_replace_supertask_task.md#[Install Power Supply]
-
 === Install power supply
 
 [.lead]
 You must install the power supply into the replacement controller canister. Install the power supply by gently sliding it into the opening of the new controller.
+
+===== Steps
 
 . Using both hands, support and align the edges of the power supply with the opening in the system chassis, and then gently push the power supply into the chassis using the cam handle.
 +
@@ -279,14 +295,16 @@ IMPORTANT: Do not use excessive force when sliding the power supply into the sys
 +
 image::../media/psup_4.png[]
 
-Go to link:controllers_replace_supertask_task.md#[Install DIMMs]
-
 === Install DIMMs
 
 [.lead]
 You must install the DIMMs into the new controller canister. Install the DIMMs by sliding the DIMM into the slot and securing the latches on either side.
 
+===== Before You Begin
+
 * You have an ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Hold the DIMM by the corners, and align it to the slot.
 +
@@ -313,7 +331,11 @@ Go to link:controllers_replace_supertask_task.md#[Install Fans]
 [.lead]
 You must install the fans into the replacement controller canister. Install the fans by sliding them into the shelf.
 
+===== Before You Begin
+
 * You have an ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Slide the fan all the way into the replacement controller.
 +
@@ -329,6 +351,8 @@ Go to link:controllers_replace_supertask_task.md#[Install new controller caniste
 
 [.lead]
 After installing the battery, power supply, DIMMs, fans, and the host interface card (HIC), if one was initially installed, you can install the new controller canister into the controller shelf. Install the new controller shelf by closing the cover and using the handles to slide the controller into the controller shelf.
+
+===== Steps
 
 . Lower the cover on the controller canister and secure the thumbscrew.
 . While squeezing the controller handles, gently slide the controller canister all the way into the controller shelf.
@@ -349,6 +373,8 @@ NOTE: If the original controller did not use DHCP for the IP address, the new co
 
 [.lead]
 You complete the controller replacement by placing the controller online and confirming that the storage array is working correctly. Then, you can collect support data and resume operations.
+
+===== Steps
 
 . Place controller online.
  .. In System Manager, navigate to the hardware page.

@@ -16,9 +16,13 @@ After converting the protocol of the host ports, you need to perform additional 
 [.lead]
 If you previously had FC host ports and you converted to iSCSI, you might need to modify your existing configuration to support iSCSI. The following procedure is only applicable if there is no iSCSI HIC present.
 
+===== Before You Begin
+
 This task applies only if you are converting a storage array that has already been in use.
 
 This task does not apply if you are converting a new storage array that does not yet have hosts and volumes defined. If you converted the host-port protocol of a new storage array, see _Cabling E-Series hardware_ to install cables and SFPs. Then, follow the instructions in the link:../com.netapp.doc.ssm-exp-ic-lin/home.html[Linux express configuration], link:../com.netapp.doc.ssm-exp-ic-win/home.html[Windows express configuration], or link:../com.netapp.doc.ssm-exp-ic-vm/home.html[VMware express configuration] to complete the setup for each protocol.
+
+===== Steps
 
 . Configure the switches.
 +
@@ -63,9 +67,13 @@ Your host protocol conversion is complete. You can resume normal operations.
 [.lead]
 If you previously had iSCSI host ports and you converted to FC, you might need to modify your existing configuration to support FC. The following procedure is only applicable if no FC HIC is present.
 
+===== Before You Begin
+
 This task applies only if you are converting a storage array that has already been in use.
 
 This task does not apply if you are converting a new storage array that does not yet have hosts and volumes defined. If you converted the host-port protocol of a new storage array, see _Cabling E-Series hardware_ to install cables and SFPs. Then, follow the instructions in the link:../com.netapp.doc.ssm-exp-ic-lin/home.html[Linux express configuration], link:../com.netapp.doc.ssm-exp-ic-win/home.html[Windows express configuration], or link:../com.netapp.doc.ssm-exp-ic-vm/home.html[VMware express configuration] to complete the setup for each protocol.
+
+===== Steps
 
 . Install the HBA utility and determine initiator WWPNs.
 . Zone the switches.
@@ -101,6 +109,8 @@ Your host protocol conversion is complete. You can resume normal operations.
 
 [.lead]
 After you apply the feature pack key to convert the protocol used by your InfiniBand iSER HIC port to/from SRP, NVMe over InfiniBand, NVMe over RocE, or NVMe over Fiber Channel you need to configure the host to use the appropriate protocol.
+
+===== Steps
 
 . Configure the host to use the SRP, iSER, or NVMe protocol.
 +

@@ -16,7 +16,11 @@ Each controller canister includes a battery that preserves cached data if the AC
 [.lead]
 You must place the affected controller offline so you can safely remove the failed battery. You must back up the configuration and collect support data first. Then, you can take the affected controller offline.
 
+===== Before You Begin
+
 * Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
+
+===== Steps
 
 . From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
 . From the Details area of the Recovery Guru, determine which battery to replace.
@@ -47,9 +51,13 @@ IMPORTANT: Do not begin any other operations until after the status has been upd
 [.lead]
 You remove the controller canister so you can replace the failed battery with a new one. Disconnect all the cables then you can slide the controller out of the controller shelf.
 
+===== Before You Begin
+
 * You must use labels to identify each cable that is connected to the controller canister.
 * You have an ESD wristband, or you have taken other antistatic precautions.
 * You have prepared a flat, static free work area.
+
+===== Steps
 
 . Put on an ESD wristband or take other antistatic precautions.
 . Label each cable that is attached to the controller canister.
@@ -74,6 +82,8 @@ image::../media/remove_controller_6.png[]
 
 [.lead]
 You must remove the failed battery so you can install the new one. Remove the battery by squeezing the tab and disconnecting the connector housing. Then, you can pull the battery out of the controller.
+
+===== Steps
 
 . Remove the controller canister's cover by unscrewing the single thumbscrew and lifting the lid open.
 . Confirm that the green LED inside the controller is off.
@@ -102,9 +112,13 @@ WARNING: To comply with International Air Transport Association (IATA) regulatio
 [.lead]
 You must install a new battery when the old one has failed. Align the new battery with the side of the controller and then plug the connector into the board.
 
+===== Before You Begin
+
 * You have removed the failed battery from the controller canister.
 * You have the replacement battery.
 * You have an ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Unpack the new battery, and set it on a flat, static-free surface.
 +
@@ -123,6 +137,8 @@ The battery clicks into place.
 [.lead]
 After you install the new battery, you reinstall the controller into the controller shelf. Close the cover and use the handles to slide the controller into the controller shelf.
 
+===== Steps
+
 . Lower the cover on the controller canister and secure the thumbscrew.
 . While squeezing the controller handles, gently slide the controller canister all the way into the controller shelf.
 +
@@ -134,6 +150,8 @@ image::../media/remove_controller_7.png[]
 
 [.lead]
 You complete a battery replacement by placing the controller online to confirm the new battery is working correctly. Then, you can collect support data and resume operations.
+
+===== Steps
 
 . Place controller online.
  .. In System Manager, navigate to the hardware page.

@@ -18,10 +18,14 @@ If you are upgrading controllers in a duplex controller-drive tray, repeat all s
 [.lead]
 You install the battery that you removed from the original controller canister or a new battery that you ordered.
 
+===== Before You Begin
+
 * You have the battery from the original controller canister or a new battery that you ordered.
 * You have the new controller canister.
 
 Perform the following steps for each controller in the controller-drive tray.
+
+===== Steps
 
 . Unpack the new controller canister, and set it on a flat, static-free surface so that the removable cover faces up.
 . Press down on the cover button, and slide the cover off.
@@ -48,12 +52,12 @@ IMPORTANT: To make sure that the controller battery is seated correctly in an E5
 When the latch clicks into place, the bottom of the latch hooks into a metal slot on the chassis.
 . Turn the controller canister over to confirm that the battery is installed correctly.
 
-Go to link:install_controllers_task.md#[Step 2: Install new controller canister].
-
 == Step 2: Install new controller canister
 
 [.lead]
 You install the new controller canister into the controller shelf.
+
+===== Steps
 
 . Slide the new controller canister all the way into the controller-drive tray. Rotate the release levers towards the center of the controller canister to lock it into place.
 . If your new controller canister has a Fibre Channel HIC or an InfiniBand HIC, install the SFP+ transceivers (Fibre Channel) or QSFP+ transceiver (InfiniBand) into the controller canister.

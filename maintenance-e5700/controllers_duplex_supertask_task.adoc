@@ -16,12 +16,16 @@ You can replace a controller canister in a duplex configuration, which is a two-
 [.lead]
 You prepare to replace a controller canister by verifying that the replacement controller canister has the correct FRU part number, backing up the configuration, and collecting support data. If the controller is still online, you must take it offline.
 
+===== Before You Begin
+
 This task describes how to prepare to replace a controller canister in the duplex version (two controllers) for the following controller shelves:
 
 * E5724 controller shelf
 * E5760 controller shelf
 
 Perform this task only if your storage array has two controllers (duplex configuration).
+
+===== Steps
 
 . Unpack the new controller canister, and set it on a flat, static-free surface.
 +
@@ -111,9 +115,13 @@ IMPORTANT: Do not begin any other operations until after the status has been upd
 [.lead]
 You remove a controller canister to replace the failed canister with a new one. Perform this task only if your storage array has two controllers (duplex configuration).
 
+===== Before You Begin
+
 * You must use labels to identify each cable that is connected to the controller canister.
 * You must have a #1 Phillips screwdriver.
 * You have an ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Put on an ESD wristband or take other antistatic precautions.
 . Label each cable that is attached to the controller canister.
@@ -154,6 +162,8 @@ If you are removing the controller canister from an E5724 controller shelf, a fl
 [.lead]
 Remove the battery so you can install the new controller.
 
+===== Steps
+
 . You remove the controller canister's cover by pressing down on the button and sliding the cover off.
 . Confirm that the green LED inside the controller (between the battery and the DIMMs) is off.
 +
@@ -176,6 +186,8 @@ image:../media/legend_icon_01_maint-e5700.gif[] Battery release latch image:../m
 
 [.lead]
 If the controller canister includes a host interface card (HIC), you must remove the HIC from the original controller canister, so you can reuse it in the new controller canister.
+
+===== Steps
 
 . Using a #1 Phillips screwdriver, remove the screws that attach the HIC faceplate to the controller canister.
 +
@@ -200,8 +212,12 @@ image:../media/legend_icon_01_maint-e5700.gif[] Host interface card (HIC) image:
 [.lead]
 You must install the battery into the replacement controller canister. You can install the battery that you removed from the original controller canister or install a new battery that you ordered.
 
+===== Before You Begin
+
 * You have the battery from the original controller canister.
 * You have the replacement controller canister.
+
+===== Steps
 
 . Turn the replacement controller canister over, so that the removable cover faces up.
 . Press down on the cover button, and slide the cover off.
@@ -230,9 +246,13 @@ IMPORTANT: *Possible hardware damage* -- The metal flange at the front of the ba
 [.lead]
 If you removed a HIC from the original controller canister, you must install that HIC in the new controller canister.
 
+===== Before You Begin
+
 * You must have a replacement controller canister with the same part number as the controller canister you are replacing.
 * You must have a #1 Phillips screwdriver.
 * You have an ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Using a #1 Phillips screwdriver, remove the four screws that attach the blank faceplate to the replacement controller canister, and remove the faceplate.
 . Align the three thumbscrews on the HIC with the corresponding holes on the controller, and align the connector on the bottom of the HIC with the HIC interface connector on the controller card.
@@ -260,6 +280,8 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[]
 [.lead]
 After installing the battery and the host interface card (HIC), if one was initially installed, you can install the new controller canister into the controller shelf.
 
+===== Steps
+
 . Reinstall the cover on the controller canister by sliding the cover from back to front until the button clicks.
 . Turn the controller canister over, so that the removable cover faces down.
 . With the cam handle in the open position, slide the controller canister all the way into the controller shelf.
@@ -285,6 +307,8 @@ NOTE: If the original controller did not use DHCP for the IP address, the new co
 
 [.lead]
 You complete the controller replacement by placing the controller online and confirming that the storage array is working correctly. Then, you can collect support data and resume operations.
+
+===== Steps
 
 . As the controller boots, check the controller LEDs and the seven-segment display.
 +

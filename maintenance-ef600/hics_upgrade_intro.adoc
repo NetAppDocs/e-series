@@ -21,7 +21,11 @@ IMPORTANT: *Possible loss of data access*-- Never install a HIC in an EF300 or E
 [.lead]
 You must place the controller shelf offline so you can safely upgrade the HICs. You must back up the configuration and collect support data first. Then, you can take the controller shelf offline.
 
+===== Before You Begin
+
 * You have scheduled a downtime maintenance window for this procedure. You cannot access data on the storage array until you have successfully completed this procedure. Because both controllers must have the same HIC configuration when they are powered on, the power must be off when you install HICs.
+
+===== Steps
 
 . From the Home of SANtricity System Manager, ensure that the storage array has Optimal status.
 +
@@ -54,10 +58,14 @@ The green Cache Active LED on the back of each controller is on when cached data
 [.lead]
 You remove the controller canister so you can upgrade the new host interface card (HIC). When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
 
+===== Before You Begin
+
 * You have labels to identify each cable that is connected to the controller canister.
 * You must have a #1 Phillips screwdriver.
 * You have an ESD wristband, or you have taken other antistatic precautions.
 * You have prepared a flat, static free work area.
+
+===== Steps
 
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
@@ -86,8 +94,12 @@ image::../media/remove_controller_6.png[]
 [.lead]
 You remove the original host interface card (HIC) so you can replace it with an upgraded one.
 
+===== Before You Begin
+
 * You have a #1 Phillips screwdriver.
 * You have an ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Remove the controller canister's cover by unscrewing the single thumbscrew and lifting the lid open.
 . Confirm that the green LED inside the controller is off.
@@ -124,12 +136,16 @@ NOTE: The image above is an example, the appearance of your HIC may differ.
 [.lead]
 You install the new host interface card (HIC) to increase the number of host ports or change host protocol in your storage array.
 
+===== Before You Begin
+
 * You have an ESD wristband, or you have taken other antistatic precautions.
 * You have a #1 Phillips screwdriver.
 * You have two HICs, that are compatible with your controllers.
 * You have removed the HIC that is being upgraded.
 
 IMPORTANT: *Possible loss of data access* -- Never install a HIC in an EF300 or EF600 controller canister if that HIC was designed for another E-Series controller. In addition, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs causes the controllers to lock down when you apply power.
+
+===== Steps
 
 . Unpack the new HIC and the new HIC faceplate.
 . Align the single thumbscrew on the HIC with the corresponding holes on the controller, and align the connector on the bottom of the HIC with the HIC interface connector on the controller card.
@@ -159,6 +175,8 @@ NOTE: Do not use a screwdriver, or you might over tighten the screws.
 [.lead]
 You reinstall the controller canister into the controller shelf after upgrading the HIC.
 
+===== Steps
+
 . Lower the cover on the controller canister and secure the thumbscrew.
 . While squeezing the controller handles, gently slide the controller canister all the way into the controller shelf.
 +
@@ -174,6 +192,8 @@ If you are using more than one host protocol, be sure to install the SFPs in the
 
 [.lead]
 You complete the HIC upgrade by placing the controller online and confirming that the storage array is working correctly. Then, you can collect support data and resume operations.
+
+===== Steps
 
 . Place controller online.
  .. Plug in power cables.
