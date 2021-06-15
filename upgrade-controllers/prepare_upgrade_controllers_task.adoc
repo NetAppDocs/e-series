@@ -11,6 +11,8 @@ summary: You prepare to upgrade controllers by saving the drive security key, ga
 [.lead]
 You prepare to upgrade controllers by saving the drive security key, gathering support data, and taking the controller offline.
 
+===== Steps
+
 . Make sure that the existing storage array is updated to the latest released operating system (controller firmware) version available for your current controllers.
 +
 NOTE: If you are upgrading to controllers that support SANtricity OS version 8.50, you must install the latest versions of SANtricity OS and the latest NVSRAM after you install and power on the new controllers. If you do not perform this upgrade, you might not be able to configure the storage array for Automatic Load Balancing (ALB).
