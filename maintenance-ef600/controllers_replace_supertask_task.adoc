@@ -124,7 +124,7 @@ image::../media/batt_3.png[]
 . Gently squeeze the connector housing the battery wiring. Pull up, disconnecting the battery from the board.image:../media/batt_2.png[]
 . Lift the battery out of the controller and place on a flat, static-free surface.image:../media/batt_4.png[]
 
-Go to link:controllers_replace_supertask_task.md#[Remove host interface card].
+Go to link:maintenace-ef600/controllers_replace_supertask_task.html[Remove host interface card].
 
 === Remove host interface card
 
@@ -203,7 +203,7 @@ image::../media/dimm_2.png[]
 +
 image::../media/dimim_3.png[]
 
-Go to link:controllers_replace_supertask_task.md#[Remove fans]
+Go to link:maintenance-ef600/controllers_replace_supertask_task.html[Remove fans]
 
 === Remove fans
 
@@ -324,7 +324,7 @@ NOTE: DIMMs fit tightly. You might need to gently press on one side at a time an
 +
 image::../media/dimm_5.png[]
 
-Go to link:controllers_replace_supertask_task.md#[Install Fans]
+Go to link:maintenance-ef600/controllers_replace_supertask_task.html[Install Fans]
 
 === Install fans
 
@@ -345,7 +345,7 @@ image::../media/fan_3_a.png[]
 
 . Repeat until all fans are installed.
 
-Go to link:controllers_replace_supertask_task.md#[Install new controller canister]
+Go to link:maintenance-ef600/controllers_replace_supertask_task.html[Install new controller canister]
 
 === Install new controller canister
 

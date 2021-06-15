@@ -60,7 +60,7 @@ You remove a failed drive to replace it with a new one.
 ===== Before You Begin
 
 * You have an ESD wristband, or you have taken other antistatic precautions.
-* You have reviewed the link:drives_overview_supertask_concept.md#[Requirements for handling drives] topic.
+* You have reviewed the link:maintenance-e5700/drives_overview_supertask_concept.html[Requirements for handling drives] topic.
 
 When you remove a drive from an E5760 controller shelf or a DE460C drive shelf, you must lift the drive partly out of the drawer and wait for the drive to spin down. Then, you can remove the drive completely.
 
