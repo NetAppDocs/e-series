@@ -116,7 +116,7 @@ You complete the power canister replacement by confirming that the new power can
 
 . On the new power canister, check that the green Power LED is on and the amber Attention LED is OFF.
 . From the Recovery Guru in SANtricity System Manager, select *Recheck* to ensure the problem has been resolved.
-. If a failed power canister is still being reported, repeat the steps in link:maintenance-e2800/canisters_60_replace_power_task.html#remove-failed-power-canister[Remove failed power canister] and link:maintenance-e2800/canisters_60_replace_power_task.html#install-new-power-canister[Install new power canister]. If the problem continues to persist, contact technical support.
+. If a failed power canister is still being reported, repeat the steps in Step 2: Remove failed power canister and in Step 3: Install new power canister. If the problem continues to persist, contact technical support.
 . Remove the antistatic protection.
 . Collect support data for your storage array using SANtricity System Manager.
  .. Select *Support* > *Support Center* > *Diagnostics*.

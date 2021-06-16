@@ -40,7 +40,7 @@ You remove a failed drive to replace it with a new one.
 ===== Before You Begin
 
 * You have an ESD wristband, or you have taken other antistatic precautions.
-* You have reviewed the link:maintenance-e2800/drives_overview_supertask_concept.html[Requirements for handling drives] topic.
+* You have reviewed the link:drives_overview_supertask_concept.html[Requirements for handling drives] topic.
 
 When you remove a drive, you must slide the drive partly out of the shelf and wait for the drive to spin down. Then, you can remove the drive completely.
 
@@ -65,8 +65,6 @@ The cam handle on the drive springs open partially, and the drive releases from 
 . Wait 30 seconds for the software to recognize that the drive has been removed.
 +
 NOTE: If you accidentally remove an active drive, wait at least 30 seconds, and then reinstall it. For the recovery procedure, refer to the storage management software.
-
-Go to link:drives_12_24_supertask_task.html[Install new drive (12-drive or 24-drive)].
 
 == Step 3: Install new drive (12-drive or 24-drive)
 

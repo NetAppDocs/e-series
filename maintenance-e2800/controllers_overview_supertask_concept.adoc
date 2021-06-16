@@ -60,13 +60,13 @@ If you plan to replace a controller or add a second controller, keep the followi
 +
 For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix] or the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe].
 
-* You must have installed a multipath driver on the host so that you can use both controllers. Refer to the link:../com.netapp.doc.ssm-exp-ic-lin/home.html[Linux express configuration], link:../com.netapp.doc.ssm-exp-ic-win/home.html[Windows express configuration], or link:../com.netapp.doc.ssm-exp-ic-vm/home.html[VMware express configuration] for instructions.
+* You must have installed a multipath driver on the host so that you can use both controllers. Refer to the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] for instructions.
 * You have an ESD wristband, or you have taken other antistatic precautions.
 * You must have a #1 Phillips screwdriver.
 * You must have labels to identify the new cables.
 * You must have installed SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
 +
-If SANtricity Storage Manager has not yet been installed, follow the instructions in the link:../com.netapp.doc.ssm-exp-ic-lin/home.html[Linux express configuration], link:../com.netapp.doc.ssm-exp-ic-win/home.html[Windows express configuration], or link:../com.netapp.doc.ssm-exp-ic-vm/home.html[VMware express configuration] to download and install the software.
+If SANtricity Storage Manager has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install the software.
 
 === Requirements for replacing a failed controller
 
@@ -76,7 +76,7 @@ If SANtricity Storage Manager has not yet been installed, follow the instruction
 * You must have a #1 Phillips screwdriver.
 * You must have installed SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
 +
-If this software has not yet been installed, follow the instructions in the link:../com.netapp.doc.ssm-exp-ic-lin/home.html[Linux express configuration], link:../com.netapp.doc.ssm-exp-ic-win/home.html[Windows express configuration], or link:../com.netapp.doc.ssm-exp-ic-vm/home.html[VMware express configuration] to download and install it.
+If this software has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install it.
 
 *Duplex configuration*
 

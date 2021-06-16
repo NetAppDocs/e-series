@@ -87,7 +87,7 @@ A list of volumes containing file systems available for backup is displayed in t
 +
 A list of available filesystems on the selected volume is displayed in the `Create Backup` window.
 +
-NOTE: If your filesystem does not appear, verify your filesystem type is supported by the SANtricity Cloud Connector application. For more information, refer to link:learn_intro_concept.html#supported-file-systems[Supported file systems].
+NOTE: If your filesystem does not appear, verify your filesystem type is supported by the SANtricity Cloud Connector application. For more information, refer to link:../learn_intro_concept.html#supported-file-systems[Supported file systems].
 
 . Select the desired filesystem containing the folder or files to backup, and click *Next*.
 +

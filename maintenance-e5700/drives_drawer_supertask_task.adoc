@@ -30,7 +30,7 @@ IMPORTANT: *Possible loss of data access --* If a volume is already in a Degrade
 ===== Steps
 
 . Determine if the drive shelf is powered on.
- ** If the power is off, you do not need to issue the CLI command. Go to link:maintenance-e5700/drives_drawer_supertask_task.html[Remove cable chains].
+ ** If the power is off, you do not need to issue the CLI command. Go to Step 2: Remove cable chains.
  ** If the power is on, go to the next step.
 . Type the following command on the command line, and press *Enter*:
 +
@@ -53,7 +53,7 @@ serviceAllowedIndicator=forceOnWarning;"
 ----
 +
 . Determine if you need to stop host I/O activity, as follows:
- ** If the command succeeds, you do not need to stop host I/O activity. All drives in the drawer are in pools or volume groups with Drawer Loss Protection. Go to link:maintenance-e5700/drives_drawer_supertask_task.html[Remove cable chains].
+ ** If the command succeeds, you do not need to stop host I/O activity. All drives in the drawer are in pools or volume groups with Drawer Loss Protection. Go to Step 2: Remove cable chains.
 +
 IMPORTANT: *Possible damage to drives* -- Wait 30 seconds after the command completes before you open the drive drawer. Waiting 30 seconds allows the drives to spin down, which prevents possible damage to the hardware.
 
@@ -376,15 +376,15 @@ IMPORTANT: *Risk of equipment malfunction --* Make sure to completely close the 
 . Attach the bezel to the front of the drive shelf.
 . If you have powered down one or more shelves, reapply power:
  ** *If you replaced a drive drawer in a _controller_ shelf without Drawer Loss Protection*:
-  ... Turn on both power switches on the controller shelf.
-  ... Wait 10 minutes for the power-on process to complete.
-  ... Confirm that both fans come on and that the amber LED on the back of the fans is off.
+  .. Turn on both power switches on the controller shelf.
+  .. Wait 10 minutes for the power-on process to complete.
+  .. Confirm that both fans come on and that the amber LED on the back of the fans is off.
  ** *If you replaced a drive drawer in an _expansion_ drive shelf without Drawer Loss Protection*:
-  ... Turn on both power switches on the drive shelf.
-  ... Confirm that both fans come on and that the amber LED on the back of the fans is off.
-  ... Wait two minutes before applying power to the controller shelf.
-  ... Turn on both power switches on the controller shelf.
-  ... Wait 10 minutes for the power-on process to complete.
-  ... Confirm that both fans come on and that the amber LED on the back of the fans is off.
+  .. Turn on both power switches on the drive shelf.
+  .. Confirm that both fans come on and that the amber LED on the back of the fans is off.
+  .. Wait two minutes before applying power to the controller shelf.
+  .. Turn on both power switches on the controller shelf.
+  .. Wait 10 minutes for the power-on process to complete.
+  .. Confirm that both fans come on and that the amber LED on the back of the fans is off.
 
 Your drive drawer replacement is complete. You can resume normal operations.
