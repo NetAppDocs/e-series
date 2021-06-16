@@ -149,4 +149,4 @@ a|
 
 NOTE: You use the same IP addresses that you used to configure your management ports to access SANtricity System Manager.
 |===
-If you are cabling your EF300 for SAS expansion see the link:../com.netapp.doc.e-f600-sysmaint/home.html[Maintaining EF600 Hardware] for SAS expansion card installation and the https://docs.netapp.com/ess-11/topic/com.netapp.doc.e-hw-cabling/home.html[Cabling E-Series hardware] for SAS expansion cabling.
+If you are cabling your EF300 for SAS expansion see the link:../maintenance-ef600/index.html[Maintaining EF600 Hardware] for SAS expansion card installation and the link:../install-hw-cabling/index.html[Cabling E-Series hardware] for SAS expansion cabling.

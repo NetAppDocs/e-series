@@ -30,7 +30,7 @@ IMPORTANT: *Possible loss of data access --* If a volume is already in a Degrade
 ===== Steps
 
 . Determine if the drive shelf is powered on.
- ** If the power is off, you do not need to issue the CLI command. Go to link:drives_60_supertask_task.html[Remove cable chains].
+ ** If the power is off, you do not need to issue the CLI command. Go to Step 2: Remove cable chains.
  ** If the power is on, go to the next step.
 . Type this command on the command line, and press *Enter*:
 +

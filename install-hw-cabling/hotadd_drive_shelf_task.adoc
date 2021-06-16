@@ -137,7 +137,7 @@ You connect the drive shelf to controller A, confirm IOM status, and then connec
 
 ===== Before You Begin
 
-* You have updated your firmware to the latest version. To update your firmware follow the instructions in the link:../com.netapp.doc.ssm-sys-upg/home.html[Upgrading SANtricity OS].
+* You have updated your firmware to the latest version. To update your firmware follow the instructions in the link:../upgrade-santricity/index.html[Upgrading SANtricity OS].
 
 ===== Steps
 

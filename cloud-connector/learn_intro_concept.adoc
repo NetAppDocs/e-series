@@ -56,7 +56,7 @@ Your hardware must meet the following minimum requirements:
 * At least 5 GB of memory - 4 GB for the maximum configured heap size
 * At least 5 GB of free disk space is required from the software installation
 
-You must install the SANtricity Web Services Proxy to use the SANtricity Cloud Connector. You can install the Web Services Proxy locally or you can run the application remotely on a different sever. For information on installing the SANtricity Web Services Proxy, see the NetApp SANtricity Web Services Proxy Installing and Using guide under the https://docs.netapp.com/ess-11/index.jsp[E-Series Documentation Center].
+You must install the SANtricity Web Services Proxy to use the SANtricity Cloud Connector. You can install the Web Services Proxy locally or you can run the application remotely on a different sever. For information on installing the SANtricity Web Services Proxy, see the link:../web-services-proxy/index.html[Web Services Proxy topics].
 
 === Supported browsers
 
