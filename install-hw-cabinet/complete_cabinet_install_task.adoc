@@ -11,7 +11,7 @@ summary: After you move the cabinet, lower the leveling feet and the stability f
 [.lead]
 After you move the cabinet, lower the leveling feet and the stability foot, reinstall the components you removed, install other required components, and connect the cabinet to power.
 
-== Step 1. Lower leveling feet and stability foot
+== Step 1: Lower leveling feet and stability foot
 
 [.lead]
 You stabilize the cabinet by adjusting its feet. The leveling feet support the cabinet off the casters. The stability foot prevents the cabinet from falling over after it is placed in its permanent location
@@ -36,7 +36,7 @@ a|
 Stability foot
 |===
 
-== Step 2. Reinstall trays
+== Step 2: Reinstall trays
 
 [.lead]
 After you move the cabinet, you can reinstall the trays in their original locations.
@@ -70,7 +70,7 @@ To prevent address conflicts and loss of data access, replace all components in 
 . Route the interface cables to the cabinet.
 . Route the main power cords from the cabinet to the two external power sources. _Do not_ plug in the power cords at this time.
 
-== Step 3. Install cable spools and tie wraps
+== Step 3: Install cable spools and tie wraps
 
 [.lead]
 After you reinstall the trays, install the cable spools and tie wraps. The cable spools and tie wraps accommodate excess cable length and cable routing for the controllers and the trays.
@@ -89,7 +89,7 @@ a|
 Cable spool
 |===
 
-== Step 4. Install additional trays
+== Step 4: Install additional trays
 
 [.lead]
 If needed, you can install additional trays. You must cover unused positions for trays to assure correct air flow.
@@ -103,7 +103,7 @@ Covering the empty spaces is necessary so that the correct airflow through the c
 
 . Power on the trays.
 
-== Step 5. Install additional mounting rails
+== Step 5: Install additional mounting rails
 
 [.lead]
 If you are installing controller-drive trays, or drive trays that were shipped separately (not already installed in the cabinet), you might need to install additional mounting rails in the cabinet.
@@ -162,13 +162,13 @@ Vertical support
 
 +
 NOTE: The remaining two screw holes are used to mount the tray.
-. Repeat step link:complete_cabinet_install_task.md#V666987[complete_cabinet_install_task.md#V666987] through step link:complete_cabinet_install_task.md#V1811275[complete_cabinet_install_task.md#V1811275] to attach the second rail on the other side of the cabinet.
+. Repeat step 3 through step 8 to attach the second rail on the other side of the cabinet.
 . Install each tray using the applicable tray installation instructions.
 . Choose one of the following options:
  ** If all positions for trays are full, power-on the trays.
  ** If not all positions for trays are full, use front panel kits to cover the empty spaces above or below the installed trays.
 
-== Step 6. Connect the cabinet to power
+== Step 6: Connect the cabinet to power
 
 [.lead]
 To complete the cabinet installation, power on the cabinet components.

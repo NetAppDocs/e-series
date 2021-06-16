@@ -82,7 +82,7 @@ The system attempts to take the controller offline.
 +
 IMPORTANT: Do not begin any other operations until after the status has been updated.
 
-Go to link:batteries_replace_supertask_task.md#[Remove failed battery].
+Go to link:maintenance-e5700/batteries_replace_supertask_task.html[Remove failed battery].
 
 == Remove controller canister
 
@@ -122,7 +122,7 @@ If you are removing the controller canister from an E5724 controller shelf, a fl
 . Turn the controller canister over, so that the removable cover faces up.
 . Place the controller canister on a flat, static-free surface.
 
-Go to link:batteries_replace_supertask_task.md#[Remove failed battery].
+Go to link:maintenance-e5700/batteries_replace_supertask_task.html[Remove failed battery].
 
 == Remove failed battery
 
@@ -188,7 +188,7 @@ IMPORTANT: *Possible hardware damage* -- The metal flange at the front of the ba
  ** *Correct -- The battery's metal flange is completely inserted in the slot on the controller:*image:../media/28_dwg_e2800_battery_flange_ok_maint-e5700.gif[]
  ** *Incorrect -- The battery's metal flange is not inserted into the slot on the controller:*image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e5700.gif[]
 
-Go to link:batteries_replace_supertask_task.md#[Re-install controller canister].
+Go to link:maintenance-e5700/batteries_replace_supertask_task.html[Re-install controller canister].
 
 == Re-install controller canister
 
@@ -212,7 +212,7 @@ image:../media/legend_icon_01_maint-e5700.gif[] Controller canister image:../med
 . Move the cam handle to the left to lock the controller canister in place.
 . Reconnect all the cables.
 
-Go to link:batteries_replace_supertask_task.md#[Place controller offline (duplex)].
+Go to link:maintenance-e5700/batteries_replace_supertask_task.html[Place controller offline (duplex)].
 
 == Place controller online (duplex)
 

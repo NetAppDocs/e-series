@@ -128,7 +128,7 @@ You complete the power supply replacement by confirming that the new power suppl
 
 . On the new power supply, check that the green Power LED is on and the amber Attention LED is OFF.
 . From the Recovery Guru in SANtricity System Manager, select *Recheck* to ensure the problem has been resolved.
-. If a failed power supply is still being reported, repeat the steps in link:canisters_supply_supertask_task.md#[Remove failed power supply] and link:canisters_supply_supertask_task.md#[Install new power supply]. If the problem continues to persist, contact technical support.
+. If a failed power supply is still being reported, repeat the steps in link:canisters_supply_supertask_task.html#remove-failed-power-supply[Remove failed power supply] and link:canisters_supply_supertask_task.html#install-new-power-supply[Install new power supply]. If the problem continues to persist, contact technical support.
 . Remove the antistatic protection.
 . Collect support data for your storage array using SANtricity System Manager.
  .. Select *Support* > *Support Center* > *Diagnostics*.
