@@ -3,8 +3,8 @@ entries:
       url: /index.html
     - title: Release notes
       entries:
-        - title: What&#8217;s new
-          url: /getting-started/learn_terms_concept.html
+        - title: What's new
+          url: /getting-started/whats-new.html
         - title: Known issues
           url: /getting-started/learn_terms_concept.html
     - title: Get started

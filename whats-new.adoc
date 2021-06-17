@@ -103,8 +103,7 @@ the following enhancements:
 ____
 Bypass the function for creating a backup key.
 
-Choose an intermediate certificate for the key management server, in
-addition to the client and server certificates.
+Choose an intermediate certificate for the key management server, in addition to the client and server certificates.
 ____
 
 |Certificate enhancements |This release allows for using an external
@@ -247,11 +246,6 @@ This version includes only minor enhancements and fixes.
 
 *New features in Version 11.52*
 ____
-
-[cols=",",]
-|===
-|New feature |Description
-|===
 
 [cols=",",options="header",]
 |===
