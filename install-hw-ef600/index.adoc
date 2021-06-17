@@ -8,11 +8,23 @@ summary: Installation and Setup Instructions
 :icons: font
 :imagesdir: ../media/
 
-* link:overview_concept.md#overview_concept[Overview]
-* xref:prepare_for_install_task.adoc[Prepare for installation]
-* xref:install_hardware_task.adoc[Install the hardware]
-* xref:power_controller_shelves_task.adoc[Power the controller shelves]
-* link:complete_setup_task.md#complete_setup_task[Complete storage system setup and configuration]
-* xref:reference_copyright_and_trademark.adoc[Copyright and trademark]
- ** xref:reference_copyright.adoc[Copyright]
- ** xref:reference_trademark.adoc[Trademark]
+[.lead]
+Learn how to install and set up your new EF300 or EF600 storage system.
+
+You can choose one of the following content formats to guide you through installing and setting up your new storage system.
+
+|===
+a|
+image:../media/drw_isiposter_icon_inst-hw-ef600.gif[] a|
+Installation and setup PDF posterA printable PDF of step-by-step instructions with live links to additional content.
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2851449[EF300 and EF600 Installation and Setup]
+
+a|
+image:../media/drw_onlineguide_icon_inst-hw-ef600.gif[]
+a|
+The setup instructions described on the following pages.Start with the Prepare for installation topic to get started..
+
+xref:prepare_for_install_task.adoc[Prepare for installation].
+
+|===

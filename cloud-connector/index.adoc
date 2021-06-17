@@ -40,5 +40,3 @@ For backups to StorageGRID and Amazon Web Services (S3), each data chunk uses a 
 A file-based backup reads the files contained with a filesystem partition and backs them up into a series of data chunks that are 64MB in size. A file-based backup does not back up deleted files or partitioning and filesystem metadata. As with image-based backups, the data chunks allow SANtricity Cloud Connector to use multiple connections to the backup target, thereby improving performance of the backup process.
 +
 For backups to StorageGRID and Amazon Web Services, each data chunk uses a separate encryption key to encrypt the chunk. The key is a SHA256 hash consisting of the combination of user-supplied pass phrase and the SHA256 hash of the user data. For backups to AltaVault, the data chunks are not encrypted by SANtricity Cloud Connector because AltaVault performs this operation.
-
-* xref:concept_how_to_send_comments_about_documentation_and_receive_update_notifications_netapp_post_preface.adoc[How to send comments about documentation and receive update notifications]
