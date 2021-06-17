@@ -37,7 +37,7 @@ For Asynchronous Mirroring, the local storage array and remote storage array can
 +
 If you change your controllers from 5x00 models to 2x00 models, your new storage array configuration will support lower numbers of some storage objects (for example, volumes) in the storage management software than your old configuration. You must make sure that your old configuration does not exceed the storage object limits. See http://hwu.netapp.com/home.aspx[Netapp Hardware Universe] for more information.
 
-=== Upgrading to newer models
+== Upgrading to newer models
 
 If you are replacing the controllers to upgrade to a new model, keep in mind that your current storage array might have premium features installed that the new model cannot support. For example, E2700 controllers do not support the legacy Snapshots premium feature.
 

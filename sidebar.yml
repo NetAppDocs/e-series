@@ -10,8 +10,6 @@ entries:
     - title: Get started
       url: "/getting-started/index.html"
       entries:
-          - title: What&#8217;s included
-            url: "/getting-started/whats_intro_concept.html"
           - title: Learn about E-Series systems
             entries:
                 - title: E-Series terminology
@@ -82,7 +80,7 @@ entries:
         - title: Cabling
           url: "/install-hw-cabling/index.html"
           entries:
-                - title: Overview and requirements
+                - title: Requirements
                   url: "/install-hw-cabling/cable_overview_requirements_concept.html"
                 - title: Host cabling
                   url: "/install-hw-cabling/host_cable_task.html"
@@ -350,7 +348,7 @@ entries:
         - title: VMware express config
           url: "/config-vmware/index.html"
           entries:
-            - title: Overview
+            - title: Assumptions
               url: "/config-vmware/overview_concept.html"
             - title: Understand the workflow
               url: "/config-vmware/understand_vmware_workflow_concept.html"
@@ -381,6 +379,8 @@ entries:
         - title: Windows express config
           url: "/config-windows/index.html"
           entries:
+              - title: Assumptions
+                url: "/config-windows/overview_concept.html"
               - title: Understand the workflow
                 url: "/config-windows/understand_windows_concept.html"
               - title: Verify Windows configuration
@@ -719,3 +719,5 @@ entries:
               url: https://mysupport.netapp.com/info/web/ECMLP2848706.html
     - title: Legal notices
       url: /legal-notices.html
+    - title: What's new
+      url: /whats-new.html
