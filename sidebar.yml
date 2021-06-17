@@ -99,7 +99,7 @@ entries:
         - title: Linux express config
           url: "/config-linux/index.html"
           entries:
-                - title: Overview
+                - title: Assumptions
                   url: "/config-linux/overview_concept.html"
                 - title: Fibre Channel Express Setup
                   entries:
@@ -412,6 +412,8 @@ entries:
         - title: Controllers
           url: "/upgrade-controllers/index.html"
           entries:
+              - title: Upgrade considerations
+                url: "/upgrade-controllers/overview_requirements_concept.html"
               - title: Prepare to upgrade controllers
                 url: "/upgrade-controllers/prepare_upgrade_controllers_task.html"
               - title: Remove controllers
@@ -429,7 +431,7 @@ entries:
         - title: SANtricity OS
           url: "/upgrade-santricity/index.html"
           entries:
-              - title: Overview and upgrade considerations
+              - title: Upgrade considerations
                 url: "/upgrade-santricity/overview_upgrade_consider_task.html"
               - title: Upgrade single controller
                 url: "/upgrade-santricity/upgrade_single_controller_task.html"
@@ -673,8 +675,6 @@ entries:
       - title: Remote volume mirroring
         url: "/remote-storage-volumes/index.html"
         entries:
-          - title: Overview
-            url: "/remote-storage-volumes/overview_concept.html"
           - title: System requirements
             url: "/remote-storage-volumes/system_reqs_concept.html"
           - title: Set up Remote Storage Volumes
