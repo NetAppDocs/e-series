@@ -8,10 +8,5 @@ summary: Upgrading SANtricity® OS
 :icons: font
 :imagesdir: ../media/
 
-* link:overview_upgrade_consider_task.md#overview_upgrade_consider_task[Overview and upgrade considerations]
-* link:upgrade_single_controller_task.md#upgrade_single_controller_task[Upgrade software and firmware for a single controller]
-* link:upgrade_multiple_controller_task.md#upgrade_multiple_controller_task[Upgrade software and firmware for multiple controllers]
-* link:upgrade_drive_firmware_task.md#upgrade_drive_firmware_task[Upgrade drive firmware]
-* xref:reference_copyright_and_trademark.adoc[Copyright and trademark]
- ** xref:reference_copyright.adoc[Copyright]
- ** xref:reference_trademark.adoc[Trademark]
+[.lead]
+Learn what you need to know before upgrading your storage array's SANtricity OS controller software and firmware and its drive firmware.

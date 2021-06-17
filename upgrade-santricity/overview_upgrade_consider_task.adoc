@@ -4,17 +4,14 @@ sidebar: sidebar
 keywords: upgrading, upgrade, storage, array, santricity, os, controller, software, firmware, drive, overview, consideration
 summary: Learn what you need to know before upgrading your storage array's SANtricity OS controller software and firmware and its drive firmware.
 ---
-= Overview and upgrade considerations
+= Upgrade considerations
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Learn what you need to know before upgrading your storage array's SANtricity OS controller software and firmware and its drive firmware.
-
-== Considerations for upgrading software and firmware for a single controller
-
-[.lead]
 To ensure a successful upgrade, keep in mind some key considerations as part of your planning.
+
+== Single controller
 
 The following table describes the components included in the SANtricity OS upgrade process and the software components that must be upgraded separately.
 
@@ -62,7 +59,7 @@ A pre-upgrade health check runs as part of the upgrade process. The pre-upgrade 
 
 You also can run the pre-upgrade health check separately without doing an upgrade.
 
-== Considerations for upgrading software and firmware for multiple controllers
+== Multiple controllers
 
 [.lead]
 Before you use SANtricity Unified Manager to upgrade multiple storage arrays, review the key considerations as part of your planning.
@@ -113,7 +110,7 @@ The health check assesses all storage system components to make sure that the up
 * Configuration database validation failure
 * Drives with old versions of DACstore
 
-== Considerations for upgrading drive firmware
+== Drive firmware
 
 [.lead]
 Take into account some key considerations before upgrading your drive firmware.
