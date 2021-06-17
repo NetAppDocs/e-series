@@ -633,7 +633,7 @@ entries:
       - title: Cloud connector
         url: "/cloud-connector/index.html"
         entries:
-            - title: Learn about Cloud Connector
+            - title: System requirements
               url: "/cloud-connector/learn_intro_concept.html"
             - title: Install Cloud Connector
               url: "/cloud-connector/install_intro_concept.html"
