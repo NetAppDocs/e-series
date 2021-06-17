@@ -8,6 +8,7 @@ entries:
         - title: Known issues
           url: /getting-started/learn_terms_concept.html
     - title: Get started
+      url: "/getting-started/index.html"
       entries:
           - title: What&#8217;s included
             url: "/getting-started/whats_intro_concept.html"
@@ -28,6 +29,7 @@ entries:
     - title: Install hardware
       entries:
         - title: EF300 and EF600
+          url: "/install-hw-ef600/index.html"
           entries:
               - title: Overview
                 url: "/install-hw-ef600/overview_concept.html"
@@ -40,6 +42,7 @@ entries:
               - title: Complete storage system setup
                 url: "/install-hw-ef600/complete_setup_task.html"
         - title: E2800 and E5700
+          url: "/install-hw-e2800-e5700/index.html"
           entries:
               - title: Overview
                 url: "/install-hw-e2800-e5700/install_setup_overview_concept.html"
@@ -64,6 +67,7 @@ entries:
                 - title: Complete storage system setup
                   url: "/install-hw-e2800-e5700/e2824_e5724_complete_setup_task.html"
         - title: 3040 40U Cabinet
+          url: "/install-hw-cabinet/index.html"
           entries:
               - title: Overview and specifications
                 url: "/install-hw-cabinet/overview_cabinet_specs_concept.html"
@@ -76,6 +80,7 @@ entries:
               - title: Complete cabinet installation
                 url: "/install-hw-cabinet/complete_cabinet_install_task.html"
         - title: Cabling
+          url: "/install-hw-cabling/index.html"
           entries:
                 - title: Overview and requirements
                   url: "/install-hw-cabling/cable_overview_requirements_concept.html"
@@ -92,8 +97,9 @@ entries:
     - title: Deploy software
       entries:
         - title: Linux express config
+          url: "/config-linux/index.html"
           entries:
-                - title: Overview
+                - title: Assumptions
                   url: "/config-linux/overview_concept.html"
                 - title: Fibre Channel Express Setup
                   entries:
@@ -342,6 +348,7 @@ entries:
                 - title: Where to find additional information
                   url: "/config-linux/linux_find_additional_info_reference.html"
         - title: VMware express config
+          url: "/config-vmware/index.html"
           entries:
             - title: Overview
               url: "/config-vmware/overview_concept.html"
@@ -372,6 +379,7 @@ entries:
             - title: Where to find additional information
               url: "/config-vmware/reference_where_to_find_additional_information_vmware.html"
         - title: Windows express config
+          url: "/config-windows/index.html"
           entries:
               - title: Understand the workflow
                 url: "/config-windows/understand_windows_concept.html"
@@ -402,7 +410,10 @@ entries:
     - title: Upgrade systems
       entries:
         - title: Controllers
+          url: "/upgrade-controllers/index.html"
           entries:
+              - title: Upgrade considerations
+                url: "/upgrade-controllers/overview_requirements_concept.html"
               - title: Prepare to upgrade controllers
                 url: "/upgrade-controllers/prepare_upgrade_controllers_task.html"
               - title: Remove controllers
@@ -418,8 +429,9 @@ entries:
               - title: Reconfigure SAS-2 system
                 url: "/upgrade-controllers/reconfigure_sas_task.html"
         - title: SANtricity OS
+          url: "/upgrade-santricity/index.html"
           entries:
-              - title: Overview and upgrade considerations
+              - title: Upgrade considerations
                 url: "/upgrade-santricity/overview_upgrade_consider_task.html"
               - title: Upgrade single controller
                 url: "/upgrade-santricity/upgrade_single_controller_task.html"
@@ -430,6 +442,7 @@ entries:
     - title: Maintain systems
       entries:
         - title: EF300 and EF600
+          url: "/maintenance-ef600/index.html"
           entries:
               - title: Batteries
                 entries:
@@ -492,6 +505,7 @@ entries:
                 - title: Add SAS expansion cards
                   url: "/maintenance-ef600/sas_add_supertask_task.html"
         - title: E2800
+          url: "maintenance-e2800/index.html"
           entries:
             - title: Batteries
               entries:
@@ -556,6 +570,7 @@ entries:
               - title: Complete host protocol conversion
                 url: "/maintenance-e2800/hpp_complete_protocol_conversion_task.html"
         - title: E5700
+          url: "/maintenance-e5700/index.html"
           entries:
               - title: Batteries
                 entries:
@@ -618,8 +633,9 @@ entries:
     - title: Solutions
       entries:
       - title: Cloud connector
+        url: "/cloud-connector/index.html"
         entries:
-            - title: Learn about Cloud Connector
+            - title: System requirements
               url: "/cloud-connector/learn_intro_concept.html"
             - title: Install Cloud Connector
               url: "/cloud-connector/install_intro_concept.html"
@@ -636,6 +652,7 @@ entries:
             - title: Uninstall Cloud Connector
               url: "/cloud-connector/uninstall_intro_concept.html"
       - title: Web services proxy
+        url: "/web-services-proxy/index.html"
         entries:
             - title: Overview and requirements
               url: "/web-services-proxy/overview_intro_concept.html"
@@ -656,9 +673,8 @@ entries:
             - title: Manage AutoSupport
               url: "/web-services-proxy/asup_intro_concept.html"
       - title: Remote volume mirroring
+        url: "/remote-storage-volumes/index.html"
         entries:
-          - title: Overview
-            url: "/remote-storage-volumes/overview_concept.html"
           - title: System requirements
             url: "/remote-storage-volumes/system_reqs_concept.html"
           - title: Set up Remote Storage Volumes

@@ -252,9 +252,8 @@ a|
 Interact with the endpoint directly by clicking *Try It Out*. This button is provided in each of the expanded views for endpoints.
 
 When you click the button, fields appear for entering parameters (if applicable). You can then enter values and click *Execute*.
-+
+
 The interactive documentation uses JavaScript to make the request directly to the API; it is not a test request.
-+
 |===
 
 === Log in to Unified Manager

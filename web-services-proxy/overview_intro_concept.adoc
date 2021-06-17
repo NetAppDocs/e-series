@@ -9,15 +9,6 @@ summary: This guide describes how to install and configure the SANtricity Web Se
 :imagesdir: ../media/
 
 [.lead]
-This guide describes how to install and configure the SANtricity Web Services Proxy, which includes the SANtricity Unified Manager interface. The Web Services Proxy is a RESTful API server installed separately on a host system to manage hundreds of new and legacy NetApp E-Series storage systems. Unified Manager is a web-based interface that provides similar functions.
-
-== Web Services overview
-
-[.lead]
-Before you begin installation and configuration, read the overview of Web Services and SANtricity Unified Manager.
-
-=== Web Services
-
 Web Services is an Application Programming Interface (API) that allows you to configure, manage, and monitor NetApp E-Series and EF-Series storage systems. By issuing API requests, you can complete workflows such as configuration, provisioning, and performance monitoring for E-Series storage systems.
 
 When using the Web Services API to manage storage systems, you should be familiar with the following:
@@ -26,7 +17,7 @@ When using the Web Services API to manage storage systems, you should be familia
 * Representational state transfer (REST) -- Web Services is a RESTful API that provides access to virtually all the SANtricity management capabilities, so you should be familiar with REST concepts. For more information, see http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm
 * Programming language concepts -- Java and Python are the most common programming languages used with the Web Services API, but any programming language that can make HTTP requests is sufficient for API interaction.
 
-=== Implementations
+== Implementations
 
 Web Services is available in two implementations:
 
