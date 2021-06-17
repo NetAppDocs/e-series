@@ -40,7 +40,7 @@ You remove a failed drive to replace it with a new one.
 ===== Before You Begin
 
 * You have an ESD wristband, or you have taken other antistatic precautions.
-* You have reviewed link:drives_overview_supertask_concept.md#[Requirements for replacing drives].
+* You have reviewed link:drives_overview_supertask_concept.html[Requirements for replacing drives].
 * You have prepared a flat, static-free work surface.
 
 When you remove a drive, you must slide the drive partly out of the shelf and wait for the drive to spin down. Then, you can remove the drive completely.

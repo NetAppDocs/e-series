@@ -43,7 +43,7 @@ image::../media/60_cabling.png[]
 == Cabling EF300
 
 [.lead]
-* You have updated your firmware to the latest version. To update your firmware follw the instructions in the link:../com.netapp.doc.ssm-sys-upg/home.html[Upgrading SANtricity OS].
+* You have updated your firmware to the latest version. To update your firmware follw the instructions in the link:../upgrade-santricity/index.html[Upgrading SANtricity OS].
 
 This procedure applies to cabling an EF300 controller shelf to a DE212C, DE224C, or DE460 drive shelf.
 

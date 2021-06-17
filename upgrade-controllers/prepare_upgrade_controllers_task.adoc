@@ -67,7 +67,7 @@ All matching terms are highlighted. To scroll through all the results one at a t
 
  .. Make a record of the `Chassis Serial Number`.
 +
-You need this serial number to perform the steps in link:complete_upgrade_controllers_task.md#[Complete controller upgrade].
+You need this serial number to perform the steps in link:complete_upgrade_controllers_task.html[Complete controller upgrade].
 . Gather support data about your storage array by using either the GUI or the CLI:
  ** Use either System Manager or the Array Management Window to collect and save a support bundle of your storage array.
   *** From System Manager, select *Support* > *Support Center* > *Diagnostics* tab. Then select **Collect Support Data**and click *Collect*.
@@ -112,4 +112,4 @@ Wait for all of the LEDs on the controller-drive tray to go dark.
 +
 Wait two minutes for all of the drives to spin down.
 
-Go to link:remove_controllers_task.md#[Remove controllers].
+Go to link:remove_controllers_task.html[Remove controllers].

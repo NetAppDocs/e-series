@@ -124,8 +124,6 @@ image::../media/batt_3.png[]
 . Gently squeeze the connector housing the battery wiring. Pull up, disconnecting the battery from the board.image:../media/batt_2.png[]
 . Lift the battery out of the controller and place on a flat, static-free surface.image:../media/batt_4.png[]
 
-Go to link:controllers_replace_supertask_task.md#[Remove host interface card].
-
 === Remove host interface card
 
 [.lead]
@@ -202,8 +200,6 @@ NOTE: Carefully hold the DIMM by the edges to avoid pressure on the components o
 image::../media/dimm_2.png[]
 +
 image::../media/dimim_3.png[]
-
-Go to link:controllers_replace_supertask_task.md#[Remove fans]
 
 === Remove fans
 
@@ -324,8 +320,6 @@ NOTE: DIMMs fit tightly. You might need to gently press on one side at a time an
 +
 image::../media/dimm_5.png[]
 
-Go to link:controllers_replace_supertask_task.md#[Install Fans]
-
 === Install fans
 
 [.lead]
@@ -344,8 +338,6 @@ image::../media/fan_3.png[]
 image::../media/fan_3_a.png[]
 
 . Repeat until all fans are installed.
-
-Go to link:controllers_replace_supertask_task.md#[Install new controller canister]
 
 === Install new controller canister
 

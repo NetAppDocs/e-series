@@ -46,7 +46,7 @@ image:../media/legend_icon_01_upg-hw.gif[] Controller canister image:../media/le
 . Set the old controller canister on a flat, static-free surface near the controller-drive tray with the release levers up. Position the controller canister so that you can access the top cover.
 . (Conditional) If you are upgrading controllers in a duplex controller-drive tray, repeat all steps to remove the second controller canister.
 
-If you intend to use the battery from the old controller in the new controller, go to the next part of the section; otherwise go to link:install_controllers_task.md#[Install new controllers].
+If you intend to use the battery from the old controller in the new controller, go to the next part of the section; otherwise go to link:install_controllers_task.html[Install new controllers].
 
 == Step 2: Remove battery
 
@@ -61,4 +61,4 @@ You remove the battery only if you intend to use the battery from the old contro
  ** For the E5400 controller-drive tray, the EF540 controller-drive tray, the E5500 controller-drive tray, the EF550 controller-drive tray, the E5600 controller-drive tray, or the EF560 controller-drive tray, release the tab that secures the battery to the controller canister.
 . Remove the battery by sliding it towards the rear of the old controller canister.
 
-Go to link:install_controllers_task.md#[Install new controllers].
+Go to link:install_controllers_task.html[Install new controllers].

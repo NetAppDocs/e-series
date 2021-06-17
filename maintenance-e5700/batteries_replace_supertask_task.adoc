@@ -11,7 +11,7 @@ summary: Each controller canister includes a battery that preserves cached data 
 [.lead]
 Each controller canister includes a battery that preserves cached data if the AC power fails. If the Recovery Guru in SANtricity System Manager reports either a Battery Failed status or a Battery Replacement Required status, you must replace the affected battery.
 
-== Place controller offline (duplex)
+== Step 1: Place controller offline (duplex)
 
 [.lead]
 If you have a duplex configuration, you must place the affected controller offline so you can safely remove the failed battery. You must back up the configuration and collect support data first. Then, you can take the affected controller offline.
@@ -82,9 +82,7 @@ The system attempts to take the controller offline.
 +
 IMPORTANT: Do not begin any other operations until after the status has been updated.
 
-Go to link:batteries_replace_supertask_task.md#[Remove failed battery].
-
-== Remove controller canister
+== Step 2: Remove controller canister
 
 [.lead]
 When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
@@ -122,9 +120,7 @@ If you are removing the controller canister from an E5724 controller shelf, a fl
 . Turn the controller canister over, so that the removable cover faces up.
 . Place the controller canister on a flat, static-free surface.
 
-Go to link:batteries_replace_supertask_task.md#[Remove failed battery].
-
-== Remove failed battery
+== Step 3: Remove failed battery
 
 [.lead]
 After removing the controller canister from the controller shelf, you can remove the battery.
@@ -152,7 +148,7 @@ image:../media/legend_icon_01_maint-e5700.gif[]Battery release latch image:../me
 +
 WARNING: To comply with International Air Transport Association (IATA) regulations, never ship a lithium battery by air unless it is installed within the controller shelf.
 
-== Install new battery
+== Step 4: Install new battery
 
 [.lead]
 Install a new battery when the old one has failed.
@@ -188,9 +184,7 @@ IMPORTANT: *Possible hardware damage* -- The metal flange at the front of the ba
  ** *Correct -- The battery's metal flange is completely inserted in the slot on the controller:*image:../media/28_dwg_e2800_battery_flange_ok_maint-e5700.gif[]
  ** *Incorrect -- The battery's metal flange is not inserted into the slot on the controller:*image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e5700.gif[]
 
-Go to link:batteries_replace_supertask_task.md#[Re-install controller canister].
-
-== Re-install controller canister
+== Step 5: Re-install controller canister
 
 [.lead]
 Reinstall the controller canister into the controller shelf after installing the new battery.
@@ -212,9 +206,7 @@ image:../media/legend_icon_01_maint-e5700.gif[] Controller canister image:../med
 . Move the cam handle to the left to lock the controller canister in place.
 . Reconnect all the cables.
 
-Go to link:batteries_replace_supertask_task.md#[Place controller offline (duplex)].
-
-== Place controller online (duplex)
+== Step 6: Place controller online (duplex)
 
 [.lead]
 Place the controller online to confirm the storage array is working correctly. Then, you can collect support data and resume operations.

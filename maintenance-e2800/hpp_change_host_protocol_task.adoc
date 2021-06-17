@@ -448,4 +448,4 @@ The feature pack migration begins. Both controllers automatically reboot twice t
  .. Click *Show more settings*.
  .. Review the details shown for the baseboard ports and the HIC ports (labeled "`slot 1`"), and confirm that each type of port has the protocol you expect.
 
-Go to link:hpp_complete_protocol_conversion_task.md#[Complete host protocol conversion].
+Go to link:hpp_complete_protocol_conversion_task.html[Complete host protocol conversion].

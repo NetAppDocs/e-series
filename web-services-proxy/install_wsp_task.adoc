@@ -262,10 +262,12 @@ The interactive documentation uses JavaScript to make the request directly to th
 [.lead]
 After you install the Web Services Proxy, you can access Unified Manager to manage multiple storage systems in a web-based interface.
 
+===== Before You Begin
+
 * The Web Services Proxy, which includes the Unified Manager, is installed on a Windows or Linux server.
 
-To access Unified Manager, you open a browser and enter the URL pointing to where the proxy is installed. The following browsers and versions are supported.
-
+* To access Unified Manager, you open a browser and enter the URL pointing to where the proxy is installed. The following browsers and versions are supported.
++
 [options="header"]
 |===
 | Browser| Minimum version
@@ -290,6 +292,8 @@ Safari
 a|
 9
 |===
+
+===== Steps
 
 . Open a browser and enter the following URL: http[s]://<server>:<port>/um
 +

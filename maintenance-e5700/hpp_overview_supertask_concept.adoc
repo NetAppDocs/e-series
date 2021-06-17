@@ -30,7 +30,7 @@ Learn about the requirements you need to keep in mind when changing the host por
 * You are using out-of-band management. (You cannot use in-band management to complete this procedure.)
 * You have obtained the necessary hardware for the conversion. Your NetApp Sales Representative can help you determine what hardware you need and help you order the correct parts.
 * If you are attempting to change the baseboard host ports of your storage array, and it currently uses dual-protocol (also referred to as _unified_) SFP transceivers that you purchased from NetApp, you do not need to change your SFP transceivers.
-* Dual-protocol SFP transceivers support both FC (at 4 Gbps, or 16 Gbps) and iSCSI (at 10 Gbps), but they do not support 1 Gbps iSCSI. See link:hpp_change_host_protocol_task.md#[Determine whether you have dual-protocol SFPs] to determine what type of SFP transceivers are installed.
+* Dual-protocol SFP transceivers support both FC (at 4 Gbps, or 16 Gbps) and iSCSI (at 10 Gbps), but they do not support 1 Gbps iSCSI. See link:hpp_change_host_protocol_task.html[Determine whether you have dual-protocol SFPs] to determine what type of SFP transceivers are installed.
 
 == Considerations for changing the host protocol
 

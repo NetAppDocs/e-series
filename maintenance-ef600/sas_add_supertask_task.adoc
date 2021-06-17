@@ -163,4 +163,4 @@ The file is saved in the Downloads folder for your browser with the name support
 
 The process of adding a SAS expansion card in your storage array is complete. You can resume normal operations.
 
-To cable your SAS expansion see https://docs.netapp.com/ess-11/topic/com.netapp.doc.e-hw-cabling/home.html[Cabling E-Series hardware] for instructions.
+To cable your SAS expansion see link:../install-hw-cabling/index.html[Cabling E-Series hardware] for instructions.
