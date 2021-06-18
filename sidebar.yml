@@ -505,7 +505,7 @@ entries:
                 - title: Add SAS expansion cards
                   url: "/maintenance-ef600/sas_add_supertask_task.html"
         - title: E2800
-          url: "maintenance-e2800/index.html"
+          url: "/maintenance-e2800/index.html"
           entries:
             - title: Batteries
               entries:
