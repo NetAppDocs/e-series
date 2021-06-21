@@ -33,7 +33,9 @@ a|
 +
 |===
 a|
-image:../media/trafford_power.png[]     Example A: An E5700 controller shelf with three DE212C/DE224 disk shelves in a standard SAS configuration.
+image:../media/trafford_power.png[]
+
+Example A: An E5700 controller shelf with three DE212C/DE224 disk shelves in a standard SAS configuration.
 a|
  .. Cable controller A to IOM A of the first drive shelf.
  .. Cable IOM A of the first drive shelf to IOM A of the second drive shelf.
@@ -45,7 +47,9 @@ a|
 +
 |===
 a|
-image:../media/trafford_power.png[]     Example B: An E5700 controller shelf with one DE212C/DE224 disk shelf in a standard SAS configuration.
+image:../media/trafford_power.png[]
+
+Example B: An E5700 controller shelf with one DE212C/DE224 disk shelf in a standard SAS configuration.
 a|
 .. Cable controller A to IOM A.
 .. Cable controller B to IOM B.
@@ -73,5 +77,7 @@ During boot, the seven-segment display shows the repeating sequence of OS, Sd, b
 +
 |===
 a|
-image:../media/trafford_power.png[]     Example: Power connections are on the rear of the shelf.
+image:../media/trafford_power.png[]
+
+Example: Power connections are on the rear of the shelf.
 |===
