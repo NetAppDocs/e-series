@@ -24,7 +24,7 @@ Follow these rules to avoid damaging the DIMMs in your storage array:
  ** Keep the DIMM in the ESD bag until you are ready to install it.
  ** Open the ESD bag by hand or cut the top off with a pair of scissors. Do not insert a metal tool or knife into the ESD bag.
  ** Keep the ESD bag and any packing materials in case you must return a DIMM later.
-*Warning:* Always wear an ESD wrist strap grounded to an unpainted surface on your storage enclosure chassis.
+WARNING: Always wear an ESD wrist strap grounded to an unpainted surface on your storage enclosure chassis.
 * Handle DIMMs carefully:
  ** Always use two hands when removing, installing, or carrying a DIMM.
  ** Never force a DIMM into a shelf, and use gentle, firm pressure to completely engage the latch.

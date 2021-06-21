@@ -82,10 +82,11 @@ The following figure shows an example of the controller's management port locati
 +
 |===
 a|
-image:../media/e2800_mgmt_ports.png[]     E2800 controller P1 Management Port
+image:../media/e2800_mgmt_ports.png[]
+E2800 controller P1 Management Port
 a|
-image:../media/e5700_mgmt_ports.png[]     E5700 controller P1 Management Port
-+
+image:../media/e5700_mgmt_ports.png[]
+E5700 controller P1 Management Port
 |===
 
 . Open a browser and connect to the storage system using one of the controller IP addresses provided to you by your network administrator.
@@ -114,9 +115,11 @@ The following figure shows an example of the controller's management port locati
 +
 |===
 a|
-image:../media/e2800_mgmt_ports.png[]     E2800 controller P1 Management Port
+image:../media/e2800_mgmt_ports.png[]     
+E2800 controller P1 Management Port
 a|
-image:../media/e5700_mgmt_ports.png[]     E5700 controller P1 Management Port
+image:../media/e5700_mgmt_ports.png[]
+E5700 controller P1 Management Port
 |===
 
 . Open a browser and use the default IP address (169.254.128.101) to establish a connection to the controller. The controller sends back a self-signed certificate. The browser informs you that the connection is not secure.

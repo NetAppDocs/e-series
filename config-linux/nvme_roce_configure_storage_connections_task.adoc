@@ -63,10 +63,8 @@ Select one or both options to enable support for IPv4 and IPv6 networks.
 a|
 MTU size     (Available by clicking *Show more port settings*.)
 a|
-    If necessary, enter a new size in bytes for the maximum transmission unit (MTU).
-+
+If necessary, enter a new size in bytes for the maximum transmission unit (MTU).
 The default MTU size is 1500 bytes per frame. You must enter a value between 1500 and 4200.
-+
 |===
 If you selected *Enable IPv4*, a dialog box opens for selecting IPv4 settings after you click *Next*. If you selected *Enable IPv6*, a dialog box opens for selecting IPv6 settings after you click *Next*. If you selected both options, the dialog box for IPv4 settings opens first, and then after you click *Next*, the dialog box for IPv6 settings opens.
 
@@ -87,17 +85,13 @@ a|
 Enable VLAN support     (Available by clicking *Show more settings*.)
 a|
     *Important:* This option is only available in an iSCSI environment. It is not available in an NVMe over RoCE environment.
-+
 Select this option to enable a VLAN and enter its ID. A VLAN is a logical network that behaves like it is physically separate from other physical and virtual local area networks (LANs) supported by the same switches, the same routers, or both.
 a|
 Enable ethernet priority    (Available by clicking *Show more settings*.)
 a|
     *Important:* This option is only available in an iSCSI environment. It is not available in an NVMe over RoCE environment.
-+
 Select this option to enable the parameter that determines the priority of accessing the network. Use the slider to select a priority between 1 and 7.
-+
 In a shared local area network (LAN) environment, such as Ethernet, many stations might contend for access to the network. Access is on a first-come, first-served basis. Two stations might try to access the network at the same time, which causes both stations to back off and wait before trying again. This process is minimized for switched Ethernet, where only one station is connected to a switch port.
-+
 |===
 
 . Click *Finish*.
