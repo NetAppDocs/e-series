@@ -15,7 +15,7 @@ You can convert the host port protocol of the baseboard host ports from Fibre Ch
 
 [.lead]
 Use SANtricity System Manager to determine what type of SFP transceivers you have. Because these SFPs can be used with both FC and iSCSI protocols, they are referred to as _dual-protocol_ or _unified_ SFPs.
- 
+
 ===== Before You Begin
 
 If your current SFPs support data rates of 16 Gbps and 10 Gbps, you can continue to use them after converting the host port protocol.
@@ -124,7 +124,7 @@ a|
 +
 [options="header"]
 |===
-5+| Encryption Capable Feature Activation Codes
+7+| Encryption Capable Feature Activation Codes
 3+| Starting configuration 4+| Ending configuration
 | Controller Submodel ID| Baseboard Ports| HIC Ports| Controller Submodel ID| Baseboard Ports| HIC Ports | Feature Activation Code
 .5+a|
@@ -488,7 +488,7 @@ a|
 +
 [options="header"]
 |===
-5+| Non-Encryption Feature Activation Codes
+7+| Non-Encryption Feature Activation Codes
 3+| Starting configuration 4+| Ending configuration
 | Controller submodel ID| Baseboard ports| HIC ports| Controller submodel ID| Baseboard ports| HIC ports | Feature Activation Code
 .5+a|
