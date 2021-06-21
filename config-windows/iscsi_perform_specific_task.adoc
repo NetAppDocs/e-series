@@ -103,14 +103,12 @@ Select one or both options to enable support for IPv4 and IPv6 networks.
 a|
 TCP listening port     (Available by clicking *Show more port settings*.)
 a|
-    If necessary, enter a new port number.
-+
+If necessary, enter a new port number.
 The listening port is the TCP port number that the controller uses to listen for iSCSI logins from host iSCSI initiators. The default listening port is 3260. You must enter 3260 or a value between 49152 and 65535.
 a|
 MTU size     (Available by clicking *Show more port settings*.)
 a|
-    If necessary, enter a new size in bytes for the Maximum Transmission Unit (MTU).
-+
+If necessary, enter a new size in bytes for the Maximum Transmission Unit (MTU).
 The default Maximum Transmission Unit (MTU) size is 1500 bytes per frame. You must enter a value between 1500 and 9000.
 a|
 Enable ICMP PING responses
@@ -135,18 +133,14 @@ Select this option, and then enter a static address in the fields. For IPv4, inc
 a|
 Enable VLAN support     (Available by clicking *Show more settings*.)
 a|
-    *Important:* This option is only available in an iSCSI environment. It is not available in an NVMe over RoCE environment.
-+
+*Important:* This option is only available in an iSCSI environment. It is not available in an NVMe over RoCE environment.
 Select this option to enable a VLAN and enter its ID. A VLAN is a logical network that behaves like it is physically separate from other physical and virtual local area networks (LANs) supported by the same switches, the same routers, or both.
 a|
 Enable ethernet priority    (Available by clicking *Show more settings*.)
 a|
-    *Important:* This option is only available in an iSCSI environment. It is not available in an NVMe over RoCE environment.
-+
+*Important:* This option is only available in an iSCSI environment. It is not available in an NVMe over RoCE environment.
 Select this option to enable the parameter that determines the priority of accessing the network. Use the slider to select a priority between 1 and 7.
-+
 In a shared local area network (LAN) environment, such as Ethernet, many stations might contend for access to the network. Access is on a first-come, first-served basis. Two stations might try to access the network at the same time, which causes both stations to back off and wait before trying again. This process is minimized for switched Ethernet, where only one station is connected to a switch port.
-+
 |===
 
 . Click *Finish*.

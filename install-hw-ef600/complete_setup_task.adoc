@@ -77,7 +77,9 @@ RJ-45 Ethernet cables (if ordered)
 a|
 The following figure shows an example of the controller's management port location:
 a|
-image:../media/ethernet_callout.png[]     *Note:* EF600 pictured above.
+image:../media/ethernet_callout.png[]
+
+*Note:* EF600 pictured above.
 |===
 
 . Open a browser and connect to the storage system using one of the controller IP addresses provided to you by your network administrator.
@@ -104,7 +106,9 @@ RJ-45 Ethernet cables (if ordered)
 a|
 The following figure shows an example of the controller's management port location:
 a|
-image:../media/ethernet_callout.png[]     *Note:* EF600 pictured above.
+image:../media/ethernet_callout.png[]
++
+*Note:* EF600 pictured above.
 |===
 
 . Open a browser and use the default IP address (169.254.128.101) to establish a connection to the controller. The controller sends back a self-signed certificate. The browser informs you that the connection is not secure.
