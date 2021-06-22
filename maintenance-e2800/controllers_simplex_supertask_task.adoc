@@ -321,7 +321,6 @@ a|
 Yes
 a|
 You must set the IP address of the new controller manually. (You can reuse the IP address of the old controller or use a new IP address.) When the controller has an IP address, you can unlock the drives using the command line interface.     After the drives are unlocked, the new controller will re-use the original controller's IP address automatically.
-+
 |===
 
 == Step 4: Complete controller replacement (simplex)
