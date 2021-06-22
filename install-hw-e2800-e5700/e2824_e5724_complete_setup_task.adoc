@@ -63,8 +63,12 @@ Make sure you have obtained the network configuration information from your netw
 [.lead]
 You can configure the management ports with a DHCP server.
 
+===== Before You Begin
+
 * Your DHCP server is configured to associate an IP address, subnet mask, and gateway address as a permanent lease for each controller.
 * You have obtained the assigned IP addresses you will use to connect to the storage system from your network administrator.
+
+===== Steps
 
 . Connect an Ethernet cable to each controller's management port, and connect the other end to your network.
 +
@@ -74,13 +78,17 @@ image:../media/cable_ethernet_inst-hw-e2800-e5700.png[]
 a|
 Ethernet cables (if ordered)
 |===
++
 The following figure shows an example of the controller's management port location:
++
 |===
 a|
 image:../media/e2800_mgmt_ports.png[]
+
 E2800 controller P1 Management Port
 a|
 image:../media/e5700_mgmt_ports.png[]
+
 E5700 controller P1 Management Port
 |===
 
@@ -91,8 +99,12 @@ E5700 controller P1 Management Port
 [.lead]
 You configure the management ports manually by entering the IP address and the subnet mask.
 
+===== Before You Begin
+
 * You have obtained the controllers`' IP address, subnet mask, gateway address, and DNS and NTP server information from your network administrator.
 * You have ensured that the laptop you are using is not receiving network configuration from a DHCP server.
+
+===== Steps
 
 . Using an Ethernet cable, connect controller A's management port to the Ethernet port on a laptop.
 +
@@ -102,35 +114,39 @@ image:../media/cable_ethernet_inst-hw-e2800-e5700.png[]
 a|
 Ethernet cables (if ordered)
 |===
++
 The following figure shows an example of the controller's management port location:
++
 |===
 a|
 image:../media/e2800_mgmt_ports.png[]
+
 E2800 controller P1 Management Port
 a|
 image:../media/e5700_mgmt_ports.png[]
+
 E5700 controller P1 Management Port
 |===
-
++
 . Open a browser and use the default IP address (169.254.128.101) to establish a connection to the controller. The controller sends back a self-signed certificate. The browser informs you that the connection is not secure.
 . Follow the browser's instructions to proceed and launch SANtricity System Manager.
 +
 NOTE: If you are unable to establish a connection, verify that you are not receiving network configuration from a DHCP server.
-
++
 . Set the storage system's password to login.
 . Use the network settings provided by your network administrator in the *Configure Network Settings* wizard to configure controller A's network settings, and then select Finish.
 +
 NOTE: Because you reset the IP address, System Manager loses connection to the controller.
-
++
 . Disconnect your laptop from the storage system, and connect the management port on controller A to your network.
 . Open a browser on a computer connected to your network, and enter controller A's newly configured IP address.
 +
 IMPORTANT: If you lose the connection to controller A, you can connect an ethernet cable to controller B to reestablish connection to controller A through controller B (169.254.128.102).
-
++
 . Log in using the password you set previously.
 +
 The Configure Network Settings wizard will appear.
-
++
 . Use the network settings provided by your network administrator in the *Configure Network Settings* wizard to configure controller B's network settings, and then select Finish.
 . Connect controller B to your network.
 . Validate controller B's network settings by entering controller B's newly configured IP address in a browser.
@@ -142,7 +158,11 @@ IMPORTANT: If you lose the connection to controller B, you can use your previous
 [.lead]
 After you have installed your hardware, use the SANtricity software to configure and manage your storage system.
 
+===== Before You Begin
+
 * You have configured your management ports and have verified and recorded your password and IP addresses.
+
+===== Steps
 
 . Use the SANtricity software to configure and manage your storage arrays.
 . In the simplest network configuration, connect your controller to a web browser and use SANtricity System Manager for managing a single E2800 or E5700 series storage array.

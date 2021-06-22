@@ -115,10 +115,12 @@ The following figure shows an example of the controller's management port locati
 +
 |===
 a|
-image:../media/e2800_mgmt_ports.png[]     
+image:../media/e2800_mgmt_ports.png[]
+
 E2800 controller P1 Management Port
 a|
 image:../media/e5700_mgmt_ports.png[]
+
 E5700 controller P1 Management Port
 |===
 
