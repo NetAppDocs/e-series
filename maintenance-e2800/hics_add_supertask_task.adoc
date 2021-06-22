@@ -211,7 +211,7 @@ For information about compatible hardware, refer to the https://mysupport.netapp
 
 * You have installed SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
 +
-If this software has not yet been installed, follow the instructions in the link:../com.netapp.doc.ssm-exp-ic-lin/home.html[Linux express configuration], link:../com.netapp.doc.ssm-exp-ic-win/home.html[Windows express configuration], or link:../com.netapp.doc.ssm-exp-ic-vm/home.html[VMware express configuration] to download and install it.
+If this software has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install it.
 
 ===== Steps
 
@@ -252,6 +252,6 @@ If the new HIC ports do not have the protocol you expect:
 You must apply a software feature pack before you can connect the new HIC ports to the data hosts. See _Converting the Protocol of E2800 Host Ports_. Then, use the instructions in that document to connect the host ports to the data hosts and to resume operations.
 . Connect the cables from the controller's host ports to the data hosts.
 +
-If you need instructions for configuring and using a new host protocol, refer to the link:../com.netapp.doc.ssm-exp-ic-lin/home.html[Linux express configuration], link:../com.netapp.doc.ssm-exp-ic-win/home.html[Windows express configuration], or link:../com.netapp.doc.ssm-exp-ic-vm/home.html[VMware express configuration] .
+If you need instructions for configuring and using a new host protocol, refer to the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] .
 
 The process of adding a host interface card to your storage array is complete. You can resume normal operations.
