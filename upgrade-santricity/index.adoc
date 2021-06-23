@@ -9,4 +9,4 @@ summary: Upgrading SANtricity® OS
 :imagesdir: ../media/
 
 [.lead]
-Learn what you need to know before upgrading your storage array's SANtricity OS controller software and firmware and its drive firmware.
+Add this sentence: You can choose to upgrade a single controller, multiple controllers or drive firmware.
