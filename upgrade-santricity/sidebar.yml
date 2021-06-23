@@ -1,0 +1,12 @@
+section: upgrade-santricity
+title: SANtricity OS
+url: "/upgrade-santricity/index.html"
+entries:
+    - title: Upgrade considerations
+      url: "/upgrade-santricity/overview_upgrade_consider_task.html"
+    - title: Upgrade single controller
+      url: "/upgrade-santricity/upgrade_single_controller_task.html"
+    - title: Upgrade multiple controllers
+      url: "/upgrade-santricity/upgrade_multiple_controller_task.html"
+    - title: Upgrade drive firmware
+      url: "/upgrade-santricity/upgrade_drive_firmware_task.html"

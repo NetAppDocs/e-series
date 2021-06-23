@@ -1,0 +1,26 @@
+section: install-hw-e2800-E5700
+title: E2800 and E5700
+url: "/install-hw-e2800-e5700/index.html"
+entries:
+  - title: Overview
+    url: "/install-hw-e2800-e5700/install_setup_overview_concept.html"
+  - title: Install and setup 60-drives
+    entries:
+    - title: Prepare for install
+      url: "/install-hw-e2800-e5700/e2860_e5760_prepare_task.html"
+    - title: Install hardware
+      url: "/install-hw-e2800-e5700/e2860_e5760_install_hardware_task.html"
+    - title: Cable shelves
+      url: "/install-hw-e2800-e5700/e2860_e5760_connect_cables_task.html"
+    - title: Complete storage system setup
+      url: "/install-hw-e2800-e5700/e2860_e5760_complete_setup_task.html"
+  - title: Install and setup 12 and 24-drives
+    entries:
+    - title: Prepare for install
+      url: "/install-hw-e2800-e5700/e2824_e5724_prepare_task.html"
+    - title: Install hardware
+      url: "/install-hw-e2800-e5700/e2824_e5724_install_hardware_task.html"
+    - title: Connect cables
+      url: "/install-hw-e2800-e5700/e2824_e5724_connect_cables_task.html"
+    - title: Complete storage system setup
+      url: "/install-hw-e2800-e5700/e2824_e5724_complete_setup_task.html"
