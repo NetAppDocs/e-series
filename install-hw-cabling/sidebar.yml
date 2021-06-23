@@ -1,0 +1,16 @@
+section: install-hw-cabling
+title: Cabling
+url: "/install-hw-cabling/index.html"
+entries:
+    - title: Requirements
+      url: "/install-hw-cabling/cable_overview_requirements_concept.html"
+    - title: Host cabling
+      url: "/install-hw-cabling/host_cable_task.html"
+    - title: Drive shelf cabling
+      url: "/install-hw-cabling/driveshelf_cable_task.html"
+    - title: Power cabling
+      url: "/install-hw-cabling/power_cable_task.html"
+    - title: Hot add drive shelf
+      url: "/install-hw-cabling/hotadd_drive_shelf_task.html"
+    - title: Ethernet cabling
+      url: "/install-hw-cabling/ethernet_cable_task.html"

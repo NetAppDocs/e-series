@@ -1,0 +1,14 @@
+section: install-hw-cabinet
+title: 3040 40U Cabinet
+url: "/install-hw-cabinet/index.html"
+entries:
+    - title: Overview and specifications
+      url: "/install-hw-cabinet/overview_cabinet_specs_concept.html"
+    - title: Gather required tools and equipment
+      url: "/install-hw-cabinet/cabinet_gather_tools_equipment_task.html"
+    - title: Prepare to move cabinet
+      url: "/install-hw-cabinet/prepare_move_cabinet_task.html"
+    - title: Move cabinet to permanent location
+      url: "/install-hw-cabinet/move_cabinet_task.html"
+    - title: Complete cabinet installation
+      url: "/install-hw-cabinet/complete_cabinet_install_task.html"
