@@ -1,0 +1,14 @@
+section: install-hw-ef600
+title: EF300 and EF600
+url: "/install-hw-ef600/index.html"
+entries:
+    - title: Overview
+      url: "/install-hw-ef600/overview_concept.html"
+    - title: Prepare for install
+      url: "/install-hw-ef600/prepare_for_install_task.html"
+    - title: Install hardware
+      url: "/install-hw-ef600/install_hardware_task.html"
+    - title: Power on controller shelves
+      url: "/install-hw-ef600/power_controller_shelves_task.html"
+    - title: Complete storage system setup
+      url: "/install-hw-ef600/complete_setup_task.html"

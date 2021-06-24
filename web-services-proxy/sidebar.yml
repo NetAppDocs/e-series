@@ -1,0 +1,22 @@
+section: web-services-proxy
+title: Web services proxy
+url: "/web-services-proxy/index.html"
+entries:
+    - title: Overview and requirements
+      url: "/web-services-proxy/overview_intro_concept.html"
+    - title: Install Web Services Proxy
+      url: "/web-services-proxy/install_wsp_task.html"
+    - title: Configure Web Services Proxy
+      url: "/web-services-proxy/install_config_task.html"
+    - title: Uninstall Web Services Proxy
+      url: "/web-services-proxy/install_uninstall_task.html"
+    - title: Manage user access
+      url: "/web-services-proxy/access_intro_concept.html"
+    - title: Manage security and certificates
+      url: "/web-services-proxy/certificates_intro_concept.html"
+    - title: Manage storage systems
+      url: "/web-services-proxy/array_intro_concept.html"
+    - title: Manage automatic polling
+      url: "/web-services-proxy/polling_intro_concept.html"
+    - title: Manage AutoSupport
+      url: "/web-services-proxy/asup_intro_concept.html"
