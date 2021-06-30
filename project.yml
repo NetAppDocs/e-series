@@ -19,8 +19,6 @@ sidebar:
 #    - section: upgrade-santricity
 #    - section: web-services-proxy
 # Copied as-is from sold sidebar.yml - cleanup required
-    - title: E-series docs
-      url: /index.html
     - title: Release notes
       entries:
         - title: What's new
@@ -720,35 +718,31 @@ homepage:
           url: /getting-started/getup_run_concept.html
     - title: Solutions
       links:
-        - title: Set up EF300 and EF600 hardware
-          url: /install-hw-ef600/index.html
-        - title: Set up E2800 and E5700 hardware
-          url: /install-hw-e2800-e5700/index.html
-        - title: Cable storage system
-          url: /install-hw-cabling/index.html
+        - title: Placeholder
+          url:
+        - title: Placeholder
+          url:
+        - title: Placeholder
+          url:
     - title: Demos & tutorials
       links:
-        - title: Astra Control Service videos
-          url: /get-started/videos.html
-        - title: Deploy MariaDB
-          url: /solutions/mariadb-deploy-from-helm-chart.html
-        - title: Deploy MySQL
-          url: /solutions/mysql-deploy-from-helm-chart.html
+        - title: E-series Fast, Simple, Reliable Storage
+          url: https://www.youtube.com/embed/FjFkU2z_hIo?rel=0
+        - title: System Manager Easy Setup and Configuration
+          url: https://www.youtube.com/embed/I0W0AjKpCO8?rel=0
+        - title: More
+          url:
     - title: Solution briefs
       links:
-        - title: DataStax Enterprise & Apache Cassandra with Astra Control
-          url: https://cloud.netapp.com/hubfs/SB-4134-0321-DataStax-Cassandra-Guide%20(1).pdf
-        - title: PostgreSQL DBaaS with Astra Control
-          url: https://cloud.netapp.com/hubfs/SB-4122-0221-PostgresSQL-DBaaS-with-Astra%20(2).pdf
-        - title: MySQL DBaaS with Astra Control
-          url: https://cloud.netapp.com/hubfs/SB-4110-0221-MySQL-Astra%20(2).pdf
-        - title: Simplify Jenkins lifecycle management
-          url: https://cloud.netapp.com/hubfs/SB-4100-Jenkins%20(2).pdf
+        - title: SB 1
+          url:
+        - title: SB 2
+          url:
+        - title: SB 3
+          url:
     - title: Blogs & community
       links:
-        - title: Slack channel
-          url: https://netapppub.slack.com/#astra
-        - title: Astra Control – Simplifying app data management for the hybrid cloud
-          url: https://cloud.netapp.com/blog/blg-astra-control-simplifying-kubernetes-application-data-management-for-the-hybrid-cloud
-        - title: Kubernetes Hub on Cloud Central
-          url: https://cloud.netapp.com/kubernetes-hub
+        - title: NetApp communities
+          url: http://community.netapp.com/
+        - title: E-Series blog
+          url:
