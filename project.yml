@@ -642,7 +642,7 @@ sidebar:
                   url: "/maintenance-e5700/hpp_complete_protocol_conversion_task.html"
     - title: Manage storage
       url: /manage-storage.html
-    - title: Solutions
+    - title: Use SANtricity solutions
       entries:
       - title: Cloud connector
         url: "/cloud-connector/index.html"
@@ -708,41 +708,59 @@ homepage:
   tiles:
     - title: Get started
       links:
-        - title: What's new
-          url: /whats-new.html
-        - title: Learn about E-series hardware
+        - title: E-series hardware
           url: /getting-started/learn_hardware_concept.html
-        - title: Learn about E-series software
+        - title: SANtricity software
           url: /getting-started/learn_software_concept.html
         - title: Quick start
           url: /getting-started/getup_run_concept.html
-    - title: Solutions
+    - title: Learn
       links:
-        - title: Placeholder
-          url:
-        - title: Placeholder
-          url:
-        - title: Placeholder
-          url:
-    - title: Demos & tutorials
-      links:
-        - title: E-series Fast, Simple, Reliable Storage
+        - title: What's new
+          url: /whats-new.html
+        - title: E-Series "How To" Videos (login required)
+          url: https://www.brainshark.com/go/netapp-sell/library.html
+        - title: E-series = Fast, simple, reliable storage
           url: https://www.youtube.com/embed/FjFkU2z_hIo?rel=0
-        - title: System Manager Easy Setup and Configuration
+        - title: System Manager = Easy setup and configure
           url: https://www.youtube.com/embed/I0W0AjKpCO8?rel=0
-        - title: More
-          url:
-    - title: Solution briefs
+        - title: E-Series and SANtricity data sheets
+          url: https://mysupport.netapp.com/info/web/ECMP11752697.html
+    - title: Plug-ins and third-party support
       links:
-        - title: SB 1
+        - title: vCenter plug-in
           url:
-        - title: SB 2
-          url:
-        - title: SB 3
-          url:
+        - title: SANtricity management plug-ins
+          url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61762
+        - title: SMI-S providers
+          url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
+    - title: Useful tools & support
+      links:
+        - title: NetApp Hardware Universe tool
+          url: https://hwu.netapp.com/Home/Index#none
+        - title: NetApp Interoperability Matrix tool
+          url: http://mysupport.netapp.com/matrix/
+        - title: NetApp Knowledge Base (advice and troubleshooting)
+          url: https://kb.netapp.com/
+        - title: E-Series performance sizer (login required)
+          url: https://fusion.netapp.com/
+        - title: Active IQ (login required)
+          url: https://activeiq.netapp.com/?source=aiqnsspage
     - title: Blogs & community
       links:
         - title: NetApp communities
           url: http://community.netapp.com/
-        - title: E-Series blog
-          url:
+        - title: E-Series and SANtricity community
+          url: https://community.netapp.com/t5/E-Series-SANtricity-and-Related-Plug-ins/ct-p/e-series-santricity-and-related-plug-ins
+        - title: Active IQ and AutoSupport community
+          url: https://community.netapp.com/t5/Active-IQ-and-AutoSupport/ct-p/autosupport-and-my-autosupport
+        - title: E-Series and EF-Series blog
+          url: https://blog.netapp.com/e-series-and-ef-series-make-decisions-faster-more-actionable-and-secure/
+    - title: More doc resources
+      links:
+          - title: FAS storage systems
+            url:
+          - title: StorageGRID
+            url:
+          - title: Other NetApp product documentation
+            url: https://www.netapp.com/support-and-training/documentation/
