@@ -718,49 +718,47 @@ homepage:
       links:
         - title: What's new
           url: /whats-new.html
-        - title: E-Series "How To" Videos (login required)
-          url: https://www.brainshark.com/go/netapp-sell/library.html
         - title: E-series = Fast, simple, reliable storage
           url: https://www.youtube.com/embed/FjFkU2z_hIo?rel=0
         - title: System Manager = Easy setup and configure
           url: https://www.youtube.com/embed/I0W0AjKpCO8?rel=0
-        - title: E-Series and SANtricity data sheets
+        - title: Data sheets
           url: https://mysupport.netapp.com/info/web/ECMP11752697.html
-    - title: Plug-ins and third-party support
+    - title: Tools & support
       links:
-        - title: vCenter plug-in
-          url:
-        - title: SANtricity management plug-ins
-          url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61762
-        - title: SMI-S providers
-          url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
-    - title: Useful tools & support
-      links:
-        - title: NetApp Hardware Universe tool
+        - title: NetApp Hardware Universe
           url: https://hwu.netapp.com/Home/Index#none
-        - title: NetApp Interoperability Matrix tool
+        - title: NetApp Interoperability Matrix
           url: http://mysupport.netapp.com/matrix/
-        - title: NetApp Knowledge Base (advice and troubleshooting)
-          url: https://kb.netapp.com/
         - title: E-Series performance sizer (login required)
           url: https://fusion.netapp.com/
         - title: Active IQ (login required)
           url: https://activeiq.netapp.com/?source=aiqnsspage
-    - title: Blogs & community
+        - title: NetApp Knowledge Base (advice and troubleshooting)
+          url: https://kb.netapp.com/
+    - title: Plug-ins
       links:
-        - title: NetApp communities
-          url: http://community.netapp.com/
-        - title: E-Series and SANtricity community
-          url: https://community.netapp.com/t5/E-Series-SANtricity-and-Related-Plug-ins/ct-p/e-series-santricity-and-related-plug-ins
-        - title: Active IQ and AutoSupport community
-          url: https://community.netapp.com/t5/Active-IQ-and-AutoSupport/ct-p/autosupport-and-my-autosupport
-        - title: E-Series and EF-Series blog
-          url: https://blog.netapp.com/e-series-and-ef-series-make-decisions-faster-more-actionable-and-secure/
+        - title: vCenter plug-in
+          url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61762
+        - title: SANtricity management plug-ins
+          url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61762
+        - title: SMI-S providers
+          url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
     - title: More doc resources
       links:
           - title: FAS storage systems
-            url:
+            url: https://review.docs.netapp.com/us-en/ontap-systems-temp_main/index.html
           - title: StorageGRID
-            url:
-          - title: Other NetApp product documentation
+            url: https://review.docs.netapp.com/us-en/storagegrid_11.5_grid_primer_cleanup_km/index.html
+          - title: More NetApp product verify_windows_config_support_task
             url: https://www.netapp.com/support-and-training/documentation/
+    - title: Communities & blogs
+      links:
+      - title: NetApp communities
+        url: http://community.netapp.com/
+      - title: E-Series and SANtricity community
+        url: https://community.netapp.com/t5/E-Series-SANtricity-and-Related-Plug-ins/ct-p/e-series-santricity-and-related-plug-ins
+      - title: Active IQ and AutoSupport community
+        url: https://community.netapp.com/t5/Active-IQ-and-AutoSupport/ct-p/autosupport-and-my-autosupport
+      - title: E-Series and EF-Series blog
+        url: https://blog.netapp.com/e-series-and-ef-series-make-decisions-faster-more-actionable-and-secure/
