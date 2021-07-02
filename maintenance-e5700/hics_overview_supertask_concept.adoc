@@ -9,7 +9,7 @@ summary: This topic provides an overview of the host interface card and describe
 :imagesdir: ../media/
 
 [.lead]
-You can add, upgrade, or replace a HIC in the E5724 controller shelf and the E5760 controller shelf:
+You can add, upgrade, or replace a HIC in the E5724 controller shelf and the E5760 controller shelf.
 
 The following is an overview of the steps to replace a HIC in an E5700 controllers (E5724 or E5760):
 
