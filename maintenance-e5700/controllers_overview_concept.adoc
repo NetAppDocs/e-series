@@ -11,12 +11,10 @@ summary: This topic provides an overview of the controller and describes the req
 [.lead]
 This topic provides an overview of the controller and describes the requirements you need to know about before replacing a controller or adding a second controller.
 
-== Controller overview
+== Controller
 
 [.lead]
 Each controller canister contains a controller card, a battery, and an optional host interface card (HIC).
-
-=== Replace controller
 
 When you replace a failed controller canister, you must remove the battery and HIC, if one is installed, from the original controller canister, and install them in the replacement controller canister.
 
@@ -30,11 +28,6 @@ image::../media/e5700_attention_led_callout.png[]
 image:../media/legend_icon_01_maint-e5700.gif[]Attention LED
 
 NOTE: The figure shows an example controller canister; the host ports on your controller canister might be different.
-
-== Requirements for replacing a controller
-
-[.lead]
-If you plan to replace a controller or add a second controller, keep the following requirements in mind.
 
 === Requirements for replacing a failed controller
 

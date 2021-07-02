@@ -11,43 +11,7 @@ summary: Before you replace a drive, you need to be aware of certain requirement
 [.lead]
 Before you replace a drive, you need to be aware of certain requirements and considerations.
 
-== Drives overview
-
-[.lead]
 You can replace a drive in either a 24-drive or 60-drive controller shelf or drive shelf.
-
-=== 24-drive shelves
-
-The figures show how the drives are numbered in each type of shelf (the shelf's front bezel or end caps have been removed).
-
-*Drive numbering in an E5724 controller shelf or DE224C drive shelf*
-
-image::../media/28_dwg_e2824_de224c_drive_numbering_maint-e5700.gif[]
-
-NOTE: Your E5724 storage array might include one or more SAS-2 legacy expansion drive trays, including the DE5600 24-drive tray or the DE6600 60-drive tray. For instructions for replacing a drive in one of these drive trays, see _Replacing a Drive in E2660, E2760, E5460, E5560, or E5660 Drive Trays_ and _Replacing a Drive in E2600, E2700, E5400, E5500, and E5600 12-Drive or 24-Drive Trays_.
-
-=== 60-drive shelves
-
-Both the E5760 controller shelf and the DE460C drive shelf consist of five drive drawers that each contain 12 drive slots. Drive drawer 1 is at the top, and drive drawer 5 is at the bottom.
-
-image::../media/28_dwg_e2860_de460c_front_no_callouts_maint-e5700.gif[]
-
-For both an E5760 controller shelf drawer and a DE460C drive shelf drawer, drives are numbered from 0 to 11 in each drive drawer within the shelf.
-
-image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e5700.gif[]
-
-NOTE: Your E5760 storage array might include one or more SAS-2 legacy expansion drive trays, including the DE1600 12-drive tray, the DE5600 24-drive tray, or the DE6600 60-drive tray. For instructions for replacing a drive in one of these drive trays, see _Replacing a Drive in E2660, E2760, E5460, E5560, or E5660 Trays_ and _Replacing a Drive in E2600, E2700, E5400, E5500, and E5600 12-Drive or 24-Drive Trays_.
-
-== Drive drawer overview
-
-[.lead]
-You can replace a drive drawer in a E5760 controller shelf and a DE460C drive shelf. Each of these 60-drive shelves has five drive drawers.
-
-image::../media/28_dwg_e2860_de460c_front_no_callouts_maint-e5700.gif[]
-
-Each of the five drawers can hold up to 12 drives.
-
-image::../media/92_dwg_de6600_drawer_with_hdds_no_callouts_maint-e5700.gif[]
 
 == Requirements for handling drives
 
@@ -77,3 +41,36 @@ If a wrist strap is unavailable, touch an unpainted surface on your storage encl
  ** Keep drives away from magnetic devices.
 +
 Magnetic fields can destroy all data on the drive and cause irreparable damage to the drive circuitry.
+
+=== 24-drive shelves
+
+The figures show how the drives are numbered in each type of shelf (the shelf's front bezel or end caps have been removed).
+
+*Drive numbering in an E5724 controller shelf or DE224C drive shelf*
+
+image::../media/28_dwg_e2824_de224c_drive_numbering_maint-e5700.gif[]
+
+NOTE: Your E5724 storage array might include one or more SAS-2 legacy expansion drive trays, including the DE5600 24-drive tray or the DE6600 60-drive tray. For instructions for replacing a drive in one of these drive trays, see _Replacing a Drive in E2660, E2760, E5460, E5560, or E5660 Drive Trays_ and _Replacing a Drive in E2600, E2700, E5400, E5500, and E5600 12-Drive or 24-Drive Trays_.
+
+=== 60-drive shelves
+
+Both the E5760 controller shelf and the DE460C drive shelf consist of five drive drawers that each contain 12 drive slots. Drive drawer 1 is at the top, and drive drawer 5 is at the bottom.
+
+image::../media/28_dwg_e2860_de460c_front_no_callouts_maint-e5700.gif[]
+
+For both an E5760 controller shelf drawer and a DE460C drive shelf drawer, drives are numbered from 0 to 11 in each drive drawer within the shelf.
+
+image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e5700.gif[]
+
+NOTE: Your E5760 storage array might include one or more SAS-2 legacy expansion drive trays, including the DE1600 12-drive tray, the DE5600 24-drive tray, or the DE6600 60-drive tray. For instructions for replacing a drive in one of these drive trays, see _Replacing a Drive in E2660, E2760, E5460, E5560, or E5660 Trays_ and _Replacing a Drive in E2600, E2700, E5400, E5500, and E5600 12-Drive or 24-Drive Trays_.
+
+== Drive drawer
+
+[.lead]
+You can replace a drive drawer in a E5760 controller shelf and a DE460C drive shelf. Each of these 60-drive shelves has five drive drawers.
+
+image::../media/28_dwg_e2860_de460c_front_no_callouts_maint-e5700.gif[]
+
+Each of the five drawers can hold up to 12 drives.
+
+image::../media/92_dwg_de6600_drawer_with_hdds_no_callouts_maint-e5700.gif[]
