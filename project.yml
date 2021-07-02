@@ -45,9 +45,10 @@ sidebar:
     - title: Install hardware
       entries:
         - title: EF300 and EF600
-          url: "/install-hw-ef600/index.html"
           entries:
               - title: Overview
+                url: "/install-hw-ef600/index.html"
+              - title: Install process
                 url: "/install-hw-ef600/overview_concept.html"
               - title: Prepare for install
                 url: "/install-hw-ef600/prepare_for_install_task.html"
@@ -58,9 +59,10 @@ sidebar:
               - title: Complete storage system setup
                 url: "/install-hw-ef600/complete_setup_task.html"
         - title: E2800 and E5700
-          url: "/install-hw-e2800-e5700/index.html"
           entries:
               - title: Overview
+                url: "/install-hw-e2800-e5700/index.html"
+              - title: Install process
                 url: "/install-hw-e2800-e5700/install_setup_overview_concept.html"
               - title: Install and setup 60-drives
                 entries:
@@ -83,9 +85,10 @@ sidebar:
                 - title: Complete storage system setup
                   url: "/install-hw-e2800-e5700/e2824_e5724_complete_setup_task.html"
         - title: 3040 40U Cabinet
-          url: "/install-hw-cabinet/index.html"
           entries:
-              - title: Overview and specifications
+              - title: Overview
+                url: "/install-hw-cabinet/index.html"
+              - title: Specifications
                 url: "/install-hw-cabinet/overview_cabinet_specs_concept.html"
               - title: Gather required tools and equipment
                 url: "/install-hw-cabinet/cabinet_gather_tools_equipment_task.html"
@@ -96,8 +99,9 @@ sidebar:
               - title: Complete cabinet installation
                 url: "/install-hw-cabinet/complete_cabinet_install_task.html"
         - title: Cabling
-          url: "/install-hw-cabling/index.html"
           entries:
+                - title: Overview
+                  url: "/install-hw-cabling/index.html"
                 - title: Requirements
                   url: "/install-hw-cabling/cable_overview_requirements_concept.html"
                 - title: Host cabling
@@ -113,8 +117,9 @@ sidebar:
     - title: Deploy software
       entries:
         - title: Linux express config
-          url: "/config-linux/index.html"
           entries:
+                - title: Overview
+                  url: "/config-linux/index.html"
                 - title: Assumptions
                   url: "/config-linux/overview_concept.html"
                 - title: Fibre Channel Express Setup
@@ -428,8 +433,9 @@ sidebar:
     - title: Upgrade systems
       entries:
         - title: Controllers
-          url: "/upgrade-controllers/index.html"
           entries:
+              - title: Overview
+                url: "/upgrade-controllers/index.html"
               - title: Upgrade considerations
                 url: "/upgrade-controllers/overview_requirements_concept.html"
               - title: Prepare to upgrade controllers
@@ -734,7 +740,7 @@ homepage:
           url: https://fusion.netapp.com/
         - title: Active IQ (login required)
           url: https://activeiq.netapp.com/?source=aiqnsspage
-        - title: NetApp Knowledge Base (advice and troubleshooting)
+        - title: NetApp Knowledge Base
           url: https://kb.netapp.com/
     - title: Plug-ins
       links:
@@ -744,13 +750,13 @@ homepage:
           url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61762
         - title: SMI-S providers
           url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
-    - title: More doc resources
+    - title: Doc sites
       links:
           - title: FAS storage systems
             url: https://review.docs.netapp.com/us-en/ontap-systems-temp_main/index.html
           - title: StorageGRID
             url: https://review.docs.netapp.com/us-en/storagegrid_11.5_grid_primer_cleanup_km/index.html
-          - title: More NetApp product verify_windows_config_support_task
+          - title: More NetApp product docs
             url: https://www.netapp.com/support-and-training/documentation/
     - title: Communities & blogs
       links:

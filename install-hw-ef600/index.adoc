@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installation, setup, instruction
 summary: Installation and Setup Instructions
 ---
-= Install and set up EF300 and EF600
+= EF300 and EF600 install overview
 :icons: font
 :imagesdir: ../media/
 
@@ -15,16 +15,13 @@ You can choose one of the following content formats to guide you through install
 
 |===
 a|
-image:../media/drw_isiposter_icon_inst-hw-ef600.gif[] a|
-Installation and setup PDF posterA printable PDF of step-by-step instructions with live links to additional content.
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2851449[EF300 and EF600 Installation and Setup]
-
+image:../media/drw_isiposter_icon_inst-hw-ef600.gif[]
+a|
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2851449[Installation and setup PDF poster].
+A printable PDF of step-by-step instructions with live links to additional content.
 a|
 image:../media/drw_onlineguide_icon_inst-hw-ef600.gif[]
 a|
-The setup instructions described on the following pages.Start with the Prepare for installation topic to get started..
-
-xref:prepare_for_install_task.adoc[Prepare for installation].
-
+The online setup instructions described on this site.
+Start with xref:prepare_for_install_task.adoc[Prepare for installation] topic to get started.
 |===

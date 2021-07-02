@@ -13,20 +13,21 @@ You can choose from different content formats to guide you through installing an
 
 |===
 a|
-image:../media/drw_isiposter_icon_inst-hw-e2800-e5700.gif[] a|
-Installation and setup PDF posterA printable PDF of step-by-step instructions with live links to additional content.
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2842061[E2860, E5760 and DE460C Installation and Setup]
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2842063[E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C Installation and Setup]
-
+image:../media/drw_isiposter_icon_inst-hw-e2800-e5700.gif[Installation and setup PDF poster]
 a|
-image:../media/drw_onlineguide_icon_inst-hw-e2800-e5700.gif[]
+A printable PDF of step-by-step instructions with live links to additional content.
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2842061[E2860, E5760 and DE460C PDF poster]
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2842063[E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C PDF poster]
+
+a| The setup instructions described on this site.
+image:../media/drw_onlineguide_icon_inst-hw-e2800-e5700.gif[Online instructions].
 a|
-The setup instructions described on the following pages.You must choose the correct setup instructions for your new storage system.
+Start with one of the following topics to get started.
 
-xref:e2860_e5760_install_setup_task.adoc[Installation and Setup Instructions for E2860, E5760 and DE460C]
+* xref:e2860_e5760_install_setup_task.adoc[Prepare to install E2860, E5760 and DE460C]
 
-xref:e2824_e5724_install_setup_task.adoc[Installation and Setup Instructions for E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C]
+* xref:e2824_e5724_install_setup_task.adoc[Prepare to install E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C]
 
 |===
