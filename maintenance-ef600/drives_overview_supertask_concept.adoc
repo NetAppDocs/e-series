@@ -11,9 +11,6 @@ summary: Before you replace a drive, you need to be aware of certain requirement
 [.lead]
 Before you replace a drive, you need to be aware of certain requirements and considerations.
 
-== Requirements for replacing drives
-
-[.lead]
 The drives in your storage array are fragile. Improper drive handling is a leading cause of drive failure.
 
 Follow these rules to avoid damaging the drives in your storage array:
@@ -35,7 +32,7 @@ Follow these rules to avoid damaging the drives in your storage array:
 +
 Magnetic fields can destroy all data on the drive and cause irreparable damage to the drive circuitry.
 
-=== 24-drive shelves
+== 24-drive shelves
 
 *Drive numbering in an EF300 or EF600 controller shelf*
 
@@ -50,8 +47,3 @@ When inserting fewer than 24 drives into an EF300 or EF600 controller, you must 
 The following figure shows how to stagger the drives between the two halves.
 
 image::../media/ef600_drives_staggering.png[]
-
-This section describes how to replace a drive in the following controller shelves:
-
-* EF300 controller shelf
-* EF600 controller shelf

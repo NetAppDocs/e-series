@@ -11,11 +11,6 @@ summary: Before you add, upgrade or replace a host interface card, you need to b
 [.lead]
 Before you add, upgrade or replace a host interface card, you need to be aware of certain requirements and considerations.
 
-== Host interface card overview
-
-[.lead]
-You can add, upgrade, or replace a HIC in the following controller shelves:
-
 The steps to replace a HIC depend on whether you have one or two controllers, as follows:
 
 [options = "header"]

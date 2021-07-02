@@ -11,12 +11,19 @@ summary: Before you replace a battery, you need to be aware of certain requireme
 [.lead]
 Before you replace a battery, you need to be aware of certain requirements and considerations.
 
-== Battery overview
-
-[.lead]
 Each controller canister includes a battery that preserves cached data if the AC power fails. To protect your data, you must replace a failed battery as soon as possible.
 
-=== Recovery Guru alerts
+If you plan to replace a failed battery, keep the following requirements in mind.
+
+* You must have installed SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
++
+If this software has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install it.
+
+* You must have a replacement battery.
+* You have an ESD wristband, or you have taken other antistatic precautions.
+* You should use labels to identify each cable that is connected to the controller canister.
+
+== Recovery Guru alerts
 
 If the Recovery Guru in SANtricity System Manager reports one of following statuses, you must replace the affected battery:
 
@@ -25,7 +32,7 @@ If the Recovery Guru in SANtricity System Manager reports one of following statu
 
 From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
 
-=== Duplex or simplex configuration
+== Duplex or simplex configuration
 
 The steps to replace a battery depend on whether you have one or two controllers, as follows:
 
@@ -54,16 +61,3 @@ a|
 . Apply power to the controller shelf.
 
 |===
-
-== Requirements for replacing a failed battery
-
-[.lead]
-If you plan to replace a failed battery, keep the following requirements in mind.
-
-* You must have installed SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
-+
-If this software has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install it.
-
-* You must have a replacement battery.
-* You have an ESD wristband, or you have taken other antistatic precautions.
-* You should use labels to identify each cable that is connected to the controller canister.

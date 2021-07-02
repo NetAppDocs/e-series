@@ -581,6 +581,8 @@ sidebar:
                 url: "/maintenance-e2800/drives_60_supertask_task.html"
             - title: Host interface cards
               entries:
+              - title: Overview and requirements
+                url: maintenance-e2800/hics_overview_supertask_concept.html
               - title: Add host interface cards
                 url: "/maintenance-e2800/hics_add_supertask_task.html"
               - title: Upgrade host interface card

@@ -11,9 +11,6 @@ summary: Learn about the E5700 baseboard host ports and the requirements you nee
 [.lead]
 Learn about the E5700 baseboard host ports and the requirements you need to know about before converting the host protocol.
 
-== Host protocol overview
-
-[.lead]
 You can convert the host port protocol of the baseboard host ports in the E5700 controller shelf.
 
 The following figure shows the E5700 with its SFP+ (optical) baseboard host ports image:../media/legend_icon_01_maint-e5700.gif[] and the optional two IB HIC ports.image:../media/legend_icon_02_maint-e5700.gif[]

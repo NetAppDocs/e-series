@@ -11,9 +11,6 @@ summary: Before you replace DIMMs, you need to be aware of certain requirements 
 [.lead]
 Before you replace DIMMs, you need to be aware of certain requirements and considerations.
 
-== Requirements for replacing DIMMs
-
-[.lead]
 The DIMMs in your storage array are fragile. Improper handling can lead to damage to the DIMMs.
 
 You can replace a DIMM for any EF300 or EF600 controller. You must verify the configuration of your EF300 or EF600 controller to ensure the correct DIMM size is replaced.
@@ -31,8 +28,3 @@ WARNING: Always wear an ESD wrist strap grounded to an unpainted surface on your
  ** Always use approved packaging when shipping DIMMs.
 * Avoid magnetic fields:
  ** Keep DIMMs away from magnetic devices.
-
-This section describes how to replace a DIMM in the following controller shelves:
-
-* EF300 controller shelf
-* EF600 controller shelf

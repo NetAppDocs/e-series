@@ -11,9 +11,6 @@ summary: Learn about the E2800 baseboard host ports and the requirements you nee
 [.lead]
 Learn about the E2800 baseboard host ports and the requirements you need to know about before converting the host protocol.
 
-== Host protocol overview
-
-[.lead]
 You can convert the host port protocol of the baseboard host ports in the E2800 controller shelf.
 
 The following figure shows the back of an E2800 controller that has two SFP+ (optical) baseboard host portsimage:../media/legend_icon_01_maint-e2800.gif[] and four SFP+ (optical) HIC portsimage:../media/legend_icon_02_maint-e2800.gif[].

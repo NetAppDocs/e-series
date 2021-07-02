@@ -25,12 +25,3 @@ If SANtricity Storage Manager has not yet been installed, follow the instruction
 
 * Some HIC replacements or upgrades may require a host port protocol conversion. Follow the instructions in the xref:concept_host_port_protocol_conversion_wombat.adoc[Host port protocol] section for this requirement.
 * EF300 controllers must have HIC port 2 filled with a HIC for host connectivity.
-
-This section describes how to prepare to add a host interface card in the following controller shelves:
-
-* EF600 controller shelf
-
-This section describes how to prepare to replace or upgrade a host interface card in the following controller shelves:
-
-* EF300 controller shelf
-* EF600 controller shelf

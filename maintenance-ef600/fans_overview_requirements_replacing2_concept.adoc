@@ -11,16 +11,6 @@ summary: Before you replace a failed fan, you need to be aware of some requireme
 [.lead]
 Before you replace a failed fan, you need to be aware of some requirements.
 
-== Requirements for replacing a fan
-
-[.lead]
-If you plan to replace a fan, keep the following requirements in mind.
-
 * You have a replacement fan that is supported for your controller shelf or drive shelf model.
 * You have an ESD wristband, or you have taken other antistatic precautions.
 * IMPORTANT: If the Recovery Guru indicates that it is not OK to remove the fan, contact technical support.
-
-This section describes how to replace a fan in the following shelves:
-
-* EF300 controller shelf
-* EF600 controller shelf
