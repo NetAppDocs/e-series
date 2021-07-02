@@ -4,19 +4,70 @@ sidebar: sidebar
 keywords: santricity, web, service, proxy
 summary: SANtricity® Web Services Proxy
 ---
-= SANtricity® Web Services Proxy overview
+= SANtricity Web Services Proxy overview
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 Learn how to install and configure the SANtricity Web Services Proxy, which includes the SANtricity Unified Manager interface. The Web Services Proxy is a RESTful API server installed separately on a host system to manage hundreds of new and legacy NetApp E-Series storage systems. Unified Manager is a web-based interface that provides similar functions.
 
-== About Web Services
-Web Services is an Application Programming Interface (API) that allows you to configure, manage, and monitor NetApp E-Series and EF-Series storage systems. By issuing API requests, you can complete workflows such as configuration, provisioning, and performance monitoring for E-Series storage systems.
-
 == What you need to know
+[.lead]
 When using the Web Services API to manage storage systems, you should be familiar with the following:
 
 * JavaScript Object Notation (JSON) -- Because data within Web Services is encoded through JSON, you should be familiar with JSON programming concepts. For more information, see http://www.json.org/
 * Representational state transfer (REST) -- Web Services is a RESTful API that provides access to virtually all the SANtricity management capabilities, so you should be familiar with REST concepts. For more information, see http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm
 * Programming language concepts -- Java and Python are the most common programming languages used with the Web Services API, but any programming language that can make HTTP requests is sufficient for API interaction.
+
+== Terms and concepts
+
+[.lead]
+The following terms apply to the Web Services Proxy.
+
+[options="header"]
+|===
+| Term| Definition
+a|
+API
+a|
+An Application Programming Interface (API) is a set of protocols and methods that enables developers to communicate with devices. The Web Services API is used to communicate with E-Series storage systems.
+a|
+ASUP
+a|
+The AutoSupport (ASUP) feature collects data in a customer support bundle and automatically sends the message file to technical support for remote troubleshooting and problem analysis.
+a|
+Endpoint
+a|
+Endpoints are functions that are available through the API. An endpoint includes an HTTP verb, plus the URI path. In Web Services, endpoints can execute such tasks as discovering storage systems and creating volumes.
+a|
+HTTP Verb
+a|
+An HTTP verb is a corresponding action for an endpoint, such as retrieving and creating data. In Web Services, HTTP verbs include POST, GET, and DELETE.
+a|
+JSON
+a|
+JavaScript Object Notation (JSON) is a structured data format much like XML, which uses a minimal, readable format. Data within Web Services is encoded through JSON.
+a|
+REST / RESTful
+a|
+Representational state transfer (REST) is a loose specification that defines an architectural style for an API. Because most REST APIs do not fully adhere to the specification, they are described as "`RESTful`" or "`REST-like.`" Generally, a "`RESTful`" API is agnostic to programming languages and has the following characteristics:
+
+* HTTP-based, which follows the general semantics of the protocol
+* Producer and consumer of structured data (JSON, XML, etc.)
+* Object-oriented (as opposed to operation-oriented)
+
+Web Services is a RESTful API that provides access to virtually all the SANtricity management capabilities.
+
+a|
+storage system
+a|
+A storage system is an E-Series array, which includes shelves, controllers, drives, software, and firmware.
+a|
+SYMbol API
+a|
+SYMbol is a legacy API for managing E-Series storage systems. The underlying implementation of the Web Services API uses SYMbol.
+a|
+Web Services
+a|
+Web Services is an API that NetApp designed for developers to manage E-Series storage systems. There are two implementations of Web Services: embedded on the controller and a separate proxy that can be installed on Linux or Windows.
+|===

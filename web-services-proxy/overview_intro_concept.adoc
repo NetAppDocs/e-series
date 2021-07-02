@@ -4,11 +4,14 @@ sidebar: sidebar
 keywords: guide, describe, install, configure, santricity, web, service, proxy, unified, manager, restful, api, server, host, system, netapp, legacy, e-series, storage, web-based, interface, function, web, service, overview, requirement, compatibility, restriction, basic
 summary: This guide describes how to install and configure the SANtricity Web Services Proxy, which includes the SANtricity Unified Manager interface. The Web Services Proxy is a RESTful API server installed separately on a host system to manage hundreds of new and legacy NetApp E-Series storage systems. Unified Manager is a web-based interface that provides similar functions.
 ---
-= Requirements
+= Learn about Web Services
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Web Services is an Application Programming Interface (API) that allows you to configure, manage, and monitor NetApp E-Series and EF-Series storage systems. By issuing API requests, you can complete workflows such as configuration, provisioning, and performance monitoring for E-Series storage systems.
+
+== Implementations
 Web Services is available in two implementations:
 
 * Embedded -- A RESTful API server is embedded on each controller of an E2800/EF280 storage system running NetApp SANtricity 11.30 or later versions, an E5700/EF570 running SANtricity 11.40 or later versions, and an EF300 or EF600 running SANtricity 11.60 or later versions. No installation is required.
@@ -48,8 +51,6 @@ Manages all storage systems from one server.
 a|
 Manages only the controller on which it is embedded.
 |===
-
-=== Unified Manager
 
 The proxy installation package includes Unified Manager, a web-based interface that provides configuration access to newer E-Series and EF-Series storage systems, such as the E2800, E5700, EF300, and EF600.
 
@@ -261,56 +262,3 @@ No
 === Sample scripts
 
 GitHub contains a repository for the collection and organization of sample scripts illustrating the use of the NetApp SANtricity Web Services API. To access the repository, see: https://github.com/NetApp/webservices-samples.
-
-== Terms and concepts
-
-[.lead]
-The following terms apply to the Web Services Proxy.
-
-[options="header"]
-|===
-| Term| Definition
-a|
-API
-a|
-An Application Programming Interface (API) is a set of protocols and methods that enables developers to communicate with devices. The Web Services API is used to communicate with E-Series storage systems.
-a|
-ASUP
-a|
-The AutoSupport (ASUP) feature collects data in a customer support bundle and automatically sends the message file to technical support for remote troubleshooting and problem analysis.
-a|
-Endpoint
-a|
-Endpoints are functions that are available through the API. An endpoint includes an HTTP verb, plus the URI path. In Web Services, endpoints can execute such tasks as discovering storage systems and creating volumes.
-a|
-HTTP Verb
-a|
-An HTTP verb is a corresponding action for an endpoint, such as retrieving and creating data. In Web Services, HTTP verbs include POST, GET, and DELETE.
-a|
-JSON
-a|
-JavaScript Object Notation (JSON) is a structured data format much like XML, which uses a minimal, readable format. Data within Web Services is encoded through JSON.
-a|
-REST / RESTful
-a|
-Representational state transfer (REST) is a loose specification that defines an architectural style for an API. Because most REST APIs do not fully adhere to the specification, they are described as "`RESTful`" or "`REST-like.`" Generally, a "`RESTful`" API is agnostic to programming languages and has the following characteristics:
-
-* HTTP-based, which follows the general semantics of the protocol
-* Producer and consumer of structured data (JSON, XML, etc.)
-* Object-oriented (as opposed to operation-oriented)
-
-Web Services is a RESTful API that provides access to virtually all the SANtricity management capabilities.
-
-a|
-storage system
-a|
-A storage system is an E-Series array, which includes shelves, controllers, drives, software, and firmware.
-a|
-SYMbol API
-a|
-SYMbol is a legacy API for managing E-Series storage systems. The underlying implementation of the Web Services API uses SYMbol.
-a|
-Web Services
-a|
-Web Services is an API that NetApp designed for developers to manage E-Series storage systems. There are two implementations of Web Services: embedded on the controller and a separate proxy that can be installed on Linux or Windows.
-|===
