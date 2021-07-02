@@ -367,8 +367,6 @@ sidebar:
                     url: "/config-linux/nvme_fc_verify_storage_access_host_task.html"
                   - title: NVMe over Fibre Channel worksheet for Linux
                     url: "/config-linux/nvme_fc_worksheet_concept.html"
-                - title: Where to find additional information
-                  url: "/config-linux/linux_find_additional_info_reference.html"
         - title: VMware express config
           entries:
             - title: Overview
@@ -399,8 +397,6 @@ sidebar:
               url: "/config-vmware/configure_storage_host_task.html"
             - title: Verify storage access on host
               url: "/config-vmware/verify_storage_access_host_task.html"
-            - title: Where to find additional information
-              url: "/config-vmware/reference_where_to_find_additional_information_vmware.html"
         - title: Windows express config
           entries:
               - title: Overview
