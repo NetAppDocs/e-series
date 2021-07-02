@@ -149,7 +149,7 @@ sidebar:
                     url: "/config-linux/fc_verify_storage_access_host_task.html"
                   - title: FC worksheet for Linux
                     url: "/config-linux/fc_worksheet_concept.html"
-                - title: SAS Express Setup
+                - title: SAS Setup
                   entries:
                   - title: Verify Linux configuration
                     url: "/config-linux/sas_verify_linux_config_support_task.html"
@@ -173,7 +173,7 @@ sidebar:
                     url: "/config-linux/sas_verify_storage_access_host_task.html"
                   - title: SAS worksheet for Linux
                     url: "/config-linux/sas_worksheet_concept.html"
-                - title: iSCSI Express Setup
+                - title: iSCSI Setup
                   entries:
                   - title: Verify Linux configuration
                     url: "/config-linux/iscsi_verify_linux_config_support_task.html"
@@ -205,7 +205,7 @@ sidebar:
                     url: "/config-linux/iscsi_verify_storage_access_host_task.html"
                   - title: iSCSI worksheet for Linux
                     url: "/config-linux/iscsi_worksheet_concept.html"
-                - title: iSER over InfiniBand Express Setup
+                - title: iSER over InfiniBand Setup
                   entries:
                   - title: Verify Linux configuration
                     url: "/config-linux/iser_ib_verify_linux_config_support_task.html"
@@ -233,7 +233,7 @@ sidebar:
                     url: "/config-linux/iser_ib_verify_storage_access_host_task.html"
                   - title: iSER over InfiniBand worksheet
                     url: "/config-linux/iser_ib_worksheet_concept.html"
-                - title: SRP over InfiniBand Express Setup
+                - title: SRP over InfiniBand Setup
                   entries:
                   - title: Verify Linux configuration
                     url: "/config-linux/srp_ib_verify_linux_config_support_task.html"
@@ -261,7 +261,7 @@ sidebar:
                     url: "/config-linux/srp_ib_verify_storage_access_host_task.html"
                   - title: SRP over Infiniband worksheet
                     url: "/config-linux/srp_ib_worksheet_concept.html"
-                - title: NVMe over InfiniBand Express Setup
+                - title: NVMe over InfiniBand Setup
                   entries:
                   - title: Verify the Linux configuration is supported
                     url: "/config-linux/nvme_ib_verify_linux_config_support_task.html"
@@ -299,7 +299,7 @@ sidebar:
                     url: "/config-linux/nvme_ib_verify_storage_access_host_task.html"
                   - title: NVMe over InfiniBand worksheet
                     url: "/config-linux/nvme_ib_worksheet_concept.html"
-                - title: NVMe over RoCE Express Setup
+                - title: NVMe over RoCE Setup
                   entries:
                   - title: Verify Linux configuration
                     url: "/config-linux/nvme_roce_verify_linux_config_support_task.html"
@@ -337,7 +337,7 @@ sidebar:
                     url: "/config-linux/nvme_roce_verify_storage_access_host_task.html"
                   - title: NVMe over RoCE worksheet for Linux
                     url: "/config-linux/nvme_roce_worksheet_for_concept.html"
-                - title: NVMe over Fibre Channel Express Setup
+                - title: NVMe over Fibre Channel Setup
                   entries:
                   - title: Configure IP addresses using DHCP
                     url: "/config-linux/nvme_fc_configure_ip_address_dhcp_task.html"
