@@ -457,7 +457,7 @@ sidebar:
                 url: "/upgrade-controllers/reconfigure_sas_task.html"
         - title: SANtricity OS
           entries:
-              - title: overview
+              - title: Overview
                 url: "/upgrade-santricity/index.html"
               - title: Upgrade considerations
                 url: "/upgrade-santricity/overview_upgrade_consider_task.html"
@@ -470,8 +470,9 @@ sidebar:
     - title: Maintain systems
       entries:
         - title: EF300 and EF600
-          url: "/maintenance-ef600/index.html"
           entries:
+              - title: Overview
+                url: "/maintenance-ef600/index.html"
               - title: Batteries
                 entries:
                 - title: Overview and requirements
@@ -533,8 +534,9 @@ sidebar:
                 - title: Add SAS expansion cards
                   url: "/maintenance-ef600/sas_add_supertask_task.html"
         - title: E2800
-          url: "/maintenance-e2800/index.html"
           entries:
+            - title: Overview
+              url: "/maintenance-e2800/index.html"
             - title: Batteries
               entries:
               - title: Overview and requirements
@@ -598,8 +600,9 @@ sidebar:
               - title: Complete host protocol conversion
                 url: "/maintenance-e2800/hpp_complete_protocol_conversion_task.html"
         - title: E5700
-          url: "/maintenance-e5700/index.html"
           entries:
+              - title: Overview
+                url: "/maintenance-e5700/index.html"
               - title: Batteries
                 entries:
                 - title: Overview and requirements
