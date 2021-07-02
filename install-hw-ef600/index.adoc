@@ -12,6 +12,10 @@ summary: EF300 and EF600 install overview
 Learn how to install and set up your new EF300 or EF600 storage system.
 
 You can choose one of the following content formats to guide you through installing and setting up your new storage system.
-* A https://library.netapp.com/ecm/ecm_download_file/ECMLP2851449[printable PDF] of step-by-step instructions with live links to additional content.
-* The online setup instructions described on this site. Start with the xref:prepare_for_install_task.adoc[Prepare for installation] topic to get started.
-=
+
+===PDF poster
+A https://library.netapp.com/ecm/ecm_download_file/ECMLP2851449[printable PDF] of step-by-step instructions with live links to additional content.
+
+===Online instructions
+The online setup instructions described on this site.
+Start with the xref:prepare_for_install_task.adoc[Prepare for installation] topic to get started.

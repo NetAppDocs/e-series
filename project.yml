@@ -26,8 +26,9 @@ sidebar:
         - title: Known issues
           url: /known-issues.html
     - title: Get started
-      url: "/getting-started/index.html"
       entries:
+          - title: What's included in this site
+            url: "/getting-started/index.html"
           - title: Learn about E-Series systems
             entries:
                 - title: E-Series terminology
