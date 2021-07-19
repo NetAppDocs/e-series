@@ -17,4 +17,6 @@ Before using the namespace, you verify that the host can write data to the names
 . Copy the files back to a different folder on the original disk.
 . Run the diff command to compare the copied files to the originals.
 
-You remove the file and folder that you copied.
+===== After you finish
+
+Remove the file and folder that you copied.

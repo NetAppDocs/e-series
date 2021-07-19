@@ -4,16 +4,16 @@ sidebar: sidebar
 keywords: multipath, conf, configuration, file, multipathd, daemon, override, built-in, set, up
 summary: The multipath.conf file is the configuration file for the multipath daemon, multipathd. The multipath.conf file overrides the built-in configuration table for multipathd. Any line in the file whose first non-white-space character is \# is considered a comment line. Empty lines are ignored.
 ---
-= Setting up the multipath.conf file
+= Set up the multipath.conf file
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The multipath.conf file is the configuration file for the multipath daemon, multipathd. The multipath.conf file overrides the built-in configuration table for multipathd. Any line in the file whose first non-white-space character is # is considered a comment line. Empty lines are ignored.
+The multipath.conf file is the configuration file for the multipath daemon, multipathd. The multipath.conf file overrides the built-in configuration table for multipathd. Any line in the file with a first non-white-space character of # is considered a comment line.
 
 NOTE: For SANtricity operating system 8.30 and newer, NetApp recommends using the default settings as provided.
 
-Example multipath.conf are available in the following locations:
+Example multipath.conf files are available in the following locations:
 
 * For SLES, /usr/share/doc/packages/multipath-tools/multipath.conf.synthetic
 * For RHEL, /usr/share/doc/device-mapper-multipath-0.4.9/multipath.conf

@@ -12,10 +12,12 @@ summary: If your controller includes a connection for NVMe over RoCE \(RDMA over
 [.lead]
 If your controller includes a connection for NVMe over RoCE (RDMA over Converged Ethernet), you can configure the NVMe port settings from the Hardware page or the System page in SANtricity System Manager.
 
-===== Before You Begin
+===== Before you begin
 
 * Your controller must include an NVMe over RoCE host port; otherwise, the NVMe over RoCE settings are not available in System Manager.
 * You must know the IP address of the host connection.
+
+===== About this task
 
 You can access the NVMe over RoCE configuration from the *Hardware* page or from menu:Settings[System]. This task describes how to configure the ports from the Hardware page.
 
@@ -52,6 +54,7 @@ Select the desired speed.    The options that appear in the drop-down list depen
  ** 50 Gbps
  ** 100 Gbps
  ** 200 Gbps
+
 *Note:* When a 200Gb-capable HIC is attached with a QSFP56 cable, auto-negotiate is only available when you are connecting to Mellanox switches and/or adapters.
 
 +

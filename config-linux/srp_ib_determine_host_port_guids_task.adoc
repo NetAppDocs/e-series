@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: infiniband-diag, package, include, command, display, global, unique, id, guid, ib, port, linux, distrubtion, ofed, rdma, information, hca, determining, determine, host, srp
 summary: The InfiniBand-diags package includes commands to display the globally unique ID \(GUID\) of each InfiniBand \(IB\) port. Most Linux distributions with OFED/RDMA supported through the included packages also have the InfiniBand-diags package, which includes commands to display information about the HCA.
 ---
-= Determining host port GUIDs and making the recommended settings--SRP over Infiniband
+= Determine host port GUIDs and making the recommended settings--SRP over Infiniband
 :icons: font
 :imagesdir: ../media/
 
