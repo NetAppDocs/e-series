@@ -339,6 +339,8 @@ sidebar:
                     url: "/config-linux/nvme_roce_worksheet_for_concept.html"
                 - title: NVMe over Fibre Channel Setup
                   entries:
+                  - title: Verify the Linux configuration
+                    url: "nvme_fc_verify_linux_config_support_task"
                   - title: Configure IP addresses using DHCP
                     url: "/config-linux/nvme_fc_configure_ip_address_dhcp_task.html"
                   - title: Install SANtricity Storage Manager

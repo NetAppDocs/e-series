@@ -27,10 +27,10 @@ IMPORTANT: To maintain system integrity, you must follow the procedure exactly i
 [.lead]
 Before you hot add a drive shelf, you must check for critical events and check the status of the IOMs.
 
-===== Before You Begin
+===== Before you begin
 
 * The power source for your storage system must be able to accommodate the power requirements of the new drive shelf. For the power specification for your drive shelf, see the https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe].
-* The cabling pattern for the existing storage system must match one of the applicable schemes shown in this guide.
+* The cabling pattern for the existing storage system must match one of the applicable schemes shown in this procedure.
 
 ===== Steps
 
@@ -119,7 +119,7 @@ The *Shelf Component Settings* dialog box appears.
  ** IOM/ESM A is listed.
  ** Current data rate is 12 Gbps for a SAS-3 drive shelf.
  ** Card communications is OK.
-. Disconnect all expansion cables from Controller B.
+. Disconnect all expansion cables from controller B.
 . Connect the drive shelf to controller B.
 +
 The following figure shows an example connection between an additional drive shelf and controller B. To locate the ports on your model, see the https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe].
@@ -135,9 +135,9 @@ NOTE: Optimal status indicates that the loss of redundancy error associated with
 [.lead]
 You connect the drive shelf to controller A, confirm IOM status, and then connect the drive shelf to controller B.
 
-===== Before You Begin
+===== Before you begin
 
-* You have updated your firmware to the latest version. To update your firmware follow the instructions in the link:../upgrade-santricity/index.html[Upgrading SANtricity OS].
+* You have updated your firmware to the latest version. To update your firmware, follow the instructions in the link:../upgrade-santricity/index.html[Upgrading SANtricity OS].
 
 ===== Steps
 
