@@ -263,7 +263,7 @@ sidebar:
                     url: "/config-linux/srp_ib_worksheet_concept.html"
                 - title: NVMe over InfiniBand Setup
                   entries:
-                  - title: Verify the Linux configuration is supported
+                  - title: Verify Linux configuration
                     url: "/config-linux/nvme_ib_verify_linux_config_support_task.html"
                   - title: Configure IP addresses using DHCP
                     url: "/config-linux/nvme_ib_configure_ip_address_dhcp_task.html"
@@ -339,7 +339,7 @@ sidebar:
                     url: "/config-linux/nvme_roce_worksheet_for_concept.html"
                 - title: NVMe over Fibre Channel Setup
                   entries:
-                  - title: Verify the Linux configuration
+                  - title: Verify Linux configuration
                     url: "nvme_fc_verify_linux_config_support_task"
                   - title: Configure IP addresses using DHCP
                     url: "/config-linux/nvme_fc_configure_ip_address_dhcp_task.html"
