@@ -11,7 +11,7 @@ summary: Before using the volume, you verify that the host can write data to the
 [.lead]
 Before using the volume, you verify that the host can write data to the volume and read it back.
 
-===== Before You Begin
+===== Before you begin
 
 You must have initialized the volume and formatted it with a file system.
 
@@ -20,5 +20,7 @@ You must have initialized the volume and formatted it with a file system.
 . On the host, copy one or more files to the mount point of the disk.
 . Copy the files back to a different folder on the original disk.
 . Run the diff command to compare the copied files to the originals.
+
+===== After you finish
 
 Remove the file and folder that you copied.

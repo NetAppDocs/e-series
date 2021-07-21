@@ -17,4 +17,4 @@ You must ensure the following:
 * You must enable flow control *end to end*.
 * If appropriate, you have enabled jumbo frames.
 
-NOTE: Port channels/LACP is not supported on the controller's switch ports. Host-side LACP is not recommended; multipathing provides the same, and in some cases better, benefits.
+NOTE: Port channels/LACP is not supported on the controller's switch ports. Host-side LACP is not recommended; multipathing provides the same benefits, and in some cases, better benefits.

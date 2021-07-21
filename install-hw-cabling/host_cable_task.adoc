@@ -9,12 +9,12 @@ summary: You can cable a host directly to a controller or use switches to connec
 :imagesdir: ../media/
 
 [.lead]
-You can cable a host directly to a controller or use switches to connect a host to a controller.
+You can cable a host directly to a controller (direct-attached topology) or use switches (switch topology) to connect a host to a controller.
 
 == Cabling for a direct-attached topology
 
 [.lead]
-A topology that connects host adapters directly to controllers in your storage system.
+A direct-attached topology connects host adapters directly to controllers in your storage system.
 
 The following figure shows an example connection. To help ensure maximum performance, use all available host adapter ports.
 
@@ -27,11 +27,11 @@ image:../media/legend_icon_01_inst-hw-cabling.gif[] Connect each host adapter po
 == Cabling for a switch topology
 
 [.lead]
-A topology that uses switches to connect hosts to the controllers in your storage system must support the connection type used between the host and the controller.
+A switch topology uses switches to connect hosts to the controllers in your storage system. The switch must support the connection type used between the host and the controller.
 
 The following figure shows an example connection.
 
-For switches that provide provisioning capability, it is recommended to isolate each initiator and target pair.
+For switches that provide provisioning capability, you should isolate each initiator and target pair.
 
 === Two hosts and two switches
 

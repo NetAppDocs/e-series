@@ -9,12 +9,7 @@ summary: Multipath software provides a redundant path to the storage array in ca
 :imagesdir: ../media/
 
 [.lead]
-Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. There are currently two methods of multipathing available for NVMe, and which you will be using is going to be dependent on which OS version you are running. For RHEL 7 and SLES 12, device mapper multipath (DMMP) will be used. For SLES 15, a native NVMe multipathing solution will be used.
-
-== Configure the host to run failover
-
-[.lead]
-The SUSE Linux Enterprise Server host requires configuration changes to run failover. The failover solution uses DM-MP.
+To provide a redundant path to the storage array, you can configure the host to run failover.
 
 ===== Before You Begin
 
@@ -24,7 +19,12 @@ The SUSE Linux Enterprise Server host requires configuration changes to run fail
 +
 NOTE: Refer to the NetApp Interoperability Matrix Tool (IMT) to ensure any required updates are installed as multipathing may not work correctly with the GA versions of SLES or RHEL.
 
-By default, DM-MP is disabled in RHWL and SLES. Complete the following steps to enable DM-MP components on the host.
+
+==== About this task
+
+Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. You can use one of two methods of multipathing for NVMe, depending on which OS version you are running. For RHEL 7 and SLES 12, use the device mapper multipath (DMMP). For SLES 15, use the native NVMe multipathing solution.
+
+By default, DM-MP is disabled in RHEL and SLES. Complete the following steps to enable DM-MP components on the host.
 
 ===== Steps
 

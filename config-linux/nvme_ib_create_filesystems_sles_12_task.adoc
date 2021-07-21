@@ -13,7 +13,7 @@ For RHEL 7 and SLES 12, you create a file system on the namespace and mount the 
 
 ===== Steps
 
-. Run the multipath -ll command to get a list of/dev/mapper/dm devices.
+. Run the multipath -ll command to get a list of /dev/mapper/dm devices.
 +
 ----
 # multipath -ll

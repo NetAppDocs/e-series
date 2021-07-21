@@ -11,11 +11,13 @@ summary: A new LUN has no partition or file system when the Linux host first dis
 [.lead]
 A new LUN has no partition or file system when the Linux host first discovers it. You must format the LUN before it can be used. Optionally, you can create a file system on the LUN.
 
-===== Before You Begin
+===== Before you begin
 
 The host must have discovered the LUN.
 
 In the /dev/mapper folder, you have run the ls command to see the available disks.
+
+===== About this task
 
 You can initialize the disk as a basic disk with a GUID partition table (GPT) or Master boot record (MBR).
 

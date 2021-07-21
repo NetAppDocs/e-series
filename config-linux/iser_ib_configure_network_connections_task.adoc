@@ -12,7 +12,7 @@ summary: If your configuration uses the iSER over Infiniband protocol, perform t
 [.lead]
 If your configuration uses the iSER over Infiniband protocol, perform the steps in this section.
 
-===== Before You Begin
+===== About this task
 
 When you are using a 56-Gbps HIC with the iSER over Infiniband protocol, additional array configuration is required.
 

@@ -13,7 +13,7 @@ When you install the SANtricity Storage Manager software on your management stat
 
 IMPORTANT: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricty System Manager, refer to the _Download the command line interface (CLI)_ topic under the SANtricity System Manager Online Help.
 
-===== Before You Begin
+===== Before you begin
 
 * You are using SANtricity software 11.53 or earlier.
 * You must have the correct administrator or superuser privileges.
@@ -21,6 +21,8 @@ IMPORTANT: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (S
  ** *RAM*: 2 GB for Java Runtime Engine
  ** *Disk space*: 5 GB
  ** *OS/Architecture*: Refer to https://mysupport.netapp.com/site/[NetApp Support]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager* for guidance on determining the supported operating system versions and architectures.
+
+===== About this task
 
 This section describes how to install SANtricity Storage Manager on both the Windows and Linux OS platforms, because both Windows and Linux are common management station platforms when Linux is used for the data host.
 
