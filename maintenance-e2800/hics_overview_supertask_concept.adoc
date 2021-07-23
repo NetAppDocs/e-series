@@ -9,7 +9,7 @@ summary: Before you add, upgrade or replace a host interface card, you need to b
 :imagesdir: ../media/
 
 [.lead]
-Before you add, upgrade or replace a host interface card, you need to be aware of certain requirements and considerations.
+Before you add, upgrade, or replace a host interface card, you need to be aware of certain requirements and considerations.
 
 The steps to replace a HIC depend on whether you have one or two controllers, as follows:
 

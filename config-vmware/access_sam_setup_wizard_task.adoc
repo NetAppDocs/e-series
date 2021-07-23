@@ -11,7 +11,7 @@ summary: You use the Setup wizard in SANtricity System Manager to configure your
 [.lead]
 You use the Setup wizard in SANtricity System Manager to configure your storage array.
 
-===== Before You Begin
+===== Before you begin
 
 * You have ensured that the device from which you will access SANtricity System Manager contains one of the following browsers:
 +
@@ -42,6 +42,8 @@ a|
 
 * You are using out-of-band management.
 
+===== About this task
+
 If you are an iSCSI user, make sure you have closed the Setup wizard while configuring iSCSI.
 
 The wizard automatically relaunches when you open System Manager or refresh your browser and _at least one_ of the following conditions is met:
@@ -54,13 +56,13 @@ If the Setup wizard does not automatically appear, contact technical support.
 
 ===== Steps
 
-. From your browser, enter the following URL: `https://<DomainNameOrIPAddress>`
+. From your browser, enter the following URL: `+https://<DomainNameOrIPAddress>+`
 +
-IPAddress is the address for one of the storage array controllers.
+`IPAddress` is the address for one of the storage array controllers.
 +
 The first time SANtricity System Manager is opened on an array that has not been configured, the Set Administrator Password prompt appears. Role-based access management configures four local roles: admin, support, security, and monitor. The latter three roles have random passwords that cannot be guessed. After you set a password for the admin role you can change all of the passwords using the admin credentials. See _SANtricity System Manager online help_ for more information on the four local user roles.
 
-. Enter the System Manager password for the admin role in the Set Administrator Password and Confirm Password fields, and then select the *Set Password* button.
+. Enter the System Manager password for the admin role in the Set Administrator Password and Confirm Password fields, and then click *Set Password*.
 +
 When you open System Manager and no pools, volumes groups, workloads, or notifications have been configured, the Setup wizard launches.
 

@@ -11,9 +11,9 @@ summary: Express Configuration
 [.lead]
 The Linux express method for installing your storage array and accessing SANtricity System Manager is appropriate for setting up a standalone Linux host to an E-Series storage system. It is designed to get the storage system up and running as quickly as possible with minimal decision points.
 
-The Linux express method includes the following steps:
+=== Procedure overview
 
-===== Steps
+The Linux express method includes the following steps:
 
 . Setting up one of the following communication environments:
  ** Fibre Channel (FC)
@@ -27,13 +27,9 @@ The Linux express method includes the following steps:
 . Creating logical volumes on the storage array.
 . Making the volumes available to the data host.
 
-== Find more information
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2547936[Linux Unified Host Utilities 7.1 Installation Guide]
-+
-Describes how to use the Linux Unified Host Utilities 7.0.
-* Online help
-+
-Describes how to use SANtricity System Manager to complete configuration and storage management tasks. It is available within the product.
+=== Find more information
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2547936[Linux Unified Host Utilities 7.1 Installation Guide] -- Describes how to use the Linux Unified Host Utilities 7.0.
+* Online help -- Describes how to use SANtricity System Manager to complete configuration and storage management tasks. It is available within the product.
 * https://kb.netapp.com/[NetApp Knowledgebase] (a database of articles)
-+
-Provides troubleshooting information, FAQs, and instructions for a wide range of NetApp products and technologies.
+ -- Provides troubleshooting information, FAQs, and instructions for a wide range of NetApp products and technologies.

@@ -413,7 +413,7 @@ sidebar:
                 url: "/config-windows/configure_ip_address_dhcp_task.html"
               - title: Configure multipath software
                 url: "/config-windows/configure_multipath_software_task.html"
-              - title: Install and configure Windows
+              - title: Install and configure Unified Host Utilities
                 url: "/config-windows/install_configure_host_utilities_task.html"
               - title: Install SANtricity Storage Manager
                 url: "/config-windows/install_storage_manager_for_smcli_task.html"
@@ -584,7 +584,7 @@ sidebar:
             - title: Host interface cards
               entries:
               - title: Overview and requirements
-                url: maintenance-e2800/hics_overview_supertask_concept.html
+                url: "maintenance-e2800/hics_overview_supertask_concept.html"
               - title: Add host interface cards
                 url: "/maintenance-e2800/hics_add_supertask_task.html"
               - title: Upgrade host interface card

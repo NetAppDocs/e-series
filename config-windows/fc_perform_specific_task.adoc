@@ -16,10 +16,12 @@ For the Fibre Channel protocol, you configure the switches and determine the hos
 [.lead]
 Configuring (zoning) the Fibre Channel (FC) switches enables the hosts to connect to the storage array and limits the number of paths. You zone the switches using the management interface for the switches.
 
-===== Before You Begin
+===== Before you begin
 
 * You must have administrator credentials for the switches.
 * You must have used your HBA utility to discover the WWPN of each host initiator port and of each controller target port connected to the switch.
+
+===== About this task
 
 For details about zoning your switches, see the switch vendor's documentation.
 
@@ -37,7 +39,7 @@ You must zone by WWPN, not by physical port. Each initiator port must be in a se
 [.lead]
 You install an FC HBA utility so you can view the worldwide port name (WWPN) of each host port. Additionally, you can use the HBA utility to change any settings recommended in the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for the supported configuration.
 
-===== Before You Begin
+===== Before you begin
 
 Guidelines for HBA utilities:
 

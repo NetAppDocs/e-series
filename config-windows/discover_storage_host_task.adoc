@@ -11,7 +11,7 @@ summary: LUNs on your storage system appear as disks to the Windows host. When y
 [.lead]
 LUNs on your storage system appear as disks to the Windows host. When you add new LUNs, you must manually rescan the associated disks to discover them. The host does not automatically discover new LUNs.
 
-===== Before You Begin
+===== Before you begin
 
 You must be logged on as an administrator.
 

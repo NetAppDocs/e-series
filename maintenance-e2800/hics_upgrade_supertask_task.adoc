@@ -9,21 +9,23 @@ summary: You upgrade a host interface card (HIC) to increase the number of host 
 :imagesdir: ../media/
 
 [.lead]
-You upgrade a host interface card (HIC) to increase the number of host ports or to change host protocols. When you upgrade the HICs, you must power off the storage array, remove the existing HIC from each controller, install a new HIC, and reapply power.
+You upgrade a host interface card (HIC) to increase the number of host ports or to change host protocols.
+
+When you upgrade the HICs, you must power off the storage array, remove the existing HIC from each controller, install a new HIC, and reapply power.
 
 == Step 1: Prepare to upgrade host interface cards
 
 [.lead]
 You prepare to upgrade host interface cards (HICs) by backing up the storage array's configuration database, collecting support data, and stopping host I/O operations. Then, you can power down the controller shelf.
 
-===== Before You Begin
+===== Before you begin
 
 * You have scheduled a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)
 * You have installed SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
 
 ===== Steps
 
-. From the Home of SANtricity System Manager, ensure that the storage array has Optimal status.
+. From the Home page of SANtricity System Manager, ensure that the storage array has Optimal status.
 +
 If the status is not Optimal, use the Recovery Guru or contact technical support to resolve the problem. Do not continue with this procedure.
 
@@ -82,7 +84,7 @@ image:../media/legend_icon_01_maint-e2800.gif[] Cache Active LED
 [.lead]
 You remove the controller canister so you can upgrade the new host interface card (HIC). When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
 
-===== Before You Begin
+===== Before you begin
 
 * You have labels to identify each cable that is connected to the controller canister.
 * You have an ESD wristband, or you have taken other antistatic precautions.
@@ -134,7 +136,7 @@ If you are removing the controller canister from an E2812 controller shelf, E282
 [.lead]
 You remove the original host interface card (HIC) so you can replace it with an upgraded one.
 
-===== Before You Begin
+===== Before you begin
 
 * You have a #1 Phillips screwdriver.
 
@@ -172,7 +174,7 @@ image:../media/legend_icon_01_maint-e2800.gif[] Host interface card (HIC) image:
 [.lead]
 Install the new host interface card (HIC) to increase the number of host ports in your storage array.
 
-===== Before You Begin
+===== Before you begin
 
 * You have an ESD wristband, or you have taken other antistatic precautions.
 * You have a #1 Phillips screwdriver.
@@ -193,7 +195,7 @@ Be careful not to scratch or bump the components on the bottom of the HIC or on 
 
 . Carefully lower the HIC into place, and seat the HIC connector by pressing gently on the HIC.
 +
-IMPORTANT: **Possible equipment damage --**Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrews.
+IMPORTANT: **Possible equipment damage** -- Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrews.
 +
 image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[]
 +
@@ -240,7 +242,7 @@ IMPORTANT: Do not connect data cables to the new HIC ports at this time.
 [.lead]
 You complete the process of upgrading a host interface card by checking the controller LEDs and seven-segment display and confirming that the controller's status is Optimal.
 
-===== Before You Begin
+===== Before you begin
 
 * You have installed any new host hardware needed for the new host ports, such as switches or host bus adapters (HBAs).
 * You have all cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new host ports.
@@ -269,5 +271,7 @@ NOTE: If you cannot resolve the problem, contact technical support.
 
 . If the new HIC ports require SFP+ transceivers, install these SFPs.
 . Connect the cables from the controller's host ports to the data hosts.
+
+===== Result
 
 The process of upgrading a host interface card in your storage array is complete. You can resume normal operations.

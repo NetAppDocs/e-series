@@ -16,7 +16,7 @@ For the SAS protocol, you determine host port addresses and make the settings re
 [.lead]
 For the SAS protocol, you find the SAS addresses using the HBA utility, then use the HBA BIOS to make the appropriate configuration settings.
 
-===== Before You Begin
+===== Before you begin
 
 Guidelines for HBA utilities:
 

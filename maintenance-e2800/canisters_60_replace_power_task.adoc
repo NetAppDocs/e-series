@@ -16,7 +16,7 @@ Each 60-drive controller shelf or drive shelf includes two power canisters for p
 [.lead]
 You prepare to replace a power canister in a 60-drive controller shelf or drive shelf by collecting support data about your storage array and locating the failed component.
 
-===== Before You Begin
+===== Before you begin
 
 * From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with the power canister and select *Recheck* from the Recovery Guru to ensure no other items must be addressed first.
 * Check that the amber Attention LED on the power canister is on, indicating that the canister has a fault. Contact technical support for assistance if both power canisters in the shelf have their amber Attention LEDs on.
@@ -26,7 +26,7 @@ This task describes how to prepare to replace a power canister for the following
 * E2860 controller shelf
 * DE460C drive shelf
 
-You can replace a power canister while your storage array is powered on and performing host I/O operations, as long as the second power canister in the shelf has an Optimal status and the**OK to remove** field in the Details area of the Recovery Guru in SANtricity System Manager displays *Yes*.
+You can replace a power canister while your storage array is powered on and performing host I/O operations, as long as the second power canister in the shelf has an Optimal status and the **OK to remove** field in the Details area of the Recovery Guru in SANtricity System Manager displays *Yes*.
 
 While you perform this task, the other power canister supplies power to both fans to ensure that the equipment does not overheat.
 
@@ -68,7 +68,7 @@ image:../media/legend_icon_02_maint-e2800.gif[] Attention LED. If it is *Solid a
 [.lead]
 You remove a failed power canister so you can replace it with a new one. When you remove a power canister, you turn off power, disconnect the power cord, and slide the component out of the shelf.
 
-===== Before You Begin
+===== Before you begin
 
 * You have one power canister that is installed and running.
 * You have an ESD wristband, or you have taken other antistatic precautions.
@@ -92,7 +92,7 @@ IMPORTANT: When removing a power canister, always use two hands to support its w
 [.lead]
 You install a new power canister to replace the failed one. When you install a power canister, you slide the component into the shelf, close the cam handle, reconnect the power cord, and reapply power.
 
-===== Before You Begin
+===== Before you begin
 
 * You have a replacement power canister that is supported for your controller shelf or drive shelf model.
 * You have checked that the on/off switch of the new power canister is in the Off position.
@@ -116,7 +116,7 @@ You complete the power canister replacement by confirming that the new power can
 
 . On the new power canister, check that the green Power LED is on and the amber Attention LED is OFF.
 . From the Recovery Guru in SANtricity System Manager, select *Recheck* to ensure the problem has been resolved.
-. If a failed power canister is still being reported, repeat the steps in Step 2: Remove failed power canister and in Step 3: Install new power canister. If the problem continues to persist, contact technical support.
+. If a failed power canister is still being reported, repeat the steps in _Step 2: Remove failed power canister_ and in _Step 3: Install new power canister_. If the problem continues to persist, contact technical support.
 . Remove the antistatic protection.
 . Collect support data for your storage array using SANtricity System Manager.
  .. Select *Support* > *Support Center* > *Diagnostics*.
@@ -124,5 +124,7 @@ You complete the power canister replacement by confirming that the new power can
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
+
+===== Result
 
 Your power canister replacement is complete. You can resume normal operations.

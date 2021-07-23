@@ -11,7 +11,7 @@ summary: Install a new battery when the old one has failed.
 [.lead]
 Install a new battery when the old one has failed.
 
-===== Before You Begin
+===== Before you begin
 
 * You have the failed battery from the controller canister.
 * You have the replacement battery.
@@ -41,5 +41,7 @@ IMPORTANT: *Possible hardware damage* -- The metal flange at the front of the ba
 
  ** *Correct -- The battery's metal flange is completely inserted in the slot on the controller:*image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif[]
  ** *Incorrect -- The battery's metal flange is not inserted into the slot on the controller:*image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[]
+
+===== After you finish
 
 Go to link:batteries_reinstall_controller_canister_task.html[Re-install controller canister]
