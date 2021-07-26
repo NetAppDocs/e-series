@@ -715,6 +715,22 @@ sidebar:
             url: "/remote-storage-volumes/modify_remote_storage_task.html"
           - title: Remove remote storage object
             url: "/remote-storage-volumes/remove_remote_storage_task.html"
+    - title: Vcenter plugin
+      entries:
+          - title: Overview
+            url: /san-spvc-ic_overview.html
+          - title: Installation
+            url: /san-spvc-ic_installation.html
+          - title: User Access
+            url: /san-spvc-ic_user_access.html
+          - title: Login and Navigation
+            url: /san-spvc-ic_login_and_navigation.html
+          - title: Storage Array Discovery
+            url: /san-spvc-ic_storage_array_discovery.html
+          - title: Storage Provisioning
+            url: /san-spvc-ic_storage_provisioning.html
+          - title: Plugin Removal
+            url: /san-spvc-ic_plugin_removal.html
     - title: Earlier versions
       url: /early-versions.html
     - title: Legal notices

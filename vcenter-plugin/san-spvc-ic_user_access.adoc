@@ -1,0 +1,110 @@
+---
+sidebar: sidebar
+permalink: san-spvc-ic_user_access.html
+keywords:
+summary:
+---
+
+= User Access 
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2021-06-30 09:58:12.278750
+//
+
+[.lead]
+Follow the instructions in this section to configure access permissions for the plugin’s users.
+
+=== Review required vSphere privileges
+
+|===
+|Plugin Access Type |vSphere Privilege Required
+
+|Read-Write (Configure)
+|Datastore.Configure
+|Read-Only (View)
+|Datastore.Browse
+|===
+
+=== Configure Storage Administrator role
+
+To provide read/write privileges for plugin users, you can create, clone, or edit a role. For more information about configuring roles in the vSphere Client, see the following topic in the VMware Doc Center:
+
+** https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-41E5E52E-A95B-4E81-9724-6AD6800BEF78.html[Create a Custom Role^]
+
+==== Access role actions
+
+. From the home page of the vSphere Client, select *Administrator* from the access control area.
+. Click *Roles* from the access control area.
+. Perform one of the following actions:
+
+** New role: Click on the Create Role action icon.
+** Clone role: Select an existing role and click on the Clone Role action icon.
+** Edit existing role: Select an existing role and click on the Edit Role action icon.
+
+[NOTE]
+The Administrator role is not editable.
+
+The appropriate wizard appears, depending on the above selection.
+
+==== Create a new role 
+
+. In the Privileges list, select the access permissions to assign to this role.
++
+To allow Read-Only access to the plugin, select *Datastore* > *Browse* *datastore*. To allow Read-Write access, select *Datastore* > *Configure datastore*.
+
+. Assign other privileges for the list if needed, and then click *Next*.
+. Name the role and provide a description.
+. Click *Finish*. 
+
+==== Clone a role
+
+. Name the role and provide a description.
+. Click *OK* to finish the wizard.
+. Select the cloned role from the list, and then click on *Edit Role*.
+. In the Privileges list, select the access permissions to assign to this role.
++
+To allow Read-Only access to the plugin, select *Datastore* > *Browse* *datastore*. To allow Read-Write access, select *Datastore* > *Configure datastore*.
+
+. Click *Next*.
+. Update the name and description, if desired.
+. Click *Finish*.
+
+==== Edit an existing role
+
+. In the Privileges list, select the access permissions to assign to this role.
++
+To allow Read-Only access to the plugin, select *Datastore* > *Browse* *datastore*. To allow Read-Write access, select *Datastore* > *Configure datastore*.
+
+. Click *Next*.
+. Update the name or description, if desired.
+. Click *Finish*.
+
+=== Set permissions for vCenter Server Appliance
+
+After setting privileges for a role, you must then add a permission to the vCenter Server Appliance. This permission allows a given user or group access to the plugin.
+
+. From the menu dropdown list, select *Hosts and Clusters*.
+. Select the *vCenter Server Appliance* from the access control area.
+. Click the *Permissions* tab.
+. Click the *Add Permission* action icon.
+. Select the appropriate domain and user/group.
+. Select the role created that allows for the read/write plugin privilege.
+. Enable the *Propagate to Children* option, if needed.
+. Click *OK*.
+
+[NOTE]
+You can select an existing permission and modify it to use the created role. *However, be aware that the role must have the same privileges along with read/write plugin privileges as to avoid a regress in permissions.* 
+
+To access the plugin, you must log in to the vSphere Client under the user account that has the read/write privileges for the plugin. 
+
+For more information about managing permissions, see the following topics in the VMware Doc Center:
+
+** https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-3B78EEB3-23E2-4CEB-9FBD-E432B606011A.html[Managing Permissions for vCenter Components^]
+** https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-FAA074CC-E8C9-4F13-ABCF-6CF7F15F04EE.html[Best Practices for Roles and Permissions^]
