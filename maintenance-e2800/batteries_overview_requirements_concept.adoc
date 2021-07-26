@@ -20,7 +20,7 @@ If you plan to replace a failed battery, keep the following requirements in mind
 If this software has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install it.
 
 * You must have a replacement battery.
-* You have an ESD wristband, or you have taken other antistatic precautions.
+* You must have an ESD wristband, or you have taken other antistatic precautions.
 * You should use labels to identify each cable that is connected to the controller canister.
 
 == Recovery Guru alerts
@@ -43,7 +43,7 @@ a|
 Two controllers (duplex)
 a|
 
-. Take controller offline.
+. Take the controller offline.
 . Remove the controller canister.
 . Replace the battery.
 . Replace the controller canister.

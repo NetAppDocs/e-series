@@ -16,7 +16,7 @@ You can replace a controller canister in a duplex configuration, which is a two-
 [.lead]
 You prepare to replace a controller canister by verifying that the replacement controller canister has the correct FRU part number, backing up the configuration, and collecting support data. If the controller is still online, you must take it offline.
 
-===== Before You Begin
+===== Before you begin
 
 This task describes how to prepare to replace a controller canister in the duplex version (two controllers) for the following controller shelves:
 
@@ -53,7 +53,7 @@ When a controller has a fault and needs to be replaced, the replacement part num
 
 . Confirm that the replacement part number for the failed controller is the same as the FRU part number for the replacement controller.
 +
-IMPORTANT: *Possible loss of data access --* If the two part numbers are not the same, do not attempt this procedure. In addition, if the failed controller canister includes a host interface card (HIC), you must install that HIC into the new controller canister. The presence of mismatched controllers or HICs will cause the new controller to lock down when you bring it online.
+IMPORTANT: *Possible loss of data access* -- If the two part numbers are not the same, do not attempt this procedure. In addition, if the failed controller canister includes a host interface card (HIC), you must install that HIC into the new controller canister. The presence of mismatched controllers or HICs will cause the new controller to lock down when you bring it online.
 
 . Back up the storage array's configuration database.
 +
@@ -122,7 +122,7 @@ You remove a controller canister to replace the failed canister with a new one. 
 [.lead]
 You remove the failed controller canister so you can replace it with a new one.
 
-===== Before You Begin
+===== Before you begin
 
 * You must use labels to identify each cable that is connected to the controller canister.
 * You must have a #1 Phillips screwdriver.
@@ -224,7 +224,7 @@ You install a new controller canister to replace the failed one. Perform this ta
 [.lead]
 You must install the battery into the replacement controller canister. You can install the battery that you removed from the original controller canister or install a new battery that you ordered.
 
-===== Before You Begin
+===== Before you begin
 
 * You have the battery from the original controller canister.
 * You have the replacement controller canister.
@@ -258,7 +258,7 @@ IMPORTANT: *Possible hardware damage* -- The metal flange at the front of the ba
 [.lead]
 If you removed a HIC from the original controller canister, you must install that HIC in the new controller canister.
 
-===== Before You Begin
+===== Before you begin
 
 * You must have a replacement controller canister with the same part number as the controller canister you are replacing.
 * You must have a #1 Phillips screwdriver.
@@ -273,7 +273,7 @@ Be careful not to scratch or bump the components on the bottom of the HIC or on 
 
 . Carefully lower the HIC into place, and seat the HIC connector by pressing gently on the HIC.
 +
-IMPORTANT: **Possible equipment damage --**Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrews.
+IMPORTANT: **Possible equipment damage** -- Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrews.
 +
 image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[]
 +
@@ -356,5 +356,7 @@ As needed, install the latest version.
  .. Select *Collect Support Data*.
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
+
+===== Result
 
 Your controller replacement is complete. You can resume normal operations.

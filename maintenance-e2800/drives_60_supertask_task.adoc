@@ -9,14 +9,16 @@ summary: The steps to replace a failed drive drawer in an E2860 controller shelf
 :imagesdir: ../media/
 
 [.lead]
-The steps to replace a failed drive drawer in an E2860 controller shelf or a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection. If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must stop all host I/O activity and power off the shelf before replacing the drive drawer.
+The steps to replace a failed drive drawer in an E2860 controller shelf or a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection.
+
+If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must stop all host I/O activity and power off the shelf before replacing the drive drawer.
 
 == Step 1: Prepare to replace drive drawer (60-drive)
 
 [.lead]
 You prepare to replace a drive drawer by determining if you can perform the replacement procedure while the drive shelf is online or if you need to stop host I/O activity and power off any of the shelves that are powered on. If you are replacing a drawer in a shelf with Drawer Loss Protection, there is no need to stop host I/O activity and power off any of the shelves.
 
-===== Before You Begin
+===== Before you begin
 
 * You must have installed SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
 * The drive shelf must meet all of these conditions:
@@ -25,12 +27,12 @@ You prepare to replace a drive drawer by determining if you can perform the repl
  ** All drive shelf components must be in place.
  ** The volumes in the drive drawer cannot be in a Degraded state.
 +
-IMPORTANT: *Possible loss of data access --* If a volume is already in a Degraded state, and you remove drives from the drive drawer, the volume can fail.
+IMPORTANT: *Possible loss of data access* -- If a volume is already in a Degraded state, and you remove drives from the drive drawer, the volume can fail.
 
 ===== Steps
 
 . Determine if the drive shelf is powered on.
- ** If the power is off, you do not need to issue the CLI command. Go to Step 2: Remove cable chains.
+ ** If the power is off, you do not need to issue the CLI command. Go to link:drives_60_supertask_task.html#remove-cable-chains[Remove cable chains].
  ** If the power is on, go to the next step.
 . Type this command on the command line, and press *Enter*:
 +
@@ -89,7 +91,7 @@ You can perform the replace procedure while the drive drawer is online, because 
 If you are replacing a drawer in a _controller_ shelf *without* Drawer Loss Protection:
 
  .. Turn off both power switches on the controller shelf.
-Wait for all LEDs on the controller shelf to go dark.
+ .. Wait for all LEDs on the controller shelf to go dark.
 
 +
 If you are replacing a drawer in an _expansion_ drive shelf *without* Drawer Loss Protection:
@@ -97,14 +99,14 @@ If you are replacing a drawer in an _expansion_ drive shelf *without* Drawer Los
  .. Turn off both power switches on the controller shelf.
  .. Wait for all LEDs on the controller shelf to go dark.
  .. Turn off both power switches on the drive shelf.
-Wait two minutes for drive activity to stop.
+ .. Wait two minutes for drive activity to stop.
 
 == Step 2: Remove cable chains
 
 [.lead]
 You remove both cable chains so you can remove and replace a failed drive drawer. The left and right cable chains allow the drawers to slide in and out.
 
-===== Before You Begin
+===== Before you begin
 
 * You have issued the Set Drawer Attention Indicator CLI command, or you have stopped host I/O activity and powered off the drive shelf and controller shelf.
 * You have an ESD wristband, or you have taken other antistatic precautions.
@@ -115,7 +117,7 @@ Each drive drawer has left and right cable chains. The metal ends on the cable c
 * The left and right vertical guide rails connect the cable chain to the enclosure's midplane.
 * The left and right horizontal guide rails connect the cable chain to the individual drawer.
 
-IMPORTANT: *Possible hardware damage --* If the drive tray is powered on, the cable chain is energized until both ends are unplugged. To avoid shorting out the equipment, do not allow the unplugged cable chain connector to touch the metal chassis if the other end of the cable chain is still plugged in.
+IMPORTANT: *Possible hardware damage* -- If the drive tray is powered on, the cable chain is energized until both ends are unplugged. To avoid shorting out the equipment, do not allow the unplugged cable chain connector to touch the metal chassis if the other end of the cable chain is still plugged in.
 
 ===== Steps
 
@@ -186,7 +188,7 @@ IMPORTANT: *Possible equipment damage due to overheating* -- If the shelf is pow
  .. To unlatch the cable chain, insert your finger into the orange ring.
  .. To unplug the cable chain, pull toward you approximately 1 inch (2.5 cm). Leave the cable chain connector within the vertical guide rail.
 +
-IMPORTANT: *Possible hardware damage --* If the drive tray is powered on, the cable chain is energized until both ends are unplugged. To avoid shorting out the equipment, do not allow the unplugged cable chain connector to touch the metal chassis if the other end of the cable chain is still plugged in.
+IMPORTANT: *Possible hardware damage* -- If the drive tray is powered on, the cable chain is energized until both ends are unplugged. To avoid shorting out the equipment, do not allow the unplugged cable chain connector to touch the metal chassis if the other end of the cable chain is still plugged in.
 . Disconnect the left cable chain from the horizontal guide rail, and pull the entire cable chain out of the drive shelf.
 +
 If you are performing this procedure with the power on, all LEDs turn off when you disconnect the last cable chain connector, including the amber Attention LED.
@@ -200,7 +202,7 @@ The LED could remain on for as long as a minute after you reinstall the fan whil
 [.lead]
 You remove a failed drive drawer to replace it with a new one. Removing a drive drawer entails sliding the drawer partially out, recording the locations of the drives, removing the drives, and removing the drive drawer.
 
-===== Before You Begin
+===== Before you begin
 
 * You have an ESD wristband, or you have taken other antistatic precautions.
 * You have removed the right and left cable chains for the drive drawer.
@@ -244,7 +246,7 @@ image:../media/legend_icon_01_maint-e2800.gif[] Drive drawer release lever
 [.lead]
 You install a new drive drawer to replace the failed one. Installing a drive drawer into a drive tray entails sliding the drawer into the empty slot, installing the drives, and replacing the front bezel.
 
-===== Before You Begin
+===== Before you begin
 
 * You know where to install each drive.
 * You must have a replacement drive drawer.
@@ -298,7 +300,7 @@ IMPORTANT: *Possible equipment damage due to overheating* -- If the shelf is pow
  .. Align both cable chain connectors with their corresponding guide rails.
  .. Slide the cable chain's horizontal connector onto the horizontal guide rail, and push it in as far as it can go.
 +
-IMPORTANT: *Risk of equipment malfunction --* Make sure to slide the connector into the guide rail. If the connector rests on the top of the guide rail, problems might occur when the system runs.
+IMPORTANT: *Risk of equipment malfunction* -- Make sure to slide the connector into the guide rail. If the connector rests on the top of the guide rail, problems might occur when the system runs.
 +
 The figure shows the horizontal and vertical guide rails for the second drive drawer in the enclosure.
 +
@@ -309,7 +311,7 @@ image:../media/legend_icon_01_maint-e2800.gif[] Horizontal guide rail image:../m
  .. Slide the vertical connector on the right cable chain into the vertical guide rail.
  .. After you have reconnected both ends of the cable chain, carefully pull on the cable chain to verify that both connectors are latched.
 +
-IMPORTANT: *Risk of equipment malfunction --* If the connectors are not latched, the cable chain might come loose during drawer operation.
+IMPORTANT: *Risk of equipment malfunction* -- If the connectors are not latched, the cable chain might come loose during drawer operation.
 . Reinstall the right fan canister. If the drive shelf is receiving power, confirm that the amber LED on the back of the fan is now off and that air is now coming out of the back.
 +
 The LED could remain on for as long as a minute after you reinstall the fan while the fan settles into the correct speed.
@@ -324,12 +326,12 @@ IMPORTANT: *Possible equipment damage due to overheating* -- If the shelf is pow
  .. Align both cable chain connectors with their corresponding guide rails.
  .. Slide the cable chain's horizontal connector into the horizontal guide rail and push it in as far as it will go.
 +
-IMPORTANT: *Risk of equipment malfunction --* Make sure to slide the connector within the guide rail. If the connector rests on the top of the guide rail, problems might occur when the system runs.
+IMPORTANT: *Risk of equipment malfunction* -- Make sure to slide the connector within the guide rail. If the connector rests on the top of the guide rail, problems might occur when the system runs.
 
  .. Slide the vertical connector on the left cable chain into the vertical guide rail.
  .. After you reconnect both ends of the cable chain, carefully pull on the cable chain to verify that both connectors are latched.
 +
-IMPORTANT: *Risk of equipment malfunction --* If the connectors are not latched, the cable chain might come loose during drawer operation.
+IMPORTANT: *Risk of equipment malfunction* -- If the connectors are not latched, the cable chain might come loose during drawer operation.
 . Reinstall the left fan canister. If the drive shelf is receiving power, confirm that the amber LED on the back of the fan is now off and that air is now coming out of the back.
 +
 The LED could remain on for as long as a minute after you reinstall the fan while both fans settle into the correct speed.
@@ -339,13 +341,13 @@ The LED could remain on for as long as a minute after you reinstall the fan whil
 [.lead]
 You complete the drive drawer replacement by reinserting the drives and replacing the front bezel in the correct order.
 
-===== Before You Begin
+===== Before you begin
 
 * You know where to install each drive.
 * You have already replaced the drive drawer.
 * The new drawer cables have been installed.
 
-IMPORTANT: **Possible loss of data access --**You must install each drive in its original location in the drive drawer.
+IMPORTANT: **Possible loss of data access** -- You must install each drive in its original location in the drive drawer.
 
 ===== Steps
 
@@ -372,7 +374,7 @@ image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif[]
  .. Repeat these steps to install all the drives.
 . Slide the drawer back into the drive shelf by pushing it from the center and closing both levers.
 +
-IMPORTANT: *Risk of equipment malfunction --* Make sure to completely close the drive drawer by pushing both levers. You must completely close the drive drawer to allow proper airflow and prevent overheating.
+IMPORTANT: *Risk of equipment malfunction* -- Make sure to completely close the drive drawer by pushing both levers. You must completely close the drive drawer to allow proper airflow and prevent overheating.
 
 . Attach the bezel to the front of the drive shelf.
 . If you have powered down one or more shelves, reapply power:
@@ -392,5 +394,7 @@ If you replaced a drive drawer in an _expansion_ drive shelf without Drawer Loss
  .. Turn on both power switches on the controller shelf.
  .. Wait 10 minutes for the power-on process to complete.
 Confirm that both fans come on and that the amber LED on the back of the fans is off.
+
+===== Result
 
 Your drive drawer replacement is complete. You can resume normal operations.

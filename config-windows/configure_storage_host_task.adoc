@@ -15,7 +15,7 @@ The host must have discovered the LUN.
 
 You can initialize the disk as a basic disk with a GPT or MBR partition table. Typically, you format the LUN with a file system such as New Technology File System (NTFS).
 
-. From a Windows command prompt, enter the diskpartcontext.
+. From a Windows command prompt, enter the `diskpart` context.
 +
 ----
 > diskpart

@@ -16,7 +16,7 @@ The steps to complete a battery replacement depend on whether you have a duplex 
 [.lead]
 Place the controller online to confirm the storage array is working correctly. Then, you can collect support data and resume operations.
 
-===== Before You Begin
+===== Before you begin
 
 Perform this task only if your storage array has two controllers.
 
@@ -71,6 +71,8 @@ NOTE: If you cannot resolve the problem, contact technical support.
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 
+===== Result
+
 Your battery replacement is complete. You can resume normal operations.
 
 == Power up controller (simplex)
@@ -78,7 +80,7 @@ Your battery replacement is complete. You can resume normal operations.
 [.lead]
 Power up the controller shelf to confirm that it is working correctly. Then, you can collect support data and resume operations.
 
-===== Before You Begin
+===== Before you begin
 
 Perform this task only if your storage array has one controller.
 
@@ -108,5 +110,7 @@ NOTE: If you cannot resolve the problem, contact technical support.
  .. Select *Collect Support Data*.
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
+
+===== Result
 
 Your battery replacement is complete. You can resume normal operations.

@@ -9,7 +9,7 @@ summary: You prepare to upgrade controllers by saving the drive security key, ga
 :imagesdir: ../media/
 
 [.lead]
-You prepare to upgrade controllers by saving the drive security key, gathering support data, and taking the controller offline.
+Follow this procedure to prepare for upgrading controllers by saving the drive security key, gathering support data, and taking the controller offline.
 
 ===== Steps
 
@@ -35,7 +35,7 @@ a|
 Perform the following steps, in order:
 
  .. Record the External KMS server address and port number using the *Settings* > *System* > *Security Key Management* > *View/Edit Key Management Server Settings* dialog.
- .. Ensure that the client and server certificates are available on your local host so the storage array and key management server can authenticate each other after the controller replacement is finished. Use the `save storageArray keyManagementCertificate` command to save the certificates. Be sure the run the command twice, once with the `certificateType` parameter set to `client`, and the other with the parameter set to `server`. For information about using this command, see the _Command Line Reference_.
+ .. Ensure that the client and server certificates are available on your local host so the storage array and key management server can authenticate each other after the controller replacement is finished. Use the `save storageArray keyManagementCertificate` command to save the certificates. Be sure to run the command twice, once with the `certificateType` parameter set to `client`, and the other with the parameter set to `server`. For information about using this command, see the _Command Line Reference_.
  .. Transition to internal key management by running the `disable storageArray externalKeyManagement` command.
  .. Export the internal security key file to a known location on the management client (the system with a browser used for accessing System Manager). Use the `export storageArray securityKey` command. You must provide the pass phrase associated with the security key and specify the location where you want to save the command. For information about using this command, see the _Command Line Reference_.
  .. Know the pass phrase associated with the internal security key.
@@ -46,7 +46,7 @@ a|
 Perform the following steps, in order:
 
  .. Record the External KMS server address and port number using the *Settings* > *System* > *Security Key Management* > *View/Edit Key Management Server Settings* dialog.
- .. Ensure that the client and server certificates are available on your local host so the storage array and key management server can authenticate each other after the controller replacement is finished. Use the `save storageArray keyManagementCertificate` command to save the certificates. Be sure the run the command twice, once with the `certificateType` parameter set to `client`, and the other with the parameter set to `server`. For information about using this command, see the _Command Line Reference_.
+ .. Ensure that the client and server certificates are available on your local host so the storage array and key management server can authenticate each other after the controller replacement is finished. Use the `save storageArray keyManagementCertificate` command to save the certificates. Be sure to run the command twice, once with the `certificateType` parameter set to `client`, and the other with the parameter set to `server`. For information about using this command, see the _Command Line Reference_.
 
 a|
 External key management, partial drives locked
@@ -61,7 +61,7 @@ No additional steps are necessary.
 +
 The Report appears on your screen.
 
- .. To locate the chassis serial number under the storage array profile, type *serial number* in the**Find**text box, and then click *Find*.
+ .. To locate the chassis serial number under the storage array profile, type *serial number* in the *Find* text box, and then click *Find*.
 +
 All matching terms are highlighted. To scroll through all the results one at a time, continue to click *Find*.
 
@@ -70,13 +70,13 @@ All matching terms are highlighted. To scroll through all the results one at a t
 You need this serial number to perform the steps in link:complete_upgrade_controllers_task.html[Complete controller upgrade].
 . Gather support data about your storage array by using either the GUI or the CLI:
  ** Use either System Manager or the Array Management Window to collect and save a support bundle of your storage array.
-  *** From System Manager, select *Support* > *Support Center* > *Diagnostics* tab. Then select **Collect Support Data**and click *Collect*.
+  *** From System Manager, select *Support* > *Support Center* > *Diagnostics* tab. Then select *Collect Support Data* and click *Collect*.
   *** From the Array Management Window toolbar, select *Monitor* > *Health* > *Collect Support Data Manually*. Then name and specify a location on your system where you want to store the support bundle.
 The file is saved in the Downloads folder for your browser with the name `support-data.7z`.
 
 +
 If your shelf contains drawers, the diagnostics data for that shelf is archived in a separate zipped file named `tray-componet-state-capture.7z`.
- ** Use the CLI to run the save storageArray supportDatacommand to gather comprehensive support data about the storage array.
+ ** Use the CLI to run the `save storageArray supportData` command to gather comprehensive support data about the storage array.
 *Note:* Gathering support data can temporarily impact performance on your storage array.
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts:
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
@@ -99,7 +99,7 @@ The Change Cache Setting dialog box appears. All volumes on the storage array ap
  .. Wait five minutes to allow any data in cache memory to be flushed to disk.
 . If the Security Assertion Markup Language (SAML) is enabled on the controller, disable the SAML authentication.
 +
-NOTE: After SAML is enabled, you cannot disable it through the SANtricity System Manager. To disable the SAML configuration, contact Technical Support for assistance.
+NOTE: After SAML is enabled, you cannot disable it through the SANtricity System Manager. To disable the SAML configuration, contact technical support for assistance.
 
 . Wait for all operations in progress to complete before continuing to the next step.
  .. From System Manager's *Home* page, select *View Operations in Progress*.

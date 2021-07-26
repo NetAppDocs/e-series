@@ -11,7 +11,7 @@ summary: Express Configuration
 [.lead]
 The VMware express method for installing your storage array and accessing SANtricity System Manager is appropriate for setting up a standalone VMware host to an E-Series storage system. It is designed to get the storage system up and running as quickly as possible with minimal decision points.
 
-===== Steps
+=== Procedure overview
 
 The express method includes the following steps:
 
@@ -23,22 +23,15 @@ The express method includes the following steps:
 . Creating logical volumes on the storage array.
 . Making the volumes available to the data host.
 
-== Find more information
-* Online help
-+
-Describes how to use SANtricity System Manager to complete configuration and storage management tasks. It is available within the product.
-* https://kb.netapp.com/app/[NetApp Knowledgebase] (a database of articles)
-+
-Provides troubleshooting information, FAQs, and instructions for a wide range of NetApp products and technologies.
-* *VMware Configuration Maximums*
-+
-Describes how to configure virtual and physical storage to stay within the allowed maximums that ESX/ESXi supports.
+=== Find more information
+
+* Online help -- Describes how to use SANtricity System Manager to complete configuration and storage management tasks. It is available within the product.
+* https://kb.netapp.com/app/[NetApp Knowledgebase] (a database of articles) -- Provides troubleshooting information, FAQs, and instructions for a wide range of NetApp products and technologies.
+* VMware Configuration Maximums -- Describes how to configure virtual and physical storage to stay within the allowed maximums that ESX/ESXi supports.
 +
 ** vSphere 6._x_ - search vmware.com for "vsphere 6._x_ configuration maximums."
 +
 ** vSphere 7._x_ - search vmware.com for "vsphere 7._x_ configuration maximums."
 
 * https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-9AEE5F4D-0CB8-4355-BF89-BB61C5F30C70.html[Requirements and limitations of VMware NVMe storage]
-* Other VMware Publications.
-+
-Search vmware.com for ESXi vCenter Server documentation.
+* vmware.com -- Search for ESXi vCenter Server documentation.

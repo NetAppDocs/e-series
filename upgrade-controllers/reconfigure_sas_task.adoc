@@ -51,7 +51,7 @@ NOTE: Depending on the host connections of your new array, different cables may 
 +
 The existing controller-drive tray and any attached drive trays become drive shelves and can be cabled to the controllers in the new array.
 +
-NOTE: Connecting SAS-2 to SAS-3 requires SAS HD to miniSAS cables. For more detailed cabling information for your particular controller and expansion shelf configuration, refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2588749[E-Series Hardware Cabling Guide].
+NOTE: Connecting SAS-2 to SAS-3 requires SAS HD to mini SAS cables. For more detailed cabling information for your particular controller and expansion shelf configuration, refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2588749[E-Series Hardware Cabling Guide].
 
 == Step 3: Power on the controllers (non-data preservation)
 
@@ -69,7 +69,7 @@ After installation is complete, power on the controllers and submit your configu
  .. Log in to the NetApp Support Site: `+[mysupport.netapp.com/eservice/assistant](http://mysupport.netapp.com/eservice/assistant)+`.
  .. From the drop-down list under *Category 1* on the *Give Us Feedback* page, select *Installed products*.
  .. From the drop-down list under *Category 2* on the *Give Us Feedback* page, select *Decommission request*.
- .. Enter the following text in the **Comments**text box, substituting the serial number of your controller-drive tray for serial number:
+ .. Enter the following text in the *Comments* text box, substituting the serial number of your controller-drive tray for serial number:
 +
 `Please decommission this serial number as the entitlement has been moved to another serial number in the system. Please reference this in the SN notes.`
 

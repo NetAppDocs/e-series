@@ -18,7 +18,7 @@ Windows installations use the native MPIO Device Specific Module (DSM) driver fo
 [.lead]
 Perform the following steps to install the `SANtricity Windows DSM` package and use the multipath package for Windows.
 
-===== Before You Begin
+===== Before you begin
 
 * You must have the correct administrator or superuser privileges.
 
