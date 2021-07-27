@@ -18,7 +18,7 @@ You have installed the required packages on your system.
 * For Red Hat (RHEL) hosts, verify the packages are installed by running rpm -q device-mapper-multipath.
 * For SLES hosts, verify the packages are installed by running rpm -q multipath-tools.
 
- If you have not already installed the operating system, use the media supplied by your operating system vendor.
+If you have not already installed the operating system, use the media supplied by your operating system vendor.
 
 ===== About this task
 

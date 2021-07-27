@@ -13,9 +13,9 @@ A new LUN has no partition or file system when the Linux host first discovers it
 
 ===== Before you begin
 
-The host must have discovered the LUN.
+* The host must have discovered the LUN.
 
-In the /dev/mapper folder, you have run the ls command to see the available disks.
+* In the /dev/mapper folder, you have run the ls command to see the available disks.
 
 ===== About this task
 

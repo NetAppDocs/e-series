@@ -11,7 +11,7 @@ summary: You must assign a volume \(namespace\) to a host or host cluster so it 
 [.lead]
 You must assign a volume (namespace) to a host or host cluster so it can be used for I/O operations. This assignment grants a host or host cluster access to one or more namespaces in a storage array.
 
-===== Before You Begin
+===== Before you begin
 
 Keep these guidelines in mind when you assign volumes:
 
