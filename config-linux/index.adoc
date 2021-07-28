@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/index.html
 sidebar: sidebar
-keywords: express, configuration
-summary: Express Configuration
+keywords: Linux configuration, e-series
+summary: Linux express configuration
 ---
 = Linux express configuration overview
 :icons: font
@@ -13,7 +13,7 @@ The Linux express method for installing your storage array and accessing SANtric
 
 === Procedure overview
 
-The Linux express method includes the following steps:
+The Linux express method includes the following steps.
 
 . Setting up one of the following communication environments:
  ** Fibre Channel (FC)
