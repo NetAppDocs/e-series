@@ -23,7 +23,7 @@ sidebar:
       entries:
         - title: What's new
           url: /whats-new.html
-        - title: Known issues
+        - title: Release notes
           url: /known-issues.html
     - title: Get started
       entries:
