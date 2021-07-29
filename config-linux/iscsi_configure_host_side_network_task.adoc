@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/iscsi_configure_host_side_network_task.html
 sidebar: sidebar
-keywords: configure, iscsi, network, host, side, setting, number, node, session, physical, path, service, configuring, face, binding, establish, session, initiator, target
-summary: You configure iSCSI networking on the host side by setting the number of node sessions per physical path, turning on the appropriate iSCSI services, configuring the network for the iSCSI ports, creating iSCSI face bindings, and establishing the iSCSI sessions between initiators and targets.
+keywords: configure iSCSI networking, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Configure iSCSI networking on the host side.
 ---
 = Configure host-side networking
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: install-hw-cabling/host_cable_task.html
 sidebar: sidebar
-keywords: cable, host, direct, controller, switch, connect, cabling, switch, topology
-summary: You can cable a host directly to a controller or use switches to connect a host to a controller.
+keywords: cabling, cables, host cabling, direct-attached topology, switch topology, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C,
+summary: You can cable a host directly to a controller or use switches.
 ---
 = Host cabling
 :icons: font

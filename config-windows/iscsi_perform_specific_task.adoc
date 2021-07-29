@@ -1,7 +1,7 @@
 ---
 permalink: config-windows/iscsi_perform_specific_task.html
 sidebar: sidebar
-keywords: iscsi, protocol, configure, switch, network, array, side, host, verify, ip, connection, perform, iscsi-specific, task, configuring, windows, array-side
+keywords: iSCSI, switches, IP network configuration, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: For the iSCSI protocol, you configure the switches and configure networking on the array side and the host side. Then you verify the IP network connections.
 ---
 = Perform iSCSI-specific tasks
@@ -12,7 +12,7 @@ summary: For the iSCSI protocol, you configure the switches and configure networ
 [.lead]
 For the iSCSI protocol, you configure the switches and configure networking on the array side and the host side. Then you verify the IP network connections.
 
-== Step 1: Configuring the switches - iSCSI, Windows
+== Step 1: Configuring the switches--iSCSI, Windows
 
 [.lead]
 You configure the switches according to the vendor's recommendations for iSCSI. These recommendations might include both configuration directives as well as code updates.
@@ -28,7 +28,7 @@ You must ensure the following:
 
 NOTE: Port channels/LACP is not supported on the controller's switch ports. Host-side LACP is not recommended; multipathing provides the same benefits or better.
 
-== Step 2: Configuring networking - iSCSI Windows
+== Step 2: Configuring networking--iSCSI Windows
 
 [.lead]
 You can set up your iSCSI network in many ways, depending on your data storage requirements.
@@ -43,7 +43,7 @@ If you are using jumbo frames within the IP SAN for performance reasons, make su
 
 NOTE: Many network switches have to be configured above 9,000 bytes for IP overhead. Consult your switch documentation for more information.
 
-== Step 3: Configuring array-side networking - iSCSI, Windows
+== Step 3: Configuring array-side networking--iSCSI, Windows
 
 [.lead]
 You use the SANtricity System Manager GUI to configure iSCSI networking on the array side.
@@ -52,6 +52,8 @@ You use the SANtricity System Manager GUI to configure iSCSI networking on the a
 
 * You must know the IP address or domain name for one of the storage array controllers.
 * You or your system administrator must have set up a password for the System Manager GUI, or you must configured Role-Based Access Control (RBAC) or LDAP and a directory service for the appropriate security access to the storage array. See the _SANtricity System Manager online help_ for more information about Access Management.
+
+===== About this task
 
 This task describes how to access the iSCSI port configuration from the Hardware page. You can also access the configuration from menu:System[Settings > Configure iSCSI ports].
 
@@ -148,15 +150,19 @@ In a shared local area network (LAN) environment, such as Ethernet, many station
 . Click *Finish*.
 . Close System Manager.
 
-== Step 4: Configuring host-side networking - iSCSI
+== Step 4: Configuring host-side networking--iSCSI
 
 [.lead]
 You must configure iSCSI networking on the host side so that the Microsoft iSCSI Initiator can establish sessions with the array.
+
+===== Before you begin
 
 * You have fully configured the switches that will be used to carry iSCSI storage traffic.
 * You must have enabled send and receive hardware flow control *end to end* and disabled priority flow control.
 * You have completed the array side iSCSI configuration.
 * You must know the IP address of each port on the controller.
+
+===== About this task
 
 These instructions assume that two NIC ports will be used for iSCSI traffic.
 
@@ -177,7 +183,7 @@ These protocols include, but are not limited to, QoS, File and Print Sharing, an
 +
 image::../media/82012_00.gif[]
 
-== Step 5: Verifying IP network connections - iSCSI, Windows
+== Step 5: Verifying IP network connections--iSCSI, Windows
 
 [.lead]
 You verify Internet Protocol (IP) network connections by using ping tests to ensure the host and array are able to communicate.
@@ -219,7 +225,7 @@ NOTE: If the command fails (for example, returns `Packet needs to be fragmented 
 [.lead]
 Select the iSCSI worksheet to record your protocol-specific storage configuration information. You need this information to perform provisioning tasks.
 
-== iSCSI worksheet - Windows
+== iSCSI worksheet--Windows
 
 [.lead]
 You can use this worksheet to record iSCSI storage configuration information. You need this information to perform provisioning tasks.

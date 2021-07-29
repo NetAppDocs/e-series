@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/iscsi_configure_network_concept.html
 sidebar: sidebar
-keywords: set, up, iscsi, network, storage, requirement, configure
-summary: You can set up your iSCSI network in many ways, depending on your data storage requirements.
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Configure your iSCSI network.
 ---
 = Configure networking
 :icons: font

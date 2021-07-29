@@ -1,17 +1,17 @@
 ---
 permalink: maintenance-e2800/hics_upgrade_supertask_task.html
 sidebar: sidebar
-keywords: upgrade, host, interface, card, hic, increase, number, port, protocol, storage, array, exist, reapply, power, prepare, remove, controller, canister, install, reinstall, complete
-summary: You upgrade a host interface card (HIC) to increase the number of host ports or to change host protocols. When you upgrade the HICs, you must power off the storage array, remove the existing HIC from each controller, install a new HIC, and reapply power.
+keywords: upgrading E2800 HIC, upgrade E2800 HIC, upgrade host interface card, E2800, E-Series, eseries
+summary: Upgrade a host interface card (HIC) in an E2800 array.
 ---
-= Upgrade host interface card
+= Upgrade host interface card in E2800
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You upgrade a host interface card (HIC) to increase the number of host ports or to change host protocols.
+Follow these instructions to upgrade a host interface card (HIC).
 
-When you upgrade the HICs, you must power off the storage array, remove the existing HIC from each controller, install a new HIC, and reapply power.
+Upgrading a HIC increases the number of host ports or to change host protocols. When you upgrade the HICs, you must power off the storage array, remove the existing HIC from each controller, install a new HIC, and reapply power.
 
 == Step 1: Prepare to upgrade host interface cards
 

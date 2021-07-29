@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_ib_set_up_failover_task.html
 sidebar: sidebar
-keywords: multipath, software, redundant, path, storage, array, physical, disrupt, method, nvme, os, version, rhel, sles, device, mapper, dmmp, set, up, failover, configure, host, run, failover
-summary: Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. There are currently two methods of multipathing available for NVMe, and which you will be using is going to be dependent on which OS version you are running. For RHEL 7 and SLES 12, device mapper multipath (DMMP) will be used. For SLES 15, a native NVMe multipathing solution will be used.
+keywords: failover, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Configure the host to run failover.
 ---
 = Set up failover
 :icons: font

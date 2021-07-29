@@ -1,8 +1,8 @@
 ---
 permalink: install-hw-cabling/hotadd_drive_shelf_task.html
 sidebar: sidebar
-keywords: drive, shelf, power, applied, component, apply, storage, system, configure, add, relocate, capacity, access, data, hot, add, prepare, power, complete
-summary: You can add a new drive shelf while power is still applied to the other components of the storage system. You can configure, reconfigure, add, or relocate storage system capacity without interrupting user access to data.
+keywords: cabling, cables, hot add, hot add drive shelf, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C
+summary: Add a new drive shelf while power is still applied to the other components.
 ---
 = Hot adding a drive shelf
 :icons: font
@@ -88,7 +88,7 @@ IMPORTANT: See the installation instructions for your model for the full procedu
 [.lead]
 If you are cabling an older controller shelf to a DE212C, DE224C, or DE460, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf].
 
-=== Connect the drive shelf - E2800 and E5700
+=== Connect the drive shelf--E2800 and E5700
 
 [.lead]
 You connect the drive shelf to controller A, confirm IOM status, and then connect the drive shelf to controller B.
@@ -130,7 +130,7 @@ image::../media/hot_e5700_2.png[]
 +
 NOTE: Optimal status indicates that the loss of redundancy error associated with the new drive shelf has been resolved and the storage system is stabilized.
 
-=== Connect the drive shelf - EF300
+=== Connect the drive shelf--EF300
 
 [.lead]
 You connect the drive shelf to controller A, confirm IOM status, and then connect the drive shelf to controller B.

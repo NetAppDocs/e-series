@@ -1,15 +1,15 @@
 ---
 permalink: maintenance-e2800/drives_overview_supertask_concept.html
 sidebar: sidebar
-keywords: replace, drive, aware, requirement, consideration, overview, drawer, handling
-summary: Before you replace a drive, you need to be aware of certain requirements and considerations.
+keywords: E2800 replace drive, replacing E2800 drive, E2800 replace drive, replacing E2800 drive, E2800, E-Series, eseries
+summary: Review E2800 drive replacement requirements.
 ---
-= Overview and requirements
+= Requirements for E2800 drive replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you replace a drive, you need to be aware of certain requirements and considerations.
+Before you replace a drive, review the requirements and considerations.
 
 You can replace a drive in either a 12-drive, 24-drive, or 60-drive controller shelf or drive shelf.
 
@@ -49,7 +49,7 @@ Each of the five drawers can hold up to 12 drives.
 
 image:../media/92_dwg_de6600_drawer_with_hdds_no_callouts_maint-e2800.gif[] image:../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[]
 
-== Requirements for handling drives
+== Drive handling
 
 [.lead]
 The drives in your storage array are fragile. Improper drive handling is a leading cause of drive failure.

@@ -1,15 +1,17 @@
 ---
 permalink: install-hw-cabling/index.html
 sidebar: sidebar
-keywords: cabling, e-series, hardware
-summary: Cabling E-Series Hardware
+keywords: cabling, cables, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C
+summary: Cable a host directly to a controller or use switches.
 ---
 = Cabling overview
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can cable a host directly to a controller or use switches to connect a host to a controller. If your storage system includes one or more drive shelves, you must cable them to your controller shelf. You can add a new drive shelf while power is still applied to other components of the storage system. In addition, you can connect your storage system to a network for out-of-band management.
+You can cable a host directly to a controller or use switches to connect a host to a controller.
+
+If your storage system includes one or more drive shelves, you must cable them to your controller shelf. You can add a new drive shelf while power is still applied to other components of the storage system. In addition, you can connect your storage system to a network for out-of-band management.
 
 The cabling information is intended for a hardware installer or system administrator who is installing or expanding a storage system. It is assumed that you have installed the storage system as described in the _Installation and Setup Instructions_ for your hardware.
 

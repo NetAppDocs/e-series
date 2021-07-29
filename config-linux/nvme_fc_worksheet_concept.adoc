@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_fc_worksheet_concept.html
 sidebar: sidebar
-keywords: worksheet, record, nvme, fibre, channel, storage, configuration, information, perform, provision, task, nvme, linux, direct, connect, topology, switch, host, identifier, target, nqn, map, host, name
-summary: You can use this worksheet to record NVMe over Fibre Channel storage configuration information. You need this information to perform provisioning tasks.
+keywords: NVMe over FC worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Use this worksheet to record NVMe over Fibre Channel storage configuration information.
 ---
 = NVMe over Fibre Channel worksheet for Linux
 :icons: font

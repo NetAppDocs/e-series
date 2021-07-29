@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/srp_ib_worksheet_concept.html
 sidebar: sidebar
-keywords: worksheet, record, srp, infiniband, storage, configuration, information, perform, provision, task, host, identifier, recommend, map, mapping, name
-summary: You can use this worksheet to record SRP over Infiniband storage configuration information. You need this information to perform provisioning tasks.
+keywords: SRP over Infiniband worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Use this worksheet to record SRP over Infiniband storage configuration information.
 ---
 = SRP over Infiniband worksheet
 :icons: font

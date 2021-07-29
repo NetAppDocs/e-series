@@ -1,15 +1,17 @@
 ---
 permalink: maintenance-e2800/hics_overview_supertask_concept.html
 sidebar: sidebar
-keywords: add, upgrade, replace, host, interface, card, aware, requirement, consideration, overview, upgrading, replacing, hic
-summary: Before you add, upgrade or replace a host interface card, you need to be aware of certain requirements and considerations.
+keywords: E2800 replace HIC, E2800 replace host interface card, replacing E2800 HIC, E2800 replace HIC, adding E2800 HIC, upgrading E2800 HIC, E2800, E-Series, eseries
+summary: Review requirements for E2800 HIC replacement.
 ---
-= Overview and requirements
+= Requirements for E2800 HIC replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you add, upgrade, or replace a host interface card, you need to be aware of certain requirements and considerations.
+Before you add, upgrade, or replace a host interface card in an E2800, review the requirements and considerations.
+
+== Overview of steps
 
 The steps to replace a HIC depend on whether you have one or two controllers, as follows:
 
@@ -39,7 +41,7 @@ a|
 
 |===
 
-== Requirements for adding, upgrading or replacing a HIC
+== Requirements for adding, upgrading, or replacing a HIC
 
 [.lead]
 If you plan to add, upgrade, or replace a host interface card (HIC), keep the following requirements in mind.

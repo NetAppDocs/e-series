@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/iser_ib_configure_multipath_software_task.html
 sidebar: sidebar
-keywords: multipath, software, provide, redundant, path, storage, array, physical, disrupt, single, virtual, device, failover, mapper, dm-mp, tool, linux, installation
-summary: Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. The multipath software presents the operating system with a single virtual device that represents the active physical paths to the storage. The multipath software also manages the failover process that updates the virtual device. You use the device mapper multipath \(DM-MP\) tool for Linux installations.
+keywords: multipath software for Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Configure multipath software, which  provides a redundant path to the storage array in case one of the physical paths is disrupted.
 ---
 = Configure the multipath software
 :icons: font
@@ -22,7 +22,7 @@ If you have not already installed the operating system, use the media supplied b
 
 ===== About this task
 
-Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. The multipath software presents the operating system with a single virtual device that represents the active physical paths to the storage. The multipath software also manages the failover process that updates the virtual device. 
+Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. The multipath software presents the operating system with a single virtual device that represents the active physical paths to the storage. The multipath software also manages the failover process that updates the virtual device.
 
 You use the device mapper multipath (DM-MP) tool for Linux installations. By default, DM-MP is disabled in RHEL and SLES. Complete the following steps to enable DM-MP components on the host.
 

@@ -77,6 +77,8 @@ You must add one host port identifier at a time to associate it with the host, b
 
 . Click *Create*.
 
+===== Result
+
 After the host is successfully created, SANtricity System Manager creates a default name for each host port configured for the host.
 
 The default alias is <Hostname_Port Number>. For example, the default alias for the first port created for host IPT is IPT_1.

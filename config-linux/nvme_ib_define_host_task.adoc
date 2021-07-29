@@ -11,7 +11,7 @@ summary: Using SANtricity System Manager, you define the hosts that send data to
 [.lead]
 Using SANtricity System Manager, you define the hosts that send data to the storage array. Defining a host is one of the steps required to let the storage array know which hosts are attached to it and to allow I/O access to the volumes.
 
-===== Before You Begin
+===== Before you begin
 
 Keep these guidelines in mind when you define a host:
 
@@ -76,6 +76,8 @@ You must add one host port identifier at a time to associate it with the host, b
 |===
 
 . Click *Create*.
+
+===== Result
 
 After the host is successfully created, SANtricity System Manager creates a default name for each host port configured for the host.
 
