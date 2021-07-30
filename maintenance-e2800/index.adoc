@@ -4,16 +4,32 @@ sidebar: sidebar
 keywords: E2800 maintenance, E2800 repair, replace E2800 components, replacing E2800 components, E2800, E-Series, eseries
 summary: Perform maintenance on E2800 components.
 ---
-= Maintaining E2800 Hardware
+= Maintaining E2800 hardware
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-For the E2800 system, you can perform maintenance procedures on the following components:
+For the E2800 storage system, you can perform maintenance procedures on the following components.
 
-* xref:concept_batteries_wombat.adoc[Batteries]
-* xref:concept_controllers_wombat.adoc[Controllers]
-* xref:concept_canisters_wombat.adoc[Canisters]
-* xref:concept_drives_wombat.adoc[ Drives]
-* xref:concept_host_interface_cards_wombat.adoc[ Host interface cards]
-* xref:concept_host_port_protocol_conversion_wombat.adoc[Host port protocol conversion]
+== Batteries
+Each controller canister includes a battery that preserves cached data if the AC power fails. If the Recovery Guru in SANtricity System Manager reports either a Battery Failed status or a Battery Replacement Required status, you must replace the affected battery.
+
+== Controllers
+
+A controller consists of a board, firmware, and software. It controls the drives and implements the System Manager functions. This section describes how to convert to a duplex configuration by adding a second controller and how to replace a controller in a simplex configuration and in a duplex configuration.
+
+== Canisters
+
+Canisters consist of three different types: power-fan canisters (power supplies) that supply a redundant power source and adequate cooling in a 12-drive or 24-drive controller shelf or drive shelf; power canisters that are used for power redundancy in a 60-drive controller shelf or drive shelf; and fan canisters that are used for cooling the 60-drive controller shelf or drive shelf.
+
+== Drives
+
+A drive is an electromagnetic mechanical device that provides the physical storage media for data.
+
+== Host interface cards (HICs)
+
+A host interface card (HIC) can optionally be installed within a controller canister. The E2800 controller includes built-in host ports on the controller card itself, as well as host ports on the optional HIC. Host ports that are built into the controller are called baseboard host ports. Host ports that are built into the HIC are called HIC ports.
+
+== Host port protocol
+
+You can convert the protocol of a host to a different protocol so that compatibility and communication can be established.

@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Login and Navigation
+= Login and navigation
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,7 +19,7 @@ summary:
 //
 
 [.lead]
-Follow the instructions in this section to log in to the plugin and to navigate the user interface.
+Follow these instructions to log in to the plugin and to navigate the user interface.
 
 . Before you log in to the plugin, make sure you are using one of the following browsers:
 
@@ -27,8 +27,8 @@ Follow the instructions in this section to log in to the plugin and to navigate 
 ** Mozilla Firefox 60 or later
 ** Microsoft Edge 44 or later
 
-. Log in to the vSphere Client under the user account that has read/write privileges for the plugin. 
-. From the vSphere Client Home page, click *SANtricity Storage Plugin for vCenter*. 
+. Log in to the vSphere Client under the user account that has read/write privileges for the plugin.
+. From the vSphere Client Home page, click *SANtricity Storage Plugin for vCenter*.
 +
 The plugin opens within a vSphere Client window. The plugin's main page opens to Manage-All.
 
