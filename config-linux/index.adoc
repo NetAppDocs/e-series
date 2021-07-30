@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/index.html
 sidebar: sidebar
-keywords: Linux configuration, e-series
-summary: Linux express configuration
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Use the express configuration for a Linux host with an E-Series system.
 ---
 = Linux express configuration overview
 :icons: font

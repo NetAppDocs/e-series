@@ -1,20 +1,24 @@
 ---
 permalink: maintenance-e2800/canisters_overview_supertask_concept.html
 sidebar: sidebar
-keywords: replace, canister, type, requirement, overview, power, supply, fan, requirement, replacing
-summary: Before you replace a canister, you need to be aware of canister types and requirements.
+keywords: E2800 replace canister, replacing E2800 canister, E2800 replace power supply, replacing E2800 power supply, E2800 replace fan, replacing E2800 fan, E2800, E-Series, eseries
+summary: Review canister types and requirements.
 ---
-= Overview and requirements
+= Requirements for canister replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you replace a canister, you need to be aware of canister types and requirements. Canister types include power supplies, power canisters, and fan canisters.
+Before you replace a canister in an E2800 array, review the canister types and requirements.
+
+Canister types include power supplies, power canisters, and fan canisters.
 
 == Power supply
 
 [.lead]
 Each 12-drive or 24-drive controller shelf or drive shelf includes two power supplies with integrated fans. These are referred to as _power-fan canisters_ in SANtricity System Manager. If a power-fan canister fails, you must replace it as soon as possible to ensure that the shelf has a redundant power source and adequate cooling.
+
+=== Shelf types for a power supply
 
 You can replace a power supply in the following shelves:
 
@@ -49,6 +53,8 @@ IMPORTANT: If the second power supply (power-fan canister) in the shelf does not
 
 [.lead]
 Each 60-drive controller shelf or drive shelf includes two power canisters for power redundancy.
+
+=== Shelf types for a power canister
 
 You can replace a power canister in the following shelves:
 
@@ -86,6 +92,8 @@ IMPORTANT: If the second power canister in the shelf does not have Optimal statu
 
 [.lead]
 Each 60-drive controller shelf or drive shelf includes two fan canisters.
+
+=== Shelf types for a fan canister
 
 You can replace a fan canister in the following shelves:
 

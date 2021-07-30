@@ -1,15 +1,17 @@
 ---
 permalink: maintenance-e2800/hics_replace_supertask_task.html
 sidebar: sidebar
-keywords: replace, host, interface, card, hic, fail, controller, present, identical, place, offline, duplex, power, down, shelf, remove, canister, install, place, online, simplex, power, up
-summary: You replace a host interface card (HIC) that has failed. If two controllers are present, each controller must have identical HICs.
+keywords: replacing E2800 HIC, replace E2800 HIC, replace host interface card, E2800, E-Series, eseries
+summary: Replace a host interface card (HIC) that has failed.
 ---
-= Replace host interface card
+= Replace host interface card in E2800
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You replace a host interface card (HIC) that has failed. If two controllers are present, each controller must have identical HICs.
+Follow these instructions to replace a host interface card (HIC) that has failed.
+
+If two controllers are present, each controller must have identical HICs.
 
 == Step 1: Place controller offline (duplex)
 
@@ -21,6 +23,8 @@ If you have a duplex configuration, you must place the affected controller offli
 * Your storage array must have two controllers. The controller that you are not placing offline must be online (in the optimal state).
 * Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
 * From SANtricity System Manager, review the details in the Recovery Guru to confirm that you have a failed HIC and to ensure no other items must be addressed before you can remove and replace the HIC.
+
+===== About this task
 
 Perform this task only if your storage array has two controllers (duplex configuration).
 
@@ -85,7 +89,9 @@ IMPORTANT: Do not begin any other operations until after the status has been upd
 == Step 2: Power down the controller shelf (simplex)
 
 [.lead]
-If you have a simplex configuration, you power down the controller shelf so you can safely remove the failed HIC. You must back up the configuration and collect support data first. Then, you can stop host I/O operations and power down the controller shelf.
+If you have a simplex configuration, you power down the controller shelf so you can safely remove the failed HIC.
+
+You must back up the configuration and collect support data first. Then, you can stop host I/O operations and power down the controller shelf.
 
 ===== Before you begin
 

@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/nvme_ib_access_sam_setup_wizard_task.html
 sidebar: sidebar
-keywords: setup, wizard, santricity, system, manager, configure, storage, array, access
+keywords: access System Manager Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: 'You use the Setup wizard in SANtricity System Manager to configure your storage array.'
 ---
 = Access SANtricity System Manager and use the Setup wizard

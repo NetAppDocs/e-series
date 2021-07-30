@@ -1,15 +1,15 @@
 ---
 permalink: maintenance-e2800/controllers_overview_supertask_concept.html
 sidebar: sidebar
-keywords: replace, add, controller, aware, requirement, consideration, overview, overview, replacing
-summary: Before you replace or add a controller you need to be aware of certain requirements and considerations.
+keywords: E2800 controller replacement requirements, E2800 replace controller, replacing E2800 controller, add E2800 controller, adding E2800 controller, E2800, E2812 controller shelf, E2824 controller shelf, EF280 shelf, E-Series, eseries
+summary: Review E2800 controller replacement requirements and considerations.
 ---
-= Overview and requirements
+= Requirements for E2800 controller replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you replace or add a controller, be aware of certain requirements and considerations.
+Before you replace or add an E2800 controller, review the requirements and considerations.
 
 Each controller canister contains a controller card, a battery, and an optional host interface card (HIC). You can add a second controller to a simplex configuration or replace a failed controller.
 

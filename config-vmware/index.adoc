@@ -1,8 +1,8 @@
 ---
 permalink: config-vmware/index.html
 sidebar: sidebar
-keywords: express, configuration
-summary: Express Configuration
+keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Use the express configuration for a VMware host with an E-Series system.
 ---
 = VMware express configuration overview
 :icons: font
@@ -13,7 +13,7 @@ The VMware express method for installing your storage array and accessing SANtri
 
 === Procedure overview
 
-The express method includes the following steps:
+The express method includes the following steps.
 
 . Setting up one of the following communication environments:
  ** NVMe over Fibre Channel
@@ -33,5 +33,5 @@ The express method includes the following steps:
 +
 ** vSphere 7._x_ - search vmware.com for "vsphere 7._x_ configuration maximums."
 
-* https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-9AEE5F4D-0CB8-4355-BF89-BB61C5F30C70.html[Requirements and limitations of VMware NVMe storage]
+* vmware Docs -- https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-9AEE5F4D-0CB8-4355-BF89-BB61C5F30C70.html[Requirements and limitations of VMware NVMe storage].
 * vmware.com -- Search for ESXi vCenter Server documentation.

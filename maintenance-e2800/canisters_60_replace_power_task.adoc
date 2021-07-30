@@ -1,14 +1,16 @@
 ---
 permalink: maintenance-e2800/canisters_60_replace_power_task.html
 sidebar: sidebar
-keywords: 60-drive, controller, shelf, drive, power, canister, redundancy, fail, replace, redundant, source, prepare, remove, install, complete, replacement
-summary: Each 60-drive controller shelf or drive shelf includes two power canisters for power redundancy. If a power canister fails, you must replace it as soon as possible to ensure that the shelf has a redundant power source.
+keywords: E2800 replace 60-drive power canister, replacing E2800 power canister, E2800, E-Series, eseries
+summary: Replace a 60-drive controller shelf or drive shelf, which includes two power canisters for power redundancy.
 ---
-= Replace power canister (60-drive)
+= Replace E2800 power canister (60-drive)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Follow these instructions to replace a power canister in an E2800 array with a 60-drive shelf.
+
 Each 60-drive controller shelf or drive shelf includes two power canisters for power redundancy. If a power canister fails, you must replace it as soon as possible to ensure that the shelf has a redundant power source.
 
 == Step 1: Prepare to replace power canister
@@ -20,6 +22,8 @@ You prepare to replace a power canister in a 60-drive controller shelf or drive 
 
 * From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with the power canister and select *Recheck* from the Recovery Guru to ensure no other items must be addressed first.
 * Check that the amber Attention LED on the power canister is on, indicating that the canister has a fault. Contact technical support for assistance if both power canisters in the shelf have their amber Attention LEDs on.
+
+===== About this task
 
 This task describes how to prepare to replace a power canister for the following controller shelves:
 
@@ -66,7 +70,9 @@ image:../media/legend_icon_02_maint-e2800.gif[] Attention LED. If it is *Solid a
 == Step 2: Remove failed power canister
 
 [.lead]
-You remove a failed power canister so you can replace it with a new one. When you remove a power canister, you turn off power, disconnect the power cord, and slide the component out of the shelf.
+You remove a failed power canister so you can replace it with a new one.
+
+When you remove a power canister, you turn off power, disconnect the power cord, and slide the component out of the shelf.
 
 ===== Before you begin
 
@@ -90,7 +96,9 @@ IMPORTANT: When removing a power canister, always use two hands to support its w
 == Step 3: Install new power canister
 
 [.lead]
-You install a new power canister to replace the failed one. When you install a power canister, you slide the component into the shelf, close the cam handle, reconnect the power cord, and reapply power.
+You install a new power canister to replace the failed one.
+
+When you install a power canister, you slide the component into the shelf, close the cam handle, reconnect the power cord, and reapply power.
 
 ===== Before you begin
 

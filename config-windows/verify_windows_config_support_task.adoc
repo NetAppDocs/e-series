@@ -1,8 +1,8 @@
 ---
 permalink: config-windows/verify_windows_config_support_task.html
 sidebar: sidebar
-keywords: ensure, reliable, operation, create, implementation, plan, netapp, interoperability, matrix, tool, imt, verify, configuration, support, windows, support
-summary: To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool \(IMT\) to verify that the entire configuration is supported.
+keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Verify that the Windows configuration is supported.
 ---
 = Verify the Windows configuration is supported
 :experimental:

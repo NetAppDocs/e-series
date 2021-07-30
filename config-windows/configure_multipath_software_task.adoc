@@ -1,8 +1,8 @@
 ---
 permalink: config-windows/configure_multipath_software_task.html
 sidebar: sidebar
-keywords: multipath, software, redundant, path, storage, array, physical, path, disrupt, install, santricity, windows, dsm, package
-summary: Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. Before you can use multipathing, you need to install the SANtricity Windows DSM package. This package contains the multipath software for Windows.
+keywords: multipath software for Windows, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Install DSM package, which contains multipath software for Windows.
 ---
 = Configure the multipath software
 :icons: font

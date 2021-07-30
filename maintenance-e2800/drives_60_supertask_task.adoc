@@ -1,22 +1,24 @@
 ---
 permalink: maintenance-e2800/drives_60_supertask_task.html
 sidebar: sidebar
-keywords: replace, fail, drive, drawer, e2860, controller, shelf, de460c, volume, loss, protection, disk, pool, group, online, i/o, replacing, 60-drive, prepare, cable, chain, remove, install, attach, complete, replacement
-summary: The steps to replace a failed drive drawer in an E2860 controller shelf or a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection. If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must stop all host I/O activity and power off the shelf before replacing the drive drawer.
+keywords: E2800 replace drive drawer, replacing E2800 drive drawer, E2800 replace drive drawer, replacing E2800 drive drawer, E2800, E-Series, eseries
+summary: Replace a drive drawer in an E2860 controller shelf or a DE460C drive shelf.
 ---
-= Replace drive drawer (60-drive)
+= Replace drive drawer in E2800 (60-drive shelf)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The steps to replace a failed drive drawer in an E2860 controller shelf or a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection.
+Follow these instructions to replace a drive drawer in an E2860 controller shelf or a DE460C drive shelf.
 
-If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must stop all host I/O activity and power off the shelf before replacing the drive drawer.
+The steps to replace a failed drive drawer in an E2860 controller shelf or a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection. If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must stop all host I/O activity and power off the shelf before replacing the drive drawer.
 
-== Step 1: Prepare to replace drive drawer (60-drive)
+== Step 1: Prepare to replace drive drawer
 
 [.lead]
-You prepare to replace a drive drawer by determining if you can perform the replacement procedure while the drive shelf is online or if you need to stop host I/O activity and power off any of the shelves that are powered on. If you are replacing a drawer in a shelf with Drawer Loss Protection, there is no need to stop host I/O activity and power off any of the shelves.
+Determine if you can perform the replacement procedure while the drive shelf is online or if you need to stop host I/O activity and power off any of the shelves that are powered on. 
+
+If you are replacing a drawer in a shelf with Drawer Loss Protection, there is no need to stop host I/O activity and power off any of the shelves.
 
 ===== Before you begin
 
@@ -104,13 +106,17 @@ If you are replacing a drawer in an _expansion_ drive shelf *without* Drawer Los
 == Step 2: Remove cable chains
 
 [.lead]
-You remove both cable chains so you can remove and replace a failed drive drawer. The left and right cable chains allow the drawers to slide in and out.
+You remove both cable chains so you can remove and replace a failed drive drawer.
+
+The left and right cable chains allow the drawers to slide in and out.
 
 ===== Before you begin
 
 * You have issued the Set Drawer Attention Indicator CLI command, or you have stopped host I/O activity and powered off the drive shelf and controller shelf.
 * You have an ESD wristband, or you have taken other antistatic precautions.
 * You have a flashlight.
+
+===== About this task
 
 Each drive drawer has left and right cable chains. The metal ends on the cable chains slide into corresponding vertical and horizontal guide rails inside the enclosure, as follows:
 
@@ -197,10 +203,12 @@ If you are performing this procedure with the power on, all LEDs turn off when y
 +
 The LED could remain on for as long as a minute after you reinstall the fan while both fans settle into the correct speed.
 
-== Step 3: Remove failed drive drawer (60-drive)
+== Step 3: Remove failed drive drawer
 
 [.lead]
-You remove a failed drive drawer to replace it with a new one. Removing a drive drawer entails sliding the drawer partially out, recording the locations of the drives, removing the drives, and removing the drive drawer.
+You remove a failed drive drawer to replace it with a new one.
+
+Removing a drive drawer entails sliding the drawer partially out, recording the locations of the drives, removing the drives, and removing the drive drawer.
 
 ===== Before you begin
 
@@ -209,7 +217,7 @@ You remove a failed drive drawer to replace it with a new one. Removing a drive 
 * You have replaced the right and left fan canisters.
 * You have obtained a permanent marker to note the exact location of each drive as you remove the drive from the drawer.
 
-IMPORTANT: *Possible loss of data access --* Magnetic fields can destroy all data on the drive and cause irreparable damage to the drive circuitry. To avoid loss of data access and damage to the drives, always keep drives away from magnetic devices.
+IMPORTANT: *Possible loss of data access* -- Magnetic fields can destroy all data on the drive and cause irreparable damage to the drive circuitry. To avoid loss of data access and damage to the drives, always keep drives away from magnetic devices.
 
 ===== Steps
 
@@ -220,7 +228,7 @@ IMPORTANT: *Possible loss of data access --* Magnetic fields can destroy all dat
 +
 image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif[]
 +
-IMPORTANT: **Possible loss of data access --**Make sure to record the exact location of each drive before removing it.
+IMPORTANT: **Possible loss of data access** -- Make sure to record the exact location of each drive before removing it.
 
 . Remove the drives from the drive drawer:
  .. Gently pull back the orange release latch that is visible on the center front of each drive.
@@ -241,7 +249,7 @@ image:../media/legend_icon_01_maint-e2800.gif[] Drive drawer release lever
  .. While holding both release levers, pull the drive drawer toward you.
  .. Remove the drive drawer from the drive shelf.
 
-== Step 4: Install new drive drawer (60-drive)
+== Step 4: Install new drive drawer
 
 [.lead]
 You install a new drive drawer to replace the failed one. Installing a drive drawer into a drive tray entails sliding the drawer into the empty slot, installing the drives, and replacing the front bezel.
@@ -268,23 +276,25 @@ Positioning the drawer slightly to the right of center helps to ensure that the 
 
 . Slide the drive drawer into the slot, and ensure that the drawer guide slides under the lock-out tumbler.
 +
-IMPORTANT: **Risk of equipment damage --**Damage occurs if the drawer guide does not slide under the lock-out tumbler.
+IMPORTANT: **Risk of equipment damage* -- Damage occurs if the drawer guide does not slide under the lock-out tumbler.
 
 . Carefully push the drive drawer all the way in until the latch fully engages.
 +
 Experiencing a higher level of resistance is normal when pushing the drawer closed for the first time.
 +
-IMPORTANT: **Risk of equipment damage --**Stop pushing the drive drawer if you feel binding. Use the release levers at the front of the drawer to slide the drawer back out. Then, reinsert the drawer into the slot, ensure the tumbler is above the rail, and the rails are aligned correctly.
+IMPORTANT: **Risk of equipment damage* -- Stop pushing the drive drawer if you feel binding. Use the release levers at the front of the drawer to slide the drawer back out. Then, reinsert the drawer into the slot, ensure the tumbler is above the rail, and the rails are aligned correctly.
 
 == Step 5: Attach cable chains
 
 [.lead]
 You must attach the cable chains so you can safely re-install the drives in the drive drawer.
 
-===== Before You Begin
+===== Before you begin
 
 * You have installed the new drive drawer.
 * You have two replacement cable chains, marked as LEFT and RIGHT (on the horizontal connector next to the drive drawer).
+
+===== About this task
 
 When attaching a cable chain, reverse the order you used when disconnecting the cable chain. You must insert the chain's horizontal connector into the horizontal guide rail in the enclosure before inserting the chain's vertical connector into the vertical guide rail in the enclosure.
 

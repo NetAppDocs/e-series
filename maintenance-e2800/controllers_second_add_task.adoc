@@ -1,17 +1,17 @@
 ---
 permalink: maintenance-e2800/controllers_second_add_task.html
 sidebar: sidebar
-keywords: add, second, controller, shelf, canister, simplex, e2812, e2824, ef280, flash, array, simplex-to-duplex, conversion, storage, verify, number, install, host, interface, card, collect, support, data, change, configuration, duplex, change, remove, blank, second, complete
-summary: You add a second controller to a controller shelf that has only one controller canister. You can add a second controller canister to the simplex version of either a E2812 controller shelf, E2824 controller shelf, or EF280 flash array. This procedure is also referred to as a simplex-to-duplex conversion. This is an online procedure. You can access data on the storage array while you perform this procedure.
+keywords: add E2800 controller, adding E2800 controller, simplex to duplex, convert to duplex, E2800, E-Series, eseries
+summary: Add a second controller to a controller shelf that has only one controller canister, or add a second controller canister to the simplex version.
 ---
-= Add second controller canister
+= Add second controller canister in E2800
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You add a second controller to a controller shelf that has only one controller canister. You can add a second controller canister to the simplex version of either a E2812 controller shelf, E2824 controller shelf, or EF280 flash array.
+You can add a second controller to a controller shelf that has only one controller canister. You add a second controller canister to the simplex version of either a E2812 controller shelf, E2824 controller shelf, or EF280 flash array.
 
-This procedure is also referred to as a simplex-to-duplex conversion. This is an online procedure. You can access data on the storage array while you perform this procedure.
+This procedure is also referred to as a simplex-to-duplex conversion, which is an online procedure. You can access data on the storage array while you perform this procedure.
 
 == Step 1: Verify the new controller's part number
 

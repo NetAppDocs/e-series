@@ -1,14 +1,16 @@
 ---
 permalink: maintenance-e2800/canisters_fan_supertask_task.html
 sidebar: sidebar
-keywords: 60-drive, controller, shelf, drive, fan, canister, fail, replace, adequate, cooling
-summary: Each 60-drive controller shelf or drive shelf includes two fan canisters. If a fan canister fails, you must replace it as soon as possible to ensure that the shelf has adequate cooling.
+keywords: E2800 replace 60-drive fan canister, replacing E2800 fan canister, E2800 replace fan, E2800, E-Series, eseries
+summary: Replace a fan canister in a 60-drive controller shelf or drive shelf.
 ---
-= Replace fan canister (60-drive)
+= Replace E2800 fan canister (60-drive)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Follow these instructions to replace a fan canister in an E2800 array with a 60-drive shelf.
+
 Each 60-drive controller shelf or drive shelf includes two fan canisters. If a fan canister fails, you must replace it as soon as possible to ensure that the shelf has adequate cooling.
 
 == Step 1: Prepare to replace fan canister
@@ -20,6 +22,8 @@ You prepare to replace a fan canister in a 60-drive controller shelf or drive sh
 
 * From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with the fan canister and select *Recheck* from the Recovery Guru to ensure no other items must be addressed first.
 * Check that the amber Attention LED on the fan canister is on, indicating that the fan has a fault. Contact technical support for assistance if both fan canisters in the shelf have their amber Attention LEDs on.
+
+===== About this task
 
 This task describes how to prepare to replace a fan canister for the following controller shelves:
 

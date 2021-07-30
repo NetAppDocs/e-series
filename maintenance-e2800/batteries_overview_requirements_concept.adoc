@@ -1,17 +1,28 @@
 ---
 permalink: maintenance-e2800/batteries_overview_requirements_concept.html
 sidebar: sidebar
-keywords: replace, battery, requirement, consideration, overview, replacing, fail
-summary: Before you replace a battery, you need to be aware of certain requirements and considerations.
+keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries
+summary: Review E2800 battery replacement requirements and considerations.
 ---
-= Overview and requirements
+= Requirements for E2800 battery replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you replace a battery, you need to be aware of certain requirements and considerations.
+Before you replace an E2800 battery, review the requirements and considerations.
+
+== Procedure overview
 
 Each controller canister includes a battery that preserves cached data if the AC power fails. To protect your data, you must replace a failed battery as soon as possible.
+
+. Prepare for replacement, following the appropriate steps for a duplex or simplex configuration.
+. Remove the controller canister.
+. Remove the failed battery.
+. Install the new battery.
+. Re-install the controller canister.
+. Complete the replacement, following the appropriate steps for a duplex or simplex configuration.
+
+== Requirements
 
 If you plan to replace a failed battery, keep the following requirements in mind.
 

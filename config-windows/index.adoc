@@ -1,8 +1,8 @@
 ---
 permalink: config-windows/index.html
 sidebar: sidebar
-keywords: express, configuration
-summary: Express Configuration
+keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Use the express configuration for a Windows host with an E-Series system.
 ---
 = Windows express configuration overview
 :icons: font
@@ -13,7 +13,7 @@ The Windows express method for installing your storage array and accessing SANtr
 
 === Procedure overview
 
-The express method includes the following steps:
+The express method includes the following steps.
 
 . Setting up one of the following communication environments:
  ** Fibre Channel (FC)
@@ -26,4 +26,4 @@ The express method includes the following steps:
 
 * Online help -- Describes how to use SANtricity System Manager to complete configuration and storage management tasks. It is available within the product.
 * https://kb.netapp.com/app/[NetApp Knowledgebase] (a database of articles) -- Provides troubleshooting information, FAQs, and instructions for a wide range of NetApp products and technologies.
-* Windows Unified Host Utilities 7.0 Installation Guide under the NetApp Documentation: Host Utilities (current releases) describes how to install and use the Windows Unified Host Utilities 7.0.
+* Windows Unified Host Utilities 7.0 Installation Guide under the NetApp Documentation -- Host Utilities (current releases) describes how to install and use the Windows Unified Host Utilities 7.0.

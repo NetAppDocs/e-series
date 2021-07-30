@@ -1,15 +1,15 @@
 ---
 permalink: maintenance-e2800/hpp_complete_protocol_conversion_task.html
 sidebar: sidebar
-keywords: convert, protocol, host, port, additional, step, complete, start, end, baseboard, hic, complete, fc, iscsi, conversion, fc/iscsi
-summary: After converting the protocol of the host ports, you need to perform additional steps before you can use the new protocol. The steps you might need to complete depend on the starting and ending protocols of the baseboard host ports and the HIC ports.
+keywords:  E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Channel protocol, iSCSI protocol, convert HPP, converting host port protocol, SFP+ (optical) host ports, E2800, E-Series, eseries
+summary: Complete the host port protocol conversion for an E2800 array.
 ---
-= Complete host protocol conversion
+= Complete host protocol conversion for E2800
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After converting the protocol of the host ports, you need to perform additional steps before you can use the new protocol. The steps depend on the starting and ending protocols of the baseboard host ports and the HIC ports.
+After converting the protocol of the host ports, you must perform additional steps before you can use the new protocol. The steps depend on the starting and ending protocols of the baseboard host ports and the HIC ports.
 
 == Complete FC to iSCSI conversion
 

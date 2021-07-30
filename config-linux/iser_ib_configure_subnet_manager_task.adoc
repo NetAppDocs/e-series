@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/iser_ib_configure_subnet_manager_task.html
 sidebar: sidebar
-keywords: inifniband, switch, run, subnet, manager, path, loss, high, load, avoid, configure, opensm, host
+keywords: subnet manager, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: Using an InfiniBand switch to run subnet manager might cause unexpected path loss during high loads. To avoid path loss, configure the subnet manager on one or more of your hosts using opensm.
 ---
 = Configure subnet manager

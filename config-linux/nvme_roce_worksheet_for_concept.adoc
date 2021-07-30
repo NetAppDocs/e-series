@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_roce_worksheet_for_concept.html
 sidebar: sidebar
-keywords: worksheet, record, nvme, roce, storage, configuration, information, perform, provision, task, linux, direct, connect, topology, host, indetifier, target, nqn, map, host, name
-summary: You can use this worksheet to record NVMe over RoCE storage configuration information. You need this information to perform provisioning tasks.
+keywords: NVMe over RoCE worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Use this worksheet to record NVMe over RoCE storage configuration information. 
 ---
 = NVMe over RoCE worksheet for Linux
 :icons: font

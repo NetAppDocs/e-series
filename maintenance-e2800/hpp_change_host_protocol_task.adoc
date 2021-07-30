@@ -1,10 +1,10 @@
 ---
 permalink: maintenance-e2800/hpp_change_host_protocol_task.html
 sidebar: sidebar
-keywords: e2800, storage, array, sfp, optical, fibre, channel, iscsi, fc, protocol, host, port, built, controller, baseboard, interface, card, hic, protocol, determine, dual-protocol, obtain, feature, pack, stop, i/o, feature, pack
-summary: If you have an E2800 storage array with SFP+ (optical) host ports, you can change the host port protocol from Fibre Channel (FC) to iSCSI or from iSCSI to FC. You can change the protocol used by the host ports built into the controller (_baseboard host ports_), the protocol used by the host ports on the host interface card (_HIC ports_), or the protocol of all host ports.
+keywords: E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Channel protocol, iSCSI protocol, convert HPP, converting host port protocol, SFP+ (optical) host ports, E2800, E-Series, eseries
+summary: Change the host port protocol from Fibre Channel (FC) to iSCSI or from iSCSI to FC.
 ---
-= Change host protocol
+= Change host protocol for E2800
 :icons: font
 :imagesdir: ../media/
 

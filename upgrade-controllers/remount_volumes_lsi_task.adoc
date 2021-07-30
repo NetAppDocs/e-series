@@ -1,7 +1,7 @@
 ---
 permalink: upgrade-controllers/remount_volumes_lsi_task.html
 sidebar: sidebar
-keywords: remount, volume, controller, upgrade, result, changing, change, vendor, id, lsi, netapp, aix, host, vmware, windows
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, remount volume, upgrade LSI, vendor ID
 summary: You remount volumes if your controller upgrade results in changing the vendor ID from LSI to NETAPP.
 ---
 = Remount volumes after changing the vendor from LSI to NETAPP

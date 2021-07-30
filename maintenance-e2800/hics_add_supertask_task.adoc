@@ -1,17 +1,17 @@
 ---
 permalink: maintenance-e2800/hics_add_supertask_task.html
 sidebar: sidebar
-keywords: add, host, interface, card, hic, increase, number, port, storage, array, protocol, reapply, power, e2800, baseboard, prepare, remove, controller, canister, install, reinstall, complete
-summary: You add host interface cards (HICs) to increase the number of host ports in your storage array and to provide additional host protocols. When you add HICs, you must power off the storage array, install the HIC, and reapply power. You can add HICs to E2800 controller canisters that only have baseboard host ports.
+keywords: adding E2800 HIC, add E2800 HIC, add host interface card, E2800, E-Series, eseries
+summary: Add a host interface card (HIC) to an E2800 array.
 ---
-= Add host interface cards
+= Add host interface cards to E2800
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You add host interface cards (HICs) to increase the number of host ports in your storage array and to provide additional host protocols.
+Follow these instructions to add a host interface cards (HIC) to an E2800 array.
 
-When you add HICs, you must power off the storage array, install the HIC, and reapply power. You can add HICs to E2800 controller canisters that only have baseboard host ports.
+Adding a HIC increases the number of host ports in your E2800 storage array and provides additional host protocols. When you add HICs, you must power off the storage array, install the HIC, and reapply power. You can add HICs to E2800 controller canisters that only have baseboard host ports.
 
 == Step 1: Prepare to add host interface cards
 
@@ -251,7 +251,7 @@ _If the new HIC ports do_ not _have the protocol you expect:_ You must apply a s
 +
 . Connect the cables from the controller's host ports to the data hosts.
 +
-If you need instructions for configuring and using a new host protocol, refer to the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] .
+If you need instructions for configuring and using a new host protocol, refer to the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration].
 
 ===== Result
 

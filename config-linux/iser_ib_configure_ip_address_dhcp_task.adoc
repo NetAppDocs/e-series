@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/iser_ib_configure_ip_address_dhcp_task.html
 sidebar: sidebar
-keywords: express, method, configuring, configure, communication, management, station, storage, array, dynamic, host, configuration, protocol, dhcp, ip, address, simplex, controller, duplex
-summary: In this express method for configuring communications between the management station and the storage array, you use Dynamic Host Configuration Protocol \(DHCP\) to provide IP addresses. Each storage array has either one controller \(simplex\) or two controllers \(duplex\), and each controller has two storage management ports. Each management port will be assigned an IP address.
+keywords: IP address, DHCP, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Use Dynamic Host Configuration Protocol \(DHCP\) to provide IP addresses.
 ---
 = Configure IP addresses using DHCP
 :icons: font

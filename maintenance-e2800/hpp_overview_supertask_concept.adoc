@@ -1,15 +1,15 @@
 ---
 permalink: maintenance-e2800/hpp_overview_supertask_concept.html
 sidebar: sidebar
-keywords: e2800, baseboard, host, port, requirement, convert, protocol, overview, changing, change, consideration
-summary: Learn about the E2800 baseboard host ports and the requirements you need to know about before converting the host protocol.
+keywords:  E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Channel protocol, iSCSI protocol, convert HPP, converting host port protocol, SFP+ (optical) host ports, E2800, E-Series, eseries
+summary: Review the requirements for host port protocol conversion on an E2800.
 ---
-= Overview and requirements
+= Requirements for host port protocol conversion
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before converting the host protocol, review the requirements.
+Before converting the host protocol for an E2800 array, review the requirements.
 
 You can convert the host port protocol of the baseboard host ports in the E2800 controller shelf.
 

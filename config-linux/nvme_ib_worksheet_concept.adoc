@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_ib_worksheet_concept.html
 sidebar: sidebar
-keywords: worksheet, record, nvme, infiniband, storage, configuration, information, perform, provision, task, host, identifier, target, nqn, network, subnet, map, name
-summary: You can use this worksheet to record NVMe over Infiniband storage configuration information. You need this information to perform provisioning tasks.
+keywords: NVMe over Infiniband worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Use this worksheet to record NVMe over Infiniband storage configuration information.
 ---
 = NVMe over InfiniBand worksheet
 :icons: font

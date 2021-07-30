@@ -1,15 +1,19 @@
 ---
 permalink: maintenance-e2800/batteries_complete_replacement_task.html
 sidebar: sidebar
-keywords: step, complete, battery, replacement, duplex, configuration, controller, simplex, online, shelf, data, resume, operation, power
-summary: The steps to complete a battery replacement depend on whether you have a duplex configuration (two controllers) or a simplex configuration (one controller). If you have a duplex configuration, you place the affected controller online or, if you have a simplex configuration, you apply power to the controller shelf and confirm that all components are working correctly. Then, you can collect support data and resume operations.
+keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries
+summary: Complete a battery replacement.
 ---
-= Complete battery replacement
+= Complete E2800 battery replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The steps to complete a battery replacement depend on whether you have a duplex configuration (two controllers) or a simplex configuration (one controller). If you have a duplex configuration, you place the affected controller online or, if you have a simplex configuration, you apply power to the controller shelf and confirm that all components are working correctly. Then, you can collect support data and resume operations.
+The steps to complete a battery replacement depend on whether you have a duplex configuration (two controllers) or a simplex configuration (one controller).
+
+If you have a duplex configuration, you place the affected controller online or, if you have a simplex configuration, you apply power to the controller shelf and confirm that all components are working correctly. Then, you can collect support data and resume operations.
+
+Follow the appropriate instructions below for a duplex or simplex configuration.
 
 == Place controller online (duplex)
 

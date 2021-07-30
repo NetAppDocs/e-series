@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/iscsi_create_partition_file_task.html
 sidebar: sidebar
-keywords: lun, partition, file, system, linux, discover, create, filesystem
-summary: A new LUN has no partition or file system when the Linux host first discovers it. You must format the LUN before it can be used. Optionally, you can create a file system on the LUN.
+keywords: partitions, file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: A new LUN has no partition or file system when the Linux host first discovers it. You must format the LUN before it can be used.
 ---
 = Create partitions and filesystems
 :icons: font

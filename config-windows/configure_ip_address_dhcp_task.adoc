@@ -1,8 +1,8 @@
 ---
 permalink: config-windows/configure_ip_address_dhcp_task.html
 sidebar: sidebar
-keywords: express, method, configuring, configure, communication, management, station, storage, array, dynamic, host, protocol, dhcp, ip, address, controller, simplex, duplex, management, port, assign
-summary: In this express method for configuring communications between the management station and the storage array, you use Dynamic Host Configuration Protocol \(DHCP\) to provide IP addresses. Each storage array has either one controller \(simplex\) or two controllers \(duplex\), and each controller has two storage management ports. Each management port will be assigned an IP address.
+keywords: IP address, DHCP, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Use Dynamic Host Configuration Protocol \(DHCP\) to provide IP addresses in the Windows express method.
 ---
 = Configure IP addresses using DHCP
 :icons: font

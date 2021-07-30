@@ -1,7 +1,7 @@
 ---
 permalink: upgrade-controllers/reconfigure_sas_task.html
 sidebar: sidebar
-keywords: convert, controller, shelf, sas-2, array, e2700, e550, ef5500, e5600, ef560, drive, associate, de1600, de5600, de6600, sas-3, e2800, e5700, ef570, de212c, de224c, de460c, data, preservation, reconfigure, power, down, non-data, install
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, reconfigure SAS-2, SAS-2, SAS-3, convert controller shelf, convert drive shelf, 
 summary: You can convert the controller shelf in an approved SAS-2 array (E2700, E550/EF5500, E5600/EF560) to a drive shelf and then place that shelf and any associated approved SAS-2 drive shelves (DE1600, DE5600, DE6600) behind a new approved SAS-3 array (E2800, E5700/EF570) and approved SAS-3 drive shelves (DE212C, DE224C, DE460C) without data preservation.
 ---
 = Reconfigure a SAS-2 system behind a new SAS-3 controller shelf without data preservation
@@ -15,7 +15,7 @@ Due to the complexity of this procedure, the following is required:
 
 * This procedure requires an FPVR. To file an FPVR contact NetApp Professional Services.
 +
-NOTE: Failure to aquire an FPVR before attempting this procedure can result in drive failure and controller lock down.
+NOTE: Failure to acquire an FPVR before attempting this procedure can result in drive failure and controller lock down.
 
 * If you are able to back up your data, you can perform this procedure without assistance from NetApp Professional Services.
 * If you cannot back up your data, contact NetApp Professional Services for assistance with this procedure.

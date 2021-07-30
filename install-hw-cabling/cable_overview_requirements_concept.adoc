@@ -1,8 +1,8 @@
 ---
 permalink: install-hw-cabling/cable_overview_requirements_concept.html
 sidebar: sidebar
-keywords: cable, host, direct, controller, switch, connect, storage, system, drive, shelves, shelf, network, applicable, hardware, model, additional, cabling, information, require, component, overview, requirement, out-of-band
-summary: You can cable a host directly to a controller or use switches to connect a host to a controller. If your storage system includes one or more drive shelves, you must cable them to your controller shelf. You can add a new drive shelf while power is still applied to other components of the storage system. In addition, you can connect your storage system to a network for out-of-band management.
+keywords: cabling, cabling requirements, drive shelf cabling, controller cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C
+summary: Cabling E-Series shelves requires several components.
 ---
 = Requirements
 :icons: font

@@ -1,15 +1,15 @@
 ---
 permalink: config-vmware/nmve_fc_perform_specific_task.html
 sidebar: sidebar
-keywords: nvme, fibre, channel, protocol, configure, switch, determine, identifier, host, port, perform, fc-specific, task, fc, switch, wwpn, vmware, enable, hba, driver, worksheet
+keywords: Nvme over FC, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: For the NVME over Fibre Channel protocol, you configure the switches and determine the host port identifiers.
 ---
-= Perform NMVe over FC-specific tasks
+= Perform NVMe over FC-specific tasks
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-For the NVME over Fibre Channel protocol, you configure the switches and determine the host port identifiers.
+For the NVMe over Fibre Channel protocol, you configure the switches and determine the host port identifiers.
 
 == Step 1: Configure the NVMe/FC switches
 
@@ -36,7 +36,7 @@ Each initiator port must be in a separate zone with all of its corresponding tar
 . Create additional zones for each FC host initiator port in the switch.
 . Save the zones, and then activate the new zoning configuration.
 
-== Step 2: Determine the host ports WWPNs - NVMe/FC VMware
+== Step 2: Determine the host ports WWPNs--NVMe/FC VMware
 
 [.lead]
 To configure FC zoning, you must determine the worldwide port name (WWPN) of each initiator port.
@@ -59,7 +59,7 @@ vmhba4 lpfc link-up  fc.20000090fa05e849:10000090fa05e849 (0000:03:00.1)
 Emulex Corporation Emulex LPe16000 16Gb PCIe Fibre Channel Adapter
 ----
 
-== Step 3: Enable HBA Driver
+== Step 3: Enable HBA driver
 
 [.lead]
 Support for NVMe must be enabled within Broadcom/Emulex and Marvell/Qlogic HBA drivers.

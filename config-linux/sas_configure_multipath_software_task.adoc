@@ -1,15 +1,15 @@
 ---
 permalink: config-linux/sas_configure_multipath_software_task.html
 sidebar: sidebar
-keywords: multipath, software, redundant, path, storage, array, physical, path, disrupt, operating, system, single, virtual, device, represent, storage, failover, process, device, mapper, multipath, dm-mp, linux, installation, map
-summary: Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. The multipath software presents the operating system with a single virtual device that represents the active physical paths to the storage. The multipath software also manages the failover process that updates the virtual device. You use the device mapper multipath \(DM-MP\) tool for Linux installations.
+keywords: multipath software for Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Configure multipath software, which  provides a redundant path to the storage array in case one of the physical paths is disrupted.
 ---
 = Configure the multipath software
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To provide a redundant path to the storage array, you can configure multipath software. 
+To provide a redundant path to the storage array, you can configure multipath software.
 
 ===== Before you begin
 

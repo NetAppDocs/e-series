@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_roce_install_smcli_11_53_task.html
 sidebar: sidebar
-keywords: install, santricity, storage, manager, software, station, graphical, user, interface, gui, command, line, cli, default, instruction, management, i/o, host, smcli, version
-summary: When you install the SANtricity Storage Manager software on your management station, a graphical user interface \(GUI\) and a command line interface \(CLI\) are installed by default. These instructions assume that you will install the SANtricity Storage Manager GUI on a management station and not on the I/O host.
+keywords: install Storage Manager Linux, install CLI Windows, install command line interface, install Host Context Agent, install HCA, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Install Storage Manager for CLI and HCA in Linux express method.
 ---
 = Install SANtricity Storage Manager for SMcli (SANtricity software version 11.53 or earlier)
 :icons: font

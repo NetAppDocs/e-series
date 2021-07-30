@@ -1,14 +1,16 @@
 ---
 permalink: maintenance-e2800/canisters_supply_supertask_task.html
 sidebar: sidebar
-keywords: 12-drive, 24-drive, controller, shelf, drive, power, supplies, supply, integrate, fan, power-fan, canister, santricity, system, manager, replace, redundant, source, adequate, cooling, prepare, power, supply, remove, install, complete, replacement
-summary: Each 12-drive or 24-drive controller shelf or drive shelf includes two power supplies with integrated fans. These are referred to as _power-fan canisters_ in SANtricity System Manager. If a power-fan canister fails, you must replace it as soon as possible to ensure that the shelf has a redundant power source and adequate cooling.
+keywords: E2800 replace 12-drive power supply, E2800 replace 24-drive power supply, replacing E2800 power supply, E2800, E-Series, eseries
+summary: Replace an E2800 12-drive or 24-drive controller shelf or drive shelf, which includes two power supplies with integrated fans.
 ---
-= Replace power supply (12-drive or 24-drive)
+= Replace E2800 power supply (12-drive or 24-drive)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Follow these instructions to replace a power supply in an E2800 array with a 12-drive or 24-drive shelf.
+
 Each 12-drive or 24-drive controller shelf or drive shelf includes two power supplies with integrated fans. These are referred to as _power-fan canisters_ in SANtricity System Manager. If a power-fan canister fails, you must replace it as soon as possible to ensure that the shelf has a redundant power source and adequate cooling.
 
 == Step 1: Prepare to replace power supply
@@ -20,6 +22,8 @@ You prepare to replace a power supply in a 12-drive or 24-drive controller shelf
 
 * You have reviewed the details in the Recovery Guru to confirm that there is an issue with the power supply. Select *Recheck* from the Recovery Guru to ensure no other items must be addressed first.
 * You have checked that the amber Attention LED on the power supply is on, indicating that the power supply or its integrated fan has a fault. Contact technical support for assistance if both power supplies in the shelf have their amber Attention LEDs on.
+
+===== About this task
 
 This task describes how to prepare to replace a power supply for the following controller shelves:
 
@@ -68,7 +72,9 @@ image:../media/drw_sas_fault_icon_maint-e2800.gif[] Attention LED: If it is *sol
 == Step 2: Remove failed power supply
 
 [.lead]
-You remove a failed power supply so you can replace it with a new one. When you remove a power supply (referred to in SANtricity System Manager as a _power-fan canister_), you turn off power, disconnect the power cord, and slide the part out of the shelf.
+You remove a failed power supply so you can replace it with a new one.
+
+When you remove a power supply (referred to in SANtricity System Manager as a _power-fan canister_), you turn off power, disconnect the power cord, and slide the part out of the shelf.
 
 ===== Before you begin
 
@@ -97,7 +103,9 @@ As you remove the power supply, a flap swings into place to block the empty bay,
 == Step 3: Install new power supply
 
 [.lead]
-You install a new power supply to replace the failed one. When you install a power supply (referred to in SANtricity System Manager as a _power-fan canister_), you slide the part into the shelf, close the cam handle, reconnect the power cord, and reapply power.
+You install a new power supply to replace the failed one.
+
+When you install a power supply (referred to in SANtricity System Manager as a _power-fan canister_), you slide the part into the shelf, close the cam handle, reconnect the power cord, and reapply power.
 
 ===== Before you begin
 
