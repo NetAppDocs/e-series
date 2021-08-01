@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Storage Provisioning 
+= Storage provisioning
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -43,7 +43,7 @@ The Select Host dialog box appears.
 +
 The Select Workload dialog box appears. A workload contains volumes with similar characteristics, which are optimized based on the type of application the workload supports. You can define a workload or you can select existing workloads.
 
-. Do one of the following: 
+. Do one of the following:
 
 ** Select the *Create volumes for an existing workload* option and then select the workload from the drop-down list.
 ** Select the *Create a new workload* option to define a new workload for a supported application or for “Other” applications, and then following these steps:
@@ -124,9 +124,9 @@ DA increases data integrity across the entire storage system. DA enables the sto
 
 === Create host access and assign volumes
 
-A host can be created automatically or manually:  
+A host can be created automatically or manually:
 
-* *Automatic* -- Automatic host creation for SCSI-based (not NVMe-oF) hosts is initiated by the Host Context Agent (HCA). The HCA is a utility that you can install on each host attached to the storage array. Each host that has the HCA installed pushes its configuration information to the storage array controllers through the I/O path. Based on the host information, the controllers automatically create the host and the associated host ports and set the host type. If needed, you can make any additional changes to the host configuration. 
+* *Automatic* -- Automatic host creation for SCSI-based (not NVMe-oF) hosts is initiated by the Host Context Agent (HCA). The HCA is a utility that you can install on each host attached to the storage array. Each host that has the HCA installed pushes its configuration information to the storage array controllers through the I/O path. Based on the host information, the controllers automatically create the host and the associated host ports and set the host type. If needed, you can make any additional changes to the host configuration.
 
 [NOTE]
 Host Context Agent software for Linux and Windows is available from https://mysupport.netapp.com/site/downloads[https://mysupport.netapp.com/site/downloads^].
@@ -144,7 +144,7 @@ Hosts are created as stand-alone hosts; the HCA does not automatically create or
 
 ==== Using the HCA to auto-discover the host
 
-You can allow the Host Context Agent (HCA) to automatically detect the hosts, and then verify that the information is correct. 
+You can allow the Host Context Agent (HCA) to automatically detect the hosts, and then verify that the information is correct.
 
 To verify host information:
 
@@ -168,7 +168,7 @@ The table lists the automatically created hosts.
 ** You must define the host identifier ports that are associated with the host.
 ** Make sure that you provide the same name as the host's assigned system name.
 ** This operation does not succeed if the name you choose is already in use.
-** The length of the name cannot exceed 30 characters. 
+** The length of the name cannot exceed 30 characters.
 
 . From the Manage page, select the storage array with the host connection.
 . Select *Provisioning > Configure Hosts*.
@@ -227,7 +227,7 @@ The system performs the following actions:
 
 To create a datastore in the vSphere Client, see the following topic in the VMware Doc Center:
 
-** https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.hostclient.doc/GUID-7EB0CE06-02DD-4B31-85C7-E54993CC06DC.html[Create a VMFS Datastore in the vSphere Client^] 
+** https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.hostclient.doc/GUID-7EB0CE06-02DD-4B31-85C7-E54993CC06DC.html[Create a VMFS Datastore in the vSphere Client^]
 
 ==== Increase capacity of existing datastore by increasing volume capacity
 
@@ -265,6 +265,6 @@ This dialog box displays the volume's current reported capacity and the free cap
 ==== Increase capacity of existing datastore by adding volumes
 
 . You can increase the capacity of a datastore by adding volumes. Follow the steps in the section <xref>, “Create volumes. ”
-. Next, assign the volumes to the desired host to increase the datastore’s capacity. See the following topic: 
+. Next, assign the volumes to the desired host to increase the datastore’s capacity. See the following topic:
 
 ** https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.hostclient.doc/GUID-B0D89816-02E5-4C42-AAFC-19751800A284.html[Increase VMFS Datastore Capacity in the vSphere Client^]

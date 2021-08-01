@@ -25,6 +25,8 @@ If you have a duplex configuration, you must place the affected controller offli
 * Your storage array must have two controllers. The controller that you are not placing offline must be online (in the optimal state).
 * Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
 
+===== About this task
+
 Perform this task only if your storage array has two controllers (duplex configuration).
 
 ===== Steps
@@ -94,6 +96,8 @@ If you have a simplex configuration, you power down the controller shelf so you 
 ===== Before you begin
 
 * You have reviewed the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
+
+===== About this task
 
 Perform this task only if your storage array has one controller (simplex configuration).
 

@@ -4,19 +4,45 @@ sidebar: sidebar
 keywords: maintain, ef300, ef600, hardware
 summary: Maintaining EF300 and EF600 Hardware
 ---
-= Maintaining EF300 and EF600 Hardware
+= Maintaining EF300 and EF600 hardware
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Learn how to perform maintenance procedures on your EF300 and EF600 systems.
+For the EF300 and EF600 storage systems, you can perform maintenance procedures on the following components.
 
-* xref:concept_batteries_wombat.adoc[Batteries]
-* xref:concept_controllers_wombat.adoc[Controllers]
-* xref:concept_dimms_wombat.adoc[DIMMs]
-* xref:concept_drives_wombat.adoc[Drives]
-* xref:concept_fans_wombat.adoc[Fans]
-* xref:concept_host_interface_cards_wombat.adoc[Host interface cards]
-* xref:concept_host_port_protocol_conversion_wombat.adoc[Host port protocol conversion]
-* xref:concept_power_supplies_wombat.adoc[Power Supplies]
-* xref:concept_sas_expansion_cards_wombat.adoc[SAS expansion cards]
+== Batteries
+
+A battery is included with a controller and preserves cached data if the AC power fails.
+
+== Controllers
+
+A controller consists of a board, firmware, and software. It controls the drives and implements the System Manager functions. This section describes how to replace a single controller or both controllers in your EF300 or EF600 controller shelf.
+
+== DIMMs
+
+You must replace a DIMM when a memory mismatch is present, or you have a failed DIMM.
+
+== Drives
+
+A drive is a device that provides the physical storage media for data.
+
+== Fans
+
+Each EF300 or EF600 controller shelf or drive shelf includes five fans for cooling the controller.
+
+== Host interface cards (HICs)
+
+A host interface card (HIC) must be installed within a controller canister. The EF600 controller includes host ports on the optional HIC. Host ports that are built into the HIC are called HIC ports.
+
+== Host port protocol
+
+You can convert the protocol of a host to a different protocol so that compatibility and communication can be established.
+
+== Power supplies
+
+A power supply provides a redundant power source in a controller shelf.
+
+== SAS expansion cards
+
+A SAS expansion card may be installed within a controller canister. The EF300 controller supports SAS expansion.

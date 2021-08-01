@@ -19,9 +19,7 @@ summary:
 //
 
 [.lead]
-This guide describes how to install and configure the SANtricity Storage Plugin for vCenter.
-
-The Plugin for vCenter provides integrated management of E-Series storage arrays from within a VMware vSphere Client session. The vSphere Client is a single management interface that you can use to manage the VMware infrastructure and all your day-to-day storage needs. 
+The Plugin for vCenter provides integrated management of E-Series storage arrays from within a VMware vSphere Client session. The vSphere Client is a single management interface that you can use to manage the VMware infrastructure and all your day-to-day storage needs.
 
 The following functions are available in the Plugin for vCenter:
 

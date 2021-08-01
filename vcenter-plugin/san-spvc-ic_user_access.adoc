@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= User Access 
+= User access
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,7 +19,7 @@ summary:
 //
 
 [.lead]
-Follow the instructions in this section to configure access permissions for the plugin’s users.
+Follow these instructions to configure access permissions for the plugin’s users.
 
 === Review required vSphere privileges
 
@@ -53,7 +53,7 @@ The Administrator role is not editable.
 
 The appropriate wizard appears, depending on the above selection.
 
-==== Create a new role 
+==== Create a new role
 
 . In the Privileges list, select the access permissions to assign to this role.
 +
@@ -61,7 +61,7 @@ To allow Read-Only access to the plugin, select *Datastore* > *Browse* *datastor
 
 . Assign other privileges for the list if needed, and then click *Next*.
 . Name the role and provide a description.
-. Click *Finish*. 
+. Click *Finish*.
 
 ==== Clone a role
 
@@ -100,9 +100,9 @@ After setting privileges for a role, you must then add a permission to the vCent
 . Click *OK*.
 
 [NOTE]
-You can select an existing permission and modify it to use the created role. *However, be aware that the role must have the same privileges along with read/write plugin privileges as to avoid a regress in permissions.* 
+You can select an existing permission and modify it to use the created role. *However, be aware that the role must have the same privileges along with read/write plugin privileges as to avoid a regress in permissions.*
 
-To access the plugin, you must log in to the vSphere Client under the user account that has the read/write privileges for the plugin. 
+To access the plugin, you must log in to the vSphere Client under the user account that has the read/write privileges for the plugin.
 
 For more information about managing permissions, see the following topics in the VMware Doc Center:
 

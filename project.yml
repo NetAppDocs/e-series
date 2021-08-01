@@ -117,7 +117,7 @@ sidebar:
                   url: "/install-hw-cabling/ethernet_cable_task.html"
     - title: Deploy software
       entries:
-        - title: Linux express config
+        - title: Linux express configuration
           entries:
                 - title: Overview
                   url: "/config-linux/index.html"
@@ -340,7 +340,7 @@ sidebar:
                 - title: NVMe over Fibre Channel Setup
                   entries:
                   - title: Verify Linux configuration
-                    url: "/config-linux/nvme_fc_verify_linux_config_support_task"
+                    url: "/config-linux/nvme_fc_verify_linux_config_support_task.html"
                   - title: Configure IP addresses using DHCP
                     url: "/config-linux/nvme_fc_configure_ip_address_dhcp_task.html"
                   - title: Install SANtricity Storage Manager
@@ -369,7 +369,7 @@ sidebar:
                     url: "/config-linux/nvme_fc_verify_storage_access_host_task.html"
                   - title: NVMe over Fibre Channel worksheet for Linux
                     url: "/config-linux/nvme_fc_worksheet_concept.html"
-        - title: VMware express config
+        - title: VMware express configuration
           entries:
             - title: Overview
               url: "/config-vmware/index.html"
@@ -399,7 +399,7 @@ sidebar:
               url: "/config-vmware/configure_storage_host_task.html"
             - title: Verify storage access on host
               url: "/config-vmware/verify_storage_access_host_task.html"
-        - title: Windows express config
+        - title: Windows express configuration
           entries:
               - title: Overview
                 url: "/config-windows/index.html"
@@ -584,7 +584,7 @@ sidebar:
             - title: Host interface cards
               entries:
               - title: Requirements for HIC replacement
-                url: "maintenance-e2800/hics_overview_supertask_concept.html"
+                url: "/maintenance-e2800/hics_overview_supertask_concept.html"
               - title: Add host interface cards
                 url: "/maintenance-e2800/hics_add_supertask_task.html"
               - title: Upgrade host interface card

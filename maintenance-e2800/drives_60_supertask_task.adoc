@@ -16,7 +16,7 @@ The steps to replace a failed drive drawer in an E2860 controller shelf or a DE4
 == Step 1: Prepare to replace drive drawer
 
 [.lead]
-Determine if you can perform the replacement procedure while the drive shelf is online or if you need to stop host I/O activity and power off any of the shelves that are powered on. 
+Determine if you can perform the replacement procedure while the drive shelf is online or if you need to stop host I/O activity and power off any of the shelves that are powered on.
 
 If you are replacing a drawer in a shelf with Drawer Loss Protection, there is no need to stop host I/O activity and power off any of the shelves.
 
@@ -276,13 +276,13 @@ Positioning the drawer slightly to the right of center helps to ensure that the 
 
 . Slide the drive drawer into the slot, and ensure that the drawer guide slides under the lock-out tumbler.
 +
-IMPORTANT: **Risk of equipment damage* -- Damage occurs if the drawer guide does not slide under the lock-out tumbler.
+IMPORTANT: *Risk of equipment damage* -- Damage occurs if the drawer guide does not slide under the lock-out tumbler.
 
 . Carefully push the drive drawer all the way in until the latch fully engages.
 +
 Experiencing a higher level of resistance is normal when pushing the drawer closed for the first time.
 +
-IMPORTANT: **Risk of equipment damage* -- Stop pushing the drive drawer if you feel binding. Use the release levers at the front of the drawer to slide the drawer back out. Then, reinsert the drawer into the slot, ensure the tumbler is above the rail, and the rails are aligned correctly.
+IMPORTANT: *Risk of equipment damage* -- Stop pushing the drive drawer if you feel binding. Use the release levers at the front of the drawer to slide the drawer back out. Then, reinsert the drawer into the slot, ensure the tumbler is above the rail, and the rails are aligned correctly.
 
 == Step 5: Attach cable chains
 

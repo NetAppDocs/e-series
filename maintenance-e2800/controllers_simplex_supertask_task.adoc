@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace E2800 controller, replacing E2800 controller, simplex controller replacement, E2800, E-Series, eseries
 summary: You can replace a failed controller canister in a simplex configuration.
 ---
-= Replace controller in simplex configuration
+= Replace controller in E2800 simplex configuration
 :icons: font
 :imagesdir: ../media/
 
@@ -333,6 +333,8 @@ You complete the controller replacement by powering on the controller shelf and 
 ===== Before you begin
 
 * You must have installed SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
+
+===== About this task
 
 If all drives in your storage array are security enabled, you must use the Enterprise Management Window (EMW) in SANtricity Storage Manager to unlock the secured drives. You cannot access the storage array until you unlock the drives with the saved key.
 

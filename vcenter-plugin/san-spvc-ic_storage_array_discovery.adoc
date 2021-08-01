@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Storage Array Discovery
+= Storage array discovery
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -47,11 +47,11 @@ If no manageable arrays are discovered, verify that the storage arrays are prope
 +
 The system performs a credential check on each array that you are adding to the management domain. You might need to resolve any issues with untrusted certificates before proceeding.
 
-. Click *Next* to proceed to the next step in the wizard. 
+. Click *Next* to proceed to the next step in the wizard.
 +
-If the storage arrays have valid certificates, go to “Provide passwords” on page 9. 
+If the storage arrays have valid certificates, go to “Provide passwords” on page 9.
 +
-If any storage arrays do not have valid certificates, the Step 2: Resolve Self-Signed Certificates dialog box appears. Go to the section <xref>, “Resolve untrusted certificates during discovery.” 
+If any storage arrays do not have valid certificates, the Step 2: Resolve Self-Signed Certificates dialog box appears. Go to the section <xref>, “Resolve untrusted certificates during discovery.”
 +
 If you want to import CA-signed certificates, cancel out of the discovery wizard and click *Certificate Management* from the left panel. Refer to the online help for further instructions.
 
