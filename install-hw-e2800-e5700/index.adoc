@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installation, setup, instruction
 summary: Installation and Setup Instructions
 ---
-= Install and setup E2800 and E5700
+= Install and set up E2800 and E5700 storage systems
 :icons: font
 :imagesdir: ../media/
 
@@ -18,7 +18,7 @@ A printable PDF of step-by-step instructions with live links to additional conte
 ** https://library.netapp.com/ecm/ecm_download_file/ECMLP2842061[E2860, E5760 and DE460C PDF poster]
 ** https://library.netapp.com/ecm/ecm_download_file/ECMLP2842063[E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C PDF poster]
 
-* *Online Instructions*
+* *Online instructions*
 +
 The setup instructions described on this site. Start with one of the following topics to get started.
 

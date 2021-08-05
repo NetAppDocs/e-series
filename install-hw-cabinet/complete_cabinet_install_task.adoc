@@ -1,8 +1,8 @@
 ---
 permalink: install-hw-cabinet/complete_cabinet_install_task.html
 sidebar: sidebar
-keywords: cabinet, level, feet, stability, foot, reinstall, component, remove, install, connect, power, complete, installation
-summary: After you move the cabinet, lower the leveling feet and the stability foot, reinstall the components you removed, install other required components, and connect the cabinet to power.
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, cabinet, 3040, 40u, drive tray installation, install drive tray
+summary: Complete the cabinet installation.
 ---
 = Complete cabinet installation
 :icons: font
@@ -41,7 +41,7 @@ Stability foot
 [.lead]
 After you move the cabinet, you can reinstall the trays in their original locations.
 
-===== Before You Begin
+===== Before you begin
 
 Be sure to install the trays in their original locations.
 
@@ -171,7 +171,7 @@ NOTE: The remaining two screw holes are used to mount the tray.
 [.lead]
 To complete the cabinet installation, power on the cabinet components.
 
-===== Before You Begin
+===== Before you begin
 
 While the trays perform the power-on procedure, the LEDs on the front and the rear of the trays blink. Depending on your configuration, it can take several minutes to complete the power-on procedure.
 
@@ -204,5 +204,7 @@ Power entry boxes
 IMPORTANT: Wait 30 seconds after turning on the drive trays before you turn on the power to the controller-drive trays.
 
 . Wait 30 seconds after turning on the drive trays, and then turn on the power to all controller-drive trays in the cabinet.
+
+== After you finish
 
 The cabinet installation is complete. You can resume normal operations.

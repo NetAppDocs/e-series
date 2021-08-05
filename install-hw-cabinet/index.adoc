@@ -1,15 +1,15 @@
 ---
 permalink: install-hw-cabinet/index.html
 sidebar: sidebar
-keywords: install, e-series, 3040, 40u, cabinet
-summary: Installing E-Series 3040 40U Cabinet
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, cabinet, 3040, 40u, drive tray installation, install drive tray
+summary: Overview of installing drive trays in E-Series 3040 40U Cabinet
 ---
 = 3040 40U Cabinet overview
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The following E-Series and EF-Series controller-drive trays and expansion drive trays can be installed in the E-Series 3040 40U Cabinet:
+You can install the following controller-drive trays and expansion drive trays in the E-Series 3040 40U Cabinet:
 
 * E2612, E2624, and E2660 controller-drive trays
 * E2712, E2724, and E2760 controller-drive trays
@@ -19,9 +19,7 @@ The following E-Series and EF-Series controller-drive trays and expansion drive 
 * EF540, EF550, and EF560 flash arrays
 * DE1600, DE5600, and DE6600 drive trays
 
-Specifications are not provided for the following controller shelves and drive shelves, which can also be installed in the cabinet.
+You can also install the following SAS-3 controller shelves and drive shelves in the cabinet. However, specifications for these shelves are not listed in these procedures. Refer to the https://hwu.netapp.com[NetApp Hardware Universe].
 
 * E2812, E2824, and E5724 controller shelves
 * DE212C and DE224C drive shelves
-
-For specifications for the SAS-3 controller shelves and drive shelves listed above, refer to the https://hwu.netapp.com[NetApp Hardware Universe].

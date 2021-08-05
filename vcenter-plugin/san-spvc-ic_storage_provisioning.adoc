@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: san-spvc-ic_storage_provisioning.html
-keywords:
-summary:
+keywords: E-Series, eseries, vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter, VMware vSphere Client, vCenter plugin storage provisioning, vCenter plugin volumes
+summary: Use the Plugin for vCenter to create volumes, assign volumes to hosts, and then assign volumes to datastores.
 ---
 
 = Storage provisioning
