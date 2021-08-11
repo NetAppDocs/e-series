@@ -1,15 +1,15 @@
 ---
 permalink: install-hw-cabinet/prepare_move_cabinet_task.html
 sidebar: sidebar
-keywords: prepare, move, cabinet, location, receive, receiving, area, estimate, estimating, total, weight, acclimating, acclimate, removing, remove, packing, material, check, ship, content, weight, heavy, component
-summary: You prepare to move the cabinet from its location in your receiving area by estimating its total weight, acclimating the cabinet, removing the packing materials, and checking the shipping contents.
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, cabinet, 3040, 40u, drive tray installation, install drive tray
+summary: Prepare to move the cabinet.
 ---
 = Prepare to move cabinet
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You prepare to move the cabinet from its location in your receiving area by estimating its total weight, acclimating the cabinet, removing the packing materials, and checking the shipping contents.
+Prepare to move the cabinet from its location in your receiving area by estimating its total weight, acclimating the cabinet, removing the packing materials, and checking the shipping contents.
 
 == Step 1: Estimate cabinet weight
 
@@ -173,9 +173,7 @@ Maximum configuration
 
 . Review the following notes.
 +
-CAUTION:
-+
-Remove all drives from the DE6600 drive tray before moving the cabinet to its final position.
+CAUTION: Remove all drives from the DE6600 drive tray before moving the cabinet to its final position.
 +
 IMPORTANT: *Possible equipment damage* -- Cabinets with DE6600 drive trays ship without drives to reduce shipping weight. Because a fully-populated cabinet with DE6600 drive trays can weigh more than 1247.3 kg (2750 lb), make sure that you move the cabinet into place before you load the drives, and make sure that the floor load capability of the cabinet's destination supports that much weight.
 +
@@ -219,7 +217,7 @@ Check the shipping contents to make sure that all equipment arrived at the site.
 [.lead]
 Remove some of the heavier components that are located in the top of the cabinet to ensure maximum stability.
 
-===== Before You Begin
+===== Before you begin
 
 * Make sure the maximum weight does not exceed 2000 lbs before you move the cabinet.
 * Note the location of each tray, component, and cable before removing it, so that you can reinstall each item in its original location.

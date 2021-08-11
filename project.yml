@@ -65,7 +65,7 @@ sidebar:
                 url: "/install-hw-e2800-e5700/index.html"
               - title: Install process
                 url: "/install-hw-e2800-e5700/install_setup_overview_concept.html"
-              - title: Install and setup 60-drives
+              - title: Install and set up 60-drives
                 entries:
                 - title: Prepare for install
                   url: "/install-hw-e2800-e5700/e2860_e5760_prepare_task.html"
@@ -75,7 +75,7 @@ sidebar:
                   url: "/install-hw-e2800-e5700/e2860_e5760_connect_cables_task.html"
                 - title: Complete storage system setup
                   url: "/install-hw-e2800-e5700/e2860_e5760_complete_setup_task.html"
-              - title: Install and setup 12 and 24-drives
+              - title: Install and set up 12 and 24-drives
                 entries:
                 - title: Prepare for install
                   url: "/install-hw-e2800-e5700/e2824_e5724_prepare_task.html"
@@ -721,15 +721,15 @@ sidebar:
             url: /san-spvc-ic_overview.html
           - title: Installation
             url: /san-spvc-ic_installation.html
-          - title: User Access
+          - title: User access
             url: /san-spvc-ic_user_access.html
-          - title: Login and Navigation
+          - title: Login and navigation
             url: /san-spvc-ic_login_and_navigation.html
-          - title: Storage Array Discovery
+          - title: Storage array discovery
             url: /san-spvc-ic_storage_array_discovery.html
-          - title: Storage Provisioning
+          - title: Storage provisioning
             url: /san-spvc-ic_storage_provisioning.html
-          - title: Plugin Removal
+          - title: Plugin removal
             url: /san-spvc-ic_plugin_removal.html
     - title: Earlier versions
       url: /early-versions.html
