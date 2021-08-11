@@ -1,7 +1,7 @@
 ---
 permalink: cloud-connector/backup_intro_concept.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: You can access the Backups option in the left navigation panel of the SANtricity Cloud Connector application.. The Backups option displays the Backups page, which allows you to create new image-based or file-based backup jobs.
 ---
 = Backups

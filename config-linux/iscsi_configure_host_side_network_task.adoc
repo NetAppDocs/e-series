@@ -88,22 +88,22 @@ NOTE: Be sure to set the address for both iSCSI initiator ports.
 . Configure the iSCSI interfaces by creating two iSCSI iface bindings.
 +
 ----
-iscsiadm –m iface –I iface0 –o new
-iscsiadm –m iface –I iface0 –o update –n iface.net_ifacename –v <NIC port1>
+iscsiadm -m iface -I iface0 -o new
+iscsiadm -m iface -I iface0 -o update -n iface.net_ifacename -v <NIC port1>
 ----
 +
 ----
-iscsiadm –m iface –I iface1 –o new
-iscsiadm –m iface –I iface1 –o update –n iface.net_ifacename –v <NIC port2>
+iscsiadm -m iface -I iface1 -o new
+iscsiadm -m iface -I iface1 -o update -n iface.net_ifacename -v <NIC port2>
 ----
 +
-NOTE: To list the interfaces, use iscsiadm --m iface.
+NOTE: To list the interfaces, use iscsiadm -m iface.
 
 . Establish the iSCSI sessions between initiators and targets (four total).
  .. Discover iSCSI targets. Save the IQN (it will be the same with each discovery) in the worksheet for the next step.
 +
 ----
-iscsiadm –m discovery –t sendtargets –p 192.168.0.1:3260 –I iface0 –P 1
+iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260 -I iface0 -P 1
 ----
 +
 NOTE: The IQN looks like the following:
@@ -115,8 +115,8 @@ iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
  .. Create the connection between the iSCSI initiators and iSCSI targets, using ifaces.
 +
 ----
-iscsiadm –m node –T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
-–p 192.168.0.1:3260 –I iface0 -l
+iscsiadm -m node -T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
+-p 192.168.0.1:3260 -I iface0 -l
 ----
 
  .. List the iSCSI sessions established on the host.
