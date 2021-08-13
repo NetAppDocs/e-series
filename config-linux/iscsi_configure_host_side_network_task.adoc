@@ -31,7 +31,7 @@ node.session.nr_sessions = 1
 node.session.timeo.replacement_timeout=20
 ----
 
-. Make sure iscsid and (open-)iscsi services are on and enabled for boot.
+. Make sure `iscsid` and `(open-)iscsi` services are on and enabled for boot.
 +
 *Red Hat Enterprise Linux 7 and 8 (RHEL 7 and RHEL 8)*
 +
@@ -97,7 +97,7 @@ iscsiadm -m iface -I iface1 -o new
 iscsiadm -m iface -I iface1 -o update -n iface.net_ifacename -v <NIC port2>
 ----
 +
-NOTE: To list the interfaces, use iscsiadm -m iface.
+NOTE: To list the interfaces, use `iscsiadm -m iface`.
 
 . Establish the iSCSI sessions between initiators and targets (four total).
  .. Discover iSCSI targets. Save the IQN (it will be the same with each discovery) in the worksheet for the next step.
