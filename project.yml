@@ -754,7 +754,7 @@ homepage:
           url: https://www.netapp.com/data-storage/ef-series/
         - title: E-Series hybrid flash
           url: https://www.netapp.com/data-storage/e-series/
-        - title: SANtricity software
+        - title: SANtricity software for proven storage systems
           url: https://www.netapp.com/data-management/santricity/
     - title: Tools & support
       links:
@@ -772,9 +772,9 @@ homepage:
       links:
         - title: Plug-in for vCenter
           url: /san-spvc-ic_overview.html
-        - title: Plug-in for Splunk Enterprise
+        - title: SANtricity performance app for Splunk Enterprise
           url: https://splunkbase.splunk.com/app/1932/
-        - title: Splunk technology add-on for SANtricity
+        - title: Splunk technology add-on for SANtricity (required for performance app)
           url: https://splunkbase.splunk.com/app/1933/
         - title: E-Series performance analyzer using Grafana
           url: https://github.com/NetApp/eseries-perf-analyzer
