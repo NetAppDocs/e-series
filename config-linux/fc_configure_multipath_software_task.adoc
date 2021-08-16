@@ -15,8 +15,8 @@ To provide a redundant path to the storage array, you can configure multipath so
 
 You have installed the required packages on your system.
 
-* For Red Hat (RHEL) hosts, verify the packages are installed by running rpm -q device-mapper-multipath.
-* For SLES hosts, verify the packages are installed by running rpm -q multipath-tools.
+* For Red Hat (RHEL) hosts, verify the packages are installed by running `rpm -q device-mapper-multipath`.
+* For SLES hosts, verify the packages are installed by running `rpm -q multipath-tools`.
 
 If you have not already installed the operating system, use the media supplied by your operating system vendor.
 
@@ -28,15 +28,15 @@ You use the device mapper multipath (DM-MP) tool for Linux installations. By def
 
 ===== Steps
 
-. If a multipath.conf file is not already created, run the # touch /etc/multipath.conf command.
-. Use the default multipath settings by leaving the multipath.conf file blank.
+. If a `multipath.conf` file is not already created, run the `# touch /etc/multipath.conf` command.
+. Use the default multipath settings by leaving the `multipath.conf` file blank.
 . Start the multipath service.
 +
 ----
 # systemctl start multipathd
 ----
 
-. Save your kernel version by running the uname -r command.
+. Save your kernel version by running the `uname -r` command.
 +
 ----
 # uname -r
@@ -45,7 +45,7 @@ You use the device mapper multipath (DM-MP) tool for Linux installations. By def
 +
 You will use this information when you assign volumes to the host.
 
-. Do one of the following to enable the multipathd daemon on boot.
+. Do one of the following to enable the `multipathd` daemon on boot.
 +
 [options="header"]
 |===
@@ -53,14 +53,14 @@ You will use this information when you assign volumes to the host.
 a|
 RHEL 7.x and 8.x systems:
 a|
-systemctl enable multipathd
+`systemctl enable multipathd`
 a|
 SLES 12.x and 15.x systems:
 a|
-systemctl enable multipathd
+`systemctl enable multipathd`
 |===
 
-. Rebuild the initramfs image or the initrd image under /boot directory:
+. Rebuild the `initramfs` image or the `initrd` image under `/boot directory`:
 +
 [options="header"]
 |===
@@ -68,16 +68,16 @@ systemctl enable multipathd
 a|
 RHEL 7.x and 8.x systems:
 a|
-dracut --force --add multipath
+`dracut --force --add multipath`
 a|
 SLES 12.x and 15.x systems:
 a|
-dracut --force --add multipath
+`dracut --force --add multipath`
 |===
 
-. Make sure that the newly created /boot/initrams-* image or /boot/initrd-* image is selected in the boot configuration file.
+. Make sure that the newly created `/boot/initrams-*`` image or `/boot/initrd-*` image is selected in the boot configuration file.
 +
-For example, for grub it is /boot/grub/menu.lst and for grub2 it is /boot/grub2/menu.cfg.
+For example, for grub it is `/boot/grub/menu.lst` and for grub2 it is /boot/grub2/menu.cfg.
 
 . Use the "Create host manually" procedure in the online help to check whether the hosts are defined. Verify that each host type is either *Linux DM-MP (Kernel 3.10 or later)* if you enable the Automatic Load Balancing feature, or *Linux DM-MP (Kernel 3.9 or earlier)* if you disable the Automatic Load Balancing feature. If necessary, change the selected host type to the appropriate setting.
 . Reboot the host.
