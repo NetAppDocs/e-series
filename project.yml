@@ -752,7 +752,7 @@ homepage:
           url: /whats-new.html
         - title: Reduce SSD latency with all-flash EF-Series
           url: https://www.netapp.com/data-storage/ef-series/
-        - title: E-Series hybrid flash
+        - title: E-Series hybrid-flash arrays are built to deliver
           url: https://www.netapp.com/data-storage/e-series/
         - title: SANtricity software for proven storage systems
           url: https://www.netapp.com/data-management/santricity/
@@ -774,7 +774,7 @@ homepage:
           url: /san-spvc-ic_overview.html
         - title: SANtricity performance app for Splunk Enterprise
           url: https://splunkbase.splunk.com/app/1932/
-        - title: Splunk technology add-on for SANtricity (required for performance app)
+        - title: Splunk technology add-on for SANtricity
           url: https://splunkbase.splunk.com/app/1933/
         - title: E-Series performance analyzer using Grafana
           url: https://github.com/NetApp/eseries-perf-analyzer
