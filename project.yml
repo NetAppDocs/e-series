@@ -657,26 +657,6 @@ sidebar:
       url: /manage-storage.html
     - title: Use SANtricity solutions
       entries:
-      - title: Cloud connector
-        entries:
-            - title: Overview
-              url: "/cloud-connector/index.html"
-            - title: Requirements
-              url: "/cloud-connector/learn_intro_concept.html"
-            - title: Install Cloud Connector
-              url: "/cloud-connector/install_intro_concept.html"
-            - title: Configure Cloud Connector for first time
-              url: "/cloud-connector/config_intro_concept.html"
-            - title: Log into Cloud Connector
-              url: "/cloud-connector/login_task.html"
-            - title: Backups
-              url: "/cloud-connector/backup_intro_concept.html"
-            - title: Restores
-              url: "/cloud-connector/restore_intro_concept.html"
-            - title: Modify settings
-              url: "/cloud-connector/modify_intro_concept.html"
-            - title: Uninstall Cloud Connector
-              url: "/cloud-connector/uninstall_intro_concept.html"
       - title: Web services proxy
         entries:
             - title: Overview
@@ -731,8 +711,32 @@ sidebar:
             url: /san-spvc-ic_storage_provisioning.html
           - title: Plugin removal
             url: /san-spvc-ic_plugin_removal.html
+      - title: Legacy solutions
+        entries:
+        - title: Cloud connector
+          entries:
+              - title: Overview
+                url: "/cloud-connector/index.html"
+              - title: Requirements
+                url: "/cloud-connector/learn_intro_concept.html"
+              - title: Install Cloud Connector
+                url: "/cloud-connector/install_intro_concept.html"
+              - title: Configure Cloud Connector for first time
+                url: "/cloud-connector/config_intro_concept.html"
+              - title: Log into Cloud Connector
+                url: "/cloud-connector/login_task.html"
+              - title: Backups
+                url: "/cloud-connector/backup_intro_concept.html"
+              - title: Restores
+                url: "/cloud-connector/restore_intro_concept.html"
+              - title: Modify settings
+                url: "/cloud-connector/modify_intro_concept.html"
+              - title: Uninstall Cloud Connector
+                url: "/cloud-connector/uninstall_intro_concept.html"
     - title: Earlier versions
       url: /early-versions.html
+    - title: Technical reports
+      url: /tech-reports.html
     - title: Legal notices
       url: /legal-notices.html
 
@@ -756,6 +760,8 @@ homepage:
           url: https://www.netapp.com/data-storage/e-series/
         - title: SANtricity software for proven storage systems
           url: https://www.netapp.com/data-management/santricity/
+        - title: Introducing a framework to monitor E-Series solutions
+          url: https://blog.netapp.com/monitoring-netapp-eseries
     - title: Tools & support
       links:
         - title: NetApp Hardware Universe
@@ -768,18 +774,30 @@ homepage:
           url: https://activeiq.netapp.com/?source=aiqnsspage
         - title: NetApp Knowledge Base
           url: https://kb.netapp.com/
-    - title: SANtricity solutions
+    - title: SANtricity solutions & APIs
       links:
-        - title: Plug-in for vCenter
+        - title: SANtricity plug-in for vCenter
           url: /san-spvc-ic_overview.html
+        - title: Remote volume mirroring
+          url: /remote-storage-volumes/index.html
+        - title: Web services proxy
+          url: /web-services-proxy/index.html
+        - title: SMI-S providers
+          url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
+    - title: SANtricity performance apps & add-ons
+      links:
         - title: SANtricity performance app for Splunk Enterprise
           url: https://splunkbase.splunk.com/app/1932/
         - title: Splunk technology add-on for SANtricity
           url: https://splunkbase.splunk.com/app/1933/
-        - title: E-Series performance analyzer using Grafana
+        - title: Performance monitoring with E-Series + Grafana
           url: https://github.com/NetApp/eseries-perf-analyzer
-        - title: SMI-S providers
-          url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
+    - title: For the SEs
+      links:
+        - title: E-Series/EF-Series technical training (login required)
+          url: https://fieldportal.netapp.com/content/199944
+        - title: EF300 overview and technical details (login required)
+          url: https://fieldportal.netapp.com/content/1417672
     - title: Other doc sites
       links:
           - title: AFF storage systems
