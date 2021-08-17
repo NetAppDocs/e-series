@@ -12,22 +12,21 @@ Check out the links below to access documentation for earlier versions of E-Seri
 
 == Platform TRs
 
-* https://mysupport.netapp.com/info/web/ECMP11392380.html[Install older systems]
-* https://mysupport.netapp.com/info/web/ECMP11751516.html[Maintain older systems]
-* https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1394872[Add second controller to E2600 and E2700]
-* https://mysupport.netapp.com/info/web/ECMP11750309.html[Change or add host protocols]
-* https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1656638[Convert from AC to DC power]
+* https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf[NetApp E2800 Arrays Feature overview with SANtricity]
+* https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf[NetApp E5700 Arrays Feature overview with SANtricity]
+* https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf[NetApp EF300 Arrays Feature overview with SANtricity]
+* https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf[NetApp EF600 Arrays Feature overview with SANtricity]
 
 == Solution TRs
 
 === Splunk
-* TR-4623: NetApp E-Series E5700,Splunk Enterprise
-* TR-4903: NetApp EF300 with Splunk Enterprise
+* https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf[NetApp E-Series E5700,Splunk Enterprise]
+* https://www.netapp.com/media/57104-tr-4903.pdf[NetApp EF300 with Splunk Enterprise]
 
 === Enterprise Databases
 
-* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-116/home.html[System Manager online help]
-* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-32/home.html[Unified Manager online help]
+* https://www.netapp.com/pdf.html?item=/media/17086-tr4764pdf.pdf[Best Practice guide for Microsoft SQL Server with NetApp EF-Series]
+* https://www.netapp.com/pdf.html?item=/media/17248-tr4794pdf.pdf[Oracle Databases on NetApp EF-Series]
 
 === Backup & Recovery
 
