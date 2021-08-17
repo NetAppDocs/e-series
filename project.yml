@@ -756,11 +756,11 @@ homepage:
           url: /whats-new.html
         - title: Reduce SSD latency with all-flash EF-Series
           url: https://www.netapp.com/data-storage/ef-series/
-        - title: E-Series hybrid-flash arrays are built to deliver
+        - title: E-Series hybrid-flash arrays/:/Built to deliver
           url: https://www.netapp.com/data-storage/e-series/
         - title: SANtricity software for proven storage systems
           url: https://www.netapp.com/data-management/santricity/
-        - title: Introducing a framework to monitor E-Series solutions
+        - title: E-Series Performance Analyzer
           url: https://blog.netapp.com/monitoring-netapp-eseries
     - title: Tools & support
       links:
