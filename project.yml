@@ -695,7 +695,7 @@ sidebar:
             url: "/remote-storage-volumes/modify_remote_storage_task.html"
           - title: Remove remote storage object
             url: "/remote-storage-volumes/remove_remote_storage_task.html"
-      - title: Storage Plugin for vCenter
+      - title: Storage plugin for vCenter
         entries:
           - title: Overview
             url: /san-spvc-ic_overview.html
@@ -784,13 +784,13 @@ homepage:
           url: /web-services-proxy/index.html
         - title: SMI-S providers
           url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
-    - title: SANtricity performance apps & add-ons
+    - title: Performance apps & add-ons
       links:
-        - title: SANtricity performance app for Splunk Enterprise
+        - title: SANtricity app for Splunk Enterprise
           url: https://splunkbase.splunk.com/app/1932/
         - title: Splunk technology add-on for SANtricity
           url: https://splunkbase.splunk.com/app/1933/
-        - title: Performance monitoring with E-Series + Grafana
+        - title: Performance analyzer with E-Series + Grafana
           url: https://github.com/NetApp/eseries-perf-analyzer
     - title: For the SEs
       links:
