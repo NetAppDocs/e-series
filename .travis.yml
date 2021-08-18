@@ -9,6 +9,40 @@ before_install:
 - git submodule add https://github.com/NetAppDocs/jekyll dependencies/jekyll
 - gem update --system && gem install bundler && gem update bundler
 - if [[ -z "$DEPLOY_BRANCH" ]]; then export DEPLOY_BRANCH=gh-pages; fi
+- cp -rl dependencies/jekyll/search.html ./getting-started/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ getting-started\/search\.html/g' ./getting-started/search.html
+- cp -rl dependencies/jekyll/search.html ./web-services-proxy/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ web-services-proxy\/search\.html/g' ./web-services-proxy/search.html
+- cp -rl dependencies/jekyll/search.html ./cloud-connector/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ cloud-connector\/search\.html/g' ./cloud-connector/search.html
+- cp -rl dependencies/jekyll/search.html ./config-linux/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ config-linux\/search\.html/g' ./config-linux/search.html
+- cp -rl dependencies/jekyll/search.html ./config-vmware/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ config-vmware\/search\.html/g' ./config-vmware/search.html
+- cp -rl dependencies/jekyll/search.html ./config-windows/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ config-windows\/search\.html/g' ./config-windows/search.html
+- cp -rl dependencies/jekyll/search.html ./remote-storage-volumes/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ remote-storage-volumes\/search\.html/g' ./remote-storage-volumes/search.html
+- cp -rl dependencies/jekyll/search.html ./install-hw-e2800-e5700/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ install-hw-e2800-e5700\/search\.html/g' ./install-hw-e2800-e5700/search.html
+- cp -rl dependencies/jekyll/search.html ./install-hw-ef600/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ install-hw-ef600\/search\.html/g' ./install-hw-ef600/search.html
+- cp -rl dependencies/jekyll/search.html ./install-hw-cabling/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ install-hw-cabling\/search\.html/g' ./install-hw-cabling/search.html
+- cp -rl dependencies/jekyll/search.html ./maintenance-e2800/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ maintenance-e2800\/search\.html/g' ./maintenance-e2800/search.html
+- cp -rl dependencies/jekyll/search.html ./maintenance-e5700/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ maintenance-e5700\/search\.html/g' ./maintenance-e5700/search.html
+- cp -rl dependencies/jekyll/search.html ./maintenance-ef600/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ maintenance-ef600\/search\.html/g' ./maintenance-ef600/search.html
+- cp -rl dependencies/jekyll/search.html ./upgrade-controllers/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ upgrade-controllers\/search\.html/g' ./upgrade-controllers/search.html
+- cp -rl dependencies/jekyll/search.html ./upgrade-santricity/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ upgrade-santricity\/search\.html/g' ./upgrade-santricity/search.html
+- cp -rl dependencies/jekyll/search.html ./install-hw-cabinet/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ install-hw-cabinet\/search\.html/g' ./install-hw-cabinet/search.html
+- cp -rl dependencies/jekyll/search.html ./vcenter-plugin/search.html
+- sed -i 's/permalink\:\s*\/search\.html/permalink\:\ vcenter-plugin\/search\.html/g' ./vcenter-plugin/search.html
 - mv dependencies/jekyll/prod-build.sh ./ && ./prod-build.sh
 - sudo apt-get -y install graphicsmagick graphicsmagick-libmagick-dev-compat libmagickwand-dev
 install: bundle install --quiet --jobs=3 --retry=3
