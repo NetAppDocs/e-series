@@ -1,56 +1,54 @@
 ---
 permalink: install-hw-e2800-e5700/e2860_e5760_install_hardware_task.html
 sidebar: sidebar
-keywords: install, storage, system, two-post, rack, netapp, cabinet, applicable, hardware
-summary: You install your storage system in a two-post rack or a NetApp system cabinet, as applicable.
+keywords: E2800, E5700, installation
+summary: Install the E2800 or E5700 in a two-post rack or a NetApp system cabinet.
 ---
 = Install the hardware
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You install your storage system in a two-post rack or a NetApp system cabinet, as applicable.
+Follow this procedure to install a E2860, E5760, or DE460 storage system in a two-post rack or a NetApp system cabinet.
 
-===== Before You Begin
+===== Before you begin
 
 * You have registered your hardware at http://mysupport.netapp.com/[mysupport.netapp.com].
 * You have prepared a flat, static-free work area.
-* You have taken anti-static precautions.
+* You have an ESD wristband and have taken anti-static precautions.
+
+Read through all the instructions before proceeding with the steps below.
 
 ===== Steps
 
-. Unpack the hardware.
- .. Unpack the contents and inventory the contained hardware against the packing slip.
- .. Before proceeding, read through all the instructions.
-. Before installing the hardware, ensure that you have an ESD wristband or that you have taken other antistatic precautions.
+. Unpack the hardware contents, and then inventory the contained hardware against the packing slip.
+
 . Install the rails.
++
+If instructions were included with your rack-mounting hardware, refer to them for detailed information on how to install the rails. For additional rack-mounting instructions, see link:../rackmount-hardware.html[Rack-mount hardware].
 +
 NOTE: For square hole cabinets, you must first install the provided cage nuts to secure the front and rear of the shelf with screws.
 +
 |===
 a|
-If instructions were included with your rack-mounting hardware, refer to them for detailed information on how to install the rails.
 
-NOTE: For online instructions for installing SuperRails, see http://docs.netapp.com/platstor/index.jsp?topic=%2Fcom.netapp.doc.hw-rail-superrail%2Fhome.html[AFF and FAS System Documentation Center].
 a|
 image:../media/install_rails_inst-hw-e2800-e5700.png[]
 |===
 
 . Install the shelf.
 +
+CAUTION: An empty shelf weighs approximately 132 lb (60 kg). A mechanized lift or four people using lift handles are required to safely move an empty shelf.
++
 |===
 a|
-
  .. If lifting the shelf by hand, attach the four lift handles. Push up on each handle until it clicks into place.
 +
-CAUTION: An empty shelf weighs approximately 132 lb (60 kg). A mechanized lift or four people using lift handles are required to safely move an empty shelf.
-
  .. Supporting the shelf from the bottom, slide it into the cabinet. If the lift handles are used, remove them one set at a time as the shelf slides into the cabinet. To remove the handles, pull back on the release latch, push down, then pull away from the shelf.
-
-a|
++
 image:../media/4_person_lift_source.png[]
 |===
-
++
 . Secure the shelf.
 +
 |===
@@ -82,7 +80,7 @@ NOTE: If you are installing fewer than 60 drives, if you have solid-state drives
  .. Attach the front bezel.
 
 a|
-image:../media/install_faceplate_2_0_inst-hw-e2800-e5700.png[](Requires Image Replacement)
+image:../media/install_faceplate_2_0_inst-hw-e2800-e5700.png[]
 a|
-*Attention:* Risk of equipment damage -- Stop pushing the drawer if you feel binding. Use the release levers at the front of the drawer to slide the drawer back out. Then, carefully reinsert the drawer into the slot.
+CAUTION: Risk of equipment damage -- Stop pushing the drawer if you feel binding. Use the release levers at the front of the drawer to slide the drawer back out. Then, carefully reinsert the drawer into the slot.
 |===

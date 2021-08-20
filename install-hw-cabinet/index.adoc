@@ -1,15 +1,15 @@
 ---
 permalink: install-hw-cabinet/index.html
 sidebar: sidebar
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, cabinet, 3040, 40u, drive tray installation, install drive tray
-summary: Overview of installing drive trays in E-Series 3040 40U Cabinet
+keywords: 3040 40U cabinet, cabinet installation, drive tray installation, controller installation, shelf installation, E2800, E5700, EF300, EF600,
+summary: Overview of installing drive trays in E-Series 3040 40U cabinet
 ---
-= 3040 40U Cabinet overview
+= Installing trays in an 3040 40U cabinet
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can install the following controller-drive trays and expansion drive trays in the E-Series 3040 40U Cabinet:
+You can install the following controller-drive trays and expansion drive trays in the E-Series 3040 40U cabinet:
 
 * E2612, E2624, and E2660 controller-drive trays
 * E2712, E2724, and E2760 controller-drive trays

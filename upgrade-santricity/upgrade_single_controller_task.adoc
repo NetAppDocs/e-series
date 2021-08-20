@@ -9,7 +9,9 @@ summary: Upgrade software and firmware for a single E-Series controller.
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to upgrade a single controller, which ensures that you have all the latest features and fixes. This process involves upgrading the storage array's software and, optionally, the IOM firmware and the nonvolatile static random access memory (NVSRAM).
+Follow this procedure to upgrade a single controller, which ensures that you have all the latest features and fixes.
+
+This process involves upgrading the storage array's software and, optionally, the IOM firmware and the nonvolatile static random access memory (NVSRAM).
 
 == Before you begin
 

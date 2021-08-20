@@ -1,15 +1,15 @@
 ---
 permalink: install-hw-e2800-e5700/e2824_e5724_complete_setup_task.html
 sidebar: sidebar
-keywords: cable, controller, network, complete, storage, system, setup, configuration, complete, data, host, connect, configure, management, connection, install, hardware
-summary: You cable the controllers to your network to complete storage system setup and configuration.
+keywords: E2800, E5700, installation, host cabling, direct-attach topology, fabric topology, System Manager connection, management host connection, port configuration, configuring ports, DHCP, static IP
+summary: Cable the controllers to your network to complete storage system setup and configuration.
 ---
 = Complete storage system setup and configuration
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You cable the controllers to your network to complete storage system setup and configuration.
+Follow this procedure to cable the controllers to your network, and then complete storage system setup and configuration.
 
 == Cable the data hosts
 
@@ -18,33 +18,31 @@ Cable the system according to your network topology.
 
 NOTE: If you are using AIX®, you must install the E-Series multipath driver on the host before connecting it to the array.
 
-=== Direct Attach Topology
+=== Direct-attach topology
 
 [.lead]
-The following example shows cabling the data hosts using a direct-attach topology.
+The following example shows cabling to the data hosts using a direct-attach topology.
 
 ==== Example A: Direct-attach topology
 
 |===
 a|
-image:../media/trafford_direct.png[]
-a|
+image:../media/trafford_direct.png[] a|
 
 . Connect each host adapter directly to the host ports on the controllers.
 
 |===
 
-=== Fabric Topology
+=== Fabric topology
 
 [.lead]
-The following example shows cabling the data hosts using a fabric topology.
+The following example shows cabling to the data hosts using a fabric topology.
 
 ==== Example B: Fabric topology
 
 |===
 a|
-image:../media/trafford_direct.png[]
-a|
+image:../media/trafford_direct.png[] a|
 
 . Connect each host adapter directly to the switch.
 . Connect each switch directly to the host ports on the controllers.
@@ -54,16 +52,14 @@ a|
 == Connect and configure the management connection
 
 [.lead]
-You can configure you controller management ports with a DHCP server, or using static IP addresses.
+You can configure the controller management ports using one of two options: using a DHCP server or using a static IP address.
 
-Make sure you have obtained the network configuration information from your network administrator for the controllers (IP address, subnet mask, gateway, and DNS and NTP server information).
-
-=== Option 1: Management port configuration with DHCP
+=== Option 1: DHCP server
 
 [.lead]
-You can configure the management ports with a DHCP server.
+Follow this procedure to configure the management ports with a DHCP server.
 
-===== Before You Begin
+===== Before you begin
 
 * Your DHCP server is configured to associate an IP address, subnet mask, and gateway address as a permanent lease for each controller.
 * You have obtained the assigned IP addresses you will use to connect to the storage system from your network administrator.
@@ -74,19 +70,18 @@ You can configure the management ports with a DHCP server.
 +
 |===
 a|
-image:../media/cable_ethernet_inst-hw-e2800-e5700.png[]
-a|
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png[] a|
 Ethernet cables (if ordered)
 |===
 +
-The following figure shows an example of the controller's management port location:
+The following figures show examples of the controller's management port location:
 +
 |===
 a|
 image:../media/e2800_mgmt_ports.png[]
 
-E2800 controller P1 Management Port
-a|
+E2800 controller P1 Management Port a|
+
 image:../media/e5700_mgmt_ports.png[]
 
 E5700 controller P1 Management Port
@@ -94,12 +89,12 @@ E5700 controller P1 Management Port
 
 . Open a browser and connect to the storage system using one of the controller IP addresses provided to you by your network administrator.
 
-=== Option 2: Management port configuration with static IP addresses
+=== Option 2: Static IP address
 
 [.lead]
-You configure the management ports manually by entering the IP address and the subnet mask.
+Follow this procedure to configure the management ports manually by entering the IP address and the subnet mask.
 
-===== Before You Begin
+===== Before you begin
 
 * You have obtained the controllers`' IP address, subnet mask, gateway address, and DNS and NTP server information from your network administrator.
 * You have ensured that the laptop you are using is not receiving network configuration from a DHCP server.
@@ -110,19 +105,18 @@ You configure the management ports manually by entering the IP address and the s
 +
 |===
 a|
-image:../media/cable_ethernet_inst-hw-e2800-e5700.png[]
-a|
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png[] a|
 Ethernet cables (if ordered)
 |===
 +
-The following figure shows an example of the controller's management port location:
+The following figures show examples of the controller's management port location:
 +
 |===
 a|
 image:../media/e2800_mgmt_ports.png[]
 
-E2800 controller P1 Management Port
-a|
+E2800 controller P1 Management Port a|
+
 image:../media/e5700_mgmt_ports.png[]
 
 E5700 controller P1 Management Port
@@ -134,7 +128,7 @@ E5700 controller P1 Management Port
 NOTE: If you are unable to establish a connection, verify that you are not receiving network configuration from a DHCP server.
 +
 . Set the storage system's password to login.
-. Use the network settings provided by your network administrator in the *Configure Network Settings* wizard to configure controller A's network settings, and then select Finish.
+. Use the network settings provided by your network administrator in the *Configure Network Settings* wizard to configure controller A's network settings, and then select *Finish*.
 +
 NOTE: Because you reset the IP address, System Manager loses connection to the controller.
 +
@@ -147,7 +141,7 @@ IMPORTANT: If you lose the connection to controller A, you can connect an ethern
 +
 The Configure Network Settings wizard will appear.
 +
-. Use the network settings provided by your network administrator in the *Configure Network Settings* wizard to configure controller B's network settings, and then select Finish.
+. Use the network settings provided by your network administrator in the *Configure Network Settings* wizard to configure controller B's network settings, and then select *Finish*.
 . Connect controller B to your network.
 . Validate controller B's network settings by entering controller B's newly configured IP address in a browser.
 +
@@ -158,7 +152,7 @@ IMPORTANT: If you lose the connection to controller B, you can use your previous
 [.lead]
 After you have installed your hardware, use the SANtricity software to configure and manage your storage system.
 
-===== Before You Begin
+===== Before you begin
 
 * You have configured your management ports and have verified and recorded your password and IP addresses.
 
@@ -169,9 +163,7 @@ After you have installed your hardware, use the SANtricity software to configure
 
 |===
 a|
-image:../media/management_s_g2285tation_inst-hw-e2800-e5700_g2285.png[]
-a|
-
-NOTE: You use the same IP addresses that you used to configure your management ports to access SANtricity System Manager.
+image:../media/management_s_g2285tation_inst-hw-e2800-e5700_g2285.png[] a|
+For accessing System Manager, use the same IP addresses that you used to configure your management ports.
 
 |===

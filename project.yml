@@ -85,7 +85,7 @@ sidebar:
                   url: "/install-hw-e2800-e5700/e2824_e5724_connect_cables_task.html"
                 - title: Complete storage system setup
                   url: "/install-hw-e2800-e5700/e2824_e5724_complete_setup_task.html"
-        - title: 3040 40U Cabinet
+        - title: 3040 40U cabinet
           entries:
               - title: Overview
                 url: "/install-hw-cabinet/index.html"
@@ -99,6 +99,8 @@ sidebar:
                 url: "/install-hw-cabinet/move_cabinet_task.html"
               - title: Complete cabinet installation
                 url: "/install-hw-cabinet/complete_cabinet_install_task.html"
+        - title: Rack-mount hardware
+          url: /rackmount-hardware.html
         - title: Cabling
           entries:
                 - title: Overview

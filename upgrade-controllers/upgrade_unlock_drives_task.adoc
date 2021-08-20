@@ -16,9 +16,9 @@ If you are upgrading E2800 and E5700 controllers, the Drive Security feature for
 [.lead]
 Follow these steps for internal key management when all drives are locked.
 
-===== Before you begin
+===== About this task
 
-NOTE: The newly swapped controllers will lock down with seven-segment display code of L5. This lock down occurs when no drives in the storage array are able to perform autocode synchronization (ACS). ACS resumes and updates the new controllers after the security key is imported.
+The newly swapped controllers will lock down with seven-segment display code of L5. This lock down occurs when no drives in the storage array are able to perform autocode synchronization (ACS). ACS resumes and updates the new controllers after the security key is imported.
 
 NOTE: If you are not using management port 1, try with other default IP addresses: +
 Ctrl A port 1: 192.168.128.101 +
@@ -41,9 +41,9 @@ Controllers will continue with the autocode synchronization process from the dri
 [.lead]
 Follow these steps for external key management when all drives are locked.
 
-===== Before you begin
+===== About this task
 
-NOTE: The newly swapped controllers will lock down with seven-segment display code of L5. This lock down occurs when no drives in the storage array are able to perform autocode synchronization (ACS). ACS resumes and updates the new controllers after the security key is imported.
+The newly swapped controllers will lock down with seven-segment display code of L5. This lock down occurs when no drives in the storage array are able to perform autocode synchronization (ACS). ACS resumes and updates the new controllers after the security key is imported.
 
 ===== Steps
 
@@ -62,5 +62,7 @@ NOTE: The newly swapped controllers will lock down with seven-segment display co
 . Using the security key saved from the "Prepare to upgrade controllers" section, import the external key to IP address 192.168.128.101 with the username '`admin`' and the password remaining blank. For information about using this command, see the Command Line Reference.
 +
 *Example:* SMcli 192.168.128.101 -u admin -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"
+
+==== Result
 
 Controllers will continue with the autocode synchronization process from the drives and reboot. After reboot the controllers will be accessible through the original IP configuration.

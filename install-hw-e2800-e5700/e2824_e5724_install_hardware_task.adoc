@@ -1,39 +1,37 @@
 ---
 permalink: install-hw-e2800-e5700/e2824_e5724_install_hardware_task.html
 sidebar: sidebar
-keywords: install, storage, system, two-post, rack, netapp, system, cabinet, applicable, hardware
-summary: You install your storage system in a two-post rack or a NetApp system cabinet, as applicable.
+keywords: E2800, E5700, installation
+summary: Install the E2800 or E5700 in a two-post rack or a NetApp system cabinet.
 ---
 = Install the hardware
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You install your storage system in a two-post rack or a NetApp system cabinet, as applicable.
+Follow this procedure to install a E5724, EF570, EF280, E2812, E2824, DE212C, or DE224C storage system in a two-post rack or a NetApp system cabinet.
 
-===== Before You Begin
+===== Before you begin
 
 * You have registered your hardware at http://mysupport.netapp.com/[mysupport.netapp.com].
 * You have prepared a flat, static-free work area.
-* You have taken anti-static precautions.
+* You have an ESD wristband and have taken anti-static precautions.
+
+Read through all the instructions before proceeding with the steps below.
 
 ===== Steps
 
-. Unpack the hardware.
-+
-Unpack the contents and inventory the contained hardware against the packing slip. Read through all the instructions before proceeding.
+. Unpack the hardware contents, and then inventory the contained hardware against the packing slip.
 
 . Install the rails.
 +
-If included with your rack-mounting hardware, refer to the enclosed instructions for detailed information on how to install the rails. Rail instructions are also available through the E-Series Documentation Center at docs.netapp.com/ess-11/index.jsp under Hardware installation and upgrade >> Installing rack-mounting hardware.
+If instructions were included with your rack-mounting hardware, refer to them for detailed information on how to install the rails. For additional rack-mounting instructions, see link:../rackmount-hardware.html[Rack-mount hardware].
 +
 NOTE: Install hardware from the bottom of the rack or cabinet up to the top to prevent the equipment from toppling over.
-
++
 |===
 a|
-If instructions were included with your rack-mounting hardware, refer to them for detailed information on how to install the rails.
 
-NOTE: For online instructions for installing SuperRails, see http://docs.netapp.com/platstor/index.jsp?topic=%2Fcom.netapp.doc.hw-rail-superrail%2Fhome.html[AFF and FAS System Documentation Center].
 a|
 image:../media/install_rails_inst-hw-e2800-e5700.png[]
 |===
