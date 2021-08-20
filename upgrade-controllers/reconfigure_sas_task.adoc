@@ -1,19 +1,25 @@
 ---
 permalink: upgrade-controllers/reconfigure_sas_task.html
 sidebar: sidebar
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, reconfigure SAS-2, SAS-2, SAS-3, convert controller shelf, convert drive shelf, 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, reconfigure SAS-2, SAS-2, SAS-3, convert controller shelf, convert drive shelf,
 summary: You can convert the controller shelf in an approved SAS-2 array (E2700, E550/EF5500, E5600/EF560) to a drive shelf and then place that shelf and any associated approved SAS-2 drive shelves (DE1600, DE5600, DE6600) behind a new approved SAS-3 array (E2800, E5700/EF570) and approved SAS-3 drive shelves (DE212C, DE224C, DE460C) without data preservation.
 ---
-= Reconfigure a SAS-2 system behind a new SAS-3 controller shelf without data preservation
+= Reconfigure a SAS-2 system behind a new SAS-3 controller shelf
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can convert the controller shelf in an approved SAS-2 array (E2700, E550/EF5500, E5600/EF560) to a drive shelf and then place that shelf and any associated approved SAS-2 drive shelves (DE1600, DE5600, DE6600) behind a new approved SAS-3 array (E2800, E5700/EF570) and approved SAS-3 drive shelves (DE212C, DE224C, DE460C) without data preservation.
+Follow this procedure to convert the controller shelf in an approved SAS-2 array to a drive shelf, and then place that shelf behind a new approved SAS-3 array and drive shelves, without data preservation.
+
+Approved SAS-2 arrays include the E2700, E550/EF5500, and E5600/EF560. Approved SAS-2 drive shelves include the DE1600, DE5600, and DE6600.
+
+Approved SAS-3 arrays include the E2800 and E5700/EF570. Approved SAS-3 drive shelves include DE212C, DE224C, and DE460C.
+
+===== About this task
 
 Due to the complexity of this procedure, the following is required:
 
-* This procedure requires an FPVR. To file an FPVR contact NetApp Professional Services.
+* You must have a Feature Product Variance Request (FPVR). To file an FPVR, contact NetApp Professional Services.
 +
 NOTE: Failure to acquire an FPVR before attempting this procedure can result in drive failure and controller lock down.
 
@@ -51,7 +57,7 @@ NOTE: Depending on the host connections of your new array, different cables may 
 +
 The existing controller-drive tray and any attached drive trays become drive shelves and can be cabled to the controllers in the new array.
 +
-NOTE: Connecting SAS-2 to SAS-3 requires SAS HD to mini SAS cables. For more detailed cabling information for your particular controller and expansion shelf configuration, refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2588749[E-Series Hardware Cabling Guide].
+NOTE: Connecting SAS-2 to SAS-3 requires SAS HD to mini SAS cables. For more detailed cabling information for your particular controller and expansion shelf configuration, refer to link:../install-hw-cabling/index.html[Cabling] or the https://library.netapp.com/ecm/ecm_download_file/ECMLP2588749[E-Series Hardware Cabling Guide].
 
 == Step 3: Power on the controllers (non-data preservation)
 

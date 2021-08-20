@@ -61,13 +61,15 @@ Review the supported upgrade paths for each storage array model.
 
 * *Battery*: Order a new battery.
 * *Vendor ID*: Additional steps are required when upgrading from E2600 to E5500 or E5600, or when upgrading from E2700 to E5400.
-* *Feature support*: Legacy snapshots are not supported on the E5500 or E5600.
+* *Feature support*:
 +
-Legacy remote volume mirroring (RVM) is not supported on the E5500 or E5600 with iSCSI HICs.
+** Legacy snapshots are not supported on the E5500 or E5600.
 +
-Data Assurance is not supported on the E5500 or E5600 with iSCSI HICs.
+** Legacy remote volume mirroring (RVM) is not supported on the E5500 or E5600 with iSCSI HICs.
 +
-E5700 controllers must not be placed into SAS-2 shelves.
+** Data Assurance is not supported on the E5500 or E5600 with iSCSI HICs.
++
+** E5700 controllers must not be placed into SAS-2 shelves.
 
 * *SAS-3 shelves*: E5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
 
@@ -78,17 +80,19 @@ E5700 controllers must not be placed into SAS-2 shelves.
 * *Feature support*: Legacy snapshots are not supported on the E2700.
 * *SAS-3 shelves*: E5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
 
-=== From E5x00 to o E5x00
+=== From E5x00 to E5x00
 
 * *Battery*: Reuse the old battery.
 * *Vendor ID*: Additional steps required when upgrading from E5400 to E5500 or E5600.
-* *Feature support*: Legacy snapshots are not supported on the E5500 or E5600.
+* *Feature support*:
 +
-Legacy remote volume mirroring (RVM) is not supported on the E5400 or E5500 with iSCSI HICs.
+** Legacy snapshots are not supported on the E5500 or E5600.
 +
-Data Assurance is not supported on the E5400 or E5500 with iSCSI HICs.
+** Legacy remote volume mirroring (RVM) is not supported on the E5400 or E5500 with iSCSI HICs.
 +
-E5700 controllers must not be placed into SAS-2 shelves.
+** Data Assurance is not supported on the E5400 or E5500 with iSCSI HICs.
++
+** E5700 controllers must not be placed into SAS-2 shelves.
 
 * *SAS-3 shelves*: E5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
 
@@ -96,11 +100,13 @@ E5700 controllers must not be placed into SAS-2 shelves.
 
 * *Battery*: Reuse the old battery.
 * *Vendor ID*: Additional steps required when upgrading from EF540 to EF550 or EF560.
-* *Feature support*: No Legacy Snapshots for EF550/EF560.
+* *Feature support*:
 +
-No Data Assurance for EF550/EF560 with iSCSI.
+** No Legacy Snapshots for EF550/EF560.
 +
-EF570 controllers must not be placed into SAS-3 shelves.
+** No Data Assurance for EF550/EF560 with iSCSI.
++
+** EF570 controllers must not be placed into SAS-3 shelves.
 
 * *SAS-3 shelves*: EF540, EF550, and EF560 controllers must not be placed into SAS-3 shelves.
 
@@ -132,4 +138,4 @@ SAS-3 shelves include the following models:
 
 You can reconfigure your SAS-2 system to be used behind a new SAS-3 controller shelf (E57XX/EF570/E28XX).
 
-IMPORTANT: This procedure requires an FPVR. To file an FPVR, contact your sales team.
+IMPORTANT: This procedure requires a Feature Product Variance Request (FPVR). To file an FPVR, contact your sales team.

@@ -17,7 +17,7 @@ Follow this procedure to prepare for upgrading controllers by saving the drive s
 +
 NOTE: If you are upgrading to controllers that support SANtricity OS version 8.50, you must install the latest versions of SANtricity OS and the latest NVSRAM after you install and power on the new controllers. If you do not perform this upgrade, you might not be able to configure the storage array for Automatic Load Balancing (ALB).
 
-. If performing a complete controller replacement when using drive security, complete the following steps:
+. If you are performing a complete controller replacement when using drive security, complete the following steps:
 +
 [options="header"]
 |===
@@ -72,16 +72,18 @@ You need this serial number to perform the steps in link:complete_upgrade_contro
  ** Use either System Manager or the Array Management Window to collect and save a support bundle of your storage array.
   *** From System Manager, select *Support* > *Support Center* > *Diagnostics* tab. Then select *Collect Support Data* and click *Collect*.
   *** From the Array Management Window toolbar, select *Monitor* > *Health* > *Collect Support Data Manually*. Then name and specify a location on your system where you want to store the support bundle.
++
 The file is saved in the Downloads folder for your browser with the name `support-data.7z`.
-
 +
 If your shelf contains drawers, the diagnostics data for that shelf is archived in a separate zipped file named `tray-componet-state-capture.7z`.
  ** Use the CLI to run the `save storageArray supportData` command to gather comprehensive support data about the storage array.
+ +
 *Note:* Gathering support data can temporarily impact performance on your storage array.
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts:
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
  ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
  ** Unmount all file systems associated with volumes on the array.
++
 *Note:* The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
 
 +
@@ -111,5 +113,7 @@ Wait for all of the LEDs on the controller-drive tray to go dark.
 . Turn off power to each drive tray that is connected to the controller-drive tray.
 +
 Wait two minutes for all of the drives to spin down.
+
+==== After you finish
 
 Go to link:remove_controllers_task.html[Remove controllers].

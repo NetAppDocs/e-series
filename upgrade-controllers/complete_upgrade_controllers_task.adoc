@@ -129,8 +129,9 @@ The file is saved in the Downloads folder for your browser with the name `suppor
 +
 If your shelf contains drawers, the diagnostics data for that shelf is archived in a separate zipped file named `tray-componet-state-capture.7z`
  ** Use the CLI to run the `save storageArray supportDatacommand` to gather comprehensive support data about the storage array.
-
++
 *Note:* Gathering support data can temporarily impact performance on your storage array.
+
 . Alert NetApp Technical Support to the changes that you made to the configuration of your storage array.
  .. Get the serial number of the controller-drive tray that you recorded in xref:prepare_upgrade_controllers_task.adoc[Prepare to upgrade controllers].
  .. Log in to the NetApp support site at http://mysupport.netapp.com/eservice/assistant[mysupport.netapp.com/eservice/assistant].

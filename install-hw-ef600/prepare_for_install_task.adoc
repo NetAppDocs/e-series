@@ -1,19 +1,24 @@
 ---
 permalink: install-hw-ef600/prepare_for_install_task.html
 sidebar: sidebar
-keywords: install, ef300, ef600, series, storage, system, create, account, register, hardware, inventory, appropriate, number, type, cable, key, item, installation, process, prepare
-summary: To install your EF300 or EF600 series storage system, you need to create an account and register your hardware. You also need to inventory the appropriate number and type of cables for your storage system and provide some key items required for the hardware installation process.
+keywords: EF300, EF600, installation, create account, register hardware
+summary: To install an EF300 or EF600, create an account and register your hardware.
 ---
 = Prepare for installation
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To install your EF300 or EF600 series storage system, you need to create an account and register your hardware. You also need to inventory the appropriate number and type of cables for your storage system and provide some key items required for the hardware installation process.
+Follow these steps to prepare for installation of your EF300 or EF600 series storage system.
 
-===== Before You Begin
+===== Before you begin
 
-If you are cabling your EF300 for SAS expansion see the link:../com.netapp.doc.e-f600-sysmaint/home.html[Maintaining EF300 and EF600 Hardware Guide] for SAS expansion card installation and the https://docs.netapp.com/ess-11/topic/com.netapp.doc.e-hw-cabling/home.html[Cabling E-Series Hardware Guide] for SAS expansion cabling.
+If you are cabling your EF300 for SAS expansion, review the following information:
+
+* link:../maintenance-ef600/sas_add_supertask_task.html[Add SAS expansion cards] for SAS expansion card installation.
+
+* link:../install-hw-cabling/index.html[Cabling overview] for SAS expansion cabling.
+
 
 ===== Steps
 
@@ -23,7 +28,7 @@ If you are cabling your EF300 for SAS expansion see the link:../com.netapp.doc.e
 |===
 a|
 image:../media/ef600_w_faceplate.png[] a|
-Shelf with drives installed     (bezel and end caps packaged separately)
+Shelf with drives installed (bezel and end caps packaged separately)
 a|
 image:../media/superrails_inst-hw-ef600.png[]
 a|
@@ -38,7 +43,6 @@ a|
 image:../media/cable_ethernet_inst-hw-ef600.png[]
 a|
 RJ-45 Ethernet cables
-
 (if ordered)
 a|
 Management connection
@@ -46,14 +50,14 @@ a|
 image:../media/cable_io_inst-hw-ef600.png[]
 a|
 I/O cables
-
 (if ordered)
 a|
 Cabling the data hosts
 a|
 image:../media/cable_power_inst-hw-ef600.png[]
 a|
-Power cables    (if ordered)
+Power cables
+(if ordered)
 a|
 Powering up the storage system
 |===
@@ -91,5 +95,12 @@ NOTE: Using third-party cabinets might cause the power cables to restrict access
 a|
 image:../media/management_station_inst-hw-ef600_g60b3.png[]
 a|
-A supported browser for the management software
+A supported browser for the management software:
+
+* Google Chrome (version 47 and later)
+* Microsoft Internet Explorer (version 11 and later)
+* Microsoft Edge (EdgeHTML 12 and later)
+* Mozilla Firefox (version 31 and later)
+* Safari (version 9 and later)
+
 |===

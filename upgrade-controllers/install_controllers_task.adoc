@@ -11,19 +11,21 @@ summary: After you have removed the old controllers, you can install new control
 [.lead]
 After you have removed the old controllers, you can install new controllers in the controller-drive tray.
 
-If you are upgrading controllers in a duplex controller-drive tray, repeat all steps to install the second controller canister.
-
 == Step 1: Install battery
 
 [.lead]
 You install the battery that you removed from the original controller canister or a new battery that you ordered.
 
-===== Before you begin
+===== What you'll need
 
-* You have the battery from the original controller canister or a new battery that you ordered.
-* You have the new controller canister.
+* A battery from the original controller canister or a new battery that you ordered.
+* The new controller canister.
+
+===== About this task
 
 Perform the following steps for each controller in the controller-drive tray.
+
+If you are upgrading controllers in a duplex controller-drive tray, repeat all steps to install the second controller canister.
 
 ===== Steps
 
@@ -69,5 +71,7 @@ Depending on the HICs involved in your upgrade, you might be able to reuse SFP+ 
 If the drive cabling configuration is the same as it was with your old controllers, use the labels that you attached to the cables to reconnect the cables correctly.
 +
 NOTE: If you are upgrading to E2700 controllers from an earlier model, the drive cabling configuration might be different from the configuration used for the old controllers.
+
+==== After you finish
 
 Go to link:complete_upgrade_controllers_task.html[Complete controller upgrade].

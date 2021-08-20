@@ -1,7 +1,7 @@
 ---
 permalink: install-hw-cabinet/complete_cabinet_install_task.html
 sidebar: sidebar
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, cabinet, 3040, 40u, drive tray installation, install drive tray
+keywords: 3040 40U cabinet, cabinet installation, drive tray installation, controller installation, shelf installation, E2800, E5700, EF300, EF600
 summary: Complete the cabinet installation.
 ---
 = Complete cabinet installation
@@ -14,15 +14,15 @@ After you move the cabinet, lower the leveling feet and the stability foot, rein
 == Step 1: Lower leveling feet and stability foot
 
 [.lead]
-You stabilize the cabinet by adjusting its feet. The leveling feet support the cabinet off the casters. The stability foot prevents the cabinet from falling over after it is placed in its permanent location
+You stabilize the cabinet by adjusting its feet. The leveling feet support the cabinet off the casters. The stability foot prevents the cabinet from falling over after it is placed in its permanent location.
 
-===== Steps
+==== Steps
 
 . Lower the leveling feet to support the cabinet off the casters.
 +
 The leveling feet are located near each bottom corner of the cabinet.
 
-. Make sure that the cabinet is a level as possible.
+. Make sure that the cabinet is as level as possible.
 +
 The following figure provides a close-up view of the stability foot and the leveling feet.
 +
@@ -41,18 +41,7 @@ Stability foot
 [.lead]
 After you move the cabinet, you can reinstall the trays in their original locations.
 
-===== Before you begin
-
-Be sure to install the trays in their original locations.
-
-CAUTION: _Do not_ install the following trays in the top of the cabinet over your head. When fully-populated, each of these trays weighs over 100 kg (220 lb). If installed in the top of the cabinet, the trays create a top-heavy cabinet that can become easily unbalanced:
-
-* DE6600 drive tray
-* E2660 controller-drive tray
-* E2760 controller-drive tray
-* E5460 controller-drive tray
-* E5560 controller-drive tray
-* E5660 controller-drive tray
+CAUTION: _Do not_ install the following trays in the top of the cabinet over your head. When fully-populated, each of these trays weighs over 100 kg (220 lb). If installed in the top of the cabinet, these trays create a top-heavy cabinet that can become easily unbalanced: E2660, E2660, E2760, E5460, E5560, and E5660 controller-drive trays, as well as the DE6600 drive tray.
 
 ===== Steps
 
@@ -171,7 +160,7 @@ NOTE: The remaining two screw holes are used to mount the tray.
 [.lead]
 To complete the cabinet installation, power on the cabinet components.
 
-===== Before you begin
+==== About this task
 
 While the trays perform the power-on procedure, the LEDs on the front and the rear of the trays blink. Depending on your configuration, it can take several minutes to complete the power-on procedure.
 

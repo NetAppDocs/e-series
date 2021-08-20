@@ -1,42 +1,41 @@
 ---
 permalink: install-hw-e2800-e5700/e2824_e5724_connect_cables_task.html
 sidebar: sidebar
-keywords: power, cable, drive, shelves, shelf, connect
-summary: You attach the power cables and power on the drive shelves.
+keywords: E2800, E5700, connect power cables
+summary: Attach the power cables and power on the drive shelves.
 ---
 = Connect the cables
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You attach the power cables and power on the drive shelves.
+Follow this procedure to attach the power cables and power on the drive shelves.
 
-===== Before You Begin
+===== Before you begin
 
 * You have installed your hardware.
 * You have taken anti-static precautions.
 
 ===== Steps
 
-. Cable the Shelves
+. Cable the shelves.
 +
-Cable the system according to your configuration. Examples are shown in this section. For more cabling options, see link:../install-hw-cabling/index.html[Cabling E-Series Hardware].
+Cable the system according to your configuration. If you need more cabling options than the examples shown in this section, see link:../install-hw-cabling/index.html[Cabling].
 +
-For the examples shown in this section you will need the following cables:
+For the examples shown in this section, you need the following cables:
 +
 |===
 a|
-image:../media/sas_cable.png[]
-a|
+image:../media/sas_cable.png[] a|
 *SAS cables*
 |===
+*Cabling examples:*
 +
 |===
 a|
 image:../media/trafford_power.png[]
 
-Example A: An E5700 controller shelf with three DE212C/DE224 disk shelves in a standard SAS configuration.
-a|
+Example A: An E5700 controller shelf with three DE212C/DE224 disk shelves in a standard SAS configuration. a|
  .. Cable controller A to IOM A of the first drive shelf.
  .. Cable IOM A of the first drive shelf to IOM A of the second drive shelf.
  .. Cable IOM A of the second drive shelf to IOM A of the third drive shelf.
@@ -49,20 +48,18 @@ a|
 a|
 image:../media/trafford_power.png[]
 
-Example B: An E5700 controller shelf with one DE212C/DE224 disk shelf in a standard SAS configuration.
-a|
+Example B: An E5700 controller shelf with one DE212C/DE224 disk shelf in a standard SAS configuration. a|
 .. Cable controller A to IOM A.
 .. Cable controller B to IOM B.
 |===
 
-. Power the Drive Shelves
+. Power the drive shelves.
 +
-You will need the following cables:
+You need the following cables:
 +
 |===
 a|
-image:../media/power_cable_inst-hw-e2800-e5700.png[]
-a|
+image:../media/power_cable_inst-hw-e2800-e5700.png[] a|
 *Power cables*
 |===
 CAUTION: Confirm the drive shelf power switches are off.
