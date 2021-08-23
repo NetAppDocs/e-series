@@ -15,14 +15,14 @@ These are the instructions for SUSE Linux Enterprise Server 12 SP4 and 32GB FC H
 
 ===== Steps
 
-. Install the nvme-cli package:
+. Install the `nvme-cli` package:
 +
 ----
 
 # zypper install nvme-cli
 ----
 
-. Enable and start the nvmefc-boot-connections service.
+. Enable and start the `nvmefc-boot-connections` service.
 +
 ----
 systemctl enable nvmefc-boot-connections.service

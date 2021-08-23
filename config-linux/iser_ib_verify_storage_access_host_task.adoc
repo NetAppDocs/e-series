@@ -19,7 +19,7 @@ You must have initialized the volume and formatted it with a file system.
 
 . On the host, copy one or more files to the mount point of the disk.
 . Copy the files back to a different folder on the original disk.
-. Run the diff command to compare the copied files to the originals.
+. Run the `diff` command to compare the copied files to the originals.
 
 ===== After you finish
 

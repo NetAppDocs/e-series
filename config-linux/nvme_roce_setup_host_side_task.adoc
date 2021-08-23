@@ -9,7 +9,7 @@ summary: NVMe initiator configuration in a RoCE environment includes installing 
 :imagesdir: ../media/
 
 [.lead]
-NVMe initiator configuration in a RoCE environment includes installing and configuring the rdma-core and nvme-cli packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
+NVMe initiator configuration in a RoCE environment includes installing and configuring the `rdma-core` and `nvme-cli` packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
 
 ===== Before you begin
 
@@ -17,7 +17,7 @@ NVMe initiator configuration in a RoCE environment includes installing and confi
 
 ===== Steps
 
-. Install the rdma and nvme-cli packages:
+. Install the `rdma` and `nvme-cli` packages:
 +
 ----
 
@@ -35,9 +35,9 @@ NVMe initiator configuration in a RoCE environment includes installing and confi
 
 . Set up IPv4 IP addresses on the ethernet ports used to connect NVMe over RoCE. For each network interface, create a configuration script that contains the different variables for that interface.
 +
-The variables used in this step are based on server hardware and the network environment. The variables include the IPADDR and GATEWAY. These are example instructions for the latest SUSE Linux Enterprise Server 12 service pack:
+The variables used in this step are based on server hardware and the network environment. The variables include the `IPADDR` and `GATEWAY`. These are example instructions for the latest SUSE Linux Enterprise Server 12 service pack:
 +
-Create the example file/etc/sysconfig/network/ifcfg-eth4 as follows:
+Create the example file `/etc/sysconfig/network/ifcfg-eth4` as follows:
 +
 ----
 BOOTPROTO='static'
@@ -52,7 +52,7 @@ BOOTPROTO='static'
    STARTMODE='auto'
 ----
 +
-Create the second example file/etc/sysconfig/network/ifcfg-eth5 as follows:
+Create the second example file `/etc/sysconfig/network/ifcfg-eth5` as follows:
 +
 ----
 BOOTPROTO='static'
@@ -76,7 +76,7 @@ BOOTPROTO='static'
 ----
 
 . Set up the NVMe-oF layer on the host.
- .. Create the following file under /etc/modules-load.d/ to load the `nvme-rdma` kernel module and make sure the kernel module will always be on, even after a reboot:
+ .. Create the following file under `/etc/modules-load.d/` to load the `nvme-rdma` kernel module and make sure the kernel module will always be on, even after a reboot:
 +
 ----
 

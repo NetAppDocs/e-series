@@ -35,13 +35,13 @@ This section describes how to install SANtricity Storage Manager on both the Win
 |===
 | Windows| Linux
 a|
-Double-click the SMIA*.exe installation package to start the installation.
+Double-click the `SMIA*.exe` installation package to start the installation.
 a|
 
- .. Go to the directory where the SMIA*.bin installation package is located.
- .. If the temp mount point does not have execute permissions, set the IATEMPDIR variable. Example: IATEMPDIR=/root ./SMIA-LINUXX64-11.25.0A00.0002.bin
- .. Run the chmod +x SMIA*.bin command to grant execute permission to the file.
- .. Run the ./SMIA*.bin command to start the installer.
+ .. Go to the directory where the `SMIA*.bin` installation package is located.
+ .. If the temp mount point does not have execute permissions, set the `IATEMPDIR` variable. Example: `IATEMPDIR=/root ./SMIA-LINUXX64-11.25.0A00.0002.bin`
+ .. Run the `chmod +x SMIA*.bin` command to grant execute permission to the file.
+ .. Run the ``./SMIA*.bin` command to start the installer.
 
 +
 |===

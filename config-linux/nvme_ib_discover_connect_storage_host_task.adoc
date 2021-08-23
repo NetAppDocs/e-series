@@ -19,7 +19,7 @@ Before making definitions of each host in SANtricity System Manager, you must di
 nvme discover -t rdma -a target_ip_address
 ----
 +
-In this command, target_ip_address is the IP address of the target port.
+In this command, `target_ip_address` is the IP address of the target port.
 +
 NOTE: The `nvme discover` command discovers all controller ports in the subsystem, regardless of host access.
 +
@@ -95,7 +95,7 @@ Usage                 Format           FW Rev
   # nvme connect -t rdma -a 11.11.11.100 -n  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
 ----
 
-. Use the Linux lsblk and grep commands to show additional information about each block device:
+. Use the Linux `lsblk` and `grep` commands to show additional information about each block device:
 +
 ----
  # lsblk | grep nvme
