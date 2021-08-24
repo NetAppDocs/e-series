@@ -756,7 +756,7 @@ homepage:
       links:
         - title: New features in SANtricity OS
           url: /whats-new.html
-        - title: Reduce SSD latency with all-flash EF-Series
+        - title: Reduce latency with all-flash EF-Series
           url: https://www.netapp.com/data-storage/ef-series/
         - title: E-Series hybrid-flash arrays/:/Built to deliver
           url: https://www.netapp.com/data-storage/e-series/
@@ -778,9 +778,9 @@ homepage:
           url: https://kb.netapp.com/
     - title: SANtricity solutions & APIs
       links:
-        - title: SANtricity plug-in for vCenter
+        - title: Plug-in for vCenter
           url: /san-spvc-ic_overview.html
-        - title: Remote volume mirroring
+        - title: Remote storage volumes (import utility)
           url: /remote-storage-volumes/index.html
         - title: Web services proxy
           url: /web-services-proxy/index.html
