@@ -13,7 +13,6 @@ After you have removed the old controllers, you can install new controllers in t
 
 == Step 1: Install battery
 
-[.lead]
 You install the battery that you removed from the original controller canister or a new battery that you ordered.
 
 ===== What you'll need
@@ -47,7 +46,7 @@ Slide the battery into the canister, making sure it stays below the rivets on th
   ... Keeping the locking handle at a 45 degree angle, align the connectors at the bottom of the battery with the connectors on the canister.
   ... Push the battery down until you hear it click, and move the locking handle up to secure the controller battery to the controller canister.
 +
-IMPORTANT: To make sure that the controller battery is seated correctly in an E5XX controller-drive tray, you might need to slide it out and insert it again. It is secure when you hear it click into place, and when the locking handle does not move out of its upright position when you wiggle it.
+TIP: To make sure that the controller battery is seated correctly in an E5XX controller-drive tray, you might need to slide it out and insert it again. It is secure when you hear it click into place, and when the locking handle does not move out of its upright position when you wiggle it.
 
   ... Reinstall the top cover on the new controller canister by sliding it forward until the top latch covers click.
 +
@@ -56,7 +55,6 @@ When the latch clicks into place, the bottom of the latch hooks into a metal slo
 
 == Step 2: Install new controller canister
 
-[.lead]
 You install the new controller canister into the controller shelf.
 
 ===== Steps
@@ -72,6 +70,4 @@ If the drive cabling configuration is the same as it was with your old controlle
 +
 NOTE: If you are upgrading to E2700 controllers from an earlier model, the drive cabling configuration might be different from the configuration used for the old controllers.
 
-==== After you finish
-
-Go to link:complete_upgrade_controllers_task.html[Complete controller upgrade].
+. Go to link:complete_upgrade_controllers_task.html[Complete controller upgrade].

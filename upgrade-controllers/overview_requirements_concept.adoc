@@ -37,7 +37,7 @@ For Asynchronous Mirroring, the local storage array and remote storage array can
 
 * *Storage object limits*
 +
-If you change your controllers from 5x00 models to 2x00 models, your new storage array configuration will support lower numbers of some storage objects (for example, volumes) in the storage management software than your old configuration. You must make sure that your old configuration does not exceed the storage object limits. See http://hwu.netapp.com/home.aspx[Netapp Hardware Universe] for more information.
+If you change your controllers from 5x00 models to 2x00 models, your new storage array configuration will support lower numbers of some storage objects (for example, volumes) in the storage management software than your old configuration. You must make sure that your old configuration does not exceed the storage object limits. See http://hwu.netapp.com/home.aspx[Hardware Universe] for more information.
 
 == Upgrade to newer models
 
@@ -138,4 +138,4 @@ SAS-3 shelves include the following models:
 
 You can reconfigure your SAS-2 system to be used behind a new SAS-3 controller shelf (E57XX/EF570/E28XX).
 
-IMPORTANT: This procedure requires a Feature Product Variance Request (FPVR). To file an FPVR, contact your sales team.
+NOTE: This procedure requires a Feature Product Variance Request (FPVR). To file an FPVR, contact your sales team.

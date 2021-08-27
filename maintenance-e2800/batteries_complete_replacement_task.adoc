@@ -17,12 +17,9 @@ Follow the appropriate instructions below for a duplex or simplex configuration.
 
 == Place controller online (duplex)
 
-[.lead]
 Place the controller online to confirm the storage array is working correctly. Then, you can collect support data and resume operations.
 
-===== Before you begin
-
-Perform this task only if your storage array has two controllers.
+NOTE: Perform this task only if your storage array has two controllers.
 
 ===== Steps
 
@@ -75,18 +72,15 @@ NOTE: If you cannot resolve the problem, contact technical support.
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 
-===== Result
+===== After you finish
 
 Your battery replacement is complete. You can resume normal operations.
 
 == Power up controller (simplex)
 
-[.lead]
 Power up the controller shelf to confirm that it is working correctly. Then, you can collect support data and resume operations.
 
-===== Before you begin
-
-Perform this task only if your storage array has one controller.
+NOTE: Perform this task only if your storage array has one controller.
 
 ===== Steps
 

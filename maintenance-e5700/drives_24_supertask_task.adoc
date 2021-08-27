@@ -1,20 +1,28 @@
 ---
 permalink: maintenance-e5700/drives_24_supertask_task.html
 sidebar: sidebar
-keywords: recovery, guru, santricity, system, manager, monitor, drive, storage, array, impend, drive, failure, fail, attention, led, hot-swap, i/o, prepare, replace, 24-drive, complete
-summary: The Recovery Guru in SANtricity System Manager monitors the drives in the storage array and can notify you of an impending drive failure or an actual drive failure. When a drive has failed, its amber Attention LED is on. You can hot-swap a failed drive while the storage array is receiving I/O.
+keywords: E5700 24-drive, replace E5700 24-drive, failed E5700 24-drive
+summary:  Replace a drive in an E5700 24-drive shelf.
 ---
-= Replace drive (24-drive)
+= Replace drive in E5700 (24-drive shelf)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Follow this procedure to replace a drive in a 24-drive shelf.
+
+== About this task
+
 The Recovery Guru in SANtricity System Manager monitors the drives in the storage array and can notify you of an impending drive failure or an actual drive failure. When a drive has failed, its amber Attention LED is on. You can hot-swap a failed drive while the storage array is receiving I/O.
+
+== Before you begin
+
+* Review drive handling requirements in link:drives_overview_supertask_concept.html[Requirements for E5700 drive replacement].
+
 
 == Step 1: Prepare to replace drive (24-drive)
 
-[.lead]
-You prepare to replace a drive by checking the Recovery Guru in SANtricity System Manager and completing any prerequisite steps. Then, you can locate the failed component.
+Prepare to replace a drive.
 
 ===== Steps
 
@@ -34,15 +42,11 @@ NOTE: If you are replacing a drive in a shelf that has a bezel, you must remove 
 
 == Step 2: Remove failed drive (24-drive)
 
-[.lead]
-You remove a failed drive to replace it with a new one.
+Remove a failed drive to replace it with a new one.
 
-===== Before You Begin
+===== What you'll need
 
-* You have an ESD wristband, or you have taken other antistatic precautions.
-* You have reviewed the link:drives_overview_supertask_concept.html[Requirements for handling drives] topic.
-
-When you remove a drive, you must slide the drive partly out of the shelf and wait for the drive to spin down. Then, you can remove the drive completely.
+* An ESD wristband, or you have taken other antistatic precautions.
 
 ===== Steps
 
@@ -67,12 +71,11 @@ NOTE: If you accidentally remove an active drive, wait at least 30 seconds, and 
 
 == Step 3: Install new drive (24-drive)
 
-[.lead]
 You install a new drive to replace the failed one. Install the replacement drive as soon as possible after removing the failed drive. Otherwise, there is a risk that the equipment might overheat.
 
-===== Before You Begin
+===== What you'll need
 
-* You have a replacement drive that is supported by NetApp for your controller shelf or drive shelf.
+* A replacement drive that is supported by NetApp for your controller shelf or drive shelf.
 
 ===== Steps
 
@@ -86,8 +89,7 @@ NOTE: Depending on your configuration, the controller might automatically recons
 
 == Step 4: Complete drive replacement (24-drive)
 
-[.lead]
-You complete the drive replacement to confirm that the new drive is working correctly.
+Confirm that the new drive is working correctly.
 
 ===== Steps
 
@@ -113,5 +115,7 @@ When the drive reconstruction completes, the volume group is in an Optimal state
 
 . As required, reinstall the bezel.
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
+
+== Result
 
 Your drive replacement is complete. You can resume normal operations.

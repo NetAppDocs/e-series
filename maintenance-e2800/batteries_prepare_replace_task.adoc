@@ -2,32 +2,31 @@
 permalink: maintenance-e2800/batteries_prepare_replace_task.html
 sidebar: sidebar
 keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries
-summary: Prepare for battery replacement, following the appropriate steps for a duplex configuration or a simplex configuration.
+summary: Prepare for E2800 battery replacement, following the appropriate steps for duplex or simplex.
 ---
 = Prepare to replace E2800 battery
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Follow this procedure to prepare for a battery replacement in the E2800 storage array.
+
+== About this task
 The steps to prepare for battery replacement depend on whether you have a duplex configuration (two controllers) or a simplex configuration (one controller).
 
 If you have a duplex configuration, you must take the affected controller offline or, if you have a simplex configuration, you must stop host I/O operations and power down the controller shelf.
 
-Follow the appropriate instructions below for a duplex or simplex configuration.
+== Before you begin
+
+* Review link:batteries_overview_requirements_concept.html[Requirements for E2800 battery replacement].
+* You have reviewed the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
+* Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
 
 == Place controller offline (duplex)
 
-[.lead]
-If you have a duplex configuration, you must place the affected controller offline so you can safely remove the failed battery. You must back up the configuration and collect support data first. Then, you can take the affected controller offline.
+If you have a duplex configuration, you must place the affected controller offline so you can safely remove the failed battery. The controller that you are not placing offline must be online (in the optimal state).
 
-===== Before you begin
-
-* Your storage array must have two controllers. The controller that you are not placing offline must be online (in the optimal state).
-* Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
-
-===== About this task
-
-Perform this task only if your storage array has two controllers (duplex configuration).
+NOTE: Perform this task only if your storage array has two controllers (duplex configuration).
 
 ===== Steps
 
@@ -67,7 +66,9 @@ The file is saved in the Downloads folder for your browser with the name support
   ... If the graphic shows the drives, select *Show back of shelf* to show the controllers.
   ... Select the controller that you want to place offline.
   ... From the context menu, select *Place offline*, and confirm that you want to perform the operation.
-*Note:* If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
++
+NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
+
  ** To use script editor in the EMW:
   ... Open the Enterprise Management Window (EMW) in SANtricity Storage Manager on your local host.
   ... Select the storage array.
@@ -86,20 +87,13 @@ The file is saved in the Downloads folder for your browser with the name support
 The system attempts to take the controller offline.
 . Wait for SANtricity System Manager to update the controller's status to offline.
 +
-IMPORTANT: Do not begin any other operations until after the status has been updated.
+NOTE: Do not begin any other operations until after the status has been updated.
 
 == Power down the controller shelf (simplex)
 
-[.lead]
-If you have a simplex configuration, you power down the controller shelf so you can safely remove the failed battery. You must back up the configuration and collect support data first. Then, you can stop host I/O operations and power down the controller shelf.
+If you have a simplex configuration, power down the controller shelf so you can safely remove the failed battery.
 
-===== Before you begin
-
-* You have reviewed the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
-
-===== About this task
-
-Perform this task only if your storage array has one controller (simplex configuration).
+NOTE: Perform this task only if your storage array has one controller (simplex configuration).
 
 ===== Steps
 
@@ -132,13 +126,13 @@ This command does not automatically append a file extension to the saved file. Y
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
- ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
- ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
- ** Unmount all file systems associated with volumes on the array.
-*Note:* The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
-
+ .. Stop all processes that involve the LUNs mapped from the storage to the hosts.
+ .. Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
+ .. Unmount all file systems associated with volumes on the array.
 +
-IMPORTANT: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, you might lose data.
+NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
++
+CAUTION: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, you might lose data.
 . Wait for any data in cache memory to be written to the drives.
 +
 The green Cache Active LED on the back of the controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.

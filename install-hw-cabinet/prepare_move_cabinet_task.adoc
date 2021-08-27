@@ -13,7 +13,6 @@ Prepare to move the cabinet from its location in your receiving area by estimati
 
 == Step 1: Estimate cabinet weight
 
-[.lead]
 The cabinet reliably and safely transports up to 909.1 kg (2000 lb) of capacity. You need to know the approximate weight of the cabinet so that you can safely move it.
 
 ===== Steps
@@ -175,13 +174,12 @@ Maximum configuration
 +
 CAUTION: Remove all drives from the DE6600 drive tray before moving the cabinet to its final position.
 +
-IMPORTANT: *Possible equipment damage* -- Cabinets with DE6600 drive trays ship without drives to reduce shipping weight. Because a fully-populated cabinet with DE6600 drive trays can weigh more than 1247.3 kg (2750 lb), make sure that you move the cabinet into place before you load the drives, and make sure that the floor load capability of the cabinet's destination supports that much weight.
+CAUTION: *Possible equipment damage* -- Cabinets with DE6600 drive trays ship without drives to reduce shipping weight. Because a fully-populated cabinet with DE6600 drive trays can weigh more than 1247.3 kg (2750 lb), make sure that you move the cabinet into place before you load the drives, and make sure that the floor load capability of the cabinet's destination supports that much weight.
 +
-IMPORTANT: *Possible damage to tray components* -- Do not place a DE6600 drive tray on a flat surface. Install the DE6600 drive tray in the cabinet before operating or moving drawers.
+CAUTION: *Possible damage to tray components* -- Do not place a DE6600 drive tray on a flat surface. Install the DE6600 drive tray in the cabinet before operating or moving drawers.
 
 == Step 2: Acclimate cabinet
 
-[.lead]
 Make sure that the cabinet and the trays are acclimated to the indoor environment before removing the packing materials.
 
 ===== Steps
@@ -189,11 +187,10 @@ Make sure that the cabinet and the trays are acclimated to the indoor environmen
 . If the outdoor temperature is below 0°C (32°F), leave the cabinet and trays inside of their crates indoors for at least 24 hours to prevent condensation.
 . Increase or decrease the 24-hour stabilization period depending on the outside temperature upon arrival.
 +
-IMPORTANT: *Possible damage to tray components* -- If the outdoor temperature is below 0°C (32°F) when you receive your cabinet and trays, do not immediately unpack them or uncrate them. Exposing cold components to warm indoor temperatures can cause condensation, which results in component damage or failures.
+CAUTION: *Possible damage to tray components* -- If the outdoor temperature is below 0°C (32°F) when you receive your cabinet and trays, do not immediately unpack them or uncrate them. Exposing cold components to warm indoor temperatures can cause condensation, which results in component damage or failures.
 
 == Step 3: Remove packing materials
 
-[.lead]
 Remove the packing materials only after the cabinet has acclimated to the indoor temperature.
 
 ===== Steps
@@ -203,7 +200,6 @@ Remove the packing materials only after the cabinet has acclimated to the indoor
 
 == Step 4: Check shipping contents
 
-[.lead]
 Check the shipping contents to make sure that all equipment arrived at the site.
 
 ===== Steps
@@ -214,7 +210,6 @@ Check the shipping contents to make sure that all equipment arrived at the site.
 
 == Step 5: Remove heavy components from cabinet
 
-[.lead]
 Remove some of the heavier components that are located in the top of the cabinet to ensure maximum stability.
 
 ===== Before you begin

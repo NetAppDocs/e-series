@@ -2,9 +2,9 @@
 permalink: maintenance-e2800/canisters_overview_supertask_concept.html
 sidebar: sidebar
 keywords: E2800 replace canister, replacing E2800 canister, E2800 replace power supply, replacing E2800 power supply, E2800 replace fan, replacing E2800 fan, E2800, E-Series, eseries
-summary: Review canister types and requirements.
+summary: Review E2800 canister types and requirements.
 ---
-= Requirements for canister replacement
+= Requirements for E2800 canister replacement
 :icons: font
 :imagesdir: ../media/
 
@@ -15,7 +15,6 @@ Canister types include power supplies, power canisters, and fan canisters.
 
 == Power supply
 
-[.lead]
 Each 12-drive or 24-drive controller shelf or drive shelf includes two power supplies with integrated fans. These are referred to as _power-fan canisters_ in SANtricity System Manager. If a power-fan canister fails, you must replace it as soon as possible to ensure that the shelf has a redundant power source and adequate cooling.
 
 === Shelf types for a power supply
@@ -38,7 +37,6 @@ The __Replace power supply__ procedure does not describe how to replace a failed
 
 === Requirements for replacing a power supply
 
-[.lead]
 If you plan to replace a power supply, keep the following requirements in mind.
 
 * You must have a replacement power supply (power-fan canister) that is supported for your controller shelf or drive shelf model.
@@ -47,11 +45,10 @@ If you plan to replace a power supply, keep the following requirements in mind.
  ** The second power supply (power-fan canister) in the shelf has an Optimal status.
  ** The *OK to remove* field in the Details area of the Recovery Guru in SANtricity System Manager displays *Yes*, indicating that it is safe to remove this component.
 +
-IMPORTANT: If the second power supply (power-fan canister) in the shelf does not have Optimal status or if the Recovery Guru indicates that it is not OK to remove the power-fan canister, contact technical support.
+NOTE: If the second power supply (power-fan canister) in the shelf does not have Optimal status or if the Recovery Guru indicates that it is not OK to remove the power-fan canister, contact technical support.
 
 == Power canister
 
-[.lead]
 Each 60-drive controller shelf or drive shelf includes two power canisters for power redundancy.
 
 === Shelf types for a power canister
@@ -73,7 +70,6 @@ image::../media/28_dwg_e2860_de460c_psu_maint-e2800.gif[]
 
 === Requirements for replacing a power canister
 
-[.lead]
 If you plan to replace a power canister, keep the following requirements in mind.
 
 * You have a replacement power canister that is supported for your controller shelf or drive shelf model.
@@ -86,11 +82,10 @@ NOTE: While you perform the procedure, the other power canister supplies power t
 
 ** The *OK to remove* field in the Details area of the Recovery Guru in SANtricity System Manager displays *Yes*, indicating that it is safe to remove this component.
 +
-IMPORTANT: If the second power canister in the shelf does not have Optimal status or if the Recovery Guru indicates that it is not OK to remove the power canister, contact technical support.
+NOTE: If the second power canister in the shelf does not have Optimal status or if the Recovery Guru indicates that it is not OK to remove the power canister, contact technical support.
 
 == Fan canister
 
-[.lead]
 Each 60-drive controller shelf or drive shelf includes two fan canisters.
 
 === Shelf types for a fan canister
@@ -110,11 +105,10 @@ The following figure shows the back of a DE460C shelf with two fan canisters:
 
 image::../media/28_dwg_de460c_rear_no_callouts_maint-e2800.gif[]
 
-IMPORTANT: Possible equipment damage -- If you replace a fan canister with the power turned on, you must complete the replacement procedure within 30 minutes to prevent the possibility of overheating the equipment.
+CAUTION: *Possible equipment damage* -- If you replace a fan canister with the power turned on, you must complete the replacement procedure within 30 minutes to prevent the possibility of overheating the equipment.
 
 === Requirements for replacing a fan canister
 
-[.lead]
 If you plan to replace a fan canister, keep the following requirements in mind.
 
 * You have a replacement fan canister (fan) that is supported for your controller shelf or drive shelf model.
@@ -125,4 +119,4 @@ If you plan to replace a fan canister, keep the following requirements in mind.
  ** The second fan canister in the shelf has an Optimal status.
  ** The *OK to remove* field in the Details area of the Recovery Guru in SANtricity System Manager displays *Yes*, indicating that it is safe to remove this component.
 +
-IMPORTANT: If the second fan canister in the shelf does not have Optimal status or if the Recovery Guru indicates that it is not OK to remove the fan canister, contact technical support.
+NOTE: If the second fan canister in the shelf does not have Optimal status or if the Recovery Guru indicates that it is not OK to remove the fan canister, contact technical support.

@@ -13,7 +13,6 @@ You can connect your storage system to an Ethernet network for out-of-band stora
 
 == Direct topology
 
-[.lead]
 A direct topology connects your controller directly to an Ethernet network.
 
 You must connect management port 1 on each controller for out-of-band management and leave port 2 available for access to the storage array by technical support.
@@ -24,7 +23,6 @@ image::../media/74167.gif[]
 
 == Fabric topology
 
-[.lead]
 A fabric topology uses a switch to connect your controller to an Ethernet network.
 
 You must connect management port 1 on each controller for out-of-band management and leave port 2 available for access to the storage array by technical support.

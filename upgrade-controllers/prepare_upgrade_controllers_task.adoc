@@ -78,16 +78,16 @@ The file is saved in the Downloads folder for your browser with the name `suppor
 If your shelf contains drawers, the diagnostics data for that shelf is archived in a separate zipped file named `tray-componet-state-capture.7z`.
  ** Use the CLI to run the `save storageArray supportData` command to gather comprehensive support data about the storage array.
  +
-*Note:* Gathering support data can temporarily impact performance on your storage array.
+NOTE: Gathering support data can temporarily impact performance on your storage array.
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts:
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
  ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
  ** Unmount all file systems associated with volumes on the array.
 +
-*Note:* The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
+NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
 
 +
-IMPORTANT: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, you might lose data.
+CAUTION: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, you might lose data.
 . If the storage array participates in a mirroring relationship, stop all host I/O operations on the secondary storage array.
 . If you are using asynchronous or synchronous mirroring, delete any mirrored pairs and deactivate any mirroring relationships through the System Manager or the Array Management window.
 . If there is a thin provisioned volume that is reported to the host as a thin volume and the old array is running firmware (8.25 firmware or above) that supports the UNMAP feature, disable Write Back Caching for all thin volumes:
@@ -114,6 +114,4 @@ Wait for all of the LEDs on the controller-drive tray to go dark.
 +
 Wait two minutes for all of the drives to spin down.
 
-==== After you finish
-
-Go to link:remove_controllers_task.html[Remove controllers].
+. Go to link:remove_controllers_task.html[Remove controllers].

@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords:  E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Channel protocol, iSCSI protocol, convert HPP, converting host port protocol, SFP+ (optical) host ports, E2800, E-Series, eseries
 summary: Review the requirements for host port protocol conversion on an E2800.
 ---
-= Requirements for host port protocol conversion
+= Requirements for changing E2800 host port protocol
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 Before converting the host protocol for an E2800 array, review the requirements.
 
-You can convert the host port protocol of the baseboard host ports in the E2800 controller shelf.
+== Host ports you can change
 
 The following figure shows the back of an E2800 controller that has two SFP+ (optical) baseboard host portsimage:../media/legend_icon_01_maint-e2800.gif[] and four SFP+ (optical) HIC portsimage:../media/legend_icon_02_maint-e2800.gif[].
 
@@ -19,9 +19,6 @@ image::../media/28_dwg_e2800_optical_base_quad_sfp_hic.gif[]
 
 NOTE: A two-port HIC is also available.
 
-== Host ports you can change
-
-[.lead]
 The E2800 controller or controllers in your storage array might have different types of baseboard host ports and different types of HIC ports. The table shows which host ports can be changed with a feature pack.
 
 [options = "header"]
@@ -74,7 +71,6 @@ Review these requirements before changing the host port protocol:
 
 == Considerations for changing the host protocol
 
-[.lead]
 The considerations for changing the host protocol depend on the starting and ending protocols of the baseboard host ports and the HIC ports.
 
 If you use a Mirroring feature or the Data Assurance (DA) feature, you must understand what happens to these features when you change the host port protocol as described below.
@@ -91,7 +87,7 @@ NOTE: The following considerations apply only if you are converting a storage ar
  ** If you are currently using Synchronous Mirroring relationships and you want to convert FC host ports to iSCSI, you must deactivate Synchronous Mirroring.
  ** Refer to the online help for SANtricity System Manager to remove all synchronous mirrored pairs, which removes mirror relationships on the local storage array and on the remote storage array. In addition, follow the instructions in the online help to deactivate Synchronous Mirroring.
 +
-IMPORTANT: If you do not deactivate Synchronous Mirroring relationships before converting to iSCSI, your system will lose data access and data loss might occur.
+CAUTION: If you do not deactivate Synchronous Mirroring relationships before converting to iSCSI, your system will lose data access and data loss might occur.
 * Asynchronous Mirroring requires both the local storage array and the remote storage array to use the same protocol.
  ** If you are currently using Asynchronous Mirroring and you want to convert all host ports from FC to iSCSI, you must deactivate Asynchronous Mirroring before applying the feature pack.
  ** Refer to the online help for SANtricity System Manager to delete all mirror consistency groups and remove all mirrored pairs from the local and remote storage arrays. In addition, follow the instructions in the online help to deactivate Asynchronous Mirroring.
@@ -172,7 +168,7 @@ Before applying the feature pack, you should confirm that all mirror consistency
 * When converting all host ports to FC, keep in mind that asynchronous mirroring over FC must occur on the highest-numbered FC port.
 * If you plan to convert the ports being used for mirrored relationships, you must deactivate these relationships before applying the feature pack.
 +
-IMPORTANT: *Possible data loss* -- If you do not delete the asynchronous mirroring relationships that occurred over iSCSI before converting the ports to FC, the controllers might lock down, and you might lose data.
+CAUTION: *Possible data loss* -- If you do not delete the asynchronous mirroring relationships that occurred over iSCSI before converting the ports to FC, the controllers might lock down, and you might lose data.
 
 * If the storage array currently has iSCSI baseboard ports and FC HIC ports, asynchronous mirroring operations will be unaffected.
 +
@@ -222,7 +218,7 @@ Delete mirroring relationships before and re-establish mirroring after
 * Synchronous Mirroring is not supported for iSCSI.
 * If you plan to convert the ports that are being used for mirrored relationships, you must deactivate mirroring relationships before applying the feature pack.
 +
-IMPORTANT: *Possible data loss* -- If you do not delete the mirroring relationships that occurred over FC before converting the ports to iSCSI, the controllers might lock down, and you might lose data.
+CAUTION: *Possible data loss* -- If you do not delete the mirroring relationships that occurred over FC before converting the ports to iSCSI, the controllers might lock down, and you might lose data.
 
 * If you do not plan to convert the ports that are being used for mirroring, mirroring operations will be unaffected.
 * Before applying the feature pack, you should confirm that all mirror consistency groups are synchronized.

@@ -1,10 +1,10 @@
 ---
 permalink: maintenance-ef600/index.html
 sidebar: sidebar
-keywords: maintain, ef300, ef600, hardware
-summary: Maintaining EF300 and EF600 Hardware
+keywords: EF300 maintenance, EF600 maintenance, repairing EF300, repairing EF600, replace EF300 components, replace EF600 components
+summary: Maintain the EF300 and EF600 hardware
 ---
-= Maintaining EF300 and EF600 hardware
+= Maintain EF300 and EF600 hardware
 :icons: font
 :imagesdir: ../media/
 
@@ -17,7 +17,7 @@ A battery is included with a controller and preserves cached data if the AC powe
 
 == Controllers
 
-A controller consists of a board, firmware, and software. It controls the drives and implements the System Manager functions. This section describes how to replace a single controller or both controllers in your EF300 or EF600 controller shelf.
+A controller consists of a board, firmware, and software. It controls the drives and implements the SANtricity System Manager functions.
 
 == DIMMs
 

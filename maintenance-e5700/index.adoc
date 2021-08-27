@@ -1,10 +1,10 @@
 ---
 permalink: maintenance-e5700/index.html
 sidebar: sidebar
-keywords: maintain, e5700, hardware
-summary: Maintaining E5700 Hardware
+keywords: E5700 maintenance, repair E5700, replace E5700 components, E5724, EF570, E5760
+summary: Maintain the E5700 hardware
 ---
-= Maintaining E5700 hardware
+= Maintain E5700 hardware
 :icons: font
 :imagesdir: ../media/
 
@@ -17,7 +17,7 @@ A battery is included with a controller canister and preserves cached data if th
 
 == Controllers
 
-A controller consists of a board, firmware, and software. It controls the drives and implements the System Manager functions. This section describes how to replace a controller in a duplex configuration.
+A controller consists of a board, firmware, and software. It controls the drives and implements the System Manager functions.
 
 == Canisters
 

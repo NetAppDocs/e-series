@@ -1,39 +1,41 @@
 ---
 permalink: maintenance-ef600/dimms_replace_supertask_task.html
 sidebar: sidebar
-keywords: replace, dimm, verify, cache, controller, offline, remove, install, online, storage, array, determining, determine, place, reinstall, complete, replacement
-summary: To replace your DIMM you must verify the cache size of your controller, place the controller offline, remove the controller, remove the DIMMs, and install the new DIMMs in your controller. Then you can bring your controller back online and verify the storage array is working properly.
+keywords: replace EF300 DIMM, replace EF600 DIMM
+summary: Replace a DIMM in an EF300 or EF600 array.
 ---
-= Replace DIMMs
+= Replace DIMMs in EF300 or EF600
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To replace your DIMM you must verify the cache size of your controller, place the controller offline, remove the controller, remove the DIMMs, and install the new DIMMs in your controller. Then you can bring your controller back online and verify the storage array is working properly.
+Follow this procedure to replace a DIMM in an EF300 or EF600 array.
 
-== Step 1: Determining if you need to replace DIMMs in a controller
+== About this task
 
-[.lead]
-You must verify the cache size of your controller before replacing the DIMMS.
+To replace a DIMM, you must verify the cache size of your controller, place the controller offline, remove the controller, remove the DIMMs, and install the new DIMMs in your controller. Then you can bring your controller back online and verify the storage array is working properly.
+
+== Before you begin
+
+* Review link:dimms_overview_supertask_concept.html[Requirements for replacing an EF300 or EF600 DIMM].
+* Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
+
+== Step 1: Determine if you need to replace a DIMM
+
+Verify the cache size of your controller before replacing the DIMMS.
 
 ===== Steps
 
-. Access the `Storage-Array-Profile` for the controller.
- .. Select *Support Page* > *Support Resources* > *Storage Array Profile*.
-. Select the *Data Cache Module* tab and locate the `Data Cache Module` field.
+. Access the Storage Array Profile for the controller.
+* Select *Support Page* > *Support Resources* > *Storage Array Profile*.
+. Select the *Data Cache Module* tab and locate the Data Cache Module field.
 . If one of the following is present, note the DIMM's location and continue with remaining procedures in this section to replace the DIMMs on your controller:
  ** A failed DIMM, or a DIMM reporting *Data Cache Module* as not optimal.
  ** A DIMM with a mismatched *Data Cache Module* capacity.
 
 == Step 2: Place controller offline
 
-[.lead]
-You must place the controller offline so you can safely remove and replace the DIMMs. You must back up the configuration and collect support data first. Then, you can take the controller offline.
-
-===== Before You Begin
-
-* Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
-* Ensure you have verified the cache size of your controller and that your DIMMs need replaced.
+Place the controller offline so you can safely remove and replace the DIMMs.
 
 ===== Steps
 
@@ -55,22 +57,22 @@ If a problem occurs when you remove a controller, you can use the saved file to 
  .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 +
 NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
+
 . Wait for SANtricity System Manager to update the controller's status to offline.
 +
-IMPORTANT: Do not begin any other operations until after the status has been updated.
+NOTE: Do not begin any other operations until after the status has been updated.
 
 . Select *Recheck* from the Recovery Guru, and confirm that the OK to remove field in the Details area displays Yes, indicating that it is safe to remove this component.
 
 == Step 3: Remove controller canister
 
-[.lead]
 You remove the failed controller canister so you can replace your DIMMs with new ones.
 
-===== Before You Begin
+===== What you'll need
 
-* You must use labels to identify each cable that is connected to the controller canister.
-* You have an ESD wristband, or you have taken other antistatic precautions.
-* You have prepared a flat, static free work area.
+* Labels to identify each cable that is connected to the controller canister.
+* An ESD wristband, or you have taken other antistatic precautions.
+* A flat, static free work area.
 
 ===== Steps
 
@@ -78,7 +80,7 @@ You remove the failed controller canister so you can replace your DIMMs with new
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
 +
-IMPORTANT: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
+CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
 
 . Confirm that the Cache Active LED on the back of the controller is off.
 . Squeeze the handles on either side of the controller, and pull back until it releases from the shelf.
@@ -87,7 +89,7 @@ image::../media/remove_controller_5.png[]
 
 . Using two hands and the handles, slide the controller canister out of the shelf. When the front of the controller is free of the enclosure, use two hands to pull it out completely.
 +
-IMPORTANT: Always use two hands to support the weight of a controller canister.
+CAUTION: Always use two hands to support the weight of a controller canister.
 +
 image::../media/remove_controller_6.png[]
 
@@ -95,12 +97,11 @@ image::../media/remove_controller_6.png[]
 
 == Step 4: Remove DIMMs
 
-[.lead]
-If there is a memory mismatch present, you must replace the DIMMs in your controller.
+If there is a memory mismatch present, replace the DIMMs in your controller.
 
-===== Before You Begin
+===== What you'll need
 
-* You have an ESD wristband, or you have taken other antistatic precautions.
+* An ESD wristband, or you have taken other antistatic precautions.
 
 ===== Steps
 
@@ -120,18 +121,17 @@ image::../media/dimm_2.png[]
 +
 image::../media/dimim_3.png[]
 +
-NOTE: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
+CAUTION: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
 +
 The number and placement of system DIMMs depends on the model of your system.
 
 == Step 5: Install new DIMMs
 
-[.lead]
-You install a new DIMM to replace the DIMM previously installed in the controller.
+Install a new DIMM to replace the old one.
 
-===== Before You Begin
+===== What you'll need
 
-* If you are not already grounded, properly ground yourself.
+* An ESD wristband, or you have taken other antistatic precautions. Make sure you are properly grounded.
 
 ===== Steps
 
@@ -153,8 +153,7 @@ image::../media/dimm_5.png[]
 
 == Step 6: Reinstall controller canister
 
-[.lead]
-After installing the new DIMMs, you reinstall the controller canister into the controller shelf.
+After installing the new DIMMs, reinstall the controller canister into the controller shelf.
 
 ===== Steps
 
@@ -169,8 +168,7 @@ image::../media/remove_controller_7.png[]
 
 == Step 7: Complete DIMMs replacement
 
-[.lead]
-You complete a DIMM replacement by placing the controller online to confirm the storage array is working correctly. Then, you can collect support data and resume operations.
+Place the controller online, collect support data, and resume operations.
 
 ===== Steps
 
@@ -200,12 +198,14 @@ As needed, install the latest version.
  .. Select *Storage* > *Volumes*. If current owner and preferred owner are not listed select *All volumes* > *Columns.* Select current owner and preferred owner, and then recheck to verify that volumes are distributed to their preferred owners.
  .. If volumes are all owned by preferred owner continue to Step 6.
  .. If none of the volumes are returned, you must manually return the volumes. Go to *Storage* > *Volumes* > *More* > *Redistribute volumes*.
- .. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution you must check the recovery guru for host connectivity issues.
- .. If there is no recovery guru present or if following the recovery guru steps the volumes are still not returned to their preferred owners contact support.
+ .. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution you must check the Recovery Guru for host connectivity issues.
+ .. If there is no Recovery Guru present or if following the Recovery Guru steps the volumes are still not returned to their preferred owners contact support.
 . Collect support data for your storage array using SANtricity System Manager.
  .. Select *Support* > *Support Center* > *Diagnostics*.
  .. Select *Collect Support Data*.
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
+
+== Result
 
 Your DIMM replacement is complete. You can resume normal operations.

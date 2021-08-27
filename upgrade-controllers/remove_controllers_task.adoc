@@ -13,7 +13,6 @@ Follow this procedure to remove the controllers, and if necessary, remove the ba
 
 == Step 1: Remove controller
 
-[.lead]
 Follow this procedure to remove the controller canister so you can upgrade it with a new one. You must disconnect all cables and remove any SFP transceivers. Then, you can slide the controller canister out of the controller shelf.
 
 ===== What you'll need
@@ -34,7 +33,7 @@ If you are upgrading controllers in a duplex controller-drive tray, repeat all s
 +
 If fiber-optic cables are present, you can use the two release levers to partially remove the controller canister. Opening these release levers makes it easier to press down the fiber-optic cable release tab.
 +
-IMPORTANT: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
+CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
 
 . If the old controller canister contains a Fibre Channel HIC or an InfiniBand HIC, remove the small form-factor pluggable (SFP+) transceivers (for Fibre Channel) or quad SFP (QSFP+) transceivers (for InfiniBand) from the HIC, and save them for possible reuse.
 . Remove controller A.
@@ -55,7 +54,6 @@ If you intend to use the battery from the old controller in the new controller, 
 
 == Step 2: Remove battery
 
-[.lead]
 Follow this procedure to remove the battery only if you intend to use the battery from the old controller canister in the new controller canister.
 
 ===== Steps
@@ -66,6 +64,4 @@ Follow this procedure to remove the battery only if you intend to use the batter
  ** For the E5400, EF540, E5500, EF550, E5600, or EF600 controller-drive tray, release the tab that secures the battery to the controller canister.
 . Remove the battery by sliding it towards the rear of the old controller canister.
 
-==== After you finish
-
-Go to link:install_controllers_task.html[Install new controllers].
+. Go to link:install_controllers_task.html[Install new controllers].

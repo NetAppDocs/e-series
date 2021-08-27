@@ -19,7 +19,7 @@ When you remove a controller canister, you must disconnect all cables. Then, you
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
 +
-IMPORTANT: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
+NOTE: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
 
 . If the host ports on the controller canister use SFP+ transceivers, leave them installed.
 . Confirm that the Cache Active LED on the back of the controller is off.
@@ -39,7 +39,7 @@ image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../med
 
 . Using two hands and the cam handle, slide the controller canister out of the shelf.
 +
-IMPORTANT: Always use two hands to support the weight of a controller canister.
+CAUTION: Always use two hands to support the weight of a controller canister.
 +
 If you are removing the controller canister from an E2812 controller shelf, E2824 controller shelf or EF280 flash array, a flap swings into place to block the empty bay, helping to maintain air flow and cooling.
 

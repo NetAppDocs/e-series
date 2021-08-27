@@ -19,7 +19,6 @@ This process involves upgrading the storage array's software and, optionally, th
 
 == Step 1: Download software files from support site
 
-[.lead]
 In this step, you go to the NetApp Support site to save the new downloadable package (DLP) software files to your management host system.
 
 The time it takes to upgrade depends on your storage array configuration and the components that you are upgrading.
@@ -47,10 +46,9 @@ If you have a storage array with a single controller, the IOM firmware is not up
 
 == Step 2: Transfer software files to the controllers
 
-[.lead]
 In this step, you transfer the software files to your controllers so you can begin the upgrade process. The components are copied from the management client to the controllers and placed in a staging area in flash memory.
 
-IMPORTANT: *Risk of data loss or risk of damage to the storage array* -- Do not make changes to the storage array while the upgrade is occurring. Maintain power to the storage array.
+CAUTION: *Risk of data loss or risk of damage to the storage array* -- Do not make changes to the storage array while the upgrade is occurring. Maintain power to the storage array.
 
 ===== Steps
 
@@ -79,7 +77,6 @@ If you have already activated your software files, go to "Step 4: Complete softw
 
 == Step 3: Activate software files
 
-[.lead]
 Follow this step only if you have software or firmware that has been transferred but not activated. To check this state, look for a notification in the Notifications area of the System Manager Home page or in the Upgrade Center page.
 
 When you perform the activation operation, the current software and firmware is replaced with the new software and firmware. You cannot stop the activation process after it starts.
@@ -94,7 +91,6 @@ The file is saved in the Downloads folder for your browser with the name, `drive
 
 == Step 4: Complete software and firmware upgrade
 
-[.lead]
 Complete the software and firmware upgrade by verifying the versions in the Software and Firmware Inventory dialog box.
 
 ===== Before you begin
@@ -192,6 +188,6 @@ Contact technical support to resolve this issue.
 
 |===
 
-== After you finish
+== Result
 
 Your controller software upgrade is complete. You can resume normal operations.

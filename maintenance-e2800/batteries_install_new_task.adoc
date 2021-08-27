@@ -13,14 +13,14 @@ After removing the failed battery, you can install the new one.
 
 ===== Before you begin
 
-* You have the failed battery from the controller canister.
+* You have removed the failed battery from the controller canister.
 * You have the replacement battery.
 
 ===== Steps
 
 . Unpack the new battery, and set it on a flat, static-free surface.
 +
-IMPORTANT: To comply with IATA safely regulations, replacement batteries are shipped with a state of charge (SoC) of 30 percent or less. When you reapply power, keep in mind that write caching will not resume until the replacement battery is fully charged and it has completed its initial learn cycle.
+NOTE: To comply with IATA safely regulations, replacement batteries are shipped with a state of charge (SoC) of 30 percent or less. When you reapply power, keep in mind that write caching will not resume until the replacement battery is fully charged and it has completed its initial learn cycle.
 
 . Orient the controller canister so that the slot for the battery faces toward you.
 . Insert the battery into the controller canister at a slight downward angle.
@@ -37,13 +37,16 @@ image:../media/legend_icon_01_maint-e2800.gif[] Battery release latch image:../m
 
 . Turn the controller canister over to confirm that the battery is installed correctly.
 +
-IMPORTANT: *Possible hardware damage* -- The metal flange at the front of the battery must be completely inserted into the slot on the controller canister (as shown in the first figure). If the battery is not installed correctly (as shown in the second figure), the metal flange might contact the controller board, causing damage to the controller when you apply power.
-
- ** Correct -- The battery's metal flange is completely inserted in the slot on the controller:
+CAUTION: *Possible hardware damage* -- The metal flange at the front of the battery must be completely inserted into the slot on the controller canister (as shown in the first figure). If the battery is not installed correctly (as shown in the second figure), the metal flange might contact the controller board, causing damage to the controller when you apply power.
++
+ ** *Correct* -- The battery's metal flange is completely inserted in the slot on the controller:
++
 image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif[]
- ** Incorrect -- The battery's metal flange is not inserted into the slot on the controller:
+
+ ** *Incorrect* -- The battery's metal flange is not inserted into the slot on the controller:
+ +
 image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[]
 
-===== After you finish
+===== Result
 
-Go to link:batteries_reinstall_controller_canister_task.html[Re-install controller canister]
+Go to link:batteries_reinstall_controller_canister_task.html[Re-install controller canister].

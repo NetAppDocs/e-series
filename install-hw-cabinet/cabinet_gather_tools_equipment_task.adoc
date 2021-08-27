@@ -35,7 +35,7 @@ image:../media/73121_01_dwg_nema_l6_30_power_cord.gif[]
 
 -   The NEMA L6-30 connectors are for use in the USA and Canada.
 -   The IEC-60309 connectors are for use worldwide, except for USA and Canada.
-**Note:** Each PDU must be connected to an independent power source.
+NOTE:  Each PDU must be connected to an independent power source.
 
 
 .2+a|

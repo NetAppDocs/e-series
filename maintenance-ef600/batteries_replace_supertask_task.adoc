@@ -1,24 +1,27 @@
 ---
 permalink: maintenance-ef600/batteries_replace_supertask_task.html
 sidebar: sidebar
-keywords: controller, canister, battery, preserve, cache, data, ac, power, fail, recovery, guru, santricity, system, manager, report, status, replacement, status, place, offline, remove, install, reinstall, complete
-summary: Each controller canister includes a battery that preserves cached data if the AC power fails. If the Recovery Guru in SANtricity System Manager reports either a Battery Failed status or a Battery Replacement Required status, you must replace the affected battery.
+keywords: replace EF300 battery, replace EF600 battery, EF300 battery fail, EF600 battery fail
+summary: Replace a battery in an EF300 or EF600 array.
 ---
-= Replace battery
+= Replace EF300 or EF600 battery
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Follow these steps to replace a battery in an EF300 or EF600 storage system.
+
+== About this task
+
 Each controller canister includes a battery that preserves cached data if the AC power fails. If the Recovery Guru in SANtricity System Manager reports either a Battery Failed status or a Battery Replacement Required status, you must replace the affected battery.
+
+== Before you begin
+
+Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
 
 == Step 1: Place controller offline
 
-[.lead]
-You must place the affected controller offline so you can safely remove the failed battery. You must back up the configuration and collect support data first. Then, you can take the affected controller offline.
-
-===== Before You Begin
-
-* Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
+Back up data and place the affected controller offline.
 
 ===== Steps
 
@@ -40,22 +43,22 @@ If a problem occurs when you remove a controller, you can use the saved file to 
  .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 +
 NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
+
 . Wait for SANtricity System Manager to update the controller's status to offline.
 +
-IMPORTANT: Do not begin any other operations until after the status has been updated.
+NOTE: Do not begin any other operations until after the status has been updated.
 
 . Select *Recheck* from the Recovery Guru, and confirm that the OK to remove field in the Details area displays Yes, indicating that it is safe to remove this component.
 
 == Step 2: Remove controller canister
 
-[.lead]
-You remove the controller canister so you can replace the failed battery with a new one. Disconnect all the cables then you can slide the controller out of the controller shelf.
+Replace the failed battery with a new one.
 
-===== Before You Begin
+===== What you'll need
 
-* You must use labels to identify each cable that is connected to the controller canister.
-* You have an ESD wristband, or you have taken other antistatic precautions.
-* You have prepared a flat, static free work area.
+* Labels to identify each cable that is connected to the controller canister.
+* An ESD wristband, or you have taken other antistatic precautions.
+* A flat, static free work area.
 
 ===== Steps
 
@@ -63,7 +66,7 @@ You remove the controller canister so you can replace the failed battery with a 
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
 +
-IMPORTANT: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
+CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
 
 . Confirm that the Cache Active LED on the back of the controller is off.
 . Squeeze the handles on either side of the controller, and pull back until it releases from the shelf.
@@ -72,7 +75,7 @@ image::../media/remove_controller_5.png[]
 
 . Using two hands and the handles, slide the controller canister out of the shelf. When the front of the controller is free of the enclosure, use two hands to pull it out completely.
 +
-IMPORTANT: Always use two hands to support the weight of a controller canister.
+CAUTION: Always use two hands to support the weight of a controller canister.
 +
 image::../media/remove_controller_6.png[]
 
@@ -80,8 +83,7 @@ image::../media/remove_controller_6.png[]
 
 == Step 3: Remove failed battery
 
-[.lead]
-You must remove the failed battery so you can install the new one. Remove the battery by squeezing the tab and disconnecting the connector housing. Then, you can pull the battery out of the controller.
+Pull the failed battery out of the controller.
 
 ===== Steps
 
@@ -105,24 +107,22 @@ image::../media/batt_4.png[]
 
 . Follow the appropriate procedures for your location to recycle or dispose of the failed battery.
 +
-WARNING: To comply with International Air Transport Association (IATA) regulations, never ship a lithium battery by air unless it is installed within the controller shelf.
+CAUTION: To comply with International Air Transport Association (IATA) regulations, never ship a lithium battery by air unless it is installed within the controller shelf.
 
 == Step 4: Install new battery
 
-[.lead]
-You must install a new battery when the old one has failed. Align the new battery with the side of the controller and then plug the connector into the board.
+After you have removed the failed battery from the controller canister, follow this step to install the new battery.
 
-===== Before You Begin
+===== What you'll need
 
-* You have removed the failed battery from the controller canister.
-* You have the replacement battery.
-* You have an ESD wristband, or you have taken other antistatic precautions.
+* The replacement battery.
+* An ESD wristband, or you have taken other antistatic precautions.
 
 ===== Steps
 
 . Unpack the new battery, and set it on a flat, static-free surface.
 +
-IMPORTANT: To comply with IATA safely regulations, replacement batteries are shipped with a state of charge (SoC) of 30 percent or less. When you reapply power, keep in mind that write caching does not resume until the replacement battery is fully charged and it has completed its initial learn cycle.
+NOTE: To comply with IATA safely regulations, replacement batteries are shipped with a state of charge (SoC) of 30 percent or less. When you reapply power, keep in mind that write caching does not resume until the replacement battery is fully charged and it has completed its initial learn cycle.
 
 . Insert the battery into the controller by lining up the battery casing with the metal latches on the side of the controller.
 +
@@ -134,8 +134,7 @@ The battery clicks into place.
 
 == Step 5: Reinstall controller canister
 
-[.lead]
-After you install the new battery, you reinstall the controller into the controller shelf. Close the cover and use the handles to slide the controller into the controller shelf.
+Reinstall the controller into the controller shelf.
 
 ===== Steps
 
@@ -148,8 +147,7 @@ image::../media/remove_controller_7.png[]
 
 == Step 6: Complete battery replacement
 
-[.lead]
-You complete a battery replacement by placing the controller online to confirm the new battery is working correctly. Then, you can collect support data and resume operations.
+Place the controller online, collect support data, and resume operations.
 
 ===== Steps
 
@@ -179,12 +177,14 @@ As needed, install the latest version.
  .. Select *Storage* > *Volumes*. If current owner and preferred owner are not listed select *All volumes* > *Columns*. Select current owner and preferred owner, and then recheck to verify that volumes are distributed to their preferred owners.
  .. If volumes are all owned by preferred owner continue to Step 6.
  .. If none of the volumes are returned, you must manually return the volumes. Go to *Storage* > *Volumes* > *More* > *Redistribute volumes*.
- .. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution you must check the recovery guru for host connectivity issues.
- .. If there is no recovery guru present or if following the recovery guru steps the volumes are still not returned to their preferred owners contact support.
+ .. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution you must check the Recovery Guru for host connectivity issues.
+ .. If there is no Recovery Guru present or if following the recovery guru steps the volumes are still not returned to their preferred owners contact support.
 . Collect support data for your storage array using SANtricity System Manager.
  .. Select *Support* > *Support Center* > *Diagnostics*.
  .. Select *Collect Support Data*.
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
+
+== Result
 
 Your battery replacement is complete. You can resume normal operations.

@@ -15,7 +15,6 @@ If you are upgrading controllers in a duplex controller-drive tray, repeat all s
 
 == Step 1: Power on controller
 
-[.lead]
 You must power on the controller shelf to confirm that it is working correctly.
 
 ===== Steps
@@ -69,7 +68,6 @@ Controller swap with external key management and all drives secured
 
 == Step 2: Check status of controllers and trays
 
-[.lead]
 You can use the LEDs and the storage management software to check the status of your controllers and trays.
 
 ===== Steps
@@ -88,7 +86,6 @@ After the controller successfully completes rebooting, the seven-segment display
 
 == Step 3: Validate controller software version
 
-[.lead]
 You must ensure that your new controllers are running with the correct operating system (controller firmware) level and NVSRAM.
 
 ===== Steps
@@ -130,7 +127,7 @@ The file is saved in the Downloads folder for your browser with the name `suppor
 If your shelf contains drawers, the diagnostics data for that shelf is archived in a separate zipped file named `tray-componet-state-capture.7z`
  ** Use the CLI to run the `save storageArray supportDatacommand` to gather comprehensive support data about the storage array.
 +
-*Note:* Gathering support data can temporarily impact performance on your storage array.
+NOTE: Gathering support data can temporarily impact performance on your storage array.
 
 . Alert NetApp Technical Support to the changes that you made to the configuration of your storage array.
  .. Get the serial number of the controller-drive tray that you recorded in xref:prepare_upgrade_controllers_task.adoc[Prepare to upgrade controllers].
@@ -144,6 +141,6 @@ If your shelf contains drawers, the diagnostics data for that shelf is archived 
 
  .. Click the *Submit* button at the bottom of the form.
 
-== After you finish
+== Result
 
 If your controller upgrade results in changing the vendor ID from LSI to NETAPP, go to link:remount_volumes_lsi_task.html[Remount volumes after changing the vendor from LSI to NETAPP]; otherwise your controller upgrade is complete and you can resume normal operations.

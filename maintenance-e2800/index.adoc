@@ -1,10 +1,10 @@
 ---
 permalink: maintenance-e2800/index.html
 sidebar: sidebar
-keywords: E2800 maintenance, E2800 repair, replace E2800 components, replacing E2800 components, E2800, E-Series, eseries
+keywords: E2800 maintenance, E2800 repair, replace E2800 components, replacing E2800 components,
 summary: Perform maintenance on E2800 components.
 ---
-= Maintaining E2800 hardware
+= Maintain E2800 hardware
 :icons: font
 :imagesdir: ../media/
 
@@ -12,11 +12,11 @@ summary: Perform maintenance on E2800 components.
 For the E2800 storage system, you can perform maintenance procedures on the following components.
 
 == Batteries
-Each controller canister includes a battery that preserves cached data if the AC power fails. If the Recovery Guru in SANtricity System Manager reports either a Battery Failed status or a Battery Replacement Required status, you must replace the affected battery.
+Each controller canister includes a battery that preserves cached data if the AC power fails.
 
 == Controllers
 
-A controller consists of a board, firmware, and software. It controls the drives and implements the System Manager functions. This section describes how to convert to a duplex configuration by adding a second controller and how to replace a controller in a simplex configuration and in a duplex configuration.
+A controller consists of a board, firmware, and software. It controls the drives and implements the System Manager functions.
 
 == Canisters
 
