@@ -505,7 +505,7 @@ sidebar:
                   url: "/maintenance-ef600/fans_replace_supertask_task.html"
               - title: Host interface cards
                 entries:
-                - title: Overview and Requirements
+                - title: Overview and requirements
                   url: "/maintenance-ef600/hics_overview_supertask_concept.html"
                 - title: Add host interface cards
                   url: "/maintenance-ef600/hics_add_supertask_task.html"
@@ -521,7 +521,7 @@ sidebar:
                   url: "/maintenance-ef600/hpp_change_supertask_task.html"
                 - title: Complete host protocol conversion
                   url: "/maintenance-ef600/hpp_complete_protocol_conversion_task.html"
-              - title: Power Supplies
+              - title: Power supplies
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/power_overview_requirements2_concept.html"
@@ -529,7 +529,7 @@ sidebar:
                   url: "/maintenance-ef600/power_replace_supertask_task.html"
               - title: SAS expansion cards
                 entries:
-                - title: Overview and Requirements
+                - title: Overview and requirements
                   url: "/maintenance-ef600/sas_overview_supertask_concept.html"
                 - title: Add SAS expansion cards
                   url: "/maintenance-ef600/sas_add_supertask_task.html"

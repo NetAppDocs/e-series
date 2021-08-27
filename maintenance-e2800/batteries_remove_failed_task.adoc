@@ -32,8 +32,6 @@ image:../media/legend_icon_01_maint-e2800.gif[]Battery release latch image:../me
 . Lift up on the battery, and slide it out of the controller canister.
 . Follow the appropriate procedures for your location to recycle or dispose of the failed battery.
 +
-WARNING: To comply with International Air Transport Association (IATA) regulations, never ship a lithium battery by air unless it is installed within the controller shelf.
+CAUTION: To comply with International Air Transport Association (IATA) regulations, never ship a lithium battery by air unless it is installed within the controller shelf.
 
-===== After you finish
-
-Go to link:batteries_install_new_task.html[Install new battery].
+. Go to link:batteries_install_new_task.html[Install new battery].

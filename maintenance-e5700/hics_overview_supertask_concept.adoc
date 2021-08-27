@@ -1,14 +1,17 @@
 ---
 permalink: maintenance-e5700/hics_overview_supertask_concept.html
 sidebar: sidebar
-keywords: topic, overview, host, interface, card, requirement, add, upgrading, upgrade, replacing, replace, hic
-summary: This topic provides an overview of the host interface card and describes the requirements you need to know about before adding, upgrading or replacing a HIC.
+keywords: E5700 host interface card, E5700 HIC, replace E5700 HIC, failed E5700 HIC
+summary: Review requirements for E5700 HIC replacement.
 ---
-= Overview and requirements
+= Requirements for E5700 HIC replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Before you add, upgrade, or replace a host interface card in an E5700, review the requirements and considerations.
+
+== Procedure overview
 You can add, upgrade, or replace a HIC in the E5724 controller shelf and the E5760 controller shelf.
 
 The following is an overview of the steps to replace a HIC in an E5700 controllers (E5724 or E5760):
@@ -21,7 +24,6 @@ The following is an overview of the steps to replace a HIC in an E5700 controlle
 
 == Requirements for adding, upgrading or replacing a HIC
 
-[.lead]
 If you plan to add, upgrade, or replace a host interface card (HIC), you must keep in mind certain requirements.
 
 * You have scheduled a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)

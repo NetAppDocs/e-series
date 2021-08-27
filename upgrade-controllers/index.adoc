@@ -17,7 +17,6 @@ A controller consists of a board, firmware, and software. It controls the drives
 
 == When to use this procedure
 
-[.lead]
 You typically use this procedure when you want to upgrade all controllers to a different model or platform. This procedure involves replacing all controllers in a controller-drive tray.
 
 You might also use this procedure in the following situations:
