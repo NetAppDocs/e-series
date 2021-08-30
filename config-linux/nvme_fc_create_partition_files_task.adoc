@@ -13,13 +13,13 @@ You can create a partition on the multipath device, optionally create a file sys
 
 ===== Steps
 
-. Run the multipath -ll command to get a list of/dev/mapper/dm devices.
+. Run the `multipath -ll` command to get a list of `/dev/mapper/dm` devices.
 +
 ----
 # multipath -ll
 ----
 +
-The result of this command shows two devices, dm-19 and dm-16 :
+The result of this command shows two devices, `dm-19` and `dm-16`:
 +
 ----
 eui.00001ffe5a94ff8500a0980000af4444 dm-19 NVME,NetApp E-Series
@@ -40,9 +40,9 @@ size=16G features='1 queue_if_no_path' hwhandler='0' wp=rw
   `- #:#:#:# nvme3n16 259:80  active ready running
 ----
 
-. Create a file system on the partition for each /dev/mapper/eui- device.
+. Create a file system on the partition for each `/dev/mapper/eui-` device.
 +
-The method for creating a file system varies depending on the file system chosen. This example shows creating an ext4 file system.
+The method for creating a file system varies depending on the file system chosen. This example shows creating an `ext4` file system.
 +
 ----
 # mkfs.ext4 /dev/mapper/dm-19

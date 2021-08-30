@@ -13,7 +13,7 @@ To view volumes currently visible on the host, you can use the SMdevices tool. T
 
 ===== Steps
 
-. To view information about each NVMe path to an E-Series volume, use the nvme netapp smdevices [-o <format>] command. The output <format> can be normal (the default if -o is not used), column, or json.
+. To view information about each NVMe path to an E-Series volume, use the `nvme netapp smdevices [-o <format>]` command. The output `<format>` can be normal (the default if -o is not used), column, or json.
 +
 ----
 # nvme netapp smdevices

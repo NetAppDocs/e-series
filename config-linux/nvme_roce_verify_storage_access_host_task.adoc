@@ -15,7 +15,7 @@ Before using the namespace, you verify that the host can write data to the names
 
 . On the host, copy one or more files to the mount point of the disk.
 . Copy the files back to a different folder on the original disk.
-. Run the diff command to compare the copied files to the originals.
+. Run the `diff` command to compare the copied files to the originals.
 
 ===== After you finish
 
