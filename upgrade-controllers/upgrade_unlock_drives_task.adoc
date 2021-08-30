@@ -13,7 +13,6 @@ If you are upgrading E2800 and E5700 controllers, the Drive Security feature for
 
 == Internal key management
 
-[.lead]
 Follow these steps for internal key management when all drives are locked.
 
 ===== About this task
@@ -38,7 +37,6 @@ Controllers will continue with the autocode synchronization process from the dri
 
 == External key management
 
-[.lead]
 Follow these steps for external key management when all drives are locked.
 
 ===== About this task

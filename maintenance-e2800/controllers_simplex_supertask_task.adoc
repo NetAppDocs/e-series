@@ -11,14 +11,9 @@ summary: You can replace a failed controller canister in a simplex configuration
 [.lead]
 You can replace a failed controller canister in a simplex configuration, which is a single-controller module configuration within the storage array.
 
+== About this task
+
 The controller canister contains a controller card, a battery, and an optional host interface card (HIC). When you replace a failed controller canister, you must remove the battery and HIC, if one is installed, from the original controller canister, and install them in the replacement controller canister.
-
-== Step 1: Prepare to replace controller (simplex)
-
-[.lead]
-You prepare to replace a controller canister by saving the drive security key, backing up the configuration, and collecting support data. Then, you can stop host I/O operations and power down the controller shelf.
-
-===== Before you begin
 
 This task describes how to prepare to replace a controller canister in the simplex version (one controller) for the following controller shelves:
 
@@ -28,12 +23,21 @@ This task describes how to prepare to replace a controller canister in the simpl
 
 Perform this task only if your storage array has one controller (simplex configuration).
 
+== Before you begin
+
+* Review link:controllers_overview_supertask_concept.html[Requirements for E2800 controller replacement].
+* Install SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
+
+== Step 1: Prepare to replace controller (simplex)
+
+Prepare to replace a controller canister.
+
 ===== Steps
 
 . If possible, make a note of which version of SANtricity OS software is currently installed on the controller, by selecting *Support* > *Upgrade Center* > *View Software and Firmware Inventory*.
 . If the Drive Security feature is enabled, be sure a saved key exists and that you know the pass phrase required to install it.
 +
-IMPORTANT: *Possible loss of data access* -- If all drives in the storage array are security enabled, the new controller will not be able to access the storage array until you unlock the secured drives using the Enterprise Management Window in SANtricity Storage Manager.
+CAUTION: *Possible loss of data access* -- If all drives in the storage array are security enabled, the new controller will not be able to access the storage array until you unlock the secured drives using the Enterprise Management Window in SANtricity Storage Manager.
 +
 To save the key (might not be possible, depending on the state of the controller):
 
@@ -75,10 +79,10 @@ The file is saved in the Downloads folder for your browser with the name support
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
  ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
  ** Unmount all file systems associated with volumes on the array.
-*Note:* The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
-
 +
-IMPORTANT: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, you might lose data.
+NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
++
+CAUTION: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, you might lose data.
 . Wait for any data in cache memory to be written to the drives.
 +
 The green Cache Active LED on the back of the controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
@@ -87,19 +91,17 @@ The green Cache Active LED on the back of the controller is on when cached data 
 . Confirm that all operations have completed before continuing with the next step.
 . Turn off both power switches on the controller shelf.
 . Wait for all LEDs on the controller shelf to turn off.
-. Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Detailsarea displays *Yes*, indicating that it is safe to remove this component.
+. Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove this component.
 +
 Data on the storage array will not be accessible until you replace the controller canister.
 
 == Step 2: Remove failed controller (simplex)
 
-[.lead]
-You remove a controller canister to replace the failed canister with a new one. Perform this task only if your storage array has one controller (simplex configuration).
+Replace the failed canister with a new one. Perform this task only if your storage array has one controller (simplex configuration).
 
-=== Remove controller canister (simplex)
+=== Step 2a: Remove controller canister (simplex)
 
-[.lead]
-When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
+Remove a controller canister.
 
 ===== Steps
 
@@ -107,7 +109,7 @@ When you remove a controller canister, you must disconnect all cables. Then, you
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
 +
-IMPORTANT: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
+CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
 
 . If the HIC ports on the controller canister use SFP+ transceivers, remove the SFPs.
 +
@@ -131,17 +133,16 @@ image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../med
 
 . Using two hands and the cam handle, slide the controller canister out of the shelf.
 +
-IMPORTANT: Always use two hands to support the weight of a controller canister.
+CAUTION: Always use two hands to support the weight of a controller canister.
 +
 When you remove the controller canister, a flap swings into place to block the empty bay, helping to maintain air flow and cooling.
 
 . Turn the controller canister over, so that the removable cover faces up.
 . Place the controller canister on a flat, static-free surface.
 
-=== Remove battery (simplex)
+=== Step 2b: Remove battery (simplex)
 
-[.lead]
-After removing the controller canister from the controller shelf, you can remove the battery.
+After removing the controller canister from the controller shelf, remove the battery.
 
 ===== Steps
 
@@ -163,17 +164,16 @@ image:../media/legend_icon_01_maint-e2800.gif[] Battery release latch image:../m
 
 . Lift up on the battery, and slide it out of the controller canister.
 
-=== Remove host interface card (simplex)
+=== Step 2c: Remove host interface card (simplex)
 
-[.lead]
-If the controller canister includes a host interface card (HIC), you must remove the HIC from the original controller canister, so you can reuse it in the new controller canister.
+If the controller canister includes a host interface card (HIC), remove the HIC from the original controller canister so you can reuse it in the new controller canister.
 
-===== Before you begin
+===== What you'll need
 
-* You must have a replacement controller canister with the same part number as the controller canister you are replacing.
-* You have an ESD wristband, or you have taken other antistatic precautions.
-* You must use labels to identify each cable that is connected to the controller canister.
-* You must have a #1 Phillips screwdriver.
+* A replacement controller canister with the same part number as the controller canister you are replacing.
+* An ESD wristband, or you have taken other antistatic precautions.
+* Labels to identify each cable that is connected to the controller canister.
+* A #1 Phillips screwdriver.
 
 ===== Steps
 
@@ -187,7 +187,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
 . Using your fingers or a Phillips screwdriver, loosen the three thumbscrews that secure the HIC to the controller card.
 . Carefully detach the HIC from the controller card by lifting the card up and sliding it back.
 +
-IMPORTANT: Be careful not to scratch or bump the components on the bottom of the HIC or on the top of the controller card.
+CAUTION: Be careful not to scratch or bump the components on the bottom of the HIC or on the top of the controller card.
 +
 image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[]
 +
@@ -197,18 +197,16 @@ image:../media/legend_icon_01_maint-e2800.gif[] Host interface card (HIC) image:
 
 == Step 3: Install new controller (simplex)
 
-[.lead]
-You install a new controller canister to replace the failed one. Perform this task only if your storage array has one controller (simplex configuration).
+Install a new controller canister to replace the failed one. Perform this task only if your storage array has one controller (simplex configuration).
 
-=== Install battery (simplex)
+=== Step 3a: Install battery (simplex)
 
-[.lead]
-You must install the battery into the replacement controller canister. You can install the battery that you removed from the original controller canister or install a new battery that you ordered.
+Install the battery into the replacement controller canister. You can install the battery that you removed from the original controller canister or install a new battery that you ordered.
 
-===== Before you begin
+===== What you'll need
 
-* You have the battery from the original controller canister.
-* You have the replacement controller canister.
+* The battery from the original controller canister.
+* The replacement controller canister.
 
 ===== Steps
 
@@ -232,20 +230,24 @@ image:../media/legend_icon_01_maint-e2800.gif[] Battery release latch image:../m
 
 . Turn the controller canister over to confirm that the battery is installed correctly.
 +
-IMPORTANT: *Possible hardware damage* -- The metal flange at the front of the battery must be completely inserted into the slot on the controller canister (as shown in the first figure). If the battery is not installed correctly (as shown in the second figure), the metal flange might contact the controller board, causing damage to the controller when you apply power.
+CAUTION: *Possible hardware damage* -- The metal flange at the front of the battery must be completely inserted into the slot on the controller canister (as shown in the first figure). If the battery is not installed correctly (as shown in the second figure), the metal flange might contact the controller board, causing damage to the controller when you apply power.
++
+** *Correct* -- The battery's metal flange is completely inserted in the slot on the controller:
++
+image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif[]
 
- ** *Correct* -- The battery's metal flange is completely inserted in the slot on the controller: image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif[]
- ** *Incorrect* -- The battery's metal flange is not inserted into the slot on the controller: image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[]
+** *Incorrect* -- The battery's metal flange is not inserted into the slot on the controller:
++
+image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[]
 
-=== Install host interface card (simplex)
+=== Step 3b: Install host interface card (simplex)
 
-[.lead]
-If you removed a host interface card (HIC) from the original controller canister, you must install that HIC in the new controller canister.
+If you removed a host interface card (HIC) from the original controller canister, install that HIC in the new controller canister.
 
-===== Before you begin
+===== What you'll need
 
-* You must have a #1 Phillips screwdriver.
-* You have an ESD wristband, or you have taken other antistatic precautions.
+* A #1 Phillips screwdriver.
+* An ESD wristband, or you have taken other antistatic precautions.
 
 ===== Steps
 
@@ -256,7 +258,7 @@ Be careful not to scratch or bump the components on the bottom of the HIC or on 
 
 . Carefully lower the HIC into place, and seat the HIC connector by pressing gently on the HIC.
 +
-IMPORTANT: **Possible equipment damage** -- Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrews.
+CAUTION: *Possible equipment damage* -- Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrews.
 +
 image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[]
 +
@@ -270,14 +272,13 @@ Do not use a screwdriver, or you might over tighten the screws.
 +
 image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
 
-=== Install new controller canister (simplex)
+=== Step 3c: Install new controller canister (simplex)
 
-[.lead]
 After installing the battery and the HIC, if one was initially installed, you can install the new controller canister into the controller shelf.
 
-===== Before you begin
+===== What you'll need
 
-* You must have a replacement controller canister with the same part number as the controller canister you are replacing.
+* A replacement controller canister with the same part number as the controller canister you are replacing.
 
 ===== Steps
 
@@ -327,14 +328,7 @@ You must set the IP address of the new controller manually. (You can reuse the I
 
 == Step 4: Complete controller replacement (simplex)
 
-[.lead]
-You complete the controller replacement by powering on the controller shelf and confirming that it is working correctly. Then, you can collect support data and resume operations.
-
-===== Before you begin
-
-* You must have installed SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
-
-===== About this task
+Power on the controller shelf, collect support data, and resume operations.
 
 If all drives in your storage array are security enabled, you must use the Enterprise Management Window (EMW) in SANtricity Storage Manager to unlock the secured drives. You cannot access the storage array until you unlock the drives with the saved key.
 
@@ -349,17 +343,17 @@ If all drives in your storage array are security enabled, you must use the Enter
  ** The green Host Link LEDs turn on.
 +
 NOTE: The figure shows an example controller canister. Your controller might have a different number and a different type of host ports.
-
 +
 image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[]
 +
 image:../media/legend_icon_01_maint-e2800.gif[]Attention LED (amber) image:../media/legend_icon_02_maint-e2800.gif[] Seven-segment display image:../media/legend_icon_03_maint-e2800.gif[] Host Link LEDs
++
 . If any of the controller shelf's Attention LEDs remain on, check that the controller canister has been installed correctly and that all cables are correctly seated. Reinstall the controller canister, if necessary.
 +
 NOTE: If you cannot resolve the problem, contact technical support.
 
 . If the storage array has secured drives, import the drive security key; otherwise, go to the next step.
-+
+
 If the storage array has only secured drives (no unsecured drives):
 
  .. Open the Enterprise Management Window (EMW) in SANtricity Storage Manager on your local host.
@@ -392,20 +386,21 @@ If the storage array has a mix of secured and unsecured drives:
  .. Reset the controller using SANtricity System Manager.
  .. Wait for the controller to boot up.
  .. Go to the next step to confirm that the new controller is Optimal.
-*Note:* _Unsecured drives_ are unassigned drives, global hot spare drives, or drives that are part of a volume group or a pool that is not secured by Drive Security. _Secured drives_ are assigned drives that are a part of a secured volume group or disk pool using Drive Security.
-. From SANtricity System Manager, confirm that the new controller is Optimal.
++
+NOTE: _Unsecured drives_ are unassigned drives, global hot spare drives, or drives that are part of a volume group or a pool that is not secured by Drive Security. _Secured drives_ are assigned drives that are a part of a secured volume group or disk pool using Drive Security.
+.. From SANtricity System Manager, confirm that the new controller is Optimal.
  .. Select *Hardware*.
  .. For the controller shelf, select *Show back of shelf*.
  .. Select the controller canister you replaced.
  .. Select *View settings*.
  .. Confirm that the controller's *Status* is Optimal.
  .. If the status is not Optimal, highlight the controller, and select *Place Online*.
-. Collect support data for your storage array using SANtricity System Manager.
+.. Collect support data for your storage array using SANtricity System Manager.
  .. Select *Support* > *Support Center* > *Diagnostics*.
  .. Select *Collect Support Data*.
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 
-===== Result
+== Result
 
 Your controller replacement is complete. You can resume normal operations.

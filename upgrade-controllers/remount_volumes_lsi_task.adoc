@@ -13,7 +13,6 @@ Follow this procedure if your controller upgrade results in changing the vendor 
 
 == Remount volumes on an AIX host
 
-[.lead]
 After you replace the controllers, you might observe that the host shows the new volumes on the storage array, but also shows the original volumes as failed.
 
 ===== Steps
@@ -22,7 +21,6 @@ After you replace the controllers, you might observe that the host shows the new
 
 == Remount volumes on a VMware host
 
-[.lead]
 You address problems that might appear on VMware hosts after the controller upgrade.
 
 ===== About this task
@@ -43,7 +41,6 @@ After you replace the controllers, you might observe the following conditions:
 
 == Remount volumes on a Windows host
 
-[.lead]
 You remount volumes on a Windows host to enable attached hosts to perform I/O operations with the volumes located on the upgraded storage array.
 
 ===== Steps

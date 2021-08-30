@@ -1,27 +1,29 @@
 ---
 permalink: maintenance-ef600/controllers_replace_supertask_task.html
 sidebar: sidebar
-keywords: section, replace, controller, ef300, ef600, shelf, prepare, remove, fail, install, complete, replacement
-summary: This section describes the steps to replace a single controller in your EF300 or EF600 controller shelf.
+keywords: replace EF300 controller, replace EF600 controller, replace EF300 canister, replace EF600 canister,
+summary: Replace a single controller in an EF300 or EF600 controller shelf.
 ---
-= Replace controller
+= Replace EF300 or EF600 controller
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This section describes the steps to replace a single controller in your EF300 or EF600 controller shelf.
+Follow these steps to replace a single controller in your EF300 or EF600 controller shelf.
 
-When you replace a failed controller canister, you must remove the battery, power supply, DIMMs, fans, and HIC, if one is installed, from the original controller canister, and install them in the replacement controller canister.
+== About this task
+When you replace a failed controller canister, you must remove the battery, power supply, DIMMs, fans, and host interface card (HIC) from the original controller canister, and then install them in the replacement controller canister.
 
-You can determine if you have a failed controller canister in two ways:
+== Before you begin
 
-* The Recovery Guru in SANtricity System Manager directs you to replace the controller canister.
-* The amber Attention LED on the controller canister is on, indicating that the controller has a fault.
+* Review link:controllers_overview_supertask_concept[Requirements for EF300 or EF600 controller replacement].
+* Determine if you have a failed controller canister in one of two ways:
+** The Recovery Guru in SANtricity System Manager directs you to replace the controller canister.
+** The amber Attention LED on the controller canister is on, indicating that the controller has a fault.
 
 == Step 1: Prepare to replace controller
 
-[.lead]
-When a controller canister fails, you must replace it. You prepare to replace a controller canister by verifying that the replacement controller canister has the correct FRU part number, backing up the configuration, and collecting support data.
+Prepare to replace a failed controller canister.
 
 ===== Steps
 
@@ -42,7 +44,7 @@ When a controller has a fault and needs to be replaced, the replacement part num
 
 . Confirm that the replacement part number for the failed controller is the same as the FRU part number for the replacement controller.
 +
-IMPORTANT: *Possible loss of data access --* If the two-part numbers are not the same, do not attempt this procedure. In addition, if the failed controller canister includes a host interface card (HIC), you must install that HIC into the new controller canister. The presence of mismatched controllers or HICs causes the new controller to lock down when you bring it online.
+CAUTION: *Possible loss of data access* -- If the two-part numbers are not the same, do not attempt this procedure. In addition, if the failed controller canister includes a host interface card (HIC), you must install that HIC into the new controller canister. The presence of mismatched controllers or HICs causes the new controller to lock down when you bring it online.
 
 . Back up the storage array's configuration database.
 +
@@ -63,25 +65,25 @@ If a problem occurs when you remove a controller, you can use the saved file to 
 NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
 . Wait for SANtricity System Manager to update the controller's status to offline.
 +
-IMPORTANT: Do not begin any other operations until after the status has been updated.
+NOTE: Do not begin any other operations until after the status has been updated.
 
 . Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove this component.
 
 == Step 2: Remove failed controller
 
-[.lead]
-You remove a controller canister to replace the failed canister with a new one. You remove the failed controller canister by removing the controller from the controller shelf and removing the battery, host interface card, power supply, DIMMs, and fans.
+Remove a controller canister to replace the failed canister with a new one.
 
-=== Remove controller canister
+This is a multi-step procedure that requires you to remove the following components: battery, host interface card, power supply, DIMMs, and fans.
 
-[.lead]
-You remove the failed controller canister so you can replace it with a new one. Disconnect all the cables then you can slide the controller out of the controller shelf.
+=== Step 2a: Remove controller canister
 
-===== Before You Begin
+Remove the failed controller canister so you can replace it with a new one.
 
-* You must use labels to identify each cable that is connected to the controller canister.
-* You have an ESD wristband, or you have taken other antistatic precautions.
-* You have prepared a flat, static free work area.
+===== What you'll need
+
+* Labels to identify each cable that is connected to the controller canister.
+* An ESD wristband, or you have taken other antistatic precautions.
+* A flat, static free work area.
 
 ===== Steps
 
@@ -89,7 +91,7 @@ You remove the failed controller canister so you can replace it with a new one. 
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
 +
-IMPORTANT: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
+CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
 
 . If the controller canister has a HIC that uses SFP+ transceivers, remove the SFPs.
 +
@@ -102,16 +104,15 @@ image::../media/remove_controller_5.png[]
 
 . Using two hands and the handles, slide the controller canister out of the shelf. When the front of the controller is free of the enclosure, use two hands to pull it out completely.
 +
-IMPORTANT: Always use two hands to support the weight of a controller canister.
+CAUTION: Always use two hands to support the weight of a controller canister.
 +
 image::../media/remove_controller_6.png[]
 
 . Place the controller canister on a flat, static-free surface.
 
-=== Remove battery
+=== Step 2b: Remove battery
 
-[.lead]
-You remove the battery from the failed controller canister so you can install it in the new controller canister. Remove the battery by squeezing the tab and disconnecting the connector housing. Then, you can lift the battery out of the controller.
+Remove the battery from the failed controller canister so you can install it in the new controller canister.
 
 ===== Steps
 
@@ -124,12 +125,15 @@ image::../media/batt_3.png[]
 . Gently squeeze the connector housing the battery wiring. Pull up, disconnecting the battery from the board.image:../media/batt_2.png[]
 . Lift the battery out of the controller and place on a flat, static-free surface.image:../media/batt_4.png[]
 
-=== Remove host interface card
+=== Step 2c: Remove the HIC
 
-[.lead]
-If the controller canister includes a host interface card (HIC), you must remove the HIC from the original controller canister, so you can reuse it in the new controller canister. To remove the HIC you must first remove the faceplate, then loosen the single thumbscrew on the HIC and lift it from the controller.
+If the controller canister includes a HIC, you must remove the HIC from the original controller canister. Otherwise, you can skip this step.
 
-* You must have a #1 Phillips screwdriver.
+===== What you'll need
+
+* A #1 Phillips screwdriver.
+
+===== Steps
 
 . Using a Phillips screwdriver, remove the two screws that attach the HIC faceplate to the controller canister.
 +
@@ -146,20 +150,19 @@ NOTE: The HIC comes with three screw locations on the top but is secured with on
 
 . Carefully detach the HIC from the controller card by lifting the card up and out of the controller.
 +
-IMPORTANT: Be careful not to scratch or bump the components on the bottom of the HIC or on the top of the controller card.
+CAUTION: Be careful not to scratch or bump the components on the bottom of the HIC or on the top of the controller card.
 +
 image::../media/hic_4.png[]
 
 . Place the HIC on a flat, static-free surface.
 
-=== Remove power supply
+=== Step 2d: Remove power supply
 
-[.lead]
-Remove the power supply so you can install it in the new controller. When you remove a power supply, you disconnect the power cord, and slide the part out of the shelf.
+Remove the power supply so you can install it in the new controller.
 
-===== Before You Begin
+===== What you'll need
 
-* You have an ESD wristband, or you have taken other antistatic precautions.
+* An ESD wristband, or you have taken other antistatic precautions.
 
 ===== Steps
 
@@ -175,16 +178,15 @@ image::../media/psup_2.png[]
 +
 image::../media/psup_3.png[]
 +
-IMPORTANT: When removing a power supply, always use two hands to support its weight.
+CAUTION: When removing a power supply, always use two hands to support its weight.
 
-=== Remove DIMMs
+=== Step 2e: Remove DIMMs
 
-[.lead]
-Remove the DIMMs so you can install them in the new controller. To remove the DIMMs you push apart the ejector tabs and gently lift the DIMM out by its edges.
+Remove the DIMMs so you can install them in the new controller.
 
-===== Before You Begin
+===== What you'll need
 
-* You have an ESD wristband, or you have taken other antistatic precautions.
+* An ESD wristband, or you have taken other antistatic precautions.
 
 ===== Steps
 
@@ -201,12 +203,15 @@ image::../media/dimm_2.png[]
 +
 image::../media/dimim_3.png[]
 
-=== Remove fans
+=== Step 2f: Remove fans
 
-[.lead]
-Remove the fans so you can install them in the new controller. You remove the fans by lifting them from the controller.
+Remove the fans so you can install them in the new controller.
 
-* You have an ESD wristband, or you have taken other antistatic precautions.
+===== What you'll need
+
+* An ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Gently lift the fan from the controller.
 +
@@ -216,19 +221,19 @@ image::../media/fan_2.png[]
 
 == Step 3: Install new controller
 
-[.lead]
-You install a new controller canister to replace the failed one. You install the new controller canister after installing the battery, host interface card, power supply, DIMMs, and fans from the original controller.
+Install a new controller canister to replace the failed one.
 
-=== Install battery
+This is a multi-step procedure that requires you to install the following components from the original controller: battery, host interface card, power supply, DIMMs, and fans.
 
-[.lead]
-You must install the battery into the replacement controller canister. Align the new battery with the side of the controller and then plug the connector into the board.
+=== Step 3a: Install battery
 
-===== Before You Begin
+Install the battery into the replacement controller canister.
 
-* You have the battery from the original controller canister, or a new battery that you ordered.
-* You have the replacement controller canister.
-* You have an ESD wristband, or you have taken other antistatic precautions.
+===== What you'll need
+
+* The battery from the original controller canister, or a new battery that you ordered.
+* The replacement controller canister.
+* An ESD wristband, or you have taken other antistatic precautions.
 
 ===== Steps
 
@@ -240,16 +245,15 @@ The battery clicks into place.
 
 . Plug the battery connector back into the board.
 
-=== Install host interface card
+=== Step 3b: Install the HIC
 
-[.lead]
-If you removed a HIC from the original controller canister, you must install that HIC in the new controller canister. Install the HIC by gently lowering the card into place and hand tightening the single thumbscrew.
+If you removed a HIC from the original controller canister, you must install that HIC in the new controller canister. Otherwise, you can skip this step.
 
-===== Before You Begin
+===== What you'll need
 
-* You must have a replacement controller canister with the same part number as the controller canister you are replacing.
-* You must have a #1 Phillips screwdriver.
-* You have an ESD wristband, or you have taken other antistatic precautions.
+* A replacement controller canister with the same part number as the controller canister you are replacing.
+* A #1 Phillips screwdriver.
+* An ESD wristband, or you have taken other antistatic precautions.
 
 ===== Steps
 
@@ -260,11 +264,11 @@ Be careful not to scratch or bump the components on the bottom of the HIC or on 
 +
 image::../media/hic_7.png[]
 +
-NOTE: The image above is an example, the appearance of your HIC may differ.
+NOTE: The image above is an example; the appearance of your HIC may differ.
 
 . Carefully lower the HIC into place, and seat the HIC connector by pressing gently on the HIC.
 +
-IMPORTANT: **Possible equipment damage --**Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrew.
+CAUTION: *Possible equipment damage* -- Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrew.
 
 . Hand-tighten the HIC thumbscrew.
 +
@@ -272,14 +276,13 @@ Do not use a screwdriver, or you might over tighten the screw.
 +
 image::../media/hic_3.png[]
 +
-NOTE: The image above is an example, the appearance of your HIC may differ.
+NOTE: The image above is an example; the appearance of your HIC may differ.
 
 . Using a #1 Phillips screwdriver, attach the HIC faceplate you removed from the original controller canister to the new controller canister with the two screws.
 
-=== Install power supply
+=== Step 3c: Install power supply
 
-[.lead]
-You must install the power supply into the replacement controller canister. Install the power supply by gently sliding it into the opening of the new controller.
+Install the power supply into the replacement controller canister.
 
 ===== Steps
 
@@ -287,18 +290,17 @@ You must install the power supply into the replacement controller canister. Inst
 +
 The power supplies are keyed and can only be installed one way.
 +
-IMPORTANT: Do not use excessive force when sliding the power supply into the system; you can damage the connector.
+CAUTION: Do not use excessive force when sliding the power supply into the system; you can damage the connector.
 +
 image::../media/psup_4.png[]
 
-=== Install DIMMs
+=== Step 3d: Install DIMMs
 
-[.lead]
-You must install the DIMMs into the new controller canister. Install the DIMMs by sliding the DIMM into the slot and securing the latches on either side.
+Install the DIMMs into the new controller canister.
 
-===== Before You Begin
+===== What you'll need
 
-* You have an ESD wristband, or you have taken other antistatic precautions.
+* An ESD wristband, or you have taken other antistatic precautions.
 
 ===== Steps
 
@@ -320,14 +322,13 @@ NOTE: DIMMs fit tightly. You might need to gently press on one side at a time an
 +
 image::../media/dimm_5.png[]
 
-=== Install fans
+=== Step 3e: Install fans
 
-[.lead]
-You must install the fans into the replacement controller canister. Install the fans by sliding them into the shelf.
+Install the fans into the replacement controller canister.
 
-===== Before You Begin
+===== What you'll need
 
-* You have an ESD wristband, or you have taken other antistatic precautions.
+* An ESD wristband, or you have taken other antistatic precautions.
 
 ===== Steps
 
@@ -339,10 +340,9 @@ image::../media/fan_3_a.png[]
 
 . Repeat until all fans are installed.
 
-=== Install new controller canister
+=== Step 3f: Install new controller canister
 
-[.lead]
-After installing the battery, power supply, DIMMs, fans, and the host interface card (HIC), if one was initially installed, you can install the new controller canister into the controller shelf. Install the new controller shelf by closing the cover and using the handles to slide the controller into the controller shelf.
+Last, install the new controller canister into the controller shelf.
 
 ===== Steps
 
@@ -363,13 +363,12 @@ NOTE: If the original controller did not use DHCP for the IP address, the new co
 
 == Step 4: Complete controller replacement
 
-[.lead]
-You complete the controller replacement by placing the controller online and confirming that the storage array is working correctly. Then, you can collect support data and resume operations.
+Place the controller online, collect support data, and resume operations.
 
 ===== Steps
 
 . Place controller online.
- .. In System Manager, navigate to the hardware page.
+ .. In System Manager, navigate to the Hardware page.
  .. Select *Show back of controller*.
  .. Select the replaced controller.
  .. Select *Place online* from the drop-down list.
@@ -394,12 +393,14 @@ As needed, install the latest version.
  .. Select *Storage* > *Volumes*. If current owner and preferred owner are not listed select *All volumes* > *Columns.* Select current owner and preferred owner, and then recheck to verify that volumes are distributed to their preferred owners.
  .. If volumes are all owned by preferred owner continue to Step 6.
  .. If none of the volumes are returned, you must manually return the volumes. Go to *Storage* > *Volumes* > *More* > *Redistribute volumes*.
- .. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution you must check the recovery guru for host connectivity issues.
- .. If there is no recovery guru present or if following the recovery guru steps the volumes are still not returned to their preferred owners contact support.
+ .. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution you must check the Recovery Guru for host connectivity issues.
+ .. If there is no Recovery Guru present or if following the recovery guru steps the volumes are still not returned to their preferred owners contact support.
 . Collect support data for your storage array using SANtricity System Manager.
  .. Select *Support* > *Support Center* > *Diagnostics*.
  .. Select *Collect Support Data*.
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
+
+== Result
 
 Your controller replacement is complete. You can resume normal operations.

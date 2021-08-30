@@ -1,18 +1,18 @@
 ---
 permalink: maintenance-ef600/sas_overview_supertask_concept.html
 sidebar: sidebar
-keywords: plan, add, sas, expansion, card, requirement, mind, overview
-summary: If you plan to add a SAS expansion card, keep the following requirements in mind.
+keywords: replace EF300 SAS expansion card, replacing SAS card, drive tray expansion, expansion card
+summary:  Review requirements and considerations before replacing an EF300 or EF600 SAS expansion card.
 ---
-= Overview and Requirements
+=  Requirements for EF300 or EF600 SAS expansion card replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If you plan to add a SAS expansion card, keep the following requirements in mind.
+If you plan to add a SAS expansion card to an EF300 or EF600 array, review the following requirements.
 
 * You have followed the link:../install-hw-ef600/index.html[Installation and Setup Instructions for the EF600] to set up your EF300 controller.
-* You have updated your firmware to the latest version. To update your firmware follw the instructions in the link:../upgrade-santricity/index.html[Upgrading SANtricity OS].
+* You have updated your firmware to the latest version. To update your firmware follow the instructions in the link:../upgrade-santricity/index.html[Upgrading SANtricity OS].
 * You have scheduled a downtime maintenance window for this procedure. You cannot access data on the storage array until you have successfully completed this procedure.
 * You have an ESD wristband, or you have taken other antistatic precautions.
 * You have a #1 Phillips screwdriver.

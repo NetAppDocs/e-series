@@ -13,7 +13,6 @@ Follow this procedure to upgrade your drives' firmware, which ensures you have a
 
 == Step 1: Download drive firmware files from support site
 
-[.lead]
 In this step, you go to the NetApp Support site to download the drive firmware files to your management client.
 
 ===== Steps
@@ -26,7 +25,6 @@ In this step, you go to the NetApp Support site to download the drive firmware f
 
 == Step 2: Begin drive firmware upgrade
 
-[.lead]
 In this step, you upgrade the drives' firmware.
 
 ===== Before you begin
@@ -66,7 +64,7 @@ The selected firmware for the drive appears in the *Proposed Firmware* informati
 +
 If you need to stop the upgrade, click *Stop*. Any firmware downloads currently in progress complete. Any firmware downloads that have not started are canceled.
 +
-IMPORTANT: Stopping the drive firmware upgrade might result in data loss or unavailable drives.
+CAUTION: Stopping the drive firmware upgrade might result in data loss or unavailable drives.
 
 . (Optional) To see a list of what was upgraded, click *Save Log*.
 +
@@ -162,6 +160,6 @@ Contact technical support to resolve this issue.
 
 |===
 
-== After you finish
+== Result
 
 Your drive firmware upgrade is complete. You can resume normal operations.

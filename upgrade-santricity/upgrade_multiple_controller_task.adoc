@@ -21,14 +21,13 @@ Follow this procedure to upgrade multiple controllers of the same type with SANt
 
  * Review these precautions:
 
-IMPORTANT: Risk of data loss or risk of damage to the storage array - Do not make changes to the storage array while the upgrade is occurring. Maintain power to the storage array.
+CAUTION: Risk of data loss or risk of damage to the storage array - Do not make changes to the storage array while the upgrade is occurring. Maintain power to the storage array.
 
 CAUTION: If you are upgrading SANtricity OS on a StorageGRID appliance (for example, SG5612 or SG5760), you need to stop I/O activity by placing the appliance into maintenance mode before continuing with this procedure, or data could be lost. For detailed steps, see the installation and maintenance instructions for your StorageGRID appliance.
 
 
 == Step 1: Perform pre-upgrade health check
 
-[.lead]
 A health check runs as part of the upgrade process, but you also can run a health check separately before you begin. The health check assesses components of the storage array to make sure that the upgrade can proceed.
 
 ===== Steps
@@ -50,7 +49,6 @@ NOTE: If any arrays fail the health check, you can skip that particular array an
 
 == Step 2: Download software files from support site
 
-[.lead]
 In this step, you go to the NetApp Support site to save the new downloadable package (DLP) software files to your management host system.
 
 ===== Steps
@@ -72,10 +70,9 @@ NOTE: Digitally signed firmware is required in version 8.42 and above. If you at
 
 ==  Step 3: Transfer software files to the controllers
 
-[.lead]
 You load the SANtricity OS software file and the NVSRAM file into the repository so it is accessible to the Unified Manager Upgrade Center.
 
-IMPORTANT: Risk of data loss or risk of damage to the storage array - Do not make changes to the storage array while the upgrade is occurring. Maintain power to the storage array.
+CAUTION: Risk of data loss or risk of damage to the storage array - Do not make changes to the storage array while the upgrade is occurring. Maintain power to the storage array.
 
 ===== Steps
 
@@ -127,10 +124,9 @@ The file is saved in the Downloads folder for your browser with the name``upgrad
 
 ==  Step 4: Activate staged software files (optional)
 
-[.lead]
 You can choose to activate the software file immediately or wait until a more convenient time. This procedure assumes you chose to activate the software file at a later time.
 
-IMPORTANT: You cannot stop the activation process after it starts.
+NOTE: You cannot stop the activation process after it starts.
 
 ===== Steps
 
@@ -148,6 +144,6 @@ On successful completion of the pre-upgrade health check, activation occurs. The
 +
 The file is saved in the Downloads folder for your browser with the name `activate_log-<date>.json`.
 
-== After you finish
+== Result
 
 Your controller software upgrade is complete. You can resume normal operations.

@@ -19,7 +19,7 @@ Before making definitions of each host in SANtricity System Manager, you must di
 nvme discover -t rdma -a target_ip_address
 ----
 +
-In this command, target_ip_address is the IP address of the target port.
+In this command, `target_ip_address` is the IP address of the target port.
 +
 NOTE: The `nvme discover` command discovers all controller ports in the subsystem, regardless of host access.
 +

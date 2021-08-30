@@ -13,7 +13,6 @@ You can cable a host directly to a controller (direct-attached topology) or use 
 
 == Cabling for a direct-attached topology
 
-[.lead]
 A direct-attached topology connects host adapters directly to controllers in your storage system.
 
 The following figure shows an example connection. To help ensure maximum performance, use all available host adapter ports.
@@ -26,7 +25,6 @@ image:../media/legend_icon_01_inst-hw-cabling.gif[] Connect each host adapter po
 
 == Cabling for a switch topology
 
-[.lead]
 A switch topology uses switches to connect hosts to the controllers in your storage system. The switch must support the connection type used between the host and the controller.
 
 The following figure shows an example connection.

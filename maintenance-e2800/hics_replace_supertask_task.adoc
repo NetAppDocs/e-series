@@ -4,29 +4,30 @@ sidebar: sidebar
 keywords: replacing E2800 HIC, replace E2800 HIC, replace host interface card, E2800, E-Series, eseries
 summary: Replace a host interface card (HIC) that has failed.
 ---
-= Replace host interface card in E2800
+= Replace host interface card (HIC) in E2800
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow these instructions to replace a host interface card (HIC) that has failed.
+Follow this procedure to replace a host interface card (HIC) that has failed.
+
+== About this task
+The steps to replace a HIC depend on whether you have one or two controllers.
 
 If two controllers are present, each controller must have identical HICs.
 
-== Step 1: Place controller offline (duplex)
+== Before you begin
 
-[.lead]
-If you have a duplex configuration, you must place the affected controller offline so you can safely remove the failed HIC. You must back up the configuration and collect support data first. Then, you can take the affected controller offline.
-
-===== Before you begin
-
-* Your storage array must have two controllers. The controller that you are not placing offline must be online (in the optimal state).
+* Review link:hics_overview_supertask_concept.html[Requirements for E2800 HIC replacement].
+* You must schedule a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)
 * Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
 * From SANtricity System Manager, review the details in the Recovery Guru to confirm that you have a failed HIC and to ensure no other items must be addressed before you can remove and replace the HIC.
 
-===== About this task
+== Step 1: Place controller offline (duplex)
 
-Perform this task only if your storage array has two controllers (duplex configuration).
+If you have a duplex configuration, follow this step to place the controller offline so you can safely remove the failed HIC.
+
+NOTE: Perform this task only if your storage array has two controllers (duplex configuration).
 
 ===== Steps
 
@@ -65,7 +66,8 @@ The file is saved in the Downloads folder for your browser with the name support
   ... If the graphic shows the drives, select *Show back of shelf* to show the controllers.
   ... Select the controller that you want to place offline.
   ... From the context menu, select *Place offline*, and confirm that you want to perform the operation.
-*Note:* If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
++
+NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
  ** To use script editor in the EMW:
   ... Open the Enterprise Management Window (EMW) in SANtricity Storage Manager on your local host.
   ... Select the storage array.
@@ -84,18 +86,13 @@ The file is saved in the Downloads folder for your browser with the name support
 The system attempts to take the controller offline.
 . Wait for SANtricity System Manager to update the controller's status to offline.
 +
-IMPORTANT: Do not begin any other operations until after the status has been updated.
+CAUTION: Do not begin any other operations until after the status has been updated.
 
 == Step 2: Power down the controller shelf (simplex)
 
-[.lead]
-If you have a simplex configuration, you power down the controller shelf so you can safely remove the failed HIC.
+If you have a simplex configuration, power down the controller shelf so you can safely remove the failed HIC.
 
-You must back up the configuration and collect support data first. Then, you can stop host I/O operations and power down the controller shelf.
-
-===== Before you begin
-
-Perform this task only if your storage array has one controller (simplex configuration).
+NOTE: Perform this task only if your storage array has one controller (simplex configuration).
 
 ===== Steps
 
@@ -132,10 +129,10 @@ The file is saved in the Downloads folder for your browser with the name support
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
  ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
  ** Unmount all file systems associated with volumes on the array.
-*Note:* The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
-
 +
-IMPORTANT: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, you might lose data.
+NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
++
+CAUTION: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, you might lose data.
 . Wait for any data in cache memory to be written to the drives.
 +
 The green Cache Active LED on the back of the controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
@@ -147,21 +144,19 @@ The green Cache Active LED on the back of the controller is on when cached data 
 
 == Step 3: Remove controller canister
 
-[.lead]
-You remove the controller canister so you can add the new host interface card (HIC). When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
+Remove the controller canister so you can add the new host interface card (HIC).
 
-===== Before you begin
+===== What you'll need
 
-* You have scheduled a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)
-* You must use labels to identify each cable that is connected to the controller canister.
-* You have an ESD wristband, or you have taken other antistatic precautions.
+* Labels to identify each cable that is connected to the controller canister.
+* An ESD wristband, or you have taken other antistatic precautions.
 
 ===== Steps
 
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
 +
-IMPORTANT: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
+CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
 
 . Confirm that the Cache Active LED on the back of the controller is off.
 +
@@ -187,25 +182,24 @@ image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../med
 
 . Using two hands and the cam handle, slide the controller canister out of the shelf.
 +
-IMPORTANT: Always use two hands to support the weight of a controller canister.
+CAUTION: Always use two hands to support the weight of a controller canister.
 +
 If you are removing the controller canister from an E2812 controller shelf, E2824 controller shelf or EF280 flash array, a flap swings into place to block the empty bay, helping to maintain air flow and cooling.
 
 . Turn the controller canister over, so that the removable cover faces up.
 . Place the controller canister on a flat, static-free surface.
 
-== Step 4: Install host interface card
+== Step 4: Install a HIC
 
-[.lead]
-You install a host interface card (HIC) to replace the failed one with a new HIC.
+Install a HIC to replace the failed one with a new HIC.
 
-===== Before you begin
+===== What you'll need
 
-* You have an ESD wristband, or you have taken other antistatic precautions.
-* You have a #1 Phillips screwdriver.
-* You have one or two HICs, based on whether you have one or two controllers in your storage array. The HICs must be compatible with your controllers.
+* An ESD wristband, or you have taken other antistatic precautions.
+* A #1 Phillips screwdriver.
+* One or two HICs, based on whether you have one or two controllers in your storage array. The HICs must be compatible with your controllers.
 
-IMPORTANT: *Possible loss of data access* -- Never install a HIC in an E2800 controller canister if that HIC was designed for another E-Series controller. In addition, if you have a duplex configuration, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs will cause the controllers to lock down when you apply power.
+CAUTION: *Possible loss of data access* -- Never install a HIC in an E2800 controller canister if that HIC was designed for another E-Series controller. In addition, if you have a duplex configuration, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs will cause the controllers to lock down when you apply power.
 
 ===== Steps
 
@@ -226,7 +220,7 @@ Be careful not to scratch or bump the components on the bottom of the HIC or on 
 
 . Carefully lower the HIC into place, and seat the HIC connector by pressing gently on the HIC.
 +
-IMPORTANT: **Possible equipment damage** -- Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrews.
+CAUTION: *Possible equipment damage* -- Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrews.
 +
 image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[]
 +
@@ -242,8 +236,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
 
 == Step 5: Reinstall controller canister
 
-[.lead]
-After installing the host interface card (HIC), you reinstall the controller canister into the controller shelf.
+After installing the HIC, reinstall the controller canister into the controller shelf.
 
 ===== Steps
 
@@ -265,18 +258,15 @@ image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../med
 . Move the cam handle to the left to lock the controller canister in place.
 . Reconnect all the cables you removed.
 +
-IMPORTANT: Do not connect data cables to the new HIC ports at this time.
+NOTE: Do not connect data cables to the new HIC ports at this time.
 
 . (Optional) If you are adding HICs to a duplex configuration, repeat all steps to remove the second controller canister, install the second HIC, and reinstall the second controller canister.
 
 == Step 6: Place controller online (duplex)
 
-[.lead]
-You bring the controller online to confirm the storage array is working correctly. Then, you can collect support data and resume operations.
+For a duplex configuration, bring the controller online, collect support data, and resume operations.
 
-===== Before you begin
-
-Perform this task only if your storage array has two controllers.
+NOTE: Perform this task only if your storage array has two controllers.
 
 ===== Steps
 
@@ -338,12 +328,9 @@ Contact technical support at http://mysupport.netapp.com[NetApp Support], 888-46
 
 == Step 7: Power up controller (simplex)
 
-[.lead]
-You apply power to the controller shelf to confirm that it is working correctly. Then, you can collect support data and resume operations.
+For a simplex configuration, apply power to the controller shelf, collect support data, and resume operations.
 
-===== Before you begin
-
-Perform this task only if your storage array has one controller.
+NOTE: Perform this task only if your storage array has one controller.
 
 ===== Steps
 
@@ -375,6 +362,6 @@ The file is saved in the Downloads folder for your browser with the name support
 +
 Contact technical support at http://mysupport.netapp.com[NetApp Support], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number.
 
-===== Result
+== Result
 
 Your HIC replacement is complete. You can resume normal operations.

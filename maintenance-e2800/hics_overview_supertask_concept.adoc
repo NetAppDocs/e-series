@@ -11,7 +11,7 @@ summary: Review requirements for E2800 HIC replacement.
 [.lead]
 Before you add, upgrade, or replace a host interface card in an E2800, review the requirements and considerations.
 
-== Overview of steps
+== Procedure overview
 
 The steps to replace a HIC depend on whether you have one or two controllers, as follows:
 
@@ -43,7 +43,6 @@ a|
 
 == Requirements for adding, upgrading, or replacing a HIC
 
-[.lead]
 If you plan to add, upgrade, or replace a host interface card (HIC), keep the following requirements in mind.
 
 * You have scheduled a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)

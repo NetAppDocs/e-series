@@ -11,28 +11,7 @@ summary: Review E2800 battery replacement requirements and considerations.
 [.lead]
 Before you replace an E2800 battery, review the requirements and considerations.
 
-== Procedure overview
-
-Each controller canister includes a battery that preserves cached data if the AC power fails. To protect your data, you must replace a failed battery as soon as possible.
-
-. Prepare for replacement, following the appropriate steps for a duplex or simplex configuration.
-. Remove the controller canister.
-. Remove the failed battery.
-. Install the new battery.
-. Re-install the controller canister.
-. Complete the replacement, following the appropriate steps for a duplex or simplex configuration.
-
-== Requirements
-
-If you plan to replace a failed battery, keep the following requirements in mind.
-
-* You must have installed SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
-+
-If this software has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install it.
-
-* You must have a replacement battery.
-* You must have an ESD wristband, or you have taken other antistatic precautions.
-* You should use labels to identify each cable that is connected to the controller canister.
+Each controller canister includes a battery that preserves cached data if the AC power fails.
 
 == Recovery Guru alerts
 
@@ -42,6 +21,19 @@ If the Recovery Guru in SANtricity System Manager reports one of following statu
 * Battery Replacement Required
 
 From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
+
+== Procedure overview
+
+To protect your data, you must replace a failed battery as soon as possible.
+
+The following is an overview of the steps required to replace a battery in an E2800 controller:
+
+. Prepare for replacement, following the appropriate steps for a duplex or simplex configuration.
+. Remove the controller canister.
+. Remove the failed battery.
+. Install the new battery.
+. Re-install the controller canister.
+. Complete the replacement, following the appropriate steps for a duplex or simplex configuration.
 
 == Duplex or simplex configuration
 
@@ -72,3 +64,15 @@ a|
 . Apply power to the controller shelf.
 
 |===
+
+== Requirements for replacing a battery
+
+If you plan to replace a failed battery, keep the following requirements in mind.
+
+* You must install SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
++
+If this software has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install it.
+
+* You must have a replacement battery.
+* You must have an ESD wristband, or you have taken other antistatic precautions.
+* You should use labels to identify each cable that is connected to the controller canister.

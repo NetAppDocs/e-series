@@ -17,7 +17,7 @@ Configuring an NVMe initiator in an InfiniBand environment includes installing a
 
 ===== Steps
 
-. Install the rdma, nvme-cli, and infiniband packages:
+. Install the `rdma`, `nvme-cli`, and `infiniband` packages:
 +
 ----
 
@@ -35,7 +35,7 @@ Configuring an NVMe initiator in an InfiniBand environment includes installing a
 # yum install nvme-cli
 ----
 
-. Enable ipoib. Edit the `/etc/rdma/rdma.conf` file and modify the entry for loading ipoib:
+. Enable `ipoib`. Edit the `/etc/rdma/rdma.conf` file and modify the entry for loading `ipoib`:
 +
 ----
 IPOIB_LOAD=yes
@@ -79,7 +79,7 @@ CA 'mlx4_0'
 
 . Set up IPv4 IP addresses on the ib ports.
 +
-For SUSE Linux Enterprise Server 12 and 15, create the file /etc/sysconfig/network/ifcfg-ib0
+For SUSE Linux Enterprise Server 12 and 15, create the file `/etc/sysconfig/network/ifcfg-ib0`
 +
 ----
 
@@ -95,7 +95,7 @@ For SUSE Linux Enterprise Server 12 and 15, create the file /etc/sysconfig/netwo
   STARTMODE='auto'
 ----
 +
-Then, create the file /etc/sysconfig/network/ifcfg-ib1.
+Then, create the file `/etc/sysconfig/network/ifcfg-ib1`.
 +
 ----
 
@@ -111,7 +111,7 @@ Then, create the file /etc/sysconfig/network/ifcfg-ib1.
   STARTMODE='auto'
 ----
 +
-For RHEL, create the file /etc/sysconfig/network-scripts/ifcfg-ib0:
+For RHEL, create the file `/etc/sysconfig/network-scripts/ifcfg-ib0`:
 +
 ----
 
@@ -128,7 +128,7 @@ For RHEL, create the file /etc/sysconfig/network-scripts/ifcfg-ib0:
   ONBOOT=yes
 ----
 +
-Then, create the file /etc/sysconfig/network-scripts/ifcfg-ib1:.
+Then, create the file `/etc/sysconfig/network-scripts/ifcfg-ib1`:
 +
 ----
 
@@ -184,7 +184,7 @@ As shown in the example below, the IP address for `ib1` is `11.11.11.255`.
 ----
 
 . Set up the NVMe-oF layer on the host.
- .. Create the following files under /etc/modules-load.d/ to load the `nvme-rdma` kernel module and make sure the kernel module will always be on, even after a reboot:
+ .. Create the following files under `/etc/modules-load.d/` to load the `nvme-rdma` kernel module and make sure the kernel module will always be on, even after a reboot:
 +
 ----
 

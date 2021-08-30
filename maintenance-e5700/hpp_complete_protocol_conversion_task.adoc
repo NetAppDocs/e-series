@@ -1,22 +1,21 @@
 ---
 permalink: maintenance-e5700/hpp_complete_protocol_conversion_task.html
 sidebar: sidebar
-keywords: convert, protocol, host, port, perform, complete, end, baseboard, hic, fc, iscsi, conversion, ib-iser, ib-srp, nvme, fiber, channel
-summary: After converting the protocol of the host ports, you need to perform additional steps before you can use the new protocol. The steps you might need to complete depend on the starting and ending protocols of the baseboard host ports and the HIC ports.
+keywords: E5700 change host protocol, E5700 baseboard ports, convert E5700 protocol, IB protocol, Infiniband protocol, Fibre Channel protocol, FC protocol, iSCSI protocol, iSER, RoCE, NVMe, converting host port protocol,
+summary: Complete the E5700 host protocol conversion.
 ---
-= Complete host protocol conversion
+= Complete E5700 host protocol conversion
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After converting the protocol of the host ports, you need to perform additional steps before you can use the new protocol. The steps you might need to complete depend on the starting and ending protocols of the baseboard host ports and the HIC ports.
+After converting the protocol of the host ports, perform additional steps to use the new protocol.
+
+The steps you might need to complete depend on the starting and ending protocols of the baseboard host ports and the HIC ports.
 
 == Complete FC to iSCSI conversion
 
-[.lead]
 If you previously had FC host ports and you converted to iSCSI, you might need to modify your existing configuration to support iSCSI. The following procedure is only applicable if there is no iSCSI HIC present.
-
-===== Before You Begin
 
 This task applies only if you are converting a storage array that has already been in use.
 
@@ -54,20 +53,19 @@ The length of the host port identifier name is determined by the host interface 
 +
 The *Delete* option does not physically remove the host port. This option removes the association between the host port and the host. Unless you remove the host bus adapter or the iSCSI initiator, the host port is still recognized by the controller.
 
- .. Click**Save** to apply your changes to the host port identifier settings.
+ .. Click *Save* to apply your changes to the host port identifier settings.
  .. Repeat these steps to add and remove any additional host port identifiers.
 
 . Reboot the host or perform a rescan so that the host properly discovers the LUNs.
 . Remount volumes or start using block volume.
 
+===== Result
+
 Your host protocol conversion is complete. You can resume normal operations.
 
 == Complete iSCSI to FC conversion
 
-[.lead]
 If you previously had iSCSI host ports and you converted to FC, you might need to modify your existing configuration to support FC. The following procedure is only applicable if no FC HIC is present.
-
-===== Before You Begin
 
 This task applies only if you are converting a storage array that has already been in use.
 
@@ -98,17 +96,18 @@ The length of the host port identifier name is determined by the host interface 
 +
 The *Delete* option does not physically remove the host port. This option removes the association between the host port and the host. Unless you remove the host bus adapter or the iSCSI initiator, the host port is still recognized by the controller.
 
- .. Click**Save** to apply your changes to the host port identifier settings.
+ .. Click *Save* to apply your changes to the host port identifier settings.
  .. Repeat these steps to add and remove any additional host port identifiers.
 . Reboot the host or perform a rescan so that the host properly discovers mapped storage.
 . Remount volumes or start using block volume.
 
+===== Result
+
 Your host protocol conversion is complete. You can resume normal operations.
 
-== Complete IB-iSER to/from IB-SRP, NVMe over InfiniBand, NVMe over RoCE conversion, or NVMe over Fiber Channel
+== Complete conversion for IB-iSER to/from IB-SRP, NVMe over IB, NVMe over RoCE, or NVMe over FC
 
-[.lead]
-After you apply the feature pack key to convert the protocol used by your InfiniBand iSER HIC port to/from SRP, NVMe over InfiniBand, NVMe over RocE, or NVMe over Fiber Channel you need to configure the host to use the appropriate protocol.
+After you apply the feature pack key to convert the protocol used by your InfiniBand iSER HIC port to/from SRP, NVMe over InfiniBand, NVMe over RocE, or NVMe over Fibre Channel, you need to configure the host to use the appropriate protocol.
 
 ===== Steps
 
@@ -119,5 +118,7 @@ For step-by-step instructions on how to configure the host to use SRP, iSER, or 
 . To connect the host to the storage array for an SRP configuration, you must enable the InfiniBand driver stack with the appropriate options.
 +
 Specific settings might vary between Linux distributions. Check the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix] for specific instructions and additional recommended settings for your solution.
+
+===== Result
 
 Your host protocol conversion is complete. You can resume normal operations.

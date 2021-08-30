@@ -14,7 +14,7 @@ The `InfiniBand-diags` package includes commands to display the globally unique 
 ===== Steps
 
 . Install the `InfiniBand-diags` package using the operating system's package management commands.
-. Run the ibstat command to display the port information.
+. Run the `ibstat` command to display the port information.
 . Record the initiator's GUIDs on the xref:srp_ib_worksheet_concept.adoc[SRP worksheet].
 . Select the appropriate settings in the HBA utility.
 +

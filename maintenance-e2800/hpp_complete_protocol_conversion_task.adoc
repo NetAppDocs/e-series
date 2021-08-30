@@ -9,11 +9,12 @@ summary: Complete the host port protocol conversion for an E2800 array.
 :imagesdir: ../media/
 
 [.lead]
-After converting the protocol of the host ports, you must perform additional steps before you can use the new protocol. The steps depend on the starting and ending protocols of the baseboard host ports and the HIC ports.
+After converting the protocol of the host ports, you must perform additional steps before you can use the new protocol.
+
+The steps depend on the starting and ending protocols of the baseboard host ports and the HIC ports.
 
 == Complete FC to iSCSI conversion
 
-[.lead]
 If you converted all host ports from FC to iSCSI, you must configure iSCSI networking.
 
 ===== Steps
@@ -48,7 +49,7 @@ The length of the host port identifier name is determined by the host interface 
 +
 The *Delete* option does not physically remove the host port. This option removes the association between the host port and the host. Unless you remove the host bus adapter or the iSCSI initiator, the host port is still recognized by the controller.
 
- .. Click **Save** to apply your changes to the host port identifier settings.
+ .. Click *Save* to apply your changes to the host port identifier settings.
  .. Repeat these steps to add and remove any additional host port identifiers.
 
 . Reboot the host or perform a rescan so that the host properly discovers the LUNs.
@@ -56,7 +57,6 @@ The *Delete* option does not physically remove the host port. This option remove
 
 == Complete iSCSI to FC conversion
 
-[.lead]
 If you converted all host ports from iSCSI to FC, you must configure FC networking.
 
 ===== Steps
@@ -91,7 +91,6 @@ The *Delete* option does not physically remove the host port. This option remove
 
 == Complete FC to FC/iSCSI conversion
 
-[.lead]
 If you previously had all FC host ports and you converted some of them to iSCSI, you might need to modify your existing configuration to support iSCSI.
 
 You can use either of the following options to use the new iSCSI ports. The exact steps depend on your current and planned network topologies. Option 1 assumes that you want to attach new iSCSI hosts to the array. Option 2 assumes that you want to convert the hosts connected to the converted ports from FC to iSCSI.
@@ -118,7 +117,6 @@ You can use either of the following options to use the new iSCSI ports. The exac
 
 == Complete iSCSI to FC/iSCSI conversion
 
-[.lead]
 If you previously had all iSCSI host ports and you converted some of them to FC, you might need to modify your existing configuration to support FC.
 
 You can use either of the following options to use the new FC ports. The exact steps depend on your current and planned network topologies. Option 1 assumes that you want to attach new FC hosts to the array. Option 2 assumes that you want to convert the hosts connected to the converted ports from iSCSI to FC.
@@ -145,7 +143,6 @@ You can use either of the following options to use the new FC ports. The exact s
 
 == Complete FC/iSCSI to FC conversion
 
-[.lead]
 If you previously had a combination of FC host ports and iSCSI host ports and you converted all ports to FC, you might need to modify your existing configuration to use the new FC ports.
 
 You can use either of the following options to use the new FC ports. The exact steps depend on your current and planned network topologies. Option 1 assumes that you want to attach new FC hosts to the array. Option 2 assumes that you want to convert the hosts connected to ports 1 and 2 from iSCSI to FC.
@@ -172,7 +169,6 @@ You can use either of the following options to use the new FC ports. The exact s
 
 == Complete FC/iSCSI to FC conversion
 
-[.lead]
 If you previously had a combination of FC host ports and iSCSI host ports and you converted all ports to iSCSI, you might need to modify your existing configuration to use the new iSCSI ports.
 
 You can use either of the following options to use the new iSCSI ports. The exact steps depend on your current and planned network topologies. Option 1 assumes that you want to attach new iSCSI hosts to the array. Option 2 assumes that you want to convert the hosts from FC to iSCSI.
