@@ -1,10 +1,10 @@
 ---
 permalink: web-services-proxy/access_intro_concept.html
 sidebar: sidebar
-keywords: manage, user, access, web, service, api, unified, manager, security, purpose, overview, management, configure
+keywords: Web Services, WSP, roles WSP, user access WSP
 summary: You can manage user access to the Web Services API and Unified Manager for security purposes.
 ---
-= Manage user access
+= Manage user access in Web Services Proxy
 :icons: font
 :imagesdir: ../media/
 
@@ -105,7 +105,7 @@ You can manage user access by applying additional encryption to passwords, setti
 [.lead]
 For the highest level of security, you can apply additional encryption to passwords using the existing SHA256 password encoding.
 
-===== Before You Begin
+===== Before you begin
 
 This additional encryption process applies a random set of bytes to each password (salt) for each SHA256 hash encryption. Salted SHA256 encryption is applied to all newly created passwords.
 
@@ -139,7 +139,7 @@ For example: <env key="enable-basic-auth">true</env>
 [.lead]
 To limit user access to specific functions, you can modify which roles are specified for each user account.
 
-===== Before You Begin
+===== Before you begin
 
 The Web Services Proxy includes role-based access control (RBAC), in which roles are associated with predefined users. Each role grants permissions to a specific level of functionality. You can change the roles assigned to user accounts by directly modifying the users.properties file.
 

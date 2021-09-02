@@ -208,14 +208,13 @@ For initial login, you use the "admin" credentials. "Admin" is considered a supe
 
 . Open a browser.
 . Enter the URL for the embedded or proxy implementation:
- ** Embedded: https://<controller>:<port>/devmgr/docs/
+ ** Embedded: ++ https://<controller>:<port>/devmgr/docs/ ++
 +
 NOTE: In this URL, <controller> is the IP address or FQDN of the controller, and <port> is the management port number of the controller (defaults to 8443).
-
- ** Proxy: http[s]://<server>:<port>/devmgr/docs/
++
+ ** Proxy: ++ http[s]://<server>:<port>/devmgr/docs/ ++
 +
 NOTE: In this URL, <server> is the IP address or FQDN of the server where the proxy is installed, and <port> is the listening port number (defaults to 8080 for HTTP or 8443 for HTTPS).
-
 +
 NOTE: If the listening port is already in use, the proxy detects the conflict and prompts you to choose a different listening port.
 +
@@ -273,7 +272,7 @@ After you install the Web Services Proxy, you can access Unified Manager to mana
 a|
 Google Chrome
 a|
-47
+79
 a|
 Microsoft Internet Explorer
 a|
@@ -281,20 +280,21 @@ a|
 a|
 Microsoft Edge
 a|
-EdgeHTML 12
+79
 a|
 Mozilla Firefox
 a|
-31
+70
 a|
 Safari
 a|
-9
+12
 |===
 
 ===== Steps
 
-. Open a browser and enter the following URL: http[s]://<server>:<port>/um
+. Open a browser and enter the following URL:
+`+http[s]://<server>:<port>/um+`
 +
 In this URL, <__server__> represents the IP address or FQDN of the server where the Web Services Proxy is installed, and <__port__> represents the listening port number (defaults to 8080 for HTTP or 8443 for HTTPS).
 +

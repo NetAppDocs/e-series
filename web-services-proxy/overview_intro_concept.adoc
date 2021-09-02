@@ -1,21 +1,23 @@
 ---
 permalink: web-services-proxy/overview_intro_concept.html
 sidebar: sidebar
-keywords: guide, describe, install, configure, santricity, web, service, proxy, unified, manager, restful, api, server, host, system, netapp, legacy, e-series, storage, web-based, interface, function, web, service, overview, requirement, compatibility, restriction, basic
-summary: This guide describes how to install and configure the SANtricity Web Services Proxy, which includes the SANtricity Unified Manager interface. The Web Services Proxy is a RESTful API server installed separately on a host system to manage hundreds of new and legacy NetApp E-Series storage systems. Unified Manager is a web-based interface that provides similar functions.
+keywords: Web Services, WSP, SANtricity API,
+summary: Manage E-series systems with Web Services Proxy.
 ---
-= Learn about Web Services
+= Web Services overview
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Web Services is an Application Programming Interface (API) that allows you to configure, manage, and monitor NetApp E-Series and EF-Series storage systems. By issuing API requests, you can complete workflows such as configuration, provisioning, and performance monitoring for E-Series storage systems.
+Web Services is an Application Programming Interface (API) that allows you to configure, manage, and monitor NetApp E-Series and EF-Series storage systems.
+
+By issuing API requests, you can complete workflows such as configuration, provisioning, and performance monitoring for E-Series storage systems.
 
 == Implementations
 Web Services is available in two implementations:
 
-* Embedded -- A RESTful API server is embedded on each controller of an E2800/EF280 storage system running NetApp SANtricity 11.30 or later versions, an E5700/EF570 running SANtricity 11.40 or later versions, and an EF300 or EF600 running SANtricity 11.60 or later versions. No installation is required.
-* Proxy -- The SANtricity Web Services Proxy is a RESTful API server installed separately on a Windows or Linux server. This host-based application can manage hundreds of new and legacy NetApp E-Series storage systems. In general, you should use the proxy for networks with more than 10 storage systems. The proxy can handle numerous requests more efficiently than the embedded API.
+* *Embedded* -- A RESTful API server is embedded on each controller of an E2800/EF280 storage system running NetApp SANtricity 11.30 or later versions, an E5700/EF570 running SANtricity 11.40 or later versions, and an EF300 or EF600 running SANtricity 11.60 or later versions. No installation is required.
+* *Proxy* -- The SANtricity Web Services Proxy is a RESTful API server installed separately on a Windows or Linux server. This host-based application can manage hundreds of new and legacy NetApp E-Series storage systems. In general, you should use the proxy for networks with more than 10 storage systems. The proxy can handle numerous requests more efficiently than the embedded API.
 
 The core of the API is available in both implementations.
 
@@ -95,7 +97,7 @@ Symbol Web
 a|
 Symbol Web is a URL in the REST API. It provides access to almost all symbol calls. The symbol function is part of the following URL:
 
-http://host:port/devmgr/storage-system/storage array ID/symbol/symbol function
+`+http://host:port/devmgr/storage-system/storage array ID/symbol/symbol function+`
 
 NOTE: Symbol-disabled storage systems are supported through the Web Services Proxy.
 

@@ -1,10 +1,10 @@
 ---
 permalink: web-services-proxy/array_intro_concept.html
 sidebar: sidebar
-keywords: manage, storage, system, network, discover, management, list, scale, up
+keywords: Web Services, WSP, SANtricity API, discover storage WSP,
 summary: To manage storage systems in the network, you must first discover them and then add them to the management list.
 ---
-= Manage storage systems
+= Manage storage systems using Web Services Proxy
 :icons: font
 :imagesdir: ../media/
 
@@ -13,15 +13,13 @@ To manage storage systems in the network, you must first discover them and then 
 
 == Discover storage systems
 
-[.lead]
 You can set automatic discovery or manually discover storage systems.
 
 === Automatically discover storage systems
 
-[.lead]
 You can specify that storage systems are automatically discovered in the network by modifying the settings in the wsconfig.xml file. By default, IPv6 automatic discovery is disabled and IPv4 is enabled.
 
-===== Before You Begin
+===== Before you begin
 
 * Before enabling IPv6 discovery settings, verify that your infrastructure supports IPv6 connectivity to the storage systems to mitigate any connection issues.
 
@@ -46,10 +44,9 @@ NOTE: When the paths are configured, but not configured so that the server can r
 
 === Discover and add storage systems using API endpoints
 
-[.lead]
 You can use API endpoints to discover and add storage systems to the managed list. This procedure creates a management connection between the storage system and the API.
 
-===== Before You Begin
+===== Before you begin
 
 * You must be logged in to the interactive API documentation.
 * For storage systems with SANtricity versions 11.30 and later, the legacy management interface for SYMbol must be enabled in the SANtricity System Manager interface. Otherwise, the Discovery endpoints fail. You can find this setting by opening System Manager, and then going to *Settings* > *System* > *Additional Settings* > *Change Management Interface*.
@@ -194,10 +191,9 @@ No parameters are required.
 
 == Scale up the number of managed storage systems
 
-[.lead]
 By default, the API can manage up to 100 storage systems. If you need to manage more, you must bump the memory requirements for the server.
 
-===== Before You Begin
+===== Before you begin
 
 The server is set to use 512 MB of memory. For every 100 extra storage systems in your network, add 250 MB to that number. Do not add more memory than what you physically have. Allow enough extra for your operating system and other applications.
 

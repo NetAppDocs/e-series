@@ -1,30 +1,25 @@
 ---
 sidebar: sidebar
 permalink: san-spvc-ic_user_access.html
-keywords: E-Series, eseries, vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter, VMware vSphere Client, vCenter plugin roles, vCenter plugin user access permissions
-summary: Configure access permissions for Plugin for vCenter users.
+keywords: user access vCenter plugin, user roles vCenter plugin, privileges vCenter plugin, access permissions vCenter plugin
+summary: Configure access permissions for Storage Plugin for vCenter.
 ---
 
-= User access
+= Configure plugin access permissions
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2021-06-30 09:58:12.278750
-//
 
 [.lead]
-Follow these instructions to configure access permissions for the plugin’s users.
+Follow these instructions to configure access permissions for the Storage Plugin for vCenter, which includes users, roles, and privileges.
 
-=== Review required vSphere privileges
+== Review required vSphere privileges
 
 |===
-|Plugin Access Type |vSphere Privilege Required
+|Plugin access type |vSphere privilege required
 
 |Read-Write (Configure)
 |Datastore.Configure
@@ -32,28 +27,28 @@ Follow these instructions to configure access permissions for the plugin’s use
 |Datastore.Browse
 |===
 
-=== Configure Storage Administrator role
+== Configure Storage Administrator roles
 
 To provide read/write privileges for plugin users, you can create, clone, or edit a role. For more information about configuring roles in the vSphere Client, see the following topic in the VMware Doc Center:
 
 ** https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-41E5E52E-A95B-4E81-9724-6AD6800BEF78.html[Create a Custom Role^]
 
-==== Access role actions
+=== Access role actions
 
 . From the home page of the vSphere Client, select *Administrator* from the access control area.
 . Click *Roles* from the access control area.
 . Perform one of the following actions:
 
-** New role: Click on the Create Role action icon.
-** Clone role: Select an existing role and click on the Clone Role action icon.
-** Edit existing role: Select an existing role and click on the Edit Role action icon.
+** *Create new role*: Click on the *Create Role* action icon.
+** *Clone role*: Select an existing role and click on the *Clone Role* action icon.
+** *Edit existing role*: Select an existing role and click on the *Edit Role* action icon.
 
 [NOTE]
 The Administrator role is not editable.
 
 The appropriate wizard appears, depending on the above selection.
 
-==== Create a new role
+=== Create a new role
 
 . In the Privileges list, select the access permissions to assign to this role.
 +
@@ -63,7 +58,7 @@ To allow Read-Only access to the plugin, select *Datastore* > *Browse* *datastor
 . Name the role and provide a description.
 . Click *Finish*.
 
-==== Clone a role
+=== Clone a role
 
 . Name the role and provide a description.
 . Click *OK* to finish the wizard.
@@ -76,7 +71,7 @@ To allow Read-Only access to the plugin, select *Datastore* > *Browse* *datastor
 . Update the name and description, if desired.
 . Click *Finish*.
 
-==== Edit an existing role
+=== Edit an existing role
 
 . In the Privileges list, select the access permissions to assign to this role.
 +
@@ -86,7 +81,7 @@ To allow Read-Only access to the plugin, select *Datastore* > *Browse* *datastor
 . Update the name or description, if desired.
 . Click *Finish*.
 
-=== Set permissions for vCenter Server Appliance
+== Set permissions for vCenter Server Appliance
 
 After setting privileges for a role, you must then add a permission to the vCenter Server Appliance. This permission allows a given user or group access to the plugin.
 
