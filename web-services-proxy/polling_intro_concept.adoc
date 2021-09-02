@@ -1,10 +1,10 @@
 ---
 permalink: web-services-proxy/polling_intro_concept.html
 sidebar: sidebar
-keywords: configure, automatic, poll, disk, volume, statistic, discover, storage, system, manage, overview, functionality, configure, interval
+keywords: polling Web Services Proxy, WSP statistics, poll WSP,
 summary: You can configure automatic polling for all disk and volume statistics on discovered storage systems.
 ---
-= Manage automatic polling for statistics
+= Manage automatic polling for Web Services Proxy statistics
 :icons: font
 :imagesdir: ../media/
 
@@ -13,7 +13,6 @@ You can configure automatic polling for all disk and volume statistics on discov
 
 == Overview of statistics
 
-[.lead]
 Statistics provide information about the data collection rates and performance of the storage systems.
 
 The Web Services Proxy provides access to the following types of statistics:
@@ -27,7 +26,6 @@ You can retrieve raw statistics regardless of whether the automatic polling is e
 
 == Statistics functionality
 
-[.lead]
 The Web Services Proxy provides API endpoints that enable the retrieval of raw and analyzed controller and interface statistics from supported hardware models and software versions.
 
 === Raw Statistics APIs
@@ -56,13 +54,13 @@ NOTE: When the system starts, there is no previous statistics collection to use 
 
 == Configure polling intervals
 
-[.lead]
 You can specify polling intervals for statistics gathering by modifying the wsconfig.xml file.
 
-===== Before You Begin
+===== Before you begin
 
 * The storage systems must be discovered by the proxy.
 
+===== About this task
 To configure polling intervals, you modify the wsconfig.xml file to specify a polling interval in seconds.
 
 NOTE: Because the statistics are cached in memory, you might see an increase of about 1.5 MB of memory-use for each storage system.

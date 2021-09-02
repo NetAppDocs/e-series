@@ -1,32 +1,29 @@
 ---
 sidebar: sidebar
 permalink: san-spvc-ic_storage_array_discovery.html
-keywords: E-Series, eseries, vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter, VMware vSphere Client, vCenter plugin array discovery
+keywords: discover arrays vCenter plugin, discover storage resources Plugin for vCenter, resolve certificates vCenter plugin
 summary: Use the Plugin for vCenter interface to discover the IP addresses of arrays in your network.
 ---
 
-= Storage array discovery
+= Discover storage arrays in the plugin
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2021-06-30 09:58:12.302428
-//
 
 [.lead]
-To display and manage storage resources, you must use the plugin interface to discover the IP addresses of arrays in your network.
+To display and manage storage resources, you must use the Storage Plugin for vCenter interface to discover the IP addresses of arrays in your network.
 
-=== Enter network addresses for discovery
+== Step 1: Enter network addresses for discovery
 
-. Before you begin, make sure that:
+=== Before you begin
 
-** You know the network IP addresses (or range of addresses) of the array controllers.
-** The storage arrays are correctly set up and configured, and you know the storage array login credentials (user name and password).
+** You must know the network IP addresses (or range of addresses) of the array controllers.
+** The storage arrays must be correctly set up and configured, and you must know the storage array login credentials (user name and password).
+
+=== Steps
 
 . From the Manage page, select *Add/Discover*.
 +
@@ -49,13 +46,13 @@ The system performs a credential check on each array that you are adding to the 
 
 . Click *Next* to proceed to the next step in the wizard.
 +
-If the storage arrays have valid certificates, go to “Provide passwords” on page 9.
+If the storage arrays have valid certificates, go to _Step 3: Provide passwords_.
 +
-If any storage arrays do not have valid certificates, the Step 2: Resolve Self-Signed Certificates dialog box appears. Go to the section <xref>, “Resolve untrusted certificates during discovery.”
+If any storage arrays do not have valid certificates, the Resolve Self-Signed Certificates dialog box appears. Go to _Step 2: Resolve untrusted certificates during discovery_.
 +
 If you want to import CA-signed certificates, cancel out of the discovery wizard and click *Certificate Management* from the left panel. Refer to the online help for further instructions.
 
-=== Resolve untrusted certificates during discovery
+== Step 2: Resolve untrusted certificates during discovery
 
 You must resolve any certificate issues before proceeding with the discovery process.
 
@@ -67,7 +64,7 @@ You must resolve any certificate issues before proceeding with the discovery pro
 
 . Click *Next* to proceed to the next step in the wizard.
 
-=== Provide passwords
+== Step 3: Provide passwords
 
 As the last step for discovery, you must enter the passwords for the storage arrays that you want to add to your management domain.
 
