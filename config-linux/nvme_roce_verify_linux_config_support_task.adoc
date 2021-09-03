@@ -45,7 +45,7 @@ The following restrictions are in effect for the 11.60 release. See the https://
 
 === Switch restrictions
 
-IMPORTANT: *RISK OF DATA LOSS.* You must enable Priority Flow Control or Global Pause Control on the switch to eliminate the risk of data loss in an NVMe over RoCE environment.
+NOTE: *RISK OF DATA LOSS.* You must enable Priority Flow Control or Global Pause Control on the switch to eliminate the risk of data loss in an NVMe over RoCE environment.
 
 === Host, host protocol, and host operating system restrictions
 

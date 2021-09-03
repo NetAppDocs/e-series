@@ -11,7 +11,7 @@ summary: Multipath software provides a redundant path to the storage array in ca
 [.lead]
 Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. The multipath software presents the operating system with a single virtual device that represents the active physical paths to the storage. The multipath software also manages the failover process that updates the virtual device. You use the device mapper multipath (DM-MP) tool for Linux installations.
 
-== Configuring the host to run failover
+== Configure the host to run failover
 
 [.lead]
 The SUSE Linux Enterprise Server host requires configuration changes to run failover. The failover solution uses DM-MP.

@@ -11,7 +11,7 @@ summary: When you install the SANtricity Storage Manager software on your manage
 [.lead]
 When you install the SANtricity Storage Manager software on your management station, the command line interface (CLI) is installed to help you manage your array. By also installing the software on the host, the Host Context Agent is installed that helps the host push configuration information to the storage array controllers through the I/O path.
 
-IMPORTANT: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricty System Manager, refer to the _Download the command line interface (CLI)_ topic under the SANtricity System Manager Online Help.
+NOTE: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricty System Manager, refer to the _Download the command line interface (CLI)_ topic under the SANtricity System Manager Online Help.
 
 * You are using SANtricity software 11.53 or earlier.
 * You must have the correct administrator or superuser privileges.
