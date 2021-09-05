@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/nvme_roce_discover_connect_storage_host_task.html
 sidebar: sidebar
-keywords: making, make, definition, host, santricity, system, manager, discover, target, controller, port, estabilish, nvme, connection, connect, host
+keywords: discover storage, host, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: Before making definitions of each host in SANtricity System Manager, you must discover the target controller ports from the host, and then establish NVMe connections.
 ---
 = Discover and connect to the storage from the host
@@ -11,13 +11,15 @@ summary: Before making definitions of each host in SANtricity System Manager, yo
 [.lead]
 Before making definitions of each host in SANtricity System Manager, you must discover the target controller ports from the host, and then establish NVMe connections.
 
+===== Steps
+
 . Discover available subsystems on the NVMe-oF target for all paths using the following command:
 +
 ----
 nvme discover -t rdma -a target_ip_address
 ----
 +
-In this command, target_ip_address is the IP address of the target port.
+In this command, `target_ip_address` is the IP address of the target port.
 +
 NOTE: The `nvme discover` command discovers all controller ports in the subsystem, regardless of host access.
 +

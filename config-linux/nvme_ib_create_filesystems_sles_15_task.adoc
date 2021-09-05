@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/nvme_ib_create_filesystems_sles_15_task.html
 sidebar: sidebar
-keywords: sles, create, filesystem, native, nvme, device, filesystem, sles
+keywords: file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: For SLES 15, you create a filesystem on the native nvme device and mount the filesystem.
 ---
 = Create filesystems (SLES 15)
@@ -11,13 +11,15 @@ summary: For SLES 15, you create a filesystem on the native nvme device and moun
 [.lead]
 For SLES 15, you create a filesystem on the native nvme device and mount the filesystem.
 
-. Run the multipath -ll command to get a list of /dev/nvme devices.
+===== Steps
+
+. Run the `multipath -ll` command to get a list of `/dev/nvme` devices.
 +
 ----
 # multipath -ll
 ----
 +
-The result of this command shows device nvme0n6.
+The result of this command shows device `nvme0n6`.
 +
 ----
 eui.000082dd5c05d39300a0980000a52225 [nvme]:nvme0n6 NVMe,NetApp E-Series,08520000
@@ -32,9 +34,9 @@ size=4194304 features='n/a' hwhandler='ANA' wp=rw
   `- 0:3:1 nvme0c3n1 0:0 n/a non-optimized live
 ----
 
-. Create a file system on the partition for each /dev/nvme0n# device.
+. Create a file system on the partition for each `/dev/nvme0n#` device.
 +
-The method for creating a file system varies depending on the file system chosen. This example shows creating an ext4 file system.
+The method for creating a file system varies depending on the file system chosen. This example shows creating an `ext4` file system.
 +
 ----
 # mkfs.ext4 /dev/disk/by-id/nvme-eui.000082dd5c05d39300a0980000a52225

@@ -11,12 +11,16 @@ summary: Using SANtricity System Manager, you define the hosts that send data to
 [.lead]
 Using SANtricity System Manager, you define the hosts that send data to the storage array. Defining a host is one of the steps required to let the storage array know which hosts are attached to it and to allow I/O access to the volumes.
 
+===== Before you begin
+
 Keep these guidelines in mind when you define a host:
 
 * You must define the host identifier ports that are associated with the host.
 * Make sure that you provide the same name as the host's assigned system name.
 * This operation does not succeed if the name you choose is already in use.
 * The length of the name cannot exceed 30 characters.
+
+===== Steps
 
 . Select *Storage* > *Hosts*.
 . Click *Create* > *Host*.
@@ -41,11 +45,11 @@ Select one of the following options from the drop-down list:
 
  ** *SANtricity 11.60 and newer*
 +
-Linux
+`Linux`
 
  ** *Pre SANtricity 11.60*
 +
-Linux DM-MP (Kernel 3.10 or later)
+`Linux DM-MP (Kernel 3.10 or later)`
 
 a|
 Host interface type
@@ -73,6 +77,8 @@ You must add one host port identifier at a time to associate it with the host, b
 
 . Click *Create*.
 
+===== Result
+
 After the host is successfully created, SANtricity System Manager creates a default name for each host port configured for the host.
 
-The default alias is <Hostname_Port Number>. For example, the default alias for the first port created for host IPT is IPT_1.
+The default alias is ``<Hostname_Port Number>``. For example, the default alias for the first port created for `host IPT is IPT_1`.

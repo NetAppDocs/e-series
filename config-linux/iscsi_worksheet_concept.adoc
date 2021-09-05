@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/iscsi_worksheet_concept.html
 sidebar: sidebar
-keywords: worksheet, record, iscsi, storage, configuration, information, provision, task, linux, recommend, target, iqn
-summary: You can use this worksheet to record iSCSI storage configuration information. You need this information to perform provisioning tasks.
+keywords: iSCSI worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Use this worksheet to record iSCSI storage configuration information.
 ---
 = iSCSI worksheet - Linux
 :icons: font

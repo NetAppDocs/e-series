@@ -1,8 +1,8 @@
 ---
 permalink: config-windows/install_configure_host_utilities_task.html
 sidebar: sidebar
-keywords: windows, unified, host, utilities, tools, enable, connect, computer, netapp, storage, system, parameter, disk, timeout, netapp
-summary: Windows Unified Host Utilities 7.0 includes tools to enable you to connect host computers to NetApp storage systems and set required parameters on host computers. You can also set appropriate disk timeouts for best read/write performance with NetApp storage.
+keywords: Windows Unified Host Utilities, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Install Windows Unified Host Utilities for Windows express method.
 ---
 = Install and configure Windows Unified Host Utilities 7.0
 :icons: font
@@ -10,6 +10,8 @@ summary: Windows Unified Host Utilities 7.0 includes tools to enable you to conn
 
 [.lead]
 Windows Unified Host Utilities 7.0 includes tools to enable you to connect host computers to NetApp storage systems and set required parameters on host computers. You can also set appropriate disk timeouts for best read/write performance with NetApp storage.
+
+===== Before you begin
 
 See the _Windows Host Utilities 7.0 Installation Guide,_ found under http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61343[NetApp Documentation: Host Utilities (current releases)].
 
@@ -20,6 +22,8 @@ NOTE: The versions are listed in a column within each supported configuration.
 * Download the Unified Host Utilities 7.0 from http://mysupport.netapp.com[NetApp Support].
 
 NOTE: This utilities package is not installed using the SANtricity Storage Manager installer.
+
+===== Steps
 
 . Use the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] to determine the appropriate version of Unified Host Utilities 7.0 to install.
 +

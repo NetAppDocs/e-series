@@ -1,7 +1,7 @@
 ---
 permalink: upgrade-santricity/upgrade_drive_firmware_task.html
 sidebar: sidebar
-keywords: upgrade, drive, firmware, feature, bug, fix, download, file, support, site
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, drive firmware, upgrade SANtricity, upgrade OS, upgrade E-Series, upgrade firmware, upgrading, upgrade IOM firmware, upgrade NVSRAM, upgrade controller
 summary: You upgrade your drives' firmware to make sure you have all the latest features and bug fixes.
 ---
 = Upgrade drive firmware
@@ -9,12 +9,13 @@ summary: You upgrade your drives' firmware to make sure you have all the latest 
 :imagesdir: ../media/
 
 [.lead]
-You upgrade your drives' firmware to make sure you have all the latest features and bug fixes.
+Follow this procedure to upgrade your drives' firmware, which ensures you have all the latest features and fixes.
 
-== Step 1. Download drive firmware files from support site
+== Step 1: Download drive firmware files from support site
 
-[.lead]
-You download the drive firmware files from the NetApp Support Site to your management client.
+In this step, you go to the NetApp Support site to download the drive firmware files to your management client.
+
+===== Steps
 
 . In SANtricity System Manager, select *Support* > *Upgrade Center*.
 . Under Drive Firmware upgrade, click *NetApp Support*.
@@ -22,16 +23,19 @@ You download the drive firmware files from the NetApp Support Site to your manag
 . Select *Disk Drive & Firmware Matrix*.
 . Follow the remaining instructions.
 
-== Step 2. Begin drive firmware upgrade
+== Step 2: Begin drive firmware upgrade
 
-[.lead]
-You upgrade your drives' firmware to make sure you have all the latest features and bug fixes.
+In this step, you upgrade the drives' firmware.
+
+===== Before you begin
 
 * You have backed up your data using disk-to-disk backup, volume copy (to a volume group not affected by the planned firmware upgrade), or a remote mirror.
 * The storage array has an Optimal status.
 * All drives have an Optimal status.
 * No configuration changes are running on the storage array.
 * If the drives are capable of only an offline upgrade, I/O activity to all volumes associated with the drives is stopped.
+
+===== Steps
 
 . Under Drive Firmware upgrade, click *Begin Upgrade*.
 +
@@ -46,25 +50,25 @@ You can select up to four drive firmware files, one at a time. If more than one 
 
 . Click *Next*.
 +
-The**Select Drives** dialog box appears, which lists the drives that you can upgrade with the selected files.
+The Select Drives dialog box appears, which lists the drives that you can upgrade with the selected files.
 +
 Only drives that are compatible appear.
 +
 The selected firmware for the drive appears in the *Proposed Firmware* information area. If you must change the firmware, click *Back* to return to the previous dialog.
 
 . Select the type of upgrade you want to perform:
- ** *Online (default)*- Shows the drives that can support a firmware download _while the storage array is processing I/O_. You do not have to stop I/O to the associated volumes using these drives when you select this upgrade method. These drives are upgraded one at a time while the storage array is processing I/O to those drives.
- ** *Offline (parallel)* - Shows the drives that can support a firmware download _only while all I/O activity is stopped_ on any volumes that use the drives. You must stop all I/O activity on any volumes that use the drives you are upgrading when you select this upgrade method. Drives that do not have redundancy must be processed as an offline operation. This requirement includes any drive associated with SSD cache, a RAID 0 volume group, or any pool or volume group that is degraded. The offline (parallel) upgrade is typically faster than the online (default) method.
+ ** *Online (default)* -- Shows the drives that can support a firmware download _while the storage array is processing I/O_. You do not have to stop I/O to the associated volumes using these drives when you select this upgrade method. These drives are upgraded one at a time while the storage array is processing I/O to those drives.
+ ** *Offline (parallel)* -- Shows the drives that can support a firmware download _only while all I/O activity is stopped_ on any volumes that use the drives. You must stop all I/O activity on any volumes that use the drives you are upgrading when you select this upgrade method. Drives that do not have redundancy must be processed as an offline operation. This requirement includes any drive associated with SSD cache, a RAID 0 volume group, or any pool or volume group that is degraded. The offline (parallel) upgrade is typically faster than the online (default) method.
 . In the first column of the table, select the drive or drives you want to upgrade.
 . Click *Start*, and confirm that you want to perform the operation.
 +
 If you need to stop the upgrade, click *Stop*. Any firmware downloads currently in progress complete. Any firmware downloads that have not started are canceled.
 +
-IMPORTANT: Stopping the drive firmware upgrade might result in data loss or unavailable drives.
+CAUTION: Stopping the drive firmware upgrade might result in data loss or unavailable drives.
 
 . (Optional) To see a list of what was upgraded, click *Save Log*.
 +
-The file is saved in the Downloads folder for your browser with the namedrive_upgrade_log-timestamp.txt.
+The file is saved in the Downloads folder for your browser with the name `drive_upgrade_log-timestamp.txt`.
 
 . If any of the following errors occur during the upgrade procedure, take the appropriate recommended action.
 +
@@ -100,7 +104,7 @@ a|
 If one or more volume groups or disk pools are incomplete, you must correct this error condition before you can upgrade the firmware. Launch System Manager and use the Recovery Guru to resolve the problem.
 
 a|
-Exclusive operations \(other than background media/parity scan\) currently running on any volume groups
+Exclusive operations (other than background media/parity scan) currently running on any volume groups
 a|
 If one or more exclusive operations are in progress, the operations must complete before the firmware can be upgraded. Use System Manager to monitor the progress of the operations.
 
@@ -125,7 +129,7 @@ a|
 A storage partitions mapping database error occurred on a controller. Contact technical support to resolve this issue.
 
 a|
-Configuration Database Validation \(If supported by the storage array’s controller version\)
+Configuration Database Validation (if supported by the storage array’s controller version)
 a|
 A configuration database error occurred on a controller. Contact technical support to resolve this issue.
 
@@ -155,5 +159,7 @@ a|
 Contact technical support to resolve this issue.
 
 |===
+
+== Result
 
 Your drive firmware upgrade is complete. You can resume normal operations.

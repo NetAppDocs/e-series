@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_fc_access_physical_targets_concept.html
 sidebar: sidebar
-keywords: configure, i/o, direct, device, target, based, linux, version, sles, physical, nvme, multipath, underly, native, physical
-summary: You can configure the I/O directed to the device target based on your Linux version. For SLES 15, I/O is directed to the physical NVMe device targets by the Linux host. A native NVMe multipathing solution manages the physical paths underlying the single apparent physical device displayed by the host.
+keywords: NVMe volumes physical, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Configure the I/O directed to the device target based on your Linux version.
 ---
 = Access NVMe volumes for physical NVMe device targets
 :icons: font
@@ -11,7 +11,7 @@ summary: You can configure the I/O directed to the device target based on your L
 [.lead]
 You can configure the I/O directed to the device target based on your Linux version. For SLES 15, I/O is directed to the physical NVMe device targets by the Linux host. A native NVMe multipathing solution manages the physical paths underlying the single apparent physical device displayed by the host.
 
-NOTE: It is best practice to use the links in /dev/disk/by-id/ rather than /dev/nvme0n1, for example:
+NOTE: It is best practice to use the links in `/dev/disk/by-id/` rather than `/dev/nvme0n1`, for example:
 
 ----
 # ls /dev/disk/by-id/ -l lrwxrwxrwx 1 root root 13 Oct 18 15:14
@@ -44,7 +44,7 @@ nvme-subsys0 - NQN=nqn.1992-08.com.netapp:5700.600a098000a522500000000589aa8a6
 +- nvme1 rdma traddr=192.4.22.141 trsvcid=4420 live
 ----
 
-If you specify a namespace device when using the 'nvme list-subsys' command, it provides additional information about the paths to that namespace:
+If you specify a namespace device when using the `nvme list-subsys` command, it provides additional information about the paths to that namespace:
 
 ----
 # nvme list-subsys /dev/nvme0n1

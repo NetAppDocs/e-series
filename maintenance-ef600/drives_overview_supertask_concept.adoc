@@ -1,21 +1,19 @@
 ---
 permalink: maintenance-ef600/drives_overview_supertask_concept.html
 sidebar: sidebar
-keywords: replace, drive, requirement, consideration, replacing
-summary: Before you replace a drive, you need to be aware of certain requirements and considerations.
+keywords: replace EF300 drive, replace EF600 drive,
+summary:  Review requirements and considerations before replacing  drives in EF300 or EF600.
 ---
-= Overview and requirements
+=  Requirements for EF300 or EF600 drive replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you replace a drive, you need to be aware of certain requirements and considerations.
+Before replacing a drive in an EF300 or EF600 array, review the requirements and considerations.
 
-== Requirements for replacing drives
+CAUTION: Be aware that the drives in your storage array are fragile; improper drive handling is a leading cause of drive failure.
 
-[.lead]
-The drives in your storage array are fragile. Improper drive handling is a leading cause of drive failure.
-
+== Drive replacement requirements
 Follow these rules to avoid damaging the drives in your storage array:
 
 * Prevent electrostatic discharge (ESD):
@@ -30,28 +28,18 @@ Follow these rules to avoid damaging the drives in your storage array:
  ** Do not bump drives against other surfaces.
  ** Before removing a drive from a shelf, unlatch the handle and wait 30 seconds for the drive to spin down.
  ** Always use approved packaging when shipping drives.
-* Avoid magnetic fields:
- ** Keep drives away from magnetic devices.
+* Avoid magnetic fields. Keep drives away from magnetic devices.
 +
 Magnetic fields can destroy all data on the drive and cause irreparable damage to the drive circuitry.
 
-=== 24-drive shelves
-
-*Drive numbering in an EF300 or EF600 controller shelf*
+== Drive staggering in 24-drive controller shelf
 
 The following figure shows how the drives are numbered in each shelf (the shelf's front bezel has been removed).
 
 image::../media/ef600_drives_numbered.png[]
-
-*Drive staggering in an EF300 or EF600 controller shelf*
 
 When inserting fewer than 24 drives into an EF300 or EF600 controller, you must alternate between the two halves of the controller. Beginning with the far left and then moving to the far right, place the drives in one at a time.
 
 The following figure shows how to stagger the drives between the two halves.
 
 image::../media/ef600_drives_staggering.png[]
-
-This section describes how to replace a drive in the following controller shelves:
-
-* EF300 controller shelf
-* EF600 controller shelf

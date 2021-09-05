@@ -1,23 +1,21 @@
 ---
 permalink: maintenance-e2800/hics_overview_supertask_concept.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: E2800 replace HIC, E2800 replace host interface card, replacing E2800 HIC, E2800 replace HIC, adding E2800 HIC, upgrading E2800 HIC, E2800, E-Series, eseries
+summary: Review requirements for E2800 HIC replacement.
 ---
-= Overview and requirements
+= Requirements for E2800 HIC replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you add, upgrade or replace a host interface card, you need to be aware of certain requirements and considerations.
+Before you add, upgrade, or replace a host interface card in an E2800, review the requirements and considerations.
 
-== Host interface card overview
-
-[.lead]
-You can add, upgrade, or replace a HIC in the following controller shelves:
+== Procedure overview
 
 The steps to replace a HIC depend on whether you have one or two controllers, as follows:
 
+[options = "header"]
 |===
 | If your storage array has...| You must...
 a|
@@ -43,9 +41,8 @@ a|
 
 |===
 
-== Requirements for adding, upgrading or replacing a HIC
+== Requirements for adding, upgrading, or replacing a HIC
 
-[.lead]
 If you plan to add, upgrade, or replace a host interface card (HIC), keep the following requirements in mind.
 
 * You have scheduled a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)
@@ -62,4 +59,4 @@ For information about compatible hardware, refer to the https://mysupport.netapp
 * You have labels to identify each cable that is connected to the controller canister.
 * You have installed SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
 +
-If SANtricity Storage Manager has not yet been installed, follow the instructions in the link:../com.netapp.doc.ssm-exp-ic-lin/home.html[Linux express configuration], link:../com.netapp.doc.ssm-exp-ic-win/home.html[Windows express configuration], or link:../com.netapp.doc.ssm-exp-ic-vm/home.html[VMware express configuration] to download and install the software.
+If SANtricity Storage Manager has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install the software.

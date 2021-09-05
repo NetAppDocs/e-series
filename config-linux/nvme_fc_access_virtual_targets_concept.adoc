@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/nvme_fc_access_virtual_targets_concept.html
 sidebar: sidebar
-keywords: configure, i/o, direct, device, target, based, linux, version, dm-mp, manage, physical, path, virtual, nvme
+keywords:  NVMe volumes virtual, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: You can configure the I/O directed to the device target based on your Linux version. DM-MP manages the physical paths underlying these virtual targets.
 ---
 = Access NVMe volumes for virtual device targets

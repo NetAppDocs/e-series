@@ -1,15 +1,17 @@
 ---
 permalink: maintenance-e2800/batteries_remove_failed_task.html
 sidebar: sidebar
-keywords: 
-summary: 'After removing the controller canister from the controller shelf, you can remove the battery.'
+keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries
+summary: After removing the controller canister from the controller shelf, you can remove the battery.
 ---
-= Remove failed battery
+= Remove failed E2800 battery
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 After removing the controller canister from the controller shelf, you can remove the battery.
+
+===== Steps
 
 . Remove the controller canister's cover by pressing down on the button and sliding the cover off.
 . Confirm that the green LED inside the controller (between the battery and the DIMMs) is off.
@@ -30,6 +32,6 @@ image:../media/legend_icon_01_maint-e2800.gif[]Battery release latch image:../me
 . Lift up on the battery, and slide it out of the controller canister.
 . Follow the appropriate procedures for your location to recycle or dispose of the failed battery.
 +
-WARNING: To comply with International Air Transport Association (IATA) regulations, never ship a lithium battery by air unless it is installed within the controller shelf.
+CAUTION: To comply with International Air Transport Association (IATA) regulations, never ship a lithium battery by air unless it is installed within the controller shelf.
 
-Go to .
+. Go to link:batteries_install_new_task.html[Install new battery].

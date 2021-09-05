@@ -11,7 +11,11 @@ summary: The import of the remote storage device is performed through the Import
 [.lead]
 The import of the remote storage device is performed through the Import Remote Storage wizard under the SANtricity System Manager. The Remote Storage Import feature allows data from a remote storage device to be moved to the local E-Series array.
 
+===== Before You Begin
+
 A remote storage volume device can be started using the Import Remote Storage wizard in SANtricity System Manager. The wizard prompts you for the IP address(es) and the iSCSI IQN of the remote storage system as well as the LUN number for the remote storage device. This information is then sent to the controller firmware to initiate the import.
+
+===== Steps
 
 . From the SANtricity System Manager, click *Storage*.
 +

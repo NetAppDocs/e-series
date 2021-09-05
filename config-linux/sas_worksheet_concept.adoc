@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/sas_worksheet_concept.html
 sidebar: sidebar
-keywords: worksheet, record, sas, storage, configuration, information, perform, provision, task, worksheet, linux, host, identifier, target, mapping, map
-summary: You can use this worksheet to record SAS storage configuration information. You need this information to perform provisioning tasks.
+keywords: SAS worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Use this worksheet to record SAS storage configuration information.
 ---
 = SAS worksheet - Linux
 :icons: font
@@ -13,7 +13,7 @@ You can use this worksheet to record SAS storage configuration information. You 
 
 image::../media/sas_topology_diagram_conf-lin.gif[Diagram: SAS topology]
 
-== Host Identifiers
+== Host identifiers
 
 [options="header"]
 |===
@@ -50,17 +50,15 @@ a|
 
 |===
 
-== Target Identifiers
+== Target identifiers
 
 Recommended configurations consist of two target ports.
 
-== Mappings Host
+== Mappings host
 
-[options="header"]
 |===
 a|
-Mappings Host Name
-a|
+Mappings Host Name a|
 
 a|
 Host OS Type

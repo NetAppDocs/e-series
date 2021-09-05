@@ -1,30 +1,38 @@
 ---
 permalink: maintenance-e5700/canisters_fan_replace_task.html
 sidebar: sidebar
-keywords: 60-drive, controller, shelf, drive, fan, canister, fail, replace, cooling, prepare, remove, install, replacement
-summary: Each 60-drive controller shelf or drive shelf includes two fan canisters. If a fan canister fails, you must replace it as soon as possible to ensure that the shelf has adequate cooling.
+keywords: E5700 fan, repair E5700 fan, replace E5700 fan, failed E5700 fan
+summary: Replace an E5700 fan.
 ---
-= Replace fan canister (60-drive)
+= Replace E5700 fan canister (60-drive)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Follow this procedure to replace a fan canister in an E5700 array with a 60-drive shelf.
+
+== About this task
+
 Each 60-drive controller shelf or drive shelf includes two fan canisters. If a fan canister fails, you must replace it as soon as possible to ensure that the shelf has adequate cooling.
-
-== Step 1. Prepare to replace fan canister
-
-[.lead]
-You prepare to replace a fan canister in a 60-drive controller shelf or drive shelf by collecting support data about your storage array and locating the failed component.
-
-* You have reviewed the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
-* You have checked that the amber Attention LED on the fan canister is on, indicating that the fan has a fault. Contact technical support for assistance if both fan canisters in the shelf have their amber Attention LEDs on.
 
 This task describes how to prepare to replace a fan canister for the following controller shelves:
 
 * E5760 controller shelf
 * DE460C drive shelf
 
-IMPORTANT: Possible equipment damage -- If you perform this procedure with the power turned on, you must complete it within 30 minutes to prevent the possibility of overheating the equipment.
+CAUTION: *Possible equipment damage* -- If you perform this procedure with the power turned on, you must complete it within 30 minutes to prevent the possibility of overheating the equipment.
+
+== Before you begin
+
+* Review link:canisters_overview_supertask_concept.html[Requirements for E5700 canister replacement].
+* Review the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
+* Check that the amber Attention LED on the fan canister is on, indicating that the fan has a fault. Contact technical support for assistance if both fan canisters in the shelf have their amber Attention LEDs on.
+
+== Step 1: Prepare to replace fan canister
+
+Prepare to replace a fan canister in a 60-drive controller shelf or drive shelf.
+
+===== Steps
 
 . Collect support data for your storage array using SANtricity System Manager.
  .. Select *Support* > *Support Center* > *Diagnostics*.
@@ -43,7 +51,7 @@ If a component has failed, this icon is red.
 +
 A component with a *Failed* status must be replaced.
 +
-IMPORTANT: If the second fan canister in the shelf does not have *Optimal* status, do not attempt to hot-swap the failed fan canister. Instead, contact technical support for assistance.
+CAUTION: If the second fan canister in the shelf does not have *Optimal* status, do not attempt to hot-swap the failed fan canister. Instead, contact technical support for assistance.
 
 +
 You can also find information about the failed fan canister in the Details area of the Recovery Guru, or you can review the Event Log under Support and filter by Component Type.
@@ -55,13 +63,17 @@ image::../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout_maint-e
 +
 image:../media/legend_icon_01_maint-e5700.gif[]Attention LED. If this LED displays as *Solid amber*, then the fan has a fault.
 
-== Step 2. Remove failed fan canister and install new one
+== Step 2: Remove failed fan canister and install new one
 
-[.lead]
-You remove a failed fan canister so you can replace it with a new one.
+Remove a failed fan canister so you can replace it with a new one.
 
-* If you do not turn off the power to your storage array, ensure that you remove and replace the fan canister within 30 minutes to prevent the system from overheating.
-* You have an ESD wristband, or you have taken other antistatic precautions.
+CAUTION: If you do not turn off the power to your storage array, ensure that you remove and replace the fan canister within 30 minutes to prevent the system from overheating.
+
+===== What you'll need
+
+* An ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Unpack the new fan canister, and place it on a level surface near the shelf.
 +
@@ -81,17 +93,18 @@ image:../media/legend_icon_01_maint-e5700.gif[]Handle to pull the fan canister o
 
 . Slide the replacement fan canister all the way into the shelf, and then move the fan canister handle until it latches with the orange tab.
 
-== Step 3. Complete fan canister replacement
+== Step 3: Complete fan canister replacement
 
-[.lead]
-You complete the fan canister replacement by confirming that the new fan canister is working correctly. Then, you can gather support data and resume normal operations.
+Confirm that the new fan canister is working correctly, gather support data, and resume normal operations.
+
+===== Steps
 
 . Check the amber Attention LED on the new fan canister.
 +
 NOTE: After you replace the fan canister, the Attention LED stays on (solid amber) while the firmware checks that the fan canister was installed correctly. The LED goes off after this process is complete.
 
 . From the Recovery Guru in SANtricity System Manager, select *Recheck* to ensure the problem has been resolved.
-. If a failed fan canister is still being reported, repeat the steps in link:canisters_fan_replace_task.md#[Remove failed fan canister and install new one]. If the problem persists, contact technical support.
+. If a failed fan canister is still being reported, repeat the steps in Step 2: Remove failed fan canister and install new one. If the problem persists, contact technical support.
 . Remove the antistatic protection.
 . Collect support data for your storage array using SANtricity System Manager.
  .. Select *Support* > *Support Center* > *Diagnostics*.
@@ -99,5 +112,7 @@ NOTE: After you replace the fan canister, the Attention LED stays on (solid ambe
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
+
+== Result
 
 Your fan canister replacement is complete. You can resume normal operations.

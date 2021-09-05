@@ -1,44 +1,48 @@
 ---
 permalink: maintenance-ef600/index.html
 sidebar: sidebar
-keywords: maintain, ef300, ef600, hardware
-summary: Maintaining EF300 and EF600 Hardware
+keywords: EF300 maintenance, EF600 maintenance, repairing EF300, repairing EF600, replace EF300 components, replace EF600 components
+summary: Maintain the EF300 and EF600 hardware
 ---
-= Maintaining EF300 and EF600 Hardware
+= Maintain EF300 and EF600 hardware
 :icons: font
 :imagesdir: ../media/
 
-* xref:concept_batteries_wombat.adoc[Batteries]
- ** link:batteries_overview_requirements_concept.md#batteries_overview_requirements_concept[Overview and requirements]
- ** link:batteries_replace_supertask_task.md#batteries_replace_supertask_task[Replace battery]
-* xref:concept_controllers_wombat.adoc[Controllers]
- ** link:controllers_overview_supertask_concept.md#controllers_overview_supertask_concept[Overview and requirements]
- ** link:controllers_replace_supertask_task.md#controllers_replace_supertask_task[Replace controller]
-* xref:concept_dimms_wombat.adoc[DIMMs]
- ** link:dimms_overview_supertask_concept.md#dimms_overview_supertask_concept[Overview and requirements]
- ** link:dimms_replace_supertask_task.md#dimms_replace_supertask_task[Replace DIMMs]
-* xref:concept_drives_wombat.adoc[Drives]
- ** link:drives_overview_supertask_concept.md#drives_overview_supertask_concept[Overview and requirements]
- ** link:drives_replace_supertask_task.md#drives_replace_supertask_task[Replace drive]
-* xref:concept_fans_wombat.adoc[Fans]
- ** link:fans_overview_requirements_replacing2_concept.md#fans_overview_requirements_replacing2_concept[Overview and requirements]
- ** link:fans_replace_supertask_task.md#fans_replace_supertask_task[Replace a fan]
-  *** link:fans_replace_supertask_task.md#fans_replace_install_new_task[Install new fan]
-* xref:concept_host_interface_cards_wombat.adoc[Host interface cards]
- ** link:hics_overview_supertask_concept.md#hics_overview_supertask_concept[Overview and Requirements]
- ** link:hics_add_supertask_task.md#hics_add_supertask_task[Add host interface cards]
- ** link:hics_upgrade_intro.md#hics_upgrade_intro[Upgrade host interface card]
- ** link:hics_replace_supertask_task.md#hics_replace_supertask_task[Replace failed host interface card]
-* xref:concept_host_port_protocol_conversion_wombat.adoc[Host port protocol conversion]
- ** link:hpp_overview_supertask_concept.md#hpp_overview_supertask_concept[Overview and requirements]
- ** link:hpp_change_supertask_task.md#hpp_change_supertask_task[Change host protocol]
- ** link:hpp_complete_protocol_conversion_task.md#hpp_complete_protocol_conversion_task[Complete host protocol conversion]
-* xref:concept_power_supplies_wombat.adoc[Power Supplies]
- ** link:power_overview_requirements2_concept.md#power_overview_requirements2_concept[Overview and requirements]
- ** link:power_replace_supertask_task.md#power_replace_supertask_task[Replace a power supply]
-* xref:concept_sas_expansion_cards_wombat.adoc[SAS expansion cards]
- ** xref:sas_overview_supertask_concept.adoc[Overview and Requirements]
- ** link:sas_add_supertask_task.md#sas_add_supertask_task[Add SAS expansion card]
-* xref:copyright_trademark_reference.adoc[Copyright and trademark]
- ** xref:copyright_reference.adoc[Copyright]
- ** xref:trademark_reference.adoc[Trademark]
+[.lead]
+For the EF300 and EF600 storage systems, you can perform maintenance procedures on the following components.
+
+== Batteries
+
+A battery is included with a controller and preserves cached data if the AC power fails.
+
+== Controllers
+
+A controller consists of a board, firmware, and software. It controls the drives and implements the SANtricity System Manager functions.
+
+== DIMMs
+
+You must replace a DIMM when a memory mismatch is present, or you have a failed DIMM.
+
+== Drives
+
+A drive is a device that provides the physical storage media for data.
+
+== Fans
+
+Each EF300 or EF600 controller shelf or drive shelf includes five fans for cooling the controller.
+
+== Host interface cards (HICs)
+
+A host interface card (HIC) must be installed within a controller canister. The EF600 controller includes host ports on the optional HIC. Host ports that are built into the HIC are called HIC ports.
+
+== Host port protocol
+
+You can convert the protocol of a host to a different protocol so that compatibility and communication can be established.
+
+== Power supplies
+
+A power supply provides a redundant power source in a controller shelf.
+
+== SAS expansion cards
+
+A SAS expansion card may be installed within a controller canister. The EF300 controller supports SAS expansion.

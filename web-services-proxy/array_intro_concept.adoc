@@ -1,10 +1,10 @@
 ---
 permalink: web-services-proxy/array_intro_concept.html
 sidebar: sidebar
-keywords: manage, storage, system, network, discover, management, list, scale, up
+keywords: Web Services, WSP, SANtricity API, discover storage WSP,
 summary: To manage storage systems in the network, you must first discover them and then add them to the management list.
 ---
-= Manage storage systems
+= Manage storage systems using Web Services Proxy
 :icons: font
 :imagesdir: ../media/
 
@@ -13,19 +13,21 @@ To manage storage systems in the network, you must first discover them and then 
 
 == Discover storage systems
 
-[.lead]
 You can set automatic discovery or manually discover storage systems.
 
 === Automatically discover storage systems
 
-[.lead]
 You can specify that storage systems are automatically discovered in the network by modifying the settings in the wsconfig.xml file. By default, IPv6 automatic discovery is disabled and IPv4 is enabled.
+
+===== Before you begin
 
 * Before enabling IPv6 discovery settings, verify that your infrastructure supports IPv6 connectivity to the storage systems to mitigate any connection issues.
 
 You only need to provide one management IP or DNS address to add a storage system. The server automatically discovers all management paths when the paths are either not configured or the paths are configured and rotatable.
 
 NOTE: If you attempt to use an IPv6 protocol to automatically discover storage systems from the controller configuration after an initial connection has been made, the process might fail. Possible causes for the failure include problems during IP address forwarding or IPv6 being enabled on the storage systems, but not being enabled on the server.
+
+===== Steps
 
 . Open the wsconfig.xml file, located at:
  ** (Windows) -- C:\Program Files\NetApp\SANtricity Web Services Proxy
@@ -42,13 +44,16 @@ NOTE: When the paths are configured, but not configured so that the server can r
 
 === Discover and add storage systems using API endpoints
 
-[.lead]
 You can use API endpoints to discover and add storage systems to the managed list. This procedure creates a management connection between the storage system and the API.
+
+===== Before you begin
 
 * You must be logged in to the interactive API documentation.
 * For storage systems with SANtricity versions 11.30 and later, the legacy management interface for SYMbol must be enabled in the SANtricity System Manager interface. Otherwise, the Discovery endpoints fail. You can find this setting by opening System Manager, and then going to *Settings* > *System* > *Additional Settings* > *Change Management Interface*.
 
 This task describes how to discover and add storage systems using the REST API, so you can manage these systems in the interactive API documentation. However, you might want to manage storage systems in the Unified Manager instead, which provides an easy-to-use interface. For more information, see the online help available with Unified Manager.
+
+===== Steps
 
 . Discover storage systems, as follows:
  .. From the API documentation, make sure *V2* is selected in the drop-down, and then expand the *Storage-Systems* category.
@@ -186,14 +191,17 @@ No parameters are required.
 
 == Scale up the number of managed storage systems
 
-[.lead]
 By default, the API can manage up to 100 storage systems. If you need to manage more, you must bump the memory requirements for the server.
+
+===== Before you begin
 
 The server is set to use 512 MB of memory. For every 100 extra storage systems in your network, add 250 MB to that number. Do not add more memory than what you physically have. Allow enough extra for your operating system and other applications.
 
 NOTE: The default cache size is 8,192 events. The approximate data usage for the MEL events cache is 1MB for each 8,192 events. Therefore, by retaining the defaults, cache usage should be approximately 1MB for a storage system.
 
 NOTE: In addition to memory, the proxy uses network ports for each storage system. Linux and Windows consider network ports as file handles. As a security measure, most operating systems limit the number of open file handles that a process or a user can have open at one time. Especially in Linux environments, where open TCP connections are considered to be file handles, the Web Services Proxy can easily exceed this limit. Because the fix is system dependent, you should refer to your operating system's documentation for how to raise this value.
+
+===== Steps
 
 . Do one of the following:
  ** On Windows, go to the appserver64.init file. Locate the line, vmarg.3=-Xmx512M

@@ -1,22 +1,23 @@
 ---
 permalink: upgrade-controllers/complete_upgrade_controllers_task.html
 sidebar: sidebar
-keywords: complete, controller, upgrade, shelf, validating, validate, software, version, support, data, resume, operation, power, check, status, validate, tray
-summary: You complete the controller upgrade by powering on the controller shelf and validating the controller software version. Then, you can collect support data and resume operations.
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, vendor ID, upgrade status, upgrade validate
+summary: Complete the controller upgrade by powering on the controller shelf and validating the controller software version. Then, you can collect support data and resume operations.
 ---
 = Complete controller upgrade
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You complete the controller upgrade by powering on the controller shelf and validating the controller software version. Then, you can collect support data and resume operations.
+Follow this procedure to complete the controller upgrade by powering on the controller shelf and validating the controller software version. Then, you can collect support data and resume operations.
 
 If you are upgrading controllers in a duplex controller-drive tray, repeat all steps to complete the upgrade for the second controller.
 
 == Step 1: Power on controller
 
-[.lead]
 You must power on the controller shelf to confirm that it is working correctly.
+
+===== Steps
 
 . Turn on the power switch on the rear of each drive tray that is connected to the controller-drive tray.
 . Wait two minutes for the drives to spin up.
@@ -30,7 +31,7 @@ You must power on the controller shelf to confirm that it is working correctly.
 a|
 All unsecured drives, neither External or Internal Key Management
 a|
-Proceed to After you finish.
+Proceed to the next step.
 a|
 Mix of secured and unsecured drives, Internal Key Management
 a|
@@ -46,7 +47,9 @@ Controller swap with internal key management and one or more drives secured
 a|
 Mix of secured and unsecured drives, External Key Management
 a|
-Proceed to After you finish.     *Attention:* After performing the controller replacement, the controllers will automatically resynchronize with the External Key Management Server and the drives will unlock and be accessible.
+Proceed to the next step.
+
+*Attention:* After performing the controller replacement, the controllers will automatically resynchronize with the External Key Management Server and the drives will unlock and be accessible.
 
 NOTE: If you receive a seven-segment display lock-down code of `L5` after performing a controller replacement of mixed secured drives with internal key management, contact technical support.
 a|
@@ -63,12 +66,11 @@ a|
 Controller swap with external key management and all drives secured
 |===
 
-Go to link:complete_upgrade_controllers_task.md#[Step 2: Check controller status].
-
 == Step 2: Check status of controllers and trays
 
-[.lead]
-You can the LEDs and the storage management software to check the status of your controllers and trays.
+You can use the LEDs and the storage management software to check the status of your controllers and trays.
+
+===== Steps
 
 . Look at the LEDs on controller A to make sure that it is booting correctly.
 +
@@ -82,12 +84,11 @@ After the controller successfully completes rebooting, the seven-segment display
 . For a duplex configuration, repeat step 1 through step 2 for controller B.
 . Using the LEDs and the storage management software, check the status of all of the trays in the storage array. If any component has a Needs Attention status, use the Recovery Guru to troubleshoot. If the problem is not resolved, contact technical support.
 
-Go to link:complete_upgrade_controllers_task.md#[Step 3: Validate controller software version].
-
 == Step 3: Validate controller software version
 
-[.lead]
-You must sure that your new controllers are running with the correct operating system (controller firmware) level and NVSRAM.
+You must ensure that your new controllers are running with the correct operating system (controller firmware) level and NVSRAM.
+
+===== Steps
 
 . Do one of the following:
  ** If you are upgrading to controllers that do not support SANtricity 11.30 and controller firmware 8.30, make sure that the version running on the new controllers matches the version that was last running on the original controllers. Normally, this will be the most recent release supported by the old controllers. If necessary, install the appropriate version on the new controllers.
@@ -118,19 +119,21 @@ The *Confirm Enable SAML* dialog opens.
  .. Enter user credentials for an SSO login test.
 . Gather support data about your storage array by using either the GUI or the CLI:
  ** Use either System Manager or the Array Management Window to collect and save a support bundle of your storage array.
-  *** From the System Manager, first select *Support* > *Support Center* > *Diagnostics* tab. Then select **Collect Support Data**and click *Collect*.
+  *** From System Manager, first select *Support* > *Support Center* > *Diagnostics* tab. Then select **Collect Support Data* and click *Collect*.
   *** From the Array Management Window toolbar, select *Monitor* > *Health* > *Collect Support Data Manually*. Then name and specify a location on your system where you want to store the support bundle.
 The file is saved in the Downloads folder for your browser with the name `support-data.7z`.
 
 +
 If your shelf contains drawers, the diagnostics data for that shelf is archived in a separate zipped file named `tray-componet-state-capture.7z`
- ** Use the CLI to run the save storageArray supportDatacommand to gather comprehensive support data about the storage array.
-*Note:* Gathering support data can temporarily impact performance on your storage array.
+ ** Use the CLI to run the `save storageArray supportDatacommand` to gather comprehensive support data about the storage array.
++
+NOTE: Gathering support data can temporarily impact performance on your storage array.
+
 . Alert NetApp Technical Support to the changes that you made to the configuration of your storage array.
  .. Get the serial number of the controller-drive tray that you recorded in xref:prepare_upgrade_controllers_task.adoc[Prepare to upgrade controllers].
  .. Log in to the NetApp support site at http://mysupport.netapp.com/eservice/assistant[mysupport.netapp.com/eservice/assistant].
  .. Select *Product Registration* from the drop-down list under *Category 1*.
- .. Enter the following text in the **Comments**text box, substituting the serial number of your controller-drive tray for serial number:
+ .. Enter the following text in the **Comments** text box, substituting the serial number of your controller-drive tray for serial number:
 +
 `Please create alert against Serial Number: serial number. The alert name should be “E-Series Upgrade”. The alert text should read as follows:`
 +
@@ -138,4 +141,6 @@ If your shelf contains drawers, the diagnostics data for that shelf is archived 
 
  .. Click the *Submit* button at the bottom of the form.
 
-If your controller upgrade results in changing the vendor ID from LSI to NETAPP, go to link:remount_volumes_lsi_task.md#[Remount volumes after changing the vendor from LSI to NETAPP]; otherwise your controller upgrade is complete and you can resume normal operations.
+== Result
+
+If your controller upgrade results in changing the vendor ID from LSI to NETAPP, go to link:remount_volumes_lsi_task.html[Remount volumes after changing the vendor from LSI to NETAPP]; otherwise your controller upgrade is complete and you can resume normal operations.

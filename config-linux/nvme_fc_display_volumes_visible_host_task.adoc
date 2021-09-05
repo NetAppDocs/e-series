@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/nvme_fc_display_volumes_visible_host_task.html
 sidebar: sidebar
-keywords: smdevices, tool, nvme-cli, package, volume, visible, host, alternative, nvme, list, command, display
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: The SMdevices tool, part of the nvme-cli package, allows you to view the volumes currently visible on the host. This tool is an alternative to the nvme list command.
 ---
 = Display the volumes visible to the host
@@ -9,9 +9,11 @@ summary: The SMdevices tool, part of the nvme-cli package, allows you to view th
 :imagesdir: ../media/
 
 [.lead]
-The SMdevices tool, part of the nvme-cli package, allows you to view the volumes currently visible on the host. This tool is an alternative to the `nvme list` command.
+To view volumes currently visible on the host, you can use the SMdevices tool. This tool is part of the nvme-cli package, and can be used as an alternative to the `nvme list` command.
 
-. To view information about each NVMe path to an E-Series volume, use thenvme netapp smdevices [-o <format>] command. The output <format> can be normal (the default if -o is not used), column, or json.
+===== Steps
+
+. To view information about each NVMe path to an E-Series volume, use the `nvme netapp smdevices [-o <format>]` command. The output `<format>` can be normal (the default if -o is not used), column, or json.
 +
 ----
 # nvme netapp smdevices

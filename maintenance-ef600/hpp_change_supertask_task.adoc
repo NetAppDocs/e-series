@@ -1,20 +1,21 @@
 ---
 permalink: maintenance-ef600/hpp_change_supertask_task.html
 sidebar: sidebar
-keywords: infiniband, ib, hic, fibre, channel, fc, hic, port, protocol, process, obtain, feature, pack, key
-summary: If you have an Infiniband (IB) HIC, or a Fibre Channel (FC) HIC you can change the host port protocol using the process in the following section.
+keywords: host protocol change, EF300 host protocol, EF600 host protocol
+summary: Change the host port protocol for an EF300 or EF600 array.
 ---
-= Change host protocol
+= Change host protocol for an EF300 or EF600
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If you have an Infiniband (IB) HIC, or a Fibre Channel (FC) HIC you can change the host port protocol using the process in the following section.
+Follow this procedure to change the host port protocol in an EF300 or EF600 array. This procedure applies only to host interface cards (HICs) using either Infiniband (IB) or Fibre Channel (FC).
 
-== Step 1. Obtain the feature pack key
+== Step 1: Obtain the feature pack key
 
-[.lead]
-To obtain the feature pack, you need the serial number from the controller shelf, a Feature Activation Code, and the Feature Enable Identifier for the storage array.
+To obtain the feature pack key, you need the serial number from the controller shelf, a Feature Activation Code, and the Feature Enable Identifier for the storage array.
+
+===== Steps
 
 . Locate the serial number.
  .. From SANtricity System Manager, select *Support* > *Support Center*.
@@ -429,7 +430,7 @@ iSER/IB
 a|
 SHH-TA5-ZZYHS
 |===
-*Note:* If your controller submodel ID is not listed, contact https://mysupport.netapp.com/site/[NetApp Support].
+NOTE: If your controller submodel ID is not listed, contact https://mysupport.netapp.com/site/[NetApp Support].
 
 . In System Manager, locate the Feature Enable Identifier.
  .. Go to *Settings* > *System*.
@@ -442,22 +443,25 @@ image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_c
  ** Chassis Serial Number
  ** Feature Activation Code
  ** Feature Enable Identifier
-*Important:* The Premium Feature Activation web site includes a link to "`Premium Feature Activation Instructions.`" Do not attempt to use those instructions for this procedure.
+NOTE: The Premium Feature Activation web site includes a link to "`Premium Feature Activation Instructions.`" Do not attempt to use those instructions for this procedure.
 . Choose whether to receive the key file for the feature pack in an email or download it directly from the site.
 
-== Step 2. Stop host I/O
+== Step 2: Stop host I/O
 
-[.lead]
-You must stop all I/O operations from the host before converting the protocol of the host ports. You cannot access data on the storage array until you successfully complete the conversion.
+Stop all I/O operations from the host before converting the protocol of the host ports.
+
+You cannot access data on the storage array until you successfully complete the conversion.
+
+===== Steps
 
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
  ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
  ** Unmount all file systems associated with volumes on the array.
-*Note:* The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
-
 +
-IMPORTANT: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, you might lose data.
+NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
++
+CAUTION: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, you might lose data.
 . Wait for any data in cache memory to be written to the drives.
 +
 The green Cache Active LED on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
@@ -465,10 +469,11 @@ The green Cache Active LED on the back of each controller is on when cached data
 . From the Home page of SANtricity System Manager, select *View Operations in Progress*.
 . Wait for all operations to complete before continuing with the next step.
 
-== Step 3. Change the feature pack
+== Step 3: Change the feature pack
 
-[.lead]
-You change the feature pack to convert the host protocol of your host ports.
+Change the feature pack to convert the host protocol of your host ports.
+
+===== Steps
 
 . From SANtricity System Manager, select *Settings* > *System*.
 . Under *Add-ons*, select *Change Feature Pack*.
@@ -489,4 +494,4 @@ The feature pack migration begins. Both controllers automatically reboot twice t
  .. Select the *Host Interfaces* tab.
  .. Click *Show more settings*.
 
-Go to link:hpp_complete_protocol_conversion_task.md#[Complete host protocol conversion].
+. Go to link:hpp_complete_protocol_conversion_task.html[Complete host protocol conversion].

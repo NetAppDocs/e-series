@@ -1,31 +1,28 @@
 ---
 permalink: maintenance-ef600/hpp_complete_protocol_conversion_task.html
 sidebar: sidebar
-keywords: convert, protocol, host, port, complete, conversion
-summary: After converting the protocol of the host ports, you need to perform additional steps before you can use the new protocol.
+keywords: host protocol change, EF300 host protocol, EF600 host protocol
+summary: After converting the protocol of the host ports, perform additional steps to use the new protocol.
 ---
-= Complete host protocol conversion
+= Complete host protocol conversion for an EF300 or EF600
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After converting the protocol of the host ports, you need to perform additional steps before you can use the new protocol.
+After you apply the feature pack key to convert the protocol, you must configure the host to use the appropriate protocol.
 
 == Complete protocol conversion
 
-[.lead]
-After you apply the feature pack key to convert the protocol you must configure the host to use the appropriate protocol.
+Configure the host to use the appropriate protocol. For step-by-step instructions, see the guide appropriate for your system:
 
-. Configure the host to use the appropriate protocol.
+* link:../config-linux/index.html[Linux express configuration]
 +
-For step-by-step instructions on how to configure the host, see the guide appropriate for your system:
+* link:../config-vmware/index.html[VMware express configuration]
 +
-link:../com.netapp.doc.ssm-exp-ic-lin/home.html[Linux express configuration]
-+
-link:../com.netapp.doc.ssm-exp-ic-vm/home.html[VMware express configuration]
-+
-link:../com.netapp.doc.ssm-exp-ic-win/home.html[Windows express configuration]
+* link:../config-windows/index.html[Windows express configuration]
 +
 Specific settings might vary. Check the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix] for specific instructions and additional recommended settings for your solution.
+
+== Result
 
 Your host protocol conversion is complete. You can resume normal operations.

@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/nvme_fc_verify_linux_config_support_task.html
 sidebar: sidebar
-keywords: ensure, reliable, operation, create, implementation, plan, netapp, interoperability, matrix, tool, imt, configuration, support, verify, linux, nvme, fibre, channel, restriction
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool (IMT) to verify that the entire configuration is supported.
 ---
 = Verify the Linux configuration is supported
@@ -12,40 +12,29 @@ summary: To ensure reliable operation, you create an implementation plan and the
 [.lead]
 To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool (IMT) to verify that the entire configuration is supported.
 
+===== Steps
+
 . Go to the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
 . Click on the *Solution Search* tile.
 . In the menu:Protocols[SAN Host] area, click the *Add* button next to *E-Series SAN Host*.
 . Click *View Refine Search Criteria*.
 +
-The *Refine Search Criteria* section is displayed. In this section you may select the protocol that applies, as well as other criteria for the configuration such as Operating System, NetApp OS, and Host Multipath driver. Select the criteria you know you want for your configuration, and then see what compatible configuration elements apply. As necessary, make the updates for your operating system and protocol that are prescribed in the tool. Detailed information for your chosen configuration is accessible on the View Supported Configurations page by clicking the *right page arrow*.
+The Refine Search Criteria section is displayed. In this section you may select the protocol that applies, as well as other criteria for the configuration such as Operating System, NetApp OS, and Host Multipath driver. Select the criteria you know you want for your configuration, and then see what compatible configuration elements apply. As necessary, make the updates for your operating system and protocol that are prescribed in the tool. Detailed information for your chosen configuration is accessible on the View Supported Configurations page by clicking the right page arrow.
 
 == NVMe over Fibre Channel restrictions
 
 [.lead]
-Before using NVMe over Fibre Channel, review the controller, host, and recovery restrictions.
-
-=== Verify your configuration
-
-Verify your configuration, using the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
-
-=== About the hardware
-
-NVMe over Fibre Channel can be configured for the EF300, EF600, EF570, and E5700 controllers. The controllers must have the quad 32GB host port.
-
-=== Restrictions
-
-For an up-to-date listing of all restrictions, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for a complete list of requirements.
+Before using NVMe over Fibre Channel, review the controller, host, and recovery restrictions. For an up-to-date listing of all restrictions, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
 
 === Controller restrictions
-
+* NVMe over Fibre Channel can be configured for the EF300, EF600, EF570, and E5700 controllers. The controllers must have the quad 32GB host port.
 * This protocol can be used only for EF300, EF600, EF570, or E5700 controller with a minimum of 32 GB of physical memory. If the minimum memory requirements for the controllers are not met during start of day operations, a message is displayed that helps you diagnose the problem.
 * No simplex (single-controller) configurations are supported.
 * The only supported host interface card (HIC) is the quad 32GB Fibre Channel HIC.
 
 === Host, host protocol, and host operating system restrictions
 
-* For an up-to-date listing of all compatible host, host protocol, and host operating systems, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for a complete list of requirements.
-* For a list of supported host channel adapters see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] .
+For a complete list of requirements, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] .
 
 === Storage and disaster recovery restrictions
 

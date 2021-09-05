@@ -77,7 +77,11 @@ If you are upgrading from a previous version, be aware that some items are prese
 [.lead]
 You can download the installation file and the readme file from the Software download page of the NetApp Support site.
 
+===== Before You Begin
+
 The download package includes the Web Services Proxy and the Unified Manager interface.
+
+===== Steps
 
 . Go to: http://mysupport.netapp.com/eservice/Download.jsp/[NetApp Downloads], and then select *Downloads* > *Software*.
 . From *E-Series SANtricity Web Services (REST API)*, select the *Web Services Proxy platform*.
@@ -94,8 +98,12 @@ You can install the Web Services Proxy and Unified Manager using one of three mo
 [.lead]
 You can run the installation in Graphical mode for either Windows or Linux. In Graphical mode, the prompts appear in a Windows-style interface.
 
+===== Before You Begin
+
 * You have reviewed the system requirements and upgrade considerations.
 * You have downloaded the correct installation file (EXE for Windows; BIN for Linux) to the server where you want to install the proxy and Unified Manager.
+
+===== Steps
 
 . Access the folder where you downloaded the installation file.
 . Launch the installation for either Windows or Linux, as follows:
@@ -142,8 +150,12 @@ During the installation, you are prompted to enable several features and enter s
 [.lead]
 You can run the installation in Silent mode for either Windows or Linux. In Silent mode, no return messages or scripts appear in the terminal window.
 
+===== Before You Begin
+
 * You have reviewed the system requirements and upgrade considerations.
 * You have downloaded the correct installation file (EXE for Windows; BIN for Linux) to the server where you want to install the proxy and Unified Manager.
+
+===== Steps
 
 . Run the following command: <install filename> --i silent
 +
@@ -158,8 +170,12 @@ The installation process can take several minutes to complete. After successful 
 [.lead]
 For Linux systems that are compatible with the RPM package management system, you can install the Web Services Proxy using an optional RPM file.
 
+===== Before You Begin
+
 * You have reviewed the system requirements and upgrade considerations.
 * You have downloaded the RPM file to the server where you want to install the proxy and Unified Manager.
+
+===== Steps
 
 . Open a terminal window.
 . Enter the following command: rpm -u santricity_webservices-nn.nn.nn.nnnn-n.x86_64.rpm
@@ -178,6 +194,8 @@ Web Services includes API documentation, which enables you to directly interact 
 [.lead]
 After you install the Web Services Proxy, you can access the interactive API documentation in a browser.
 
+===== Before You Begin
+
 * The Web Services Proxy is installed on a Windows or Linux server.
 
 The API documentation runs with each instance of Web Services, and is also available in a static PDF format from the NetApp Support site. To access the interactive version, you open a browser and enter the URL pointing to where Web Services resides (either a controller for the embedded version or a server for the proxy).
@@ -186,16 +204,17 @@ NOTE: The Web Services API implements the OpenAPI specification (originally call
 
 For initial login, you use the "admin" credentials. "Admin" is considered a super administrator with access to all functions and roles.
 
+===== Steps
+
 . Open a browser.
 . Enter the URL for the embedded or proxy implementation:
- ** Embedded: https://<controller>:<port>/devmgr/docs/
+ ** Embedded: ++ https://<controller>:<port>/devmgr/docs/ ++
 +
 NOTE: In this URL, <controller> is the IP address or FQDN of the controller, and <port> is the management port number of the controller (defaults to 8443).
-
- ** Proxy: http[s]://<server>:<port>/devmgr/docs/
++
+ ** Proxy: ++ http[s]://<server>:<port>/devmgr/docs/ ++
 +
 NOTE: In this URL, <server> is the IP address or FQDN of the server where the proxy is installed, and <port> is the listening port number (defaults to 8080 for HTTP or 8443 for HTTPS).
-
 +
 NOTE: If the listening port is already in use, the proxy detects the conflict and prompts you to choose a different listening port.
 +
@@ -232,9 +251,8 @@ a|
 Interact with the endpoint directly by clicking *Try It Out*. This button is provided in each of the expanded views for endpoints.
 
 When you click the button, fields appear for entering parameters (if applicable). You can then enter values and click *Execute*.
-+
+
 The interactive documentation uses JavaScript to make the request directly to the API; it is not a test request.
-+
 |===
 
 === Log in to Unified Manager
@@ -242,17 +260,19 @@ The interactive documentation uses JavaScript to make the request directly to th
 [.lead]
 After you install the Web Services Proxy, you can access Unified Manager to manage multiple storage systems in a web-based interface.
 
+===== Before You Begin
+
 * The Web Services Proxy, which includes the Unified Manager, is installed on a Windows or Linux server.
 
-To access Unified Manager, you open a browser and enter the URL pointing to where the proxy is installed. The following browsers and versions are supported.
-
+* To access Unified Manager, you open a browser and enter the URL pointing to where the proxy is installed. The following browsers and versions are supported.
++
 [options="header"]
 |===
 | Browser| Minimum version
 a|
 Google Chrome
 a|
-47
+79
 a|
 Microsoft Internet Explorer
 a|
@@ -260,18 +280,21 @@ a|
 a|
 Microsoft Edge
 a|
-EdgeHTML 12
+79
 a|
 Mozilla Firefox
 a|
-31
+70
 a|
 Safari
 a|
-9
+12
 |===
 
-. Open a browser and enter the following URL: http[s]://<server>:<port>/um
+===== Steps
+
+. Open a browser and enter the following URL:
+`+http[s]://<server>:<port>/um+`
 +
 In this URL, <__server__> represents the IP address or FQDN of the server where the Web Services Proxy is installed, and <__port__> represents the listening port number (defaults to 8080 for HTTP or 8443 for HTTPS).
 +

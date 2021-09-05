@@ -11,7 +11,11 @@ summary: The InfiniBand OFED driver stack supports running both iSER and SRP sim
 [.lead]
 The InfiniBand OFED driver stack supports running both iSER and SRP simultaneously on the same ports, so no additional hardware is required.
 
+===== Before you begin
+
 A NetApp recommended OFED is installed on the system. For more information, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+
+===== Steps
 
 . Enable and start iSCSI services on the host(s):
 +
@@ -112,13 +116,13 @@ For each session, run the iscsiadm command to log in to the session.
 +
 ----
 # Controller A Port 1
-iscsiadm -m node -target <Target IQN\> -I iface -ib0 -p <Target Port IP\> -l
+iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
 # Controller B Port 1
-iscsiadm -m node -target <Target IQN\> -I iface -ib0 -p <Target Port IP\> -l
+iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
 # Controller A Port 2
-iscsiadm -m node -target <Target IQN\> -I iface -ib1 -p <Target Port IP\> -l
+iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
 # Controller B Port 2
-iscsiadm -m node -target <Target IQN\> -I iface -ib1 -p <Target Port IP\> -l
+iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
 ----
 
 . Verify the iSER/iSCSI sessions.

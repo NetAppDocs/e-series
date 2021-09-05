@@ -1,8 +1,8 @@
 ---
 permalink: config-windows/install_storage_manager_for_smcli_task.html
 sidebar: sidebar
-keywords: install, santricity, storage, manager, software, management, station, command, line, interface, cli, manage, array, software, host, context, agent, configuration, information, controller, i/o, path, smcli, hca
-summary: When you install the SANtricity Storage Manager software on your management station, the command line interface \(CLI\) is installed to help you manage your array. By also installing the software on the host, the Host Context Agent is installed that helps the host push configuration information to the storage array controllers through the I/O path.
+keywords: install Storage Manager Windows, install CLI Windows, install command line interface, install Host Context Agent, install HCA, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Install Storage Manager for CLI and HCA in Windows express method.
 ---
 = Install SANtricity Storage Manager for SMcli and Host Context Agent (HCA)
 :icons: font
@@ -11,12 +11,16 @@ summary: When you install the SANtricity Storage Manager software on your manage
 [.lead]
 When you install the SANtricity Storage Manager software on your management station, the command line interface (CLI) is installed to help you manage your array. By also installing the software on the host, the Host Context Agent is installed that helps the host push configuration information to the storage array controllers through the I/O path.
 
+===== Before you begin
+
 * You must have the correct administrator or superuser privileges.
 * You must have ensured that the system that will contain the SANtricity Storage Manager client has the following minimum requirements:
  ** *RAM*: 2 GB for Java Runtime Engine
  ** *Disk space*: 5 GB
  ** *OS/Architecture*: Refer to http://mysupport.netapp.com[NetApp Support] *Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager* for guidance on determining the supported operating system versions and architectures.
 
-. Download the SANtricity software release from http://mysupport.netapp.com[NetApp Support] *Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager*.
+===== Steps
+
+. Download the SANtricity software release from http://mysupport.netapp.com[NetApp Support] -- *Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager*.
 . Run the SANtricity installer. Double-click the SMIA*.exe install package to execute.
 . Use the installation wizard to install the software on the management station.

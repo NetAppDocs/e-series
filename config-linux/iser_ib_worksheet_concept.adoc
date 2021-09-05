@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/iser_ib_worksheet_concept.html
 sidebar: sidebar
-keywords: worksheet, record, iser, infiniband, storage, configuration, information, provision, task, recommend, target, iqn, network, subnet, map, host, name
-summary: You can use this worksheet to record iSER over Infiniband storage configuration information. You need this information to perform provisioning tasks.
+keywords: iSER worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Use this worksheet to record iSER over Infiniband storage configuration information.
 ---
 = iSER over InfiniBand worksheet
 :icons: font
@@ -185,8 +185,7 @@ NOTE: The mapping host name is created during the workflow.
 
 |===
 a|
-Mapping host name
-a|
+Mapping host name a|
 
 a|
 Host OS type

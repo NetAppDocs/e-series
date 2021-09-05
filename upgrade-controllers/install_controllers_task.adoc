@@ -1,7 +1,7 @@
 ---
 permalink: upgrade-controllers/install_controllers_task.html
 sidebar: sidebar
-keywords: remove, controller, install, controller-drive, tray, battery, canister
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, installing new controller, install new controller, install battery, installing battery, install controller canister
 summary: After you have removed the old controllers, you can install new controllers in the controller-drive tray.
 ---
 = Install new controllers
@@ -11,17 +11,22 @@ summary: After you have removed the old controllers, you can install new control
 [.lead]
 After you have removed the old controllers, you can install new controllers in the controller-drive tray.
 
-If you are upgrading controllers in a duplex controller-drive tray, repeat all steps to install the second controller canister.
-
 == Step 1: Install battery
 
-[.lead]
 You install the battery that you removed from the original controller canister or a new battery that you ordered.
 
-* You have the battery from the original controller canister or a new battery that you ordered.
-* You have the new controller canister.
+===== What you'll need
+
+* A battery from the original controller canister or a new battery that you ordered.
+* The new controller canister.
+
+===== About this task
 
 Perform the following steps for each controller in the controller-drive tray.
+
+If you are upgrading controllers in a duplex controller-drive tray, repeat all steps to install the second controller canister.
+
+===== Steps
 
 . Unpack the new controller canister, and set it on a flat, static-free surface so that the removable cover faces up.
 . Press down on the cover button, and slide the cover off.
@@ -41,19 +46,18 @@ Slide the battery into the canister, making sure it stays below the rivets on th
   ... Keeping the locking handle at a 45 degree angle, align the connectors at the bottom of the battery with the connectors on the canister.
   ... Push the battery down until you hear it click, and move the locking handle up to secure the controller battery to the controller canister.
 +
-IMPORTANT: To make sure that the controller battery is seated correctly in an E5XX controller-drive tray, you might need to slide it out and insert it again. It is secure when you hear it click into place, and when the locking handle does not move out of its upright position when you wiggle it.
+TIP: To make sure that the controller battery is seated correctly in an E5XX controller-drive tray, you might need to slide it out and insert it again. It is secure when you hear it click into place, and when the locking handle does not move out of its upright position when you wiggle it.
 
   ... Reinstall the top cover on the new controller canister by sliding it forward until the top latch covers click.
 +
 When the latch clicks into place, the bottom of the latch hooks into a metal slot on the chassis.
 . Turn the controller canister over to confirm that the battery is installed correctly.
 
-Go to link:install_controllers_task.md#[Step 2: Install new controller canister].
-
 == Step 2: Install new controller canister
 
-[.lead]
 You install the new controller canister into the controller shelf.
+
+===== Steps
 
 . Slide the new controller canister all the way into the controller-drive tray. Rotate the release levers towards the center of the controller canister to lock it into place.
 . If your new controller canister has a Fibre Channel HIC or an InfiniBand HIC, install the SFP+ transceivers (Fibre Channel) or QSFP+ transceiver (InfiniBand) into the controller canister.
@@ -66,4 +70,4 @@ If the drive cabling configuration is the same as it was with your old controlle
 +
 NOTE: If you are upgrading to E2700 controllers from an earlier model, the drive cabling configuration might be different from the configuration used for the old controllers.
 
-Go to link:complete_upgrade_controllers_task.md#[Complete controller upgrade].
+. Go to link:complete_upgrade_controllers_task.html[Complete controller upgrade].

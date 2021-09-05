@@ -1,20 +1,17 @@
 ---
 permalink: maintenance-e2800/hpp_overview_supertask_concept.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords:  E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Channel protocol, iSCSI protocol, convert HPP, converting host port protocol, SFP+ (optical) host ports, E2800, E-Series, eseries
+summary: Review the requirements for host port protocol conversion on an E2800.
 ---
-= Overview and requirements
+= Requirements for changing E2800 host port protocol
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Learn about the E2800 baseboard host ports and the requirements you need to know about before converting the host protocol.
+Before converting the host protocol for an E2800 array, review the requirements.
 
-== Host protocol overview
-
-[.lead]
-You can convert the host port protocol of the baseboard host ports in the E2800 controller shelf.
+== Host ports you can change
 
 The following figure shows the back of an E2800 controller that has two SFP+ (optical) baseboard host portsimage:../media/legend_icon_01_maint-e2800.gif[] and four SFP+ (optical) HIC portsimage:../media/legend_icon_02_maint-e2800.gif[].
 
@@ -22,14 +19,11 @@ image::../media/28_dwg_e2800_optical_base_quad_sfp_hic.gif[]
 
 NOTE: A two-port HIC is also available.
 
-== Which host ports can you change
-
-[.lead]
 The E2800 controller or controllers in your storage array might have different types of baseboard host ports and different types of HIC ports. The table shows which host ports can be changed with a feature pack.
 
+[options = "header"]
 |===
-| If you have...| You can change...
-| These baseboard host ports...| And these HIC ports...
+| If you have...| You can change... | These baseboard host ports...| And these HIC ports...
 a|
 Two SFP+ (optical) ports
 a|
@@ -66,21 +60,20 @@ The baseboard host ports and the HIC ports can use the same host protocol or dif
 == Requirements for changing the host protocol
 
 [.lead]
-Learn about the requirements you need to keep in mind when changing the host port protocol.
+Review these requirements before changing the host port protocol:
 
 * You have scheduled a downtime maintenance window for this procedure.
 * You must stop host I/O operations when you perform the conversion, and you will not be able to access data on the storage array until you have successfully completed the conversion.
 * You are using out-of-band management. (You cannot use in-band management to complete this procedure.)
 * You have obtained the necessary hardware for the conversion. Your NetApp Sales Representative can help you determine what hardware you need and help you order the correct parts.
 * If you are attempting to change the baseboard host ports of your storage array, and it currently uses dual-protocol (also referred to as _unified_) SFP transceivers that you purchased from NetApp, you do not need to change your SFP transceivers.
-* Dual-protocol SFP transceivers support both FC (at 4 Gbps, 16 Gbps,) and iSCSI (at 10 Gbps), but they do not support 1 Gbps iSCSI. See link:hpp_change_host_protocol_task.md#[Determine whether you have dual-protocol SFPs] to determine what type of SFP transceivers are installed.
+* Dual-protocol SFP transceivers support both FC (at 4 Gbps, 16 Gbps,) and iSCSI (at 10 Gbps), but they do not support 1 Gbps iSCSI. See link:../maintenance-e2800/hpp_change_host_protocol_task.html[Determine whether you have dual-protocol SFPs] to determine what type of SFP transceivers are installed.
 
 == Considerations for changing the host protocol
 
-[.lead]
 The considerations for changing the host protocol depend on the starting and ending protocols of the baseboard host ports and the HIC ports.
 
-If you use a Mirroring feature or the Data Assurance (DA) feature, you must understand what happens to these features when you change the host port protocol.
+If you use a Mirroring feature or the Data Assurance (DA) feature, you must understand what happens to these features when you change the host port protocol as described below.
 
 NOTE: The following considerations apply only if you are converting a storage array that has already been in use. These considerations do not apply if you are converting a new storage array that does not yet have hosts and volumes defined.
 
@@ -94,7 +87,7 @@ NOTE: The following considerations apply only if you are converting a storage ar
  ** If you are currently using Synchronous Mirroring relationships and you want to convert FC host ports to iSCSI, you must deactivate Synchronous Mirroring.
  ** Refer to the online help for SANtricity System Manager to remove all synchronous mirrored pairs, which removes mirror relationships on the local storage array and on the remote storage array. In addition, follow the instructions in the online help to deactivate Synchronous Mirroring.
 +
-IMPORTANT: If you do not deactivate Synchronous Mirroring relationships before converting to iSCSI, your system will lose data access and data loss might occur.
+CAUTION: If you do not deactivate Synchronous Mirroring relationships before converting to iSCSI, your system will lose data access and data loss might occur.
 * Asynchronous Mirroring requires both the local storage array and the remote storage array to use the same protocol.
  ** If you are currently using Asynchronous Mirroring and you want to convert all host ports from FC to iSCSI, you must deactivate Asynchronous Mirroring before applying the feature pack.
  ** Refer to the online help for SANtricity System Manager to delete all mirror consistency groups and remove all mirrored pairs from the local and remote storage arrays. In addition, follow the instructions in the online help to deactivate Asynchronous Mirroring.
@@ -106,29 +99,28 @@ IMPORTANT: If you do not deactivate Synchronous Mirroring relationships before c
 
 === Converting from FC to FC/iSCSI
 
-Mirroring considerations
+Mirroring considerations:
 
+* Synchronous Mirroring is not supported for iSCSI.
 * If a storage array used for mirroring currently has only FC ports, and you want to convert some of them to iSCSI, you must determine which ports are used for mirroring.
 * You do not need to convert the ports on the local storage array and the remote storage array to the same protocol as long as both storage arrays have at least one active FC port after the conversion.
 * If you plan to convert the ports that are being used for mirrored relationships, you must deactivate any synchronous or asynchronous mirror relationships before applying the feature pack.
-+
-Synchronous Mirroring is not supported for iSCSI.
-
 * If you plan to convert the ports that are _not_ being used for mirroring, asynchronous mirroring operations will be unaffected.
 * Before applying the feature pack, you should confirm that all mirror consistency groups are synchronized. After applying the feature pack, you should test the communication between the local storage array and the remote storage array.
 
-Data Assurance considerations
+Data Assurance considerations:
 
 * The Data Assurance (DA) feature is not supported for iSCSI.
 +
 To ensure that data access remains uninterrupted, you might need to remap or remove DA volumes from host clusters before applying the feature pack.
 +
+[options = "header"]
 |===
 | If you have...| You must...
 a|
-    DA volumes in the default cluster
+DA volumes in the default cluster
 a|
-    Remap all the DA volumes in the default cluster.
+Remap all the DA volumes in the default cluster.
 
  ** If you do not want to share DA volumes between hosts, follow these steps:
   ... Create a host partition for each set of FC host ports (unless this has already been done).
@@ -141,10 +133,10 @@ a|
 NOTE: This approach eliminates volume access to any volumes that remain in the default cluster.
 
 a|
-    DA volumes in a host cluster that contains FC-only hosts, and you want to add iSCSI-only hosts
+DA volumes in a host cluster that contains FC-only hosts, and you want to add iSCSI-only hosts
 a|
-    Remove any DA volumes belonging to the cluster, using one of these options.
-+
+Remove any DA volumes belonging to the cluster, using one of these options.
+
 NOTE: DA volumes cannot be shared in this scenario.
 
  ** If you do not want to share DA volumes between hosts, remap all DA volumes to individual FC hosts within the cluster.
@@ -152,14 +144,13 @@ NOTE: DA volumes cannot be shared in this scenario.
  ** Add an FC HBA to the iSCSI-only hosts to allow for sharing of both DA and non-DA volumes.
 
 a|
-    DA volumes in a host cluster that contains FC-only hosts, or DA volumes that are mapped to an individual FC host partition
+DA volumes in a host cluster that contains FC-only hosts, or DA volumes that are mapped to an individual FC host partition
 a|
-    No action is needed before applying the feature pack. DA volumes will remain mapped to their respective FC host.
+No action is needed before applying the feature pack. DA volumes will remain mapped to their respective FC host.
 a|
-    No partitions defined
+No partitions defined
 a|
-    No action is needed before applying the feature pack because no volumes are currently mapped. After converting the host protocol, follow the proper procedure to create host partitions and, if desired, host clusters.
-+
+No action is needed before applying the feature pack because no volumes are currently mapped. After converting the host protocol, follow the proper procedure to create host partitions and, if desired, host clusters.
 |===
 
 === Converting from iSCSI to FC/iSCSI
@@ -177,7 +168,7 @@ Before applying the feature pack, you should confirm that all mirror consistency
 * When converting all host ports to FC, keep in mind that asynchronous mirroring over FC must occur on the highest-numbered FC port.
 * If you plan to convert the ports being used for mirrored relationships, you must deactivate these relationships before applying the feature pack.
 +
-IMPORTANT: *Possible data loss --* If you do not delete the asynchronous mirroring relationships that occurred over iSCSI before converting the ports to FC, the controllers might lock down, and you might lose data.
+CAUTION: *Possible data loss* -- If you do not delete the asynchronous mirroring relationships that occurred over iSCSI before converting the ports to FC, the controllers might lock down, and you might lose data.
 
 * If the storage array currently has iSCSI baseboard ports and FC HIC ports, asynchronous mirroring operations will be unaffected.
 +
@@ -189,8 +180,9 @@ When you apply the feature pack, mirroring support will move from the highest-nu
 +
 image::../media/28_dwg_e2800_fc_iscsi_to_fc.gif[]
 +
+[options = "header"]
 |===
-| Before the conversion| After the conversion| Required steps
+3+| Before the conversion 3+| After the conversion .2+| Required steps
 | Baseboard ports| HIC ports| Port used for mirroring| Baseboard ports| HIC ports| Port used for mirroring
 a|
 iSCSI
@@ -204,8 +196,7 @@ a|
 FC
 a|
 image:../media/legend_icon_02_maint-e2800.gif[]
-a|
-    Synchronize mirror consistency groups before and test communications after
+a|Synchronize mirror consistency groups before and test communications after
 a|
 FC
 a|
@@ -219,8 +210,7 @@ FC
 a|
 image:../media/legend_icon_02_maint-e2800.gif[]
 a|
-    Delete mirroring relationships before and re-establish mirroring after
-+
+Delete mirroring relationships before and re-establish mirroring after
 |===
 
 === Converting from FC/iSCSI to iSCSI
@@ -228,7 +218,7 @@ a|
 * Synchronous Mirroring is not supported for iSCSI.
 * If you plan to convert the ports that are being used for mirrored relationships, you must deactivate mirroring relationships before applying the feature pack.
 +
-IMPORTANT: *Possible data loss --* If you do not delete the mirroring relationships that occurred over FC before converting the ports to iSCSI, the controllers might lock down, and you might lose data.
+CAUTION: *Possible data loss* -- If you do not delete the mirroring relationships that occurred over FC before converting the ports to iSCSI, the controllers might lock down, and you might lose data.
 
 * If you do not plan to convert the ports that are being used for mirroring, mirroring operations will be unaffected.
 * Before applying the feature pack, you should confirm that all mirror consistency groups are synchronized.
@@ -236,8 +226,6 @@ IMPORTANT: *Possible data loss --* If you do not delete the mirroring relationsh
 
 === Same host protocol and mirroring operations
 
-Mirroring operations are not affected if the host ports being used for mirroring keep the same protocol after you apply the feature pack.
-
-Even so, before applying the feature pack, you should confirm that all mirror consistency groups are synchronized.
+Mirroring operations are not affected if the host ports being used for mirroring keep the same protocol after you apply the feature pack. Even so, before applying the feature pack, you should confirm that all mirror consistency groups are synchronized.
 
 After applying the feature pack, you should test the communication between the local storage array and the remote storage array. Refer to the online help for SANtricity System Manager if you have questions on how to do this.

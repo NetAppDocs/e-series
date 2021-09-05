@@ -1,25 +1,15 @@
 ---
 permalink: maintenance-ef600/power_overview_requirements2_concept.html
 sidebar: sidebar
-keywords: replace, power, supply, requirement, overview, replacing
-summary: Before you replace a power supply, you need to be aware of some requirements.
+keywords: replace EF300 power supply, replace EF600 power supply,
+summary:  Review requirements and considerations before replacing an EF300 or EF600 power supply.
 ---
-= Overview and requirements
+=  Requirements for EF300 or EF600 power supply replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you replace a power supply, you need to be aware of some requirements.
-
-== Requirements for replacing a power supply
-
-[.lead]
-If you plan to replace a power supply, keep the following requirements in mind.
+Before replacing a power supply in an EF300 or EF600 array, review the following requirements.
 
 * You must have a replacement power supply that is supported for your controller shelf or drive shelf model.
-* You have an ESD wristband, or you have taken other antistatic precautions.
-
-This section describes how to replace a power supply in the following shelves:
-
-* EF300 controller shelf
-* EF600 controller shelf
+* You must have an ESD wristband, or you have taken other antistatic precautions.

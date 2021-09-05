@@ -8,14 +8,35 @@ summary: SANtricity Cloud Connector
 :icons: font
 :imagesdir: ../media/
 
-* link:learn_intro_concept.md#learn_intro_concept[Learn about Cloud Connector]
-* link:install_intro_concept.md#install_intro_concept[Install SANtricity Cloud Connector]
-* link:config_intro_concept.md#config_intro_concept[Configure the SANtricity Cloud Connector for the first time]
-* xref:login_task.adoc[Log into the SANtricity Cloud Connector]
-* link:backup_intro_concept.md#backup_intro_concept[Backups]
-* link:restore_intro_concept.md#restore_intro_concept[Restores]
-* link:modify_intro_concept.md#modify_intro_concept[Modify the SANtricity Cloud Connectors Settings]
-* link:uninstall_intro_concept.md#uninstall_intro_concept[Uninstall the SANtricity Cloud Connector]
-* xref:reference_copyright.adoc[Copyright]
-* xref:reference_trademark.adoc[Trademark]
-* xref:concept_how_to_send_comments_about_documentation_and_receive_update_notifications_netapp_post_preface.adoc[How to send comments about documentation and receive update notifications]
+[.lead]
+The SANtricity Cloud Connector is a host-based Linux application that enables you to perform full block-based and file-based backup and recovery of E-Series volumes to S3 complaint accounts (for example, Amazon Simple Storage Service and NetApp StorageGRID) and NetApp AltaVault appliance.
+
+Available for installation on RedHat and SUSE Linux platforms, the SANtricity Cloud Connector is a packaged solution (.bin file). After you install SANtricity Cloud Connector, you can configure the application to perform backup and restore jobs for E-Series volumes to an AltaVault appliance or to your existing Amazon S3 or StorageGRID accounts. All jobs performed through the SANtricity Cloud Connector use REST-based APIs.
+
+== Understand the SANtricity Cloud Connector
+
+[.lead]
+Learn about general concepts, setup, installation, configuration, and jobs associated with the SANtricity Cloud Connector application.
+
+* Configuration and backup/restore job procedures apply to the graphical user interface version of the SANtricity Cloud Connector.
+* REST API workflows for the SANtricity Cloud Connector application are not described.
+* For experienced developers, endpoints are available for each SANtricity Cloud Connector operation under the API documentation. The API documentation is accessible by navigating to h``ttp://<hostname.domain>:<port>/docs`` through a browser.
+
+=== Types of backup
+
+[.lead]
+The SANtricity Cloud Connector provides two types of backups, image-based and file-based backups.
+
+* *Image-based backup*
++
+An image-based backup reads the raw data blocks from a snapshot volume and backs them up to a file known as an image. All of the data blocks on the snapshot volume are backed up, including empty blocks, blocks occupied by deleted files, blocks associated with partitioning, and filesystem metadata. Image backups have the advantage of storing all information with the snapshot volume regardless of the partitioning scheme or filesystems on it.
++
+The image is not stored on the Backup Target as a single file but is instead broken up into a series of Data Chunks, which are 64MB in size. The data chunks allow SANtricity Cloud Connector to use multiple connections to the backup target, thereby improving the performance of the backup process.
++
+For backups to StorageGRID and Amazon Web Services (S3), each data chunk uses a separate encryption key to encrypt the chunk. The key is a SHA256 hash consisting of the combination of a user supplied passphrase and the SHA256 hash of the user data. For backups to AltaVault, SANtricity Cloud Connector does not encrypt the data chunks as AltaVault performs this operation.
+
+* *File-based backup*
++
+A file-based backup reads the files contained with a filesystem partition and backs them up into a series of data chunks that are 64MB in size. A file-based backup does not back up deleted files or partitioning and filesystem metadata. As with image-based backups, the data chunks allow SANtricity Cloud Connector to use multiple connections to the backup target, thereby improving performance of the backup process.
++
+For backups to StorageGRID and Amazon Web Services, each data chunk uses a separate encryption key to encrypt the chunk. The key is a SHA256 hash consisting of the combination of user-supplied pass phrase and the SHA256 hash of the user data. For backups to AltaVault, the data chunks are not encrypted by SANtricity Cloud Connector because AltaVault performs this operation.

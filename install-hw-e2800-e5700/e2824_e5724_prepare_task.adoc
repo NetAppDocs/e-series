@@ -1,15 +1,17 @@
 ---
 permalink: install-hw-e2800-e5700/e2824_e5724_prepare_task.html
 sidebar: sidebar
-keywords: install, e5724, ef570, ef280, e2812, e2824, de212c, de224c, series, storage, system, create, account, register, hardware, inventory, number, type, cable, item, key, installation, process, prepare
-summary: To install your E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C series storage system, you need to create an account and register your hardware. You also need to inventory the appropriate number and type of cables for your storage system and provide some key items required for the hardware installation process.
+keywords: e5724, ef570, ef280, e2812, e2824, de212c, de224c, installation
+summary: To install the E5724, EF570, EF280, E2812, E2824, DE212C, or DE224C, create an account and register your hardware.
 ---
 = Prepare for installation
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To install your E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C series storage system, you need to create an account and register your hardware. You also need to inventory the appropriate number and type of cables for your storage system and provide some key items required for the hardware installation process.
+Follow these steps to prepare for installation of your E5724, EF570, EF280, E2812, E2824, DE212C, or DE224C series storage system.
+
+===== Steps
 
 . Create an account and register your hardware at http://mysupport.netapp.com/[mysupport.netapp.com].
 . Ensure that the following items are in the box that you received.
@@ -91,6 +93,12 @@ a|
 a|
 image:../media/management_station_inst-hw-e2800-e5700_g60b3.png[]
 a|
-A supported browser for the management software
+A supported browser for the management software:
+
+* Google Chrome (version 78 and later)
+* Microsoft Internet Explorer (version 11 and later)
+* Microsoft Edge (88 and later)
+* Mozilla Firefox (version 70 and later)
+* Safari (version 12 and later)
 
 |===

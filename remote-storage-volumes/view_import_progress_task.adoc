@@ -11,7 +11,11 @@ summary: You can view the status of each remote storage import from the result l
 [.lead]
 You can view the status of each remote storage import from the result list section of the Remote Storage screen of the SANtricity System Manager.
 
+===== Before You Begin
+
 The status of each remote storage import is viewable from the result list section of the Remote Storage screen of SANtricity System Manager. Various actions can be performed on each import based on its status.
+
+===== Steps
 
 . From the Remote Storage screen of the SANtricity System Manager, click on *View Operations*.
 +
@@ -22,7 +26,11 @@ The Operations in Progress screen is displayed.
 [.lead]
 For remote storage imports with a status of Pending or In progress, you can change the import priority directly from the SANtricity System Manager.
 
+===== Before You Begin
+
 Import priority can be changed directly from the Operations in Progress window on imports that have either an in-progress or pending status using the following steps.
+
+===== Steps
 
 . Under the result list section of the Operations in Progress screen, click *Change Priority* under the Actions column for the corresponding remote storage import with a status of Pending or In progress.
 +
@@ -43,9 +51,13 @@ The selected priority is applied to the remote storage import.
 [.lead]
 For remote storage imports with a status of Pending or In progress, you can stop an import directly from the SANtricity System Manager.
 
+===== Before You Begin
+
 An import can be stopped directly from the Operations In Progress window on imports that have either an in-progress or pending status using the following steps.
 
 NOTE: This operation halts the copying of data from the remote storage device but the relationship between the import pair is still intact.
+
+===== Steps
 
 . Under the result list section of the Operations in Progress screen, click *Stop* in the Actions menu.
 +
@@ -61,9 +73,13 @@ The Remote Storage Import process is stopped.
 [.lead]
 For remote storage imports with a status of failed or stopped, you can resume the remote storage import from the SANtricity System Manager.
 
+===== Before You Begin
+
 An import can be resumed directly from the Operation In Progress window on imports that have either a Failed or Stopped status using the following steps.
 
 NOTE: The resume operation only resumes an existing import and does not restart the import from the beginning of the process. If the import needs to be restarted from the beginning, it must be disconnected and then re-created through the Import Remote Storage wizard.
+
+===== Steps
 
 . Under the result list section of the Operations in Progress screen, click *Resume* in the Actions column for the corresponding remote storage import with a status of Failed or Stopped.
 +
@@ -83,6 +99,8 @@ The selected priority is applied to the remote storage import.
 
 [.lead]
 For remote storage imports with a status of completed, stopped, or failed, you can disconnect the volume on the destination E-Series system from the remote storage device through the SANtricity System Manager.
+
+===== Steps
 
 . Under the result list section of the Operations in Progress screen, click *Disconnect* in the Actions column for the corresponding remote storage import with a status of completed, failed, or stopped.
 +

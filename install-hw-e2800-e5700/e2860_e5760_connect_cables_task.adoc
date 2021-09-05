@@ -1,33 +1,35 @@
 ---
 permalink: install-hw-e2800-e5700/e2860_e5760_connect_cables_task.html
 sidebar: sidebar
-keywords: attach, power, cable, drive, shelves, shelf
-summary: You attach the power cables and power on the drive shelves.
+keywords: E2800, E5700, connect power cables
+summary: Attach the power cables and power on the drive shelves.
 ---
 = Cable the shelves
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You attach the power cables and power on the drive shelves.
+Follow this procedure to attach the power cables and power on the drive shelves.
+
+===== Before you begin
 
 * You have installed your hardware.
 * You have taken anti-static precautions.
 
-. Cable the Shelves
+===== Steps
+
+. Cable the shelves.
 +
-Cable the system according to your configuration. Examples are shown in this section. For more cabling options, see Cabling E-Series Hardware.
+Cable the system according to your configuration. If you need more cabling options than the examples shown in this section, see link:../install-hw-cabling/index.html[Cabling].
 +
-http://docs.netapp.com/ess-11/index.jsp[Cabling E-Series Hardware]
-+
-For the examples shown in this section you will need the following cables:
+For the examples shown in this section, you need the following cables:
 +
 |===
 a|
-image:../media/sas_cable.png[]
-a|
+image:../media/sas_cable.png[] a|
 *SAS cables*
 |===
+*Cabling examples:*
 +
 |===
 a|
@@ -35,9 +37,7 @@ a|
  .. Cable controller A to IOM A of the first drive shelf.
  .. Cable IOM A of the first drive shelf to IOM A of the second drive shelf.
  .. Cable IOM B of the first drive shelf to IOM B of the second drive shelf.
- .. Cable controller B to IOM B of the second drive shelf.
-
-a|
+ .. Cable controller B to IOM B of the second drive shelf. a|
 image:../media/trafford_power.png[]
 
 Example A: An E2860 controller shelf with two DE460C disk shelves in a standard SAS configuration.
@@ -47,27 +47,22 @@ Example A: An E2860 controller shelf with two DE460C disk shelves in a standard 
 a|
 
  .. Cable controller A to IOM A.
- .. Cable controller B to IOM B.
-
-a|
+ .. Cable controller B to IOM B. a|
 image:../media/trafford_power.png[]
 
 Example B: An E2860 controller shelf with one DE460C disk shelf in a standard SAS configuration.
 |===
 
-. Power the Drive Shelves
+. Power the drive shelves.
 +
-You will need the following cables:
+You need the following cables:
 +
 |===
 a|
-image:../media/power_cable_inst-hw-e2800-e5700.png[]
-a|
+image:../media/power_cable_inst-hw-e2800-e5700.png[] a|
 *Power cables*
 |===
-CAUTION:
-+
-Confirm the drive shelf power switches are off.
+CAUTION: Confirm the drive shelf power switches are off.
 
  .. Connect the two power cables for each shelf to different power distribution units (PDUs) in the cabinet or rack.
  .. If you have drive shelves, turn on their two power switches first. Wait 2 minutes before applying power to the controller shelf.
@@ -79,5 +74,7 @@ During boot, the seven-segment display shows the repeating sequence of OS, Sd, b
 +
 |===
 a|
-image:../media/trafford_power.png[]     Example: Power connections are on the rear of the shelf.
+image:../media/trafford_power.png[]
+
+Example: Power connections are on the rear of the shelf.
 |===

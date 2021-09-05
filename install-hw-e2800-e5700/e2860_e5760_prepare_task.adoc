@@ -1,15 +1,17 @@
 ---
 permalink: install-hw-e2800-e5700/e2860_e5760_prepare_task.html
 sidebar: sidebar
-keywords: install, e2860, e5760, de460, series, storage, system, create, account, register, hardware, inventory, number, cable, key, item, installation, process, prepare
-summary: To install your E2860, E5760, and DE460 series storage system, you need to create an account and register your hardware. You also need to inventory the appropriate number and type of cables for your storage system and provide some key items required for the hardware installation process.
+keywords: E2860, E5760, DE460, installation
+summary: To install the E2860, E5760, or DE460, create an account and register your hardware.
 ---
 = Prepare for installation
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To install your E2860, E5760, and DE460 series storage system, you need to create an account and register your hardware. You also need to inventory the appropriate number and type of cables for your storage system and provide some key items required for the hardware installation process.
+Follow these steps to prepare for installation of your E2860, E5760, or DE460 series storage system.
+
+===== Steps
 
 . Create an account and register your hardware at http://mysupport.netapp.com/[mysupport.netapp.com].
 . Ensure that the following items are in the box that you received.
@@ -91,5 +93,12 @@ a|
 a|
 image:../media/management_station_inst-hw-e2800-e5700_g60b3.png[]
 a|
-A supported browser for the management software
+A supported browser for the management software:
+
+* Google Chrome (version 47 and later)
+* Microsoft Internet Explorer (version 11 and later)
+* Microsoft Edge (EdgeHTML 12 and later)
+* Mozilla Firefox (version 31 and later)
+* Safari (version 9 and later)
+
 |===

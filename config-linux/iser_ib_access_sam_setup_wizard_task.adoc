@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/iser_ib_access_sam_setup_wizard_task.html
 sidebar: sidebar
-keywords: setup, wizard, santricity, system, manager, configure, storage, array
+keywords: access System Manager Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: You use the Setup wizard in SANtricity System Manager to configure your storage array.
 ---
 = Access SANtricity System Manager and use the Setup wizard
@@ -10,6 +10,8 @@ summary: You use the Setup wizard in SANtricity System Manager to configure your
 
 [.lead]
 You use the Setup wizard in SANtricity System Manager to configure your storage array.
+
+===== Before you begin
 
 * You have ensured that the device from which you will access SANtricity System Manager contains one of the following browsers:
 +
@@ -40,15 +42,19 @@ a|
 
 * You are using out-of-band management.
 
+===== About this task
+
 The wizard automatically relaunches when you open System Manager or refresh your browser and _at least one_ of the following conditions is met:
 
 * No pools and volume groups are detected.
 * No workloads are detected.
 * No notifications are configured.
 
-. From your browser, enter the following URL: `https://<DomainNameOrIPAddress>`
+===== Steps
+
+. From your browser, enter the following URL: `+https://<DomainNameOrIPAddress>+`
 +
-IPAddress is the address for one of the storage array controllers.
+`IPAddress` is the address for one of the storage array controllers.
 +
 The first time SANtricity System Manager is opened on an array that has not been configured, the Set Administrator Password prompt appears. Role-based access management configures four local roles: admin, support, security, and monitor. The latter three roles have random passwords that cannot be guessed. After you set a password for the admin role you can change all of the passwords using the admin credentials. See _SANtricity System Manager online help_ for more information on the four local user roles.
 

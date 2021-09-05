@@ -1,19 +1,23 @@
 ---
 permalink: install-hw-ef600/install_hardware_task.html
 sidebar: sidebar
-keywords: install, storage, system, two-post, rack, netapp, cabinet, hardware
-summary: You install your storage system in a two-post rack or a NetApp system cabinet, as applicable.
+keywords: EF300, EF600, installation, 
+summary: Install the EF300 or EF600 in a two-post rack or a NetApp system cabinet.
 ---
 = Install the hardware
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You install your storage system in a two-post rack or a NetApp system cabinet, as applicable.
+Follow this procedure to install a EF300 or EF600 storage system in a two-post rack or a NetApp system cabinet.
+
+===== Before you begin
 
 * You have registered your hardware at http://mysupport.netapp.com/[mysupport.netapp.com].
 * You have prepared a flat, static-free work area.
 * You have taken anti-static precautions.
+
+===== Steps
 
 . Unpack the hardware.
  .. Unpack the contents and inventory the contained hardware against the packing slip.
@@ -25,9 +29,7 @@ NOTE: To prevent the equipment from toppling over, install the hardware from the
 +
 |===
 a|
-If instructions were included with your rack-mounting hardware, refer to them for detailed information on how to install the rails.
-
-NOTE: For online instructions for installing SuperRails, see http://docs.netapp.com/platstor/index.jsp?topic=%2Fcom.netapp.doc.hw-rail-superrail%2Fhome.html[AFF and FAS System Documentation Center].
+If instructions were included with your rack-mounting hardware, refer to them for detailed information on how to install the rails. For additional rack-mounting instructions, see link:../rackmount-hardware.html[Rack-mount hardware].
 a|
 image:../media/install_rails_inst-hw-ef600.png[]
 |===

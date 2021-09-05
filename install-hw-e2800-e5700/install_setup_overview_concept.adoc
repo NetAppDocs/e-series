@@ -1,41 +1,14 @@
 ---
 permalink: install-hw-e2800-e5700/install_setup_overview_concept.html
 sidebar: sidebar
-keywords: choose, content, format, guide, install, set, up, storage, system, overview
-summary: You can choose from different content formats to guide you through installing and setting up your new storage system.
+keywords: E2800, E5700, installation process overview
+summary: Review the process for installing and setting up an E2800 and E5700.
 ---
 = Overview
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-== Choose your installation and setup experience
-
-You can choose from different content formats to guide you through installing and setting up your new storage system.
-
-|===
-a|
-image:../media/drw_isiposter_icon_inst-hw-e2800-e5700.gif[] a|
-Installation and setup PDF posterA printable PDF of step-by-step instructions with live links to additional content.
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2842061[E2860, E5760 and DE460C Installation and Setup]
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2842063[E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C Installation and Setup]
-
-a|
-image:../media/drw_onlineguide_icon_inst-hw-e2800-e5700.gif[]
-a|
-The setup instructions described on the following pages.You must choose the correct setup instructions for your new storage system.
-
-xref:e2860_e5760_install_setup_task.adoc[Installation and Setup Instructions for E2860, E5760 and DE460C]
-
-xref:e2824_e5724_install_setup_task.adoc[Installation and Setup Instructions for E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C]
-
-|===
-
-== Installation and setup high-level workflow
-
-[.lead]
-Before you begin installing and setting up your new storage system, you can familiarize yourself with the installation process.
+Before you begin installing and setting up your new storage system, familiarize yourself with the installation process:
 
 image::../media/ef600_isi_workflow_v_2_inst-hw-e2800-e5700.bmp[]

@@ -1,22 +1,19 @@
 ---
 permalink: maintenance-e5700/batteries_intro_concept.html
 sidebar: sidebar
-keywords: replace, battery, requirement, consideration, overview, replacing, fail
-summary: Before you replace a battery, you need to be aware of certain requirements and considerations.
+keywords: E5700 battery, repair E5700 battery, replace E5700 battery, failed E5700 battery
+summary: Review E5700 battery replacement requirements and considerations.
 ---
-= Overview and requirements
+= Requirements for E5700 battery replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you replace a battery, you need to be aware of certain requirements and considerations.
+Before you replace an E5700 battery, review the requirements and considerations.
 
-== Battery overview
+Each controller canister includes a battery that preserves cached data if the AC power fails.
 
-[.lead]
-Each controller canister includes a battery that preserves cached data if the AC power fails. To protect your data, you must replace a failed battery as soon as possible.
-
-=== Recovery Guru alerts
+== Recovery Guru alerts
 
 If the Recovery Guru in SANtricity System Manager reports one of following statuses, you must replace the affected battery:
 
@@ -25,25 +22,26 @@ If the Recovery Guru in SANtricity System Manager reports one of following statu
 
 From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
 
-=== Steps needed to replace battery
+== Procedure overview
+
+To protect your data, you must replace a failed battery as soon as possible.
 
 The following is an overview of the steps to replace a battery in E5700 controllers (E5724, EF570, or E5760):
 
-. Take controller offline.
+. Take controller offline (duplex only).
 . Remove the controller canister.
 . Replace the battery.
 . Replace the controller canister.
-. Bring the controller online.
+. Bring the controller online (duplex only).
 
-== Requirements for replacing a failed battery
+== Requirements
 
-[.lead]
 If you plan to replace a failed battery, keep the following requirements in mind.
 
-* You must have installed SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
+* You must install SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
 +
-If this software has not yet been installed, follow the instructions in the link:../com.netapp.doc.ssm-exp-ic-lin/home.html[Linux express configuration], link:../com.netapp.doc.ssm-exp-ic-win/home.html[Windows express configuration], or link:../com.netapp.doc.ssm-exp-ic-vm/home.html[VMware express configuration] to download and install it.
+If this software has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install it.
 
 * You must have a replacement battery.
-* You have an ESD wristband, or you have taken other antistatic precautions.
+* You must have an ESD wristband, or you have taken other antistatic precautions.
 * You should use labels to identify each cable that is connected to the controller canister.

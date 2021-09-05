@@ -1,0 +1,39 @@
+---
+sidebar: sidebar
+permalink: early-versions.html
+keywords: early versions, e-series, hardware, santricity, os
+summary: Earlier versions of documentation
+---
+
+= Earlier versions
+
+[.lead]
+Check out the links below to access documentation for earlier versions of E-Series hardware and SANtricity software. The links take you to a different documentation site.
+
+== Hardware documentation for earlier releases
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2484026[Install E2712, E2724, E5612, E5624 controller-drive trays and DE1600 and DE5600 expansion drive trays]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2484072[Install E2760 and E5660 controller-drive trays and DE6600 expansion drive trays]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2484108[Install EF560 flash arrays and DE5600 flash expansion trays]
+* https://mysupport.netapp.com/info/web/ECMP11392380.html[Install older systems]
+* https://mysupport.netapp.com/info/web/ECMP11751516.html[Maintain older systems]
+* https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1394872[Add second controller to E2600 and E2700]
+* https://mysupport.netapp.com/info/web/ECMP11750309.html[Change or add host protocols]
+* https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1656638[Convert from AC to DC power]
+
+== Software documentation for earlier releases
+
+=== SANtricity Release 11.6
+
+* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-116/home.html[System Manager online help]
+* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-32/home.html[Unified Manager online help]
+
+=== SANtricity Release 11.5
+* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-115/home.html[System Manager online help]
+* https://mysupport.netapp.com/NOW/public/eseries/unified_archive1150/index.html[Unified Manager online help]
+
+=== SANtricity Release 11.4
+
+* https://mysupport.netapp.com/NOW/public/eseries/sam_archive1140/index.html[System Manager (E2800) online help]
+* https://mysupport.netapp.com/ecm/ecm_get_file/ECMLP2862590[AMW (E2700, E5600/EF560) online help]
+* https://mysupport.netapp.com/ecm/ecm_get_file/ECMLP2862588[EMW (E2700, E5600/EF560) online help]

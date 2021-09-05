@@ -1,19 +1,19 @@
 ---
 permalink: config-linux/nvme_ib_worksheet_concept.html
 sidebar: sidebar
-keywords: worksheet, record, nvme, infiniband, storage, configuration, information, perform, provision, task, host, identifier, target, nqn, network, subnet, map, name
-summary: You can use this worksheet to record NVMe over Infiniband storage configuration information. You need this information to perform provisioning tasks.
+keywords: NVMe over Infiniband worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Use this worksheet to record NVMe over Infiniband storage configuration information.
 ---
 = NVMe over InfiniBand worksheet
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use this worksheet to record NVMe over Infiniband storage configuration information. You need this information to perform provisioning tasks.
+You can use this worksheet to record NVMe over InfiniBand storage configuration information. You need this information to perform provisioning tasks.
 
 == NVMe over InfiniBand: Host identifiers
 
-NOTE: The software initiator NQN is determined during the task, .
+NOTE: The software initiator NQN is determined during the task.
 
 Locate and document the initiator NQN from each host. The NQN is typically found in the /ect/nvme/hostnqn file.
 
@@ -60,9 +60,9 @@ image::../media/nvmeof_direct_connect.gif[]
 
 == NVMe over InfiniBand: Target NQN
 
-Document the target NQN for the storage array. You will use this information in xref:nvme_ib_configure_storage_connections_task.adoc[Configure storage array NVMe over InfiniBand connections] .
+Document the target NQN for the storage array. You will use this information in xref:nvme_ib_configure_storage_connections_task.adoc[Configure storage array NVMe over InfiniBand connections].
 
-Find the Storage Array NQN name using SANtricity: *Storage Array* > *NVMe over Infiniband* > *Manage Settings*. This information might be necessary when you create NVMe over Infiniband sessions from operating systems that do not support send targets discovery.
+Find the Storage Array NQN name using SANtricity: *Storage Array* > *NVMe over Infiniband* > *Manage Settings*. This information might be necessary when you create NVMe over InfiniBand sessions from operating systems that do not support send targets discovery.
 
 [options="header"]
 |===

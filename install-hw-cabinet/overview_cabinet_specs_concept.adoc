@@ -1,32 +1,12 @@
 ---
 permalink: install-hw-cabinet/overview_cabinet_specs_concept.html
 sidebar: sidebar
-keywords: overview, specification
-summary: Overview and specifications
+keywords: 3040 40U cabinet specs, cabinet installation, drive tray installation, controller installation, shelf installation, E2800, E5700, EF300, EF600,
+summary: Review overview and specifications for cabinet installation.
 ---
-= Overview and specifications
+= Cabinet specifications
 :icons: font
 :imagesdir: ../media/
-
-[.lead]
-This section describes the power requirements and maximum weights for the following E-Series and EF-Series controller-drive trays and expansion drive trays.
-
-* E2612, E2624, and E2660 controller-drive trays
-* E2712, E2724, and E2760 controller-drive trays
-* E5412, E5424, and E5460 controller-drive trays
-* E5512, E5524, and E5560 controller-drive trays
-* E5612, E5624, and E5660 controller-drive trays
-* EF540, EF550, and EF560 flash arrays
-* DE1600, DE5600, and DE6600 drive trays
-
-Specifications are not provided for the following controller shelves and drive shelves, which can also be installed in the cabinet.
-
-* E2812, E2824, and E5724 controller shelves
-* DE212C and DE224C drive shelves
-
-For specifications for the SAS-3 controller shelves and drive shelves listed above, refer to the https://hwu.netapp.com[NetApp Hardware Universe].
-
-== Cabinet features
 
 [.lead]
 The model 3040 40U cabinet has these standard features:
@@ -89,9 +69,9 @@ a|
 a|
 Rear of the cabinet
 |===
-*Warning:* *Risk of bodily injury* -- If the bottom half of the cabinet is empty, do not install components in the top half of the cabinet. If the top half of the cabinet is too heavy for the bottom half, the cabinet might fall and cause bodily injury. Always install a component in the lowest available position in the cabinet.
+CAUTION: *Risk of bodily injury* -- If the bottom half of the cabinet is empty, do not install components in the top half of the cabinet. If the top half of the cabinet is too heavy for the bottom half, the cabinet might fall and cause bodily injury. Always install a component in the lowest available position in the cabinet.
 
-WARNING: *Risk of bodily injury* -- Only move a populated cabinet with a forklift or adequate help from other persons. Always push the cabinet from the front to prevent it from falling over. A fully populated cabinet can weigh more than 2000 lb (909 kg). The cabinet is difficult to move, even on a flat surface. If you must move the cabinet along an inclined surface, remove the components from the top half of the cabinet, and make sure that you have adequate help.
+CAUTION: *Risk of bodily injury* -- Only move a populated cabinet with a forklift or adequate help from other persons. Always push the cabinet from the front to prevent it from falling over. A fully populated cabinet can weigh more than 2000 lb (909 kg). The cabinet is difficult to move, even on a flat surface. If you must move the cabinet along an inclined surface, remove the components from the top half of the cabinet, and make sure that you have adequate help.
 
 NOTE: You cannot install E2860 or E5760 controller shelves or a DE460C drive shelf into a 3040 40U cabinet.
 
@@ -99,7 +79,6 @@ NOTE: If a 3040 cabinet is fully populated with DE6600 trays, it weighs more tha
 
 == Power requirements and heat dissipation
 
-[.lead]
 The cabinet includes the following specifications for power and heat dissipation.
 
 === Power rating
@@ -289,7 +268,6 @@ a|
 
 == Maximum number of trays
 
-[.lead]
 The maximum number of trays that you can install in a 3040 40U cabinet depends on the height of each tray in rack units (U).
 
 === Tray heights in rack units (U)

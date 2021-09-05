@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/nvme_ib_create_filesystems_sles_12_task.html
 sidebar: sidebar
-keywords: rhel, sles, file, system, namespace, mount, filesystem, create
+keywords: file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: For RHEL 7 and SLES 12, you create a file system on the namespace and mount the filesystem.
 ---
 = Create filesystems (RHEL 7 and SLES 12)
@@ -11,13 +11,15 @@ summary: For RHEL 7 and SLES 12, you create a file system on the namespace and m
 [.lead]
 For RHEL 7 and SLES 12, you create a file system on the namespace and mount the filesystem.
 
-. Run the multipath -ll command to get a list of/dev/mapper/dm devices.
+===== Steps
+
+. Run the `multipath -ll` command to get a list of `/dev/mapper/dm` devices.
 +
 ----
 # multipath -ll
 ----
 +
-The result of this command shows two devices, dm-19 and dm-16 :
+The result of this command shows two devices, `dm-19` and `dm-16`:
 +
 ----
 eui.00001ffe5a94ff8500a0980000af4444 dm-19 NVME,NetApp E-Series
@@ -38,9 +40,9 @@ size=16G features='1 queue_if_no_path' hwhandler='0' wp=rw
   `- #:#:#:# nvme3n16 259:80  active ready running
 ----
 
-. Create a file system on the partition for each /dev/mapper/eui- device.
+. Create a file system on the partition for each `/dev/mapper/eui-` device.
 +
-The method for creating a file system varies depending on the file system chosen. This example shows creating an ext4 file system.
+The method for creating a file system varies depending on the file system chosen. This example shows creating an `ext4` file system.
 +
 ----
 # mkfs.ext4 /dev/mapper/dm-19

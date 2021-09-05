@@ -1,20 +1,19 @@
 ---
 permalink: maintenance-e5700/drives_overview_supertask_concept.html
 sidebar: sidebar
-keywords: replace, drive, aware, requirement, consideration, overview, drawer, handling
-summary: Before you replace a drive, you need to be aware of certain requirements and considerations.
+keywords: E5700 drive, replace E5700 drive, failed E5700 drive
+summary: Review E5700 drive requirements.
 ---
-= Overview and requirements
+= Requirements for E5700 drive replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you replace a drive, you need to be aware of certain requirements and considerations.
+Before you replace a drive, review the requirements and considerations.
 
-== Drives overview
+== Shelf types
 
-[.lead]
-You can replace a drive in either a 24-drive or 60-drive controller shelf or drive shelf.
+You can replace a drive in a 24-drive shelf, in a 60-drive shelf, or in a drive drawer.
 
 === 24-drive shelves
 
@@ -38,9 +37,8 @@ image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e5700.gif[]
 
 NOTE: Your E5760 storage array might include one or more SAS-2 legacy expansion drive trays, including the DE1600 12-drive tray, the DE5600 24-drive tray, or the DE6600 60-drive tray. For instructions for replacing a drive in one of these drive trays, see _Replacing a Drive in E2660, E2760, E5460, E5560, or E5660 Trays_ and _Replacing a Drive in E2600, E2700, E5400, E5500, and E5600 12-Drive or 24-Drive Trays_.
 
-== Drive drawer overview
+=== Drive drawer
 
-[.lead]
 You can replace a drive drawer in a E5760 controller shelf and a DE460C drive shelf. Each of these 60-drive shelves has five drive drawers.
 
 image::../media/28_dwg_e2860_de460c_front_no_callouts_maint-e5700.gif[]
@@ -51,8 +49,7 @@ image::../media/92_dwg_de6600_drawer_with_hdds_no_callouts_maint-e5700.gif[]
 
 == Requirements for handling drives
 
-[.lead]
-The drives in your storage array are fragile. Improper drive handling is a leading cause of drive failure.
+CAUTION: The drives in your storage array are fragile. Improper drive handling is a leading cause of drive failure.
 
 Follow these rules to avoid damaging the drives in your storage array:
 

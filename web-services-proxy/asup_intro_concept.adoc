@@ -1,10 +1,10 @@
 ---
 permalink: web-services-proxy/asup_intro_concept.html
 sidebar: sidebar
-keywords: configure, autosupport, asup, collect, data, automatic, technical, support, remote, troubleshoot, problem, analysis, overview
+keywords: ASUP configuration Web Services, AutoSupport Web Services Proxy, WSP ASUP config
 summary: You can configure AutoSupport (ASUP), which collects data and then automatically sends that data to technical support for remote troubleshooting and problem analysis.
 ---
-= Manage AutoSupport
+= Manage AutoSupport using Web Services Proxy
 :icons: font
 :imagesdir: ../media/
 
@@ -13,7 +13,6 @@ You can configure AutoSupport (ASUP), which collects data and then automatically
 
 == Overview of AutoSupport (ASUP)
 
-[.lead]
 The AutoSupport (ASUP) feature automatically transmits messages to NetApp based on manual and schedule-based criteria.
 
 Each AutoSupport message is a collection of log files, configuration data, state data, and performance metrics. By default, AutoSupport transmits the files listed in the following table to the NetApp Support team once each week.
@@ -67,12 +66,10 @@ a|
 
 == Configure AutoSupport
 
-[.lead]
 AutoSupport is enabled by default at installation; however, you can change that setting or modify the delivery types.
 
 === Enable or disable AutoSupport
 
-[.lead]
 The AutoSupport feature is enabled or disabled during the initial installation of the Web Services Proxy, but you can change that setting in the ASUPConfig file.
 
 You can enable or disable AutoSupport through the ASUPConfig.xml file, as described in the steps below. Alternatively, you can enable or disable this feature through the API using *Configuration* and *POST/asup*, and then entering "true" or "false."
@@ -91,7 +88,6 @@ NOTE: The timestamp entry is superfluous.
 
 === Configure AutoSupport delivery method
 
-[.lead]
 You can configure the AutoSupport feature to use HTTPS, HTTP, or SMTP delivery methods. HTTPS is the default delivery method.
 
 . Access the ASUPConfig.xml file in the working directory.

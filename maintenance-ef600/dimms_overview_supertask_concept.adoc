@@ -1,22 +1,19 @@
 ---
 permalink: maintenance-ef600/dimms_overview_supertask_concept.html
 sidebar: sidebar
-keywords: replace, dimm, requirement, consideration, replacing
-summary: Before you replace DIMMs, you need to be aware of certain requirements and considerations.
+keywords: replace EF300 DIMM, replace EF600 DIMM,
+summary: Review requirements and considerations before replacing EF300 or EF600 DIMMs.
 ---
-= Overview and requirements
+= Requirements for replacing an EF300 or EF600 DIMM
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you replace DIMMs, you need to be aware of certain requirements and considerations.
+Before you replace EF300 or EF600 DIMMs, review the requirements and considerations.
 
-== Requirements for replacing DIMMs
+You must replace a DIMM when a memory mismatch is present, or you have a failed DIMM. Be sure to verify the configuration of your EF300 or EF600 controller to ensure the correct DIMM size is replaced.
 
-[.lead]
-The DIMMs in your storage array are fragile. Improper handling can lead to damage to the DIMMs.
-
-You can replace a DIMM for any EF300 or EF600 controller. You must verify the configuration of your EF300 or EF600 controller to ensure the correct DIMM size is replaced.
+CAUTION: Be aware that the DIMMs in your storage array are fragile; improper handling can lead to damage.
 
 Follow these rules to avoid damaging the DIMMs in your storage array:
 
@@ -24,15 +21,10 @@ Follow these rules to avoid damaging the DIMMs in your storage array:
  ** Keep the DIMM in the ESD bag until you are ready to install it.
  ** Open the ESD bag by hand or cut the top off with a pair of scissors. Do not insert a metal tool or knife into the ESD bag.
  ** Keep the ESD bag and any packing materials in case you must return a DIMM later.
-*Warning:* Always wear an ESD wrist strap grounded to an unpainted surface on your storage enclosure chassis.
++
+CAUTION: Always wear an ESD wrist strap grounded to an unpainted surface on your storage enclosure chassis.
 * Handle DIMMs carefully:
  ** Always use two hands when removing, installing, or carrying a DIMM.
  ** Never force a DIMM into a shelf, and use gentle, firm pressure to completely engage the latch.
  ** Always use approved packaging when shipping DIMMs.
-* Avoid magnetic fields:
- ** Keep DIMMs away from magnetic devices.
-
-This section describes how to replace a DIMM in the following controller shelves:
-
-* EF300 controller shelf
-* EF600 controller shelf
+* Avoid magnetic fields. Keep DIMMs away from magnetic devices.
