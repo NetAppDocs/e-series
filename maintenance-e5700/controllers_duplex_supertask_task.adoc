@@ -209,7 +209,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[]
 . Using your fingers or a Phillips screwdriver, loosen the three thumbscrews that secure the HIC to the controller card.
 . Carefully detach the HIC from the controller card by lifting the card up and sliding it back.
 +
-IMPORTANT: Be careful not to scratch or bump the components on the bottom of the HIC or on the top of the controller card.
+NOTE: Be careful not to scratch or bump the components on the bottom of the HIC or on the top of the controller card.
 +
 image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[]
 +

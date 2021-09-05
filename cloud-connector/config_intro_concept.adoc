@@ -165,7 +165,7 @@ NOTE: If unchecked, virtual host-style access is used.
 
 . Select the `Save a backup of the configuration database on this target` checkbox to create a backup of the configuration database on the selected target type.
 +
-IMPORTANT: It is recommended you enable this setting to ensure that data from the backup target can be restored if the database is lost.
+NOTE: It is recommended you enable this setting to ensure that data from the backup target can be restored if the database is lost.
 +
 NOTE: If an existing database configuration is detected on the specified target type when testing the connection, you have the option of replacing the existing database configuration information on the SANtricity Cloud Connector host with the new backup information entered in the configuration wizard.
 
