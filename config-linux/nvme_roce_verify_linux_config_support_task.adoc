@@ -36,7 +36,7 @@ Before using NVMe over RoCE, review the controller, host, and recovery restricti
 
 === Switch restrictions
 
-IMPORTANT: *RISK OF DATA LOSS.* You must enable Priority Flow Control or Global Pause Control on the switch to eliminate the risk of data loss in an NVMe over RoCE environment.
+NOTE: *RISK OF DATA LOSS.* You must enable Priority Flow Control or Global Pause Control on the switch to eliminate the risk of data loss in an NVMe over RoCE environment.
 
 === Host, host protocol, and host operating system restrictions
 

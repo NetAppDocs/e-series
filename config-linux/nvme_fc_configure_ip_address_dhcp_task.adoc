@@ -29,7 +29,7 @@ The DHCP server assigns an IP address to port 1 of each controller.
 +
 NOTE: Do not use management port 2 on either controller. Port 2 is reserved for use by NetApp technical personnel.
 +
-IMPORTANT: If you disconnect and reconnect the Ethernet cable, or if the storage array is power-cycled, DHCP assigns IP addresses again. This process occurs until static IP addresses are configured. You should avoid disconnecting the cable or power-cycling the array.
+NOTE: If you disconnect and reconnect the Ethernet cable, or if the storage array is power-cycled, DHCP assigns IP addresses again. This process occurs until static IP addresses are configured. you should avoid disconnecting the cable or power-cycling the array.
 +
 If the storage array cannot get DHCP-assigned IP addresses within 30 seconds, the following default IP addresses are set:
 

@@ -11,9 +11,9 @@ summary: When you install the SANtricity Storage Manager software on your manage
 [.lead]
 When you install the SANtricity Storage Manager software on your management station, a graphical user interface (GUI) and a command line interface (CLI) are installed by default. These instructions assume that you will install the SANtricity Storage Manager GUI on a management station and _not_ on the I/O host.
 
-===== Before you begin
+NOTE: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricty System Manager, refer to the _Download the command line interface (CLI)_ topic under the SANtricity System Manager Online Help.
 
-IMPORTANT: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricty System Manager, refer to the _Download the command line interface (CLI)_ topic under the SANtricity System Manager Online Help.
+===== Before you begin
 
 * You are using SANtricity software 11.53 or earlier.
 * You must have the correct administrator or superuser privileges.

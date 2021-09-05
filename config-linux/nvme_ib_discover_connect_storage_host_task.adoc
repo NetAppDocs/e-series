@@ -61,13 +61,13 @@ NOTE: The command, `nvme connect -t rdma -n discovered_sub_nqn -a target_ip_addr
 +
 NOTE: The NVMe connections do not persist through system reboot or extended periods of the controller being unavailable.
 +
-IMPORTANT: Connections are not established for any discovered port inaccessible by the host.
+NOTE: Connections are not established for any discovered port inaccessible by the host.
 +
-IMPORTANT: If you specify a port number using this command, the connection fails. The default port is the only port set up for connections.
+NOTE: If you specify a port number using this command, the connection fails. The default port is the only port set up for connections.
 +
-IMPORTANT: The recommended queue depth setting is 1024. Override the default setting of 128 with 1024 using the ``-Q 1024``command line option, as shown in the following example.
+NOTE: The recommended queue depth setting is 1024. Override the default setting of 128 with 1024 using the ``-Q 1024``command line option, as shown in the following example.
 +
-IMPORTANT: The recommended controller loss timeout period in seconds is 60 minutes (3600 seconds). Override the default setting of 600 seconds with 3600 seconds using the `-l 3600` command line option, as shown in the following example.
+NOTE: The recommended controller loss timeout period in seconds is 60 minutes (3600 seconds). Override the default setting of 600 seconds with 3600 seconds using the `-l 3600` command line option, as shown in the following example.
 +
 ----
   # nvme connect -t rdma -a 10.10.10.100 -n  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
