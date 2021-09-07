@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_ib_discover_connect_storage_host_task.html
 sidebar: sidebar
-keywords: 
-summary: 'Before making definitions of each host in SANtricity System Manager, you must discover the target controller ports from the host, and then establish NVMe connections.'
+keywords: discover storage, host, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Before making definitions of each host in SANtricity System Manager, you must discover the target controller ports from the host, and then establish NVMe connections.
 ---
 = Discover and connect to the storage from the host
 :icons: font
@@ -11,13 +11,15 @@ summary: 'Before making definitions of each host in SANtricity System Manager, y
 [.lead]
 Before making definitions of each host in SANtricity System Manager, you must discover the target controller ports from the host, and then establish NVMe connections.
 
+===== Steps
+
 . Discover available subsystems on the NVMe-oF target for all paths using the following command:
 +
 ----
 nvme discover -t rdma -a target_ip_address
 ----
 +
-In this command, target_ip_address is the IP address of the target port.
+In this command, `target_ip_address` is the IP address of the target port.
 +
 NOTE: The `nvme discover` command discovers all controller ports in the subsystem, regardless of host access.
 +
@@ -55,17 +57,17 @@ NOTE: The `nvme discover` command discovers all controller ports in the subsyste
 . Repeat step 1 for any other connections.
 . Connect to the discovered subsystem on the first path using the command: ``nvme connect -t rdma -n``discovered_sub_nqn``-a``target_ip_address``-Q``queue_depth_setting``-l``controller_loss_timeout_period
 +
-NOTE: The `nvme connect -t rdma -n discovered_sub_nqn -a target_ip_address -Q queue_depth_setting -l controller_loss_timeout_period` command does not persist through reboot. The NVMe connect command will need to executed after each reboot to re-establish the NVMe connections.
+NOTE: The command, `nvme connect -t rdma -n discovered_sub_nqn -a target_ip_address -Q queue_depth_setting -l controller_loss_timeout_period`, does not persist through reboot. The NVMe connect command will need to be executed after each reboot to re-establish the NVMe connections.
 +
-NOTE: The nvme connections do not persist through system reboot or extended periods of the controller being unavailable.
+NOTE: The NVMe connections do not persist through system reboot or extended periods of the controller being unavailable.
 +
-IMPORTANT: Connections are not established for any discovered port inaccessible by the host.
+NOTE: Connections are not established for any discovered port inaccessible by the host.
 +
-IMPORTANT: If you specify a port number using this command, the connection fails. The default port is the only port set up for connections.
+NOTE: If you specify a port number using this command, the connection fails. The default port is the only port set up for connections.
 +
-IMPORTANT: The recommended queue depth setting is 1024. Override the default setting of 128 with 1024 using the ``-Q 1024``command line option, as shown in the following example.
+NOTE: The recommended queue depth setting is 1024. Override the default setting of 128 with 1024 using the ``-Q 1024``command line option, as shown in the following example.
 +
-IMPORTANT: The recommended controller loss timeout period in seconds is 60 minutes (3600 seconds). Override the default setting of 600 seconds with 3600 seconds using the `-l 3600` command line option, as shown in the following example.
+NOTE: The recommended controller loss timeout period in seconds is 60 minutes (3600 seconds). Override the default setting of 600 seconds with 3600 seconds using the `-l 3600` command line option, as shown in the following example.
 +
 ----
   # nvme connect -t rdma -a 10.10.10.100 -n  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
@@ -93,7 +95,7 @@ Usage                 Format           FW Rev
   # nvme connect -t rdma -a 11.11.11.100 -n  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
 ----
 
-. Use the Linux lsblk and grep commands to show additional information about each block device:
+. Use the Linux `lsblk` and `grep` commands to show additional information about each block device:
 +
 ----
  # lsblk | grep nvme

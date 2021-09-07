@@ -1,20 +1,19 @@
 ---
 permalink: maintenance-e5700/controllers_duplex_supertask_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: E5700 controller, repair E5700 controller, replace E5700 controller, failed E5700 controller
+summary: Replace a controller canister in a duplex configuration.
 ---
 = Replace controller in duplex configuration
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can replace a controller canister in a duplex configuration, which is a two-controller module configuration within the storage array. Each controller canister contains a controller card, a battery, and an optional host interface card (HIC). When you replace a controller canister, you must remove the battery and HIC, if one is installed, from the original controller canister, and install them in the replacement controller canister.
+Follow this procedure to replace a controller canister in a duplex configuration, which is a two-controller module configuration within the storage array.
 
-== Prepare to replace controller (duplex)
+== About this task
 
-[.lead]
-You prepare to replace a controller canister by verifying that the replacement controller canister has the correct FRU part number, backing up the configuration, and collecting support data. If the controller is still online, you must take it offline.
+Each controller canister contains a controller card, a battery, and an optional host interface card (HIC). When you replace a controller canister, you must remove the battery and HIC, if one is installed, from the original controller canister, and install them in the replacement controller canister.
 
 This task describes how to prepare to replace a controller canister in the duplex version (two controllers) for the following controller shelves:
 
@@ -22,6 +21,18 @@ This task describes how to prepare to replace a controller canister in the duple
 * E5760 controller shelf
 
 Perform this task only if your storage array has two controllers (duplex configuration).
+
+== Before you begin
+
+* Review link:controllers_overview_concept.html[Requirements for E5700 controller replacement].
+* Make sure you have a replacement controller canister with the same part number as the controller canister you are replacing.
+* Install SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
+
+== Step 1: Prepare to replace controller (duplex)
+
+Prepare to replace a controller canister.
+
+===== Steps
 
 . Unpack the new controller canister, and set it on a flat, static-free surface.
 +
@@ -47,7 +58,7 @@ When a controller has a fault and needs to be replaced, the replacement part num
 
 . Confirm that the replacement part number for the failed controller is the same as the FRU part number for the replacement controller.
 +
-IMPORTANT: *Possible loss of data access --* If the two part numbers are not the same, do not attempt this procedure. In addition, if the failed controller canister includes a host interface card (HIC), you must install that HIC into the new controller canister. The presence of mismatched controllers or HICs causes the new controller to lock down when you bring it online.
+CAUTION: *Possible loss of data access* -- If the two part numbers are not the same, do not attempt this procedure. In addition, if the failed controller canister includes a host interface card (HIC), you must install that HIC into the new controller canister. The presence of mismatched controllers or HICs causes the new controller to lock down when you bring it online.
 
 . Back up the storage array's configuration database.
 +
@@ -83,7 +94,9 @@ The file is saved in the Downloads folder for your browser with the name support
   ... If the graphic shows the drives, select *Show back of shelf* to show the controllers.
   ... Select the controller that you want to place offline.
   ... From the context menu, select *Place offline*, and confirm that you want to perform the operation.
-*Note:* If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
++
+NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
+
  ** To use script editor in the EMW:
   ... Open the Enterprise Management Window (EMW) in SANtricity Storage Manager on your local host.
   ... Select the storage array.
@@ -102,26 +115,27 @@ The file is saved in the Downloads folder for your browser with the name support
 The system attempts to take the controller offline.
 . Wait for SANtricity System Manager to update the controller's status to offline.
 +
-IMPORTANT: Do not begin any other operations until after the status has been updated.
+NOTE: Do not begin any other operations until after the status has been updated.
 
 . Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove this component.
 
-Go to .
+== Step 2: Remove controller canister (duplex)
 
-== Remove controller canister (duplex)
+Remove a controller canister to replace the failed canister with a new one. Perform this task only if your storage array has two controllers (duplex configuration).
 
-[.lead]
-You remove a controller canister to replace the failed canister with a new one. Perform this task only if your storage array has two controllers (duplex configuration).
+===== What you'll need
 
-* You must use labels to identify each cable that is connected to the controller canister.
-* You must have a #1 Phillips screwdriver.
-* You have an ESD wristband, or you have taken other antistatic precautions.
+* Labels to identify each cable that is connected to the controller canister.
+* A #1 Phillips screwdriver.
+* An ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Put on an ESD wristband or take other antistatic precautions.
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
 +
-IMPORTANT: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
+CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
 
 . If the controller canister has a HIC that uses SFP+ transceivers, remove the SFPs.
 +
@@ -144,17 +158,18 @@ image:../media/legend_icon_01_maint-e5700.gif[] Controller canister image:../med
 
 . Using two hands and the cam handle, slide the controller canister out of the shelf.
 +
-IMPORTANT: Always use two hands to support the weight of a controller canister.
+CAUTION: Always use two hands to support the weight of a controller canister.
 +
 If you are removing the controller canister from an E5724 controller shelf, a flap swings into place to block the empty bay, helping to maintain air flow and cooling.
 
 . Turn the controller canister over, so that the removable cover faces up.
 . Place the controller canister on a flat, static-free surface.
 
-== Remove battery (duplex)
+== Step 3: Remove battery (duplex)
 
-[.lead]
 Remove the battery so you can install the new controller.
+
+===== Steps
 
 . You remove the controller canister's cover by pressing down on the button and sliding the cover off.
 . Confirm that the green LED inside the controller (between the battery and the DIMMs) is off.
@@ -174,12 +189,15 @@ image:../media/legend_icon_01_maint-e5700.gif[] Battery release latch image:../m
 
 . Lift up on the battery, and slide it out of the controller canister.
 
-Go to link:controllers_duplex_supertask_task.md#[Step 3: Remove host interface card].
+== Step 4: Remove host interface card (duplex)
 
-== Remove host interface card (duplex)
+If the controller canister includes a host interface card (HIC), remove the HIC from the original controller canister so you can reuse it in the new controller canister.
 
-[.lead]
-If the controller canister includes a host interface card (HIC), you must remove the HIC from the original controller canister, so you can reuse it in the new controller canister.
+===== What you'll need
+
+* A #1 Phillips screwdriver.
+
+===== Steps
 
 . Using a #1 Phillips screwdriver, remove the screws that attach the HIC faceplate to the controller canister.
 +
@@ -191,7 +209,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[]
 . Using your fingers or a Phillips screwdriver, loosen the three thumbscrews that secure the HIC to the controller card.
 . Carefully detach the HIC from the controller card by lifting the card up and sliding it back.
 +
-IMPORTANT: Be careful not to scratch or bump the components on the bottom of the HIC or on the top of the controller card.
+NOTE: Be careful not to scratch or bump the components on the bottom of the HIC or on the top of the controller card.
 +
 image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[]
 +
@@ -199,13 +217,16 @@ image:../media/legend_icon_01_maint-e5700.gif[] Host interface card (HIC) image:
 
 . Place the HIC on a static-free surface.
 
-== Install battery (duplex)
+== Step 5: Install battery (duplex)
 
-[.lead]
-You must install the battery into the replacement controller canister. You can install the battery that you removed from the original controller canister or install a new battery that you ordered.
+Install the battery into the replacement controller canister. You can install the battery that you removed from the original controller canister or install a new battery that you ordered.
 
-* You have the battery from the original controller canister.
-* You have the replacement controller canister.
+===== What you'll need
+
+* The battery from the original controller canister.
+* The replacement controller canister.
+
+===== Steps
 
 . Turn the replacement controller canister over, so that the removable cover faces up.
 . Press down on the cover button, and slide the cover off.
@@ -224,21 +245,27 @@ image:../media/legend_icon_01_maint-e5700.gif[] Battery release latch image:../m
 
 . Turn the controller canister over to confirm that the battery is installed correctly.
 +
-IMPORTANT: *Possible hardware damage* -- The metal flange at the front of the battery must be completely inserted into the slot on the controller canister (as shown in the first figure). If the battery is not installed correctly (as shown in the second figure), the metal flange might contact the controller board, causing damage to the controller when you apply power.
+CAUTION: *Possible hardware damage* -- The metal flange at the front of the battery must be completely inserted into the slot on the controller canister (as shown in the first figure). If the battery is not installed correctly (as shown in the second figure), the metal flange might contact the controller board, causing damage to the controller when you apply power.
++
+** *Correct* -- The battery's metal flange is completely inserted in the slot on the controller:
++
+image:../media/28_dwg_e2800_battery_flange_ok_maint-e5700.gif[]
 
- ** *Correct -- The battery's metal flange is completely inserted in the slot on the controller:*image:../media/28_dwg_e2800_battery_flange_ok_maint-e5700.gif[]
- ** *Incorrect -- The battery's metal flange is not inserted into the slot on the controller:*image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e5700.gif[]
+** *Incorrect* -- The battery's metal flange is not inserted into the slot on the controller:
++
+image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e5700.gif[]
 
-Go to link:controllers_duplex_supertask_task.md#[Install host interface card (duplex)].
+== Step 6: Install host interface card (duplex)
 
-== Install host interface card (duplex)
-
-[.lead]
 If you removed a HIC from the original controller canister, you must install that HIC in the new controller canister.
 
-* You must have a replacement controller canister with the same part number as the controller canister you are replacing.
-* You must have a #1 Phillips screwdriver.
-* You have an ESD wristband, or you have taken other antistatic precautions.
+===== What you'll need
+
+* A replacement controller canister with the same part number as the controller canister you are replacing.
+* A #1 Phillips screwdriver.
+* An ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Using a #1 Phillips screwdriver, remove the four screws that attach the blank faceplate to the replacement controller canister, and remove the faceplate.
 . Align the three thumbscrews on the HIC with the corresponding holes on the controller, and align the connector on the bottom of the HIC with the HIC interface connector on the controller card.
@@ -247,7 +274,7 @@ Be careful not to scratch or bump the components on the bottom of the HIC or on 
 
 . Carefully lower the HIC into place, and seat the HIC connector by pressing gently on the HIC.
 +
-IMPORTANT: **Possible equipment damage --**Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrews.
+CAUTION: *Possible equipment damage* -- Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrews.
 +
 image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[]
 +
@@ -261,12 +288,11 @@ Do not use a screwdriver, or you might over tighten the screws.
 +
 image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[]
 
-Go to link:controllers_duplex_supertask_task.md#[Install new controller canister (duplex)].
+== Step 7: Install new controller canister (duplex)
 
-== Install new controller canister (duplex)
-
-[.lead]
 After installing the battery and the host interface card (HIC), if one was initially installed, you can install the new controller canister into the controller shelf.
+
+===== Steps
 
 . Reinstall the cover on the controller canister by sliding the cover from back to front until the button clicks.
 . Turn the controller canister over, so that the removable cover faces down.
@@ -289,12 +315,11 @@ If you are using more than one host protocol, be sure to install the SFPs in the
 +
 NOTE: If the original controller did not use DHCP for the IP address, the new controller will adopt the IP address of the controller you removed.
 
-Go to link:controllers_duplex_supertask_task.md#[Complete controller replacement (duplex)].
+== Step 8: Complete controller replacement (duplex)
 
-== Complete controller replacement (duplex)
+Place the controller online, collect support data, and resume operations.
 
-[.lead]
-You complete the controller replacement by placing the controller online and confirming that the storage array is working correctly. Then, you can collect support data and resume operations.
+===== Steps
 
 . As the controller boots, check the controller LEDs and the seven-segment display.
 +
@@ -311,7 +336,9 @@ image:../media/legend_icon_01_maint-e5700.gif[] Host Link LEDsimage:../media/leg
 . Check the codes on the controller's seven-segment display as it comes back online. If the display shows one of the following repeating sequences, immediately remove the controller.
  ** *OE*, *L0*, *_blank_* (mismatched controllers)
  ** *OE*, *L6*, *_blank_* (unsupported HIC)
-*Attention:* *Possible loss of data access* -- If the controller you just installed shows one these codes, and the other controller is reset for any reason, the second controller also could lock down.
++
+CAUTION: *Possible loss of data access* -- If the controller you just installed shows one these codes, and the other controller is reset for any reason, the second controller also could lock down.
+
 . When the controller is back online, confirm that its status is Optimal and check the controller shelf's Attention LEDs.
 +
 If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller canister is installed correctly. If necessary, remove and reinstall the controller canister.
@@ -330,5 +357,7 @@ As needed, install the latest version.
  .. Select *Collect Support Data*.
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
+
+== Result
 
 Your controller replacement is complete. You can resume normal operations.

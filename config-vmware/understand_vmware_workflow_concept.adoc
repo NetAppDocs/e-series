@@ -1,14 +1,14 @@
 ---
 permalink: config-vmware/understand_vmware_workflow_concept.html
 sidebar: sidebar
-keywords: 
-summary: 'This workflow guides you through the "express method" for configuring your storage array and SANtricity System Manager to make storage available to a host.'
+keywords: workflow, guide, express, method, configuring, configure, storage, array, system, manager, host, understand
+summary:  Use the WVMware express configuration workflow.
 ---
-= Understand the workflow
+= Understand the VMware workflow
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This workflow guides you through the "express method" for configuring your storage array and SANtricity System Manager to make storage available to a host.
+This workflow guides you through the "express method" for configuring your storage array and SANtricity System Manager to make storage available to a VMware host.
 
 image::../media/1130_flw_sys_mgr_vmware_express_guide_all_protocols.png[]

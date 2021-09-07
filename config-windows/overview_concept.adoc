@@ -1,0 +1,80 @@
+---
+permalink: config-windows/overview_concept.html
+sidebar: sidebar
+keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Review requirements for using the express method to set up an E-Series array and Windows host.
+---
+= Assumptions
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Windows express method is based on the following assumptions:
+
+[options="header"]
+|===
+| Component| Assumptions
+a|
+Hardware
+a|
+
+* You have used the Installation and Setup Instructions included with the controller shelves to install the hardware.
+* You have connected cables between the optional drive shelves and the controllers.
+* You have applied power to the storage system.
+* You have installed all other hardware (for example, management station, switches) and made the necessary connections.
+
+a|
+Host
+a|
+
+* You have made a connection between the storage system and the data host.
+* You have installed the host operating system.
+* You are not using Windows as a virtualized guest.
+* You are not configuring the data (I/O attached) host to boot from SAN.
+
+a|
+Storage management station
+a|
+
+* You are using a 1 Gbps or faster management network.
+* You are using a separate station for management rather than the data (I/O attached) host.
+* You are using out-of-band management, in which a storage management station sends commands to the storage system through the Ethernet connections to the controller.
+* You have attached the management station to the same subnet as the storage management ports.
+
+a|
+IP addressing
+a|
+
+* You have installed and configured a DHCP server.
+* You have *not* yet made an Ethernet connection between the management station and the storage system.
+
+a|
+Storage provisioning
+a|
+
+* You will not use shared volumes.
+* You will create pools rather than volume groups.
+
+a|
+Protocol: FC
+a|
+
+* You have made all host-side FC connections and activated switch zoning.
+* You are using NetApp-supported FC HBAs and switches.
+* You are using FC HBA driver and firmware versions as listed in the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+
+a|
+Protocol: iSCSI
+a|
+
+* You are using Ethernet switches capable of transporting iSCSI traffic.
+* You have configured the Ethernet switches according to the vendor's recommendation for iSCSI.
+
+a|
+Protocol: SAS
+a|
+
+* You are using NetApp-supported SAS HBAs.
+* You are using SAS HBA driver and firmware versions as listed in the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+
+|===

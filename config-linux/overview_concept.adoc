@@ -1,34 +1,17 @@
 ---
 permalink: config-linux/overview_concept.html
 sidebar: sidebar
-keywords: 
-summary: 'The express method for installing your storage array and accessing SANtricity System Manager is appropriate for setting up a standalone Linux host to an E-Series storage system. It is designed to get the storage system up and running as quickly as possible with minimal decision points.'
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Review requirements for using the express method to set up an E-Series array and Linux host.
 ---
-= Overview
+= Assumptions
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The express method for installing your storage array and accessing SANtricity System Manager is appropriate for setting up a standalone Linux host to an E-Series storage system. It is designed to get the storage system up and running as quickly as possible with minimal decision points.
+The Linux express method is based on the following assumptions:
 
-NOTE: The configuration that the express method provides might not meet the needs of your production environment. For additional options for installing and configuring the storage system, see the _SANtricity Power Guide_ for your operating system on the https://mysupport.netapp.com/info/web/ECMP1658252.html[E-Series and SANtricity Document Resources] page.
-
-The express method includes the following steps:
-
-. Setting up one of the following communication environments:
- ** Fibre Channel (FC)
- ** iSCSI
- ** SAS
- ** iSER over Infiniband
- ** SRP over Infiniband
- ** NVMe over Infiniband
- ** NVMe over RoCE
- ** NVMe over Fibre Channel
-. Creating logical volumes on the storage array.
-. Making the volumes available to the data host.
-
-This guide is based on the following assumptions:
-
+[options="header"]
 |===
 | Component| Assumptions
 a|
@@ -134,5 +117,3 @@ a|
 
 |===
 *Note:* These express method instructions include examples for SUSE Linux Enterprise Server (SLES) and for Red Hat Enterprise Linux (RHEL). Examples for RHEL are specific to RHEL7.
-
-If these assumptions are not correct for your installation, or if you want more conceptual background information, see the SANtricity Power Guide for your operating system on the https://mysupport.netapp.com/info/web/ECMP1658252.html[E-Series and SANtricity Document Resources page].

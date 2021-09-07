@@ -1,17 +1,20 @@
 ---
 permalink: upgrade-santricity/index.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, drive firmware, upgrade SANtricity, upgrade OS, upgrade E-Series, upgrade firmware, upgrading, upgrade IOM firmware, upgrade NVSRAM, upgrade controller
+summary: Overview of Upgrading SANtricity® OS
 ---
-= Upgrading SANtricity® OS
+= Overview of upgrading the SANtricity OS
 :icons: font
 :imagesdir: ../media/
 
-* link:overview_upgrade_consider_task.md#overview_upgrade_consider_task[Overview and upgrade considerations]
-* link:upgrade_single_controller_task.md#upgrade_single_controller_task[Upgrade software and firmware for a single controller]
-* link:upgrade_multiple_controller_task.md#upgrade_multiple_controller_task[Upgrade software and firmware for multiple controllers]
-* link:upgrade_drive_firmware_task.md#upgrade_drive_firmware_task[Upgrade drive firmware]
-* xref:reference_copyright_and_trademark.adoc[Copyright and trademark]
- ** xref:reference_copyright.adoc[Copyright]
- ** xref:reference_trademark.adoc[Trademark]
+[.lead]
+You can upgrade your operating system and system hardware components to the latest version of SANtricity software and firmware.
+
+These upgrade procedures include separate instructions for the following:
+
+* Single controller -- Includes procedures for upgrading the storage array’s software and, optionally, the IOM firmware and the nonvolatile static random access memory (NVSRAM).
+* Multiple controllers -- Includes procedures for upgrading SANtricity OS software on multiple storage arrays of the same type.
+* Drive -- Includes instructions for upgrading the drive's firmware.
+
+Before you begin the upgrade, be sure to review the  link:overview_upgrade_consider_task.html[Upgrade considerations].

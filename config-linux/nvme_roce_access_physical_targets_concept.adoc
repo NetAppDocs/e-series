@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_roce_access_physical_targets_concept.html
 sidebar: sidebar
-keywords: 
-summary: 'You can configure the I/O directed to the device target based on your Linux version. For SLES 15, I/O is directed to the physical NVMe device targets by the Linux host. A native NVMe multipathing solution manages the physical paths underlying the single apparent physical device displayed by the host.'
+keywords: NVMe volume physical, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: You can configure the I/O directed to the device target based on your Linux version.
 ---
 = Accessing NVMe volumes for physical NVMe device targets
 :icons: font
@@ -44,7 +44,7 @@ nvme-subsys0 - NQN=nqn.1992-08.com.netapp:5700.600a098000a522500000000589aa8a6
 +- nvme1 rdma traddr=192.4.22.141 trsvcid=4420 live
 ----
 
-If you specify a namespace device when using the 'nvme list-subsys' command, it provides additional information about the paths to that namespace:
+If you specify a namespace device when using the `nvme list-subsys` command, it provides additional information about the paths to that namespace:
 
 ----
 # nvme list-subsys /dev/nvme0n1

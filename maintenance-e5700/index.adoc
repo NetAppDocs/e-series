@@ -1,38 +1,36 @@
 ---
 permalink: maintenance-e5700/index.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: E5700 maintenance, repair E5700, replace E5700 components, E5724, EF570, E5760
+summary: Maintain the E5700 hardware
 ---
-= Maintaining E5700 Hardware
+= Maintain E5700 hardware
 :icons: font
 :imagesdir: ../media/
 
-* xref:concept_batteries_wombat.adoc[Batteries]
- ** link:batteries_intro_concept.md#batteries_intro_concept[Overview and requirements]
- ** link:batteries_replace_supertask_task.md#batteries_replace_supertask_task[Replace battery]
-* xref:concept_controllers_wombat.adoc[Controllers]
- ** link:controllers_overview_concept.md#controllers_overview_concept[Overview and requirements]
- ** link:controllers_duplex_supertask_task.md#controllers_duplex_supertask_task[Replace controller in duplex configuration]
-* xref:concept_canisters_wombat.adoc[Canisters]
- ** link:canisters_overview_supertask_concept.md#canisters_overview_supertask_concept[Overview and requirements]
- ** link:canisters_supply_replace_task.md#canisters_supply_replace_task[Replace power supply (24-drive)]
- ** link:canisters_power_supertask_task.md#canisters_power_supertask_task[Replace power canister (60-drive)]
- ** link:canisters_fan_replace_task.md#canisters_fan_replace_task[Replace fan canister (60-drive)]
-* xref:concept_drives_wombat.adoc[ Drives]
- ** link:drives_overview_supertask_concept.md#drives_overview_supertask_concept[Overview and requirements]
- ** link:drives_24_supertask_task.md#drives_24_supertask_task[Replace drive (24-drive)]
- ** link:drives_60_replace_task.md#drives_60_replace_task[Replace drive (60-drive)]
- ** link:drives_drawer_supertask_task.md#drives_drawer_supertask_task[Replace drive drawer (60-drive)]
-* xref:concept_host_interface_cards_wombat.adoc[ Host interface cards]
- ** link:hics_overview_supertask_concept.md#hics_overview_supertask_concept[Overview and requirements]
- ** link:hics_add_supertask_task.md#hics_add_supertask_task[Add host interface cards]
- ** link:hics_upgrade_supertask_task.md#hics_upgrade_supertask_task[Upgrade host interface card]
- ** link:hics_replace_supertask_task.md#hics_replace_supertask_task[Replace host interface card]
-* xref:concept_host_port_protocol_wombat.adoc[Host port protocol]
- ** link:hpp_overview_supertask_concept.md#hpp_overview_supertask_concept[Overview and requirements]
- ** link:hpp_change_host_protocol_task.md#hpp_change_host_protocol_task[Change host protocol]
- ** link:hpp_complete_protocol_conversion_task.md#hpp_complete_protocol_conversion_task[Complete host protocol conversion]
-* xref:copyright_reference.adoc[Copyright]
-* xref:trademark_reference.adoc[Trademark]
-* xref:how_to_send_comments_concept.adoc[How to send comments about documentation and receive update notifications]
+[.lead]
+For the E5700 storage system, you can perform maintenance procedures on the following components.
+
+== Batteries
+
+A battery is included with a controller canister and preserves cached data if the AC power fails.
+
+== Controllers
+
+A controller consists of a board, firmware, and software. It controls the drives and implements the System Manager functions.
+
+== Canisters
+
+Canisters consist of three different types: power-fan canisters (power supplies) that supply a redundant power source and adequate cooling in a 12-drive or 24-drive controller shelf or drive shelf; power canisters that are used for power redundancy in a 60-drive controller shelf or drive shelf; and fan canisters that are used for cooling the 60-drive controller shelf or drive shelf.
+
+== Drives
+
+A drive is an electromagnetic mechanical device that provides the physical storage media for data.
+
+== Host interface cards (HICs)
+
+A host interface card (HIC) can optionally be installed within a controller canister. The E5700 controller includes built-in host ports on the controller card itself, as well as host ports on the optional HIC. Host ports that are built into the controller are called baseboard host ports. Host ports that are built into the HIC are called HIC ports.
+
+== Host port protocol
+
+You can convert the protocol of a host to a different protocol so that compatibility and communication can be established.

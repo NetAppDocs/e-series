@@ -1,8 +1,8 @@
 ---
 permalink: config-windows/configure_storage_host_task.html
 sidebar: sidebar
-keywords: 
-summary: 'A new LUN is offline and has no partition or file system when a Windows host first discovers it. You must bring the volume online and initialize it in Windows. Optionally, you can format the LUN with a file system.'
+keywords: LUNs, configure LUNs, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Configure storage on the host for the Windows express method.
 ---
 = Configure storage on the host
 :icons: font
@@ -11,11 +11,15 @@ summary: 'A new LUN is offline and has no partition or file system when a Window
 [.lead]
 A new LUN is offline and has no partition or file system when a Windows host first discovers it. You must bring the volume online and initialize it in Windows. Optionally, you can format the LUN with a file system.
 
-The host must have discovered the LUN.
-
 You can initialize the disk as a basic disk with a GPT or MBR partition table. Typically, you format the LUN with a file system such as New Technology File System (NTFS).
 
-. From a Windows command prompt, enter the diskpartcontext.
+===== Before you begin
+
+The host must have discovered the LUN.
+
+===== Steps
+
+. From a Windows command prompt, enter the `diskpart` context.
 +
 ----
 > diskpart

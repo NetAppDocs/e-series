@@ -1,8 +1,8 @@
 ---
 permalink: cloud-connector/uninstall_intro_concept.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: uninstall, santricity, cloud, connector, graphical, uninstall, console, mode, console
+summary: You can uninstall the SANtricity Cloud Connector through the graphical uninstaller or console.
 ---
 = Uninstall the SANtricity Cloud Connector
 :icons: font
@@ -15,6 +15,8 @@ You can uninstall the SANtricity Cloud Connector through the graphical uninstall
 
 [.lead]
 You can use the graphical mode to uninstall the SANtricity Cloud Connector on a Linux operating system.
+
+===== Steps
 
 . From a terminal window, navigate to the directory containing the SANtricity Cloud Connector uninstall file.
 +
@@ -40,6 +42,8 @@ The uninstall process is completed, and the SANtricity Cloud Connector applicati
 
 [.lead]
 You can use the console mode to uninstall the SANtricity Cloud Connector on a Linux operating system.
+
+===== Steps
 
 . From a terminal window, navigate to the directory containing the SANtricity Cloud Connector uninstall file.
 +

@@ -1,21 +1,33 @@
 ---
 permalink: getting-started/index.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, 
+summary: This site includes information for specific E-Series releases, models, and components.
 ---
-= Getting Started with E-Series Hardware and SANtricity® Software
+= What this site includes
 :icons: font
 :imagesdir: ../media/
 
-* xref:whats_intro_concept.adoc[What's included]
-* xref:learn_intro_concept.adoc[Learn about E-Series systems]
- ** xref:learn_terms_concept.adoc[E-Series terminology]
- ** xref:learn_hardware_concept.adoc[E-Series hardware overview]
- ** xref:learn_shelf_concept.adoc[E-Series shelf types]
- ** xref:learn_software_concept.adoc[SANtricity software overview]
- ** link:learn_video_concept.md#learn_video_concept[E-Series videos]
-* xref:getup_run_concept.adoc[Get up and running with E-Series]
-* xref:reference_copyright.adoc[Copyright]
-* xref:reference_trademark.adoc[Trademark]
-* xref:concept_how_to_send_comments_about_documentation_and_receive_update_notifications_netapp_post_preface.adoc[How to send comments about documentation and receive update notifications]
+[.lead]
+This site includes information for specific E-Series releases, models, and components.
+
+[options="header"]
+|===
+| What's included| What's _not_ included
+a|
+This site includes information for the following releases and component types:
+
+* *SANtricity software* -- version 11.50 and later.
+* *Controller firmware* -- version 8.50 and later.
+* *Controller types* -- All E2800, EF280, EF300, E5700, EF570, and EF600 models.
+* *Interface types* -- Fibre Channel, iSCSI, iSER, SAS, and NVMe.
+* *Operating systems installed on hosts* -- Linux, VMware, and Windows.
++
+NOTE: Additional interfaces and operating systems might be supported. For more information, contact technical support.
+
+a|
+This site does _not_ include information for releases _earlier than_ software version 11.50 or firmware version 8.50. For earlier releases, go to the https://www.netapp.com/us/documentation/eseries-santricity.aspx[E-Series and SANtricity Document Resources] page.
+
+For information on your site preparation requirements, go to https://hwu.netapp.com/[NetApp Hardware Universe].
+
+|===

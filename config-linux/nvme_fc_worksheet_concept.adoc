@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_fc_worksheet_concept.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use this worksheet to record NVMe over Fibre Channel storage configuration information. You need this information to perform provisioning tasks.'
+keywords: NVMe over FC worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Use this worksheet to record NVMe over Fibre Channel storage configuration information.
 ---
 = NVMe over Fibre Channel worksheet for Linux
 :icons: font
@@ -36,52 +36,55 @@ image::../media/nvme_fc_fabric_topology.png[]
 
 Locate and document the initiator NQN from each host.
 
+[options="header"]
 |===
 | Host port connections| Host NQN
 a|
 Host (initiator) 1
 a|
- 
+
 a|
 Host (initiator) 2
 a|
- 
+
 |===
 
 == NVMe over Fibre Channel: Target NQN
 
 Document the target NQN for the storage array.
 
+[options="header"]
 |===
 | Array name| Target NQN
 a|
 Array controller (target)
 a|
- 
+
 |===
 
 == NVMe over Fibre Channel: Target NQNs
 
 Document the NQNs to be used by the array ports.
 
+[options="header"]
 |===
 | Array controller (target) port connections| NQN
 a|
 Controller A, port 1
 a|
- 
+
 a|
 Controller B, port 1
 a|
- 
+
 a|
 Controller A, port 2
 a|
- 
+
 a|
 Controller B, port 2
 a|
- 
+
 |===
 
 == NVMe over Fibre Channel: Mapping host name
@@ -90,11 +93,11 @@ NOTE: The mapping host name is created during the workflow.
 
 |===
 a|
-Mapping host name
-a|
- 
+Mapping host name a|
+
 a|
 Host OS type
 a|
- 
+
+a|
 |===

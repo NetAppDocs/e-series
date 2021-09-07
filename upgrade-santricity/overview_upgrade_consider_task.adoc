@@ -1,82 +1,46 @@
 ---
 permalink: upgrade-santricity/overview_upgrade_consider_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, drive firmware, upgrade SANtricity, upgrade OS, upgrade E-Series, upgrade firmware, upgrading, upgrade IOM firmware, upgrade NVSRAM, upgrade controller
+summary: Review upgrade considerations for the storage array's SANtricity OS controller software and firmware, and its drive firmware.
 ---
-= Overview and upgrade considerations
+= Upgrade considerations
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Learn what you need to know before upgrading your storage array's SANtricity OS controller software and firmware and its drive firmware.
+To ensure a successful upgrade, review the following upgrade considerations.
 
-== Considerations for upgrading software and firmware for a single controller
+== Controller upgrades (single or multiple)
+Review these key considerations before upgrading controllers.
 
-[.lead]
-To ensure a successful upgrade, keep in mind some key considerations as part of your planning.
+=== Current versions
 
-The following table describes the components included in the SANtricity OS upgrade process and the software components that must be upgraded separately.
+For a single controller, use the SANtricity System Manager interface.  Go to *Support* > *Upgrade Center*, and then click the link for *Software and Firmware Inventory*.
 
-|===
-| Components included in SANtricity OS upgrade| Components that must be upgraded separately
-a|
+For multiple controllers, use the SANtricity Unifed Manager interface. Go to the *Manage* page for discovered storage arrays. The versions are  shown in the *SANtricity OS Software* column. The controller firmware and NVSRAM information is available in a pop-up dialog box when you click on the SANtricity OS version in each row.
 
-* *Management software* -- System Manager is the software that manages the storage array.
+=== Components included in the upgrade
+
+The following components are included in the SANtricity OS upgrade process:
+
+* *System Manager* -- System Manager is the software that manages the storage array.
 * *Controller firmware* -- Controller firmware manages the I/O between hosts and volumes.
 * *Controller NVSRAM* -- Controller NVSRAM is a controller file that specifies the default settings for the controllers.
 * *IOM firmware* -- The I/O module (IOM) firmware manages the connection between a controller and a drive shelf. It also monitors the status of the components.
 * *Supervisor software* -- Supervisor software is the virtual machine on a controller in which the software runs.
 
-a|
+=== Components to upgrade separately
 
-* If your storage system is part of a storage network that includes storage systems, you might use legacy the SANtricity Storage Manager Enterprise Management Window (EMW) to provide an enterprise view of all of your storage systems. In this case, check to see if there is a newer maintenance release of SANtriciry Storage Manager.
-* As part of the upgrade process, the host's multipath/failover driver might also need to be upgraded so the host can interact with the controllers correctly. If host running operating systems other than Microsoft Windows have I/O connections to your storage system, upgrade the multipath drivers for those hosts. See the procedures in the Express Guides for your operating system).
-* SANtricity Unified Manager
-* Drive firmware
-* SANtricity Windows Host Utility
-* SANtricity Linux Host Utility
-* SANtricity Windows DSM
+The following components must be upgraded separately:
 
-|===
-You can view your current software and firmware versions in the SANtricity System Manager Software and Firmware Inventory dialog box. Go to *Support* > *Upgrade Center*, and then click the link for *Software and Firmware Inventory*.
+* *Legacy systems* -- If your storage system is part of a storage network that includes older storage systems, you might use the legacy SANtricity Storage Manager Enterprise Management Window (EMW) to provide an enterprise view of all of your storage systems. In this case, check to see if there is a newer maintenance release of SANtricity Storage Manager.
+* *Multipath/failover driver* -- As part of the upgrade process, the host's multipath/failover driver might also need to be upgraded so the host can interact with the controllers correctly. If hosts running operating systems other than Microsoft Windows have I/O connections to your storage system, upgrade the multipath drivers for those hosts. See the procedures in the Express Guides for your operating system. For compatibility information, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix].
+* *SANtricity Unified Manager* -- Unified Manager is the software that manages multiple storage systems, including the E2800, E5700, EF300, and EF600 models. To upgrade Unified Manager, go to the online help for Unified Manager.
+* *Utilities* -- Other management utilities require separate upgrades, such as the SANtricity Windows Host Utility, the SANtricity Linux Host Utility, and SANtricity Windows DSM.
+* *Drive firmware* -- See the separate instructions for upgrading the drive firmware.
 
-=== When to stop I/O
-
-If your storage array contains two controllers and you have a multipath driver installed, the storage array can continue processing I/O while the upgrade occurs. During the upgrade, controller A fails over all of its volumes to controller B, upgrades, takes back its volumes and all of controller B's volumes, and then upgrades controller B.
-
-=== Pre-upgrade health check
-
-A pre-upgrade health check runs as part of the upgrade process. The pre-upgrade health check assesses all storage array components to make sure the upgrade can proceed. The following conditions might prevent the upgrade:
-
-* Failed assigned drives
-* Hot spares in use
-* Incomplete volume groups
-* Exclusive operations running
-* Missing volumes
-* Controller in Non-optimal status
-* Excess number of event log events
-* Configuration database validation failure
-* Drives with old versions of DACstore
-
-You also can run the pre-upgrade health check separately without doing an upgrade.
-
-== Considerations for upgrading software and firmware for multiple controllers
-
-[.lead]
-Before you use SANtricity Unified Manager to upgrade multiple storage arrays, review the key considerations as part of your planning.
-
-=== Current versions
-
-You can view the current SANtricity OS software versions from the Manage page of Unified Manager for each discovered storage array. The version is shown in the SANtricity OS Software column. The controller firmware and NVSRAM information is available in a pop-up dialog box when you click on the SANtricity OS version in each row.
-
-=== Other components requiring upgrade
-
-As part of the upgrade process, you might also need to upgrade the host's multipath/failover driver or the HBA driver so that the host can interact with the controllers correctly.
-
-For compatibility information, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix]. Also, see the procedures in the Express Guides for your operating system. Express Guides are available from the https://docs.netapp.com/ess-11/index.jsp[E-Series Documentation Center].
-
-=== Dual controllers
+=== Dual controllers and I/O processing
 
 If a storage array contains two controllers and you have a multipath driver installed, the storage array can continue to process I/O while the upgrade occurs. During the upgrade, the following process occurs:
 
@@ -87,35 +51,32 @@ If a storage array contains two controllers and you have a multipath driver inst
 
 After the upgrade completes, you might need to manually redistribute volumes between the controllers to ensure volumes return to the correct owning controller.
 
-=== Immediate or staged upgrade
-
-You can activate the upgrade immediately or stage it for a later time. You might choose to activate later for these reasons:
-
-* *Time of day* -- Activating the software can take a long time, so you might want to wait until I/O loads are lighter. Depending on the IO load and cache size, a controller upgrade can typically take between 15 to 25 minutes to complete. The controllers reboot and fail over during activation so performance might be lower than usual until the upgrade completes.
-* *Type of package* -- You might want to test the new software and firmware on one storage array before upgrading the files on other storage arrays.
-
-To activate staged software, go to *Support* > *Upgrade Center* and click *Activate* in the area labeled SANtricity OS Controller Software upgrade.
-
 === Health check
 
-A health check runs as part of the upgrade process, but you can also run a health check separately before you begin (go to *Upgrade Center* > *Pre-Upgrade Health Check*).
-
-The health check assesses all storage system components to make sure that the upgrade can proceed. The following conditions might prevent the upgrade:
+A pre-upgrade health check runs as part of the upgrade process. This health check assesses all storage array components to make sure the upgrade can proceed. The following conditions might prevent the upgrade:
 
 * Failed assigned drives
 * Hot spares in use
 * Incomplete volume groups
 * Exclusive operations running
 * Missing volumes
-* Controller in Non-optimal status
+* Controller in non-optimal status
 * Excess number of event log events
 * Configuration database validation failure
 * Drives with old versions of DACstore
 
-== Considerations for upgrading drive firmware
+You also can run the pre-upgrade health check separately without doing an upgrade.
 
-[.lead]
-Take into account some key considerations before upgrading your drive firmware.
+=== Immediate or staged upgrade
+
+You can activate the upgrade immediately or stage it for a later time. You might choose to activate later for these reasons:
+
+* *Time of day* -- Activating the software can take a long time, so you might want to wait until I/O loads are lighter. Depending on the I/O load and cache size, a controller upgrade can typically take between 15 to 25 minutes to complete. The controllers reboot and fail over during activation so performance might be lower than usual until the upgrade completes.
+* *Type of package* -- You might want to test the new software and firmware on one storage array before upgrading the files on other storage arrays.
+
+== Drive firmware upgrade
+
+Review these key considerations before upgrading your drive firmware.
 
 === Drive compatibility
 
@@ -125,6 +86,7 @@ Each drive firmware file contains information about the drive type on which the 
 
 There are two types of drive firmware upgrade methods: online and offline.
 
+[options="header"]
 |===
 | Online upgrade| Offline upgrade
 a|

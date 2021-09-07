@@ -1,17 +1,23 @@
 ---
 permalink: config-linux/iscsi_configure_host_side_network_task.html
 sidebar: sidebar
-keywords: 
-summary: 'You configure iSCSI networking on the host side by setting the number of node sessions per physical path, turning on the appropriate iSCSI services, configuring the network for the iSCSI ports, creating iSCSI face bindings, and establishing the iSCSI sessions between initiators and targets.'
+keywords: configure iSCSI networking, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Configure iSCSI networking on the host side.
 ---
 = Configure host-side networking
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+To configure host-side networking, you must perform several steps.
+
+===== About this task
+
 You configure iSCSI networking on the host side by setting the number of node sessions per physical path, turning on the appropriate iSCSI services, configuring the network for the iSCSI ports, creating iSCSI face bindings, and establishing the iSCSI sessions between initiators and targets.
 
-In most cases, you can use the inbox software-initiator for iSCSI CNA/NIC. You do not neet to download the latest driver, firmware, and BIOS. Refer to the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] to determine code requirements.
+In most cases, you can use the inbox software-initiator for iSCSI CNA/NIC. You do not need to download the latest driver, firmware, and BIOS. Refer to the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] to determine code requirements.
+
+===== Steps
 
 . Check the ``node.session.nr_sessions``variable in the `/etc/iscsi/iscsid.conf` file to see the default number of sessions per physical path. If necessary, change the default number of sessions to one session.
 +
@@ -25,7 +31,7 @@ node.session.nr_sessions = 1
 node.session.timeo.replacement_timeout=20
 ----
 
-. Make sure iscsid and (open-)iscsi services are on and enabled for boot.
+. Make sure `iscsid` and `(open-)iscsi` services are on and enabled for boot.
 +
 *Red Hat Enterprise Linux 7 and 8 (RHEL 7 and RHEL 8)*
 +
@@ -43,7 +49,7 @@ node.session.timeo.replacement_timeout=20
 # systemctl enable iscsid.service
 ----
 +
-Optionally, you set `node.startup = automatic` in `in /etc/iscsi/iscsid.conf` before running any `iscsiadm` commands to have sessions persist after reboot:
+Optionally, you set `node.startup = automatic` in `/etc/iscsi/iscsid.conf` before running any `iscsiadm` commands to have sessions persist after reboot.
 
 . Get the host IQN initiator name, which will be used to configure the host to an array.
 +
@@ -53,7 +59,7 @@ Optionally, you set `node.startup = automatic` in `in /etc/iscsi/iscsid.conf` be
 
 . Configure the network for iSCSI ports:
 +
-NOTE: In addition to the public network port, iSCSI initiators should use two NICs or more on separate private segments or vLANs.
+NOTE: In addition to the public network port, iSCSI initiators should use two or more NICs on separate private segments or vLANs.
 
  .. Determine the iSCSI port names using the # ifconfig -a command.
  .. Set the IP address for the iSCSI initiator ports. The initiator ports should be present on the same subnet as the iSCSI target ports.
@@ -82,22 +88,22 @@ NOTE: Be sure to set the address for both iSCSI initiator ports.
 . Configure the iSCSI interfaces by creating two iSCSI iface bindings.
 +
 ----
-iscsiadm –m iface –I iface0 –o new
-iscsiadm –m iface –I iface0 –o update –n iface.net_ifacename –v <NIC port1>
+iscsiadm -m iface -I iface0 -o new
+iscsiadm -m iface -I iface0 -o update -n iface.net_ifacename -v <NIC port1>
 ----
 +
 ----
-iscsiadm –m iface –I iface1 –o new
-iscsiadm –m iface –I iface1 –o update –n iface.net_ifacename –v <NIC port2>
+iscsiadm -m iface -I iface1 -o new
+iscsiadm -m iface -I iface1 -o update -n iface.net_ifacename -v <NIC port2>
 ----
 +
-NOTE: To list the interfaces, use iscsiadm --m iface.
+NOTE: To list the interfaces, use `iscsiadm -m iface`.
 
 . Establish the iSCSI sessions between initiators and targets (four total).
  .. Discover iSCSI targets. Save the IQN (it will be the same with each discovery) in the worksheet for the next step.
 +
 ----
-iscsiadm –m discovery –t sendtargets –p 192.168.0.1:3260 –I iface0 –P 1
+iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260 -I iface0 -P 1
 ----
 +
 NOTE: The IQN looks like the following:
@@ -109,8 +115,8 @@ iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
  .. Create the connection between the iSCSI initiators and iSCSI targets, using ifaces.
 +
 ----
-iscsiadm –m node –T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
-–p 192.168.0.1:3260 –I iface0 -l
+iscsiadm -m node -T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
+-p 192.168.0.1:3260 -I iface0 -l
 ----
 
  .. List the iSCSI sessions established on the host.

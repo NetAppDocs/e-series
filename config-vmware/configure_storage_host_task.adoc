@@ -1,8 +1,8 @@
 ---
 permalink: config-vmware/configure_storage_host_task.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use the storage assigned to an ESXi host as either a Virtual Machine File System \(VMFS\) datastore or a raw device mapping \(RDM\). RDMs are not supported on the NVMe over Fibre Channel protocol.'
+keywords: configure storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: You can use the storage assigned to an ESXi host as either a Virtual Machine File System \(VMFS\) datastore or a raw device mapping \(RDM\). RDMs are not supported on the NVMe over Fibre Channel protocol.
 ---
 = Configure storage on the host
 :icons: font
@@ -11,9 +11,13 @@ summary: 'You can use the storage assigned to an ESXi host as either a Virtual M
 [.lead]
 You can use the storage assigned to an ESXi host as either a Virtual Machine File System (VMFS) datastore or a raw device mapping (RDM). RDMs are not supported on the NVMe over Fibre Channel protocol.
 
+All 6._x_ and 7 _x_ versions of ESXi support VMFS versions 5 and 6.
+
+===== Before you begin
+
 The volumes mapped to the ESXi host must have been discovered properly.
 
-All 6._x_ and 7 _x_ versions of ESXi support VMFS versions 5 and 6.
+===== Steps
 
 * For instructions on creating VMFS datastores using either the vSphere Client or the vSphere Web Client, see the VMware pubs webpage (https://www.vmware.com/support/pubs/) for documentation on this topic.
 * For instructions on using volumes as RDMs using either the vSphere Client or the vSphere Web Client, see the VMware pubs webpage (https://www.vmware.com/support/pubs/) for documentation on this topic.

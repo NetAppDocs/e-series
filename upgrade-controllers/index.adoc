@@ -1,22 +1,27 @@
 ---
 permalink: upgrade-controllers/index.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, upgrade controller, upgrade DIMMs
+summary: Overview of upgrading an E-Series array by replacing controllers.
 ---
-= Upgrading E-Series Controllers
+= Upgrade controllers overview
 :icons: font
 :imagesdir: ../media/
 
-* link:overview_requirements_concept.md#overview_requirements_concept[Overview and requirements]
-* xref:upgrade_controllers_task.adoc[Upgrade E-Series controllers]
- ** xref:prepare_upgrade_controllers_task.adoc[Prepare to upgrade controllers]
- ** link:remove_controllers_task.md#remove_controllers_task[Remove controllers]
- ** link:install_controllers_task.md#install_controllers_task[Install new controllers]
- ** link:upgrade_unlock_drives_task.md#upgrade_unlock_drives_task[Unlock drives]
- ** link:complete_upgrade_controllers_task.md#complete_upgrade_controllers_task[Complete controller upgrade]
- ** link:remount_volumes_lsi_task.md#remount_volumes_lsi_task[Remount volumes after changing the vendor from LSI to NETAPP]
-* link:reconfigure_sas_task.md#reconfigure_sas_task[Reconfigure a SAS-2 system behind a new SAS-3 controller shelf without data preservation]
-* xref:reference_copyright.adoc[Copyright]
-* xref:reference_trademark.adoc[Trademark]
-* xref:how_to_send_comments_concept.adoc[How to send comments about documentation and receive update notifications]
+[.lead]
+You can upgrade your storage array through the replacement of existing controllers.
+
+== Controller components
+
+A controller consists of a board, firmware, and software. It controls the drives, and also implements the management software functions.
+
+== When to use this procedure
+
+You typically use this procedure when you want to upgrade all controllers to a different model or platform. This procedure involves replacing all controllers in a controller-drive tray.
+
+You might also use this procedure in the following situations:
+
+* When all controllers in a controller-drive tray encounter hardware failures and are no longer functional.
+* To upgrade the dual inline memory modules (DIMMs) in your controller-drive tray by replacing both controllers with the same model of controllers, but with different DIMMs.
+
+NOTE: The HIC upgrade scenarios are not covered within this procedure. Instead, refer to the HIC add, upgrade and replacement procedures for your E-Series system.

@@ -1,40 +1,14 @@
 ---
 permalink: install-hw-ef600/overview_concept.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: EF300, EF600, installation process overview
+summary: Review the process for installing and setting up an EF300 or EF600.
 ---
-= Overview
+= Install process
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Learn how to install and set up your new EF300 or EF600 storage system.
-
-== Choose your installation and setup experience
-
-You can choose one of the following content formats to guide you through installing and setting up your new storage system.
-
-|===
-a|
-image:../media/drw_isiposter_icon_inst-hw-ef600.gif[]
-a|
-Installation and setup PDF posterA printable PDF of step-by-step instructions with live links to additional content.
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2851449[EF300 and EF600 Installation and Setup]
-
-a|
-image:../media/drw_onlineguide_icon_inst-hw-ef600.gif[]
-a|
-The setup instructions described on the following pages.Start with the Prepare for installation topic to get started..
-
-xref:prepare_for_install_task.adoc[Prepare for installation].
-
-|===
-
-== Installation and setup high-level workflow
-
-[.lead]
-Before you begin installing and setting up your new storage system, you can familiarize yourself with the installation process.
+Before you begin installing and setting up your new storage system, familiarize yourself with the installation process:
 
 image::../media/ef600_isi_workflow_v_2_inst-hw-ef600.bmp[]

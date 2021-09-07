@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_fc_create_partition_files_task.html
 sidebar: sidebar
-keywords: 
-summary: 'You can create a partition on the multipath device, optionally create a file system on the namespace, and mount the partition.'
+keywords: partitions, file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: You can create a partition on the multipath device, optionally create a file system on the namespace, and mount the partition.
 ---
 = Create partitions and filesystems
 :icons: font
@@ -11,13 +11,15 @@ summary: 'You can create a partition on the multipath device, optionally create 
 [.lead]
 You can create a partition on the multipath device, optionally create a file system on the namespace, and mount the partition.
 
-. Run the multipath -ll command to get a list of/dev/mapper/dm devices.
+===== Steps
+
+. Run the `multipath -ll` command to get a list of `/dev/mapper/dm` devices.
 +
 ----
 # multipath -ll
 ----
 +
-The result of this command shows two devices, dm-19 and dm-16 :
+The result of this command shows two devices, `dm-19` and `dm-16`:
 +
 ----
 eui.00001ffe5a94ff8500a0980000af4444 dm-19 NVME,NetApp E-Series
@@ -38,9 +40,9 @@ size=16G features='1 queue_if_no_path' hwhandler='0' wp=rw
   `- #:#:#:# nvme3n16 259:80  active ready running
 ----
 
-. Create a file system on the partition for each /dev/mapper/eui- device.
+. Create a file system on the partition for each `/dev/mapper/eui-` device.
 +
-The method for creating a file system varies depending on the file system chosen. This example shows creating an ext4 file system.
+The method for creating a file system varies depending on the file system chosen. This example shows creating an `ext4` file system.
 +
 ----
 # mkfs.ext4 /dev/mapper/dm-19

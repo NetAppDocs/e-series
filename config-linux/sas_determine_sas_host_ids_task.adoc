@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/sas_determine_sas_host_ids_task.html
 sidebar: sidebar
-keywords: 
-summary: 'For the SAS protocol, you find the SAS addresses using the HBA utility, then use the HBA BIOS to make the appropriate configuration settings.'
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: For the SAS protocol, you find the SAS addresses using the HBA utility, then use the HBA BIOS to make the appropriate configuration settings.
 ---
 = Determine SAS host identifiers - Linux
 :icons: font
@@ -11,10 +11,14 @@ summary: 'For the SAS protocol, you find the SAS addresses using the HBA utility
 [.lead]
 For the SAS protocol, you find the SAS addresses using the HBA utility, then use the HBA BIOS to make the appropriate configuration settings.
 
+===== About this task
+
 Guidelines for HBA utilities:
 
 * Most HBA vendors offer an HBA utility. Depending on your host operating system and CPU, use either the LSI-sas2flash(6G) or sas3flash(12G) utility.
 * Host I/O ports might automatically register if the host context agent is installed.
+
+===== Steps
 
 . Download the HBA utility from your HBA vendor's web site.
 . Install the utility.

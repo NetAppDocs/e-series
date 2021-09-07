@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_fc_setup_host_side_task.html
 sidebar: sidebar
-keywords: 
-summary: 'NVMe initiator configuration in a Fibre Channel environment includes installing and configuring the nvme-cli package, and enabling the NVMe/FC initiator on the host.'
+keywords: NVMe over Fibre Channel, host side, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: NVMe initiator configuration in a Fibre Channel environment includes installing and configuring the nvme-cli package, and enabling the NVMe/FC initiator on the host.
 ---
 = Set up NVMe over Fibre Channel on the host side
 :icons: font
@@ -13,14 +13,16 @@ NVMe initiator configuration in a Fibre Channel environment includes installing 
 
 These are the instructions for SUSE Linux Enterprise Server 12 SP4 and 32GB FC HBAs.
 
-. Install the nvme-cli package:
+===== Steps
+
+. Install the `nvme-cli` package:
 +
 ----
 
 # zypper install nvme-cli
 ----
 
-. Enable and start the nvmefc-boot-connections service.
+. Enable and start the `nvmefc-boot-connections` service.
 +
 ----
 systemctl enable nvmefc-boot-connections.service

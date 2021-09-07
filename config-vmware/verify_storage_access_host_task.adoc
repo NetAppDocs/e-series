@@ -1,8 +1,8 @@
 ---
 permalink: config-vmware/verify_storage_access_host_task.html
 sidebar: sidebar
-keywords: 
-summary: 'Before you use a volume, you verify that the host can write data to the volume and read it back.'
+keywords: verify storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Before you use a volume, you verify that the host can write data to the volume and read it back.
 ---
 = Verify storage access on the host
 :icons: font
@@ -10,5 +10,7 @@ summary: 'Before you use a volume, you verify that the host can write data to th
 
 [.lead]
 Before you use a volume, you verify that the host can write data to the volume and read it back.
+
+===== Steps
 
 . Verify that the volume has been used as a Virtual Machine File System (VMFS) datastore or has been mapped directly to a VM for use as a raw device mapping (RDM).

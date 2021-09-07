@@ -1,8 +1,8 @@
 ---
 permalink: config-windows/verify_storage_access_host_task.html
 sidebar: sidebar
-keywords: 
-summary: 'Before using the volume, you verify that the host can write data to the LUN and read it back.'
+keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Verify that the host can write data to the LUN and read it back.
 ---
 = Verify storage access on the host
 :icons: font
@@ -11,7 +11,11 @@ summary: 'Before using the volume, you verify that the host can write data to th
 [.lead]
 Before using the volume, you verify that the host can write data to the LUN and read it back.
 
+===== Before you begin
+
 You must have initialized the LUN and formatted it with a file system.
+
+===== Steps
 
 . Create and write to a file on the new LUN.
 +

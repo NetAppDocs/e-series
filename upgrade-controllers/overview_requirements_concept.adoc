@@ -1,41 +1,17 @@
 ---
 permalink: upgrade-controllers/overview_requirements_concept.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, upgrade controller requirements, upgrade compatibility, upgrade SAS shelf, upgrade SAS shelves, upgrade SAS enclosures, SAS-2 to SAS-3
+summary: Review requirements for upgrading and replacing E-Series controllers.
 ---
-= Overview and requirements
+= Upgrade considerations
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can upgrade your storage array through the replacement of existing controllers. A controller consists of a board, firmware, and software. It controls the drives and implements the management software functions.
+Before you upgrade controllers, review the following considerations.
 
-You typically upgrade your storage array want to upgrade all of the controllers to a different model or platform by replacing all of the controllers in a controller-drive tray.
-
-You might also upgrade your storage array in the following situations:
-
-* When all controllers in a controller-drive tray encounter hardware failures and are no longer functional.
-* When you want to upgrade the dual inline memory modules (DIMMs) in your controller-drive tray by replacing both controllers with the same model of controllers, but with different DIMMs.
-
-NOTE: The HIC upgrade scenarios are not covered here. Instead, refer to the HIC add, upgrade and replacement procedures for your E-Series system.
-
-== When to use this procedure
-
-[.lead]
-You typically use this procedure when you want to upgrade all of the controllers to a different model or platform by replacing all of the controllers in a controller-drive tray.
-
-You might also use this procedure in the following situations:
-
-* When all controllers in a controller-drive tray encounter hardware failures and are no longer functional.
-* To upgrade the dual inline memory modules (DIMMs) in your controller-drive tray by replacing both controllers with the same model of controllers, but with different DIMMs.
-
-NOTE: The HIC upgrade scenarios are not covered within this procedure. Instead, refer to the HIC add, upgrade and replacement procedures for your E-Series system.
-
-== Upgrade considerations
-
-[.lead]
-Learn about the considerations you need to keep in mind before you upgrade your controllers.
+== Hardware and firmware requirements
 
 * *Duplex and simplex controller upgrades*
 +
@@ -61,9 +37,9 @@ For Asynchronous Mirroring, the local storage array and remote storage array can
 
 * *Storage object limits*
 +
-If you change your controllers from 5x00 models to 2x00 models, your new storage array configuration will support lower numbers of some storage objects (for example, volumes) in the storage management software than your old configuration. You must make sure that your old configuration does not exceed the storage object limits. See http://hwu.netapp.com/home.aspx[Netapp Hardware Universe] for more information.
+If you change your controllers from 5x00 models to 2x00 models, your new storage array configuration will support lower numbers of some storage objects (for example, volumes) in the storage management software than your old configuration. You must make sure that your old configuration does not exceed the storage object limits. See http://hwu.netapp.com/home.aspx[Hardware Universe] for more information.
 
-=== Upgrading to newer models
+== Upgrade to newer models
 
 If you are replacing the controllers to upgrade to a new model, keep in mind that your current storage array might have premium features installed that the new model cannot support. For example, E2700 controllers do not support the legacy Snapshots premium feature.
 
@@ -72,26 +48,28 @@ If you replace E2600 controllers with E2700 controllers, and your storage array 
 == Upgrade compatibility
 
 [.lead]
-Learn about the supported upgrade paths.
+Review the supported upgrade paths for each storage array model.
 
 === From E2x00 to E2x00
 
-* *Battery*- Reuse the old battery.
-* *Vendor ID* - Additional steps required.
-* *Feature Support* - Legacy snapshots are not supported on the E2700.
+* *Battery*: Reuse the old battery.
+* *Vendor ID*: Additional steps required.
+* *Feature support*: Legacy snapshots are not supported on the E2700.
 * *SAS-2 shelves*: E2800 controllers must not be placed into SAS-2 shelves.
 
 === From E2x00 to E5x00
 
 * *Battery*: Order a new battery.
 * *Vendor ID*: Additional steps are required when upgrading from E2600 to E5500 or E5600, or when upgrading from E2700 to E5400.
-* *Feature Support*: Legacy snapshots are not supported on the E5500 or E5600.
+* *Feature support*:
 +
-Legacy RVM is not supported on the E5500 or E5600 with iSCSI HICs.
+** Legacy snapshots are not supported on the E5500 or E5600.
 +
-Data Assurance is not supported on the E5500 or E5600 with iSCSI HICs.
+** Legacy remote volume mirroring (RVM) is not supported on the E5500 or E5600 with iSCSI HICs.
 +
-E5700 controllers must not be placed into SAS-2 shelves.
+** Data Assurance is not supported on the E5500 or E5600 with iSCSI HICs.
++
+** E5700 controllers must not be placed into SAS-2 shelves.
 
 * *SAS-3 shelves*: E5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
 
@@ -99,39 +77,44 @@ E5700 controllers must not be placed into SAS-2 shelves.
 
 * *Battery*: Order a new battery.
 * *Vendor ID*: Additional steps are required when upgrading from E5500 or E5600 to E2600, or when upgrading from E5400 to E2700.
-* *Feature Support*: Legacy snapshots are not supported on the E2700.
+* *Feature support*: Legacy snapshots are not supported on the E2700.
 * *SAS-3 shelves*: E5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
 
-=== From E5x00 to o E5x00
+=== From E5x00 to E5x00
 
 * *Battery*: Reuse the old battery.
-* *Vendor ID*:Additional steps required when upgrading from E5400 to E5500 or E5600.
-* *Feature Support*: Legacy snapshots are not supported on the E5500 or E5600.
+* *Vendor ID*: Additional steps required when upgrading from E5400 to E5500 or E5600.
+* *Feature support*:
 +
-Legacy RVM is not supported on the E5400 or E5500 with iSCSI HICs.
+** Legacy snapshots are not supported on the E5500 or E5600.
 +
-Data Assurance is not supported on the E5400 or E5500 with iSCSI HICs.
+** Legacy remote volume mirroring (RVM) is not supported on the E5400 or E5500 with iSCSI HICs.
 +
-E5700 controllers must not be placed into SAS-2 shelves.
+** Data Assurance is not supported on the E5400 or E5500 with iSCSI HICs.
++
+** E5700 controllers must not be placed into SAS-2 shelves.
 
-* *SAS-3 Shelves*: E5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
+* *SAS-3 shelves*: E5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
 
 === From EF5x0 to EF5x0
 
 * *Battery*: Reuse the old battery.
 * *Vendor ID*: Additional steps required when upgrading from EF540 to EF550 or EF560.
-* *Feature Support*: No Legacy Snapshots for EF550/EF560.
+* *Feature support*:
 +
-No Data Assurance for EF550/EF560 with iSCSI.
+** No Legacy Snapshots for EF550/EF560.
 +
-EF570 controllers must not be placed into SAS-3 shelves.
+** No Data Assurance for EF550/EF560 with iSCSI.
++
+** EF570 controllers must not be placed into SAS-3 shelves.
 
-* *SAS-3 Shelves*: EF540, EF550, and EF560 controllers must not be placed into SAS-3 shelves.
+* *SAS-3 shelves*: EF540, EF550, and EF560 controllers must not be placed into SAS-3 shelves.
 
 === SAS enclosures
 
-The E5700 supports DE5600 and DE6600 SAS-2 enclosures via head upgrade. When utilizing a E5700 controller in SAS-2 enclosures, support for base host ports is disabled.
+The E5700 supports DE5600 and DE6600 SAS-2 enclosures via head upgrade. When a E5700 controller is installed in SAS-2 enclosures, support for base host ports is disabled.
 
+[options="header"]
 |===
 | SAS-2 shelves| SAS-3 shelves
 a|
@@ -155,4 +138,4 @@ SAS-3 shelves include the following models:
 
 You can reconfigure your SAS-2 system to be used behind a new SAS-3 controller shelf (E57XX/EF570/E28XX).
 
-IMPORTANT: This procedure requires an FPVR. To file an FPVR contact your sales team.
+NOTE: This procedure requires a Feature Product Variance Request (FPVR). To file an FPVR, contact your sales team.

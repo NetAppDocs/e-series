@@ -1,18 +1,22 @@
 ---
 permalink: install-hw-ef600/index.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: EF300, EF600, installation
+summary: Install and set up the EF300 and EF600 array.
 ---
-= Installation and Setup Instructions
+= Install and set up EF300 and EF600 storage systems
 :icons: font
 :imagesdir: ../media/
 
-* link:overview_concept.md#overview_concept[Overview]
-* xref:prepare_for_install_task.adoc[Prepare for installation]
-* xref:install_hardware_task.adoc[Install the hardware]
-* xref:power_controller_shelves_task.adoc[Power the controller shelves]
-* link:complete_setup_task.md#complete_setup_task[Complete storage system setup and configuration]
-* xref:reference_copyright_and_trademark.adoc[Copyright and trademark]
- ** xref:reference_copyright.adoc[Copyright]
- ** xref:reference_trademark.adoc[Trademark]
+[.lead]
+Follow these procedures to install and set up the EF300 or EF600 storage system.
+
+You can choose one of the following formats to guide you through installing and setting up your new storage system.
+
+* *PDF poster*
++
+This is a https://library.netapp.com/ecm/ecm_download_file/ECMLP2851449[PDF poster] of step-by-step instructions with live links to additional content.
+
+* *Online instructions*
++
+These are the online setup instructions described on this site. Start with xref:prepare_for_install_task.adoc[Prepare for installation] to get started.

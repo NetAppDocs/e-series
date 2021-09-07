@@ -1,10 +1,10 @@
 ---
 permalink: web-services-proxy/access_intro_concept.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: Web Services, WSP, roles WSP, user access WSP
+summary: You can manage user access to the Web Services API and Unified Manager for security purposes.
 ---
-= Manage user access
+= Manage user access in Web Services Proxy
 :icons: font
 :imagesdir: ../media/
 
@@ -22,6 +22,7 @@ Role-based access control (RBAC) associates predefined users with roles. Each ro
 
 The following table describes each role.
 
+[options="header"]
 |===
 | Role| Description
 a|
@@ -45,6 +46,7 @@ Default user accounts are defined in the users.properties file. You can change u
 
 The following table lists the user logins available for the Web Services Proxy.
 
+[options="header"]
 |===
 | Predefined user login| Description
 a|
@@ -103,7 +105,11 @@ You can manage user access by applying additional encryption to passwords, setti
 [.lead]
 For the highest level of security, you can apply additional encryption to passwords using the existing SHA256 password encoding.
 
+===== Before you begin
+
 This additional encryption process applies a random set of bytes to each password (salt) for each SHA256 hash encryption. Salted SHA256 encryption is applied to all newly created passwords.
+
+===== Steps
 
 . Open the users.properties file, located at:
  ** (Windows) -- C:\Program Files\NetApp\SANtricity Web Services Proxy\data\config
@@ -133,9 +139,13 @@ For example: <env key="enable-basic-auth">true</env>
 [.lead]
 To limit user access to specific functions, you can modify which roles are specified for each user account.
 
+===== Before you begin
+
 The Web Services Proxy includes role-based access control (RBAC), in which roles are associated with predefined users. Each role grants permissions to a specific level of functionality. You can change the roles assigned to user accounts by directly modifying the users.properties file.
 
 NOTE: You can also change user accounts by using Access Management in Unified Manager. For more information, see the online help available with Unified Manager.
+
+===== Steps
 
 . Open the users.properties file, located in:
  ** (Windows) -- C:\Program Files\NetApp\SANtricity Web Services Proxy\data\config

@@ -1,15 +1,15 @@
 ---
 permalink: config-linux/nvme_roce_access_virtual_targets_concept.html
 sidebar: sidebar
-keywords: 
-summary: 'You can configure the I/O directed to the device target based on your Linux version. For RHEL 7 and SLES 12, I/O is directed to virtual device targets by the Linux host. DM-MP manages the physical paths underlying these virtual targets.'
+keywords: NVMe volume virtual, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: You can configure the I/O directed to the device target based on your Linux version.
 ---
 = Access NVMe volumes for virtual device targets
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can configure the I/O directed to the device target based on your Linux version. For RHEL 7 and SLES 12, I/O is directed to virtual device targets by the Linux host. DM-MP manages the physical paths underlying these virtual targets.
+You can configure the I/O that is directed to the device target based on your Linux version. For RHEL 7 and SLES 12, I/O is directed to virtual device targets by the Linux host. DM-MP manages the physical paths underlying these virtual targets.
 
 == Virtual devices are I/O targets
 
@@ -40,6 +40,7 @@ NODE         SN           MODEL           NAMESPACE
 /dev/nvme2n4 021648023151 NetApp E-Series 13
 ----
 
+[options="header"]
 |===
 | Column| Description
 a|
@@ -78,6 +79,7 @@ size=15G features='1 queue_if_no_path' hwhandler='0' wp=rw
   `- #:#:#:# nvme2n1 259:9  active ready running
 ----
 
+[options="header"]
 |===
 | Line item| Description
 a|

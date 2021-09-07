@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/fc_determine_host_port_wwpns_task.html
 sidebar: sidebar
-keywords: 
-summary: 'You install an FC HBA utility so you can view the worldwide port name \(WWPN\) of each host port. Additionally, you can use the HBA utility to change any settings recommended in the Notes column of the NetApp Interoperability Matrix Tool for the supported configuration.'
+keywords: host wwpn, HBA utility, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: You install an FC HBA utility so you can view the worldwide port name \(WWPN\) of each host port. Additionally, you can use the HBA utility to change any settings recommended in the Notes column of the NetApp Interoperability Matrix Tool for the supported configuration.
 ---
 = Determine host WWPNs and make the recommended settings
 :icons: font
@@ -11,6 +11,8 @@ summary: 'You install an FC HBA utility so you can view the worldwide port name 
 [.lead]
 You install an FC HBA utility so you can view the worldwide port name (WWPN) of each host port. Additionally, you can use the HBA utility to change any settings recommended in the Notes column of the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for the supported configuration.
 
+===== About this task
+
 Guidelines for HBA utilities:
 
 * Most HBA vendors offer an HBA utility. You will need the correct version of HBA for your host operating system and CPU. Examples of FC HBA utilities include:
@@ -18,8 +20,10 @@ Guidelines for HBA utilities:
  ** QLogic QConverge Console for QLogic HBAs
 * Host I/O ports might automatically register if the host context agent is installed.
 
+===== Steps
+
 . Download the appropriate utility from your HBA vendor's web site.
 . Install the utility.
 . Select the appropriate settings in the HBA utility.
 +
-Appropriate settings for your configuration are listed in the Notes column of the IMT.
+Appropriate settings for your configuration are listed in the Notes column of the Interoperability Matrix Tool.

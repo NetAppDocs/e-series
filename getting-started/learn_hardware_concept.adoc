@@ -1,8 +1,8 @@
 ---
 permalink: getting-started/learn_hardware_concept.html
 sidebar: sidebar
-keywords: 
-summary: 'E-Series storage arrays are available in several configurations and models.'
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, hardware, all flash array, E-Series protocols, E-Series rack
+summary: E-Series storage arrays are available in several configurations and models.
 ---
 = E-Series hardware overview
 :icons: font
@@ -24,6 +24,7 @@ E-Series arrays are available in the following models:
 
 == E2800 models
 
+[options="header"]
 |===
 a|
 *Rack sizes:*
@@ -63,6 +64,7 @@ Available with the following interfaces:
 
 == EF280 models
 
+[options="header"]
 |===
 a|
 *Rack sizes:*
@@ -89,6 +91,7 @@ Available with the following interfaces:
 
 == EF300 models
 
+[options="header"]
 |===
 a|
 *Rack sizes:*
@@ -119,6 +122,7 @@ Available with the following interfaces:
 
 == E5700 models
 
+[options="header"]
 |===
 a|
 *Rack sizes:*
@@ -162,6 +166,7 @@ Available with the following interfaces:
 
 == EF570 models
 
+[options="header"]
 |===
 a|
 *Rack sizes:*
@@ -193,6 +198,7 @@ Available with the following interfaces:
 
 == EF600 models
 
+[options="header"]
 |===
 a|
 *Rack sizes:*

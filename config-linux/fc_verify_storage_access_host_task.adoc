@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/fc_verify_storage_access_host_task.html
 sidebar: sidebar
-keywords: 
-summary: 'Before using the volume, you verify that the host can write data to the volume and read it back.'
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Before using the volume, you verify that the host can write data to the volume and read it back.
 ---
 = Verify storage access on the host
 :icons: font
@@ -11,10 +11,16 @@ summary: 'Before using the volume, you verify that the host can write data to th
 [.lead]
 Before using the volume, you verify that the host can write data to the volume and read it back.
 
+===== Before you begin
+
 You must have initialized the volume and formatted it with a file system.
+
+===== Steps
 
 . On the host, copy one or more files to the mount point of the disk.
 . Copy the files back to a different folder on the original disk.
-. Run the diff command to compare the copied files to the originals.
+. Run the `diff` command to compare the copied files to the originals.
+
+===== After you finish
 
 Remove the file and folder that you copied.

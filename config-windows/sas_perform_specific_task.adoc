@@ -1,8 +1,8 @@
 ---
 permalink: config-windows/sas_perform_specific_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: sas, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: For the SAS protocol, you determine host port addresses and make recommended settings.
 ---
 = Perform SAS-specific tasks
 :icons: font
@@ -11,15 +11,19 @@ summary: ''
 [.lead]
 For the SAS protocol, you determine host port addresses and make the settings recommended in the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool (IMT)].
 
-== Determining SAS host identifiers - Windows
+== Step 1: Determining SAS host identifiers--Windows
 
 [.lead]
 For the SAS protocol, you find the SAS addresses using the HBA utility, then use the HBA BIOS to make the appropriate configuration settings.
+
+===== Before you begin
 
 Guidelines for HBA utilities:
 
 * Most HBA vendors offer an HBA utility. Depending on your host operating system and CPU, use either the LSI-sas2flash(6G) or sas3flash(12G) utility.
 * Host I/O ports might automatically register if the host context agent is installed.
+
+===== Steps
 
 . Download the LSI-sas2flash(6G) or sas3flash(12G) utility from your HBA vendor's web site.
 . Install the utility.
@@ -27,12 +31,12 @@ Guidelines for HBA utilities:
 +
 See the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for recommendations.
 
-== Recording SAS-specific information for Windows
+== Step 2: Recording SAS-specific information for Windows
 
 [.lead]
 Record your protocol-specific storage configuration information on the SAS worksheet. You need this information to perform provisioning tasks.
 
-== SAS worksheet - Windows
+== Step 3: SAS worksheet--Windows
 
 [.lead]
 You can use this worksheet to record SAS storage configuration information. You need this information to perform provisioning tasks.
@@ -41,6 +45,7 @@ image::../media/sas_topology_diagram_conf-win.gif[Diagram: SAS topology]
 
 === Host Identifiers
 
+[options="header"]
 |===
 | Callout No.| Host (initiator) port connections| SAS address
 a|
@@ -54,40 +59,40 @@ a|
 a|
 Host (initiator) port 1 connected to Controller A, port 1
 a|
- 
+
 a|
 3
 a|
 Host (initiator) port 1 connected to Controller B, port 1
 a|
- 
+
 a|
 4
 a|
 Host (initiator) port 2 connected to Controller A, port 1
 a|
- 
+
 a|
 5
 a|
 Host (initiator) port 2 connected to Controller B, port 1
 a|
- 
+
 |===
 
-=== Target Identifiers
+=== Target identifiers
 
 Recommended configurations consist of two target ports.
 
-=== Mappings Host
+=== Mappings host
 
 |===
 a|
-Mappings Host Name
+Mapping host name a|
+
 a|
- 
+Host OS type
 a|
-Host OS Type
+
 a|
- 
 |===

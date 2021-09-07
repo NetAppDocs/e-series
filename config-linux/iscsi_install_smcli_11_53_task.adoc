@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/iscsi_install_smcli_11_53_task.html
 sidebar: sidebar
-keywords: 
-summary: 'When you install the SANtricity Storage Manager software on your management station, the command line interface \(CLI\) is installed to help you manage your array. By also installing the software on the host, the Host Context Agent is installed that helps the host push configuration information to the storage array controllers through the I/O path.'
+keywords: install Storage Manager Linux, install CLI Windows, install command line interface, install Host Context Agent, install HCA, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Install Storage Manager for CLI and HCA in Linux express method.
 ---
 = Install SANtricity Storage Manager for SMcli (SANtricity software version 11.53 or earlier)
 :icons: font
@@ -11,7 +11,9 @@ summary: 'When you install the SANtricity Storage Manager software on your manag
 [.lead]
 When you install the SANtricity Storage Manager software on your management station, the command line interface (CLI) is installed to help you manage your array. By also installing the software on the host, the Host Context Agent is installed that helps the host push configuration information to the storage array controllers through the I/O path.
 
-IMPORTANT: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricty System Manager, refer to the _Download the command line interface (CLI)_ topic under the SANtricity System Manager Online Help.
+NOTE: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricty System Manager, refer to the _Download the command line interface (CLI)_ topic under the SANtricity System Manager Online Help.
+
+===== Before you begin
 
 * You are using SANtricity software 11.53 or earlier.
 * You must have the correct administrator or superuser privileges.
@@ -20,21 +22,26 @@ IMPORTANT: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (S
  ** *Disk space*: 5 GB
  ** *OS/Architecture*: Refer to https://mysupport.netapp.com/site/[NetApp Support]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager* for guidance on determining the supported operating system versions and architectures.
 
+===== About this task
+
 This section describes how to install SANtricity Storage Manager on both the Windows and Linux OS platforms, because both Windows and Linux are common management station platforms when Linux is used for the data host.
+
+===== Steps
 
 . Download the SANtricity software release from https://mysupport.netapp.com/site/[NetApp Support]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager*.
 . Run the SANtricity installer.
 +
+[options="header"]
 |===
 | Windows| Linux
 a|
-Double-click the SMIA*.exe installation package to start the installation.
+Double-click the `SMIA*.exe` installation package to start the installation.
 a|
 
- .. Go to the directory where the SMIA*.bin installation package is located.
- .. If the temp mount point does not have execute permissions, set the IATEMPDIR variable. Example: IATEMPDIR=/root ./SMIA-LINUXX64-11.25.0A00.0002.bin
- .. Run the chmod +x SMIA*.bin command to grant execute permission to the file.
- .. Run the ./SMIA*.bin command to start the installer.
+ .. Go to the directory where the `SMIA*.bin` installation package is located.
+ .. If the temp mount point does not have execute permissions, set the `IATEMPDIR` variable. Example: `IATEMPDIR=/root ./SMIA-LINUXX64-11.25.0A00.0002.bin`
+ .. Run the `chmod +x SMIA*.bin` command to grant execute permission to the file.
+ .. Run the `./SMIA*.bin` command to start the installer.
 
 +
 |===

@@ -1,8 +1,8 @@
 ---
 permalink: install-hw-cabinet/complete_cabinet_install_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: 3040 40U cabinet, cabinet installation, drive tray installation, controller installation, shelf installation, E2800, E5700, EF300, EF600
+summary: Complete the cabinet installation.
 ---
 = Complete cabinet installation
 :icons: font
@@ -11,53 +11,41 @@ summary: ''
 [.lead]
 After you move the cabinet, lower the leveling feet and the stability foot, reinstall the components you removed, install other required components, and connect the cabinet to power.
 
-== Lower leveling feet and stability foot
+== Step 1: Lower leveling feet and stability foot
 
-[.lead]
-You stabilize the cabinet by adjusting its feet. The leveling feet support the cabinet off the casters. The stability foot prevents the cabinet from falling over after it is placed in its permanent location
+You stabilize the cabinet by adjusting its feet. The leveling feet support the cabinet off the casters. The stability foot prevents the cabinet from falling over after it is placed in its permanent location.
+
+==== Steps
 
 . Lower the leveling feet to support the cabinet off the casters.
 +
 The leveling feet are located near each bottom corner of the cabinet.
 
-. Make sure that the cabinet is a level as possible.
+. Make sure that the cabinet is as level as possible.
 +
 The following figure provides a close-up view of the stability foot and the leveling feet.
 +
 image::../media/83000_08.gif[]
 +
 |===
-    a|
-1.
-a|
-Leveling feet
+a|1. a| Leveling feet
 a|
 2.
 a|
 Stability foot
 |===
 
-== Reinstall trays
+== Step 2: Reinstall trays
 
-[.lead]
 After you move the cabinet, you can reinstall the trays in their original locations.
 
-Be sure to install the trays in their original locations.
+CAUTION: _Do not_ install the following trays in the top of the cabinet over your head. When fully-populated, each of these trays weighs over 100 kg (220 lb). If installed in the top of the cabinet, these trays create a top-heavy cabinet that can become easily unbalanced: E2660, E2660, E2760, E5460, E5560, and E5660 controller-drive trays, as well as the DE6600 drive tray.
 
-CAUTION:
-
-_Do not_ install the following trays in the top of the cabinet over your head. When fully-populated, each of these trays weighs over 100 kg (220 lb). If installed in the top of the cabinet, the trays create a top-heavy cabinet that can become easily unbalanced:
-
-* DE6600 drive tray
-* E2660 controller-drive tray
-* E2760 controller-drive tray
-* E5460 controller-drive tray
-* E5560 controller-drive tray
-* E5660 controller-drive tray
+===== Steps
 
 . Reinstall all of the trays in their original locations in the cabinet.
 +
-WARNING: *Risk of bodily injury* -- An empty tray weighs approximately 56.7 kg (125 lb). Three persons are required to safely move an empty tray. If the tray is populated with components, a mechanized lift is required to safely move the tray.
+CAUTION: *Risk of bodily injury* -- An empty tray weighs approximately 56.7 kg (125 lb). Three persons are required to safely move an empty tray. If the tray is populated with components, a mechanized lift is required to safely move the tray.
 
 . Reinstall all of the components in their original locations in the trays.
 +
@@ -67,30 +55,29 @@ To prevent address conflicts and loss of data access, replace all components in 
 . Route the interface cables to the cabinet.
 . Route the main power cords from the cabinet to the two external power sources. _Do not_ plug in the power cords at this time.
 
-== Install cable spools and tie wraps
+== Step 3: Install cable spools and tie wraps
 
-[.lead]
 After you reinstall the trays, install the cable spools and tie wraps. The cable spools and tie wraps accommodate excess cable length and cable routing for the controllers and the trays.
+
+===== Steps
 
 . Install the cable spools and the tie wraps along both sides of the vertical power distribution outlets.
 +
 image::../media/83003_01_dwg_3040_cable_spools.gif[]
 +
 |===
-    a|
-1.
-a|
-Tie wrap location
+a| 1. a| Tie wrap location
 a|
 2.
 a|
 Cable spool
 |===
 
-== Install additional trays
+== Step 4: Install additional trays
 
-[.lead]
 If needed, you can install additional trays. You must cover unused positions for trays to assure correct air flow.
+
+===== Steps
 
 . If you have additional trays that must be installed, install the mounting hardware for these trays.
 . If the front of the cabinet is not completely filled with trays, use front panel kits to cover the empty spaces above or below the installed trays.
@@ -99,10 +86,12 @@ Covering the empty spaces is necessary so that the correct airflow through the c
 
 . Power on the trays.
 
-== Install additional mounting rails
+== Step 5: Install additional mounting rails
 
 [.lead]
 If you are installing controller-drive trays, or drive trays that were shipped separately (not already installed in the cabinet), you might need to install additional mounting rails in the cabinet.
+
+===== Steps
 
 . Determine the location for the mounting rails.
  ** *Above an existing tray* -- Position the mounting rails immediately above the top tray in the cabinet.
@@ -114,10 +103,7 @@ If you are installing controller-drive trays, or drive trays that were shipped s
 image::../media/92042_06.gif[]
 +
 |===
-    a|
-1.
-a|
-Front adjustable rail
+a| 1. a| Front adjustable rail
 a|
 2.
 a|
@@ -143,7 +129,7 @@ a|
 a|
 Vertical support
 |===
-*Note:* The clip nuts and the rear hold down bracket are not used when the rails are installed in a 3040 cabinet.
+NOTE: The clip nuts and the rear hold down bracket are not used when the rails are installed in a 3040 cabinet.
 
 . Place the rear adjustable rail on the vertical support.
 . On the rear adjustable rail, align the adjustable rail holes in front of the holes in the vertical support.
@@ -159,18 +145,21 @@ Vertical support
 
 +
 NOTE: The remaining two screw holes are used to mount the tray.
-. Repeat step link:complete_cabinet_install_task.md#V666987[complete_cabinet_install_task.md#V666987] through step link:complete_cabinet_install_task.md#V1811275[complete_cabinet_install_task.md#V1811275] to attach the second rail on the other side of the cabinet.
+. Repeat step 3 through step 8 to attach the second rail on the other side of the cabinet.
 . Install each tray using the applicable tray installation instructions.
 . Choose one of the following options:
  ** If all positions for trays are full, power-on the trays.
  ** If not all positions for trays are full, use front panel kits to cover the empty spaces above or below the installed trays.
 
-== Connect the cabinet to power
+== Step 6: Connect the cabinet to power
 
-[.lead]
 To complete the cabinet installation, power on the cabinet components.
 
+==== About this task
+
 While the trays perform the power-on procedure, the LEDs on the front and the rear of the trays blink. Depending on your configuration, it can take several minutes to complete the power-on procedure.
+
+===== Steps
 
 . Turn off the power to all components in the cabinet.
 . Turn all 12 circuit breakers to their off (down) position.
@@ -183,10 +172,7 @@ NOTE: You must connect each PDU to an independent power source outside of the ca
 image::../media/83002_05_dwg_3040_cabinet_pdus.gif[]
 +
 |===
-    a|
-1.
-a|
-Circuit breakers
+a| 1. a| Circuit breakers
 a|
 2.
 a|
@@ -199,8 +185,10 @@ Power entry boxes
 
 . Turn on the power to all drive trays in the cabinet.
 +
-IMPORTANT: Wait 30 seconds after turning on the drive trays before you turn on the power to the controller-drive trays.
+NOTE: Wait 30 seconds after turning on the drive trays before you turn on the power to the controller-drive trays.
 
 . Wait 30 seconds after turning on the drive trays, and then turn on the power to all controller-drive trays in the cabinet.
+
+== Result
 
 The cabinet installation is complete. You can resume normal operations.

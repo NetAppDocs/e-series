@@ -1,21 +1,27 @@
 ---
 permalink: upgrade-controllers/reconfigure_sas_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, reconfigure SAS-2, SAS-2, SAS-3, convert controller shelf, convert drive shelf,
+summary: You can convert the controller shelf in an approved SAS-2 array (E2700, E550/EF5500, E5600/EF560) to a drive shelf and then place that shelf and any associated approved SAS-2 drive shelves (DE1600, DE5600, DE6600) behind a new approved SAS-3 array (E2800, E5700/EF570) and approved SAS-3 drive shelves (DE212C, DE224C, DE460C) without data preservation.
 ---
-= Reconfigure a SAS-2 system behind a new SAS-3 controller shelf without data preservation
+= Reconfigure a SAS-2 system behind a new SAS-3 controller shelf
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can convert the controller shelf in an approved SAS-2 array (E2700, E550/EF5500, E5600/EF560) to a drive shelf and then place that shelf and any associated approved SAS-2 drive shelves (DE1600, DE5600, DE6600) behind a new approved SAS-3 array (E2800, E5700/EF570) and approved SAS-3 drive shelves (DE212C, DE224C, DE460C) without data preservation.
+Follow this procedure to convert the controller shelf in an approved SAS-2 array to a drive shelf, and then place that shelf behind a new approved SAS-3 array and drive shelves, without data preservation.
+
+Approved SAS-2 arrays include the E2700, E550/EF5500, and E5600/EF560. Approved SAS-2 drive shelves include the DE1600, DE5600, and DE6600.
+
+Approved SAS-3 arrays include the E2800 and E5700/EF570. Approved SAS-3 drive shelves include DE212C, DE224C, and DE460C.
+
+===== About this task
 
 Due to the complexity of this procedure, the following is required:
 
-* This procedure requires an FPVR. To file an FPVR contact NetApp Professional Services.
+* You must have a Feature Product Variance Request (FPVR). To file an FPVR, contact NetApp Professional Services.
 +
-NOTE: Failure to aquire an FPVR before attempting this procedure can result in drive failure and controller lock down.
+NOTE: Failure to acquire an FPVR before attempting this procedure can result in drive failure and controller lock down.
 
 * If you are able to back up your data, you can perform this procedure without assistance from NetApp Professional Services.
 * If you cannot back up your data, contact NetApp Professional Services for assistance with this procedure.
@@ -26,8 +32,9 @@ NOTE: Failure to aquire an FPVR before attempting this procedure can result in d
 
 == Step 1: Power down the controllers (non-data preservation)
 
-[.lead]
 All operations must be shut down before you can power down the controllers.
+
+===== Steps
 
 . If the existing SAS-2 array is still accessible, delete all volume groups, power down both controllers, and remove all cables.
 . Record the serial number from the SAS-2 controller shelf that you will be converting to a drive shelf.
@@ -35,8 +42,9 @@ All operations must be shut down before you can power down the controllers.
 
 == Step 2: Install the controllers (non-data preservation)
 
-[.lead]
 Upon successful shut down, you can replace the controllers in the array.
+
+===== Steps
 
 . Replace both controllers in the existing array with IOMs or ESMs.
 . If possible, use the host cables and network cables from the existing array and connect them to the controllers in the new array.
@@ -47,12 +55,13 @@ NOTE: Depending on the host connections of your new array, different cables may 
 +
 The existing controller-drive tray and any attached drive trays become drive shelves and can be cabled to the controllers in the new array.
 +
-NOTE: Connecting SAS-2 to SAS-3 requires SAS HD to miniSAS cables. For more detailed cabling information for your particular controller and expansion shelf configuration, refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2588749[E-Series Hardware Cabling Guide].
+NOTE: Connecting SAS-2 to SAS-3 requires SAS HD to mini SAS cables. For more detailed cabling information for your particular controller and expansion shelf configuration, refer to link:../install-hw-cabling/index.html[Cabling] or the https://library.netapp.com/ecm/ecm_download_file/ECMLP2588749[E-Series Hardware Cabling Guide].
 
 == Step 3: Power on the controllers (non-data preservation)
 
-[.lead]
 After installation is complete, power on the controllers and submit your configuration changes to NetApp Technical Support.
+
+===== Steps
 
 . Power up the new array including any attached drive shelves.
 . Configure the management port and the IP addresses by installing the https://mysupport.netapp.com/tools/info/ECMLP2563821I.html[SANtricity Quick Connect] utility.
@@ -60,10 +69,10 @@ After installation is complete, power on the controllers and submit your configu
 . If you were unable to delete the volume groups from your existing array before performing this procedure, you must set all foreign drives to appear as native. For detailed information on how to set drives to native, refer to the SANtricity Online Help.
 . Send your configuration changes to NetApp Technical Support.
  .. Get the serial number of the old controller-drive tray that you recorded in Step 2.
- .. Log in to the NetApp Support Site: `+[mysupport.netapp.com/eservice/assistant](http://mysupport.netapp.com/eservice/assistant)+`.
+ .. Log in to the http://mysupport.netapp.com/eservice/assistant)[NetApp Support Site].
  .. From the drop-down list under *Category 1* on the *Give Us Feedback* page, select *Installed products*.
  .. From the drop-down list under *Category 2* on the *Give Us Feedback* page, select *Decommission request*.
- .. Enter the following text in the **Comments**text box, substituting the serial number of your controller-drive tray for serial number:
+ .. Enter the following text in the *Comments* text box, substituting the serial number of your controller-drive tray for serial number:
 +
 `Please decommission this serial number as the entitlement has been moved to another serial number in the system. Please reference this in the SN notes.`
 

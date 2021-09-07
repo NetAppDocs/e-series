@@ -1,8 +1,8 @@
 ---
 permalink: getting-started/learn_software_concept.html
 sidebar: sidebar
-keywords: 
-summary: 'E-Series systems include SANtricity software for storage provisioning and other tasks.'
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, E-Series software, E-Series user interface
+summary: E-Series systems include SANtricity software for storage provisioning and other tasks.
 ---
 = SANtricity software overview
 :icons: font
@@ -28,43 +28,43 @@ System Manager offers a variety of management features, including:
 
 |===
 a|
-*Performance* image:../media/sam1130_icon_performance.gif[]
-
-a|
+image:../media/sam1130_icon_performance.gif[] *Performance*  a|
 View up to 30 days of performance data, including I/O latency, IOPS, CPU utilization, and throughput.
 
+
+
 a|
-*Storage* image:../media/sam1130_icon_volumes.gif[]
+image:../media/sam1130_icon_volumes.gif[] *Storage*
 
 a|
 Provision storage using pools or volume groups, and create application workloads.
 a|
-*Data protection* image:../media/sam1130_icon_async_mirroring.gif[]
+image:../media/sam1130_icon_async_mirroring.gif[] *Data protection*
 
 a|
 Perform backup and disaster recovery using snapshots, volume copy, and remote mirroring.
 a|
-*Hardware* image:../media/sam1130_icon_controllers.gif[]
+image:../media/sam1130_icon_controllers.gif[] *Hardware*
 
 a|
 Check component status and perform some functions related to those components, such as assigning hot spare drives.
 a|
-*Alerts* image:../media/sam1130_icon_alerts.gif[]
+image:../media/sam1130_icon_alerts.gif[] *Alerts*
 
 a|
 Notify administrators about important events occurring on the storage array. Alerts can be sent through email, SNMP traps, and syslog.
 a|
-*Access Management* image:../media/sam1140_icon_active_directory.gif[]
+image:../media/sam1140_icon_active_directory.gif[] *Access Management*
 
 a|
 Configure user authentication that requires users to log in to the system with assigned credentials.
 a|
-*System Settings* image:../media/sam1130_icon_settings.gif[]
+image:../media/sam1130_icon_settings.gif[] *System Settings*
 
 a|
 Configure other system performance features, such as SSD cache and autoload balancing.
 a|
-*Support* image:../media/sam1130_icon_support.gif[]
+image:../media/sam1130_icon_support.gif[] *Support*
 
 a|
 View diagnostic data, manage upgrades, and configure AutoSupport, which monitors the health of a storage array and sends automatic dispatches to technical support.
@@ -80,42 +80,42 @@ Unified Manager offers a variety of management features, including:
 
 |===
 a|
-*Discover storage arrays* image:../media/artboard_9.png[]
+image:../media/artboard_9.png[] *Discover storage arrays*  a|
+Find and add the storage arrays you want to manage in your organization's network. You can then view the status of all storage arrays from a single page.
+
 
 a|
-Find and add the storage arrays you want to manage in your organization's network. You can then view the status of all storage arrays from a single page.
-a|
-*Launch* image:../media/artboard_11.png[]
+image:../media/artboard_11.png[] *Launch*
 
 a|
 Open an instance of System Manager to perform individual management operations on a particular storage array.
 a|
-*Import Settings* image:../media/sam1130_icon_system.gif[]
+image:../media/sam1130_icon_system.gif[] *Import Settings*
 
 a|
 Perform a batch import from one storage array to multiple arrays, including settings for alerts, AutoSupport, and directory services.
 a|
-*Mirroring* image:../media/sam1130_icon_async_mirroring.gif[]
+image:../media/sam1130_icon_async_mirroring.gif[] *Mirroring*
 
 a|
 Configure asynchronous or synchronous mirrored pairs between two storage arrays.
 a|
-*Manage Groups* image:../media/artboard_10.png[]
+image:../media/artboard_10.png[] *Manage Groups*
 
 a|
 Organize storage arrays into groups for easier management.
 a|
-*Upgrade Center* image:../media/sam1130_icon_upgrade_center.gif[]
+image:../media/sam1130_icon_upgrade_center.gif[] *Upgrade Center*
 
 a|
 Upgrade the SANtricity OS software on multiple storage arrays.
 a|
-*Certificates* image:../media/sam1140_icon_certs.gif[]
+image:../media/sam1140_icon_certs.gif[] *Certificates*
 
 a|
 Create certificate signing requests (CSRs), import certificates, and manage existing certificates for multiple storage arrays.
 a|
-*Access Management* image:../media/sam1140_icon_active_directory.gif[]
+image:../media/sam1140_icon_active_directory.gif[] *Access Management*
 
 a|
 Configure user authentication that requires users to log in to Unified Manager with assigned credentials.

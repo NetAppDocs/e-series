@@ -1,24 +1,30 @@
 ---
 permalink: maintenance-ef600/sas_add_supertask_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: replace EF300 SAS expansion card, replacing SAS card, drive tray expansion, expansion card
+summary: Add a SAS expansion card to EF300 controllers to allow for drive tray expansion.
 ---
-= Add SAS expansion cards
+= Add SAS expansion card to EF300
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You add a SAS expansion card to EF300 controllers to allow for drive tray expansion.
+Follow this procedure to add a SAS expansion card to an EF300 controller. This addition allows for drive tray expansion.
 
-* When you add a SAS expansion card, you must power off the storage array, install the new SAS expansion card, and reapply power.
+== About this task
 
-== Place controller shelf offline
+When you add a SAS expansion card, you must power off the storage array, install the new SAS expansion card, and reapply power.
 
-[.lead]
-You must place the controller shelf offline so you can safely add the SAS expansion card. You must back up the configuration and collect support data first. Then, you can take the controller shelf offline.
+== Before you begin
 
-* You have scheduled a downtime maintenance window for this procedure. You cannot access data on the storage array until you have successfully completed this procedure.
+* Review link:sas_overview_supertask_concept[Requirements for EF300 or EF600 SAS expansion card replacement].
+* You must schedule a downtime maintenance window for this procedure. You cannot access data on the storage array until you have successfully completed this procedure.
+
+== Step 1: Place controller shelf offline
+
+Place the controller shelf offline so you can safely add the SAS expansion card.
+
+===== Steps
 
 . From the Home page of SANtricity System Manager, ensure that the storage array has Optimal status.
 +
@@ -33,10 +39,11 @@ The file is saved in the Downloads folder for your browser with the name support
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
  ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
  ** Unmount all file systems associated with volumes on the array.
-*Note:* The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
-
 +
-IMPORTANT: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, the host application might lose access to the data because the storage is not accessible.
+NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
++
+CAUTION: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, the host application might lose access to the data because the storage is not accessible.
+
 . Wait for any data in cache memory to be written to the drives.
 +
 The green Cache Active LED on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
@@ -46,23 +53,24 @@ The green Cache Active LED on the back of each controller is on when cached data
  .. Label and then unplug both power cables from controller shelf.
  .. Wait for all LEDs on the controller shelf to turn off.
 
-Go to link:sas_add_supertask_task.md#[Remove controller canister]
+== Step 2: Remove controller canister
 
-== Remove controller canister
+Remove the controller canister so you can add the new SAS expansion card.
 
-[.lead]
-You remove the controller canister so you can add the new SAS expansion card. When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
+===== What you'll need
 
-* You must use labels to identify each cable that is connected to the controller canister.
-* You must have a #1 Phillips screwdriver.
-* You have an ESD wristband, or you have taken other antistatic precautions.
-* You have prepared a flat, static free work area.
+* Labels to identify each cable that is connected to the controller canister.
+* A #1 Phillips screwdriver.
+* An ESD wristband, or you have taken other antistatic precautions.
+* A flat, static free work area.
+
+===== Steps
 
 . Put on an ESD wristband or take other antistatic precautions.
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
 +
-IMPORTANT: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
+CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
 
 . Confirm that the Cache Active LED on the back of the controller is off.
 . Squeeze the handles on either side of the controller, and pull back until it releases from the shelf.
@@ -71,23 +79,25 @@ image::../media/remove_controller_5.png[]
 
 . Using two hands and the handles, slide the controller canister out of the shelf. When the front of the controller is free of the enclosure, use two hands to pull it out completely.
 +
-IMPORTANT: Always use two hands to support the weight of a controller canister.
+CAUTION: Always use two hands to support the weight of a controller canister.
 +
 image::../media/remove_controller_6.png[]
 
 . Place the controller canister on a flat, static-free surface.
 
-Go to link:sas_add_supertask_task.md#[Add the new SAS expansion card].
+== Step 3: Add the new SAS expansion card
 
-== Add the new SAS expansion card
+Install the SAS expansion card to allow for drive tray expansion.
 
-[.lead]
-You install the SAS expansion card to allow for drive tray expansion.
+NOTE: On an EF300 controller shelf, a SAS expansion card may only be installed in port 1.
 
-* You have an ESD wristband, or you have taken other antistatic precautions.
-* You have a #1 Phillips screwdriver.
-* You have a SAS expansion card that is compatible with your controller.
-* On an EF300 controller shelf a SAS expansion card may only be installed in port 1.
+===== What you'll need
+
+* An ESD wristband, or you have taken other antistatic precautions.
+* A #1 Phillips screwdriver.
+* A SAS expansion card that is compatible with your controller.
+
+===== Steps
 
 . Remove the controller canister's cover by unscrewing the single thumbscrew and lifting the lid open.
 . Confirm that the green LED inside the controller is off.
@@ -106,12 +116,11 @@ Do not use a screwdriver, or you might over tighten the screws.
 
 . Using a #1 Phillips screwdriver, attach the faceplate you removed from the original controller canister to the new controller canister with the two screws.
 
-Go to link:sas_add_supertask_task.md#[Reinstall the controller canister].
+== Step 4: Reinstall the controller canister
 
-== Reinstall the controller canister
+After installing the new SAS expansion card, reinstall the controller canister into the controller shelf.
 
-[.lead]
-You reinstall the controller canister into the controller shelf after installing the new SAS expansion card.
+===== Steps
 
 . Lower the cover on the controller canister and secure the thumbscrew.
 . While squeezing the controller handles, gently slide the controller canister all the way into the controller shelf.
@@ -120,12 +129,11 @@ NOTE: The controller audibly clicks when correctly installed into the shelf.
 +
 image::../media/remove_controller_7.png[]
 
-Go to link:sas_add_supertask_task.md#[Complete adding SAS expansion card].
+== Step 5: Complete SAS expansion card addition
 
-== Complete adding SAS expansion card
+Place the controller online, collect support data, and resume operations.
 
-[.lead]
-You complete the SAS expansion card addition by placing the controller online and confirming that the storage array is working correctly. Then, you can collect support data and resume operations.
+===== Steps
 
 . Plug in power cables to place the controller online.
 . As the controller boots, check the controller LEDs.
@@ -145,14 +153,16 @@ As needed, install the latest version.
  .. Select *Storage* > *Volumes*. If current owner and preferred owner are not listed select *All volumes* > *Columns*. Select current owner and preferred owner then recheck to verify that volumes are distributed to their perferred owners.
  .. If volumes are all owned by preferred owner continue to Step 6.
  .. If none of the volumes are returned, you must manually return the volumes. Go to *Storage* > *Volumes* > *More* > *Redistribute volumes*.
- .. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution you must check the recovery guru for host connectivity issues.
- .. If there is no recovery guru present or if following the recovery guru steps the volumes are still not returned to their preferred owners, contact support.
+ .. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution you must check the Recovery Guru for host connectivity issues.
+ .. If there is no Recovery Guru present or if following the recovery guru steps the volumes are still not returned to their preferred owners, contact support.
 . Collect support data for your storage array using SANtricity System Manager.
  .. Select *Support* > *Support Center* > *Diagnostics*.
  .. Select *Collect Support Data*.
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 
-The process of adding a SAS expansion card in your storage array is complete. You can resume normal operations.
+NOTE: To cable your SAS expansion, see link:../install-hw-cabling/index.html[Cabling E-Series hardware] for instructions.
 
-To cable your SAS expansion see https://docs.netapp.com/ess-11/topic/com.netapp.doc.e-hw-cabling/home.html[Cabling E-Series hardware] for instructions.
+== Result
+
+The process of adding a SAS expansion card in your storage array is complete. You can resume normal operations.

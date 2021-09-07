@@ -1,26 +1,34 @@
 ---
 permalink: maintenance-e5700/hics_replace_supertask_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: E5700 host interface card, E5700 HIC, replace E5700 HIC, failed E5700 HIC
+summary: Replace a HIC in an E5700.
 ---
-= Replace host interface card
+= Replace E5700 host interface card (HIC)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You replace a host interface card (HIC) that has failed. If two controllers are present, each controller must have identical HICs.
+Follow this procedure to replace a host interface card (HIC) that has failed.
 
-== Place controller offline (duplex)
-
-[.lead]
-If you have a duplex configuration, you must place the affected controller offline so you can safely remove the failed HIC. You must back up the configuration and collect support data first. Then, you can take the affected controller offline.
-
-* Your storage array must have two controllers. The controller that you are not placing offline must be online (in the optimal state).
-* You have verified that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
-* From SANtricity System Manager, you have verified the details in the Recovery Guru to confirm that you have a failed HIC and to ensure no other items must be addressed before you can remove and replace the HIC.
+== About this task
+If two controllers are present, each controller must have identical HICs.
 
 Perform this task only if your storage array has two controllers (duplex configuration).
+
+== Before you begin
+
+* Review link:hics_overview_supertask_concept.html[Requirements for E5700 HIC replacement].
+* Schedule a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, both controllers must have the same HIC configuration when they are powered on.)
+* Your storage array must have two controllers. The controller that you are not placing offline must be online (in the optimal state).
+*Verify that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
+* From SANtricity System Manager, verify the details in the Recovery Guru to confirm that you have a failed HIC and to ensure no other items must be addressed before you can remove and replace the HIC.
+
+== Step 1: Place controller offline (duplex)
+
+If you have a duplex configuration, you must place the affected controller offline so you can safely remove the failed HIC.
+
+===== Steps
 
 . From the Details area of the Recovery Guru, determine which of the controller canisters has the failed HIC.
 . Back up the storage array's configuration database.
@@ -76,23 +84,23 @@ The file is saved in the Downloads folder for your browser with the name support
 The system attempts to take the controller offline.
 . Wait for SANtricity System Manager to update the controller's status to offline.
 +
-IMPORTANT: Do not begin any other operations until after the status has been updated.
+NOTE: Do not begin any other operations until after the status has been updated.
 
-Go to .
+== Step 2: Remove controller canister
 
-== Remove controller canister
+Remove the controller canister so you can add the new HIC.
 
-[.lead]
-You remove the controller canister so you can add the new host interface card (HIC). When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
+===== What you'll need
 
-* You have scheduled a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, both controllers must have the same HIC configuration when they are powered on.)
-* You must use labels to identify each cable that is connected to the controller canister.
-* You have an ESD wristband, or you have taken other antistatic precautions.
+* Labels to identify each cable that is connected to the controller canister.
+* An ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
 
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
 +
-IMPORTANT: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
+CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
 
 . Confirm that the Cache Active LED on the back of the controller is off.
 +
@@ -118,25 +126,26 @@ image:../media/legend_icon_01_maint-e5700.gif[] Controller canister image:../med
 
 . Using two hands and the cam handle, slide the controller canister out of the shelf.
 +
-IMPORTANT: Always use two hands to support the weight of a controller canister.
+CAUTION: Always use two hands to support the weight of a controller canister.
 +
 If you are removing the controller canister from an E5724 controller shelf, a flap swings into place to block the empty bay, helping to maintain air flow and cooling.
 
 . Turn the controller canister over, so that the removable cover faces up.
 . Place the controller canister on a flat, static-free surface.
 
-Go to link:hics_replace_supertask_task.md#[Install host interface card].
+== Step 3: Install a HIC
 
-== Install host interface card
+Install a new HIC to replace the failed one.
 
-[.lead]
-You install a host interface card (HIC) to replace the failed one with a new HIC.
+===== What you'll need
 
-* You have an ESD wristband, or you have taken other antistatic precautions.
-* You have a #1 Phillips screwdriver.
-* You have one or two HICs, based on whether you have one or two controllers in your storage array. The HICs must be compatible with your controllers.
+* An ESD wristband, or you have taken other antistatic precautions.
+* A #1 Phillips screwdriver.
+* One or two HICs, based on whether you have one or two controllers in your storage array. The HICs must be compatible with your controllers.
 
-IMPORTANT: *Possible loss of data access*-- Never install a HIC in an E5700 controller canister if that HIC was designed for another E-Series controller. In addition, if you have a duplex configuration, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs causes the controllers to lock down when you apply power.
+CAUTION: *Possible loss of data access* -- Never install a HIC in an E5700 controller canister if that HIC was designed for another E-Series controller. In addition, if you have a duplex configuration, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs causes the controllers to lock down when you apply power.
+
+===== Steps
 
 . Unpack the new HIC and the new HIC faceplate.
 . Press the button on the cover of the controller canister, and slide the cover off.
@@ -155,7 +164,7 @@ Be careful not to scratch or bump the components on the bottom of the HIC or on 
 
 . Carefully lower the HIC into place, and seat the HIC connector by pressing gently on the HIC.
 +
-IMPORTANT: **Possible equipment damage --**Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrews.
+CAUTION: *Possible equipment damage* -- Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrews.
 +
 image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[]
 +
@@ -169,12 +178,11 @@ Do not use a screwdriver, or you might over-tighten the screws.
 +
 image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[]
 
-Go to link:hics_replace_supertask_task.md#[Reinstall controller canister].
+== Step 4: Reinstall controller canister
 
-== Reinstall controller canister
+After installing the HIC, reinstall the controller canister into the controller shelf.
 
-[.lead]
-After installing the host interface card (HIC), you reinstall the controller canister into the controller shelf.
+===== Steps
 
 . Turn the controller canister over, so that the removable cover faces down.
 . With the cam handle in the open position, slide the controller canister all the way into the controller shelf.
@@ -194,18 +202,17 @@ image:../media/legend_icon_01_maint-e5700.gif[] Controller canister image:../med
 . Move the cam handle to the left to lock the controller canister in place.
 . Reconnect all the cables you removed.
 +
-IMPORTANT: Do not connect data cables to the new HIC ports at this time.
+NOTE: Do not connect data cables to the new HIC ports at this time.
 
 . (Optional) If you are adding HICs to a duplex configuration, repeat all steps to remove the second controller canister, install the second HIC, and reinstall the second controller canister.
 
-Go to link:hics_replace_supertask_task.md#[Place controller online (duplex)].
+== Step 5: Place controller online (duplex)
 
-== Place controller online (duplex)
+Bring the controller online to confirm the storage array is working correctly, collect support data, and resume operations.
 
-[.lead]
-You bring the controller online to confirm the storage array is working correctly. Then, you can collect support data and resume operations.
+NOTE: Perform this task only if your storage array has two controllers.
 
-Perform this task only if your storage array has two controllers.
+===== Steps
 
 . As the controller boots, check the controller LEDs and the seven-segment display.
 +
@@ -262,5 +269,7 @@ The file is saved in the Downloads folder for your browser with the name support
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 +
 Contact technical support at http://mysupport.netapp.com[NetApp Support], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number.
+
+== Result
 
 Your HIC replacement is complete. You can resume normal operations.

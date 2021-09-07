@@ -1,26 +1,36 @@
 ---
 permalink: maintenance-e5700/hpp_change_host_protocol_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: E5700 change host protocol, E5700 baseboard ports, convert E5700 protocol, IB protocol, Infiniband protocol, Fibre Channel protocol, FC protocol, iSCSI protocol, iSER, RoCE, NVMe, converting host port protocol,
+summary: Change host port protocol for E5700.
 ---
-= Change host protocol
+= Change E5700 host protocol
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can convert the host port protocol of the baseboard host ports from Fibre Channel (FC) to iSCSI or from iSCSI to FC. If you have an Infiniband (IB) HIC, you can also convert the protocol of the IB HIC from iSER to InfiniBand, SRP to InfiniBand, NVMe to InfiniBand, or from NVMe to RoCE.
+Follow this procedure to convert the host port protocol for an E5700.
 
-== Determine whether you have dual-protocol SFPs
+You can convert baseboard host ports as follows:
 
-[.lead]
+* Fibre Channel (FC) to iSCSI
+* iSCSI to FC
+* iSER to InfiniBand (IB)
+* SRP to IB
+* NVMe to IB
+* NVMe to RoCE
+
+== Step 1: Determine whether you have dual-protocol SFPs
+
 Use SANtricity System Manager to determine what type of SFP transceivers you have. Because these SFPs can be used with both FC and iSCSI protocols, they are referred to as _dual-protocol_ or _unified_ SFPs.
 
 If your current SFPs support data rates of 16 Gbps and 10 Gbps, you can continue to use them after converting the host port protocol.
 
+===== Steps
+
 . From SANtricity System Manager, select *Support*.
 . Select the *Support Center* tile.
-. On theSupport Resources tab, locate and select the *Storage Array Profile* link.
+. On the Support Resources tab, locate and select the *Storage Array Profile* link.
 . Type *SFP* in the text box, and click *Find*.
 . For each SFP listed in the Storage Array Profile, locate the entry for *Supported data rate(s)*.
 +
@@ -28,6 +38,7 @@ image::../media/sam1130_ss_e2800_unified_spf_maint-e5700.gif[]
 
 . Refer to the table to determine whether you can reuse the SFPs, as follows:
 +
+[options="header"]
 |===
 | Supported data rate(s)| SFP type| Supported protocol
 a|
@@ -63,12 +74,11 @@ NOTE: 8Gbps FC SFPs are NOT supported in the E28xx or E57xx controllers. ONLY 16
 
  ** If you have 10 Gbps SFPs, and you are converting host ports to FC, you must remove the SFPs from these ports and replace them with dual-protocol or 16 Gbps SFPs after converting the protocol.
 
-Go to link:hpp_change_host_protocol_task.md#[Obtain the feature pack key].
+== Step 2: Obtain the feature pack
 
-== Obtain the feature pack
-
-[.lead]
 To obtain the feature pack, you need the serial number from the controller shelf, a Feature Activation Code, and the Feature Enable Identifier for the storage array.
+
+===== Steps
 
 . Locate the serial number.
  .. From SANtricity System Manager, select *Support* > *Support Center*.
@@ -90,9 +100,11 @@ NOTE: Baseboard ports are disabled when running an NVMe protocol on the HIC.
 +
 NOTE: If you are not using the IB HIC, you can ignore the _HIC Ports_ column in the following tables:
 +
+[options="header"]
 |===
-| Starting Configuration| Ending Configuration| Feature Activation Code
-| Controller submodel ID| Ports to Convert| Controller Submodel ID| Ports Converted To
+5+| Encryption Capable Feature Activation Codes (Baseboard Port Only Conversions)
+2+| Starting Configuration 3+| Ending Configuration
+| Controller submodel ID| Ports to Convert| Controller Submodel ID| Ports Converted To | Feature Activation Code
 a|
 360
 a|
@@ -114,14 +126,17 @@ FC baseboard ports
 a|
 5GI-4TB-ZW3HL
 |===
++
+[options="header"]
 |===
-| Starting configuration| Ending configuration| Feature Activation Code
-| Controller Submodel ID| Baseboard Ports| HIC Ports| Controller Submodel ID| Baseboard Ports| HIC Ports
-a|
+7+| Encryption Capable Feature Activation Codes
+3+| Starting configuration 4+| Ending configuration
+| Controller Submodel ID| Baseboard Ports| HIC Ports| Controller Submodel ID| Baseboard Ports| HIC Ports | Feature Activation Code
+.5+a|
 360
-a|
+.5+a|
 FC
-a|
+.5+a|
 iSER
 a|
 361
@@ -163,11 +178,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 YGH-BHK-Z8EKB
-a|
+.5+a|
 361
-a|
+.5+a|
 FC
-a|
+.5+a|
 SRP
 a|
 360
@@ -209,11 +224,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 JGM-EIK-ZAC6Q
-a|
+.5+a|
 362
-a|
+.5+a|
 iSCSI
-a|
+.5+a|
 iSER
 a|
 360
@@ -255,11 +270,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 1GW-LIK-ZG9HN
-a|
+.5+a|
 363
-a|
+.5+a|
 iSCSI
-a|
+.5+a|
 SRP
 a|
 360
@@ -301,11 +316,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 WG2-0IK-ZI75U
-a|
+.5+a|
 382
-a|
+.5+a|
 Not Available
-a|
+.5+a|
 NVMe/IB
 a|
 360
@@ -347,11 +362,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 IGR-IIK-ZDBRB
-a|
+.5+a|
 383
-a|
+.5+a|
 Not Available
-a|
+.5+a|
 NVMe/IB
 a|
 360
@@ -393,11 +408,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 5G7-RIK-ZL5PE
-a|
+.5+a|
 403
-a|
+.5+a|
 Not Available
-a|
+.5+a|
 NVMe/RoCE or NVMe/FC
 a|
 360
@@ -448,9 +463,12 @@ NVMe/IB
 a|
 PG0-KJK-ZUGW5
 |===
++
+[options="header"]
 |===
-| Starting configuration| Ending Configuration| Feature Activation Code
-| Controller submodel ID| Ports to Convert| Controller Submodel ID| Ports Converted To
+5+| Non-Encryption Feature Activation Codes (Baseboard Port Only Conversions)
+2+| Starting configuration 3+| Ending Configuration
+| Controller submodel ID| Ports to Convert| Controller Submodel ID| Ports Converted To | Feature Activation Code
 a|
 365
 a|
@@ -472,14 +490,17 @@ FC baseboard ports
 a|
 9GU-2WB-Z503D
 |===
++
+[options="header"]
 |===
-| Starting configuration| Ending configuration| Feature Activation Code
-| Controller submodel ID| Baseboard ports| HIC ports| Controller submodel ID| Baseboard ports| HIC ports
-a|
+7+| Non-Encryption Feature Activation Codes
+3+| Starting configuration 4+| Ending configuration
+| Controller submodel ID| Baseboard ports| HIC ports| Controller submodel ID| Baseboard ports| HIC ports | Feature Activation Code
+.5+a|
 365
-a|
+.5+a|
 FC
-a|
+.5+a|
 iSER
 a|
 366
@@ -521,11 +542,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 WGC-GJK-Z7PU2
-a|
+.5+a|
 366
-a|
+.5+a|
 FC
-a|
+.5+a|
 SRP
 a|
 365
@@ -567,11 +588,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 3GH-JJK-ZANJQ
-a|
+.5+a|
 367
-a|
+.5+a|
 iSCSI
-a|
+.5+a|
 iSER
 a|
 365
@@ -613,11 +634,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 8GR-QKK-ZFJTP
-a|
+.5+a|
 368
-a|
+.5+a|
 iSCSI
-a|
+.5+a|
 SRP
 a|
 365
@@ -659,11 +680,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 2GV-TKK-ZIHI6
-a|
+.5+a|
 384
-a|
+.5+a|
 Not Available
-a|
+.5+a|
 NVMe/IB
 a|
 365
@@ -705,11 +726,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 VGM-NKK-ZDLDK
-a|
+.5+a|
 385
-a|
+.5+a|
 Not Available
-a|
+.5+a|
 NVMe/IB
 a|
 365
@@ -751,11 +772,11 @@ a|
 NVMe/RoCE or NVMe/FC
 a|
 NG1-WKK-ZLFAI
-a|
+.5+a|
 405
-a|
+.5+a|
 Not Available
-a|
+.5+a|
 NVMe/RoCE or NVMe/FC
 a|
 365
@@ -806,7 +827,7 @@ NVMe/IB
 a|
 JGJ-PKK-ZUQG2
 |===
-*Note:* If your controller submodel ID is not listed, contact http://mysupport.netapp.com[NetApp Support].
+NOTE: If your controller submodel ID is not listed, contact http://mysupport.netapp.com[NetApp Support].
 
 . In System Manager, locate the Feature Enable Identifier.
  .. Go to *Settings* > *System*.
@@ -819,40 +840,41 @@ image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_c
  ** Chassis serial number
  ** Feature Activation Code
  ** Feature Enable Identifier
-*Important:* The Premium Feature Activation web site includes a link to "`Premium Feature Activation Instructions.`" Do not attempt to use those instructions for this procedure.
++
+NOTE: The Premium Feature Activation web site includes a link to "`Premium Feature Activation Instructions.`" Do not attempt to use those instructions for this procedure.
+
 . Choose whether to receive the key file for the feature pack in an email or download it directly from the site.
 
-Go to link:hpp_change_host_protocol_task.md#[Stop host I/O].
+== Step 3: Stop host I/O
 
-== Stop host I/O
-
-[.lead]
-You must stop all I/O operations from the host before converting the protocol of the host ports. You cannot access data on the storage array until you successfully complete the conversion.
+Stop all I/O operations from the host before converting the protocol of the host ports. You cannot access data on the storage array until you successfully complete the conversion.
 
 This task applies only if you are converting a storage array that has already been in use.
+
+===== Steps
 
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
  ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
  ** Unmount all file systems associated with volumes on the array.
-*Note:* The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
-
 +
-IMPORTANT: *Possible data loss* - If you continue this procedure while I/O operations are occurring, the host application might lose data because the storage array will not be accessible.
+NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
++
+CAUTION: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, the host application might lose data because the storage array will not be accessible.
+
 . If the storage array participates in a mirroring relationship, stop all host I/O operations on the secondary storage array.
 . Wait for any data in cache memory to be written to the drives.
 +
-The green Cache Active LEDimage:../media/legend_icon_01_maint-e5700.gif[] on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.image:../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[]
+The green Cache Active LED image:../media/legend_icon_01_maint-e5700.gif[] on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.image:../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[]
 
 . From the Home page of SANtricity System Manager, select *View Operations in Progress*.
 . Wait for all operations to complete before continuing with the next step.
 
-Go to link:hpp_change_host_protocol_task.md#[Change the feature pack].
+== Step 4: Change the feature pack
 
-== Change the feature pack
+Change the feature pack to convert the host protocol of the baseboard host ports, the IB HIC ports, or both types of ports.
 
-[.lead]
-You change the feature pack to convert the host protocol of the baseboard host ports, the IB HIC ports, or both types of ports.
+===== Steps
 
 . From SANtricity System Manager, select *Settings* > *System*.
 . Under *Add-ons*, select *Change Feature Pack*.
@@ -874,4 +896,4 @@ The feature pack migration begins. Both controllers automatically reboot twice t
  .. Click *Show more settings*.
  .. Review the details shown for the baseboard ports and the HIC ports (labeled "`slot 1`"), and confirm that each type of port has the protocol you expect.
 
-Go to link:hpp_complete_protocol_conversion_task.md#[Complete host protocol conversion].
+. Go to link:hpp_complete_protocol_conversion_task.html[Complete host protocol conversion].

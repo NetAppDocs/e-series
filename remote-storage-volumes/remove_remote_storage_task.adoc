@@ -1,8 +1,8 @@
 ---
 permalink: remote-storage-volumes/remove_remote_storage_task.html
 sidebar: sidebar
-keywords: 
-summary: 'You can remove any configured Remote Storage object through the SANtricity System Manager.'
+keywords: remove, configure, remote, storage, object, santricity, system, manager
+summary: You can remove any configured Remote Storage object through the SANtricity System Manager.
 ---
 = Remove remote storage object
 :icons: font
@@ -11,7 +11,11 @@ summary: 'You can remove any configured Remote Storage object through the SANtri
 [.lead]
 You can remove any configured Remote Storage object through the SANtricity System Manager.
 
+===== Before You Begin
+
 The remove operation is only allowed whenever no imports are associated with the Remote Storage object.
+
+===== Steps
 
 . From the Remote Storage screen of the SANtricity System Manager, select the desired Remote Storage object under the result list section.
 . Click *Remove*.

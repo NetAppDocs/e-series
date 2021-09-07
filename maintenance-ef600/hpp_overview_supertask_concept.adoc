@@ -1,29 +1,19 @@
 ---
 permalink: maintenance-ef600/hpp_overview_supertask_concept.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: convert EF300 host protocol, convert EF600 host protocol,
+summary:  Review requirements and considerations before converting the EF300 or EF600 host protocol.
 ---
-= Overview and requirements
+=  Requirements for EF300 or EF600 host protocol conversion
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Learn about the requirements you need to know about before converting the host protocol.
-
-== Requirements for changing the host protocol
-
-[.lead]
-Learn about the requirements you need to keep in mind when changing the host port protocol.
+Before converting the host protocol for an EF300 or EF600 array, review the following requirements.
 
 * You have scheduled a downtime maintenance window for this procedure.
 * You must stop host I/O operations when you perform the conversion. You cannot access data on the storage array until you have successfully completed the conversion.
 * You are using out-of-band management. (You cannot use in-band management to complete this procedure.)
 * You have obtained the necessary hardware for the conversion, which may include a new set of HICs and/or SFPs. Your NetApp Sales Representative can help you determine what hardware you need and help you order the correct parts.
 * The dual-protocol SFP transceivers support 16Gb and 8Gb FC, as well as 10Gb iSCSI. Therefore, you may not need to change SFPs if you have the dual-protocol and are simply switching between FC and iSCSI or vice versa.
-* Some host port protocol conversions may require a host interface card addition, or upgrade. Follow the instructions in the xref:concept_host_interface_cards_wombat.adoc[Host interface card] section for this requirement.
-
-This section describes how to change the host port protocol for the following controller shelves:
-
-* EF300 controller shelf
-* EF600 controller shelf
+* Some host port protocol conversions may require a host interface card addition, or upgrade.

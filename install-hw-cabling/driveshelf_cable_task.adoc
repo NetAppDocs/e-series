@@ -1,8 +1,8 @@
 ---
 permalink: install-hw-cabling/driveshelf_cable_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: cabling, cables, drive shelf cabling, controller shelf cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C
+summary: Connect each controller in the controller shelf to an I/O module (IOM) in a drive shelf.
 ---
 = Drive shelf cabling
 :icons: font
@@ -15,12 +15,10 @@ If you are cabling an older controller shelf to a DE212C, DE224C, or DE460, see 
 
 == Cabling E2800 and E5700
 
-[.lead]
-This procedure applies to cabling an E5700, EF570, E2800, or EF280 controller shelf to a DE212C, DE224C, or DE460 drive shelf.
+The following information applies to cabling an E5700, EF570, E2800, or EF280 controller shelf to a DE212C, DE224C, or DE460 drive shelf.
 
 === Cabling a 12-drive or 24-drive shelf
 
-[.lead]
 You can cable your controller shelf to one or more 12-drive or 24-drive shelves.
 
 The following image shows a representation of the controller shelf and the drive shelves. To locate the ports on your model, see the https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe].
@@ -31,7 +29,6 @@ image::../media/12_24_cabling.png[]
 
 === Cabling a 60-drive shelf
 
-[.lead]
 You can cable your controller shelf to one or more 60-drive shelves.
 
 The following image shows a representation of the controller shelf and the drive shelves. To locate the ports on your model, see the https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe].
@@ -42,14 +39,10 @@ image::../media/60_cabling.png[]
 
 == Cabling EF300
 
-[.lead]
-* You have updated your firmware to the latest version. To update your firmware follw the instructions in the link:../com.netapp.doc.ssm-sys-upg/home.html[Upgrading SANtricity OS].
-
-This procedure applies to cabling an EF300 controller shelf to a DE212C, DE224C, or DE460 drive shelf.
+The following information applies to cabling an EF300 controller shelf to a DE212C, DE224C, or DE460 drive shelf. Before cabling the EF300, make sure the firmware is updated to the latest version. To update the firmware, follow the instructions in  link:../upgrade-santricity/index.html[Upgrading SANtricity OS].
 
 === Cabling a 12-drive or 24-drive shelf
 
-[.lead]
 You can cable your controller shelf to one or more 12-drive or 24-drive shelves.
 
 The following image shows a representation of the controller shelf and the drive shelves. To locate the ports on your model, see the https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe].
@@ -60,7 +53,6 @@ image::../media/ef_to_de224c_four_shelves.png[]
 
 === Cabling a 60-drive shelf
 
-[.lead]
 You can cable your controller shelf to one or more 60-drive shelves.
 
 The following image shows a representation of the controller shelf and the drive shelves. To locate the ports on your model, see the https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe].

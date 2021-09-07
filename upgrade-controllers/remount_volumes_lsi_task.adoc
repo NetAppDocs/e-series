@@ -1,27 +1,29 @@
 ---
 permalink: upgrade-controllers/remount_volumes_lsi_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, remount volume, upgrade LSI, vendor ID
+summary: You remount volumes if your controller upgrade results in changing the vendor ID from LSI to NETAPP.
 ---
 = Remount volumes after changing the vendor from LSI to NETAPP
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You remount volumes if your controller upgrade results in changing the vendor ID from LSI to NETAPP.
+Follow this procedure if your controller upgrade results in changing the vendor ID from LSI to NETAPP.
 
-== Remounting volumes on an AIX host
+== Remount volumes on an AIX host
 
-[.lead]
-After you replace the controllers, you might observe that host shows the new volumes on the storage array, but also shows the original volumes as failed.
+After you replace the controllers, you might observe that the host shows the new volumes on the storage array, but also shows the original volumes as failed.
+
+===== Steps
 
 . If failed volumes appear, run the `cfgmgr` command.
 
-== Remounting volumes on a VMware host
+== Remount volumes on a VMware host
 
-[.lead]
 You address problems that might appear on VMware hosts after the controller upgrade.
+
+===== About this task
 
 After you replace the controllers, you might observe the following conditions:
 
@@ -29,21 +31,24 @@ After you replace the controllers, you might observe the following conditions:
 * The hosts still list the volumes on the storage array as having LSI vendor IDs. This might occur when the volumes were claimed by the LSI rule at the start and so continue to use the same LSI rule when the volumes come back on line.
 * The Display Name does not reflect the change from LSI to NetApp. This might occur because the display name became free test after initial discovery. In this case, you can change the Display Name manually.
 
-. Perform a rescan on the each host.
+===== Steps
+
+. Perform a rescan on each host.
 . Halt all host I/O operations to this subsystem.
 . Reclaim the volumes under NetApp rule.
  .. Run the `esxcli storage core device list` command. Check the output from the command to identify volumes whose names have the form `aa.xxxx`.
  .. Run the command `do esxcli storage core claiming reclaim -d naa.xxxxx` to change the LSI vendor ID to NetApp.
 
-== Remounting volumes on a Windows host
+== Remount volumes on a Windows host
 
-[.lead]
 You remount volumes on a Windows host to enable attached hosts to perform I/O operations with the volumes located on the upgraded storage array.
+
+===== Steps
 
 . In the *Device Manager*, select *Show Hidden Devices*.
 . For each NETAPP SCSI Disk Device listed in the *Device Manager*, right-click on the entry, and select *Uninstall*.
 +
 If Windows displays a dialog box with a message indicating that you should reboot the host, finish uninstalling all of the volumes before you scan for hardware and reboot.
 
-. Right-click in the *Device Manager*, and select *Scan for Hardware Changes*.
+. Right-click in the *Device Manager*, and then select *Scan for Hardware Changes*.
 . Reboot the host.

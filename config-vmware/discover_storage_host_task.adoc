@@ -1,8 +1,8 @@
 ---
 permalink: config-vmware/discover_storage_host_task.html
 sidebar: sidebar
-keywords: 
-summary: 'After assigning volumes to the host, you perform a rescan so that the host detects and configures the volumes for multipathing.'
+keywords: discover storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: After assigning volumes to the host, you perform a rescan so that the host detects and configures the volumes for multipathing.
 ---
 = Discover storage on the host
 :icons: font
@@ -11,7 +11,11 @@ summary: 'After assigning volumes to the host, you perform a rescan so that the 
 [.lead]
 After assigning volumes to the host, you perform a rescan so that the host detects and configures the volumes for multipathing.
 
+===== Before you begin
+
 By default, an ESXi host automatically performs a rescan every five minutes. A volume might appear between the time you create it and assign it to a host, before you perform a manual rescan. Regardless, you can perform a manual rescan to ensure all volumes are configured properly.
+
+===== Steps
 
 . Create one or more volumes and assign them to the ESXi host.
 . If using a vCenter Server, add the host to the server's inventory.

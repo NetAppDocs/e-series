@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/fc_install_configure_host_utilities_task.html
 sidebar: sidebar
-keywords: 
-summary: 'Linux Unified Host Utilities 7.1 includes tools to manage NetApp storage, including failover policies and physical paths.'
+keywords: Linux Unified Host Utilities, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Install Linux Unified Host Utilities when using FC.
 ---
 = Install and configure Linux Unified Host Utilities
 :icons: font
@@ -10,6 +10,8 @@ summary: 'Linux Unified Host Utilities 7.1 includes tools to manage NetApp stora
 
 [.lead]
 Linux Unified Host Utilities 7.1 includes tools to manage NetApp storage, including failover policies and physical paths.
+
+===== Steps
 
 . Use the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] to determine the appropriate version of Unified Host Utilities 7.1 to install.
 +

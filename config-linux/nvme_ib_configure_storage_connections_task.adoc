@@ -1,8 +1,8 @@
 ---
 permalink: config-linux/nvme_ib_configure_storage_connections_task.html
 sidebar: sidebar
-keywords: 
-summary: 'If your controller includes an NVMe over InfiniBand port, you can configure the IP address of each port using SANtricity System Manager.'
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: If your controller includes an NVMe over InfiniBand port, you can configure the IP address of each port using SANtricity System Manager.
 ---
 = Configure storage array NVMe over InfiniBand connections
 :icons: font
@@ -10,6 +10,8 @@ summary: 'If your controller includes an NVMe over InfiniBand port, you can conf
 
 [.lead]
 If your controller includes an NVMe over InfiniBand port, you can configure the IP address of each port using SANtricity System Manager.
+
+===== Steps
 
 . Select *Hardware*.
 . If the graphic shows the drives, click *Show back of shelf*.

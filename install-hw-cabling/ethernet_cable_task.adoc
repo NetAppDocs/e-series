@@ -1,8 +1,8 @@
 ---
 permalink: install-hw-cabling/ethernet_cable_task.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: cabling, cables, ethernet cabling, ethernet cable, out of band, direct topology, fabric topology, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C
+summary: Connect your storage system to an Ethernet network for out-of-band management.
 ---
 = Ethernet cabling for a management station
 :icons: font
@@ -13,7 +13,6 @@ You can connect your storage system to an Ethernet network for out-of-band stora
 
 == Direct topology
 
-[.lead]
 A direct topology connects your controller directly to an Ethernet network.
 
 You must connect management port 1 on each controller for out-of-band management and leave port 2 available for access to the storage array by technical support.
@@ -24,7 +23,6 @@ image::../media/74167.gif[]
 
 == Fabric topology
 
-[.lead]
 A fabric topology uses a switch to connect your controller to an Ethernet network.
 
 You must connect management port 1 on each controller for out-of-band management and leave port 2 available for access to the storage array by technical support.

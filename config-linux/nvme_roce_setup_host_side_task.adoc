@@ -1,19 +1,23 @@
 ---
 permalink: config-linux/nvme_roce_setup_host_side_task.html
 sidebar: sidebar
-keywords: 
-summary: 'NVMe initiator configuration in a RoCE environment includes installing and configuring the rdma-core and nvme-cli packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.'
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: NVMe initiator configuration in a RoCE environment includes installing and configuring the rdma-core and nvme-cli packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
 ---
 = Set up NVMe over RoCE on the host side
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-NVMe initiator configuration in a RoCE environment includes installing and configuring the rdma-core and nvme-cli packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
+NVMe initiator configuration in a RoCE environment includes installing and configuring the `rdma-core` and `nvme-cli` packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
+
+===== Before you begin
 
 * You are running RHEL 7 and the latest compatible SUSE Linux Enterprise Server 12 and 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for a complete list of the latest requirements.
 
-. Install the rdma and nvme-cli packages:
+===== Steps
+
+. Install the `rdma` and `nvme-cli` packages:
 +
 ----
 
@@ -29,11 +33,11 @@ NVMe initiator configuration in a RoCE environment includes installing and confi
 # yum install nvme-cli
 ----
 
-. Setup IPv4 IP addresses on the ethernet ports used to connect NVMe over RoCE. For each network interface, create a configuration script that contains the different variables for that interface.
+. Set up IPv4 IP addresses on the ethernet ports used to connect NVMe over RoCE. For each network interface, create a configuration script that contains the different variables for that interface.
 +
-The variables used in this step are based on server hardware and the network environment. The variables include the IPADDR and GATEWAY. These are example instructions for the latest SUSE Linux Enterprise Server 12 service pack:
+The variables used in this step are based on server hardware and the network environment. The variables include the `IPADDR` and `GATEWAY`. These are example instructions for the latest SUSE Linux Enterprise Server 12 service pack:
 +
-Create the example file/etc/sysconfig/network/ifcfg-eth4 as follows:
+Create the example file `/etc/sysconfig/network/ifcfg-eth4` as follows:
 +
 ----
 BOOTPROTO='static'
@@ -48,7 +52,7 @@ BOOTPROTO='static'
    STARTMODE='auto'
 ----
 +
-Create the second example file/etc/sysconfig/network/ifcfg-eth5 as follows:
+Create the second example file `/etc/sysconfig/network/ifcfg-eth5` as follows:
 +
 ----
 BOOTPROTO='static'
@@ -72,7 +76,7 @@ BOOTPROTO='static'
 ----
 
 . Set up the NVMe-oF layer on the host.
- .. Create the following file under /etc/modules-load.d/ to load the `nvme-rdma` kernel module and make sure the kernel module will always be on, even after a reboot:
+ .. Create the following file under `/etc/modules-load.d/` to load the `nvme-rdma` kernel module and make sure the kernel module will always be on, even after a reboot:
 +
 ----
 
