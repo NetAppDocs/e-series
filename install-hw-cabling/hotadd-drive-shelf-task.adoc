@@ -26,12 +26,12 @@ NOTE: To maintain system integrity, you must follow the procedure exactly in the
 
 Before you hot add a drive shelf, you must check for critical events and check the status of the IOMs.
 
-===== Before you begin
+=.Before You Begin
 
 * The power source for your storage system must be able to accommodate the power requirements of the new drive shelf. For the power specification for your drive shelf, see the https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe].
 * The cabling pattern for the existing storage system must match one of the applicable schemes shown in this procedure.
 
-===== Steps
+=.Steps
 
 . In SANtricity System Manager, select *Support* > *Support Center* > *Diagnostics*.
 . Select *Collect Support Data*.
@@ -69,7 +69,7 @@ The Shelf Component Settings dialog box appears with the *IOMs (ESMs)* tab selec
 
 You install a new drive shelf or a previously installed drive shelf, turn on the power, and check for any LEDs that require attention.
 
-===== Steps
+=.Steps
 
 . If you are installing a drive shelf that has previously been installed in a storage system, remove the drives. The drives must be installed one at a time later in this procedure.
 +
@@ -89,7 +89,7 @@ If you are cabling an older controller shelf to a DE212C, DE224C, or DE460, see 
 
 You connect the drive shelf to controller A, confirm IOM status, and then connect the drive shelf to controller B.
 
-===== Steps
+=.Steps
 
 . Connect the drive shelf to controller A.
 +
@@ -130,11 +130,11 @@ NOTE: Optimal status indicates that the loss of redundancy error associated with
 
 You connect the drive shelf to controller A, confirm IOM status, and then connect the drive shelf to controller B.
 
-===== Before you begin
+=.Before You Begin
 
 * You have updated your firmware to the latest version. To update your firmware, follow the instructions in the link:../upgrade-santricity/index.html[Upgrading SANtricity OS].
 
-===== Steps
+=.Steps
 
 . Disconnect both of the A-side controller cables from IOM12 ports one and two from previous last shelf in the stack and then connect them to the new shelf IOM12 ports one and two.
 +
@@ -179,7 +179,7 @@ NOTE: Optimal status indicates that the loss of redundancy error associated with
 
 You complete the hot add by checking for any errors and confirming that the newly added drive shelf uses the latest firmware.
 
-===== Steps
+=.Steps
 
 . In SANtricity System Manager, click *Home*.
 . If the link labeled *Recover from problems* appears at the center top of the page, click the link, and resolve any issues indicated in the Recovery Guru.

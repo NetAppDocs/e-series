@@ -26,7 +26,7 @@ NOTE: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli)
 
 This section describes how to install SANtricity Storage Manager on both the Windows and Linux OS platforms, because both Windows and Linux are common management station platforms when Linux is used for the data host.
 
-===== Steps
+=.Steps
 
 . Download the SANtricity software release from https://mysupport.netapp.com/site/[NetApp Support]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager*.
 . Run the SANtricity installer.

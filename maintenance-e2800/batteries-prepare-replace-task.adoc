@@ -28,7 +28,7 @@ If you have a duplex configuration, you must place the affected controller offli
 
 NOTE: Perform this task only if your storage array has two controllers (duplex configuration).
 
-===== Steps
+=.Steps
 
 . From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
 . From the Details area of the Recovery Guru, determine which battery to replace.
@@ -95,7 +95,7 @@ If you have a simplex configuration, power down the controller shelf so you can 
 
 NOTE: Perform this task only if your storage array has one controller (simplex configuration).
 
-===== Steps
+=.Steps
 
 . Back up the storage array's configuration database.
 +

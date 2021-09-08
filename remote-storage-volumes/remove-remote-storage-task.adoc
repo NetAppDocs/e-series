@@ -11,11 +11,11 @@ summary: You can remove any configured Remote Storage object through the SANtric
 [.lead]
 You can remove any configured Remote Storage object through the SANtricity System Manager.
 
-===== Before You Begin
+=.Before You Begin
 
 The remove operation is only allowed whenever no imports are associated with the Remote Storage object.
 
-===== Steps
+=.Steps
 
 . From the Remote Storage screen of the SANtricity System Manager, select the desired Remote Storage object under the result list section.
 . Click *Remove*.

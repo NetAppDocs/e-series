@@ -17,11 +17,11 @@ You can access the Settings option in the left navigation panel of the SANtricit
 [.lead]
 You can modify existing S3 settings for the SANtricity Cloud Connector application in the S3 Account Settings window.
 
-===== Before You Begin
+=.Before You Begin
 
 When modifying the URL or S3 Bucket Label settings, be aware that access to any existing backups configured through the SANtricity Cloud Connector will be affected.
 
-===== Steps
+=.Steps
 
 . In the left toolbar, click menu:Settings[Configuration].
 +
@@ -48,7 +48,7 @@ You can add or remove storage arrays from the Web Services Proxy registered to t
 
 The `Manage Storage Arrays` page displays a list of storage arrays from the Web Services Proxy available for registration with the SANtricity Cloud Connector host.
 
-===== Steps
+=.Steps
 
 . In the left toolbar, click menu:Settings[Storage Arrays].
 +
@@ -75,11 +75,11 @@ The selected storage array is removed from the SANtricity Cloud Connector host.
 [.lead]
 You can modify existing Web Services Proxy settings for the SANtricity Cloud Connector application in the Web Services Proxy Settings window.
 
-===== Before You Begin
+=.Before You Begin
 
 * The Web Services Proxy used with the SANtricity Cloud Connector need to have the appropriate arrays added and the corresponding password set.
 
-===== Steps
+=.Steps
 
 . In the left toolbar, click menu:Settings[Configuration].
 +
@@ -100,7 +100,7 @@ The `Web Services Proxy settings` screen is displayed.
 [.lead]
 You can change the password for the SANtricity Cloud Connector application in the Change Password screen.
 
-===== Steps
+=.Steps
 
 . In the left toolbar, click menu:Settings[Configuration].
 +

@@ -15,7 +15,7 @@ To remove the Web Services Proxy and Unified Manager, you can use any mode (Grap
 
 You can run the uninstall in Graphical mode for either Windows or Linux. In Graphical mode, the prompts appear in a Windows-style interface.
 
-===== Steps
+=.Steps
 
 . Launch the uninstall for either Windows or Linux, as follows:
  ** Windows -- Go to the directory that contains the uninstall_web_services_proxy uninstall file. The default directory is at the following location: C:/Program Files/NetApp/SANtricity Web Services Proxy/. Double-click `uninstall_web_services_proxy.exe`.
@@ -41,7 +41,7 @@ The Uninstaller progress bar appears and shows the progress.
 
 You can run the uninstall in Console mode for either Windows or Linux. In Console mode, the prompts appear in the terminal window.
 
-===== Steps
+=.Steps
 
 . Go to the uninstall_web_services_proxy directory.
 . Run the following command:
@@ -56,7 +56,7 @@ The uninstall process starts.
 
 You can run the uninstall in Silent mode for either Windows or Linux. In Silent mode, no return messages or scripts appear in the terminal window.
 
-===== Steps
+=.Steps
 
 . Go to the uninstall_web_services_proxy directory.
 . Run the following command:
@@ -69,7 +69,7 @@ The uninstall process runs, but no return messages or scripts appear in the term
 
 You can use an RPM command to uninstall the Web Services Proxy from a Linux system.
 
-===== Steps
+=.Steps
 
 . Open a terminal window.
 . Enter the following command line:

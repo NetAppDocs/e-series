@@ -32,11 +32,11 @@ The SANtricity Cloud Connector discovery process relies on the multipath tools p
 [.lead]
 You can use graphical mode to install the SANtricity Cloud Connector on a Linux operating system.
 
-===== Before You Begin
+=.Before You Begin
 
 * You have a designated host location for the SANtricity Cloud Connector installation.
 
-===== Steps
+=.Steps
 
 . Download the SANtricity Cloud Connector installation file to the desired host location.
 . Open a terminal window.
@@ -91,11 +91,11 @@ The Installation Complete message is displayed.
 [.lead]
 You can use the console mode to install the SANtricity Cloud Connector on a Linux operating system.
 
-===== Before You Begin
+=.Before You Begin
 
 * You have a designated host location for the SANtricity Cloud Connector installation.
 
-===== Steps
+=.Steps
 
 . Download the SANtricity Cloud Connector installation file to the desired IO host location.
 . Open a terminal window.
@@ -155,11 +155,11 @@ The Installation Complete message is displayed.
 [.lead]
 To use a secure `https` connection from the browser to the SANtricity Cloud Connector host, you can accept the self signed certificate from the SANtricity Cloud Connector host or add a certificate and a trust chain recognized by both the browser and the SANtricity Cloud Connector application.
 
-===== Before You Begin
+=.Before You Begin
 
 * You have the SANtricity Cloud Connector application installed on a host.
 
-===== Steps
+=.Steps
 
 . Stop the service using the `systemctl` command.
 . From the default install location, access the working directory.
@@ -196,12 +196,12 @@ keytool -import -trustcacerts -alias cloudconnect -file certnew.cer -keystore ke
 [.lead]
 If you are configuring StorageGRID as the target type for the SANtricity Cloud Connector application, you must first add a StorageGRID certificate into the SANtricity Cloud Connector keystore.
 
-===== Before You Begin
+=.Before You Begin
 
 * You have a signed StorageGRID certificate.
 * You have the SANtricity Cloud Connector application installed on a host.
 
-===== Steps
+=.Steps
 
 . Stop the service using the `systemctl` command.
 . From the default install location, access the working directory.

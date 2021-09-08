@@ -29,7 +29,7 @@ If you have a duplex configuration, follow this step to place the controller off
 
 NOTE: Perform this task only if your storage array has two controllers (duplex configuration).
 
-===== Steps
+=.Steps
 
 . From the Details area of the Recovery Guru, determine which of the controller canisters has the failed HIC.
 . Back up the storage array's configuration database.
@@ -94,7 +94,7 @@ If you have a simplex configuration, power down the controller shelf so you can 
 
 NOTE: Perform this task only if your storage array has one controller (simplex configuration).
 
-===== Steps
+=.Steps
 
 . From SANtricity System Manager, review the details in the Recovery Guru to confirm that you have a failed HIC and to ensure no other items must be addressed before you can remove and replace the HIC.
 . Back up the storage array's configuration database.
@@ -151,7 +151,7 @@ Remove the controller canister so you can add the new host interface card (HIC).
 * Labels to identify each cable that is connected to the controller canister.
 * An ESD wristband, or you have taken other antistatic precautions.
 
-===== Steps
+=.Steps
 
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
@@ -201,7 +201,7 @@ Install a HIC to replace the failed one with a new HIC.
 
 CAUTION: *Possible loss of data access* -- Never install a HIC in an E2800 controller canister if that HIC was designed for another E-Series controller. In addition, if you have a duplex configuration, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs will cause the controllers to lock down when you apply power.
 
-===== Steps
+=.Steps
 
 . Unpack the new HIC and the new HIC faceplate.
 . Press the button on the cover of the controller canister, and slide the cover off.
@@ -238,7 +238,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
 
 After installing the HIC, reinstall the controller canister into the controller shelf.
 
-===== Steps
+=.Steps
 
 . Turn the controller canister over, so that the removable cover faces down.
 . With the cam handle in the open position, slide the controller canister all the way into the controller shelf.
@@ -268,7 +268,7 @@ For a duplex configuration, bring the controller online, collect support data, a
 
 NOTE: Perform this task only if your storage array has two controllers.
 
-===== Steps
+=.Steps
 
 . As the controller boots, check the controller LEDs and the seven-segment display.
 +
@@ -332,7 +332,7 @@ For a simplex configuration, apply power to the controller shelf, collect suppor
 
 NOTE: Perform this task only if your storage array has one controller.
 
-===== Steps
+=.Steps
 
 . Turn on the two power switches at the back of the controller shelf.
  ** Do not turn off the power switches during the power-on process, which typically takes 90 seconds or less to complete.

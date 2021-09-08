@@ -14,19 +14,19 @@ Multipath software provides a redundant path to the storage array in case one of
 == Configure the host to run failover
 To provide a redundant path to the storage array, you can configure the host to run failover.
 
-===== Before you begin
+=.Before You Begin
 
 * You have installed the required packages on your system.
 * For Red Hat (RHEL) hosts, verify the packages are installed by running `rpm -q device-mapper-multipath`
 * For SLES hosts, verify the packages are installed by running `rpm -q multipath-tools`
 
-==== About this task
+.About this task
 
 Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. The multipath software presents the operating system with a single virtual device that represents the active physical paths to the storage. The multipath software also manages the failover process that updates the virtual device. You use the device mapper multipath (DM-MP) tool for Linux installations.
 
 By default, DM-MP is disabled in RHEL and SLES. Complete the following steps to enable DM-MP components on the host.
 
-===== Steps
+=.Steps
 
 . Add the NVMe E-Series device entry to the devices section of the `/etc/multipath.conf` file, as shown in the following example:
 +

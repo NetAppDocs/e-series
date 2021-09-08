@@ -15,7 +15,7 @@ After you move the cabinet, lower the leveling feet and the stability foot, rein
 
 You stabilize the cabinet by adjusting its feet. The leveling feet support the cabinet off the casters. The stability foot prevents the cabinet from falling over after it is placed in its permanent location.
 
-==== Steps
+.Steps
 
 . Lower the leveling feet to support the cabinet off the casters.
 +
@@ -41,7 +41,7 @@ After you move the cabinet, you can reinstall the trays in their original locati
 
 CAUTION: _Do not_ install the following trays in the top of the cabinet over your head. When fully-populated, each of these trays weighs over 100 kg (220 lb). If installed in the top of the cabinet, these trays create a top-heavy cabinet that can become easily unbalanced: E2660, E2660, E2760, E5460, E5560, and E5660 controller-drive trays, as well as the DE6600 drive tray.
 
-===== Steps
+=.Steps
 
 . Reinstall all of the trays in their original locations in the cabinet.
 +
@@ -59,7 +59,7 @@ To prevent address conflicts and loss of data access, replace all components in 
 
 After you reinstall the trays, install the cable spools and tie wraps. The cable spools and tie wraps accommodate excess cable length and cable routing for the controllers and the trays.
 
-===== Steps
+=.Steps
 
 . Install the cable spools and the tie wraps along both sides of the vertical power distribution outlets.
 +
@@ -77,7 +77,7 @@ Cable spool
 
 If needed, you can install additional trays. You must cover unused positions for trays to assure correct air flow.
 
-===== Steps
+=.Steps
 
 . If you have additional trays that must be installed, install the mounting hardware for these trays.
 . If the front of the cabinet is not completely filled with trays, use front panel kits to cover the empty spaces above or below the installed trays.
@@ -91,7 +91,7 @@ Covering the empty spaces is necessary so that the correct airflow through the c
 [.lead]
 If you are installing controller-drive trays, or drive trays that were shipped separately (not already installed in the cabinet), you might need to install additional mounting rails in the cabinet.
 
-===== Steps
+=.Steps
 
 . Determine the location for the mounting rails.
  ** *Above an existing tray* -- Position the mounting rails immediately above the top tray in the cabinet.
@@ -155,11 +155,11 @@ NOTE: The remaining two screw holes are used to mount the tray.
 
 To complete the cabinet installation, power on the cabinet components.
 
-==== About this task
+.About this task
 
 While the trays perform the power-on procedure, the LEDs on the front and the rear of the trays blink. Depending on your configuration, it can take several minutes to complete the power-on procedure.
 
-===== Steps
+=.Steps
 
 . Turn off the power to all components in the cabinet.
 . Turn all 12 circuit breakers to their off (down) position.

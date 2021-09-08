@@ -26,7 +26,7 @@ Use SANtricity System Manager to determine what type of SFP transceivers you hav
 
 If your current SFPs support data rates of 16 Gbps and 10 Gbps, you can continue to use them after converting the host port protocol.
 
-===== Steps
+=.Steps
 
 . From SANtricity System Manager, select *Support*.
 . Select the *Support Center* tile.
@@ -78,7 +78,7 @@ NOTE: 8Gbps FC SFPs are NOT supported in the E28xx or E57xx controllers. ONLY 16
 
 To obtain the feature pack, you need the serial number from the controller shelf, a Feature Activation Code, and the Feature Enable Identifier for the storage array.
 
-===== Steps
+=.Steps
 
 . Locate the serial number.
  .. From SANtricity System Manager, select *Support* > *Support Center*.
@@ -851,7 +851,7 @@ Stop all I/O operations from the host before converting the protocol of the host
 
 This task applies only if you are converting a storage array that has already been in use.
 
-===== Steps
+=.Steps
 
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
@@ -874,7 +874,7 @@ The green Cache Active LED image:../media/legend_icon_01_maint-e5700.gif[] on th
 
 Change the feature pack to convert the host protocol of the baseboard host ports, the IB HIC ports, or both types of ports.
 
-===== Steps
+=.Steps
 
 . From SANtricity System Manager, select *Settings* > *System*.
 . Under *Add-ons*, select *Change Feature Pack*.

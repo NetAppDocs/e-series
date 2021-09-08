@@ -21,7 +21,7 @@ Place the controller online to confirm the storage array is working correctly. T
 
 NOTE: Perform this task only if your storage array has two controllers.
 
-===== Steps
+=.Steps
 
 . As the controller boots, check the controller LEDs and the seven-segment display.
 +
@@ -82,7 +82,7 @@ Power up the controller shelf to confirm that it is working correctly. Then, you
 
 NOTE: Perform this task only if your storage array has one controller.
 
-===== Steps
+=.Steps
 
 . Turn on the two power switches at the back of the controller shelf.
  ** Do not turn off the power switches during the power-on process, which typically takes 90 seconds or less to complete.

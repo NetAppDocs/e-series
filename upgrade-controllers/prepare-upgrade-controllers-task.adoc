@@ -11,7 +11,7 @@ summary: Prepare to upgrade controllers by saving the drive security key, gather
 [.lead]
 Follow this procedure to prepare for upgrading controllers by saving the drive security key, gathering support data, and taking the controller offline.
 
-===== Steps
+=.Steps
 
 . Make sure that the existing storage array is updated to the latest released operating system (controller firmware) version available for your current controllers.
 +
