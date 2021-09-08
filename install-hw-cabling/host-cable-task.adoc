@@ -1,0 +1,40 @@
+---
+permalink: install-hw-cabling/host-cable-task.html
+sidebar: sidebar
+keywords: cabling, cables, host cabling, direct-attached topology, switch topology, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C,
+summary: You can cable a host directly to a controller or use switches.
+---
+= Host cabling
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can cable a host directly to a controller (direct-attached topology) or use switches (switch topology) to connect a host to a controller.
+
+== Cabling for a direct-attached topology
+
+A direct-attached topology connects host adapters directly to controllers in your storage system.
+
+The following figure shows an example connection. To help ensure maximum performance, use all available host adapter ports.
+
+=== Two hosts and two controllers
+
+image::../media/topology_host_direct_generic_web_low.png[]
+
+image:../media/legend_icon_01_inst-hw-cabling.gif[] Connect each host adapter port directly to the host ports on the controllers.
+
+== Cabling for a switch topology
+
+A switch topology uses switches to connect hosts to the controllers in your storage system. The switch must support the connection type used between the host and the controller.
+
+The following figure shows an example connection.
+
+For switches that provide provisioning capability, you should isolate each initiator and target pair.
+
+=== Two hosts and two switches
+
+image::../media/topology_host_fabric_generic.png[]
+
+image:../media/legend_icon_01_inst-hw-cabling.gif[]Connect each host adapter directly to the switch.
+
+image:../media/legend_icon_02_inst-hw-cabling.gif[] Connect each switch directly to the host ports on the controllers. To help ensure maximum performance, use all available host adapter ports.

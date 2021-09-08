@@ -1,0 +1,83 @@
+---
+permalink: maintenance-e2800/controllers-overview-supertask-concept.html
+sidebar: sidebar
+keywords: E2800 controller replacement requirements, E2800 replace controller, replacing E2800 controller, add E2800 controller, adding E2800 controller, E2800, E2812 controller shelf, E2824 controller shelf, EF280 shelf, E-Series, eseries
+summary: Review E2800 controller replacement requirements and considerations.
+---
+= Requirements for E2800 controller replacement
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you replace or add an E2800 controller, review the requirements and considerations.
+
+Each controller canister contains a controller card, a battery, and an optional host interface card (HIC). You can add a second controller to a simplex configuration or replace a failed controller.
+
+== Requirements for adding second controller
+
+You can add a second controller canister to the simplex version of the following controller shelves:
+
+* E2812 controller shelf
+* E2824 controller shelf
+* EF280 flash array
+
+The figures show an example controller shelf before adding a second controller (one controller canister and a controller blank) and after adding a second controller (two controller canisters).
+
+image::../media/28_dwg_2800_controller_simplex.gif[]
+
+image::../media/28_dwg_2800_controller_duplex.gif[]
+
+NOTE: The figures show example controller canisters; the host ports on your controller canisters might be different.
+
+Before you add a second controller, you must have:
+
+* A new controller canister with the same part number as the currently installed controller canister.
+* A new HIC that is identical to the HIC in the currently installed controller canister (only necessary if the currently installed controller canister includes a host interface card.)
+* All cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new controller ports.
++
+For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix] or the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe].
+
+* Multipath driver installed on the host so that you can use both controllers. Refer to the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] for instructions.
+* An ESD wristband, or you have taken other antistatic precautions.
+* A #1 Phillips screwdriver.
+* Labels to identify the new cables.
+* SANtricity Storage Manager installed on a management station, so you can use the storage array's command line interface (CLI).
++
+If SANtricity Storage Manager has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install the software.
+
+
+== Requirements for replacing controller
+
+When you replace a failed controller canister, you must remove the battery and HIC, if one is installed, from the original controller canister, and install them in the replacement controller canister.
+
+You can determine if you have a failed controller canister in two ways:
+
+* The Recovery Guru in SANtricity System Manager directs you to replace the controller canister.
+* The amber Attention LED on the controller canister is on, indicating that the controller has a fault.
+
+image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[]
+
+image:../media/legend_icon_01_maint-e2800.gif[]Attention LED
+
+NOTE: The figure shows an example controller canister; the host ports on your controller canister might be different.
+
+Before you replace a controller, you must have:
+
+* A replacement controller canister with the same part number as the controller canister you are replacing.
+* An ESD wristband, or you have taken other antistatic precautions.
+* Labels to identify each cable that is connected to the controller canister.
+* #1 Phillips screwdriver.
+* SANtricity Storage Manager installed on a management station, so you can use the storage array's command line interface (CLI).
++
+If this software has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install it.
+
+=== Duplex configuration requirements
+
+If the controller shelf has two controllers (duplex configuration), you can replace a controller canister while your storage array is powered on and performing host I/O operations, as long as the following conditions are true:
+
+* The second controller canister in the shelf has Optimal status.
+* The *OK to remove* field in the Details area of the Recovery Guru in SANtricity System Manager displays *Yes*, indicating that it is safe to remove this component.
+
+=== Simplex configuration requirements
+
+If you have only one controller canister (simplex configuration), data on the storage array will not be accessible until you replace the controller canister. You must stop host I/O operations and power down the storage array.

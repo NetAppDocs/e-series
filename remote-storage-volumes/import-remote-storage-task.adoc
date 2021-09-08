@@ -1,0 +1,62 @@
+---
+permalink: remote-storage-volumes/import-remote-storage-task.html
+sidebar: sidebar
+keywords: import, remote, storage, device, perform, wizard, santricity, system, manager, local, e-series
+summary: The import of the remote storage device is performed through the Import Remote Storage wizard under the SANtricity System Manager. The Remote Storage Import feature allows data from a remote storage device to be moved to the local E-Series array.
+---
+= Import remote storage
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The import of the remote storage device is performed through the Import Remote Storage wizard under the SANtricity System Manager. The Remote Storage Import feature allows data from a remote storage device to be moved to the local E-Series array.
+
+===== Before You Begin
+
+A remote storage volume device can be started using the Import Remote Storage wizard in SANtricity System Manager. The wizard prompts you for the IP address(es) and the iSCSI IQN of the remote storage system as well as the LUN number for the remote storage device. This information is then sent to the controller firmware to initiate the import.
+
+===== Steps
+
+. From the SANtricity System Manager, click *Storage*.
++
+The Storage screen is displayed.
+
+. Click *Remote Storage*.
++
+The Remote Storage screen is displayed.
+
+. Click *Import Remote Storage*.
++
+The Import Storage dialog is displayed.
+
+. Under the *Name* field, enter the name for the remote storage device.
+. Under the *iSCSI Qualified Name (IQN)* field, enter the IQN for the remote storage device.
+. Under the *IP Address* field, enter the IP address for the remote storage device.
+. Under the *Port* field, enter the port number for the remote storage device.
++
+NOTE: By default, the port number is configured to 3260.
+
+. If needed, click +*Add another IP address* to include an additional IP address for the remote storage device.
+. Click *Next*.
++
+The Select Remote Volume screen is displayed.
+
+. Under the *LUN* field, select the desired source LUN for the remote storage device.
+. Click *Next*.
++
+The Configure Target dialog is displayed.
+
+. Select the desired destination for the remote volume.
+. If needed, change the import priority for the remote volume under the *Import Priority* field.
+. Under the Confirm Target Volume Selection dialog box, type *Continue* and click *Continue*.
+. Click *Next*.
++
+The Review dialog box is displayed.
+
+. From the Review screen, verify the specified remote storage device, target, and import settings are accurate.
+. Click *Finish* to complete the creation of the remote storage.
++
+An Import Remote Storage dialog stating the remote storage import has been initiated is displayed.
+
+. If needed, click *Yes* under the Import Remote Storage dialog to create another remote storage import.
+. Click *No* to exit the Import Remote Storage dialog.

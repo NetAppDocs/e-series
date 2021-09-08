@@ -17,4 +17,4 @@ These upgrade procedures include separate instructions for the following:
 * Multiple controllers -- Includes procedures for upgrading SANtricity OS software on multiple storage arrays of the same type.
 * Drive -- Includes instructions for upgrading the drive's firmware.
 
-Before you begin the upgrade, be sure to review the  link:overview_upgrade_consider_task.html[Upgrade considerations].
+Before you begin the upgrade, be sure to review the  link:overview-upgrade-consider-task.html[Upgrade considerations].

@@ -1,0 +1,52 @@
+---
+permalink: config-windows/verify-storage-access-host-task.html
+sidebar: sidebar
+keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Verify that the host can write data to the LUN and read it back.
+---
+= Verify storage access on the host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before using the volume, you verify that the host can write data to the LUN and read it back.
+
+===== Before you begin
+
+You must have initialized the LUN and formatted it with a file system.
+
+===== Steps
+
+. Create and write to a file on the new LUN.
++
+----
+> echo test file > f:\\test.txt
+----
+
+. Read the file and verify data was written.
++
+----
+> type f:\\test.txt
+----
+
+. To verify that multipath is working, change the volume ownership.
+ .. From the SANtricity System Manager GUI, go to *Storage* > *Volumes*, and then select *More* > *Change ownership*.
+ .. On the Change Volume Ownership dialog box, use the *Preferred Owner* pull-down to select the other controller for one of the volumes in the list, and then confirm the operation.
+ .. Verify that you can still access the files on the LUN.
++
+----
+> dir f:\\
+----
+. Find the target ID.
++
+NOTE: The `dsmUtil` utility is case sensitive.
++
+----
+> C:\\Program Files \(x86\)\\DSMDrivers\\mppdsm\\dsmUtil.exe -a
+----
+
+. View the paths to the LUN and verify that you have the expected number of paths. In the <target ID> portion of the command, use the target ID that you found in the previous step.
++
+----
+> C:\\Program Files \(x86\)\\DSMDrivers\\mppdsm\\dsmUtil.exe –g <target ID\>
+----

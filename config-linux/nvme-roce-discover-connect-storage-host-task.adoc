@@ -1,0 +1,76 @@
+---
+permalink: config-linux/nvme-roce-discover-connect-storage-host-task.html
+sidebar: sidebar
+keywords: discover storage, host, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Before making definitions of each host in SANtricity System Manager, you must discover the target controller ports from the host, and then establish NVMe connections.
+---
+= Discover and connect to the storage from the host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before making definitions of each host in SANtricity System Manager, you must discover the target controller ports from the host, and then establish NVMe connections.
+
+===== Steps
+
+. Discover available subsystems on the NVMe-oF target for all paths using the following command:
++
+----
+nvme discover -t rdma -a target_ip_address
+----
++
+In this command, `target_ip_address` is the IP address of the target port.
++
+NOTE: The `nvme discover` command discovers all controller ports in the subsystem, regardless of host access.
++
+----
+# nvme discover -t rdma -a 192.168.1.77
+Discovery Log Number of Records 2, Generation counter 0
+=====Discovery Log Entry 0======
+trtype:  rdma
+adrfam:  ipv4
+subtype: nvme subsystem
+treq:    not specified
+portid:  0
+trsvcid: 4420
+subnqn:  nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94
+traddr:  192.168.1.77
+rdma_prtype: roce
+rdma_qptype: connected
+rdma_cms:    rdma-cm
+rdma_pkey: 0x0000
+=====Discovery Log Entry 1======
+trtype:  rdma
+adrfam:  ipv4
+subtype: nvme subsystem
+treq:    not specified
+portid:  1
+trsvcid: 4420
+subnqn:  nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94
+traddr:  192.168.2.77
+rdma_prtype: roce
+rdma_qptype: connected
+rdma_cms:    rdma-cm
+rdma_pkey: 0x0000
+----
+
+. Repeat step 1 for any other connections.
+. Connect to the discovered subsystem on the first path using the command: ``nvme connect -t rdma -n``discovered_sub_nqn``-a``target_ip_address``-Q``queue_depth_setting``-l``controller_loss_timeout_period
++
+NOTE: The `nvme connect -t rdma -n discovered_sub_nqn -a target_ip_address -Q queue_depth_setting -l controller_loss_timeout_period` command does not persist through reboot. The NVMe connect command will need to executed after each reboot to re-establish the NVMe connections.
++
+NOTE: Connections are not established for any discovered port inaccessible by the host.
++
+NOTE: If you specify a port number using this command, the connection fails. The default port is the only port set up for connections.
++
+NOTE: The recommended queue depth setting is 1024. Override the default setting of 128 with 1024 using the ``-Q 1024``command line option, as shown in the following example.
++
+NOTE: The recommended controller loss timeout period in seconds is 60 minutes (3600 seconds). Override the default setting of 600 seconds with 3600 seconds using the `-l 3600` command line option, as shown in the following example.
++
+----
+
+# nvme connect -t rdma -a 192.168.1.77 -n nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94 -Q 1024 -l 3600
+# nvme connect -t rdma -a 192.168.2.77 -n nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94 -Q 1024 -l 3600
+----
+
+. Repeat step 3 to connect the discovered subsystem on the second path.

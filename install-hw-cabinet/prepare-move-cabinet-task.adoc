@@ -1,0 +1,227 @@
+---
+permalink: install-hw-cabinet/prepare-move-cabinet-task.html
+sidebar: sidebar
+keywords: 3040 40U cabinet, cabinet installation, drive tray installation, controller installation, shelf installation, E2800, E5700, EF300, EF600
+summary: Prepare to move the cabinet.
+---
+= Prepare to move cabinet
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Prepare to move the cabinet from its location in your receiving area by estimating its total weight, acclimating the cabinet, removing the packing materials, and checking the shipping contents.
+
+== Step 1: Estimate cabinet weight
+
+The cabinet reliably and safely transports up to 909.1 kg (2000 lb) of capacity. You need to know the approximate weight of the cabinet so that you can safely move it.
+
+===== Steps
+
+. Use the following table to calculate the approximate total weight of your cabinet.
++
+The total weight of the cabinet depends on the number and type of trays that are installed in the cabinet.
++
+[options="header"]
+|===
+| Component| Weight| Notes
+a|
+Cabinet
+a|
+138.80 kg (306.0 lb)
+a|
+Empty with the rear door installed
+a|
+Power distribution units (PDUs [pair])
+a|
+19.96 kg (44.0 lb)
+a|
+
+a|
+Mounting rails (pair)
+a|
+1.59 kg (3.50 lb)
+a|
+
+a|
+E2612 controller-drive tray
+a|
+27 kg (59.52 lb)
+a|
+Maximum configuration
+a|
+E2624 controller-drive tray
+a|
+26.12 kg (57.32 lb)
+a|
+Maximum configuration
+a|
+E2660 controller-drive tray
+a|
+105.2 kg (232 lb)
+a|
+Maximum configuration
+a|
+E2712 controller-drive tray
+a|
+27.12 kg (59.8 lb)
+a|
+Maximum configuration
+a|
+E2724 controller-drive tray
+a|
+26 kg (57.32 lb)
+a|
+Maximum configuration
+a|
+E2760 controller-drive tray
+a|
+105.2 kg (232 lb)
+a|
+Maximum configuration
+a|
+E5412 controller-drive tray
+a|
+27.92 (61.52 lb)
+a|
+Maximum configuration
+a|
+E5424 controller-drive tray
+a|
+26.92 kg (59.32 lb)
+a|
+Maximum configuration
+a|
+E5460 controller-drive tray
+a|
+105.2 kg (232 lb)
+a|
+Maximum configuration
+a|
+E5512 controller-drive tray
+a|
+28.89 kg (63.7 lb)
+a|
+Maximum configuration
+a|
+E5524 controller-drive tray
+a|
+27.9 kg (61.52 lb)
+a|
+Maximum configuration
+a|
+E5560 controller-drive tray
+a|
+107.13 kg (236.2 lb)
+a|
+Maximum configuration
+a|
+E5612 controller-drive tray
+a|
+28.89 kg (63.7 lb)
+a|
+Maximum configuration
+a|
+E5624 controller-drive tray
+a|
+27.9 kg (61.52 lb)
+a|
+Maximum configuration
+a|
+E5660 controller-drive tray
+a|
+107.13 kg (236.2 lb)
+a|
+Maximum configuration
+a|
+EF540 flash array
+a|
+23.64 kg (52.12 lb)
+a|
+Maximum configuration
+a|
+EF550 flash array
+a|
+24.63 kg (54.32 lb)
+a|
+Maximum configuration
+a|
+EF560 flash array
+a|
+24.63 kg (54.32 lb)
+a|
+Maximum configuration
+a|
+DE1600 drive tray
+a|
+26.3 kg (58 lb)
+a|
+Maximum configuration
+a|
+DE5600 drive tray
+a|
+25.31 kg (55.8 lb)
+a|
+Maximum configuration
+a|
+DE6600 drive tray
+a|
+104.1 kg (229.6 lb)
+a|
+Maximum configuration
+|===
+
+. Review the following notes.
++
+CAUTION: Remove all drives from the DE6600 drive tray before moving the cabinet to its final position.
++
+CAUTION: *Possible equipment damage* -- Cabinets with DE6600 drive trays ship without drives to reduce shipping weight. Because a fully-populated cabinet with DE6600 drive trays can weigh more than 1247.3 kg (2750 lb), make sure that you move the cabinet into place before you load the drives, and make sure that the floor load capability of the cabinet's destination supports that much weight.
++
+CAUTION: *Possible damage to tray components* -- Do not place a DE6600 drive tray on a flat surface. Install the DE6600 drive tray in the cabinet before operating or moving drawers.
+
+== Step 2: Acclimate cabinet
+
+Make sure that the cabinet and the trays are acclimated to the indoor environment before removing the packing materials.
+
+===== Steps
+
+. If the outdoor temperature is below 0°C (32°F), leave the cabinet and trays inside of their crates indoors for at least 24 hours to prevent condensation.
+. Increase or decrease the 24-hour stabilization period depending on the outside temperature upon arrival.
++
+CAUTION: *Possible damage to tray components* -- If the outdoor temperature is below 0°C (32°F) when you receive your cabinet and trays, do not immediately unpack them or uncrate them. Exposing cold components to warm indoor temperatures can cause condensation, which results in component damage or failures.
+
+== Step 3: Remove packing materials
+
+Remove the packing materials only after the cabinet has acclimated to the indoor temperature.
+
+===== Steps
+
+. Refer to the unpacking instructions included on the front of the shipping crate.
+. Remove the packing materials according to the enclosed instructions.
+
+== Step 4: Check shipping contents
+
+Check the shipping contents to make sure that all equipment arrived at the site.
+
+===== Steps
+
+. Compare the packing list with the equipment that you received.
+. Make sure that all equipment arrived at the site.
+. If any items are missing, contact your sales representative.
+
+== Step 5: Remove heavy components from cabinet
+
+Remove some of the heavier components that are located in the top of the cabinet to ensure maximum stability.
+
+===== Before you begin
+
+* Make sure the maximum weight does not exceed 2000 lbs before you move the cabinet.
+* Note the location of each tray, component, and cable before removing it, so that you can reinstall each item in its original location.
+
+===== Steps
+
+. Record the cable configuration for future reassembly if any cables must be disconnected.
+. Remove the drive trays and controller-drive trays in the top half of the cabinet. Keep all of the components from the same tray together.
++
+NOTE: You do not need to remove the power supplies or other components from the rear of each tray.
+
+. Place each component in a separate antistatic bag. If the original shipping boxes are available, use them to transport the components.

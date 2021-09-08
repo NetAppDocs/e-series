@@ -1,0 +1,70 @@
+---
+permalink: config-windows/configure-storage-host-task.html
+sidebar: sidebar
+keywords: LUNs, configure LUNs, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Configure storage on the host for the Windows express method.
+---
+= Configure storage on the host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+A new LUN is offline and has no partition or file system when a Windows host first discovers it. You must bring the volume online and initialize it in Windows. Optionally, you can format the LUN with a file system.
+
+You can initialize the disk as a basic disk with a GPT or MBR partition table. Typically, you format the LUN with a file system such as New Technology File System (NTFS).
+
+===== Before you begin
+
+The host must have discovered the LUN.
+
+===== Steps
+
+. From a Windows command prompt, enter the `diskpart` context.
++
+----
+> diskpart
+----
+
+. View the list of available disks.
++
+----
+> list disk
+----
+
+. Select the disk to bring online.
++
+----
+> select disk 1
+----
+
+. Bring the disk online.
++
+----
+> online disk
+----
+
+. Create a partition.
++
+----
+> create partition primary
+----
++
+NOTE: In Windows Server 2008 and later, you are prompted immediately after creating the partition to format the disk and give it a name. Select *Cancel* on the prompt to continue using these instructions for formatting and naming the partition.
+
+. Assign a drive letter.
++
+----
+> assign letter=f
+----
+
+. Format the disk.
++
+----
+> format FS=NTFS LABEL=”New Volume” QUICK
+----
+
+. Exit the diskpart context.
++
+----
+> exit
+----

@@ -1,0 +1,19 @@
+---
+permalink: install-hw-cabling/cable-overview-requirements-concept.html
+sidebar: sidebar
+keywords: cabling, cabling requirements, drive shelf cabling, controller cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C
+summary: Cabling E-Series shelves requires several components.
+---
+= Requirements
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+In addition to controller shelves and drive shelves, you might need some or all of the following components when cabling your storage system:
+
+* Cables: SAS, Fibre Channel (FC), Ethernet, InfiniBand
+* Small form-factor pluggable (SFP) or Quad SFP (QSFP) transceivers
+* Switches
+* Host bus adapters (HBAs)
+* Host channel adapters (HCAs)
+* Network interface cards (NICs)
