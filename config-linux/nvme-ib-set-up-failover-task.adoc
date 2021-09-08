@@ -1,0 +1,62 @@
+---
+permalink: config-linux/nvme-ib-set-up-failover-task.html
+sidebar: sidebar
+keywords: failover, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Configure the host to run failover.
+---
+= Set up failover
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To provide a redundant path to the storage array, you can configure the host to run failover.
+
+===== Before you begin
+
+* You have installed the required packages on your system.
+* For Red Hat (RHEL) hosts, verify the packages are installed by running `rpm -q device-mapper-multipath`
+* For SLES hosts, verify the packages are installed by running `rpm -q multipath-tools`
++
+NOTE: Refer to the NetApp Interoperability Matrix Tool (IMT) to ensure any required updates are installed as multipathing may not work correctly with the GA versions of SLES or RHEL.
+
+
+==== About this task
+
+Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. You can use one of two methods of multipathing for NVMe, depending on which OS version you are running. For RHEL 7 and SLES 12, use the device mapper multipath (DMMP). For SLES 15, use the native NVMe multipathing solution.
+
+By default, DM-MP is disabled in RHEL and SLES. Complete the following steps to enable DM-MP components on the host.
+
+===== Steps
+
+. Add the NVMe E-Series device entry to the devices section of the `/etc/multipath.conf` file, as shown in the following example:
++
+----
+
+devices {
+        device {
+                vendor "NVME"
+                product "NetApp E-Series*"
+                path_grouping_policy group_by_prio
+                failback immediate
+                no_path_retry 30
+        }
+}
+----
+
+. Configure `multipathd` to start at system boot.
++
+----
+# systemctl enable multipathd
+----
+
+. Start `multipathd` if it is not currently running.
++
+----
+# systemctl start multipathd
+----
+
+. Verify the status of `multipathd` to make sure it is active and running:
++
+----
+# systemctl status multipathd
+----

@@ -1,0 +1,106 @@
+---
+permalink: install-hw-cabinet/cabinet-gather-tools-equipment-task.html
+sidebar: sidebar
+keywords: 3040 40U cabinet, cabinet installation, drive tray installation, controller installation, shelf installation, E2800, E5700, EF300, EF600
+summary: Before installing the 3040 40U cabinet, gather required tools and equipment.
+---
+= Gather required tools and equipment
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before installing the 3040 40U cabinet, make sure you have required tools and equipment.
+
+===== Steps
+
+. Gather all items listed in the following table.
++
+[options="header"]
+|===
+|  | Item| Included with the cabinet
+a|
+image:../media/83009_02.gif[]
+a|
+*3/4-in. wrench* (supplied in the shipping crate) -- To raise and lower the leveling feet under the cabinet.
+
+*1/4-in. Allen wrench* -- To raise and lower the stability foot in the front of the cabinet.
+a|
+image:../media/77037_11.gif[]
+a|
+*NEMA L6-30*
+
+image:../media/73121_01_dwg_nema_l6_30_power_cord.gif[]
+.2+a|
+*AC power cords* -- To connect the cabinet to external power sources (wall plugs).
+
+-   The NEMA L6-30 connectors are for use in the USA and Canada.
+-   The IEC-60309 connectors are for use worldwide, except for USA and Canada.
+NOTE:  Each PDU must be connected to an independent power source.
+
+
+.2+a|
+image:../media/77037_11.gif[]
+
+
+a|
+**IEC-60309**
+
+image:../media/73122_01_dwg_iec_60309_power_cord.gif[]
+a|
+image:../media/78038_21.gif[]
+
+a|
+**SAS cables** (optional) – Two cables are included with each drive tray, while host side cables must be purchased separately.
+
+**Communication cables** (optional) – To attach the tray to the host.
+
+Refer to the appropriate controller-drive tray installation guide for additional required items.
+
+
+a|
+
+a|
+image:../media/77038_06.gif[]
+
+
+a|
+**Mountable cable spools** – Installed along both sides of the vertical power distribution outlets to accommodate excess cable length and cable routing. Two cable spools are included with each controller-drive tray. Cable spools are also shipped with standalone drive trays.
+
+
+a|
+image:../media/77037_11.gif[]
+
+
+a|
+
+a|
+**Shears** – To cut the metal bands on the shipping crate.
+
+
+a|
+
+a|
+
+a|
+**Forklift** (optional) – To remove the cabinet from the shipping pallet.
+
+
+a|
+
+a|
+
+a|
+**Front panel kits** (optional) – To cover the empty bays at the front of the cabinet.
+
+
+a|
+
+a|
+
+a|
+**Antistatic bags** (optional) – To protect components that are removed during the installation procedure for the cabinet.
+
+
+a|
+
+|===

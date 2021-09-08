@@ -1,0 +1,42 @@
+---
+permalink: config-linux/nvme-fc-verify-linux-config-support-task.html
+sidebar: sidebar
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool (IMT) to verify that the entire configuration is supported.
+---
+= Verify the Linux configuration is supported
+:experimental:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool (IMT) to verify that the entire configuration is supported.
+
+===== Steps
+
+. Go to the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+. Click on the *Solution Search* tile.
+. In the menu:Protocols[SAN Host] area, click the *Add* button next to *E-Series SAN Host*.
+. Click *View Refine Search Criteria*.
++
+The Refine Search Criteria section is displayed. In this section you may select the protocol that applies, as well as other criteria for the configuration such as Operating System, NetApp OS, and Host Multipath driver. Select the criteria you know you want for your configuration, and then see what compatible configuration elements apply. As necessary, make the updates for your operating system and protocol that are prescribed in the tool. Detailed information for your chosen configuration is accessible on the View Supported Configurations page by clicking the right page arrow.
+
+== NVMe over Fibre Channel restrictions
+
+[.lead]
+Before using NVMe over Fibre Channel, review the controller, host, and recovery restrictions. For an up-to-date listing of all restrictions, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+
+=== Controller restrictions
+* NVMe over Fibre Channel can be configured for the EF300, EF600, EF570, and E5700 controllers. The controllers must have the quad 32GB host port.
+* This protocol can be used only for EF300, EF600, EF570, or E5700 controller with a minimum of 32 GB of physical memory. If the minimum memory requirements for the controllers are not met during start of day operations, a message is displayed that helps you diagnose the problem.
+* No simplex (single-controller) configurations are supported.
+* The only supported host interface card (HIC) is the quad 32GB Fibre Channel HIC.
+
+=== Host, host protocol, and host operating system restrictions
+
+For a complete list of requirements, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] .
+
+=== Storage and disaster recovery restrictions
+
+* Asynchronous and synchronous mirroring are not supported.
+* Thin provisioning (the creation of thin volumes) is not supported.

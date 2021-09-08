@@ -24,5 +24,5 @@ This is a printable PDF of step-by-step instructions with live links to addition
 +
 These are the setup instructions described on this site. Start with one of the following topics to get started.
 
-** xref:e2860_e5760_prepare_task.adoc[Prepare to install E2860, E5760 and DE460C]
-** xref:e2824_e5724_prepare_task.adoc[Prepare to install E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C]
+** xref:e2860-e5760-prepare-task.adoc[Prepare to install E2860, E5760 and DE460C]
+** xref:e2824-e5724-prepare-task.adoc[Prepare to install E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C]

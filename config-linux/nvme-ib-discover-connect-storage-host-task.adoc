@@ -1,0 +1,122 @@
+---
+permalink: config-linux/nvme-ib-discover-connect-storage-host-task.html
+sidebar: sidebar
+keywords: discover storage, host, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Before making definitions of each host in SANtricity System Manager, you must discover the target controller ports from the host, and then establish NVMe connections.
+---
+= Discover and connect to the storage from the host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before making definitions of each host in SANtricity System Manager, you must discover the target controller ports from the host, and then establish NVMe connections.
+
+===== Steps
+
+. Discover available subsystems on the NVMe-oF target for all paths using the following command:
++
+----
+nvme discover -t rdma -a target_ip_address
+----
++
+In this command, `target_ip_address` is the IP address of the target port.
++
+NOTE: The `nvme discover` command discovers all controller ports in the subsystem, regardless of host access.
++
+----
+# nvme discover  -t rdma -a 10.10.10.100
+ Discovery Log Number of Records 2, Generation counter 0
+ =====Discovery Log Entry 0======
+ trtype:  rdma
+ adrfam:  ipv4
+ subtype: nvme subsystem
+ treq:    not specified
+ portid:  0
+ trsvcid: 4420
+ subnqn:  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be
+ traddr: 10.10.10.100
+ rdma_prtype: infiniband
+ rdma_qptype: connected
+ rdma_cms:    rdma-cm
+ rdma_pkey: 0x0000
+=====Discovery Log Entry 1======
+ trtype:  rdma
+ adrfam:  ipv4
+ subtype: nvme subsystem
+ treq:    not specified
+ portid:  1
+ trsvcid: 4420
+ subnqn:  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be
+ traddr: 11.11.11.100
+ rdma_prtype: infiniband
+ rdma_qptype: connected
+ rdma_cms:    rdma-cm
+ rdma_pkey: 0x0000
+----
+
+. Repeat step 1 for any other connections.
+. Connect to the discovered subsystem on the first path using the command: ``nvme connect -t rdma -n``discovered_sub_nqn``-a``target_ip_address``-Q``queue_depth_setting``-l``controller_loss_timeout_period
++
+NOTE: The command, `nvme connect -t rdma -n discovered_sub_nqn -a target_ip_address -Q queue_depth_setting -l controller_loss_timeout_period`, does not persist through reboot. The NVMe connect command will need to be executed after each reboot to re-establish the NVMe connections.
++
+NOTE: The NVMe connections do not persist through system reboot or extended periods of the controller being unavailable.
++
+NOTE: Connections are not established for any discovered port inaccessible by the host.
++
+NOTE: If you specify a port number using this command, the connection fails. The default port is the only port set up for connections.
++
+NOTE: The recommended queue depth setting is 1024. Override the default setting of 128 with 1024 using the ``-Q 1024``command line option, as shown in the following example.
++
+NOTE: The recommended controller loss timeout period in seconds is 60 minutes (3600 seconds). Override the default setting of 600 seconds with 3600 seconds using the `-l 3600` command line option, as shown in the following example.
++
+----
+  # nvme connect -t rdma -a 10.10.10.100 -n  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
+----
+
+. Use the `nvme list` command to see a list of the NVMe devices currently connected. In the example below, it is `nvme0n1`.
++
+----
+ # nvme list
+
+ Node          SN            Model             Namespace
+ -------------------------------------------------------
+ /dev/nvme0n1  021648023161  NetApp E-Series      1
+----
++
+----
+Usage                 Format           FW Rev
+--------------------------------------------------------------
+5.37 GB /5.37 GB      512 B + 0 B      0842XXXX
+----
+
+. Connect to the discovered subsystem on the second path:
++
+----
+  # nvme connect -t rdma -a 11.11.11.100 -n  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
+----
+
+. Use the Linux `lsblk` and `grep` commands to show additional information about each block device:
++
+----
+ # lsblk | grep nvme
+
+ nvme0n1    259:0    0     5G  0 disk
+ nvme1n1    259:0    0     5G  0 disk
+----
+
+. Use the `nvme list` command to see a new list of the NVMe devices currently connected. In the example below, it is `nvme0n1` and `nvme0n1`.
++
+----
+ # nvme list
+ Node          SN            Model                   Namespace
+ -------------------------------------------------------------
+ /dev/nvme0n1  021648023161  NetApp E-Series          1
+ /dev/nvme1n1  021648023161  NetApp E-Series          1
+----
++
+----
+Usage                 Format           FW Rev
+--------------------------------------------------------------
+5.37 GB /5.37 GB          512 B + 0 B      0842XXXX
+5.37 GB /5.37 GB          512 B + 0 B      0842XXXX
+----

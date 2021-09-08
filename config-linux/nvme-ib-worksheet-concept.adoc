@@ -1,0 +1,195 @@
+---
+permalink: config-linux/nvme-ib-worksheet-concept.html
+sidebar: sidebar
+keywords: NVMe over Infiniband worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Use this worksheet to record NVMe over Infiniband storage configuration information.
+---
+= NVMe over InfiniBand worksheet
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use this worksheet to record NVMe over InfiniBand storage configuration information. You need this information to perform provisioning tasks.
+
+== NVMe over InfiniBand: Host identifiers
+
+NOTE: The software initiator NQN is determined during the task.
+
+Locate and document the initiator NQN from each host. The NQN is typically found in the /ect/nvme/hostnqn file.
+
+[options="header"]
+|===
+| Callout No.| Host port connections| Host NQN
+a|
+1
+a|
+Host (initiator) 1
+a|
+
+a|
+n/a
+a|
+
+a|
+
+a|
+n/a
+a|
+
+a|
+
+a|
+n/a
+a|
+
+a|
+
+a|
+n/a
+a|
+
+a|
+
+|===
+
+== NVMe over InfiniBand: Recommended configuration
+
+In a direct connect topology, one or more hosts are directly connected to the subsystem. In the SANtricity OS 11.50 release, we support a single connection from each host to a subsystem controller, as shown below. In this configuration, one HCA (host channel adapter) port from each host should be on the same subnet as the E-Series controller port it is connected to, but on a different subnet from the other HCA port.
+
+image::../media/nvmeof_direct_connect.gif[]
+
+== NVMe over InfiniBand: Target NQN
+
+Document the target NQN for the storage array. You will use this information in xref:nvme-ib-configure-storage-connections-task.adoc[Configure storage array NVMe over InfiniBand connections].
+
+Find the Storage Array NQN name using SANtricity: *Storage Array* > *NVMe over Infiniband* > *Manage Settings*. This information might be necessary when you create NVMe over InfiniBand sessions from operating systems that do not support send targets discovery.
+
+[options="header"]
+|===
+| Callout No.| Array name| Target IQN
+a|
+6
+a|
+Array controller (target)
+a|
+
+|===
+
+== NVMe over InfiniBand: Network configuration
+
+Document the network configuration that will be used for the hosts and storage on the InfiniBand fabric. These instructions assume that two subnets will be used for full redundancy.
+
+Your network administrator can provide the following information. You use this information in the topic, xref:nvme-ib-configure-storage-connections-task.adoc[Configure storage array NVMe over InfiniBand connections].
+
+== Subnet A
+
+Define the subnet to be used.
+
+[options="header"]
+|===
+| Network Address| Netmask
+a|
+
+a|
+
+|===
+Document the NQNs to be used by the array ports and each host port.
+
+[options="header"]
+|===
+| Callout No.| Array controller (target) port connections| NQN
+a|
+3
+a|
+Switch
+a|
+_not applicable_
+a|
+5
+a|
+Controller A, port 1
+a|
+
+a|
+4
+a|
+Controller B, port 1
+a|
+
+a|
+2
+a|
+Host 1, port 1
+a|
+
+a|
+
+a|
+(Optional) Host 2, port 1
+a|
+
+|===
+
+== Subnet B
+
+Define the subnet to be used.
+
+[options="header"]
+|===
+| Network Address| Netmask
+a|
+
+a|
+
+|===
+Document the IQNs to be used by the array ports and each host port.
+
+[options="header"]
+|===
+| Callout No.| Array controller (target) port connections| NQN
+a|
+8
+a|
+Switch
+a|
+_not applicable_
+a|
+10
+a|
+Controller A, port 2
+a|
+
+a|
+9
+a|
+Controller B, port 2
+a|
+
+a|
+7
+a|
+Host 1, port 2
+a|
+
+a|
+
+a|
+(Optional) Host 2, port 2
+a|
+
+|===
+
+== NVMe over InfiniBand: Mapping host name
+
+NOTE: The mapping host name is created during the workflow.
+
+|===
+a|
+Mapping host name a|
+
+a|
+Host OS type
+a|
+
+a|
+|===

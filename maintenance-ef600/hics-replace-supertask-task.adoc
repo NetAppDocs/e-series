@@ -1,0 +1,223 @@
+---
+permalink: maintenance-ef600/hics-replace-supertask-task.html
+sidebar: sidebar
+keywords: replace EF300 HIC, replace EF600 HIC, host interface card failed, HIC failure
+summary: Replace a failed EF300 or EF600 host interface card (HIC).
+---
+= Replace failed host interface card (HIC) in EF300 or EF600
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Follow this procedure to replace a failed host interface card (HIC) in an EF300 or EF600 array.
+
+== About this task
+
+When you replace a failed HIC, you must power off the storage array, replace the HIC, and reapply power.
+
+== Before you begin
+
+* Review link:hics-overview-supertask-concept.html[Requirements for EF300 or EF600 HIC upgrades].
+* You must schedule a downtime maintenance window for this procedure. You cannot access data on the storage array until you have successfully completed this procedure. Because both controllers must have the same HIC configuration when they are powered on, the power must be off when you install HICs.
+
+CAUTION: *Possible loss of data access* -- Never install a HIC in an EF300 or EF600 controller canister if that HIC was designed for another E-Series controller. In addition, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs causes the controllers to lock down when you apply power.
+
+== Step 1: Place the controller offline
+
+Place the affected controller offline so you can safely replace the HICs.
+
+===== Steps
+
+. From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
+. From the Details area of the Recovery Guru, determine which battery to replace.
+. Back up the storage array's configuration database.
++
+If a problem occurs when you remove a controller, you can use the saved file to restore your configuration.
+
+ .. In System Manager, navigate to the support page.
+ .. Select the *Support Center* tab.
+ .. Select the *Diagnostics* tab.
+ .. Select *Collect Support Data*.
+
+. If the controller is not already offline, take it offline now using SANtricity System Manager.
+ .. Select *Hardware*.
+ .. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
+ .. Select the controller that you want to place offline.
+ .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
++
+NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
+. Wait for SANtricity System Manager to update the controller's status to offline.
++
+NOTE: Do not begin any other operations until after the status has been updated.
+
+. Select *Recheck* from the Recovery Guru, and confirm that the OK to remove field in the Details area displays Yes, indicating that it is safe to remove this component.
+
+== Step 2: Remove controller canister
+
+Remove the controller canister so you can replace the failed host interface card.
+
+===== What you'll need
+
+* Labels to identify each cable that is connected to the controller canister.
+* A #1 Phillips screwdriver.
+* An ESD wristband, or you have taken other antistatic precautions.
+* A flat, static free work area.
+
+===== Steps
+
+. Label each cable that is attached to the controller canister.
+. Disconnect all the cables from the controller canister.
++
+CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
+
+. If the HIC ports use SFP+ transceivers, remove them.
++
+Depending on what type of HIC you are upgrading to, you might be able to reuse these SFPs.
+
+. Confirm that the Cache Active LED on the back of the controller is off.
+. Squeeze the handles on either side of the controller, and pull back until it releases from the shelf.
++
+image::../media/remove_controller_5.png[]
+
+. Using two hands and the handles, slide the controller canister out of the shelf. When the front of the controller is free of the enclosure, use two hands to pull it out completely.
++
+CAUTION: Always use two hands to support the weight of a controller canister.
++
+image::../media/remove_controller_6.png[]
+
+. Place the controller canister on a flat, static-free surface.
+
+== Step 3: Remove the HIC
+
+Remove the original HIC so you can replace it with an upgraded one.
+
+===== What you'll need
+
+* A #1 Phillips screwdriver.
+* An ESD wristband, or you have taken other antistatic precautions.
+
+===== Steps
+
+. Remove the controller canister's cover by unscrewing the single thumbscrew and lifting the lid open.
+. Confirm that the green LED inside the controller is off.
++
+If this green LED is on, the controller is still using battery power. You must wait for this LED to go off before removing any components.
+
+. Using a Phillips screwdriver, remove the two screws that attach the HIC faceplate to the controller canister.
++
+image::../media/hic_2.png[]
++
+NOTE: The image above is an example; the appearance of your HIC may differ.
+
+. Remove the HIC faceplate.
+. Using your fingers or a Phillips screwdriver, loosen the single thumbscrew that secure the HIC to the controller card.
++
+image::../media/hic_3.png[]
++
+NOTE: The HIC comes with three screw locations on the top, but is secured with only one.
++
+NOTE: The image above is an example; the appearance of your HIC may differ.
+
+. Carefully detach the HIC from the controller card by lifting the card up and out of the controller.
++
+CAUTION: Be careful not to scratch or bump the components on the bottom of the HIC or on the top of the controller card.
++
+image::../media/hic_4.png[]
++
+NOTE: The image above is an example; the appearance of your HIC may differ.
+
+. Place the HIC on a flat, static-free surface.
+
+== Step 4: Replace the HIC
+
+After removing the old HIC, install a new HIC.
+
+===== What you'll need
+
+* An ESD wristband, or you have taken other antistatic precautions.
+* A #1 Phillips screwdriver.
+* HICs that are compatible with your controllers.
+
+CAUTION: *Possible loss of data access* -- Never install a HIC in an EF300 or EF600 controller canister if that HIC was designed for another E-Series controller. In addition, if you have a duplex configuration, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs causes the controllers to lock down when you apply power.
+
+===== Steps
+
+. Unpack the new HIC and the new HIC faceplate.
+. Align the single thumbscrew on the HIC with the corresponding holes on the controller, and align the connector on the bottom of the HIC with the HIC interface connector on the controller card.
++
+Be careful not to scratch or bump the components on the bottom of the HIC or on the top of the controller card.
+
+. Carefully lower the HIC into place, and seat the HIC connector by pressing gently on the HIC.
++
+CAUTION: **Possible equipment damage** -- Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrew.
++
+image::../media/hic_7.png[]
++
+NOTE: The image above is an example; the appearance of your HIC may differ.
+
+. Hand-tighten the HIC thumbscrew.
++
+Do not use a screwdriver, or you might over tighten the screws.
+
+. Using a #1 Phillips screwdriver, attach the HIC faceplate you removed from the original HIC with the three screws.
+
+== Step 5: Reinstall controller canister
+
+After replacing the HIC, reinstall the controller canister into the controller shelf.
+
+===== Steps
+
+. Lower the cover on the controller canister and secure the thumbscrew.
+. While squeezing the controller handles, gently slide the controller canister all the way into the controller shelf.
++
+NOTE: The controller audibly clicks when correctly installed into the shelf.
++
+image::../media/remove_controller_7.png[]
+
+. Install the SFPs into the new HIC and reconnect all the cables.
++
+If you are using more than one host protocol, be sure to install the SFPs in the correct host ports.
+
+== Step 6: Complete HIC replacement
+
+Place the controller online, collect support data, and resume operations.
+
+===== Steps
+
+. Place controller online.
+ .. In System Manager, navigate to the hardware page.
+ .. Select *Show back of controller*.
+ .. Select the controller with the replaced host interface card.
+ .. Select *Place online* from the drop-down list.
+. As the controller boots, check the controller LEDs.
++
+When communication with the other controller is reestablished:
+
+ ** The amber Attention LED remains on.
+ ** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
+
+. When the controller is back online, confirm that its status is Optimal and check the controller shelf's Attention LEDs.
++
+If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller canister is installed correctly. If necessary, remove and reinstall the controller canister.
++
+NOTE: If you cannot resolve the problem, contact technical support.
+
+. Click *Support* > *Upgrade Center* to ensure that the latest version of SANtricity OS is installed.
++
+As needed, install the latest version.
+
+. Verify that all volumes have been returned to the preferred owner.
+ .. Select *Storage* > *Volumes*. If current owner and preferred owner are not listed select *All volumes* > *Columns*. Select current owner and preferred owner, and then recheck to verify that volumes are distributed to their preferred owners.
+ .. If volumes are all owned by preferred owner continue to Step 6.
+ .. If none of the volumes are returned, you must manually return the volumes. Go to *Storage* > *Volumes* > *More* > *Redistribute volumes*.
+ .. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution you must check the recovery guru for host connectivity issues.
+ .. If there is no Recovery Guru present or if following the Recovery Guru steps the volumes are still not returned to their preferred owners contact support.
+. Collect support data for your storage array using SANtricity System Manager.
+ .. Select *Support* > *Support Center* > *Diagnostics*.
+ .. Select *Collect Support Data*.
+ .. Click *Collect*.
+The file is saved in the Downloads folder for your browser with the name support-data.7z.
+
+== Result
+
+Your host interface card replacement is complete. You can resume normal operations.

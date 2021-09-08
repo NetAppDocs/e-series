@@ -1,0 +1,79 @@
+---
+permalink: web-services-proxy/install-uninstall-task.html
+sidebar: sidebar
+keywords: uninstall Web Services Proxy, remove WSP,
+summary: To remove the Web Services Proxy and Unified Manager, you can use any mode (Graphical, Console, Silent, or RPM file), regardless of what method you used to install the proxy.
+---
+= Uninstall Web Services Proxy
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To remove the Web Services Proxy and Unified Manager, you can use any mode (Graphical, Console, Silent, or RPM file), regardless of what method you used to install the proxy.
+
+== Graphical mode uninstall
+
+You can run the uninstall in Graphical mode for either Windows or Linux. In Graphical mode, the prompts appear in a Windows-style interface.
+
+===== Steps
+
+. Launch the uninstall for either Windows or Linux, as follows:
+ ** Windows -- Go to the directory that contains the uninstall_web_services_proxy uninstall file. The default directory is at the following location: C:/Program Files/NetApp/SANtricity Web Services Proxy/. Double-click `uninstall_web_services_proxy.exe`.
++
+NOTE: Alternatively, you can go to *Control Panel* > *Programs* > *Uninstall a program*, and then select "NetApp SANtricity Web Services Proxy."
+
+ ** Linux -- Go to the directory that contains the Web Services Proxy uninstall file. The default directory is at the following location:
+ +
+`/opt/netapp/santricity_web_services_proxy/uninstall_web_services_proxy`
++
+ . Run the following command:
++
+`uninstall_web_services_proxy -i gui`
++
+The SANtricity Web Services Proxy splash screen appears.
+. From the Uninstall dialog box, click *Uninstall*.
++
+The Uninstaller progress bar appears and shows the progress.
+
+. When the Uninstall Complete message appears, click *Done*.
+
+== Console mode uninstall
+
+You can run the uninstall in Console mode for either Windows or Linux. In Console mode, the prompts appear in the terminal window.
+
+===== Steps
+
+. Go to the uninstall_web_services_proxy directory.
+. Run the following command:
++
+`uninstall_web_services_proxy -i console`
++
+The uninstall process starts.
+
+. When the uninstall is complete, press *Enter* to exit the installer.
+
+== Silent mode uninstall
+
+You can run the uninstall in Silent mode for either Windows or Linux. In Silent mode, no return messages or scripts appear in the terminal window.
+
+===== Steps
+
+. Go to the uninstall_web_services_proxy directory.
+. Run the following command:
++
+`uninstall_web_services_proxy -i silent`
++
+The uninstall process runs, but no return messages or scripts appear in the terminal window. After Web Services Proxy is successfully uninstalled, a command prompt appears in the terminal window.
+
+== RPM command uninstall (Linux only)
+
+You can use an RPM command to uninstall the Web Services Proxy from a Linux system.
+
+===== Steps
+
+. Open a terminal window.
+. Enter the following command line:
++
+`rpm --e santricity_webservices`
++
+NOTE: The uninstall process might leave files that were not part of the original installation. Manually delete these files to remove Web Services Proxy completely.

@@ -1,0 +1,152 @@
+---
+permalink: install-hw-ef600/complete-setup-task.html
+sidebar: sidebar
+keywords: EF300, EF600, installation, host cabling, direct-attach topology, fabric topology, System Manager connection, management host connection, port configuration, configuring ports, DHCP, static IP
+summary: You cable the controllers to your network to complete storage system setup and configuration.
+---
+= Complete storage system setup and configuration
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Follow this procedure to connect the controller cables to your network, and then complete the setup and configuration.
+
+== Cable the data hosts
+
+Cable the storage system according to your network topology.
+
+=== Direct-attach topology
+
+The following example shows cabling to the data hosts using a direct-attach topology.
+
+==== Example A: Direct-attach topology
+
+|===
+a|
+image:../media/direct_topo.png[] a|
+. Connect each host adapter directly to the host ports on the controllers.
+
+|===
+
+=== Fabric topology
+
+The following example shows cabling to the data hosts using a fabric topology.
+
+==== Example B: Fabric topology
+
+|===
+a|
+image:../media/fabric_topo.png[] a|
+. Connect each host adapter directly to the switch.
+. Connect each switch directly to the host ports on the controllers.
+
+|===
+
+== Connect and configure the management connection
+
+You can configure the controller management ports using one of two options: using a DHCP server or using a static IP address.
+
+=== Option 1: DHCP server
+
+Follow this procedure to configure the management ports with a DHCP server.
+
+===== Before you begin
+
+* Your DHCP server is configured to associate an IP address, subnet mask, and gateway address as a permanent lease for each controller.
+* You have obtained the assigned IP addresses you will use to connect to the storage system from your network administrator.
+
+===== Steps
+
+. Connect an Ethernet cable to each controller's management port, and connect the other end to your network.
++
+|===
+a|
+image:../media/cable_ethernet_inst-hw-ef600.png[] a|
+RJ-45 Ethernet cables (if ordered)
+|===
++
+|===
+a|
+The following figure shows an example of the controller's management port location (EF600 shown):
+a|
+image:../media/ethernet_callout.png[]
+
+|===
+
+. Open a browser and connect to the storage system using one of the controller IP addresses provided to you by your network administrator.
+
+=== Option 2: Static IP address
+
+Follow this procedure to configure the management ports manually by entering the IP address and the subnet mask.
+
+===== Before you begin
+
+* You have obtained the controllers`' IP address, subnet mask, gateway address, and DNS and NTP server information from your network administrator.
+* You have ensured that the laptop you are using is not receiving network configuration from a DHCP server.
+
+===== Steps
+
+. Using an Ethernet cable, connect controller A's management port to the Ethernet port on a laptop.
++
+NOTE: Controller A is the upper controller canister, and controller B is the lower controller canister.
++
+|===
+a|
+image:../media/cable_ethernet_inst-hw-ef600.png[] a|
+RJ-45 Ethernet cables (if ordered)
+|===
++
+|===
+a|
+The following figure shows an example of the controller's management port location (EF600 shown):
+a|
+image:../media/ethernet_callout.png[]
+
+|===
++
+. Open a browser and use the default IP address (169.254.128.101) to establish a connection to the controller. The controller sends back a self-signed certificate. The browser informs you that the connection is not secure.
+. Follow the browser's instructions to proceed and launch SANtricity System Manager.
++
+NOTE: If you are unable to establish a connection, verify that you are not receiving network configuration from a DHCP server.
++
+. Set the storage system's password to login.
+. Use the network settings provided by your network administrator in the *Configure Network Settings* wizard to configure controller A's network settings, and then select *Finish*.
++
+NOTE: Because you reset the IP address, System Manager loses connection to the controller.
++
+. Disconnect your laptop from the storage system, and connect the management port on controller A to your network.
+. Open a browser on a computer connected to your network, and enter controller A's newly configured IP address.
++
+NOTE: If you lose the connection to controller A, you can connect an ethernet cable to controller B to reestablish connection to controller A through controller B (169.254.128.102).
++
+. Log in using the password you set previously.
++
+The Configure Network Settings wizard will appear.
++
+. Use the network settings provided by your network administrator in the *Configure Network Settings* wizard to configure controller B's network settings, and then select *Finish*.
+. Connect controller B to your network.
+. Validate controller B's network settings by entering controller B's configured IP address in a browser.
++
+NOTE: If you lose the connection to controller B, you can use your previously validated connection to controller A to reestablish connection to controller B through controller A.
+
+== After installing the hardware
+
+After you have installed the EF300 or EF600 hardware, use the SANtricity software to configure and manage your storage system.
+
+==== Before you begin
+
+* You have configured your management ports and have verified and recorded your password and IP addresses.
+
+==== Steps
+
+. Connect your controller to a web browser.
+. Use SANtricity System Manager to manage your EF300 or EF600 series storage system. Refer to the online help included with System Manager.
++
+
+|===
+a|
+image:../media/management_station_inst-hw-ef600_g2285.png[] a|
+For accessing System Manager, use the same IP addresses that you used to configure your management ports.
+|===
+
+If you are cabling your EF300 for SAS expansion, see link:../maintenance-ef600/index.html[Maintaining EF600 Hardware] for SAS expansion card installation and the link:../install-hw-cabling/index.html[Cabling E-Series hardware] for SAS expansion cabling.

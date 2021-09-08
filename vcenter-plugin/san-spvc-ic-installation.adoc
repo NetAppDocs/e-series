@@ -1,0 +1,92 @@
+---
+sidebar: sidebar
+permalink: san-spvc-ic-installation.html
+keywords: install vCenter plugin, installing vCenter plugin, vCenter plugin,
+summary: Install the SANtricity Storage Plugin for vCenter.
+---
+
+= Install the Storage Plugin for vCenter
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+
+[.lead]
+Follow these instructions to install the Storage Plugin for vCenter and verify the plugin registration.
+
+== Review installation prerequisites
+
+Be sure that your systems meet the following requirements:
+
+* VMware vCenter Server Appliance supported versions: 6.7U3J, 7.0U1, or 7. 0U2
+* NetApp SANtricity OS version: 11.60.2 or higher
+* Supported application host versions: Windows 2016 or Windows 2019
+* CPU requirements for the host system:
+** System memory: 1.5GB
+** Storage space: 275 MB + 200 MB (logging)
+
+== Install the plugin software
+
+To install the plugin software:
+
+. Copy the installer file to the host that will be used as the application server, and then access the folder where you downloaded the installer.
+. Double-click the installation file:
++
+`santricity_storage_vcenterplugin-windows_x64-- nn.nn.nn.nnnn.exe`
++
+In the above filename, `nn.nn.nn.nnnn` represents the version number.
+
+. When the installation starts, follow the on-screen prompts.
++
+During the installation, you are prompted to enter some configuration parameters.
+
+.. On the first screen, select your preferred language for the software and click *OK*.
+.. In the Introduction screen, click *Next*.
+.. In the Copyright screen, click *Next*.
+.. In the License Agreement screen, select the box for accepting the terms and then click *Next*.
+.. Select the folder where you want to install the software and then click *Next*.
+.. In the Certificate Validation screen, keep the checkbox selected if you want to enforce certificate validation between the plugin and the storage arrays. With this enforcement, the storage array certificates are checked to be trusted against the plugin. If the certificates are not trusted, then they are not allowed to be added to the plugin. If you want to override certificate validation, deselect the checkbox so that all storage arrays can be added to the plugin using self-signed certificates. Click *Next*.
++
+To learn more about certificates, refer to the online help available from the plugin interface.
+
+.. In the HTTPS Web Service Port screen, leave the default at 8445, or if necessary, change the port number. Click *Next*.
+.. In the Pre-Installation Summary screen, click *Next* to install the files.
+.. When the Webserver Started message appears, click *OK* to complete the installation.
+.. Click *Done*.
+[NOTE]
+If necessary, you can change the Certificate Validation and Web Service Port settings after installation. From the installation directory, open the *wsconfig.xml* file. To remove the Certificate Validation on storage arrays, change the `env` key, `trust.all.arrays`, to `true`. To change the Web Services port, modify the `sslport` value to the desired port value ranging from 0-65535. Ensure that the port number used is not binding to another process. When you are done, save the changes and restart the plugin webserver. If the port value of the plugin webserver is changed after registering the plugin to a vCSA, then you must unregister and re-register the plugin so the vCSA is communicating on the changed port to the plugin webserver.
++
+. Verify that the application server was installed successfully by running the *services.msc* command.
+. Verify that the Application Server (vCP) service, *NetApp SANtricity Storage Plugin for vCenter*,  was installed and the service has started.
+
+=== Register the plugin with a vCenter Server Appliance
+After the plugin software is installed, register the plugin with a vCSA.
+
+[NOTE]
+The plugin can only be registered to one vCSA at a time. To register to a different vCSA, then you must un-register the plugin from the current vCSA and uninstall it from the application host. Then you can re-install the plugin and register it to the other vCSA.
+
+. Open a prompt through the command line and navigate to the following directory:
++
+`<install directory>\vcenter-register\bin`
+
+. Execute the *vcenter-register.bat* file:
+`vcenter-register.bat ^
+    -action registerPlugin ^
+    -vcenterHostname <vCenter FQDN> ^
+    -username <Administrator username> ^`
+
+. Verify that the script was successful.
+
+The logs are saved to `%install_dir%/working/logs/vc-registration.log`.
+
+== Verify the plugin registration
+
+After the plugin is installed and the registration script has executed, verify that the plugin successfully registered with the vCenter Server Appliance.
+
+. Open the vSphere Client to the vCenter Server Appliance.
+. On the menu bar, select *Administrator > Client Plugins*.
+. Make sure the SANtricity Storage Plugin for vCenter is listed as *Enabled*.
++
+If the plugin is listed as Disabled with an error message stating that it cannot communicate with the application server, verify that the port number defined for the application server is enabled to pass through any firewalls that might be in use. The default application server Transmission Control Protocol (TCP) port number is 8445.

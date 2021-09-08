@@ -1,0 +1,17 @@
+---
+permalink: maintenance-ef600/fans-overview-requirements-replacing2-concept.html
+sidebar: sidebar
+keywords: replace EF300 fan, replace EF600 fan,
+summary:  Review requirements and considerations before replacing EF300 or EF600 fans.
+---
+=  Requirements for EF300 or EF600 fan replacement
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before replacing a failed fan in an EF300 or EF600 array, review the following requirements.
+
+* You have a replacement fan that is supported for your controller shelf or drive shelf model.
+* You have an ESD wristband, or you have taken other antistatic precautions.
+
+NOTE: If the Recovery Guru indicates that it is not OK to remove the fan, contact technical support.

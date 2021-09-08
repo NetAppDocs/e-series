@@ -1,0 +1,210 @@
+---
+permalink: web-services-proxy/array-intro-concept.html
+sidebar: sidebar
+keywords: Web Services, WSP, SANtricity API, discover storage WSP,
+summary: To manage storage systems in the network, you must first discover them and then add them to the management list.
+---
+= Manage storage systems using Web Services Proxy
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To manage storage systems in the network, you must first discover them and then add them to the management list.
+
+== Discover storage systems
+
+You can set automatic discovery or manually discover storage systems.
+
+=== Automatically discover storage systems
+
+You can specify that storage systems are automatically discovered in the network by modifying the settings in the wsconfig.xml file. By default, IPv6 automatic discovery is disabled and IPv4 is enabled.
+
+===== Before you begin
+
+* Before enabling IPv6 discovery settings, verify that your infrastructure supports IPv6 connectivity to the storage systems to mitigate any connection issues.
+
+You only need to provide one management IP or DNS address to add a storage system. The server automatically discovers all management paths when the paths are either not configured or the paths are configured and rotatable.
+
+NOTE: If you attempt to use an IPv6 protocol to automatically discover storage systems from the controller configuration after an initial connection has been made, the process might fail. Possible causes for the failure include problems during IP address forwarding or IPv6 being enabled on the storage systems, but not being enabled on the server.
+
+===== Steps
+
+. Open the wsconfig.xml file, located at:
+ ** (Windows) -- C:\Program Files\NetApp\SANtricity Web Services Proxy
+ ** (Linux) -- /opt/netapp/santricity_web_services_proxy
+. In the autodiscover strings, change settings from "`true`" to "`false,`" as desired. See the following example.
++
+----
+<env key="autodiscover.ipv6.enable">true</env>
+----
++
+NOTE: When the paths are configured, but not configured so that the server can route to the addresses, intermittent connection errors happen. If you cannot set the IP addresses to be routable from the host, turn off auto discovery (change the settings to "`false`").
+
+. Save the file.
+
+=== Discover and add storage systems using API endpoints
+
+You can use API endpoints to discover and add storage systems to the managed list. This procedure creates a management connection between the storage system and the API.
+
+===== Before you begin
+
+* You must be logged in to the interactive API documentation.
+* For storage systems with SANtricity versions 11.30 and later, the legacy management interface for SYMbol must be enabled in the SANtricity System Manager interface. Otherwise, the Discovery endpoints fail. You can find this setting by opening System Manager, and then going to *Settings* > *System* > *Additional Settings* > *Change Management Interface*.
+
+This task describes how to discover and add storage systems using the REST API, so you can manage these systems in the interactive API documentation. However, you might want to manage storage systems in the Unified Manager instead, which provides an easy-to-use interface. For more information, see the online help available with Unified Manager.
+
+===== Steps
+
+. Discover storage systems, as follows:
+ .. From the API documentation, make sure *V2* is selected in the drop-down, and then expand the *Storage-Systems* category.
+ .. Click the *POST: /discovery* endpoint, and then click *Try it out*.
+ .. Enter the parameters as described in the table.
++
+|===
+a|
+startIP
+
+endIP a|
+Replace string with the starting and ending IP address range for one or more storage systems in the network.
+a|
+useAgents
+a|
+Set this value to either:
+
+  *** true = Use in-band agents for the network scan.
+  *** false = Do not use in-band agents for the network scan.
+
+a|
+connectionTimeout
+a|
+Enter the seconds allowed for the scan before the connection times out.
+a|
+maxPortsToUse
+a|
+Enter a maximum number of ports used for the network scan.
+|===
+
+ .. Click *Execute*.
++
+NOTE: API actions execute without user prompts.
++
+The discovery process runs in the background.
+
+ .. Make sure the code returns a 202.
+ .. Under *Response Body*, locate the value returned for the requestId. You need the Request ID to view the results in the next step.
+. View discovery results, as follows:
+ .. Click the *GET: /discovery* endpoint, and then click *Try it out*.
+ .. Enter the Request ID from the previous step. If you leave the *Request ID* blank, the endpoint defaults to the last request ID executed.
+ .. Click *Execute*.
+ .. Make sure the code returns 200.
+ .. In the response body, locate your Request ID and the strings for storageSystems. The strings look similar to the following example:
++
+----
+"storageSystems": [
+    {
+      "serialNumber": "123456789",
+      "wwn": "000A011000AF0000000000001A0C000E",
+      "label": "EF570_Array",
+      "firmware": "08.41.10.01",
+      "nvsram": "N5700-841834-001",
+      "ipAddresses": [
+        "10.xxx.xx.213",
+        "10.xxx.xx.214"
+      ],
+----
+
+ .. Write down the values for wwn, label, and ipAddresses. You need them for the next step.
+. Add storage systems, as follows:
+ .. Click the *POST: /storage-system* endpoint, and then click *Try it out*.
+ .. Enter the parameters as described in the table.
++
+|===
+a|
+id a|
+Enter a unique name for this storage system. You can enter the label (displayed in the response for GET: /discovery), but the name can be any string you choose. If you do not provide a value for this field, Web Services automatically assigns a unique identifier.
+a|
+controllerAddresses
+a|
+Enter the IP addresses displayed in the response for GET: /discovery. For dual controllers, separate the IP addresses with a comma. For example:
+
+"`IP address 1`",`"IP address 2`"
+a|
+validate
+a|
+Enter true, so you can receive confirmation that Web Services can connect to the storage system.
+a|
+password
+a|
+Enter the administrative password for the storage system.
+a|
+wwn
+a|
+Enter the WWN of the storage system (displayed in the response for GET: /discovery).
+|===
+
+ .. Remove all strings after "`enableTrace`": true, so that the entire string set is similar to the following example:
++
+----
+{
+  "id": "EF570_Array",
+  "controllerAddresses": [
+    "Controller-A-Mgmt-IP","Controller-B-Mgmt_IP"
+  ],
+  "validate":true,
+  "password": "array-admin-password",
+  "wwn": "000A011000AF0000000000001A0C000E",
+  "enableTrace": true
+}
+----
+
+ .. Click *Execute*.
+ .. Make sure the code response is 201, which indicates that the endpoint executed successfully.
++
+The *Post: /storage-systems* endpoint is queued. You can view the results using the *GET: /storage-systems* endpoint in the next step.
+. Confirm the list addition, as follows:
+ .. Click the *GET: /storage-system* endpoint.
++
+No parameters are required.
+
+ .. Click *Execute*.
+ .. Make sure that the code response is 200, which indicates that the endpoint executed successfully.
+ .. In the response body, look for the storage system details. The returned values indicate that it was successfully added to the list of managed arrays, similar to the following example:
++
+----
+[
+  {
+    "id": "EF570_Array",
+    "name": "EF570_Array",
+    "wwn": "000A011000AF0000000000001A0C000E",
+    "passwordStatus": "valid",
+    "passwordSet": true,
+    "status": "optimal",
+    "ip1": "10.xxx.xx.213",
+    "ip2": "10.xxx.xx.214",
+    "managementPaths": [
+      "10.xxx.xx.213",
+      "10.xxx.xx.214"
+  ]
+  }
+]
+----
+
+== Scale up the number of managed storage systems
+
+By default, the API can manage up to 100 storage systems. If you need to manage more, you must bump the memory requirements for the server.
+
+===== Before you begin
+
+The server is set to use 512 MB of memory. For every 100 extra storage systems in your network, add 250 MB to that number. Do not add more memory than what you physically have. Allow enough extra for your operating system and other applications.
+
+NOTE: The default cache size is 8,192 events. The approximate data usage for the MEL events cache is 1MB for each 8,192 events. Therefore, by retaining the defaults, cache usage should be approximately 1MB for a storage system.
+
+NOTE: In addition to memory, the proxy uses network ports for each storage system. Linux and Windows consider network ports as file handles. As a security measure, most operating systems limit the number of open file handles that a process or a user can have open at one time. Especially in Linux environments, where open TCP connections are considered to be file handles, the Web Services Proxy can easily exceed this limit. Because the fix is system dependent, you should refer to your operating system's documentation for how to raise this value.
+
+===== Steps
+
+. Do one of the following:
+ ** On Windows, go to the appserver64.init file. Locate the line, vmarg.3=-Xmx512M
+ ** On Linux, go to the webserver.sh file. Locate the line, JAVA_OPTIONS="-Xmx512M"
+. To increase the memory, replace "`512`" with the desired memory in MB.
+. Save the file.
