@@ -11,11 +11,11 @@ summary: Verify that the host can write data to the LUN and read it back.
 [.lead]
 Before using the volume, you verify that the host can write data to the LUN and read it back.
 
-===== Before you begin
+=.Before You Begin
 
 You must have initialized the LUN and formatted it with a file system.
 
-===== Steps
+=.Steps
 
 . Create and write to a file on the new LUN.
 +

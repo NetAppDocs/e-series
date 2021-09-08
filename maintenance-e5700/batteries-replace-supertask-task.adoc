@@ -27,7 +27,7 @@ If you have a duplex configuration, place the affected controller offline so you
 
 NOTE: Perform this task only if your storage array has two controllers (duplex configuration).
 
-===== Steps
+=.Steps
 
 . From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
 . From the Details area of the Recovery Guru, determine which battery to replace.
@@ -98,7 +98,7 @@ Remove the controller canister.
 * An ESD wristband, or you have taken other antistatic precautions.
 * A flat, static free work area.
 
-===== Steps
+=.Steps
 
 . Put on an ESD wristband or take other antistatic precautions.
 . Label each cable that is attached to the controller canister.
@@ -135,7 +135,7 @@ If you are removing the controller canister from an E5724 controller shelf, a fl
 
 After removing the controller canister from the controller shelf, remove the battery.
 
-===== Steps
+=.Steps
 
 . Remove the controller canister's cover by pressing down on the button and sliding the cover off.
 . Confirm that the green LED inside the controller (between the battery and the DIMMs) is off.
@@ -167,7 +167,7 @@ After removing the failed battery, install a new one.
 * The replacement battery.
 * A flat, static-free surface.
 
-===== Steps
+=.Steps
 
 . Unpack the new battery, and set it on a flat, static-free surface.
 +
@@ -201,7 +201,7 @@ image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e5700.gif[]
 
 After installing the new battery, reinstall the controller canister into the controller shelf.
 
-===== Steps
+=.Steps
 
 . You reinstall the cover on the controller canister by sliding the cover from back to front until the button clicks.
 . Turn the controller canister over, so that the removable cover faces down.
@@ -224,7 +224,7 @@ For a duplex configuration, place the controller online, collect support data, a
 
 NOTE: Perform this task only if your storage array has two controllers.
 
-===== Steps
+=.Steps
 
 . As the controller boots, check the controller LEDs and the seven-segment display.
 +

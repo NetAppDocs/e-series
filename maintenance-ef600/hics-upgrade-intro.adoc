@@ -27,7 +27,7 @@ CAUTION: *Possible loss of data access* -- Never install a HIC in an EF300 or EF
 
 Place the controller shelf offline so you can safely upgrade the HICs.
 
-===== Steps
+=.Steps
 
 . From the Home page of SANtricity System Manager, ensure that the storage array has Optimal status.
 +
@@ -67,7 +67,7 @@ Remove the controller canister so you can upgrade the new HIC.
 * An ESD wristband, or you have taken other antistatic precautions.
 * A flat, static free work area.
 
-===== Steps
+=.Steps
 
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
@@ -100,7 +100,7 @@ Remove the original HIC so you can replace it with an upgraded one.
 * A #1 Phillips screwdriver.
 * An ESD wristband, or you have taken other antistatic precautions.
 
-===== Steps
+=.Steps
 
 . Remove the controller canister's cover by unscrewing the single thumbscrew and lifting the lid open.
 . Confirm that the green LED inside the controller is off.
@@ -144,7 +144,7 @@ After removing the old HIC, you install the new one.
 
 CAUTION: *Possible loss of data access* -- Never install a HIC in an EF300 or EF600 controller canister if that HIC was designed for another E-Series controller. In addition, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs causes the controllers to lock down when you apply power.
 
-===== Steps
+=.Steps
 
 . Unpack the new HIC and the new HIC faceplate.
 . Align the single thumbscrew on the HIC with the corresponding holes on the controller, and align the connector on the bottom of the HIC with the HIC interface connector on the controller card.
@@ -173,7 +173,7 @@ NOTE: Do not use a screwdriver, or you might over tighten the screws.
 
 After upgrading the HIC, reinstall the controller canister into the controller shelf.
 
-===== Steps
+=.Steps
 
 . Lower the cover on the controller canister and secure the thumbscrew.
 . While squeezing the controller handles, gently slide the controller canister all the way into the controller shelf.
@@ -190,7 +190,7 @@ If you are using more than one host protocol, be sure to install the SFPs in the
 
 Place the controller online, collect support data, and resume operations.
 
-===== Steps
+=.Steps
 
 . Place controller online.
  .. Plug in power cables.

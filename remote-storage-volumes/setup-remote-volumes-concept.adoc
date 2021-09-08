@@ -14,11 +14,11 @@ summary: Initial setup is required to enable the E-Series system to connect to t
 [.lead]
 Initial setup is required to enable the E-Series system to connect to the remote storage through the supported iSCSI protocol.
 
-===== Before You Begin
+=.Before You Begin
 
 Before proceeding to the SANtricity System Manager to configure the Remote Storage Volumes feature, the following pre-requisites must be met:
 
-===== Steps
+=.Steps
 
 . Manually establish a cabled connection between the E-Series system and the remote storage system such that the two systems can be configured to communicate via iSCSI.
 . Configure the iSCSI ports such that the E-Series system and the remote storage system can communicate successfully with each other.

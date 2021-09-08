@@ -13,15 +13,15 @@ To configure communications between the management station and the storage array
 
 Each storage array has either one controller (simplex) or two controllers (duplex), and each controller has two storage management ports. Each management port will be assigned an IP address.
 
-===== Before you begin
+=.Before You Begin
 
 You have installed and configured a DHCP server on the same subnet as the storage management ports.
 
-===== About this task
+=.About this task
 
 The following instructions refer to a storage array with two controllers (a duplex configuration).
 
-===== Steps
+=.Steps
 
 . If you have not already done so, connect an Ethernet cable to the management station and to management port 1 on each controller (A and B).
 +

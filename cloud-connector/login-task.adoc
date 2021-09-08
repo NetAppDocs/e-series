@@ -11,7 +11,7 @@ summary: You can access the graphical user interface for the SANtricity Cloud Co
 [.lead]
 You can access the graphical user interface for the SANtricity Cloud Connector application through the configured server in a supported browser. Make sure you have an established SANtricity Cloud Connector account.
 
-===== Steps
+=.Steps
 
 . In a supported browser, connect to the configured SANtricity Cloud Connector server (for example, `+http://localhost:8080/+`).
 +

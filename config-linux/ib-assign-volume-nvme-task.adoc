@@ -11,7 +11,7 @@ summary: You must assign a volume \(namespace\) to a host or host cluster so it 
 [.lead]
 You must assign a volume (namespace) to a host or host cluster so it can be used for I/O operations. This assignment grants a host or host cluster access to one or more namespaces in a storage array.
 
-===== About this task
+=.About this task
 
 Keep these guidelines in mind when you assign volumes:
 
@@ -34,7 +34,7 @@ All unassigned volumes are displayed, but functions for hosts with or without Da
 * For a DA-capable host, you can select volumes that are either DA-enabled or not DA-enabled.
 * For a host that is not DA-capable, if you select a volume that is DA-enabled, a warning states that the system must automatically turn off DA on the volume before assigning the volume to the host.
 
-===== Steps
+=.Steps
 
 . Select *Storage* > *Hosts*.
 . Select the host or host cluster to which you want to assign volumes, and then click *Assign Volumes*.

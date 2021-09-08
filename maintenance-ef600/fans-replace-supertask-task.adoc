@@ -17,7 +17,7 @@ Each EF300 and EF600 controller shelf or drive shelf includes five fans. If a fa
 
 Place the controller canister offline so you can safely replace the failed fan.
 
-===== Steps
+=.Steps
 
 . From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a fan and to ensure no other items must be addressed first.
 . From the Details area of the Recovery Guru, determine which fan to replace.
@@ -54,7 +54,7 @@ Remove the controller canister so you can replace the failed fan with a new one.
 * An ESD wristband, or you have taken other antistatic precautions.
 * A flat, static free work area.
 
-===== Steps
+=.Steps
 
 . Put on an ESD wristband or take other antistatic precautions.
 . Label each cable that is attached to the controller canister.
@@ -83,7 +83,7 @@ You remove a failed fan so you can replace it with a new one.
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
-===== Steps
+=.Steps
 
 . Remove the controller canister's cover by unscrewing the single thumbscrew and lifting the lid open.
 . Confirm that the green LED inside the controller is off.
@@ -102,7 +102,7 @@ Install a new fan to replace the failed one.
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
-===== Steps
+=.Steps
 
 . Slide the replacement fan all the way into the shelf.
 +
@@ -115,7 +115,7 @@ image::../media/fan_3_a.png[]
 [.lead]
 After installing the new fan, reinstall the controller canister into the controller shelf.
 
-===== Steps
+=.Steps
 
 . Lower the cover on the controller canister and secure the thumbscrew.
 . While squeezing the controller handles, gently slide the controller canister all the way into the controller shelf.

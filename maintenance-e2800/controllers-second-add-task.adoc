@@ -29,7 +29,7 @@ If SANtricity Storage Manager has not yet been installed, follow the instruction
 
 Confirm that the new controller has the same part number as the currently installed controller.
 
-===== Steps
+=.Steps
 
 . Unpack the new controller canister, and set it on a flat, static-free surface.
 . Locate the MAC address and FRU part number labels on the back of the controller canister.
@@ -59,7 +59,7 @@ Install the same model of host interface card (HIC) in the second controller can
 * An ESD wristband, or you have taken other antistatic precautions.
 * A #1 Phillips screwdriver.
 
-===== Steps
+=.Steps
 
 . Unpack the new HIC, and confirm it is identical to the existing HIC.
 +
@@ -95,7 +95,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
 
 Collect support data before and after replacing a component to ensure you can send a full set of logs to technical support in case the replacement does not resolve the problem.
 
-===== Steps
+=.Steps
 
 . From the Home page of SANtricity System Manager, ensure that the storage array has Optimal status.
 +
@@ -121,7 +121,7 @@ Before adding a second controller to the controller shelf, you must change the c
 
 You change the configuration to duplex by installing a new NVSRAM file. The duplex version of the NVSRAM file is included with the download file for SANtricity OS Software (controller firmware).
 
-===== Steps
+=.Steps
 
 . Download the latest SANtricity OS software files from the NetApp Support Site to your management client.
  .. From SANtricity System Manager, select *Support* > *Upgrade Center*.
@@ -190,7 +190,7 @@ The file is saved in the Downloads folder for your browser with the name `latest
 
 You use the script editor in the Enterprise Management Window (EMW) to set the storage array to duplex mode.
 
-===== Steps
+=.Steps
 
 . Open the EMW for SANtricity Storage Manager on your management station.
 . Select the storage array.
@@ -217,7 +217,7 @@ After the controller reboots, an "`alternate controller missing`" error message 
 [.lead]
 Remove the controller blank before you install the second controller. A controller blank is installed in controller shelves that have only one controller.
 
-===== Steps
+=.Steps
 
 . Squeeze the latch on the cam handle for the controller blank until it releases, and then open the cam handle to the right.
 . Slide the blank controller canister out of the shelf and set it aside.
@@ -236,7 +236,7 @@ Install a second controller canister to change a simplex configuration to a dupl
 +
 For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix] or the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe].
 
-===== Steps
+=.Steps
 
 . Turn the controller canister over, so that the removable cover faces down.
 . With the cam handle in the open position, slide the controller canister all the way into the controller shelf.
@@ -252,7 +252,7 @@ image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../med
 
 Complete the process of adding a second controller by confirming that it is working correctly, reinstall the duplex NVSRAM file, distribute volumes between the controllers, and collect support data.
 
-===== Steps
+=.Steps
 
 . As the controller boots, check the controller LEDs and the seven-segment display.
 +

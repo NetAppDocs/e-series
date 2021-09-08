@@ -26,7 +26,7 @@ If this software has not yet been installed, follow the instructions in the link
 
 Prepare to add a HIC.
 
-===== Steps
+=.Steps
 
 . From the Home of SANtricity System Manager, ensure that the storage array has Optimal status.
 +
@@ -91,7 +91,7 @@ Remove the controller canister so you can add the new host interface card.
 * Labels to identify each cable that is connected to the controller canister.
 * An ESD wristband, or you have taken other antistatic precautions.
 
-===== Steps
+=.Steps
 
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
@@ -141,7 +141,7 @@ Install the host interface card (HIC) to increase the number of host ports in yo
 
 CAUTION: *Possible loss of data access* -- Never install a HIC in an E5700 controller canister if that HIC was designed for another E-Series controller. In addition, if you have a duplex configuration, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs will cause the controllers to lock down when you apply power.
 
-===== Steps
+=.Steps
 
 . Unpack the new HIC and the new HIC faceplate.
 . Press the button on the cover of the controller canister, and slide the cover off.
@@ -178,7 +178,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[]
 
 Reinstall the controller canister into the controller shelf after installing the new HIC.
 
-===== Steps
+=.Steps
 
 . Turn the controller canister over, so that the removable cover faces down.
 . With the cam handle in the open position, slide the controller canister all the way into the controller shelf.
@@ -213,7 +213,7 @@ Check the controller LEDs and seven-segment display, and then confirm that the c
 +
 For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix] and the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe].
 
-===== Steps
+=.Steps
 
 . Turn on the two power switches at the back of the controller shelf.
  ** Do not turn off the power switches during the power-on process, which typically takes 90 seconds or less to complete.

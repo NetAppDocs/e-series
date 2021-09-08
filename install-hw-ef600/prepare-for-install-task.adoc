@@ -11,7 +11,7 @@ summary: To install an EF300 or EF600, create an account and register your hardw
 [.lead]
 Follow these steps to prepare for installation of your EF300 or EF600 series storage system.
 
-===== Before you begin
+=.Before You Begin
 
 If you are cabling your EF300 for SAS expansion, review the following information:
 
@@ -20,7 +20,7 @@ If you are cabling your EF300 for SAS expansion, review the following informatio
 * link:../install-hw-cabling/index.html[Cabling overview] for SAS expansion cabling.
 
 
-===== Steps
+=.Steps
 
 . Create an account and register your hardware at http://mysupport.netapp.com/[mysupport.netapp.com].
 . Ensure that the following items are in the box that you received.

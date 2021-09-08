@@ -11,11 +11,11 @@ summary: NVMe initiator configuration in a RoCE environment includes installing 
 [.lead]
 NVMe initiator configuration in a RoCE environment includes installing and configuring the `rdma-core` and `nvme-cli` packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
 
-===== Before you begin
+=.Before You Begin
 
 * You are running RHEL 7 and the latest compatible SUSE Linux Enterprise Server 12 and 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for a complete list of the latest requirements.
 
-===== Steps
+=.Steps
 
 . Install the `rdma` and `nvme-cli` packages:
 +

@@ -16,20 +16,20 @@ For the Fibre Channel protocol, you configure the switches and determine the hos
 [.lead]
 Configuring (zoning) the Fibre Channel (FC) switches enables the hosts to connect to the storage array and limits the number of paths. You zone the switches using the management interface for the switches.
 
-===== Before you begin
+=.Before You Begin
 
 * You must have administrator credentials for the switches.
 * You must have used your HBA utility to discover the WWPN of each host initiator port and of each controller target port connected to the switch.
 
 NOTE: A vendor's HBA utility can be used to upgrade and obtain specific information about the HBA. Refer to the support section of the vendor's website for instructions on how to obtain the HBA utility.
 
-===== About this task
+=.About this task
 
 For details about zoning your switches, see the switch vendor's documentation.
 
 Each initiator port must be in a separate zone with all of its corresponding target ports.
 
-===== Steps
+=.Steps
 
 . Log in to the FC switch administration program, and then select the zoning configuration option.
 . Create a new zone that includes the first host initiator port and that also includes all of the target ports that connect to the same FC switch as the initiator.
@@ -41,7 +41,7 @@ Each initiator port must be in a separate zone with all of its corresponding tar
 [.lead]
 To configure FC zoning, you must determine the worldwide port name (WWPN) of each initiator port.
 
-===== Steps
+=.Steps
 
 . Connect to the ESXi host using SSH or the ESXi shell.
 . Run the following command:

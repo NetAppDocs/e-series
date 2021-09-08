@@ -23,7 +23,7 @@ In this step, you go to the NetApp Support site to save the new downloadable pac
 
 The time it takes to upgrade depends on your storage array configuration and the components that you are upgrading.
 
-===== Steps
+=.Steps
 
 . If your storage array contains only one controller or you do not have a multipath driver installed, stop I/O activity to the storage array to prevent application errors. If your storage array has two controllers and you have a multipath driver installed, you do not need to stop I/O activity.
 +
@@ -50,7 +50,7 @@ In this step, you transfer the software files to your controllers so you can beg
 
 CAUTION: *Risk of data loss or risk of damage to the storage array* -- Do not make changes to the storage array while the upgrade is occurring. Maintain power to the storage array.
 
-===== Steps
+=.Steps
 
 . From the Upgrade Center in System Manager, click *Begin Upgrade* from *SANtricity OS Software upgrade*.
 +
@@ -81,7 +81,7 @@ Follow this step only if you have software or firmware that has been transferred
 
 When you perform the activation operation, the current software and firmware is replaced with the new software and firmware. You cannot stop the activation process after it starts.
 
-===== Steps
+=.Steps
 
 . From the System Manager interface, select *Support* > *Upgrade Center*.
 . In the area labeled SANtricity OS Controller Software upgrade, click *Activate*, and confirm that you want to perform the operation.
@@ -93,11 +93,11 @@ The file is saved in the Downloads folder for your browser with the name, `drive
 
 Complete the software and firmware upgrade by verifying the versions in the Software and Firmware Inventory dialog box.
 
-===== Before you begin
+=.Before You Begin
 
 * You must have activated your software or firmware.
 
-===== Steps
+=.Steps
 
 . Verify that all components appear on the Hardware page.
 . Verify the new software and firmware versions by checking the Software and Firmware Inventory dialog box (go to *Support* > *Upgrade Center*, and then click the link for *Software and Firmware Inventory*).

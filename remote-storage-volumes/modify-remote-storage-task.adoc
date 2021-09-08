@@ -11,11 +11,11 @@ summary: You can modify the connection settings for any configured Remote Storag
 [.lead]
 You can modify the connection settings for any configured Remote Storage import through the View/Edit Settings option under the Remote Storage screen of the SANtricity System Manager.
 
-===== Before You Begin
+=.Before You Begin
 
 Changes made to connection properties will affect any in-progress imports. To avoid disruptions, only make changes to connection properties when no in-progress imports exist.
 
-===== Steps
+=.Steps
 
 . From the Remote Storage screen of the SANtricity System Manager, select the desired Remote Storage object under the result list section.
 . Click *View/Edit Settings*.

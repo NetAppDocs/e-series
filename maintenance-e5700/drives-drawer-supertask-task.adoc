@@ -32,7 +32,7 @@ CAUTION: *Possible loss of data access* -- If a volume is already in a Degraded 
 
 Prepare to replace a drive drawer by determining if you can perform the replacement procedure while the drive shelf is online or if you need to stop host I/O activity and power off any of the shelves that are powered on. If you are replacing a drawer in a shelf with Drawer Loss Protection, there is no need to stop host I/O activity and power off any of the shelves.
 
-===== Steps
+=.Steps
 
 . Determine if the drive shelf is powered on.
  ** If the power is off, you do not need to issue the CLI command. Go to _Step 2: Remove cable chains_.
@@ -115,7 +115,7 @@ Remove both cable chains so you can remove and replace a failed drive drawer. Th
 * An ESD wristband, or you have taken other antistatic precautions.
 * A flashlight.
 
-===== About this task
+=.About this task
 
 Each drive drawer has left and right cable chains. The metal ends on the cable chains slide into corresponding vertical and horizontal guide rails inside the enclosure, as follows:
 
@@ -124,7 +124,7 @@ Each drive drawer has left and right cable chains. The metal ends on the cable c
 
 CAUTION: *Possible hardware damage* -- If the drive tray is powered on, the cable chain is energized until both ends are unplugged. To avoid shorting out the equipment, do not allow the unplugged cable chain connector to touch the metal chassis if the other end of the cable chain is still plugged in.
 
-===== Steps
+=.Steps
 
 . From the rear of the drive shelf, remove the right fan canister:
  .. Press the orange tab to release the fan canister handle.
@@ -217,7 +217,7 @@ Remove a failed drive drawer to replace it with a new one.
 
 CAUTION: *Possible loss of data access* -- Magnetic fields can destroy all data on the drive and cause irreparable damage to the drive circuitry. To avoid loss of data access and damage to the drives, always keep drives away from magnetic devices.
 
-===== Steps
+=.Steps
 
 . Remove the bezel from the front of the drive shelf.
 . Unlatch the drive drawer by pulling out on both levers.
@@ -257,7 +257,7 @@ Install a new drive drawer to replace the failed one.
 * A replacement drive drawer.
 * A flashlight.
 
-===== Steps
+=.Steps
 
 . From the front of the drive shelf, shine a flashlight into the empty drawer slot, and locate the lock-out tumbler for that slot.
 +
@@ -292,7 +292,7 @@ When attaching a cable chain, reverse the order you used when disconnecting the 
 * The new drive drawer installed.
 * Two replacement cable chains, marked as LEFT and RIGHT (on the horizontal connector next to the drive drawer).
 
-===== Steps
+=.Steps
 
 . From the back of the drive shelf, remove the fan canister on the right side, and set it aside.
 . If the shelf is powered on, ensure that the left fan goes to its maximum speed.
@@ -346,7 +346,7 @@ Complete the drive drawer replacement by reinserting the drives and replacing th
 
 CAUTION: *Possible loss of data access* -- You must install each drive in its original location in the drive drawer.
 
-===== Steps
+=.Steps
 
 . Reinstall the drives in the drive drawer:
  .. Unlatch the drive drawer by pulling out on both levers at the front of the drawer.

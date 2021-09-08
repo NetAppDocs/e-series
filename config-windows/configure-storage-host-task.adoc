@@ -13,11 +13,11 @@ A new LUN is offline and has no partition or file system when a Windows host fir
 
 You can initialize the disk as a basic disk with a GPT or MBR partition table. Typically, you format the LUN with a file system such as New Technology File System (NTFS).
 
-===== Before you begin
+=.Before You Begin
 
 The host must have discovered the LUN.
 
-===== Steps
+=.Steps
 
 . From a Windows command prompt, enter the `diskpart` context.
 +

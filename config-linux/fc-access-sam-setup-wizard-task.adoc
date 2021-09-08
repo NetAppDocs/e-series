@@ -11,7 +11,7 @@ summary: You use the Setup wizard in SANtricity System Manager to configure your
 [.lead]
 You use the Setup wizard in SANtricity System Manager to configure your storage array.
 
-===== Before you begin
+=.Before You Begin
 
 * You have ensured that the device from which you will access SANtricity System Manager contains one of the following browsers:
 +
@@ -42,7 +42,7 @@ a|
 
 * You are using out-of-band management.
 
-===== About this task
+=.About this task
 
 The wizard automatically relaunches when you open System Manager or refresh your browser and _at least one_ of the following conditions is met:
 
@@ -50,7 +50,7 @@ The wizard automatically relaunches when you open System Manager or refresh your
 * No workloads are detected.
 * No notifications are configured.
 
-===== Steps
+=.Steps
 
 . From your browser, enter the following URL: `+https://<DomainNameOrIPAddress>+`
 +
