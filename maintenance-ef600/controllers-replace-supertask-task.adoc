@@ -25,7 +25,7 @@ When you replace a failed controller canister, you must remove the battery, powe
 
 Prepare to replace a failed controller canister.
 
-=.Steps
+.Steps
 
 . Unpack the new controller canister, and set it on a flat, static-free surface.
 +
@@ -85,7 +85,7 @@ Remove the failed controller canister so you can replace it with a new one.
 * An ESD wristband, or you have taken other antistatic precautions.
 * A flat, static free work area.
 
-=.Steps
+.Steps
 
 . Put on an ESD wristband or take other antistatic precautions.
 . Label each cable that is attached to the controller canister.
@@ -114,7 +114,7 @@ image::../media/remove_controller_6.png[]
 
 Remove the battery from the failed controller canister so you can install it in the new controller canister.
 
-=.Steps
+.Steps
 
 . Remove the controller canister's cover by unscrewing the single thumbscrew and lifting the lid open.
 . Locate the 'press' tab on the side of the controller.
@@ -133,7 +133,7 @@ If the controller canister includes a HIC, you must remove the HIC from the orig
 
 * A #1 Phillips screwdriver.
 
-=.Steps
+.Steps
 
 . Using a Phillips screwdriver, remove the two screws that attach the HIC faceplate to the controller canister.
 +
@@ -164,7 +164,7 @@ Remove the power supply so you can install it in the new controller.
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
-=.Steps
+.Steps
 
 . Disconnect the power cables:
  .. Open the power cord retainer, and then unplug the power cord from the power supply.
@@ -188,7 +188,7 @@ Remove the DIMMs so you can install them in the new controller.
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
-=.Steps
+.Steps
 
 . Locate the DIMMs on your controller.
 . Note the orientation of the DIMM in the socket so that you can insert the replacement DIMM in the proper orientation.
@@ -211,7 +211,7 @@ Remove the fans so you can install them in the new controller.
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
-=.Steps
+.Steps
 
 . Gently lift the fan from the controller.
 +
@@ -235,7 +235,7 @@ Install the battery into the replacement controller canister.
 * The replacement controller canister.
 * An ESD wristband, or you have taken other antistatic precautions.
 
-=.Steps
+.Steps
 
 . Insert the battery into the controller by lining up the battery casing with the metal latches on the side of the controller.
 +
@@ -255,7 +255,7 @@ If you removed a HIC from the original controller canister, you must install tha
 * A #1 Phillips screwdriver.
 * An ESD wristband, or you have taken other antistatic precautions.
 
-=.Steps
+.Steps
 
 . Using a #1 Phillips screwdriver, remove the two screws that attach the blank faceplate to the replacement controller canister, and remove the faceplate.
 . Align the single thumbscrew on the HIC with the corresponding hole on the controller, and align the connector on the bottom of the HIC with the HIC interface connector on the controller card.
@@ -284,7 +284,7 @@ NOTE: The image above is an example; the appearance of your HIC may differ.
 
 Install the power supply into the replacement controller canister.
 
-=.Steps
+.Steps
 
 . Using both hands, support and align the edges of the power supply with the opening in the system chassis, and then gently push the power supply into the chassis using the cam handle.
 +
@@ -302,7 +302,7 @@ Install the DIMMs into the new controller canister.
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
-=.Steps
+.Steps
 
 . Hold the DIMM by the corners, and align it to the slot.
 +
@@ -330,7 +330,7 @@ Install the fans into the replacement controller canister.
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
-=.Steps
+.Steps
 
 . Slide the fan all the way into the replacement controller.
 +
@@ -344,7 +344,7 @@ image::../media/fan_3_a.png[]
 
 Last, install the new controller canister into the controller shelf.
 
-=.Steps
+.Steps
 
 . Lower the cover on the controller canister and secure the thumbscrew.
 . While squeezing the controller handles, gently slide the controller canister all the way into the controller shelf.
@@ -365,7 +365,7 @@ NOTE: If the original controller did not use DHCP for the IP address, the new co
 
 Place the controller online, collect support data, and resume operations.
 
-=.Steps
+.Steps
 
 . Place controller online.
  .. In System Manager, navigate to the Hardware page.

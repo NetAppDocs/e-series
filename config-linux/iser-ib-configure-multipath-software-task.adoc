@@ -11,7 +11,7 @@ summary: Configure multipath software, which  provides a redundant path to the s
 [.lead]
 To provide a redundant path to the storage array, you can configure multipath software.
 
-=.Before You Begin
+.Before you begin
 
 You have installed the required packages on your system.
 
@@ -20,13 +20,13 @@ You have installed the required packages on your system.
 
 If you have not already installed the operating system, use the media supplied by your operating system vendor.
 
-=.About this task
+.About this task
 
 Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. The multipath software presents the operating system with a single virtual device that represents the active physical paths to the storage. The multipath software also manages the failover process that updates the virtual device.
 
 You use the device mapper multipath (DM-MP) tool for Linux installations. By default, DM-MP is disabled in RHEL and SLES. Complete the following steps to enable DM-MP components on the host.
 
-=.Steps
+.Steps
 
 . If a multipath.conf file is not already created, run the # touch /etc/multipath.conf command.
 . Use the default multipath settings by leaving the multipath.conf file blank.

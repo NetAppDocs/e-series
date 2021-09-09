@@ -17,7 +17,7 @@ The steps depend on the starting and ending protocols of the baseboard host port
 
 If you converted all host ports from FC to iSCSI, you must configure iSCSI networking.
 
-=.Steps
+.Steps
 
 . Configure the switches.
 +
@@ -59,7 +59,7 @@ The *Delete* option does not physically remove the host port. This option remove
 
 If you converted all host ports from iSCSI to FC, you must configure FC networking.
 
-=.Steps
+.Steps
 
 . Install the HBA utility and determine initiator WWPNs.
 . Zone the switches.

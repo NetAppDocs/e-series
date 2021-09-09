@@ -19,13 +19,13 @@ Follow this procedure to remove the controller canister so you can upgrade it wi
 
 * Labels to identify each cable that is connected to the controller canister.
 
-=.About this task
+.About this task
 
 Perform the following steps for each controller in the controller-drive tray.
 
 If you are upgrading controllers in a duplex controller-drive tray, repeat all steps to remove the second controller canister.
 
-=.Steps
+.Steps
 
 . Put on an ESD wristband or take other antistatic precautions.
 . Label each cable that is attached to the old controller canister. Depending on the HIC configuration, you might be able to reconnect some cables after you replace the controller canister.
@@ -56,7 +56,7 @@ If you intend to use the battery from the old controller in the new controller, 
 
 Follow this procedure to remove the battery only if you intend to use the battery from the old controller canister in the new controller canister.
 
-=.Steps
+.Steps
 
 . Press down on both of the top cover latch buttons on the old controller canister, and slide the top cover to the rear of the canister.
 . Perform one of the following options, depending on your model of controller-drive tray, to release the old battery:

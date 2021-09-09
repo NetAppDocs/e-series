@@ -11,7 +11,7 @@ summary: If your controller includes an NVMe over InfiniBand port, you can confi
 [.lead]
 If your controller includes an NVMe over InfiniBand port, you can configure the IP address of each port using SANtricity System Manager.
 
-=.Steps
+.Steps
 
 . Select *Hardware*.
 . If the graphic shows the drives, click *Show back of shelf*.

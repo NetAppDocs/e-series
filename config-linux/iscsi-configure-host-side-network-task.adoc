@@ -11,13 +11,13 @@ summary: Configure iSCSI networking on the host side.
 [.lead]
 To configure host-side networking, you must perform several steps.
 
-=.About this task
+.About this task
 
 You configure iSCSI networking on the host side by setting the number of node sessions per physical path, turning on the appropriate iSCSI services, configuring the network for the iSCSI ports, creating iSCSI face bindings, and establishing the iSCSI sessions between initiators and targets.
 
 In most cases, you can use the inbox software-initiator for iSCSI CNA/NIC. You do not need to download the latest driver, firmware, and BIOS. Refer to the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] to determine code requirements.
 
-=.Steps
+.Steps
 
 . Check the ``node.session.nr_sessions``variable in the `/etc/iscsi/iscsid.conf` file to see the default number of sessions per physical path. If necessary, change the default number of sessions to one session.
 +

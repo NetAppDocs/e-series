@@ -15,7 +15,7 @@ If you are upgrading E2800 and E5700 controllers, the Drive Security feature for
 
 Follow these steps for internal key management when all drives are locked.
 
-=.About this task
+.About this task
 
 The newly swapped controllers will lock down with seven-segment display code of L5. This lock down occurs when no drives in the storage array are able to perform autocode synchronization (ACS). ACS resumes and updates the new controllers after the security key is imported.
 
@@ -25,7 +25,7 @@ Ctrl A port 2: 192.168.128.102 +
 Ctrl B port 1: 192.168.129.101 +
 Ctrl B port 2: 192.168.129.102
 
-=.Steps
+.Steps
 
 . Install the SANtricity client to a laptop or PC to be used in step 2 to connect directly to the array controller.
 . Connect the laptop or PC to controller A management port 1 directly via an RJ45 ethernet cable. This step might also require the laptop IP address be set to the same subnet.
@@ -39,11 +39,11 @@ Controllers will continue with the autocode synchronization process from the dri
 
 Follow these steps for external key management when all drives are locked.
 
-=.About this task
+.About this task
 
 The newly swapped controllers will lock down with seven-segment display code of L5. This lock down occurs when no drives in the storage array are able to perform autocode synchronization (ACS). ACS resumes and updates the new controllers after the security key is imported.
 
-=.Steps
+.Steps
 
 . Install the SANtricity client to a laptop or PC to be used in step 2 to connect directly to the array controller.
 . Connect the laptop or PC to controller A management port 1 directly via an RJ45 ethernet cable. You might also need to set the laptop IP address to the same subnet.

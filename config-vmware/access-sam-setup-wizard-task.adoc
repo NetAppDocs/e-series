@@ -11,7 +11,7 @@ summary: You use the Setup wizard in SANtricity System Manager to configure your
 [.lead]
 You use the Setup wizard in SANtricity System Manager to configure your storage array.
 
-=.Before You Begin
+.Before you begin
 
 * You have ensured that the device from which you will access SANtricity System Manager contains one of the following browsers:
 +
@@ -42,7 +42,7 @@ a|
 
 * You are using out-of-band management.
 
-=.About this task
+.About this task
 
 If you are an iSCSI user, make sure you have closed the Setup wizard while configuring iSCSI.
 
@@ -54,7 +54,7 @@ The wizard automatically relaunches when you open System Manager or refresh your
 
 If the Setup wizard does not automatically appear, contact technical support.
 
-=.Steps
+.Steps
 
 . From your browser, enter the following URL: `+https://<DomainNameOrIPAddress>+`
 +

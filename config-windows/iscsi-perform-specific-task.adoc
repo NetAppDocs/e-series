@@ -17,7 +17,7 @@ For the iSCSI protocol, you configure the switches and configure networking on t
 [.lead]
 You configure the switches according to the vendor's recommendations for iSCSI. These recommendations might include both configuration directives as well as code updates.
 
-=.Before You Begin
+.Before you begin
 
 You must ensure the following:
 
@@ -48,16 +48,16 @@ NOTE: Many network switches have to be configured above 9,000 bytes for IP overh
 [.lead]
 You use the SANtricity System Manager GUI to configure iSCSI networking on the array side.
 
-=.Before You Begin
+.Before you begin
 
 * You must know the IP address or domain name for one of the storage array controllers.
 * You or your system administrator must have set up a password for the System Manager GUI, or you must configured Role-Based Access Control (RBAC) or LDAP and a directory service for the appropriate security access to the storage array. See the _SANtricity System Manager online help_ for more information about Access Management.
 
-=.About this task
+.About this task
 
 This task describes how to access the iSCSI port configuration from the Hardware page. You can also access the configuration from menu:System[Settings > Configure iSCSI ports].
 
-=.Steps
+.Steps
 
 . From your browser, enter the following URL: `+https://<DomainNameOrIPAddress>+`
 +
@@ -155,14 +155,14 @@ In a shared local area network (LAN) environment, such as Ethernet, many station
 [.lead]
 You must configure iSCSI networking on the host side so that the Microsoft iSCSI Initiator can establish sessions with the array.
 
-=.Before You Begin
+.Before you begin
 
 * You have fully configured the switches that will be used to carry iSCSI storage traffic.
 * You must have enabled send and receive hardware flow control *end to end* and disabled priority flow control.
 * You have completed the array side iSCSI configuration.
 * You must know the IP address of each port on the controller.
 
-=.About this task
+.About this task
 
 These instructions assume that two NIC ports will be used for iSCSI traffic.
 

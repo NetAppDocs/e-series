@@ -11,7 +11,7 @@ summary: Install the E2800 or E5700 in a two-post rack or a NetApp system cabine
 [.lead]
 Follow this procedure to install a E5724, EF570, EF280, E2812, E2824, DE212C, or DE224C storage system in a two-post rack or a NetApp system cabinet.
 
-=.Before You Begin
+.Before you begin
 
 * You have registered your hardware at http://mysupport.netapp.com/[mysupport.netapp.com].
 * You have prepared a flat, static-free work area.
@@ -19,7 +19,7 @@ Follow this procedure to install a E5724, EF570, EF280, E2812, E2824, DE212C, or
 
 Read through all the instructions before proceeding with the steps below.
 
-=.Steps
+.Steps
 
 . Unpack the hardware contents, and then inventory the contained hardware against the packing slip.
 

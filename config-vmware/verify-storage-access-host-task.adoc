@@ -11,6 +11,6 @@ summary: Before you use a volume, you verify that the host can write data to the
 [.lead]
 Before you use a volume, you verify that the host can write data to the volume and read it back.
 
-=.Steps
+.Steps
 
 . Verify that the volume has been used as a Virtual Machine File System (VMFS) datastore or has been mapped directly to a VM for use as a raw device mapping (RDM).

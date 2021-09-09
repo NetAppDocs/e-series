@@ -16,11 +16,11 @@ Upon successful installation, you can set up the SANtricity Cloud Connector appl
 [.lead]
 When initializing the SANtricity Cloud Connector for the first time, you must enter a default password to access the application.
 
-=.Before You Begin
+.Before you begin
 
 * You have access to an internet-connected browser.
 
-=.Steps
+.Steps
 
 . Open a supported browser.
 . Connect to the configured SANtricity Cloud Connector server (e.g., `+http://localhost:8080/+`).
@@ -46,7 +46,7 @@ You can customize the password used for subsequent logins to the SANtricity Clou
 
 Establishing a password through the Set Administrator Password screen effectively replaces the default password used during the initial login for the SANtricity Cloud Connector application.
 
-=.Steps
+.Steps
 
 . On the Set Administrator Password page, enter the desired login password for the SANtricity Cloud Connector in the `Enter the new administrator password` field.
 . In the``Re-enter the new administrator password`` field, re-enter the password from first field.
@@ -63,7 +63,7 @@ Under the Enter the Encryption Pass Phrase page, you can specify an alphanumeric
 
 A user-specified pass phrase is required as part of the data encryption key used by the SANtricity Cloud Connector application.
 
-=.Steps
+.Steps
 
 . In the `Define a pass phrase` field, enter the desired pass phrase.
 . In the `Re-enter your pass phrase` field, re-enter the pass phrase from the first field.
@@ -76,11 +76,11 @@ The entered pass phrase for the SANtricity Cloud Connector application is accept
 [.lead]
 Backup and restore capabilities are available for Amazon S3, AltaVault, and StorageGRID target types through the SANtricity Cloud Connector. You can specify the desired storage target type for the SANtricity Cloud Connector application under the Select the Target Type page.
 
-=.Before You Begin
+.Before you begin
 
 * You have an established AltaVault mount point, Amazon AWS account, or StorageGRID account.
 
-=.Steps
+.Steps
 
 . In the dropdown menu, select one of the following options:
  ** Amazon AWS
@@ -93,13 +93,13 @@ A Target Type page for the selected option is displayed in the Configuration Wiz
 [.lead]
 After selecting the AltaVault appliance option under the Select the Target Type page, configuration options for the AltaVault target type are displayed.
 
-=.Before You Begin
+.Before you begin
 
 * You have the NFS mount path for an AltaVault appliance.
 
 You specify your AltaVault appliance as the target type under the AltaVault appliance page of the configuration wizard.
 
-=.Steps
+.Steps
 
 . In the `NFS Mount Path` field, enter the mount point for the AltaVault target type.
 +
@@ -119,13 +119,13 @@ The specified target type for the SANtricity Cloud Connector is accepted and the
 [.lead]
 After selecting the Amazon AWS option under the Select the Target Type page, configuration options for the Amazon AWS target type are displayed.
 
-=.Before You Begin
+.Before you begin
 
 * You have an established Amazon AWS account.
 
 You specify your Amazon AWS credentials under the Amazon AWS account page of the configuration wizard.
 
-=.Steps
+.Steps
 
 . In the `Access Key ID` field, enter the access ID for the Amazon AWS target.
 . In the `Secret Access Key` field, enter the secret access key for the target.
@@ -146,14 +146,14 @@ The specified target type for the SANtricity Cloud Connector is accepted, and th
 [.lead]
 After selecting the StorageGRID option under the Select the Target Type page, configuration options for the StorageGRID target type are displayed.
 
-=.Before You Begin
+.Before you begin
 
 * You have an established StorageGRID account.
 * You have a signed StorageGRID certificate in the SANtricity Cloud Connector keystore.
 
 You specify your StorageGRID credentials for the target type under the StorageGRID account page of the configuration wizard.
 
-=.Steps
+.Steps
 
 . In the `URL` field, enter the URL for the Amazon S3 cloud service
 . In the `Access Key ID` field, enter the access ID for the S3 target.
@@ -182,11 +182,11 @@ The specified target type for the SANtricity Cloud Connector is accepted and the
 [.lead]
 Login and connection information for the Web Services Proxy used in conjunction with the SANtricity Cloud Connector is entered through the Enter Web Services Proxy URL and Credentials page.
 
-=.Before You Begin
+.Before you begin
 
 * You have an established connection to the SANtricity Web Services Proxy.
 
-=.Steps
+.Steps
 
 . In the `URL` field, enter the URL for the Web Services proxy used for the SANtricity Cloud Connector.
 . In the `User Name` field, enter the user name for the Web Services Proxy connection.
@@ -202,13 +202,13 @@ The Web Services Proxy credentials for the SANtricity Cloud Connector is accepte
 [.lead]
 Based on the SANtricity Web Services Proxy credentials entered through the Configuration Wizard, a list of available storage arrays is displayed under the Select Storage Arrays page. Through this page, you can select which storage arrays the SANtricity Cloud Connector uses for backup and restore jobs.
 
-=.Before You Begin
+.Before you begin
 
 * You have storage arrays configured to your SANtricity Web Services Proxy application.
 +
 NOTE: Unreachable storage arrays observed by the SANtricity Cloud Connector application will result in API exceptions in the log file. This is the intended behavior of the SANtricity Cloud Connector application whenever a volume list is pulled from an unreachable array. To avoid these API exceptions in the log file, you can resolve the root issue directly with the storage array or remove the affected storage array from the SANtricity Web Services Proxy application.
 
-=.Steps
+.Steps
 
 . Select each checkbox next to the storage array that you want to assign to the SANtricity Cloud Connector application for backup and restore operations.
 . Click *Next*.
@@ -222,11 +222,11 @@ NOTE: You must configure a valid password for any storage array selected under t
 [.lead]
 Based on the Web Services Proxy-hosted storage arrays selected through the Configuration Wizard, you can select an available host to map backup and restore candidate volumes to the SANtricity Cloud Connector application through the Select Hosts page.
 
-=.Before You Begin
+.Before you begin
 
 * You have a host available through the SANtricity Web Services Proxy.
 
-=.Steps
+.Steps
 
 . In the drop-down menu for the listed storage array, select the desired host.
 . Repeat step 1 for any additional storage arrays listed under the `Select Host` page.
@@ -241,7 +241,7 @@ The final page of the SANtricity Cloud Connector configuration wizard provides a
 
 You verify all information entered through the configuration wizard to complete the initial setup of your SANtricity Cloud Connector application.
 
-=.Steps
+.Steps
 
 . Review the results of the validated configuration data.
  ** If all configuration data is successfully validated and established, click *Finish* to complete the configuration process.

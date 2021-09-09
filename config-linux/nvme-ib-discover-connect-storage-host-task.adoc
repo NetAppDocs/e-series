@@ -11,7 +11,7 @@ summary: Before making definitions of each host in SANtricity System Manager, yo
 [.lead]
 Before making definitions of each host in SANtricity System Manager, you must discover the target controller ports from the host, and then establish NVMe connections.
 
-=.Steps
+.Steps
 
 . Discover available subsystems on the NVMe-oF target for all paths using the following command:
 +

@@ -30,7 +30,7 @@ CAUTION: If you are upgrading SANtricity OS on a StorageGRID appliance (for exam
 
 A health check runs as part of the upgrade process, but you also can run a health check separately before you begin. The health check assesses components of the storage array to make sure that the upgrade can proceed.
 
-=.Steps
+.Steps
 
 . Open Unified Manager.
 . From the main view, select *Manage*, and then select *Upgrade Center* > *Pre-Upgrade Health Check*.
@@ -51,7 +51,7 @@ NOTE: If any arrays fail the health check, you can skip that particular array an
 
 In this step, you go to the NetApp Support site to save the new downloadable package (DLP) software files to your management host system.
 
-=.Steps
+.Steps
 
 . If your storage array contains only one controller or a multipath driver is not in use, stop I/O activity to the storage array to prevent application errors. If your storage array has two controllers and you have a multipath driver installed, you do not need to stop I/O activity.
 . From Unified Manager's main view, select *Manage*, and then select one or more storage arrays that you want to upgrade.
@@ -74,7 +74,7 @@ You load the SANtricity OS software file and the NVSRAM file into the repository
 
 CAUTION: Risk of data loss or risk of damage to the storage array - Do not make changes to the storage array while the upgrade is occurring. Maintain power to the storage array.
 
-=.Steps
+.Steps
 
 . From Unified Manager's main view, select *Manage*, and then select one or more storage arrays that you want to upgrade.
 . Select *Upgrade Center* > *Upgrade SANtricity OS Software*.
@@ -128,7 +128,7 @@ You can choose to activate the software file immediately or wait until a more co
 
 NOTE: You cannot stop the activation process after it starts.
 
-=.Steps
+.Steps
 
 . From Unified Manager's main view, select *Manage*. If necessary, click the Status column to sort all storage arrays with a status of "OS Upgrade (awaiting activation)."
 . Select one or more storage arrays that you want to activate software for, and then select *Upgrade Center* > *Activate Staged OS Software*.

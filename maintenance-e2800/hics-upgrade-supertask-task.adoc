@@ -25,7 +25,7 @@ Upgrading a HIC increases the number of host ports or to change host protocols. 
 
 Prepare to upgrade host interface cards (HICs).
 
-=.Steps
+.Steps
 
 . From the Home page of SANtricity System Manager, ensure that the storage array has Optimal status.
 +
@@ -90,7 +90,7 @@ You remove the controller canister so you can upgrade the new host interface car
 * Labels to identify each cable that is connected to the controller canister.
 * An ESD wristband, or you have taken other antistatic precautions.
 
-=.Steps
+.Steps
 
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
@@ -140,7 +140,7 @@ Remove the original host interface card (HIC) so you can replace it with an upgr
 
 * A #1 Phillips screwdriver.
 
-=.Steps
+.Steps
 
 . Remove the controller canister's cover by pressing down on the button and sliding the cover off.
 . Confirm that the green LED inside the controller (between the battery and the DIMMs) is off.
@@ -181,7 +181,7 @@ Install the new host interface card (HIC) to increase the number of host ports i
 
 CAUTION: *Possible loss of data access* -- Never install a HIC in an E2800 controller canister if that HIC was designed for another E-Series controller. In addition, if you have a duplex configuration, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs will cause the controllers to lock down when you apply power.
 
-=.Steps
+.Steps
 
 . Unpack the new HIC and the new HIC faceplate.
 . Using a #1 Phillips screwdriver, remove the four screws that attach the HIC faceplate to the controller canister, and remove the faceplate.
@@ -210,7 +210,7 @@ Do not use a screwdriver, or you might over-tighten the screws.
 
 Reinstall the controller canister into the controller shelf after installing the new host interface card (HIC).
 
-=.Steps
+.Steps
 
 . Reinstall the cover on the controller canister by sliding the cover from back to front until the button clicks.
 . Turn the controller canister over, so that the removable cover faces down.
@@ -246,7 +246,7 @@ Complete the process of upgrading a host interface card by checking the controll
 +
 For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix] or the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe].
 
-=.Steps
+.Steps
 
 . Turn on the two power switches at the back of the controller shelf.
  ** Do not turn off the power switches during the power-on process, which typically takes 90 seconds or less to complete.

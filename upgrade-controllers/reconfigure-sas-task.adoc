@@ -15,7 +15,7 @@ Approved SAS-2 arrays include the E2700, E550/EF5500, and E5600/EF560. Approved 
 
 Approved SAS-3 arrays include the E2800 and E5700/EF570. Approved SAS-3 drive shelves include DE212C, DE224C, and DE460C.
 
-=.About this task
+.About this task
 
 Due to the complexity of this procedure, the following is required:
 
@@ -34,7 +34,7 @@ NOTE: Failure to acquire an FPVR before attempting this procedure can result in 
 
 All operations must be shut down before you can power down the controllers.
 
-=.Steps
+.Steps
 
 . If the existing SAS-2 array is still accessible, delete all volume groups, power down both controllers, and remove all cables.
 . Record the serial number from the SAS-2 controller shelf that you will be converting to a drive shelf.
@@ -44,7 +44,7 @@ All operations must be shut down before you can power down the controllers.
 
 Upon successful shut down, you can replace the controllers in the array.
 
-=.Steps
+.Steps
 
 . Replace both controllers in the existing array with IOMs or ESMs.
 . If possible, use the host cables and network cables from the existing array and connect them to the controllers in the new array.
@@ -61,7 +61,7 @@ NOTE: Connecting SAS-2 to SAS-3 requires SAS HD to mini SAS cables. For more det
 
 After installation is complete, power on the controllers and submit your configuration changes to NetApp Technical Support.
 
-=.Steps
+.Steps
 
 . Power up the new array including any attached drive shelves.
 . Configure the management port and the IP addresses by installing the https://mysupport.netapp.com/tools/info/ECMLP2563821I.html[SANtricity Quick Connect] utility.
