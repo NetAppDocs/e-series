@@ -28,7 +28,7 @@ Perform this task only if your storage array has two controllers (duplex configu
 
 If you have a duplex configuration, you must place the affected controller offline so you can safely remove the failed HIC.
 
-=.Steps
+.Steps
 
 . From the Details area of the Recovery Guru, determine which of the controller canisters has the failed HIC.
 . Back up the storage array's configuration database.
@@ -95,7 +95,7 @@ Remove the controller canister so you can add the new HIC.
 * Labels to identify each cable that is connected to the controller canister.
 * An ESD wristband, or you have taken other antistatic precautions.
 
-=.Steps
+.Steps
 
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
@@ -145,7 +145,7 @@ Install a new HIC to replace the failed one.
 
 CAUTION: *Possible loss of data access* -- Never install a HIC in an E5700 controller canister if that HIC was designed for another E-Series controller. In addition, if you have a duplex configuration, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs causes the controllers to lock down when you apply power.
 
-=.Steps
+.Steps
 
 . Unpack the new HIC and the new HIC faceplate.
 . Press the button on the cover of the controller canister, and slide the cover off.
@@ -182,7 +182,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[]
 
 After installing the HIC, reinstall the controller canister into the controller shelf.
 
-=.Steps
+.Steps
 
 . Turn the controller canister over, so that the removable cover faces down.
 . With the cam handle in the open position, slide the controller canister all the way into the controller shelf.
@@ -212,7 +212,7 @@ Bring the controller online to confirm the storage array is working correctly, c
 
 NOTE: Perform this task only if your storage array has two controllers.
 
-=.Steps
+.Steps
 
 . As the controller boots, check the controller LEDs and the seven-segment display.
 +

@@ -11,7 +11,7 @@ summary: You can create a partition on the multipath device, optionally create a
 [.lead]
 You can create a partition on the multipath device, optionally create a file system on the namespace, and mount the partition.
 
-=.Steps
+.Steps
 
 . Run the `multipath -ll` command to get a list of `/dev/mapper/dm` devices.
 +

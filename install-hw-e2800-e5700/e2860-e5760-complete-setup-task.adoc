@@ -54,12 +54,12 @@ You can configure the controller management ports using one of two options: usin
 
 Follow this procedure to configure the management ports with a DHCP server.
 
-=.Before You Begin
+.Before you begin
 
 * Your DHCP server is configured to associate an IP address, subnet mask, and gateway address as a permanent lease for each controller.
 * You have obtained the assigned IP addresses you will use to connect to the storage system from your network administrator.
 
-=.Steps
+.Steps
 
 . Connect an Ethernet cable to each controller's management port, and connect the other end to your network.
 +
@@ -87,12 +87,12 @@ E5700 controller P1 Management Port
 
 Follow this procedure to configure the management ports manually by entering the IP address and the subnet mask.
 
-=.Before You Begin
+.Before you begin
 
 * You have obtained the controllers' IP address, subnet mask, gateway address, and DNS and NTP server information from your network administrator.
 * You have ensured that the laptop you are using is not receiving network configuration from a DHCP server.
 
-=.Steps
+.Steps
 
 . Using an Ethernet cable, connect controller A's management port to the Ethernet port on a laptop.
 +
@@ -143,11 +143,11 @@ NOTE: If you lose the connection to controller B, you can use your previously va
 
 After you have installed your hardware, use the SANtricity software to configure and manage your storage system.
 
-=.Before You Begin
+.Before you begin
 
 * You have configured your management ports and have verified and recorded your password and IP addresses.
 
-=.Steps
+.Steps
 
 . Use the SANtricity software to configure and manage your storage arrays.
 . In the simplest network configuration, connect your controller to a web browser and use SANtricity System Manager for managing a single E2800 or E5700 series storage array.

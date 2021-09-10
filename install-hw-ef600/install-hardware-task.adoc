@@ -11,13 +11,13 @@ summary: Install the EF300 or EF600 in a two-post rack or a NetApp system cabine
 [.lead]
 Follow this procedure to install a EF300 or EF600 storage system in a two-post rack or a NetApp system cabinet.
 
-=.Before You Begin
+.Before you begin
 
 * You have registered your hardware at http://mysupport.netapp.com/[mysupport.netapp.com].
 * You have prepared a flat, static-free work area.
 * You have taken anti-static precautions.
 
-=.Steps
+.Steps
 
 . Unpack the hardware.
  .. Unpack the contents and inventory the contained hardware against the packing slip.

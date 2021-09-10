@@ -48,7 +48,7 @@ The Select Workload dialog box appears. A workload contains volumes with similar
 +
 The Add/Edit Volumes dialog box appears. In this dialog, you create volumes from eligible pools or volume groups. For each eligible pool and volume group, the number of drives available and the total free capacity appears. For some application-specific workloads, each eligible pool or volume group shows the proposed capacity based on the suggested volume configuration and shows the remaining free capacity in GiB. For other workloads, the proposed capacity appears as you add volumes to a pool or volume group and specify the reported capacity.
 
-. Before you begin adding volumes, read the guidelines in the following table.
+.Before you begin adding volumes, read the guidelines in the following table.
 +
 [options="header"]
 |===
@@ -166,7 +166,7 @@ The table lists the automatically created hosts.
 
 ==== Manually creating the host
 
-. Before you begin, read the following guidelines:
+.Before you begin, read the following guidelines:
 
 ** You must already have added or discovered storage arrays within your environment.
 ** You must define the host identifier ports that are associated with the host.

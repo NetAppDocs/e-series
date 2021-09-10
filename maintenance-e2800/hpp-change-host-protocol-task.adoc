@@ -19,7 +19,7 @@ Use SANtricity System Manager to determine what type of SFP transceivers you hav
 
 Because these SFPs can be used with both FC and iSCSI protocols, they are referred to as _dual-protocol_ or _unified_ SFPs.
 
-=.Steps
+.Steps
 
 . From SANtricity System Manager, select *Support*.
 . Select the *Support Center* tile.
@@ -71,7 +71,7 @@ NOTE: 8Gbps FC SFPs are NOT supported in the E28xx or E57xx controllers. ONLY 16
 
 To obtain the feature pack, you need the serial number from the controller shelf, a Feature Activation Code, and the Feature Enable Identifier for the storage array.
 
-=.Steps
+.Steps
 
 . Locate the serial number.
  .. From SANtricity System Manager, select *Support* > *Support Center*.
@@ -400,7 +400,7 @@ NOTE: The Premium Feature Activation web site includes a link to "`Premium Featu
 
 You must stop all I/O operations from the host before converting the protocol of the host ports. You cannot access data on the storage array until you successfully complete the conversion.
 
-=.Steps
+.Steps
 
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
@@ -430,7 +430,7 @@ Cache Active LED
 
 Change the feature pack to convert the host protocol of the baseboard host ports, the IB HIC ports, or both types of ports.
 
-=.Steps
+.Steps
 
 . From SANtricity System Manager, select *Settings* > *System*.
 . Under *Add-ons*, select *Change Feature Pack*.

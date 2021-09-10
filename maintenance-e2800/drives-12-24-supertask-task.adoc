@@ -23,7 +23,7 @@ The Recovery Guru in SANtricity System Manager monitors the drives in the storag
 
 Prepare to replace a drive.
 
-=.Steps
+.Steps
 
 . If the Recovery Guru in SANtricity System Manager has notified you of an _impending drive failure_, but the drive has not yet failed, follow the instructions in the Recovery Guru to fail the drive.
 . If needed, use SANtricity System Manager to confirm you have a suitable replacement drive.
@@ -47,7 +47,7 @@ Remove a failed drive to replace it with a new one.
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
-=.Steps
+.Steps
 
 . Unpack the replacement drive, and set it on a flat, static-free surface near the shelf.
 +
@@ -79,7 +79,7 @@ NOTE: Install the replacement drive as soon as possible after removing the faile
 
 * A replacement drive that is supported by NetApp for your controller shelf or drive shelf.
 
-=.Steps
+.Steps
 
 . Open the cam handle.
 . Using two hands, insert the replacement drive into the open bay, firmly pushing until the drive stops.
@@ -93,7 +93,7 @@ NOTE: Depending on your configuration, the controller might automatically recons
 
 Complete the drive replacement to confirm that the new drive is working correctly.
 
-=.Steps
+.Steps
 
 . Check the Power LED and the Attention LED on the drive you replaced. (When you first insert a drive, its Attention LED might be on. However, the LED should go off within a minute.)
  ** Power LED is on or blinking, and the Attention LED is off: Indicates that the new drive is working correctly.

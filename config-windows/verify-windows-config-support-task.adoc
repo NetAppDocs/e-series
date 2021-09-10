@@ -12,7 +12,7 @@ summary: Verify that the Windows configuration is supported.
 [.lead]
 To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool (IMT) to verify that the entire configuration is supported.
 
-=.Steps
+.Steps
 
 . Go to the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
 . Click on the *Storage Solution Search* tile.

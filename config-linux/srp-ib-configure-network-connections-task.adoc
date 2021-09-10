@@ -11,11 +11,11 @@ summary: If your configuration uses the SRP over Infiniband protocol, follow the
 [.lead]
 If your configuration uses the SRP over Infiniband protocol, follow the steps in this section.
 
-=.Before You Begin
+.Before you begin
 
 To connect the Linux host to the storage array, you must enable the InfiniBand driver stack with the appropriate options. Specific settings might vary between Linux distributions. Check the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for specific instructions and additional recommended settings specific to your solution.
 
-=.Steps
+.Steps
 
 . Install the OFED/RDMA driver stack for your OS.
 +

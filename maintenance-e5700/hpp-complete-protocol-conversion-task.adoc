@@ -21,7 +21,7 @@ This task applies only if you are converting a storage array that has already be
 
 This task does not apply if you are converting a new storage array that does not yet have hosts and volumes defined. If you converted the host-port protocol of a new storage array, see _Cabling E-Series hardware_ to install cables and SFPs. Then, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to complete the setup for each protocol.
 
-=.Steps
+.Steps
 
 . Configure the switches.
 +
@@ -71,7 +71,7 @@ This task applies only if you are converting a storage array that has already be
 
 This task does not apply if you are converting a new storage array that does not yet have hosts and volumes defined. If you converted the host-port protocol of a new storage array, see _Cabling E-Series hardware_ to install cables and SFPs. Then, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to complete the setup for each protocol.
 
-=.Steps
+.Steps
 
 . Install the HBA utility and determine initiator WWPNs.
 . Zone the switches.
@@ -109,7 +109,7 @@ Your host protocol conversion is complete. You can resume normal operations.
 
 After you apply the feature pack key to convert the protocol used by your InfiniBand iSER HIC port to/from SRP, NVMe over InfiniBand, NVMe over RocE, or NVMe over Fibre Channel, you need to configure the host to use the appropriate protocol.
 
-=.Steps
+.Steps
 
 . Configure the host to use the SRP, iSER, or NVMe protocol.
 +

@@ -11,7 +11,7 @@ summary: For RHEL 7 and SLES 12, you create a file system on the namespace and m
 [.lead]
 For RHEL 7 and SLES 12, you create a file system on the namespace and mount the filesystem.
 
-=.Steps
+.Steps
 
 . Run the `multipath -ll` command to get a list of `/dev/mapper/dm` devices.
 +

@@ -32,7 +32,7 @@ Perform this task only if your storage array has one controller (simplex configu
 
 Prepare to replace a controller canister.
 
-=.Steps
+.Steps
 
 . If possible, make a note of which version of SANtricity OS software is currently installed on the controller, by selecting *Support* > *Upgrade Center* > *View Software and Firmware Inventory*.
 . If the Drive Security feature is enabled, be sure a saved key exists and that you know the pass phrase required to install it.
@@ -103,7 +103,7 @@ Replace the failed canister with a new one. Perform this task only if your stora
 
 Remove a controller canister.
 
-=.Steps
+.Steps
 
 . Put on an ESD wristband or take other antistatic precautions.
 . Label each cable that is attached to the controller canister.
@@ -144,7 +144,7 @@ When you remove the controller canister, a flap swings into place to block the e
 
 After removing the controller canister from the controller shelf, remove the battery.
 
-=.Steps
+.Steps
 
 . Remove the controller canister's cover by pressing down on the button and sliding the cover off.
 . Confirm that the green LED inside the controller (between the battery and the DIMMs) is off.
@@ -175,7 +175,7 @@ If the controller canister includes a host interface card (HIC), remove the HIC 
 * Labels to identify each cable that is connected to the controller canister.
 * A #1 Phillips screwdriver.
 
-=.Steps
+.Steps
 
 . Using a #1 Phillips screwdriver, remove the screws that attach the HIC faceplate to the controller canister.
 +
@@ -208,7 +208,7 @@ Install the battery into the replacement controller canister. You can install th
 * The battery from the original controller canister.
 * The replacement controller canister.
 
-=.Steps
+.Steps
 
 . Unpack the replacement controller canister, and set it on a flat, static-free surface so that the removable cover faces up.
 +
@@ -249,7 +249,7 @@ If you removed a host interface card (HIC) from the original controller canister
 * A #1 Phillips screwdriver.
 * An ESD wristband, or you have taken other antistatic precautions.
 
-=.Steps
+.Steps
 
 . Using a #1 Phillips screwdriver, remove the four screws that attach the blank faceplate to the replacement controller canister, and remove the faceplate.
 . Align the three thumbscrews on the HIC with the corresponding holes on the controller, and align the connector on the bottom of the HIC with the HIC interface connector on the controller card.
@@ -280,7 +280,7 @@ After installing the battery and the HIC, if one was initially installed, you ca
 
 * A replacement controller canister with the same part number as the controller canister you are replacing.
 
-=.Steps
+.Steps
 
 . Reinstall the cover on the controller canister by sliding the cover from back to front until the button clicks.
 . Turn the controller canister over, so that the removable cover faces down.
@@ -332,7 +332,7 @@ Power on the controller shelf, collect support data, and resume operations.
 
 If all drives in your storage array are security enabled, you must use the Enterprise Management Window (EMW) in SANtricity Storage Manager to unlock the secured drives. You cannot access the storage array until you unlock the drives with the saved key.
 
-=.Steps
+.Steps
 
 . Turn on the two power switches at the back of the controller shelf.
  ** Do not turn off the power switches during the power-on process, which typically takes 90 seconds or less to complete.

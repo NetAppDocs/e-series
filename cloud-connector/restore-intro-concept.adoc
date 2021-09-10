@@ -20,11 +20,11 @@ NOTE: All timestamps for backup and restore jobs listed under the SANtricity Clo
 [.lead]
 You can create new image-based restores through the Create function on the `Restore` page of the SANtricity Cloud Connector application.
 
-=.Before You Begin
+.Before you begin
 
 * You have an image-based backup available through the SANtricity Cloud Connector.
 
-=.Steps
+.Steps
 
 . In the `Restore` page of the SANtricity Cloud Connector application, click *Create*.
 +
@@ -53,11 +53,11 @@ The restore for the selected target host volume is initiated, and the status for
 [.lead]
 You can create new file-based restores through the Create function in the `Restore` page of the SANtricity Cloud Connector application.
 
-=.Before You Begin
+.Before you begin
 
 * You have an file-based backup available through the SANtricity Cloud Connector.
 
-=.Steps
+.Steps
 
 . In the `Restore` page of the SANtricity Cloud Connector application, click *Create*.
 +
@@ -90,11 +90,11 @@ The restore for the selected target host volume is initiated, and the status for
 [.lead]
 You can use the Delete function to delete a selected restore item from the result list section of the `Restore` page.
 
-=.Before You Begin
+.Before you begin
 
 * You have a restore job with a status of `Completed`, `Failed` or `Canceled`.
 
-=.Steps
+.Steps
 
 . In the ``Restore``page, click *Delete*.
 +

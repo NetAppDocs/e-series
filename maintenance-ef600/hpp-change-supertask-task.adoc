@@ -15,7 +15,7 @@ Follow this procedure to change the host port protocol in an EF300 or EF600 arra
 
 To obtain the feature pack key, you need the serial number from the controller shelf, a Feature Activation Code, and the Feature Enable Identifier for the storage array.
 
-=.Steps
+.Steps
 
 . Locate the serial number.
  .. From SANtricity System Manager, select *Support* > *Support Center*.
@@ -452,7 +452,7 @@ Stop all I/O operations from the host before converting the protocol of the host
 
 You cannot access data on the storage array until you successfully complete the conversion.
 
-=.Steps
+.Steps
 
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
@@ -473,7 +473,7 @@ The green Cache Active LED on the back of each controller is on when cached data
 
 Change the feature pack to convert the host protocol of your host ports.
 
-=.Steps
+.Steps
 
 . From SANtricity System Manager, select *Settings* > *System*.
 . Under *Add-ons*, select *Change Feature Pack*.
