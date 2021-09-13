@@ -11,11 +11,11 @@ summary: Upgrade a host interface card (HIC) in an E2800 array.
 [.lead]
 Follow these instructions to upgrade a host interface card (HIC).
 
-== About this task
+.About this task
 
 Upgrading a HIC increases the number of host ports or to change host protocols. When you upgrade the HICs, you must power off the storage array, remove the existing HIC from each controller, install a new HIC, and reapply power.
 
-== Before you begin
+.Before you begin
 
 * Review link:hics-overview-supertask-concept.html[Requirements for E2800 HIC replacement].
 * Schedule a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)
@@ -269,6 +269,6 @@ NOTE: If you cannot resolve the problem, contact technical support.
 . If the new HIC ports require SFP+ transceivers, install these SFPs.
 . Connect the cables from the controller's host ports to the data hosts.
 
-== Result
+.Result
 
 The process of upgrading a host interface card in your storage array is complete. You can resume normal operations.

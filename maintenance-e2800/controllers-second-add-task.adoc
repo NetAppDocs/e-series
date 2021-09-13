@@ -11,13 +11,13 @@ summary: Add a second controller to a controller shelf that has only one control
 [.lead]
 Follow this procedure to add a second controller canister in the E2800 array.
 
-== About this task
+.About this task
 
 You can add a second controller to a controller shelf that has only one controller canister. You add a second controller canister to the simplex version of either a E2812 controller shelf, E2824 controller shelf, or EF280 flash array.
 
 This procedure is also referred to as a simplex-to-duplex conversion, which is an online procedure. You can access data on the storage array while you perform this procedure.
 
-== Before you begin
+.Before you begin
 
 * Review link:controllers-overview-supertask-concept.html[Requirements for E2800 controller replacement].
 * If the currently installed controller canister includes a HIC, you need a new HIC that is identical to the HIC in the currently installed controller canister.
@@ -341,6 +341,6 @@ When the process is complete, the Change Volume Ownership dialog shows the new v
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 
-== Result
+.Result
 
 The process of adding a second controller is complete. You can resume normal operations.

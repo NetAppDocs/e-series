@@ -11,11 +11,11 @@ summary: Add a host interface card (HIC) to an E2800 array.
 [.lead]
 Follow this procedure to add a host interface cards (HIC) to an E2800 array.
 
-== About this task
+.About this task
 
 Adding a HIC increases the number of host ports in your E2800 storage array and provides additional host protocols. When you add HICs, you must power off the storage array, install the HIC, and reapply power. You can add HICs to E2800 controller canisters that only have baseboard host ports.
 
-== Before you begin
+.Before you begin
 
 * Review link:hics_overview_supertask_concept[Requirements for E2800 HIC replacement].
 * Schedule a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)
@@ -252,6 +252,6 @@ _If the new HIC ports do_ not _have the protocol you expect:_ You must apply a s
 +
 If you need instructions for configuring and using a new host protocol, refer to the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration].
 
-== Result
+.Result
 
 The process of adding a host interface card to your storage array is complete. You can resume normal operations.

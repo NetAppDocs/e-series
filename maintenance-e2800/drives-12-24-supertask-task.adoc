@@ -11,11 +11,11 @@ summary: Replace a drive in an E2800 with a 12-drive or 24-drive shelf.
 [.lead]
 Follow these instructions to replace a drive in an E2800 with a 12-drive or 24-drive shelf.
 
-== About this task
+.About this task
 
 The Recovery Guru in SANtricity System Manager monitors the drives in the storage array and can notify you of an impending drive failure or an actual drive failure. When a drive has failed, its amber Attention LED is on. You can hot-swap a failed drive while the storage array is receiving I/O.
 
-== Before you begin
+.Before you begin
 
 * Review the drive handling requirements in link:drives-overview-supertask-concept.html[Requirements for E2800 drive replacement].
 
@@ -114,6 +114,6 @@ When the drive reconstruction completes, the volume group is in an Optimal state
 . As required, reinstall the bezel.
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 
-== Result
+.Result
 
 Your drive replacement is complete. You can resume normal operations.

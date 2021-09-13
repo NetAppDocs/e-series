@@ -11,12 +11,12 @@ summary: Replace a host interface card (HIC) that has failed.
 [.lead]
 Follow this procedure to replace a host interface card (HIC) that has failed.
 
-== About this task
+.About this task
 The steps to replace a HIC depend on whether you have one or two controllers.
 
 If two controllers are present, each controller must have identical HICs.
 
-== Before you begin
+.Before you begin
 
 * Review link:hics-overview-supertask-concept.html[Requirements for E2800 HIC replacement].
 * You must schedule a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)
@@ -362,6 +362,6 @@ The file is saved in the Downloads folder for your browser with the name support
 +
 Contact technical support at http://mysupport.netapp.com[NetApp Support], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number.
 
-== Result
+.Result
 
 Your HIC replacement is complete. You can resume normal operations.

@@ -11,7 +11,7 @@ summary: Replace a fan canister in a 60-drive controller shelf or drive shelf.
 [.lead]
 Follow these instructions to replace a fan canister in an E2800 array with a 60-drive shelf.
 
-== About this task
+.About this task
 
 Each 60-drive controller shelf or drive shelf includes two fan canisters. If a fan canister fails, you must replace it as soon as possible to ensure that the shelf has adequate cooling.
 
@@ -22,7 +22,7 @@ This task describes how to prepare to replace a fan canister for the following c
 
 CAUTION: *Possible equipment damage* -- If you perform this procedure with the power turned on, you must complete it within 30 minutes to prevent the possibility of overheating the equipment.
 
-== Before you begin
+.Before you begin
 
 * Review the fan canister requirements in link:canisters-overview-supertask-concept.html[Requirements for canister replacement].
 * From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with the fan canister and select *Recheck* from the Recovery Guru to ensure no other items must be addressed first.
@@ -113,6 +113,6 @@ NOTE: After you replace the fan canister, the Attention LED stays on (solid ambe
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 
-== Result
+.Result
 
 Your fan canister replacement is complete. You can resume normal operations.

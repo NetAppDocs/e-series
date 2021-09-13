@@ -11,11 +11,11 @@ summary: Replace a drive drawer in an E2860 controller shelf or a DE460C drive s
 [.lead]
 Follow these instructions to replace a drive drawer in an E2860 controller shelf or a DE460C drive shelf.
 
-== About this task
+.About this task
 
 The steps to replace a failed drive drawer in an E2860 controller shelf or a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection. If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must stop all host I/O activity and power off the shelf before replacing the drive drawer.
 
-== Before you begin
+.Before you begin
 
 * Review the drive drawer requirements in link:drives-overview-supertask-concept.html[Requirements for E2800 drive replacement].
 * Install SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
@@ -399,6 +399,6 @@ If you replaced a drive drawer in an _expansion_ drive shelf without Drawer Loss
  .. Wait 10 minutes for the power-on process to complete.
 Confirm that both fans come on and that the amber LED on the back of the fans is off.
 
-== Result
+.Result
 
 Your drive drawer replacement is complete. You can resume normal operations.

@@ -11,7 +11,7 @@ summary: Replace a 60-drive controller shelf or drive shelf, which includes two 
 [.lead]
 Follow these instructions to replace a power canister in an E2800 array with a 60-drive shelf.
 
-== About this task
+.About this task
 
 Each 60-drive controller shelf or drive shelf includes two power canisters for power redundancy. If a power canister fails, you must replace it as soon as possible to ensure that the shelf has a redundant power source.
 
@@ -24,7 +24,7 @@ You can replace a power canister while your storage array is powered on and perf
 
 While you perform this task, the other power canister supplies power to both fans to ensure that the equipment does not overheat.
 
-== Before you begin
+.Before you begin
 
 * Review the power canister requirements in  link:canisters-overview-supertask-concept.html[Requirements for canister replacement].
 * From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with the power canister and select *Recheck* from the Recovery Guru to ensure no other items must be addressed first.
@@ -125,6 +125,6 @@ Confirm that the new power canister is working correctly, gather support data, a
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 
-== Result
+.Result
 
 Your power canister replacement is complete. You can resume normal operations.

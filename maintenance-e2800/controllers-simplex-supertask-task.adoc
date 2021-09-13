@@ -11,7 +11,7 @@ summary: You can replace a failed controller canister in a simplex configuration
 [.lead]
 You can replace a failed controller canister in a simplex configuration, which is a single-controller module configuration within the storage array.
 
-== About this task
+.About this task
 
 The controller canister contains a controller card, a battery, and an optional host interface card (HIC). When you replace a failed controller canister, you must remove the battery and HIC, if one is installed, from the original controller canister, and install them in the replacement controller canister.
 
@@ -23,7 +23,7 @@ This task describes how to prepare to replace a controller canister in the simpl
 
 Perform this task only if your storage array has one controller (simplex configuration).
 
-== Before you begin
+.Before you begin
 
 * Review link:controllers-overview-supertask-concept.html[Requirements for E2800 controller replacement].
 * Install SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
@@ -401,6 +401,6 @@ NOTE: _Unsecured drives_ are unassigned drives, global hot spare drives, or driv
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 
-== Result
+.Result
 
 Your controller replacement is complete. You can resume normal operations.

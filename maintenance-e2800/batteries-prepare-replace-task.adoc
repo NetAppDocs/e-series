@@ -11,12 +11,12 @@ summary: Prepare for E2800 battery replacement, following the appropriate steps 
 [.lead]
 Follow this procedure to prepare for a battery replacement in the E2800 storage array.
 
-== About this task
+.About this task
 The steps to prepare for battery replacement depend on whether you have a duplex configuration (two controllers) or a simplex configuration (one controller).
 
 If you have a duplex configuration, you must take the affected controller offline or, if you have a simplex configuration, you must stop host I/O operations and power down the controller shelf.
 
-== Before you begin
+.Before you begin
 
 * Review link:batteries-overview-requirements-concept.html[Requirements for E2800 battery replacement].
 * You have reviewed the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
