@@ -1,24 +1,20 @@
 ---
 permalink: remote-storage-volumes/setup-remote-volumes-concept.html
 sidebar: sidebar
-keywords: initial, setup, enable, e-series, system, connect, remote, storage, support, iscsi, protocol, set, up, volume, configure, e-series, array, cable, array, port
+keywords: configure Remote Storage Volumes, set up RTV, configure remote volumes, set up remote storage E-Series
 summary: Initial setup is required to enable the E-Series system to connect to the remote storage through the supported iSCSI protocol.
 ---
-= Set up Remote Storage Volumes
+= Configure hardware for Remote Storage Volumes
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-== Configure Remote storage device and E-Series array
+The E-Series storage system must be configured to communicate with the remote storage system through the supported iSCSI protocol.
 
-[.lead]
-Initial setup is required to enable the E-Series system to connect to the remote storage through the supported iSCSI protocol.
+== Configure remote storage device and E-Series array
 
-.Before you begin
 
-Before proceeding to the SANtricity System Manager to configure the Remote Storage Volumes feature, the following pre-requisites must be met:
-
-.Steps
+Before proceeding to the SANtricity System Manager to configure the Remote Storage Volumes feature, do the following:
 
 . Manually establish a cabled connection between the E-Series system and the remote storage system such that the two systems can be configured to communicate via iSCSI.
 . Configure the iSCSI ports such that the E-Series system and the remote storage system can communicate successfully with each other.
@@ -30,12 +26,12 @@ Before proceeding to the SANtricity System Manager to configure the Remote Stora
 . Map the remote storage device to the host defined for the E-Series storage system
 . Obtain the LUN number of the device used for the mapping.
 
-NOTE: It is recommended that the remote source volume is backed up before starting the import process.
+NOTE: Recommended: Back up the remote source volume before starting the import process.
 
 == Cable the storage arrays
 
 [.lead]
-As part of the setup process, the storage arrays and IO host must be cabled to the iSCSI-compatible interface.
+As part of the setup process, the storage arrays and I/O host must be cabled to the iSCSI-compatible interface.
 
 The following diagrams provide examples of how to cable the systems such that they perform Remote Storage Volume operations over an iSCSI connection.
 

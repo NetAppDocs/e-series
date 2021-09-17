@@ -21,39 +21,39 @@ Each AutoSupport message is a collection of log files, configuration data, state
 |===
 | File Name| Description
 a|
-`x-headers-data.txt`
+x-headers-data.txt
 a|
-A `.txt` file containing the X-header information.
+A .txt file containing the X-header information.
 a|
-`manifest.xml`
+manifest.xml
 a|
-An `.xml` file detailing the contents of the message.
+An .xml file detailing the contents of the message.
 a|
-`arraydata.xml`
+arraydata.xml
 a|
-An``.xml`` file containing the list of client persisted data.
+An .xml file containing the list of client persisted data.
 a|
-`appserver-config.txt`
+appserver-config.txt
 a|
-A `.txt` file containing application server configuration data.
+A .txt file containing application server configuration data.
 a|
-`wsconfig.txt`
+wsconfig.txt
 a|
-A `.txt` file containing the web service configuration data.
+A .txt file containing the web service configuration data.
 a|
-`host-info.txt`
+host-info.txt
 a|
-A `.txt` file containing information about the host environment.
+A .txt file containing information about the host environment.
 a|
-`server-logs.7z`
+server-logs.7z
 a|
-A `.7z` file containing every available webserver log file.
+A .7z file containing every available webserver log file.
 a|
-`client-info.txt`
+client-info.txt
 a|
-A `.txt` file with arbitrary key/value pairs for application-specific counters such as method and webpage hits.
+A .txt file with arbitrary key/value pairs for application-specific counters such as method and webpage hits.
 a|
-`webservices-profile.json`
+webservices-profile.json
 a|
 These files contain Webservices profile data and Jersey monitoring statistical data. By default, Jersey monitoring statistics are enabled. You can enable and disable them in the wsconfig.xml file, as follows:
 
@@ -75,7 +75,7 @@ The AutoSupport feature is enabled or disabled during the initial installation o
 You can enable or disable AutoSupport through the ASUPConfig.xml file, as described in the steps below. Alternatively, you can enable or disable this feature through the API using *Configuration* and *POST/asup*, and then entering "true" or "false."
 
 . Open the ASUPConfig.xml file in the working directory.
-. Locate the lines for <asupdata enabled=`"(Boolean)`" timestamp=`"`">
+. Locate the lines for <asupdata enabled="(Boolean)" timestamp=>
 . Enter true (enable) or false (disable). For example:
 +
 ----
@@ -91,7 +91,7 @@ NOTE: The timestamp entry is superfluous.
 You can configure the AutoSupport feature to use HTTPS, HTTP, or SMTP delivery methods. HTTPS is the default delivery method.
 
 . Access the ASUPConfig.xml file in the working directory.
-. In the string, <delivery type=`"n`">, enter 1, 2, or 3 as described in the table:
+. In the string, <delivery type="n">, enter 1, 2, or 3 as described in the table:
 +
 [options="header"]
 |===
@@ -101,13 +101,13 @@ a|
 a|
 HTTPS (default)
 
-<delivery type=`"1`">
+<delivery type="1">
 a|
 2
 a|
 HTTP
 
-<delivery type=`"2`">
+<delivery type="2">
 a|
 3
 a|

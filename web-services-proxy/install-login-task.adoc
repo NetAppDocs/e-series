@@ -1,0 +1,118 @@
+---
+permalink: web-services-proxy/install-login-task.html
+sidebar: sidebar
+keywords: log in API, log in Unified Manager
+summary: Access and log in to the Web Services API and Unified Manager.
+---
+= Log in to API and Unified Manager
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+Web Services includes API documentation, which enables you to directly interact with the REST API. It also includes Unified Manager, a browser-based interface for managing multiple E-Series storage systems.
+
+== Log in to Web Services API
+
+After you install the Web Services Proxy, you can access the interactive API documentation in a browser.
+
+The API documentation runs with each instance of Web Services, and is also available in a static PDF format from the NetApp Support site. To access the interactive version, you open a browser and enter the URL pointing to where Web Services resides (either a controller for the embedded version or a server for the proxy).
+
+NOTE: The Web Services API implements the OpenAPI specification (originally called the Swagger specification).
+
+For initial login, you use the "admin" credentials. "Admin" is considered a super administrator with access to all functions and roles.
+
+.Steps
+
+. Open a browser.
+. Enter the URL for the embedded or proxy implementation:
+ ** Embedded: ++ https://<controller>:<port>/devmgr/docs/ ++
++
+NOTE: In this URL, <controller> is the IP address or FQDN of the controller, and <port> is the management port number of the controller (defaults to 8443).
++
+ ** Proxy: ++ http[s]://<server>:<port>/devmgr/docs/ ++
++
+NOTE: In this URL, <server> is the IP address or FQDN of the server where the proxy is installed, and <port> is the listening port number (defaults to 8080 for HTTP or 8443 for HTTPS).
++
+NOTE: If the listening port is already in use, the proxy detects the conflict and prompts you to choose a different listening port.
++
+The API documentation opens in the browser.
+. When the interactive API documentation opens, go to the drop-down menu in the upper right of the page and select *utils*.
+. Click the *Login* category to see the available endpoints.
+. Click the *POST: /login* endpoint, and then click *Try it out*.
+. For first-time login, enter admin for the username and password.
+. Click *Execute*.
+. To access the endpoints for storage management, go to the drop-down menu in the upper right and select *v2*.
++
+The high-level categories for endpoints are displayed. You can navigate the API documentation as described in the table.
++
+[options="header"]
+|===
+| Area| Description
+a|
+Drop-down menu
+a|
+At the upper right of the page, a drop-down menu provides options for switching between version 2 of the API documentation (V2), the SYMbol interface (SYMbol V2), and API utilities (utils) for logging in.
+
+NOTE: Because version 1 of the API documentation was a prerelease and not generally available, V1 is not included in the drop-down menu.
+a|
+Categories
+a|
+The API documentation is organized by high-level categories (for example: Administration, Configuration). Click on a category to see the related endpoints.
+a|
+Endpoints
+a|
+Select an endpoint to see its URL paths, required parameters, response bodies, and status codes that the URLs are likely to return.
+a|
+Try It Out
+a|
+Interact with the endpoint directly by clicking *Try It Out*. This button is provided in each of the expanded views for endpoints.
+
+When you click the button, fields appear for entering parameters (if applicable). You can then enter values and click *Execute*.
+
+The interactive documentation uses JavaScript to make the request directly to the API; it is not a test request.
+|===
+
+== Log in to Unified Manager
+
+After you install the Web Services Proxy, you can access Unified Manager to manage multiple storage systems in a web-based interface.
+
+To access Unified Manager, you open a browser and enter the URL pointing to where the proxy is installed. The following browsers and versions are supported.
+
+[options="header"]
+|===
+| Browser| Minimum version
+a|
+Google Chrome
+a|
+79
+a|
+Microsoft Internet Explorer
+a|
+11
+a|
+Microsoft Edge
+a|
+79
+a|
+Mozilla Firefox
+a|
+70
+a|
+Safari
+a|
+12
+|===
+
+.Steps
+
+. Open a browser and enter the following URL:
+`+http[s]://<server>:<port>/um+`
++
+In this URL, <__server__> represents the IP address or FQDN of the server where the Web Services Proxy is installed, and <__port__> represents the listening port number (defaults to 8080 for HTTP or 8443 for HTTPS).
++
+The Unified Manager login page opens.
+
+. For first-time login, enter admin for the user name, and then set and confirm a password for the admin user.
++
+The password can include up to 30 characters. For further information about users and passwords, see the Access Management section of the Unified Manager online help.
