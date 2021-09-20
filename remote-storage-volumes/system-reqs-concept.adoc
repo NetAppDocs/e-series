@@ -1,15 +1,15 @@
 ---
 permalink: remote-storage-volumes/system-reqs-concept.html
 sidebar: sidebar
-keywords: system, compatibility, requirement, remote, storage, volume, support, protocol, e-series, hardware, preparation, production, import
+keywords: Remote Storage Volumes requirements, RTV requirements, RTV restrictions, remote volumes, remote storage E-Series
 summary: Your system must meet compatibility requirements for Remote Storage Volumes.
 ---
-= System requirements
+= Requirements and restrictions for remote storage
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Your system must meet compatibility requirements for Remote Storage Volumes.
+Before using Remote Storage Volumes, review the following requirements and restrictions.
 
 == Supported protocols
 
@@ -17,8 +17,6 @@ Your system must meet compatibility requirements for Remote Storage Volumes.
 For the initial release of the Remote Storage Volumes feature, support is only available for iSCSI and IPv4 protocols.
 
 Refer to the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for up-to-date support and configuration information between the host and E-Series (destination) array used for the Remote Storage Volumes feature.
-
-NOTE: The Remote Storage Volumes feature only supports 512 block sizes.
 
 == Supported E-Series systems
 
@@ -46,9 +44,23 @@ The minimum hardware required includes the following:
  ** iSCSI capable interfaces
 * Both E-Series controllers must be able to communicate with the remote storage through one or more iSCSI connections
 
+== Restrictions
+
+The Remote Storage feature has the following restrictions:
+
+* Mirroring must be disabled.
+* Destination volume on the E-Series system must not have snapshots.
+* Destination volume on the E-Series system must not be mapped to any hosts before the import is started.
+* Destination volume on the E-Series system must have resource-provisioning disabled.
+* Direct mappings of the remote storage volume to a host or multiple hosts is not supported.
+* Web Services Proxy is not supported.
+* iSCSI CHAP secrets are not supported.
+* SMcli is not supported.
+* VMware Datastore is not supported.
+* Only one storage system in the relationship/import pair can be upgraded at a time when there is an import pair present.
+
 == Preparation for production imports
 
-[.lead]
-A test or "dry run" import should be performed before production imports to verify proper storage and fabric configuration.
+You should perform a test or "dry run" import before production imports to verify proper storage and fabric configuration.
 
-There are many variables that can impact the import operation and how long it takes to complete. To ensure a production import is successful and to get an estimate on how long it will take to complete, it is recommended to first perform multiple smaller "`test`" imports. These imports can be used to ensure all connections are working as expected and the import operation is completing in an appropriate amount of time. Adjustments can then be made to achieve the desired results before the production import is initiated.
+Many variables can impact the import operation and completion time. To ensure a production import is successful and to get a duration  estimate, you should first perform multiple smaller "`test`" imports. Use these test imports to ensure all connections are working as expected and the import operation is completing in an appropriate amount of time. You can then make adjustments to achieve the desired results before the production import is initiated.

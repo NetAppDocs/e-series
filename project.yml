@@ -664,13 +664,27 @@ sidebar:
             - title: Overview
               url: "/web-services-proxy/index.html"
             - title: Learn about Web Services
-              url: "/web-services-proxy/overview-intro-concept.html"
-            - title: Install Web Services Proxy
-              url: "/web-services-proxy/install-wsp-task.html"
-            - title: Configure Web Services Proxy
-              url: "/web-services-proxy/install-config-task.html"
-            - title: Uninstall Web Services Proxy
-              url: "/web-services-proxy/install-uninstall-task.html"
+              entries:
+              - title: Web Services API overview
+                url: "/web-services-proxy/overview-intro-concept.html"
+              - title: Compatibility and restrictions
+                url: "/web-services-proxy/overview-compat-concept.html"
+              - title: API basics
+                url: "/web-services-proxy/overview-api-concept.html"
+              - title: Terms and concepts
+                url: "/web-services-proxy/overview-terms-concept.html"
+            - title: Install and configure
+              entries:
+              - title: Review requirements
+                url: "/web-services-proxy/install-reqs-task.html"
+              - title: Install Web Services Proxy
+                url: "/web-services-proxy/install-wsp-task.html"
+              - title: Log in to API and Unified Manager
+                url: "/web-services-proxy/install-login-task.html"
+              - title: Configure Web Services Proxy
+                url: "/web-services-proxy/install-config-task.html"
+              - title: Uninstall Web Services Proxy
+                url: "/web-services-proxy/install-uninstall-task.html"
             - title: Manage user access
               url: "/web-services-proxy/access-intro-concept.html"
             - title: Manage security and certificates
@@ -685,13 +699,13 @@ sidebar:
         entries:
           - title: Overview
             url: "/remote-storage-volumes/index.html"
-          - title: Requirements
+          - title: Requirements and restrictions
             url: "/remote-storage-volumes/system-reqs-concept.html"
-          - title: Set up Remote Storage Volumes
+          - title: Configure hardware
             url: "/remote-storage-volumes/setup-remote-volumes-concept.html"
           - title: Import remote storage
             url: "/remote-storage-volumes/import-remote-storage-task.html"
-          - title: View import progress
+          - title: Manage import progress
             url: "/remote-storage-volumes/view-import-progress-task.html"
           - title: Modify connection settings
             url: "/remote-storage-volumes/modify-remote-storage-task.html"
@@ -701,17 +715,17 @@ sidebar:
         entries:
           - title: Overview
             url: /san-spvc-ic-overview.html
-          - title: Installation
+          - title: Install the plugin
             url: /san-spvc-ic-installation.html
-          - title: User access
+          - title: Configure access permissions
             url: /san-spvc-ic-user-access.html
-          - title: Login and navigation
+          - title: Log in and navigate
             url: /san-spvc-ic-login-and-navigation.html
-          - title: Storage array discovery
+          - title: Discover storage arrays
             url: /san-spvc-ic-storage-array-discovery.html
-          - title: Storage provisioning
+          - title: Provision storage
             url: /san-spvc-ic-storage-provisioning.html
-          - title: Plugin removal
+          - title: Remove plugin
             url: /san-spvc-ic-plugin-removal.html
       - title: Legacy solutions
         entries:

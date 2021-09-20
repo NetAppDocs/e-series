@@ -13,7 +13,6 @@ You can manage user access to the Web Services API and Unified Manager for secur
 
 == Overview of access management
 
-[.lead]
 Access management includes role-based logins, password encryption, basic authentication, and LDAP integration.
 
 === Role-based access
@@ -97,12 +96,10 @@ For information on configuring LDAP functionality, refer to configuration option
 
 == Configure user access
 
-[.lead]
 You can manage user access by applying additional encryption to passwords, setting basic authentication, and defining role-based access.
 
 === Apply additional encryption to passwords
 
-[.lead]
 For the highest level of security, you can apply additional encryption to passwords using the existing SHA256 password encoding.
 
 .Before you begin
@@ -121,7 +118,6 @@ NOTE: Alternatively, you can salt and hash local user passwords whenever passwor
 
 === Configure basic authentication
 
-[.lead]
 By default basic authentication is enabled, which means the server returns a basic authentication challenge. If desired, you can change that setting in the wsconfig.xml file.
 
 . Open the wsconfig.xml file, located at:
@@ -136,7 +132,6 @@ For example: <env key="enable-basic-auth">true</env>
 
 === Configure role-based access
 
-[.lead]
 To limit user access to specific functions, you can modify which roles are specified for each user account.
 
 .Before you begin
@@ -162,6 +157,7 @@ Roles include:
  ** storage.admin -- Full read/write access to storage system configuration.
  ** storage.monitor -- Read-only access to view storage system data.
  ** support.admin -- Access to all hardware resources on storage systems and support operations such as AutoSupport (ASUP) retrieval.
-*Note:* The storage.monitor role is required for all users, including the administrator.
++
+NOTE: The storage.monitor role is required for all users, including the administrator.
 
 . Save the file.

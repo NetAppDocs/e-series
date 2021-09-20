@@ -47,8 +47,8 @@ The Select Workload dialog box appears. A workload contains volumes with similar
 . Click *Next*. If your workload is associated with a supported application type, enter the information requested; otherwise, go to the next step.
 +
 The Add/Edit Volumes dialog box appears. In this dialog, you create volumes from eligible pools or volume groups. For each eligible pool and volume group, the number of drives available and the total free capacity appears. For some application-specific workloads, each eligible pool or volume group shows the proposed capacity based on the suggested volume configuration and shows the remaining free capacity in GiB. For other workloads, the proposed capacity appears as you add volumes to a pool or volume group and specify the reported capacity.
-
-.Before you begin adding volumes, read the guidelines in the following table.
++
+. Before you begin adding volumes, read the guidelines in the following table.
 +
 [options="header"]
 |===
@@ -97,6 +97,7 @@ a|Volume Type
 a|If you selected Application-specific workload, the Volume Type field appears. This indicates the type of volume that was created for an application-specific workload.
 a|Volume Block Size (EF300 and EF600 only)
 a|Shows the block sizes that can be created for the volume:
+
 * 512 – 512 bytes
 * 4K – 4,096 bytes
 a|Segment Size
@@ -130,17 +131,14 @@ DA increases data integrity across the entire storage system. DA enables the sto
 
 A host can be created automatically or manually:
 
-* *Automatic* -- Automatic host creation for SCSI-based (not NVMe-oF) hosts is initiated by the Host Context Agent (HCA). The HCA is a utility that you can install on each host attached to the storage array. Each host that has the HCA installed pushes its configuration information to the storage array controllers through the I/O path. Based on the host information, the controllers automatically create the host and the associated host ports and set the host type. If needed, you can make any additional changes to the host configuration.
-
-[NOTE]
-Host Context Agent software for Linux and Windows is available from https://mysupport.netapp.com/site/downloads[https://mysupport.netapp.com/site/downloads^].
-
-After the HCA performs its automatic detection, the host is automatically configured with the following attributes:
+* *Automatic* -- Automatic host creation for SCSI-based (not NVMe-oF) hosts is initiated by the Host Context Agent (HCA). The HCA is a utility that you can install on each host attached to the storage array. Each host that has the HCA installed pushes its configuration information to the storage array controllers through the I/O path. Based on the host information, the controllers automatically create the host and the associated host ports and set the host type. If needed, you can make any additional changes to the host configuration. After the HCA performs its automatic detection, the host is automatically configured with the following attributes:
 
 ** The host name derived from the system name of the host.
 ** The host identifier ports that are associated with the host.
 ** The Host Operating System Type of the host.
 
+[NOTE]
+Host Context Agent software for Linux and Windows is available from https://mysupport.netapp.com/site/downloads[https://mysupport.netapp.com/site/downloads^].
 [NOTE]
 Hosts are created as stand-alone hosts; the HCA does not automatically create or add to host clusters.
 
@@ -166,7 +164,9 @@ The table lists the automatically created hosts.
 
 ==== Manually creating the host
 
-.Before you begin, read the following guidelines:
+.Before you begin
+
+Read the following guidelines:
 
 ** You must already have added or discovered storage arrays within your environment.
 ** You must define the host identifier ports that are associated with the host.
@@ -174,6 +174,7 @@ The table lists the automatically created hosts.
 ** This operation does not succeed if the name you choose is already in use.
 ** The length of the name cannot exceed 30 characters.
 
+.Steps
 . From the Manage page, select the storage array with the host connection.
 . Select *Provisioning > Configure Hosts*.
 +
@@ -188,22 +189,19 @@ The Create Host dialog box appears.
 [options="header"]
 |===
 a|Field a|Description
-|Name |Type a name for the new host.
+a|Name a|Type a name for the new host.
 
-|Host operating system type
-|Select the operating system that is running on the new host from the drop-down list.
-|Host interface type
-
-|(Optional) If you have more than one type of host interface supported on your storage array, select the host interface type that you want to use.
-|Host ports
-
-|Do one of the following:
+a|Host operating system type
+a|Select the operating system that is running on the new host from the drop-down list.
+a|Host interface type
+a|(Optional) If you have more than one type of host interface supported on your storage array, select the host interface type that you want to use.
+a|Host ports
+a|Do one of the following:
 
 * Select I/O Interface. Generally, the host ports should have logged in and be available from the drop-down list. You can select the host port identifiers from the list.
 * Manual add. If a host port identifier is not displayed in the list, it means that the host port has not logged in. An HBA utility or the iSCSI initiator utility may be used to find the host port identifiers and associate them with the host.You can manually enter the host port identifiers or copy/paste them from the utility (one at a time) into the Host ports field.You must select one host port identifier at a time to associate it with the host, but you can continue to select as many identifiers that are associated with the host. Each identifier is displayed in the Host ports field. If necessary, you also can remove an identifier by selecting the X next to it.
-|Set CHAP initiator secret
-
-|(Optional) If you selected or manually entered a host port with an iSCSI IQN, and if you want to require a host that tries to access the storage array to authenticate using Challenge Handshake Authentication Protocol (CHAP), select the Set CHAP initiator secret checkbox. For each iSCSI host port you selected or manually entered, do the following:
+a|Set CHAP initiator secret
+a|(Optional) If you selected or manually entered a host port with an iSCSI IQN, and if you want to require a host that tries to access the storage array to authenticate using Challenge Handshake Authentication Protocol (CHAP), select the Set CHAP initiator secret checkbox. For each iSCSI host port you selected or manually entered, do the following:
 
 * Enter the same CHAP secret that was set on each iSCSI host initiator for CHAP authentication. If you are using mutual CHAP authentication (two-way authentication that enables a host to validate itself to the storage array and for a storage array to validate itself to the host), you also must set the CHAP secret for the storage array at initial setup or by changing settings.
 * Leave the field blank if you do not require host authentication.

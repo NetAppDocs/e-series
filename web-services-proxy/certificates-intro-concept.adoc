@@ -9,15 +9,9 @@ summary: Manage certificates using the Web Services Proxy configuration files, u
 :imagesdir: ../media/
 
 [.lead]
-You can manage certificates using the Web Services Proxy configuration files, using API commands, or using the Unified Manager interface.
+For security in the Web Services Proxy, you can specify an SSL port designation and you can manage certificates. Certificates identify website owners for secure connections between clients and servers.
 
-Certificates identify website owners for secure connections between clients and servers.
-
-== Set up security and certificates
-
-For security, you can specify an SSL port designation and you can manage certificates.
-
-=== Enable SSL
+== Enable SSL
 
 The Web Services Proxy uses Secure Sockets Layer (SSL) for security, which is enabled during installation. You can change the SSL port designation in the wsconfig.xml file.
 
@@ -32,12 +26,14 @@ The Web Services Proxy uses Secure Sockets Layer (SSL) for security, which is en
 <sslport clientauth=”request”>8443</sslport>
 ----
 
+.Result
+
 When the server is started with SSL configured, the server looks for the keystore and truststore files.
 
 * If the server does not find a keystore, the server uses the IP address of the first detected non-loopback IPv4 address to generate a keystore and then add a self-signed certificate to the keystore.
 * If the server does not find a truststore, or the truststore is not specified, the server uses the keystore as the truststore.
 
-=== Bypass certificate validation
+== Bypass certificate validation
 
 To support secure connections, the Web Services Proxy validates the storage systems`' certificates against its own trusted certificates. If needed, you can specify that the proxy bypass that validation before connecting to the storage systems.
 
@@ -58,13 +54,9 @@ To support secure connections, the Web Services Proxy validates the storage syst
 
 . Save the file.
 
-=== Generate and import a host management certificate
+== Generate and import a host management certificate
 
 Certificates identify website owners for secure connections between clients and servers. To generate and import Certificate Authority (CA) certificates for the host system where the Web Services Proxy is installed, you can use API endpoints.
-
-.Before you begin
-
-* You are logged in to the interactive API documentation.
 
 To manage certificates for the host system, you perform the following tasks using the API:
 
@@ -76,7 +68,8 @@ NOTE: You can also manage certificates in the Unified Manager interface. For mor
 
 .Steps
 
-. From the interactive API documentation, go to the drop-down menu in the upper right and then select *v2*.
+. link:install-login-task.html[Log in to the interactive API documentation].
+. Go to the drop-down menu in the upper right and then select *v2*.
 . Expand the *Administration* link and scroll down to the */certificates* endpoints.
 . Generate the CSR file:
  .. Select *POST:/certificates*, and then select *Try it out*.

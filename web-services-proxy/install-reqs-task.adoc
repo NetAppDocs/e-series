@@ -1,0 +1,70 @@
+---
+permalink: web-services-proxy/install-reqs-task.html
+sidebar: sidebar
+keywords: installation, download, install proxy,
+summary: Installation and upgrade requirements and considerations for Web Services Proxy.
+---
+= Review installation and upgrade requirements
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before installing the Web Services Proxy, review the installation requirements and upgrade considerations.
+
+== Installation requirements
+
+You can install and configure the Web Services Proxy on a Windows or Linux host system.
+
+Proxy installation includes the following requirements.
+
+[options="header"]
+|===
+| Requirement| Description
+a|
+Hostname limitations
+a|
+Be sure that the hostname of the server where you plan to install the Web Services Proxy contains only ASCII letters, numerical digits, and hyphens (-). This requirement is due to a limitation of Java Keytool, which is used in generating a self-signed certificate for the server. If the hostname of your server contains any other characters, such as an underscore (_), the Webserver will fail to start after installation.
+a|
+Operating systems
+a|
+You can install the proxy on the following operating systems:
+
+* Linux
+* Windows
+
+For a complete list of operating systems and firmware compatibility, see the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+
+a|
+Linux: Additional Considerations
+a|
+Linux Standard Base libraries (init-functions) are required for the Webserver to function properly. You must install the lsb/insserv packages for your operating system. For more information, refer to the "Additional packages required" section of the Readme file.
+
+a|
+Multiple instances
+a|
+You can install only one instance of Web Services Proxy on a server; however, you can install the proxy on multiple servers within your network.
+
+a|
+Capacity planning
+a|
+Web Services Proxy requires adequate space for logging. Make sure that your system meets the following available disk space requirements:
+
+* Required installation space -- 275 MB
+* Minimum logging space -- 200 MB
+* System memory -- 2 GB; heap space is 1 Gb by default
+
+You can use a disk-space monitoring tool to verify available disk drive space for persistent storage and logging.
+
+a|
+License
+a|
+The Web Services Proxy is a free, standalone product that does not require a license key. However, applicable copyrights and terms of service apply. If you are installing the proxy in either Graphical or Console mode, you must accept the End User License Agreement (EULA).
+
+|===
+
+== Upgrade considerations
+
+If you are upgrading from a previous version, be aware that some items are preserved or removed.
+
+* For the Web Services Proxy, previous configuration settings are preserved. These settings include user passwords, all discovered storage systems, server certificates, trusted certificates, and server runtime configuration.
+* For Unified Manager, all SANtricity OS files previously loaded in the repository are removed during the upgrade.

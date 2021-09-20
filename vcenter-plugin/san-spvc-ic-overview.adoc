@@ -32,3 +32,14 @@ The plugin requires a VMware vCenter Server Appliance deployed in the VMware env
 Refer to the following figure for more information on communications in the vCenter environment.
 
 image::../media/vcenter_communication.png[]
+
+== Configuration overview
+. link:san-spvc-ic-installation.html[Install and register the plugin].
+. link:san-spvc-ic-user-access.html[Configure plugin access permissions].
+. link:san-spvc-ic-login-and-navigation.html[Log in to the plugin interface].
+. link:san-spvc-ic-storage-array-discovery.html[Discover storage arrays].
+. link:san-spvc-ic-storage-provisioning.html[Provision storage].
+
+== Find more information
+* For online help, see the user interface of the Storage Plugin for vCenter.
+* For VMware vSphere Documentation, see http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm.
