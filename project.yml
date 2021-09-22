@@ -816,14 +816,14 @@ homepage:
           url: https://fusion.netapp.com/
         - title: Active IQ (login required)
           url: https://activeiq.netapp.com/?source=aiqnsspage
-        - title: Tools & support
-          links:
-            - title: NetApp Hardware Universe
-              url: https://hwu.netapp.com/Home/Index#none
-            - title: NetApp Interoperability Matrix
-              url: http://mysupport.netapp.com/matrix/
-            - title: NetApp Knowledge Base
-              url: https://kb.netapp.com/
+    - title: Tools & support
+      links:
+          - title: NetApp Hardware Universe
+            url: https://hwu.netapp.com/Home/Index#none
+          - title: NetApp Interoperability Matrix
+            url: http://mysupport.netapp.com/matrix/
+          - title: NetApp Knowledge Base
+            url: https://kb.netapp.com/
     - title: Other doc sites
       links:
           - title: AFF storage systems
