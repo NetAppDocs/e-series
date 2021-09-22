@@ -774,8 +774,6 @@ homepage:
           url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html
         - title: SANtricity Unified Manager 5
           url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-5/home.html
-        - title: vCenter
-          url: /getting-started/learn-software-concept.html
     - title: SANtricity solutions & APIs
       links:
         - title: Plug-in for vCenter
