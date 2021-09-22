@@ -760,16 +760,24 @@ homepage:
   tiles:
     - title: Get started
       links:
+        - title: New features in SANtricity OS
+          url: /whats-new.html
         - title: E-series hardware
           url: /getting-started/learn-hardware-concept.html
         - title: SANtricity software
           url: /getting-started/learn-software-concept.html
         - title: Quick start
           url: /getting-started/getup-run-concept.html
+    - title: Online help
+      links:
+        - title: SANtricity System Manager 11.7
+          url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html
+        - title: SANtricity Unified Manager 5
+          url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-5/home.html
+        - title: vCenter
+          url: /getting-started/learn-software-concept.html
     - title: Learn
       links:
-        - title: New features in SANtricity OS
-          url: /whats-new.html
         - title: Reduce latency with all-flash EF-Series
           url: https://www.netapp.com/data-storage/ef-series/
         - title: E-Series hybrid-flash arrays are built to deliver
@@ -784,10 +792,6 @@ homepage:
           url: https://hwu.netapp.com/Home/Index#none
         - title: NetApp Interoperability Matrix
           url: http://mysupport.netapp.com/matrix/
-        - title: NetApp Fusion (login required)
-          url: https://fusion.netapp.com/
-        - title: Active IQ (login required)
-          url: https://activeiq.netapp.com/?source=aiqnsspage
         - title: NetApp Knowledge Base
           url: https://kb.netapp.com/
     - title: SANtricity solutions & APIs
@@ -814,6 +818,10 @@ homepage:
           url: https://fieldportal.netapp.com/content/199944
         - title: EF300 overview and technical details (login required)
           url: https://fieldportal.netapp.com/content/1417672
+        - title: NetApp Fusion (login required)
+          url: https://fusion.netapp.com/
+        - title: Active IQ (login required)
+          url: https://activeiq.netapp.com/?source=aiqnsspage
     - title: Other doc sites
       links:
           - title: AFF storage systems
