@@ -788,11 +788,11 @@ homepage:
           url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
     - title: Learn
       links:
-        - title: Reduce latency with all-flash EF-Series
+        - title: Why EF-Series arrays?
           url: https://www.netapp.com/data-storage/ef-series/
-        - title: E-Series hybrid-flash arrays are built to deliver
-          url: https://www.netapp.com/data-storage/e-series/
-        - title: SANtricity software for proven storage systems
+        - title: Why NetApp E-Series arrays?
+          url: /https://www.netapp.com/data-storage/e-series/
+        - title: Why SANtricity software?
           url: https://www.netapp.com/data-management/santricity/
         - title: E-Series Performance Analyzer
           url: https://blog.netapp.com/monitoring-netapp-eseries
