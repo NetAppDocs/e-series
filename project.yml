@@ -786,16 +786,16 @@ homepage:
           url: /web-services-proxy/index.html
         - title: SMI-S providers
           url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
-    - title: Learn
+    - title: Datasheets
       links:
-        - title: Why EF-Series arrays?
-          url: https://www.netapp.com/data-storage/ef-series/
-        - title: Why NetApp E-Series arrays?
-          url: /https://www.netapp.com/data-storage/e-series/
-        - title: Why SANtricity software?
-          url: https://www.netapp.com/data-management/santricity/
-        - title: E-Series Performance Analyzer
-          url: https://blog.netapp.com/monitoring-netapp-eseries
+        - title: EF-Series
+          url: https://www.netapp.com/pdf.html?item=/media/19339-DS-4082.pdf
+        - title: E5700 series
+          url: https://www.netapp.com/pdf.html?item=/media/7572-ds-3894.pdf
+        - title: E2800 series
+          url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf
+        - title: SANtricity software
+          url: https://www.netapp.com/pdf.html?item=/media/7676-ds-3891.pdf
     - title: Performance apps & add-ons
       links:
         - title: SANtricity app for Splunk Enterprise
@@ -804,6 +804,8 @@ homepage:
           url: https://splunkbase.splunk.com/app/1933/
         - title: Performance analyzer with E-Series + Grafana
           url: https://github.com/NetApp/eseries-perf-analyzer
+        - title: Blog on E-Series Performance Analyzer
+          url: https://blog.netapp.com/monitoring-netapp-eseries
     - title: For the SEs
       links:
         - title: E-Series/EF-Series technical training (login required)
