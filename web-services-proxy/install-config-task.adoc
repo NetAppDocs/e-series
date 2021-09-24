@@ -21,7 +21,7 @@ The Webserver service is started during installation and runs in the background.
  ** For Windows, go to the *Start* menu, select *Administrative Tools* > *Services*, locate "`NetApp SANtricity Web Services,`" and then select either *Stop* or *Restart*.
  ** For Linux, choose the method of stopping and restarting the Webserver for your operating system version. During the installation, a popup dialog indicated what daemon started. For example:
 +
-web_services_proxy webserver installed and started. You can interact with it using systemctl start|stop|restart|status web_services_proxy.service
+`web_services_proxy webserver installed and started. You can interact with it using systemctl start|stop|restart|status web_services_proxy.service`
 +
 The most common method for interacting with the service is by using *systemctl* commands.
 
@@ -92,19 +92,19 @@ However, there are some known timing issues that occur in a small percentage of 
 .Steps
 
 . Do one of the following:
- ** Windows: Open the appserver64.ini file, and then add the Dload-balance.enabled=true property.
+ ** Windows: Open the appserver64.ini file, and then add the `Dload-balance.enabled=true` property.
 +
-For example: vmarg.7=-Dload-balance.enabled=true
+For example: `vmarg.7=-Dload-balance.enabled=true`
 
- ** Linux: Open the webserver.sh file, and then add the Dload-balance.enabled=true property.
+ ** Linux: Open the webserver.sh file, and then add the `Dload-balance.enabled=true` property.
 +
-For example: DEBUG_START_OPTIONS="-Dload-balance.enabled=true"
+For example: `DEBUG_START_OPTIONS="-Dload-balance.enabled=true"`
 . Save your changes.
 . Restart the Webserver service so the change takes effect.
 
 == Disable SYMbol HTTPS
 
-You can disable SYMbol commands (default setting) and send commands over a remote procedure call (RPC). This setting can be changed in the wsconfig.xmlfile.
+You can disable SYMbol commands (default setting) and send commands over a remote procedure call (RPC). This setting can be changed in the wsconfig.xml file.
 
 By default, the Web Services Proxy sends SYMbol commands over HTTPS for all E2800 series and E5700 series storage systems running SANtricity OS versions 08.40 or later. SYMbol commands sent over HTTPS are authenticated to the storage system. If needed, you can disable HTTPS SYMbol support and send commands over RPC. Whenever SYMbol over RPC is configured, all passive commands to the storage system are enabled without authentication.
 
@@ -115,9 +115,12 @@ NOTE: When SYMbol over RPC is used, the Web Services Proxy cannot connect to sys
 . Open the wsconfig.xml file, located at:
  ** (Windows) -- C:\Program Files\NetApp\SANtricity Web Services Proxy
  ** (Linux) -- /opt/netapp/santricity_web_services_proxy
-. In the devicemgt.symbolclientstrategy entry, replace the httpsPreferred value with rpcOnly.
+. In the `devicemgt.symbolclientstrategy` entry, replace the `httpsPreferred` value with `rpcOnly`.
 +
-For example: <env key="devicemgt.symbolclientstrategy">rpcOnly</env>
+For example:
+
++
+``<env key="devicemgt.symbolclientstrategy">rpcOnly</env>``
 
 . Save the file.
 

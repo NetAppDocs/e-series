@@ -4,19 +4,23 @@ sidebar: sidebar
 keywords: Web Services, WSP, SANtricity API,
 summary: Learn about Web Services API
 ---
-= Web Services API overview
+= Web Services and Unified Manager overview
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you install and configure the Web Services proxy, read the overview of Web Services and SANtricity Unified Manager, compatibility and restrictions, and API basics.
+Before you install and configure the Web Services proxy, read the overview of Web Services and SANtricity Unified Manager.
 
-==
-
+== Web Services
 Web Services is an Application Programming Interface (API) that allows you to configure, manage, and monitor NetApp E-Series and EF-Series storage systems. By issuing API requests, you can complete workflows such as configuration, provisioning, and performance monitoring for E-Series storage systems.
 
+When using the Web Services API to manage storage systems, you should be familiar with the following:
 
-== Web Services implementations
+* JavaScript Object Notation (JSON) – Because data within Web Services is encoded through JSON, you should be familiar with JSON programming concepts. For more information, see http://www.json.org[Introducing JSON^].
+* Representational state transfer (REST) – Web Services is a RESTful API that provides access to virtually all the SANtricity management capabilities, so you should be familiar with REST concepts. For more information, see http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm[Architectural Styles and
+the Design of Network-based Software Architectures^].
+* Programming language concepts – Java and Python are the most common programming languages used with the Web Services API, but any programming language that can make HTTP requests is sufficient for API interaction.
+
 Web Services is available in two implementations:
 
 * *Embedded* -- A RESTful API server is embedded on each controller of an E2800/EF280 storage system running NetApp SANtricity 11.30 or later versions, an E5700/EF570 running SANtricity 11.40 or later versions, and an EF300 or EF600 running SANtricity 11.60 or later versions. No installation is required.
@@ -34,7 +38,7 @@ The following table provides a comparison of the proxy and the embedded version.
 a|
 Installation
 a|
-Requires a host system (Linux or Windows). The proxy is available for download at the http://mysupport.netapp.com/NOW/cgi-bin/software/?product=E-Series+SANtricity+Web+Services+%28REST+API%29&platform=WebServices[NetApp Support Site] or on https://hub.docker.com/r/netapp/eseries-webservices/[DockerHub].
+Requires a host system (Linux or Windows). The proxy is available for download at the http://mysupport.netapp.com/NOW/cgi-bin/software/?product=E-Series+SANtricity+Web+Services+%28REST+API%29&platform=WebServices[NetApp Support Site^] or on https://hub.docker.com/r/netapp/eseries-webservices/[DockerHub^].
 a|
 No installation or enablement required.
 a|

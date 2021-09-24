@@ -39,7 +39,7 @@ A wizard for importing remote storage is displayed.
 . In Step 1a of the Configure Source panel, enter connection information.
 
 .. Under the *Name* field, enter the name for the remote storage device.
-.. Under the *iSCSI connection properties*, enter the following for the remote storage device: IQN, IP address. and the port number (default is 3260).
+.. Under the *iSCSI connection properties*, enter the following for the remote storage device: IQN, IP address, and the port number (default is 3260).
 +
 If you want to add another iSCSI connection, click *+Add another IP address* to include an additional IP address for the remote storage. When you are done, click *Next*.
 +
