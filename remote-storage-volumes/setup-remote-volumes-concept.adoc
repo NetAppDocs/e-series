@@ -13,7 +13,6 @@ The E-Series storage system must be configured to communicate with the remote st
 
 == Configure remote storage device and E-Series array
 
-
 Before proceeding to the SANtricity System Manager to configure the Remote Storage Volumes feature, do the following:
 
 . Manually establish a cabled connection between the E-Series system and the remote storage system such that the two systems can be configured to communicate via iSCSI.
@@ -21,16 +20,15 @@ Before proceeding to the SANtricity System Manager to configure the Remote Stora
 . Obtain the IQN of the E-Series system.
 . Make the E-Series system visible to the remote storage system. If the remote storage system is an E-Series system, then create a host using the IQN of the destination E-Series system as the connection information for the host port.
 . If the remote storage device is in use by a host/application:
- ** Stop I/O to the remote storage device
- ** Unmap/unmount the remote storage device
-. Map the remote storage device to the host defined for the E-Series storage system
+ ** Stop I/O to the remote storage device.
+ ** Unmap/unmount the remote storage device.
+. Map the remote storage device to the host defined for the E-Series storage system.
 . Obtain the LUN number of the device used for the mapping.
 
 NOTE: Recommended: Back up the remote source volume before starting the import process.
 
 == Cable the storage arrays
 
-[.lead]
 As part of the setup process, the storage arrays and I/O host must be cabled to the iSCSI-compatible interface.
 
 The following diagrams provide examples of how to cable the systems such that they perform Remote Storage Volume operations over an iSCSI connection.
@@ -39,8 +37,7 @@ image:../media/remote_target_volumes_iscsi_use_case_1.png[] image:../media/remot
 
 == Configure the iSCSI ports
 
-[.lead]
-You must configure the iSCSI ports to ensure communication between the target (local E-Series storage array) and source (remote storage array) arrays.
+You must configure the iSCSI ports to ensure communication between the target (local E-Series storage array) and source (remote storage array).
 
 The iSCSI ports can be configured multiple ways based on your subnet. The following are a few examples on how to configure the iSCSI ports for use with the Remote Storage Volumes feature.
 

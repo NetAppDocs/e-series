@@ -56,12 +56,12 @@ To learn more about certificates, refer to the online help available from the pl
 .. When the Webserver Started message appears, click *OK* to complete the installation.
 .. Click *Done*.
 [NOTE]
-If necessary, you can change the Certificate Validation and Web Service Port settings after installation. From the installation directory, open the *wsconfig.xml* file. To remove the Certificate Validation on storage arrays, change the `env` key, `trust.all.arrays`, to `true`. To change the Web Services port, modify the `sslport` value to the desired port value ranging from 0-65535. Ensure that the port number used is not binding to another process. When you are done, save the changes and restart the plugin webserver. If the port value of the plugin webserver is changed after registering the plugin to a vCSA, then you must unregister and re-register the plugin so the vCSA is communicating on the changed port to the plugin webserver.
+If necessary, you can change the Certificate Validation and Web Service Port settings after installation. From the installation directory, open the wsconfig.xml file. To remove the Certificate Validation on storage arrays, change the `env` key, `trust.all.arrays`, to `true`. To change the Web Services port, modify the `sslport` value to the desired port value ranging from 0-65535. Ensure that the port number used is not binding to another process. When you are done, save the changes and restart the plugin webserver. If the port value of the plugin webserver is changed after registering the plugin to a vCSA, then you must unregister and re-register the plugin so the vCSA is communicating on the changed port to the plugin webserver.
 +
 . Verify that the application server was installed successfully by running the *services.msc* command.
 . Verify that the Application Server (vCP) service, *NetApp SANtricity Storage Plugin for vCenter*,  was installed and the service has started.
 
-=== Register the plugin with a vCenter Server Appliance
+== Register the plugin with a vCenter Server Appliance
 After the plugin software is installed, register the plugin with a vCSA.
 
 [NOTE]

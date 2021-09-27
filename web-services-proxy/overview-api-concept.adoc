@@ -27,7 +27,7 @@ All requests include a URL, as in the following example, and contain the element
 a|
 HTTP transport
 
-https://
+`https://`
 
 a|
 The Web Services Proxy enables the use of HTTP or HTTPS.
@@ -37,7 +37,7 @@ The embedded Web Services requires HTTPS for security reasons.
 a|
 Base URL and port
 
-webservices.name.com:8443
+`webservices.name.com:8443`
 
 a|
 Each request must be correctly routed to an active instance of Web Services. The FQDN (fully qualified domain name) or the IP address of the instance is required, along with the listening port. By default, Web Services communicates over port 8080 (for HTTP) and port 8443 (for HTTPS).
@@ -49,18 +49,18 @@ For the embedded Web Services, the port on the controller cannot be changed; it 
 a|
 API path
 
-devmgr/v2/storage-systems
+`devmgr/v2/storage-systems`
 
 a|
 A request is made to a specific REST resource or endpoint within the Web Services API. Most endpoints are in the form of:
 
-devmgr/v2/<resource>/[id]
+`devmgr/v2/<resource>/[id]`
 
 The API path consists of three parts:
 
-* devmgr (Device Manager) is the namespace of the Web Services API.
-* V2 denotes the version of the API that you are accessing. You can also use utils to access login endpoints.
-* storage-systems is a category within the documentation.
+* `devmgr` (Device Manager) is the namespace of the Web Services API.
+* `v2` denotes the version of the API that you are accessing. You can also use utils to access login endpoints.
+* `storage-systems` is a category within the documentation.
 
 |===
 
@@ -166,4 +166,4 @@ No
 
 == Sample scripts
 
-GitHub contains a repository for the collection and organization of sample scripts illustrating the use of the NetApp SANtricity Web Services API. To access the repository, see: https://github.com/NetApp/webservices-samples.
+GitHub contains a repository for the collection and organization of sample scripts illustrating the use of the NetApp SANtricity Web Services API. To access the repository, see: https://github.com/NetApp/webservices-samples[NetApp Webservices samples^].

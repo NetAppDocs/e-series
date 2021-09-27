@@ -130,11 +130,11 @@ controllerAddresses
 a|
 Enter the IP addresses displayed in the response for GET: /discovery. For dual controllers, separate the IP addresses with a comma. For example:
 
-"`IP address 1`",`"IP address 2`"
+`"IP address 1","IP address 2"`
 a|
 validate
 a|
-Enter true, so you can receive confirmation that Web Services can connect to the storage system.
+Enter `true`, so you can receive confirmation that Web Services can connect to the storage system.
 a|
 password
 a|
@@ -145,7 +145,7 @@ a|
 Enter the WWN of the storage system (displayed in the response for GET: /discovery).
 |===
 
- .. Remove all strings after "`enableTrace`": true, so that the entire string set is similar to the following example:
+ .. Remove all strings after `"enableTrace": true`, so that the entire string set is similar to the following example:
 +
 ----
 {

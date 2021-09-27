@@ -42,4 +42,4 @@ image::../media/vcenter_communication.png[]
 
 == Find more information
 * For online help, see the user interface of the Storage Plugin for vCenter.
-* For VMware vSphere Documentation, see http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm.
+* For more information about managing datastores in the vSphere Client, see https://docs.vmware.com/en/VMware-vSphere/index.html[VMware vSphere Documentation^].

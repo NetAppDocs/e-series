@@ -18,6 +18,8 @@ Follow these instructions to configure access permissions for the Storage Plugin
 
 == Review required vSphere privileges
 
+To access the plugin within the vSphere Client, you must be assigned to a role that has the appropriate vSphere privileges. Users with the “Configure datastore” vSphere privilege have read-write access to the plugin, while users with the “Browse datastore” privilege have read-only access. If a user has neither of these privileges, the plugin displays an “Insufficient Privileges” message.
+
 |===
 |Plugin access type |vSphere privilege required
 
