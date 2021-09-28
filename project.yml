@@ -45,7 +45,7 @@ sidebar:
             url: "/getting-started/getup-run-concept.html"
     - title: Install hardware
       entries:
-        - title: EF300 and EF600
+        - title: EF300 and EF600 install
           entries:
               - title: Overview
                 url: "/install-hw-ef600/index.html"
@@ -435,7 +435,7 @@ sidebar:
                 url: "/config-windows/verify-storage-access-host-task.html"
     - title: Upgrade systems
       entries:
-        - title: Controllers
+        - title: Controller upgrade
           entries:
               - title: Overview
                 url: "/upgrade-controllers/index.html"
