@@ -45,7 +45,7 @@ sidebar:
             url: "/getting-started/getup-run-concept.html"
     - title: Install hardware
       entries:
-        - title: EF300/EF600
+        - title: EF300 and EF600
           entries:
               - title: Overview
                 url: "/install-hw-ef600/index.html"
@@ -469,7 +469,7 @@ sidebar:
                 url: "/upgrade-santricity/upgrade-drive-firmware-task.html"
     - title: Maintain systems
       entries:
-        - title: EF300 and EF600
+        - title: EF300/EF600
           entries:
               - title: Overview
                 url: "/maintenance-ef600/index.html"
