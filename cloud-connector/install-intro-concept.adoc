@@ -25,7 +25,7 @@ You can install the SANtricity Cloud Connector application through graphical mod
 [.lead]
 Any host running the SANtricity Cloud Connector also must run Linux Device Mapper Multipath (DM-MP) and have the multipath-tools package installed.
 
-The SANtricity Cloud Connector discovery process relies on the multipath tools package for discovery and recognition of the volumes and files to backup or restore. For more information on how to set up and configure the Device Mapper, see the _SANtricity Storage Manager Multipath Drivers Guide_ for the release of SANtricity you are using under the https://mysupport.netapp.com/info/web/ECMP1658252.html[E-Series and SANtricity Document Resources].
+The SANtricity Cloud Connector discovery process relies on the multipath tools package for discovery and recognition of the volumes and files to backup or restore. For more information on how to set up and configure the Device Mapper, see the _SANtricity Storage Manager Multipath Drivers Guide_ for the release of SANtricity you are using under the https://mysupport.netapp.com/info/web/ECMP1658252.html[E-Series and SANtricity Document Resources^].
 
 == Install the SANtricity Cloud Connector on a Linux Operating System in graphical mode
 
