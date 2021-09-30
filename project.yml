@@ -760,16 +760,14 @@ homepage:
   tiles:
     - title: Get started
       links:
-        - title: EF-Series
+        - title: EF-Series overview
           url: https://www.netapp.com/pdf.html?item=/media/19339-DS-4082.pdf
-        - title: E5700 series
+        - title: E5700 series overview
           url: https://www.netapp.com/pdf.html?item=/media/7572-ds-3894.pdf
-        - title: E2800 series
+        - title: E2800 series overview
           url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf
         - title: SANtricity software overview
           url: https://www.netapp.com/pdf.html?item=/media/7676-ds-3891.pdf
-        - title: Quick start
-          url: /getting-started/getup-run-concept.html
     - title: Online help
       links:
         - title: SANtricity System Manager 11.7
