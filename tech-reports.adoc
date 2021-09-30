@@ -12,60 +12,60 @@ Check out the links below to access technical reports for E-Series hardware and 
 
 == Platform TRs
 
-* https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf[E2800 arrays feature overview]
-* https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf[E5700 arrays feature overview]
-* https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf[EF300 arrays feature overview]]
-* https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf[EF600 arrays feature overview]]
+* https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf[E2800 arrays feature overview^]
+* https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf[E5700 arrays feature overview^]
+* https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf[EF300 arrays feature overview^]
+* https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf[EF600 arrays feature overview^]
+
+== Security TRs
+
+* https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf[NetApp SANtricity drive security - Feature details using SANtricity 11.70^]
+* https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf[NetApp SANtricity Management Security Feature Details and Configuration Guide^]
+* https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf[Managing Certificates for NetApp E-Series Storage Systems^]
+* https://www.netapp.com/pdf.html?item=/media/19422-tr-4855.pdf[Security Hardening Guide for NetApp SANtricity 11.60^]
+* https://fieldportal.netapp.com/content/1117377[Access Management for E-Series Storage Systems^]
 
 == Solution TRs
 
 === Splunk
-* https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf[E5700 with Splunk Enterprise]
-* https://www.netapp.com/media/57104-tr-4903.pdf[EF300 with Splunk Enterprise]
+* https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf[E5700 with Splunk Enterprise^]
+* https://www.netapp.com/media/57104-tr-4903.pdf[EF300 with Splunk Enterprise^]
 
 === Enterprise Databases
 
-* https://www.netapp.com/pdf.html?item=/media/17086-tr4764pdf.pdf[Best Practice guide for Microsoft SQL Server with NetApp EF-Series]
-* https://www.netapp.com/pdf.html?item=/media/17248-tr4794pdf.pdf[Oracle Databases on NetApp EF-Series]
+* https://www.netapp.com/pdf.html?item=/media/17086-tr4764pdf.pdf[Best Practice guide for Microsoft SQL Server with NetApp EF-Series^]
+* https://www.netapp.com/pdf.html?item=/media/17248-tr4794pdf.pdf[Oracle Databases on NetApp EF-Series^]
 
 === Backup & Recovery
 
 * https://www.netapp.com/pdf.html?item=/media/17042-tr4320pdf.pdf[Best Practices with Commvault Data
-Platform V11]
+Platform V11^]
 * https://www.netapp.com/pdf.html?item=/media/17159-tr4471pdf.pdf[Best Practices with Veeam Backup
-& Replication 9.5]
+& Replication 9.5^]
 * https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf[Deploying Veritas NetBackup with
-NetApp E-Series Storage]
+NetApp E-Series Storage^]
 
 === VSS
 
-* https://www.netapp.com/pdf.html?item=/media/17200-tr4825pdf.pdf[NetApp E-Series for Video Surveillance Best Practice Guide]
-* https://www.netapp.com/pdf.html?item=/media/6143-tr4818pdf.pdf[Virtualizing Video Management Systems with NetApp E-Series Storage]
-* https://www.netapp.com/pdf.html?item=/media/19400-tr-4848.pdf[Bosch Video Recording Solution with NetApp E-Series E2800 Disk Storage Array]
+* https://www.netapp.com/pdf.html?item=/media/17200-tr4825pdf.pdf[NetApp E-Series for Video Surveillance Best Practice Guide^]
+* https://www.netapp.com/pdf.html?item=/media/6143-tr4818pdf.pdf[Virtualizing Video Management Systems with NetApp E-Series Storage^]
+* https://www.netapp.com/pdf.html?item=/media/19400-tr-4848.pdf[Bosch Video Recording Solution with NetApp E-Series E2800 Disk Storage Array^]
 
 === HPC
 
-* https://www.netapp.com/pdf.html?item=/media/31665-tr-4884.pdf[Entry-level HPC systems with NetApp E-Series and IBM Spectrum Scale]
-* https://www.netapp.com/pdf.html?item=/media/22029-tr-4859.pdf[Deploying IBM Spectrum Scale with NetApp E-Series Storage]
-* https://www.netapp.com/pdf.html?item=/media/19407-tr-4856-deploy.pdf[BeeGFS High Availability with E-Series using Red Hat Enterprise Linux Server]
-* https://www.netapp.com/pdf.html?item=/media/19431-tr-4862.pdf[BeeGFS High Availability with E-Series using SUSE Linux Enterprise Server]
+* https://www.netapp.com/pdf.html?item=/media/31665-tr-4884.pdf[Entry-level HPC systems with NetApp E-Series and IBM Spectrum Scale^]
+* https://www.netapp.com/pdf.html?item=/media/22029-tr-4859.pdf[Deploying IBM Spectrum Scale with NetApp E-Series Storage^]
+* https://www.netapp.com/pdf.html?item=/media/19407-tr-4856-deploy.pdf[BeeGFS High Availability with E-Series using Red Hat Enterprise Linux Server^]
+* https://www.netapp.com/pdf.html?item=/media/19431-tr-4862.pdf[BeeGFS High Availability with E-Series using SUSE Linux Enterprise Server^]
 
 == Feature TRs
 
-* https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf[SANtricity Remote Storage Volumes]
-* https://www.netapp.com/pdf.html?item=/media/19405-tr-4839.pdf[SANtricity Synchronous and Asynchronous Mirroring (11.62 and Later)]
-* https://www.netapp.com/pdf.html?item=/media/17167-tr4747pdf.pdf[SANtricity Snapshot Feature Overview and Deployment Guide]
-* https://www.netapp.com/ko/media/12421-tr4652.pdf[SANtricity Dynamic Disk Pools]
-* https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf[SANtricity Automatic Load Balancing Feature Overview and Implementation]
-
-== Security TRs
-
-* https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf[NetApp SANtricity drive security - Feature details using SANtricity 11.70]
-* https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf[NetApp SANtricity Management Security Feature Details and Configuration Guide]
-* https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf[Managing Certificates for NetApp E-Series Storage Systems]
-* https://www.netapp.com/pdf.html?item=/media/19422-tr-4855.pdf[Security Hardening Guide for NetApp SANtricity 11.60]
-* https://fieldportal.netapp.com/content/1117377[Access Management for E-Series Storage Systems]
+* https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf[SANtricity Remote Storage Volumes^]
+* https://www.netapp.com/pdf.html?item=/media/19405-tr-4839.pdf[SANtricity Synchronous and Asynchronous Mirroring (11.62 and Later)^]
+* https://www.netapp.com/pdf.html?item=/media/17167-tr4747pdf.pdf[SANtricity Snapshot Feature Overview and Deployment Guide^]
+* https://www.netapp.com/ko/media/12421-tr4652.pdf[SANtricity Dynamic Disk Pools^]
+* https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf[SANtricity Automatic Load Balancing Feature Overview and Implementation^]
 
 == Interface TRs
 
-* https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf[SANtricity Web Services API - Built-In and Central Management Capabilities]
+* https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf[SANtricity Web Services API - Built-In and Central Management Capabilities^]
