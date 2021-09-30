@@ -13,7 +13,6 @@ Follow this procedure to attach the power cables and power on the drive shelves.
 
 .Before you begin
 
-* I am testing.
 * You have installed your hardware.
 * You have taken anti-static precautions.
 
@@ -35,23 +34,29 @@ image:../media/sas_cable.png[] a|
 |===
 a|
 
- .. Cable controller A to IOM A of the first drive shelf.
- .. Cable IOM A of the first drive shelf to IOM A of the second drive shelf.
- .. Cable IOM B of the first drive shelf to IOM B of the second drive shelf.
- .. Cable controller B to IOM B of the second drive shelf. a|
-image:../media/trafford_power.png[]
 
 Example A: An E2860 controller shelf with two DE460C disk shelves in a standard SAS configuration.
+
+  a|
+[]
+
+.. Cable controller A to IOM A of the first drive shelf.
+.. Cable IOM A of the first drive shelf to IOM A of the second drive shelf.
+.. Cable IOM B of the first drive shelf to IOM B of the second drive shelf.
+.. Cable controller B to IOM B of the second drive shelf.
+
 |===
 +
 |===
 a|
 
- .. Cable controller A to IOM A.
- .. Cable controller B to IOM B. a|
-image:../media/trafford_power.png[]
-
 Example B: An E2860 controller shelf with one DE460C disk shelf in a standard SAS configuration.
+
+ a|
+[]
+
+.. Cable controller A to IOM A.
+.. Cable controller B to IOM B.
 |===
 
 . Power the drive shelves.
