@@ -760,8 +760,6 @@ homepage:
   tiles:
     - title: Get started
       links:
-        - title: New features in SANtricity OS
-          url: /whats-new.html
         - title: EF-Series
           url: https://www.netapp.com/pdf.html?item=/media/19339-DS-4082.pdf
         - title: E5700 series
@@ -812,5 +810,5 @@ homepage:
           url: https://kb.netapp.com/
         - title: Active IQ (login required)
           url: https://activeiq.netapp.com/?source=aiqnsspage
-        - title: E-Series SANtricity downloads (login required)
+        - title: E-Series/SANtricity downloads (login required)
           url: https://mysupport.netapp.com/site/downloads
