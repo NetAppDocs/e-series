@@ -43,7 +43,7 @@ NOTE: API documentation for the SANtricity Cloud Connector application will not 
 [.lead]
 You should verify the compatibility of your storage arrays and firmware before using the SANtricity Cloud Connector application.
 
-For a complete and up-to-date listing of all compatible storage arrays and firmware for the SANtricity Cloud Connector, see the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+For a complete and up-to-date listing of all compatible storage arrays and firmware for the SANtricity Cloud Connector, see the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 === Compatible operating systems
 

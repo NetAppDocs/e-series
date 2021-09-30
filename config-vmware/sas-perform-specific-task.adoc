@@ -29,7 +29,7 @@ Guidelines for HBA utilities:
 . Install the utility.
 . Use the HBA BIOS to select the appropriate settings for your configuration.
 +
-See the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for recommendations.
+See the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for recommendations.
 
 == Step 2: Record SAS-specific information for VMware
 

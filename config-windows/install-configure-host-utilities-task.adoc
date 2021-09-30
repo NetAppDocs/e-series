@@ -15,7 +15,7 @@ Windows Unified Host Utilities 7.0 includes tools to enable you to connect host 
 
 See the _Windows Host Utilities 7.0 Installation Guide,_ found under http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61343[NetApp Documentation: Host Utilities (current releases)].
 
-* Use the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] to determine the appropriate version of Unified Host Utilities 7.0 to install.
+* Use the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] to determine the appropriate version of Unified Host Utilities 7.0 to install.
 +
 NOTE: The versions are listed in a column within each supported configuration.
 
@@ -25,7 +25,7 @@ NOTE: This utilities package is not installed using the SANtricity Storage Manag
 
 .Steps
 
-. Use the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] to determine the appropriate version of Unified Host Utilities 7.0 to install.
+. Use the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] to determine the appropriate version of Unified Host Utilities 7.0 to install.
 +
 The versions are listed in a column within each supported configuration.
 

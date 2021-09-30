@@ -61,7 +61,7 @@ a|
 
 * You have made all host-side FC connections and activated switch zoning.
 * You are using NetApp-supported FC HBAs and switches.
-* You are using FC HBA driver and firmware versions as listed in the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+* You are using FC HBA driver and firmware versions as listed in the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 a|
 Protocol: iSCSI
@@ -75,6 +75,6 @@ Protocol: SAS
 a|
 
 * You are using NetApp-supported SAS HBAs.
-* You are using SAS HBA driver and firmware versions as listed in the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+* You are using SAS HBA driver and firmware versions as listed in the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 |===
