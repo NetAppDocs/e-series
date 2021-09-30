@@ -760,6 +760,8 @@ homepage:
   tiles:
     - title: Get started
       links:
+        - title: Quick start
+          url: /getting-started/getup-run-concept.html
         - title: EF-Series overview
           url: https://www.netapp.com/pdf.html?item=/media/19339-DS-4082.pdf
         - title: E5700 series overview
@@ -774,9 +776,11 @@ homepage:
           url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html
         - title: SANtricity Unified Manager 5
           url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-5/home.html
+        - title: Command Line Interface (CLI) reference
+          url:  https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-cli-115/home.html
     - title: SANtricity APIs
       links:
-        - title: Web services proxy
+        - title: Web services
           url: /web-services-proxy/index.html
         - title: Plug-in for vCenter
           url: /san-spvc-ic-overview.html
@@ -809,4 +813,4 @@ homepage:
         - title: Active IQ (login required)
           url: https://activeiq.netapp.com/?source=aiqnsspage
         - title: E-Series/SANtricity downloads (login required)
-          url: https://mysupport.netapp.com/site/downloads
+          url: https://mysupport.netapp.com/site/downloads#E
