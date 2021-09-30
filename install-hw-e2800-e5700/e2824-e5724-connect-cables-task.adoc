@@ -33,8 +33,7 @@ image:../media/sas_cable.png[] a|
 +
 |===
 a|
-image:../media/trafford_power.png[]
-
+[]
 Example A: An E5700 controller shelf with three DE212C/DE224 disk shelves in a standard SAS configuration. a|
  .. Cable controller A to IOM A of the first drive shelf.
  .. Cable IOM A of the first drive shelf to IOM A of the second drive shelf.
@@ -46,8 +45,7 @@ Example A: An E5700 controller shelf with three DE212C/DE224 disk shelves in a s
 +
 |===
 a|
-image:../media/trafford_power.png[]
-
+[]
 Example B: An E5700 controller shelf with one DE212C/DE224 disk shelf in a standard SAS configuration. a|
 .. Cable controller A to IOM A.
 .. Cable controller B to IOM B.
