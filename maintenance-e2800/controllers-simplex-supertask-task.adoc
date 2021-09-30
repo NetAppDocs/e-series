@@ -379,12 +379,22 @@ Go to the next step to confirm that the new controller is Optimal.
 
 If the storage array has a mix of secured and unsecured drives:
 
+ .. Collect support bundle and open storage array profile.
+ .. Find and record all the unsecured drives’ location found in support bundle.
+ .. Power off the system.
+ .. Remove the unsecured drives.
+ .. Replace the controller.
+ .. Power on the system and wait for the seven-segment display to show the tray number.
  .. Select *Settings* > *System*.
  .. In theSecurity key management section, select *Create/Change Key* to create a new security key.
  .. Select *Unlock Secure Drives* to import the security key you saved.
  .. Run the set allDrives nativeState SMcli command.
+ .. Controller will reboot automatically.
+ .. Wait for the controller to boot up and the seven-segment display shows the tray number or a flashing L5.
+ .. Power off the system.
+ .. Reinstall the unsecured drives.
  .. Reset the controller using SANtricity System Manager.
- .. Wait for the controller to boot up.
+ .. Power on the system and wait for the seven-segment display to show the tray number.
  .. Go to the next step to confirm that the new controller is Optimal.
 +
 NOTE: _Unsecured drives_ are unassigned drives, global hot spare drives, or drives that are part of a volume group or a pool that is not secured by Drive Security. _Secured drives_ are assigned drives that are a part of a secured volume group or disk pool using Drive Security.
