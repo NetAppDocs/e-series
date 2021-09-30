@@ -762,24 +762,22 @@ homepage:
       links:
         - title: New features in SANtricity OS
           url: /whats-new.html
-        - title: E-series hardware
-          links:
-              - title: EF-Series
-                url: https://www.netapp.com/pdf.html?item=/media/19339-DS-4082.pdf^
-              - title: E5700 series
-                url: https://www.netapp.com/pdf.html?item=/media/7572-ds-3894.pdf^
-              - title: E2800 series
-                url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf^
+        - title: EF-Series
+          url: https://www.netapp.com/pdf.html?item=/media/19339-DS-4082.pdf
+        - title: E5700 series
+          url: https://www.netapp.com/pdf.html?item=/media/7572-ds-3894.pdf
+        - title: E2800 series
+          url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf
         - title: SANtricity software overview
-          url: https://www.netapp.com/pdf.html?item=/media/7676-ds-3891.pdf^
+          url: https://www.netapp.com/pdf.html?item=/media/7676-ds-3891.pdf
         - title: Quick start
           url: /getting-started/getup-run-concept.html
     - title: Online help
       links:
         - title: SANtricity System Manager 11.7
-          url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html^
+          url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html
         - title: SANtricity Unified Manager 5
-          url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-5/home.html^
+          url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-5/home.html
     - title: SANtricity APIs
       links:
         - title: Web services proxy
@@ -809,10 +807,10 @@ homepage:
     - title: Tools & support
       links:
         - title: NetApp Interoperability Matrix
-          url: http://mysupport.netapp.com/matrix/^
+          url: http://mysupport.netapp.com/matrix/
         - title: NetApp Knowledge Base
-          url: https://kb.netapp.com/^
+          url: https://kb.netapp.com/
         - title: Active IQ (login required)
-          url: https://activeiq.netapp.com/?source=aiqnsspage^
+          url: https://activeiq.netapp.com/?source=aiqnsspage
         - title: E-Series SANtricity downloads (login required)
-          url: https://mysupport.netapp.com/site/downloads^
+          url: https://mysupport.netapp.com/site/downloads
