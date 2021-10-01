@@ -26,7 +26,7 @@ The express method includes the following steps.
 === Find more information
 
 * Online help -- Describes how to use SANtricity System Manager to complete configuration and storage management tasks. It is available within the product.
-* https://kb.netapp.com/app/[NetApp Knowledgebase] (a database of articles) -- Provides troubleshooting information, FAQs, and instructions for a wide range of NetApp products and technologies.
+* https://kb.netapp.com/app/[NetApp Knowledgebase^] (a database of articles) -- Provides troubleshooting information, FAQs, and instructions for a wide range of NetApp products and technologies.
 * VMware Configuration Maximums -- Describes how to configure virtual and physical storage to stay within the allowed maximums that ESX/ESXi supports.
 +
 ** vSphere 6._x_ - search vmware.com for "vsphere 6._x_ configuration maximums."

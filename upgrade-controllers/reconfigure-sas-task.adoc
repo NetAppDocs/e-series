@@ -55,7 +55,7 @@ NOTE: Depending on the host connections of your new array, different cables may 
 +
 The existing controller-drive tray and any attached drive trays become drive shelves and can be cabled to the controllers in the new array.
 +
-NOTE: Connecting SAS-2 to SAS-3 requires SAS HD to mini SAS cables. For more detailed cabling information for your particular controller and expansion shelf configuration, refer to link:../install-hw-cabling/index.html[Cabling] or the https://library.netapp.com/ecm/ecm_download_file/ECMLP2588749[E-Series Hardware Cabling Guide].
+NOTE: Connecting SAS-2 to SAS-3 requires SAS HD to mini SAS cables. For more detailed cabling information for your particular controller and expansion shelf configuration, refer to link:../install-hw-cabling/index.html[Cabling] or the https://library.netapp.com/ecm/ecm_download_file/ECMLP2588749[E-Series Hardware Cabling Guide^].
 
 == Step 3: Power on the controllers (non-data preservation)
 
@@ -64,12 +64,12 @@ After installation is complete, power on the controllers and submit your configu
 .Steps
 
 . Power up the new array including any attached drive shelves.
-. Configure the management port and the IP addresses by installing the https://mysupport.netapp.com/tools/info/ECMLP2563821I.html[SANtricity Quick Connect] utility.
+. Configure the management port and the IP addresses by installing the https://mysupport.netapp.com/tools/info/ECMLP2563821I.html[SANtricity Quick Connect^] utility.
 . If drive security was in use on the existing array, import the security key.
 . If you were unable to delete the volume groups from your existing array before performing this procedure, you must set all foreign drives to appear as native. For detailed information on how to set drives to native, refer to the SANtricity Online Help.
 . Send your configuration changes to NetApp Technical Support.
  .. Get the serial number of the old controller-drive tray that you recorded in Step 2.
- .. Log in to the http://mysupport.netapp.com/eservice/assistant)[NetApp Support Site].
+ .. Log in to the http://mysupport.netapp.com/eservice/assistant[NetApp Support Site^].
  .. From the drop-down list under *Category 1* on the *Give Us Feedback* page, select *Installed products*.
  .. From the drop-down list under *Category 2* on the *Give Us Feedback* page, select *Decommission request*.
  .. Enter the following text in the *Comments* text box, substituting the serial number of your controller-drive tray for serial number:

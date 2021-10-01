@@ -117,7 +117,7 @@ For step-by-step instructions on how to configure the host to use SRP, iSER, or 
 
 . To connect the host to the storage array for an SRP configuration, you must enable the InfiniBand driver stack with the appropriate options.
 +
-Specific settings might vary between Linux distributions. Check the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix] for specific instructions and additional recommended settings for your solution.
+Specific settings might vary between Linux distributions. Check the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix^] for specific instructions and additional recommended settings for your solution.
 
 ===== Result
 
