@@ -15,7 +15,7 @@ To configure host-side networking, you must perform several steps.
 
 You configure iSCSI networking on the host side by setting the number of node sessions per physical path, turning on the appropriate iSCSI services, configuring the network for the iSCSI ports, creating iSCSI face bindings, and establishing the iSCSI sessions between initiators and targets.
 
-In most cases, you can use the inbox software-initiator for iSCSI CNA/NIC. You do not need to download the latest driver, firmware, and BIOS. Refer to the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] to determine code requirements.
+In most cases, you can use the inbox software-initiator for iSCSI CNA/NIC. You do not need to download the latest driver, firmware, and BIOS. Refer to the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] to determine code requirements.
 
 .Steps
 

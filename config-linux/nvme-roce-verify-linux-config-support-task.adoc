@@ -14,7 +14,7 @@ To ensure reliable operation, you create an implementation plan and then use the
 
 .Steps
 
-. Go to the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+. Go to the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 . Click on the *Solution Search* tile.
 . In the menu:Protocols[SAN Host] area, click the *Add* button next to *E-Series SAN Host*.
 . Click *View Refine Search Criteria*.
@@ -24,7 +24,7 @@ The Refine Search Criteria section is displayed. In this section you may select 
 == NVMe over RoCE restrictions
 
 [.lead]
-Before using NVMe over RoCE, review the controller, host, and recovery restrictions. For an up-to-date listing of all restrictions, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+Before using NVMe over RoCE, review the controller, host, and recovery restrictions. For an up-to-date listing of all restrictions, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 === Controller restrictions
 
@@ -40,7 +40,7 @@ NOTE: *RISK OF DATA LOSS.* You must enable Priority Flow Control or Global Pause
 
 === Host, host protocol, and host operating system restrictions
 
-For a complete list of requirements, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] .
+For a complete list of requirements, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] .
 
 === Storage and disaster recovery restrictions
 

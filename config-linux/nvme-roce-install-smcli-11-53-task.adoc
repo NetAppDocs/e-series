@@ -20,7 +20,7 @@ NOTE: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli)
 * You must have ensured that the system that will contain the SANtricity Storage Manager client has the following minimum requirements:
  ** *RAM*: 2 GB for Java Runtime Engine
  ** *Disk space*: 5 GB
- ** *OS/Architecture*: Refer to https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for guidance on determining the supported operating system versions and architectures.
+ ** *OS/Architecture*: Refer to https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for guidance on determining the supported operating system versions and architectures.
 
 .About this task
 
