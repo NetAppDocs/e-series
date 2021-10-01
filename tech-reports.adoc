@@ -17,6 +17,14 @@ Check out the links below to access technical reports for E-Series hardware and 
 * https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf[EF300 arrays feature overview^]
 * https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf[EF600 arrays feature overview^]
 
+== Security TRs
+
+* https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf[NetApp SANtricity drive security - Feature details using SANtricity 11.70^]
+* https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf[NetApp SANtricity Management Security Feature Details and Configuration Guide^]
+* https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf[Managing Certificates for NetApp E-Series Storage Systems^]
+* https://www.netapp.com/pdf.html?item=/media/19422-tr-4855.pdf[Security Hardening Guide for NetApp SANtricity 11.60^]
+* https://fieldportal.netapp.com/content/1117377[Access Management for E-Series Storage Systems^]
+
 == Solution TRs
 
 === Splunk
@@ -54,14 +62,6 @@ Check out the links below to access technical reports for E-Series hardware and 
 * https://www.netapp.com/pdf.html?item=/media/17167-tr4747pdf.pdf[SANtricity Snapshot Feature Overview and Deployment Guide^]
 * https://www.netapp.com/ko/media/12421-tr4652.pdf[SANtricity Dynamic Disk Pools^]
 * https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf[SANtricity Automatic Load Balancing Feature Overview and Implementation^]
-
-== Security TRs
-
-* https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf[NetApp SANtricity drive security - Feature details using SANtricity 11.70^]
-* https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf[NetApp SANtricity Management Security Feature Details and Configuration Guide^]
-* https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf[Managing Certificates for NetApp E-Series Storage Systems^]
-* https://www.netapp.com/pdf.html?item=/media/19422-tr-4855.pdf[Security Hardening Guide for NetApp SANtricity 11.60^]
-* https://fieldportal.netapp.com/content/1117377[Access Management for E-Series Storage Systems^]
 
 == Interface TRs
 

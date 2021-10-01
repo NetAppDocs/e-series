@@ -45,7 +45,7 @@ sidebar:
             url: "/getting-started/getup-run-concept.html"
     - title: Install hardware
       entries:
-        - title: EF300 and EF600 install
+        - title: EF300 and EF600
           entries:
               - title: Overview
                 url: "/install-hw-ef600/index.html"
@@ -469,7 +469,7 @@ sidebar:
                 url: "/upgrade-santricity/upgrade-drive-firmware-task.html"
     - title: Maintain systems
       entries:
-        - title: EF300 and EF600
+        - title: EF300/EF600
           entries:
               - title: Overview
                 url: "/maintenance-ef600/index.html"
@@ -760,40 +760,32 @@ homepage:
   tiles:
     - title: Get started
       links:
-        - title: New features in SANtricity OS
-          url: /whats-new.html
-        - title: E-series hardware
-          url: /getting-started/learn-hardware-concept.html
-        - title: SANtricity software
-          url: /getting-started/learn-software-concept.html
         - title: Quick start
           url: /getting-started/getup-run-concept.html
+        - title: EF-Series overview
+          url: https://www.netapp.com/pdf.html?item=/media/19339-DS-4082.pdf
+        - title: E5700 series overview
+          url: https://www.netapp.com/pdf.html?item=/media/7572-ds-3894.pdf
+        - title: E2800 series overview
+          url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf
+        - title: SANtricity software overview
+          url: https://www.netapp.com/pdf.html?item=/media/7676-ds-3891.pdf
     - title: Online help
       links:
         - title: SANtricity System Manager 11.7
           url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html
         - title: SANtricity Unified Manager 5
           url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-5/home.html
-    - title: SANtricity solutions & APIs
+        - title: Command Line Interface (CLI) reference
+          url:  https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-cli-115/home.html
+    - title: SANtricity APIs
       links:
+        - title: Web services
+          url: /web-services-proxy/index.html
         - title: Plug-in for vCenter
           url: /san-spvc-ic-overview.html
-        - title: Remote storage volumes (import utility)
-          url: /remote-storage-volumes/index.html
-        - title: Web services proxy
-          url: /web-services-proxy/index.html
         - title: SMI-S providers
           url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
-    - title: Datasheets
-      links:
-        - title: EF-Series
-          url: https://www.netapp.com/pdf.html?item=/media/19339-DS-4082.pdf
-        - title: E5700 series
-          url: https://www.netapp.com/pdf.html?item=/media/7572-ds-3894.pdf
-        - title: E2800 series
-          url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf
-        - title: SANtricity software
-          url: https://www.netapp.com/pdf.html?item=/media/7676-ds-3891.pdf
     - title: Performance apps & add-ons
       links:
         - title: SANtricity app for Splunk Enterprise
@@ -812,21 +804,13 @@ homepage:
           url: https://fieldportal.netapp.com/content/1417672
         - title: NetApp Fusion (login required)
           url: https://fusion.netapp.com/
-        - title: Active IQ (login required)
-          url: https://activeiq.netapp.com/?source=aiqnsspage
     - title: Tools & support
       links:
-          - title: NetApp Hardware Universe
-            url: https://hwu.netapp.com/Home/Index#none
-          - title: NetApp Interoperability Matrix
-            url: http://mysupport.netapp.com/matrix/
-          - title: NetApp Knowledge Base
-            url: https://kb.netapp.com/
-    - title: Other doc sites
-      links:
-          - title: AFF storage systems
-            url: https://review.docs.netapp.com/us-en/ontap-systems-temp_main/index.html
-          - title: StorageGRID
-            url: https://review.docs.netapp.com/us-en/storagegrid_11.5_grid_primer_cleanup_km/index.html
-          - title: More NetApp product docs
-            url: https://www.netapp.com/support-and-training/documentation/
+        - title: NetApp Interoperability Matrix
+          url: http://mysupport.netapp.com/matrix/
+        - title: NetApp Knowledge Base
+          url: https://kb.netapp.com/
+        - title: Active IQ (login required)
+          url: https://activeiq.netapp.com/?source=aiqnsspage
+        - title: E-Series/SANtricity downloads (login required)
+          url: https://mysupport.netapp.com/site/downloads#E
