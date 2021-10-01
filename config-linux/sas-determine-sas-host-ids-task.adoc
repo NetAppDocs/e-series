@@ -24,4 +24,4 @@ Guidelines for HBA utilities:
 . Install the utility.
 . Use the HBA BIOS to select the appropriate settings for your configuration.
 +
-See the Notes column of the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for recommendations.
+See the Notes column of the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for recommendations.

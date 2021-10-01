@@ -13,7 +13,7 @@ Linux Unified Host Utilities 7.1 includes tools to manage NetApp storage, includ
 
 .Steps
 
-. Use the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] to determine the appropriate version of Unified Host Utilities 7.1 to install.
+. Use the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] to determine the appropriate version of Unified Host Utilities 7.1 to install.
 +
 The versions are listed in a column within each supported configuration.
 

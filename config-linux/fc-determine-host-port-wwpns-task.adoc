@@ -9,7 +9,7 @@ summary: You install an FC HBA utility so you can view the worldwide port name \
 :imagesdir: ../media/
 
 [.lead]
-You install an FC HBA utility so you can view the worldwide port name (WWPN) of each host port. Additionally, you can use the HBA utility to change any settings recommended in the Notes column of the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for the supported configuration.
+You install an FC HBA utility so you can view the worldwide port name (WWPN) of each host port. Additionally, you can use the HBA utility to change any settings recommended in the Notes column of the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for the supported configuration.
 
 .About this task
 

@@ -26,7 +26,7 @@ An example configuration that satisfies the requirements consists of four networ
 
 == Switch connect topology
 
-In a fabric topology, one or more switches are used. Refer to https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for a list of supported switches.
+In a fabric topology, one or more switches are used. Refer to https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a list of supported switches.
 
 image::../media/nvmeof_switch_connect.gif[]
 

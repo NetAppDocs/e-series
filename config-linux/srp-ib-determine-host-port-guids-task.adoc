@@ -18,4 +18,4 @@ The `InfiniBand-diags` package includes commands to display the globally unique 
 . Record the initiator's GUIDs on the xref:srp-ib-worksheet-concept.adoc[SRP worksheet].
 . Select the appropriate settings in the HBA utility.
 +
-Appropriate settings for your configuration are listed in the Notes column of the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+Appropriate settings for your configuration are listed in the Notes column of the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].

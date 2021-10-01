@@ -37,7 +37,7 @@ You must zone by WWPN, not by physical port. Each initiator port must be in a se
 == Step 2: Determining host WWPNs and making the recommended settings--FC, Windows
 
 [.lead]
-You install an FC HBA utility so you can view the worldwide port name (WWPN) of each host port. Additionally, you can use the HBA utility to change any settings recommended in the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for the supported configuration.
+You install an FC HBA utility so you can view the worldwide port name (WWPN) of each host port. Additionally, you can use the HBA utility to change any settings recommended in the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for the supported configuration.
 
 .Before you begin
 

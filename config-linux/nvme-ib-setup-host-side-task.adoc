@@ -13,7 +13,7 @@ Configuring an NVMe initiator in an InfiniBand environment includes installing a
 
 .Before you begin
 
-* You are running the latest compatible RHEL 7, SUSE Linux Enterprise Server 12 and 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for a complete list of the latest requirements.
+* You are running the latest compatible RHEL 7, SUSE Linux Enterprise Server 12 and 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a complete list of the latest requirements.
 
 .Steps
 

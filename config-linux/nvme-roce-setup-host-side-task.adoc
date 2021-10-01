@@ -13,7 +13,7 @@ NVMe initiator configuration in a RoCE environment includes installing and confi
 
 .Before you begin
 
-* You are running RHEL 7 and the latest compatible SUSE Linux Enterprise Server 12 and 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for a complete list of the latest requirements.
+* You are running RHEL 7 and the latest compatible SUSE Linux Enterprise Server 12 and 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a complete list of the latest requirements.
 
 .Steps
 
