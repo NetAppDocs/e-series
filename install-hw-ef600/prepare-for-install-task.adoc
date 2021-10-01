@@ -15,14 +15,14 @@ Follow these steps to prepare for installation of your EF300 or EF600 series sto
 
 If you are cabling your EF300 for SAS expansion, review the following information:
 
-* link:../maintenance-ef600/sas-add-supertask-task.html[Add SAS expansion cards] for SAS expansion card installation.
+* link:../maintenance-ef600/sas-add-supertask-task.html[Add SAS expansion cards^] for SAS expansion card installation.
 
 * link:../install-hw-cabling/index.html[Cabling overview] for SAS expansion cabling.
 
 
 .Steps
 
-. Create an account and register your hardware at http://mysupport.netapp.com/[mysupport.netapp.com].
+. Create an account and register your hardware at http://mysupport.netapp.com/[mysupport.netapp.com^].
 . Ensure that the following items are in the box that you received.
 +
 |===

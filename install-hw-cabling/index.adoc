@@ -38,7 +38,7 @@ DE460C
 
 == Additional cabling information
 
-If you are cabling for the following configuration, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf.]
+If you are cabling for the following configuration, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf.^]
 
 [options="header"]
 |===
@@ -52,6 +52,6 @@ E2760, E5660
 a|
 DE460C
 |===
-For information about other cabling options, see the https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2773533[E-Series Hardware Cabling Guide] for older systems.
+For information about other cabling options, see the https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2773533[E-Series Hardware Cabling Guide^] for older systems.
 
-For information about cabling to support mirroring features, see the https://www.netapp.com/us/media/tr-4656.pdf[Synchronous and Asynchronous Mirroring Feature Descriptions and Deployment Guide].
+For information about cabling to support mirroring features, see the https://www.netapp.com/us/media/tr-4656.pdf[Synchronous and Asynchronous Mirroring Feature Descriptions and Deployment Guide^].

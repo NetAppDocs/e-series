@@ -430,7 +430,7 @@ iSER/IB
 a|
 SHH-TA5-ZZYHS
 |===
-NOTE: If your controller submodel ID is not listed, contact https://mysupport.netapp.com/site/[NetApp Support].
+NOTE: If your controller submodel ID is not listed, contact https://mysupport.netapp.com/site/[NetApp Support^].
 
 . In System Manager, locate the Feature Enable Identifier.
  .. Go to *Settings* > *System*.
@@ -439,7 +439,7 @@ NOTE: If your controller submodel ID is not listed, contact https://mysupport.ne
  .. Copy and paste this 32-digit number to a text file.
 +
 image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-ef600.gif[]
-. Go to http://partnerspfk.netapp.com[NetApp License Activation: Storage Array Premium Feature Activation], and enter the information required to obtain the feature pack.
+. Go to http://partnerspfk.netapp.com[NetApp License Activation: Storage Array Premium Feature Activation^], and enter the information required to obtain the feature pack.
  ** Chassis Serial Number
  ** Feature Activation Code
  ** Feature Enable Identifier

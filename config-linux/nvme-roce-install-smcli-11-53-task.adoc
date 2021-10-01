@@ -28,7 +28,7 @@ This section describes how to install SANtricity Storage Manager on both the Win
 
 .Steps
 
-. Download the SANtricity software release from https://mysupport.netapp.com/site/[NetApp Support]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager*.
+. Download the SANtricity software release from https://mysupport.netapp.com/site/[NetApp Support^]*Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager*.
 . Run the SANtricity installer.
 +
 [options="header"]

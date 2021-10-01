@@ -1,7 +1,7 @@
 ---
 permalink: install-hw-ef600/install-hardware-task.html
 sidebar: sidebar
-keywords: EF300, EF600, installation, 
+keywords: EF300, EF600, installation,
 summary: Install the EF300 or EF600 in a two-post rack or a NetApp system cabinet.
 ---
 = Install the hardware
@@ -13,7 +13,7 @@ Follow this procedure to install a EF300 or EF600 storage system in a two-post r
 
 .Before you begin
 
-* You have registered your hardware at http://mysupport.netapp.com/[mysupport.netapp.com].
+* You have registered your hardware at http://mysupport.netapp.com/[mysupport.netapp.com^].
 * You have prepared a flat, static-free work area.
 * You have taken anti-static precautions.
 

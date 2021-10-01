@@ -17,12 +17,12 @@ You can choose one of the following formats to guide you through installing and 
 +
 This is a printable PDF of step-by-step instructions with live links to additional content. Choose one of the following posters to get started.
 
-** https://library.netapp.com/ecm/ecm_download_file/ECMLP2842061[E2860, E5760 and DE460C PDF poster]
-** https://library.netapp.com/ecm/ecm_download_file/ECMLP2842063[E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C PDF poster]
+** https://library.netapp.com/ecm/ecm_download_file/ECMLP2842061[E2860, E5760 and DE460C PDF poster^]
+** https://library.netapp.com/ecm/ecm_download_file/ECMLP2842063[E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C PDF poster^]
 
 * *Online instructions*
 +
 These are the setup instructions described on this site. Start with one of the following topics to get started.
 
-** xref:e2860-e5760-prepare-task.adoc[Prepare to install E2860, E5760 and DE460C]
-** xref:e2824-e5724-prepare-task.adoc[Prepare to install E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C]
+** xref:e2860-e5760-prepare-task.adoc[Prepare to install E2860, E5760 and DE460C^]
+** xref:e2824-e5724-prepare-task.adoc[Prepare to install E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C^]

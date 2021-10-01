@@ -379,7 +379,7 @@ a|
 3GE-WL2-ZCHNY
 |===
 +
-NOTE: If your Controller submodel ID is not listed, contact http://mysupport.netapp.com[NetApp Support].
+NOTE: If your Controller submodel ID is not listed, contact http://mysupport.netapp.com[NetApp Support^].
 
 . In System Manager, locate the Feature Enable Identifier.
  .. Go to *Settings* > *System*.
@@ -388,7 +388,7 @@ NOTE: If your Controller submodel ID is not listed, contact http://mysupport.net
  .. Copy and paste this 32-digit number to a text file.
 +
 image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-e2800.gif[]
-. Go to http://partnerspfk.netapp.com[NetApp License Activation: Storage Array Premium Feature Activation], and enter the information required to obtain the feature pack.
+. Go to http://partnerspfk.netapp.com[NetApp License Activation: Storage Array Premium Feature Activation^], and enter the information required to obtain the feature pack.
  ** Chassis serial number
  ** Feature Activation Code
  ** Feature Enable Identifier

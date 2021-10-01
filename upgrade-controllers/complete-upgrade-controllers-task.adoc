@@ -108,7 +108,7 @@ The dialog box shows the current host port identifiers.
  .. Click *Save*.
 
 +
-For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix] and the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe].
+For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] and the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe^].
 . Enable Write Back Caching for all thin volumes if it had been disabled in preparing for the headswap.
 . Enable SAML for the controller replacements if disabled in preparing for the headswap.
  .. From System Manager, select the *SAML* tab, and then select the *Enable SAML* link.
@@ -131,7 +131,7 @@ NOTE: Gathering support data can temporarily impact performance on your storage 
 
 . Alert NetApp Technical Support to the changes that you made to the configuration of your storage array.
  .. Get the serial number of the controller-drive tray that you recorded in xref:prepare-upgrade-controllers-task.adoc[Prepare to upgrade controllers].
- .. Log in to the NetApp support site at http://mysupport.netapp.com/eservice/assistant[mysupport.netapp.com/eservice/assistant].
+ .. Log in to the NetApp support site at http://mysupport.netapp.com/eservice/assistant[mysupport.netapp.com/eservice/assistant^].
  .. Select *Product Registration* from the drop-down list under *Category 1*.
  .. Enter the following text in the **Comments** text box, substituting the serial number of your controller-drive tray for serial number:
 +

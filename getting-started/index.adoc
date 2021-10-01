@@ -1,7 +1,7 @@
 ---
 permalink: getting-started/index.html
 sidebar: sidebar
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600,
 summary: This site includes information for specific E-Series releases, models, and components.
 ---
 = What this site includes
@@ -26,8 +26,8 @@ This site includes information for the following releases and component types:
 NOTE: Additional interfaces and operating systems might be supported. For more information, contact technical support.
 
 a|
-This site does _not_ include information for releases _earlier than_ software version 11.50 or firmware version 8.50. For earlier releases, go to the https://www.netapp.com/us/documentation/eseries-santricity.aspx[E-Series and SANtricity Document Resources] page.
+This site does _not_ include information for releases _earlier than_ software version 11.50 or firmware version 8.50. For earlier releases, go to the https://www.netapp.com/us/documentation/eseries-santricity.aspx[E-Series and SANtricity Document Resources^] page.
 
-For information on your site preparation requirements, go to https://hwu.netapp.com/[NetApp Hardware Universe].
+For information on your site preparation requirements, go to https://hwu.netapp.com/[NetApp Hardware Universe^].
 
 |===

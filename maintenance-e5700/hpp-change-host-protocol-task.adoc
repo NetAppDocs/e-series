@@ -827,7 +827,7 @@ NVMe/IB
 a|
 JGJ-PKK-ZUQG2
 |===
-NOTE: If your controller submodel ID is not listed, contact http://mysupport.netapp.com[NetApp Support].
+NOTE: If your controller submodel ID is not listed, contact http://mysupport.netapp.com[NetApp Support^].
 
 . In System Manager, locate the Feature Enable Identifier.
  .. Go to *Settings* > *System*.
@@ -836,7 +836,7 @@ NOTE: If your controller submodel ID is not listed, contact http://mysupport.net
  .. Copy and paste this 32-digit number to a text file.
 +
 image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-e5700.gif[]
-. Go to http://partnerspfk.netapp.com[NetApp License Activation: Storage Array Premium Feature Activation], and enter the information required to obtain the feature pack.
+. Go to http://partnerspfk.netapp.com[NetApp License Activation: Storage Array Premium Feature Activation^], and enter the information required to obtain the feature pack.
  ** Chassis serial number
  ** Feature Activation Code
  ** Feature Enable Identifier

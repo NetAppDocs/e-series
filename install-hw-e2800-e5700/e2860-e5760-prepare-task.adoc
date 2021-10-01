@@ -13,7 +13,7 @@ Follow these steps to prepare for installation of your E2860, E5760, or DE460 se
 
 .Steps
 
-. Create an account and register your hardware at http://mysupport.netapp.com/[mysupport.netapp.com].
+. Create an account and register your hardware at http://mysupport.netapp.com/[mysupport.netapp.com^].
 . Ensure that the following items are in the box that you received.
 +
 |===
@@ -25,7 +25,7 @@ image:../media/handles_counted.png[]
 a|
 Shelf handles x4
 |===
-The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see https://hwu.netapp.com/[Hardware Universe] to locate the cable and identify its use.
+The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see https://hwu.netapp.com/[Hardware Universe^] to locate the cable and identify its use.
 +
 [options="header"]
 |===

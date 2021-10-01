@@ -244,7 +244,7 @@ Complete the process of upgrading a host interface card by checking the controll
 * Any new host hardware installed for the new host ports, such as switches or host bus adapters (HBAs).
 * All cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new host ports.
 +
-For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix] or the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe].
+For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] or the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe^].
 
 .Steps
 
