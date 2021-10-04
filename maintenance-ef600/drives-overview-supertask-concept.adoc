@@ -34,7 +34,7 @@ Magnetic fields can destroy all data on the drive and cause irreparable damage t
 
 == Drive staggering in 24-drive controller shelf
 
-The following figure shows how the drives are numbered in each shelf (the shelf's front bezel has been removed).
+Standard 24-drive shelves require drive staggering. The following figure shows how the drives are numbered in each shelf (the shelf's front bezel has been removed). 
 
 image::../media/ef600_drives_numbered.png[]
 

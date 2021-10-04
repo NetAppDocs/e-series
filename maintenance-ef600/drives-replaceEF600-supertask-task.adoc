@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: replace EF300 DIMM, replace EF600 DIMM, drive failure
 summary: Replace a drive in an EF300 or EF600 array.
 ---
-= Replace drive in EF300 or EF600
+= Replace drive in an EF600
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to replace a drive in an EF300 or EF600 array.
+Follow this procedure to replace a drive in an EF600 array.
 
 == About this task
 
