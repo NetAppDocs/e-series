@@ -1,10 +1,10 @@
 ---
 permalink: cloud-connector/index.html
 sidebar: sidebar
-keywords: santricity, cloud, connector
+keywords: Cloud Connector
 summary: SANtricity Cloud Connector
 ---
-= SANtricity® Cloud Connector
+= Overview of the SANtricity® Cloud Connector
 :icons: font
 :imagesdir: ../media/
 
@@ -13,25 +13,22 @@ The SANtricity Cloud Connector is a host-based Linux application that enables yo
 
 Available for installation on RedHat and SUSE Linux platforms, the SANtricity Cloud Connector is a packaged solution (.bin file). After you install SANtricity Cloud Connector, you can configure the application to perform backup and restore jobs for E-Series volumes to an AltaVault appliance or to your existing Amazon S3 or StorageGRID accounts. All jobs performed through the SANtricity Cloud Connector use REST-based APIs.
 
-== Understand the SANtricity Cloud Connector
+== Considerations
 
-[.lead]
-Learn about general concepts, setup, installation, configuration, and jobs associated with the SANtricity Cloud Connector application.
+When using these procedures, be aware that:
 
-* Configuration and backup/restore job procedures apply to the graphical user interface version of the SANtricity Cloud Connector.
-* REST API workflows for the SANtricity Cloud Connector application are not described.
-* For experienced developers, endpoints are available for each SANtricity Cloud Connector operation under the API documentation. The API documentation is accessible by navigating to h``ttp://<hostname.domain>:<port>/docs`` through a browser.
+* Configuration and backup/restore jobs described in these procedures apply to the graphical user interface version of the SANtricity Cloud Connector.
+* REST API workflows for the SANtricity Cloud Connector application are not described in these procedures. For experienced developers, endpoints are available for each SANtricity Cloud Connector operation under the API documentation. The API documentation is accessible by navigating to ``http://<hostname.domain>:<port>/docs`` through a browser.
 
-=== Types of backup
+== Types of backup
 
-[.lead]
-The SANtricity Cloud Connector provides two types of backups, image-based and file-based backups.
+The SANtricity Cloud Connector provides two types of backups: image-based and file-based backups.
 
 * *Image-based backup*
 +
 An image-based backup reads the raw data blocks from a snapshot volume and backs them up to a file known as an image. All of the data blocks on the snapshot volume are backed up, including empty blocks, blocks occupied by deleted files, blocks associated with partitioning, and filesystem metadata. Image backups have the advantage of storing all information with the snapshot volume regardless of the partitioning scheme or filesystems on it.
 +
-The image is not stored on the Backup Target as a single file but is instead broken up into a series of Data Chunks, which are 64MB in size. The data chunks allow SANtricity Cloud Connector to use multiple connections to the backup target, thereby improving the performance of the backup process.
+The image is not stored on the Backup Target as a single file, but is instead broken up into a series of data chunks, which are 64MB in size. The data chunks allow SANtricity Cloud Connector to use multiple connections to the backup target, thereby improving the performance of the backup process.
 +
 For backups to StorageGRID and Amazon Web Services (S3), each data chunk uses a separate encryption key to encrypt the chunk. The key is a SHA256 hash consisting of the combination of a user supplied passphrase and the SHA256 hash of the user data. For backups to AltaVault, SANtricity Cloud Connector does not encrypt the data chunks as AltaVault performs this operation.
 
