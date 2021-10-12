@@ -1,7 +1,7 @@
 ---
 permalink: cloud-connector/install-intro-concept.html
 sidebar: sidebar
-keywords: santricity, cloud, connector, package, solution, redhat, suse, linux, platform, install, operating, system, graphical, mode, linux, console, server, certification, certificate, ca, keystore, add, storagegrid
+keywords: Cloud Connector installation, install Cloud Connector
 summary: The SANtricity Cloud Connector packaged solution (.bin file) is available for RedHat and SUSE Linux platforms only.
 ---
 = Install SANtricity Cloud Connector
@@ -13,28 +13,30 @@ The SANtricity Cloud Connector packaged solution (.bin file) is available for Re
 
 You can install the SANtricity Cloud Connector application through graphical mode or console mode on a compatible Linux operating system. During the installation process, you must specify the non-SSL and SSL port numbers for the SANtricity Cloud Connector. When installed, the SANtricity Cloud Connector runs as a daemon process.
 
-[NOTE]
-===
+== Before you begin
+Review the following notes:
+
 * If SANtricity Web Services Proxy is already installed on the same server as the SANtricity Cloud Connector, conflicts will occur between non-SSL port numbers and SSL port numbers conflicts. In this case, choose appropriate numbers for the non-SSL port and the SSL port during the SANtricity Cloud Connector installation.
 * If any hardware changes are performed on your host, re-install the SANtricity Cloud Connector application to ensure encryption consistency.
 * Backups created through version 3.1 of the SANtricity Cloud Connector application are not compatible with version 4.0 of the SANtricity Cloud Connector application. If you intend to maintain these backups, you must continue to use your previous version of the SANtricity Cloud Connector. To ensure successful installation of separate 3.1 and 4.0 releases of the SANtricity Cloud Connector, unique port numbers must be assigned for each version of the application.
-===
 
 == Install Device Mapper Multipath (DM-MP)
 
-[.lead]
 Any host running the SANtricity Cloud Connector also must run Linux Device Mapper Multipath (DM-MP) and have the multipath-tools package installed.
 
 The SANtricity Cloud Connector discovery process relies on the multipath tools package for discovery and recognition of the volumes and files to backup or restore. For more information on how to set up and configure the Device Mapper, see the _SANtricity Storage Manager Multipath Drivers Guide_ for the release of SANtricity you are using under the https://mysupport.netapp.com/info/web/ECMP1658252.html[E-Series and SANtricity Document Resources^].
 
-== Install the SANtricity Cloud Connector on a Linux Operating System in graphical mode
+== Install Cloud Connector
 
-[.lead]
+You can install SANtricity Cloud Connector on Linux operating systems in either graphical mode or console mode.
+
+=== Graphical mode
+
 You can use graphical mode to install the SANtricity Cloud Connector on a Linux operating system.
 
 .Before you begin
 
-* You have a designated host location for the SANtricity Cloud Connector installation.
+Designate a host location for the SANtricity Cloud Connector installation.
 
 .Steps
 
@@ -86,14 +88,13 @@ The Installation Complete message is displayed.
 
 . Click *Done* to exit the SANtricity Cloud Connecter installer.
 
-== Install the SANtricity Cloud Connector on a Linux Operating System in console mode
+=== Console mode
 
-[.lead]
 You can use the console mode to install the SANtricity Cloud Connector on a Linux operating system.
 
 .Before you begin
 
-* You have a designated host location for the SANtricity Cloud Connector installation.
+Designate a host location for the SANtricity Cloud Connector installation.
 
 .Steps
 
@@ -133,7 +134,7 @@ NOTE: To install version 4.0 of the SANtricity Cloud Connector while maintaining
 A Choose Install Folder message with the following default install folder for the SANtricity Cloud Connector is displayed:``/opt/netapp/santricity_cloud_connector4/``.
 
 . Choose one of the following options:
- ** To accept the default install location, press**Enter**.
+ ** To accept the default install location, press *Enter*.
  ** To change the default install location, enter the new folder location.
 An Enter the Non SSL Jetty Port Number message is displayed. A default value of 8080 is assigned to the Non SSL port.
 . Choose one of the following options:
@@ -144,7 +145,7 @@ An Enter the Non SSL Jetty Port Number message is displayed. A default value of 
  ** To change the default Non SSL port number, enter the new port number value.
 The Pre-Installation Summary for the SANtricity Cloud Connector is displayed.
 . Review the displayed Pre-Installation Summary, and press *Enter*.
-. Press **Enter**to acknowledge the Webserver Daemon Setup prompt.
+. Press *Enter* to acknowledge the Webserver Daemon Setup prompt.
 +
 The Installation Complete message is displayed.
 
@@ -152,12 +153,11 @@ The Installation Complete message is displayed.
 
 == Add server certificate and CA certificate into a keystore
 
-[.lead]
-To use a secure `https` connection from the browser to the SANtricity Cloud Connector host, you can accept the self signed certificate from the SANtricity Cloud Connector host or add a certificate and a trust chain recognized by both the browser and the SANtricity Cloud Connector application.
+To use a secure https connection from the browser to the SANtricity Cloud Connector host, you can accept the self-signed certificate from the SANtricity Cloud Connector host or add a certificate and a trust chain recognized by both the browser and the SANtricity Cloud Connector application.
 
 .Before you begin
 
-* You have the SANtricity Cloud Connector application installed on a host.
+The SANtricity Cloud Connector application must be installed on a host.
 
 .Steps
 
@@ -193,7 +193,6 @@ keytool -import -trustcacerts -alias cloudconnect -file certnew.cer -keystore ke
 
 == Add StorageGRID certificate into a keystore
 
-[.lead]
 If you are configuring StorageGRID as the target type for the SANtricity Cloud Connector application, you must first add a StorageGRID certificate into the SANtricity Cloud Connector keystore.
 
 .Before you begin
