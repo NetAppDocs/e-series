@@ -339,7 +339,7 @@ sidebar:
                     url: "/config-linux/nvme-roce-verify-storage-access-host-task.html"
                   - title: NVMe over RoCE worksheet for Linux
                     url: "/config-linux/nvme-roce-worksheet-for-concept.html"
-                - title: NVMe over Fibre Channel Setup
+                - title: NVMe over Fibre Channel setup
                   entries:
                   - title: Verify Linux configuration
                     url: "/config-linux/nvme-fc-verify-linux-config-support-task.html"
@@ -435,7 +435,8 @@ sidebar:
                 url: "/config-windows/verify-storage-access-host-task.html"
     - title: Upgrade systems
       entries:
-        - title: Controller upgrade
+        - title: Controllers
+          pdf-filename: Controller Hardware Upgrade
           entries:
               - title: Overview
                 url: "/upgrade-controllers/index.html"
@@ -456,6 +457,7 @@ sidebar:
               - title: Reconfigure SAS-2 system
                 url: "/upgrade-controllers/reconfigure-sas-task.html"
         - title: SANtricity OS
+          pdf-filename: SANtricity Software Upgrade
           entries:
               - title: Overview
                 url: "/upgrade-santricity/index.html"
@@ -469,41 +471,48 @@ sidebar:
                 url: "/upgrade-santricity/upgrade-drive-firmware-task.html"
     - title: Maintain systems
       entries:
-        - title: EF300/EF600
+        - title: EF300 and EF600
+          pdf-filename: EF300-EF600 Maintain Systems
           entries:
               - title: Overview
                 url: "/maintenance-ef600/index.html"
               - title: Batteries
+                pdf-filename: EF300-EF600 Maintain Batteries
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/batteries-overview-requirements-concept.html"
                 - title: Replace battery
                   url: "/maintenance-ef600/batteries-replace-supertask-task.html"
               - title: Controllers
+                pdf-filename: EF300-EF600 Maintain Controllers
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/controllers-overview-supertask-concept.html"
                 - title: Replace controller
                   url: "/maintenance-ef600/controllers-replace-supertask-task.html"
               - title: DIMMs
+                pdf-filename: EF300-EF600 Maintain DIMMs
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/dimms-overview-supertask-concept.html"
                 - title: Replace DIMMs
                   url: "/maintenance-ef600/dimms-replace-supertask-task.html"
               - title: Drives
+                pdf-filename: EF300-EF600 Maintain Drives
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/drives-overview-supertask-concept.html"
                 - title: Replace drive
                   url: "/maintenance-ef600/drives-replace-supertask-task.html"
               - title: Fans
+                pdf-filename: EF300-EF600 Maintain Fans
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/fans-overview-requirements-replacing2-concept.html"
                 - title: Replace fan
                   url: "/maintenance-ef600/fans-replace-supertask-task.html"
               - title: Host interface cards
+                pdf-filename: EF300-EF600 Maintain HICs
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/hics-overview-supertask-concept.html"
@@ -514,6 +523,7 @@ sidebar:
                 - title: Replace failed host interface card
                   url: "/maintenance-ef600/hics-replace-supertask-task.html"
               - title: Host port protocol conversion
+                pdf-filename: EF300-EF600 Maintain Host Port
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/hpp-overview-supertask-concept.html"
@@ -522,6 +532,7 @@ sidebar:
                 - title: Complete host protocol conversion
                   url: "/maintenance-ef600/hpp-complete-protocol-conversion-task.html"
               - title: Power supplies
+                pdf-filename: EF300-EF600 Maintain Power Supplies
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/power-overview-requirements2-concept.html"
@@ -534,10 +545,12 @@ sidebar:
                 - title: Add SAS expansion cards
                   url: "/maintenance-ef600/sas-add-supertask-task.html"
         - title: E2800
+          pdf-filename: E2800 Maintain System
           entries:
             - title: Overview
               url: "/maintenance-e2800/index.html"
             - title: Batteries
+              pdf-filename: E2800 Maintain Batteries
               entries:
               - title: Requirements for battery replacement
                 url: "/maintenance-e2800/batteries-overview-requirements-concept.html"
@@ -554,6 +567,7 @@ sidebar:
               - title: Complete battery replacement
                 url: "/maintenance-e2800/batteries-complete-replacement-task.html"
             - title: Controllers
+              pdf-filename: E2800 Maintain Controllers
               entries:
               - title: Requirements for controller replacement
                 url: "/maintenance-e2800/controllers-overview-supertask-concept.html"
@@ -564,6 +578,7 @@ sidebar:
               - title: Replace controller in simplex configuration
                 url: "/maintenance-e2800/controllers-simplex-supertask-task.html"
             - title: Canisters
+              pdf-filename: E2800 Maintain Canisters
               entries:
               - title: Requirements for canister replacement
                 url: "/maintenance-e2800/canisters-overview-supertask-concept.html"
@@ -574,6 +589,7 @@ sidebar:
               - title: Replace fan canister (60-drive)
                 url: "/maintenance-e2800/canisters-fan-supertask-task.html"
             - title: Drives
+              pdf-filename: E2800 Maintain Drives
               entries:
               - title: Requirements for drive replacement
                 url: "/maintenance-e2800/drives-overview-supertask-concept.html"
@@ -584,6 +600,7 @@ sidebar:
               - title: Replace drive drawer (60-drive)
                 url: "/maintenance-e2800/drives-60-supertask-task.html"
             - title: Host interface cards
+              pdf-filename: E2800 Maintain HICs
               entries:
               - title: Requirements for HIC replacement
                 url: "/maintenance-e2800/hics-overview-supertask-concept.html"
@@ -594,6 +611,7 @@ sidebar:
               - title: Replace host interface card
                 url: "/maintenance-e2800/hics-replace-supertask-task.html"
             - title: Host port protocol conversion
+              pdf-filename: E2800 Convert Host Protocol
               entries:
               - title: Requirements for conversion
                 url: "/maintenance-e2800/hpp-overview-supertask-concept.html"
@@ -602,22 +620,26 @@ sidebar:
               - title: Complete host protocol conversion
                 url: "/maintenance-e2800/hpp-complete-protocol-conversion-task.html"
         - title: E5700
+          pdf-filename: E5700 Maintain System
           entries:
               - title: Overview
                 url: "/maintenance-e5700/index.html"
               - title: Batteries
+                pdf-filename: E5700 Maintain Batteries
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-e5700/batteries-intro-concept.html"
                 - title: Replace battery
                   url: "/maintenance-e5700/batteries-replace-supertask-task.html"
               - title: Controllers
+                pdf-filename: E5700 Maintain Controllers
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-e5700/controllers-overview-concept.html"
                 - title: Replace controller in duplex configuration
                   url: "/maintenance-e5700/controllers-duplex-supertask-task.html"
               - title: Canisters
+                pdf-filename: E5700 Maintain Canisters
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-e5700/canisters-overview-supertask-concept.html"
@@ -628,6 +650,7 @@ sidebar:
                 - title: Replace fan canister (60-drive)
                   url: "/maintenance-e5700/canisters-fan-replace-task.html"
               - title: Drives
+                pdf-filename: E5700 Maintain Drives
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-e5700/drives-overview-supertask-concept.html"
@@ -638,6 +661,7 @@ sidebar:
                 - title: Replace drive drawer (60-drive)
                   url: "/maintenance-e5700/drives-drawer-supertask-task.html"
               - title: Host interface cards
+                pdf-filename: E5700 Maintain HICs
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-e5700/hics-overview-supertask-concept.html"
@@ -648,6 +672,7 @@ sidebar:
                 - title: Replace host interface card
                   url: "/maintenance-e5700/hics-replace-supertask-task.html"
               - title: Host port protocol
+                pdf-filename: E5700 Change Host Protocol
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-e5700/hpp-overview-supertask-concept.html"
