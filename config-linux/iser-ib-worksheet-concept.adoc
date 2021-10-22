@@ -4,16 +4,16 @@ sidebar: sidebar
 keywords: iSER worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: Use this worksheet to record iSER over Infiniband storage configuration information.
 ---
-= iSER over InfiniBand worksheet
+= Record your iSER over IB configuration
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use this worksheet to record iSER over Infiniband storage configuration information. You need this information to perform provisioning tasks.
+You can generate and print a PDF of this page, and then use the following worksheet to record iSER over Infiniband storage configuration information. You need this information to perform provisioning tasks.
 
-== iSER over InfiniBand: Host identifiers
+== Host identifiers
 
-NOTE: The software initiator IQN is determined during the task, xref:iser-ib-configure-network-attached-hosts-task.adoc[Configuring storage attached hosts with iSER networking].
+NOTE: The software initiator IQN is determined during the task, xref:iser-ib-configure-network-attached-hosts-task.adoc[Configure networking for storage attached hosts].
 
 Locate and document the initiator IQN from each host. For software initiators, the IQN is typically found in the /etc/iscsi/initiatorname.iscsi file.
 
@@ -52,15 +52,15 @@ a|
 
 |===
 
-== iSER over InfiniBand: Recommended configuration
+== Recommended configuration
 
 Recommended configurations consist of two host (initiator) ports and four target ports.
 
 image::../media/port_identifiers_ib_iser.gif[]
 
-== iSER over InfiniBand: Target IQN
+== Target IQN
 
-Document the target IQN for the storage array. You will use this information in xref:iser-ib-configure-network-attached-hosts-task.adoc[Configuring storage attached hosts with iSER networking].
+Document the target IQN for the storage array. You will use this information in xref:iser-ib-configure-network-attached-hosts-task.adoc[Configure networking for storage attached hosts].
 
 Find the Storage Array IQN name using SANtricity: *Storage Array* > *iSER* > *Manage Settings*. This information might be necessary when you create iSER sessions from operating systems that do not support send targets discovery.
 
@@ -75,13 +75,13 @@ a|
 
 |===
 
-== iSER over InfiniBand: Network configuration
+== Network configuration
 
 Document the network configuration that will be used for the hosts and storage on the InfiniBand fabric. These instructions assume that two subnets will be used for full redundancy.
 
-Your network administrator can provide the following information. You use this information in the topic, xref:iser-ib-configure-network-attached-hosts-task.adoc[Configuring storage attached hosts with iSER networking].
+Your network administrator can provide the following information. You use this information in the topic, xref:iser-ib-configure-network-attached-hosts-task.adoc[Configure networking for storage attached hosts].
 
-== Subnet A
+=== Subnet A
 
 Define the subnet to be used.
 
@@ -130,7 +130,7 @@ a|
 
 |===
 
-== Subnet B
+=== Subnet B
 
 Define the subnet to be used.
 
@@ -179,7 +179,7 @@ a|
 
 |===
 
-== iSER over InfiniBand: Mapping host name
+== Mapping host name
 
 NOTE: The mapping host name is created during the workflow.
 

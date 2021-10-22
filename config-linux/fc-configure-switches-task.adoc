@@ -2,7 +2,7 @@
 permalink: config-linux/fc-configure-switches-task.html
 sidebar: sidebar
 keywords: FC switches, zoning, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
-summary: Configure the Fibre Channel switches to enable the hosts to connect to the storage array and limit the number of paths. 
+summary: Configure the Fibre Channel switches to enable the hosts to connect to the storage array and limit the number of paths.
 ---
 = Configure the FC switches
 :icons: font
@@ -18,9 +18,7 @@ Configuring (zoning) the Fibre Channel (FC) switches enables the hosts to connec
 
 .About this task
 
-For details about zoning your switches, see the switch vendor's documentation.
-
-Each initiator port must be in a separate zone with all of its corresponding target ports.
+Each initiator port must be in a separate zone with all of its corresponding target ports. For details about zoning your switches, see the switch vendor's documentation.
 
 .Steps
 

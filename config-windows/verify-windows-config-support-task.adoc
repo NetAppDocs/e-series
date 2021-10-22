@@ -10,7 +10,7 @@ summary: Verify that the Windows configuration is supported.
 :imagesdir: ../media/
 
 [.lead]
-To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool (IMT) to verify that the entire configuration is supported.
+To ensure reliable operation, create an implementation plan and then use the NetApp Interoperability Matrix Tool (IMT) to verify that the entire configuration is supported.
 
 .Steps
 

@@ -9,14 +9,14 @@ summary: Install Linux Unified Host Utilities when using FC.
 :imagesdir: ../media/
 
 [.lead]
-Linux Unified Host Utilities 7.1 includes tools to manage NetApp storage, including failover policies and physical paths.
+The Linux Unified Host Utilities tools help you manage NetApp storage, including failover policies and physical paths.
 
 .Steps
 
-. Use the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] to determine the appropriate version of Unified Host Utilities 7.1 to install.
+. Use the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] to determine the appropriate version of Unified Host Utilities to install.
 +
 The versions are listed in a column within each supported configuration.
 
-. Download the Unified Host Utilities 7.1 from https://mysupport.netapp.com/site/[NetApp Support^].
+. Download the Unified Host Utilities from https://mysupport.netapp.com/site/[NetApp Support^].
 +
-NOTE: Alternatively, you can use the SANtricity `SMdevices` utility to perform the same functions as the Unified Host Utility tool. The `SMdevices` utility is included as part of the `SMutils` package. The `SMutils` package is a collection of utilities to verify what the host sees from the storage array. It is included as part of the SANtricity software installation.
+NOTE: Alternatively, you can use the SANtricity SMdevices utility to perform the same functions as the Unified Host Utility tool. The SMdevices utility is included as part of the SMutils package. The SMutils package is a collection of utilities to verify what the host sees from the storage array. It is included as part of the SANtricity software installation.

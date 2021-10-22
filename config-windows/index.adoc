@@ -13,17 +13,21 @@ The Windows express method for installing your storage array and accessing SANtr
 
 === Procedure overview
 
-The express method includes the following steps.
+The express method includes the following steps, which are also outlined in the link:understand-windows-concept.html[Windows workflow].
 
-. Setting up one of the following communication environments:
- ** Fibre Channel (FC)
- ** iSCSI
- ** SAS
-. Creating logical volumes on the storage array.
-. Making the volumes available to the data host.
+. Set up one of the following communication environments:
+
+* link:fc-perform-specific-task.html[Fibre Channel (FC)]
+* link:iscsi-perform-specific-task.html[iSCSI]
+* link:sas-perform-specific-task.html[SAS]
+
+. Create logical volumes on the storage array.
+
+. Make the volumes available to the data host.
 
 === Find more information
 
 * Online help -- Describes how to use SANtricity System Manager to complete configuration and storage management tasks. It is available within the product.
 * https://kb.netapp.com/app/[NetApp Knowledgebase^] (a database of articles) -- Provides troubleshooting information, FAQs, and instructions for a wide range of NetApp products and technologies.
-* Windows Unified Host Utilities 7.0 Installation Guide under the NetApp Documentation -- Host Utilities (current releases) describes how to install and use the Windows Unified Host Utilities 7.0.
+* http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] -- Enables you to search for configurations of NetApp products and components that meet the standards and requirements specified by NetApp.
+* http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61343[NetApp Documentation: Host Utilities^] -- Provides documentation for the current Windows Unified Host Utilities version.

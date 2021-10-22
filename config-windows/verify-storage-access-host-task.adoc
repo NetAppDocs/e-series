@@ -9,7 +9,7 @@ summary: Verify that the host can write data to the LUN and read it back.
 :imagesdir: ../media/
 
 [.lead]
-Before using the volume, you verify that the host can write data to the LUN and read it back.
+Before using the volume, verify that the host can write data to the LUN and read it back.
 
 .Before you begin
 
@@ -39,7 +39,7 @@ You must have initialized the LUN and formatted it with a file system.
 ----
 . Find the target ID.
 +
-NOTE: The `dsmUtil` utility is case sensitive.
+NOTE: The dsmUtil utility is case sensitive.
 +
 ----
 > C:\\Program Files \(x86\)\\DSMDrivers\\mppdsm\\dsmUtil.exe -a

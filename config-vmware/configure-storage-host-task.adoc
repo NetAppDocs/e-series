@@ -19,5 +19,4 @@ The volumes mapped to the ESXi host must have been discovered properly.
 
 .Steps
 
-* For instructions on creating VMFS datastores using either the vSphere Client or the vSphere Web Client, see the VMware pubs webpage (https://www.vmware.com/support/pubs/) for documentation on this topic.
-* For instructions on using volumes as RDMs using either the vSphere Client or the vSphere Web Client, see the VMware pubs webpage (https://www.vmware.com/support/pubs/) for documentation on this topic.
+For instructions on creating VMFS datastores or using volumes as RDMs with  either the vSphere Client or the vSphere Web Client, see https://www.vmware.com/support/pubs/[VMware Documentation web site^].

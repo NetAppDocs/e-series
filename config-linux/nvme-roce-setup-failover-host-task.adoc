@@ -9,11 +9,12 @@ summary: Configure the host to run failover.
 :imagesdir: ../media/
 
 [.lead]
-To provide a redundant path to the storage array, you can configure the host to run failover
+To provide a redundant path to the storage array, you can configure the host to run failover.
 
 .Before you begin
 
-* You have installed the required packages on your system.
+You must install the required packages on your system.
+
 * For Red Hat (RHEL) hosts, verify the packages are installed by running `rpm -q device-mapper-multipath`
 * For SLES hosts, verify the packages are installed by running `rpm -q multipath-tools`
 

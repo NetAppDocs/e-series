@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: iSCSI worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: Use this worksheet to record iSCSI storage configuration information.
 ---
-= iSCSI worksheet - Linux
+= Record your iSCSI configuration
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use this worksheet to record iSCSI storage configuration information. You need this information to perform provisioning tasks.
+You can generate and print a PDF of this page, and then use the following worksheet to record iSCSI storage configuration information. You need this information to perform provisioning tasks.
 
 == Recommended configuration
 
@@ -30,7 +30,7 @@ a|
 
 |===
 
-== Mappings host name
+== Mapping host name
 
 [options="header"]
 |===
@@ -38,7 +38,7 @@ a|
 a|
 1
 a|
-Mappings host name
+Mapping host name
 a|
 
 a|

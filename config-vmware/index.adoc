@@ -13,25 +13,26 @@ The VMware express method for installing your storage array and accessing SANtri
 
 === Procedure overview
 
-The express method includes the following steps.
+The express method includes the following steps, which are also outlined in the link:understand-vmware-workflow-concept.html[VMware workflow].
 
-. Setting up one of the following communication environments:
- ** NVMe over Fibre Channel
- ** Fibre Channel (FC)
- ** iSCSI
- ** SAS
-. Creating logical volumes on the storage array.
-. Making the volumes available to the data host.
+. Set up one of the following communication environments:
+
+* link:nmve-fc-perform-specific-task.html[NVMe over Fibre Channel]
+* link:fc-perform-specific-task.html[Fibre Channel]
+* link:iscsi-perform-specific-task.html[iSCSI]
+* link:sas-perform-specific-task.html[SAS]
+
+. Create logical volumes on the storage array.
+
+. Make the volumes available to the data host.
+
 
 === Find more information
 
 * Online help -- Describes how to use SANtricity System Manager to complete configuration and storage management tasks. It is available within the product.
 * https://kb.netapp.com/app/[NetApp Knowledgebase^] (a database of articles) -- Provides troubleshooting information, FAQs, and instructions for a wide range of NetApp products and technologies.
-* VMware Configuration Maximums -- Describes how to configure virtual and physical storage to stay within the allowed maximums that ESX/ESXi supports.
-+
-** vSphere 6._x_ - search vmware.com for "vsphere 6._x_ configuration maximums."
-+
-** vSphere 7._x_ - search vmware.com for "vsphere 7._x_ configuration maximums."
-
-* vmware Docs -- https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-9AEE5F4D-0CB8-4355-BF89-BB61C5F30C70.html[Requirements and limitations of VMware NVMe storage].
-* vmware.com -- Search for ESXi vCenter Server documentation.
+* http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] -- Enables you to search for configurations of NetApp products and components that meet the standards and requirements specified by NetApp.
+* https://www.netapp.com/us/media/tr-4789.pdf[VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.X^] -- Provides technical details on iSCSI integration with VMware.
+* https://configmax.vmware.com/home[VMware Configuration Maximums^] -- Describes how to configure virtual and physical storage to stay within the allowed maximums that ESX/ESXi supports.
+* https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-9AEE5F4D-0CB8-4355-BF89-BB61C5F30C70.html[Requirements and limitations of VMware NVMe storage].
+* https://docs.vmware.com/en/VMware-vSphere/index.html[VMware vSphere Documentation] -- Provides ESXi vCenter Server documentation.

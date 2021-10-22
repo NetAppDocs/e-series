@@ -28,8 +28,8 @@ You use the device mapper multipath (DM-MP) tool for Linux installations. By def
 
 .Steps
 
-. If a `multipath.conf` file is not already created, run the `# touch /etc/multipath.conf` command.
-. Use the default multipath settings by leaving the `multipath.conf` file blank.
+. If a multipath.conf file is not already created, run the `# touch /etc/multipath.conf` command.
+. Use the default multipath settings by leaving the multipath.conf file blank.
 . Start the multipath service.
 +
 ----
@@ -75,7 +75,7 @@ a|
 `dracut --force --add multipath`
 |===
 
-. Make sure that the newly created `/boot/initrams-* image or /boot/initrd-*` image is selected in the boot configuration file.
+. Make sure that the newly created /boot/initrams-* image or /boot/initrd-* image is selected in the boot configuration file.
 +
 For example, for grub it is `/boot/grub/menu.lst` and for grub2 it is `/boot/grub2/menu.cfg`.
 

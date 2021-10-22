@@ -9,11 +9,13 @@ summary: You install an FC HBA utility so you can view the worldwide port name \
 :imagesdir: ../media/
 
 [.lead]
-You install an FC HBA utility so you can view the worldwide port name (WWPN) of each host port. Additionally, you can use the HBA utility to change any settings recommended in the Notes column of the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for the supported configuration.
+You install an FC HBA utility so you can view the worldwide port name (WWPN) of each host port.
+
+Additionally, you can use the HBA utility to change any settings recommended in the Notes column of the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for the supported configuration.
 
 .About this task
 
-Guidelines for HBA utilities:
+Review the guidelines for HBA utilities:
 
 * Most HBA vendors offer an HBA utility. You will need the correct version of HBA for your host operating system and CPU. Examples of FC HBA utilities include:
  ** Emulex OneCommand Manager for Emulex HBAs
@@ -26,4 +28,4 @@ Guidelines for HBA utilities:
 . Install the utility.
 . Select the appropriate settings in the HBA utility.
 +
-Appropriate settings for your configuration are listed in the Notes column of the Interoperability Matrix Tool.
+Appropriate settings for your configuration are listed in the Notes column of the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].

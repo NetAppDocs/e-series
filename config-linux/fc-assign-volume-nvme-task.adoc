@@ -44,7 +44,7 @@ A dialog box appears that lists all the volumes that can be assigned. You can so
 . Select the checkbox next to each volume that you want to assign or select the checkbox in the table header to select all volumes.
 . Click *Assign* to complete the operation.
 
-===== Result
+.Result
 
 After successfully assigning a volume or volumes to a host or a host cluster, the system performs the following actions:
 
