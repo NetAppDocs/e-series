@@ -13,7 +13,8 @@ To provide a redundant path to the storage array, you can configure the host to 
 
 .Before you begin
 
-* You have installed the required packages on your system.
+You must install the required packages on your system.
+
 * For Red Hat (RHEL) hosts, verify the packages are installed by running `rpm -q device-mapper-multipath`
 * For SLES hosts, verify the packages are installed by running `rpm -q multipath-tools`
 +
@@ -28,7 +29,7 @@ By default, DM-MP is disabled in RHEL and SLES. Complete the following steps to 
 
 .Steps
 
-. Add the NVMe E-Series device entry to the devices section of the `/etc/multipath.conf` file, as shown in the following example:
+. Add the NVMe E-Series device entry to the devices section of the /etc/multipath.conf file, as shown in the following example:
 +
 ----
 

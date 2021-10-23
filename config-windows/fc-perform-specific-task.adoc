@@ -11,9 +11,8 @@ summary: For the Fibre Channel protocol, you configure the switches and determin
 [.lead]
 For the Fibre Channel protocol, you configure the switches and determine the host port identifiers.
 
-== Step 1: Configuring the FC switches--Windows
+== Step 1: Configure the FC switches--Windows
 
-[.lead]
 Configuring (zoning) the Fibre Channel (FC) switches enables the hosts to connect to the storage array and limits the number of paths. You zone the switches using the management interface for the switches.
 
 .Before you begin
@@ -23,9 +22,7 @@ Configuring (zoning) the Fibre Channel (FC) switches enables the hosts to connec
 
 .About this task
 
-For details about zoning your switches, see the switch vendor's documentation.
-
-You must zone by WWPN, not by physical port. Each initiator port must be in a separate zone with all of its corresponding target ports.
+You must zone by WWPN, not by physical port. Each initiator port must be in a separate zone with all of its corresponding target ports. For details about zoning your switches, see the switch vendor's documentation.
 
 .Steps
 
@@ -34,14 +31,13 @@ You must zone by WWPN, not by physical port. Each initiator port must be in a se
 . Create additional zones for each FC host initiator port in the switch.
 . Save the zones, and then activate the new zoning configuration.
 
-== Step 2: Determining host WWPNs and making the recommended settings--FC, Windows
+== Step 2: Determine host WWPNs and make recommended settings--FC, Windows
 
-[.lead]
 You install an FC HBA utility so you can view the worldwide port name (WWPN) of each host port. Additionally, you can use the HBA utility to change any settings recommended in the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for the supported configuration.
 
 .Before you begin
 
-Guidelines for HBA utilities:
+Review the guidelines for HBA utilities:
 
 * Most HBA vendors offer an HBA utility. You will need the correct version of HBA for your host operating system and CPU. Examples of FC HBA utilities include:
  ** Emulex OneCommand Manager for Emulex HBAs
@@ -54,12 +50,11 @@ Guidelines for HBA utilities:
 . Install the utility.
 . Select the appropriate settings in the HBA utility.
 +
-Appropriate settings for your configuration are listed in the Notes column of the IMT.
+Appropriate settings for your configuration are listed in the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
-== Step 2: FC worksheet for Windows
+== Step 3: Record your configuration
 
-[.lead]
-You can use this worksheet to record FC storage configuration information. You need this information to perform provisioning tasks.
+You can generate and print a PDF of this page, and then use the following worksheet to record FC storage configuration information. You need this information to perform provisioning tasks.
 
 The illustration shows a host connected to an E-Series storage array in two zones. One zone is indicated by the blue line; the other zone is indicated by the red line. Any single port has two paths to the storage (one to each controller).
 

@@ -20,8 +20,8 @@ When you are using a 56-Gbps HIC with the iSER over Infiniband protocol, additio
 
 . From the *Setup* tab, select *Configure iSCSI Host Ports* to set the storage array iSCSI addresses.
 +
-Put the array iSCSI addresses on the same subnet as the host port(s) you will use to create iSCSI sessions. For addresses, see xref:iser-ib-worksheet-concept.adoc[iSER worksheet].
+Put the array iSCSI addresses on the same subnet as the host port(s) you will use to create iSCSI sessions. For addresses, see your xref:iser-ib-worksheet-concept.adoc[iSER worksheet].
 
 . From the *Devices* tab, select the storage array and go to menu:iSER[Manage Settings] to find the IQN.
 +
-This information might be necessary when you create iSER sessions from operating systems that do not support send targets discovery. Enter this information in the worksheet, in xref:iser-ib-worksheet-concept.adoc[iSER worksheet].
+This information might be necessary when you create iSER sessions from operating systems that do not support send targets discovery. Enter this information in the xref:iser-ib-worksheet-concept.adoc[iSER worksheet].

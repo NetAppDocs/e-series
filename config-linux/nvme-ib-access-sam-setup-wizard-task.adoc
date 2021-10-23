@@ -5,6 +5,7 @@ keywords: access System Manager Linux, express linux configuration, software con
 summary: 'You use the Setup wizard in SANtricity System Manager to configure your storage array.'
 ---
 = Access SANtricity System Manager and use the Setup wizard
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
@@ -13,7 +14,8 @@ You use the Setup wizard in SANtricity System Manager to configure your storage 
 
 .Before you begin
 
-* You have ensured that the device from which you will access SANtricity System Manager contains one of the following browsers:
+* You must use out-of-band management.
+* Ensure that the device from which you will access SANtricity System Manager contains one of the following browsers:
 +
 [options="header"]
 |===
@@ -21,7 +23,7 @@ You use the Setup wizard in SANtricity System Manager to configure your storage 
 a|
 Google Chrome
 a|
-47
+79
 a|
 Microsoft Internet Explorer
 a|
@@ -29,18 +31,17 @@ a|
 a|
 Microsoft Edge
 a|
-EdgeHTML 12
+79
 a|
 Mozilla Firefox
 a|
-31
+70
 a|
 Safari
 a|
-9
+12
 |===
 
-* You are using out-of-band management.
 
 .About this task
 
@@ -56,11 +57,11 @@ The wizard automatically relaunches when you open System Manager or refresh your
 +
 `IPAddress` is the address for one of the storage array controllers.
 +
-The first time SANtricity System Manager is opened on an array that has not been configured, the `Set Administrator Password` prompt appears. Role-based access management configures four local roles: admin, support, security, and monitor. The latter three roles have random passwords that cannot be guessed. After you set a password for the admin role you can change all of the passwords using the admin credentials. See _SANtricity System Manager online help_ for more information on the four local user roles.
+The first time SANtricity System Manager is opened on an array that has not been configured, the Set Administrator Password prompt appears. Role-based access management configures four local roles: admin, support, security, and monitor. The latter three roles have random passwords that cannot be guessed. After you set a password for the admin role, you can change all of the passwords using the admin credentials. For more information about the four local user roles, see the online help available in the SANtricity System Manager user interface.
 
-. Enter the System Manager password for the admin role in the `Set Administrator Password` and `Confirm Password` fields, and then click *Set Password*.
+. Enter the System Manager password for the admin role in the Set Administrator Password and Confirm Password fields, and then click *Set Password*.
 +
-When you open System Manager and no pools, volumes groups, workloads, or notifications have been configured, the Setup wizard launches.
+The Setup wizard launches if there are no pools, volumes groups, workloads, or notifications configured.
 
 . Use the Setup wizard to perform the following tasks:
  ** *Verify hardware (controllers and drives)* -- Verify the number of controllers and drives in the storage array. Assign a name to the array.
@@ -68,6 +69,6 @@ When you open System Manager and no pools, volumes groups, workloads, or notific
  ** *Accept pools* -- Accept the recommended pool configuration for the express installation method. A pool is a logical group of drives.
  ** *Configure alerts* -- Allow System Manager to receive automatic notifications when a problem occurs with the storage array.
  ** *Enable AutoSupport* -- Automatically monitor the health of your storage array and have dispatches sent to technical support.
-. If you have not already created a volume, create one by going to *Storage* > *Volumes* > *Create* > *Volume*.
+. If you have not already created a volume, create one by going to menu:Storage[Volumes > Create > Volume].
 +
 For more information, see the online help for SANtricity System Manager.

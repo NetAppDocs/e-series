@@ -13,7 +13,7 @@ The InfiniBand OFED driver stack supports running both iSER and SRP simultaneous
 
 .Before you begin
 
-A NetApp recommended OFED is installed on the system. For more information, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
+A NetApp recommended OFED must be installed on the system. For more information, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 .Steps
 
@@ -132,6 +132,6 @@ iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
 iscsiadm -m session
 ----
 
- .. Check the iscsi session status from the array. From SANtricity System Manager, navigate to the *Storage Array* > *iSER* > *View/End Sessions*.
+ .. Check the iscsi session status from the array. From SANtricity System Manager, navigate to *Storage Array* > *iSER* > *View/End Sessions*.
 
 When the OFED/RDMA service starts, the iSER kernel module(s) loads by default when the iSCSI services are running. To complete the iSER connection setup, the iSER module(s) should be loaded. Currently this requires a host reboot.

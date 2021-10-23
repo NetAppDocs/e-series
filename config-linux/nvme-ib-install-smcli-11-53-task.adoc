@@ -11,7 +11,7 @@ summary: Install Storage Manager for CLI and HCA in Linux express method.
 [.lead]
 When you install the SANtricity Storage Manager software on your management station, a graphical user interface (GUI) and a command line interface (CLI) are installed by default. These instructions assume that you will install the SANtricity Storage Manager GUI on a management station and _not_ on the I/O host.
 
-NOTE: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricty System Manager, refer to the _Download the command line interface (CLI)_ topic under the SANtricity System Manager Online Help.
+NOTE: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricity System Manager, refer to the _Download the command line interface (CLI)_ topic under the SANtricity System Manager Online Help.
 
 .Before you begin
 
@@ -24,7 +24,7 @@ NOTE: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli)
 
 .About this task
 
-This section describes how to install SANtricity Storage Manager on both the Windows and Linux OS platforms, because both Windows and Linux are common management station platforms when Linux is used for the data host.
+This task describes how to install SANtricity Storage Manager on both the Windows and Linux OS platforms, because both Windows and Linux are common management station platforms when Linux is used for the data host.
 
 .Steps
 

@@ -9,20 +9,22 @@ summary: 'Configure the I/O directed to the device target based on your version 
 :imagesdir: ../media/
 
 [.lead]
-You can configure the I/O directed to the device target based on your version of SLES (SUSE Linux version). For RHEL 7 and SLES 12, I/O is directed to virtual device targets by the Linux host. DM-MP manages the physical paths underlying these virtual targets.
+You can configure the I/O directed to the device target based on your version of SLES (SUSE Linux version).
+
+For RHEL 7 and SLES 12, I/O is directed to virtual device targets by the Linux host. DM-MP manages the physical paths underlying these virtual targets.
 
 == Virtual devices are I/O targets
 
 Make sure you are running I/O only to the virtual devices created by DM-MP and not to the physical device paths. If you are running I/O to the physical paths, DM-MP cannot manage a failover event and the I/O fails.
 
-You can access these block devices through the `dm` device or the `symlink` in `/dev/mapper`, for example:
+You can access these block devices through the `dm` device or the `symlink` in /dev/mapper. For example:
 
 ----
 /dev/dm-1
 /dev/mapper/eui.00001bc7593b7f5f00a0980000af4462
 ----
 
-== Example
+== Example output
 
 The following example output from the `nvme list` command shows the host node name and its correlation with the namespace ID.
 

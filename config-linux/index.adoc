@@ -15,7 +15,7 @@ The Linux express method for installing your storage array and accessing SANtric
 
 The Linux express method includes the following steps.
 
-. Setting up one of the following communication environments:
+. Set up one of the following communication environments:
  ** Fibre Channel (FC)
  ** iSCSI
  ** SAS
@@ -24,12 +24,13 @@ The Linux express method includes the following steps.
  ** NVMe over Infiniband
  ** NVMe over RoCE
  ** NVMe over Fibre Channel
-. Creating logical volumes on the storage array.
-. Making the volumes available to the data host.
+. Create logical volumes on the storage array.
+. Make the volumes available to the data host.
 
 === Find more information
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2547936[Linux Unified Host Utilities 7.1 Installation Guide^] -- Describes how to use the Linux Unified Host Utilities 7.0.
 * Online help -- Describes how to use SANtricity System Manager to complete configuration and storage management tasks. It is available within the product.
 * https://kb.netapp.com/[NetApp Knowledgebase^] (a database of articles)
  -- Provides troubleshooting information, FAQs, and instructions for a wide range of NetApp products and technologies.
+ * http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] -- Enables you to search for configurations of NetApp products and components that meet the standards and requirements specified by NetApp.
+  * https://library.netapp.com/ecm/ecm_download_file/ECMLP2547936[Linux Unified Host Utilities 7.1 Installation Guide^] -- Describes how to use the Linux Unified Host Utilities 7.1.

@@ -11,7 +11,7 @@ summary: Install Storage Manager for CLI and HCA in Linux express method.
 [.lead]
 When you install the SANtricity Storage Manager software on your management station, the command line interface (CLI) is installed to help you manage your array. By also installing the software on the host, the Host Context Agent is installed that helps the host push configuration information to the storage array controllers through the I/O path.
 
-NOTE: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricty System Manager, refer to the _Download command line interface (CLI)_ topic under the SANtricity System Manager Online Help.
+NOTE: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricity System Manager, refer to the _Download command line interface (CLI)_ topic under the SANtricity System Manager Online Help.
 
 .Before you begin
 
@@ -20,15 +20,15 @@ NOTE: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli)
 * You must have ensured that the system that will contain the SANtricity Storage Manager client has the following minimum requirements:
  ** *RAM*: 2 GB for Java Runtime Engine
  ** *Disk space*: 5 GB
- ** *OS/Architecture*: Refer to https://mysupport.netapp.com/site/[NetApp Support^] *Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager* for guidance on determining the supported operating system versions and architectures.
+ ** *OS/Architecture*: For guidance on determining the supported operating system versions and architectures, go to http://mysupport.netapp.com[NetApp Support^]. From the *Downloads* tab, go to  *Downloads* > *E-Series SANtricity Storage Manager*.
 
 .About this task
 
-This section describes how to install SANtricity Storage Manager on both the Windows and Linux OS platforms, because both Windows and Linux are common management station platforms when Linux is used for the data host.
+This task describes how to install SANtricity Storage Manager on both the Windows and Linux OS platforms, because both Windows and Linux are common management station platforms when Linux is used for the data host.
 
 .Steps
 
-. Download the SANtricity software release from https://mysupport.netapp.com/site/[NetApp Support^] *Downloads* > *Software* > *E-Series/EF-Series SANtricity Storage Manager*.
+. Download the SANtricity software release at http://mysupport.netapp.com[NetApp Support^]. From the *Downloads* tab, go to  *Downloads* > *E-Series SANtricity Storage Manager*.
 . Run the SANtricity installer.
 +
 [options="header"]

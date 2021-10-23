@@ -11,8 +11,6 @@ summary: After assigning volumes to the host, you perform a rescan so that the h
 [.lead]
 After assigning volumes to the host, you perform a rescan so that the host detects and configures the volumes for multipathing.
 
-.Before you begin
-
 By default, an ESXi host automatically performs a rescan every five minutes. A volume might appear between the time you create it and assign it to a host, before you perform a manual rescan. Regardless, you can perform a manual rescan to ensure all volumes are configured properly.
 
 .Steps

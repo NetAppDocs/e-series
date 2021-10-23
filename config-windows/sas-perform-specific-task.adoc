@@ -11,14 +11,13 @@ summary: For the SAS protocol, you determine host port addresses and make recomm
 [.lead]
 For the SAS protocol, you determine host port addresses and make the settings recommended in the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool (IMT)].
 
-== Step 1: Determining SAS host identifiers--Windows
+== Step 1: Determine SAS host identifiers--Windows
 
-[.lead]
 For the SAS protocol, you find the SAS addresses using the HBA utility, then use the HBA BIOS to make the appropriate configuration settings.
 
 .Before you begin
 
-Guidelines for HBA utilities:
+Review the guidelines for HBA utilities:
 
 * Most HBA vendors offer an HBA utility. Depending on your host operating system and CPU, use either the LSI-sas2flash(6G) or sas3flash(12G) utility.
 * Host I/O ports might automatically register if the host context agent is installed.
@@ -31,15 +30,9 @@ Guidelines for HBA utilities:
 +
 See the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for recommendations.
 
-== Step 2: Recording SAS-specific information for Windows
+== Step 2: Record your configuration
 
-[.lead]
-Record your protocol-specific storage configuration information on the SAS worksheet. You need this information to perform provisioning tasks.
-
-== Step 3: SAS worksheet--Windows
-
-[.lead]
-You can use this worksheet to record SAS storage configuration information. You need this information to perform provisioning tasks.
+You can generate and print a PDF of this page, and then use the following worksheet to record your protocol-specific storage configuration information. You need this information to perform provisioning tasks.
 
 image::../media/sas_topology_diagram_conf-win.gif[Diagram: SAS topology]
 
