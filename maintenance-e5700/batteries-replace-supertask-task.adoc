@@ -15,7 +15,7 @@ Follow this procedure to replace an E5700 battery.
 
 Each controller canister includes a battery that preserves cached data if the AC power fails. If the Recovery Guru in SANtricity System Manager reports either a Battery Failed status or a Battery Replacement Required status, you must replace the affected battery.
 
-== Before you begin
+.Before you begin
 
 * Verify that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
 
@@ -92,7 +92,7 @@ NOTE: Do not begin any other operations until after the status has been updated.
 
 Remove the controller canister.
 
-===== What you'll need
+.What you'll need
 
 * Labels to identify each cable that is connected to the controller canister.
 * An ESD wristband, or you have taken other antistatic precautions.
@@ -162,7 +162,7 @@ CAUTION: To comply with International Air Transport Association (IATA) regulatio
 
 After removing the failed battery, install a new one.
 
-===== What you'll need
+.What you'll need
 
 * The replacement battery.
 * A flat, static-free surface.
@@ -275,6 +275,6 @@ NOTE: If you cannot resolve the problem, contact technical support.
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 
-== Result
+.Result
 
 Your battery replacement is complete. You can resume normal operations.

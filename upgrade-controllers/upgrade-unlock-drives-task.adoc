@@ -61,6 +61,6 @@ The newly swapped controllers will lock down with seven-segment display code of 
 +
 *Example:* SMcli 192.168.128.101 -u admin -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"
 
-==== Result
+.Result
 
 Controllers will continue with the autocode synchronization process from the drives and reboot. After reboot the controllers will be accessible through the original IP configuration.

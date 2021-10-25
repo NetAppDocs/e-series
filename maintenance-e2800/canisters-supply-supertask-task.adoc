@@ -73,7 +73,7 @@ image:../media/drw_sas_fault_icon_maint-e2800.gif[] Attention LED: If it is *sol
 
 Remove a failed power supply so you can replace it with a new one.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
@@ -101,7 +101,7 @@ As you remove the power supply, a flap swings into place to block the empty bay,
 
 Install a new power supply to replace the failed one.
 
-===== What you'll need
+.What you'll need
 
 * A replacement power supply that is supported for your controller shelf or drive shelf model.
 

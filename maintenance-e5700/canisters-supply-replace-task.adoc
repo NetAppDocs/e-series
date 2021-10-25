@@ -22,7 +22,7 @@ This task describes how to prepare to replace a power supply for the following c
 
 You can replace a power supply while your storage array is powered on and performing host I/O operations, as long as the second power supply in the shelf has an Optimal status and the *OK to remove* field in the Details area of the Recovery Guru in SANtricity System Manager displays *Yes*.
 
-== Before you begin
+.Before you begin
 
 * Review link:canisters-overview-supertask-concept.html[Requirements for E5700 canister replacement].
 * Review the details in the Recovery Guru to confirm that there is an issue with the power supply. Select *Recheck* from the Recovery Guru to ensure no other items must be addressed first.
@@ -67,7 +67,7 @@ image:../media/drw_sas_fault_icon_maint-e5700.gif[] Attention LED: If it is *sol
 
 Remove a failed power supply so you can replace it with a new one.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
@@ -95,7 +95,7 @@ As you remove the power supply, a flap swings into place to block the empty bay,
 
 Install a new power supply to replace the failed one.
 
-===== What you'll need
+.What you'll need
 
 * A replacement power supply that is supported for your controller shelf or drive shelf model.
 
@@ -131,6 +131,6 @@ Confirm that the new power supply is working correctly, gather support data, and
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 
-== Result
+.Result
 
 Your power supply replacement is complete. You can resume normal operations.

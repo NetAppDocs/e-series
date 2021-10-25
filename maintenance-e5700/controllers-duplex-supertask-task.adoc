@@ -22,7 +22,7 @@ This task describes how to prepare to replace a controller canister in the duple
 
 Perform this task only if your storage array has two controllers (duplex configuration).
 
-== Before you begin
+.Before you begin
 
 * Review link:controllers-overview-concept.html[Requirements for E5700 controller replacement].
 * Make sure you have a replacement controller canister with the same part number as the controller canister you are replacing.
@@ -123,7 +123,7 @@ NOTE: Do not begin any other operations until after the status has been updated.
 
 Remove a controller canister to replace the failed canister with a new one. Perform this task only if your storage array has two controllers (duplex configuration).
 
-===== What you'll need
+.What you'll need
 
 * Labels to identify each cable that is connected to the controller canister.
 * A #1 Phillips screwdriver.
@@ -193,7 +193,7 @@ image:../media/legend_icon_01_maint-e5700.gif[] Battery release latch image:../m
 
 If the controller canister includes a host interface card (HIC), remove the HIC from the original controller canister so you can reuse it in the new controller canister.
 
-===== What you'll need
+.What you'll need
 
 * A #1 Phillips screwdriver.
 
@@ -221,7 +221,7 @@ image:../media/legend_icon_01_maint-e5700.gif[] Host interface card (HIC) image:
 
 Install the battery into the replacement controller canister. You can install the battery that you removed from the original controller canister or install a new battery that you ordered.
 
-===== What you'll need
+.What you'll need
 
 * The battery from the original controller canister.
 * The replacement controller canister.
@@ -259,7 +259,7 @@ image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e5700.gif[]
 
 If you removed a HIC from the original controller canister, you must install that HIC in the new controller canister.
 
-===== What you'll need
+.What you'll need
 
 * A replacement controller canister with the same part number as the controller canister you are replacing.
 * A #1 Phillips screwdriver.
@@ -358,6 +358,6 @@ As needed, install the latest version.
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 
-== Result
+.Result
 
 Your controller replacement is complete. You can resume normal operations.

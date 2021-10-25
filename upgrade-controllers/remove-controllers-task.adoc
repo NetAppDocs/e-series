@@ -15,7 +15,7 @@ Follow this procedure to remove the controllers, and if necessary, remove the ba
 
 Follow this procedure to remove the controller canister so you can upgrade it with a new one. You must disconnect all cables and remove any SFP transceivers. Then, you can slide the controller canister out of the controller shelf.
 
-===== What you'll need
+.What you'll need
 
 * Labels to identify each cable that is connected to the controller canister.
 

@@ -11,11 +11,11 @@ summary: Replace a failed EF300 or EF600 host interface card (HIC).
 [.lead]
 Follow this procedure to replace a failed host interface card (HIC) in an EF300 or EF600 array.
 
-== About this task
+.About this task
 
 When you replace a failed HIC, you must power off the storage array, replace the HIC, and reapply power.
 
-== Before you begin
+.Before you begin
 
 * Review link:hics-overview-supertask-concept.html[Requirements for EF300 or EF600 HIC upgrades].
 * You must schedule a downtime maintenance window for this procedure. You cannot access data on the storage array until you have successfully completed this procedure. Because both controllers must have the same HIC configuration when they are powered on, the power must be off when you install HICs.
@@ -56,7 +56,7 @@ NOTE: Do not begin any other operations until after the status has been updated.
 
 Remove the controller canister so you can replace the failed host interface card.
 
-===== What you'll need
+.What you'll need
 
 * Labels to identify each cable that is connected to the controller canister.
 * A #1 Phillips screwdriver.
@@ -91,7 +91,7 @@ image::../media/remove_controller_6.png[]
 
 Remove the original HIC so you can replace it with an upgraded one.
 
-===== What you'll need
+.What you'll need
 
 * A #1 Phillips screwdriver.
 * An ESD wristband, or you have taken other antistatic precautions.
@@ -132,7 +132,7 @@ NOTE: The image above is an example; the appearance of your HIC may differ.
 
 After removing the old HIC, install a new HIC.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions.
 * A #1 Phillips screwdriver.
@@ -218,6 +218,6 @@ As needed, install the latest version.
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 
-== Result
+.Result
 
 Your host interface card replacement is complete. You can resume normal operations.

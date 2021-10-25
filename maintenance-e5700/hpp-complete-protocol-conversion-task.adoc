@@ -59,7 +59,7 @@ The *Delete* option does not physically remove the host port. This option remove
 . Reboot the host or perform a rescan so that the host properly discovers the LUNs.
 . Remount volumes or start using block volume.
 
-===== Result
+.Result
 
 Your host protocol conversion is complete. You can resume normal operations.
 
@@ -101,7 +101,7 @@ The *Delete* option does not physically remove the host port. This option remove
 . Reboot the host or perform a rescan so that the host properly discovers mapped storage.
 . Remount volumes or start using block volume.
 
-===== Result
+.Result
 
 Your host protocol conversion is complete. You can resume normal operations.
 
@@ -119,6 +119,6 @@ For step-by-step instructions on how to configure the host to use SRP, iSER, or 
 +
 Specific settings might vary between Linux distributions. Check the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix^] for specific instructions and additional recommended settings for your solution.
 
-===== Result
+.Result
 
 Your host protocol conversion is complete. You can resume normal operations.

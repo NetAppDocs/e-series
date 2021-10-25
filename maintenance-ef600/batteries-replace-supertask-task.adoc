@@ -11,11 +11,11 @@ summary: Replace a battery in an EF300 or EF600 array.
 [.lead]
 Follow these steps to replace a battery in an EF300 or EF600 storage system.
 
-== About this task
+.About this task
 
 Each controller canister includes a battery that preserves cached data if the AC power fails. If the Recovery Guru in SANtricity System Manager reports either a Battery Failed status or a Battery Replacement Required status, you must replace the affected battery.
 
-== Before you begin
+.Before you begin
 
 Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
 
@@ -54,7 +54,7 @@ NOTE: Do not begin any other operations until after the status has been updated.
 
 Replace the failed battery with a new one.
 
-===== What you'll need
+.What you'll need
 
 * Labels to identify each cable that is connected to the controller canister.
 * An ESD wristband, or you have taken other antistatic precautions.
@@ -113,7 +113,7 @@ CAUTION: To comply with International Air Transport Association (IATA) regulatio
 
 After you have removed the failed battery from the controller canister, follow this step to install the new battery.
 
-===== What you'll need
+.What you'll need
 
 * The replacement battery.
 * An ESD wristband, or you have taken other antistatic precautions.
@@ -185,6 +185,6 @@ As needed, install the latest version.
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 
-== Result
+.Result
 
 Your battery replacement is complete. You can resume normal operations.

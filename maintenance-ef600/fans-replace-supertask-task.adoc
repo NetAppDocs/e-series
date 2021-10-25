@@ -48,7 +48,7 @@ NOTE: Do not begin any other operations until after the status has been updated.
 
 Remove the controller canister so you can replace the failed fan with a new one.
 
-===== What you'll need
+.What you'll need
 
 * Labels to identify each cable that is connected to the controller canister.
 * An ESD wristband, or you have taken other antistatic precautions.
@@ -79,7 +79,7 @@ image::../media/remove_controller_6.png[]
 
 You remove a failed fan so you can replace it with a new one.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
@@ -98,7 +98,7 @@ image::../media/fan_2.png[]
 
 Install a new fan to replace the failed one.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
@@ -162,6 +162,6 @@ As needed, install the latest version.
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 
-== Result
+.Result
 
 Your fan replacement is complete. You can resume normal operations.

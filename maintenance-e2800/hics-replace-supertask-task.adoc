@@ -146,7 +146,7 @@ The green Cache Active LED on the back of the controller is on when cached data 
 
 Remove the controller canister so you can add the new host interface card (HIC).
 
-===== What you'll need
+.What you'll need
 
 * Labels to identify each cable that is connected to the controller canister.
 * An ESD wristband, or you have taken other antistatic precautions.
@@ -193,7 +193,7 @@ If you are removing the controller canister from an E2812 controller shelf, E282
 
 Install a HIC to replace the failed one with a new HIC.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions.
 * A #1 Phillips screwdriver.

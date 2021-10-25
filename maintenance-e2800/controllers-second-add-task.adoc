@@ -54,7 +54,7 @@ CAUTION: *Possible loss of data access* -- If the two part numbers are not the s
 
 Install the same model of host interface card (HIC) in the second controller canister, if the currently installed controller includes a HIC.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions.
 * A #1 Phillips screwdriver.
@@ -228,7 +228,7 @@ When you remove the controller blank, a flap swings into place to block the empt
 
 Install a second controller canister to change a simplex configuration to a duplex configuration.
 
-===== What you'll need
+.What you'll need
 
 * A new controller canister with the same part number as the currently installed controller canister.
 * Labels to identify the new cables.

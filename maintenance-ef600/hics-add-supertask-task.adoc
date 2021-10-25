@@ -11,14 +11,14 @@ summary: Add a Host Interface Card (HIC) to EF600 controllers to increase the nu
 [.lead]
 Follow this procedure to add a host interface card (HIC) to an EF600 controller. This addition increases the number of host ports in your storage array.
 
-== About this task
+.About this task
 
 This procedure applies only to EF600 controller shelves, and involves the following steps:
 
 * You must power off the storage array, install the HIC, and reapply power.
 * You must repeat all steps to remove the second controller, install the HICs for the second controller, and reinstall the second controller before reapplying power to the controller shelf.
 
-== Before you begin
+.Before you begin
 
 * Review link:hics-overview-supertask-concept.html[Requirements for EF300 or EF600 HIC upgrades].
 * You must schedule a downtime maintenance window for this procedure. You cannot access data on the storage array until you have successfully completed this procedure. Because both controllers must have the same HIC configuration when they are powered on, the power must be off when you install HICs.
@@ -62,7 +62,7 @@ The green Cache Active LED on the back of each controller is on when cached data
 
 Remove the controller canister so you can add the new HIC.
 
-===== What you'll need
+.What you'll need
 
 * Labels to identify each cable that is connected to the controller canister.
 * A #1 Phillips screwdriver.
@@ -98,7 +98,7 @@ image::../media/remove_controller_6.png[]
 
 Install the HIC to increase the number of host ports in your storage array.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions.
 * A #1 Phillips screwdriver.
@@ -182,6 +182,6 @@ As needed, install the latest version.
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 
-== Result
+.Result
 
 The process of adding a host interface card in your storage array is complete. You can resume normal operations.

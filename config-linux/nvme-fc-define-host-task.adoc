@@ -77,7 +77,7 @@ You must add one host port identifier at a time to associate it with the host, b
 
 . Click *Create*.
 
-===== Result
+.Result
 
 After the host is successfully created, SANtricity System Manager creates a default name for each host port configured for the host.
 

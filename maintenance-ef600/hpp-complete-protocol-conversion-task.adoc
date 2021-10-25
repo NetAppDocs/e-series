@@ -23,6 +23,6 @@ Configure the host to use the appropriate protocol. For step-by-step instruction
 +
 Specific settings might vary. Check the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix^] for specific instructions and additional recommended settings for your solution.
 
-== Result
+.Result
 
 Your host protocol conversion is complete. You can resume normal operations.

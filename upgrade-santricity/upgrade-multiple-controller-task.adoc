@@ -11,7 +11,7 @@ summary: Use SANtricity Unified Manager to upgrade the SANtricity OS software on
 [.lead]
 Follow this procedure to upgrade multiple controllers of the same type with SANtricity Unified Manager.
 
-== Before you begin
+.Before you begin
 
 * Review link:overview-upgrade-consider-task.html[Upgrade considerations].
 * Determine if you want to activate your software upgrade now or later. You might choose to activate later for these reasons:
@@ -144,6 +144,6 @@ On successful completion of the pre-upgrade health check, activation occurs. The
 +
 The file is saved in the Downloads folder for your browser with the name `activate_log-<date>.json`.
 
-== Result
+.Result
 
 Your controller software upgrade is complete. You can resume normal operations.

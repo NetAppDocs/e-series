@@ -11,11 +11,11 @@ summary: Replace a DIMM in an EF300 or EF600 array.
 [.lead]
 Follow this procedure to replace a DIMM in an EF300 or EF600 array.
 
-== About this task
+.About this task
 
 To replace a DIMM, you must verify the cache size of your controller, place the controller offline, remove the controller, remove the DIMMs, and install the new DIMMs in your controller. Then you can bring your controller back online and verify the storage array is working properly.
 
-== Before you begin
+.Before you begin
 
 * Review link:dimms-overview-supertask-concept.html[Requirements for replacing an EF300 or EF600 DIMM].
 * Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
@@ -68,7 +68,7 @@ NOTE: Do not begin any other operations until after the status has been updated.
 
 You remove the failed controller canister so you can replace your DIMMs with new ones.
 
-===== What you'll need
+.What you'll need
 
 * Labels to identify each cable that is connected to the controller canister.
 * An ESD wristband, or you have taken other antistatic precautions.
@@ -99,7 +99,7 @@ image::../media/remove_controller_6.png[]
 
 If there is a memory mismatch present, replace the DIMMs in your controller.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
@@ -129,7 +129,7 @@ The number and placement of system DIMMs depends on the model of your system.
 
 Install a new DIMM to replace the old one.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions. Make sure you are properly grounded.
 
@@ -206,6 +206,6 @@ As needed, install the latest version.
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 
-== Result
+.Result
 
 Your DIMM replacement is complete. You can resume normal operations.

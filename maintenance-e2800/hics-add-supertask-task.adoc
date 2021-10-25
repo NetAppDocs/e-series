@@ -87,7 +87,7 @@ image:../media/legend_icon_01_maint-e2800.gif[] Cache Active LED
 
 Remove the controller canister so you can add the new host interface card.
 
-===== What you'll need
+.What you'll need
 
 * Labels to identify each cable that is connected to the controller canister.
 * An ESD wristband, or you have taken other antistatic precautions.
@@ -134,7 +134,7 @@ If you are removing the controller canister from an E2812 controller shelf, E282
 
 Install the HIC to increase the number of host ports in your storage array.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions.
 * A #1 Phillips screwdriver.
@@ -205,7 +205,7 @@ NOTE: Do not connect data cables to the new HIC ports at this time.
 
 Check the controller LEDs and seven-segment display, and then confirm that the controller's status is Optimal.
 
-===== What you'll need
+.What you'll need
 
 * Any required host hardware installed for the new host ports, such as switches or host bus adapters (HBAs).
 * All cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new host ports.

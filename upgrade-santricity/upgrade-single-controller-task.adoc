@@ -13,7 +13,7 @@ Follow this procedure to upgrade a single controller, which ensures that you hav
 
 This process involves upgrading the storage array's software and, optionally, the IOM firmware and the nonvolatile static random access memory (NVSRAM).
 
-== Before you begin
+.Before you begin
 
 * Review link:overview-upgrade-consider-task.html[Upgrade considerations].
 
@@ -188,6 +188,6 @@ Contact technical support to resolve this issue.
 
 |===
 
-== Result
+.Result
 
 Your controller software upgrade is complete. You can resume normal operations.

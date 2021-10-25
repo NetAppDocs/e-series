@@ -168,7 +168,7 @@ image:../media/legend_icon_01_maint-e2800.gif[] Battery release latch image:../m
 
 If the controller canister includes a host interface card (HIC), remove the HIC from the original controller canister so you can reuse it in the new controller canister.
 
-===== What you'll need
+.What you'll need
 
 * A replacement controller canister with the same part number as the controller canister you are replacing.
 * An ESD wristband, or you have taken other antistatic precautions.
@@ -203,7 +203,7 @@ Install a new controller canister to replace the failed one. Perform this task o
 
 Install the battery into the replacement controller canister. You can install the battery that you removed from the original controller canister or install a new battery that you ordered.
 
-===== What you'll need
+.What you'll need
 
 * The battery from the original controller canister.
 * The replacement controller canister.
@@ -244,7 +244,7 @@ image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[]
 
 If you removed a host interface card (HIC) from the original controller canister, install that HIC in the new controller canister.
 
-===== What you'll need
+.What you'll need
 
 * A #1 Phillips screwdriver.
 * An ESD wristband, or you have taken other antistatic precautions.
@@ -276,7 +276,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
 
 After installing the battery and the HIC, if one was initially installed, you can install the new controller canister into the controller shelf.
 
-===== What you'll need
+.What you'll need
 
 * A replacement controller canister with the same part number as the controller canister you are replacing.
 

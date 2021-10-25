@@ -85,7 +85,7 @@ image:../media/legend_icon_01_maint-e2800.gif[] Cache Active LED
 
 You remove the controller canister so you can upgrade the new host interface card (HIC). When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
 
-===== What you'll need
+.What you'll need
 
 * Labels to identify each cable that is connected to the controller canister.
 * An ESD wristband, or you have taken other antistatic precautions.
@@ -136,7 +136,7 @@ If you are removing the controller canister from an E2812 controller shelf, E282
 
 Remove the original host interface card (HIC) so you can replace it with an upgraded one.
 
-===== What you'll need
+.What you'll need
 
 * A #1 Phillips screwdriver.
 
@@ -173,7 +173,7 @@ image:../media/legend_icon_01_maint-e2800.gif[] Host interface card (HIC) image:
 
 Install the new host interface card (HIC) to increase the number of host ports in your storage array.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions.
 * A #1 Phillips screwdriver.
@@ -239,7 +239,7 @@ NOTE: Do not connect data cables to the new HIC ports at this time.
 
 Complete the process of upgrading a host interface card by checking the controller LEDs and seven-segment display and confirming that the controller's status is Optimal.
 
-===== What you'll need
+.What you'll need
 
 * Any new host hardware installed for the new host ports, such as switches or host bus adapters (HBAs).
 * All cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new host ports.

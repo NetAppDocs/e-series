@@ -125,7 +125,7 @@ Replace the failed canister with a new one. Perform this task only if your stora
 
 Remove the failed controller canister so you can replace it with a new one.
 
-===== What you'll need
+.What you'll need
 
 * Labels to identify each cable that is connected to the controller canister.
 * A #1 Phillips screwdriver.
@@ -223,7 +223,7 @@ Install a new controller canister to replace the failed one. Perform this task o
 
 You must install the battery into the replacement controller canister. You can install the battery that you removed from the original controller canister or install a new battery that you ordered.
 
-===== What you'll need
+.What you'll need
 
 * Battery from the original controller canister.
 * Replacement controller canister.
@@ -261,7 +261,7 @@ image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[]
 
 If you removed a HIC from the original controller canister, you must install that HIC in the new controller canister.
 
-===== What you'll need
+.What you'll need
 
 * A replacement controller canister with the same part number as the controller canister you are replacing.
 * A #1 Phillips screwdriver.

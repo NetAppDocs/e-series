@@ -11,11 +11,11 @@ summary: Replace a drive in an EF300 array.
 [.lead]
 Follow this procedure to replace a drive in an EF300 shelf.
 
-== About this task
+.About this task
 
 The EF300 shelf supports SAS expansion with 24-drive and 60-drive shelves.
 
-== Before you begin
+.Before you begin
 
 * Review drive handling requirements in link:drives-overview-supertask-concept.html[Requirements for EF300 or EF600 drive replacement].
 
@@ -27,11 +27,11 @@ The EF300 shelf supports SAS expansion with 24-drive and 60-drive shelves.
 [.lead]
 Follow this procedure to replace a drive in a 24-drive shelf.
 
-== About this task
+.About this task
 
 The Recovery Guru in SANtricity System Manager monitors the drives in the storage array and can notify you of an impending drive failure or an actual drive failure. When a drive has failed, its amber Attention LED is on. You can hot-swap a failed drive while the storage array is receiving I/O.
 
-== Before you begin
+.Before you begin
 
 * Review drive handling requirements in link:drives-overview-supertask-concept.html[Requirements for EF300 or EF600 drive replacement].
 
@@ -60,7 +60,7 @@ NOTE: If you are replacing a drive in a shelf that has a bezel, you must remove 
 
 Remove a failed drive to replace it with a new one.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
@@ -89,7 +89,7 @@ NOTE: If you accidentally remove an active drive, wait at least 30 seconds, and 
 
 You install a new drive to replace the failed one. Install the replacement drive as soon as possible after removing the failed drive. Otherwise, there is a risk that the equipment might overheat.
 
-===== What you'll need
+.What you'll need
 
 * A replacement drive that is supported by NetApp for your controller shelf or drive shelf.
 
@@ -132,7 +132,7 @@ When the drive reconstruction completes, the volume group is in an Optimal state
 . As required, reinstall the bezel.
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 
-== Result
+.Result
 
 Your drive replacement is complete. You can resume normal operations.
 
@@ -144,11 +144,11 @@ Your drive replacement is complete. You can resume normal operations.
 [.lead]
 Follow this procedure to replace a drive in a 60-drive shelf.
 
-== About this task
+.About this task
 
 The Recovery Guru in SANtricity System Manager monitors the drives in the storage array and can notify you of an impending drive failure or an actual drive failure. When a drive has failed, its amber Attention LED is on. You can hot-swap a failed drive while the storage array is receiving I/O operations.
 
-== Before you begin
+.Before you begin
 
 * Review drive handling requirements in link:drives-overview-supertask-concept.html[Requirements for EF300 or EF600 drive replacement].
 
@@ -195,7 +195,7 @@ image:../media/legend_icon_01_maint-e5700.gif[] Attention icon image:../media/le
 
 Remove a failed drive to replace it with a new one.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
@@ -230,7 +230,7 @@ NOTE: If you accidentally remove an active drive, wait at least 30 seconds, and 
 
 Install a new drive to replace the failed one.
 
-===== What you'll need
+.What you'll need
 
 * A replacement drive that is supported by NetApp for your controller shelf or drive shelf.
 
@@ -278,6 +278,6 @@ When the drive reconstruction completes, the volume group is in an Optimal state
 . As required, reinstall the bezel.
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 
-== Result
+.Result
 
 Your drive replacement is complete. You can resume normal operations.

@@ -11,10 +11,10 @@ summary: Replace a single controller in an EF300 or EF600 controller shelf.
 [.lead]
 Follow these steps to replace a single controller in your EF300 or EF600 controller shelf.
 
-== About this task
+.About this task
 When you replace a failed controller canister, you must remove the battery, power supply, DIMMs, fans, and host interface card (HIC) from the original controller canister, and then install them in the replacement controller canister.
 
-== Before you begin
+.Before you begin
 
 * Review link:controllers_overview_supertask_concept[Requirements for EF300 or EF600 controller replacement].
 * Determine if you have a failed controller canister in one of two ways:
@@ -79,7 +79,7 @@ This is a multi-step procedure that requires you to remove the following compone
 
 Remove the failed controller canister so you can replace it with a new one.
 
-===== What you'll need
+.What you'll need
 
 * Labels to identify each cable that is connected to the controller canister.
 * An ESD wristband, or you have taken other antistatic precautions.
@@ -129,7 +129,7 @@ image::../media/batt_3.png[]
 
 If the controller canister includes a HIC, you must remove the HIC from the original controller canister. Otherwise, you can skip this step.
 
-===== What you'll need
+.What you'll need
 
 * A #1 Phillips screwdriver.
 
@@ -160,7 +160,7 @@ image::../media/hic_4.png[]
 
 Remove the power supply so you can install it in the new controller.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
@@ -184,7 +184,7 @@ CAUTION: When removing a power supply, always use two hands to support its weigh
 
 Remove the DIMMs so you can install them in the new controller.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
@@ -207,7 +207,7 @@ image::../media/dimim_3.png[]
 
 Remove the fans so you can install them in the new controller.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
@@ -229,7 +229,7 @@ This is a multi-step procedure that requires you to install the following compon
 
 Install the battery into the replacement controller canister.
 
-===== What you'll need
+.What you'll need
 
 * The battery from the original controller canister, or a new battery that you ordered.
 * The replacement controller canister.
@@ -249,7 +249,7 @@ The battery clicks into place.
 
 If you removed a HIC from the original controller canister, you must install that HIC in the new controller canister. Otherwise, you can skip this step.
 
-===== What you'll need
+.What you'll need
 
 * A replacement controller canister with the same part number as the controller canister you are replacing.
 * A #1 Phillips screwdriver.
@@ -298,7 +298,7 @@ image::../media/psup_4.png[]
 
 Install the DIMMs into the new controller canister.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
@@ -326,7 +326,7 @@ image::../media/dimm_5.png[]
 
 Install the fans into the replacement controller canister.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions.
 
@@ -401,6 +401,6 @@ As needed, install the latest version.
  .. Click *Collect*.
 The file is saved in the Downloads folder for your browser with the name support-data.7z.
 
-== Result
+.Result
 
 Your controller replacement is complete. You can resume normal operations.

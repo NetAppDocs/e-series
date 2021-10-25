@@ -14,7 +14,7 @@ Follow this procedure to add a host interface card (HIC). This addition increase
 == About this task
 When you add HICs, you must power off the storage array, install the HIC, and reapply power. You can add HICs to E5700 controller canisters that only have baseboard host ports.
 
-== Before you begin
+.Before you begin
 
 * Review link:hics-overview-supertask-concept.html[Requirements for E5700 HIC replacement].
 * Schedule a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, both controllers must have the same HIC configuration when they are powered on.)
@@ -86,7 +86,7 @@ image:../media/legend_icon_01_maint-e5700.gif[] Cache Active LED
 
 Remove the controller canister so you can add the new host interface card.
 
-===== What you'll need
+.What you'll need
 
 * Labels to identify each cable that is connected to the controller canister.
 * An ESD wristband, or you have taken other antistatic precautions.
@@ -133,7 +133,7 @@ If you are removing the controller canister from an E5724 controller shelf, a fl
 
 Install the host interface card (HIC) to increase the number of host ports in your storage array.
 
-===== What you'll need
+.What you'll need
 
 * An ESD wristband, or you have taken other antistatic precautions.
 * A #1 Phillips screwdriver.
@@ -206,7 +206,7 @@ CAUTION: Do not connect data cables to the new HIC ports at this time.
 
 Check the controller LEDs and seven-segment display, and then confirm that the controller's status is Optimal.
 
-===== What you'll need
+.What you'll need
 
 * New host hardware installed for the new host ports, such as switches or host bus adapters (HBAs).
 * All cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new host ports.
@@ -255,6 +255,6 @@ You must apply a software feature pack before you can connect the new HIC ports 
 +
 If you need instructions for configuring and using a new host protocol, refer to the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration].
 
-== Result
+.Result
 
 The process of adding a host interface card to your storage array is complete. You can resume normal operations.
