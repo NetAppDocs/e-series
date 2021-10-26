@@ -1,3 +1,10 @@
+---
+settings:
+  name: E-Series
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
 sidebar:
   entries:
     - title: E-series docs
