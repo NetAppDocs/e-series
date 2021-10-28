@@ -9,8 +9,12 @@ summary: Configure m software to provide a redundant path to the storage array i
 :imagesdir: ../media/
 
 [.lead]
-Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted.
+To provide a redundant path to the storage array, you can configure multipath software.
 
-The multipath software presents the operating system with a single virtual device that represents the active physical paths to the storage. The multipath software also manages the failover process that updates the virtual device. For VMware, NVMe/FC uses High Performance Plugin (HPP).
+Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. The multipath software presents the operating system with a single virtual device that represents the active physical paths to the storage. The multipath software also manages the failover process that updates the virtual device. For VMware, NVMe/FC uses High Performance Plugin (HPP).
 
-Applicable only for FC, iSCSI, and SAS protocols, VMware provides plug-ins, known as Storage Array Type Plug-ins (SATP), to handle the failover implementations of specific vendors`' storage arrays. The SATP you should use is VMW_SATP_ALUA.
+Applicable only for FC, iSCSI, and SAS protocols, VMware provides plug-ins, known as Storage Array Type Plug-ins (SATP), to handle the failover implementations of specific vendors`' storage arrays.
+
+The SATP you should use is *VMW_SATP_ALUA*. 
+
+For more information, see https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-DB5BC795-E4D9-4350-9C5D-12BB3C0E6D99.html[VMware SATPs^].

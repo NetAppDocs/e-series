@@ -11,7 +11,7 @@ summary: Verify that the host can write data to the LUN and read it back.
 [.lead]
 Before using the volume, verify that the host can write data to the LUN and read it back.
 
-.Before you begin
+.What you'll need
 
 You must have initialized the LUN and formatted it with a file system.
 
@@ -45,7 +45,7 @@ NOTE: The dsmUtil utility is case sensitive.
 > C:\\Program Files \(x86\)\\DSMDrivers\\mppdsm\\dsmUtil.exe -a
 ----
 
-. View the paths to the LUN and verify that you have the expected number of paths. In the <target ID> portion of the command, use the target ID that you found in the previous step.
+. View the paths to the LUN and verify that you have the expected number of paths. In the `<target ID>` portion of the command, use the target ID that you found in the previous step.
 +
 ----
 > C:\\Program Files \(x86\)\\DSMDrivers\\mppdsm\\dsmUtil.exe –g <target ID\>

@@ -116,4 +116,4 @@ a|
 * You are using NVMe/FC driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 |===
-*Note:* These express method instructions include examples for SUSE Linux Enterprise Server (SLES) and for Red Hat Enterprise Linux (RHEL). Examples for RHEL are specific to RHEL7.
+NOTE: These express method instructions include examples for SUSE Linux Enterprise Server (SLES) and for Red Hat Enterprise Linux (RHEL). Examples for RHEL are specific to RHEL7.

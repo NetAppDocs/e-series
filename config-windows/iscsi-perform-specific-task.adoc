@@ -10,34 +10,40 @@ summary: For the iSCSI protocol, you configure the switches and configure networ
 :imagesdir: ../media/
 
 [.lead]
-For the iSCSI protocol, you configure the switches and configure networking on the array side and the host side. Then you verify the IP network connections.
+For the iSCSI protocol, you configure the switches, configure networking on the array side and host side, and then verify the IP network connections.
 
 == Step 1: Configure the switches--iSCSI, Windows
 
 You configure the switches according to the vendor's recommendations for iSCSI. These recommendations might include both configuration directives as well as code updates.
 
-.Before you begin
+.What you'll need
 
-You must ensure the following:
-
-* You have two separate networks for high availability. Make sure that you isolate your iSCSI traffic to separate network segments by using VLANs or two separate networks.
-* You have enabled send and receive hardware flow control *end to end*.
-* You have disabled priority flow control.
-* If appropriate, you have enabled jumbo frames.
+* Two separate networks for high availability. Make sure that you isolate your iSCSI traffic to separate network segments by using VLANs or two separate networks.
+* Enabled send and receive hardware flow control *end to end*.
+* Disabled priority flow control.
+* If appropriate, enabled jumbo frames.
 
 NOTE: Port channels/LACP is not supported on the controller's switch ports. Host-side LACP is not recommended; multipathing provides the same benefits or better.
 
+.Steps
+Consult your switch vendor's documentation.
+
 == Step 2: Configure networking--iSCSI Windows
 
-You can set up your iSCSI network in many ways, depending on your data storage requirements.
-
-Consult your network administrator for tips on selecting the best configuration for your environment.
+You can set up your iSCSI network in many ways, depending on your data storage requirements. Consult your network administrator for tips on selecting the best configuration for your environment.
 
 An effective strategy for configuring the iSCSI network with basic redundancy is to connect each host port and one port from each controller to separate switches and partition each set of host and controller ports on separate network segments using VLANs.
 
-You must enable send and receive hardware flow control *end to end*. You must disable priority flow control.
+.What you'll need
 
+* Enabled send and receive hardware flow control *end to end*.
+* Disabled priority flow control.
+* If appropriate, enabled jumbo frames.
++
 If you are using jumbo frames within the IP SAN for performance reasons, make sure to configure the array, switches, and hosts to use jumbo frames. Consult your operating system and switch documentation for information on how to enable jumbo frames on the hosts and on the switches. To enable jumbo frames on the array, complete the procedure in Step 3.
+
+.Steps
+Consult your switch vendor's documentation.
 
 NOTE: Many network switches have to be configured above 9,000 bytes for IP overhead. Consult your switch documentation for more information.
 
@@ -45,10 +51,10 @@ NOTE: Many network switches have to be configured above 9,000 bytes for IP overh
 
 You use the SANtricity System Manager GUI to configure iSCSI networking on the array side.
 
-.Before you begin
+.What you'll need
 
-* You must know the IP address or domain name for one of the storage array controllers.
-* You or your system administrator must have set up a password for the System Manager GUI, or you must have configured Role-Based Access Control (RBAC) or LDAP and a directory service for the appropriate security access to the storage array. See the _SANtricity System Manager online help_ for more information about Access Management.
+* The IP address or domain name for one of the storage array controllers.
+* A password for the System Manager GUI, or Role-Based Access Control (RBAC) or LDAP and a directory service configured for the appropriate security access to the storage array. See the SANtricity System Manager online help for more information about Access Management.
 
 .About this task
 
@@ -60,7 +66,7 @@ This task describes how to access the iSCSI port configuration from the Hardware
 +
 `IPAddress` is the address for one of the storage array controllers.
 +
-The first time SANtricity System Manager is opened on an array that has not been configured, the Set Administrator Password prompt appears. Role-based access management configures four local roles: admin, support, security, and monitor. The latter three roles have random passwords that cannot be guessed. After you set a password for the admin role, you can change all of the passwords using the admin credentials. See _SANtricity System Manager online help_ for more information on the four local user roles.
+The first time SANtricity System Manager is opened on an array that has not been configured, the Set Administrator Password prompt appears. Role-based access management configures four local roles: admin, support, security, and monitor. The latter three roles have random passwords that cannot be guessed. After you set a password for the admin role, you can change all of the passwords using the admin credentials. See the SANtricity System Manager online help for more information on the four local user roles.
 
 . Enter the System Manager password for the admin role in the Set Administrator Password and Confirm Password fields, and then select the *Set Password* button.
 +
@@ -134,12 +140,14 @@ Select this option, and then enter a static address in the fields. For IPv4, inc
 a|
 Enable VLAN support     (Available by clicking *Show more settings*.)
 a|
-*Important:* This option is only available in an iSCSI environment. It is not available in an NVMe over RoCE environment.
+NOTE: This option is only available in an iSCSI environment. It is not available in an NVMe over RoCE environment.
+
 Select this option to enable a VLAN and enter its ID. A VLAN is a logical network that behaves like it is physically separate from other physical and virtual local area networks (LANs) supported by the same switches, the same routers, or both.
 a|
 Enable ethernet priority    (Available by clicking *Show more settings*.)
 a|
-*Important:* This option is only available in an iSCSI environment. It is not available in an NVMe over RoCE environment.
+NOTE: This option is only available in an iSCSI environment. It is not available in an NVMe over RoCE environment.
+
 Select this option to enable the parameter that determines the priority of accessing the network. Use the slider to select a priority between 1 and 7.
 In a shared local area network (LAN) environment, such as Ethernet, many stations might contend for access to the network. Access is on a first-come, first-served basis. Two stations might try to access the network at the same time, which causes both stations to back off and wait before trying again. This process is minimized for switched Ethernet, where only one station is connected to a switch port.
 |===
@@ -151,16 +159,19 @@ In a shared local area network (LAN) environment, such as Ethernet, many station
 
 You must configure iSCSI networking on the host side so that the Microsoft iSCSI Initiator can establish sessions with the array.
 
-.Before you begin
+.What you'll need
 
-* You have fully configured the switches that will be used to carry iSCSI storage traffic.
-* You must have enabled send and receive hardware flow control *end to end* and disabled priority flow control.
-* You have completed the array side iSCSI configuration.
-* You must know the IP address of each port on the controller.
+* Fully configured switches that will be used to carry iSCSI storage traffic.
+* Enabled send and receive hardware flow control *end to end*
+* Disabled priority flow control.
+* Array side iSCSI configuration completed.
+* The IP address of each port on the controller.
 
 .About this task
 
 These instructions assume that two NIC ports will be used for iSCSI traffic.
+
+.Steps
 
 . Disable unused network adapter protocols.
 +
@@ -183,7 +194,7 @@ image::../media/82012_00.gif[]
 
 You verify Internet Protocol (IP) network connections by using ping tests to ensure the host and array are able to communicate.
 
-. Select *Start* > *All Programs* > *Accessories* > *Command Prompt*, and use the Windows CLI to run one of the following commands, depending on whether jumbo frames are enabled:
+. Select menu:Start[All Programs > Accessories > Command Prompt], and then use the Windows CLI to run one of the following commands, depending on whether jumbo frames are enabled:
  ** If jumbo frames are not enabled, run this command:
 +
 ----
@@ -210,7 +221,7 @@ Ping statistics for 192.0.2.8:
 Approximate round trip times in milli-seconds:
   Minimum = 2ms, Maximum = 2ms, Average = 2ms
 ----
-. Issue a ping command from each host's initiator address (the IP address of the host Ethernet port used for iSCSI) to each controller iSCSI port. Perform this action from each host server in the configuration, changing the IP addresses as necessary.
+. Issue a `ping` command from each host's initiator address (the IP address of the host Ethernet port used for iSCSI) to each controller iSCSI port. Perform this action from each host server in the configuration, changing the IP addresses as necessary.
 +
 NOTE: If the command fails (for example, returns `Packet needs to be fragmented but DF set`), verify the MTU size (jumbo frame support) for the Ethernet interfaces on the host server, storage controller, and switch ports.
 
@@ -237,7 +248,7 @@ a|
 
 |===
 
-=== Mappings host name
+=== Mapping host name
 
 [options="header"]
 |===
@@ -245,7 +256,7 @@ a|
 a|
 1
 a|
-Mappings host name
+Mapping host name
 a|
 
 a|

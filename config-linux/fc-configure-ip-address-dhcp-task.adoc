@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/fc-configure-ip-address-dhcp-task.html
 sidebar: sidebar
-keywords: IP address, DHCP, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+keywords: IP address, DHCP, express linux configuration, software configuration, linux host,
 summary: Use Dynamic Host Configuration Protocol \(DHCP\) to provide IP addresses.
 ---
 = Configure IP addresses using DHCP
@@ -11,13 +11,14 @@ summary: Use Dynamic Host Configuration Protocol \(DHCP\) to provide IP addresse
 [.lead]
 To configure communications between the management station and the storage array, use Dynamic Host Configuration Protocol (DHCP) to provide IP addresses.
 
-Each storage array has either one controller (simplex) or two controllers (duplex), and each controller has two storage management ports. Each management port will be assigned an IP address.
 
-.Before you begin
+.What you'll need
 
-You have installed and configured a DHCP server on the same subnet as the storage management ports.
+A DHCP server installed and configured on the same subnet as the storage management ports.
 
 .About this task
+
+Each storage array has either one controller (simplex) or two controllers (duplex), and each controller has two storage management ports. Each management port will be assigned an IP address.
 
 The following instructions refer to a storage array with two controllers (a duplex configuration).
 

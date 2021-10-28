@@ -4,12 +4,16 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool (IMT) to verify that the entire configuration is supported.
 ---
-= Verify the Linux configuration is supported
+= Verify Linux support and review restrictions
 :experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+As a first step, you should verify that your Linux configuration is supported and also review the controller, host, and recovery restrictions.
+
+== Verify the Linux configuration is supported
+
 To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool (IMT) to verify that the entire configuration is supported.
 
 .Steps
@@ -21,9 +25,8 @@ To ensure reliable operation, you create an implementation plan and then use the
 +
 The Refine Search Criteria section is displayed. In this section you may select the protocol that applies, as well as other criteria for the configuration such as Operating System, NetApp OS, and Host Multipath driver. Select the criteria you know you want for your configuration, and then see what compatible configuration elements apply. As necessary, make the updates for your operating system and protocol that are prescribed in the tool. Detailed information for your chosen configuration is accessible on the View Supported Configurations page by clicking the right page arrow.
 
-== NVMe over InfiniBand restrictions
+== Review NVMe over InfiniBand restrictions
 
-[.lead]
 Before using NVMe over InfiniBand, review the controller, host, and recovery restrictions. For an up-to-date listing of all restrictions, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 === Controller restrictions

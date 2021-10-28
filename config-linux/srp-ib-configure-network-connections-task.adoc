@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/srp-ib-configure-network-connections-task.html
 sidebar: sidebar
-keywords: configuration, srp, infiniband, protocol, section, configure, network, connection
+keywords: configure network SRP over IB, configure Linux network, OFED, RDMA, express linux configuration, linux host,
 summary: If your configuration uses the SRP over Infiniband protocol, follow the steps in this section.
 ---
 = Configure network connections--SRP over Infiniband
@@ -11,7 +11,7 @@ summary: If your configuration uses the SRP over Infiniband protocol, follow the
 [.lead]
 If your configuration uses the SRP over Infiniband protocol, follow the steps in this section.
 
-.Before you begin
+.What you'll need
 
 To connect the Linux host to the storage array, you must enable the InfiniBand driver stack with the appropriate options. Specific settings might vary between Linux distributions. Check the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for specific instructions and additional recommended settings specific to your solution.
 

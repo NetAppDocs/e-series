@@ -9,22 +9,20 @@ summary: Install DSM package, which contains multipath software for Windows.
 :imagesdir: ../media/
 
 [.lead]
+To provide a redundant path to the storage array, you can install the SANtricity Windows DSM package and use the multipath package for Windows.
+
+.What you'll need
+
+The correct administrator or superuser privileges.
+
+.About this task
+
 Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. Before you can use multipathing, you need to install the SANtricity Windows DSM package. This package contains the multipath software for Windows.
 
 Windows installations use the native MPIO Device Specific Module (DSM) driver for failover. When you install and enable the SANtricity Windows DSM package, you do not need to take further action to use multipath.
 
-Perform the following steps to install the SANtricity Windows DSM package and use the multipath package for Windows.
-
-.Before you begin
-
-* You must have the correct administrator or superuser privileges.
-
-.About this task
-
-You will install the SANtricity Windows DSM package on the management station.
-
 .Steps
 
-. Download the *SANtricity Windows DSM* package from the https://mysupport.netapp.com/site/products/all/details/eseries-santricityos/downloads-tab[SANtricity OS software page]. Select your software version, accept the license agreement, and select *SANtricity Windows DSM* under Additional Downloads.
+. Download the *SANtricity Windows DSM* package from the https://mysupport.netapp.com/site/products/all/details/eseries-santricityos/downloads-tab[SANtricity OS software page^]. Select your software version, accept the license agreement, and select *SANtricity Windows DSM* under Additional Downloads.
 . Run the *SANtricity Windows DSM* installer. Double-click the install package to execute.
 . Use the installation wizard to install the package on the management station.

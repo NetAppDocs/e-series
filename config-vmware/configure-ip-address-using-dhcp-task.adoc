@@ -11,13 +11,13 @@ summary: Use Dynamic Host Configuration Protocol \(DHCP\) to provide IP addresse
 [.lead]
 To configure communications between the management station and the storage array, use Dynamic Host Configuration Protocol (DHCP) to provide IP addresses.
 
-Each storage array has either one controller (simplex) or two controllers (duplex), and each controller has two storage management ports. Each management port will be assigned an IP address.
+.What you'll need
 
-.Before you begin
-
-You must have a DHCP server installed and configured on the same subnet as the storage management ports.
+A DHCP server installed and configured on the same subnet as the storage management ports.
 
 .About this task
+
+Each storage array has either one controller (simplex) or two controllers (duplex), and each controller has two storage management ports. Each management port will be assigned an IP address.
 
 The following instructions refer to a storage array with two controllers (a duplex configuration).
 

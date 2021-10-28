@@ -15,10 +15,10 @@ For the Fibre Channel protocol, you configure the switches and determine the hos
 
 Configuring (zoning) the Fibre Channel (FC) switches enables the hosts to connect to the storage array and limits the number of paths. You zone the switches using the management interface for the switches.
 
-.Before you begin
+.What you'll need
 
-* You must have administrator credentials for the switches.
-* You must have used your HBA utility to discover the WWPN of each host initiator port and of each controller target port connected to the switch.
+* Administrator credentials for the switches.
+* The WWPN of each host initiator port and of each controller target port connected to the switch. (Use your HBA utility for discovery.)
 
 NOTE: A vendor's HBA utility can be used to upgrade and obtain specific information about the HBA. Refer to the support section of the vendor's website for instructions on how to obtain the HBA utility.
 
@@ -43,7 +43,7 @@ To configure FC zoning, you must determine the worldwide port name (WWPN) of eac
 . Run the following command:
 +
 ----
-esxcfg**-**scsidevs –a
+esxcfg-scsidevs –a
 ----
 
 . Record the initiator identifiers. The output will be similar to this example:

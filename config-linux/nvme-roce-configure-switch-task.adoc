@@ -13,6 +13,8 @@ You configure the switches according to the vendor's recommendations for NVMe ov
 
 NOTE: *RISK OF DATA LOSS.* You must enable Priority Flow Control or Global Pause Control on the switch to eliminate the risk of data loss in an NVMe over RoCE environment.
 
-Enable Ethernet pause frame flow control *end to end* as the best practice configuration.
+.Steps
 
-Consult your network administrator for tips on selecting the best configuration for your environment.
+. Enable Ethernet pause frame flow control *end to end* as the best practice configuration.
+
+. Consult your network administrator for tips on selecting the best configuration for your environment.
