@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/fc-setup-multipath-conf-file-concept.html
 sidebar: sidebar
-keywords: multipath.conf file, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+keywords: multipath.conf file, express linux configuration, software configuration, linux host,
 summary: Use the multipath.conf file, which is the configuration file for the multipath daemon, multipathd.
 ---
 = Set up the multipath.conf file

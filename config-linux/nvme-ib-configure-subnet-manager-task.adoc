@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/nvme-ib-configure-subnet-manager-task.html
 sidebar: sidebar
-keywords: infiniband, switch, subnet, manager, high, load, avoid, path, loss, opensm, configure
+keywords: configure subnet manager Linux, path loss, subnet manager, opensm, express linux configuration, linux host,
 summary: Using an InfiniBand switch to run subnet manager might cause unexpected path loss during high loads. To avoid path loss, configure the subnet manager on one or more of your hosts using opensm.
 ---
 = Configure subnet manager
@@ -11,9 +11,9 @@ summary: Using an InfiniBand switch to run subnet manager might cause unexpected
 [.lead]
 Using an InfiniBand switch to run subnet manager might cause unexpected path loss during high loads. To avoid path loss, configure the subnet manager on one or more of your hosts using opensm.
 
-.Before you begin
+.What you'll need
 
-You must be running the latest compatible RHEL 7, SUSE Linux Enterprise Server 12 or 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a complete list of the latest requirements.
+The latest compatible RHEL 7, SUSE Linux Enterprise Server 12 or 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a complete list of the latest requirements.
 
 .Steps
 
@@ -27,7 +27,7 @@ You must be running the latest compatible RHEL 7, SUSE Linux Enterprise Server 1
 
 . Depending on your configuration, follow the appropriate steps below:
 
-* *Single switch*. If you are using a single switch, start and enable the `opensm` service, and then add the HCA port identifier values you found in step 1 to the `opensm.conf` file on each port. Repeat for the other port.
+* *Single switch*. If you are using a single switch, start and enable the `opensm` service, and then add the HCA port identifier values you found in step 1 to the opensm.conf file on each port. Repeat for the other port.
 +
 Edit the /etc/rdma/opensm.conf file to add the identifier for that port:
 +

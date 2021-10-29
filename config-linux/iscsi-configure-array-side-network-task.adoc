@@ -12,10 +12,10 @@ summary: Configure iSCSI networking on the array side.
 [.lead]
 You use the SANtricity System Manager GUI to configure iSCSI networking on the array side.
 
-.Before you begin
+.What you'll need
 
-* You must know the IP address or domain name for one of the storage array controllers.
-* You or your system administrator must have set up a password for the System Manager GUI, or you must have configured Role-Based Access Control (RBAC) or LDAP and a directory service for the appropriate security access to the storage array. See the _SANtricity System Manager online help_ for more information about Access Management.
+* The IP address or domain name for one of the storage array controllers.
+* A password for the System Manager GUI, or Role-Based Access Control (RBAC) or LDAP and a directory service configured for the appropriate security access to the storage array. See the SANtricity System Manager online help for more information about Access Management.
 
 .About this task
 

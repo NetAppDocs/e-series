@@ -9,13 +9,13 @@ summary: Configure storage on the host for the Windows express method.
 :imagesdir: ../media/
 
 [.lead]
-A new LUN is offline and has no partition or file system when a Windows host first discovers it. You must bring the volume online and initialize it in Windows. Optionally, you can format the LUN with a file system.
+Because a new LUN is offline and has no partition or file system when a Windows host first discovers it, you must bring the volume online and initialize it in Windows. Optionally, you can format the LUN with a file system.
 
 You can initialize the disk as a basic disk with a GPT or MBR partition table. Typically, you format the LUN with a file system such as New Technology File System (NTFS).
 
-.Before you begin
+.What you'll need
 
-The host must have discovered the LUN.
+A LUN discovered by the host.
 
 .Steps
 

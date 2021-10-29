@@ -11,11 +11,7 @@ summary: The import of the remote storage device is performed through the Import
 [.lead]
 To initiate a storage import from a remote system to a local E-Series storage system, use the Import Remote Storage wizard in the SANtricity System Manager user interface.
 
-In this task, you create a mapping between the remote storage device and a volume on the local E-Series storage system. When you finish the configuration, the import begins.
-
-NOTE:  Because many variables can impact the import operation and its completion time, you should first perform smaller “test” imports. Use these tests to ensure that all connections work as expected and that the import operation completes in an appropriate amount of time.
-
-.Before you begin
+.What you'll need
 
 * The E-Series storage system must be configured to communicate with the remote storage system. See link:setup-remote-volumes-concept.html[Configure hardware].
 * For the remote storage system, gather the following information:
@@ -28,6 +24,12 @@ NOTE:  Because many variables can impact the import operation and its completion
 ** Has a state of Optimal and is available.
 For a full list of requirements, see link:system-reqs-concept.html[Requirements and restrictions].
 * Recommended: Back up volumes on the remote storage system before starting the import process.
+
+.About this task
+
+In this task, you create a mapping between the remote storage device and a volume on the local E-Series storage system. When you finish the configuration, the import begins.
+
+NOTE:  Because many variables can impact the import operation and its completion time, you should first perform smaller “test” imports. Use these tests to ensure that all connections work as expected and that the import operation completes in an appropriate amount of time.
 
 .Steps
 
@@ -67,4 +69,4 @@ Once the import process begins, the entire target volume is overwritten with the
 The time required to complete the import operation depends on the size of the remote storage system, the priority setting for the import, and the amount of I/O load on both storage systems and their associated volumes.
 Once the import is complete, the local volume is a duplicate of the remote storage device.
 
-. When you are ready to break the relationship between the two volumes, select *Disconnect* on the import object from the Operations In Progress view. Once the relationship is disconnected, performance of the local volume returns to normal and is no longer impacted by the remote connection.
+. When you are ready to break the relationship between the two volumes, select *Disconnect* on the import object from the Operations in Progress view. Once the relationship is disconnected, performance of the local volume returns to normal and is no longer impacted by the remote connection.

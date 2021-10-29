@@ -5,22 +5,25 @@ keywords: install Storage Manager Linux, install CLI Windows, install command li
 summary: Install Storage Manager for CLI and HCA in Linux express method.
 ---
 = Install SANtricity Storage Manager for SMcli (SANtricity software version 11.53 or earlier)
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-When you install the SANtricity Storage Manager software on your management station, the command line interface (CLI) is installed to help you manage your array. By also installing the software on the host, the Host Context Agent is installed that helps the host push configuration information to the storage array controllers through the I/O path.
+If you are using SANtricity software 11.53 or earlier, you can install the SANtricity Storage Manager software on your management station to help manage the array.
 
-NOTE: For SANtricity software 11.60 and newer, the SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricity System Manager, refer to the _Download the command line interface (CLI)_ topic under the SANtricity System Manager Online Help.
+SANtricity Storage Manager includes the command line interface (CLI) for additional management tasks, and also the Host Context Agent for pushing host configuration information to the storage array controllers through the I/O path.
 
-.Before you begin
+NOTE: If you are using SANtricity software 11.60 and newer, you do not need to follow these steps. The SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricity System Manager, refer to the _Download command line interface (CLI)_ topic under the SANtricity System Manager Online Help.
 
-* You are using SANtricity software 11.53 or earlier.
-* You must have the correct administrator or superuser privileges.
-* You must have ensured that the system that will contain the SANtricity Storage Manager client has the following minimum requirements:
+.What you'll need
+
+* SANtricity software 11.53 or earlier.
+* Correct administrator or superuser privileges.
+* A system for the SANtricity Storage Manager client with the following minimum requirements:
  ** *RAM*: 2 GB for Java Runtime Engine
  ** *Disk space*: 5 GB
- ** *OS/Architecture*: For guidance on determining the supported operating system versions and architectures, go to http://mysupport.netapp.com[NetApp Support^]. From the *Downloads* tab, go to  *Downloads* > *E-Series SANtricity Storage Manager*.
+ ** *OS/Architecture*: For guidance on determining the supported operating system versions and architectures, go to http://mysupport.netapp.com[NetApp Support^]. From the *Downloads* tab, go to menu:Downloads[E-Series SANtricity Storage Manager].
 
 .About this task
 
@@ -28,17 +31,17 @@ This task describes how to install SANtricity Storage Manager on both the Window
 
 .Steps
 
-. Download the SANtricity software release at http://mysupport.netapp.com[NetApp Support^]. From the *Downloads* tab, go to  *Downloads* > *E-Series SANtricity Storage Manager*.
+. Download the SANtricity software release at http://mysupport.netapp.com[NetApp Support^]. From the *Downloads* tab,  go to menu:Downloads[E-Series SANtricity Storage Manager].
 . Run the SANtricity installer.
 +
 [options="header"]
 |===
 | Windows| Linux
 a|
-Double-click the `SMIA*.exe` installation package to start the installation.
+Double-click the SMIA*.exe installation package to start the installation.
 a|
 
- .. Go to the directory where the `SMIA*.bin` installation package is located.
+ .. Go to the directory where the SMIA*.bin installation package is located.
  .. If the temp mount point does not have execute permissions, set the `IATEMPDIR` variable. Example: `IATEMPDIR=/root ./SMIA-LINUXX64-11.25.0A00.0002.bin`
  .. Run the `chmod +x SMIA*.bin` command to grant execute permission to the file.
  .. Run the `./SMIA*.bin` command to start the installer.

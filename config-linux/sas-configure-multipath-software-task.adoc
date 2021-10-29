@@ -11,9 +11,9 @@ summary: Configure multipath software, which  provides a redundant path to the s
 [.lead]
 To provide a redundant path to the storage array, you can configure multipath software.
 
-.Before you begin
+.What you'll need
 
-You have installed the required packages on your system.
+You must install the required packages on your system.
 
 * For Red Hat (RHEL) hosts, verify the packages are installed by running `rpm -q device-mapper-multipath`.
 * For SLES hosts, verify the packages are installed by running `rpm -q multipath-tools`.

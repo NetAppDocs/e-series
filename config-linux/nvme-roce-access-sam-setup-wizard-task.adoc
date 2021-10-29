@@ -10,12 +10,14 @@ summary: You use the Setup wizard in SANtricity System Manager to configure your
 :imagesdir: ../media/
 
 [.lead]
-You use the Setup wizard in SANtricity System Manager to configure your storage array.
+To configure your storage array, you can use the Setup wizard in SANtricity System Manager.
 
-.Before you begin
+SANtricity System Manager is a web-based interface embedded on each controller. To access the user interface, you point a browser to the controller’s IP address. A setup wizard helps you get started with system configuration.
 
-* You must use out-of-band management.
-* Ensure that the device from which you will access SANtricity System Manager contains one of the following browsers:
+.What you'll need
+
+* Out-of-band management.
+* A management station for accessing SANtricity System Manager that includes one of the following browsers:
 +
 [options="header"]
 |===

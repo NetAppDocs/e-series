@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/nvme-ib-setup-host-side-task.html
 sidebar: sidebar
-keywords: configuring, configure, nvme, initiator, infiniband, environment, install, nvme-cli, rdma, package, nvme-of, layer, host, side
+keywords: configure Linux host, express linux configuration, linux host,
 summary: Configuring an NVMe initiator in an InfiniBand environment includes installing and configuring the infiniband, nvme-cli, and rdma packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
 ---
 = Set up NVMe over InfiniBand on the host side
@@ -11,7 +11,7 @@ summary: Configuring an NVMe initiator in an InfiniBand environment includes ins
 [.lead]
 Configuring an NVMe initiator in an InfiniBand environment includes installing and configuring the infiniband, nvme-cli, and rdma packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
 
-.Before you begin
+.What you'll need
 
 You must be running the latest compatible RHEL 7, SUSE Linux Enterprise Server 12 and 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a complete list of the latest requirements.
 

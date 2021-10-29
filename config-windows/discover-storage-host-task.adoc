@@ -9,18 +9,22 @@ summary: Discover storage for Windows express method.
 :imagesdir: ../media/
 
 [.lead]
-LUNs on your storage system appear as disks to the Windows host. When you add new LUNs, you must manually rescan the associated disks to discover them. The host does not automatically discover new LUNs.
+When you add new LUNs, you must manually rescan the associated disks to discover them. The host does not automatically discover new LUNs.
 
-.Before you begin
-
-You must be logged on as an administrator.
+LUNs on your storage system appear as disks to the Windows host.
 
 .Steps
 
+. Log on as an administrator.
+
 . To discover the storage, run the following command from a Windows command prompt.
 +
+----
 # echo rescan | diskpart
+----
 
 . To verify the addition of new storage, run the following command.
 +
+----
 # echo list disk | diskpart
+----

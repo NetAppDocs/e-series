@@ -18,4 +18,4 @@ By default, an ESXi host automatically performs a rescan every five minutes. A v
 . Create one or more volumes and assign them to the ESXi host.
 . If using a vCenter Server, add the host to the server's inventory.
 . Use the vSphere Client or the vSphere Web Client to connect directly to the vCenter Server or to the ESXi host.
-. For instructions on how to perform a rescan of the storage on an ESXi host, search for the VMware Knowledge Base article on this topic.
+. For instructions on how to perform a rescan of the storage on an ESXi host, search for the https://kb.vmware.com/s/[VMware Knowledge Base^] article on this topic.

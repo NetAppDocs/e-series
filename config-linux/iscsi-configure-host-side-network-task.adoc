@@ -19,7 +19,7 @@ In most cases, you can use the inbox software-initiator for iSCSI CNA/NIC. You d
 
 .Steps
 
-. Check the ``node.session.nr_sessions``variable in the /etc/iscsi/iscsid.conf file to see the default number of sessions per physical path. If necessary, change the default number of sessions to one session.
+. Check the `node.session.nr_sessions` variable in the /etc/iscsi/iscsid.conf file to see the default number of sessions per physical path. If necessary, change the default number of sessions to one session.
 +
 ----
 node.session.nr_sessions = 1

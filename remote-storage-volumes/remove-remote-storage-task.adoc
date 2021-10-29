@@ -11,11 +11,10 @@ summary: You can remove any configured Remote Storage object through the SANtric
 [.lead]
 After an import completes, you can remove a remote storage object if you no longer want data copied between the local and remote devices.
 
-.Before you begin
-
-Make sure that no imports are associated with the remote storage object you plan to remove
 
 .Steps
+
+. Make sure that no imports are associated with the remote storage object you plan to remove.
 
 . From the Remote Storage screen of the SANtricity System Manager, select the desired Remote Storage object under the result list section.
 . Click *Remove*.

@@ -13,9 +13,9 @@ Using an InfiniBand switch to run subnet manager might cause unexpected path los
 
 .Steps
 
-. Install the `opensm` package on any hosts that will be running the subnet manager.
-. Start and enable the `opensm` service.
-. Use the ``ibstat -p``command to find `GUID0` and `GUID1` of the HBA ports. For example:
+. Install the opensm package on any hosts that will be running the subnet manager.
+. Start and enable the opensm service.
+. Use the ``ibstat -p`` command to find `GUID0` and `GUID1` of the HBA ports. For example:
 +
 ----
 # ibstat -p

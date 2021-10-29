@@ -11,7 +11,7 @@ summary: Configure the host to run failover.
 [.lead]
 To provide a redundant path to the storage array, you can configure the host to run failover.
 
-.Before you begin
+.What you'll need
 
 You must install the required packages on your system.
 

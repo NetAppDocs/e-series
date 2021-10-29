@@ -80,7 +80,7 @@ The Remote Storage feature has the following restrictions:
 * Destination volume on the E-Series system must not have snapshots.
 * Destination volume on the E-Series system must not be mapped to any hosts before the import is started.
 * Destination volume on the E-Series system must have resource-provisioning disabled.
-* Direct mappings of the remote storage volume to a host or multiple hosts is not supported.
+* Direct mappings of the remote storage volume to a host or multiple hosts are not supported.
 * Web Services Proxy is not supported.
 * iSCSI CHAP secrets are not supported.
 * SMcli is not supported.
