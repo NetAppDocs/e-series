@@ -29,11 +29,11 @@ In this step, you upgrade the drives' firmware.
 
 .Before you begin
 
-* You have backed up your data using disk-to-disk backup, volume copy (to a volume group not affected by the planned firmware upgrade), or a remote mirror.
-* The storage array has an Optimal status.
-* All drives have an Optimal status.
-* No configuration changes are running on the storage array.
-* If the drives are capable of only an offline upgrade, I/O activity to all volumes associated with the drives is stopped.
+* Back up your data using disk-to-disk backup, volume copy (to a volume group not affected by the planned firmware upgrade), or a remote mirror.
+* Make sure the storage array has an Optimal status.
+* Make sure all drives have an Optimal status.
+* Make sure no configuration changes are running on the storage array.
+* Understand that if the drives are capable of only an offline upgrade, I/O activity to all volumes associated with the drives is stopped.
 
 .Steps
 

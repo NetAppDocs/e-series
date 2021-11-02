@@ -11,7 +11,7 @@ summary: Before installing the 3040 40U cabinet, gather required tools and equip
 [.lead]
 Before installing the 3040 40U cabinet, make sure you have required tools and equipment.
 
-.Steps
+.Step
 
 . Gather all items listed in the following table.
 +
@@ -35,6 +35,7 @@ image:../media/73121_01_dwg_nema_l6_30_power_cord.gif[]
 
 -   The NEMA L6-30 connectors are for use in the USA and Canada.
 -   The IEC-60309 connectors are for use worldwide, except for USA and Canada.
+
 NOTE:  Each PDU must be connected to an independent power source.
 
 
@@ -47,7 +48,7 @@ a|
 
 image:../media/73122_01_dwg_iec_60309_power_cord.gif[]
 a|
-image:../media/78038_21.gif[]
+image:../media/78038_21.png[]
 
 a|
 **SAS cables** (optional) – Two cables are included with each drive tray, while host side cables must be purchased separately.
