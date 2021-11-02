@@ -11,10 +11,14 @@ summary: Add a new drive shelf while power is still applied to the other compone
 [.lead]
 You can add a new drive shelf while power is still applied to the other components of the storage system. You can configure, reconfigure, add, or relocate storage system capacity without interrupting user access to data.
 
+.Before you begin
+
 Due to the complexity of this procedure, the following is recommended:
 
 * Read all steps before beginning the procedure.
 * Ensure hot adding a drive shelf is the procedure you need.
+
+.About this task
 
 This procedure applies to hot adding a DE212C, DE224C, or DE460C drive shelf to an E5700, EF570, E2800, EF280, or EF300 controller shelf.
 
@@ -24,7 +28,7 @@ NOTE: To maintain system integrity, you must follow the procedure exactly in the
 
 == Step 1: Prepare to add the drive shelf
 
-Before you hot add a drive shelf, you must check for critical events and check the status of the IOMs.
+To prepare to hot add a drive shelf, you must check for critical events and check the status of the IOMs.
 
 .Before you begin
 
@@ -83,9 +87,14 @@ NOTE: See the installation instructions for your model for the full procedure fo
 
 == Step 3: Cable your system
 
+Select one of the following options, depending on whether you are cabling an E2800 and E5700 storage system or an EF300 storage system.
+
+* <<Option 1: Connect the drive shelf for E2800 and E5700>>
+* <<Option 2: Connect the drive shelf for EF300>>
+
 If you are cabling an older controller shelf to a DE212C, DE224C, or DE460, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf^].
 
-=== Connect the drive shelf--E2800 and E5700
+=== Option 1: Connect the drive shelf for E2800 and E5700
 
 You connect the drive shelf to controller A, confirm IOM status, and then connect the drive shelf to controller B.
 
@@ -126,7 +135,7 @@ image::../media/hot_e5700_2.png[]
 +
 NOTE: Optimal status indicates that the loss of redundancy error associated with the new drive shelf has been resolved and the storage system is stabilized.
 
-=== Connect the drive shelf--EF300
+=== Option 2: Connect the drive shelf for EF300
 
 You connect the drive shelf to controller A, confirm IOM status, and then connect the drive shelf to controller B.
 

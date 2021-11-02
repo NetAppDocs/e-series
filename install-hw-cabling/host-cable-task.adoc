@@ -21,7 +21,7 @@ The following figure shows an example connection. To help ensure maximum perform
 
 image::../media/topology_host_direct_generic_web_low.png[]
 
-image:../media/legend_icon_01_inst-hw-cabling.gif[] Connect each host adapter port directly to the host ports on the controllers.
+image:../media/legend_icon_01_inst-hw-cabling.png[] Connect each host adapter port directly to the host ports on the controllers.
 
 == Cabling for a switch topology
 
@@ -35,6 +35,6 @@ For switches that provide provisioning capability, you should isolate each initi
 
 image::../media/topology_host_fabric_generic.png[]
 
-image:../media/legend_icon_01_inst-hw-cabling.gif[]Connect each host adapter directly to the switch.
+image:../media/legend_icon_01_inst-hw-cabling.png[]Connect each host adapter directly to the switch.
 
-image:../media/legend_icon_02_inst-hw-cabling.gif[] Connect each switch directly to the host ports on the controllers. To help ensure maximum performance, use all available host adapter ports.
+image:../media/legend_icon_02_inst-hw-cabling.png[] Connect each switch directly to the host ports on the controllers. To help ensure maximum performance, use all available host adapter ports.
