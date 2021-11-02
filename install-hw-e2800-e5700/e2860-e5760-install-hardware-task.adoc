@@ -9,13 +9,13 @@ summary: Install the E2800 or E5700 in a two-post rack or a NetApp system cabine
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to install a E2860, E5760, or DE460 storage system in a two-post rack or a NetApp system cabinet.
+Learn how to install a E2860, E5760, or DE460 storage system in a two-post rack or a NetApp system cabinet.
 
 .Before you begin
 
-* You have registered your hardware at http://mysupport.netapp.com/[mysupport.netapp.com^].
-* You have prepared a flat, static-free work area.
-* You have an ESD wristband and have taken anti-static precautions.
+* Register your hardware at http://mysupport.netapp.com/[mysupport.netapp.com^].
+* Prepare a flat, static-free work area.
+* Obtain an ESD wristband and take anti-static precautions.
 
 Read through all the instructions before proceeding with the steps below.
 
@@ -25,7 +25,7 @@ Read through all the instructions before proceeding with the steps below.
 
 . Install the rails.
 +
-If instructions were included with your rack-mounting hardware, refer to them for detailed information on how to install the rails. For additional rack-mounting instructions, see link:../rackmount-hardware.html[Rack-mount hardware].
+If instructions were included with your rack-mounting hardware, refer to them to learn how to install the rails. For additional rack-mounting instructions, see link:../rackmount-hardware.html[Rack-mount hardware].
 +
 NOTE: For square hole cabinets, you must first install the provided cage nuts to secure the front and rear of the shelf with screws.
 +
@@ -40,46 +40,42 @@ image:../media/install_rails_inst-hw-e2800-e5700.png[]
 +
 CAUTION: An empty shelf weighs approximately 132 lb (60 kg). A mechanized lift or four people using lift handles are required to safely move an empty shelf.
 +
-|===
-a|
+
  .. If lifting the shelf by hand, attach the four lift handles. Push up on each handle until it clicks into place.
 +
  .. Supporting the shelf from the bottom, slide it into the cabinet. If the lift handles are used, remove them one set at a time as the shelf slides into the cabinet. To remove the handles, pull back on the release latch, push down, then pull away from the shelf.
 +
 image:../media/4_person_lift_source.png[]
-|===
+
 +
 . Secure the shelf.
 +
-|===
-a|
-For more information, see the instructions for the rack-mounting hardware.
 
- ** Insert screws into the first and third holes from the top of the shelf on both sides to secure it to the front of the cabinet.
- ** Place two back brackets on each side of the upper rear section of the shelf. Insert screws into the first and third holes of each bracket to secure the back of the cabinet.
-
-a|
+.. Insert screws into the first and third holes from the top of the shelf on both sides to secure it to the front of the cabinet.
+.. Place two back brackets on each side of the upper rear section of the shelf. Insert screws into the first and third holes of each bracket to secure the back of the cabinet.
++
 image:../media/secure_shelf_inst-hw-e2800-e5700.png[]
-|===
-
++
 . Install the drives.
 +
-|===
-a|
 
  .. Wrap the strap end of the ESD wristband around your wrist, and secure the clip end to a metal ground to prevent static discharges.
  .. Starting at the front left slot of the top drawer, install each drive by gently positioning into the drive slot and lowering the raised drive handle until it clicks into place.
-+
-NOTE: If you are installing fewer than 60 drives, if you have solid-state drives (SSDs), or if your drives have different capacities:
 
+** If you are installing fewer than 60 drives, if you have solid-state drives (SSDs), or if your drives have different capacities:
++
   *** Maintain a minimum of 20 drives per shelf. Install drives in the front four slots in each drawer first, for adequate airflow for cooling.
   *** Distribute any remaining drives across the drawers. If possible, install an equal number of each type of drive in each drawer to allow for the creation of Drawer Loss Protected volume groups or disk pools.
   *** Distribute any SSDs evenly across the drawers.
++
 
  .. Carefully slide the drawer back in by pushing the center and gently closing both latches.
-   *** Do not force the drawer into place. Use the connector tool, disconnect the connector of the snake cable and reconnect it, make sure you hear a click to determine the reconnection is properly done This disconnection and reconnection should only be required during initial setup or if the tray is shipped to a different location.
- .. Attach the front bezel.
+   *** Do not force the drawer into place.
+   *** Use the connector tool, disconnect the connector of the snake cable and reconnect it, make sure you hear a click to determine the reconnection is properly done.
+  *** Disconnection and reconnection should only be required during initial setup or if the tray is shipped to a different location.
 
+ .. Attach the front bezel.
+|===
 a|
 image:../media/install_faceplate_2_0_inst-hw-e2800-e5700.png[]
 a|
