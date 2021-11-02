@@ -9,27 +9,28 @@ summary: Install the EF300 or EF600 in a two-post rack or a NetApp system cabine
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to install a EF300 or EF600 storage system in a two-post rack or a NetApp system cabinet.
+You can install an EF300 or EF600 storage system in a two-post rack or a NetApp system cabinet.
 
 .Before you begin
 
-* You have registered your hardware at http://mysupport.netapp.com/[mysupport.netapp.com^].
-* You have prepared a flat, static-free work area.
-* You have taken anti-static precautions.
+Before you install an EF300 or EF600 storage system, make sure you do the following:
+
+* Register your hardware at http://mysupport.netapp.com/[mysupport.netapp.com^].
+* Prepare a flat, static-free work area.
+* Take anti-static precautions.
 
 .Steps
 
 . Unpack the hardware.
  .. Unpack the contents and inventory the contained hardware against the packing slip.
  .. Before proceeding, read through all the instructions.
-. Before installing the hardware, ensure that you have an ESD wristband or that you have taken other antistatic precautions.
 . Install the rails.
 +
 NOTE: To prevent the equipment from toppling over, install the hardware from the bottom of the rack or cabinet up to the top.
 +
 |===
 a|
-If instructions were included with your rack-mounting hardware, refer to them for detailed information on how to install the rails. For additional rack-mounting instructions, see link:../rackmount-hardware.html[Rack-mount hardware].
+If instructions were included with your rack-mounting hardware, refer to them to learn  how to install the rails. For additional rack-mounting instructions, see link:../rackmount-hardware.html[Rack-mount hardware].
 a|
 image:../media/install_rails_inst-hw-ef600.png[]
 |===
@@ -53,7 +54,7 @@ image:../media/install_ef600.png[]
 +
 |===
 a|
-For more information, see the instructions for the rack-mounting hardware.
+For more information, see link:../rackmount-hardware.html[Rack-mount hardware].
 a|
 image:../media/secure_shelf_inst-hw-ef600.png[]
 |===

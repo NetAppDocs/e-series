@@ -9,17 +9,17 @@ summary: You cable the controllers to your network to complete storage system se
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to connect the controller cables to your network, and then complete the setup and configuration.
+Learn how to connect the controller cables to your network, and then complete the setup and configuration.
 
-== Cable the data hosts
+== Step 1: Cable the data hosts
 
 Cable the storage system according to your network topology.
 
-=== Direct-attach topology
+=== Option 1: Direct-attach topology
 
 The following example shows cabling to the data hosts using a direct-attach topology.
 
-==== Example A: Direct-attach topology
+.Example A: Direct-attach topology
 
 |===
 a|
@@ -28,11 +28,11 @@ image:../media/direct_topo.png[] a|
 
 |===
 
-=== Fabric topology
+=== Option 2: Fabric topology
 
 The following example shows cabling to the data hosts using a fabric topology.
 
-==== Example B: Fabric topology
+.Example B: Fabric topology
 
 |===
 a|
@@ -42,18 +42,18 @@ image:../media/fabric_topo.png[] a|
 
 |===
 
-== Connect and configure the management connection
+== Step 2: Connect and configure the management connection
 
-You can configure the controller management ports using one of two options: using a DHCP server or using a static IP address.
+You can configure the controller management ports using a DHCP server or a static IP address.
 
 === Option 1: DHCP server
 
-Follow this procedure to configure the management ports with a DHCP server.
+Learn how to configure the management ports with a DHCP server.
 
 .Before you begin
 
-* Your DHCP server is configured to associate an IP address, subnet mask, and gateway address as a permanent lease for each controller.
-* You have obtained the assigned IP addresses you will use to connect to the storage system from your network administrator.
+* Configure your DHCP server to associate an IP address, subnet mask, and gateway address as a permanent lease for each controller.
+* Obtain the assigned IP addresses you will use to connect to the storage system from your network administrator.
 
 .Steps
 
@@ -77,12 +77,12 @@ image:../media/ethernet_callout.png[]
 
 === Option 2: Static IP address
 
-Follow this procedure to configure the management ports manually by entering the IP address and the subnet mask.
+Learn how to configure the management ports manually by entering the IP address and the subnet mask.
 
 .Before you begin
 
-* You have obtained the controllers`' IP address, subnet mask, gateway address, and DNS and NTP server information from your network administrator.
-* You have ensured that the laptop you are using is not receiving network configuration from a DHCP server.
+* Obtain the controllers`' IP address, subnet mask, gateway address, and DNS and NTP server information from your network administrator.
+* Make sure that the laptop you are using is not receiving network configuration from a DHCP server.
 
 .Steps
 
@@ -129,13 +129,14 @@ The Configure Network Settings wizard will appear.
 +
 NOTE: If you lose the connection to controller B, you can use your previously validated connection to controller A to reestablish connection to controller B through controller A.
 
-== After installing the hardware
+== Step 3: Configure storage system
 
 After you have installed the EF300 or EF600 hardware, use the SANtricity software to configure and manage your storage system.
 
 .Before You Begin
 
-* You have configured your management ports and have verified and recorded your password and IP addresses.
+* Configure your management ports.
+* Verify and record your password and IP addresses.
 
 .Steps
 

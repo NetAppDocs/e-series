@@ -9,12 +9,14 @@ summary: Attach the power cables and power on the drive shelves.
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to attach the power cables and power on the drive shelves.
+Learn how to attach the power cables and power on the drive shelves.
 
 .Before you begin
 
-* You have installed your hardware.
-* You have taken anti-static precautions.
+Before you power the controller shelves, make sure to do the following:
+
+* Install your hardware.
+* Take anti-static precautions.
 
 .Steps
 
@@ -38,6 +40,8 @@ image:../media/cabling_power.png[]
 CAUTION: Accessing a EF300 or EF600 controller canister from the shelf can be blocked by third-party PDUs. Do not use power outlets directly behind the controller canister.
 
 . Allow the controller to boot for five minutes before completing the storage system set up and configuration.
+
+.Result
 
 The controller boots automatically. The LEDs flash on and the fans start to indicate that the controller is powering on.
 
