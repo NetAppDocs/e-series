@@ -5,6 +5,7 @@ keywords: Web Services, WSP, SANtricity API, discover storage WSP,
 summary: To manage storage systems in the network, you must first discover them and then add them to the management list.
 ---
 = Manage storage systems using Web Services Proxy
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
@@ -34,13 +35,13 @@ Before enabling IPv6 discovery settings, verify that your infrastructure support
 . Open the wsconfig.xml file, located at:
  ** (Windows) -- C:\Program Files\NetApp\SANtricity Web Services Proxy
  ** (Linux) -- /opt/netapp/santricity_web_services_proxy
-. In the autodiscover strings, change settings from "`true`" to "`false,`" as desired. See the following example.
+. In the autodiscover strings, change settings from `true` to `false`, as desired. See the following example.
 +
 ----
 <env key="autodiscover.ipv6.enable">true</env>
 ----
 +
-NOTE: When the paths are configured, but not configured so that the server can route to the addresses, intermittent connection errors happen. If you cannot set the IP addresses to be routable from the host, turn off auto discovery (change the settings to "`false`").
+NOTE: When the paths are configured, but not configured so that the server can route to the addresses, intermittent connection errors happen. If you cannot set the IP addresses to be routable from the host, turn off auto discovery (change the settings to `false`).
 
 . Save the file.
 
@@ -52,12 +53,12 @@ NOTE: This task describes how to discover and add storage systems using the REST
 
 .Before you begin
 
-For storage systems with SANtricity versions 11.30 and later, the legacy management interface for SYMbol must be enabled in the SANtricity System Manager interface. Otherwise, the Discovery endpoints fail. You can find this setting by opening System Manager, and then going to *Settings* > *System* > *Additional Settings* > *Change Management Interface*.
+For storage systems with SANtricity versions 11.30 and later, the legacy management interface for SYMbol must be enabled in the SANtricity System Manager interface. Otherwise, the Discovery endpoints fail. You can find this setting by opening System Manager, and then going to menu:Settings[System > Additional Settings > Change Management Interface].
 
 
 .Steps
 
-. link:install-login-task.html[Log in to the interactive API documentation].
+. Log in to the link:install-login-task.html[interactive API documentation].
 . Discover storage systems, as follows:
  .. From the API documentation, make sure *V2* is selected in the drop-down, and then expand the *Storage-Systems* category.
  .. Click the *POST: /discovery* endpoint, and then click *Try it out*.
@@ -205,7 +206,7 @@ NOTE: In addition to memory, the proxy uses network ports for each storage syste
 .Steps
 
 . Do one of the following:
- ** On Windows, go to the appserver64.init file. Locate the line, vmarg.3=-Xmx512M
- ** On Linux, go to the webserver.sh file. Locate the line, JAVA_OPTIONS="-Xmx512M"
-. To increase the memory, replace "`512`" with the desired memory in MB.
+ ** On Windows, go to the appserver64.init file. Locate the line, `vmarg.3=-Xmx512M`
+ ** On Linux, go to the webserver.sh file. Locate the line, `JAVA_OPTIONS="-Xmx512M"`
+. To increase the memory, replace `512` with the desired memory in MB.
 . Save the file.

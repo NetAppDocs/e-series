@@ -5,32 +5,36 @@ keywords: replace E2800 controller, replacing E2800 controller, duplex controlle
 summary: Replace a controller canister in a duplex configuration.
 ---
 = Replace controller in E2800 duplex configuration
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can replace a controller canister in a duplex configuration, which is a two-controller module configuration within the storage array.
-
-.About this task
-
-Each controller canister contains a controller card, a battery, and an optional host interface card (HIC). When you replace a controller canister, you must remove the battery and HIC, if one is installed, from the original controller canister, and install them in the replacement controller canister.
-
-This task describes how to prepare to replace a controller canister in the duplex version (two controllers) for the following controller shelves:
+You can replace a controller canister in a duplex (two-controller) configuration, for the following controller shelves:
 
 * E2812 controller shelf
 * E2824 controller shelf
 * E2860 controller shelf
 * EF280 flash array
 
-Perform this task only if your storage array has two controllers (duplex configuration).
+.About this task
 
-.Before you begin
+Each controller canister contains a controller card, a battery, and an optional host interface card (HIC). When you replace a controller canister, you must remove the battery and HIC, if one is installed, from the original controller canister, and install them in the replacement controller canister.
 
-* Review link:controllers-overview-supertask-concept.html[Requirements for E2800 controller replacement].
+.What you'll need
+
+* A replacement controller canister with the same part number as the controller canister you are replacing. (See step 1 to verify the part number.)
+* An ESD wristband, or you have taken other antistatic precautions.
+* #1 Phillips screwdriver.
+* Labels to identify each cable that is connected to the controller canister.
+* Access to the storage array's command line interface (CLI). If you do not have access to the CLI, you can do one of the following:
+** *For SANtricity System Manager (version 11.60 and above)* -- Download the CLI package (zip file) from System Manager. Go to menu:Settings[System > Add-ons > Command Line Interface]. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
+** *For SANtricity Storage Manager/Enterprise Management Window (EMW)* -- Follow the instructions in the express guide to download and install the software. You can run CLI commands from the EMW by selecting menu:Tools[Execute Script].
+
 
 == Step 1: Prepare to replace controller (duplex)
 
-Prepare to replace a controller canister.
+Prepare to replace the controller by verifying that the replacement controller canister has the correct FRU part number, backing up the configuration, and collecting support data. If the controller is still online, you must take it offline.
 
 .Steps
 
@@ -42,9 +46,10 @@ Save the packing materials to use when shipping the failed controller canister.
 +
 image::../media/28_dwg_e2800_labels_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] MAC address: The MAC address for management port 1 ("`P1`"). If you used DHCP to obtain the original controller's IP address, you will need this address to connect to the new controller.
+*(1)* _MAC address: The MAC address for management port 1 ("`P1`"). If you used DHCP to obtain the original controller's IP address, you will need this address to connect to the new controller._
 +
-image:../media/legend_icon_02_maint-e2800.gif[]FRU part number: This number must match the replacement part number for the currently installed controller.
+*(2)* _FRU part number: This number must match the replacement part number for the currently installed controller._
++
 
 . From SANtricity System Manager, locate the replacement part number for the controller canister you are replacing.
 +
@@ -60,13 +65,22 @@ When a controller has a fault and needs to be replaced, the replacement part num
 +
 CAUTION: *Possible loss of data access* -- If the two part numbers are not the same, do not attempt this procedure. In addition, if the failed controller canister includes a host interface card (HIC), you must install that HIC into the new controller canister. The presence of mismatched controllers or HICs will cause the new controller to lock down when you bring it online.
 
-. Back up the storage array's configuration database.
+. Collect support data for your storage array using either SANtricity System Manager or the Enterprise Management Window's (EMW) script editor.
 +
 If a problem occurs when you remove a controller, you can use the saved file to restore your configuration.
 
+* To use SANtricity System Manager:
+ .. Select menu:Support[Support Center > Diagnostics].
+ .. Select *Collect Support Data*.
+ .. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+
+ * To use SANtricity Storage Manager:
+
  .. Open the Enterprise Management Window (EMW) for SANtricity Storage Manager on your management station.
  .. Select the storage array.
- .. Select *Tools* > *Execute Script*.
+ .. Select menu:Tools[Execute Script].
  .. Type the following command in the text box.
 +
 ----
@@ -81,35 +95,30 @@ In this command, filename is the file path and file name to which you want to sa
 +
 This command does not automatically append a file extension to the saved file. You must specify a file extension when entering the file name.
 
- .. Select *Tools* > *Verify and Execute*.
+ .. Select menu:Tools[Verify and Execute].
 
-. Collect support data for your storage array using SANtricity System Manager.
- .. Select *Support* > *Support Center* > *Diagnostics*.
- .. Select *Collect Support Data*.
- .. Click *Collect*.
-The file is saved in the Downloads folder for your browser with the name support-data.7z.
+
 . If the controller is not already offline, take it offline now using either SANtricity System Manager or the Enterprise Management Window's (EMW) script editor:
- ** To use SANtricity System Manager:
-  ... Select *Hardware*.
-  ... If the graphic shows the drives, select *Show back of shelf* to show the controllers.
-  ... Select the controller that you want to place offline.
-  ... From the context menu, select *Place offline*, and confirm that you want to perform the operation.
+ * To use SANtricity System Manager:
+  .. Select *Hardware*.
+  .. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
+  .. Select the controller that you want to place offline.
+  .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 *Note:* If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
- ** To use script editor in the EMW:
-  ... Open the Enterprise Management Window (EMW) in SANtricity Storage Manager on your local host.
-  ... Select the storage array.
-  ... Select *Tools* > *Execute Script*.
-  ... Type one of the following commands in the text box.
+ * To use SANtricity Storage Manager:
+  .. Open the Enterprise Management Window (EMW) in SANtricity Storage Manager on your local host.
+  .. Select the storage array.
+  .. Select menu:Tools[Execute Script].
+  .. Type one of the following commands in the text box.
 +
-----
-**For controller A:** set controller [a] availability=offline
-----
-+
-----
-**For controller B:** set controller [b] availability=offline
-----
 
-  ... Select *Tools* > *Verify and Execute*.
+*For controller A:* `set controller [a] availability=offline`
++
+*For controller B:* `set controller [b] availability=offline`
+
+
+  .. Select menu:Tools[Verify and Execute].
++
 The system attempts to take the controller offline.
 . Wait for SANtricity System Manager to update the controller's status to offline.
 +
@@ -119,17 +128,11 @@ CAUTION: Do not begin any other operations until after the status has been updat
 
 == Step 2: Remove failed controller (duplex)
 
-Replace the failed canister with a new one. Perform this task only if your storage array has two controllers (duplex configuration).
+Replace the failed canister with a new one.
 
 === Step 2a: Remove controller canister (duplex)
 
 Remove the failed controller canister so you can replace it with a new one.
-
-.What you'll need
-
-* Labels to identify each cable that is connected to the controller canister.
-* A #1 Phillips screwdriver.
-* An ESD wristband, or you have taken other antistatic precautions.
 
 .Steps
 
@@ -150,13 +153,17 @@ The following figure is an example of an E2812 controller shelf, E2824 controlle
 +
 image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../media/legend_icon_02_maint-e2800.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
 +
 The following figure is an example of an E2860 controller shelf:
 +
 image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../media/legend_icon_02_maint-e2800.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
 
 . Using two hands and the cam handle, slide the controller canister out of the shelf.
 +
@@ -180,14 +187,19 @@ If this green LED is on, the controller is still using battery power. You must w
 +
 image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Internal Cache Active LED image:../media/legend_icon_02_maint-e2800.gif[] Battery
+*(1)* _Internal Cache Active LED_
++
+*(2)* _Battery_
+
 
 . Locate the blue release latch for the battery.
 . Unlatch the battery by pushing the release latch down and away from the controller canister.
 +
 image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Battery release latch image:../media/legend_icon_02_maint-e2800.gif[] Battery
+*(1)* _Battery release latch_
++
+*(2)* _Battery_
 
 . Lift up on the battery, and slide it out of the controller canister.
 
@@ -211,7 +223,9 @@ CAUTION: Be careful not to scratch or bump the components on the bottom of the H
 +
 image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Host interface card (HIC) image:../media/legend_icon_02_maint-e2800.gif[] Thumbscrews
+*(1)* _Host interface card (HIC)_
++
+*(2)* _Thumbscrews_
 
 . Place the HIC on a static-free surface.
 
@@ -222,11 +236,6 @@ Install a new controller canister to replace the failed one. Perform this task o
 === Step 3a: Install battery (duplex)
 
 You must install the battery into the replacement controller canister. You can install the battery that you removed from the original controller canister or install a new battery that you ordered.
-
-.What you'll need
-
-* Battery from the original controller canister.
-* Replacement controller canister.
 
 .Steps
 
@@ -243,7 +252,10 @@ When the latch clicks into place, the bottom of the latch hooks into a metal slo
 +
 image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Battery release latch image:../media/legend_icon_02_maint-e2800.gif[] Battery
+*(1)* _Battery release latch_
++
+*(2)* _Battery_
+
 
 . Turn the controller canister over to confirm that the battery is installed correctly.
 +
@@ -261,12 +273,6 @@ image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[]
 
 If you removed a HIC from the original controller canister, you must install that HIC in the new controller canister.
 
-.What you'll need
-
-* A replacement controller canister with the same part number as the controller canister you are replacing.
-* A #1 Phillips screwdriver.
-* An ESD wristband, or you have taken other antistatic precautions.
-
 .Steps
 
 . Using a #1 Phillips screwdriver, remove the four screws that attach the blank faceplate to the replacement controller canister, and remove the faceplate.
@@ -280,7 +286,9 @@ CAUTION: *Possible equipment damage* -- Be very careful not to pinch the gold ri
 +
 image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Host interface card (HIC) image:../media/legend_icon_02_maint-e2800.gif[] Thumbscrews
+*(1)* _Host interface card (HIC)_
++
+*(2)* _Thumbscrews_
 
 . Hand-tighten the HIC thumbscrews.
 +
@@ -302,11 +310,16 @@ After installing the battery and the host interface card (HIC), if one was initi
 +
 image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[]Controller canister image:../media/legend_icon_02_maint-e2800.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
+
 +
 image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[]Controller canister image:../media/legend_icon_02_maint-e2800.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
 
 . Move the cam handle to the left to lock the controller canister in place.
 . Install the SFPs from the original controller in the host ports on the new controller, and reconnect all the cables.
@@ -331,9 +344,12 @@ When communication with the other controller is reestablished:
  ** The amber Attention LED remains on.
  ** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
 image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif[]
-
 +
-image:../media/legend_icon_01_maint-e2800.gif[]Attention LED (amber) image:../media/legend_icon_02_maint-e2800.gif[] Seven-segment display image:../media/legend_icon_03_maint-e2800.gif[] Host Link LEDs
+*(1)* _Attention LED (amber)_
++
+*(2)* _Seven-segment display_
++
+*(3)* _Host Link LEDs_
 
 . Check the codes on the controller's seven-segment display as it comes back online. If the display shows one of the following repeating sequences, immediately remove the controller.
  ** *OE*, *L0*, *_blank_* (mismatched controllers)
@@ -347,18 +363,19 @@ If the status is not Optimal or if any of the Attention LEDs are on, confirm tha
 NOTE: If you cannot resolve the problem, contact technical support.
 
 . If required, redistribute all volumes back to their preferred owner.
- .. Select *Storage* > *Volumes*.
- .. Select *More* > *Redistribute volumes*.
-. Click *Hardware* > *Support* > *Upgrade Center* to ensure that the latest version of SANtricity OS software (controller firmware) is installed.
+ .. Select menu:Storage[Volumes].
+ .. Select menu:More[Redistribute volumes].
+. Click menu:Hardware[Support > Upgrade Center] to ensure that the latest version of SANtricity OS software (controller firmware) is installed.
 +
 As needed, install the latest version.
 
 . Collect support data for your storage array using SANtricity System Manager.
- .. Select *Support* > *Support Center* > *Diagnostics*.
+ .. Select menu:Support[Support Center > Diagnostics].
  .. Select *Collect Support Data*.
  .. Click *Collect*.
-The file is saved in the Downloads folder for your browser with the name support-data.7z.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 
-.Result
+.What's next?
 
 Your controller replacement is complete. You can resume normal operations.

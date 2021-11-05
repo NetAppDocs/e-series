@@ -102,8 +102,6 @@ You can manage user access by applying additional encryption to passwords, setti
 
 For the highest level of security, you can apply additional encryption to passwords using the existing SHA256 password encoding.
 
-.Before you begin
-
 This additional encryption process applies a random set of bytes to each password (salt) for each SHA256 hash encryption. Salted SHA256 encryption is applied to all newly created passwords.
 
 .Steps
@@ -112,7 +110,7 @@ This additional encryption process applies a random set of bytes to each passwor
  ** (Windows) -- C:\Program Files\NetApp\SANtricity Web Services Proxy\data\config
  ** (Linux) -- /opt/netapp/santricity_web_services_proxy/data/config
 . Re-enter the encrypted password as plain text.
-. Run the *securepasswds* command line utility to re-encrypt the password or simply restart the Web Services Proxy. This utility is installed in the root install directory for the Web Services Proxy.
+. Run the `securepasswds` command line utility to re-encrypt the password or simply restart the Web Services Proxy. This utility is installed in the root install directory for the Web Services Proxy.
 +
 NOTE: Alternatively, you can salt and hash local user passwords whenever password edits are performed through the Unified Manager.
 
@@ -125,7 +123,7 @@ By default basic authentication is enabled, which means the server returns a bas
  ** (Linux) -- /opt/netapp/santricity_web_services_proxy
 . Modify the following line in the file by specifying false (not enabled) or true (enabled).
 +
-For example: <env key="enable-basic-auth">true</env>
+For example: `<env key="enable-basic-auth">true</env>`
 
 . Save the file.
 . Restart the Webserver service so the change takes effect.
@@ -133,8 +131,6 @@ For example: <env key="enable-basic-auth">true</env>
 === Configure role-based access
 
 To limit user access to specific functions, you can modify which roles are specified for each user account.
-
-.Before you begin
 
 The Web Services Proxy includes role-based access control (RBAC), in which roles are associated with predefined users. Each role grants permissions to a specific level of functionality. You can change the roles assigned to user accounts by directly modifying the users.properties file.
 

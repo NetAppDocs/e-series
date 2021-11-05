@@ -5,6 +5,7 @@ keywords: E2800 replace HIC, E2800 replace host interface card, replacing E2800 
 summary: Review requirements for E2800 HIC replacement.
 ---
 = Requirements for E2800 HIC replacement
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
@@ -57,6 +58,4 @@ For information about compatible hardware, refer to the https://mysupport.netapp
 * You have an ESD wristband, or you have taken other antistatic precautions.
 * You have a #1 Phillips screwdriver.
 * You have labels to identify each cable that is connected to the controller canister.
-* You have installed SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
-+
-If SANtricity Storage Manager has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install the software.
+* You have access to the storage array's command line interface (CLI). You can download the CLI package from SANtricity System Manager or you can access it from SANtricity Storage Manager.

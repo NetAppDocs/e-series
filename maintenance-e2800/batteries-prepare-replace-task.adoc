@@ -5,22 +5,21 @@ keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace 
 summary: Prepare for E2800 battery replacement, following the appropriate steps for duplex or simplex.
 ---
 = Prepare to replace E2800 battery
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to prepare for a battery replacement in the E2800 storage array.
-
-.About this task
 The steps to prepare for battery replacement depend on whether you have a duplex configuration (two controllers) or a simplex configuration (one controller).
 
-If you have a duplex configuration, you must take the affected controller offline or, if you have a simplex configuration, you must stop host I/O operations and power down the controller shelf.
+* For duplex configurations, see <<Place controller offline (duplex)>>.
+* For simplex configurations, see <<Power down the controller shelf (simplex)>>.
 
-.Before you begin
+.What you'll need
 
-* Review link:batteries-overview-requirements-concept.html[Requirements for E2800 battery replacement].
-* You have reviewed the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
-* Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
+* A multipath driver installed on all hosts where volumes are in use; otherwise, ensure that no volumes are in use.
+
+In addition, you should review the link:batteries-overview-requirements-concept.html[Requirements for E2800 battery replacement] before you begin this procedure.
 
 == Place controller offline (duplex)
 
@@ -30,15 +29,25 @@ NOTE: Perform this task only if your storage array has two controllers (duplex c
 
 .Steps
 
+
 . From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
 . From the Details area of the Recovery Guru, determine which battery to replace.
-. Back up the storage array's configuration database.
+. Collect support data for your storage array using either SANtricity System Manager or the Enterprise Management Window's (EMW) script editor.
 +
 If a problem occurs when you remove a controller, you can use the saved file to restore your configuration.
 
+* To use SANtricity System Manager:
+ .. Select menu:Support[Support Center > Diagnostics].
+ .. Select *Collect Support Data*.
+ .. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+
+ * To use SANtricity Storage Manager:
+
  .. Open the Enterprise Management Window (EMW) for SANtricity Storage Manager on your management station.
  .. Select the storage array.
- .. Select *Tools* > *Execute Script*.
+ .. Select menu:Tools[Execute Script].
  .. Type the following command in the text box.
 +
 ----
@@ -53,41 +62,37 @@ In this command, filename is the file path and file name to which you want to sa
 +
 This command does not automatically append a file extension to the saved file. You must specify a file extension when entering the file name.
 
- .. Select *Tools* > *Verify and Execute*.
+ .. Select menu:Tools[Verify and Execute].
 
-. Collect support data for your storage array using SANtricity System Manager.
- .. Select *Support* > *Support Center* > *Diagnostics*.
- .. Select *Collect Support Data*.
- .. Click *Collect*.
-The file is saved in the Downloads folder for your browser with the name support-data.7z.
 . If the controller is not already offline, take it offline now using either SANtricity System Manager or the Enterprise Management Window's (EMW) script editor:
- ** To use SANtricity System Manager:
-  ... Select *Hardware*.
-  ... If the graphic shows the drives, select *Show back of shelf* to show the controllers.
-  ... Select the controller that you want to place offline.
-  ... From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 +
-NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
+* To use SANtricity System Manager:
 
- ** To use script editor in the EMW:
-  ... Open the Enterprise Management Window (EMW) in SANtricity Storage Manager on your local host.
-  ... Select the storage array.
-  ... Select *Tools* > *Execute Script*.
-  ... Type one of the following commands in the text box.
+  .. Select *Hardware*.
+  .. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
+  .. Select the controller that you want to place offline.
+  .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 +
-----
-**For controller A:** set controller [a] availability=offline
-----
-+
-----
-**For controller B:** set controller [b] availability=offline
-----
+NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager "Unavailable" message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
 
-  ... Select *Tools* > *Verify and Execute*.
+* To use script editor in the EMW:
+
+  .. Open the Enterprise Management Window (EMW) in SANtricity Storage Manager on your local host.
+  .. Select the storage array.
+  .. Select menu:Tools[Execute Script].
+  .. Type one of the following commands in the text box.
++
+*For controller A:* `set controller [a] availability=offline`
++
+*For controller B:* `set controller [b] availability=offline`
++
+  .. Select menu:Tools[Verify and Execute].
 The system attempts to take the controller offline.
+
 . Wait for SANtricity System Manager to update the controller's status to offline.
+. Go to  link:batteries-remove-controller-canister-task.html[Remove E2800 controller canister].
 +
-NOTE: Do not begin any other operations until after the status has been updated.
+CAUTION: Do not begin any other operations until after the status has been updated.
 
 == Power down the controller shelf (simplex)
 
@@ -97,13 +102,23 @@ NOTE: Perform this task only if your storage array has one controller (simplex c
 
 .Steps
 
-. Back up the storage array's configuration database.
+. Review link:batteries-overview-requirements-concept.html[Requirements for E2800 battery replacement].
+. Collect support data for your storage array using either SANtricity System Manager or the Enterprise Management Window's (EMW) script editor.
 +
 If a problem occurs when you remove a controller, you can use the saved file to restore your configuration.
 
+* To use SANtricity System Manager:
+ .. Select menu:Support[Support Center > Diagnostics].
+ .. Select *Collect Support Data*.
+ .. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+
+ * To use SANtricity Storage Manager:
+
  .. Open the Enterprise Management Window (EMW) for SANtricity Storage Manager on your management station.
  .. Select the storage array.
- .. Select *Tools* > *Execute Script*.
+ .. Select menu:Tools[Execute Script].
  .. Type the following command in the text box.
 +
 ----
@@ -118,13 +133,8 @@ In this command, filename is the file path and file name to which you want to sa
 +
 This command does not automatically append a file extension to the saved file. You must specify a file extension when entering the file name.
 
- .. Select *Tools* > *Verify and Execute*.
+ .. Select menu:Tools[Verify and Execute].
 
-. Collect support data for your storage array using SANtricity System Manager.
- .. Select *Support* > *Support Center* > *Diagnostics*.
- .. Select *Collect Support Data*.
- .. Click *Collect*.
-The file is saved in the Downloads folder for your browser with the name support-data.7z.
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
  .. Stop all processes that involve the LUNs mapped from the storage to the hosts.
  .. Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
@@ -141,3 +151,4 @@ The green Cache Active LED on the back of the controller is on when cached data 
 . Confirm that all operations have completed before continuing with the next step.
 . Turn off both power switches on the controller shelf.
 . Wait for all LEDs on the controller shelf to turn off.
+. Go to link:batteries-remove-controller-canister-task.html[Remove E2800 controller canister].

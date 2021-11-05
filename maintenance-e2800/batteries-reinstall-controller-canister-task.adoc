@@ -19,13 +19,17 @@ Reinstall the controller canister into the controller shelf after installing the
 +
 image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../media/legend_icon_02_maint-e2800.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
 +
 image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../media/legend_icon_02_maint-e2800.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
 
 . Move the cam handle to the left to lock the controller canister in place.
 . Reconnect all the cables.
 
-. Go to link:batteries-complete-replacement-task.html[Complete battery replacement].
+. Go to link:batteries-complete-replacement-task.html[Complete E2800 battery replacement].

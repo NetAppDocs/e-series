@@ -5,6 +5,7 @@ keywords: E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Channe
 summary: Change the host port protocol from Fibre Channel (FC) to iSCSI or from iSCSI to FC.
 ---
 = Change host protocol for E2800
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
@@ -15,15 +16,13 @@ You can change the protocol used by the host ports built into the controller (_b
 
 == Step 1: Determine whether you have dual-protocol SFPs
 
-Use SANtricity System Manager to determine what type of SFP transceivers you have.
-
-Because these SFPs can be used with both FC and iSCSI protocols, they are referred to as _dual-protocol_ or _unified_ SFPs.
+Use SANtricity System Manager to determine what type of SFP transceivers you have. Because these SFPs can be used with both FC and iSCSI protocols, they are referred to as _dual-protocol_ or _unified_ SFPs.
 
 .Steps
 
 . From SANtricity System Manager, select *Support*.
 . Select the *Support Center* tile.
-. On theSupport Resources tab, locate and select the *Storage Array Profile* link.
+. On the Support Resources tab, locate and select the *Storage Array Profile* link.
 . Type *SFP* in the text box, and click *Find*.
 . For each SFP listed in the Storage Array Profile, locate the entry for *Supported data rate(s)*.
 +
@@ -74,7 +73,7 @@ To obtain the feature pack, you need the serial number from the controller shelf
 .Steps
 
 . Locate the serial number.
- .. From SANtricity System Manager, select *Support* > *Support Center*.
+ .. From SANtricity System Manager, select menu:Support[Support Center].
  .. With the *Support Resources* tab selected, scroll to the *View top storage array properties* section.
  .. Locate the *Chassis Serial Number*, and copy this value to a text file.
 +
@@ -382,7 +381,7 @@ a|
 NOTE: If your Controller submodel ID is not listed, contact http://mysupport.netapp.com[NetApp Support^].
 
 . In System Manager, locate the Feature Enable Identifier.
- .. Go to *Settings* > *System*.
+ .. Go to menu:Settings[System].
  .. Scroll down to *Add-ons*.
  .. Under *Change Feature Pack*, locate the *Feature Enable Identifier*.
  .. Copy and paste this 32-digit number to a text file.
@@ -415,6 +414,7 @@ CAUTION: *Possible data loss* -- If you continue this procedure while I/O operat
 +
 The green Cache Active LED on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.image:../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[]
 +
+[options = "header"]
 |===
 | Callout| Type of host ports
 a|
@@ -432,13 +432,13 @@ Change the feature pack to convert the host protocol of the baseboard host ports
 
 .Steps
 
-. From SANtricity System Manager, select *Settings* > *System*.
+. From SANtricity System Manager, select menu:Settings[System].
 . Under *Add-ons*, select *Change Feature Pack*.
 +
 image::../media/sam1130_ss_system_change_feature_pack_maint-e2800.gif[]
 
 . Click *Browse*, and then select the feature pack you want to apply.
-. Type *CHANGE* in the field.
+. Type `CHANGE` in the field.
 . Click *Change*.
 +
 The feature pack migration begins. Both controllers automatically reboot twice to allow the new feature pack to take effect. The storage array returns to a responsive state after the reboot is complete.

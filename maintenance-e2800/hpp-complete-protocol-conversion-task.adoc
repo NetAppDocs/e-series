@@ -5,6 +5,7 @@ keywords:  E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Chann
 summary: Complete the host port protocol conversion for an E2800 array.
 ---
 = Complete host protocol conversion for E2800
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
@@ -23,7 +24,7 @@ If you converted all host ports from FC to iSCSI, you must configure iSCSI netwo
 +
 You should configure the switches used to transport iSCSI traffic according to the vendor's recommendations for iSCSI. These recommendations might include both configuration directives as well as code updates.
 
-. From SANtricity System Manager, select *Hardware* > *Configure iSCSI ports*.
+. From SANtricity System Manager, select menu:Hardware[Configure iSCSI ports].
 . Select the port settings.
 +
 You can set up your iSCSI network in many ways. Consult your network administrator for tips on selecting the best configuration for your environment.
@@ -32,7 +33,7 @@ You can set up your iSCSI network in many ways. Consult your network administrat
 +
 NOTE: If you need instructions for add hosts or host clusters, refer to the online help for SANtricity System Manager.
 
- .. Select *Storage* > *Hosts*.
+ .. Select menu:Storage[Hosts].
  .. Select the host to which the port will be associated, and click *View/Edit Settings*.
 +
 The Host Settings dialog box appears.
@@ -67,7 +68,7 @@ If you converted all host ports from iSCSI to FC, you must configure FC networki
 Zoning the switches enables the hosts to connect to the storage and limits the number of paths. You zone the switches using the management interface of the switches.
 
 . Update the host definitions in SANtricity System Manager.
- .. Select *Storage* > *Hosts*.
+ .. Select menu:Storage[Hosts].
  .. Select the host to which the port will be associated, and click *View/Edit Settings*.
 +
 The Host Settings dialog box appears.
@@ -84,7 +85,7 @@ The length of the host port identifier name is determined by the host interface 
 +
 The *Delete* option does not physically remove the host port. This option removes the association between the host port and the host. Unless you remove the host bus adapter or the iSCSI initiator, the host port is still recognized by the controller.
 
- .. Click**Save** to apply your changes to the host port identifier settings.
+ .. Click *Save* to apply your changes to the host port identifier settings.
  .. Repeat these steps to add and remove any additional host port identifiers.
 . Reboot the host or perform a rescan so that the host properly discovers mapped storage.
 . Remount volumes or start using block volume.
@@ -109,7 +110,7 @@ You can use either of the following options to use the new iSCSI ports. The exac
 . If you are not already using dual-protocol SFPs, remove the FC SFPs from the converted ports, and replace them with iSCSI SFPs or dual-protocol SFPs.
 . Attach cables to the SFPs in the converted ports, and confirm they are connected to the correct iSCSI switch or host.
 . Power on the hosts.
-. Use the _NetApp Interoperability Matrix Tool_ to configure the iSCSI hosts.
+. Use the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] tool to configure the iSCSI hosts.
 . Edit the host partition to add the iSCSI host port IDs and remove the FC host port IDs.
 . After the iSCSI hosts reboot, use the applicable procedures on the hosts to register the volumes and to make them available to your operating system.
  ** Depending on your operating system, two utilities are included with the storage management software (hot_add and SMdevices). These utilities help register the volumes with the hosts and also show the applicable device names for the volumes.
@@ -135,7 +136,7 @@ You can use either of the following options to use the new FC ports. The exact s
 . If you are not already using dual-protocol SFPs, remove the iSCSI SFPs from the converted ports, and replace them with FC SFPs or dual-protocol SFPs.
 . Attach cables to the SFPs in the converted ports, and confirm they are connected to the correct FC switch or host.
 . Power on the hosts.
-. Use the _NetApp Interoperability Matrix Tool_ to configure the FC hosts.
+. Use the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] tool to configure the FC hosts.
 . Edit the host partition to add the FC host port IDs and remove the iSCSI host port IDs.
 . After the new FC hosts reboot, use the applicable procedures on the hosts to register the volumes and to make them available to your operating system.
  ** Depending on your operating system, two utilities are included with the storage management software (hot_add and SMdevices). These utilities help register the volumes with the hosts and also show the applicable device names for the volumes.
@@ -161,7 +162,7 @@ You can use either of the following options to use the new FC ports. The exact s
 . If you are not already using dual-protocol SFPs, remove the iSCSI SFPs from the ports, and replace them with FC SFPs or dual-protocol SFPs.
 . Attach cables to the SFPs, and confirm they are connected to the correct FC switch or host.
 . Power on the hosts.
-. Use the _NetApp Interoperability Matrix Tool_ to configure the FC hosts.
+. Use the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] tool to configure the FC hosts.
 . Edit the host partition to add the FC host port IDs and remove the iSCSI host port IDs.
 . After the new FC hosts reboot, use the applicable procedures on the hosts to register the volumes and to make them available to your operating system.
  ** Depending on your operating system, two utilities are included with the storage management software (hot_add and SMdevices). These utilities help register the volumes with the hosts and also show the applicable device names for the volumes.
@@ -186,7 +187,7 @@ You can use either of the following options to use the new iSCSI ports. The exac
 . If you are not already using dual-protocol SFPs, remove the FC SFPs from the ports, and replace them with iSCSI SFPs or dual-protocol SFPs.
 . Attach cables to the SFPs, and confirm they are connected to the correct iSCSI switch or host.
 . Power on the hosts.
-. Use the _NetApp Interoperability Matrix Tool_ to configure the ISCSI hosts.
+. Use the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] tool to configure the ISCSI hosts.
 . Edit the host partition to add the iSCSI host port IDs and remove the FC host port IDs.
 . After the new iSCSI hosts reboot, use the applicable procedures on the hosts to register the volumes and to make them available to your operating system.
  ** Depending on your operating system, two utilities are included with the storage management software (hot_add and SMdevices). These utilities help register the volumes with the hosts and also show the applicable device names for the volumes.

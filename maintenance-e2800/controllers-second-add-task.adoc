@@ -5,25 +5,29 @@ keywords: add E2800 controller, adding E2800 controller, simplex to duplex, conv
 summary: Add a second controller to a controller shelf that has only one controller canister, or add a second controller canister to the simplex version.
 ---
 = Add second controller canister in E2800
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to add a second controller canister in the E2800 array.
+You can add a second controller canister in the E2800 array.
 
 .About this task
 
-You can add a second controller to a controller shelf that has only one controller canister. You add a second controller canister to the simplex version of either a E2812 controller shelf, E2824 controller shelf, or EF280 flash array.
+This task describes how to add a second controller canister to the simplex version of either a E2812 controller shelf, E2824 controller shelf, or EF280 flash array. This procedure is also referred to as a simplex-to-duplex conversion, which is an online procedure. You can access data on the storage array while you perform this procedure.
 
-This procedure is also referred to as a simplex-to-duplex conversion, which is an online procedure. You can access data on the storage array while you perform this procedure.
+.What you'll need
 
-.Before you begin
+* An ESD wristband, or take other antistatic precautions.
+* A #1 Phillips screwdriver.
+* A new controller canister with the same part number as the currently installed controller canister. (See step 1 to verify the part number.)
+* A new HIC that is identical to the HIC in the currently installed controller canister (only necessary if the currently installed controller canister includes a host interface card).
+* Labels to identify the new cables. For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] or the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe^].
+* All cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new controller ports.
+* Access to the storage array's command line interface (CLI). If you do not have access to the CLI, you can do one of the following:
+** *For SANtricity System Manager (version 11.60 and above)* -- Download the CLI package (zip file) from System Manager. Go to menu:Settings[System > Add-ons > Command Line Interface]. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
+** *For SANtricity Storage Manager/Enterprise Management Window (EMW)* -- Follow the instructions in the express guide to download and install the software. You can run CLI commands from the EMW by selecting menu:Tools[Execute Script].
 
-* Review link:controllers-overview-supertask-concept.html[Requirements for E2800 controller replacement].
-* If the currently installed controller canister includes a HIC, you need a new HIC that is identical to the HIC in the currently installed controller canister.
-* You have installed SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
-+
-If SANtricity Storage Manager has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install the software.
 
 == Step 1: Verify the new controller's part number
 
@@ -36,9 +40,10 @@ Confirm that the new controller has the same part number as the currently instal
 +
 image::../media/28_dwg_e2800_labels_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] MAC address: The MAC address for management port 1 ("`P1`"). If you used DHCP to obtain the original controller's IP address, you will need this address to connect to the new controller.
+*(1)* _MAC address: The MAC address for management port 1 ("`P1`"). If you used DHCP to obtain the original controller's IP address, you will need this address to connect to the new controller._
 +
-image:../media/legend_icon_02_maint-e2800.gif[] FRU part number: This number must match the replacement part number for the currently installed controller.
+*(2)* _FRU part number: This number must match the replacement part number for the currently installed controller._
++
 
 . From SANtricity System Manager, locate the replacement part number for the installed controller canister.
  .. Select *Hardware*.
@@ -52,12 +57,7 @@ CAUTION: *Possible loss of data access* -- If the two part numbers are not the s
 
 == Step 2: Install host interface card
 
-Install the same model of host interface card (HIC) in the second controller canister, if the currently installed controller includes a HIC.
-
-.What you'll need
-
-* An ESD wristband, or you have taken other antistatic precautions.
-* A #1 Phillips screwdriver.
+If the currently installed controller includes a HIC, you must install the same model of host interface card (HIC) in the second controller canister.
 
 .Steps
 
@@ -78,7 +78,9 @@ CAUTION: *Possible equipment damage* -- Be very careful not to pinch the gold ri
 +
 image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Host interface card (HIC) image:../media/legend_icon_02_maint-e2800.gif[] Thumbscrews
+*(1)* _Host interface card_
++
+*(2)* _Thumbscrews_
 
 . Hand-tighten the HIC thumbscrews.
 +
@@ -102,14 +104,15 @@ Collect support data before and after replacing a component to ensure you can se
 If the status is not Optimal, use the Recovery Guru or contact technical support to resolve the problem. Do not continue with this procedure.
 
 . Collect support data for your storage array using SANtricity System Manager.
- .. Select *Support* > *Support Center* > *Diagnostics*.
+ .. Select menu:Support[Support Center > Diagnostics].
  .. Select *Collect Support Data*.
  .. Click *Collect*.
-The file is saved in the Downloads folder for your browser with the name support-data.7z.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
- ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
- ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
- ** Unmount all file systems associated with volumes on the array.
+ * Stop all processes that involve the LUNs mapped from the storage to the hosts.
+ * Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
+ * Unmount all file systems associated with volumes on the array.
 +
 NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
 +
@@ -117,14 +120,12 @@ CAUTION: *Possible data loss* -- If you continue this procedure while I/O operat
 
 == Step 4: Change configuration to duplex
 
-Before adding a second controller to the controller shelf, you must change the configuration to duplex by installing a new NVSRAM file and using the command line interface to set the storage array to duplex.
-
-You change the configuration to duplex by installing a new NVSRAM file. The duplex version of the NVSRAM file is included with the download file for SANtricity OS Software (controller firmware).
+Before adding a second controller to the controller shelf, you must change the configuration to duplex by installing a new NVSRAM file and using the command line interface to set the storage array to duplex. The duplex version of the NVSRAM file is included with the download file for SANtricity OS Software (controller firmware).
 
 .Steps
 
 . Download the latest SANtricity OS software files from the NetApp Support Site to your management client.
- .. From SANtricity System Manager, select *Support* > *Upgrade Center*.
+ .. From SANtricity System Manager, select menu:Support[Upgrade Center].
  .. In the area labeled "`SANtricity OS Software upgrade,`" click *NetApp Support*.
  .. On the NetApp Support Site, click the *Downloads* tab, and then select *Software*.
  .. Locate *E-Series/EF-Series SANtricity OS (Controller Firmware)*.
@@ -134,17 +135,17 @@ You change the configuration to duplex by installing a new NVSRAM file. The dupl
 +
 SANtricity OS software files have filenames similar to E29xx_1150 with a .zip or .tar.gz extension. The packaged file includes three files.
 
-  *** SANtricity OS software (controller firmware)
+  * SANtricity OS software (controller firmware)
 +
-Example file name: RCB_11.50_290x.dlp
+Example file name: *RCB_11.50_290x.dlp*
 
-  *** Controller NVSRAM -- duplex
+  * Controller NVSRAM -- duplex
 +
-Example file name: N290X-830834-*D01*.dlp
+Example file name: *N290X-830834-D01.dlp*
 
-  *** Controller NVSRAM -- simplex
+  * Controller NVSRAM -- simplex
 +
-Example file name: N290X-830834-*S01*.dlp
+Example file name: *N290X-830834-S01.dlp*
 . Upgrade the files using either SANtricity System Manager or the Enterprise Management Window's (EMW) script editor.
 +
 CAUTION: *Risk of data loss or risk of damage to the storage array* -- Do not make changes to the storage array while the upgrade is occurring. Maintain power to the storage array.
@@ -152,17 +153,17 @@ CAUTION: *Risk of data loss or risk of damage to the storage array* -- Do not ma
 You can cancel the operation during the pre-upgrade health check, but not during transferring or activating.
 
  ** To use SANtricity System Manager:
-  ... Under SANtricity OS Software upgrade, click *Begin Upgrade*.
-  ... Click *Browse*, and select the SANtricity OS software file.
-  ... Select the checkbox labeled *Transfer Controller NVSRAM file with upgrade*.
-  ... Click *Browse*, and select the duplex version of the Controller NVSRAM file (the file with "`D`" near the end of its name).
-  ... Click *Start*, and confirm that you want to perform the operation.
+  .. Under SANtricity OS Software upgrade, click *Begin Upgrade*.
+  .. Click *Browse*, and select the SANtricity OS software file.
+  .. Select the checkbox labeled *Transfer Controller NVSRAM file with upgrade*.
+  .. Click *Browse*, and select the duplex version of the Controller NVSRAM file (the file with "`D`" near the end of its name).
+  .. Click *Start*, and confirm that you want to perform the operation.
 The upgrade begins and the following occurs: (1) The pre-upgrade health check begins. If the pre-upgrade health check fails, use the Recovery Guru or contact technical support to resolve the problem. (2) The controller files are transferred and activated. The time required depends on your storage array configuration. (3) The controller reboots automatically to apply the new settings.
  ** To use script editor in the Enterprise Management Window (EMW):
-  ... Open the EMW in SANtricity Storage Manager on your local host.
-  ... Select the storage array.
-  ... Select *Tools* > *Execute Script*.
-  ... Type the following command in the text box.
+  .. Open the EMW in SANtricity Storage Manager on your local host.
+  .. Select the storage array.
+  .. Select menu:Tools[Execute Script].
+  .. Type the following command in the text box.
 +
 ----
 download storageArray NVSRAM file="filename" healthCheckMelOverride=FALSE;
@@ -174,47 +175,60 @@ In this command, filename is the file path and the file name for duplex version 
 file="C:\downloads\N290X-830834-D01.dlp"
 ----
 
-  ... Select *Tools* > *Verify and Execute*.
+  .. Select menu:Tools[Verify and Execute].
 The upgrade begins and the following occurs: (1) The pre-upgrade health check begins. If the pre-upgrade health check fails, use the Recovery Guru or contact technical support to resolve the problem. (2) The controller files are transferred and activated. The time required depends on your storage array configuration. (3) The controller reboots automatically to apply the new settings.
 
 . (Optional) To see a list of what was upgraded, click *Save Log*.
 +
-The file is saved in the Downloads folder for your browser with the name `latest-upgrade-log-timestamp.txt`.
+The file is saved in the Downloads folder for your browser with the name, *latest-upgrade-log-timestamp.txt*.
 
 . Do the following:
  ** Verify that all components appear on the Hardware page.
- ** Verify the new software and firmware versions by checking the Software and Firmware Inventory dialog box (go to *Support* > *Upgrade Center*, and then click the link for *Software and Firmware Inventory*).
+ ** Verify the new software and firmware versions by checking the Software and Firmware Inventory dialog box (go to menu:Support[Upgrade Center], and then click the link for *Software and Firmware Inventory*).
  ** If you upgraded controller NVSRAM, any custom settings that you have applied to the existing NVSRAM are lost during the process of activation. You need to apply the custom settings to the NVSRAM again after the process of activation is complete.
 
 == Step 5: Set the storage array to duplex
 
-You use the script editor in the Enterprise Management Window (EMW) to set the storage array to duplex mode.
+You use the command line interface (CLI) to set the storage array to duplex mode.
 
 .Steps
 
-. Open the EMW for SANtricity Storage Manager on your management station.
-. Select the storage array.
-. Select *Tools* > *Execute Script*.
-. Type the following command in the text box.
+Open a command prompt if you downloaded the CLI package, or open the Enterprise Management Window (EMW) if you have Storage Manager installed.
+
+* From a command prompt:
+.. Use the following command to switch the array from simplex to duplex:
 +
 ----
 set storageArray redundancyMode=duplex;
 ----
-
-. Select *Tools* > *Verify and Execute*.
-. Type the following command in the text box.
+.. Use the following command to reset the controller.
 +
 ----
 reset controller [a];
 ----
 
-. Select *Tools* > *Verify and Execute*.
+* From the EMW interface:
+.. Select the storage array.
+.. Select menu:Tools[Execute Script].
+.. Type the following command in the text box.
++
+----
+set storageArray redundancyMode=duplex;
+----
++
+.. Select menu:Tools[Verify and Execute].
+.. Type the following command in the text box.
++
+----
+reset controller [a];
+----
++
+.. Select menu:Tools[Verify and Execute].
 +
 After the controller reboots, an "`alternate controller missing`" error message is displayed. This message indicates that controller A has been successfully converted to duplex mode. This message persists until you install the second controller and connect the host cables.
 
 == Step 6: Remove the controller blank
 
-[.lead]
 Remove the controller blank before you install the second controller. A controller blank is installed in controller shelves that have only one controller.
 
 .Steps
@@ -227,14 +241,6 @@ When you remove the controller blank, a flap swings into place to block the empt
 == Step 7: Install second controller canister
 
 Install a second controller canister to change a simplex configuration to a duplex configuration.
-
-.What you'll need
-
-* A new controller canister with the same part number as the currently installed controller canister.
-* Labels to identify the new cables.
-* All cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new controller ports.
-+
-For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] or the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe^].
 
 .Steps
 
@@ -262,24 +268,27 @@ When communication with the other controller is reestablished:
  ** The amber Attention LED remains on.
  ** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
 image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif[]
-
 +
-image:../media/legend_icon_01_maint-e2800.gif[]Attention LED (amber) image:../media/legend_icon_02_maint-e2800.gif[] Seven-segment display image:../media/legend_icon_03_maint-e2800.gif[] Host Link LEDs
-
+*(1)* _Attention LED (amber)_
++
+*(2)* _Seven-segment display_
++
+*(3)* _Host Link LEDs_
++
 . Check the codes on the controller's seven-segment display as it comes online. If the display shows one of the following repeating sequences, immediately remove the controller.
- ** *OE*, *L0*, *_blank_* (mismatched controllers)
- ** *OE*, *L6*, *_blank_* (unsupported HIC)
+ * *OE*, *L0*, *_blank_* (mismatched controllers)
+ * *OE*, *L6*, *_blank_* (unsupported HIC)
 +
 CAUTION: *Possible loss of data access* -- If the controller you just installed shows one these codes, and the other controller is reset for any reason, the second controller could also lock down.
 . Update the array's settings from simplex to duplex.
  .. Open the EMW in SANtricity Storage Manager on your local host.
  .. Select the storage array.
- .. Select *Tools* then *Execute Script*.
+ .. Select menu:Tools[Execute Script].
  .. Type in the following command:
 +
-set storageArray redundancyMode=duplex;
+`set storageArray redundancyMode=duplex;`
 
- .. Select *Tools* then *Verify and Execute*.
+ .. Select menu:Tools[Verify and Execute].
 . From SANtricity System Manager, confirm that the controller's status is Optimal.
 +
 If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated, and check that the controller canister is installed correctly. If necessary, remove and reinstall the controller canister.
@@ -293,20 +302,20 @@ This step ensures that both controllers have an identical version of this file.
 CAUTION: *Risk of data loss or risk of damage to the storage array* -- Do not make changes to the storage array while the upgrade is occurring. Maintain power to the storage array.
 
  ** To use SANtricity System Manager:
-  ... Under SANtricity OS Software upgrade, click *Begin Upgrade*.
-  ... Click *Browse*, and select the SANtricity OS software file.
-  ... Select the checkbox labeled *Transfer Controller NVSRAM file with upgrade*.
+  .. Under SANtricity OS Software upgrade, click *Begin Upgrade*.
+  .. Click *Browse*, and select the SANtricity OS software file.
+  .. Select the checkbox labeled *Transfer Controller NVSRAM file with upgrade*.
 +
 NOTE: You must install SANtricity OS software when you install a new NVSRAM file using SANtricity System Manager. If you already have the latest version of SANtricity OS software, you must reinstall that version.
 
-  ... Click *Browse*, and select the duplex version of the Controller NVSRAM file (the file with "`D`" near the end of its name).
-  ... Click *Start*, and confirm that you want to perform the operation.
+  .. Click *Browse*, and select the duplex version of the Controller NVSRAM file (the file with "`D`" near the end of its name).
+  .. Click *Start*, and confirm that you want to perform the operation.
 The transfer of control operation begins.
  ** To use script editor in the Enterprise Management Window (EMW):
-  ... Open the EMW in SANtricity Storage Manager on your local host.
-  ... Select the storage array.
-  ... Select *Tools* > *Execute Script*.
-  ... Type the following command in the text box.
+  .. Open the EMW in SANtricity Storage Manager on your local host.
+  .. Select the storage array.
+  .. Select menu:Tools[Execute Script].
+  .. Type the following command in the text box.
 +
 ----
 download storageArray NVSRAM file="filename" healthCheckMelOverride=FALSE;
@@ -318,12 +327,13 @@ In this command, filename is the file path and the file name for duplex version 
 file="C:\downloads\N280X-830834-D01.dlp"
 ----
 
-  ... Select *Tools* > *Verify and Execute*.
+  .. Select menu:Tools[Verify and Execute].
++
 The transfer of control operation begins.
 
 . After the controllers reboot, optionally distribute volumes between controller A and the new controller B.
- .. Select *Storage* > *Volumes*.
- .. From the All Volumes tab, select *More* > *Change Ownership*.
+ .. Select menu:Storage[Volumes].
+ .. From the All Volumes tab, select menu:More[Change Ownership].
  .. Type the following command in the text box: `change ownership`
 +
 The *Change Ownership* button is enabled.
@@ -336,11 +346,11 @@ image::../media/sam1130_ss_change_volume_ownership.gif[]
 +
 When the process is complete, the Change Volume Ownership dialog shows the new values for *Preferred Owner* and *Current Owner*.
 . Collect support data for your storage array using SANtricity System Manager.
- .. Select *Support* > *Support Center* > *Diagnostics*.
- .. Select *Collect Support Data*.
+ .. Select menu:Support[Support Center > Diagnostics].
  .. Click *Collect*.
-The file is saved in the Downloads folder for your browser with the name support-data.7z.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 
-.Result
+.What's next?
 
 The process of adding a second controller is complete. You can resume normal operations.

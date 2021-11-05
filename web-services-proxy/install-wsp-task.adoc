@@ -51,7 +51,7 @@ You can run the installation in Graphical mode for either Windows or Linux. In G
  ** Linux -- Run the following command:
  `santricity_webservices-linux_x64-nn.nn.nn.nnnn.bin`
 +
-In the above filenames, _nn.nn.nn.nnnn_ represents the version number.
+In the above filenames, `nn.nn.nn.nnnn` represents the version number.
 
 +
 The installation process starts and the NetApp SANtricity Web Services Proxy + Unified Manager splash screen appears.
@@ -71,11 +71,11 @@ You can run the installation in Console mode for either Windows or Linux. In Con
 
 .Steps
 
-. Run the following command: `<__install filename__> -i console`
+. Run the following command: `<install filename> -i console`
 +
-In the above command, <__install filename__> represents the name of the proxy installation file you downloaded (for example: `santricity_webservices-windows_x64-nn.nn.nn.nnnn.exe`).
+In the above command, `<install filename>` represents the name of the proxy installation file you downloaded (for example: `santricity_webservices-windows_x64-nn.nn.nn.nnnn.exe`).
 +
-NOTE: To cancel the installation at any time during the installation process, type QUIT at the command prompt.
+NOTE: To cancel the installation at any time during the installation process, type `QUIT` at the command prompt.
 +
 The installation process starts and the Launching Installer -- Introduction message appears.
 
@@ -91,9 +91,9 @@ You can run the installation in Silent mode for either Windows or Linux. In Sile
 
 .Steps
 
-. Run the following command: `<__install filename__> -i silent`
+. Run the following command: `<install filename> -i silent`
 +
-In the above command, <__install filename__> represents the name of the proxy installation file you downloaded (for example: `santricity_webservices-windows_x64-nn.nn.nn.nnnn.exe`).
+In the above command, `<install filename>` represents the name of the proxy installation file you downloaded (for example: `santricity_webservices-windows_x64-nn.nn.nn.nnnn.exe`).
 
 . Press *Enter*.
 +
@@ -103,18 +103,15 @@ The installation process can take several minutes to complete. After successful 
 
 For Linux systems that are compatible with the RPM package management system, you can install the Web Services Proxy using an optional RPM file.
 
-.Before you begin
-
-Make sure you have downloaded the RPM file to the server where you want to install the proxy and Unified Manager.
-
 .Steps
 
+. Download the RPM file to the server where you want to install the proxy and Unified Manager.
 . Open a terminal window.
 . Enter the following command:
 
 +
 `rpm -u santricity_webservices-nn.nn.nn.nnnn-n.x86_64.rpm`
 +
-NOTE: In the above command, _nn.nn.nn.nnnn_ represents the version number.
+NOTE: In the above command, `nn.nn.nn.nnnn` represents the version number.
 +
 The installation process can take several minutes to complete. After successful installation, a command prompt appears in the terminal window.

@@ -5,6 +5,7 @@ keywords: uninstall Web Services Proxy, remove WSP,
 summary: To remove the Web Services Proxy and Unified Manager, you can use any mode (Graphical, Console, Silent, or RPM file), regardless of what method you used to install the proxy.
 ---
 = Uninstall Web Services Proxy
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
@@ -20,7 +21,7 @@ You can run the uninstall in Graphical mode for either Windows or Linux. In Grap
 . Launch the uninstall for either Windows or Linux, as follows:
  ** Windows -- Go to the directory that contains the uninstall_web_services_proxy uninstall file. The default directory is at the following location: C:/Program Files/NetApp/SANtricity Web Services Proxy/. Double-click `uninstall_web_services_proxy.exe`.
 +
-NOTE: Alternatively, you can go to *Control Panel* > *Programs* > *Uninstall a program*, and then select "NetApp SANtricity Web Services Proxy."
+NOTE: Alternatively, you can go to menu:Control Panel[Programs > Uninstall a program], and then select "NetApp SANtricity Web Services Proxy."
 
  ** Linux -- Go to the directory that contains the Web Services Proxy uninstall file. The default directory is at the following location:
  +
@@ -74,6 +75,6 @@ You can use an RPM command to uninstall the Web Services Proxy from a Linux syst
 . Open a terminal window.
 . Enter the following command line:
 +
-`rpm --e santricity_webservices`
+`rpm -e santricity_webservices`
 +
 NOTE: The uninstall process might leave files that were not part of the original installation. Manually delete these files to remove Web Services Proxy completely.
