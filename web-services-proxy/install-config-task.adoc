@@ -5,6 +5,7 @@ keywords: configure Web Services Proxy, WSP configuration, start stop Webserver,
 summary: You can modify the Web Services Proxy settings to meet the unique operating and performance requirements for your environment.
 ---
 = Configure Web Services Proxy
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
@@ -18,12 +19,12 @@ The Webserver service is started during installation and runs in the background.
 .Steps
 
 . Do one of the following:
- ** For Windows, go to the *Start* menu, select *Administrative Tools* > *Services*, locate "`NetApp SANtricity Web Services,`" and then select either *Stop* or *Restart*.
+ ** For Windows, go to the *Start* menu, select menu:Administrative Tools[Services], locate *NetApp SANtricity Web Services* and then select either *Stop* or *Restart*.
  ** For Linux, choose the method of stopping and restarting the Webserver for your operating system version. During the installation, a popup dialog indicated what daemon started. For example:
 +
 `web_services_proxy webserver installed and started. You can interact with it using systemctl start|stop|restart|status web_services_proxy.service`
 +
-The most common method for interacting with the service is by using *systemctl* commands.
+The most common method for interacting with the service is by using `systemctl` commands.
 
 == Resolve port conflicts
 
@@ -143,5 +144,5 @@ Each line in the CORS configuration file is a regular expression pattern to matc
 
 Requests are matched on the host and according to protocol, such as the following:
 
-* Match localhost with any protocol -- localhost
-* Match localhost for HTTPS only -- +https://localhost+
+* Match localhost with any protocol -- `\*localhost*`
+* Match localhost for HTTPS only -- `+https://localhost*+`

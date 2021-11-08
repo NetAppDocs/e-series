@@ -32,7 +32,7 @@ NOTE: The figures show example controller canisters; the host ports on your cont
 Before you add a second controller, you must have:
 
 * A new controller canister with the same part number as the currently installed controller canister.
-* A new HIC that is identical to the HIC in the currently installed controller canister (only necessary if the currently installed controller canister includes a host interface card.)
+* A new HIC that is identical to the HIC in the currently installed controller canister (only necessary if the currently installed controller canister includes a host interface card).
 * All cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new controller ports.
 +
 For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] or the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe^].
@@ -41,9 +41,7 @@ For information about compatible hardware, refer to the https://mysupport.netapp
 * An ESD wristband, or you have taken other antistatic precautions.
 * A #1 Phillips screwdriver.
 * Labels to identify the new cables.
-* SANtricity Storage Manager installed on a management station, so you can use the storage array's command line interface (CLI).
-+
-If SANtricity Storage Manager has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install the software.
+* Access to the storage array's command line interface (CLI). You can download the CLI package from SANtricity System Manager or you can access it from SANtricity Storage Manager.
 
 
 == Requirements for replacing controller
@@ -67,9 +65,7 @@ Before you replace a controller, you must have:
 * An ESD wristband, or you have taken other antistatic precautions.
 * Labels to identify each cable that is connected to the controller canister.
 * #1 Phillips screwdriver.
-* SANtricity Storage Manager installed on a management station, so you can use the storage array's command line interface (CLI).
-+
-If this software has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install it.
+* Access to the storage array's command line interface (CLI). You can download the CLI package from SANtricity System Manager or you can access it from SANtricity Storage Manager.
 
 === Duplex configuration requirements
 

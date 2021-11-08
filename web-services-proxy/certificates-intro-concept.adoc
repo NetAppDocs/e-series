@@ -23,7 +23,7 @@ The Web Services Proxy uses Secure Sockets Layer (SSL) for security, which is en
 . Add or change the SSL port number, similar to the following example:
 +
 ----
-<sslport clientauth=”request”>8443</sslport>
+<sslport clientauth="request">8443</sslport>
 ----
 
 .Result
@@ -46,7 +46,7 @@ To support secure connections, the Web Services Proxy validates the storage syst
 . Open the wsconfig.xml file, located at:
  ** (Windows) -- C:\Program Files\NetApp\SANtricity Web Services Proxy
  ** (Linux) -- /opt/netapp/santricity_web_services_proxy
-. Enter true in the trust.all.arrays entry, as shown in the example:
+. Enter `true` in the `trust.all.arrays` entry, as shown in the example:
 +
 ----
 <env key="trust.all.arrays">true</env>
@@ -68,7 +68,7 @@ NOTE: You can also manage certificates in the Unified Manager interface. For mor
 
 .Steps
 
-. link:install-login-task.html[Log in to the interactive API documentation].
+. Log in to the link:install-login-task.html[interactive API documentation].
 . Go to the drop-down menu in the upper right and then select *v2*.
 . Expand the *Administration* link and scroll down to the */certificates* endpoints.
 . Generate the CSR file:
@@ -82,22 +82,22 @@ NOTE: Do not call *POST:/certificates* or *POST:/certificates/reset* again, or y
 
  .. Execute the *GET:/certificates/server* endpoint to confirm that the current certificate status is the self-signed certificate with the information added from the *POST:/certificates* command.
 +
-The server certificate (denoted by the alias "`jetty`") is still self-signed at this point.
+The server certificate (denoted by the alias `jetty`) is still self-signed at this point.
 
- .. Expand the **POST:/certificates/export**endpoint, select *Try it out*, enter a file name for the CSR file, and then click *Execute*.
-. Copy and paste the fileUrl into a new browser tab to download the CSR file, and then send the CSR file to a valid CA to request a new web server certificate chain.
+ .. Expand the *POST:/certificates/export* endpoint, select *Try it out*, enter a file name for the CSR file, and then click *Execute*.
+. Copy and paste the `fileUrl` into a new browser tab to download the CSR file, and then send the CSR file to a valid CA to request a new web server certificate chain.
 . When the CA issues a new certificate chain, use a certificate manager tool to break out the root, intermediate, and web server certificates, and then import them to the Web Services Proxy server:
  .. Expand the *POST:/sslconfig/server* endpoint and select *Try it out*.
- .. Enter a name for the CA root certificate in the alias field.
- .. Select *false* in the replaceMainServerCertificatefield.
+ .. Enter a name for the CA root certificate in the *alias* field.
+ .. Select *false* in the *replaceMainServerCertificate* field.
  .. Browse to and select the new CA root certificate.
  .. Click *Execute*.
  .. Confirm that the certificate upload was successful.
  .. Repeat the CA certificate upload procedure for the CA intermediate certificate.
- .. Repeat the certificate upload procedure for the new web server security certificate file, except in this step, select *true* on the replaceMainServerCertificate drop-down.
+ .. Repeat the certificate upload procedure for the new web server security certificate file, except in this step, select *true* on the *replaceMainServerCertificate* drop-down.
  .. Confirm that the web server security certificate import was successful.
  .. To confirm that the new root, intermediate, and web server certificates are available in the keystore, run *GET:/certificates/server*.
-. Select and expand the *POST:/certificates/reload* endpoint, and then select *Try it out*. When prompted, whether you want to restart both controllers or not, select *false*. (True applies only in the case of dual array controllers.) Click *Execute*.
+. Select and expand the *POST:/certificates/reload* endpoint, and then select *Try it out*. When prompted, whether you want to restart both controllers or not, select *false*. ("True" applies only in the case of dual array controllers.) Click *Execute*.
 +
 The */certificates/reload* endpoint usually returns a successful http 202 response. However, the reload of the web server truststore and keystore certificates does create a race condition between the API process and the web server certificate reload process. In rare cases, the web server certificate reload can beat the API processing. In this case, the reload appears to fail even though it completed successfully. If this occurs, continue to the next step anyway. If the reload actually failed, the next step also fails.
 

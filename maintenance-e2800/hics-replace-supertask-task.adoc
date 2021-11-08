@@ -5,23 +5,32 @@ keywords: replacing E2800 HIC, replace E2800 HIC, replace host interface card, E
 summary: Replace a host interface card (HIC) that has failed.
 ---
 = Replace host interface card (HIC) in E2800
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to replace a host interface card (HIC) that has failed.
+You can replace a host interface card (HIC) that has failed.
 
 .About this task
-The steps to replace a HIC depend on whether you have one or two controllers.
-
-If two controllers are present, each controller must have identical HICs.
+The steps to replace a HIC depend on whether you have one or two controllers. If two controllers are present, each controller must have identical HICs.
 
 .Before you begin
 
 * Review link:hics-overview-supertask-concept.html[Requirements for E2800 HIC replacement].
 * You must schedule a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)
 * Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
-* From SANtricity System Manager, review the details in the Recovery Guru to confirm that you have a failed HIC and to ensure no other items must be addressed before you can remove and replace the HIC.
+
+.What you'll need
+
+* One or two HICs, based on whether you have one or two controllers in your storage array. The HICs must be compatible with your controllers.
+* Labels to identify each cable that is connected to the controller canister.
+* An ESD wristband, or you have taken other antistatic precautions.
+* A #1 Phillips screwdriver.
+* Access to the storage array's command line interface (CLI). If you do not have access to the CLI, you can do one of the following:
+** *For SANtricity System Manager (version 11.60 and above)* -- Download the CLI package (zip file) from System Manager. Go to menu:Settings[System > Add-ons > Command Line Interface]. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
+** *For SANtricity Storage Manager/Enterprise Management Window (EMW)* -- Follow the instructions in the express guide to download and install the software. You can run CLI commands from the EMW by selecting menu:Tools[Execute Script].
+
 
 == Step 1: Place controller offline (duplex)
 
@@ -32,20 +41,29 @@ NOTE: Perform this task only if your storage array has two controllers (duplex c
 .Steps
 
 . From the Details area of the Recovery Guru, determine which of the controller canisters has the failed HIC.
-. Back up the storage array's configuration database.
+. Collect support data for your storage array using either SANtricity System Manager or the Enterprise Management Window's (EMW) script editor.
 +
 If a problem occurs when you remove a controller, you can use the saved file to restore your configuration.
 
+* To use SANtricity System Manager:
+ .. Select menu:Support[Support Center > Diagnostics].
+ .. Select *Collect Support Data*.
+ .. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+
+ * To use SANtricity Storage Manager:
+
  .. Open the Enterprise Management Window (EMW) for SANtricity Storage Manager on your management station.
  .. Select the storage array.
- .. Select *Tools* > *Execute Script*.
+ .. Select menu:Tools[Execute Script].
  .. Type the following command in the text box.
 +
 ----
 save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";
 ----
 +
-In this command, filename is the file path and file name to which you want to save the database. Enclose the file name in double quotation marks (" "). For example:
+In this command, `filename` is the file path and file name to which you want to save the database. Enclose the file name in double quotation marks (" "). For example:
 +
 ----
  file="C:\Program Files\CLI\logs\dbmdata.zip"
@@ -53,36 +71,28 @@ In this command, filename is the file path and file name to which you want to sa
 +
 This command does not automatically append a file extension to the saved file. You must specify a file extension when entering the file name.
 
- .. Select *Tools* > *Verify and Execute*.
+ .. Select menu:Tools[Verify and Execute].
 
-. Collect support data for your storage array using SANtricity System Manager.
- .. Select *Support* > *Support Center* > *Diagnostics*.
- .. Select *Collect Support Data*.
- .. Click *Collect*.
-The file is saved in the Downloads folder for your browser with the name support-data.7z.
 . If the controller is not already offline, take it offline now using either SANtricity System Manager or the Enterprise Management Window's (EMW) script editor:
- ** To use SANtricity System Manager:
-  ... Select *Hardware*.
-  ... If the graphic shows the drives, select *Show back of shelf* to show the controllers.
-  ... Select the controller that you want to place offline.
-  ... From the context menu, select *Place offline*, and confirm that you want to perform the operation.
+ * To use SANtricity System Manager:
+  .. Select *Hardware*.
+  .. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
+  .. Select the controller that you want to place offline.
+  .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 +
 NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
- ** To use script editor in the EMW:
-  ... Open the Enterprise Management Window (EMW) in SANtricity Storage Manager on your local host.
-  ... Select the storage array.
-  ... Select *Tools* > *Execute Script*.
-  ... Type one of the following commands in the text box.
+ * To use script editor in the EMW:
+  .. Open the Enterprise Management Window (EMW) in SANtricity Storage Manager on your local host.
+  .. Select the storage array.
+  .. Select menu:Tools[Execute Script].
+  .. Type one of the following commands in the text box.
 +
-----
-**For controller A:** set controller [a] availability=offline
-----
+*For controller A:* `set controller [a] availability=offline`
 +
-----
-**For controller B:** set controller [b] availability=offline
-----
+*For controller B:* `set controller [b] availability=offline`
 
-  ... Select *Tools* > *Verify and Execute*.
+  .. Select menu:Tools[Verify and Execute].
++
 The system attempts to take the controller offline.
 . Wait for SANtricity System Manager to update the controller's status to offline.
 +
@@ -97,20 +107,29 @@ NOTE: Perform this task only if your storage array has one controller (simplex c
 .Steps
 
 . From SANtricity System Manager, review the details in the Recovery Guru to confirm that you have a failed HIC and to ensure no other items must be addressed before you can remove and replace the HIC.
-. Back up the storage array's configuration database.
+. Collect support data for your storage array using either SANtricity System Manager or the Enterprise Management Window's (EMW) script editor.
 +
 If a problem occurs when you remove a controller, you can use the saved file to restore your configuration.
 
+* To use SANtricity System Manager:
+ .. Select menu:Support[Support Center > Diagnostics].
+ .. Select *Collect Support Data*.
+ .. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+
+ * To use SANtricity Storage Manager:
+
  .. Open the Enterprise Management Window (EMW) for SANtricity Storage Manager on your management station.
  .. Select the storage array.
- .. Select *Tools* > *Execute Script*.
+ .. Select menu:Tools[Execute Script].
  .. Type the following command in the text box.
 +
 ----
 save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";
 ----
 +
-In this command, filename is the file path and file name to which you want to save the database. Enclose the file name in double quotation marks (" "). For example:
+In this command, `filename` is the file path and file name to which you want to save the database. Enclose the file name in double quotation marks (" "). For example:
 +
 ----
  file="C:\Program Files\CLI\logs\dbmdata.zip"
@@ -118,13 +137,8 @@ In this command, filename is the file path and file name to which you want to sa
 +
 This command does not automatically append a file extension to the saved file. You must specify a file extension when entering the file name.
 
- .. Select *Tools* > *Verify and Execute*.
+ .. Select menu:Tools[Verify and Execute].
 
-. Collect support data for your storage array using SANtricity System Manager.
- .. Select *Support* > *Support Center* > *Diagnostics*.
- .. Select *Collect Support Data*.
- .. Click *Collect*.
-The file is saved in the Downloads folder for your browser with the name support-data.7z.
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
  ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
@@ -146,11 +160,6 @@ The green Cache Active LED on the back of the controller is on when cached data 
 
 Remove the controller canister so you can add the new host interface card (HIC).
 
-.What you'll need
-
-* Labels to identify each cable that is connected to the controller canister.
-* An ESD wristband, or you have taken other antistatic precautions.
-
 .Steps
 
 . Label each cable that is attached to the controller canister.
@@ -164,7 +173,7 @@ The green Cache Active LED on the back of the controller is on when cached data 
 +
 image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Cache Active LED
+*(1)* _Cache Active LED_
 
 . Squeeze the latch on the cam handle until it releases, and then open the cam handle to the right to release the controller canister from the shelf.
 +
@@ -172,13 +181,15 @@ The following figure is an example of an E2812 controller shelf, E2824 controlle
 +
 image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../media/legend_icon_02_maint-e2800.gif[] Cam handle
+*(1)* _Cam handle_
 +
 The following figure is an example of an E2860 controller shelf:
 +
 image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../media/legend_icon_02_maint-e2800.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
 
 . Using two hands and the cam handle, slide the controller canister out of the shelf.
 +
@@ -193,12 +204,6 @@ If you are removing the controller canister from an E2812 controller shelf, E282
 
 Install a HIC to replace the failed one with a new HIC.
 
-.What you'll need
-
-* An ESD wristband, or you have taken other antistatic precautions.
-* A #1 Phillips screwdriver.
-* One or two HICs, based on whether you have one or two controllers in your storage array. The HICs must be compatible with your controllers.
-
 CAUTION: *Possible loss of data access* -- Never install a HIC in an E2800 controller canister if that HIC was designed for another E-Series controller. In addition, if you have a duplex configuration, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs will cause the controllers to lock down when you apply power.
 
 .Steps
@@ -211,20 +216,24 @@ If this green LED is on, the controller is still using battery power. You must w
 +
 image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[]Internal Cache Active LED image:../media/legend_icon_02_maint-e2800.gif[] Battery
+*(1)* _Internal Cache Active LED_
++
+*(2)* _Battery_
 
 . Using a #1 Phillips screwdriver, remove the four screws that attach the blank faceplate to the controller canister, and remove the faceplate.
 . Align the three thumbscrews on the HIC with the corresponding holes on the controller, and align the connector on the bottom of the HIC with the HIC interface connector on the controller card.
 +
 Be careful not to scratch or bump the components on the bottom of the HIC or on the top of the controller card.
-
++
 . Carefully lower the HIC into place, and seat the HIC connector by pressing gently on the HIC.
 +
 CAUTION: *Possible equipment damage* -- Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrews.
 +
 image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Host interface card (HIC) image:../media/legend_icon_02_maint-e2800.gif[] Thumbscrews
+*(1)* _Host interface card_
++
+*(2)* _Thumbscrews_
 
 . Hand-tighten the HIC thumbscrews.
 +
@@ -247,13 +256,17 @@ The following figure is an example of an E2824 controller shelf or EF280 flash a
 +
 image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../media/legend_icon_02_maint-e2800.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
 +
 The following figure is an example of an E2860 controller shelf:
 +
 image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../media/legend_icon_02_maint-e2800.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
 
 . Move the cam handle to the left to lock the controller canister in place.
 . Reconnect all the cables you removed.
@@ -280,37 +293,40 @@ When communication with the other controller is reestablished:
  ** The amber Attention LED remains lit.
  ** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
 image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif[]
-
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Attention LED (amber) image:../media/legend_icon_02_maint-e2800.gif[] Seven-segment display image:../media/legend_icon_03_maint-e2800.gif[] Host Link LEDs
+*(1)* _Attention LED (amber)_
++
+*(2)* _Seven-segment display_
++
+*(3)* _Host Link LEDs_
 
 . Bring the controller online using either SANtricity System Manager or the Enterprise Management Window's (EMW) script editor:
- ** To use SANtricity System Manager:
-  ... Select *Hardware*.
-  ... If the graphic shows the drives, select *Show back of shelf*.
-  ... Select the controller you want to place online.
-  ... Select *Place Online* from the context menu, and confirm that you want to perform the operation.
+ * To use SANtricity System Manager:
+  .. Select *Hardware*.
+  .. If the graphic shows the drives, select *Show back of shelf*.
+  .. Select the controller you want to place online.
+  .. Select *Place Online* from the context menu, and confirm that you want to perform the operation.
++
 The system places the controller online.
- ** To use script editor in the EMW:
-  ... Open the Enterprise Management Window (EMW) in SANtricity Storage Manager on your local host.
-  ... Select the storage array.
-  ... Select *Tools* > *Execute Script*.
-  ... Type one of the following commands in the text box.
+ * To use script editor in the EMW:
+  .. Open the Enterprise Management Window (EMW) in SANtricity Storage Manager on your local host.
+  .. Select the storage array.
+  .. Select *Tools* > *Execute Script*.
+  .. Type one of the following commands in the text box.
 +
-----
-**For controller A:** set controller [a] availability=online;
-----
+*For controller A:* `set controller [a] availability=online;`
 +
-----
-**For controller B:** set controller [b] availability=online;
-----
+*For controller B:* `set controller [b] availability=online;`
 
-  ... Select *Tools* > *Verify and Execute*.
+  .. Select *Tools* > *Verify and Execute*.
++
 The system places the controller online.
 . Check the codes on the controller's seven-segment display as it comes back online. If the display shows one of the following repeating sequences, immediately remove the controller.
- ** *OE*, *L0*, *_blank_* (mismatched controllers)
- ** *OE*, *L6*, *_blank_* (unsupported HIC)
-*Attention:* *Possible loss of data access* -- If the controller you just installed shows one of these codes, and the other controller is reset for any reason, the second controller could also lock down.
+
+ * *OE*, *L0*, *_blank_* (mismatched controllers)
+ * *OE*, *L6*, *_blank_* (unsupported HIC)
++
+CAUTION: *Possible loss of data access* -- If the controller you just installed shows one of these codes, and the other controller is reset for any reason, the second controller could also lock down.
 . When the controller is back online, confirm that its status is Optimal, and check the controller shelf's Attention LEDs.
 +
 If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated, and check that the HIC and the controller canister are installed correctly. If necessary, remove and reinstall the controller canister and the HIC.
@@ -318,10 +334,11 @@ If the status is not Optimal or if any of the Attention LEDs are on, confirm tha
 NOTE: If you cannot resolve the problem, contact technical support.
 
 . Collect support data for your storage array using SANtricity System Manager.
- .. Select *Support* > *Support Center* > *Diagnostics*.
+ .. Select menu:Support[Support Center > Diagnostics].
  .. Select *Collect Support Data*.
  .. Click *Collect*.
-The file is saved in the Downloads folder for your browser with the name support-data.7z.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 +
 Contact technical support at http://mysupport.netapp.com[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number.
@@ -346,7 +363,12 @@ NOTE: The figure shows an example controller canister. Your controller might hav
 +
 image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Attention LED (amber) image:../media/legend_icon_02_maint-e2800.gif[] Seven-segment display image:../media/legend_icon_03_maint-e2800.gif[] Host Link LEDs
+*(1)* _Attention LED (amber)_
++
+*(2)* _Seven-segment display_
++
+*(3)* _Host Link LEDs_
+
 . Confirm that the controller's status is Optimal, and check the controller shelf's Attention LEDs.
 +
 If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated, and check that the HIC and the controller canister are installed correctly. If necessary, remove and reinstall the controller canister and the HIC.
@@ -354,14 +376,15 @@ If the status is not Optimal or if any of the Attention LEDs are on, confirm tha
 NOTE: If you cannot resolve the problem, contact technical support.
 
 . Collect support data for your storage array using SANtricity System Manager.
- .. Select *Support* > *Support Center* > *Diagnostics*.
+ .. Select menu:Support[Support Center > Diagnostics].
  .. Select *Collect Support Data*.
  .. Click *Collect*.
-The file is saved in the Downloads folder for your browser with the name support-data.7z.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 +
 Contact technical support at http://mysupport.netapp.com[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number.
 
-.Result
+.What's next?
 
 Your HIC replacement is complete. You can resume normal operations.

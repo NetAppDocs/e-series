@@ -11,10 +11,10 @@ summary: Install a new battery.
 [.lead]
 After removing the failed battery, you can install the new one.
 
-.Before you begin
+.What you'll need
 
-* You have removed the failed battery from the controller canister.
-* You have the replacement battery.
+* The replacement battery.
+* A flat, static-free surface.
 
 .Steps
 
@@ -33,8 +33,10 @@ When the latch clicks into place, the bottom of the latch hooks into a metal slo
 +
 image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Battery release latch image:../media/legend_icon_02_maint-e2800.gif[] Battery
-
+*(1)* _Battery release latch_
++
+*(2)* _Battery_
++
 . Turn the controller canister over to confirm that the battery is installed correctly.
 +
 CAUTION: *Possible hardware damage* -- The metal flange at the front of the battery must be completely inserted into the slot on the controller canister (as shown in the first figure). If the battery is not installed correctly (as shown in the second figure), the metal flange might contact the controller board, causing damage to the controller when you apply power.
@@ -47,6 +49,4 @@ image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif[]
  +
 image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[]
 
-.Result
-
-Go to link:batteries-reinstall-controller-canister-task.html[Re-install controller canister].
+. Go to link:batteries-reinstall-controller-canister-task.html[Re-install E2800 controller canister].

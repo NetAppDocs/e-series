@@ -59,7 +59,7 @@ A request is made to a specific REST resource or endpoint within the Web Service
 The API path consists of three parts:
 
 * `devmgr` (Device Manager) is the namespace of the Web Services API.
-* `v2` denotes the version of the API that you are accessing. You can also use utils to access login endpoints.
+* `v2` denotes the version of the API that you are accessing. You can also use `utils` to access login endpoints.
 * `storage-systems` is a category within the documentation.
 
 |===
@@ -166,4 +166,4 @@ No
 
 == Sample scripts
 
-GitHub contains a repository for the collection and organization of sample scripts illustrating the use of the NetApp SANtricity Web Services API. To access the repository, see: https://github.com/NetApp/webservices-samples[NetApp Webservices samples^].
+GitHub contains a repository for the collection and organization of sample scripts illustrating the use of the NetApp SANtricity Web Services API. To access the repository, see https://github.com/NetApp/webservices-samples[NetApp Webservices samples^].
