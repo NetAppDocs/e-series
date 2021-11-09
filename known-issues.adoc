@@ -15,3 +15,27 @@ Release Notes are available outside this site. You will be prompted to log in us
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2857931[11.60 Release notes^]
 
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2842060[11.50 Release notes^]
+
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.First tab
+--
+Content here
+--
+
+.Second tab
+--
+content here
+--
+
+.Third tab
+--
+content here
+--
+
+====
+
+// end tabbed area
