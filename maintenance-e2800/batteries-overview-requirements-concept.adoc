@@ -5,6 +5,7 @@ keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace 
 summary: Review E2800 battery replacement requirements and considerations.
 ---
 = Requirements for E2800 battery replacement
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
@@ -67,12 +68,9 @@ a|
 
 == Requirements for replacing a battery
 
-If you plan to replace a failed battery, keep the following requirements in mind.
+If you plan to replace a failed battery, you must have:
 
-* You must install SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
-+
-If this software has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install it.
-
-* You must have a replacement battery.
-* You must have an ESD wristband, or you have taken other antistatic precautions.
-* You should use labels to identify each cable that is connected to the controller canister.
+* A replacement battery.
+* An ESD wristband, or you have taken other antistatic precautions.
+* Labels to identify each cable that is connected to the controller canister.
+* A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)

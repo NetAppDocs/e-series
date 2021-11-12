@@ -5,6 +5,7 @@ keywords: host protocol change, EF300 host protocol, EF600 host protocol
 summary: Change the host port protocol for an EF300 or EF600 array.
 ---
 = Change host protocol for an EF300 or EF600
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
@@ -18,7 +19,7 @@ To obtain the feature pack key, you need the serial number from the controller s
 .Steps
 
 . Locate the serial number.
- .. From SANtricity System Manager, select *Support* > *Support Center*.
+ .. From SANtricity System Manager, select menu:Support[Support Center].
  .. With the *Support Resources* tab selected, scroll to the *View top storage array properties* section.
  .. Locate the *Chassis Serial Number*, and copy this value to a text file.
 +
@@ -433,7 +434,7 @@ SHH-TA5-ZZYHS
 NOTE: If your controller submodel ID is not listed, contact https://mysupport.netapp.com/site/[NetApp Support^].
 
 . In System Manager, locate the Feature Enable Identifier.
- .. Go to *Settings* > *System*.
+ .. Go to menu:Settings[System].
  .. Scroll down to *Add-ons*.
  .. Under *Change Feature Pack*, locate the *Feature Enable Identifier*.
  .. Copy and paste this 32-digit number to a text file.
@@ -475,7 +476,7 @@ Change the feature pack to convert the host protocol of your host ports.
 
 .Steps
 
-. From SANtricity System Manager, select *Settings* > *System*.
+. From SANtricity System Manager, select menu:Settings[System].
 . Under *Add-ons*, select *Change Feature Pack*.
 +
 image::../media/sam1130_ss_system_change_feature_pack_maint-ef600.gif[]
@@ -494,4 +495,6 @@ The feature pack migration begins. Both controllers automatically reboot twice t
  .. Select the *Host Interfaces* tab.
  .. Click *Show more settings*.
 
-. Go to link:hpp-complete-protocol-conversion-task.html[Complete host protocol conversion].
+.What's next?
+
+Go to link:hpp-complete-protocol-conversion-task.html[Complete host protocol conversion].

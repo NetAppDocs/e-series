@@ -15,11 +15,10 @@ The steps to prepare for battery replacement depend on whether you have a duplex
 * For duplex configurations, see <<Place controller offline (duplex)>>.
 * For simplex configurations, see <<Power down the controller shelf (simplex)>>.
 
-.What you'll need
+.Before you begin
 
-* A multipath driver installed on all hosts where volumes are in use; otherwise, ensure that no volumes are in use.
-
-In addition, you should review the link:batteries-overview-requirements-concept.html[Requirements for E2800 battery replacement] before you begin this procedure.
+* Verify that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
+* Review the link:batteries-overview-requirements-concept.html[Requirements for E2800 battery replacement].
 
 == Place controller offline (duplex)
 
@@ -32,62 +31,47 @@ NOTE: Perform this task only if your storage array has two controllers (duplex c
 
 . From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
 . From the Details area of the Recovery Guru, determine which battery to replace.
-. Collect support data for your storage array using either SANtricity System Manager or the Enterprise Management Window's (EMW) script editor.
+. Back up the storage array's configuration database using SANtricity System Manager.
 +
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration.
+If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
++
+* From System Manager:
+.. Select menu:Support[Support Center > Diagnostics].
+.. Select *Collect Configuration Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
-* To use SANtricity System Manager:
- .. Select menu:Support[Support Center > Diagnostics].
- .. Select *Collect Support Data*.
- .. Click *Collect*.
+* Alternatively, you can back up the configuration database by using the following CLI command:
++
+`save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";`
+
++
+. Collect support data for your storage array using SANtricity System Manager.
++
+If a problem occurs when you remove a controller, you can use the saved file to troubleshoot the issue. The system will save inventory, status, and performance data about your storage array in a single file.
+
+.. Select menu:Support[Support Center > Diagnostics].
+.. Select *Collect Support Data*.
+.. Click *Collect*.
 +
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 
- * To use SANtricity Storage Manager:
+. If the controller is not already offline, take it offline now using SANtricity System Manager.
 
- .. Open the Enterprise Management Window (EMW) for SANtricity Storage Manager on your management station.
- .. Select the storage array.
- .. Select menu:Tools[Execute Script].
- .. Type the following command in the text box.
-+
-----
-save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";
-----
-+
-In this command, filename is the file path and file name to which you want to save the database. Enclose the file name in double quotation marks (" "). For example:
-+
-----
- file="C:\Program Files\CLI\logs\dbmdata.zip"
-----
-+
-This command does not automatically append a file extension to the saved file. You must specify a file extension when entering the file name.
-
- .. Select menu:Tools[Verify and Execute].
-
-. If the controller is not already offline, take it offline now using either SANtricity System Manager or the Enterprise Management Window's (EMW) script editor:
-+
-* To use SANtricity System Manager:
-
+ * From SANtricity System Manager:
   .. Select *Hardware*.
   .. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
   .. Select the controller that you want to place offline.
   .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 +
-NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager "Unavailable" message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
+NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
 
-* To use script editor in the EMW:
-
-  .. Open the Enterprise Management Window (EMW) in SANtricity Storage Manager on your local host.
-  .. Select the storage array.
-  .. Select menu:Tools[Execute Script].
-  .. Type one of the following commands in the text box.
+ * Alternatively, you can take the controllers offline by using the following CLI commands:
 +
 *For controller A:* `set controller [a] availability=offline`
 +
 *For controller B:* `set controller [b] availability=offline`
-+
-  .. Select menu:Tools[Verify and Execute].
-The system attempts to take the controller offline.
 
 . Wait for SANtricity System Manager to update the controller's status to offline.
 . Go to  link:batteries-remove-controller-canister-task.html[Remove E2800 controller canister].
@@ -102,38 +86,31 @@ NOTE: Perform this task only if your storage array has one controller (simplex c
 
 .Steps
 
-. Review link:batteries-overview-requirements-concept.html[Requirements for E2800 battery replacement].
-. Collect support data for your storage array using either SANtricity System Manager or the Enterprise Management Window's (EMW) script editor.
+. Back up the storage array's configuration database using SANtricity System Manager.
 +
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration.
+If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
++
+* From System Manager:
+.. Select menu:Support[Support Center > Diagnostics].
+.. Select *Collect Configuration Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
-* To use SANtricity System Manager:
- .. Select menu:Support[Support Center > Diagnostics].
- .. Select *Collect Support Data*.
- .. Click *Collect*.
+* Alternatively, you can back up the configuration database by using the following CLI command:
++
+`save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";`
+
++
+. Collect support data for your storage array using SANtricity System Manager.
++
+If a problem occurs when you remove a controller, you can use the saved file to troubleshoot the issue. The system will save inventory, status, and performance data about your storage array in a single file.
+
+.. Select menu:Support[Support Center > Diagnostics].
+.. Select *Collect Support Data*.
+.. Click *Collect*.
 +
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
-
- * To use SANtricity Storage Manager:
-
- .. Open the Enterprise Management Window (EMW) for SANtricity Storage Manager on your management station.
- .. Select the storage array.
- .. Select menu:Tools[Execute Script].
- .. Type the following command in the text box.
-+
-----
-save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";
-----
-+
-In this command, filename is the file path and file name to which you want to save the database. Enclose the file name in double quotation marks (" "). For example:
-+
-----
- file="C:\Program Files\CLI\logs\dbmdata.zip"
-----
-+
-This command does not automatically append a file extension to the saved file. You must specify a file extension when entering the file name.
-
- .. Select menu:Tools[Verify and Execute].
 
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
  .. Stop all processes that involve the LUNs mapped from the storage to the hosts.

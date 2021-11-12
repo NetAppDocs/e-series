@@ -5,61 +5,71 @@ keywords: E5700 host interface card, E5700 HIC, replace E5700 HIC, failed E5700 
 summary: Add a HIC in an E5700.
 ---
 = Add E5700 host interface card (HIC)
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to add a host interface card (HIC). This addition increases the number of host ports in your storage array and to provide additional host protocols.
+You can add a host interface card (HIC) to E5700 controller canisters with baseboard host ports. This addition increases the number of host ports in your storage array and provides additional host protocols.
 
-== About this task
-When you add HICs, you must power off the storage array, install the HIC, and reapply power. You can add HICs to E5700 controller canisters that only have baseboard host ports.
+.About this task
+When you add HICs, you must power off the storage array, install the HIC, and reapply power.
 
 .Before you begin
 
 * Review link:hics-overview-supertask-concept.html[Requirements for E5700 HIC replacement].
 * Schedule a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, both controllers must have the same HIC configuration when they are powered on.)
-* Install SANtricity System Manager on a management station, so you can use the storage array's command line interface (CLI).
+
+.What you'll need
+
+* One or two HICs, based on whether you have one or two controllers in your storage array. The HICs must be compatible with your controllers.
+* New host hardware installed for the new host ports, such as switches or host bus adapters (HBAs).
+* All cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new host ports.
 +
-If this software has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install it.
+For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] and the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe^].
+
+* Labels to identify each cable that is connected to the controller canister.
+* An ESD wristband, or you have taken other antistatic precautions.
+* A #1 Phillips screwdriver.
+* A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
 
 == Step 1: Prepare to add HIC
 
-Prepare to add a HIC.
+Prepare to add a HIC by backing up the storage array's configuration database, collecting support data, and stopping host I/O operations. Then, you can power down the controller shelf.
 
 .Steps
 
-. From the Home of SANtricity System Manager, ensure that the storage array has Optimal status.
+. From the Home page of SANtricity System Manager, ensure that the storage array has Optimal status.
 +
 If the status is not Optimal, use the Recovery Guru or contact technical support to resolve the problem. Do not continue with this procedure.
 
-. Back up the storage array's configuration database.
+. Back up the storage array's configuration database using SANtricity System Manager.
 +
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration.
+If a problem occurs during this procedure, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
++
+* From System Manager:
+.. Select menu:Support[Support Center > Diagnostics].
+.. Select *Collect Configuration Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
- .. Open the Enterprise Management Window (EMW) for SANtricity Storage Manager on your management station.
- .. Select the storage array.
- .. Select *Tools* > *Execute Script*.
- .. Type the following command in the text box.
+* Alternatively, you can back up the configuration database by using the following CLI command:
 +
-----
-save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";
-----
-+
-In this command, filename is the file path and file name to which you want to save the database. Enclose the file name in double quotation marks (" "). For example:
-+
-----
- file="C:\Program Files\CLI\logs\dbmdata.zip"
-----
-+
-This command does not automatically append a file extension to the saved file. You must specify a file extension when entering the file name.
+`save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";`
 
- .. Select *Tools* > *Verify and Execute*.
-
++
 . Collect support data for your storage array using SANtricity System Manager.
- .. Select *Support* > *Support Center* > *Diagnostics*.
- .. Select *Collect Support Data*.
- .. Click *Collect*.
-The file is saved in the Downloads folder for your browser with the name support-data.7z.
++
+If a problem occurs during this procedure, you can use the saved file to troubleshoot the issue. The system will save inventory, status, and performance data about your storage array in a single file.
+
+.. Select menu:Support[Support Center > Diagnostics].
+.. Select *Collect Support Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+
+
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
  ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
@@ -75,7 +85,7 @@ The green Cache Active LED on the back of each controller is on when cached data
 +
 image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[]
 +
-image:../media/legend_icon_01_maint-e5700.gif[] Cache Active LED
+*(1)* _Cache Active LED_
 
 . From the Home page of SANtricity System Manager, select *View Operations in Progress*. Wait for all operations to complete before continuing with the next step.
 . Power down the controller shelf.
@@ -84,12 +94,7 @@ image:../media/legend_icon_01_maint-e5700.gif[] Cache Active LED
 
 == Step 2: Remove controller canister
 
-Remove the controller canister so you can add the new host interface card.
-
-.What you'll need
-
-* Labels to identify each cable that is connected to the controller canister.
-* An ESD wristband, or you have taken other antistatic precautions.
+Remove the controller canister so you can add the new HIC.
 
 .Steps
 
@@ -104,7 +109,7 @@ The green Cache Active LED on the back of the controller is on when cached data 
 +
 image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[]
 +
-image:../media/legend_icon_01_maint-e5700.gif[] Cache Active LED
+*(1)* _Cache Active LED_
 
 . Squeeze the latch on the cam handle until it releases, and then open the cam handle to the right to release the controller canister from the shelf.
 +
@@ -112,13 +117,17 @@ The following figure is an example of an E5724 controller shelf:
 +
 image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[]
 +
-image:../media/legend_icon_01_maint-e5700.gif[] Controller canister image:../media/legend_icon_02_maint-e5700.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
 +
 The following figure is an example of an E5760 controller shelf:
 +
 image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[]
 +
-image:../media/legend_icon_01_maint-e5700.gif[] Controller canister image:../media/legend_icon_02_maint-e5700.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
 
 . Using two hands and the cam handle, slide the controller canister out of the shelf.
 +
@@ -133,11 +142,7 @@ If you are removing the controller canister from an E5724 controller shelf, a fl
 
 Install the host interface card (HIC) to increase the number of host ports in your storage array.
 
-.What you'll need
 
-* An ESD wristband, or you have taken other antistatic precautions.
-* A #1 Phillips screwdriver.
-* One or two HICs, based on whether you have one or two controllers in your storage array. The HICs must be compatible with your controllers.
 
 CAUTION: *Possible loss of data access* -- Never install a HIC in an E5700 controller canister if that HIC was designed for another E-Series controller. In addition, if you have a duplex configuration, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs will cause the controllers to lock down when you apply power.
 
@@ -151,7 +156,9 @@ If this green LED is on, the controller is still using battery power. You must w
 +
 image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[]
 +
-image:../media/legend_icon_01_maint-e5700.gif[]Internal Cache Active LED image:../media/legend_icon_02_maint-e5700.gif[] Battery
+*(1)* _Internal Cache Active_
++
+*(2)* _Battery_
 
 . Using a #1 Phillips screwdriver, remove the four screws that attach the blank faceplate to the controller canister, and remove the faceplate.
 . Align the three thumbscrews on the HIC with the corresponding holes on the controller, and align the connector on the bottom of the HIC with the HIC interface connector on the controller card.
@@ -164,7 +171,9 @@ CAUTION: *Possible equipment damage* -- Be very careful not to pinch the gold ri
 +
 image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[]
 +
-image:../media/legend_icon_01_maint-e5700.gif[] Host interface card (HIC) image:../media/legend_icon_02_maint-e5700.gif[] Thumbscrews
+*(1)* _Host interface card (HIC)_
++
+*(2)* _Thumbscrews_
 
 . Hand-tighten the HIC thumbscrews.
 +
@@ -187,13 +196,17 @@ The following figure is an example of an E5724 controller shelf:
 +
 image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[]
 +
-image:../media/legend_icon_01_maint-e5700.gif[] Controller canister image:../media/legend_icon_02_maint-e5700.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
 +
 The following figure is an example of an E5760 controller shelf:
 +
 image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[]
 +
-image:../media/legend_icon_01_maint-e5700.gif[] Controller canister image:../media/legend_icon_02_maint-e5700.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
 
 . Move the cam handle to the left to lock the controller canister in place.
 . Reconnect all the cables you removed.
@@ -205,13 +218,6 @@ CAUTION: Do not connect data cables to the new HIC ports at this time.
 == Step 5: Complete HIC addition
 
 Check the controller LEDs and seven-segment display, and then confirm that the controller's status is Optimal.
-
-.What you'll need
-
-* New host hardware installed for the new host ports, such as switches or host bus adapters (HBAs).
-* All cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new host ports.
-+
-For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] and the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe^].
 
 .Steps
 
@@ -226,7 +232,12 @@ For information about compatible hardware, refer to the https://mysupport.netapp
 NOTE: The figure shows an example controller canister. Your controller might have a different number and a different type of host ports.
 +
 image::../media/e5700_hic_3_callouts_maint-e5700.gif[]
-image:../media/legend_icon_01_maint-e5700.gif[] Host Link LEDsimage:../media/legend_icon_02_maint-e5700.gif[]Attention LED (Amber)image:../media/legend_icon_03_maint-e5700.gif[] Seven-segment display
++
+*(1)* _Host Link LEDs_
++
+*(2)* _Attention LED (Amber)_
++
+*(3)* _Seven-segment display_
 
 . From SANtricity System Manager, confirm that the controller's status is Optimal.
 +
@@ -244,17 +255,17 @@ NOTE: If you cannot resolve the problem, contact technical support.
  .. Click *Show more settings*.
  .. Review the details shown for the HIC ports (the ports labelled *e0__x__* or *0__x__* in HIC Location *slot 1*) to determine if you are ready to connect the host ports to the data hosts:
 +
-If the new HIC ports have the protocol you expect:
+* _If the new HIC ports have the protocol you expect_:
 +
-You are ready to connect the new HIC ports to the data hosts; go to the step below.
+You are ready to connect the new HIC ports to the data hosts; go to the next step.
 +
-If the new HIC ports do not have the protocol you expect:
+* _If the new HIC ports do *not* have the protocol you expect_:
 +
-You must apply a software feature pack before you can connect the new HIC ports to the data hosts. See _Converting the Protocol of E5700 Host Ports_. Then, use the instructions in that document to connect the host ports to the data hosts and to resume operations.
+You must apply a software feature pack before you can connect the new HIC ports to the data hosts. See link:hpp-change-host-protocol-task.html[Change E5700 host protocol]. Then, connect the host ports to the data hosts and resume operations.
 . Connect the cables from the controller's host ports to the data hosts.
 +
 If you need instructions for configuring and using a new host protocol, refer to the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration].
 
-.Result
+.What's next?
 
 The process of adding a host interface card to your storage array is complete. You can resume normal operations.

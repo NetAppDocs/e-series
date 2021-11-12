@@ -10,7 +10,7 @@ summary: Review requirements for E2800 HIC replacement.
 :imagesdir: ../media/
 
 [.lead]
-Before you add, upgrade, or replace a host interface card in an E2800, review the requirements and considerations.
+Before you add, upgrade, or replace a host interface card (HIC) in an E2800, review the requirements and considerations.
 
 == Procedure overview
 
@@ -58,4 +58,4 @@ For information about compatible hardware, refer to the https://mysupport.netapp
 * You have an ESD wristband, or you have taken other antistatic precautions.
 * You have a #1 Phillips screwdriver.
 * You have labels to identify each cable that is connected to the controller canister.
-* You have access to the storage array's command line interface (CLI). You can download the CLI package from SANtricity System Manager or you can access it from SANtricity Storage Manager.
+* You have a management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)

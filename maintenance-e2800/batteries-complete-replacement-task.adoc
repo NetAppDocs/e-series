@@ -41,38 +41,35 @@ image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif[]
 *(3)* _Host Link LEDs_
 +
 
-. Bring the controller online using either SANtricity System Manager or the Enterprise Management Window's (EMW) script editor:
- * To use SANtricity System Manager:
+. Bring the controller online using SANtricity System Manager.
+ * From SANtricity System Manager:
   .. Select *Hardware*.
   .. If the graphic shows the drives, select *Show back of shelf*.
   .. Select the controller you want to place online.
   .. Select *Place Online* from the context menu, and confirm that you want to perform the operation.
++
 The system places the controller online.
- * To use script editor in the EMW:
-  .. Open the Enterprise Management Window (EMW) in SANtricity Storage Manager on your local host.
-  .. Select the storage array.
-  .. Select menu:Tools[Execute Script].
-  .. Type one of the following commands in the text box.
+
+ * Alternatively, you can bring the controller back online by using the following CLI commands:
 +
 *For controller A:* `set controller [a] availability=online;`
 +
 *For controller B:* `set controller [b] availability=online;`
 
-  .. Select menu:Tools[Verify and Execute].
-+
-The system places the controller online.
 . When the controller is back online, confirm that its status is Optimal, and check the controller shelf's Attention LEDs.
 +
 If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated, and check that the battery and the controller canister are installed correctly. If necessary, remove and reinstall the controller canister and the battery.
 +
 NOTE: If you cannot resolve the problem, contact technical support.
 
-. Collect support data for your storage array using SANtricity System Manager.
+. If needed, collect support data for your storage array using SANtricity System Manager.
  .. Select menu:Support[Support Center > Diagnostics].
  .. Select *Collect Support Data*.
  .. Click *Collect*.
 +
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+
+.What's next?
 
 Your battery replacement is complete. You can resume normal operations.
 
@@ -108,10 +105,12 @@ If the status is not Optimal or if any of the Attention LEDs are on, confirm tha
 +
 NOTE: If you cannot resolve the problem, contact technical support.
 
-. Collect support data for your storage array using SANtricity System Manager.
+. If needed, collect support data for your storage array using SANtricity System Manager.
  .. Select menu:Support[Support Center > Diagnostics].
  .. Select *Collect Support Data*.
  .. Click *Collect*.
++
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 
+.What's next?
 Your battery replacement is complete. You can resume normal operations.
