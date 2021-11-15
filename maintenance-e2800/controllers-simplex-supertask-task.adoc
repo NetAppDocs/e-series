@@ -26,9 +26,7 @@ The controller canister contains a controller card, a battery, and an optional h
 * An ESD wristband, or you have taken other antistatic precautions.
 * Labels to identify each cable that is connected to the controller canister.
 * #1 Phillips screwdriver.
-* Access to the storage array's command line interface (CLI). If you do not have access to the CLI, you can do one of the following:
-** *For SANtricity System Manager (version 11.60 and above)* -- Download the CLI package (zip file) from System Manager. Go to menu:Settings[System > Add-ons > Command Line Interface]. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
-** *For SANtricity Storage Manager/Enterprise Management Window (EMW)* -- Follow the instructions in the express guide to download and install the software. You can run CLI commands from the EMW by selecting menu:Tools[Execute Script].
+* A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
 
 == Step 1: Prepare to replace controller (simplex)
 
@@ -36,7 +34,7 @@ Prepare to replace a controller canister by saving the drive security key, backi
 
 .Steps
 
-. If possible, make a note of which version of SANtricity OS software is currently installed on the controller, by selecting menu:Support[Upgrade Center > View Software and Firmware Inventory].
+. If possible, make a note of which version of SANtricity OS software is currently installed on the controller. Open SANtricity System Manager and select menu:Support[Upgrade Center > View Software and Firmware Inventory].
 . If the Drive Security feature is enabled, be sure a saved key exists and that you know the pass phrase required to install it.
 +
 CAUTION: *Possible loss of data access* -- If all drives in the storage array are security enabled, the new controller will not be able to access the storage array until you unlock the secured drives using the Enterprise Management Window in SANtricity Storage Manager.
@@ -48,39 +46,31 @@ To save the key (might not be possible, depending on the state of the controller
  .. In the *Define a pass phrase/Re-enter pass phrase* fields, enter and confirm a pass phrase for this backup copy.
  .. Click *Backup*.
  .. Record your key information in a secure location, and then click *Close*.
-
-. Collect support data for your storage array using either SANtricity System Manager or the Enterprise Management Window's (EMW) script editor.
 +
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration.
-
-* To use SANtricity System Manager:
+. Back up the storage array's configuration database using SANtricity System Manager.
++
+If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
++
+* From System Manager:
  .. Select menu:Support[Support Center > Diagnostics].
- .. Select *Collect Support Data*.
+ .. Select *Collect Configuration Data*.
  .. Click *Collect*.
 +
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
+
+* Alternatively, you can back up the configuration database by using the following CLI command:
++
+`save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";`
++
+. Collect support data for your storage array using SANtricity System Manager.
++
+If a problem occurs when you remove a controller, you can use the saved file to troubleshoot the issue. The system will save inventory, status, and performance data about your storage array in a single file.
++
+.. Select menu:Support[Support Center > Diagnostics].
+.. Select *Collect Support Data*.
+.. Click *Collect*.
++
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
-
- * To use SANtricity Storage Manager:
-
- .. Open the Enterprise Management Window (EMW) for SANtricity Storage Manager on your management station.
- .. Select the storage array.
- .. Select menu:Tools[Execute Script].
- .. Type the following command in the text box.
-+
-----
-save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";
-----
-+
-In this command, filename is the file path and file name to which you want to save the database. Enclose the file name in double quotation marks (" "). For example:
-+
-----
- file="C:\Program Files\CLI\logs\dbmdata.zip"
-----
-+
-This command does not automatically append a file extension to the saved file. You must specify a file extension when entering the file name.
-
- .. Select menu:Tools[Verify and Execute].
-
 
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.

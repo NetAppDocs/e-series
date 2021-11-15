@@ -11,9 +11,7 @@ summary: After converting the protocol of the host ports, perform additional ste
 [.lead]
 After you apply the feature pack key to convert the protocol, you must configure the host to use the appropriate protocol.
 
-== Complete protocol conversion
-
-Configure the host to use the appropriate protocol. For step-by-step instructions, see the guide appropriate for your system:
+For step-by-step instructions, see the guide appropriate for your system:
 
 * link:../config-linux/index.html[Linux express configuration]
 +
@@ -22,7 +20,3 @@ Configure the host to use the appropriate protocol. For step-by-step instruction
 * link:../config-windows/index.html[Windows express configuration]
 +
 Specific settings might vary. Check the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix^] for specific instructions and additional recommended settings for your solution.
-
-.Result
-
-Your host protocol conversion is complete. You can resume normal operations.

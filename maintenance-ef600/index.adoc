@@ -21,7 +21,7 @@ A controller consists of a board, firmware, and software. It controls the drives
 
 == DIMMs
 
-You must replace a DIMM when a memory mismatch is present, or you have a failed DIMM.
+You must replace a DIMM (dual in-line memory module) when a memory mismatch is present, or you have a failed DIMM.
 
 == Drives
 

@@ -49,7 +49,7 @@ If you are replacing a drawer in a shelf with Drawer Loss Protection, there is n
 . Determine if the drive shelf is powered on.
  ** If the power is off, you do not need to issue the CLI command. Go to <<Step 2: Remove cable chains>>.
  ** If the power is on, go to the next step.
-. Access the CLI, and enter the followoing command:
+. Access the CLI, and then enter the following command:
 +
 ----
 SMcli <ctlr_IP1\> -p "array_password" -c "set tray [trayID] drawer [drawerID]
@@ -293,6 +293,8 @@ CAUTION: *Risk of equipment damage* -- Stop pushing the drive drawer if you feel
 
 Attach the cable chains so you can safely re-install the drives in the drive drawer.
 
+.About this task
+
 When attaching a cable chain, reverse the order you used when disconnecting the cable chain. You must insert the chain's horizontal connector into the horizontal guide rail in the enclosure before inserting the chain's vertical connector into the vertical guide rail in the enclosure.
 
 .Steps
@@ -399,7 +401,7 @@ CAUTION: *Risk of equipment malfunction* -- Make sure to completely close the dr
 Confirm that both fans come on and that the amber LED on the back of the fans is off.
 
 +
-_If you replaced a drive drawer in an *expansion* drive shelf without Drawer Loss Protection_:
+* _If you replaced a drive drawer in an *expansion* drive shelf without Drawer Loss Protection_:
 
  .. Turn on both power switches on the drive shelf.
  .. Confirm that both fans come on and that the amber LED on the back of the fans is off.

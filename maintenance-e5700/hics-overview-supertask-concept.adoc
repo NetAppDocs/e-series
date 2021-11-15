@@ -9,7 +9,7 @@ summary: Review requirements for E5700 HIC replacement.
 :imagesdir: ../media/
 
 [.lead]
-Before you add, upgrade, or replace a host interface card in an E5700, review the requirements and considerations.
+Before you add, upgrade, or replace a host interface card (HIC) in an E5700, review the requirements and considerations.
 
 == Procedure overview
 You can add, upgrade, or replace a HIC in the E5724 controller shelf and the E5760 controller shelf.
@@ -24,10 +24,10 @@ The following is an overview of the steps to replace a HIC in an E5700 controlle
 
 == Requirements for adding, upgrading or replacing a HIC
 
-If you plan to add, upgrade, or replace a host interface card (HIC), you must keep in mind certain requirements.
+If you plan to add, upgrade, or replace a host interface card (HIC), keep the following requirements in mind.
 
-* You have scheduled a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)
-* You have two HICs must be compatible with your controllers.
+* You must schedule a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)
+* You must have two HICs that are compatible with your controllers.
 +
 For duplex configurations (two controllers), the HICs installed in the two controller canisters must be identical. The presence of mismatched HICs causes the controller with the replacement HIC to lock down when you bring it online.
 
@@ -38,6 +38,4 @@ For information about compatible hardware, refer to the https://mysupport.netapp
 * You have an ESD wristband, or you have taken other antistatic precautions.
 * You have a #1 Phillips screwdriver.
 * You have labels to identify each cable that is connected to the controller canister.
-* You have installed SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
-+
-If SANtricity Storage Manager has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install the software.
+* You have a management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)

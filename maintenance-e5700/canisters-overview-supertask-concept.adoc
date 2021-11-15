@@ -28,9 +28,9 @@ The following figure shows an example E5724 controller shelf with two power supp
 
 image::../media/e5700_power_supply_callout.png[]
 
-image:../media/legend_icon_01_maint-e5700.gif[]Controller shelf with two power supplies (power-fan canisters) below the controller canisters.
+*(1)* _Controller shelf with two power supplies (power-fan canisters) below the controller canisters._
 
-The __Replace power supply__ topics do not describe how to replace a failed power-fan canister in a DE1600 or DE5600 drive tray, which might be connected to the E5700 or E2800 controller shelves. For instructions for those drive tray models, refer to _Replacing a Power-Fan Canister in the DE1600 Drive Tray or the DE5600 Drive Tray_, available from the _NetApp E-Series and SANtricity Resource page_.
+The __Replace power supply__ topics do not describe how to replace a failed power-fan canister in a DE1600 or DE5600 drive tray, which might be connected to the E5700 or E2800 controller shelves. For instructions for those drive tray models, refer to link:https://library.netapp.com/ecm/ecm_download_file/ECMP1140874[Replacing a Power-Fan Canister in the DE1600 Drive Tray or the DE5600 Drive Tray].
 
 === Requirements for replacing a power supply
 

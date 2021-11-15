@@ -4,17 +4,17 @@ sidebar: sidebar
 keywords: adding E2800 HIC, add E2800 HIC, add host interface card, E2800, E-Series, eseries
 summary: Add a host interface card (HIC) to an E2800 array.
 ---
-= Add host interface cards (HICs) to E2800
+= Add E2800 host interface card (HIC)
 :experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can add a host interface cards (HIC) to an E2800 array.
+You can add a host interface card (HIC) to E2800 controller canisters with baseboard host ports. This addition increases the number of host ports in your E2800 storage array and provides additional host protocols.
 
 .About this task
 
-Adding a HIC increases the number of host ports in your E2800 storage array and provides additional host protocols. When you add HICs, you must power off the storage array, install the HIC, and reapply power. You can add HICs to E2800 controller canisters that only have baseboard host ports.
+During this procedure, you must power off the storage array, install the HIC, and reapply power.
 
 .Before you begin
 
@@ -31,9 +31,7 @@ Adding a HIC increases the number of host ports in your E2800 storage array and 
 * All cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new host ports.
 +
 For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] and the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe^].
-* Access to the storage array's command line interface (CLI). If you do not have access to the CLI, you can do one of the following:
-** *For SANtricity System Manager (version 11.60 and above)* -- Download the CLI package (zip file) from System Manager. Go to menu:Settings[System > Add-ons > Command Line Interface]. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
-** *For SANtricity Storage Manager/Enterprise Management Window (EMW)* -- Follow the instructions in the express guide to download and install the software. You can run CLI commands from the EMW by selecting menu:Tools[Execute Script].
+* A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
 
 == Step 1: Prepare to add HIC
 
@@ -45,37 +43,32 @@ Prepare to add the HIC by backing up the storage array's configuration database,
 +
 If the status is not Optimal, use the Recovery Guru or contact technical support to resolve the problem. Do not continue with this procedure.
 
-. Collect support data for your storage array using either SANtricity System Manager or the Enterprise Management Window's (EMW) script editor.
+. Back up the storage array's configuration database using SANtricity System Manager.
 +
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration.
+If a problem occurs during this procedure, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
++
+* From System Manager:
+.. Select menu:Support[Support Center > Diagnostics].
+.. Select *Collect Configuration Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
-* To use SANtricity System Manager:
- .. Select menu:Support[Support Center > Diagnostics].
- .. Select *Collect Support Data*.
- .. Click *Collect*.
+* Alternatively, you can back up the configuration database by using the following CLI command:
++
+`save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";`
+
++
+. Collect support data for your storage array using SANtricity System Manager.
++
+If a problem occurs during this procedure, you can use the saved file to troubleshoot the issue. The system will save inventory, status, and performance data about your storage array in a single file.
+
+.. Select menu:Support[Support Center > Diagnostics].
+.. Select *Collect Support Data*.
+.. Click *Collect*.
 +
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 
- * To use SANtricity Storage Manager:
-
- .. Open the Enterprise Management Window (EMW) for SANtricity Storage Manager on your management station.
- .. Select the storage array.
- .. Select menu:Tools[Execute Script].
- .. Type the following command in the text box.
-+
-----
-save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";
-----
-+
-In this command, filename is the file path and file name to which you want to save the database. Enclose the file name in double quotation marks (" "). For example:
-+
-----
- file="C:\Program Files\CLI\logs\dbmdata.zip"
-----
-+
-This command does not automatically append a file extension to the saved file. You must specify a file extension when entering the file name.
-
- .. Select menu:Tools[Verify and Execute].
 
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
@@ -176,7 +169,7 @@ CAUTION: *Possible equipment damage* -- Be very careful not to pinch the gold ri
 +
 image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[]
 +
-*(1)* _Host interface card_
+*(1)* _Host interface card (HIC)_
 +
 *(2)* _Thumbscrews_
 
@@ -259,9 +252,9 @@ NOTE: If you cannot resolve the problem, contact technical support.
  .. Click *Show more settings*.
  .. Review the details shown for the HIC ports (the ports labelled *e0__x__* or *0__x__* in HIC Location *slot 1*) to determine if you are ready to connect the host ports to the data hosts:
 +
-* _If the new HIC ports have the protocol you expect:_ You are ready to connect the new HIC ports to the data hosts; go to the step below.
+* _If the new HIC ports have the protocol you expect:_ You are ready to connect the new HIC ports to the data hosts; go to the next step.
 +
-* _If the new HIC ports do_ not _have the protocol you expect:_ You must apply a software feature pack before you can connect the new HIC ports to the data hosts. See link:hpp-change-host-protocol-task.html[Change host protocol for E2800]. Then, use the instructions in that document to connect the host ports to the data hosts and to resume operations.
+* _If the new HIC ports do *not* have the protocol you expect:_ You must apply a software feature pack before you can connect the new HIC ports to the data hosts. See link:hpp-change-host-protocol-task.html[Change host protocol for E2800]. Then, connect the host ports to the data hosts and resume operations.
 +
 . Connect the cables from the controller's host ports to the data hosts.
 +

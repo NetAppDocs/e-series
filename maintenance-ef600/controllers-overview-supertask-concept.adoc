@@ -15,13 +15,13 @@ A controller consists of a board, firmware, and software. It controls the drives
 
 == Controller replacement requirements
 
-* You must have a replacement controller canister with the same part number as the controller canister you are replacing.
-* You have an ESD wristband, or you have taken other antistatic precautions.
-* You must use labels to identify each cable that is connected to the controller canister.
-* You must have a #1 Phillips screwdriver.
-* You must have installed SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
-+
-If this software has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install it.
+Before you replace a controller, you must have:
+
+* A replacement controller canister with the same part number as the controller canister you are replacing.
+* An ESD wristband, or you have taken other antistatic precautions.
+* Labels to identify each cable that is connected to the controller canister.
+* A #1 Phillips screwdriver.
+* A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
 
 == Replacement while powered on
 

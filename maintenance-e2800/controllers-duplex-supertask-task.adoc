@@ -27,9 +27,7 @@ Each controller canister contains a controller card, a battery, and an optional 
 * An ESD wristband, or you have taken other antistatic precautions.
 * #1 Phillips screwdriver.
 * Labels to identify each cable that is connected to the controller canister.
-* Access to the storage array's command line interface (CLI). If you do not have access to the CLI, you can do one of the following:
-** *For SANtricity System Manager (version 11.60 and above)* -- Download the CLI package (zip file) from System Manager. Go to menu:Settings[System > Add-ons > Command Line Interface]. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
-** *For SANtricity Storage Manager/Enterprise Management Window (EMW)* -- Follow the instructions in the express guide to download and install the software. You can run CLI commands from the EMW by selecting menu:Tools[Execute Script].
+* A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
 
 
 == Step 1: Prepare to replace controller (duplex)
@@ -46,9 +44,9 @@ Save the packing materials to use when shipping the failed controller canister.
 +
 image::../media/28_dwg_e2800_labels_maint-e2800.gif[]
 +
-*(1)* _MAC address: The MAC address for management port 1 ("`P1`"). If you used DHCP to obtain the original controller's IP address, you will need this address to connect to the new controller._
+*(1)* _MAC address:_ The MAC address for management port 1 ("`P1`"). If you used DHCP to obtain the original controller's IP address, you need this address to connect to the new controller.
 +
-*(2)* _FRU part number: This number must match the replacement part number for the currently installed controller._
+*(2)* _FRU part number:_ This number must match the replacement part number for the currently installed controller.
 +
 
 . From SANtricity System Manager, locate the replacement part number for the controller canister you are replacing.
@@ -65,61 +63,48 @@ When a controller has a fault and needs to be replaced, the replacement part num
 +
 CAUTION: *Possible loss of data access* -- If the two part numbers are not the same, do not attempt this procedure. In addition, if the failed controller canister includes a host interface card (HIC), you must install that HIC into the new controller canister. The presence of mismatched controllers or HICs will cause the new controller to lock down when you bring it online.
 
-. Collect support data for your storage array using either SANtricity System Manager or the Enterprise Management Window's (EMW) script editor.
+. Back up the storage array's configuration database using SANtricity System Manager.
 +
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration.
+If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
++
+* From System Manager:
+.. Select menu:Support[Support Center > Diagnostics].
+.. Select *Collect Configuration Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
-* To use SANtricity System Manager:
- .. Select menu:Support[Support Center > Diagnostics].
- .. Select *Collect Support Data*.
- .. Click *Collect*.
+* Alternatively, you can back up the configuration database by using the following CLI command:
++
+`save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";`
+
++
+. Collect support data for your storage array using SANtricity System Manager.
++
+If a problem occurs when you remove a controller, you can use the saved file to troubleshoot the issue. The system will save inventory, status, and performance data about your storage array in a single file.
+
+.. Select menu:Support[Support Center > Diagnostics].
+.. Select *Collect Support Data*.
+.. Click *Collect*.
 +
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 
- * To use SANtricity Storage Manager:
+. If the controller is not already offline, take it offline now using SANtricity System Manager.
 
- .. Open the Enterprise Management Window (EMW) for SANtricity Storage Manager on your management station.
- .. Select the storage array.
- .. Select menu:Tools[Execute Script].
- .. Type the following command in the text box.
-+
-----
-save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";
-----
-+
-In this command, filename is the file path and file name to which you want to save the database. Enclose the file name in double quotation marks (" "). For example:
-+
-----
- file="C:\Program Files\CLI\logs\dbmdata.zip"
-----
-+
-This command does not automatically append a file extension to the saved file. You must specify a file extension when entering the file name.
-
- .. Select menu:Tools[Verify and Execute].
-
-
-. If the controller is not already offline, take it offline now using either SANtricity System Manager or the Enterprise Management Window's (EMW) script editor:
- * To use SANtricity System Manager:
+ * From SANtricity System Manager:
   .. Select *Hardware*.
   .. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
   .. Select the controller that you want to place offline.
   .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
-*Note:* If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
- * To use SANtricity Storage Manager:
-  .. Open the Enterprise Management Window (EMW) in SANtricity Storage Manager on your local host.
-  .. Select the storage array.
-  .. Select menu:Tools[Execute Script].
-  .. Type one of the following commands in the text box.
 +
+NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
 
+ * Alternatively, you can take the controllers offline by using the following CLI commands:
++
 *For controller A:* `set controller [a] availability=offline`
 +
 *For controller B:* `set controller [b] availability=offline`
-
-
-  .. Select menu:Tools[Verify and Execute].
 +
-The system attempts to take the controller offline.
 . Wait for SANtricity System Manager to update the controller's status to offline.
 +
 CAUTION: Do not begin any other operations until after the status has been updated.
@@ -362,7 +347,7 @@ If the status is not Optimal or if any of the Attention LEDs are on, confirm tha
 +
 NOTE: If you cannot resolve the problem, contact technical support.
 
-. If required, redistribute all volumes back to their preferred owner.
+. If required, redistribute all volumes back to their preferred owner using SANtricity System Manager.
  .. Select menu:Storage[Volumes].
  .. Select menu:More[Redistribute volumes].
 . Click menu:Hardware[Support > Upgrade Center] to ensure that the latest version of SANtricity OS software (controller firmware) is installed.
