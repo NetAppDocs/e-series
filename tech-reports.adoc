@@ -19,10 +19,10 @@ Check out the links below to access technical reports for E-Series hardware and 
 
 == Security TRs
 
-* https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf[NetApp SANtricity drive security - Feature details using SANtricity 11.70^]
+* https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf[NetApp SANtricity Drive Security Feature Details Guide^]
 * https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf[NetApp SANtricity Management Security Feature Details and Configuration Guide^]
 * https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf[Managing Certificates for NetApp E-Series Storage Systems^]
-* https://www.netapp.com/pdf.html?item=/media/19422-tr-4855.pdf[Security Hardening Guide for NetApp SANtricity 11.60^]
+* https://www.netapp.com/pdf.html?item=/media/19422-tr-4855.pdf[Security Hardening Guide for NetApp SANtricity^]
 * https://fieldportal.netapp.com/content/1117377[Access Management for E-Series Storage Systems^]
 
 == Solution TRs
@@ -39,7 +39,7 @@ Check out the links below to access technical reports for E-Series hardware and 
 === Backup & Recovery
 
 * https://www.netapp.com/pdf.html?item=/media/17042-tr4320pdf.pdf[Best Practices with Commvault Data Platform V11^]
-* https://www.netapp.com/pdf.html?item=/media/17159-tr4471pdf.pdf[Best Practices with Veeam Backup & Replication 9.5^]
+* https://www.netapp.com/pdf.html?item=/media/17159-tr4471pdf.pdf[Best Practices with Veeam Backup & Replication^]
 * https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf[Deploying Veritas NetBackup with NetApp E-Series Storage^]
 
 === VSS
