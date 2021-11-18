@@ -509,10 +509,10 @@ sidebar:
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/drives-overview-supertask-concept.html"
-                - title: Replace EF600 drive
-                  url: "/maintenance-ef600/drives-replace-supertask-task.html"
                 - title: Replace EF300 drive
                   url: "/maintenance-ef600/drives-replace-EF300-task.html"
+                - title: Replace EF600 drive
+                  url: "/maintenance-ef600/drives-replace-supertask-task.html"
               - title: Fans
                 pdf-filename: EF300-EF600 Maintain Fans
                 entries:
