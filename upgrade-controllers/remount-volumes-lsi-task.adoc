@@ -9,21 +9,21 @@ summary: You remount volumes if your controller upgrade results in changing the 
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure if your controller upgrade results in changing the vendor ID from LSI to NETAPP.
+If your controller upgrade results in changing the vendor ID from LSI to NETAPP, follow the appropriate procedure for your host type:
+
+* <<Remount volumes on an AIX host>>
+* <<Remount volumes on a VMware host>>
+* <<Remount volumes on a Windows host>>
 
 == Remount volumes on an AIX host
 
 After you replace the controllers, you might observe that the host shows the new volumes on the storage array, but also shows the original volumes as failed.
 
-.Steps
+.Step
 
-. If failed volumes appear, run the `cfgmgr` command.
+If failed volumes appear, run the `cfgmgr` command.
 
 == Remount volumes on a VMware host
-
-You address problems that might appear on VMware hosts after the controller upgrade.
-
-.About this task
 
 After you replace the controllers, you might observe the following conditions:
 
@@ -41,7 +41,7 @@ After you replace the controllers, you might observe the following conditions:
 
 == Remount volumes on a Windows host
 
-You remount volumes on a Windows host to enable attached hosts to perform I/O operations with the volumes located on the upgraded storage array.
+After you replace the controllers, you must remount volumes on a Windows host to enable attached hosts to perform I/O operations with the volumes located on the upgraded storage array.
 
 .Steps
 

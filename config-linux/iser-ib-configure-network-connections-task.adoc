@@ -14,7 +14,7 @@ If your configuration uses the iSER over InfiniBand protocol, perform the steps 
 
 .Steps
 
-. From System Manager, go to menu:Settings[System > Configure iSER over Infiniband Ports]. Refer to the System Manager online help for furhter instructions.
+. From System Manager, go to menu:Settings[System > Configure iSER over Infiniband Ports]. Refer to the System Manager online help for further instructions.
 +
 Put the array iSCSI addresses on the same subnet as the host port(s) you will use to create iSCSI sessions. For addresses, see your xref:iser-ib-worksheet-concept.adoc[iSER worksheet].
 

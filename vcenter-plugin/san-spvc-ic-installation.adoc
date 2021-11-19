@@ -6,6 +6,7 @@ summary: Install the SANtricity Storage Plugin for vCenter.
 ---
 
 = Install the Storage Plugin for vCenter
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,7 +15,7 @@ summary: Install the SANtricity Storage Plugin for vCenter.
 
 
 [.lead]
-Follow these instructions to install the Storage Plugin for vCenter and verify the plugin registration.
+You can install the Storage Plugin for vCenter and verify the plugin registration.
 
 == Review installation prerequisites
 
@@ -62,6 +63,7 @@ If necessary, you can change the Certificate Validation and Web Service Port set
 . Verify that the Application Server (vCP) service, *NetApp SANtricity Storage Plugin for vCenter*,  was installed and the service has started.
 
 == Register the plugin with a vCenter Server Appliance
+
 After the plugin software is installed, register the plugin with a vCSA.
 
 [NOTE]
@@ -86,7 +88,7 @@ The logs are saved to `%install_dir%/working/logs/vc-registration.log`.
 After the plugin is installed and the registration script has executed, verify that the plugin successfully registered with the vCenter Server Appliance.
 
 . Open the vSphere Client to the vCenter Server Appliance.
-. On the menu bar, select *Administrator > Client Plugins*.
+. On the menu bar, select menu:Administrator[Client Plugins].
 . Make sure the SANtricity Storage Plugin for vCenter is listed as *Enabled*.
 +
 If the plugin is listed as Disabled with an error message stating that it cannot communicate with the application server, verify that the port number defined for the application server is enabled to pass through any firewalls that might be in use. The default application server Transmission Control Protocol (TCP) port number is 8445.

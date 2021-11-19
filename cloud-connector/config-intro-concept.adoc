@@ -164,7 +164,7 @@ NOTE: If an existing database configuration is detected on the specified target 
 
 . Click *Test Connection* to verify the entered S3 credentials.
 +
-NOTE: Some S3-compliant accounts may require secured HTTP connections. For information on placing a StorageGRID certificate in the keystore, see link:install-intro-concept.html#add-storagegrid-certificate-into-a-keystore[Add StorageGRID certifcate into a keystore].
+NOTE: Some S3-compliant accounts may require secured HTTP connections. For information on placing a StorageGRID certificate in the keystore, see link:install-intro-concept.html#add-storagegrid-certificate-into-a-keystore[Add StorageGRID certificate into a keystore].
 
 . Click *Next*.
 +

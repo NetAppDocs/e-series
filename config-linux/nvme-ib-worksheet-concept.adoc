@@ -15,7 +15,7 @@ You can generate and print a PDF of this page, and then use the following worksh
 
 NOTE: The software initiator NQN is determined during the task.
 
-Locate and document the initiator NQN from each host. The NQN is typically found in the /ect/nvme/hostnqn file.
+Locate and document the initiator NQN from each host. The NQN is typically found in the /etc/nvme/hostnqn file.
 
 [options="header"]
 |===
