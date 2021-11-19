@@ -19,10 +19,9 @@ The download package includes the Web Services Proxy and the Unified Manager int
 
 .Steps
 
-. Go to http://mysupport.netapp.com/eservice/Download.jsp/[NetApp Downloads^].
-. Select *Downloads* > *Software*.
-. From *E-Series SANtricity Web Services (REST API)*, select the *Web Services Proxy platform*.
-. Follow the instructions to download the readme file and the software installation file. Make sure you select the correct download package for your server (for example, EXE for Windows; BIN or RPM for Linux).
+. Go to https://mysupport.netapp.com/site/downloads[NetApp Support - Downloads^].
+. Select *E-Series SANtricity Web Services Proxy*.
+. Follow the instructions to download the file. Make sure you select the correct download package for your server (for example, EXE for Windows; BIN or RPM for Linux).
 . Download the installation file to the server where you want to install the proxy and Unified Manager.
 
 == Install on Windows or Linux server

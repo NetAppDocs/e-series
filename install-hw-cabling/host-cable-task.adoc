@@ -17,24 +17,22 @@ A direct-attached topology connects host adapters directly to controllers in you
 
 The following figure shows an example connection. To help ensure maximum performance, use all available host adapter ports.
 
-=== Two hosts and two controllers
+.Two hosts and two controllers
 
 image::../media/topology_host_direct_generic_web_low.png[]
 
-image:../media/legend_icon_01_inst-hw-cabling.png[] Connect each host adapter port directly to the host ports on the controllers.
+*(1)* _Connect each host adapter port directly to the host ports on the controllers._
 
 == Cabling for a switch topology
 
 A switch topology uses switches to connect hosts to the controllers in your storage system. The switch must support the connection type used between the host and the controller.
 
-The following figure shows an example connection.
+The following figure shows an example connection. For switches that provide provisioning capability, you should isolate each initiator and target pair.
 
-For switches that provide provisioning capability, you should isolate each initiator and target pair.
-
-=== Two hosts and two switches
+.Two hosts and two switches
 
 image::../media/topology_host_fabric_generic.png[]
 
-image:../media/legend_icon_01_inst-hw-cabling.png[]Connect each host adapter directly to the switch.
+*(1)* _Connect each host adapter directly to the switch._
 
-image:../media/legend_icon_02_inst-hw-cabling.png[] Connect each switch directly to the host ports on the controllers. To help ensure maximum performance, use all available host adapter ports.
+*(2)* _Connect each switch directly to the host ports on the controllers. To help ensure maximum performance, use all available host adapter ports._

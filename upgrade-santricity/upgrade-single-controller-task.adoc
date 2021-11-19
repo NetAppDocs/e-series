@@ -5,23 +5,36 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, upgrade SAN
 summary: Upgrade software and firmware for a single E-Series controller.
 ---
 = Upgrade software and firmware for a single controller
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to upgrade a single controller, which ensures that you have all the latest features and fixes.
+You can upgrade a single controller, which ensures that you have all the latest features and fixes.
 
 This process involves upgrading the storage array's software and, optionally, the IOM firmware and the nonvolatile static random access memory (NVSRAM).
 
 .Before you begin
 
 * Review link:overview-upgrade-consider-task.html[Upgrade considerations].
+* Determine if you want to upgrade the controller NVSRAM file at the same time as the OS firmware.
++
+Normally, you should upgrade all components at the same time. However, you might decide not to upgrade the controller NVSRAM file if your file has either been patched or is a custom version and you do not want to overwrite it.
+* Determine if you want to upgrade your IOM firmware.
++
+Normally, you should upgrade all components at the same time. However, you might decide not to upgrade the IOM firmware if you do not want to upgrade it as part of the SANtricity OS software upgrade or if technical support has instructed you to downgrade your IOM firmware (you can only downgrade firmware by using the command line interface).
+* Decide if you want to activate your OS upgrade now or later.
++
+Reasons for activating later might include:
+
+ ** *Time of day* – Activating the software and firmware can take a long time, so you might want to wait until I/O loads are lighter. The controllers fail over during activation so performance might be lower than usual until the upgrade completes.
+ ** *Type of package* – You might want to test the new software and firmware on one storage array before upgrading the files on other storage arrays.
 
 == Step 1: Download software files from support site
 
 In this step, you go to the NetApp Support site to save the new downloadable package (DLP) software files to your management host system.
 
-The time it takes to upgrade depends on your storage array configuration and the components that you are upgrading.
+The time required for the upgrade depends on your storage array configuration and the components that you are upgrading.
 
 .Steps
 
@@ -29,35 +42,34 @@ The time it takes to upgrade depends on your storage array configuration and the
 +
 CAUTION: If you are upgrading SANtricity OS on a StorageGRID appliance (for example, SG5612 or SG5760), you need to stop I/O activity by placing the appliance into maintenance mode before continuing with this procedure, or data could be lost. For detailed steps, see the installation and maintenance instructions for your StorageGRID appliance.
 
-. From the System Manager interface, select *Support* > *Upgrade Center*.
-. In the area labeled SANtricity OS Controller Software upgrade, click *NetApp Support*.
-. On the Support web site, click the *Downloads* tab, and then select *Software*.
-. Select *SANtricity OS Controller Software*.
+. From the System Manager interface, select menu:Support[Upgrade Center].
+. In the area labeled "SANtricity OS Software upgrade," click *NetApp SANtricity OS Downloads* to open the NetApp Support site.
+. From the Downloads page, select *E-Series SANtricity OS Controller Software*.
 +
 NOTE: Digitally signed firmware is required in version 8.42 and above. If you attempt to download unsigned firmware, an error is displayed and the download is aborted.
 
-. Follow the remaining instructions.
-+
-The file to download has a filename similar to `E28xx_1140` with a .zip or .tar.gz extension.
-
-. If you do NOT want to upgrade the IOM firmware at this time, click *Suspend IOM Auto-Synchronization*.
-+
-If you have a storage array with a single controller, the IOM firmware is not upgraded.
+. Follow the on-screen instructions to download the most recent OS software for your controller model. If you also want to upgrade the NVSRAM, download the NVSRAM file for a single controller.
 
 == Step 2: Transfer software files to the controllers
 
-In this step, you transfer the software files to your controllers so you can begin the upgrade process. The components are copied from the management client to the controllers and placed in a staging area in flash memory.
+In this step, you transfer the software files to your controller so you can begin the upgrade process. The components are copied from the management client to the controllers and placed in a staging area in flash memory.
 
 CAUTION: *Risk of data loss or risk of damage to the storage array* -- Do not make changes to the storage array while the upgrade is occurring. Maintain power to the storage array.
 
 .Steps
 
-. From the Upgrade Center in System Manager, click *Begin Upgrade* from *SANtricity OS Software upgrade*.
+. (Optional). If you are planning to perform an upgrade during a specific maintenance window, you might want to run a pre-upgrade health check to determine if there are any major storage array problems in advance. If this is the case, select *pre-upgrade health check* from the Upgrade Center in System Manager (menu:Support[Upgrade Center]), and follow any on-screen instructions. Otherwise, you can skip this step, because a health check is part of the upgrade process.
+
+. If you do NOT want to upgrade the IOM firmware at this time, click *Suspend IOM Auto-Synchronization* and follow the instructions in the dialog box.
++
+If you have a storage array with a single controller, the IOM firmware is not upgraded.
+
+. From the Upgrade Center in System Manager, click *Begin Upgrade* from "SANtricity OS Software upgrade."
 +
 The Upgrade SANtricity OS Software dialog appears.
 
 . Select one or more files to begin the upgrade process:
- .. Select the SANtricity OS Software file by clicking *Browse* and navigating to the OS software file you downloaded from the Support web site.
+ .. Select the SANtricity OS Software file by clicking *Browse* and navigating to the OS software file you downloaded from the Support site.
  .. Select the Controller NVSRAM file by clicking *Browse* and navigating to the NVSRAM file that you downloaded from the Support site. Controller NVSRAM files have a filename similar to `N2800-830000-000.dlp`.
 
 +
@@ -73,7 +85,7 @@ You can cancel the operation during the pre-upgrade health check, but not during
 +
 The file is saved in the Downloads folder for your browser with the name, `drive_upgrade_log-timestamp.txt`.
 
-If you have already activated your software files, go to "Step 4: Complete software and firmware upgrade"; otherwise, go to "Step 3: Activate software files".
+If you have already activated your software files, go to <<Step 4: Complete software and firmware upgrade>>; otherwise, go to <<Step 3: Activate software files>>.
 
 == Step 3: Activate software files
 
@@ -83,8 +95,8 @@ When you perform the activation operation, the current software and firmware is 
 
 .Steps
 
-. From the System Manager interface, select *Support* > *Upgrade Center*.
-. In the area labeled SANtricity OS Controller Software upgrade, click *Activate*, and confirm that you want to perform the operation.
+. From the System Manager interface, select menu:Support[Upgrade Center].
+. In the area labeled "SANtricity OS Software upgrade," click *Activate*, and confirm that you want to perform the operation.
 . (Optional) To see a list of what was upgraded, click *Save Log*.
 +
 The file is saved in the Downloads folder for your browser with the name, `drive_upgrade_log-timestamp.txt`.
@@ -99,8 +111,8 @@ Complete the software and firmware upgrade by verifying the versions in the Soft
 
 .Steps
 
-. Verify that all components appear on the Hardware page.
-. Verify the new software and firmware versions by checking the Software and Firmware Inventory dialog box (go to *Support* > *Upgrade Center*, and then click the link for *Software and Firmware Inventory*).
+. From System Manager, verify that all components appear on the Hardware page.
+. Verify the new software and firmware versions by checking the Software and Firmware Inventory dialog box (go to menu:Support[Upgrade Center], and then click the link for *Software and Firmware Inventory*).
 . If you upgraded controller NVSRAM, any custom settings that you have applied to the existing NVSRAM are lost during the process of activation. You need to apply the custom settings to the NVSRAM again after the process of activation is complete.
 . If any of the following errors occur during the upgrade procedure, take the appropriate recommended action.
 +
@@ -188,6 +200,6 @@ Contact technical support to resolve this issue.
 
 |===
 
-.Result
+.What's next?
 
 Your controller software upgrade is complete. You can resume normal operations.

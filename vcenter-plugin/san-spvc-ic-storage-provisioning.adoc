@@ -6,6 +6,7 @@ summary: Use the Plugin for vCenter to create volumes, assign volumes to hosts, 
 ---
 
 = Provision storage in the plugin
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -27,8 +28,8 @@ Volumes are the only data layer visible to hosts. In a SAN environment, volumes 
 .Steps
 
 . From the Manage page, select the storage array.
-. Select *Provisioning > Manage Volumes*.
-. Select *Create > Volumes*.
+. Select menu:Provisioning[Manage Volumes].
+. Select menu:Create[Volumes].
 +
 The Select Host dialog box appears.
 
@@ -154,11 +155,11 @@ You can allow the Host Context Agent (HCA) to automatically detect the hosts, an
 .Steps
 
 . From the Manage page, select the storage array with the host connection.
-. Select *Provisioning > Configure Hosts*.
+. Select menu:Provisioning[Configure Hosts].
 +
 The Configure Hosts page opens.
 
-. Select *Storage > Hosts*.
+. Select menu:Storage[Hosts].
 +
 The table lists the automatically created hosts.
 
@@ -179,11 +180,11 @@ Read the following guidelines:
 
 .Steps
 . From the Manage page, select the storage array with the host connection.
-. Select *Provisioning > Configure Hosts*.
+. Select menu:Provisioning[Configure Hosts].
 +
 The Configure Hosts page opens.
 
-. Click *Create > Host*.
+. Click menu:Create[Host].
 +
 The Create Host dialog box appears.
 
@@ -221,7 +222,7 @@ Currently, the only iSCSI authentication method used is CHAP.
 +
 After the host is successfully created, the system creates a default name for each host port configured for the host (user label). The default alias is `<Hostname_Port Number>`. For example, the default alias for the first port created for host IPT is `IPT_1`.
 
-. Next, you must assign a volume to a host or a host cluster so it can be used for I/O operations.  Select *Provisioning > Configure Hosts*.
+. Next, you must assign a volume to a host or a host cluster so it can be used for I/O operations.  Select menu:Provisioning[Configure Hosts].
 +
 The Configure Hosts page opens.
 

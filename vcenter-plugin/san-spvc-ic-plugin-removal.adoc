@@ -13,7 +13,7 @@ summary: Remove the Plugin for vCenter.
 :imagesdir: ./media/
 
 [.lead]
-Follow these instructions to remove the plugin from the vCenter Server Appliance and to uninstall the plugin webserver from the application host.
+You can remove the plugin from the vCenter Server Appliance and uninstall the plugin webserver from the application host.
 
 These are two distinct steps that you can perform in any order. However, if you choose to remove the plugin webserver from the application host before unregistering the plugin, the registration script is removed during that process and you cannot use Method 1 to unregister.
 

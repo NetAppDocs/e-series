@@ -17,7 +17,7 @@ A direct topology connects your controller directly to an Ethernet network.
 
 You must connect management port 1 on each controller for out-of-band management and leave port 2 available for access to the storage array by technical support.
 
-=== Direct storage management connections
+.Direct storage management connections
 
 image::../media/74167.gif[]
 
@@ -27,6 +27,6 @@ A fabric topology uses a switch to connect your controller to an Ethernet networ
 
 You must connect management port 1 on each controller for out-of-band management and leave port 2 available for access to the storage array by technical support.
 
-=== Fabric storage management connections
+.Fabric storage management connections
 
 image::../media/74110.gif[]

@@ -19,7 +19,7 @@ For duplex controller-drive trays, you replace both controllers. For simplex con
 
 * *Trays and shelves*
 +
-Storage arrays with an E2800 or E5700 controller shelf typically use SANtricity System Manager. You might also use the Enterprise Management Window (EMW) from SANtricity Storage Manager to manage E2800 or E5700 controller shelves. All other controller-drive trays referenced in this procedure use SANtricity Storage Manager.
+Storage arrays with an E2800 or E5700 controller shelf are typically managed with the SANtricity System Manager user interface. You might also use the SANtricity Storage Manager interface to manage E2800 or E5700 controller shelves. All other controller-drive trays referenced in this procedure use SANtricity Storage Manager.
 
 * *Controller batteries*
 +
