@@ -9,7 +9,9 @@ summary: You can configure the I/O directed to the device target based on your L
 :imagesdir: ../media/
 
 [.lead]
-You can configure the I/O directed to the device target based on your Linux version. DM-MP manages the physical paths underlying these virtual targets.
+You can configure the I/O directed to the device target based on which OS (and by extension multipathing method) you are using.
+
+For RHEL 7 and SLES 12, I/O is directed to virtual device targets by the Linux host. DM-MP manages the physical paths underlying these virtual targets.
 
 == Virtual devices are I/O targets
 
