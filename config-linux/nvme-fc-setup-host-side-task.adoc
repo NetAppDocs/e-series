@@ -35,7 +35,7 @@ The following procedure is for RHEL 7, RHEL 8, SLES 12, and SLES 15 using Broadc
 
 .. For RHEL 7 only, download and install an external Broadcom Autoconnect script for NVMe/FC connections through the https://www.broadcom.com/support/download-search[Broadcom website^].
 
-.. Enter the keyword *Autoconnect Script File for Inbox NVMe over FC Drivers* and choose latest version specific to your OS.
+... Enter the keyword *Autoconnect Script File for Inbox NVMe over FC Drivers* and choose latest version specific to your OS.
 
 .. For Qlogic, modify `/lib/systemd/system/nvmefc-boot-connections.service` after installing the Broadcom NVMe/FC autoconnect script to contain the following:
 +
@@ -61,7 +61,9 @@ systemctl enable nvmefc-boot-connections.service
 systemctl start nvmefc-boot-connections.service
 ----
 
-NOTE: The remaining steps are Emulex HBAs only.
+== Emulex HBA host side setup
+
+NOTE: The following steps are for Emulex HBAs only.
 
 . Set `lpfc_enable_fc4_type` to `3` to enable SLES12 SP4 as an NVMe/FC initiator.
 +
