@@ -18,13 +18,13 @@ You must install the required packages on your system.
 * For Red Hat (RHEL) hosts, verify the packages are installed by running `rpm -q device-mapper-multipath`
 * For SLES hosts, verify the packages are installed by running `rpm -q multipath-tools`
 +
-NOTE: Refer to the NetApp Interoperability Matrix Tool (IMT) to ensure any required updates are installed as multipathing may not work correctly with the GA versions of SLES or RHEL.
-
+NOTE: Refer to  https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] to ensure any required updates are installed as multipathing may not work correctly with the GA versions of SLES or RHEL.
 
 .About this task
 
-Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. You can use one of two methods of multipathing for NVMe, depending on which OS version you are running. For RHEL 7 and SLES 12, use the device mapper multipath (DMMP). For SLES 15, use the native NVMe multipathing solution.
+RHEL 7 and SLES 12 use Device Mapper Multipath (DMMP) for multipathing when using NVMe over Infiniband. RHEL 8 and SLES 15 use a built in Native NVMe Failover. Depending on which OS you are running, some additional configuration of multipath is required to get it running properly.
 
+== Enable Device Mapper Multipath (DMMP) for RHEL 7 or SLES 12
 By default, DM-MP is disabled in RHEL and SLES. Complete the following steps to enable DM-MP components on the host.
 
 .Steps
@@ -61,3 +61,36 @@ devices {
 ----
 # systemctl status multipathd
 ----
+
+== Setting up RHEL 8 with Native NVMe Multipathing
+
+Native NVMe Multipathing is disabled by default in RHEL 8 and must be enabled using the steps below.
+
+. Setup `modprobe` rule to turn on Native NVMe Multipathing.
++
+----
+# echo "options nvme_core multipath=y" >> /etc/modprobe.d/50-nvme_core.conf
+----
+
+. Remake `initramfs` with new `modprobe` parameter.
++
+----
+# dracut -f
+----
+
+. Reboot server to bring it up with the Native NVMe Multipathing enabled.
++
+----
+# reboot
+----
+
+. Verify Native NVMe Multipathing has been enabled after the host boots back up.
++
+----
+# cat /sys/module/nvme_core/parameters/multipath
+----
+.. If the command output is `N`, then Native NVMe Multipathing is still disabled.
+
+.. If the command output is `Y`, then Native NVMe Multipathing is enabled and any NVMe devices you discover will use it.
+
+NOTE: For SLES 15, Native NVMe Multipathing is enabled by default and no additional configuration is required.

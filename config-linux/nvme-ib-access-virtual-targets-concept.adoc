@@ -9,7 +9,7 @@ summary: 'Configure the I/O directed to the device target based on your version 
 :imagesdir: ../media/
 
 [.lead]
-You can configure the I/O directed to the device target based on your version of SLES (SUSE Linux version).
+You can configure the I/O directed to the device target based on which OS (and by extension multipathing method) you are using.
 
 For RHEL 7 and SLES 12, I/O is directed to virtual device targets by the Linux host. DM-MP manages the physical paths underlying these virtual targets.
 
