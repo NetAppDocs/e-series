@@ -13,20 +13,13 @@ A subnet manager must be running in your environment on your switch or on your h
 
 .Steps
 
-. Install the opensm package on any hosts that will be running the subnet manager.
-. Use the ``ibstat -p``command to find `GUID0` and `GUID1` of the HBA ports. For example:
+. Install the `opensm` package on any hosts that will be running the subnet manager.
+. Use the `ibstat -p` command to find `GUID0` and `GUID1` of the HBA ports. For example:
 +
 ----
 # ibstat -p
  0x248a070300a80a80
  0x248a070300a80a81
-----
-
-. Start two instances of the subnet manager, one for each subnet, by adding the following commands to `/etc/rc.d/after.local` for SUSE or `etc/rc.d/rc.local` for Redhat. Substitute the values you found in the last step for `GUID0` and `GUID1`. For `P0` and `P1`, use the subnet manager priorities, with 1 being the lowest and 15 the highest:
-+
-----
- opensm -B -g GUID0 -p P0 -f /var/log/opensm-ib0.log
- opensm -B -g GUID1 -p P1 -f /var/log/opensm-ib1.log
 ----
 
 . Enable Subnet Manager on each port of the connected HCA on the host:
