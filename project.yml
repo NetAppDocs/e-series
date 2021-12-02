@@ -302,7 +302,7 @@ sidebar:
                     url: "/config-linux/nvme-ib-access-physical-targets-concept.html"
                   - title: Create filesystems (RHEL 7 and SLES 12)
                     url: "/config-linux/nvme-ib-create-filesystems-sles-12-task.html"
-                  - title: Create filesystems (SLES 15)
+                  - title: Create filesystems (RHEL 8 and SLES 15)
                     url: "/config-linux/nvme-ib-create-filesystems-sles-15-task.html"
                   - title: Verify storage access on the host
                     url: "/config-linux/nvme-ib-verify-storage-access-host-task.html"
@@ -340,7 +340,7 @@ sidebar:
                     url: "/config-linux/nvme-roce-access-physical-targets-concept.html"
                   - title: Create filesystems (RHEL 7 and SLES 12)
                     url: "/config-linux/nvme-roce-create-filesystems-sles-12-task.html"
-                  - title: Create filesystems (SLES 15)
+                  - title: Create filesystems (RHEL 8 and SLES 15)
                     url: "/config-linux/nvme-roce-create-filesystems-sles-15-task.html"
                   - title: Verify storage access on host
                     url: "/config-linux/nvme-roce-verify-storage-access-host-task.html"
