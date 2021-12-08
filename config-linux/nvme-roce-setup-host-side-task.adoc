@@ -41,7 +41,7 @@ The variables used in this step are based on server hardware and the network env
 +
 *SLES 12 and SLES 15*
 +
-.. Create the example file `/etc/sysconfig/network/ifcfg-eth4` as follows:
+* Create the example file `/etc/sysconfig/network/ifcfg-eth4` as follows:
 +
 ----
 BOOTPROTO='static'
@@ -56,7 +56,7 @@ BOOTPROTO='static'
    STARTMODE='auto'
 ----
 +
-.. Create the file `/etc/sysconfig/network/ifcfg-eth5` as follows:
+* Create the file `/etc/sysconfig/network/ifcfg-eth5` as follows:
 +
 ----
 BOOTPROTO='static'
@@ -72,8 +72,8 @@ BOOTPROTO='static'
 ----
 +
 *RHEL 7 and RHEL 8*
-+
-.. Create the example file `/etc/sysconfig/network-scripts/ifcfg-eth4` as follows:
+
+* Create the example file `/etc/sysconfig/network-scripts/ifcfg-eth4` as follows:
 +
 ----
 BOOTPROTO='static'
@@ -88,7 +88,7 @@ BOOTPROTO='static'
   STARTMODE='auto'
 ----
 +
-.. Create the file ``/etc/sysconfig/network-scripts/ifcfg-eth5` as follows:
+* Create the file `/etc/sysconfig/network-scripts/ifcfg-eth5` as follows:
 +
 ----
 BOOTPROTO='static'
