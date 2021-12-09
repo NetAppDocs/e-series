@@ -17,7 +17,7 @@ For RHEL 7 and SLES 12, I/O is directed to virtual device targets by the Linux h
 
 Make sure you are running I/O only to the virtual devices created by DM-MP and not to the physical device paths. If you are running I/O to the physical paths, DM-MP cannot manage a failover event and the I/O fails.
 
-You can access these block devices through the `dm` device or the `symlink` in `/dev/mapper`, for example:
+You can access these block devices through the `dm` device or the `symlink` in `/dev/mapper`; for example:
 
 ----
 /dev/dm-1
