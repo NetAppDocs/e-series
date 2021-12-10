@@ -5,46 +5,47 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, drive firmw
 summary: You upgrade your drives' firmware to make sure you have all the latest features and bug fixes.
 ---
 = Upgrade drive firmware
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 Follow this procedure to upgrade your drives' firmware, which ensures you have all the latest features and fixes.
 
-== Step 1: Download drive firmware files from support site
+== Step 1: Download drive firmware files
 
 In this step, you go to the NetApp Support site to download the drive firmware files to your management client.
 
-===== Steps
+.Steps
 
-. In SANtricity System Manager, select *Support* > *Upgrade Center*.
-. Under Drive Firmware upgrade, click *NetApp Support*.
-. On the NetApp Support web site, click the *Downloads* tab, and then select *Firmware*.
-. Select *Disk Drive & Firmware Matrix*.
-. Follow the remaining instructions.
+. In SANtricity System Manager, select menu:Support[Upgrade Center].
+. Under Drive Firmware upgrade, click *NetApp Support* and log in to the NetApp Support site.
+. From the Support site, click the *Downloads* tab, and then select *Disk Drive & Firmware Matrix*.
+. Select *E-Series and EF-Series Disk Firmware.*
+. Follow the on-screen instructions to download the files.
 
 == Step 2: Begin drive firmware upgrade
 
 In this step, you upgrade the drives' firmware.
 
-===== Before you begin
+.Before you begin
 
-* You have backed up your data using disk-to-disk backup, volume copy (to a volume group not affected by the planned firmware upgrade), or a remote mirror.
-* The storage array has an Optimal status.
-* All drives have an Optimal status.
-* No configuration changes are running on the storage array.
-* If the drives are capable of only an offline upgrade, I/O activity to all volumes associated with the drives is stopped.
+* Back up your data using disk-to-disk backup, volume copy (to a volume group not affected by the planned firmware upgrade), or a remote mirror.
+* Make sure the storage array has an Optimal status.
+* Make sure all drives have an Optimal status.
+* Make sure no configuration changes are running on the storage array.
+* Understand that if the drives are capable of only an offline upgrade, I/O activity to all volumes associated with the drives is stopped.
 
-===== Steps
+.Steps
 
-. Under Drive Firmware upgrade, click *Begin Upgrade*.
+. From the System Manager Upgrade Center (menu:Support[Upgrade Center]), click *Begin Upgrade* from the "Drive Firmware upgrade" section.
 +
 A dialog box appears, which lists the drive firmware files currently in use.
 
 . Extract (unzip) the files you downloaded from the Support site.
 . Click *Browse*, and select the new drive firmware files that you downloaded from the Support site.
 +
-Drive firmware files have a filename similar to D_HUC101212CSS600_30602291_MS01_2800_0002 with the extension of .dlp.
+Drive firmware files have a filename similar to `D_HUC101212CSS600_30602291_MS01_2800_0002` with the extension of `.dlp`.
 +
 You can select up to four drive firmware files, one at a time. If more than one drive firmware file is compatible with the same drive, you get a file conflict error. Decide which drive firmware file you want to use for the upgrade and remove the other one.
 
@@ -160,6 +161,6 @@ Contact technical support to resolve this issue.
 
 |===
 
-== Result
+.What's next?
 
 Your drive firmware upgrade is complete. You can resume normal operations.

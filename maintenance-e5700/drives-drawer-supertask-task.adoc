@@ -5,20 +5,20 @@ keywords: E5700 drive drawer, DE460C drive shelf, replace E5700 drive drawer, fa
 summary: Replace a drive drawer in an E5700.
 ---
 = Replace E5700 drive drawer (60-drive)
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to replace a drive drawer in an E5700 array.
+You can replace a drive drawer in an E5700 array.
 
-== About this task
+.About this task
 
 The steps to replace a failed drive drawer in an E5760 controller shelf or a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection. If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must stop all host I/O activity and power off the shelf before replacing the drive drawer.
 
-== Before you begin
+.Before you begin
 
 * Review drive handling requirements in link:drives-overview-supertask-concept.html[Requirements for E5700 drive replacement].
-* You must install SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
 * Make sure the drive shelf meets all of these conditions:
  ** The drive shelf cannot be over temperature.
  ** Both fans must be installed and have a status of Optimal.
@@ -27,15 +27,25 @@ The steps to replace a failed drive drawer in an E5760 controller shelf or a DE4
 
 CAUTION: *Possible loss of data access* -- If a volume is already in a Degraded state, and you remove drives from the drive drawer, the volume can fail.
 
+.What you'll need
+
+* A replacement drive that is supported by NetApp for your controller shelf or drive shelf.
+* An ESD wristband, or you have taken other antistatic precautions.
+* A flashlight.
+* A permanent marker to note the exact location of each drive as you remove the drive from the drawer.
+* Access to the storage array's command line interface (CLI). If you do not have access to the CLI, you can do one of the following:
+** *For SANtricity System Manager (version 11.60 and above)* -- Download the CLI package (zip file) from System Manager. Go to menu:Settings[System > Add-ons > Command Line Interface]. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
+** *For SANtricity Storage Manager/Enterprise Management Window (EMW)* -- Follow the instructions in the express guide to download and install the software. You can run CLI commands from the EMW by selecting menu:Tools[Execute Script].
+
 
 == Step 1: Prepare to replace drive drawer (60-drive)
 
 Prepare to replace a drive drawer by determining if you can perform the replacement procedure while the drive shelf is online or if you need to stop host I/O activity and power off any of the shelves that are powered on. If you are replacing a drawer in a shelf with Drawer Loss Protection, there is no need to stop host I/O activity and power off any of the shelves.
 
-===== Steps
+.Steps
 
 . Determine if the drive shelf is powered on.
- ** If the power is off, you do not need to issue the CLI command. Go to _Step 2: Remove cable chains_.
+ ** If the power is off, you do not need to issue the CLI command. Go to <<Step 2: Remove cable chains>>.
  ** If the power is on, go to the next step.
 . Type the following command on the command line, and press *Enter*:
 +
@@ -46,10 +56,10 @@ serviceAllowedIndicator=on;"
 +
 where:
 +
- ** <ctlr_IP1> is the identifier of the controller.
- ** array_password is the password for the storage array. You must enclose the value for array_password in double quotation marks ("").
- ** [trayID] is the identifier of the drive shelf that contains the drive drawer that you want to replace. Drive shelf ID values are 0 to 99. You must enclose the value for trayIDin square brackets.
- ** [drawerID] is the identifier of the drive drawer that you want to replace. Drawer ID values are 1 (top drawer) to 5 (bottom drawer). You must enclose the value for drawerIDin square brackets.
+ ** `<ctlr_IP1>` is the identifier of the controller.
+ ** `array_password` is the password for the storage array. You must enclose the value for array_password in double quotation marks ("").
+ ** `[trayID]` is the identifier of the drive shelf that contains the drive drawer that you want to replace. Drive shelf ID values are 0 to 99. You must enclose the value for `trayID` in square brackets.
+ ** `[drawerID]` is the identifier of the drive drawer that you want to replace. Drawer ID values are 1 (top drawer) to 5 (bottom drawer). You must enclose the value for `drawerID` in square brackets.
 This command ensures you can remove the top-most drawer in drive shelf 10:
 +
 ----
@@ -58,7 +68,7 @@ serviceAllowedIndicator=forceOnWarning;"
 ----
 +
 . Determine if you need to stop host I/O activity, as follows:
- ** If the command succeeds, you do not need to stop host I/O activity. All drives in the drawer are in pools or volume groups with Drawer Loss Protection. Go to Step 2: Remove cable chains.
+ ** If the command succeeds, you do not need to stop host I/O activity. All drives in the drawer are in pools or volume groups with Drawer Loss Protection. Go to <<Step 2: Remove cable chains>>.
 +
 CAUTION: *Possible damage to drives* -- Wait 30 seconds after the command completes before you open the drive drawer. Waiting 30 seconds allows the drives to spin down, which prevents possible damage to the hardware.
 
@@ -80,42 +90,36 @@ The green Cache Active LED on the back of each controller is on when cached data
 +
 image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[]
 +
-image:../media/legend_icon_01_maint-e5700.gif[] Cache Active LED
+*(1)* _Cache Active LED_
 
 . From the Home page of SANtricity System Manager, select *View Operations in Progress*.
 . Wait for all operations to complete before continuing with the next step.
 . Power off the shelves as follows:
 +
-If you are replacing a drawer in a shelf *with* Drawer Loss Protection:
+* _If you are replacing a drawer in a shelf *with* Drawer Loss Protection_:
 +
 There is NO need to power off any of the shelves.
 +
-You can perform the replace procedure while the drive drawer is online, because the Set Drawer Service Action Allowed Indicator CLI command completed successfully.
+You can perform the replace procedure while the drive drawer is online, because the `Set Drawer Service Action Allowed Indicator` CLI command completed successfully.
 +
-If you are replacing a drawer in a _controller_ shelf *without* Drawer Loss Protection:
+* _If you are replacing a drawer in a *controller* shelf *without* Drawer Loss Protection_:
 
  .. Turn off both power switches on the controller shelf.
-Wait for all LEDs on the controller shelf to go dark.
+ .. Wait for all LEDs on the controller shelf to go dark.
 
 +
-If you are replacing a drawer in an _expansion_ drive shelf *without* Drawer Loss Protection:
+* _If you are replacing a drawer in an *expansion* drive shelf *without* Drawer Loss Protection_:
 
  .. Turn off both power switches on the controller shelf.
  .. Wait for all LEDs on the controller shelf to go dark.
  .. Turn off both power switches on the drive shelf.
-Wait two minutes for drive activity to stop.
+ .. Wait two minutes for drive activity to stop.
 
 == Step 2: Remove cable chains
 
 Remove both cable chains so you can remove and replace a failed drive drawer. The left and right cable chains allow the drawers to slide in and out.
 
-===== What you'll need
-
-* Make sure host I/O activity has stopped and the drive shelf or controller shelf is powered off, or issue the Set Drawer Attention Indicator CLI command.
-* An ESD wristband, or you have taken other antistatic precautions.
-* A flashlight.
-
-===== About this task
+.About this task
 
 Each drive drawer has left and right cable chains. The metal ends on the cable chains slide into corresponding vertical and horizontal guide rails inside the enclosure, as follows:
 
@@ -124,8 +128,9 @@ Each drive drawer has left and right cable chains. The metal ends on the cable c
 
 CAUTION: *Possible hardware damage* -- If the drive tray is powered on, the cable chain is energized until both ends are unplugged. To avoid shorting out the equipment, do not allow the unplugged cable chain connector to touch the metal chassis if the other end of the cable chain is still plugged in.
 
-===== Steps
+.Steps
 
+. Make sure host I/O activity has stopped and the drive shelf or controller shelf is powered off, or issue the `Set Drawer Attention Indicator` CLI command.
 . From the rear of the drive shelf, remove the right fan canister:
  .. Press the orange tab to release the fan canister handle.
 +
@@ -133,7 +138,7 @@ The figure shows the handle for the fan canister extended and released from the 
 +
 image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e5700.gif[]
 +
-image:../media/legend_icon_01_maint-e5700.gif[] Fan canister handle
+*(1)* _Fan canister handle_
 
  .. Using the handle, pull the fan canister out of the drive tray, and set it aside.
  .. If the tray is powered on, ensure that the left fan goes to its maximum speed.
@@ -149,7 +154,11 @@ The top cable chain is attached to drive drawer 1. The bottom cable chain is att
 +
 image::../media/trafford_cable_rail_1_maint-e5700.gif[]
 +
-image:../media/legend_icon_01_maint-e5700.gif[] Cable chain image:../media/legend_icon_02_maint-e5700.gif[] Vertical connector (connected to midplane) image:../media/legend_icon_03_maint-e5700.gif[] Horizontal connector (connected to drawer)
+*(1)* _Vertical connector (connected to midplane)_
++
+*(2)* _Cable chain_
++
+*(3)* _Horizontal connector (connected to drawer)_
 
 . For easy access, use your finger to move the cable chain on the right side to the left.
 . Disconnect any of the right cable chains from their corresponding vertical guide rail.
@@ -157,7 +166,9 @@ image:../media/legend_icon_01_maint-e5700.gif[] Cable chain image:../media/legen
 +
 image::../media/trafford_cable_rail_3_maint-e5700.gif[]
 +
-image:../media/legend_icon_01_maint-e5700.gif[] Orange ring on vertical guide rail image:../media/legend_icon_02_maint-e5700.gif[] Cable chain, partially removed
+*(1)* _Orange ring on vertical guide rail_
++
+*(2)* _Cable chain, partially removed_
 
  .. To unlatch the cable chain, insert your finger into the orange ring and press towards the middle of the system.
  .. To unplug the cable chain, carefully pull your finger toward you approximately 1 inch (2.5 cm). Leave the cable chain connector within the vertical guide rail. (If the drive tray is powered on, do not allow the cable chain connector to touch the metal chassis.)
@@ -168,7 +179,10 @@ The figure shows the horizontal connector on the right and the cable chain disco
 +
 image::../media/trafford_cable_rail_2_maint-e5700.gif[]
 +
-image:../media/legend_icon_01_maint-e5700.gif[] Orange ring on horizontal guide rail image:../media/legend_icon_02_maint-e5700.gif[] Cable chain, partially removed
+*(1)* _Orange ring on horizontal guide rail_
++
+*(2)* _Cable chain, partially removed_
+
 
  .. To unlatch the cable chain, gently insert your finger into the orange ring and push down.
 +
@@ -208,16 +222,17 @@ The LED could remain on for as long as a minute after you reinstall the fan whil
 
 Remove a failed drive drawer to replace it with a new one.
 
-===== What you'll need
 
-* An ESD wristband, or you have taken other antistatic precautions.
-* The right and left cable chains are removed from the drive drawer.
-* The right and left fan canisters are replaced.
-* A permanent marker to note the exact location of each drive as you remove the drive from the drawer.
+
 
 CAUTION: *Possible loss of data access* -- Magnetic fields can destroy all data on the drive and cause irreparable damage to the drive circuitry. To avoid loss of data access and damage to the drives, always keep drives away from magnetic devices.
 
-===== Steps
+.Steps
+
+. Make sure that:
+
+* The right and left cable chains are removed from the drive drawer.
+* The right and left fan canisters are replaced.
 
 . Remove the bezel from the front of the drive shelf.
 . Unlatch the drive drawer by pulling out on both levers.
@@ -241,7 +256,7 @@ image::../media/92_dwg_de6600_install_or_remove_drive_maint-e5700.gif[]
 +
 image::../media/92_pht_de6600_drive_drawer_release_lever_maint-e5700.gif[]
 +
-image:../media/legend_icon_01_maint-e5700.gif[] Drive drawer release lever
+*(1)* _Drive drawer release lever_
 
  .. Disengage both release levers by pulling the latches toward you.
  .. While holding both release levers, pull the drive drawer toward you.
@@ -251,21 +266,18 @@ image:../media/legend_icon_01_maint-e5700.gif[] Drive drawer release lever
 
 Install a new drive drawer to replace the failed one.
 
-===== What you'll need
+.Steps
 
-* A location to install each drive.
-* A replacement drive drawer.
-* A flashlight.
-
-===== Steps
-
+. Determine a location to install each drive.
 . From the front of the drive shelf, shine a flashlight into the empty drawer slot, and locate the lock-out tumbler for that slot.
 +
 The lock-out tumbler assembly is a safety feature that prevents you from being able to open more than one drive drawer at one time.
 +
 image::../media/92_pht_de6600_lock_out_tumbler_detail_maint-e5700.gif[]
 +
-image:../media/legend_icon_01_maint-e5700.gif[] Lock-out tumbler image:../media/legend_icon_02_maint-e5700.gif[] Drawer guide
+*(1)* _Lock-out tumbler_
++
+*(2)* _Drawer guide_
 
 . Position the replacement drive drawer in front of the empty slot and slightly to the right of center.
 +
@@ -287,12 +299,12 @@ Attach the cable chains so you can safely re-install the drives in the drive dra
 
 When attaching a cable chain, reverse the order you used when disconnecting the cable chain. You must insert the chain's horizontal connector into the horizontal guide rail in the enclosure before inserting the chain's vertical connector into the vertical guide rail in the enclosure.
 
-===== What you'll need
+.Steps
 
-* The new drive drawer installed.
-* Two replacement cable chains, marked as LEFT and RIGHT (on the horizontal connector next to the drive drawer).
+. Make sure that:
 
-===== Steps
+* You completed the step to install the new drive drawer.
+* You have two replacement cable chains, marked as LEFT and RIGHT (on the horizontal connector next to the drive drawer).
 
 . From the back of the drive shelf, remove the fan canister on the right side, and set it aside.
 . If the shelf is powered on, ensure that the left fan goes to its maximum speed.
@@ -310,7 +322,9 @@ The figure shows the horizontal and vertical guide rails for the second drive dr
 +
 image::../media/2860_dwg_both_guide_rails_maint-e5700.gif[]
 +
-image:../media/legend_icon_01_maint-e5700.gif[] Horizontal guide rail image:../media/legend_icon_02_maint-e5700.gif[] Vertical guide rail
+*(1)* _Horizontal guide rail_
++
+*(2)* _Vertical guide rail_
 
  .. Slide the vertical connector on the right cable chain into the vertical guide rail.
  .. After you have reconnected both ends of the cable chain, carefully pull on the cable chain to verify that both connectors are latched.
@@ -346,7 +360,7 @@ Complete the drive drawer replacement by reinserting the drives and replacing th
 
 CAUTION: *Possible loss of data access* -- You must install each drive in its original location in the drive drawer.
 
-===== Steps
+.Steps
 
 . Reinstall the drives in the drive drawer:
  .. Unlatch the drive drawer by pulling out on both levers at the front of the drawer.
@@ -362,7 +376,7 @@ The figure shows the right-side view of a drive, showing the location of the rai
 +
 image::../media/28_dwg_e2860_de460c_drive_cru_maint-e5700.gif[]
 +
-image:../media/legend_icon_01_maint-e5700.gif[] Raised button on the right side of the drive
+*(1)* _Raised button on the right side of the drive_
 
  .. Lower the drive straight down, making sure the drive is pressed all the way down into the bay, and then rotate the drive handle down until the drive snaps into place.
 +
@@ -387,6 +401,6 @@ CAUTION: *Risk of equipment malfunction* -- Make sure to completely close the dr
   .. Wait 10 minutes for the power-on process to complete.
   .. Confirm that both fans come on and that the amber LED on the back of the fans is off.
 
-== Result
+.What's next?
 
 Your drive drawer replacement is complete. You can resume normal operations.

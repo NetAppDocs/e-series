@@ -31,9 +31,10 @@ The following figure shows an example E2812 controller shelf, E2824 controller s
 
 image::../media/28_dwg_e2812_power_fan_canisters.gif[]
 
-image:../media/legend_icon_01_maint-e2800.gif[]Controller shelf with two power supplies (power-fan canisters) below the controller canisters.
+*(1)* _Controller shelf with two power supplies (power-fan canisters) below the controller canisters_
 
-The __Replace power supply__ procedure does not describe how to replace a failed power-fan canister in a DE1600 or DE5600 drive tray, which might be connected to the E5700 or E2800 controller shelves. For instructions for those drive tray models, refer to _Replacing a Power-Fan Canister in the DE1600 Drive Tray or the DE5600 Drive Tray_.
+
+The procedure for replacing a power supply does not describe how to replace a failed power-fan canister in a DE1600 or DE5600 drive tray, which might be connected to the E5700 or E2800 controller shelves. For instructions for those drive tray models, refer to link:https://library.netapp.com/ecm/ecm_download_file/ECMP1140874[Replacing a Power-Fan Canister in the DE1600 Drive Tray or the DE5600 Drive Tray^].
 
 === Requirements for replacing a power supply
 
@@ -58,7 +59,7 @@ You can replace a power canister in the following shelves:
 * E2860 controller shelves
 * DE460C drive shelf
 
-The _Replace power canister_ procedure does not describe how to replace a failed power canister in a DE6600 drive tray, which might be connected to the controller shelf.
+The procedure for replacing a power canister does not describe how to replace a failed power canister in a DE6600 drive tray, which might be connected to the controller shelf.
 
 The following figure shows the back of a DE460C drive shelf with the two power canisters:
 
@@ -95,7 +96,7 @@ You can replace a fan canister in the following shelves:
 * E2860 controller shelves
 * DE460C drive shelf
 
-The _Replace fan canister_ procedure does not describe how to replace a failed fan canister in a DE6600 drive tray, which might be connected to the controller shelf.
+The procedure for replacing a fan canister does not describe how to replace a failed fan canister in a DE6600 drive tray, which might be connected to the controller shelf.
 
 The following figure shows a fan canister:
 

@@ -9,21 +9,21 @@ summary: You remount volumes if your controller upgrade results in changing the 
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure if your controller upgrade results in changing the vendor ID from LSI to NETAPP.
+If your controller upgrade results in changing the vendor ID from LSI to NETAPP, follow the appropriate procedure for your host type:
+
+* <<Remount volumes on an AIX host>>
+* <<Remount volumes on a VMware host>>
+* <<Remount volumes on a Windows host>>
 
 == Remount volumes on an AIX host
 
 After you replace the controllers, you might observe that the host shows the new volumes on the storage array, but also shows the original volumes as failed.
 
-===== Steps
+.Step
 
-. If failed volumes appear, run the `cfgmgr` command.
+If failed volumes appear, run the `cfgmgr` command.
 
 == Remount volumes on a VMware host
-
-You address problems that might appear on VMware hosts after the controller upgrade.
-
-===== About this task
 
 After you replace the controllers, you might observe the following conditions:
 
@@ -31,7 +31,7 @@ After you replace the controllers, you might observe the following conditions:
 * The hosts still list the volumes on the storage array as having LSI vendor IDs. This might occur when the volumes were claimed by the LSI rule at the start and so continue to use the same LSI rule when the volumes come back on line.
 * The Display Name does not reflect the change from LSI to NetApp. This might occur because the display name became free test after initial discovery. In this case, you can change the Display Name manually.
 
-===== Steps
+.Steps
 
 . Perform a rescan on each host.
 . Halt all host I/O operations to this subsystem.
@@ -41,9 +41,9 @@ After you replace the controllers, you might observe the following conditions:
 
 == Remount volumes on a Windows host
 
-You remount volumes on a Windows host to enable attached hosts to perform I/O operations with the volumes located on the upgraded storage array.
+After you replace the controllers, you must remount volumes on a Windows host to enable attached hosts to perform I/O operations with the volumes located on the upgraded storage array.
 
-===== Steps
+.Steps
 
 . In the *Device Manager*, select *Show Hidden Devices*.
 . For each NETAPP SCSI Disk Device listed in the *Device Manager*, right-click on the entry, and select *Uninstall*.

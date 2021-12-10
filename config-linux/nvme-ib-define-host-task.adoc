@@ -1,17 +1,18 @@
 ---
 permalink: config-linux/nvme-ib-define-host-task.html
 sidebar: sidebar
-keywords: santricity, system, manager, define, host, send, data, storage, array, defining, define, require, attack, access, i/o
+keywords: define Linux host, express linux configuration, linux host,
 summary: Using SANtricity System Manager, you define the hosts that send data to the storage array. Defining a host is one of the steps required to let the storage array know which hosts are attached to it and to allow I/O access to the volumes.
 ---
 = Define a host
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 Using SANtricity System Manager, you define the hosts that send data to the storage array. Defining a host is one of the steps required to let the storage array know which hosts are attached to it and to allow I/O access to the volumes.
 
-===== Before you begin
+.About this task
 
 Keep these guidelines in mind when you define a host:
 
@@ -20,16 +21,15 @@ Keep these guidelines in mind when you define a host:
 * This operation does not succeed if the name you choose is already in use.
 * The length of the name cannot exceed 30 characters.
 
-===== Steps
+.Steps
 
-. Select *Storage* > *Hosts*.
-. Click *Create* > *Host*.
+. Select menu:Storage[Hosts].
+. Click menu:Create[Host].
 +
 The Create Host dialog box appears.
 
 . Select the settings for the host as appropriate.
-+
-Field details
+
 +
 [options="header"]
 |===
@@ -43,13 +43,11 @@ Host operating system type
 a|
 Select one of the following options from the drop-down list:
 
- ** *SANtricity 11.60 and newer*
+** *Linux* for SANtricity 11.60 and newer
 +
-`Linux`
 
- ** *Pre SANtricity 11.60*
+** *Linux DM-MP (Kernel 3.10 or later)* for pre-SANtricity 11.60
 +
-`Linux DM-MP (Kernel 3.10 or later)``
 
 a|
 Host interface type
@@ -66,9 +64,9 @@ If the host ports have logged in, you can select host port identifiers from the 
 
  ** *Manual add*
 +
-If the host ports have not logged in, look at `/etc/nvme/hostnqn` on the host to find the hostnqn identifiers and associate them with the host definition.
+If the host ports have not logged in, look at /etc/nvme/hostnqn on the host to find the hostnqn identifiers and associate them with the host definition.
 +
-You can manually enter the host port identifiers or copy/paste them from the `/etc/nvme/hostnqn` file (one at a time) into the *Host ports* field.
+You can manually enter the host port identifiers or copy/paste them from the /etc/nvme/hostnqn file (one at a time) into the *Host ports* field.
 +
 You must add one host port identifier at a time to associate it with the host, but you can continue to select as many identifiers that are associated with the host. Each identifier is displayed in the *Host ports* field. If necessary, you also can remove an identifier by selecting the *X* next to it.
 
@@ -77,7 +75,7 @@ You must add one host port identifier at a time to associate it with the host, b
 
 . Click *Create*.
 
-===== Result
+.Result
 
 After the host is successfully created, SANtricity System Manager creates a default name for each host port configured for the host.
 

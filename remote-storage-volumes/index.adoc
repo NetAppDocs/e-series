@@ -1,22 +1,28 @@
 ---
 permalink: remote-storage-volumes/index.html
 sidebar: sidebar
-keywords: overview, remote, storage, volume, feature, import, data, device, e-series, volume, streamline, equipment, upgrade, streamline, migration, capabilities, capability, system
-summary: Use the Remote Storage Volumes feature to import data from a remote storage device directly to a local E-Series volume. You can use the feature to help streamline the process for equipment upgrades and/or provide data migration capabilities to move data from non-E-Series devices to E-Series systems.
+keywords: Remote Storage Volumes, RTV, remote volumes, remote storage E-Series
+summary: Use the Remote Storage Volumes feature to import data from a remote storage device directly to a local E-Series volume.
 ---
-= SANtricity® Remote Storage Volumes overview
+= Remote Storage Volumes overview
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Use the Remote Storage Volumes feature to import data from a remote storage device directly to a local E-Series volume. You can use the feature to help streamline the process for equipment upgrades and/or provide data migration capabilities to move data from non-E-Series devices to E-Series systems.
+Use the SANtricity® Remote Storage Volumes feature to import data from a remote storage device directly to a local E-Series volume.
+This feature helps streamline the process for equipment upgrades and provides data migration capabilities to move data from non-E-Series devices to E-Series systems.
 
-The Remote Storage Volumes feature comes with SANtricity System Manager on selected submodel IDs that allows data to be moved between a remote storage system and an E-Series storage system.
+== Configuration overview
 
-The systems need to be prepared for communication between each other. Each of the E-Series controllers needs to have at least one or more connections to the remote storage system.
+The Remote Storage Volumes feature is available with SANtricity System Manager on selected submodel IDs. To use this feature, you must configure a remote storage system and an E-Series storage system to communicate with each other.
 
-When the local E-Series storage system and the remote storage system are configured to communicate via the supported I/O protocol, the remote storage device will need to go through a set of steps to be mapped to the local E-Series storage system. The SANtricity System Manager or SANtricity REST APIs can then be used to initiate and manage the import operation.
+Use the following workflow:
 
-During the import operation, the target volume can be set up to handle I/Os that were previously being sent to the remote storage device. Any I/Os going to the target volume will then be propagated back to the remote storage device until the import operation has completed and the import has been disconnected.
+. link:system-reqs-concept.html[Review requirements and restrictions].
+. link:setup-remote-volumes-concept.html[Configure hardware].
+. link:import-remote-storage-task.html[Import remote storage].
 
-NOTE: For additional technical information on the Remote Storage Volumes feature, see the https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf[Remote Storage Volumes Technical Report].
+== Find more information
+
+* Online help, available in the System Manager user interface or in the https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html?cp=5_0[Documentation Center^].
+* For additional technical information on the Remote Storage Volumes feature, see the https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf[Remote Storage Volumes Technical Report^].

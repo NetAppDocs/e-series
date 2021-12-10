@@ -23,7 +23,7 @@ The figures show how the drives are numbered in each type of shelf (the shelf's 
 
 image::../media/28_dwg_e2824_de224c_drive_numbering_maint-e5700.gif[]
 
-NOTE: Your E5724 storage array might include one or more SAS-2 legacy expansion drive trays, including the DE5600 24-drive tray or the DE6600 60-drive tray. For instructions for replacing a drive in one of these drive trays, see _Replacing a Drive in E2660, E2760, E5460, E5560, or E5660 Drive Trays_ and _Replacing a Drive in E2600, E2700, E5400, E5500, and E5600 12-Drive or 24-Drive Trays_.
+NOTE: Your E5724 storage array might include one or more SAS-2 legacy expansion drive trays, including the DE5600 24-drive tray or the DE6600 60-drive tray. For instructions for replacing a drive in one of these drive trays, see link:https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2577975[Replacing a Drive in E2660, E2760, E5460, E5560, or E5660 Drive Trays] and link:https://library.netapp.com/ecmdocs/ECMLP2577971/html/GUID-E9157E41-F4BF-4237-9454-F1C9145247F0.html[Replacing a Drive in E2600, E2700, E5400, E5500, and E5600 12-Drive or 24-Drive Trays].
 
 === 60-drive shelves
 
@@ -35,7 +35,7 @@ For both an E5760 controller shelf drawer and a DE460C drive shelf drawer, drive
 
 image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e5700.gif[]
 
-NOTE: Your E5760 storage array might include one or more SAS-2 legacy expansion drive trays, including the DE1600 12-drive tray, the DE5600 24-drive tray, or the DE6600 60-drive tray. For instructions for replacing a drive in one of these drive trays, see _Replacing a Drive in E2660, E2760, E5460, E5560, or E5660 Trays_ and _Replacing a Drive in E2600, E2700, E5400, E5500, and E5600 12-Drive or 24-Drive Trays_.
+NOTE: Your E5760 storage array might include one or more SAS-2 legacy expansion drive trays, including the DE1600 12-drive tray, the DE5600 24-drive tray, or the DE6600 60-drive tray. For instructions for replacing a drive in one of these drive trays, see link:https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2577975[Replacing a Drive in E2660, E2760, E5460, E5560, or E5660 Drive Trays] and link:https://library.netapp.com/ecmdocs/ECMLP2577971/html/GUID-E9157E41-F4BF-4237-9454-F1C9145247F0.html[Replacing a Drive in E2600, E2700, E5400, E5500, and E5600 12-Drive or 24-Drive Trays].
 
 === Drive drawer
 

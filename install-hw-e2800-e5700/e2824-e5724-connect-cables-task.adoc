@@ -9,49 +9,46 @@ summary: Attach the power cables and power on the drive shelves.
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to attach the power cables and power on the drive shelves.
+Learn how to attach the power cables and power on the drive shelves.
 
-===== Before you begin
+.Before you begin
 
-* You have installed your hardware.
-* You have taken anti-static precautions.
+* Install your hardware.
+* Take anti-static precautions.
 
-===== Steps
+.Steps
 
 . Cable the shelves.
 +
-Cable the system according to your configuration. If you need more cabling options than the examples shown in this section, see link:../install-hw-cabling/index.html[Cabling].
+Cable the system according to your configuration. If you need more cabling options than the examples shown, see link:../install-hw-cabling/index.html[Cabling].
 +
-For the examples shown in this section, you need the following cables:
+For the examples shown, you need the following cables:
 +
 |===
 a|
 image:../media/sas_cable.png[] a|
 *SAS cables*
 |===
-*Cabling examples:*
 +
-|===
-a|
-image:../media/trafford_power.png[]
 
-Example A: An E5700 controller shelf with three DE212C/DE224 disk shelves in a standard SAS configuration. a|
+.Example A: E5700 controller shelf with three DE212C/DE224 disk shelves in a standard SAS configuration.
++
+image:../media/example_a_28_57.png[]
++
  .. Cable controller A to IOM A of the first drive shelf.
  .. Cable IOM A of the first drive shelf to IOM A of the second drive shelf.
  .. Cable IOM A of the second drive shelf to IOM A of the third drive shelf.
  .. Cable controller B to IOM B of the third drive shelf.
  .. Cable IOM B of the second drive shelf to IOM B of the third drive shelf.
  .. Cable IOM B of the first drive shelf to IOM B of the second drive shelf.
-|===
-+
-|===
-a|
-image:../media/trafford_power.png[]
 
-Example B: An E5700 controller shelf with one DE212C/DE224 disk shelf in a standard SAS configuration. a|
++
+.Example B: An E5700 controller shelf with one DE212C/DE224 disk shelf in a standard SAS configuration.
++
+image:../media/example_b_57_28.png[]
++
 .. Cable controller A to IOM A.
 .. Cable controller B to IOM B.
-|===
 
 . Power the drive shelves.
 +
@@ -73,8 +70,8 @@ During boot, the seven-segment display shows the repeating sequence of OS, Sd, b
 
 +
 |===
-a|
+a|*Example: Power connections are on the rear of the shelf.*
 image:../media/trafford_power.png[]
 
-Example: Power connections are on the rear of the shelf.
+
 |===

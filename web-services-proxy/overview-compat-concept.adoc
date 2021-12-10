@@ -1,0 +1,45 @@
+---
+permalink: web-services-proxy/overview-compat-concept.html
+sidebar: sidebar
+keywords: Web Services, WSP, SANtricity API,
+summary: Compatibility and restrictions for WSP.
+---
+= Compatibility and restrictions
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+The following compatibility and restrictions apply to using the Web Services Proxy.
+
+[options="header"]
+|===
+| Consideration| Compatibility or restriction
+a|
+HTTP support
+a|
+The Web Services Proxy allows use of HTTP or HTTPS. (The embedded version of Web Services requires HTTPS for security reasons.)
+a|
+Storage systems and firmware
+a|
+The Web Services Proxy can manage all E-Series storage systems, including a mixture of older systems and the latest E2800, EF280, E5700, EF570, EF300, and EF600 series systems.
+a|
+IP Support
+a|
+The Web Services Proxy supports either the IPv4 protocol or IPv6 protocol.
+
+NOTE: The IPv6 protocol might fail when the Web Services Proxy tries to automatically discover the management address from the controller configuration. Possible causes for the failure include problems during IP address forwarding or IPv6 being enabled on the storage systems but not on the server.
+
+a|
+NVSRAM file name constraints
+a|
+The Web Services Proxy uses NVSRAM file names to identify version information accurately. Therefore, you cannot change NVSRAM filenames when they are used with the Web Services Proxy. The Web Services Proxy might not recognize a renamed NVSRAM file as a valid firmware file.
+a|
+Symbol Web
+a|
+Symbol Web is a URL in the REST API. It provides access to almost all symbol calls. The symbol function is part of the following URL:
+
+`+http://host:port/devmgr/storage-system/storage array ID/symbol/symbol function+`
+
+NOTE: Symbol-disabled storage systems are supported through the Web Services Proxy.
+|===

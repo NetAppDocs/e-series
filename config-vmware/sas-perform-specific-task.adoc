@@ -9,37 +9,30 @@ summary: For the SAS protocol, you determine host port addresses and make the re
 :imagesdir: ../media/
 
 [.lead]
-For the SAS protocol, you determine host port addresses and make the settings recommended in the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool (IMT)]
+For the SAS protocol, you determine host port addresses and make the recommended settings.
 
 == Step 1: Determine SAS host identifiers--VMware
 
-[.lead]
-For the SAS protocol, you find the SAS addresses using the HBA utility, then use the HBA BIOS to make the appropriate configuration settings.
+Find the SAS addresses using the HBA utility, and then use the HBA BIOS to make the appropriate configuration settings.
 
-===== Before you begin
+.About this task
 
-Guidelines for HBA utilities:
+Review the guidelines for HBA utilities:
 
 * Most HBA vendors offer an HBA utility.
 * Host I/O ports might automatically register if the host context agent is installed.
 
-===== Steps
+.Steps
 
 . Download the HBA utility from your HBA vendor's web site.
 . Install the utility.
 . Use the HBA BIOS to select the appropriate settings for your configuration.
 +
-See the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for recommendations.
+For appropriate settings, see the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for recommendations.
 
-== Step 2: Record SAS-specific information for VMware
+== Step 2: Record your configuration
 
-[.lead]
-Record your protocol-specific storage configuration information on the SAS worksheet. You need this information to perform provisioning tasks.
-
-=== SAS worksheet--VMware
-
-[.lead]
-You can use this worksheet to record SAS storage configuration information. You need this information to perform provisioning tasks.
+You can generate and print a PDF of this page, and then use the following worksheet to record your protocol-specific storage configuration information. You need this information to perform provisioning tasks.
 
 image::../media/sas_topology_diagram_conf-vmw.gif[Diagram: SAS topology]
 
@@ -84,7 +77,7 @@ a|
 
 Recommended configurations consist of two target ports.
 
-==== Mappings host
+==== Mapping host name
 
 |===
 a|

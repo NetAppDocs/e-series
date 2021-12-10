@@ -32,7 +32,7 @@ a|
 * You have installed the host operating system.
 * You are not using Linux as a virtualized guest.
 * You are not configuring the data (I/O attached) host to boot from SAN.
-* You have installed any OS updates as listed under the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+* You have installed any OS updates as listed under the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 a|
 Storage management station
@@ -63,7 +63,7 @@ a|
 
 * You have made all host-side FC connections and activated switch zoning.
 * You are using NetApp-supported FC HBAs and switches.
-* You are using FC HBA driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+* You are using FC HBA driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 a|
 Protocol: iSCSI
@@ -77,21 +77,21 @@ Protocol: SAS
 a|
 
 * You are using NetApp-supported SAS HBAs.
-* You are using SAS HBA driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+* You are using SAS HBA driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 a|
 Protocol: iSER over InfiniBand
 a|
 
 * You are using an InfiniBand fabric.
-* You are using IB-iSER HBA driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+* You are using IB-iSER HBA driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 a|
 Protocol: SRP over InfiniBand
 a|
 
 * You are using an InfiniBand fabric.
-* You are using IB-SRP driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+* You are using IB-SRP driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 a|
 Protocol: NVMe over InfiniBand
@@ -99,21 +99,21 @@ a|
 
 * You have received the 100G or 200G host interface cards in an EF300, EF600, EF570, or E5700 storage system pre-configured with the NVMe over InfiniBand protocol or the controllers were ordered with standard IB ports and need to be converted to NVMe-oF ports.
 * You are using an InfiniBand fabric.
-* You are using NVMe/IB driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+* You are using NVMe/IB driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 a|
 Protocol: NVMe over RoCE
 a|
 
 * You have received the 100G or 200G host interface cards in an EF300, EF600, EF570, or E5700 storage system pre-configured with the NVMe over RoCE protocol or the controllers were ordered with standard IB ports and need to be converted to NVMe-oF ports.
-* You are using NVMe/RoCE driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+* You are using NVMe/RoCE driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 a|
 Protocol: NVMe over Fibre Channel
 a|
 
 * You have received the 32G host interface cards in an EF300, EF600, EF570, or E5700 storage system pre-configured with the NVMe over Fibre Channel protocol or the controllers were ordered with standard FC ports and need to be converted to NVMe-oF ports.
-* You are using NVMe/FC driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+* You are using NVMe/FC driver and firmware versions as listed in the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 |===
-*Note:* These express method instructions include examples for SUSE Linux Enterprise Server (SLES) and for Red Hat Enterprise Linux (RHEL). Examples for RHEL are specific to RHEL7.
+NOTE: These express method instructions include examples for SUSE Linux Enterprise Server (SLES) and for Red Hat Enterprise Linux (RHEL).

@@ -11,15 +11,15 @@ summary: Connect each component’s power supplies to separate power circuits.
 [.lead]
 You must connect each component's power supplies to separate power circuits.
 
-===== Before you begin
+.Before you begin
 
 * You have confirmed that your location provides the necessary power.
 * The two power switches on the two shelf power supplies must be turned off.
 
-===== About this task
+.About this task
 
-The power source for your storage system must be able to accommodate the power requirements of the new drive shelf. For information about the power consumption for your storage system, see the https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe].
+The power source for your storage system must be able to accommodate the power requirements of the new drive shelf. For information about the power consumption for your storage system, see the https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe^].
 
-===== Steps
+.Step
 
 . Connect the two power cables for each shelf to different power distribution units (PDUs) in the cabinet or rack.

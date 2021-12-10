@@ -12,20 +12,20 @@ summary: If your controller includes a connection for NVMe over RoCE \(RDMA over
 [.lead]
 If your controller includes a connection for NVMe over RoCE (RDMA over Converged Ethernet), you can configure the NVMe port settings from the Hardware page or the System page in SANtricity System Manager.
 
-===== Before you begin
+.What you'll need
 
-* Your controller must include an NVMe over RoCE host port; otherwise, the NVMe over RoCE settings are not available in System Manager.
-* You must know the IP address of the host connection.
+* An NVMe over RoCE host port on your controller; otherwise, the NVMe over RoCE settings are not available in System Manager.
+* The IP address of the host connection.
 
-===== About this task
+.About this task
 
 You can access the NVMe over RoCE configuration from the *Hardware* page or from menu:Settings[System]. This task describes how to configure the ports from the Hardware page.
 
 NOTE: The NVMe over RoCE settings and functions appear only if your storage array's controller includes an NVMe over RoCE port.
 
-===== Steps
+.Steps
 
-. Select *Hardware*.
+. From the System Manager interface, select *Hardware*.
 . Click the controller with the NVMe over RoCE port you want to configure.
 +
 The controller's context menu appears.
@@ -55,9 +55,9 @@ Select the desired speed.    The options that appear in the drop-down list depen
  ** 100 Gbps
  ** 200 Gbps
 
-*Note:* When a 200Gb-capable HIC is attached with a QSFP56 cable, auto-negotiate is only available when you are connecting to Mellanox switches and/or adapters.
+NOTE: When a 200Gb-capable HIC is attached with a QSFP56 cable, auto-negotiate is only available when you are connecting to Mellanox switches and/or adapters.
 
-*Note:* The configured NVMe over RoCE port speed should match the speed capability of the SFP on the selected port. All ports must be set to the same speed.
+NOTE: The configured NVMe over RoCE port speed should match the speed capability of the SFP on the selected port. All ports must be set to the same speed.
 a|
 Enable IPv4 and/or Enable IPv6
 a|
@@ -82,18 +82,18 @@ Select this option to obtain the configuration automatically.
 a|
 Manually specify static configuration
 a|
-Select this option, and then enter a static address in the fields. For IPv4, include the network subnet mask and gateway. For IPv6, include the routable IP addresses and router IP address.     *Note:* If there is only one routable IP address, set the remaining address to 0:0:0:0:0:0:0:0.
+Select this option, and then enter a static address in the fields. For IPv4, include the network subnet mask and gateway. For IPv6, include the routable IP addresses and router IP address.
+
+NOTE: If there is only one routable IP address, set the remaining address to 0:0:0:0:0:0:0:0.
 a|
 Enable VLAN support     (Available by clicking *Show more settings*.)
 a|
-*Important:* This option is only available in an iSCSI environment. It is not available in an NVMe over RoCE environment.
-Select this option to enable a VLAN and enter its ID. A VLAN is a logical network that behaves like it is physically separate from other physical and virtual local area networks (LANs) supported by the same switches, the same routers, or both.
+NOTE: This option is only available in an iSCSI environment. It is not available in an NVMe over RoCE environment.
+
 a|
 Enable ethernet priority    (Available by clicking *Show more settings*.)
 a|
-*Important:* This option is only available in an iSCSI environment. It is not available in an NVMe over RoCE environment.
-Select this option to enable the parameter that determines the priority of accessing the network. Use the slider to select a priority between 1 and 7.
-In a shared local area network (LAN) environment, such as Ethernet, many stations might contend for access to the network. Access is on a first-come, first-served basis. Two stations might try to access the network at the same time, which causes both stations to back off and wait before trying again. This process is minimized for switched Ethernet, where only one station is connected to a switch port.
+NOTE: This option is only available in an iSCSI environment. It is not available in an NVMe over RoCE environment.
 |===
 
 . Click *Finish*.

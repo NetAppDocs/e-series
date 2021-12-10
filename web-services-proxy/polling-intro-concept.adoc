@@ -22,7 +22,7 @@ The Web Services Proxy provides access to the following types of statistics:
 
 Raw statistics are linear, typically requiring at least two collected data points to derive usable data from them. The analyzed statistics are a derivation of the raw statistics, which provide important metrics. Many values that can be derived from the raw statistics are shown in a usable, point-in-time format in the analyzed statistics for your convenience.
 
-You can retrieve raw statistics regardless of whether the automatic polling is enabled or not. You can add the usecache=true query string to the end of the URL to retrieve cached statistics from the last poll. Using cached results greatly increases the performance of statistics retrieval. However, multiple calls at a rate equal to or less than the configured polling interval cache retrieves the same data.
+You can retrieve raw statistics regardless of whether the automatic polling is enabled or not. You can add the `usecache=true` query string to the end of the URL to retrieve cached statistics from the last poll. Using cached results greatly increases the performance of statistics retrieval. However, multiple calls at a rate equal to or less than the configured polling interval cache retrieves the same data.
 
 == Statistics functionality
 
@@ -54,23 +54,20 @@ NOTE: When the system starts, there is no previous statistics collection to use 
 
 == Configure polling intervals
 
-You can specify polling intervals for statistics gathering by modifying the wsconfig.xml file.
-
-===== Before you begin
-
-* The storage systems must be discovered by the proxy.
-
-===== About this task
 To configure polling intervals, you modify the wsconfig.xml file to specify a polling interval in seconds.
 
 NOTE: Because the statistics are cached in memory, you might see an increase of about 1.5 MB of memory-use for each storage system.
 
-===== Steps
+.Before you begin
+
+* The storage systems must be discovered by the proxy.
+
+.Steps
 
 . Open the wsconfig.xml file, located at:
  ** (Windows) -- C:\Program Files\NetApp\SANtricity Web Services Proxy
  ** (Linux) -- /opt/netapp/santricity_web_services_proxy
-. Add the following line inside the <env-entries> tag, in which _n_ is the number of seconds for the interval between polling requests:
+. Add the following line inside the `<env-entries>` tag, in which `n` is the number of seconds for the interval between polling requests:
 +
 ----
 <env key="stats.poll.interval">n</env>

@@ -4,61 +4,72 @@ sidebar: sidebar
 keywords: upgrading E2800 HIC, upgrade E2800 HIC, upgrade host interface card, E2800, E-Series, eseries
 summary: Upgrade a host interface card (HIC) in an E2800 array.
 ---
-= Upgrade host interface card in E2800
+= Upgrade E2800 host interface card (HIC)
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow these instructions to upgrade a host interface card (HIC).
+You can upgrade a host interface card (HIC) in an E2800 array to increase the number of host ports or to change host protocols.
 
-== About this task
+.About this task
 
-Upgrading a HIC increases the number of host ports or to change host protocols. When you upgrade the HICs, you must power off the storage array, remove the existing HIC from each controller, install a new HIC, and reapply power.
+When you upgrade the HICs, you must power off the storage array, remove the existing HIC from each controller, install a new HIC, and reapply power.
 
-== Before you begin
+.Before you begin
 
 * Review link:hics-overview-supertask-concept.html[Requirements for E2800 HIC replacement].
 * Schedule a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)
-* Install SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
+
+.What you'll need
+
+* One or two HICs, based on whether you have one or two controllers in your storage array. The HICs must be compatible with your controllers.
+* Labels to identify each cable that is connected to the controller canister.
+* An ESD wristband, or you have taken other antistatic precautions.
+* A #1 Phillips screwdriver.
+* Any new host hardware installed for the new host ports, such as switches or host bus adapters (HBAs).
+* All cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new host ports.
++
+For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] or the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe^].
+* A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
 
 == Step 1: Prepare to upgrade host interface cards
 
-Prepare to upgrade host interface cards (HICs).
+Prepare to upgrade host interface cards (HICs) by backing up the storage array's configuration database, collecting support data, and stopping host I/O operations. Then, you can power down the controller shelf.
 
-===== Steps
+.Steps
 
 . From the Home page of SANtricity System Manager, ensure that the storage array has Optimal status.
 +
 If the status is not Optimal, use the Recovery Guru or contact technical support to resolve the problem. Do not continue with this procedure.
 
-. Back up the storage array's configuration database.
+. Back up the storage array's configuration database using SANtricity System Manager.
 +
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration.
+If a problem occurs during this procedure, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
++
+* From System Manager:
+.. Select menu:Support[Support Center > Diagnostics].
+.. Select *Collect Configuration Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
- .. Open the Enterprise Management Window (EMW) for SANtricity Storage Manager on your management station.
- .. Select the storage array.
- .. Select *Tools* > *Execute Script*.
- .. Type the following command in the text box.
+* Alternatively, you can back up the configuration database by using the following CLI command:
 +
-----
-save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";
-----
-+
-In this command, filename is the file path and file name to which you want to save the database. Enclose the file name in double quotation marks (" "). For example:
-+
-----
- file="C:\Program Files\CLI\logs\dbmdata.zip"
-----
-+
-This command does not automatically append a file extension to the saved file. You must specify a file extension when entering the file name.
+`save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";`
 
- .. Select *Tools* > *Verify and Execute*.
-
++
 . Collect support data for your storage array using SANtricity System Manager.
- .. Select *Support* > *Support Center* > *Diagnostics*.
- .. Select *Collect Support Data*.
- .. Click *Collect*.
-The file is saved in the Downloads folder for your browser with the name support-data.7z.
++
+If a problem occurs during this procedure, you can use the saved file to troubleshoot the issue. The system will save inventory, status, and performance data about your storage array in a single file.
+
+.. Select menu:Support[Support Center > Diagnostics].
+.. Select *Collect Support Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+
+
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
  ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
@@ -74,7 +85,7 @@ The green Cache Active LED on the back of each controller is on when cached data
 +
 image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Cache Active LED
+*(1)* _Cache Active LED_
 
 . From the Home page of SANtricity System Manager, select *View Operations in Progress*. Wait for all operations to complete before continuing with the next step.
 . Power down the controller shelf.
@@ -85,12 +96,7 @@ image:../media/legend_icon_01_maint-e2800.gif[] Cache Active LED
 
 You remove the controller canister so you can upgrade the new host interface card (HIC). When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
 
-===== What you'll need
-
-* Labels to identify each cable that is connected to the controller canister.
-* An ESD wristband, or you have taken other antistatic precautions.
-
-===== Steps
+.Steps
 
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
@@ -107,7 +113,7 @@ The green Cache Active LED on the back of the controller is on when cached data 
 +
 image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Cache Active LED
+*(1)* _Cache Active LED_
 
 . Squeeze the latch on the cam handle until it releases, and then open the cam handle to the right to release the controller canister from the shelf.
 +
@@ -115,13 +121,17 @@ The following figure is an example of an E2812 controller shelf, E2824 controlle
 +
 image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../media/legend_icon_02_maint-e2800.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
 +
 The following figure is an example of an E2860 controller shelf:
 +
 image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../media/legend_icon_02_maint-e2800.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
 
 . Using two hands and the cam handle, slide the controller canister out of the shelf.
 +
@@ -136,11 +146,8 @@ If you are removing the controller canister from an E2812 controller shelf, E282
 
 Remove the original host interface card (HIC) so you can replace it with an upgraded one.
 
-===== What you'll need
 
-* A #1 Phillips screwdriver.
-
-===== Steps
+.Steps
 
 . Remove the controller canister's cover by pressing down on the button and sliding the cover off.
 . Confirm that the green LED inside the controller (between the battery and the DIMMs) is off.
@@ -149,7 +156,9 @@ If this green LED is on, the controller is still using battery power. You must w
 +
 image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[]Internal Cache Active LED image:../media/legend_icon_02_maint-e2800.gif[] Battery
+*(1)* _Internal Cache Active_
++
+*(2)* _Battery_
 
 . Using a #1 Phillips screwdriver, remove the screws that attach the HIC faceplate to the controller canister.
 +
@@ -165,7 +174,9 @@ CAUTION: Be careful not to scratch or bump the components on the bottom of the H
 +
 image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Host interface card (HIC) image:../media/legend_icon_02_maint-e2800.gif[] Thumbscrews
+*(1)* _Host interface card (HIC)_
++
+*(2)* _Thumbscrews_
 
 . Place the HIC on a static-free surface.
 
@@ -173,15 +184,9 @@ image:../media/legend_icon_01_maint-e2800.gif[] Host interface card (HIC) image:
 
 Install the new host interface card (HIC) to increase the number of host ports in your storage array.
 
-===== What you'll need
-
-* An ESD wristband, or you have taken other antistatic precautions.
-* A #1 Phillips screwdriver.
-* One or two HICs, based on whether you have one or two controllers in your storage array. The HICs must be compatible with your controllers.
-
 CAUTION: *Possible loss of data access* -- Never install a HIC in an E2800 controller canister if that HIC was designed for another E-Series controller. In addition, if you have a duplex configuration, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs will cause the controllers to lock down when you apply power.
 
-===== Steps
+.Steps
 
 . Unpack the new HIC and the new HIC faceplate.
 . Using a #1 Phillips screwdriver, remove the four screws that attach the HIC faceplate to the controller canister, and remove the faceplate.
@@ -198,7 +203,9 @@ CAUTION: *Possible equipment damage* -- Be very careful not to pinch the gold ri
 +
 image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Host interface card (HIC) image:../media/legend_icon_02_maint-e2800.gif[] Thumbscrews
+*(1)* _Host interface card_
++
+*(2)* _Thumbscrews_
 
 . Hand-tighten the HIC thumbscrews.
 +
@@ -210,7 +217,7 @@ Do not use a screwdriver, or you might over-tighten the screws.
 
 Reinstall the controller canister into the controller shelf after installing the new host interface card (HIC).
 
-===== Steps
+.Steps
 
 . Reinstall the cover on the controller canister by sliding the cover from back to front until the button clicks.
 . Turn the controller canister over, so that the removable cover faces down.
@@ -220,13 +227,17 @@ The following figure is an example of an E2824 controller shelf or EF280 flash a
 +
 image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../media/legend_icon_02_maint-e2800.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
 +
 The following figure is an example of an E2860 controller shelf:
 +
 image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../media/legend_icon_02_maint-e2800.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
 
 . Move the cam handle to the left to lock the controller canister in place.
 . Reconnect all the cables you removed.
@@ -239,14 +250,7 @@ NOTE: Do not connect data cables to the new HIC ports at this time.
 
 Complete the process of upgrading a host interface card by checking the controller LEDs and seven-segment display and confirming that the controller's status is Optimal.
 
-===== What you'll need
-
-* Any new host hardware installed for the new host ports, such as switches or host bus adapters (HBAs).
-* All cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new host ports.
-+
-For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix] or the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe].
-
-===== Steps
+.Steps
 
 . Turn on the two power switches at the back of the controller shelf.
  ** Do not turn off the power switches during the power-on process, which typically takes 90 seconds or less to complete.
@@ -255,11 +259,17 @@ For information about compatible hardware, refer to the https://mysupport.netapp
  ** The seven-segment display shows the repeating sequence *OS*, *Sd*, *_blank_* to indicate that the controller is performing Start-of-day (SOD) processing. After a controller has successfully booted up, its seven-segment display should show the tray ID.
  ** The amber Attention LED on the controller turns on and then turns off, unless there is an error.
  ** The green Host Link LEDs remain off until you connect the host cables.
++
 NOTE: The figure shows an example controller canister. Your controller might have a different number and a different type of host ports.
 +
 image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Attention LED (amber) image:../media/legend_icon_02_maint-e2800.gif[]Seven-segment display image:../media/legend_icon_03_maint-e2800.gif[] Host Link LEDs
+*(1)* _Attention LED (amber)_
++
+*(2)* _Seven-segment display_
++
+*(3)* _Host Link LEDs_
+
 . From SANtricity System Manager, confirm that the controller's status is Optimal.
 +
 If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated, and check that the HIC and the controller canister are installed correctly. If necessary, remove and reinstall the controller canister and the HIC.
@@ -269,6 +279,6 @@ NOTE: If you cannot resolve the problem, contact technical support.
 . If the new HIC ports require SFP+ transceivers, install these SFPs.
 . Connect the cables from the controller's host ports to the data hosts.
 
-== Result
+.What's next?
 
 The process of upgrading a host interface card in your storage array is complete. You can resume normal operations.

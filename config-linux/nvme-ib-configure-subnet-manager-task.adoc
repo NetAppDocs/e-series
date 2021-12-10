@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/nvme-ib-configure-subnet-manager-task.html
 sidebar: sidebar
-keywords: infiniband, switch, subnet, manager, high, load, avoid, path, loss, opensm, configure
+keywords: configure subnet manager Linux, path loss, subnet manager, opensm, express linux configuration, linux host,
 summary: Using an InfiniBand switch to run subnet manager might cause unexpected path loss during high loads. To avoid path loss, configure the subnet manager on one or more of your hosts using opensm.
 ---
 = Configure subnet manager
@@ -9,15 +9,12 @@ summary: Using an InfiniBand switch to run subnet manager might cause unexpected
 :imagesdir: ../media/
 
 [.lead]
-Using an InfiniBand switch to run subnet manager might cause unexpected path loss during high loads. To avoid path loss, configure the subnet manager on one or more of your hosts using opensm.
+A subnet manager must be running in your environment on your switch or on your hosts. If you are running it host-side, use the following procedure to set it up.
 
-===== Before you begin
+.Steps
 
-* You are running the latest compatible RHEL 7, SUSE Linux Enterprise Server 12 or 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for a complete list of the latest requirements.
-
-===== Steps
-
-. Use the ``ibstat -p``command to find `GUID0` and `GUID1` of the HCA ports. For example:
+. Install the `opensm` package on any hosts that will be running the subnet manager.
+. Use the `ibstat -p` command to find `GUID0` and `GUID1` of the HCA ports. For example:
 +
 ----
 # ibstat -p
@@ -25,20 +22,12 @@ Using an InfiniBand switch to run subnet manager might cause unexpected path los
  0x248a070300a80a81
 ----
 
-. The way that you configure subnet manager depends on your configuration:
- ** If you are using a single switch, start and enable the `opensm` service, then add the HCA port identifier values you found in <<STEP_7F5F9B74260F4842B83D82184CB1EC48,step 2>> to the `opensm.conf` file on each port. Repeat for the other port.
-  *** Edit the `/etc/rdma/opensm.conf` file to add the identifier for that port:
-+
-----
-opensm -c /etc/rdma/opensm.conf
+. Enable Subnet Manager on each port of the connected HCA on the host:
 
-# The port GUID on which the OpenSM is running
-guid 0x248a070300a80a80
-----
- ** If you are using the direct connect method, or if you have multiple switches, enable subnet manager on each port of the connected HCA on the host:
-  *** Add the following two lines to `/etc/rc.d/after.local` (for SUSE Linux Enterprise Server 12 and SLES 15 service pack ). Substitute the values you found in <<STEP_7F5F9B74260F4842B83D82184CB1EC48,step 2>> for `GUID0` and `GUID1`. For `P0` and `P1`, use the subnet manager priorities, with 1 being the lowest and 15 the highest:
 +
 *SLES example*
++
+** Add the following two lines to /etc/rc.d/rc.after. Substitute the values you found in step 2 for `GUID0` and `GUID1`. For `P0` and `P1`, use the subnet manager priorities, with 1 being the lowest and 15 the highest:
 +
 ----
  opensm -B -g GUID0 -p P0 -f /var/log/opensm-ib0.log
@@ -53,13 +42,13 @@ An example of the command with value substitutions:
  opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
 ----
 
-  *** Add the following two lines to `/etc/rc.d/rc.local` (for RHEL 7 ). Substitute the values you found in <<STEP_7F5F9B74260F4842B83D82184CB1EC48,step 2>> for `GUID0` and `GUID1`. For `P0` and `P1`, use the subnet manager priorities, with 1 being the lowest and 15 the highest:
 +
 *RHEL example*
+** Add the following two lines to /etc/rc.d/rc.local. Substitute the values you found in step 2 for `GUID0` and `GUID1`. For `P0` and `P1`, use the subnet manager priorities, with 1 being the lowest and 15 the highest:
 +
 ----
- opensm -B -g GUID0 -p P0 -f /var/log/opensm-ib0.log
- opensm -B -g GUID1 -p P1 -f /var/log/opensm-ib1.log
+opensm -B -g GUID0 -p P0 -f /var/log/opensm-ib0.log
+opensm -B -g GUID1 -p P1 -f /var/log/opensm-ib1.log
 ----
 +
 An example of the command with value substitutions:

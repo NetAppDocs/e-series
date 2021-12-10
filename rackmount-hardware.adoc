@@ -11,18 +11,18 @@ summary: Rack mount the hardware.
 Use the links below to access documentation that describes how to install rack-mounting hardware.
 
 == Adjustable support rails
-Access https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1652045[Installing adjustable support rails] for installing a controller-drive tray or a drive tray that was shipped separately (not already installed in the cabinet). This procedure is applicable for the following 2U (9 cm or 3.5 inch) trays:
+Access https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1652045[Installing adjustable support rails^] for installing a controller-drive tray or a drive tray that was shipped separately (not already installed in the cabinet). This procedure is applicable for the following 2U (9 cm or 3.5 inch) trays:
 
 * DE1600 or DE5600
 * E2612 or E2624
 * E5412, E5424, E5512, or E5524
 
 == Two-post rack -- 2U
-Access https://mysupport.netapp.com/ecm/ecm_download_file/ECMM1280302[Installing 2U equipment into a two-post rack].
+Access https://mysupport.netapp.com/ecm/ecm_download_file/ECMM1280302[Installing 2U equipment into a two-post rack^].
 
 == Four-post rack or cabinet -- 2U
-Access https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2484194[Installing a 2U 12-drive enclosure in a four-post rack or cabinet].
+Access https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2484194[Installing a 2U 12-drive enclosure in a four-post rack or cabinet^].
 
 == Four-post rack -- SuperRail
 
-Access http://docs.netapp.com/platstor/index.jsp?topic=%2Fcom.netapp.doc.hw-rail-superrail%2Fhome.html[Installing SuperRails in a four-post rack] for installing a SuperRail into a four-post rack (DE224C/DE460C shelves).
+Access http://docs.netapp.com/platstor/topic/com.netapp.doc.hw-rail-superrail/home.html[Install SuperRail into a four-post rack (DE224C/DE460C shelves)^].

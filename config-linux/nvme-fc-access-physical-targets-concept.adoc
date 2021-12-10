@@ -9,15 +9,17 @@ summary: Configure the I/O directed to the device target based on your Linux ver
 :imagesdir: ../media/
 
 [.lead]
-You can configure the I/O directed to the device target based on your Linux version. For SLES 15, I/O is directed to the physical NVMe device targets by the Linux host. A native NVMe multipathing solution manages the physical paths underlying the single apparent physical device displayed by the host.
+You can configure the I/O directed to the device target based on which OS (and by extension multipathing method) you are using.
 
-NOTE: It is best practice to use the links in `/dev/disk/by-id/` rather than `/dev/nvme0n1`, for example:
+For RHEL 8 and SLES 15, I/O is directed to the physical NVMe device targets by the Linux host. A native NVMe multipathing solution manages the physical paths underlying the single apparent physical device displayed by the host.
+
+It is best practice to use the links in /dev/disk/by-id/ rather than /dev/nvme0n1. For example:
 
 ----
 # ls /dev/disk/by-id/ -l lrwxrwxrwx 1 root root 13 Oct 18 15:14
-nvme-
-eui.0000320f5cad32cf00a0980000af4112 -> ../../nvme0n1
+nvme-eui.0000320f5cad32cf00a0980000af4112 -> ../../nvme0n1
 ----
+
 
 == Physical NVMe devices are I/O targets
 

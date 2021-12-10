@@ -1,21 +1,23 @@
 ---
 permalink: config-linux/iser-ib-configure-network-attached-hosts-task.html
 sidebar: sidebar
-keywords: infiniband, ofed, driver, stack, support, iser, srp, simultaneous, same, port, hardware, require, host, storage, attach
+keywords: configure network Linux, configure hosts linux, express linux configuration, linux host,
 summary: The InfiniBand OFED driver stack supports running both iSER and SRP simultaneously on the same ports, so no additional hardware is required.
 ---
-= Configure networking for storage attached hosts--iSER over Infiniband
+= Configure networking for storage attached hosts
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+If your configuration uses the iSER over InfiniBand protocol, perform the steps in this section.
+
 The InfiniBand OFED driver stack supports running both iSER and SRP simultaneously on the same ports, so no additional hardware is required.
 
-===== Before you begin
+.What you'll need
 
-A NetApp recommended OFED is installed on the system. For more information, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+A NetApp recommended OFED installed on the system. For more information, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
-===== Steps
+.Steps
 
 . Enable and start iSCSI services on the host(s):
 +
@@ -132,6 +134,6 @@ iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
 iscsiadm -m session
 ----
 
- .. Check the iscsi session status from the array. From SANtricity System Manager, navigate to the *Storage Array* > *iSER* > *View/End Sessions*.
+ .. Check the iscsi session status from the array. From SANtricity System Manager, navigate to *Storage Array* > *iSER* > *View/End Sessions*.
 
 When the OFED/RDMA service starts, the iSER kernel module(s) loads by default when the iSCSI services are running. To complete the iSER connection setup, the iSER module(s) should be loaded. Currently this requires a host reboot.

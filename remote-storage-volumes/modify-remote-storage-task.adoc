@@ -1,7 +1,7 @@
 ---
 permalink: remote-storage-volumes/modify-remote-storage-task.html
 sidebar: sidebar
-keywords: modify, connection, setting, configure, remote, storage, import, view, edit, santricity, system, manager
+keywords: modify Remote Storage Volumes settings, RTV settings, remote volume settings, remote storage E-Series
 summary: You can modify the connection settings for any configured Remote Storage import through the View/Edit Settings option under the Remote Storage screen of the SANtricity System Manager.
 ---
 = Modify remote storage connection settings
@@ -9,13 +9,11 @@ summary: You can modify the connection settings for any configured Remote Storag
 :imagesdir: ../media/
 
 [.lead]
-You can modify the connection settings for any configured Remote Storage import through the View/Edit Settings option under the Remote Storage screen of the SANtricity System Manager.
+You can edit, add, or delete connection settings for any remote storage configuration through the View/Edit Settings option.
 
-===== Before You Begin
+Making changes to connection properties will affect in-progress imports. To avoid disruptions, only make changes to connection properties when imports are not running.
 
-Changes made to connection properties will affect any in-progress imports. To avoid disruptions, only make changes to connection properties when no in-progress imports exist.
-
-===== Steps
+.Steps
 
 . From the Remote Storage screen of the SANtricity System Manager, select the desired Remote Storage object under the result list section.
 . Click *View/Edit Settings*.
@@ -26,24 +24,11 @@ The Remote Storage Settings screen is displayed.
 +
 The configured IP address and port settings for the remote storage import are displayed.
 
-. To add a new connection for the remote storage object, click *Add*.
+. Perform one of the following actions:
 +
-The Add iSCSI Connection window is displayed.
-
-. Enter the new IP address and port information in the fields provided.
-. Click *Add*.
-+
-The new connection is added to the remote storage object IP connections table.
-
-. To modify an existing IP address and port settings for the configured remote storage object, click *Edit* next to the corresponding line item.
-. Enter the revised IP address and/or port information under the provided fields.
-. To remove an existing connection for the remote storage object, select the desired connection under the result list section of the Connection tab and click *Delete*.
-+
-The Confirm Delete iSCSI Connection window is displayed.
-
-. Enter *Delete* under the provided field and click *Delete*.
-+
-The connection is removed from the remote storage object IP connections table.
+* *Edit* – Click *Edit* next to the corresponding line item for the remote storage object. Enter the revised IP address and/or port information in the fields.
+* *Add* – Click *Add*, and then enter the new IP address and port information in the fields provided. Click *Add* to confirm, and then the new connection appears in the list of remote storage objects.
+* *Delete* – Select the desired connection from the list and then click *Delete*. Confirm the operation by typing `delete` in the provided field and then click *Delete*. The connection is removed from the list of remote storage objects.
 
 . Click *Save*.
 +

@@ -11,55 +11,50 @@ summary: For the Fibre Channel protocol, you configure the switches and determin
 [.lead]
 For the Fibre Channel protocol, you configure the switches and determine the host port identifiers.
 
-== Step 1: Configuring the FC switches--Windows
+== Step 1: Configure the FC switches--Windows
 
-[.lead]
 Configuring (zoning) the Fibre Channel (FC) switches enables the hosts to connect to the storage array and limits the number of paths. You zone the switches using the management interface for the switches.
 
-===== Before you begin
+.What you'll need
 
-* You must have administrator credentials for the switches.
-* You must have used your HBA utility to discover the WWPN of each host initiator port and of each controller target port connected to the switch.
+* Administrator credentials for the switches.
+* The WWPN of each host initiator port and of each controller target port connected to the switch. (Use your HBA utility for discovery.)
 
-===== About this task
+.About this task
 
-For details about zoning your switches, see the switch vendor's documentation.
+You must zone by WWPN, not by physical port. Each initiator port must be in a separate zone with all of its corresponding target ports. For details about zoning your switches, see the switch vendor's documentation.
 
-You must zone by WWPN, not by physical port. Each initiator port must be in a separate zone with all of its corresponding target ports.
-
-===== Steps
+.Steps
 
 . Log in to the FC switch administration program, and then select the zoning configuration option.
 . Create a new zone that includes the first host initiator port and that also includes all of the target ports that connect to the same FC switch as the initiator.
 . Create additional zones for each FC host initiator port in the switch.
 . Save the zones, and then activate the new zoning configuration.
 
-== Step 2: Determining host WWPNs and making the recommended settings--FC, Windows
+== Step 2: Determine host WWPNs and make recommended settings--FC, Windows
 
-[.lead]
-You install an FC HBA utility so you can view the worldwide port name (WWPN) of each host port. Additionally, you can use the HBA utility to change any settings recommended in the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for the supported configuration.
+You install an FC HBA utility so you can view the worldwide port name (WWPN) of each host port. Additionally, you can use the HBA utility to change any settings recommended in the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for the supported configuration.
 
-===== Before you begin
+.About this task
 
-Guidelines for HBA utilities:
+Review these guidelines for HBA utilities:
 
 * Most HBA vendors offer an HBA utility. You will need the correct version of HBA for your host operating system and CPU. Examples of FC HBA utilities include:
  ** Emulex OneCommand Manager for Emulex HBAs
  ** QLogic QConverge Console for QLogic HBAs
 * Host I/O ports might automatically register if the host context agent is installed.
 
-===== Steps
+.Steps
 
 . Download the appropriate utility from your HBA vendor's web site.
 . Install the utility.
 . Select the appropriate settings in the HBA utility.
 +
-Appropriate settings for your configuration are listed in the Notes column of the IMT.
+Appropriate settings for your configuration are listed in the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
-== Step 2: FC worksheet for Windows
+== Step 3: Record your configuration
 
-[.lead]
-You can use this worksheet to record FC storage configuration information. You need this information to perform provisioning tasks.
+You can generate and print a PDF of this page, and then use the following worksheet to record FC storage configuration information. You need this information to perform provisioning tasks.
 
 The illustration shows a host connected to an E-Series storage array in two zones. One zone is indicated by the blue line; the other zone is indicated by the red line. Any single port has two paths to the storage (one to each controller).
 
@@ -133,7 +128,7 @@ a|
 
 |===
 
-=== Mapping host
+=== Mapping host name
 
 |===
 a|

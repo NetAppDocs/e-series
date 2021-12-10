@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: For SLES 15, you create a filesystem on the native nvme device and mount the filesystem.
 ---
-= Create filesystems (SLES 15)
+= Create filesystems (RHEL 8 and SLES 15)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-For SLES 15, you create a filesystem on the native nvme device and mount the filesystem.
+For RHEL 8 and SLES 15, you create a filesystem on the native nvme device and mount the filesystem.
 
-===== Steps
+.Steps
 
 . Run the `multipath -ll` command to get a list of `/dev/nvme` devices.
 +

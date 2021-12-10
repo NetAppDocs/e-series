@@ -5,30 +5,39 @@ keywords: replace EF300 DIMM, replace EF600 DIMM
 summary: Replace a DIMM in an EF300 or EF600 array.
 ---
 = Replace DIMMs in EF300 or EF600
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to replace a DIMM in an EF300 or EF600 array.
+You can replace a DIMM in an EF300 or EF600 array.
 
-== About this task
+.About this task
 
 To replace a DIMM, you must verify the cache size of your controller, place the controller offline, remove the controller, remove the DIMMs, and install the new DIMMs in your controller. Then you can bring your controller back online and verify the storage array is working properly.
 
-== Before you begin
+.Before you begin
 
 * Review link:dimms-overview-supertask-concept.html[Requirements for replacing an EF300 or EF600 DIMM].
 * Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
+
+.What you'll need
+
+* A replacement DIMM.
+* An ESD wristband, or you have taken other antistatic precautions.
+* A flat, static free work area.
+* Labels to identify each cable that is connected to the controller canister.
+* A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
+
 
 == Step 1: Determine if you need to replace a DIMM
 
 Verify the cache size of your controller before replacing the DIMMS.
 
-===== Steps
+.Steps
 
-. Access the Storage Array Profile for the controller.
-* Select *Support Page* > *Support Resources* > *Storage Array Profile*.
-. Select the *Data Cache Module* tab and locate the Data Cache Module field.
+. Access the Storage Array profile for the controller. From SANtricity System Manager, go to menu:Support[Support Center]. From the Support Resources page, select *Storage Array Profile*.
+. Scroll down or use the Search field to locate the *Data Cache Module* information.
 . If one of the following is present, note the DIMM's location and continue with remaining procedures in this section to replace the DIMMs on your controller:
  ** A failed DIMM, or a DIMM reporting *Data Cache Module* as not optimal.
  ** A DIMM with a mismatched *Data Cache Module* capacity.
@@ -37,18 +46,20 @@ Verify the cache size of your controller before replacing the DIMMS.
 
 Place the controller offline so you can safely remove and replace the DIMMs.
 
-===== Steps
+.Steps
 
 . From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a mismatched memory and to ensure no other items must be addressed first.
 . From the Details area of the Recovery Guru, determine which DIMM to replace.
-. Back up the storage array's configuration database.
+. Back up the storage array's configuration database using SANtricity System Manager.
 +
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration.
-
- .. In System Manager, navigate to the support page.
- .. Select the *Support Center* tab.
- .. Select the *Diagnostics* tab.
- .. Select *Collect Support Data*.
+If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
++
+* From System Manager:
+.. Select menu:Support[Support Center > Diagnostics].
+.. Select *Collect Configuration Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
 . If the controller is not already offline, take it offline now using SANtricity System Manager.
  .. Select *Hardware*.
@@ -68,13 +79,7 @@ NOTE: Do not begin any other operations until after the status has been updated.
 
 You remove the failed controller canister so you can replace your DIMMs with new ones.
 
-===== What you'll need
-
-* Labels to identify each cable that is connected to the controller canister.
-* An ESD wristband, or you have taken other antistatic precautions.
-* A flat, static free work area.
-
-===== Steps
+.Steps
 
 . Put on an ESD wristband or take other antistatic precautions.
 . Label each cable that is attached to the controller canister.
@@ -99,11 +104,7 @@ image::../media/remove_controller_6.png[]
 
 If there is a memory mismatch present, replace the DIMMs in your controller.
 
-===== What you'll need
-
-* An ESD wristband, or you have taken other antistatic precautions.
-
-===== Steps
+.Steps
 
 . Remove the controller canister's cover by unscrewing the single thumbscrew and lifting the lid open.
 . Confirm that the green LED inside the controller is off.
@@ -129,11 +130,8 @@ The number and placement of system DIMMs depends on the model of your system.
 
 Install a new DIMM to replace the old one.
 
-===== What you'll need
 
-* An ESD wristband, or you have taken other antistatic precautions. Make sure you are properly grounded.
-
-===== Steps
+.Steps
 
 . Hold the DIMM by the corners, and align it to the slot.
 +
@@ -155,7 +153,7 @@ image::../media/dimm_5.png[]
 
 After installing the new DIMMs, reinstall the controller canister into the controller shelf.
 
-===== Steps
+.Steps
 
 . Lower the cover on the controller canister and secure the thumbscrew.
 . While squeezing the controller handles, gently slide the controller canister all the way into the controller shelf.
@@ -170,10 +168,10 @@ image::../media/remove_controller_7.png[]
 
 Place the controller online, collect support data, and resume operations.
 
-===== Steps
+.Steps
 
 . Place controller online.
- .. In System Manager, navigate to the hardware page.
+ .. In System Manager, navigate to the Hardware page.
  .. Select *Show back of controller*.
  .. Select the controller with the replaced DIMMs.
  .. Select *Place online* from the drop-down list.
@@ -190,22 +188,23 @@ If the status is not Optimal or if any of the Attention LEDs are on, confirm tha
 +
 NOTE: If you cannot resolve the problem, contact technical support.
 
-. Click *Hardware* > *Support* > *Upgrade Center* to ensure that the latest version of SANtricity OS is installed.
+. Click menu:Hardware[Support > Upgrade Center] to ensure that the latest version of SANtricity OS is installed.
 +
 As needed, install the latest version.
 
 . Verify that all volumes have been returned to the preferred owner.
- .. Select *Storage* > *Volumes*. If current owner and preferred owner are not listed select *All volumes* > *Columns.* Select current owner and preferred owner, and then recheck to verify that volumes are distributed to their preferred owners.
- .. If volumes are all owned by preferred owner continue to Step 6.
- .. If none of the volumes are returned, you must manually return the volumes. Go to *Storage* > *Volumes* > *More* > *Redistribute volumes*.
- .. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution you must check the Recovery Guru for host connectivity issues.
+.. Select menu:Storage[Volumes]. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select menu:More[Change ownership] to view volume owners.
+.. If volumes are all owned by preferred owner continue to Step 6.
+.. If none of the volumes are returned, you must manually return the volumes. Go to menu:More[Redistribute volumes].
  .. If there is no Recovery Guru present or if following the Recovery Guru steps the volumes are still not returned to their preferred owners contact support.
-. Collect support data for your storage array using SANtricity System Manager.
- .. Select *Support* > *Support Center* > *Diagnostics*.
- .. Select *Collect Support Data*.
- .. Click *Collect*.
-The file is saved in the Downloads folder for your browser with the name support-data.7z.
 
-== Result
+ . Collect support data for your storage array using SANtricity System Manager.
+   .. Select menu:Support[Support Center > Diagnostics].
+   .. Select *Collect Support Data*.
+   .. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+
+.What's next?
 
 Your DIMM replacement is complete. You can resume normal operations.

@@ -9,11 +9,11 @@ summary: To install the E5724, EF570, EF280, E2812, E2824, DE212C, or DE224C, cr
 :imagesdir: ../media/
 
 [.lead]
-Follow these steps to prepare for installation of your E5724, EF570, EF280, E2812, E2824, DE212C, or DE224C series storage system.
+Learn how to prepare to install your E5724, EF570, EF280, E2812, E2824, DE212C, or DE224C series storage system.
 
-===== Steps
+.Steps
 
-. Create an account and register your hardware at http://mysupport.netapp.com/[mysupport.netapp.com].
+. Create an account and register your hardware at http://mysupport.netapp.com/[mysupport.netapp.com^].
 . Ensure that the following items are in the box that you received.
 +
 |===
@@ -25,7 +25,7 @@ image:../media/superrails_inst-hw-e2800-e5700.png[]
 a|
 Rack-mount hardware
 |===
-The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see https://hwu.netapp.com/[Hardware Universe] to locate the cable and identify its use.
+The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see https://hwu.netapp.com/[Hardware Universe^] to locate the cable and identify its use.
 +
 [options="header"]
 |===

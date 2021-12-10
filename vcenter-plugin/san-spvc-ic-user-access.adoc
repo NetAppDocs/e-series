@@ -6,6 +6,7 @@ summary: Configure access permissions for Storage Plugin for vCenter.
 ---
 
 = Configure plugin access permissions
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,9 +15,11 @@ summary: Configure access permissions for Storage Plugin for vCenter.
 
 
 [.lead]
-Follow these instructions to configure access permissions for the Storage Plugin for vCenter, which includes users, roles, and privileges.
+You can configure access permissions for the Storage Plugin for vCenter, which includes users, roles, and privileges.
 
 == Review required vSphere privileges
+
+To access the plugin within the vSphere Client, you must be assigned to a role that has the appropriate vSphere privileges. Users with the “Configure datastore” vSphere privilege have read-write access to the plugin, while users with the “Browse datastore” privilege have read-only access. If a user has neither of these privileges, the plugin displays an “Insufficient Privileges” message.
 
 |===
 |Plugin access type |vSphere privilege required
@@ -65,7 +68,7 @@ To allow Read-Only access to the plugin, select *Datastore* > *Browse* *datastor
 . Select the cloned role from the list, and then click on *Edit Role*.
 . In the Privileges list, select the access permissions to assign to this role.
 +
-To allow Read-Only access to the plugin, select *Datastore* > *Browse* *datastore*. To allow Read-Write access, select *Datastore* > *Configure datastore*.
+To allow Read-Only access to the plugin, select menu:Datastore[Browse datastore]. To allow Read-Write access, select menu:Datastore[Configure datastore].
 
 . Click *Next*.
 . Update the name and description, if desired.
@@ -75,7 +78,7 @@ To allow Read-Only access to the plugin, select *Datastore* > *Browse* *datastor
 
 . In the Privileges list, select the access permissions to assign to this role.
 +
-To allow Read-Only access to the plugin, select *Datastore* > *Browse* *datastore*. To allow Read-Write access, select *Datastore* > *Configure datastore*.
+To allow Read-Only access to the plugin, select menu:Datastore[Browse datastore]. To allow Read-Write access, select menu:Datastore[Configure datastore].
 
 . Click *Next*.
 . Update the name or description, if desired.

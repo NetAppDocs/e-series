@@ -5,6 +5,7 @@ keywords: E5700 change host protocol, E5700 baseboard ports, convert E5700 proto
 summary: Complete the E5700 host protocol conversion.
 ---
 = Complete E5700 host protocol conversion
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
@@ -17,17 +18,19 @@ The steps you might need to complete depend on the starting and ending protocols
 
 If you previously had FC host ports and you converted to iSCSI, you might need to modify your existing configuration to support iSCSI. The following procedure is only applicable if there is no iSCSI HIC present.
 
+.About this task
+
 This task applies only if you are converting a storage array that has already been in use.
 
-This task does not apply if you are converting a new storage array that does not yet have hosts and volumes defined. If you converted the host-port protocol of a new storage array, see _Cabling E-Series hardware_ to install cables and SFPs. Then, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to complete the setup for each protocol.
+This task does not apply if you are converting a new storage array that does not yet have hosts and volumes defined. If you converted the host-port protocol of a new storage array, see the link:../install-hw-cabling/index.html[Cabling procedures] to install cables and SFPs. Then, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to complete the setup for each protocol.
 
-===== Steps
+.Steps
 
 . Configure the switches.
 +
 You should configure the switches used to transport iSCSI traffic according to the vendor's recommendations for iSCSI. These recommendations might include both configuration directives as well as code updates.
 
-. From SANtricity System Manager, select *Hardware* > *Configure iSCSI ports*.
+. From SANtricity System Manager, select menu:Hardware[Configure iSCSI ports].
 . Select the port settings.
 +
 You can set up your iSCSI network in many ways. Consult your network administrator for tips on selecting the best configuration for your environment.
@@ -36,7 +39,7 @@ You can set up your iSCSI network in many ways. Consult your network administrat
 +
 NOTE: If you need instructions to add hosts or host clusters, refer to the online help for SANtricity System Manager.
 
- .. Select *Storage* > *Hosts*.
+ .. Select menu:Storage[Hosts].
  .. Select the host to which the port will be associated, and click *View/Edit Settings*.
 +
 The Host Settings dialog box appears.
@@ -59,7 +62,7 @@ The *Delete* option does not physically remove the host port. This option remove
 . Reboot the host or perform a rescan so that the host properly discovers the LUNs.
 . Remount volumes or start using block volume.
 
-===== Result
+.What's next?
 
 Your host protocol conversion is complete. You can resume normal operations.
 
@@ -69,9 +72,9 @@ If you previously had iSCSI host ports and you converted to FC, you might need t
 
 This task applies only if you are converting a storage array that has already been in use.
 
-This task does not apply if you are converting a new storage array that does not yet have hosts and volumes defined. If you converted the host-port protocol of a new storage array, see _Cabling E-Series hardware_ to install cables and SFPs. Then, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to complete the setup for each protocol.
+This task does not apply if you are converting a new storage array that does not yet have hosts and volumes defined. If you converted the host-port protocol of a new storage array, see the link:../install-hw-cabling/index.html[Cabling procedures] to install cables and SFPs. Then, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to complete the setup for each protocol.
 
-===== Steps
+.Steps
 
 . Install the HBA utility and determine initiator WWPNs.
 . Zone the switches.
@@ -79,7 +82,7 @@ This task does not apply if you are converting a new storage array that does not
 Zoning the switches enables the hosts to connect to the storage and limits the number of paths. You zone the switches using the management interface of the switches.
 
 . Update the host definitions in SANtricity System Manager.
- .. Select *Storage* > *Hosts*.
+ .. Select menu:Storage[Hosts].
  .. Select the host to which the port will be associated, and click *View/Edit Settings*.
 +
 The Host Settings dialog box appears.
@@ -101,24 +104,24 @@ The *Delete* option does not physically remove the host port. This option remove
 . Reboot the host or perform a rescan so that the host properly discovers mapped storage.
 . Remount volumes or start using block volume.
 
-===== Result
+.What's next?
 
 Your host protocol conversion is complete. You can resume normal operations.
 
 == Complete conversion for IB-iSER to/from IB-SRP, NVMe over IB, NVMe over RoCE, or NVMe over FC
 
-After you apply the feature pack key to convert the protocol used by your InfiniBand iSER HIC port to/from SRP, NVMe over InfiniBand, NVMe over RocE, or NVMe over Fibre Channel, you need to configure the host to use the appropriate protocol.
+After you apply the feature pack key to convert the protocol used by your InfiniBand iSER HIC port to/from SRP, NVMe over InfiniBand, NVMe over RoCE, or NVMe over Fibre Channel, you need to configure the host to use the appropriate protocol.
 
-===== Steps
+.Steps
 
 . Configure the host to use the SRP, iSER, or NVMe protocol.
 +
-For step-by-step instructions on how to configure the host to use SRP, iSER, or NVMe, see the _Linux Express Configuration_.
+For step-by-step instructions on how to configure the host to use SRP, iSER, or NVMe, see the link:../config-linux/index.html[Linux express configuration].
 
 . To connect the host to the storage array for an SRP configuration, you must enable the InfiniBand driver stack with the appropriate options.
 +
-Specific settings might vary between Linux distributions. Check the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix] for specific instructions and additional recommended settings for your solution.
+Specific settings might vary between Linux distributions. Check the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix^] for specific instructions and additional recommended settings for your solution.
 
-===== Result
+.What's next?
 
 Your host protocol conversion is complete. You can resume normal operations.

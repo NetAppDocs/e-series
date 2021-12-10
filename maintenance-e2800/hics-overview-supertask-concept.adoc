@@ -5,11 +5,12 @@ keywords: E2800 replace HIC, E2800 replace host interface card, replacing E2800 
 summary: Review requirements for E2800 HIC replacement.
 ---
 = Requirements for E2800 HIC replacement
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you add, upgrade, or replace a host interface card in an E2800, review the requirements and considerations.
+Before you add, upgrade, or replace a host interface card (HIC) in an E2800, review the requirements and considerations.
 
 == Procedure overview
 
@@ -52,11 +53,9 @@ If you have a duplex configuration (two controllers), the HICs installed in the 
 
 * You have all cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new host ports.
 +
-For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix] or the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe].
+For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] or the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe^].
 
 * You have an ESD wristband, or you have taken other antistatic precautions.
 * You have a #1 Phillips screwdriver.
 * You have labels to identify each cable that is connected to the controller canister.
-* You have installed SANtricity Storage Manager on a management station, so you can use the storage array's command line interface (CLI).
-+
-If SANtricity Storage Manager has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install the software.
+* You have a management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)

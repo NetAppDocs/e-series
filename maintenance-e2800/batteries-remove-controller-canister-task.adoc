@@ -13,13 +13,17 @@ You need to remove the controller canister from the controller shelf, so you can
 
 When you remove a controller canister, you must disconnect all cables. Then, you can slide the controller canister out of the controller shelf.
 
-===== Steps
+.What you'll need
+* An ESD wristband, or you have taken other antistatic precautions.
+* Labels to identify each cable that is connected to the controller canister.
+
+.Steps
 
 . Put on an ESD wristband or take other antistatic precautions.
 . Label each cable that is attached to the controller canister.
 . Disconnect all the cables from the controller canister.
 +
-NOTE: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
+CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
 
 . If the host ports on the controller canister use SFP+ transceivers, leave them installed.
 . Confirm that the Cache Active LED on the back of the controller is off.
@@ -29,13 +33,17 @@ The following figure is an example of an E2812 controller shelf, E2824 controlle
 +
 image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../media/legend_icon_02_maint-e2800.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
 +
 The following figure is an example of an E2860 controller shelf:
 +
 image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[]
 +
-image:../media/legend_icon_01_maint-e2800.gif[] Controller canister image:../media/legend_icon_02_maint-e2800.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
 
 . Using two hands and the cam handle, slide the controller canister out of the shelf.
 +
@@ -45,3 +53,4 @@ If you are removing the controller canister from an E2812 controller shelf, E282
 
 . Turn the controller canister over, so that the removable cover faces up.
 . Place the controller canister on a flat, static-free surface.
+. Go to link:batteries-remove-failed-task.html[Remove failed E2800 battery].

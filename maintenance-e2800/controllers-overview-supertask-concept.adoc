@@ -32,18 +32,21 @@ NOTE: The figures show example controller canisters; the host ports on your cont
 Before you add a second controller, you must have:
 
 * A new controller canister with the same part number as the currently installed controller canister.
-* A new HIC that is identical to the HIC in the currently installed controller canister (only necessary if the currently installed controller canister includes a host interface card.)
+* A new HIC that is identical to the HIC in the currently installed controller canister (only necessary if the currently installed controller canister includes a host interface card).
 * All cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new controller ports.
 +
-For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix] or the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe].
+For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] or the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe^].
 
 * Multipath driver installed on the host so that you can use both controllers. Refer to the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] for instructions.
 * An ESD wristband, or you have taken other antistatic precautions.
 * A #1 Phillips screwdriver.
 * Labels to identify the new cables.
-* SANtricity Storage Manager installed on a management station, so you can use the storage array's command line interface (CLI).
+* A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
 +
-If SANtricity Storage Manager has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install the software.
+Optionally, you can use the command line interface (CLI) to perform some of the procedures. If you do not have access to the CLI, you can do one of the following:
+
+** *For SANtricity System Manager (version 11.60 and above)* -- Download the CLI package (zip file) from System Manager. Go to menu:Settings[System > Add-ons > Command Line Interface]. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
+** *For SANtricity Storage Manager/Enterprise Management Window (EMW)* -- Follow the instructions in the express guide to download and install the software. You can run CLI commands from the EMW by selecting menu:Tools[Execute Script].
 
 
 == Requirements for replacing controller
@@ -57,7 +60,7 @@ You can determine if you have a failed controller canister in two ways:
 
 image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[]
 
-image:../media/legend_icon_01_maint-e2800.gif[]Attention LED
+*(1)* _Attention LED_
 
 NOTE: The figure shows an example controller canister; the host ports on your controller canister might be different.
 
@@ -67,9 +70,12 @@ Before you replace a controller, you must have:
 * An ESD wristband, or you have taken other antistatic precautions.
 * Labels to identify each cable that is connected to the controller canister.
 * #1 Phillips screwdriver.
-* SANtricity Storage Manager installed on a management station, so you can use the storage array's command line interface (CLI).
+* A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
 +
-If this software has not yet been installed, follow the instructions in the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration] to download and install it.
+Optionally, you can use the command line interface (CLI) to perform some of the procedures. If you do not have access to the CLI, you can do one of the following:
+
+** *For SANtricity System Manager (version 11.60 and above)* -- Download the CLI package (zip file) from System Manager. Go to menu:Settings[System > Add-ons > Command Line Interface]. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
+** *For SANtricity Storage Manager/Enterprise Management Window (EMW)* -- Follow the instructions in the express guide to download and install the software. You can run CLI commands from the EMW by selecting menu:Tools[Execute Script].
 
 === Duplex configuration requirements
 

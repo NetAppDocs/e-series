@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: NVMe over FC worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: Use this worksheet to record NVMe over Fibre Channel storage configuration information.
 ---
-= NVMe over Fibre Channel worksheet for Linux
+= Record your NVMe over FC configuration
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use this worksheet to record NVMe over Fibre Channel storage configuration information. You need this information to perform provisioning tasks.
+You can generate and print a PDF of this page, and then use the following worksheet to record NVMe over Fibre Channel storage configuration information. You need this information to perform provisioning tasks.
 
 == Direct connect topology
 
@@ -28,11 +28,11 @@ image::../media/nvme_fc_direct_topology.png[]
 
 == Switch connect topology
 
-In a fabric topology, one or more switches are used. See the to https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for a list of supported switches.
+In a fabric topology, one or more switches are used. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a list of supported switches.
 
 image::../media/nvme_fc_fabric_topology.png[]
 
-== NVMe over Fibre Channel: Host identifiers
+== Host identifiers
 
 Locate and document the initiator NQN from each host.
 
@@ -49,7 +49,7 @@ a|
 
 |===
 
-== NVMe over Fibre Channel: Target NQN
+== Target NQN
 
 Document the target NQN for the storage array.
 
@@ -62,7 +62,7 @@ a|
 
 |===
 
-== NVMe over Fibre Channel: Target NQNs
+== Target NQNs
 
 Document the NQNs to be used by the array ports.
 
@@ -87,7 +87,7 @@ a|
 
 |===
 
-== NVMe over Fibre Channel: Mapping host name
+== Mapping host name
 
 NOTE: The mapping host name is created during the workflow.
 

@@ -5,11 +5,12 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upg
 summary: Complete the controller upgrade by powering on the controller shelf and validating the controller software version. Then, you can collect support data and resume operations.
 ---
 = Complete controller upgrade
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to complete the controller upgrade by powering on the controller shelf and validating the controller software version. Then, you can collect support data and resume operations.
+Complete the controller upgrade by powering on the controller shelf and validating the controller software version. Then, you can collect support data and resume operations.
 
 If you are upgrading controllers in a duplex controller-drive tray, repeat all steps to complete the upgrade for the second controller.
 
@@ -17,7 +18,7 @@ If you are upgrading controllers in a duplex controller-drive tray, repeat all s
 
 You must power on the controller shelf to confirm that it is working correctly.
 
-===== Steps
+.Steps
 
 . Turn on the power switch on the rear of each drive tray that is connected to the controller-drive tray.
 . Wait two minutes for the drives to spin up.
@@ -49,7 +50,7 @@ Mix of secured and unsecured drives, External Key Management
 a|
 Proceed to the next step.
 
-*Attention:* After performing the controller replacement, the controllers will automatically resynchronize with the External Key Management Server and the drives will unlock and be accessible.
+After performing the controller replacement, the controllers will automatically resynchronize with the External Key Management Server and the drives will unlock and be accessible.
 
 NOTE: If you receive a seven-segment display lock-down code of `L5` after performing a controller replacement of mixed secured drives with internal key management, contact technical support.
 a|
@@ -70,7 +71,7 @@ Controller swap with external key management and all drives secured
 
 You can use the LEDs and the storage management software to check the status of your controllers and trays.
 
-===== Steps
+.Steps
 
 . Look at the LEDs on controller A to make sure that it is booting correctly.
 +
@@ -88,13 +89,13 @@ After the controller successfully completes rebooting, the seven-segment display
 
 You must ensure that your new controllers are running with the correct operating system (controller firmware) level and NVSRAM.
 
-===== Steps
+.Steps
 
 . Do one of the following:
  ** If you are upgrading to controllers that do not support SANtricity 11.30 and controller firmware 8.30, make sure that the version running on the new controllers matches the version that was last running on the original controllers. Normally, this will be the most recent release supported by the old controllers. If necessary, install the appropriate version on the new controllers.
  ** If you are upgrading to controllers that run SANtricity 11.30 and controller firmware 8.30, download and install the latest NVSRAM after you power on the new controllers.
 . If your controller upgrade involves a protocol change (for example, Fibre Channel to iSCSI), and you already have hosts defined for your storage array, associate the new host ports with your hosts:
- .. From System Manager, select *Storage* > *Host*.
+ .. From System Manager, select menu:Storage[Hosts].
  .. Select the host to which the ports will be associated, and then click *View/Edit Settings*.
 +
 A dialog box appears that shows the current host settings.
@@ -108,30 +109,35 @@ The dialog box shows the current host port identifiers.
  .. Click *Save*.
 
 +
-For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix] and the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe].
-. Enable Write Back Caching for all thin volumes if it had been disabled in preparing for the headswap.
-. Enable SAML for the controller replacements if disabled in preparing for the headswap.
- .. From System Manager, select the *SAML* tab, and then select the *Enable SAML* link.
+For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] and the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe^].
+. If Write Back Caching was disabled for all thin volumes in preparing for the headswap, re-enable Write Back Caching.
+.. From System Manager, select menu:Storage[Volumes].
+.. Select any volume, and then select menu:More[Change cache settings].
 +
-The *Confirm Enable SAML* dialog opens.
+The Change Cache Setting dialog box appears. All volumes on the storage array appear in this dialog box.
 
- .. Type `enable`, and then click *Enable*.
- .. Enter user credentials for an SSO login test.
+.. Select the *Basic* tab and change the settings for read caching and write caching.
+.. Click *Save*.
+
+. If SAML was disabled in preparing for the headswap, re-enable SAML.
+ .. From System Manager, select menu:Settings[Access Management].
+ .. Select the *SAML* tab, and then follow the instructions on the page.
+
 . Gather support data about your storage array by using either the GUI or the CLI:
- ** Use either System Manager or the Array Management Window to collect and save a support bundle of your storage array.
-  *** From System Manager, first select *Support* > *Support Center* > *Diagnostics* tab. Then select **Collect Support Data* and click *Collect*.
-  *** From the Array Management Window toolbar, select *Monitor* > *Health* > *Collect Support Data Manually*. Then name and specify a location on your system where you want to store the support bundle.
-The file is saved in the Downloads folder for your browser with the name `support-data.7z`.
-
+ ** Use either System Manager or Storage Manager's Array Management Window to collect and save a support bundle of your storage array.
+  *** From System Manager, select menu:Support[Support Center > Diagnostics tab]. Then select *Collect Support Data* and click *Collect*.
+  *** From the Array Management Window toolbar, select menu:Monitor[Health > Collect Support Data Manually]. Then enter a name and specify a location on your system where you want to store the support bundle.
 +
-If your shelf contains drawers, the diagnostics data for that shelf is archived in a separate zipped file named `tray-componet-state-capture.7z`
- ** Use the CLI to run the `save storageArray supportDatacommand` to gather comprehensive support data about the storage array.
+The file is saved in the Downloads folder for your browser with the name `support-data.7z`.
++
+If your shelf contains drawers, the diagnostics data for that shelf is archived in a separate zipped file named `tray-component-state-capture.7z`
+ ** Use the CLI to run the `save storageArray supportData` command to gather comprehensive support data about the storage array.
 +
 NOTE: Gathering support data can temporarily impact performance on your storage array.
 
 . Alert NetApp Technical Support to the changes that you made to the configuration of your storage array.
  .. Get the serial number of the controller-drive tray that you recorded in xref:prepare-upgrade-controllers-task.adoc[Prepare to upgrade controllers].
- .. Log in to the NetApp support site at http://mysupport.netapp.com/eservice/assistant[mysupport.netapp.com/eservice/assistant].
+ .. Log in to the NetApp support site at http://mysupport.netapp.com/eservice/assistant[mysupport.netapp.com/eservice/assistant^].
  .. Select *Product Registration* from the drop-down list under *Category 1*.
  .. Enter the following text in the **Comments** text box, substituting the serial number of your controller-drive tray for serial number:
 +
@@ -141,6 +147,6 @@ NOTE: Gathering support data can temporarily impact performance on your storage 
 
  .. Click the *Submit* button at the bottom of the form.
 
-== Result
+.What's next?
 
-If your controller upgrade results in changing the vendor ID from LSI to NETAPP, go to link:remount-volumes-lsi-task.html[Remount volumes after changing the vendor from LSI to NETAPP]; otherwise your controller upgrade is complete and you can resume normal operations.
+If your controller upgrade results in changing the vendor ID from LSI to NETAPP, go to link:remount-volumes-lsi-task.html[Remount volumes after changing the vendor from LSI to NETAPP]; otherwise, your controller upgrade is complete and you can resume normal operations.

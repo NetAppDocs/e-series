@@ -9,23 +9,24 @@ summary: The first step in upgrading controllers is to remove the old controller
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to remove the controllers, and if necessary, remove the battery.
+After preparing for the upgrade, you can remove the controllers, and if necessary, remove the battery.
 
 == Step 1: Remove controller
 
-Follow this procedure to remove the controller canister so you can upgrade it with a new one. You must disconnect all cables and remove any SFP transceivers. Then, you can slide the controller canister out of the controller shelf.
+Remove the controller canister so you can upgrade it with a new one. You must disconnect all cables and remove any SFP transceivers. Then, you can slide the controller canister out of the controller shelf.
 
-===== What you'll need
+.What you'll need
 
+* An ESD wristband or take other antistatic precautions.
 * Labels to identify each cable that is connected to the controller canister.
 
-===== About this task
+.About this task
 
 Perform the following steps for each controller in the controller-drive tray.
 
 If you are upgrading controllers in a duplex controller-drive tray, repeat all steps to remove the second controller canister.
 
-===== Steps
+.Steps
 
 . Put on an ESD wristband or take other antistatic precautions.
 . Label each cable that is attached to the old controller canister. Depending on the HIC configuration, you might be able to reconnect some cables after you replace the controller canister.
@@ -44,7 +45,9 @@ The following figure is an example of the general location for the release handl
 +
 image:../media/28_dwg_e2824_remove_controller_canister_upg-hw.gif[]
 +
-image:../media/legend_icon_01_upg-hw.gif[] Controller canister image:../media/legend_icon_02_upg-hw.gif[] Cam handle
+*(1)* _Controller canister_
++
+*(2)* _Cam handle_
 
 . Set the old controller canister on a flat, static-free surface near the controller-drive tray with the release levers up. Position the controller canister so that you can access the top cover.
 
@@ -54,9 +57,9 @@ If you intend to use the battery from the old controller in the new controller, 
 
 == Step 2: Remove battery
 
-Follow this procedure to remove the battery only if you intend to use the battery from the old controller canister in the new controller canister.
+Remove the battery only if you intend to use the battery from the old controller canister in the new controller canister.
 
-===== Steps
+.Steps
 
 . Press down on both of the top cover latch buttons on the old controller canister, and slide the top cover to the rear of the canister.
 . Perform one of the following options, depending on your model of controller-drive tray, to release the old battery:
@@ -64,4 +67,6 @@ Follow this procedure to remove the battery only if you intend to use the batter
  ** For the E5400, EF540, E5500, EF550, E5600, or EF600 controller-drive tray, release the tab that secures the battery to the controller canister.
 . Remove the battery by sliding it towards the rear of the old controller canister.
 
-. Go to link:install-controllers-task.html[Install new controllers].
+.What's next?
+
+Go to link:install-controllers-task.html[Install new controllers].

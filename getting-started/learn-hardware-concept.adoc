@@ -26,11 +26,11 @@ E-Series arrays are available in the following models:
 
 [options="header"]
 |===
-a|
-*Rack sizes:*
+a|Component a|Specification
+
+a|Rack sizes:
 
 a|
-
 * 2U12 (2 rack units; 12 drives)
 * 2U24 (2 rack units; 24 drives)
 +
@@ -41,7 +41,7 @@ image::../media/e2800_2u_front.gif[]
 image::../media/e2860_front.gif[]
 
 a|
-*Drives:*
+Drives:
 
 a|
 Supports the following drive types:
@@ -51,7 +51,7 @@ Supports the following drive types:
 * 2.5" SAS HDD (up to 180)
 
 a|
-*Interfaces:*
+Interfaces:
 
 a|
 Available with the following interfaces:
@@ -66,19 +66,20 @@ Available with the following interfaces:
 
 [options="header"]
 |===
+a|Component a|Specification
 a|
-*Rack sizes:*
+Rack sizes:
 
 a|
 2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif[]
 
 a|
-*Drives:*
+Drives:
 
 a|
 Supports up to 96 SSD 2.5" drives
 a|
-*Interfaces:*
+Interfaces:
 
 a|
 Available with the following interfaces:
@@ -93,19 +94,20 @@ Available with the following interfaces:
 
 [options="header"]
 |===
+a|Component a|Specification
 a|
-*Rack sizes:*
+Rack sizes:
 
 a|
 2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif[]
 
 a|
-*Drives and HICs:*
+Drives and HICs:
 
 a|
 Supports up to 24 NVMe SSDs, with a single host interface card (HIC) per controller.
 a|
-*Interfaces:*
+Interfaces:
 
 a|
 Available with the following interfaces:
@@ -124,8 +126,9 @@ Available with the following interfaces:
 
 [options="header"]
 |===
+a|Component a|Specification
 a|
-*Rack sizes:*
+Rack sizes:
 
 a|
 
@@ -138,7 +141,7 @@ image::../media/e2800_2u_front.gif[]
 image::../media/e2860_front.gif[]
 
 a|
-*Drives:*
+Drives:
 
 a|
 Supports up to 480 of the following drive types:
@@ -148,7 +151,7 @@ Supports up to 480 of the following drive types:
 * 2.5" SAS HDD drives
 
 a|
-*Interfaces:*
+Interfaces:
 
 a|
 Available with the following interfaces:
@@ -168,19 +171,20 @@ Available with the following interfaces:
 
 [options="header"]
 |===
+a|Component a|Specification
 a|
-*Rack sizes:*
+Rack sizes:
 
 a|
 2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif[]
 
 a|
-*Drives:*
+Drives:
 
 a|
 Supports up to 120 SSD 2.5" drives
 a|
-*Interfaces:*
+Interfaces:
 
 a|
 Available with the following interfaces:
@@ -200,19 +204,20 @@ Available with the following interfaces:
 
 [options="header"]
 |===
+a|Component a|Specification
 a|
-*Rack sizes:*
+Rack sizes:
 
 a|
 2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif[]
 
 a|
-*Drives and HICs*
+Drives and HICs:
 
 a|
 Supports up to 24 NVMe SSDs, with two host interface cards (HICs) per controller.
 a|
-*Interfaces:*
+Interfaces:
 
 a|
 Available with the following interfaces:

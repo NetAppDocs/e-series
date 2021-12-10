@@ -1,115 +1,56 @@
 ---
 permalink: web-services-proxy/install-wsp-task.html
 sidebar: sidebar
-keywords: installation, download, file, install proxy, package, linux, windows, server, api, documentation, unified, manager, managing, storage, system, requirement, consideration, download, web, service, file, windows, linux, server, access, unified, manager
-summary: Installation involves downloading the file and then installing the proxy package on a Linux or Windows server. After installation, you can access the API documentation or Unified Manager to start managing storage systems.
+keywords: installation, download, install proxy,
+summary: Installation involves downloading the file and then installing the proxy package on a Linux or Windows server.
 ---
-= Install Web Services Proxy
+= Download and install Web Services Proxy file
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Installation involves downloading the file and then installing the proxy package on a Linux or Windows server. After installation, you can access the API documentation or Unified Manager to start managing storage systems.
-
-== Installation requirements and considerations
-
-[.lead]
-You can install and configure the Web Services Proxy on a Windows or Linux host system. Review the installation requirements and upgrade considerations.
-
-=== Installation requirements
-
-Proxy installation includes the following requirements.
-
-[options="header"]
-|===
-| Requirement| Description
-a|
-Hostname limitations
-a|
-Be sure that the hostname of the server where you plan to install the Web Services Proxy contains only ASCII letters, numerical digits, and hyphens (-). This requirement is due to a limitation of Java Keytool, which is used in generating a self-signed certificate for the server. If the hostname of your server contains any other characters, such as an underscore (_), the Webserver will fail to start after installation.
-a|
-Operating systems
-a|
-You can install the proxy on the following operating systems:
-
-* Linux
-* Windows
-
-For a complete list of operating systems and firmware compatibility, see the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
-
-a|
-Linux: Additional Considerations
-a|
-Linux Standard Base libraries (init-functions) are required for the Webserver to function properly. You must install the lsb/insserv packages for your operating system. For more information, refer to the "Additional packages required" section of the Readme file.
-
-a|
-Multiple instances
-a|
-You can install only one instance of Web Services Proxy on a server; however, you can install the proxy on multiple servers within your network.
-
-a|
-Capacity planning
-a|
-Web Services Proxy requires adequate space for logging. Make sure that your system meets the following available disk space requirements:
-
-* Required installation space -- 275 MB
-* Minimum logging space -- 200 MB
-* System memory -- 2 GB; heap space is 1 Gb by default
-
-You can use a disk-space monitoring tool to verify available disk drive space for persistent storage and logging.
-
-a|
-License
-a|
-The Web Services Proxy is a free, standalone product that does not require a license key. However, applicable copyrights and terms of service apply. If you are installing the proxy in either Graphical or Console mode, you must accept the End User License Agreement (EULA).
-
-|===
-
-=== Upgrade considerations
-
-If you are upgrading from a previous version, be aware that some items are preserved or removed.
-
-* For the Web Services Proxy, previous configuration settings are preserved. These settings include user passwords, all discovered storage systems, server certificates, trusted certificates, and server runtime configuration.
-* For Unified Manager, all SANtricity OS files previously loaded in the repository are removed during the upgrade.
+Installation involves downloading the file and then installing the proxy package on a Linux or Windows server.
 
 == Download Web Services Proxy files
 
-[.lead]
 You can download the installation file and the readme file from the Software download page of the NetApp Support site.
-
-===== Before You Begin
 
 The download package includes the Web Services Proxy and the Unified Manager interface.
 
-===== Steps
+.Steps
 
-. Go to: http://mysupport.netapp.com/eservice/Download.jsp/[NetApp Downloads], and then select *Downloads* > *Software*.
-. From *E-Series SANtricity Web Services (REST API)*, select the *Web Services Proxy platform*.
-. Follow the instructions to download the readme file and the software installation file. Make sure you select the correct download package for your server (for example, EXE for Windows; BIN or RPM for Linux).
+. Go to https://mysupport.netapp.com/site/downloads[NetApp Support - Downloads^].
+. Select *E-Series SANtricity Web Services Proxy*.
+. Follow the instructions to download the file. Make sure you select the correct download package for your server (for example, EXE for Windows; BIN or RPM for Linux).
 . Download the installation file to the server where you want to install the proxy and Unified Manager.
 
 == Install on Windows or Linux server
 
-[.lead]
 You can install the Web Services Proxy and Unified Manager using one of three modes (Graphical, Console, or Silent), or by using an RPM file (Linux only).
+
+.Before you begin
+
+* link:install-reqs-task.html[Review installation requirements].
+* Make sure you have downloaded the correct installation file (EXE for Windows; BIN for Linux) to the server where you want to install the proxy and Unified Manager.
 
 === Graphical mode install
 
-[.lead]
 You can run the installation in Graphical mode for either Windows or Linux. In Graphical mode, the prompts appear in a Windows-style interface.
 
-===== Before You Begin
-
-* You have reviewed the system requirements and upgrade considerations.
-* You have downloaded the correct installation file (EXE for Windows; BIN for Linux) to the server where you want to install the proxy and Unified Manager.
-
-===== Steps
+.Steps
 
 . Access the folder where you downloaded the installation file.
 . Launch the installation for either Windows or Linux, as follows:
- ** Windows -- Double-click the installation file: santricity_webservices-windows_x64-nn.nn.nn.nnnn.exe
- ** Linux -- Run the following command: santricity_webservices-linux_x64-nn.nn.nn.nnnn.bin
-*Note:* In the above filenames, _nn.nn.nn.nnnn_ represents the version number.
+ ** Windows -- Double-click the installation file:
+
++
+`santricity_webservices-windows_x64-nn.nn.nn.nnnn.exe`
+
++
+ ** Linux -- Run the following command:
+ `santricity_webservices-linux_x64-nn.nn.nn.nnnn.bin`
++
+In the above filenames, `nn.nn.nn.nnnn` represents the version number.
 
 +
 The installation process starts and the NetApp SANtricity Web Services Proxy + Unified Manager splash screen appears.
@@ -125,17 +66,15 @@ The Install Complete dialog box appears.
 
 === Console mode install
 
-[.lead]
 You can run the installation in Console mode for either Windows or Linux. In Console mode, the prompts appear in the terminal window.
 
-* You have reviewed the system requirements and upgrade considerations.
-* You have downloaded the correct installation file (EXE for Windows; BIN for Linux) to the server where you want to install the proxy and Unified Manager.
+.Steps
 
-. Run the following command: <install filename> --i console
+. Run the following command: `<install filename> -i console`
 +
-In the above command, <__install filename__> represents the name of the proxy installation file you downloaded (for example: santricity_webservices-windows_x64-nn.nn.nn.nnnn.exe).
+In the above command, `<install filename>` represents the name of the proxy installation file you downloaded (for example: `santricity_webservices-windows_x64-nn.nn.nn.nnnn.exe`).
 +
-NOTE: To cancel the installation at any time during the installation process, type QUIT at the command prompt.
+NOTE: To cancel the installation at any time during the installation process, type `QUIT` at the command prompt.
 +
 The installation process starts and the Launching Installer -- Introduction message appears.
 
@@ -147,19 +86,13 @@ During the installation, you are prompted to enable several features and enter s
 
 === Silent mode install
 
-[.lead]
 You can run the installation in Silent mode for either Windows or Linux. In Silent mode, no return messages or scripts appear in the terminal window.
 
-===== Before You Begin
+.Steps
 
-* You have reviewed the system requirements and upgrade considerations.
-* You have downloaded the correct installation file (EXE for Windows; BIN for Linux) to the server where you want to install the proxy and Unified Manager.
-
-===== Steps
-
-. Run the following command: <install filename> --i silent
+. Run the following command: `<install filename> -i silent`
 +
-In the above command, <__install filename__> represents the name of the proxy installation file you downloaded (for example: santricity_webservices-windows_x64-nn.nn.nn.nnnn.exe).
+In the above command, `<install filename>` represents the name of the proxy installation file you downloaded (for example: `santricity_webservices-windows_x64-nn.nn.nn.nnnn.exe`).
 
 . Press *Enter*.
 +
@@ -167,139 +100,17 @@ The installation process can take several minutes to complete. After successful 
 
 === RPM command install (Linux only)
 
-[.lead]
 For Linux systems that are compatible with the RPM package management system, you can install the Web Services Proxy using an optional RPM file.
 
-===== Before You Begin
+.Steps
 
-* You have reviewed the system requirements and upgrade considerations.
-* You have downloaded the RPM file to the server where you want to install the proxy and Unified Manager.
-
-===== Steps
-
+. Download the RPM file to the server where you want to install the proxy and Unified Manager.
 . Open a terminal window.
-. Enter the following command: rpm -u santricity_webservices-nn.nn.nn.nnnn-n.x86_64.rpm
+. Enter the following command:
+
 +
-NOTE: In the above command, _nn.nn.nn.nnnn_ represents the version number.
+`rpm -u santricity_webservices-nn.nn.nn.nnnn-n.x86_64.rpm`
++
+NOTE: In the above command, `nn.nn.nn.nnnn` represents the version number.
 +
 The installation process can take several minutes to complete. After successful installation, a command prompt appears in the terminal window.
-
-== Access API documentation and Unified Manager
-
-[.lead]
-Web Services includes API documentation, which enables you to directly interact with the REST API. It also includes Unified Manager, a browser-based interface for managing multiple E-Series storage systems.
-
-=== Log in to Web Services API
-
-[.lead]
-After you install the Web Services Proxy, you can access the interactive API documentation in a browser.
-
-===== Before You Begin
-
-* The Web Services Proxy is installed on a Windows or Linux server.
-
-The API documentation runs with each instance of Web Services, and is also available in a static PDF format from the NetApp Support site. To access the interactive version, you open a browser and enter the URL pointing to where Web Services resides (either a controller for the embedded version or a server for the proxy).
-
-NOTE: The Web Services API implements the OpenAPI specification (originally called the Swagger specification).
-
-For initial login, you use the "admin" credentials. "Admin" is considered a super administrator with access to all functions and roles.
-
-===== Steps
-
-. Open a browser.
-. Enter the URL for the embedded or proxy implementation:
- ** Embedded: ++ https://<controller>:<port>/devmgr/docs/ ++
-+
-NOTE: In this URL, <controller> is the IP address or FQDN of the controller, and <port> is the management port number of the controller (defaults to 8443).
-+
- ** Proxy: ++ http[s]://<server>:<port>/devmgr/docs/ ++
-+
-NOTE: In this URL, <server> is the IP address or FQDN of the server where the proxy is installed, and <port> is the listening port number (defaults to 8080 for HTTP or 8443 for HTTPS).
-+
-NOTE: If the listening port is already in use, the proxy detects the conflict and prompts you to choose a different listening port.
-+
-The API documentation opens in the browser.
-. When the interactive API documentation opens, go to the drop-down menu in the upper right of the page and select *utils*.
-. Click the *Login* category to see the available endpoints.
-. Click the *POST: /login* endpoint, and then click *Try it out*.
-. For first-time login, enter admin for the username and password.
-. Click *Execute*.
-. To access the endpoints for storage management, go to the drop-down menu in the upper right and select *v2*.
-+
-The high-level categories for endpoints are displayed. You can navigate the API documentation as described in the table.
-+
-[options="header"]
-|===
-| Area| Description
-a|
-Drop-down menu
-a|
-At the upper right of the page, a drop-down menu provides options for switching between version 2 of the API documentation (V2), the SYMbol interface (SYMbol V2), and API utilities (utils) for logging in.
-
-NOTE: Because version 1 of the API documentation was a prerelease and not generally available, V1 is not included in the drop-down menu.
-a|
-Categories
-a|
-The API documentation is organized by high-level categories (for example: Administration, Configuration). Click on a category to see the related endpoints.
-a|
-Endpoints
-a|
-Select an endpoint to see its URL paths, required parameters, response bodies, and status codes that the URLs are likely to return.
-a|
-Try It Out
-a|
-Interact with the endpoint directly by clicking *Try It Out*. This button is provided in each of the expanded views for endpoints.
-
-When you click the button, fields appear for entering parameters (if applicable). You can then enter values and click *Execute*.
-
-The interactive documentation uses JavaScript to make the request directly to the API; it is not a test request.
-|===
-
-=== Log in to Unified Manager
-
-[.lead]
-After you install the Web Services Proxy, you can access Unified Manager to manage multiple storage systems in a web-based interface.
-
-===== Before You Begin
-
-* The Web Services Proxy, which includes the Unified Manager, is installed on a Windows or Linux server.
-
-* To access Unified Manager, you open a browser and enter the URL pointing to where the proxy is installed. The following browsers and versions are supported.
-+
-[options="header"]
-|===
-| Browser| Minimum version
-a|
-Google Chrome
-a|
-79
-a|
-Microsoft Internet Explorer
-a|
-11
-a|
-Microsoft Edge
-a|
-79
-a|
-Mozilla Firefox
-a|
-70
-a|
-Safari
-a|
-12
-|===
-
-===== Steps
-
-. Open a browser and enter the following URL:
-`+http[s]://<server>:<port>/um+`
-+
-In this URL, <__server__> represents the IP address or FQDN of the server where the Web Services Proxy is installed, and <__port__> represents the listening port number (defaults to 8080 for HTTP or 8443 for HTTPS).
-+
-The Unified Manager login page opens.
-
-. For first-time login, enter admin for the user name, and then set and confirm a password for the admin user.
-+
-The password can include up to 30 characters. For further information about users and passwords, see the Access Management section of the Unified Manager online help.

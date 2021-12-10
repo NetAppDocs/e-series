@@ -11,12 +11,16 @@ summary: 'Before using the namespace, you verify that the host can write data to
 [.lead]
 Before using the namespace, you verify that the host can write data to the namespace and read it back.
 
-===== Steps
+.What you'll need
+
+An initialized namespace that is formatted with a file system.
+
+.Steps
 
 . On the host, copy one or more files to the mount point of the disk.
 . Copy the files back to a different folder on the original disk.
 . Run the diff command to compare the copied files to the originals.
 
-===== After you finish
+.After you finish
 
 Remove the file and folder that you copied.

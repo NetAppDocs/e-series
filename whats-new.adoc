@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: whats-new.html
-keywords: santricity, os, whats, new
+keywords: whats new, new features, SANtricity 11.72
 summary: New features in SANtricity OS.
 ---
 
@@ -10,14 +10,24 @@ summary: New features in SANtricity OS.
 [.lead]
 The following table describes new features in SANtricity OS.
 
-*New features in Version 11.71*
-
 NOTE: The Resource Provisioning capability, which is available only on
-EF300 and EF600 systems with specific NVMe SSDs, has been disabled in
-this release so that outstanding issues can be resolved. Note that in
-some System Manager views, components might be reported as
-resource-provisioning (or DULBE) capable, but the ability to create
+EF300 and EF600 systems with specific NVMe SSDs, has been disabled in Versions 11.71 and 11.72 so that outstanding issues can be resolved. Note that in some System Manager views, components might be reported as resource-provisioning (or DULBE) capable, but the ability to create
 resource- provisioned volumes is not available.
+
+== New features in Version 11.72
+
+[cols=",",options="header",]
+|===
+|New feature |Description
+|SNMPv3 support |SNMPv3 is now supported for alert notifications, configurable in *Settings > Alerts*. SNMPv3 provides security through strong authentication and data encryption.
+
+|Support replicating keys to multiple key servers |For external key management for self-encrypting drives, the Create External Key Management dialog includes a new option for adding multiple key servers.
+
+|Updated browser versions |System Manager minimum browser versions have been updated.
+
+|===
+
+== New features in Version 11.71
 
 [cols=",",options="header",]
 |===
@@ -57,17 +67,13 @@ when AutoSupport is not enabled.
 5424.
 |===
 
-*New features in Version 11.70*
+== New features in Version 11.70
 
 [cols=",",options="header",]
 |===
-|New feature |Description
-|New storage system model – EF300 |This release introduces the EF300
-low-cost all-NVMe-flash storage system. The EF300 includes 24 NVME SSD
-drives and a single host interface card (HIC) per controller. The
-supported NVMe over Fabrics host interfaces include NVMe over IB, NVMe
-over RoCE, and NVMe over FC. The supported SCSI interfaces include FC,
-IB over iSER, and IB over SRP. Multiple EF300 storage systems and other
+a|New feature a|Description
+
+|New storage system model – EF300 a|This release introduces the EF300 low-cost all-NVMe-flash storage system. The EF300 includes 24 NVME SSD drives and a single host interface card (HIC) per controller. The supported NVMe over Fabrics host interfaces include NVMe over IB, NVMe over RoCE, and NVMe over FC. The supported SCSI interfaces include FC, IB over iSER, and IB over SRP. Multiple EF300 storage systems and other
 E- Series storage systems can be viewed and managed in Unified Manager.
 
 |New Resource Provisioning feature (EF300 and EF600 only) |The Resource
@@ -92,9 +98,9 @@ available in the AutoSupport tab of the Support Center.
 The feature for connecting to an external key management server includes
 the following enhancements:
 
-Bypass the function for creating a backup key.
+* Bypass the function for creating a backup key.
 
-Choose an intermediate certificate for the key management server, in addition to the client and server certificates.
+* Choose an intermediate certificate for the key management server, in addition to the client and server certificates.
 
 |Certificate enhancements |This release allows for using an external
 tool such as OpenSSL to generate a Certificate Signing Request (CSR),
@@ -122,7 +128,7 @@ handle a single drive failure to offer a more cost-effective small pool
 default.
 |===
 
-*New features in Version 11.62*
+== New features in Version 11.62
 
 [cols=",",options="header",]
 |===
@@ -168,7 +174,7 @@ categories to provide better guidance: Common, Uncommon, and Use only if
 directed.
 |===
 
-*New features in Version 11.61*
+== New features in Version 11.61
 
 [cols=",",options="header",]
 |===
@@ -185,7 +191,7 @@ Manager, you must now enter a password for the administrator user. There
 is no longer a default "admin" password.
 |===
 
-*New features in Version 11.60*
+== New features in Version 11.60
 
 [cols=",",options="header",]
 |===
@@ -206,11 +212,11 @@ version of the CLI. The legacy SANtricity Storage Manager package
 continues to include the CLI as well.
 |===
 
-*New features in Version 11.53*
+== New features in Version 11.53
 
 This version includes only minor enhancements and fixes.
 
-*New features in Version 11.52*
+== New features in Version 11.52
 
 [cols=",",options="header",]
 |===
@@ -222,11 +228,11 @@ System Manager includes statistics for this new connection type in
 *Settings* > *System* under "NVMe over Fibre Channel details."
 |===
 
-*New features in Version 11.51*
+== New features in Version 11.51
 
 This version includes only minor enhancements and fixes.
 
-*New features in Version 11.50*
+== New features in Version 11.50
 
 [cols=",",options="header",]
 |===

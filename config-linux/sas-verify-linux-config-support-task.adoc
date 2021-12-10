@@ -12,9 +12,9 @@ summary: To ensure reliable operation, you create an implementation plan and the
 [.lead]
 To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool (IMT) to verify that the entire configuration is supported.
 
-===== Steps
+.Steps
 
-. Go to the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool].
+. Go to the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 . Click on the *Solution Search* tile.
 . In the menu:Protocols[SAN Host] area, click the *Add* button next to *E-Series SAN Host*.
 . Click *View Refine Search Criteria*.

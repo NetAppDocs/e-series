@@ -5,13 +5,12 @@ keywords: E5700 change host protocol, E5700 baseboard ports, convert E5700 proto
 summary: Change host port protocol for E5700.
 ---
 = Change E5700 host protocol
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to convert the host port protocol for an E5700.
-
-You can convert baseboard host ports as follows:
+For an E5700 storage array, you can convert baseboard host ports as follows:
 
 * Fibre Channel (FC) to iSCSI
 * iSCSI to FC
@@ -26,7 +25,7 @@ Use SANtricity System Manager to determine what type of SFP transceivers you hav
 
 If your current SFPs support data rates of 16 Gbps and 10 Gbps, you can continue to use them after converting the host port protocol.
 
-===== Steps
+.Steps
 
 . From SANtricity System Manager, select *Support*.
 . Select the *Support Center* tile.
@@ -78,10 +77,10 @@ NOTE: 8Gbps FC SFPs are NOT supported in the E28xx or E57xx controllers. ONLY 16
 
 To obtain the feature pack, you need the serial number from the controller shelf, a Feature Activation Code, and the Feature Enable Identifier for the storage array.
 
-===== Steps
+.Steps
 
 . Locate the serial number.
- .. From SANtricity System Manager, select *Support* > *Support Center*.
+ .. From SANtricity System Manager, select menu:Support[Support Center].
  .. With the *Support Resources* tab selected, scroll to the *View top storage array properties* section.
  .. Locate the *Chassis Serial Number*, and copy this value to a text file.
 +
@@ -827,16 +826,16 @@ NVMe/IB
 a|
 JGJ-PKK-ZUQG2
 |===
-NOTE: If your controller submodel ID is not listed, contact http://mysupport.netapp.com[NetApp Support].
+NOTE: If your controller submodel ID is not listed, contact http://mysupport.netapp.com[NetApp Support^].
 
 . In System Manager, locate the Feature Enable Identifier.
- .. Go to *Settings* > *System*.
+ .. Go to menu:Settings[System].
  .. Scroll down to *Add-ons*.
  .. Under *Change Feature Pack*, locate the *Feature Enable Identifier*.
  .. Copy and paste this 32-digit number to a text file.
 +
 image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-e5700.gif[]
-. Go to http://partnerspfk.netapp.com[NetApp License Activation: Storage Array Premium Feature Activation], and enter the information required to obtain the feature pack.
+. Go to http://partnerspfk.netapp.com[NetApp License Activation: Storage Array Premium Feature Activation^], and enter the information required to obtain the feature pack.
  ** Chassis serial number
  ** Feature Activation Code
  ** Feature Enable Identifier
@@ -851,7 +850,7 @@ Stop all I/O operations from the host before converting the protocol of the host
 
 This task applies only if you are converting a storage array that has already been in use.
 
-===== Steps
+.Steps
 
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
@@ -865,7 +864,8 @@ CAUTION: *Possible data loss* -- If you continue this procedure while I/O operat
 . If the storage array participates in a mirroring relationship, stop all host I/O operations on the secondary storage array.
 . Wait for any data in cache memory to be written to the drives.
 +
-The green Cache Active LED image:../media/legend_icon_01_maint-e5700.gif[] on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.image:../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[]
+The green Cache Active LED *(1)* on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
+image:../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[]
 
 . From the Home page of SANtricity System Manager, select *View Operations in Progress*.
 . Wait for all operations to complete before continuing with the next step.
@@ -874,9 +874,9 @@ The green Cache Active LED image:../media/legend_icon_01_maint-e5700.gif[] on th
 
 Change the feature pack to convert the host protocol of the baseboard host ports, the IB HIC ports, or both types of ports.
 
-===== Steps
+.Steps
 
-. From SANtricity System Manager, select *Settings* > *System*.
+. From SANtricity System Manager, select menu:Settings[System].
 . Under *Add-ons*, select *Change Feature Pack*.
 +
 image::../media/sam1130_ss_system_change_feature_pack_maint-e5700.gif[]
@@ -896,4 +896,6 @@ The feature pack migration begins. Both controllers automatically reboot twice t
  .. Click *Show more settings*.
  .. Review the details shown for the baseboard ports and the HIC ports (labeled "`slot 1`"), and confirm that each type of port has the protocol you expect.
 
-. Go to link:hpp-complete-protocol-conversion-task.html[Complete host protocol conversion].
+.What's next?
+
+Go to link:hpp-complete-protocol-conversion-task.html[Complete host protocol conversion].

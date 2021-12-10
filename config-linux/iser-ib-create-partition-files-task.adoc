@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/iser-ib-create-partition-files-task.html
 sidebar: sidebar
-keywords: partitions, file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+keywords: configure partitions Linux, configure filesystems linux, express linux configuration, linux host,
 summary: A new LUN has no partition or file system when the Linux host first discovers it. You must format the LUN before it can be used.
 ---
 = Create partitions and filesystems
@@ -9,23 +9,22 @@ summary: A new LUN has no partition or file system when the Linux host first dis
 :imagesdir: ../media/
 
 [.lead]
-A new LUN has no partition or file system when the Linux host first discovers it. You must format the LUN before it can be used. Optionally, you can create a file system on the LUN.
+Because a new LUN has no partition or file system when the Linux host first discovers it, you must format the LUN before it can be used. Optionally, you can create a file system on the LUN.
 
-===== Before you begin
+.What you'll need
 
-* The host must have discovered the LUN.
+* A LUN that is discovered by the host.
+* A list of available disks. (To see available disks, run the `ls` command in the /dev/mapper folder.)
 
-* In the /dev/mapper folder, you have run the ls command to see the available disks.
-
-===== About this task
+.About this task
 
 You can initialize the disk as a basic disk with a GUID partition table (GPT) or Master boot record (MBR).
 
 Format the LUN with a file system such as ext4. Some applications do not require this step.
 
-===== Steps
+.Steps
 
-. Retrieve the SCSI ID of the mapped disk by issuing the sanlun lun show -p command.
+. Retrieve the SCSI ID of the mapped disk by issuing the `sanlun lun show -p` command.
 +
 The SCSI ID is a 33-character string of hexadecimal digits, beginning with the number 3. If user-friendly names are enabled, Device Mapper reports disks as mpath instead of by a SCSI ID.
 +

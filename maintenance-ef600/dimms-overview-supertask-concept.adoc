@@ -9,7 +9,7 @@ summary: Review requirements and considerations before replacing EF300 or EF600 
 :imagesdir: ../media/
 
 [.lead]
-Before you replace EF300 or EF600 DIMMs, review the requirements and considerations.
+Before you replace a DIMM in an EF300 or EF600 storage array, review the requirements and considerations.
 
 You must replace a DIMM when a memory mismatch is present, or you have a failed DIMM. Be sure to verify the configuration of your EF300 or EF600 controller to ensure the correct DIMM size is replaced.
 

@@ -18,12 +18,12 @@ To display and manage storage resources, you must use the Storage Plugin for vCe
 
 == Step 1: Enter network addresses for discovery
 
-=== Before you begin
+.Before you begin
 
 ** You must know the network IP addresses (or range of addresses) of the array controllers.
 ** The storage arrays must be correctly set up and configured, and you must know the storage array login credentials (user name and password).
 
-=== Steps
+.Steps
 
 . From the Manage page, select *Add/Discover*.
 +
@@ -46,9 +46,9 @@ The system performs a credential check on each array that you are adding to the 
 
 . Click *Next* to proceed to the next step in the wizard.
 +
-If the storage arrays have valid certificates, go to _Step 3: Provide passwords_.
+If the storage arrays have valid certificates, go to <<Step 3: Provide passwords>>.
 +
-If any storage arrays do not have valid certificates, the Resolve Self-Signed Certificates dialog box appears. Go to _Step 2: Resolve untrusted certificates during discovery_.
+If any storage arrays do not have valid certificates, the Resolve Self-Signed Certificates dialog box appears. Go to <<Step 2: Resolve untrusted certificates during discovery>>.
 +
 If you want to import CA-signed certificates, cancel out of the discovery wizard and click *Certificate Management* from the left panel. Refer to the online help for further instructions.
 

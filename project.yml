@@ -302,7 +302,7 @@ sidebar:
                     url: "/config-linux/nvme-ib-access-physical-targets-concept.html"
                   - title: Create filesystems (RHEL 7 and SLES 12)
                     url: "/config-linux/nvme-ib-create-filesystems-sles-12-task.html"
-                  - title: Create filesystems (SLES 15)
+                  - title: Create filesystems (RHEL 8 and SLES 15)
                     url: "/config-linux/nvme-ib-create-filesystems-sles-15-task.html"
                   - title: Verify storage access on the host
                     url: "/config-linux/nvme-ib-verify-storage-access-host-task.html"
@@ -340,13 +340,13 @@ sidebar:
                     url: "/config-linux/nvme-roce-access-physical-targets-concept.html"
                   - title: Create filesystems (RHEL 7 and SLES 12)
                     url: "/config-linux/nvme-roce-create-filesystems-sles-12-task.html"
-                  - title: Create filesystems (SLES 15)
+                  - title: Create filesystems (RHEL 8 and SLES 15)
                     url: "/config-linux/nvme-roce-create-filesystems-sles-15-task.html"
                   - title: Verify storage access on host
                     url: "/config-linux/nvme-roce-verify-storage-access-host-task.html"
                   - title: NVMe over RoCE worksheet for Linux
                     url: "/config-linux/nvme-roce-worksheet-for-concept.html"
-                - title: NVMe over Fibre Channel Setup
+                - title: NVMe over Fibre Channel setup
                   entries:
                   - title: Verify Linux configuration
                     url: "/config-linux/nvme-fc-verify-linux-config-support-task.html"
@@ -443,6 +443,7 @@ sidebar:
     - title: Upgrade systems
       entries:
         - title: Controllers
+          pdf-filename: Controller Hardware Upgrade
           entries:
               - title: Overview
                 url: "/upgrade-controllers/index.html"
@@ -463,6 +464,7 @@ sidebar:
               - title: Reconfigure SAS-2 system
                 url: "/upgrade-controllers/reconfigure-sas-task.html"
         - title: SANtricity OS
+          pdf-filename: SANtricity Software Upgrade
           entries:
               - title: Overview
                 url: "/upgrade-santricity/index.html"
@@ -477,40 +479,49 @@ sidebar:
     - title: Maintain systems
       entries:
         - title: EF300 and EF600
+          pdf-filename: EF300-EF600 Maintain Systems
           entries:
               - title: Overview
                 url: "/maintenance-ef600/index.html"
               - title: Batteries
+                pdf-filename: EF300-EF600 Maintain Batteries
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/batteries-overview-requirements-concept.html"
                 - title: Replace battery
                   url: "/maintenance-ef600/batteries-replace-supertask-task.html"
               - title: Controllers
+                pdf-filename: EF300-EF600 Maintain Controllers
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/controllers-overview-supertask-concept.html"
                 - title: Replace controller
                   url: "/maintenance-ef600/controllers-replace-supertask-task.html"
               - title: DIMMs
+                pdf-filename: EF300-EF600 Maintain DIMMs
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/dimms-overview-supertask-concept.html"
                 - title: Replace DIMMs
                   url: "/maintenance-ef600/dimms-replace-supertask-task.html"
               - title: Drives
+                pdf-filename: EF300-EF600 Maintain Drives
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/drives-overview-supertask-concept.html"
-                - title: Replace drive
+                - title: Replace EF300 drive
+                  url: "/maintenance-ef600/drives-replace-EF300-task.html"
+                - title: Replace EF600 drive
                   url: "/maintenance-ef600/drives-replace-supertask-task.html"
               - title: Fans
+                pdf-filename: EF300-EF600 Maintain Fans
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/fans-overview-requirements-replacing2-concept.html"
                 - title: Replace fan
                   url: "/maintenance-ef600/fans-replace-supertask-task.html"
               - title: Host interface cards
+                pdf-filename: EF300-EF600 Maintain HICs
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/hics-overview-supertask-concept.html"
@@ -521,6 +532,7 @@ sidebar:
                 - title: Replace failed host interface card
                   url: "/maintenance-ef600/hics-replace-supertask-task.html"
               - title: Host port protocol conversion
+                pdf-filename: EF300-EF600 Maintain Host Port
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/hpp-overview-supertask-concept.html"
@@ -529,6 +541,7 @@ sidebar:
                 - title: Complete host protocol conversion
                   url: "/maintenance-ef600/hpp-complete-protocol-conversion-task.html"
               - title: Power supplies
+                pdf-filename: EF300-EF600 Maintain Power Supplies
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/power-overview-requirements2-concept.html"
@@ -541,10 +554,12 @@ sidebar:
                 - title: Add SAS expansion cards
                   url: "/maintenance-ef600/sas-add-supertask-task.html"
         - title: E2800
+          pdf-filename: E2800 Maintain System
           entries:
             - title: Overview
               url: "/maintenance-e2800/index.html"
             - title: Batteries
+              pdf-filename: E2800 Maintain Batteries
               entries:
               - title: Requirements for battery replacement
                 url: "/maintenance-e2800/batteries-overview-requirements-concept.html"
@@ -561,6 +576,7 @@ sidebar:
               - title: Complete battery replacement
                 url: "/maintenance-e2800/batteries-complete-replacement-task.html"
             - title: Controllers
+              pdf-filename: E2800 Maintain Controllers
               entries:
               - title: Requirements for controller replacement
                 url: "/maintenance-e2800/controllers-overview-supertask-concept.html"
@@ -571,6 +587,7 @@ sidebar:
               - title: Replace controller in simplex configuration
                 url: "/maintenance-e2800/controllers-simplex-supertask-task.html"
             - title: Canisters
+              pdf-filename: E2800 Maintain Canisters
               entries:
               - title: Requirements for canister replacement
                 url: "/maintenance-e2800/canisters-overview-supertask-concept.html"
@@ -581,6 +598,7 @@ sidebar:
               - title: Replace fan canister (60-drive)
                 url: "/maintenance-e2800/canisters-fan-supertask-task.html"
             - title: Drives
+              pdf-filename: E2800 Maintain Drives
               entries:
               - title: Requirements for drive replacement
                 url: "/maintenance-e2800/drives-overview-supertask-concept.html"
@@ -591,6 +609,7 @@ sidebar:
               - title: Replace drive drawer (60-drive)
                 url: "/maintenance-e2800/drives-60-supertask-task.html"
             - title: Host interface cards
+              pdf-filename: E2800 Maintain HICs
               entries:
               - title: Requirements for HIC replacement
                 url: "/maintenance-e2800/hics-overview-supertask-concept.html"
@@ -601,6 +620,7 @@ sidebar:
               - title: Replace host interface card
                 url: "/maintenance-e2800/hics-replace-supertask-task.html"
             - title: Host port protocol conversion
+              pdf-filename: E2800 Convert Host Protocol
               entries:
               - title: Requirements for conversion
                 url: "/maintenance-e2800/hpp-overview-supertask-concept.html"
@@ -609,22 +629,26 @@ sidebar:
               - title: Complete host protocol conversion
                 url: "/maintenance-e2800/hpp-complete-protocol-conversion-task.html"
         - title: E5700
+          pdf-filename: E5700 Maintain System
           entries:
               - title: Overview
                 url: "/maintenance-e5700/index.html"
               - title: Batteries
+                pdf-filename: E5700 Maintain Batteries
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-e5700/batteries-intro-concept.html"
                 - title: Replace battery
                   url: "/maintenance-e5700/batteries-replace-supertask-task.html"
               - title: Controllers
+                pdf-filename: E5700 Maintain Controllers
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-e5700/controllers-overview-concept.html"
                 - title: Replace controller in duplex configuration
                   url: "/maintenance-e5700/controllers-duplex-supertask-task.html"
               - title: Canisters
+                pdf-filename: E5700 Maintain Canisters
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-e5700/canisters-overview-supertask-concept.html"
@@ -635,6 +659,7 @@ sidebar:
                 - title: Replace fan canister (60-drive)
                   url: "/maintenance-e5700/canisters-fan-replace-task.html"
               - title: Drives
+                pdf-filename: E5700 Maintain Drives
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-e5700/drives-overview-supertask-concept.html"
@@ -645,6 +670,7 @@ sidebar:
                 - title: Replace drive drawer (60-drive)
                   url: "/maintenance-e5700/drives-drawer-supertask-task.html"
               - title: Host interface cards
+                pdf-filename: E5700 Maintain HICs
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-e5700/hics-overview-supertask-concept.html"
@@ -655,6 +681,7 @@ sidebar:
                 - title: Replace host interface card
                   url: "/maintenance-e5700/hics-replace-supertask-task.html"
               - title: Host port protocol
+                pdf-filename: E5700 Change Host Protocol
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-e5700/hpp-overview-supertask-concept.html"
@@ -671,13 +698,27 @@ sidebar:
             - title: Overview
               url: "/web-services-proxy/index.html"
             - title: Learn about Web Services
-              url: "/web-services-proxy/overview-intro-concept.html"
-            - title: Install Web Services Proxy
-              url: "/web-services-proxy/install-wsp-task.html"
-            - title: Configure Web Services Proxy
-              url: "/web-services-proxy/install-config-task.html"
-            - title: Uninstall Web Services Proxy
-              url: "/web-services-proxy/install-uninstall-task.html"
+              entries:
+              - title: Web Services API overview
+                url: "/web-services-proxy/overview-intro-concept.html"
+              - title: Compatibility and restrictions
+                url: "/web-services-proxy/overview-compat-concept.html"
+              - title: API basics
+                url: "/web-services-proxy/overview-api-concept.html"
+              - title: Terms and concepts
+                url: "/web-services-proxy/overview-terms-concept.html"
+            - title: Install and configure
+              entries:
+              - title: Review requirements
+                url: "/web-services-proxy/install-reqs-task.html"
+              - title: Install Web Services Proxy
+                url: "/web-services-proxy/install-wsp-task.html"
+              - title: Log in to API and Unified Manager
+                url: "/web-services-proxy/install-login-task.html"
+              - title: Configure Web Services Proxy
+                url: "/web-services-proxy/install-config-task.html"
+              - title: Uninstall Web Services Proxy
+                url: "/web-services-proxy/install-uninstall-task.html"
             - title: Manage user access
               url: "/web-services-proxy/access-intro-concept.html"
             - title: Manage security and certificates
@@ -692,13 +733,13 @@ sidebar:
         entries:
           - title: Overview
             url: "/remote-storage-volumes/index.html"
-          - title: Requirements
+          - title: Requirements and restrictions
             url: "/remote-storage-volumes/system-reqs-concept.html"
-          - title: Set up Remote Storage Volumes
+          - title: Configure hardware
             url: "/remote-storage-volumes/setup-remote-volumes-concept.html"
           - title: Import remote storage
             url: "/remote-storage-volumes/import-remote-storage-task.html"
-          - title: View import progress
+          - title: Manage import progress
             url: "/remote-storage-volumes/view-import-progress-task.html"
           - title: Modify connection settings
             url: "/remote-storage-volumes/modify-remote-storage-task.html"
@@ -708,17 +749,17 @@ sidebar:
         entries:
           - title: Overview
             url: /san-spvc-ic-overview.html
-          - title: Installation
+          - title: Install the plugin
             url: /san-spvc-ic-installation.html
-          - title: User access
+          - title: Configure access permissions
             url: /san-spvc-ic-user-access.html
-          - title: Login and navigation
+          - title: Log in and navigate
             url: /san-spvc-ic-login-and-navigation.html
-          - title: Storage array discovery
+          - title: Discover storage arrays
             url: /san-spvc-ic-storage-array-discovery.html
-          - title: Storage provisioning
+          - title: Provision storage
             url: /san-spvc-ic-storage-provisioning.html
-          - title: Plugin removal
+          - title: Remove plugin
             url: /san-spvc-ic-plugin-removal.html
       - title: Legacy solutions
         entries:
@@ -753,44 +794,30 @@ homepage:
   tiles:
     - title: Get started
       links:
-        - title: E-series hardware
-          url: /getting-started/learn-hardware-concept.html
-        - title: SANtricity software
-          url: /getting-started/learn-software-concept.html
         - title: Quick start
           url: /getting-started/getup-run-concept.html
-    - title: Learn
+        - title: EF-Series overview
+          url: https://www.netapp.com/pdf.html?item=/media/19339-DS-4082.pdf
+        - title: E5700 series overview
+          url: https://www.netapp.com/pdf.html?item=/media/7572-ds-3894.pdf
+        - title: E2800 series overview
+          url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf
+        - title: SANtricity software overview
+          url: https://www.netapp.com/pdf.html?item=/media/7676-ds-3891.pdf
+    - title: Online help
       links:
-        - title: New features in SANtricity OS
-          url: /whats-new.html
-        - title: Reduce latency with all-flash EF-Series
-          url: https://www.netapp.com/data-storage/ef-series/
-        - title: E-Series hybrid-flash arrays are built to deliver
-          url: https://www.netapp.com/data-storage/e-series/
-        - title: SANtricity software for proven storage systems
-          url: https://www.netapp.com/data-management/santricity/
-        - title: E-Series Performance Analyzer
-          url: https://blog.netapp.com/monitoring-netapp-eseries
-    - title: Tools & support
+        - title: SANtricity System Manager 11.7
+          url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html
+        - title: SANtricity Unified Manager 5
+          url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-5/home.html
+        - title: Command Line Interface (CLI) reference
+          url:  https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-cli-115/home.html
+    - title: SANtricity APIs
       links:
-        - title: NetApp Hardware Universe
-          url: https://hwu.netapp.com/Home/Index#none
-        - title: NetApp Interoperability Matrix
-          url: http://mysupport.netapp.com/matrix/
-        - title: NetApp Fusion (login required)
-          url: https://fusion.netapp.com/
-        - title: Active IQ (login required)
-          url: https://activeiq.netapp.com/?source=aiqnsspage
-        - title: NetApp Knowledge Base
-          url: https://kb.netapp.com/
-    - title: SANtricity solutions & APIs
-      links:
+        - title: Web services
+          url: /web-services-proxy/index.html
         - title: Plug-in for vCenter
           url: /san-spvc-ic-overview.html
-        - title: Remote storage volumes (import utility)
-          url: /remote-storage-volumes/index.html
-        - title: Web services proxy
-          url: /web-services-proxy/index.html
         - title: SMI-S providers
           url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
     - title: Performance apps & add-ons
@@ -801,17 +828,23 @@ homepage:
           url: https://splunkbase.splunk.com/app/1933/
         - title: Performance analyzer with E-Series + Grafana
           url: https://github.com/NetApp/eseries-perf-analyzer
+        - title: Blog on E-Series Performance Analyzer
+          url: https://blog.netapp.com/monitoring-netapp-eseries
     - title: For the SEs
       links:
         - title: E-Series/EF-Series technical training (login required)
           url: https://fieldportal.netapp.com/content/199944
         - title: EF300 overview and technical details (login required)
           url: https://fieldportal.netapp.com/content/1417672
-    - title: Other doc sites
+        - title: NetApp Fusion (login required)
+          url: https://fusion.netapp.com/
+    - title: Tools & support
       links:
-          - title: AFF storage systems
-            url: https://review.docs.netapp.com/us-en/ontap-systems-temp_main/index.html
-          - title: StorageGRID
-            url: https://review.docs.netapp.com/us-en/storagegrid_11.5_grid_primer_cleanup_km/index.html
-          - title: More NetApp product docs
-            url: https://www.netapp.com/support-and-training/documentation/
+        - title: NetApp Interoperability Matrix
+          url: http://mysupport.netapp.com/matrix/
+        - title: NetApp Knowledge Base
+          url: https://kb.netapp.com/
+        - title: Active IQ (login required)
+          url: https://activeiq.netapp.com/?source=aiqnsspage
+        - title: E-Series/SANtricity downloads (login required)
+          url: https://mysupport.netapp.com/site/downloads#E

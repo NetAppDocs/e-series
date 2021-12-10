@@ -1,15 +1,15 @@
 ---
 permalink: config-linux/fc-worksheet-concept.html
 sidebar: sidebar
-keywords: FC worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+keywords: FC worksheet Linux, express linux configuration, software configuration, linux host,
 summary: Use this worksheet to record FC storage configuration information.
 ---
-= FC worksheet for Linux
+= Record your FC configuration
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use this worksheet to record FC storage configuration information. You need this information to perform provisioning tasks.
+You can generate and print a PDF of this page, and then use the following worksheet to record FC storage configuration information. You need this information to perform provisioning tasks.
 
 The illustration shows a host connected to an E-Series storage array in two zones. One zone is indicated by the blue line; the other zone is indicated by the red line. Any single port has two paths to the storage (one to each controller).
 

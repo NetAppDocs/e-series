@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, drive firmw
 summary: Review upgrade considerations for the storage array's SANtricity OS controller software and firmware, and its drive firmware.
 ---
 = Upgrade considerations
+:experimental:
 :icons: font
 :imagesdir: ../media/
 
@@ -16,9 +17,11 @@ Review these key considerations before upgrading controllers.
 
 === Current versions
 
-For a single controller, use the SANtricity System Manager interface.  Go to *Support* > *Upgrade Center*, and then click the link for *Software and Firmware Inventory*.
+You can view the current versions of your software and firmware, as follows:
 
-For multiple controllers, use the SANtricity Unifed Manager interface. Go to the *Manage* page for discovered storage arrays. The versions are  shown in the *SANtricity OS Software* column. The controller firmware and NVSRAM information is available in a pop-up dialog box when you click on the SANtricity OS version in each row.
+* For a single controller, use the SANtricity System Manager interface. Go to menu:Support[Upgrade Center], and then click the link for *Software and Firmware Inventory*.
+
+* For multiple controllers, use the SANtricity Unified Manager interface. Go to the *Manage* page for discovered storage arrays. The versions are  shown in the *SANtricity OS Software* column. The controller firmware and NVSRAM information is available in a pop-up dialog box when you click on the SANtricity OS version in each row.
 
 === Components included in the upgrade
 
@@ -26,7 +29,6 @@ The following components are included in the SANtricity OS upgrade process:
 
 * *System Manager* -- System Manager is the software that manages the storage array.
 * *Controller firmware* -- Controller firmware manages the I/O between hosts and volumes.
-* *Controller NVSRAM* -- Controller NVSRAM is a controller file that specifies the default settings for the controllers.
 * *IOM firmware* -- The I/O module (IOM) firmware manages the connection between a controller and a drive shelf. It also monitors the status of the components.
 * *Supervisor software* -- Supervisor software is the virtual machine on a controller in which the software runs.
 
@@ -34,11 +36,12 @@ The following components are included in the SANtricity OS upgrade process:
 
 The following components must be upgraded separately:
 
-* *Legacy systems* -- If your storage system is part of a storage network that includes older storage systems, you might use the legacy SANtricity Storage Manager Enterprise Management Window (EMW) to provide an enterprise view of all of your storage systems. In this case, check to see if there is a newer maintenance release of SANtricity Storage Manager.
-* *Multipath/failover driver* -- As part of the upgrade process, the host's multipath/failover driver might also need to be upgraded so the host can interact with the controllers correctly. If hosts running operating systems other than Microsoft Windows have I/O connections to your storage system, upgrade the multipath drivers for those hosts. See the procedures in the Express Guides for your operating system. For compatibility information, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix].
-* *SANtricity Unified Manager* -- Unified Manager is the software that manages multiple storage systems, including the E2800, E5700, EF300, and EF600 models. To upgrade Unified Manager, go to the online help for Unified Manager.
-* *Utilities* -- Other management utilities require separate upgrades, such as the SANtricity Windows Host Utility, the SANtricity Linux Host Utility, and SANtricity Windows DSM.
-* *Drive firmware* -- See the separate instructions for upgrading the drive firmware.
+* *Controller NVSRAM* -- Controller NVSRAM is a controller file that specifies the default settings for the controllers. Instructions for upgrading the NVSRAM are included with the instructions for upgrading the controllers.
+* *Drive firmware* -- See link:upgrade-drive-firmware-task.html[Upgrade drive firmware] for separate instructions.
+* *Multipath/failover driver* -- As part of the upgrade process, the host's multipath/failover driver might also need to be upgraded so the host can interact with the controllers correctly. If hosts running operating systems other than Microsoft Windows have I/O connections to your storage system, upgrade the multipath drivers for those hosts. For compatibility information, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^]. For upgrade instructions, refer to the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration].
+* *SANtricity Unified Manager* -- Unified Manager is the software that manages multiple storage systems, including the E2800, E5700, EF300, and EF600 models. Unified Manager is part of the SANtricity Web Services Proxy, which is a RESTful API server installed separately on a host system to manage hundreds of new and legacy NetApp E-Series storage systems. For more information, see link:../web-services-proxy/index.html[SANtricity Web Services Proxy overview].
+* *Utilities* -- Other management utilities require separate upgrades, such as the SANtricity Windows Host Utility, the SANtricity Linux Host Utility, and SANtricity Windows DSM. For more information about these utilities, refer to the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration].
+* *Legacy systems* -- If your storage system is part of a storage network that includes older storage systems, you might need to use the legacy SANtricity Storage Manager Enterprise Management Window (EMW) to provide an enterprise view of all of your storage systems. In this case, check to see if there is a newer maintenance release of SANtricity Storage Manager.
 
 === Dual controllers and I/O processing
 
@@ -53,7 +56,7 @@ After the upgrade completes, you might need to manually redistribute volumes bet
 
 === Health check
 
-A pre-upgrade health check runs as part of the upgrade process. This health check assesses all storage array components to make sure the upgrade can proceed. The following conditions might prevent the upgrade:
+A health check runs as part of the upgrade process. This health check assesses all storage array components to make sure the upgrade can proceed. The following conditions might prevent the upgrade:
 
 * Failed assigned drives
 * Hot spares in use

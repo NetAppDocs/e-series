@@ -14,28 +14,35 @@ For the iSCSI protocol, you configure the switches and configure networking on t
 
 == Step 1: Configure the switches--iSCSI, VMware
 
-[.lead]
 You configure the switches according to the vendor's recommendations for iSCSI. These recommendations might include both configuration directives as well as code updates.
 
-===== Before you begin
+.What you'll need
 
-You must ensure the following:
-
-* You have two separate networks for high availability. Make sure that you isolate your iSCSI traffic to separate network segments.
-* You have enabled send and receive hardware flow control *end to end*.
-* You have disabled priority flow control.
-* If appropriate, you have enabled jumbo frames.
+* Two separate networks for high availability. Make sure that you isolate your iSCSI traffic to separate network segments.
+* Enabled send and receive hardware flow control *end to end*.
+* Disabled priority flow control.
+* If appropriate, enabled jumbo frames.
 
 NOTE: Port channels/LACP is not supported on the controller's switch ports. Host-side LACP is not recommended; multipathing provides the same benefits or better.
 
+.Steps
+Consult your switch vendor's documentation.
+
 == Step 2: Configure networking--iSCSI VMware
 
-[.lead]
-You can set up your iSCSI network in many ways, depending on your data storage requirements.
+You can set up your iSCSI network in many ways, depending on your data storage requirements. Consult your network administrator for tips on selecting the best configuration for your environment.
 
-Consult your network administrator for tips on selecting the best configuration for your environment.
+.What you'll need
 
-While planning your iSCSI networking, remember that the VMware Configuration Maximums guides state that the maximum supported iSCSI storage paths is 8. You must consider this requirement to avoid configuring too many paths.
+* Enabled send and receive hardware flow control *end to end*.
+* Disabled priority flow control.
+* If appropriate, enabled jumbo frames.
++
+If you are using jumbo frames within the IP SAN for performance reasons, make sure to configure the array, switches, and hosts to use jumbo frames. Consult your operating system and switch documentation for information on how to enable jumbo frames on the hosts and on the switches. To enable jumbo frames on the array, complete the steps in Step 3.
+
+.About this task
+
+While planning your iSCSI networking, remember that the https://configmax.vmware.com/home[VMware Configuration Maximums^] guide states that the maximum supported iSCSI storage paths is 8. You must consider this requirement to avoid configuring too many paths.
 
 By default, the VMware iSCSI software initiator creates a single session per iSCSI target when you are not using iSCSI port binding.
 
@@ -45,39 +52,37 @@ For best practice, you should NOT use port binding on E-Series storage arrays.
 
 To ensure a good multipathing configuration, use multiple network segments for the iSCSI network. Place at least one host-side port and at least one port from each array controller on one network segment, and an identical group of host-side and array-side ports on another network segment. Where possible, use multiple Ethernet switches to provide additional redundancy.
 
-You must enable send and receive hardware flow control *end to end*. You must disable priority flow control.
-
-If you are using jumbo frames within the IP SAN for performance reasons, make sure to configure the array, switches, and hosts to use jumbo frames. Consult your operating system and switch documentation for information on how to enable jumbo frames on the hosts and on the switches. To enable jumbo frames on the array, complete the steps in _Configuring array-side networking--iSCSI_.
+.Steps
+Consult your switch vendor's documentation.
 
 NOTE: Many network switches have to be configured above 9,000 bytes for IP overhead. Consult your switch documentation for more information.
 
 == Step 3: Configure array-side networking--iSCSI, VMware
 
-[.lead]
 You use the SANtricity System Manager GUI to configure iSCSI networking on the array side.
 
-===== Before you begin
+.What you'll need
 
-* You must know the IP address or domain name for one of the storage array controllers.
-* You or your system administrator must have set up a password for the System Manager GUI, or you must configured Role-Based Access Control (RBAC) or LDAP and a directory service for the appropriate security access to the storage array. See the _SANtricity System Manager online help_ for more information about Access Management.
+* The IP address or domain name for one of the storage array controllers.
+* Password for the System Manager GUI, or Role-Based Access Control (RBAC) or LDAP and a directory service is configured for the appropriate security access to the storage array. See the SANtricity System Manager online help for more information about Access Management.
 
-===== About this task
+.About this task
 
 This task describes how to access the iSCSI port configuration from the Hardware page. You can also access the configuration from menu:System[Settings > Configure iSCSI ports].
 
-NOTE: For additional information on how to setup the array-side networking on your VMware configuration, see the https://www.netapp.com/us/media/tr-4789.pdf[VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.X Technical Report].
+NOTE: For additional information on how to set up the array-side networking on your VMware configuration, see the following technical report: https://www.netapp.com/us/media/tr-4789.pdf[VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.x and 7.x].
 
-===== Steps
+.Steps
 
 . From your browser, enter the following URL: `+https://<DomainNameOrIPAddress>+`
 +
 `IPAddress`  is the address for one of the storage array controllers.
 +
-The first time SANtricity System Manager is opened on an array that has not been configured, the Set Administrator Password prompt appears. Role-based access management configures four local roles: admin, support, security, and monitor. The latter three roles have random passwords that cannot be guessed. After you set a password for the admin role you can change all of the passwords using the admin credentials. See _SANtricity System Manager online help_ for more information on the four local user roles.
+The first time SANtricity System Manager is opened on an array that has not been configured, the Set Administrator Password prompt appears. Role-based access management configures four local roles: admin, support, security, and monitor. The latter three roles have random passwords that cannot be guessed. After you set a password for the admin role, you can change all of the passwords using the admin credentials. See the SANtricity System Manager online help for more information on the four local user roles.
 
 . Enter the System Manager password for the admin role in the Set Administrator Password and Confirm Password fields, and then click *Set Password*.
 +
-When you open System Manager and no pools, volumes groups, workloads, or notifications have been configured, the Setup wizard launches.
+The Setup wizard launches if there are no pools, volumes groups, workloads, or notifications configured.
 
 . Close the Setup wizard.
 +
@@ -153,18 +158,17 @@ Select this option, and then enter a static address in the fields. For IPv4, inc
 
 == Step 4: Configure host-side networking--iSCSI
 
-[.lead]
 Configuring iSCSI networking on the host side enables the VMware iSCSI initiator to establish a session with the array.
 
-===== About this task
+.About this task
 
 In this express method for configuring iSCSI networking on the host side, you allow the ESXi host to carry iSCSI traffic over four redundant paths to the storage.
 
 After you complete this task, the host is configured with a single vSwitch containing both VMkernel ports and both VMNICs.
 
-For additional information on configuring iSCSI networking for VMware, see the vSphere Documentation Center for your version of vSphere.
+For additional information on configuring iSCSI networking for VMware, see the https://docs.vmware.com/en/VMware-vSphere/index.html[VMware vSphere Documentation^] for your version of vSphere.
 
-===== Steps
+.Steps
 
 . Configure the switches that will be used to carry iSCSI storage traffic.
 . Enable send and receive hardware flow control *end to end*.
@@ -177,10 +181,9 @@ The interfaces vary in functionality and the exact workflow will vary.
 
 == Step 5: Verify IP network connections--iSCSI, VMware
 
-[.lead]
 You verify Internet Protocol (IP) network connections by using ping tests to ensure the host and array are able to communicate.
 
-===== Steps
+.Steps
 
 . On the host, run one of the following commands, depending on whether jumbo frames are enabled:
  ** If jumbo frames are not enabled, run this command:
@@ -194,9 +197,8 @@ vmkping <iSCSI_target_IP_address\>
 ----
 vmkping -s 8972 -d <iSCSI_target_IP_address\>
 ----
-
 +
-. In this example, the iSCSI target IP address is `192.0.2.8`.
+In this example, the iSCSI target IP address is `192.0.2.8`.
 +
 ----
 vmkping -s 8972 -d 192.0.2.8
@@ -210,29 +212,23 @@ Ping statistics for 192.0.2.8:
 Approximate round trip times in milli-seconds:
   Minimum = 2ms, Maximum = 2ms, Average = 2ms
 ----
-. Issue a vmkping command from each host's initiator address (the IP address of the host Ethernet port used for iSCSI) to each controller iSCSI port. Perform this action from each host server in the configuration, changing the IP addresses as necessary.
+. Issue a `vmkping` command from each host's initiator address (the IP address of the host Ethernet port used for iSCSI) to each controller iSCSI port. Perform this action from each host server in the configuration, changing the IP addresses as necessary.
 +
 NOTE: If the command fails with the message `sendto() failed (Message too long)`, verify the MTU size (jumbo frame support) for the Ethernet interfaces on the host server, storage controller, and switch ports.
 
 . Return to the iSCSI Configuration procedure to finish target discovery.
 
-== Step 6: Record iSCSI-specific information for VMware
+== Step 6: Record your configuration
 
-[.lead]
-Select the iSCSI worksheet to record your protocol-specific storage configuration information. You need this information to perform provisioning tasks.
+You can generate and print a PDF of this page, and then use the following worksheet to record your protocol-specific storage configuration information. You need this information to perform provisioning tasks.
 
-=== iSCSI worksheet--VMware
-
-[.lead]
-You can use this worksheet to record iSCSI storage configuration information. You need this information to perform provisioning tasks.
-
-==== Recommended configuration
+=== Recommended configuration
 
 Recommended configurations consist of two initiator ports and four target ports with one or more VLANs.
 
 image::../media/50001_01_conf-vmw.gif[]
 
-==== Target IQN
+=== Target IQN
 
 [options="header"]
 |===
@@ -245,7 +241,7 @@ a|
 
 |===
 
-==== Mappings host name
+=== Mapping host name
 
 [options="header"]
 |===
@@ -253,7 +249,7 @@ a|
 a|
 1
 a|
-Mappings host name
+Mapping host name
 a|
 
 a|

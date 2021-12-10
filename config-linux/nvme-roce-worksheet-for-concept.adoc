@@ -2,14 +2,14 @@
 permalink: config-linux/nvme-roce-worksheet-for-concept.html
 sidebar: sidebar
 keywords: NVMe over RoCE worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
-summary: Use this worksheet to record NVMe over RoCE storage configuration information. 
+summary: Use this worksheet to record NVMe over RoCE storage configuration information.
 ---
-= NVMe over RoCE worksheet for Linux
+= Record your NVMe over RoCE configuration
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use this worksheet to record NVMe over RoCE storage configuration information. You need this information to perform provisioning tasks.
+You can generate and print a PDF of this page, and then use the following worksheet to record NVMe over RoCE storage configuration information. You need this information to perform provisioning tasks.
 
 == Direct connect topology
 
@@ -26,11 +26,11 @@ An example configuration that satisfies the requirements consists of four networ
 
 == Switch connect topology
 
-In a fabric topology, one or more switches are used. Refer to https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool] for a list of supported switches.
+In a fabric topology, one or more switches are used. Refer to https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a list of supported switches.
 
 image::../media/nvmeof_switch_connect.gif[]
 
-== NVMe over RoCE: Host identifiers
+== Host identifiers
 
 Locate and document the initiator NQN from each host.
 
@@ -59,7 +59,7 @@ a|
 
 |===
 
-== NVMe over RoCE: Target NQN
+== Target NQN
 
 Document the target NQN for the storage array.
 
@@ -72,7 +72,7 @@ a|
 
 |===
 
-== NVMe over RoCE: Target NQNs
+== Target NQNs
 
 Document the NQNs to be used by the array ports.
 
@@ -97,7 +97,7 @@ a|
 
 |===
 
-== NVMe over RoCE: Mapping host name
+== Mapping host name
 
 NOTE: The mapping host name is created during the workflow.
 
