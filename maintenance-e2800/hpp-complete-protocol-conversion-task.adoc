@@ -168,7 +168,7 @@ You can use either of the following options to use the new FC ports. The exact s
  ** Depending on your operating system, two utilities are included with the storage management software (hot_add and SMdevices). These utilities help register the volumes with the hosts and also show the applicable device names for the volumes.
  ** You might need to use specific tools and options that are provided with your operating system to make the volumes available (that is, assign drive letters, create mount points, and so on). Refer to your host operating system documentation for details.
 
-== Complete FC/iSCSI to FC conversion
+== Complete FC/iSCSI to iSCSI conversion
 
 If you previously had a combination of FC host ports and iSCSI host ports and you converted all ports to iSCSI, you might need to modify your existing configuration to use the new iSCSI ports.
 
