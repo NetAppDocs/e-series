@@ -1,0 +1,36 @@
+---
+permalink: maintenance-e5700/index.html
+sidebar: sidebar
+keywords: E5700 maintenance, repair E5700, replace E5700 components, E5724, EF570, E5760
+summary: Maintain the E5700 hardware
+---
+= Maintain E5700 hardware
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+For the E5700 storage system, you can perform maintenance procedures on the following components.
+
+== Batteries
+
+A battery is included with a controller canister and preserves cached data if the AC power fails.
+
+== Controllers
+
+A controller consists of a board, firmware, and software. It controls the drives and implements the System Manager functions.
+
+== Canisters
+
+Canisters consist of three different types: power-fan canisters (power supplies) that supply a redundant power source and adequate cooling in a 12-drive or 24-drive controller shelf or drive shelf; power canisters that are used for power redundancy in a 60-drive controller shelf or drive shelf; and fan canisters that are used for cooling the 60-drive controller shelf or drive shelf.
+
+== Drives
+
+A drive is an electromagnetic mechanical device that provides the physical storage media for data.
+
+== Host interface cards (HICs)
+
+A host interface card (HIC) can optionally be installed within a controller canister. The E5700 controller includes built-in host ports on the controller card itself, as well as host ports on the optional HIC. Host ports that are built into the controller are called baseboard host ports. Host ports that are built into the HIC are called HIC ports.
+
+== Host port protocol
+
+You can convert the protocol of a host to a different protocol so that compatibility and communication can be established.

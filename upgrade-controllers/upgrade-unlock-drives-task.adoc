@@ -1,0 +1,71 @@
+---
+permalink: upgrade-controllers/upgrade-unlock-drives-task.html
+sidebar: sidebar
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, unlock drives, key management, Drive Security,
+summary: If you are upgrading E2800 and E5700 controllers and the Drive Security feature is enabled, you must manually unlock the drives.
+---
+= Unlock drives
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you are upgrading E2800 and E5700 controllers, the Drive Security feature for these controllers result in the locking of drives whether partially, externally, or internally. If the Drive Security feature is enabled, you must manually unlock these drives.
+
+Follow the appropriate procedure for:
+
+* <<Internal key management>>
+* <<External key management>>
+
+== Internal key management
+
+Follow these steps for internal key management when all drives are locked.
+
+.About this task
+
+The newly swapped controllers will lock down with seven-segment display code of L5. This lock down occurs when no drives in the storage array are able to perform autocode synchronization (ACS). ACS resumes and updates the new controllers after the security key is imported.
+
+NOTE: If you are not using management port 1, try with other default IP addresses: +
+Ctrl A port 1: 192.168.128.101 +
+Ctrl A port 2: 192.168.128.102 +
+Ctrl B port 1: 192.168.129.101 +
+Ctrl B port 2: 192.168.129.102
+
+.Steps
+
+. Install the SANtricity client to a laptop or PC to be used in step 2 to connect directly to the array controller.
+. Connect the laptop or PC to controller A management port 1 directly via an RJ45 ethernet cable. This step might also require the laptop IP address be set to the same subnet.
+. Using the IP address 192.168.128.101 with username *admin* and the password blank, import the internal key using the `import storageArray securityKey file` CLI command, with the security key saved from link:prepare-upgrade-controllers-task.html[Prepare to upgrade controllers]. For information about using this command, see the _Command Line Reference_.
++
+*Example:* `SMcli 192.168.128.101 -u admin -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
+
+
+Controllers will continue with the autocode synchronization process from the drives and reboot. After reboot the controllers will be accessible through the original IP configuration.
+
+== External key management
+
+Follow these steps for external key management when all drives are locked.
+
+.About this task
+
+The newly swapped controllers will lock down with seven-segment display code of L5. This lock down occurs when no drives in the storage array are able to perform autocode synchronization (ACS). ACS resumes and updates the new controllers after the security key is imported.
+
+.Steps
+
+. Install the SANtricity client to a laptop or PC to be used in step 2 to connect directly to the array controller.
+. Connect the laptop or PC to controller A management port 1 directly via an RJ45 ethernet cable. You might also need to set the laptop IP address to the same subnet.
+. Using default IP address 192.168.128.101 with username *admin* and the password blank, set up the external key management server using the `set storageArray externalKeyManagement` CLI command and provide the `serverAddress` and `serverPort` saved from link:prepare-upgrade-controllers-task.html[Prepare to upgrade controllers]. For information about using this command, see the _Command Line Reference_.
++
+*Example:* `SMcli 192.168.128.101 -u admin -c "set storageArray externalKeyManagement serverAddress=<ServerIPAddress> serverPort=<serverPort>;"`
+
+. Using the default IP address 192.168.128.101 with the username *admin* and the password remaining blank, download the certificates using the `storageArray keyManagementCertificate` CLI command: once for the client certificate and a second time for the server certificate. For information about using this command, see the _Command Line Reference_.
++
+*Example A:* `SMcli 192.168.128.101 -u admin -c "download storageArray keyManagementCertificate certificateType=client file=\"Directory&FileName\";"`
++
+*Example B:* `SMcli 192.168.128.101 -u admin -c "download storageArray keyManagementCertificate certificateType=server file=\"Directory&FileName\";"`
+
+. Using the security key saved from link:prepare-upgrade-controllers-task.html[Prepare to upgrade controllers], import the external key to IP address 192.168.128.101 with the username *admin* and the password remaining blank. For information about using this command, see the _Command Line Reference_.
++
+*Example:* `SMcli 192.168.128.101 -u admin -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
+
+
+Controllers will continue with the autocode synchronization process from the drives and reboot. After reboot the controllers will be accessible through the original IP configuration.

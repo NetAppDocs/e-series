@@ -1,0 +1,119 @@
+---
+permalink: upgrade-santricity/overview-upgrade-consider-task.html
+sidebar: sidebar
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, drive firmware, upgrade SANtricity, upgrade OS, upgrade E-Series, upgrade firmware, upgrading, upgrade IOM firmware, upgrade NVSRAM, upgrade controller
+summary: Review upgrade considerations for the storage array's SANtricity OS controller software and firmware, and its drive firmware.
+---
+= Upgrade considerations
+:experimental:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To ensure a successful upgrade, review the following upgrade considerations.
+
+== Controller upgrades (single or multiple)
+Review these key considerations before upgrading controllers.
+
+=== Current versions
+
+You can view the current versions of your software and firmware, as follows:
+
+* For a single controller, use the SANtricity System Manager interface. Go to menu:Support[Upgrade Center], and then click the link for *Software and Firmware Inventory*.
+
+* For multiple controllers, use the SANtricity Unified Manager interface. Go to the *Manage* page for discovered storage arrays. The versions are  shown in the *SANtricity OS Software* column. The controller firmware and NVSRAM information is available in a pop-up dialog box when you click on the SANtricity OS version in each row.
+
+=== Components included in the upgrade
+
+The following components are included in the SANtricity OS upgrade process:
+
+* *System Manager* -- System Manager is the software that manages the storage array.
+* *Controller firmware* -- Controller firmware manages the I/O between hosts and volumes.
+* *IOM firmware* -- The I/O module (IOM) firmware manages the connection between a controller and a drive shelf. It also monitors the status of the components.
+* *Supervisor software* -- Supervisor software is the virtual machine on a controller in which the software runs.
+
+=== Components to upgrade separately
+
+The following components must be upgraded separately:
+
+* *Controller NVSRAM* -- Controller NVSRAM is a controller file that specifies the default settings for the controllers. Instructions for upgrading the NVSRAM are included with the instructions for upgrading the controllers.
+* *Drive firmware* -- See link:upgrade-drive-firmware-task.html[Upgrade drive firmware] for separate instructions.
+* *Multipath/failover driver* -- As part of the upgrade process, the host's multipath/failover driver might also need to be upgraded so the host can interact with the controllers correctly. If hosts running operating systems other than Microsoft Windows have I/O connections to your storage system, upgrade the multipath drivers for those hosts. For compatibility information, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^]. For upgrade instructions, refer to the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration].
+* *SANtricity Unified Manager* -- Unified Manager is the software that manages multiple storage systems, including the E2800, E5700, EF300, and EF600 models. Unified Manager is part of the SANtricity Web Services Proxy, which is a RESTful API server installed separately on a host system to manage hundreds of new and legacy NetApp E-Series storage systems. For more information, see link:../web-services-proxy/index.html[SANtricity Web Services Proxy overview].
+* *Utilities* -- Other management utilities require separate upgrades, such as the SANtricity Windows Host Utility, the SANtricity Linux Host Utility, and SANtricity Windows DSM. For more information about these utilities, refer to the link:../config-linux/index.html[Linux express configuration], link:../config-windows/index.html[Windows express configuration], or link:../config-vmware/index.html[VMware express configuration].
+* *Legacy systems* -- If your storage system is part of a storage network that includes older storage systems, you might need to use the legacy SANtricity Storage Manager Enterprise Management Window (EMW) to provide an enterprise view of all of your storage systems. In this case, check to see if there is a newer maintenance release of SANtricity Storage Manager.
+
+=== Dual controllers and I/O processing
+
+If a storage array contains two controllers and you have a multipath driver installed, the storage array can continue to process I/O while the upgrade occurs. During the upgrade, the following process occurs:
+
+. Controller A fails over all its LUNs to controller B.
+. Upgrade occurs on controller A.
+. Controller A takes back its LUNs and all of controller B's LUNs.
+. Upgrade occurs on controller B.
+
+After the upgrade completes, you might need to manually redistribute volumes between the controllers to ensure volumes return to the correct owning controller.
+
+=== Health check
+
+A health check runs as part of the upgrade process. This health check assesses all storage array components to make sure the upgrade can proceed. The following conditions might prevent the upgrade:
+
+* Failed assigned drives
+* Hot spares in use
+* Incomplete volume groups
+* Exclusive operations running
+* Missing volumes
+* Controller in non-optimal status
+* Excess number of event log events
+* Configuration database validation failure
+* Drives with old versions of DACstore
+
+You also can run the pre-upgrade health check separately without doing an upgrade.
+
+=== Immediate or staged upgrade
+
+You can activate the upgrade immediately or stage it for a later time. You might choose to activate later for these reasons:
+
+* *Time of day* -- Activating the software can take a long time, so you might want to wait until I/O loads are lighter. Depending on the I/O load and cache size, a controller upgrade can typically take between 15 to 25 minutes to complete. The controllers reboot and fail over during activation so performance might be lower than usual until the upgrade completes.
+* *Type of package* -- You might want to test the new software and firmware on one storage array before upgrading the files on other storage arrays.
+
+== Drive firmware upgrade
+
+Review these key considerations before upgrading your drive firmware.
+
+=== Drive compatibility
+
+Each drive firmware file contains information about the drive type on which the firmware runs. You can download the specified firmware file only to a compatible drive. System Manager automatically checks compatibility during the upgrade process.
+
+=== Drive upgrade methods
+
+There are two types of drive firmware upgrade methods: online and offline.
+
+[options="header"]
+|===
+| Online upgrade| Offline upgrade
+a|
+During an online upgrade, drives are upgraded sequentially, one at a time. The storage array continues processing I/O while the upgrade occurs. You do not have to stop I/O. If a drive can do an online upgrade, the online method is used automatically.
+
+Drives that can do an online upgrade include the following:
+
+* Drives in an Optimal pool
+* Drives in an Optimal redundant volume group (RAID 1, RAID 5, and RAID 6)
+* Unassigned drives
+* Standby hot spare drives
+
+Doing an online drive firmware upgrade can take several hours exposing the storage array to potential volume failures. Volume failure could occur in these cases:
+
+* In a RAID 1 or RAID 5 volume group, one drive fails while a different drive in the volume group is being upgraded.
+* In a RAID 6 pool or volume group, two drives fail while a different drive in the pool or volume group is being upgraded.
+
+a|
+During an offline upgrade, all drives of the same drive type are upgraded at the same time. This method requires stopping I/O activity to the volumes associated with the selected drives. Because multiple drives can be upgraded concurrently (in parallel), the overall downtime is significantly reduced. If a drive can do only an offline upgrade, the offline method is used automatically.
+
+The following drives MUST use the offline method:
+
+* Drives in a non-redundant volume group (RAID 0)
+* Drives in a non-optimal pool or volume group
+* Drives in SSD cache
+
+|===

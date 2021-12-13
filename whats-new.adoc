@@ -1,0 +1,261 @@
+---
+sidebar: sidebar
+permalink: whats-new.html
+keywords: whats new, new features, SANtricity 11.72
+summary: New features in SANtricity OS.
+---
+
+= What's new in SANtricity OS
+
+[.lead]
+The following table describes new features in SANtricity OS.
+
+NOTE: The Resource Provisioning capability, which is available only on
+EF300 and EF600 systems with specific NVMe SSDs, has been disabled in Versions 11.71 and 11.72 so that outstanding issues can be resolved. Note that in some System Manager views, components might be reported as resource-provisioning (or DULBE) capable, but the ability to create
+resource- provisioned volumes is not available.
+
+== New features in Version 11.72
+
+[cols=",",options="header",]
+|===
+|New feature |Description
+|SNMPv3 support |SNMPv3 is now supported for alert notifications, configurable in *Settings > Alerts*. SNMPv3 provides security through strong authentication and data encryption.
+
+|Support replicating keys to multiple key servers |For external key management for self-encrypting drives, the Create External Key Management dialog includes a new option for adding multiple key servers.
+
+|Updated browser versions |System Manager minimum browser versions have been updated.
+
+|===
+
+== New features in Version 11.71
+
+[cols=",",options="header",]
+|===
+|New feature |Description
+|EF300 expansion |This release provides support for expansion to SAS-3
+enclosures for the EF300 storage system. With this expansion, the
+4KiB-block NVMe SSDs can coexist with 512e SAS SSDs and HDDs. However,
+drives with different block sizes cannot be configured in the same pool
+or volume group.
+
+|FEC mode option in iSCSI configuration |For storage arrays using the
+25Gb iSCSI host interface card, a new option is available for setting
+the Forward Error Correction (FEC) mode when you configure iSCSI ports.
+
+|Remote Storage Volumes |The optional Remote Storage Volumes feature
+allows you to import volumes from a remote storage system to a local E-
+Series storage system using an iSCSI connection. The remote storage may
+be the same brand as your E-Series system or from a different storage
+vendor, as long as it is accessible via iSCSI.
+
+|Sanitize (erase) capability added for non-FDE drives
+
+|The drive
+sanitize feature now includes non-FDE drives in the procedure. From the
+Hardware page, you can open the Drive's context menu and select "Erase"
+(previously, this selection was "Secure Erase").
+
+|Secure connection for email alerts |To enable encrypted email
+notifications, you can optionally configure outgoing emails (alerts,
+ASUP dispatches) to supply authentication credentials. Encryption types
+include SMTPS and STARTTLS.
+
+|AutoSupport additions |An alert now appears in the Notifications area
+when AutoSupport is not enabled.
+
+|Syslog alert format change |The Syslog alert format now supports RFC
+5424.
+|===
+
+== New features in Version 11.70
+
+[cols=",",options="header",]
+|===
+a|New feature a|Description
+
+|New storage system model – EF300 a|This release introduces the EF300 low-cost all-NVMe-flash storage system. The EF300 includes 24 NVME SSD drives and a single host interface card (HIC) per controller. The supported NVMe over Fabrics host interfaces include NVMe over IB, NVMe over RoCE, and NVMe over FC. The supported SCSI interfaces include FC, IB over iSER, and IB over SRP. Multiple EF300 storage systems and other
+E- Series storage systems can be viewed and managed in Unified Manager.
+
+|New Resource Provisioning feature (EF300 and EF600 only) |The Resource
+Provisioning feature is new for the EF300 and EF600 storage systems.
+Resource-provisioned volumes can be put in use immediately with no
+background initialization process.
+
+|Add 512e block size option (EF300 and EF600 only)
+
+|For EF300 and EF600
+storage systems, a volume can be set to support a 512-byte or a 4KiB
+block size. The 512e capability has been added to allow support of the
+iSCSI host interface and the VMware OS. If possible, System Manager
+suggests the appropriate default value.
+
+|New option for sending AutoSupport dispatches on demand |A new Send
+AutoSupport Dispatch feature allows you to send data to technical
+support without waiting for a scheduled dispatch. This option is
+available in the AutoSupport tab of the Support Center.
+
+|External Key Management Server enhancements a|
+The feature for connecting to an external key management server includes
+the following enhancements:
+
+* Bypass the function for creating a backup key.
+
+* Choose an intermediate certificate for the key management server, in addition to the client and server certificates.
+
+|Certificate enhancements |This release allows for using an external
+tool such as OpenSSL to generate a Certificate Signing Request (CSR),
+which also requires you to import a private key file along with the
+signed certificate.
+
+|New Offline Initialization feature for Volume Groups |For volume
+creation, System Manager provides a method for skipping the host
+assignment step so that newly created volumes are initialized offline.
+This capability is applicable only to RAID volume groups on SAS drives (
+i.e., not to dynamic disk pools or to the NVMe SSDs included in the
+EF300 and EF600 storage systems). This feature is for workloads that
+need to have the volumes at full performance when usage begins, rather
+than having initialization run in the background.
+
+|New Collect Configuration Data feature
+
+|This new feature saves RAID configuration data from the controller, which includes all data for volume groups and disk pools (the same information as the CLI command for save storageArray dbmDatabase). This capability has been added to aid technical support and is located in the Diagnostics tab of the
+Support Center.
+
+|Change default preservation capacity for disk pools in 12 drive case
+|Previously, a 12-drive disk pool was created with enough preservation
+(spare) capacity to cover two drives. The default is now changed to
+handle a single drive failure to offer a more cost-effective small pool
+default.
+|===
+
+== New features in Version 11.62
+
+[cols=",",options="header",]
+|===
+|New feature |Description
+|Downloadable CLI |System Manager for the E5700, EF570, E2800, and EF280
+arrays now includes the ability to download and install the SANtricity
+command line interface (CLI) via a link in the *Settings* > *System* >
+*Add-ons* page. This is the https-based version of the CLI (also
+referred to as "Secure CLI"). This capability was previously released
+with the EF600 array.
+
+|Mirroring configuration changes in System Manager and Unified Manager
+|The tasks for configuring synchronous and asynchronous mirrored pairs
+have moved from System Manager to Unified Manager. All other tasks for
+managing mirrored pairs remain in System Manager.
+
+|New 200Gb-capable HIC (EF600 arrays only) |This release adds a new
+200Gb-capable HIC for EF600 storage arrays. Interfaces supported are
+NVMe/IB, NVMe/RoCE, and iSER/IB. Additionally, 100Gb SRP/IB is
+supported.
+
+|Additional options on 100Gb HIC (EF600 arrays only)
+
+|On the existing 100Gb HIC, iSER/IB and SRP/IB interfaces are now
+supported for EF600 storage arrays. (These interfaces are already
+supported for EF570 and E5700 arrays.)
+
+|Delete mail server in System Manager |System Manager allowed a mail
+server to be configured, but did not have an easy mechanism to remove
+it. With this release, the mail server configuration in System Manager
+can now be removed from Alerts, so that alerts are no longer sent to the
+email addresses associated with this mail server.
+
+|Optimization capacity adjustments for pools and volume groups (SSD
+drives only) in System Manager |For SSD drives, a new optimization
+capacity slider is available in System Manager for the Pool settings and
+Volume Group settings. The slider enables you to adjust the balance of
+available capacity versus SSD write performance and drive wear life.
+
+|New host types in System Manager |When you create new hosts in System
+Manager, the presented host options are now organized into three
+categories to provide better guidance: Common, Uncommon, and Use only if
+directed.
+|===
+
+== New features in Version 11.61
+
+[cols=",",options="header",]
+|===
+|New feature |Description
+|Fibre Channel support for the EF600 |This release adds Fibre Channel
+host support for the EF600 storage system. This is the first SCSI host
+supported by the EF600, which initially released with all NVMe over
+Fabrics host protocols. A single controller for the EF600 can be viewed
+and managed in System Manager. Multiple EF600 storage systems can be
+viewed and managed in Unified Manager.
+
+|Password requirements for admin user |For first-time login in Unified
+Manager, you must now enter a password for the administrator user. There
+is no longer a default "admin" password.
+|===
+
+== New features in Version 11.60
+
+[cols=",",options="header",]
+|===
+|New feature |Description
+|New storage system model – EF600 a|
+This release offers a new EF600 all-flash storage system. The EF600
+includes NVMe-oF host interfaces and NVMe SSDs.
+
+The EF600 significantly increases throughput and reduces latency. The
+supported host interfaces include NVMe over IB, NVMe over RoCE, and NVMe
+over FC, which can be configured in System Manager. Multiple EF600
+storage systems can be viewed and managed in Unified Manager.
+
+|Downloadable CLI |System Manager now includes the ability to download
+and install the SANtricity command line interface (CLI) via a link in
+the *Settings* > *System* > *Add-ons* page. This is the https- based
+version of the CLI. The legacy SANtricity Storage Manager package
+continues to include the CLI as well.
+|===
+
+== New features in Version 11.53
+
+This version includes only minor enhancements and fixes.
+
+== New features in Version 11.52
+
+[cols=",",options="header",]
+|===
+|New feature |Description
+|NVMe over FC host interface |An NVMe over Fibre Channel host connection
+can now be ordered for EF570 or E5700 E-Series controllers, in addition
+to the existing support for NVMe over RoCE and NVMe over InfiniBand.
+System Manager includes statistics for this new connection type in
+*Settings* > *System* under "NVMe over Fibre Channel details."
+|===
+
+== New features in Version 11.51
+
+This version includes only minor enhancements and fixes.
+
+== New features in Version 11.50
+
+[cols=",",options="header",]
+|===
+|New feature |Description
+|NVMe over RoCE interface a|
+An NVMe over RoCE host connection can now be ordered for EF570 or E5700
+E-Series controllers. System Manager includes new functions for
+configuring the network connection to the host (available from the
+Hardware page or from *Settings* > *System*), and functions for viewing data about the NVMe over RoCE connections to the storage array (available from *Support* > *Support Center* or from *Settings* > *System*).
+
+|Manual drive selection for volume groups |In addition to convenient
+automatic selection, a new option is available for selecting individual
+drives when you create a volume group. In general, automatic drive
+selection is recommended, but the individual drive selection option is
+available for environments with special drive location requirements.
+
+|SANtricity Unified Manager
+
+|Unified Manager is a separately installed,
+browser-based application that discovers and manages E2800 series
+controllers and E5700 series controllers. While this new application is
+not a new feature of System Manager, it does provide a new browser-based
+enterprise framework from which System Manager can be launched for
+discovered storage arrays. The new Unified Manager can be downloaded
+from the Support software downloads area.
+|===

@@ -1,0 +1,23 @@
+---
+permalink: config-linux/iser-ib-configure-network-connections-task.html
+sidebar: sidebar
+keywords: configure network connection, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: If your configuration uses the iSER over Infiniband protocol, perform the steps in this section.
+---
+= Configure network connections
+:experimental:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If your configuration uses the iSER over InfiniBand protocol, perform the steps in this section to configure network connections.
+
+.Steps
+
+. From System Manager, go to menu:Settings[System > Configure iSER over Infiniband Ports]. Refer to the System Manager online help for further instructions.
++
+Put the array iSCSI addresses on the same subnet as the host port(s) you will use to create iSCSI sessions. For addresses, see your xref:iser-ib-worksheet-concept.adoc[iSER worksheet].
+
+. Record the IQN.
++
+This information might be necessary when you create iSER sessions from operating systems that do not support send targets discovery. Enter this information in the xref:iser-ib-worksheet-concept.adoc[iSER worksheet].

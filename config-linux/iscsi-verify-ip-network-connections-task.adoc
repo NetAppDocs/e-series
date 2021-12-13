@@ -1,0 +1,45 @@
+---
+permalink: config-linux/iscsi-verify-ip-network-connections-task.html
+sidebar: sidebar
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: You verify Internet Protocol \(IP\) network connections by using ping tests to ensure the host and array are able to communicate.
+---
+= Verify IP network connections
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You verify Internet Protocol (IP) network connections by using ping tests to ensure the host and array are able to communicate.
+
+.Steps
+
+. On the host, run one of the following commands, depending on whether jumbo frames are enabled:
+ ** If jumbo frames are not enabled, run this command:
++
+----
+ping -I <hostIP\> <targetIP\>
+----
+
+ ** If jumbo frames are enabled, run the ping command with a payload size of 8,972 bytes. The IP and ICMP combined headers are 28 bytes, which when added to the payload, equals 9,000 bytes. The -s switch sets the `packet size` bit. The -d switch sets the debug option. These options allow jumbo frames of 9,000 bytes to be successfully transmitted between the iSCSI initiator and the target.
++
+----
+ping -I <hostIP\> -s 8972 -d <targetIP\>
+----
++
+In this example, the iSCSI target IP address is `192.0.2.8`.
++
+----
+#ping -I 192.0.2.100 -s 8972 -d 192.0.2.8
+Pinging 192.0.2.8 with 8972 bytes of data:
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Ping statistics for 192.0.2.8:
+  Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+  Minimum = 2ms, Maximum = 2ms, Average = 2ms
+----
+. Issue a `ping` command from each host's initiator address (the IP address of the host Ethernet port used for iSCSI) to each controller iSCSI port. Perform this action from each host server in the configuration, changing the IP addresses as necessary.
++
+NOTE: If the command fails (for example, returns `Packet needs to be fragmented but DF set`), verify the MTU size (jumbo frame support) for the Ethernet interfaces on the host server, storage controller, and switch ports.

@@ -6,4 +6,845 @@ settings:
   prod:
     pdf_enabled: true
 sidebar:
-  
+  entries:
+    - title: E-series docs
+      url: /index.html
+#    - section: cloud-connector
+#    - section: config-linux
+#    - section: config-vmware
+#    - section: config-windows
+#    - section: getting-started
+#    - section: install-hw-cabinet
+#    - section: install-hw-cabling
+#    - section: install-hw-e2800-E5700
+#    - section: install-hw-ef600
+#    - section: maintenance-e2800
+#    - section: maintenance-e5700
+#    - section: maintenance-ef600
+#    - section: remote-storage-volumes
+#    - section: upgrade-controllers
+#    - section: upgrade-santricity
+#    - section: web-services-proxy
+# Copied as-is from sold sidebar.yml - cleanup required
+    - title: Release notes
+      entries:
+        - title: What's new
+          url: /whats-new.html
+        - title: Release notes
+          url: /known-issues.html
+    - title: Get started
+      entries:
+          - title: What's included in this site
+            url: "/getting-started/index.html"
+          - title: Learn about E-Series systems
+            entries:
+                - title: E-Series terminology
+                  url: "/getting-started/learn-terms-concept.html"
+                - title: E-Series hardware overview
+                  url: "/getting-started/learn-hardware-concept.html"
+                - title: E-Series shelf types
+                  url: "/getting-started/learn-shelf-concept.html"
+                - title: SANtricity software overview
+                  url: "/getting-started/learn-software-concept.html"
+                - title: E-Series videos
+                  url: "/getting-started/learn-video-concept.html"
+          - title: Get up and running with E-Series
+            url: "/getting-started/getup-run-concept.html"
+    - title: Install hardware
+      entries:
+        - title: EF300 and EF600
+          entries:
+              - title: Overview
+                url: "/install-hw-ef600/index.html"
+              - title: Install process
+                url: "/install-hw-ef600/overview-concept.html"
+              - title: Prepare for install
+                url: "/install-hw-ef600/prepare-for-install-task.html"
+              - title: Install hardware
+                url: "/install-hw-ef600/install-hardware-task.html"
+              - title: Power on controller shelves
+                url: "/install-hw-ef600/power-controller-shelves-task.html"
+              - title: Complete storage system setup
+                url: "/install-hw-ef600/complete-setup-task.html"
+        - title: E2800 and E5700
+          entries:
+              - title: Overview
+                url: "/install-hw-e2800-e5700/index.html"
+              - title: Install process
+                url: "/install-hw-e2800-e5700/install-setup-overview-concept.html"
+              - title: Install and set up 60-drives
+                entries:
+                - title: Prepare for install
+                  url: "/install-hw-e2800-e5700/e2860-e5760-prepare-task.html"
+                - title: Install hardware
+                  url: "/install-hw-e2800-e5700/e2860-e5760-install-hardware-task.html"
+                - title: Cable shelves
+                  url: "/install-hw-e2800-e5700/e2860-e5760-connect-cables-task.html"
+                - title: Complete storage system setup
+                  url: "/install-hw-e2800-e5700/e2860-e5760-complete-setup-task.html"
+              - title: Install and set up 12 and 24-drives
+                entries:
+                - title: Prepare for install
+                  url: "/install-hw-e2800-e5700/e2824-e5724-prepare-task.html"
+                - title: Install hardware
+                  url: "/install-hw-e2800-e5700/e2824-e5724-install-hardware-task.html"
+                - title: Connect cables
+                  url: "/install-hw-e2800-e5700/e2824-e5724-connect-cables-task.html"
+                - title: Complete storage system setup
+                  url: "/install-hw-e2800-e5700/e2824-e5724-complete-setup-task.html"
+        - title: 3040 40U cabinet
+          entries:
+              - title: Overview
+                url: "/install-hw-cabinet/index.html"
+              - title: Specifications
+                url: "/install-hw-cabinet/overview-cabinet-specs-concept.html"
+              - title: Gather required tools and equipment
+                url: "/install-hw-cabinet/cabinet-gather-tools-equipment-task.html"
+              - title: Prepare to move cabinet
+                url: "/install-hw-cabinet/prepare-move-cabinet-task.html"
+              - title: Move cabinet to permanent location
+                url: "/install-hw-cabinet/move-cabinet-task.html"
+              - title: Complete cabinet installation
+                url: "/install-hw-cabinet/complete-cabinet-install-task.html"
+        - title: Rack-mount hardware
+          url: /rackmount-hardware.html
+        - title: Cabling
+          entries:
+                - title: Overview
+                  url: "/install-hw-cabling/index.html"
+                - title: Requirements
+                  url: "/install-hw-cabling/cable-overview-requirements-concept.html"
+                - title: Host cabling
+                  url: "/install-hw-cabling/host-cable-task.html"
+                - title: Drive shelf cabling
+                  url: "/install-hw-cabling/driveshelf-cable-task.html"
+                - title: Power cabling
+                  url: "/install-hw-cabling/power-cable-task.html"
+                - title: Hot add drive shelf
+                  url: "/install-hw-cabling/hotadd-drive-shelf-task.html"
+                - title: Ethernet cabling
+                  url: "/install-hw-cabling/ethernet-cable-task.html"
+    - title: Deploy software
+      entries:
+        - title: Linux express configuration
+          entries:
+                - title: Overview
+                  url: "/config-linux/index.html"
+                - title: Assumptions
+                  url: "/config-linux/overview-concept.html"
+                - title: Fibre Channel Express Setup
+                  entries:
+                  - title: Verify Linux configuration
+                    url: "/config-linux/fc-verify-linux-config-support-task.html"
+                  - title: Configure IP addresses using DHCP
+                    url: "/config-linux/fc-configure-ip-address-dhcp-task.html"
+                  - title: Install and configure host utilities
+                    url: "/config-linux/fc-install-configure-host-utilities-task.html"
+                  - title: Install SANtricity Storage Manager
+                    url: "/config-linux/fc-install-smcli-11-53-task.html"
+                  - title: Access SANtricity System Manager
+                    url: "/config-linux/fc-access-sam-setup-wizard-task.html"
+                  - title: Configure multipath software
+                    url: "/config-linux/fc-configure-multipath-software-task.html"
+                  - title: Set up multipath.conf file
+                    url: "/config-linux/fc-setup-multipath-conf-file-concept.html"
+                  - title: Configure FC switches
+                    url: "/config-linux/fc-configure-switches-task.html"
+                  - title: Determine host WWPNs
+                    url: "/config-linux/fc-determine-host-port-wwpns-task.html"
+                  - title: Create partitions and filesystems
+                    url: "/config-linux/fc-create-partition-file-task.html"
+                  - title: Verify storage access on host
+                    url: "/config-linux/fc-verify-storage-access-host-task.html"
+                  - title: FC worksheet for Linux
+                    url: "/config-linux/fc-worksheet-concept.html"
+                - title: SAS Setup
+                  entries:
+                  - title: Verify Linux configuration
+                    url: "/config-linux/sas-verify-linux-config-support-task.html"
+                  - title: Configure IP addresses using DHCP
+                    url: "/config-linux/sas-configure-ip-address-dhcp-task.html"
+                  - title: Install and configure host utilities
+                    url: "/config-linux/sas-install-configure-host-utilities-task.html"
+                  - title: Install SANtricity Storage Manager
+                    url: "/config-linux/sas-install-smcli-11-53-task.html"
+                  - title: Access SANtricity System Manager
+                    url: "/config-linux/sas-access-sam-setup-wizard-task.html"
+                  - title: Configure multipath software
+                    url: "/config-linux/sas-configure-multipath-software-task.html"
+                  - title: Set up multipath.conf file
+                    url: "/config-linux/sas-setup-multipath-conf-file-concept.html"
+                  - title: Determine SAS host identifiers
+                    url: "/config-linux/sas-determine-sas-host-ids-task.html"
+                  - title: Create partitions and filesystems
+                    url: "/config-linux/sas-create-partitions-filesystems-task.html"
+                  - title: Verify storage access on host
+                    url: "/config-linux/sas-verify-storage-access-host-task.html"
+                  - title: SAS worksheet for Linux
+                    url: "/config-linux/sas-worksheet-concept.html"
+                - title: iSCSI Setup
+                  entries:
+                  - title: Verify Linux configuration
+                    url: "/config-linux/iscsi-verify-linux-config-support-task.html"
+                  - title: Configure IP addresses using DHCP
+                    url: "/config-linux/iscsi-configure-ip-address-dhcp-task.html"
+                  - title: Install and configure host utilities
+                    url: "/config-linux/iscsi-install-configure-host-utilities-task.html"
+                  - title: Install SANtricity Storage Manager
+                    url: "/config-linux/iscsi-install-smcli-11-53-task.html"
+                  - title: Access SANtricity System Manager
+                    url: "/config-linux/iscsi-access-sam-setup-wizard-task.html"
+                  - title: Configure multipath software
+                    url: "/config-linux/iscsi-configure-multipath-software-task.html"
+                  - title: Set up multipath.conf file
+                    url: "/config-linux/iscsi-setup-multipath-conf-file-concept.html"
+                  - title: Configure switches
+                    url: "/config-linux/iscsi-configure-switches-concept.html"
+                  - title: Configure networking
+                    url: "/config-linux/iscsi-configure-network-concept.html"
+                  - title: Configure array-side networking
+                    url: "/config-linux/iscsi-configure-array-side-network-task.html"
+                  - title: Configure host-side networking
+                    url: "/config-linux/iscsi-configure-host-side-network-task.html"
+                  - title: Verify IP network connections
+                    url: "/config-linux/iscsi-verify-ip-network-connections-task.html"
+                  - title: Create partitions and filesystems
+                    url: "/config-linux/iscsi-create-partition-file-task.html"
+                  - title: Verify storage access on host
+                    url: "/config-linux/iscsi-verify-storage-access-host-task.html"
+                  - title: iSCSI worksheet for Linux
+                    url: "/config-linux/iscsi-worksheet-concept.html"
+                - title: iSER over InfiniBand Setup
+                  entries:
+                  - title: Verify Linux configuration
+                    url: "/config-linux/iser-ib-verify-linux-config-support-task.html"
+                  - title: Configure IP addresses using DHCP
+                    url: "/config-linux/iser-ib-configure-ip-address-dhcp-task.html"
+                  - title: Configure subnet manager
+                    url: "/config-linux/iser-ib-configure-subnet-manager-task.html"
+                  - title: Install and configure host utilities
+                    url: "/config-linux/iser-ib-install-configure-host-utilities-task.html"
+                  - title: Install SANtricity Storage Manager
+                    url: "/config-linux/iser-ib-install-smcli-11-53-task.html"
+                  - title: Access SANtricity System Manager
+                    url: "/config-linux/iser-ib-access-sam-setup-wizard-task.html"
+                  - title: Configure multipath software
+                    url: "/config-linux/iser-ib-configure-multipath-software-task.html"
+                  - title: Set up the multipath.conf file
+                    url: "/config-linux/iser-ib-setup-multipath-conf-file-concept.html"
+                  - title: Configure network connections
+                    url: "/config-linux/iser-ib-configure-network-connections-task.html"
+                  - title: Configure networking
+                    url: "/config-linux/iser-ib-configure-network-attached-hosts-task.html"
+                  - title: Create partitions and filesystems
+                    url: "/config-linux/iser-ib-create-partition-files-task.html"
+                  - title: Verify storage access on host
+                    url: "/config-linux/iser-ib-verify-storage-access-host-task.html"
+                  - title: iSER over InfiniBand worksheet
+                    url: "/config-linux/iser-ib-worksheet-concept.html"
+                - title: SRP over InfiniBand Setup
+                  entries:
+                  - title: Verify Linux configuration
+                    url: "/config-linux/srp-ib-verify-linux-config-support-task.html"
+                  - title: Configure IP addresses using DHCP
+                    url: "/config-linux/srp-ib-configure-ip-address-dhcp-task.html"
+                  - title: Configure subnet manager
+                    url: "/config-linux/srp-ib-configure-subnet-manager-task.html"
+                  - title: Install and configure host utilities
+                    url: "/config-linux/srp-ib-install-configure-host-utilities-task.html"
+                  - title: Install SANtricity Storage Manager
+                    url: "/config-linux/srp-ib-install-smcli-11-53-task.html"
+                  - title: Access SANtricity System Manager
+                    url: "/config-linux/srp-ib-access-sam-setup-wizard-task.html"
+                  - title: Configure multipath software
+                    url: "/config-linux/srp-ib-configure-multipath-software-task.html"
+                  - title: Set up multipath.conf file
+                    url: "/config-linux/srp-ib-setup-multipath-conf-file-concept.html"
+                  - title: Determine host port GUIDs
+                    url: "/config-linux/srp-ib-determine-host-port-guids-task.html"
+                  - title: Configure network connections&#8212;&#8203;SRP over Infiniband
+                    url: "/config-linux/srp-ib-configure-network-connections-task.html"
+                  - title: Create partitions and filesystems
+                    url: "/config-linux/srp-ib-create-partitions-filesystems-task.html"
+                  - title: Verify storage access on host
+                    url: "/config-linux/srp-ib-verify-storage-access-host-task.html"
+                  - title: SRP over Infiniband worksheet
+                    url: "/config-linux/srp-ib-worksheet-concept.html"
+                - title: NVMe over InfiniBand Setup
+                  entries:
+                  - title: Verify Linux configuration
+                    url: "/config-linux/nvme-ib-verify-linux-config-support-task.html"
+                  - title: Configure IP addresses using DHCP
+                    url: "/config-linux/nvme-ib-configure-ip-address-dhcp-task.html"
+                  - title: Install SANtricity Storage Manager for SMcli
+                    url: "/config-linux/nvme-ib-install-smcli-11-53-task.html"
+                  - title: Access SANtricity System Manager and use the Setup wizard
+                    url: "/config-linux/nvme-ib-access-sam-setup-wizard-task.html"
+                  - title: Configure subnet manager
+                    url: "/config-linux/nvme-ib-configure-subnet-manager-task.html"
+                  - title: Set up NVMe over InfiniBand on the host side
+                    url: "/config-linux/nvme-ib-setup-host-side-task.html"
+                  - title: Configure storage array NVMe over InfiniBand connections
+                    url: "/config-linux/nvme-ib-configure-storage-connections-task.html"
+                  - title: Discover and connect to the storage from the host
+                    url: "/config-linux/nvme-ib-discover-connect-storage-host-task.html"
+                  - title: Define a host
+                    url: "/config-linux/nvme-ib-define-host-task.html"
+                  - title: Assign a volume
+                    url: "/config-linux/ib-assign-volume-nvme-task.html"
+                  - title: Display the volumes visible to the host
+                    url: "/config-linux/nvme-ib-display-devices-visible-host-task.html"
+                  - title: Set up failover
+                    url: "/config-linux/nvme-ib-set-up-failover-task.html"
+                  - title: Access NVMe volumes for virtual device targets
+                    url: "/config-linux/nvme-ib-access-virtual-targets-concept.html"
+                  - title: Access NVMe volumes for physical device targets
+                    url: "/config-linux/nvme-ib-access-physical-targets-concept.html"
+                  - title: Create filesystems (RHEL 7 and SLES 12)
+                    url: "/config-linux/nvme-ib-create-filesystems-sles-12-task.html"
+                  - title: Create filesystems (RHEL 8 and SLES 15)
+                    url: "/config-linux/nvme-ib-create-filesystems-sles-15-task.html"
+                  - title: Verify storage access on the host
+                    url: "/config-linux/nvme-ib-verify-storage-access-host-task.html"
+                  - title: NVMe over InfiniBand worksheet
+                    url: "/config-linux/nvme-ib-worksheet-concept.html"
+                - title: NVMe over RoCE Setup
+                  entries:
+                  - title: Verify Linux configuration
+                    url: "/config-linux/nvme-roce-verify-linux-config-support-task.html"
+                  - title: Configure IP addresses using DHCP
+                    url: "/config-linux/nvme-roce-configure-ip-address-dhcp-task.html"
+                  - title: Install SANtricity Storage Manager
+                    url: "/config-linux/nvme-roce-install-smcli-11-53-task.html"
+                  - title: Access SANtricity System Manager
+                    url: "/config-linux/nvme-roce-access-sam-setup-wizard-task.html"
+                  - title: Configure switch
+                    url: "/config-linux/nvme-roce-configure-switch-task.html"
+                  - title: Set up NVMe over RoCE on host
+                    url: "/config-linux/nvme-roce-setup-host-side-task.html"
+                  - title: Configure NVMe port settings
+                    url: "/config-linux/nvme-roce-configure-storage-connections-task.html"
+                  - title: Connect to storage from host
+                    url: "/config-linux/nvme-roce-discover-connect-storage-host-task.html"
+                  - title: Define host
+                    url: "/config-linux/nvme-roce-define-host-task.html"
+                  - title: Assign volume
+                    url: "/config-linux/nvme-roce-assign-volume-task.html"
+                  - title: Display volumes visible to host
+                    url: "/config-linux/nvme-roce-display-volumes-visible-host-task.html"
+                  - title: Set up failover on host
+                    url: "/config-linux/nvme-roce-setup-failover-host-task.html"
+                  - title: Access NVMe volumes for virtual device targets
+                    url: "/config-linux/nvme-roce-access-virtual-targets-concept.html"
+                  - title: Access NVMe volumes for physical device targets
+                    url: "/config-linux/nvme-roce-access-physical-targets-concept.html"
+                  - title: Create filesystems (RHEL 7 and SLES 12)
+                    url: "/config-linux/nvme-roce-create-filesystems-sles-12-task.html"
+                  - title: Create filesystems (RHEL 8 and SLES 15)
+                    url: "/config-linux/nvme-roce-create-filesystems-sles-15-task.html"
+                  - title: Verify storage access on host
+                    url: "/config-linux/nvme-roce-verify-storage-access-host-task.html"
+                  - title: NVMe over RoCE worksheet for Linux
+                    url: "/config-linux/nvme-roce-worksheet-for-concept.html"
+                - title: NVMe over Fibre Channel setup
+                  entries:
+                  - title: Verify Linux configuration
+                    url: "/config-linux/nvme-fc-verify-linux-config-support-task.html"
+                  - title: Configure IP addresses using DHCP
+                    url: "/config-linux/nvme-fc-configure-ip-address-dhcp-task.html"
+                  - title: Install SANtricity Storage Manager
+                    url: "/config-linux/nvme-fc-install-smcli-11-53-task.html"
+                  - title: Access SANtricity System Manager
+                    url: "/config-linux/nvme-fc-access-sam-setup-wizard-task.html"
+                  - title: Configure FC switches
+                    url: "/config-linux/nvme-fc-configure-fc-switches-task.html"
+                  - title: Set up NVMe over Fibre Channel on the host side
+                    url: "/config-linux/nvme-fc-setup-host-side-task.html"
+                  - title: Define host
+                    url: "/config-linux/nvme-fc-define-host-task.html"
+                  - title: Assign volume
+                    url: "/config-linux/fc-assign-volume-nvme-task.html"
+                  - title: Display the volumes visible to the host
+                    url: "/config-linux/nvme-fc-display-volumes-visible-host-task.html"
+                  - title: Set up failover on host
+                    url: "/config-linux/nvme-fc-setup-failover-host-task.html"
+                  - title: Access NVMe volumes for virtual device targets
+                    url: "/config-linux/nvme-fc-access-virtual-targets-concept.html"
+                  - title: Access NVMe volumes for physical device targets
+                    url: "/config-linux/nvme-fc-access-physical-targets-concept.html"
+                  - title: Create partitions and filesystems
+                    url: "/config-linux/nvme-fc-create-partition-files-task.html"
+                  - title: Verify storage access on host
+                    url: "/config-linux/nvme-fc-verify-storage-access-host-task.html"
+                  - title: NVMe over Fibre Channel worksheet for Linux
+                    url: "/config-linux/nvme-fc-worksheet-concept.html"
+        - title: VMware express configuration
+          entries:
+            - title: Overview
+              url: "/config-vmware/index.html"
+            - title: Assumptions
+              url: "/config-vmware/overview-concept.html"
+            - title: Understand the workflow
+              url: "/config-vmware/understand-vmware-workflow-concept.html"
+            - title: Verify VMware configuration
+              url: "/config-vmware/verify-vmware-config-support-task.html"
+            - title: Configure IP addresses using DHCP
+              url: "/config-vmware/configure-ip-address-using-dhcp-task.html"
+            - title: Configure the multipath software
+              url: "/config-vmware/configure-multipath-software-concept.html"
+            - title: Access SANtricity System Manager
+              url: "/config-vmware/access-sam-setup-wizard-task.html"
+            - title: Perform FC-specific tasks
+              url: "/config-vmware/fc-perform-specific-task.html"
+            - title: Perform NMVe over FC-specific tasks
+              url: "/config-vmware/nmve-fc-perform-specific-task.html"
+            - title: Perform iSCSI-specific tasks
+              url: "/config-vmware/iscsi-perform-specific-task.html"
+            - title: Perform SAS-specific tasks
+              url: "/config-vmware/sas-perform-specific-task.html"
+            - title: Discover storage on the host
+              url: "/config-vmware/discover-storage-host-task.html"
+            - title: Configure storage on host
+              url: "/config-vmware/configure-storage-host-task.html"
+            - title: Verify storage access on host
+              url: "/config-vmware/verify-storage-access-host-task.html"
+        - title: Windows express configuration
+          entries:
+              - title: Overview
+                url: "/config-windows/index.html"
+              - title: Assumptions
+                url: "/config-windows/overview-concept.html"
+              - title: Understand the workflow
+                url: "/config-windows/understand-windows-concept.html"
+              - title: Verify Windows configuration
+                url: "/config-windows/verify-windows-config-support-task.html"
+              - title: Configure IP addresses using DHCP
+                url: "/config-windows/configure-ip-address-dhcp-task.html"
+              - title: Configure multipath software
+                url: "/config-windows/configure-multipath-software-task.html"
+              - title: Install and configure Unified Host Utilities
+                url: "/config-windows/install-configure-host-utilities-task.html"
+              - title: Install SANtricity Storage Manager
+                url: "/config-windows/install-storage-manager-for-smcli-task.html"
+              - title: Access SANtricity System Manager
+                url: "/config-windows/access-sam-setup-wizard-task.html"
+              - title: Perform FC-specific tasks
+                url: "/config-windows/fc-perform-specific-task.html"
+              - title: Perform iSCSI-specific tasks
+                url: "/config-windows/iscsi-perform-specific-task.html"
+              - title: Perform SAS-specific tasks
+                url: "/config-windows/sas-perform-specific-task.html"
+              - title: Discover storage on host
+                url: "/config-windows/discover-storage-host-task.html"
+              - title: Configure storage on host
+                url: "/config-windows/configure-storage-host-task.html"
+              - title: Verify storage access on host
+                url: "/config-windows/verify-storage-access-host-task.html"
+    - title: Upgrade systems
+      entries:
+        - title: Controllers
+          pdf-filename: Controller Hardware Upgrade
+          entries:
+              - title: Overview
+                url: "/upgrade-controllers/index.html"
+              - title: Upgrade considerations
+                url: "/upgrade-controllers/overview-requirements-concept.html"
+              - title: Prepare to upgrade controllers
+                url: "/upgrade-controllers/prepare-upgrade-controllers-task.html"
+              - title: Remove controllers
+                url: "/upgrade-controllers/remove-controllers-task.html"
+              - title: Install new controllers
+                url: "/upgrade-controllers/install-controllers-task.html"
+              - title: Unlock drives
+                url: "/upgrade-controllers/upgrade-unlock-drives-task.html"
+              - title: Complete controller upgrade
+                url: "/upgrade-controllers/complete-upgrade-controllers-task.html"
+              - title: Remount volumes after changing the vendor from LSI to NETAPP
+                url: "/upgrade-controllers/remount-volumes-lsi-task.html"
+              - title: Reconfigure SAS-2 system
+                url: "/upgrade-controllers/reconfigure-sas-task.html"
+        - title: SANtricity OS
+          pdf-filename: SANtricity Software Upgrade
+          entries:
+              - title: Overview
+                url: "/upgrade-santricity/index.html"
+              - title: Upgrade considerations
+                url: "/upgrade-santricity/overview-upgrade-consider-task.html"
+              - title: Upgrade single controller
+                url: "/upgrade-santricity/upgrade-single-controller-task.html"
+              - title: Upgrade multiple controllers
+                url: "/upgrade-santricity/upgrade-multiple-controller-task.html"
+              - title: Upgrade drive firmware
+                url: "/upgrade-santricity/upgrade-drive-firmware-task.html"
+    - title: Maintain systems
+      entries:
+        - title: EF300 and EF600
+          pdf-filename: EF300-EF600 Maintain Systems
+          entries:
+              - title: Overview
+                url: "/maintenance-ef600/index.html"
+              - title: Batteries
+                pdf-filename: EF300-EF600 Maintain Batteries
+                entries:
+                - title: Overview and requirements
+                  url: "/maintenance-ef600/batteries-overview-requirements-concept.html"
+                - title: Replace battery
+                  url: "/maintenance-ef600/batteries-replace-supertask-task.html"
+              - title: Controllers
+                pdf-filename: EF300-EF600 Maintain Controllers
+                entries:
+                - title: Overview and requirements
+                  url: "/maintenance-ef600/controllers-overview-supertask-concept.html"
+                - title: Replace controller
+                  url: "/maintenance-ef600/controllers-replace-supertask-task.html"
+              - title: DIMMs
+                pdf-filename: EF300-EF600 Maintain DIMMs
+                entries:
+                - title: Overview and requirements
+                  url: "/maintenance-ef600/dimms-overview-supertask-concept.html"
+                - title: Replace DIMMs
+                  url: "/maintenance-ef600/dimms-replace-supertask-task.html"
+              - title: Drives
+                pdf-filename: EF300-EF600 Maintain Drives
+                entries:
+                - title: Overview and requirements
+                  url: "/maintenance-ef600/drives-overview-supertask-concept.html"
+                - title: Replace EF300 drive
+                  url: "/maintenance-ef600/drives-replace-EF300-task.html"
+                - title: Replace EF600 drive
+                  url: "/maintenance-ef600/drives-replace-supertask-task.html"
+              - title: Fans
+                pdf-filename: EF300-EF600 Maintain Fans
+                entries:
+                - title: Overview and requirements
+                  url: "/maintenance-ef600/fans-overview-requirements-replacing2-concept.html"
+                - title: Replace fan
+                  url: "/maintenance-ef600/fans-replace-supertask-task.html"
+              - title: Host interface cards
+                pdf-filename: EF300-EF600 Maintain HICs
+                entries:
+                - title: Overview and requirements
+                  url: "/maintenance-ef600/hics-overview-supertask-concept.html"
+                - title: Add host interface cards
+                  url: "/maintenance-ef600/hics-add-supertask-task.html"
+                - title: Upgrade host interface card
+                  url: "/maintenance-ef600/hics-upgrade-intro.html"
+                - title: Replace failed host interface card
+                  url: "/maintenance-ef600/hics-replace-supertask-task.html"
+              - title: Host port protocol conversion
+                pdf-filename: EF300-EF600 Maintain Host Port
+                entries:
+                - title: Overview and requirements
+                  url: "/maintenance-ef600/hpp-overview-supertask-concept.html"
+                - title: Change host protocol
+                  url: "/maintenance-ef600/hpp-change-supertask-task.html"
+                - title: Complete host protocol conversion
+                  url: "/maintenance-ef600/hpp-complete-protocol-conversion-task.html"
+              - title: Power supplies
+                pdf-filename: EF300-EF600 Maintain Power Supplies
+                entries:
+                - title: Overview and requirements
+                  url: "/maintenance-ef600/power-overview-requirements2-concept.html"
+                - title: Replace power supply
+                  url: "/maintenance-ef600/power-replace-supertask-task.html"
+              - title: SAS expansion cards
+                entries:
+                - title: Overview and requirements
+                  url: "/maintenance-ef600/sas-overview-supertask-concept.html"
+                - title: Add SAS expansion cards
+                  url: "/maintenance-ef600/sas-add-supertask-task.html"
+        - title: E2800
+          pdf-filename: E2800 Maintain System
+          entries:
+            - title: Overview
+              url: "/maintenance-e2800/index.html"
+            - title: Batteries
+              pdf-filename: E2800 Maintain Batteries
+              entries:
+              - title: Requirements for battery replacement
+                url: "/maintenance-e2800/batteries-overview-requirements-concept.html"
+              - title: Prepare to replace battery
+                url: "/maintenance-e2800/batteries-prepare-replace-task.html"
+              - title: Remove controller canister
+                url: "/maintenance-e2800/batteries-remove-controller-canister-task.html"
+              - title: Remove failed battery
+                url: "/maintenance-e2800/batteries-remove-failed-task.html"
+              - title: Install new battery
+                url: "/maintenance-e2800/batteries-install-new-task.html"
+              - title: Re-install controller canister
+                url: "/maintenance-e2800/batteries-reinstall-controller-canister-task.html"
+              - title: Complete battery replacement
+                url: "/maintenance-e2800/batteries-complete-replacement-task.html"
+            - title: Controllers
+              pdf-filename: E2800 Maintain Controllers
+              entries:
+              - title: Requirements for controller replacement
+                url: "/maintenance-e2800/controllers-overview-supertask-concept.html"
+              - title: Add second controller canister
+                url: "/maintenance-e2800/controllers-second-add-task.html"
+              - title: Replace controller in duplex configuration
+                url: "/maintenance-e2800/controllers-duplex-supertask-task.html"
+              - title: Replace controller in simplex configuration
+                url: "/maintenance-e2800/controllers-simplex-supertask-task.html"
+            - title: Canisters
+              pdf-filename: E2800 Maintain Canisters
+              entries:
+              - title: Requirements for canister replacement
+                url: "/maintenance-e2800/canisters-overview-supertask-concept.html"
+              - title: Replace power supply (12-drive or 24-drive)
+                url: "/maintenance-e2800/canisters-supply-supertask-task.html"
+              - title: Replace power canister (60-drive)
+                url: "/maintenance-e2800/canisters-60-replace-power-task.html"
+              - title: Replace fan canister (60-drive)
+                url: "/maintenance-e2800/canisters-fan-supertask-task.html"
+            - title: Drives
+              pdf-filename: E2800 Maintain Drives
+              entries:
+              - title: Requirements for drive replacement
+                url: "/maintenance-e2800/drives-overview-supertask-concept.html"
+              - title: Replace drive (12-drive or 24-drive)
+                url: "/maintenance-e2800/drives-12-24-supertask-task.html"
+              - title: Replace drive (60-drive)
+                url: "/maintenance-e2800/drives-60-replace-task.html"
+              - title: Replace drive drawer (60-drive)
+                url: "/maintenance-e2800/drives-60-supertask-task.html"
+            - title: Host interface cards
+              pdf-filename: E2800 Maintain HICs
+              entries:
+              - title: Requirements for HIC replacement
+                url: "/maintenance-e2800/hics-overview-supertask-concept.html"
+              - title: Add host interface cards
+                url: "/maintenance-e2800/hics-add-supertask-task.html"
+              - title: Upgrade host interface card
+                url: "/maintenance-e2800/hics-upgrade-supertask-task.html"
+              - title: Replace host interface card
+                url: "/maintenance-e2800/hics-replace-supertask-task.html"
+            - title: Host port protocol conversion
+              pdf-filename: E2800 Convert Host Protocol
+              entries:
+              - title: Requirements for conversion
+                url: "/maintenance-e2800/hpp-overview-supertask-concept.html"
+              - title: Change host protocol
+                url: "/maintenance-e2800/hpp-change-host-protocol-task.html"
+              - title: Complete host protocol conversion
+                url: "/maintenance-e2800/hpp-complete-protocol-conversion-task.html"
+        - title: E5700
+          pdf-filename: E5700 Maintain System
+          entries:
+              - title: Overview
+                url: "/maintenance-e5700/index.html"
+              - title: Batteries
+                pdf-filename: E5700 Maintain Batteries
+                entries:
+                - title: Overview and requirements
+                  url: "/maintenance-e5700/batteries-intro-concept.html"
+                - title: Replace battery
+                  url: "/maintenance-e5700/batteries-replace-supertask-task.html"
+              - title: Controllers
+                pdf-filename: E5700 Maintain Controllers
+                entries:
+                - title: Overview and requirements
+                  url: "/maintenance-e5700/controllers-overview-concept.html"
+                - title: Replace controller in duplex configuration
+                  url: "/maintenance-e5700/controllers-duplex-supertask-task.html"
+              - title: Canisters
+                pdf-filename: E5700 Maintain Canisters
+                entries:
+                - title: Overview and requirements
+                  url: "/maintenance-e5700/canisters-overview-supertask-concept.html"
+                - title: Replace power supply (24-drive)
+                  url: "/maintenance-e5700/canisters-supply-replace-task.html"
+                - title: Replace power canister (60-drive)
+                  url: "/maintenance-e5700/canisters-power-supertask-task.html"
+                - title: Replace fan canister (60-drive)
+                  url: "/maintenance-e5700/canisters-fan-replace-task.html"
+              - title: Drives
+                pdf-filename: E5700 Maintain Drives
+                entries:
+                - title: Overview and requirements
+                  url: "/maintenance-e5700/drives-overview-supertask-concept.html"
+                - title: Replace drive (24-drive)
+                  url: "/maintenance-e5700/drives-24-supertask-task.html"
+                - title: Replace drive (60-drive)
+                  url: "/maintenance-e5700/drives-60-replace-task.html"
+                - title: Replace drive drawer (60-drive)
+                  url: "/maintenance-e5700/drives-drawer-supertask-task.html"
+              - title: Host interface cards
+                pdf-filename: E5700 Maintain HICs
+                entries:
+                - title: Overview and requirements
+                  url: "/maintenance-e5700/hics-overview-supertask-concept.html"
+                - title: Add host interface cards
+                  url: "/maintenance-e5700/hics-add-supertask-task.html"
+                - title: Upgrade host interface card
+                  url: "/maintenance-e5700/hics-upgrade-supertask-task.html"
+                - title: Replace host interface card
+                  url: "/maintenance-e5700/hics-replace-supertask-task.html"
+              - title: Host port protocol
+                pdf-filename: E5700 Change Host Protocol
+                entries:
+                - title: Overview and requirements
+                  url: "/maintenance-e5700/hpp-overview-supertask-concept.html"
+                - title: Change host protocol
+                  url: "/maintenance-e5700/hpp-change-host-protocol-task.html"
+                - title: Complete host protocol conversion
+                  url: "/maintenance-e5700/hpp-complete-protocol-conversion-task.html"
+    - title: Manage storage
+      url: /manage-storage.html
+    - title: Use SANtricity solutions
+      entries:
+      - title: Web services proxy
+        entries:
+            - title: Overview
+              url: "/web-services-proxy/index.html"
+            - title: Learn about Web Services
+              entries:
+              - title: Web Services API overview
+                url: "/web-services-proxy/overview-intro-concept.html"
+              - title: Compatibility and restrictions
+                url: "/web-services-proxy/overview-compat-concept.html"
+              - title: API basics
+                url: "/web-services-proxy/overview-api-concept.html"
+              - title: Terms and concepts
+                url: "/web-services-proxy/overview-terms-concept.html"
+            - title: Install and configure
+              entries:
+              - title: Review requirements
+                url: "/web-services-proxy/install-reqs-task.html"
+              - title: Install Web Services Proxy
+                url: "/web-services-proxy/install-wsp-task.html"
+              - title: Log in to API and Unified Manager
+                url: "/web-services-proxy/install-login-task.html"
+              - title: Configure Web Services Proxy
+                url: "/web-services-proxy/install-config-task.html"
+              - title: Uninstall Web Services Proxy
+                url: "/web-services-proxy/install-uninstall-task.html"
+            - title: Manage user access
+              url: "/web-services-proxy/access-intro-concept.html"
+            - title: Manage security and certificates
+              url: "/web-services-proxy/certificates-intro-concept.html"
+            - title: Manage storage systems
+              url: "/web-services-proxy/array-intro-concept.html"
+            - title: Manage automatic polling
+              url: "/web-services-proxy/polling-intro-concept.html"
+            - title: Manage AutoSupport
+              url: "/web-services-proxy/asup-intro-concept.html"
+      - title: Remote volume mirroring
+        entries:
+          - title: Overview
+            url: "/remote-storage-volumes/index.html"
+          - title: Requirements and restrictions
+            url: "/remote-storage-volumes/system-reqs-concept.html"
+          - title: Configure hardware
+            url: "/remote-storage-volumes/setup-remote-volumes-concept.html"
+          - title: Import remote storage
+            url: "/remote-storage-volumes/import-remote-storage-task.html"
+          - title: Manage import progress
+            url: "/remote-storage-volumes/view-import-progress-task.html"
+          - title: Modify connection settings
+            url: "/remote-storage-volumes/modify-remote-storage-task.html"
+          - title: Remove remote storage object
+            url: "/remote-storage-volumes/remove-remote-storage-task.html"
+      - title: Storage plugin for vCenter
+        entries:
+          - title: Overview
+            url: /san-spvc-ic-overview.html
+          - title: Install the plugin
+            url: /san-spvc-ic-installation.html
+          - title: Configure access permissions
+            url: /san-spvc-ic-user-access.html
+          - title: Log in and navigate
+            url: /san-spvc-ic-login-and-navigation.html
+          - title: Discover storage arrays
+            url: /san-spvc-ic-storage-array-discovery.html
+          - title: Provision storage
+            url: /san-spvc-ic-storage-provisioning.html
+          - title: Remove plugin
+            url: /san-spvc-ic-plugin-removal.html
+      - title: Legacy solutions
+        entries:
+        - title: Cloud connector
+          entries:
+              - title: Overview
+                url: "/cloud-connector/index.html"
+              - title: Requirements
+                url: "/cloud-connector/learn-intro-concept.html"
+              - title: Install Cloud Connector
+                url: "/cloud-connector/install-intro-concept.html"
+              - title: Configure Cloud Connector for first time
+                url: "/cloud-connector/config-intro-concept.html"
+              - title: Log into Cloud Connector
+                url: "/cloud-connector/login-task.html"
+              - title: Backups
+                url: "/cloud-connector/backup-intro-concept.html"
+              - title: Restores
+                url: "/cloud-connector/restore-intro-concept.html"
+              - title: Modify settings
+                url: "/cloud-connector/modify-intro-concept.html"
+              - title: Uninstall Cloud Connector
+                url: "/cloud-connector/uninstall-intro-concept.html"
+    - title: Earlier versions
+      url: /early-versions.html
+    - title: Technical reports
+      url: /tech-reports.html
+    - title: Legal notices
+      url: /legal-notices.html
+
+homepage:
+  tiles:
+    - title: Get started
+      links:
+        - title: Quick start
+          url: /getting-started/getup-run-concept.html
+        - title: EF-Series overview
+          url: https://www.netapp.com/pdf.html?item=/media/19339-DS-4082.pdf
+        - title: E5700 series overview
+          url: https://www.netapp.com/pdf.html?item=/media/7572-ds-3894.pdf
+        - title: E2800 series overview
+          url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf
+        - title: SANtricity software overview
+          url: https://www.netapp.com/pdf.html?item=/media/7676-ds-3891.pdf
+    - title: Online help
+      links:
+        - title: SANtricity System Manager 11.7
+          url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html
+        - title: SANtricity Unified Manager 5
+          url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-5/home.html
+        - title: Command Line Interface (CLI) reference
+          url:  https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-cli-115/home.html
+    - title: SANtricity APIs
+      links:
+        - title: Web services
+          url: /web-services-proxy/index.html
+        - title: Plug-in for vCenter
+          url: /san-spvc-ic-overview.html
+        - title: SMI-S providers
+          url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
+    - title: Performance apps & add-ons
+      links:
+        - title: SANtricity app for Splunk Enterprise
+          url: https://splunkbase.splunk.com/app/1932/
+        - title: Splunk technology add-on for SANtricity
+          url: https://splunkbase.splunk.com/app/1933/
+        - title: Performance analyzer with E-Series + Grafana
+          url: https://github.com/NetApp/eseries-perf-analyzer
+        - title: Blog on E-Series Performance Analyzer
+          url: https://blog.netapp.com/monitoring-netapp-eseries
+    - title: For the SEs
+      links:
+        - title: E-Series/EF-Series technical training (login required)
+          url: https://fieldportal.netapp.com/content/199944
+        - title: EF300 overview and technical details (login required)
+          url: https://fieldportal.netapp.com/content/1417672
+        - title: NetApp Fusion (login required)
+          url: https://fusion.netapp.com/
+    - title: Tools & support
+      links:
+        - title: NetApp Interoperability Matrix
+          url: http://mysupport.netapp.com/matrix/
+        - title: NetApp Knowledge Base
+          url: https://kb.netapp.com/
+        - title: Active IQ (login required)
+          url: https://activeiq.netapp.com/?source=aiqnsspage
+        - title: E-Series/SANtricity downloads (login required)
+          url: https://mysupport.netapp.com/site/downloads#E

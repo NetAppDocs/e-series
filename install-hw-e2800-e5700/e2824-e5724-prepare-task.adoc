@@ -1,0 +1,104 @@
+---
+permalink: install-hw-e2800-e5700/e2824-e5724-prepare-task.html
+sidebar: sidebar
+keywords: e5724, ef570, ef280, e2812, e2824, de212c, de224c, installation
+summary: To install the E5724, EF570, EF280, E2812, E2824, DE212C, or DE224C, create an account and register your hardware.
+---
+= Prepare for installation
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Learn how to prepare to install your E5724, EF570, EF280, E2812, E2824, DE212C, or DE224C series storage system.
+
+.Steps
+
+. Create an account and register your hardware at http://mysupport.netapp.com/[mysupport.netapp.com^].
+. Ensure that the following items are in the box that you received.
++
+|===
+a|
+image:../media/trafford_overview.png[] a|
+Shelf with drives installed     (bezel packaged separately)
+a|
+image:../media/superrails_inst-hw-e2800-e5700.png[]
+a|
+Rack-mount hardware
+|===
+The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see https://hwu.netapp.com/[Hardware Universe^] to locate the cable and identify its use.
++
+[options="header"]
+|===
+| Connector type| Cable type| Use
+a|
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png[]
+a|
+Ethernet cables
+
+(if ordered)
+a|
+Management connection
+a|
+image:../media/cable_io_inst-hw-e2800-e5700.png[]
+a|
+I/O cables
+
+(if ordered)
+a|
+Cabling the data hosts
+a|
+image:../media/cable_power_inst-hw-e2800-e5700.png[]
+a|
+Power cables
+
+(if ordered)
+a|
+Powering up the storage system
+a|
+image:../media/sas_cable.png[]
+a|
+SAS cables included only with the drive shelves
+a|
+SAS cables
+|===
+
+. Ensure that you provide the following items.
++
+|===
+a|
+image:../media/screwdriver_inst-hw-e2800-e5700.png[] a|
+Phillips #2 screwdriver
+a|
+image:../media/flashlight_inst-hw-e2800-e5700.png[]
+a|
+Flashlight
+a|
+image:../media/wrist_strap_inst-hw-e2800-e5700.png[]
+a|
+ESD strap
+a|
+image:../media/2u_rackspace_inst-hw-e2800-e5700.png[]
+a|
+2U rack space: A standard 19 in. (48.30 cm) rack to fit 2U shelves of the following dimensions.
+
+*Depth*: 19.0 in. (48.3 cm)
+
+*Width*: 17.6 in. (44.7 cm)
+
+*Height*: 3.34 in. (8.48 cm)
+
+*Shelf*: 24-drive
+
+*Max Weight*: 60.5 lb (27.4 kg)
+a|
+image:../media/management_station_inst-hw-e2800-e5700_g60b3.png[]
+a|
+A supported browser for the management software:
+
+* Google Chrome (version 78 and later)
+* Microsoft Internet Explorer (version 11 and later)
+* Microsoft Edge (88 and later)
+* Mozilla Firefox (version 70 and later)
+* Safari (version 12 and later)
+
+|===

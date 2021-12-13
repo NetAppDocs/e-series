@@ -1,0 +1,99 @@
+---
+permalink: config-linux/nvme-roce-configure-storage-connections-task.html
+sidebar: sidebar
+keywords: NVMe over RoCE, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: If your controller includes a connection for NVMe over RoCE \(RDMA over Converged Ethernet\), you can configure the NVMe port settings from the Hardware page or the System page in SANtricity System Manager.
+---
+= Configure storage array NVMe over RoCE connections
+:experimental:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If your controller includes a connection for NVMe over RoCE (RDMA over Converged Ethernet), you can configure the NVMe port settings from the Hardware page or the System page in SANtricity System Manager.
+
+.What you'll need
+
+* An NVMe over RoCE host port on your controller; otherwise, the NVMe over RoCE settings are not available in System Manager.
+* The IP address of the host connection.
+
+.About this task
+
+You can access the NVMe over RoCE configuration from the *Hardware* page or from menu:Settings[System]. This task describes how to configure the ports from the Hardware page.
+
+NOTE: The NVMe over RoCE settings and functions appear only if your storage array's controller includes an NVMe over RoCE port.
+
+.Steps
+
+. From the System Manager interface, select *Hardware*.
+. Click the controller with the NVMe over RoCE port you want to configure.
++
+The controller's context menu appears.
+
+. Select *Configure NVMe over RoCE ports*.
++
+The *Configure NVMe over RoCE ports* dialog box opens.
+
+. In the drop-down list, select the port you want to configure, and then click *Next*.
+. Select the port configuration settings you want to use, and then click *Next*.
++
+To see all port settings, click the *Show more port settings* link on the right of the dialog box.
++
+[options="header"]
+|===
+| Port Setting| Description
+a|
+Configured ethernet port speed
+a|
+Select the desired speed.    The options that appear in the drop-down list depend on the maximum speed that your network can support (for example, 10 Gbps). Possible values include:
+
+ ** Auto-negotiate
+ ** 10 Gbps
+ ** 25 Gbps
+ ** 40 Gbps
+ ** 50 Gbps
+ ** 100 Gbps
+ ** 200 Gbps
+
+NOTE: When a 200Gb-capable HIC is attached with a QSFP56 cable, auto-negotiate is only available when you are connecting to Mellanox switches and/or adapters.
+
+NOTE: The configured NVMe over RoCE port speed should match the speed capability of the SFP on the selected port. All ports must be set to the same speed.
+a|
+Enable IPv4 and/or Enable IPv6
+a|
+Select one or both options to enable support for IPv4 and IPv6 networks.
+a|
+MTU size     (Available by clicking *Show more port settings*.)
+a|
+If necessary, enter a new size in bytes for the maximum transmission unit (MTU).
+The default MTU size is 1500 bytes per frame. You must enter a value between 1500 and 4200.
+|===
+If you selected *Enable IPv4*, a dialog box opens for selecting IPv4 settings after you click *Next*. If you selected *Enable IPv6*, a dialog box opens for selecting IPv6 settings after you click *Next*. If you selected both options, the dialog box for IPv4 settings opens first, and then after you click *Next*, the dialog box for IPv6 settings opens.
+
+. Configure the IPv4 and/or IPv6 settings, either automatically or manually. To see all port settings, click the *Show more settings* link on the right of the dialog box.
++
+[options="header"]
+|===
+| Port setting| Description
+a|
+Automatically obtain configuration from DHCP server
+a|
+Select this option to obtain the configuration automatically.
+a|
+Manually specify static configuration
+a|
+Select this option, and then enter a static address in the fields. For IPv4, include the network subnet mask and gateway. For IPv6, include the routable IP addresses and router IP address.
+
+NOTE: If there is only one routable IP address, set the remaining address to 0:0:0:0:0:0:0:0.
+a|
+Enable VLAN support     (Available by clicking *Show more settings*.)
+a|
+NOTE: This option is only available in an iSCSI environment. It is not available in an NVMe over RoCE environment.
+
+a|
+Enable ethernet priority    (Available by clicking *Show more settings*.)
+a|
+NOTE: This option is only available in an iSCSI environment. It is not available in an NVMe over RoCE environment.
+|===
+
+. Click *Finish*.

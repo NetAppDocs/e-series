@@ -1,0 +1,32 @@
+---
+permalink: remote-storage-volumes/view-import-progress-task.html
+sidebar: sidebar
+keywords: Remote Storage Volumes, RTV, remote volumes, remote storage E-Series
+summary: You can view the status of each remote storage import from the result list section of the Remote Storage screen of the SANtricity System Manager.
+---
+= Manage import progress
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After the import process begins, you can view and take action on its progress.
+
+For each import operation, the Operations in Progress page displays a percentage of completion and estimated time remaining. Actions include changing the import priority, stopping and resuming operations, and disconnecting from the operation.
+
+NOTE: You can also view Operations in Progress from the Home page (*Home > Show operations in progress*).
+
+
+.Steps
+
+. In SANtricity System Manager, go to the Remote Storage page and select *View Operations*.
++
+The Operations in Progress dialog is displayed.
++
+. If desired, use the links in the Actions column to stop and resume, change priority, or disconnect from an operation.
++
+* *Change Priority* – Select *Change Priority* to change the processing priority of an operation that is in progress or pending. Apply a priority to the operation and then click *OK*.
+* *Stop* – Select *Stop* to pause the copying of data from the remote storage device. The relationship between the import pair is still intact, and you can select *Resume* when you are ready to continue the import operation.
+* *Resume* – Select *Resume* to begin a stopped or failed process from where it left off. Next, apply a priority to the Resume operation, and then click *OK*.
++
+The Resume operation does *not* restart the import from the beginning. If you want to restart the process from the beginning, you must select *Disconnect*, and then re-create the import through the Import Remote Storage wizard.
+* *Disconnect* – Select *Disconnect* to break the relationship between the source and destination volumes for an import operation that has stopped, completed, or failed.

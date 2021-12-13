@@ -1,0 +1,35 @@
+---
+sidebar: sidebar
+permalink: san-spvc-ic-login-and-navigation.html
+keywords: log in vCenter plugin, login Plugin for vCenter, browsers vCenter plugin user interface, vCenter GUI,
+summary: Log in and navigate the Plugin for vCenter.
+---
+
+= Log in and navigate the Storage Plugin for vCenter
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+
+[.lead]
+You can log in to the Storage Plugin for vCenter to navigate the user interface.
+
+. Before you log in to the plugin, make sure you are using one of the following browsers:
+
+** Google Chrome 79 or later
+** Mozilla Firefox 70 or later
+** Microsoft Edge 79 or later
+
+. Log in to the vSphere Client under the user account that has read/write privileges for the plugin.
+. From the vSphere Client Home page, click *SANtricity Storage Plugin for vCenter*.
++
+The plugin opens within a vSphere Client window. The plugin's main page opens to *Manage-All*.
+
+. Access storage management tasks from the navigation sidebar on the left:
+
+** *Manage* – Discover storage arrays in your network, open System Manager for an array, import settings from one array to multiple arrays, manage array groups, upgrade the OS software, and provision storage.
+** *Certificate Management* – Manage certificates to authenticate between browsers and clients.
+** *Operations* – View the progress of batch operations, such as importing settings from one array to another.
+** *Support* – View technical support options, resources, and contacts.

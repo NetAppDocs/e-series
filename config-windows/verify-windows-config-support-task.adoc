@@ -1,0 +1,45 @@
+---
+permalink: config-windows/verify-windows-config-support-task.html
+sidebar: sidebar
+keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Verify that the Windows configuration is supported.
+---
+= Verify the Windows configuration is supported
+:experimental:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To ensure reliable operation, create an implementation plan and then use the NetApp Interoperability Matrix Tool (IMT) to verify that the entire configuration is supported.
+
+.Steps
+
+. Go to the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
+. Click on the *Storage Solution Search* tile.
+. In the menu:Protocols[SAN Host] area, click the *Add* button next to *E-Series SAN Host*.
+. Click *View Refine Search Criteria*.
++
+The Refine Search Criteria section is displayed. In this section you may select the protocol that applies, as well as other criteria for the configuration such as Operating System, NetApp OS, and Host Multipath driver. Select the criteria you know you want for your configuration, and then see what compatible configuration elements apply. As necessary, make the updates for your operating system and protocol that are prescribed in the tool. Detailed information for your chosen configuration is accessible on the View Supported Configurations page by clicking the right page arrow.
+
+. As necessary, make the updates for your operating system and protocol as listed in the table.
++
+[options="header"]
+|===
+| Operating system updates| Protocol| Protocol-related updates
+.3+a|
+You might need to install out-of-box drivers to ensure proper functionality and supportability.
+
+Each HBA vendor has specific methods for updating boot code and firmware. Refer to the support section of the vendor's website to obtain the instructions and software necessary to update the HBA boot code and firmware.
+a|
+FC
+a|
+Host bus adapter (HBA) driver, firmware, and bootcode
+a|
+iSCSI
+a|
+Network interface card (NIC) driver, firmware and bootcode.
+a|
+SAS
+a|
+Host bus adapter (HBA) driver, firmware, and bootcode
+|===

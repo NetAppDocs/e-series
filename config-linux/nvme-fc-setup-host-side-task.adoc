@@ -1,0 +1,87 @@
+---
+permalink: config-linux/nvme-fc-setup-host-side-task.html
+sidebar: sidebar
+keywords: NVMe over Fibre Channel, host side, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: NVMe initiator configuration in a Fibre Channel environment includes installing and configuring the nvme-cli package, and enabling the NVMe/FC initiator on the host.
+---
+= Set up NVMe over Fibre Channel on the host side
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+NVMe initiator configuration in a Fibre Channel environment includes installing and configuring the nvme-cli package and for enabling the NVMe/FC initiator on the host.
+
+.About this task
+The following procedure is for RHEL 7, RHEL 8, SLES 12, and SLES 15 using Broadcom Emulex or QLogic NVMe/FC capable FC HBAs. For more information on which versions of these OS’s or HBA’s are supported, consult the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
+
+.Steps
+
+. Install the `nvme-cli` package:
++
+*SLES 12 or SLES 15*
++
+----
+
+# zypper install nvme-cli
+----
+
++
+*RHEL 7 or RHEL 8*
++
+----
+
+# yum install nvme-cli
+----
+
+.. For RHEL 7 only, download and install an external Broadcom Autoconnect script for NVMe/FC connections through the https://www.broadcom.com/support/download-search[Broadcom website^]. Enter the keyword *Autoconnect Script File for Inbox NVMe over FC Drivers* and choose the latest version specific to your OS.
+
+.. For Qlogic, modify `/lib/systemd/system/nvmefc-boot-connections.service` after installing the Broadcom NVMe/FC autoconnect script to contain the following:
++
+----
+[Unit]
+Description=Auto-connect to subsystems on FC-NVME devices found during boot
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c "echo add > /sys/class/fc/fc_udev_device/nvme_discovery"
+
+[Install]
+WantedBy=default.target
+----
+
+. Enable and start the `nvmefc-boot-connections` service.
++
+----
+systemctl enable nvmefc-boot-connections.service
+----
++
+----
+systemctl start nvmefc-boot-connections.service
+----
+
+*Host-side setup for Emulex HBAs:*
+
+NOTE: The following steps are for Emulex HBAs only.
+
+. Set `lpfc_enable_fc4_type` to `3` to enable SLES12 SP4 as an NVMe/FC initiator.
++
+----
+# cat /etc/modprobe.d/lpfc.conf
+options lpfc lpfc_enable_fc4_type=3
+----
+
+. Re-build the `initrd` to get the Emulex change and the boot parameter change.
++
+----
+# dracut --force
+----
+
+. Reboot the host to load the changes to the `Ipfc` driver.
++
+----
+# reboot
+----
++
+The host is rebooted and the NVMe/FC initiator is enabled on the host.
++
+NOTE: After completing the host-side setup, connection of the NVMe over Fibre Channel ports occur automatically.

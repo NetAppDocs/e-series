@@ -1,0 +1,104 @@
+---
+permalink: cloud-connector/restore-intro-concept.html
+sidebar: sidebar
+keywords: Cloud Connector restore,
+summary: You can access the Restore option in the left navigation panel of the SANtricity Cloud Connector application. The Restore option displays the Restore page, which allows you to create new image-based or file-based restore jobs.
+---
+= Restores
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can access the Restore option in the left navigation panel of the SANtricity Cloud Connector application. The Restore option displays the Restore page, which allows you to create new image-based or file-based restore jobs.
+
+The SANtricity Cloud Connector uses the concept of jobs to perform the actual restore of an E-Series volume. Before performing a restore, you must identify which E-Series volume will be used for the operation. After you add an E-Series volume for restore to the SANtricity Cloud Connector host, you can use the `Restore` page of the SANtricity Cloud Connector application to create and process restores.
+
+NOTE: All timestamps for backup and restore jobs listed under the SANtricity Cloud Connector application use local time.
+
+== Create a new image-based restore
+
+You can create new image-based restores through the Create function on the Restore page of the SANtricity Cloud Connector application.
+
+.Before you begin
+
+Make sure you have an image-based backup available through the SANtricity Cloud Connector.
+
+.Steps
+
+. In the Restore page of the SANtricity Cloud Connector application, click *Create*.
++
+The Restore window is displayed.
+
+. Select the desired backup.
+. Click *Next*.
++
+The Select Backup Point page is displayed in the Restore window.
+
+. Select the desired completed backup.
+. Click *Next*.
++
+The Select Restore Target page is displayed in the Restore window.
+
+. Select the restore volume and click *Next*.
++
+The Review page is displayed in the Restore window.
+
+. Review the selected restore operation and click *Finish*.
++
+The restore for the selected target host volume is initiated, and the status for the task is displayed in the result list section of the Restore page.
+
+== Create a new file-based restore
+
+You can create new file-based restores through the Create function in the Restore page of the SANtricity Cloud Connector application.
+
+.Before you begin
+Make sure you have a file-based backup available through the SANtricity Cloud Connector.
+
+.Steps
+
+. In the Restore page of the SANtricity Cloud Connector application, click *Create*.
++
+The Restore window is displayed.
+
+. In the Restore window, select the desired file-based backup.
+. Click *Next*.
++
+The Select Backup Point page is displayed in the Create Restore Job window.
+
+. In the Select Backup Point page, select the desired completed backup.
+. Click *Next*.
++
+A list of available filesystems or folders/files page is displayed in the Restore window.
+
+. Select the desired folders or files to restore and click *Next*.
++
+The Select Restore Target page is displayed in the Restore window.
+
+. Select the restore volume and click *Next*.
++
+The Review page is displayed in the Restore window.
+
+. Review the selected restore operation and click *Finish*.
++
+The restore for the selected target host volume is initiated, and the status for the task is displayed in the result list section of the Restore page.
+
+== Delete a restore
+
+You can use the Delete function to delete a selected restore item from the result list section of the Restore page.
+
+.Before you begin
+
+Make sure there is a restore job with a status of Completed, Failed or Canceled.
+
+.Steps
+
+. In the Restore page, click *Delete*.
++
+The Confirm Delete window is displayed.
+
+. In the *Type delete* field, type `delete` to confirm the delete action.
+. Click *Delete*.
++
+NOTE: You cannot delete a suspended restore.
++
+The selected restore is deleted.

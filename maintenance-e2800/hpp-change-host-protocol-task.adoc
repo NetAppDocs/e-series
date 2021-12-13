@@ -1,0 +1,454 @@
+---
+permalink: maintenance-e2800/hpp-change-host-protocol-task.html
+sidebar: sidebar
+keywords: E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Channel protocol, iSCSI protocol, convert HPP, converting host port protocol, SFP+ (optical) host ports, E2800, E-Series, eseries
+summary: Change the host port protocol from Fibre Channel (FC) to iSCSI or from iSCSI to FC.
+---
+= Change host protocol for E2800
+:experimental:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you have an E2800 storage array with SFP+ (optical) host ports, you can change the host port protocol from Fibre Channel (FC) to iSCSI or from iSCSI to FC.
+
+You can change the protocol used by the host ports built into the controller (_baseboard host ports_), the protocol used by the host ports on the host interface card (_HIC ports_), or the protocol of all host ports.
+
+== Step 1: Determine whether you have dual-protocol SFPs
+
+Use SANtricity System Manager to determine what type of SFP transceivers you have. Because these SFPs can be used with both FC and iSCSI protocols, they are referred to as _dual-protocol_ or _unified_ SFPs.
+
+.Steps
+
+. From SANtricity System Manager, select *Support*.
+. Select the *Support Center* tile.
+. On the Support Resources tab, locate and select the *Storage Array Profile* link.
+. Type *SFP* in the text box, and click *Find*.
+. For each SFP listed in the Storage Array Profile, locate the entry for *Supported data rate(s)*.
++
+image::../media/sam1130_ss_e2800_unified_spf_maint-e2800.gif[]
+
+. Refer to the table to determine whether you can reuse the SFPs, as follows:
++
+[options = "header"]
+|===
+| Supported data rate(s)| SFP type| Supported protocol
+a|
+16 Gbps, 10 Gbps, 4 Gbps
+a|
+Dual-protocol
+a|
+
+ ** *FC:* 16 Gbps, 4 Gbps
+ ** **iSCSI:**10 Gbps
+
+a|
+25 Gbps, 10 Gbps
+a|
+25 Gbps. 10 Gbps,
+a|
+iSCSI only
+a|
+32 Gbps, 16 Gbps, 8 Gbps, 4 Gbps
+a|
+32 Gbps, 16 Gbps
+a|
+FC only
+|===
+
+ ** If you have dual-protocol SFPs, you can continue using them after you convert the protocol.
++
+NOTE: The dual-protocol SFPs do not support 1 Gb iSCSI. If you are converting host ports to iSCSI, be aware that the dual-protocol SFPs support only a 10 Gb link to the connected port.
+
+ ** If you have 16 Gbps SFPs, and you are converting host ports to iSCSI, you must remove the SFPs and replace them with dual-protocol or 10 Gbps SFPs after converting the protocol. As needed, you can also use 10 Gbps iSCSI copper by using a special Twin-Ax cable with SFPs.
++
+NOTE: 8Gbps FC SFPs are NOT supported in the E28xx or E57xx controllers. ONLY 16Gbps and 32 Gbps FC SFPs are supported.
+
+ ** If you have 10 Gbps SFPs, and you are converting host ports to FC, you must remove the SFPs from these ports and replace them with dual-protocol or 16 Gbps SFPs after converting the protocol.
+
+== Step 2: Obtain the feature pack
+
+To obtain the feature pack, you need the serial number from the controller shelf, a Feature Activation Code, and the Feature Enable Identifier for the storage array.
+
+.Steps
+
+. Locate the serial number.
+ .. From SANtricity System Manager, select menu:Support[Support Center].
+ .. With the *Support Resources* tab selected, scroll to the *View top storage array properties* section.
+ .. Locate the *Chassis Serial Number*, and copy this value to a text file.
++
+image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-e2800.gif[]
+. Locate the *feature pack submodel ID*.
+ .. On the Support Resources tab, locate and select the *Storage Array Profile* link.
+ .. Type *feature pack submodel ID* in the text box, and click *Find*.
+ .. Locate the feature pack submodel ID for the starting configuration.
++
+image::../media/storage_array_profile2_maint-e2800.gif[]
+
+. Using the feature pack submodel ID, locate the corresponding Controller submodel ID for the starting configuration and find the Feature Activation Code for the desired ending configuration within the table below. Then, copy that Feature Activation Code to a text file.
++
+[options = "header"]
+|===
+3+| Starting configuration 3+| Ending configuration .2+| Feature Activation Code
+| Controller submodel ID| Baseboard ports| HIC ports| Controller submodel ID| Baseboard ports| HIC ports
+.4+a|
+318
+.4+a|
+FC
+.4+a|
+FC
+a|
+319
+a|
+FC
+a|
+iSCSI
+a|
+ZGW-4L2-Z36IJ
+a|
+320
+a|
+iSCSI
+a|
+FC
+a|
+4GZ-NL2-Z4NRP
+a|
+321
+a|
+iSCSI
+a|
+iSCSI
+a|
+TG2-7L2-Z5485
+a|
+_no HIC or not an optical HIC_
+a|
+321
+a|
+iSCSI
+a|
+TG2-7L2-Z5485
+.3+a|
+319
+.3+a|
+FC
+.3+a|
+iSCSI
+a|
+318
+a|
+FC
+a|
+FC
+a|
+1G5-QL2-Z7LFC
+a|
+320
+a|
+iSCSI
+a|
+FC
+a|
+FG7-AL2-Z82RW
+a|
+321
+a|
+iSCSI
+a|
+iSCSI
+a|
+5G7-0K2-Z0G8X
+.3+a|
+320
+.3+a|
+iSCSI
+.3+a|
+FC
+a|
+318
+a|
+FC
+a|
+FC
+a|
+4GP-HL2-ZYRKP
+a|
+319
+a|
+FC
+a|
+iSCSI
+a|
+PGU-KL2-Z1P7I
+a|
+321
+a|
+iSCSI
+a|
+iSCSI
+a|
+BGA-8K2-ZQWM5
+.3+a|
+321
+.3+a|
+iSCSI
+.3+a|
+iSCSI
+a|
+318
+a|
+FC
+a|
+FC
+a|
+SGH-UK2-ZUCJG
+a|
+319
+a|
+FC
+a|
+iSCSI
+a|
+1GK-EK2-ZVSW1
+a|
+320
+a|
+iSCSI
+a|
+FC
+a|
+AGM-XL2-ZWA8A
+a|
+_no HIC or not an optical HIC_
+a|
+318
+a|
+FC
+a|
+_no HIC or not an optical HIC_
+a|
+SGH-UK2-ZUCJG
+|===
++
+
+[options = "header"]
+|===
+3+| Starting configuration 3+| Ending configuration .2+| Feature Activation Code
+| Controller submodel ID| Baseboard ports| HIC ports| Controller submodel ID| Baseboard ports| HIC ports
+.4+a|
+338
+.4+a|
+FC
+.4+a|
+FC
+a|
+339
+a|
+FC
+a|
+iSCSI
+a|
+PGC-RK2-ZREUT
+a|
+340
+a|
+iSCSI
+a|
+FC
+a|
+MGF-BK2-ZSU3Z
+a|
+341
+a|
+iSCSI
+a|
+iSCSI
+a|
+NGR-1L2-ZZ8QC
+a|
+_no HIC or not an optical HIC_
+a|
+341
+a|
+iSCSI
+a|
+NGR-1L2-ZZ8QC
+.3+a|
+339
+.3+a|
+FC
+.3+a|
+iSCSI
+a|
+338
+a|
+FC
+a|
+FC
+a|
+DGT-7M2-ZKBMD
+a|
+340
+a|
+iSCSI
+a|
+FC
+a|
+GGA-TL2-Z9J50
+a|
+341
+a|
+iSCSI
+a|
+iSCSI
+a|
+WGC-DL2-ZBZIB
+.3+a|
+340
+.3+a|
+iSCSI
+.3+a|
+FC
+a|
+338
+a|
+FC
+a|
+FC
+a|
+4GM-KM2-ZGWS1
+a|
+339
+a|
+FC
+a|
+iSCSI
+a|
+PG0-4M2-ZHDZ6
+a|
+341
+a|
+iSCSI
+a|
+iSCSI
+a|
+XGR-NM2-ZJUGR
+.3+a|
+341
+.3+a|
+iSCSI
+.3+a|
+iSCSI
+a|
+338
+a|
+FC
+a|
+FC
+a|
+3GE-WL2-ZCHNY
+a|
+339
+a|
+FC
+a|
+iSCSI
+a|
+FGH-HL2-ZDY3R
+a|
+340
+a|
+iSCSI
+a|
+FC
+a|
+VGJ-1L2-ZFFEW
+a|
+_no HIC or not an optical HIC_
+a|
+338
+a|
+FC
+a|
+_no HIC or not an optical HIC_
+a|
+3GE-WL2-ZCHNY
+|===
++
+NOTE: If your Controller submodel ID is not listed, contact http://mysupport.netapp.com[NetApp Support^].
+
+. In System Manager, locate the Feature Enable Identifier.
+ .. Go to menu:Settings[System].
+ .. Scroll down to *Add-ons*.
+ .. Under *Change Feature Pack*, locate the *Feature Enable Identifier*.
+ .. Copy and paste this 32-digit number to a text file.
++
+image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-e2800.gif[]
+. Go to http://partnerspfk.netapp.com[NetApp License Activation: Storage Array Premium Feature Activation^], and enter the information required to obtain the feature pack.
+ ** Chassis serial number
+ ** Feature Activation Code
+ ** Feature Enable Identifier
++
+NOTE: The Premium Feature Activation web site includes a link to "`Premium Feature Activation Instructions.`" Do not attempt to use those instructions for this procedure.
+. Choose whether to receive the key file for the feature pack in an email or download it directly from the site.
+
+== Step 3: Stop host I/O
+
+You must stop all I/O operations from the host before converting the protocol of the host ports. You cannot access data on the storage array until you successfully complete the conversion.
+
+.Steps
+
+. Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
+ ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
+ ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
+ ** Unmount all file systems associated with volumes on the array.
++
+NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
++
+CAUTION: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, the host application might lose access to the data because the storage is not accessible.
+. If the storage array participates in a mirroring relationship, stop all host I/O operations on the secondary storage array.
+. Wait for any data in cache memory to be written to the drives.
++
+The green Cache Active LED on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.image:../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[]
++
+[options = "header"]
+|===
+| Callout| Type of host ports
+a|
+*(1)*
+a|
+Cache Active LED
+|===
+
+. From the Home page of SANtricity System Manager, select *View Operations in Progress*.
+. Wait for all operations to complete before continuing with the next step.
+
+== Step 4: Change the feature pack
+
+Change the feature pack to convert the host protocol of the baseboard host ports, the IB HIC ports, or both types of ports.
+
+.Steps
+
+. From SANtricity System Manager, select menu:Settings[System].
+. Under *Add-ons*, select *Change Feature Pack*.
++
+image::../media/sam1130_ss_system_change_feature_pack_maint-e2800.gif[]
+
+. Click *Browse*, and then select the feature pack you want to apply.
+. Type `CHANGE` in the field.
+. Click *Change*.
++
+The feature pack migration begins. Both controllers automatically reboot twice to allow the new feature pack to take effect. The storage array returns to a responsive state after the reboot is complete.
+
+. Confirm the host ports have the protocol you expect.
+ .. From SANtricity System Manager, select *Hardware*.
+ .. Click *Show back of shelf*.
+ .. Select the graphic for either Controller A or Controller B.
+ .. Select *View settings* from the context menu.
+ .. Select the *Host Interfaces* tab.
+ .. Click *Show more settings*.
+ .. Review the details shown for the baseboard ports and the HIC ports (labeled "`slot 1`"), and confirm that each type of port has the protocol you expect.
+
+.What's next?
+Go to link:hpp-complete-protocol-conversion-task.html[Complete host protocol conversion].

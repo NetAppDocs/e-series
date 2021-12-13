@@ -1,0 +1,48 @@
+---
+permalink: maintenance-ef600/index.html
+sidebar: sidebar
+keywords: EF300 maintenance, EF600 maintenance, repairing EF300, repairing EF600, replace EF300 components, replace EF600 components
+summary: Maintain the EF300 and EF600 hardware
+---
+= Maintain EF300 and EF600 hardware
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+For the EF300 and EF600 storage systems, you can perform maintenance procedures on the following components.
+
+== Batteries
+
+A battery is included with a controller and preserves cached data if the AC power fails.
+
+== Controllers
+
+A controller consists of a board, firmware, and software. It controls the drives and implements the SANtricity System Manager functions.
+
+== DIMMs
+
+You must replace a DIMM (dual in-line memory module) when a memory mismatch is present, or you have a failed DIMM.
+
+== Drives
+
+A drive is a device that provides the physical storage media for data.
+
+== Fans
+
+Each EF300 or EF600 controller shelf or drive shelf includes five fans for cooling the controller.
+
+== Host interface cards (HICs)
+
+A host interface card (HIC) must be installed within a controller canister. The EF600 controller includes host ports on the optional HIC. Host ports that are built into the HIC are called HIC ports.
+
+== Host port protocol
+
+You can convert the protocol of a host to a different protocol so that compatibility and communication can be established.
+
+== Power supplies
+
+A power supply provides a redundant power source in a controller shelf.
+
+== SAS expansion cards
+
+A SAS expansion card may be installed within a controller canister. The EF300 controller supports SAS expansion.

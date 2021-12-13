@@ -1,0 +1,91 @@
+---
+permalink: config-windows/sas-perform-specific-task.html
+sidebar: sidebar
+keywords: sas, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: For the SAS protocol, you determine host port addresses and make recommended settings.
+---
+= Perform SAS-specific tasks
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+For the SAS protocol, you determine host port addresses and make the appropriate settings.
+
+== Step 1: Determine SAS host identifiers--Windows
+
+Find the SAS addresses using the HBA utility, then use the HBA BIOS to make the appropriate configuration settings.
+
+.About this task
+
+Review the guidelines for HBA utilities:
+
+* Most HBA vendors offer an HBA utility. Depending on your host operating system and CPU, use either the LSI-sas2flash(6G) or sas3flash(12G) utility.
+* Host I/O ports might automatically register if the host context agent is installed.
+
+.Steps
+
+. Download the LSI-sas2flash(6G) or sas3flash(12G) utility from your HBA vendor's web site.
+. Install the utility.
+. Use the HBA BIOS to select the appropriate settings for your configuration.
++
+For setting recommendations, see the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
+
+== Step 2: Record your configuration
+
+You can generate and print a PDF of this page, and then use the following worksheet to record your protocol-specific storage configuration information. You need this information to perform provisioning tasks.
+
+image::../media/sas_topology_diagram_conf-win.gif[Diagram: SAS topology]
+
+=== Host identifiers
+
+[options="header"]
+|===
+| Callout No.| Host (initiator) port connections| SAS address
+a|
+1
+a|
+Host
+a|
+_not applicable_
+a|
+2
+a|
+Host (initiator) port 1 connected to Controller A, port 1
+a|
+
+a|
+3
+a|
+Host (initiator) port 1 connected to Controller B, port 1
+a|
+
+a|
+4
+a|
+Host (initiator) port 2 connected to Controller A, port 1
+a|
+
+a|
+5
+a|
+Host (initiator) port 2 connected to Controller B, port 1
+a|
+
+|===
+
+=== Target identifiers
+
+Recommended configurations consist of two target ports.
+
+=== Mapping host name
+
+|===
+a|
+Mapping host name a|
+
+a|
+Host OS type
+a|
+
+a|
+|===

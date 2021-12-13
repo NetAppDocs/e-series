@@ -1,0 +1,71 @@
+---
+permalink: config-linux/nvme-ib-create-filesystems-sles-12-task.html
+sidebar: sidebar
+keywords: file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: For RHEL 7 and SLES 12, you create a file system on the namespace and mount the filesystem.
+---
+= Create filesystems (RHEL 7 and SLES 12)
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+For RHEL 7 and SLES 12, you create a file system on the namespace and mount the filesystem.
+
+.Steps
+
+. Run the `multipath -ll` command to get a list of `/dev/mapper/dm` devices.
++
+----
+# multipath -ll
+----
++
+The result of this command shows two devices, `dm-19` and `dm-16`:
++
+----
+eui.00001ffe5a94ff8500a0980000af4444 dm-19 NVME,NetApp E-Series
+size=10G features='1 queue_if_no_path' hwhandler='0' wp=rw
+|-+- policy='service-time 0' prio=50 status=active
+| |- #:#:#:# nvme0n19 259:19  active ready running
+| `- #:#:#:# nvme1n19 259:115 active ready running
+`-+- policy='service-time 0' prio=10 status=enabled
+  |- #:#:#:# nvme2n19 259:51  active ready running
+  `- #:#:#:# nvme3n19 259:83  active ready running
+eui.00001fd25a94fef000a0980000af4444 dm-16 NVME,NetApp E-Series
+size=16G features='1 queue_if_no_path' hwhandler='0' wp=rw
+|-+- policy='service-time 0' prio=50 status=active
+| |- #:#:#:# nvme0n16 259:16  active ready running
+| `- #:#:#:# nvme1n16 259:112 active ready running
+`-+- policy='service-time 0' prio=10 status=enabled
+  |- #:#:#:# nvme2n16 259:48  active ready running
+  `- #:#:#:# nvme3n16 259:80  active ready running
+----
+
+. Create a file system on the partition for each `/dev/mapper/eui-` device.
++
+The method for creating a file system varies depending on the file system chosen. This example shows creating an `ext4` file system.
++
+----
+# mkfs.ext4 /dev/mapper/dm-19
+mke2fs 1.42.11 (09-Jul-2014)
+Creating filesystem with 2620928 4k blocks and 655360 inodes
+Filesystem UUID: 97f987e9-47b8-47f7-b434-bf3ebbe826d0
+Superblock backups stored on blocks:
+        32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632
+
+Allocating group tables: done
+Writing inode tables: done
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information: done
+----
+
+. Create a folder to mount the new device.
++
+----
+# mkdir /mnt/ext4
+----
+
+. Mount the device.
++
+----
+# mount /dev/mapper/eui.00001ffe5a94ff8500a0980000af4444 /mnt/ext4
+----

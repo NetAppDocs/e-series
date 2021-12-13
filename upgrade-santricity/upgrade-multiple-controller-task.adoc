@@ -1,0 +1,150 @@
+---
+permalink: upgrade-santricity/upgrade-multiple-controller-task.html
+sidebar: sidebar
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, drive firmware, upgrade SANtricity, upgrade OS, upgrade E-Series, upgrade firmware, upgrading, upgrade IOM firmware, upgrade NVSRAM, upgrade controller
+summary: Use SANtricity Unified Manager to upgrade the SANtricity OS software on multiple storage arrays of the same type.
+---
+= Upgrade software and firmware for multiple controllers
+:experimental:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can upgrade multiple controllers of the same type with SANtricity Unified Manager.
+
+.Before you begin
+
+* Review link:overview-upgrade-consider-task.html[Upgrade considerations].
+* Determine if you want to activate your software upgrade now or later. You might choose to activate later for these reasons:
+
+ ** *Time of day* -- Activating the software can take a long time, so you might want to wait until I/O loads are lighter. The controllers fail over during activation, so performance might be lower than usual until the upgrade completes.
+ ** *Type of package* -- You might want to test the new OS software on one storage array before you upgrade the files on other storage arrays.
+
+ * Review these precautions:
+
+CAUTION: Risk of data loss or risk of damage to the storage array - Do not make changes to the storage array while the upgrade is occurring. Maintain power to the storage array.
+
+CAUTION: If you are upgrading SANtricity OS on a StorageGRID appliance (for example, SG5612 or SG5760), you need to stop I/O activity by placing the appliance into maintenance mode before continuing with this procedure, or data could be lost. For detailed steps, see the installation and maintenance instructions for your StorageGRID appliance.
+
+
+== Step 1: Perform pre-upgrade health check
+
+A health check runs as part of the upgrade process, but you also can run a health check separately before you begin. The health check assesses components of the storage array to make sure that the upgrade can proceed.
+
+.Steps
+
+. Open Unified Manager.
+. From the main view, select *Manage*, and then select menu:Upgrade Center[Pre-Upgrade Health Check].
++
+The Pre-Upgrade Health Check dialog box opens and lists all the discovered storage systems.
+
+. If needed, filter or sort the storage systems in the list, so you can view all systems that are not currently in the Optimal state.
+. Select the check boxes for the storage systems that you want to run through the health check.
+. Click *Start*.
++
+The progress is shown in the dialog box while the health check is performed.
+
+. When the health check completes, you can click on the ellipses (...) to the right of each row to view more information and perform other tasks.
++
+NOTE: If any arrays fail the health check, you can skip that particular array and continue the upgrade for the others, or you can stop the entire process and troubleshoot the arrays that did not pass.
+
+== Step 2: Download software files from support site
+
+In this step, you go to the NetApp Support site to save the new downloadable package (DLP) software files to your management host system.
+
+.Steps
+
+. If your storage array contains only one controller or a multipath driver is not in use, stop I/O activity to the storage array to prevent application errors. If your storage array has two controllers and you have a multipath driver installed, you do not need to stop I/O activity.
+. From Unified Manager's main view, select *Manage*, and then select one or more storage arrays that you want to upgrade.
+. Select menu:Upgrade Center[Upgrade SANtricity OS Software].
++
+The Upgrade SANtricity OS software page appears.
+
+. Download the latest SANtricity OS software package from the NetApp support site to your local machine.
+ .. Click *Add new file to software repository*.
+ .. Click the link for finding the latest *SANtricity OS Downloads*.
+ .. Click the *Download Latest Release* link.
+ .. Follow the remaining instructions to download the SANtricity OS file and the NVSRAM file to your local machine.
+
++
+NOTE: Digitally signed firmware is required in version 8.42 and above. If you attempt to download unsigned firmware, an error is displayed and the download is aborted.
+
+==  Step 3: Transfer software files to the controllers
+
+You load the SANtricity OS software file and the NVSRAM file into the repository so it is accessible to the Unified Manager Upgrade Center.
+
+CAUTION: Risk of data loss or risk of damage to the storage array - Do not make changes to the storage array while the upgrade is occurring. Maintain power to the storage array.
+
+.Steps
+
+. From Unified Manager's main view, select *Manage*, and then select one or more storage arrays that you want to upgrade.
+. Select menu:Upgrade Center[Upgrade SANtricity OS Software].
++
+The Upgrade SANtricity OS software page appears.
+
+. Download the latest SANtricity OS software package from the NetApp support site to your local machine.
+ .. Click *Add new file to software repository*.
+ .. Click the link for finding the latest *SANtricity OS Downloads*.
+ .. Click the *Download Latest Release* link.
+ .. Follow the remaining instructions to download the SANtricity OS file and the NVSRAM file to your local machine.
+
++
+NOTE: Digitally signed firmware is required in version 8.42 and above. If you attempt to download unsigned firmware, an error is displayed and the download is aborted.
+. Select the OS software file and the NVSRAM file that you want to use to upgrade the controllers:
+ .. From the *Select a SANtricity OS software file* drop-down, select the OS file that you downloaded to your local machine.
++
+If there are multiple files available, the files are sorted from newest date to oldest date.
++
+NOTE: The software repository lists all software files associated with the Web Services Proxy. If you do not see the file that you want to use, you can click the link, *Add new file to software repository*, to browse to the location where the OS file that you want to add resides.
+
+ .. From the *Select an NVSRAM file* drop-down, select the controller file that you want to use.
++
+If there are multiple files, the files are sorted from newest date to oldest date.
+. In the Compatible Storage Array table, review the storage arrays that are compatible with the OS software file that you selected, and then select the arrays you want to upgrade.
+ ** The storage arrays that you selected in the Manage view and that are compatible with the selected firmware file are selected by default in the Compatible Storage Array table.
+ ** The storage arrays that cannot be updated with the selected firmware file are not selectable in the Compatible Storage Array table as indicated by the status *Incompatible*.
+. (Optional) To transfer the software file to the storage arrays without activating them, select the *Transfer the OS software to the storage arrays, mark it as staged, and activate at a later time* check box.
+. Click *Start*.
+. Depending on whether you chose to activate now or later, do one of the following:
+ ** Type *TRANSFER* to confirm that you want to transfer the proposed OS software versions on the arrays you selected to upgrade, and then click *Transfer*.
++
+To activate the transferred software, select menu:Upgrade Center[Activate Staged OS Software].
+
+ ** Type *UPGRADE* to confirm that you want to transfer and activate the proposed OS software versions on the arrays you selected to upgrade, and then click *Upgrade*.
++
+The system transfers the software file to each storage array you selected to upgrade and then activates that file by initiating a reboot.
+
++
+The following actions occur during the upgrade operation:
+ ** A pre-upgrade health check runs as part of the upgrade process. The pre-upgrade health check assesses all storage array components to make sure that the upgrade can proceed.
+ ** If any health check fails for a storage array, the upgrade stops. You can click the ellipsis (...) and select *Save Log* to review the errors. You can also choose to override the health check error and then click *Continue* to proceed with the upgrade.
+ ** You can cancel the upgrade operation after the pre-upgrade health check.
+. (Optional) Once the upgrade has completed, you can see a list of what was upgraded for a specific storage array by clicking the ellipsis (...) and then selecting *Save Log*.
++
+The file is saved in the Downloads folder for your browser with the name``upgrade_log-<date>.json``.
+
+==  Step 4: Activate staged software files (optional)
+
+You can choose to activate the software file immediately or wait until a more convenient time. This procedure assumes you chose to activate the software file at a later time.
+
+NOTE: You cannot stop the activation process after it starts.
+
+.Steps
+
+. From Unified Manager's main view, select *Manage*. If necessary, click the Status column to sort all storage arrays with a status of "OS Upgrade (awaiting activation)."
+. Select one or more storage arrays that you want to activate software for, and then select menu:Upgrade Center[Activate Staged OS Software].
++
+The following actions occur during the upgrade operation:
+
+ ** A pre-upgrade health check runs as part of the activate process. The pre-upgrade health check assesses all storage array components to make sure that the activation can proceed.
+ ** If any health check fails for a storage array, the activation stops. You can click the ellipsis (...) and select *Save Log* to review the errors. You can also choose to override the health check error and then click *Continue* to proceed with the activation.
+ ** You can cancel the activate operation after the pre-upgrade health check.
+On successful completion of the pre-upgrade health check, activation occurs. The time it takes to activate depends on your storage array configuration and the components that you are activating.
+
+. (Optional) After the activation is complete, you can see a list of what was activated for a specific storage array by clicking the ellipsis (...) and then selecting *Save Log*.
++
+The file is saved in the Downloads folder for your browser with the name `activate_log-<date>.json`.
+
+.What's next?
+
+Your controller software upgrade is complete. You can resume normal operations.

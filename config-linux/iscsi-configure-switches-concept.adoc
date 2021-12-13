@@ -1,0 +1,20 @@
+---
+permalink: config-linux/iscsi-configure-switches-concept.html
+sidebar: sidebar
+keywords: Switches, zoning, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: Configure the switches according to the vendor’s recommendations for iSCSI.
+---
+= Configure the switches
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You configure the switches according to the vendor's recommendations for iSCSI. These recommendations might include both configuration directives as well as code updates.
+
+You must ensure the following:
+
+* You have two separate networks for high availability. Make sure that you isolate your iSCSI traffic to separate network segments.
+* You must enable flow control *end to end*.
+* If appropriate, you have enabled jumbo frames.
+
+NOTE: Port channels/LACP is not supported on the controller's switch ports. Host-side LACP is not recommended; multipathing provides the same benefits, and in some cases, better benefits.

@@ -1,0 +1,35 @@
+---
+permalink: remote-storage-volumes/modify-remote-storage-task.html
+sidebar: sidebar
+keywords: modify Remote Storage Volumes settings, RTV settings, remote volume settings, remote storage E-Series
+summary: You can modify the connection settings for any configured Remote Storage import through the View/Edit Settings option under the Remote Storage screen of the SANtricity System Manager.
+---
+= Modify remote storage connection settings
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can edit, add, or delete connection settings for any remote storage configuration through the View/Edit Settings option.
+
+Making changes to connection properties will affect in-progress imports. To avoid disruptions, only make changes to connection properties when imports are not running.
+
+.Steps
+
+. From the Remote Storage screen of the SANtricity System Manager, select the desired Remote Storage object under the result list section.
+. Click *View/Edit Settings*.
++
+The Remote Storage Settings screen is displayed.
+
+. Click the *Connection Properties* tab.
++
+The configured IP address and port settings for the remote storage import are displayed.
+
+. Perform one of the following actions:
++
+* *Edit* – Click *Edit* next to the corresponding line item for the remote storage object. Enter the revised IP address and/or port information in the fields.
+* *Add* – Click *Add*, and then enter the new IP address and port information in the fields provided. Click *Add* to confirm, and then the new connection appears in the list of remote storage objects.
+* *Delete* – Select the desired connection from the list and then click *Delete*. Confirm the operation by typing `delete` in the provided field and then click *Delete*. The connection is removed from the list of remote storage objects.
+
+. Click *Save*.
++
+The modified connection settings are applied to the remote storage object.

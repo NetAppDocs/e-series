@@ -1,0 +1,54 @@
+---
+permalink: getting-started/learn-shelf-concept.html
+sidebar: sidebar
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, E-series hardware, E-Series shelf, DE212C, DE224C, DE460C, NE224,
+summary: E-Series systems are available in a variety of shelf sizes.
+---
+= E-Series shelf types
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+E-Series systems are available in a variety of shelf sizes.
+
+[options="header"]
+|===
+a|Shelf type a|Illustration
+a|
+*DE212C:*
+
+* 2u12 (2 rack units; 12 drives)
+* 3.5" HDDs and/or 2.5" SSDs (with adapter)
+* E2800 controllers only
+
+a|
+image:../media/e2812_front.gif[]
+a|
+
+*DE224C:*
+
+* 2u24 (2 rack units; 24 drives)
+* 2.5" HDD and/or 2.5" SSD drives
+* E2800, EF280, E5700, and EF570 controllers
+
+a|
+image:../media/e2824_front.gif[]
+a|
+*DE460C:*
+
+* 4u60 (4 rack units; 60 drives)
+* 3.5" and 2.5" drives (NL-SAS, SAS, and SSD)
+* E2800 and E5700 controllers
+
+a|
+image:../media/de460c.gif[]
+a|
+*NE224:*
+
+* 2u24 (2 rack units; 24 drives)
+* 2.5" NVMe SSD drives
+* EF300 and EF600 controllers
+
+a|
+image:../media/ne224.gif[]
+|===

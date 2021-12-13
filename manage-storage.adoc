@@ -1,0 +1,20 @@
+---
+sidebar: sidebar
+permalink: manage-storage.html
+keywords: online help, System Manager, Unified Manager
+summary: Manage storage
+---
+
+= Manage storage
+
+[.lead]
+Use the links below to access documentation that describes how to configure, manage, and monitor storage objects and E-Series storage systems. The links take you to a different documentation site.
+
+== Online help for System Manager 11.7
+Access the https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html[SANtricity System Manager 11.7 online help^], where you can find information about how to plan, configure, manage, and troubleshoot your storage array.
+
+== Online help for Unified Manager 5
+Access the https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-5/home.html[SANtricity Unified Manager 5 online help^], where you can learn how to execute storage management commands on multiple network storage arrays.
+
+== Command reference
+Access the https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-cli-115/home.html[Command reference^], where you can learn how to configure and monitor your storage arrays using command line interface (CLI) commands.

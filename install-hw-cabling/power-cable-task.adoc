@@ -1,0 +1,25 @@
+---
+permalink: install-hw-cabling/power-cable-task.html
+sidebar: sidebar
+keywords: cabling, cables, power cable, power cabling, power supply cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C
+summary: Connect each component’s power supplies to separate power circuits.
+---
+= Power cabling
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must connect each component's power supplies to separate power circuits.
+
+.Before you begin
+
+* You have confirmed that your location provides the necessary power.
+* The two power switches on the two shelf power supplies must be turned off.
+
+.About this task
+
+The power source for your storage system must be able to accommodate the power requirements of the new drive shelf. For information about the power consumption for your storage system, see the https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe^].
+
+.Step
+
+. Connect the two power cables for each shelf to different power distribution units (PDUs) in the cabinet or rack.

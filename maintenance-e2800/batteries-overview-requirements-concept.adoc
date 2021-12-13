@@ -1,0 +1,76 @@
+---
+permalink: maintenance-e2800/batteries-overview-requirements-concept.html
+sidebar: sidebar
+keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries
+summary: Review E2800 battery replacement requirements and considerations.
+---
+= Requirements for E2800 battery replacement
+:experimental:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you replace an E2800 battery, review the requirements and considerations.
+
+Each controller canister includes a battery that preserves cached data if the AC power fails.
+
+== Recovery Guru alerts
+
+If the Recovery Guru in SANtricity System Manager reports one of following statuses, you must replace the affected battery:
+
+* Battery Failed
+* Battery Replacement Required
+
+From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
+
+== Procedure overview
+
+To protect your data, you must replace a failed battery as soon as possible.
+
+The following is an overview of the steps required to replace a battery in an E2800 controller:
+
+. Prepare for replacement, following the appropriate steps for a duplex or simplex configuration.
+. Remove the controller canister.
+. Remove the failed battery.
+. Install the new battery.
+. Re-install the controller canister.
+. Complete the replacement, following the appropriate steps for a duplex or simplex configuration.
+
+== Duplex or simplex configuration
+
+The steps to replace a battery depend on whether you have one or two controllers, as follows:
+
+[options="header"]
+|===
+| If your storage array has...| You must...
+a|
+Two controllers (duplex)
+a|
+
+. Take the controller offline.
+. Remove the controller canister.
+. Replace the battery.
+. Replace the controller canister.
+. Bring the controller online.
+
+a|
+One controller (simplex)
+a|
+
+. Stop host I/O operations.
+. Power down the controller shelf.
+. Remove the controller canister.
+. Replace the battery.
+. Replace the controller canister.
+. Apply power to the controller shelf.
+
+|===
+
+== Requirements for replacing a battery
+
+If you plan to replace a failed battery, you must have:
+
+* A replacement battery.
+* An ESD wristband, or you have taken other antistatic precautions.
+* Labels to identify each cable that is connected to the controller canister.
+* A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)

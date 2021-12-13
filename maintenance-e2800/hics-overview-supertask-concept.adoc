@@ -1,0 +1,61 @@
+---
+permalink: maintenance-e2800/hics-overview-supertask-concept.html
+sidebar: sidebar
+keywords: E2800 replace HIC, E2800 replace host interface card, replacing E2800 HIC, E2800 replace HIC, adding E2800 HIC, upgrading E2800 HIC, E2800, E-Series, eseries
+summary: Review requirements for E2800 HIC replacement.
+---
+= Requirements for E2800 HIC replacement
+:experimental:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you add, upgrade, or replace a host interface card (HIC) in an E2800, review the requirements and considerations.
+
+== Procedure overview
+
+The steps to replace a HIC depend on whether you have one or two controllers, as follows:
+
+[options = "header"]
+|===
+| If your storage array has...| You must...
+a|
+One controller (E2812 or E2824 simplex)
+a|
+
+. Stop host I/O operations
+. Power down the controller shelf
+. Remove the controller canister
+. Replace the battery
+. Replace the controller canister
+. Apply power to the controller shelf
+
+a|
+Two controllers (E2860, E2812 or E2824 duplex)
+a|
+
+. Take the controller offline
+. Remove the controller canister
+. Replace the battery
+. Replace the controller canister
+. Bring the controller online
+
+|===
+
+== Requirements for adding, upgrading, or replacing a HIC
+
+If you plan to add, upgrade, or replace a host interface card (HIC), keep the following requirements in mind.
+
+* You have scheduled a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)
+* You have one or two HICs, based on whether you have one or two controllers in your storage array. The HICs must be compatible with your controllers.
++
+If you have a duplex configuration (two controllers), the HICs installed in the two controller canisters must be identical. The presence of mismatched HICs causes the controller with the replacement HIC to lock down when you bring it online.
+
+* You have all cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new host ports.
++
+For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] or the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe^].
+
+* You have an ESD wristband, or you have taken other antistatic precautions.
+* You have a #1 Phillips screwdriver.
+* You have labels to identify each cable that is connected to the controller canister.
+* You have a management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)

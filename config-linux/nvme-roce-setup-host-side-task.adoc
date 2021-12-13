@@ -1,0 +1,121 @@
+---
+permalink: config-linux/nvme-roce-setup-host-side-task.html
+sidebar: sidebar
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: NVMe initiator configuration in a RoCE environment includes installing and configuring the rdma-core and nvme-cli packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
+---
+= Set up NVMe over RoCE on the host side
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+NVMe initiator configuration in a RoCE environment includes installing and configuring the rdma-core and nvme-cli packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
+
+.What you'll need
+
+You must be running RHEL 7, RHEL 8, and the latest compatible SUSE Linux Enterprise Server 12 and 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a complete list of the latest requirements.
+
+.Steps
+
+. Install the rdma and nvme-cli packages:
++
+*SLES 12 or SLES 15*
++
+----
+
+# zypper install rdma-core
+# zypper install nvme-cli
+----
++
+*RHEL 7 or RHEL 8*
++
+----
+
+# yum install rdma-core
+# yum install nvme-cli
+----
+
+. Set up IPv4 IP addresses on the ethernet ports used to connect NVMe over RoCE. For each network interface, create a configuration script that contains the different variables for that interface.
++
+The variables used in this step are based on server hardware and the network environment. The variables include the `IPADDR` and `GATEWAY`. These are example instructions for SLES and RHEL:
++
+*SLES 12 and SLES 15*
++
+* Create the example file `/etc/sysconfig/network/ifcfg-eth4` as follows:
++
+----
+BOOTPROTO='static'
+   BROADCAST=
+   ETHTOOL_OPTIONS=
+   IPADDR='192.168.1.87/24'
+   GATEWAY='192.168.1.1'
+   MTU=
+   NAME='MT27800 Family [ConnectX-5]'
+   NETWORK=
+   REMOTE_IPADDR=
+   STARTMODE='auto'
+----
++
+* Create the file `/etc/sysconfig/network/ifcfg-eth5` as follows:
++
+----
+BOOTPROTO='static'
+   BROADCAST=
+   ETHTOOL_OPTIONS=
+   IPADDR='192.168.2.87/24'
+   GATEWAY='192.168.2.1'
+   MTU=
+   NAME='MT27800 Family [ConnectX-5]'
+   NETWORK=
+   REMOTE_IPADDR=
+   STARTMODE='auto'
+----
++
+*RHEL 7 and RHEL 8*
+
+* Create the example file `/etc/sysconfig/network-scripts/ifcfg-eth4` as follows:
++
+----
+BOOTPROTO='static'
+  BROADCAST=
+  ETHTOOL_OPTIONS=
+  IPADDR='192.168.1.87/24’
+  GATEWAY='192.168.1.1'
+  MTU=
+  NAME='MT27800 Family [ConnectX-5]'
+  NETWORK=
+  REMOTE_IPADDR=
+  STARTMODE='auto'
+----
++
+* Create the file `/etc/sysconfig/network-scripts/ifcfg-eth5` as follows:
++
+----
+BOOTPROTO='static'
+   BROADCAST=
+   ETHTOOL_OPTIONS=
+   IPADDR='192.168.2.87/24'
+   GATEWAY='192.168.2.1'
+   MTU=
+   NAME='MT27800 Family [ConnectX-5]'
+   NETWORK=
+   REMOTE_IPADDR=
+   STARTMODE='auto'
+----
++
+. Enable the network interfaces:
++
+----
+
+# ifup eth4
+# ifup eth5
+----
+
+. Set up the NVMe-oF layer on the host.
+ .. Create the following file under `/etc/modules-load.d/` to load the `nvme-rdma` kernel module and make sure the kernel module will always be on, even after a reboot:
++
+----
+
+# cat /etc/modules-load.d/nvme-rdma.conf
+  nvme-rdma
+----
