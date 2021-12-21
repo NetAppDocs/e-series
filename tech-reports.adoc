@@ -12,6 +12,21 @@ Check out the links below to access technical reports for E-Series hardware and 
 
 == Platform TRs
 
+[%rotate, grid="none", frame="ends"cols="4,1,4,1,4",]
+|===
+|https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf[*TR-4725: E2800 arrays feature overview*^] | |https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf[*TR-4724: E5700 arrays feature overview*^] | |https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf[*TR4800: EF600 arrays feature overview*^]
+|Describes the hardware and software
+features of the E2800 hybrid array and the latest SANtricity OS features. | |Describes comprehensive E5700 product
+information including new hardware and
+software features introduced with the latest
+version of SANtricity. | |Describes detailed information about the
+hardware and software features of the
+EF600 all-flash array and new
+SANtricity OS features.
+|===
+
+== Platform TRs
+
 * https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf[E2800 arrays feature overview^]
 * https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf[E5700 arrays feature overview^]
 * https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf[EF300 arrays feature overview^]
