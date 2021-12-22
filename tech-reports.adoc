@@ -54,15 +54,12 @@ System Manager.
 [%rotate, grid="none", frame="none", cols="4,1,4,1,4",]
 |===
 |https://www.netapp.com/pdf.html?item=/media/19422-tr-4855.pdf[*TR-4855: Security Hardening Guide for SANtricity*^] | |https://fieldportal.netapp.com/content/1117377[*TR-4853: Access Management for E-Series Storage Systems*^] | |
-|Describes how to deploy SANtricity
-to meet prescribed security
-objectives for information system
-confidentiality, integrity, and availability. | |Describes how to configure Access Management, including role-based access control (RBAC), Lightweight Directory Access Protocol (LDAP) and Security Assertion Markup Language (SAML). | |
+|Describes how to deploy SANtricity to meet prescribed security objectives for information system confidentiality, integrity, and availability. | |Describes how to configure Access Management, including role-based access control (RBAC), Lightweight Directory Access Protocol (LDAP) and Security Assertion Markup Language (SAML). | |
 |===
 
 == Feature TRs
 
-[%rotate, grid="none", frame="top"cols="4,1,4,1,4",]
+[%rotate, grid="none", frame="none"cols="4,1,4,1,4",]
 |===
 |https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf[*TR-4893: SANtricity Remote Storage Volumes*^] | |https://www.netapp.com/pdf.html?item=/media/19405-tr-4839.pdf[*TR-4839: SANtricity Synchronous and Asynchronous Mirroring*^] | |https://www.netapp.com/pdf.html?item=/media/17167-tr4747pdf.pdf[*TR-4747: SANtricity Snapshot Feature Overview and Deployment Guide*^]
 |Describes the solution architecture and
@@ -75,7 +72,7 @@ navigation instructions using SANtricity
 System Manager.
 |===
 
-[%rotate, grid="none", frame="bottom"cols="4,1,4,1,4",]
+[%rotate, grid="none", frame="none"cols="4,1,4,1,4",]
 |===
 |https://www.netapp.com/ko/media/12421-tr4652.pdf[*TR-4652: SANtricity Dynamic Disk Pools*^] | |https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf[*TR-4737: SANtricity Automatic Load Balancing Overview*^] | |
 |Describes how storage administrators can
@@ -88,7 +85,11 @@ parameters, and its host interoperability enhancements. | |
 
 == Interface TRs
 
-* https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf[SANtricity Web Services API - Built-In and Central Management Capabilities^]
+[%rotate, grid="none", frame="none"cols="4,1,4,1,4",]
+|===
+|https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf[*TR-4736: SANtricity Web Services API*^] | | | |
+|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | | | |
+|===
 
 == Solution TRs
 
