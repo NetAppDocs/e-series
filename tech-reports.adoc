@@ -7,10 +7,15 @@ summary: E-Series technical reports
 
 = Browse featured technical reports
 
+,===
+https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf[*TR-4725: E2800 arrays feature overview*^],https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf[*TR-4724: E5700 arrays feature overview*^],Genre
+
+Describes the hardware and software features of the E2800 hybrid array and the latest SANtricity OS features., Describes E5700 product information including new hardware and software features introduced with the latest version of SANtricity.,Hip Hop
+,===
 
 == Platform TRs
 
-[%rotate, grid="none", frame="top"cols="4,1,4,1,4",]
+[%rotate, grid="none", frame="ends"cols="4,1,4,1,4",]
 |===
 |https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf[*TR-4725: E2800 arrays feature overview*^] | |https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf[*TR-4724: E5700 arrays feature overview*^] | |https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf[*TR-4877: EF300 arrays feature overview*^]
 |Describes the hardware and software
