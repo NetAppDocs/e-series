@@ -7,15 +7,9 @@ summary: E-Series technical reports
 
 = Browse featured technical reports
 
-,===
-https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf[*TR-4725: E2800 arrays feature overview*^],https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf[*TR-4724: E5700 arrays feature overview*^],Genre
-
-Describes the hardware and software features of the E2800 hybrid array and the latest SANtricity OS features., Describes E5700 product information including new hardware and software features introduced with the latest version of SANtricity.,Hip Hop
-,===
-
 == Platform TRs
 
-[%rotate, grid="none", frame="ends"cols="4,1,4,1,4",]
+[%rotate, grid="none", frame="none"cols="4h,1d,4h,1d,4h",]
 |===
 |https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf[*TR-4725: E2800 arrays feature overview*^] | |https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf[*TR-4724: E5700 arrays feature overview*^] | |https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf[*TR-4877: EF300 arrays feature overview*^]
 |Describes the hardware and software
@@ -28,7 +22,7 @@ EF300 all-flash array and new
 SANtricity OS features.
 |===
 
-[%rotate, grid="none", frame="bottom"cols="4,1,4,1,4",]
+[%rotate, grid="none", frame="none"cols="4h,1d,4d,1d,4d",]
 |===
 |https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf[*TR-4800: EF600 arrays feature overview*^] | | | |
 |Describes the hardware and software features of the EF600 all-flash array and new
@@ -38,7 +32,9 @@ SANtricity OS features. | | | |
 
 == Security TRs
 
-[%rotate, grid="none", frame="top"cols="4,1,4,1,4",]
+[.stripes-all,cols="1,3,5"]
+[stripes=all,cols="1,3,5"]
+[%rotate, grid="none", frame="none"cols="4,1,4,1,4",]
 |===
 |https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf[*TR-4474: SANtricity Drive Security Feature Details Guide*^] | |https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf[*TR-4712: SANtricity Management Security Features Guide*^] | |https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf[*TR-4813: Managing Certificates for E-Series Storage Systems*^]
 |Describes the full disk encryption
@@ -53,7 +49,9 @@ navigation instructions using SANtricity
 System Manager.
 |===
 
-[%rotate, grid="none", frame="bottom"cols="4,1,4,1,4",]
+[.stripes-all,cols="1,3,5"]
+[stripes=all,cols="1,3,5"]
+[%rotate, grid="none", frame="none", cols="4,1,4,1,4",]
 |===
 |https://www.netapp.com/pdf.html?item=/media/19422-tr-4855.pdf[*TR-4855: Security Hardening Guide for SANtricity*^] | |https://fieldportal.netapp.com/content/1117377[*TR-4853: Access Management for E-Series Storage Systems*^] | |
 |Describes how to deploy SANtricity
