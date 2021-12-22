@@ -12,7 +12,7 @@ summary: E-Series technical reports
 
 [%rotate, grid="none", frame="top"cols="4,1,4,1,4",]
 |===
-|https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf[*TR-4725: E2800 arrays feature overview*^] | |https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf[*TR-4724: E5700 arrays feature overview*^] | |https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf[*TR4877: EF300 arrays feature overview*^]
+|https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf[*TR-4725: E2800 arrays feature overview*^] | |https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf[*TR-4724: E5700 arrays feature overview*^] | |https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf[*TR-4877: EF300 arrays feature overview*^]
 |Describes the hardware and software
 features of the E2800 hybrid array and the latest SANtricity OS features. | |Describes E5700 product
 information including new hardware and
@@ -25,7 +25,7 @@ SANtricity OS features.
 
 [%rotate, grid="none", frame="bottom"cols="4,1,4,1,4",]
 |===
-|https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf[*TR4800: EF600 arrays feature overview*^] | | | |
+|https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf[*TR-4800: EF600 arrays feature overview*^] | | | |
 |Describes the hardware and software features of the EF600 all-flash array and new
 SANtricity OS features. | | | |
 |===
@@ -35,14 +35,14 @@ SANtricity OS features. | | | |
 
 [%rotate, grid="none", frame="top"cols="4,1,4,1,4",]
 |===
-|https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf[*TR-4474: SANtricity Drive Security Feature Details Guide*^] | |https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf[*TR 4712: SANtricity Management Security Features Guide*^] | |https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf[*TR 4813: Managing Certificates for E-Series Storage Systems*^]
+|https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf[*TR-4474: SANtricity Drive Security Feature Details Guide*^] | |https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf[*TR-4712: SANtricity Management Security Features Guide*^] | |https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf[*TR-4813: Managing Certificates for E-Series Storage Systems*^]
 |Describes the full disk encryption
 feature for E-Series systems, including
 support for FIPS 140-2 validated drives,
 and both internal and external key
 management support. | |Describes SANtricity
 security features for NetApp E-Series
-E2800, E5700, EF280, EF570, EF300, and EF600 storage systems. | |Describes the NetApp SANtricity
+E2800, E5700, EF280, EF570, EF300, and EF600 storage systems. | |Describes the  SANtricity
 Snapshot feature including GUI
 navigation instructions using SANtricity
 System Manager.
@@ -50,13 +50,42 @@ System Manager.
 
 [%rotate, grid="none", frame="bottom"cols="4,1,4,1,4",]
 |===
-|https://www.netapp.com/pdf.html?item=/media/19422-tr-4855.pdf[*TR4855: Security Hardening Guide for SANtricity*^] | |https://fieldportal.netapp.com/content/1117377[*TR4853: Access Management for E-Series Storage Systems*^] | |
-|Describes how deploy SANtricity
+|https://www.netapp.com/pdf.html?item=/media/19422-tr-4855.pdf[*TR-4855: Security Hardening Guide for SANtricity*^] | |https://fieldportal.netapp.com/content/1117377[*TR-4853: Access Management for E-Series Storage Systems*^] | |
+|Describes how to deploy SANtricity
 to meet prescribed security
 objectives for information system
 confidentiality, integrity, and availability. | |Describes how to configure Access Management, including role-based access control (RBAC), Lightweight Directory Access Protocol (LDAP) and Security Assertion Markup Language (SAML). | |
 |===
 
+== Feature TRs
+
+[%rotate, grid="none", frame="top"cols="4,1,4,1,4",]
+|===
+|https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf[*TR-4893: SANtricity Remote Storage Volumes*^] | |https://www.netapp.com/pdf.html?item=/media/19405-tr-4839.pdf[*TR-4839: SANtricity Synchronous and Asynchronous Mirroring*^] | |https://www.netapp.com/pdf.html?item=/media/17167-tr4747pdf.pdf[*TR-4747: SANtricity Snapshot Feature Overview and Deployment Guide*^]
+|Describes the solution architecture and
+how to use the E-Series storage system to
+import data from an existing remote
+storage device. | |Describes the SANtricity
+Synchronous and Asynchronous Mirroring feature. | |Describes the SANtricity
+Snapshot feature including GUI
+navigation instructions using SANtricity
+System Manager.
+|===
+
+[%rotate, grid="none", frame="bottom"cols="4,1,4,1,4",]
+|===
+|https://www.netapp.com/ko/media/12421-tr4652.pdf[*TR-4652: SANtricity Dynamic Disk Pools*^] | |https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf[*TR-4737: SANtricity Automatic Load Balancing Overview*^] | |
+|Describes how storage administrators can
+group sets of like disks into a pool
+topology where all the drives in the pool
+participate in the I/O workflow. | |Describes an overview of the behavior of the ALB feature, its key configuration
+parameters, and its host interoperability enhancements. | |
+|===
+
+
+== Interface TRs
+
+* https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf[SANtricity Web Services API - Built-In and Central Management Capabilities^]
 
 == Solution TRs
 
@@ -87,15 +116,3 @@ confidentiality, integrity, and availability. | |Describes how to configure Acce
 * https://www.netapp.com/pdf.html?item=/media/22029-tr-4859.pdf[Deploying IBM Spectrum Scale with NetApp E-Series Storage^]
 * https://www.netapp.com/pdf.html?item=/media/19407-tr-4856-deploy.pdf[BeeGFS High Availability with E-Series using Red Hat Enterprise Linux Server^]
 * https://www.netapp.com/pdf.html?item=/media/19431-tr-4862.pdf[BeeGFS High Availability with E-Series using SUSE Linux Enterprise Server^]
-
-== Feature TRs
-
-* https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf[SANtricity Remote Storage Volumes^]
-* https://www.netapp.com/pdf.html?item=/media/19405-tr-4839.pdf[SANtricity Synchronous and Asynchronous Mirroring (11.62 and Later)^]
-* https://www.netapp.com/pdf.html?item=/media/17167-tr4747pdf.pdf[SANtricity Snapshot Feature Overview and Deployment Guide^]
-* https://www.netapp.com/ko/media/12421-tr4652.pdf[SANtricity Dynamic Disk Pools^]
-* https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf[SANtricity Automatic Load Balancing Feature Overview and Implementation^]
-
-== Interface TRs
-
-* https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf[SANtricity Web Services API - Built-In and Central Management Capabilities^]
