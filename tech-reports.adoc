@@ -42,11 +42,11 @@ array and new SANtricity OS features. | |
 [%rotate, grid="none", frame="none", cols="9,9,9",]
 |===
 |https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf[*TR-4474:
-SANtricity Drive Security Feature Details Guide*]
+SANtricity Drive Security Feature Guide*]
 |https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf[*TR-4712:
-SANtricity Management Security Features Guide*]
+SANtricity Management Security Features*]
 |https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf[*TR-4813:
-Managing Certificates for E-Series Storage Systems*]
+Managing Certificates for E-Series Systems*]
 |Describes the full disk encryption feature for E-Series systems,
 including support for FIPS 140-2 validated drives, and both internal and
 external key management support. |Describes SANtricity security features
@@ -61,7 +61,7 @@ navigation instructions using SANtricity System Manager.
 |https://www.netapp.com/pdf.html?item=/media/19422-tr-4855.pdf[*TR-4855:
 Security Hardening Guide for SANtricity*]
 |https://fieldportal.netapp.com/content/1117377[*TR-4853: Access
-Management for E-Series Storage Systems*] |
+Management for E-Series Systems*] |
 |Describes how to deploy SANtricity to meet prescribed security
 objectives for information system confidentiality, integrity, and
 availability. |Describes how to configure Access Management, including
@@ -87,19 +87,13 @@ role-based access control (RBAC), Lightweight Directory Access Protocol
 | | |
 
 |https://www.netapp.com/ko/media/12421-tr4652.pdf[*TR-4652: SANtricity Dynamic Disk Pools*^]
-|https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf[*TR-4737: SANtricity Automatic Load Balancing*^] |
+|https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf[*TR-4737: SANtricity Automatic Load Balancing*^]
+|https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf[*TR-4736: SANtricity Web Services API*^]
 |Describes how storage administrators can group sets of like disks into a pool topology where all the drives in the pool participate in the I/O workflow.
-|Describes an overview of the behavior of the ALB feature, its key configuration parameters, and its host interoperability enhancements. |
+|Describes an overview of the behavior of the ALB feature, its key configuration parameters, and its host interoperability enhancements.
+|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems.
 |===
 
-
-== Interface TRs
-
-[%rotate, grid="none", frame="none", cols="9,9,9",]
-|===
-|https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf[*TR-4736: SANtricity Web Services API*^] | |
-|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |
-|===
 
 == Solution TRs
 
@@ -114,7 +108,6 @@ role-based access control (RBAC), Lightweight Directory Access Protocol
 |===
 
 
-
 === Enterprise Databases
 
 [%rotate, grid="none", frame="none", cols="9,9,9"]
@@ -125,6 +118,7 @@ role-based access control (RBAC), Lightweight Directory Access Protocol
 |===
 
 === Backup & Recovery
+
 [%rotate, grid="none", frame="none", cols="9,9,9",]
 |===
 |https://www.netapp.com/pdf.html?item=/media/17042-tr4320pdf.pdf[*TR-4320: Best Practices with Commvault Data Platform V11*^]
@@ -134,6 +128,7 @@ role-based access control (RBAC), Lightweight Directory Access Protocol
 |===
 
 === VSS
+
 [%rotate, grid="none", frame="none", cols="9,9,9",]
 |===
 |https://www.netapp.com/pdf.html?item=/media/17200-tr4825pdf.pdf[*TR-4825: NetApp E-Series for Video Surveillance Best Practice Guide*^]
@@ -143,6 +138,7 @@ role-based access control (RBAC), Lightweight Directory Access Protocol
 |===
 
 === HPC
+
 [%rotate, grid="none", frame="none", cols="9,9,9",]
 |===
 |https://www.netapp.com/pdf.html?item=/media/31665-tr-4884.pdf[*TR-4884: Entry-level HPC systems with NetApp E-Series and IBM Spectrum Scale*^]
