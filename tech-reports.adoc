@@ -32,9 +32,8 @@ SANtricity OS features. | | | |
 
 == Security TRs
 
-[.stripes-all,cols="1,3,5"]
-[stripes=all,cols="1,3,5"]
-[%rotate, grid="none", frame="none", cols="9,1,9,1,9",]
+[stripes=all]
+[%rotate, grid="none", frame="none", cols="4,1,4,1,4",]
 |===
 |https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf[*TR-4474: SANtricity Drive Security Feature Details Guide*^] | |https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf[*TR-4712: SANtricity Management Security Features Guide*^] | |https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf[*TR-4813: Managing Certificates for E-Series Storage Systems*^]
 |Describes the full disk encryption
@@ -49,8 +48,7 @@ navigation instructions using SANtricity
 System Manager.
 |===
 
-[.stripes-all,cols=2]
-[stripes=all,cols=2]
+[cols=2*, stripes=all]
 [%rotate, grid="none", frame="none", cols="9,1,9,1,9",]
 |===
 |https://www.netapp.com/pdf.html?item=/media/19422-tr-4855.pdf[*TR-4855: Security Hardening Guide for SANtricity*^] | |https://fieldportal.netapp.com/content/1117377[*TR-4853: Access Management for E-Series Storage Systems*^] | |
@@ -94,29 +92,42 @@ parameters, and its host interoperability enhancements. | |
 == Solution TRs
 
 === Splunk
-* https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf[E5700 with Splunk Enterprise^]
-* https://www.netapp.com/media/57104-tr-4903.pdf[EF300 with Splunk Enterprise^]
+[%rotate, grid="none", frame="none", cols="9,1,9,1,9",]
+|===
+|https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf[*TR-4623: E5700 with Splunk Enterprise*^] | |https://www.netapp.com/media/57104-tr-4903.pdf[*TR-4903: EF300 with Splunk Enterprise*^] | |
+|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |
+|===
 
 === Enterprise Databases
-
-* https://www.netapp.com/pdf.html?item=/media/17086-tr4764pdf.pdf[Best Practice Guide for Microsoft SQL Server with NetApp EF-Series^]
-* https://www.netapp.com/pdf.html?item=/media/17248-tr4794pdf.pdf[Oracle Databases on NetApp EF-Series^]
+[%rotate, grid="none", frame="none", cols="9,1,9,1,9",]
+|===
+|https://www.netapp.com/pdf.html?item=/media/17086-tr4764pdf.pdf[*TR-4764: Best Practice Guide for Microsoft SQL Server with NetApp EF-Series*^] | |https://www.netapp.com/pdf.html?item=/media/17248-tr4794pdf.pdf[*TR-4794: Oracle Databases on NetApp EF-Series*^] | |
+|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |
+|===
 
 === Backup & Recovery
-
-* https://www.netapp.com/pdf.html?item=/media/17042-tr4320pdf.pdf[Best Practices with Commvault Data Platform V11^]
-* https://www.netapp.com/pdf.html?item=/media/17159-tr4471pdf.pdf[Best Practices with Veeam Backup & Replication^]
-* https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf[Deploying Veritas NetBackup with NetApp E-Series Storage^]
+[%rotate, grid="none", frame="none", cols="9,1,9,1,9",]
+|===
+|https://www.netapp.com/pdf.html?item=/media/17042-tr4320pdf.pdf[*TR-4320: Best Practices with Commvault Data Platform V11*^] | |https://www.netapp.com/pdf.html?item=/media/17159-tr4471pdf.pdf[*TR-4471: Best Practices with Veeam Backup and Replication*^] | |https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf[*TR-4704: Deploying Veritas NetBackup with NetApp E-Series Storage*^]
+|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems.
+|===
 
 === VSS
-
-* https://www.netapp.com/pdf.html?item=/media/17200-tr4825pdf.pdf[NetApp E-Series for Video Surveillance Best Practice Guide^]
-* https://www.netapp.com/pdf.html?item=/media/6143-tr4818pdf.pdf[Virtualizing Video Management Systems with NetApp E-Series Storage^]
-* https://www.netapp.com/pdf.html?item=/media/19400-tr-4848.pdf[Bosch Video Recording Solution with NetApp E-Series E2800 Disk Storage Array^]
+[%rotate, grid="none", frame="none", cols="9,1,9,1,9",]
+|===
+|https://www.netapp.com/pdf.html?item=/media/17200-tr4825pdf.pdf[*TR-4825: NetApp E-Series for Video Surveillance Best Practice Guide*^] | |https://www.netapp.com/pdf.html?item=/media/6143-tr4818pdf.pdf[*TR-4818: Virtualizing Video Management Systems with NetApp E-Series Storage*^] | |https://www.netapp.com/pdf.html?item=/media/19400-tr-4848.pdf[*TR-4848: Bosch Video Recording Solution with NetApp E-Series E2800 Disk Storage Array*^]
+|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems.
+|===
 
 === HPC
+[%rotate, grid="none", frame="none", cols="9,1,9,1,9",]
+|===
+|https://www.netapp.com/pdf.html?item=/media/31665-tr-4884.pdf[*TR-4884: Entry-level HPC systems with NetApp E-Series and IBM Spectrum Scale*^] | |https://www.netapp.com/pdf.html?item=/media/22029-tr-4859.pdf[*TR-4859: Deploying IBM Spectrum Scale with NetApp E-Series Storage*^] | |https://www.netapp.com/pdf.html?item=/media/19407-tr-4856-deploy.pdf[*TR-4856: BeeGFS High Availability with E-Series using Red Hat Enterprise Linux Server*^]
+|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems.
+|===
 
-* https://www.netapp.com/pdf.html?item=/media/31665-tr-4884.pdf[Entry-level HPC systems with NetApp E-Series and IBM Spectrum Scale^]
-* https://www.netapp.com/pdf.html?item=/media/22029-tr-4859.pdf[Deploying IBM Spectrum Scale with NetApp E-Series Storage^]
-* https://www.netapp.com/pdf.html?item=/media/19407-tr-4856-deploy.pdf[BeeGFS High Availability with E-Series using Red Hat Enterprise Linux Server^]
-* https://www.netapp.com/pdf.html?item=/media/19431-tr-4862.pdf[BeeGFS High Availability with E-Series using SUSE Linux Enterprise Server^]
+[%rotate, grid="none", frame="none", cols="9,1,9,1,9",]
+|===
+|https://www.netapp.com/pdf.html?item=/media/19431-tr-4862.pdf[*TR-4862: BeeGFS High Availability with E-Series using SUSE Linux Enterprise Server*^] | | | |
+|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | | | |
+|===
