@@ -125,28 +125,36 @@ role-based access control (RBAC), Lightweight Directory Access Protocol
 |===
 
 === Backup & Recovery
-[%rotate, grid="none", frame="none", cols="9,1,9,1,9",]
+[%rotate, grid="none", frame="none", cols="9,9,9",]
 |===
-|https://www.netapp.com/pdf.html?item=/media/17042-tr4320pdf.pdf[*TR-4320: Best Practices with Commvault Data Platform V11*^] | |https://www.netapp.com/pdf.html?item=/media/17159-tr4471pdf.pdf[*TR-4471: Best Practices with Veeam Backup and Replication*^] | |https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf[*TR-4704: Deploying Veritas NetBackup with NetApp E-Series Storage*^]
-|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems.
+|https://www.netapp.com/pdf.html?item=/media/17042-tr4320pdf.pdf[*TR-4320: Best Practices with Commvault Data Platform V11*^]
+|https://www.netapp.com/pdf.html?item=/media/17159-tr4471pdf.pdf[*TR-4471: Best Practices with Veeam Backup and Replication*^]
+|https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf[*TR-4704: Deploying Veritas NetBackup with NetApp E-Series Storage*^]
+|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems.
 |===
 
 === VSS
-[%rotate, grid="none", frame="none", cols="9,1,9,1,9",]
+[%rotate, grid="none", frame="none", cols="9,9,9",]
 |===
-|https://www.netapp.com/pdf.html?item=/media/17200-tr4825pdf.pdf[*TR-4825: NetApp E-Series for Video Surveillance Best Practice Guide*^] | |https://www.netapp.com/pdf.html?item=/media/6143-tr4818pdf.pdf[*TR-4818: Virtualizing Video Management Systems with NetApp E-Series Storage*^] | |https://www.netapp.com/pdf.html?item=/media/19400-tr-4848.pdf[*TR-4848: Bosch Video Recording Solution with NetApp E-Series E2800 Disk Storage Array*^]
-|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems.
+|https://www.netapp.com/pdf.html?item=/media/17200-tr4825pdf.pdf[*TR-4825: NetApp E-Series for Video Surveillance Best Practice Guide*^]
+|https://www.netapp.com/pdf.html?item=/media/6143-tr4818pdf.pdf[*TR-4818: Virtualizing Video Management Systems with NetApp E-Series Storage*^]
+|https://www.netapp.com/pdf.html?item=/media/19400-tr-4848.pdf[*TR-4848: Bosch Video Recording Solution with NetApp E-Series E2800 Disk Storage Array*^]
+|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems.
 |===
 
 === HPC
-[%rotate, grid="none", frame="none", cols="9,1,9,1,9",]
+[%rotate, grid="none", frame="none", cols="9,9,9",]
 |===
-|https://www.netapp.com/pdf.html?item=/media/31665-tr-4884.pdf[*TR-4884: Entry-level HPC systems with NetApp E-Series and IBM Spectrum Scale*^] | |https://www.netapp.com/pdf.html?item=/media/22029-tr-4859.pdf[*TR-4859: Deploying IBM Spectrum Scale with NetApp E-Series Storage*^] | |https://www.netapp.com/pdf.html?item=/media/19407-tr-4856-deploy.pdf[*TR-4856: BeeGFS High Availability with E-Series using Red Hat Enterprise Linux Server*^]
-|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems.
-|===
+|https://www.netapp.com/pdf.html?item=/media/31665-tr-4884.pdf[*TR-4884: Entry-level HPC systems with NetApp E-Series and IBM Spectrum Scale*^]
+|https://www.netapp.com/pdf.html?item=/media/22029-tr-4859.pdf[*TR-4859: Deploying IBM Spectrum Scale with NetApp E-Series Storage*^]
+|https://www.netapp.com/pdf.html?item=/media/19407-tr-4856-deploy.pdf[*TR-4856: BeeGFS High Availability with E-Series using Red Hat Enterprise Linux Server*^]
+|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems.
 
-[%rotate, grid="none", frame="none", cols="9,1,9,1,9",]
-|===
-|https://www.netapp.com/pdf.html?item=/media/19431-tr-4862.pdf[*TR-4862: BeeGFS High Availability with E-Series using SUSE Linux Enterprise Server*^] | | | |
-|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | | | |
+| | |
+
+| | |
+
+|https://www.netapp.com/pdf.html?item=/media/19431-tr-4862.pdf[*TR-4862: BeeGFS High Availability with E-Series using SUSE Linux Enterprise Server*^] | |
+
+|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |
 |===
