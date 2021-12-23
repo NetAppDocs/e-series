@@ -10,7 +10,7 @@ summary: E-Series technical reports
 
 == Platform TRs
 
-[%rotate, grid="cols", frame="topbot", cols="9,9,9"]
+[%rotate, grid="none", frame="none", cols="9,9,9"]
 |===
 |https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf[*TR-4725:
 E2800 arrays feature overview*]
@@ -39,40 +39,41 @@ array and new SANtricity OS features. | |
 
 == Security TRs
 
-[%rotate, grid="none", frame="none", cols="9h,1,9h,1,9h",]
+[%rotate, grid="none", frame="none", cols="9,9,9",]
 |===
 |https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf[*TR-4474:
-SANtricity Drive Security Feature Details Guide*] |
+SANtricity Drive Security Feature Details Guide*]
 |https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf[*TR-4712:
-SANtricity Management Security Features Guide*] |
+SANtricity Management Security Features Guide*]
 |https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf[*TR-4813:
 Managing Certificates for E-Series Storage Systems*]
 |Describes the full disk encryption feature for E-Series systems,
 including support for FIPS 140-2 validated drives, and both internal and
-external key management support. | |Describes SANtricity security features
+external key management support. |Describes SANtricity security features
 for NetApp E-Series E2800, E5700, EF280, EF570, EF300, and EF600 storage
-systems. | |Describes the SANtricity Snapshot feature including GUI
+systems. |Describes the SANtricity Snapshot feature including GUI
 navigation instructions using SANtricity System Manager.
-|===
 
-[%rotate, grid="none", frame="none", cols="9h,1,9h,1,9",]
-|===
+| | |
+
+| | |
+
 |https://www.netapp.com/pdf.html?item=/media/19422-tr-4855.pdf[*TR-4855:
-Security Hardening Guide for SANtricity*] |
+Security Hardening Guide for SANtricity*]
 |https://fieldportal.netapp.com/content/1117377[*TR-4853: Access
-Management for E-Series Storage Systems*] | |
+Management for E-Series Storage Systems*] |
 |Describes how to deploy SANtricity to meet prescribed security
 objectives for information system confidentiality, integrity, and
-availability. | |Describes how to configure Access Management, including
+availability. |Describes how to configure Access Management, including
 role-based access control (RBAC), Lightweight Directory Access Protocol
-(LDAP) and Security Assertion Markup Language (SAML). | |
+(LDAP) and Security Assertion Markup Language (SAML). |
 |===
 
 
 
 == Feature TRs
 
-[%rotate, grid="cols", frame="topbot", cols="9,9,9",]
+[%rotate, grid="none", frame="none", cols="9,9,9",]
 |===
 |https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf[*TR-4893: SANtricity Remote Storage Volumes*^]
 |https://www.netapp.com/pdf.html?item=/media/19405-tr-4839.pdf[*TR-4839: SANtricity Synchronous and Asynchronous Mirroring*^]
@@ -105,7 +106,7 @@ role-based access control (RBAC), Lightweight Directory Access Protocol
 
 === Splunk
 
-[grid="none", frame="none", cols="9h,1,9h,1,9",]
+[grid="none", frame="none", cols="9,1,9,1,9",]
 |===
 |https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf[*TR-4623: E5700 with Splunk Enterprise*^] |
 |https://www.netapp.com/media/57104-tr-4903.pdf[*TR-4903: EF300 with Splunk Enterprise*^] | |
