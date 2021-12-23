@@ -7,6 +7,7 @@ summary: E-Series technical reports
 
 = Browse featured technical reports
 
+
 == Platform TRs
 
 [%rotate, grid="cols", frame="topbot", cols="9,9,9",]
@@ -35,6 +36,7 @@ array and new SANtricity OS features. | |
 |===
 
 
+
 == Security TRs
 
 [%rotate, grid="cols", frame="topbot", cols="9,9,9",]
@@ -54,8 +56,6 @@ navigation instructions using SANtricity System Manager.
 
 | | |
 
-| | |
-
 |https://www.netapp.com/pdf.html?item=/media/19422-tr-4855.pdf[*TR-4855:
 Security Hardening Guide for SANtricity*]
 |https://fieldportal.netapp.com/content/1117377[*TR-4853: Access
@@ -68,50 +68,54 @@ role-based access control (RBAC), Lightweight Directory Access Protocol
 (LDAP) and Security Assertion Markup Language (SAML). |
 |===
 
+
+
 == Feature TRs
 
-[%rotate, grid="none", frame="none", cols="9,1,9,1,9",]
+[%rotate, grid="cols", frame="topbot", cols="9,9,9",]
 |===
-|https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf[*TR-4893: SANtricity Remote Storage Volumes*^] | |https://www.netapp.com/pdf.html?item=/media/19405-tr-4839.pdf[*TR-4839: SANtricity Synchronous and Asynchronous Mirroring*^] | |https://www.netapp.com/pdf.html?item=/media/17167-tr4747pdf.pdf[*TR-4747: SANtricity Snapshot Feature Overview and Deployment Guide*^]
-|Describes the solution architecture and
-how to use the E-Series storage system to
-import data from an existing remote
-storage device. | |Describes the SANtricity
-Synchronous and Asynchronous Mirroring feature. | |Describes the SANtricity
-Snapshot feature including GUI
-navigation instructions using SANtricity
-System Manager.
-|===
+|https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf[*TR-4893: SANtricity Remote Storage Volumes*^]
+|https://www.netapp.com/pdf.html?item=/media/19405-tr-4839.pdf[*TR-4839: SANtricity Synchronous and Asynchronous Mirroring*^]
+|https://www.netapp.com/pdf.html?item=/media/17167-tr4747pdf.pdf[*TR-4747: SANtricity Snapshot Feature Overview and Deployment Guide*^]
+|Describes the solution architecture and how to use the E-Series storage system to import data from an existing remote storage device.
+|Describes the SANtricity Synchronous and Asynchronous Mirroring feature.
+|Describes the SANtricity Snapshot feature including GUI navigation instructions using SANtricity System Manager.
 
-[%rotate, grid="none", frame="none", cols="9,1,9,1,9",]
-|===
-|https://www.netapp.com/ko/media/12421-tr4652.pdf[*TR-4652: SANtricity Dynamic Disk Pools*^] | |https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf[*TR-4737: SANtricity Automatic Load Balancing Overview*^] | |
-|Describes how storage administrators can
-group sets of like disks into a pool
-topology where all the drives in the pool
-participate in the I/O workflow. | |Describes an overview of the behavior of the ALB feature, its key configuration
-parameters, and its host interoperability enhancements. | |
+| | |
+
+| | |
+
+|https://www.netapp.com/ko/media/12421-tr4652.pdf[*TR-4652: SANtricity Dynamic Disk Pools*^]
+|https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf[*TR-4737: SANtricity Automatic Load Balancing*^] |
+|Describes how storage administrators can group sets of like disks into a pool topology where all the drives in the pool participate in the I/O workflow.
+|Describes an overview of the behavior of the ALB feature, its key configuration parameters, and its host interoperability enhancements. |
 |===
 
 
 == Interface TRs
 
-[%rotate, grid="none", frame="none", cols="9,1,9,1,9",]
+[%rotate, grid="none", frame="topbot", cols="9,9,9",]
 |===
-|https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf[*TR-4736: SANtricity Web Services API*^] | | | |
-|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | | | |
+|https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf[*TR-4736: SANtricity Web Services API*^] | |
+|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |
 |===
 
 == Solution TRs
 
+
 === Splunk
-[%rotate, grid="none", frame="none", cols="9,1,9,1,9",]
+
+[%rotate, grid="cols", frame="topbot", cols="9,9,9",]
 |===
-|https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf[*TR-4623: E5700 with Splunk Enterprise*^] | |https://www.netapp.com/media/57104-tr-4903.pdf[*TR-4903: EF300 with Splunk Enterprise*^] | |
-|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |
+|https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf[*TR-4623: E5700 with Splunk Enterprise*^]
+|https://www.netapp.com/media/57104-tr-4903.pdf[*TR-4903: EF300 with Splunk Enterprise*^] |
+|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. |
 |===
 
+
+
 === Enterprise Databases
+
 [%rotate, grid="none", frame="none", cols="9,1,9,1,9",]
 |===
 |https://www.netapp.com/pdf.html?item=/media/17086-tr4764pdf.pdf[*TR-4764: Best Practice Guide for Microsoft SQL Server with NetApp EF-Series*^] | |https://www.netapp.com/pdf.html?item=/media/17248-tr4794pdf.pdf[*TR-4794: Oracle Databases on NetApp EF-Series*^] | |
