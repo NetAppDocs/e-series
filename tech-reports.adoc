@@ -105,18 +105,18 @@ role-based access control (RBAC), Lightweight Directory Access Protocol
 
 === Splunk
 
-[grid="none", frame="none", cols="9h,1,9h,1",]
+[grid="none", frame="none", cols="9h,1,9h,1,9",]
 |===
 |https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf[*TR-4623: E5700 with Splunk Enterprise*^] |
 |https://www.netapp.com/media/57104-tr-4903.pdf[*TR-4903: EF300 with Splunk Enterprise*^] | |
-|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. |
+|Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |Describes an overview of SANtricity Web Services, an API used for configuring and managing E-Series storage systems. | |
 |===
 
 
 
 === Enterprise Databases
 
-[%rotate, grid="cols", frame="topbot", cols="9,9,9"]
+[%rotate, grid="none", frame="none", cols="9,9,9"]
 |===
 |https://www.netapp.com/pdf.html?item=/media/17086-tr4764pdf.pdf[*TR-4764: Best Practice Guide for Microsoft SQL Server with NetApp EF-Series*^]
 |https://www.netapp.com/pdf.html?item=/media/17248-tr4794pdf.pdf[*TR-4794: Oracle Databases on NetApp EF-Series*^] |
