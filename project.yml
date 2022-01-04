@@ -262,7 +262,7 @@ sidebar:
                     url: "/config-linux/srp-ib-setup-multipath-conf-file-concept.html"
                   - title: Determine host port GUIDs
                     url: "/config-linux/srp-ib-determine-host-port-guids-task.html"
-                  - title: Configure network connections&#8212;&#8203;SRP over Infiniband
+                  - title: Configure network connections—​SRP over Infiniband
                     url: "/config-linux/srp-ib-configure-network-connections-task.html"
                   - title: Create partitions and filesystems
                     url: "/config-linux/srp-ib-create-partitions-filesystems-task.html"
@@ -786,7 +786,15 @@ sidebar:
     - title: Earlier versions
       url: /early-versions.html
     - title: Technical reports
-      url: /tech-reports.html
+      links:
+        - title: Platform TRs
+          url: /platform-tech-reports.html
+        - title: Security TRs
+          url: /security-tech-reports.html
+        - title: Feature TRs
+          url: /feature-tech-reports.html
+        - title: Solution TRs
+          url: /solution-tech-reports.html
     - title: Legal notices
       url: /legal-notices.html
 
