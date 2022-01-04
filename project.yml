@@ -786,7 +786,7 @@ sidebar:
     - title: Earlier versions
       url: /early-versions.html
     - title: Technical reports
-      links:
+      entries:
         - title: Platform TRs
           url: /platform-tech-reports.html
         - title: Security TRs
