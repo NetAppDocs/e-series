@@ -22,8 +22,7 @@ Managing Certificates for E-Series Systems*]
 including support for FIPS 140-2 validated drives, and both internal and
 external key management support. |Describes SANtricity security features
 for NetApp E-Series E2800, E5700, EF280, EF570, EF300, and EF600 storage
-systems. |Describes the SANtricity Snapshot feature including GUI
-navigation instructions using SANtricity System Manager.
+systems. |Describes how to manage security certificates with the latest E-Series controllers and applications.
 
 | | |
 
