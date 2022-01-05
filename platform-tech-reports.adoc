@@ -1,0 +1,36 @@
+---
+sidebar: sidebar
+permalink: platform-tech-reports.html
+keywords: platform technical reports, e-series, hardware, santricity, os
+summary: E-Series technical reports
+---
+
+= Browse platform technical reports
+
+
+== Platform TRs
+
+[%rotate, grid="none", frame="none", cols="9,9,9"]
+|===
+|https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf[*TR-4725:
+E2800 arrays feature overview*]
+|https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf[*+++TR-4724:
+E5700 arrays feature overview+++*]
+|https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf[*+++TR-4877:
+EF300 arrays feature overview+++*]
+|Describes the hardware and software features of the E2800 hybrid array
+and the latest SANtricity OS features. |Describes E5700 product
+information including new hardware and software features introduced with
+the latest version of SANtricity. |Describes the hardware and software
+features of the EF300 all-flash array and new SANtricity OS features.
+
+| | |
+
+| | |
+
+|https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf[*TR-4800:
+EF600 arrays feature overview*] | |
+
+|Describes the hardware and software features of the EF600 all-flash
+array and new SANtricity OS features. | |
+|===
