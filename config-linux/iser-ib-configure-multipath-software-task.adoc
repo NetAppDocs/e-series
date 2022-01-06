@@ -60,7 +60,7 @@ a|
 `systemctl enable multipathd`
 |===
 
-. Rebuild the initramfs image or the initrd image under /boot directory:
+. Rebuild the `initramfs` image or the `initrd` image under /boot directory:
 +
 [options="header"]
 |===
