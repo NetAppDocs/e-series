@@ -61,7 +61,7 @@ The wizard automatically relaunches when you open System Manager or refresh your
 +
 The first time SANtricity System Manager is opened on an array that has not been configured, the Set Administrator Password prompt appears. Role-based access management configures four local roles: admin, support, security, and monitor. The latter three roles have random passwords that cannot be guessed. After you set a password for the admin role, you can change all of the passwords using the admin credentials. For more information about the four local user roles, see the online help available in the SANtricity System Manager user interface.
 
-. Enter the System Manager password for the admin role in the Set Administrator Password and Confirm Password fields, and then select *Set Password*.
+. Enter the System Manager password for the admin role in the Set Administrator Password and Confirm Password fields, and then click *Set Password*.
 +
 The Setup wizard launches if there are no pools, volumes groups, workloads, or notifications configured.
 
