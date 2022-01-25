@@ -15,6 +15,8 @@ Before you replace an E2800 drive, review the requirements and considerations.
 
 You can replace a drive in either a 12-drive, 24-drive, or 60-drive controller shelf or drive shelf.
 
+NOTE: This procedure applies to IOM12 and IOM12B drive shelves as well as DCM and DCM2 drive shelves.
+
 === 12-drive or 24-drive shelves
 
 The figures show how the drives are numbered in each type of shelf (the shelf's front bezel or end caps have been removed).

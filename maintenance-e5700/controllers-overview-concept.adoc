@@ -23,6 +23,8 @@ You can determine if you have a failed controller canister in two ways:
 * The Recovery Guru in SANtricity System Manager directs you to replace the controller canister.
 * The amber Attention LED on the controller canister is on, indicating that the controller has a fault.
 
+NOTE: This procedure applies to IOM12 and IOM12B drive shelves.
+
 image::../media/e5700_attention_led_callout.png[]
 
 *(1)* _Attention LED_

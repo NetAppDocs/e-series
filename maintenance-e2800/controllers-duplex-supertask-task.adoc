@@ -21,6 +21,8 @@ You can replace a controller canister in a duplex (two-controller) configuration
 
 Each controller canister contains a controller card, a battery, and an optional host interface card (HIC). When you replace a controller canister, you must remove the battery and HIC, if one is installed, from the original controller canister, and install them in the replacement controller canister.
 
+NOTE: This procedure applies to IOM12 and IOM12B drive shelves.
+
 .What you'll need
 
 * A replacement controller canister with the same part number as the controller canister you are replacing. (See step 1 to verify the part number.)

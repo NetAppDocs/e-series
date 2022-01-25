@@ -13,6 +13,8 @@ Before you replace or add an E2800 controller, review the requirements and consi
 
 Each controller canister contains a controller card, a battery, and an optional host interface card (HIC). You can add a second controller to a simplex configuration or replace a failed controller.
 
+NOTE: This procedure applies to IOM12 and IOM12B.
+
 == Requirements for adding second controller
 
 You can add a second controller canister to the simplex version of the following controller shelves:

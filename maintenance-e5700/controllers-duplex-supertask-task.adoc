@@ -21,6 +21,8 @@ Each controller canister contains a controller card, a battery, and an optional 
 
 NOTE: This task is only for storage arrays with two controllers (duplex configuration).
 
+NOTE: This task applies to IOM12 and IOM12B drive shelves.
+
 .What you'll need
 
 * A replacement controller canister with the same part number as the controller canister you are replacing. (See step 1 to verify the part number.)
