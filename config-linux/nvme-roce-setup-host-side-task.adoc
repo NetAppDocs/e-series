@@ -119,3 +119,15 @@ BOOTPROTO='static'
 # cat /etc/modules-load.d/nvme-rdma.conf
   nvme-rdma
 ----
+To verify the `nvme-rdma` kernel module is loaded, run this command:
++
+----
+# lsmod | grep nvme
+nvme_rdma              36864  0
+nvme_fabrics           24576  1 nvme_rdma
+nvme_core             114688  5 nvme_rdma,nvme_fabrics
+rdma_cm               114688  7 rpcrdma,ib_srpt,ib_srp,nvme_rdma,ib_iser,ib_isert,rdma_ucm
+ib_core               393216  15 rdma_cm,ib_ipoib,rpcrdma,ib_srpt,ib_srp,nvme_rdma,iw_cm,ib_iser,ib_umad,ib_isert,rdma_ucm,ib_uverbs,mlx5_ib,qedr,ib_cm
+t10_pi                 16384  2 sd_mod,nvme_core
+----
++
