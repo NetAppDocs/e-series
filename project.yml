@@ -561,7 +561,7 @@ sidebar:
             - title: Batteries
               pdf-filename: E2800 Maintain Batteries
               entries:
-              - title: Requirements for battery replacement
+              - title: Overview and requirements
                 url: "/maintenance-e2800/batteries-overview-requirements-concept.html"
               - title: Prepare to replace battery
                 url: "/maintenance-e2800/batteries-prepare-replace-task.html"
@@ -578,7 +578,7 @@ sidebar:
             - title: Controllers
               pdf-filename: E2800 Maintain Controllers
               entries:
-              - title: Requirements for controller replacement
+              - title: Overview and requirements
                 url: "/maintenance-e2800/controllers-overview-supertask-concept.html"
               - title: Add second controller canister
                 url: "/maintenance-e2800/controllers-second-add-task.html"
@@ -589,7 +589,7 @@ sidebar:
             - title: Canisters
               pdf-filename: E2800 Maintain Canisters
               entries:
-              - title: Requirements for canister replacement
+              - title: Overview and requirements
                 url: "/maintenance-e2800/canisters-overview-supertask-concept.html"
               - title: Replace power supply (12-drive or 24-drive)
                 url: "/maintenance-e2800/canisters-supply-supertask-task.html"
@@ -600,7 +600,7 @@ sidebar:
             - title: Drives
               pdf-filename: E2800 Maintain Drives
               entries:
-              - title: Requirements for drive replacement
+              - title: Overview and requirements
                 url: "/maintenance-e2800/drives-overview-supertask-concept.html"
               - title: Replace drive (12-drive or 24-drive)
                 url: "/maintenance-e2800/drives-12-24-supertask-task.html"
@@ -611,7 +611,7 @@ sidebar:
             - title: Host interface cards
               pdf-filename: E2800 Maintain HICs
               entries:
-              - title: Requirements for HIC replacement
+              - title: Overview and requirements
                 url: "/maintenance-e2800/hics-overview-supertask-concept.html"
               - title: Add host interface cards
                 url: "/maintenance-e2800/hics-add-supertask-task.html"
@@ -622,7 +622,7 @@ sidebar:
             - title: Host port protocol conversion
               pdf-filename: E2800 Convert Host Protocol
               entries:
-              - title: Requirements for conversion
+              - title: Overview and requirements
                 url: "/maintenance-e2800/hpp-overview-supertask-concept.html"
               - title: Change host protocol
                 url: "/maintenance-e2800/hpp-change-host-protocol-task.html"
