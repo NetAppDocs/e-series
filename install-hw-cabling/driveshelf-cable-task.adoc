@@ -11,8 +11,6 @@ summary: Connect each controller in the controller shelf to an I/O module (IOM) 
 [.lead]
 You must connect each controller in the controller shelf to an I/O module (IOM) in a drive shelf.
 
-.Before you begin
-
 NOTE: This procedure applies to IOM12 and IOM12B drive shelves.
 
 If you are cabling an older controller shelf to a DE212C, DE224C, or DE460, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf^].
