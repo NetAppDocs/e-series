@@ -22,7 +22,9 @@ Due to the complexity of this procedure, the following is recommended:
 
 This procedure applies to hot adding a DE212C, DE224C, or DE460C drive shelf to an E5700, EF570, E2800, EF280, or EF300 controller shelf.
 
-NOTE: This procedure applies to IOM12 and IOM12B drive shelves.
+This procedure applies to IOM12 and IOM12B drive shelves.
+
+NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. This means you can only replace an IOM12 module with another IOM12 module or replace an IOM12B module with another IOM12B module. (Your shelf can have two IOM12 modules or have two IOM12B modules.)
 
 If you are cabling an older controller shelf to a DE212C, DE224C, or DE460, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf^].
 

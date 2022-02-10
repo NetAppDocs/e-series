@@ -15,7 +15,9 @@ You can replace a drive in an E2800 with a 60-drive shelf.
 
 The Recovery Guru in SANtricity System Manager monitors the drives in the storage array and can notify you of an impending drive failure or an actual drive failure. When a drive has failed, its amber Attention LED is on. You can hot-swap a failed drive while the storage array is receiving I/O operations.
 
-NOTE: This procedure applies to DCM and DCM2 drive shelves.
+This procedure applies to DCM and DCM2 drive shelves.
+
+NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. This means you can only replace an IOM12 module with another IOM12 module or replace an IOM12B module with another IOM12B module. (Your shelf can have two IOM12 modules or have two IOM12B modules.)
 
 .Before you begin
 
