@@ -94,6 +94,5 @@ options ib_srp cmd_sg_entries=255 allow_ext_sg=y indirect_sg_entries=2048
  .. Under the `/etc/srp_daemon.conf`, add the following line.
 +
 ----
-a
-    max_sect=4096
+a    max_sect=4096
 ----

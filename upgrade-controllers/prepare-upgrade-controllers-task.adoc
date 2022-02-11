@@ -59,6 +59,8 @@ a|
 No additional steps are necessary.
 |===
 
+NOTE: Your storage array must be in an optimal state to retrieve client and server certificates. If the certificates are not retrievable, then a new CSR must be created and signed and the server certificate downloaded from the EKMS. 
+
 . Record the serial number for your storage array:
   .. From System Manager, select menu:Support[Support Center > Support Resources tab].
  .. Scroll down to *Launch detailed storage array information*, and then select *Storage Array Profile*.

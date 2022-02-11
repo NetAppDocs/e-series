@@ -18,6 +18,10 @@ Approved SAS-3 arrays include the E2800 and E5700/EF570. Approved SAS-3 drive sh
 
 In this procedure, you convert the controller shelf in an approved SAS-2 array to a drive shelf, and then place that shelf behind a new approved SAS-3 array and drive shelves, without data preservation.
 
+This procedure applies to IOM12 and IOM12B drive shelves.
+
+NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. This means you can only replace an IOM12 module with another IOM12 module or replace an IOM12B module with another IOM12B module. (Your shelf can have two IOM12 modules or have two IOM12B modules.)
+
 .Before you begin
 
 Due to the complexity of this procedure, the following is required:
