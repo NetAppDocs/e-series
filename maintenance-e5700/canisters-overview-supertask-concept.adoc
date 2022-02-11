@@ -15,6 +15,8 @@ Canisters consist of three different types: power-fan canisters (power supplies)
 
 == Power supply
 
+NOTE: The power supply replacement procedure is applicable for IOM replacements. To replace your IOM perform the power supply replacement procedure.
+
 Each 24-drive controller shelf or drive shelf includes two power supplies with integrated fans. These are referred to as _power-fan canisters_ in SANtricity System Manager. If a power-fan canister fails, you must replace it as soon as possible to ensure that the shelf has a redundant power source and adequate cooling.
 
 === Shelf types for a power supply
