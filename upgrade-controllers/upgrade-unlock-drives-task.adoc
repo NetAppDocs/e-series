@@ -49,6 +49,8 @@ Follow these steps for external key management when all drives are locked.
 
 The newly swapped controllers will lock down with seven-segment display code of L5. This lock down occurs when no drives in the storage array are able to perform autocode synchronization (ACS). ACS resumes and updates the new controllers after the security key is imported.
 
+NOTE: Your storage array must be in an optimal state to retrieve client and server certificates. If the certificates are not retrievable, then a new CSR must be created and signed and the server certificate downloaded from the EKMS. 
+
 .Steps
 
 . Install the SANtricity client to a laptop or PC to be used in step 2 to connect directly to the array controller.
