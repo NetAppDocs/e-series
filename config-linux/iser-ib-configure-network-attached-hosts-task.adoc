@@ -57,7 +57,8 @@ systemctl restart network
 . Edit the iSCSI settings in /etc/iscsi/iscsid.conf.
 +
 ----
-node.startup = automatic replacement_timeout = 20
+node.startup = automatic
+replacement_timeout = 20
 ----
 
 . Create iSCSI session configurations:
@@ -104,13 +105,13 @@ iscsiadm -m discovery -t st -p 192.168.130.101 -I iser
 +
 ----
 # Controller A Port 1
-iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
 # Controller B Port 1
-iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
 # Controller A Port 2
-iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
 # Controller B Port 2
-iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
 ----
 . Log in to iSCSI sessions.
 +
@@ -118,13 +119,13 @@ For each session, run the iscsiadm command to log in to the session.
 +
 ----
 # Controller A Port 1
-iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
 # Controller B Port 1
-iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
 # Controller A Port 2
-iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
 # Controller B Port 2
-iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
 ----
 
 . Verify the iSER/iSCSI sessions.
