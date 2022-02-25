@@ -1,10 +1,13 @@
 ---
 settings:
-  name: E-Series
+  search: E-series
+  name: "E-Series"
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
+    harmony_enabled: true
+    langs: "us-en,ja-jp,zh-cn"
 sidebar:
   entries:
     - title: E-series docs
