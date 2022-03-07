@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: san-spvc-ic-storage-array-discovery.html
+permalink: vcenter-plugin/san-spvc-ic-storage-array-discovery.html
 keywords: discover arrays vCenter plugin, discover storage resources Plugin for vCenter, resolve certificates vCenter plugin
 summary: Use the Plugin for vCenter interface to discover the IP addresses of arrays in your network.
 ---
