@@ -1,7 +1,6 @@
 ---
 settings:
-  search: E-series
-  name: "E-Series"
+  name: "e-Series"
   internal:
     pdf_enabled: true
   prod:
