@@ -749,19 +749,19 @@ sidebar:
       - title: Storage plugin for vCenter
         entries:
           - title: Overview
-            url: /san-spvc-ic-overview.html
+            url: "/vcenter-plugin/san-spvc-ic-overview.html"
           - title: Install the plugin
-            url: /san-spvc-ic-installation.html
+            url: "/vcenter-plugin/san-spvc-ic-installation.html"
           - title: Configure access permissions
-            url: /san-spvc-ic-user-access.html
+            url: "/vcenter-plugin/san-spvc-ic-user-access.html"
           - title: Log in and navigate
-            url: /san-spvc-ic-login-and-navigation.html
+            url: "/vcenter-plugin/san-spvc-ic-login-and-navigation.html"
           - title: Discover storage arrays
-            url: /san-spvc-ic-storage-array-discovery.html
+            url: "/vcenter-plugin/san-spvc-ic-storage-array-discovery.html"
           - title: Provision storage
-            url: /san-spvc-ic-storage-provisioning.html
+            url: "/vcenter-plugin/san-spvc-ic-storage-provisioning.html"
           - title: Remove plugin
-            url: /san-spvc-ic-plugin-removal.html
+            url: "/vcenter-plugin/san-spvc-ic-plugin-removal.html"
       - title: Legacy solutions
         entries:
         - title: Cloud connector
