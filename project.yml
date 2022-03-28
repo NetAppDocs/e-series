@@ -1,7 +1,7 @@
 ---
 settings:
   search: e-series
-  name: "E-Series"
+  name: "E-Series Systems"
   internal:
     pdf_enabled: true
   prod:
@@ -9,7 +9,7 @@ settings:
     harmony_enabled: true
 sidebar:
   entries:
-    - title: E-Series docs
+    - title: E-Series systems docs
       url: /index.html
 #    - section: cloud-connector
 #    - section: config-linux
