@@ -1,29 +1,29 @@
 ---
 permalink: maintenance-ef600/sas-add-supertask-task.html
 sidebar: sidebar
-keywords: replace EF300 SAS expansion card, replacing SAS card, drive tray expansion, expansion card
-summary: Add a SAS expansion card to EF300 controllers to allow for drive tray expansion.
+keywords: replace SAS expansion card, replacing SAS card, drive tray expansion, expansion card
+summary: Add a SAS expansion card to EF300 or EF600 controllers to allow for drive tray expansion.
 ---
-= Add SAS expansion card to EF300
+= Add SAS expansion card to EF300 or EF600
 :experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can add a SAS expansion card to an EF300 controller to allow for drive tray expansion.
+You can add SAS expansion cards to an EF300 or EF600 controller to allow for drive tray expansion.
 
 .About this task
 
-When you add a SAS expansion card, you must power off the storage array, install the new SAS expansion card, and reapply power.
+When you add SAS expansion cards, you must power off the storage array, install the new SAS expansion cards, and reapply power.
 
 .Before you begin
 
-* Review link:sas-overview-supertask-concept.html[Requirements for EF300 SAS expansion card replacement].
+* Review link:sas-overview-supertask-concept.html[Requirements for EF300 and EF600 SAS expansion card replacement].
 * You must schedule a downtime maintenance window for this procedure. You cannot access data on the storage array until you have successfully completed this procedure.
 
 .What you'll need
 
-* A SAS expansion card that is compatible with your controller.
+* SAS expansion cards that are compatible with your controller.
 * An ESD wristband, or you have taken other antistatic precautions.
 * A flat, static free work area.
 * A #1 Phillips screwdriver.
@@ -32,7 +32,7 @@ When you add a SAS expansion card, you must power off the storage array, install
 
 == Step 1: Place controller shelf offline
 
-Place the controller shelf offline so you can safely add the SAS expansion card.
+Place the controller shelf offline so you can safely add the SAS expansion cards.
 
 .Steps
 
@@ -71,7 +71,7 @@ The green Cache Active LED on the back of each controller is on when cached data
 
 == Step 2: Remove controller canister
 
-Remove the controller canister so you can add the new SAS expansion card.
+Remove the controller canister so you can add the new SAS expansion cards.
 
 .Steps
 
@@ -96,7 +96,7 @@ image::../media/remove_controller_6.png[]
 
 == Step 3: Add the new SAS expansion card
 
-Install the SAS expansion card to allow for drive tray expansion.
+Install the SAS expansion cards to allow for drive tray expansion.
 
 NOTE: On an EF300 controller shelf, a SAS expansion card may only be installed in port 1.
 
@@ -116,12 +116,13 @@ Be careful not to scratch or bump the components on the bottom of the SAS expans
 . Hand-tighten the SAS expansion card thumbscrew.
 +
 Do not use a screwdriver, or you might over tighten the screws.
+. Install the second SAS expansion card if required.
 
 . Using a #1 Phillips screwdriver, attach the faceplate you removed from the original controller canister to the new controller canister with the two screws.
 
 == Step 4: Reinstall the controller canister
 
-After installing the new SAS expansion card, reinstall the controller canister into the controller shelf.
+After installing the new SAS expansion cards, reinstall the controller canister into the controller shelf.
 
 .Steps
 
@@ -170,4 +171,4 @@ NOTE: To cable your SAS expansion, see link:../install-hw-cabling/index.html[Cab
 
 .What's next?
 
-The process of adding a SAS expansion card in your storage array is complete. You can resume normal operations.
+The process of adding SAS expansion cards in your storage array is complete. You can resume normal operations.
