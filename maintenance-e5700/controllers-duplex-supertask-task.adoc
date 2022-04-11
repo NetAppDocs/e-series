@@ -45,6 +45,8 @@ Prepare to replace a controller canister by verifying that the replacement contr
 . Unpack the new controller canister, and set it on a flat, static-free surface.
 +
 Save the packing materials to use when shipping the failed controller canister.
++
+NOTE: Replacement controllers come with 16GB of memory preinstalled. If your controller requires the 64GB configuration use the supplied upgrade kit before installing your replacement controller.
 
 . Locate the MAC address and FRU part number labels on the back of the controller canister.
 +
