@@ -23,21 +23,24 @@ You can determine if you have a failed controller canister in two ways:
 * The Recovery Guru in SANtricity System Manager directs you to replace the controller canister.
 * The amber Attention LED on the controller canister is on, indicating that the controller has a fault.
 
-This procedure applies to IOM12 and IOM12B drive shelves.
-
-NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. This means you can only replace an IOM12 module with another IOM12 module or replace an IOM12B module with another IOM12B module. (Your shelf can have two IOM12 modules or have two IOM12B modules.)
-
 image::../media/e5700_attention_led_callout.png[]
 
 *(1)* _Attention LED_
 
 NOTE: The figure shows an example controller canister; the host ports on your controller canister might be different.
 
+* This procedure applies to IOM12 and IOM12B drive shelves.
+
+NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. This means you can only replace an IOM12 module with another IOM12 module or replace an IOM12B module with another IOM12B module. (Your shelf can have two IOM12 modules or have two IOM12B modules.)
+
 == Requirements for replacing a failed controller
 
 Before you replace a controller, you must have:
 
 * A replacement controller canister with the same part number as the controller canister you are replacing.
+
+NOTE: Replacement controllers come with 16GB of memory preinstalled. If your controller requires the 64GB configuration use the supplied upgrade kit before installing your replacement controller.
+
 * An ESD wristband, or you have taken other antistatic precautions.
 * Labels to identify each cable that is connected to the controller canister.
 * A #1 Phillips screwdriver.
