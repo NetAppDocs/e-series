@@ -1,6 +1,5 @@
 ---
 settings:
-  search: e-series
   name: "E-Series systems"
   internal:
     pdf_enabled: false
