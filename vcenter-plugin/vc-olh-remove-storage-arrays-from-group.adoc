@@ -1,0 +1,32 @@
+---
+sidebar: sidebar
+permalink: vc-olh-remove-storage-arrays-from-group.html
+keywords:
+summary:
+---
+
+= Remove storage arrays from group
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2022-03-25 16:38:48.084285
+//
+
+[.lead]
+You can remove one or more managed storage arrays from a group if you no longer want to manage it from a specific storage group.
+
+*About this task*
+
+Removing storage arrays from a group does not affect the storage array or its data in any way. If your storage array is managed by SANtricity System Manager, you can still manage it using your browser. If a storage array is accidentally removed from a group, it can be added again.
+
+*Steps*
+
+. From the *Manage* page, select *Manage Groups > Remove storage arrays from group*.
+. From the drop-down, select the group that contains the storage arrays you want to remove, and then click the check box next to each storage array that you want to remove from the group.
+. Click *Remove*.

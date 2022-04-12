@@ -1,0 +1,31 @@
+---
+sidebar: sidebar
+permalink: vc-olh-what-do-i-need-to-know-about-host-block-size-requirements.html
+keywords:
+summary:
+---
+
+= What do I need to know about host block size requirements
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2022-03-25 16:38:48.244295
+//
+
+[.lead]
+For EF300 and EF600 systems, a volume can be set to support a 512-byte or a 4KiB block size (also called "sector size"). You must set the correct value during volume creation. If possible, the system suggests the appropriate default value.
+
+Before setting the volume block size, read the following limitations and guidelines.
+
+* Some operating systems and virtual machines (notably VMware, at this time) require a 512-byte block size and do not support 4KiB, so make sure you know the host requirements before creating a volume. Typically, you can achieve the best performance by setting a volume to present a 4KiB block size; however, ensure that your host allows for 4KiB (or “4Kn”) blocks.
+* The type of drives you select for your pool or volume group also determines what volume block sizes are supported, as follows:
+** If you create a volume group using drives that write to 512-byte blocks, then you can only create volumes with 512-byte blocks.
+** If you create a volume group using drives that write to 4KiB blocks, then you can create volumes with either 512-byte or 4KiB blocks.
+* If the array has an iSCSI host interface card, all volumes are limited to 512-byte blocks (regardless of volume group block size). This is due to a specific hardware implementation.
+* You cannot change a block size once it is set. If you need to change a block size, you must delete the volume and re-create it.

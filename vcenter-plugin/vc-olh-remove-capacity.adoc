@@ -1,0 +1,51 @@
+---
+sidebar: sidebar
+permalink: vc-olh-remove-capacity.html
+keywords:
+summary:
+---
+
+= Remove capacity
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2022-03-25 16:38:48.408764
+//
+
+[.lead]
+You can remove drives to decrease the capacity of an existing pool or SSD Cache. After you remove drives, the data in each volume of the pool or SSD Cache is redistributed to the remaining drives. The removed drives become unassigned, and their capacity becomes part of the total free capacity of the storage array.
+
+*About this task*
+
+Follow these guidelines when you remove capacity:
+
+* You cannot remove the last drive in an SSD Cache without first deleting the SSD Cache.
+* You cannot reduce the number of drives in a pool to be less than 11 drives.
+* You can remove a maximum of 12 drives at a time. If you need to remove more than 12 drives, repeat the procedure.
+* You cannot remove drives if there is not enough free capacity in the pool or SSD Cache to contain the data, when that data is redistributed to the remaining drives in the pool or SSD Cache.The following are potential performance impacts:
+
+* Removing drives from a pool or SSD Cache might result in reduced volume performance.
+* The preservation capacity is not consumed when you remove capacity from a pool or SSD Cache. However, the preservation capacity might decrease based on the number of drives remaining in the pool or SSD Cache.The following are impacts to secure-capable drives:
+
+* If you remove the last drive that is not secure-capable, the pool is left with all secure-capable drives. In this situation, you are given the option to enable security for the pool.
+* If you remove the last drive that is not Data Assurance (DA) capable, the pool is left with all DA-capable drives.
+* Any new volumes that you create on the pool will be DA-capable. If you want existing volumes to be DA-capable, you need to delete and then re-create the volume.*Steps*
+
+. From the *Manage* page, select the storage array.Select Provisioning > Configure Pools and Volume Groups.
+. Select the pool or SSD Cache, and then click *More > Remove capacity*.
++
+The Remove Capacity dialog box appears.
+
+. Select one or more drives in the list.
++
+As you select or de-select drives in the list, the Total capacity selected field updates. This field shows the total capacity of the pool or SSD Cache that results after you remove the selected drives.
+
+. Click *Remove*, and then confirm you want to remove the drives.*Result*
+
+The newly reduced capacity of the pool or SSD Cache is reflected in the Pools and Volume Groups view.

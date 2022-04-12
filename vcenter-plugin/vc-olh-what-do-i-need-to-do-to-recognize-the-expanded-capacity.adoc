@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: vc-olh-what-do-i-need-to-do-to-recognize-the-expanded-capacity.html
+keywords:
+summary:
+---
+
+= What do I need to do to recognize the expanded capacity
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2022-03-25 16:38:48.238891
+//
+
+[.lead]
+If you increase the capacity for a volume, the host might not immediately recognize the increase in volume capacity.
+
+Most operating systems recognize the expanded volume capacity and automatically expand after the volume expansion is initiated. However, some might not. If your OS does not automatically recognize the expanded volume capacity, you might need to perform a disk rescan or reboot.
+
+After you have expanded the volume capacity, you must manually increase the file system size to match. How you do this depends on the file system you are using.
+
+Refer to your host operating system documentation for additional details.

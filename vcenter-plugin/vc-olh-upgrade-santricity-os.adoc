@@ -1,0 +1,82 @@
+---
+sidebar: sidebar
+permalink: vc-olh-upgrade-santricity-os.html
+keywords:
+summary:
+---
+
+= Upgrade SANtricity OS
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2022-03-25 16:38:48.105754
+//
+
+[.lead]
+Upgrade one or more storage arrays with the latest software and NVSRAM to make sure that you have all the latest features and bug fixes. Controller NVSRAM is a controller file that specifies the default settings for the controllers.
+
+*Before you begin*
+
+Make sure that:
+
+* The latest SANtricity OS files are available on the host system where the plugin is running.
+* You know whether you want to activate your software upgrade now or later. You might choose to activate later for these reasons:
+** *Time of day.* Activating the software can take a long time, so you might want to wait until I/O loads are lighter. The controllers fail over during activation, so performance might be lower than usual until the upgrade completes.
+** *Type of package.* You might want to test the new OS software on one storage array before you upgrade the files on other storage arrays.*About this task*
+
+*Important:* Risk of data loss or risk of damage to the storage array -- Do not make changes to the storage array while the upgrade is occurring. Maintain power to the storage array.
+
+*Steps*
+
+. If your storage array contains only one controller or a multipath driver is not in use, stop I/O activity to the storage array to prevent application errors. If your storage array has two controllers and you have a multipath driver installed, you do not need to stop I/O activity.
+. From the main view, select *Manage*, and then select one or more storage arrays that you want to upgrade.
+. Select *Upgrade Center > Upgrade > SANtricity OS > Software*.
++
+The Upgrade SANtricity OS software page appears.
+
+. Download the latest SANtricity OS software package from the Support site to your local machine.
+.. Click Add new file to software repository 
+.. Click the link for finding the latest SANtricity OS downloads.
+.. Click the *Download Latest Release* link.
+.. Follow the remaining instructions to download the OS file and the NVSRAM file to your local machine.
+
+[NOTE]
+Digitally signed firmware is required in version 8.42 and above. If you attempt to download unsigned firmware, an error is displayed and the download is aborted.
+
+. Select the OS software file and the NVSRAM file that you want to use to upgrade the controllers:
+.. From the drop-down, select the OS file that you downloaded to your local machine.If there are multiple files available, the files are sorted from newest date to oldest date.
+
+[NOTE]
+The software repository lists all software files associated with the plugin. If you do not see the file that you want to use, you can click the link, *Add new file to software repository*, to browse to the location where the OS file that you want to add resides.
+
+.. From the *Select an NVSRAM file* drop-down, select the controller file that you want to use.
++
+If there are multiple files, the files are sorted from newest date to oldest date.
+
+. In the Compatible Storage Array table, review the storage arrays that are compatible with the OS software file that you selected, and then select the arrays you want to upgrade.
+
+** The storage arrays that you selected in the Manage view and that are compatible with the selected firmware file are selected by default in the Compatible Storage Array table.
+** The storage arrays that cannot be updated with the selected firmware file are not selectable in the Compatible Storage Array table as indicated by the status *Incompatible*.
+
+. (Optional) To transfer the software file to the storage arrays without activating them, select the *Transfer the OS software to the storage arrays, mark it as staged, and activate at a later time* check box.
+. Click Start.
+. Depending on whether you chose to activate now or later, do one of the following:
+
+** Type `TRANSFER` to confirm that you want to transfer the proposed OS software versions on the arrays you selected to upgrade, and then click *Transfer*.  To activate the transferred software, select *Upgrade Center > Activate Staged SANtricity OS Software*.
+** Type `UPGRADE` to confirm that you want to transfer and activate the proposed OS software versions on the arrays you selected to upgrade, and then click *Upgrade*.
++
+The system transfers the software file to each storage array you selected to upgrade and then activates that file by initiating a reboot.
++
+The following actions occur during the upgrade operation:
+
+** A pre-upgrade health check runs as part of the upgrade process. The pre-upgrade health check assesses all storage array components to make sure that the upgrade can proceed.
+** If any health check fails for a storage array, the upgrade stops. You can click the ellipsis (…) and select *Save Log* to review the errors. You can also choose to override the health check error and then click *Continue* to proceed with the upgrade.
+** You can cancel the upgrade operation after the pre-upgrade health check.
+
+. (Optional) Once the upgrade has completed, you can see a list of what was upgraded for a specific storage array by clicking the ellipsis (…) and then selecting *Save Log*.The file is saved in the Downloads folder for your browser with the name `upgrade_log-<date>. json`.

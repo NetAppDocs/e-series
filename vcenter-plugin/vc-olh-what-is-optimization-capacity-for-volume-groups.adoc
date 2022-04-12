@@ -1,0 +1,29 @@
+---
+sidebar: sidebar
+permalink: vc-olh-what-is-optimization-capacity-for-volume-groups.html
+keywords:
+summary:
+---
+
+= What is optimization capacity for volume groups
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2022-03-25 16:38:48.468340
+//
+
+[.lead]
+SSD drives will have longer life and better maximum write performance when a portion of their capacity is unallocated.
+
+For drives associated with a volume group, unallocated capacity is comprised of a volume group’s free capacity (capacity not used by volumes), and a portion of the usable capacity set aside as optimization capacity. The additional optimization capacity ensures a minimum level of optimization capacity by reducing the usable capacity, and as such, is not available for volume creation.
+
+When a volume group is created, a recommended optimization capacity is generated that provides a balance of performance, drive wear life, and available capacity. The Additional Optimization Capacity slider in the Volume Group Settings dialog allows adjustments to a volume group's optimization capacity. Adjusting the slider provides for better performance and drive wear life at the expense of available capacity, or additional available capacity at the expense of performance and drive wear life.
+
+[NOTE]
+Additional Optimization Capacity slider is only available for EF600 and EF300 storage systems.

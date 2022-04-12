@@ -1,0 +1,67 @@
+---
+sidebar: sidebar
+permalink: vc-olh-interface-overview.html
+keywords:
+summary:
+---
+
+= Interface overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2022-03-25 16:38:47.903085
+//
+
+[.lead]
+The SANtricity Storage Plugin for vCenter is a VMware vCenter Server plug-in that provides integrated management of E-Series storage arrays from within a vSphere Client session.
+
+=== Tasks available in the SANtricity Storage Plugin for vCenter
+
+You can use the plugin to perform the following tasks:
+
+* Define storage array status
+* Import settings from one storage array to multiple storage arrays
+* Upgrade software to multiple storage arrays
+* Define host connections
+* Create volumes and map them to hosts
+* Create volume groups and pools
+
+[NOTE]
+The plugin is not a direct replacement for the System Manager interface, which is embedded on each controller for a storage array. System Manager provides additional management features; if desired, you can open System Manager by selecting a storage array in the main view of the plugin and then clicking *Launch*.
+
+=== Main page
+
+When you log in to the plugin, the main page opens to *Manage - All*. From this page, you can view and manage all discovered storage arrays in your network.
+
+=== Navigation sidebar
+
+The navigation sidebar displays the following:
+
+* *Manage.* Discover storage arrays in your network, launch System Manager for an array, import settings from one array to multiple arrays, manage array groups, upgrade the SANtricity OS, and provision storage.
+* *Certificate Management.* Manage certificates to authenticate between browsers and clients.
+* *Operations.* View the progress of batch operations, such as importing settings from one array to another.
+
+[NOTE]
+Some operations are not available when a storage array has a non-optimal status.
+
+* *Support.* View technical support options, resources, and contacts.
+
+=== Supported browsers
+
+The SANtricity Storage Plugin for vCenter can be accessed from several types of browsers. The following browsers and versions are supported.
+
+* Google Chrome 79 or later
+* Mozilla Firefox 70 or later
+* Microsoft Edge 79 or later
+
+=== User roles and permissions
+
+To access tasks in the SANtricity Storage Plugin for vCenter, the user must have read-write permissions. By default, all defined VMware vCenter user IDs have no permissions to perform tasks in the plugin.
+
+For detailed instructions on creating and modifying user roles and permissions, see the <Xref to topics in Setup guide>.

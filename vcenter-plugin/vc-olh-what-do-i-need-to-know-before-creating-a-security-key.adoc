@@ -1,0 +1,46 @@
+---
+sidebar: sidebar
+permalink: vc-olh-what-do-i-need-to-know-before-creating-a-security-key.html
+keywords:
+summary:
+---
+
+= What do I need to know before creating a security key
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2022-03-25 16:38:48.478967
+//
+
+[.lead]
+A security key is shared by controllers and secure-enabled drives within a storage array. If a secure-enabled drive is removed from the storage array, the security key protects the data from unauthorized access.
+
+You can create and manage security keys using one of the following methods:
+
+* Internal key management on the controller's persistent memory.
+* External key management on an external key management server.
+
+=== Internal key management
+
+Internal keys are maintained and “hidden” in a non-accessible location on the controller's persistent memory. Before creating an internal security key, you must do the following:
+
+. Install secure-capable drives in the storage array. These drives can be Full Disk Encryption  (FDE) drives or Federal Information Processing Standard (FIPS) drives.
+. Make sure the Drive Security feature is enabled. If necessary, contact your storage vendor for instructions on enabling the Drive Security feature.You can then create an internal security key, which involves defining an identifier and a pass phrase. The identifier is a string that is associated with the security key, and is stored on the controller and on all drives associated with the key. The pass phrase is used to encrypt the security key for backup purposes. When you are finished, the security key is stored on the controller in a non-accessible location. You can then create secure-enabled volume groups or pools, or you can enable security on existing volume groups and pools.
+
+=== External key management
+
+External keys are maintained on a separate key management server, using a Key Management Interoperability Protocol (KMIP). Before creating an external security key, you must do the following:
+
+. Install secure-capable drives in the storage array. These drives can be Full Disk Encryption (FDE) drives or Federal Information Processing Standard (FIPS) drives.
+. Make sure the Drive Security feature is enabled. If necessary, contact your storage vendor for instructions on enabling the Drive Security feature
+. Obtain a signed, client certificate file. A client certificate validates the storage array's controllers, so the key management server can trust their KMIP requests.
+.. First, you complete and download a client Certificate Signing Request (CSR). Go to *Settings > Certificates > Key Management > Complete CSR*.
+.. Next, you request a signed client certificate from a CA that is trusted by the key management server. (You can also create and download a client certificate from the key management server using the downloaded CSR file.)
+.. Once you have a client certificate file, copy that file to the host where you are accessing System Manager.
+. Retrieve a certificate file from the key management server, and then copy that file to the host where you are accessing System Manager. A key management server certificate validates the key management server, so the storage array can trust its IP address. You can use a root, intermediate, or server certificate for the key management server.You can then create an external key, which involves defining the IP address of the key management server and the port number used for KMIP communications. During this process, you also load certificate files. When you are finished, the system connects to the key management server with the credentials you entered. You can then create secure-enabled volume groups or pools, or you can enable security on existing volume groups and pools.

@@ -1,0 +1,37 @@
+---
+sidebar: sidebar
+permalink: vc-olh-how-do-i-view-and-interpret-all-ssd-cache-statistics.html
+keywords:
+summary:
+---
+
+= How do I view and interpret all SSD Cache statistics
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2022-03-25 16:38:48.457235
+//
+
+[.lead]
+You can view nominal statistics and detailed statistics for SSD Cache. Nominal statistics are a subset of the detailed statistics. The detailed statistics can be viewed only when you export all SSD statistics to a .csv file. As you review and interpret the statistics, keep in mind that some interpretations are derived by looking at a combination of statistics.
+
+=== Nominal statistics
+
+To view SSD Cache statistics, go to the *Manage* page. Select *Provisioning > Configure Pools & Volume Groups*. Select the SSD Cache that you want to view statistics for, and then select *More > View Statistics*. The nominal statistics are shown on the View SSD Cache Statistics dialog.
+
+[NOTE]
+This feature is not available on the EF600 or EF300 storage system.
+
+The list includes nominal statistics, which are a subset of the detailed statistics. For more information, see https://docs.netapp.com/us-en/e-series-santricity/%5bthe[https://docs.netapp.com/us-en/e-series-santricity/[the^] System Manager OLH webpage^].
+
+=== Detailed statistics
+
+The detailed statistics consist of the nominal statistics, plus additional statistics. These additional statistics are saved along with the nominal statistics, but unlike the nominal statistics, they do not display in the View SSD Cache Statistics dialog. You can view the detailed statistics only after exporting the statistics to a .csv file.
+
+The detailed statistics are listed after the nominal statistics. For more information, see https://docs.netapp.com/us-en/e-series-santricity/%5bthe[https://docs.netapp.com/us-en/e-series-santricity/[the^] System Manager OLH webpage^].

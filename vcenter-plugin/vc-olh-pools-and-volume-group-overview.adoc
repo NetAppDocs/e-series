@@ -1,0 +1,124 @@
+---
+sidebar: sidebar
+permalink: vc-olh-pools-and-volume-group-overview.html
+keywords:
+summary:
+---
+
+= Pools and volume group overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2022-03-25 16:38:48.311548
+//
+
+[.lead]
+To provision storage, you create either a pool or volume group that will contain the Hard Disk Drives (HDD) or Solid State Disk (SSD) drives that you want to use in your storage array.
+
+Physical hardware is provisioned into logical components so that data can be organized and easily retrieved. There are two types of groupings supported:
+
+* Pools
+* Volume groupsThe pools and volume groups are the top-level units of storage in a storage array: they divide the capacity of drives into manageable divisions. Within these logical divisions are the individual volumes or LUNs where data is stored. The following figure illustrates this concept.
+
+/insert graphic/
+
+Callouts to graphic:
+
+. Host LUNs
+. Volumes
+. Volume groups or pools
+. HDD or SSD drivesWhen a storage system is deployed, the first step is to present the available drive capacity to the various hosts by:
+
+* Creating pools or volume groups with sufficient capacity
+* Adding the number of drives required to meet performance requirements to the pool or volume group
+* Selecting the desired level of RAID protection (if using volume groups) to meet specific business requirementsYou can have pools or volume groups on the same storage system, but a drive cannot be part of more than one pool or volume group. Volumes that are presented to hosts for I/O are then created, using the space on the pool or volume group.
+
+=== Pools
+
+Pools are designed to aggregate physical hard disk drives into a large storage space and to provide enhanced RAID protection for it. A pool creates many virtual RAID sets from the total number of drives assigned to the pool, and it spreads the data out evenly among all participating drives. If a drive is lost or added, the system dynamically re-balances the data across all the active drives.
+
+Pools function as another RAID level, virtualizing the underlying RAID architecture to optimize performance and flexibility when performing tasks such as rebuilding, drive expansion, and handling drive loss. The system automatically sets the RAID level at 6 in an 8+2 configuration (eight data disks plus two parity disks).
+
+==== Drive matching
+
+You can choose from either HDD or SSDs for use in pools; however, as with volume groups, all drives in the pool must use the same technology. The controllers automatically select which drives to include, so you must make sure that you have a sufficient number of drives for the technology you choose.
+
+==== Managing failed drives
+
+Pools have a minimum capacity of 11 drives; however, one drive’s worth of capacity is reserved for spare capacity in the event of a drive failure. This spare capacity is called “preservation capacity.”
+
+When pools are created, a certain amount of capacity is preserved for emergency use. This capacity is expressed in terms of a number of drives, but the actual implementation is spread across the entire pool of drives. The default amount of capacity that is preserved is based on the number of drives in the pool.
+
+After the pool is created, you can change the preservation capacity value to more or less capacity, or even set it to no preservation capacity (0 drive’s worth). The maximum amount of capacity that can be preserved (expressed as a number of drives) is 10, but the capacity that is available might be less, based on the total number of drives in the pool.
+
+=== Volume groups
+
+Volume groups define how capacity is allotted in the storage system to volumes. Disk drives are organized into RAID groups and volumes reside across the drives in a RAID group. Therefore, volume group configuration settings identify which drives are part of the group and what RAID level is used.
+
+When you create a volume group, controllers automatically select the drives to include in the group. You must manually choose the RAID level for the group. The capacity of the volume group is the total of the number of drives that you select, multiplied by their capacity.
+
+==== Drive matching
+
+You must match the drives in the volume group for size and performance. If there are smaller and larger drives in the volume group, all drives are recognized as the smallest capacity size. If there are slower and faster drives in the volume group, all drives are recognized at the slowest speed. These factors affect the performance and overall capacity of the storage system.
+
+You cannot mix different drive technologies (HDD and SSD drives). RAID 3, 5, and 6 are limited to a maximum of 30 drives. RAID 1 and RAID 10 uses mirroring, so these volume groups must have an even number of disks.
+
+==== Managing failed drives
+
+Volume groups use hot spare drives as a standby in case a drive fails in RAID 1/10, RAID 3, RAID 5, or RAID 6 volumes contained in a volume group. A hot spare drive contains no data and adds another level of redundancy to your storage array.
+
+If a drive fails in the storage array, the hot spare drive is automatically substituted for the failed drive without requiring a physical swap. If the hot spare drive is available when a drive fails, the controller uses redundancy data to reconstruct the data from the failed drive to the hot spare drive.
+
+=== Decide whether to use pools or volume groups
+
+==== Choose a pool
+
+* If you need faster drive rebuilds and simplified storage administration, and/or have a highly random workload.
+* If you want to distribute the data for each volume randomly across a set of drives that comprise the pool.You cannot set or change the RAID level of pools or the volumes in the pools. Pools use RAID  level 6.
+
+==== Choose a volume group
+
+* If you need maximum system bandwidth, the ability to tune storage settings, and a highly sequential workload.
+* If you want to distribute the data across the drives based on a RAID level. You can specify the RAID level when you create the volume group.
+* If you want to write the data for each volume sequentially across the set of drives that comprise the volume group.
+
+[NOTE]
+Because pools can co-exist with volume groups, a storage array can contain both pools and volume groups.
+
+=== Automatic versus manual pool creation
+
+Depending on your storage configuration, you can allow the system to create pools automatically or you can manually create them yourself. A pool is a set of logically grouped drives.
+
+Before you create and manage pools, review the following sections for how pools are automatically created and when you might need to manually create them.
+
+==== Automatic creation
+
+When the system detects unassigned capacity in the storage array, it initiates automatic pool creation is initiated when the system detects unassigned capacity in a storage array. It automatically prompts you to create one or more pools, or add the unassigned capacity to an existing pool, or both.
+
+Automatic pool creation occurs when one of these conditions is true:
+
+* Pools do not exist in the storage array, and there are enough similar drives to create a new pool.
+* New drives are added to a storage array that has at least one pool.Each drive in a pool must be of the same drive type (HDD or SSD) and have similar capacity. The system will prompt you to complete the following tasks:
+
+* Create a single pool if there are a sufficient number of drives of those types.
+* Create multiple pools if the unassigned capacity consists of different drive types.
+* Add the drives to the existing pool if a pool is already defined in the storage array, and add new drives of the same drive type to the pool.
+* Add the drives of the same drive type to the existing pool, and use the other drive types to create different pools if the new drives are of different drive types.
+
+==== Manual creation
+
+You might want to create a pool manually when automatic creation cannot determine the best configuration. This situation can occur for one of the following reasons:
+
+* The new drives could potentially be added to more than one pool.
+* One or more of the new pool candidates can use shelf loss protection or drawer loss protection.
+* One or more of the current pool candidates cannot maintain their shelf loss protection or drawer loss protection status.You might also want to create a pool manually if you have multiple applications on your storage array and do not want them competing for the same drive resources. In this case, you might consider manually creating a smaller pool for one or more of the applications. You can assign just one or two volumes instead of assigning the workload to a large pool that has many volumes across which to distribute the data. Manually creating a separate pool that is dedicated to the workload of a specific application can allow storage array operations to perform more rapidly, with less contention.
+
+=== For more information
+
+See the https://docs.netapp.com/us-en/e-series-santricity%5b[https://docs.netapp.com/us-en/e-series-santricity[^]System Manager OLH webpage^].

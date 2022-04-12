@@ -1,0 +1,46 @@
+---
+sidebar: sidebar
+permalink: vc-olh-host-creation-overview.html
+keywords:
+summary:
+---
+
+= Host creation overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2022-03-25 16:38:48.247264
+//
+
+[.lead]
+To manage storage with the SANtricity Storage Plugin for vCenter, you must discover or define each host in the network. A host is a server that sends I/O to a volume on a storage array.
+
+=== Automatic vs manual host creation
+
+Creating a host is one of the steps required to let the storage array know which hosts are attached to it and to allow I/O access to the volumes. A host can be created automatically or manually.
+
+* *Automatic.* Automatic host creation for SCSI-based (not NVMe-oF) hosts is initiated by the Host Context Agent (HCA). The HCA is a utility that you can install on each host attached to the storage array. Each host that has the HCA installed pushes its configuration information to the storage array controllers through the I/O path. Based on the host information, the controllers automatically create the host and the associated host ports and set the host type. If needed, you can make any additional changes to the host configuration. After the HCA performs its automatic detection, the host is automatically configured with the following attributes:
+** The host name derived from the system name of the host.
+** The host identifier ports that are associated with the host.
+** The Host Operating System Type of the host.
+
+[NOTE]
+Hosts are created as stand-alone hosts; the HCA does not automatically create or add to host clusters.
+
+* *Manual.* During manual host creation, you associate host port identifiers by selecting them from a list or manually entering them. After you create a host, you can assign volumes to it or add it to a host cluster if you plan to share access to volumes. 
+
+=== How volumes are assigned
+
+For a host to send I/O to a volume, you must assign the volume to it. You can select either a host or host cluster when you create a volume or you can assign a volume to a host or host cluster later. A host cluster is a group of hosts. You create a host cluster to make it easy to assign the same volumes to multiple hosts.
+
+Assigning volumes to hosts is flexible, allowing you to meet your particular storage needs.
+
+* *Stand-alone host, not part of a host cluster.* You can assign a volume to an individual host. The volume can be accessed only by the one host.
+* *Host cluster.* You can assign a volume to a host cluster. The volume can be accessed by all the hosts in the host cluster.
+* *Host within a host cluster.* You can assign a volume to an individual host that is part of a host cluster. Even though the host is part of a host cluster, the volume can be accessed only by the individual host and not by any other hosts in the host cluster.When volumes are created, logical unit numbers (LUNs) are assigned automatically. The LUN serves as the "address" between the host and the controller during I/O operations. You can change LUNs after the volume is created.
