@@ -1,15 +1,15 @@
 ---
 permalink: maintenance-ef600/sas-overview-supertask-concept.html
 sidebar: sidebar
-keywords: replace SAS expansion card, replacing SAS card, drive tray expansion, expansion card
+keywords: replace EF300 SAS expansion card, replacing SAS card, drive tray expansion, expansion card
 summary:  Review requirements and considerations before replacing an EF300 SAS expansion card.
 ---
-=  Requirements for EF300 and EF600 SAS expansion card replacement
+=  Requirements for EF300 SAS expansion card replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If you plan to add a SAS expansion cards to an EF300 or an EF600, review the following requirements.
+If you plan to add a SAS expansion card to an EF300, review the following requirements.
 
 * You must follow the link:../install-hw-ef600/index.html[Install and set up EF300 and EF600 storage systems] to set up your controller.
 * You must update your firmware to the latest version. To update your firmware, follow the instructions in the link:../upgrade-santricity/index.html[Upgrading SANtricity OS].
@@ -18,6 +18,6 @@ If you plan to add a SAS expansion cards to an EF300 or an EF600, review the fol
 * You have a #1 Phillips screwdriver.
 * You have labels to identify each cable that is connected to the controller canister.
 * You have a management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
-* To cable your SAS expansion, see link:../install-hw-cabling/index.html[Cabling E-Series hardware] for instructions.
 
-NOTE: EF300 controllers may have a SAS expansion card installed in port 1 to allow for drive tray expansion.
+* EF300 controllers may have a SAS expansion card installed in port 1 to allow for drive tray expansion.
+* To cable your SAS expansion, see link:../install-hw-cabling/index.html[Cabling E-Series hardware] for instructions.
