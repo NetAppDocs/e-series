@@ -1,0 +1,69 @@
+---
+sidebar: sidebar
+permalink: vc-olh-change-configuration-settings-for-a-pool.html
+keywords:
+summary:
+---
+
+= Change configuration settings for a pool
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2022-03-25 16:38:48.363521
+//
+
+[.lead]
+You can edit the settings for a pool, including its name, capacity alerts settings, modification priorities, and preservation capacity.
+
+*About this task*
+
+This task describes how to change configuration settings for a pool.
+
+[NOTE]
+You cannot change the RAID level of a pool using the plugin interface. The plugin automatically configures pools as RAID 6.
+
+*Steps*
+
+. From the *Manage* page, select the storage array with the pool.
+. Select Provisioning > Configure Pools and Volume Groups.
+. Select the pool that you want to edit, and then click *View/Edit Settings*. 
++
+The Pool Settings dialog box appears.
+
+. Select the *Settings* tab, and then edit the pool settings as appropriate.  
+
+|===
+|Setting |Description
+
+|Name
+|You can change the user-supplied name of the pool. Specifying a name for a pool is required.
+|Capacity alerts
+|You can send alert notifications when the free capacity in a pool reaches or exceeds a specified threshold. When the data stored in the pool exceeds the specified threshold, the plugin sends a message, allowing you time to add more storage space or to delete unnecessary objects.
+Alerts are shown in the Notifications area on the Dashboard and can be sent from the server to administrators by email and SNMP trap messages.
+You can define the following capacity alerts:
+* Critical alert. This critical alert notifies you when the free capacity in the pool reaches or exceeds the specified threshold. Use the spinner controls to adjust the threshold percentage. Select the check box to disable this notification.
+* Early alert. This early alert notifies you when the free capacity in a pool is reaching a specified threshold. Use the spinner controls to adjust the threshold percentage. Select the check box to disable this notification.
+|Modification priorities
+|You can specify the priority levels for modification operations in a pool relative to system performance. A higher priority for modification operations in a pool causes an operation to complete faster, but can slow the host I/O performance. A lower priority causes operations to take longer, but host I/O performance is less affected.
+You can choose from five priority levels: lowest, low, medium, high, and highest. The higher the priority level, the larger is the impact on host I/O and system performance.
+* Critical reconstruction priority. This slider bar determines the priority of a data reconstruction operation when multiple drive failures result in a condition where some data has no redundancy and an additional drive failure might result in loss of data.
+* Degraded reconstruction priority. This slider bar determines the priority of the data reconstruction operation when a drive failure has occurred, but the data still has redundancy and an additional drive failure does not result in loss of data.
+* Background operation priority. This slider bar determines the priority of the pool background operations that occur while the pool is in an optimal state. These operations include Dynamic Volume Expansion (DVE), Instant Availability Format (IAF), and migrating data to a replaced or added drive.
+|Preservation capacity
+("Optimization capacity" for the EF600 or EF300)
+|Preservation capacity. You can define the number of drives to determine the capacity that is reserved on the pool to support potential drive failures. When a drive failure occurs, the preservation capacity is used to hold the reconstructed data. Pools use preservation capacity during the data reconstruction process instead of hot spare drives, which are used in volume groups.
+Use the spinner controls to adjust the number of drives. Based on the number of drives, the preservation capacity in the pool appears next to the spinner box.
+Keep the following information in mind about preservation capacity.
+* Because preservation capacity is subtracted from the total free capacity of a pool, the amount of capacity that you reserve affects how much free capacity is available to create volumes. If you specify 0 for the preservation capacity, all of the free capacity on the pool is used for volume creation.
+* If you decrease the preservation capacity, you increase the capacity that can be used for pool volumes.
+Additional optimization capacity (EF600 and EF300 arrays only). When a pool is created, a recommended optimization capacity is generated that provides a balance of available capacity versus performance and drive wear life. You can adjust this balance by moving the slider to the right for better performance and drive wear life at the expense of increased available capacity, or by moving it to the left for increased available capacity at the expense of better performance and drive wear life.
+SSD drives will have longer life and better maximum write performance when a portion of their capacity is unallocated. For drives associated with a pool, unallocated capacity is comprised of a pool’s preservation capacity, the free capacity (capacity not used by volumes), and a portion of the usable capacity set aside as additional optimization capacity. The additional optimization capacity ensures a minimum level of optimization capacity by reducing the usable capacity, and as such, is not available for volume creation.
+|===
+
+. Click Save.

@@ -1,0 +1,68 @@
+---
+sidebar: sidebar
+permalink: vc-olh-create-host-cluster.html
+keywords:
+summary:
+---
+
+= Create host cluster
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2022-03-25 16:38:48.262493
+//
+
+[.lead]
+When two or more hosts require I/O access to the same volumes, you can create a host cluster.
+
+*About this task*
+
+Keep these guidelines in mind when you create a host cluster:
+
+* This operation does not start unless there are two or more hosts available to create the cluster.
+* Hosts in host clusters can have different operating systems (heterogeneous).
+* NVMe hosts in host clusters cannot be mixed with non- NVMe hosts.
+* To create a Data Assurance (DA)-enabled volume, the host connection you are planning to use must support DA.
++
+If any of the host connections on the controllers in your storage array do not support DA, the associated hosts cannot access data on DA-enabled volumes.
+
+* This operation does not succeed if the name you choose is already in use.
+* The length of the name cannot exceed 30 characters.*Steps*
+
+. From the Manage page, select the storage array with the host connection.
+. Select *Provisioning > Configure Hosts*.
++
+The Configure Hosts page opens.
+
+. Select *Create > Host cluster*.
++
+The Create Host Cluster dialog box appears.
+
+. Select the settings for the host cluster as appropriate.
+
+|===
+|Setting |Description
+
+|Name
+|Type the name for the new host cluster.
+|Select hosts to share volume access
+|Select two or more hosts from the drop-down list. Only those hosts that are not already part of a host cluster appear in the list.
+|===
+
+. Click *Create*.If the selected hosts are attached to interface types that have different Data Assurance (DA) capabilities, a dialog appears with the message that DA will be unavailable on the host cluster. This unavailability prevents DA-enabled volumes from being added to the host cluster. Select *Yes* to continue or *No* to cancel.
+
+DA increases data integrity across the entire storage system. DA enables the storage array to check for errors that might occur when data is moved between the hosts and the drives. Using DA for the new volume ensures that any errors are detected.
+
+*Result*
+
+The new host cluster appears in the table with the assigned hosts in the rows beneath.
+
+*After you finish*
+
+You must assign a volume to a host cluster so it can be used for I/O operations. Go to `<Assign volumes to hosts>`. 

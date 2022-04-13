@@ -1,0 +1,56 @@
+---
+sidebar: sidebar
+permalink: vc-olh-change-media-scan-settings-for-a-volume.html
+keywords:
+summary:
+---
+
+= Change media scan settings for a volume
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2022-03-25 16:38:48.204928
+//
+
+[.lead]
+A media scan is a background operation that scans all data and redundancy information in the volume. Use this option to enable or disable the media scan settings for one or more volumes, or to change the scan duration.
+
+*Before you begin*
+
+Understand the following:
+
+* Media scans run continuously at a constant rate based on the capacity to be scanned and the scan duration. Background scans may be temporarily suspended by a higher priority background task (e.g.  reconstruction), but will resume at the same constant rate.
+* A volume is scanned only when the media scan option is enabled for the storage array and for that volume. If redundancy check is also enabled for that volume, redundancy information in the volume will be checked for consistency with data, provided that the volume has redundancy. Media scan with redundancy check is enabled by default for each volume when it is created.
+* If an unrecoverable medium error is encountered during the scan, data will be repaired using redundancy information, if available.For example, redundancy information is available in optimal RAID 5 volumes, or in RAID 6 volumes that are optimal or only have one drive failed. If the unrecoverable error cannot be repaired using redundancy information, the data block will be added to the unreadable sector log. Both correctable and uncorrectable medium errors are reported to the event log.
+
+If the redundancy check finds an inconsistency between data and the redundancy information, it is reported to the event log.
+
+*About this task*
+
+Media scans detect and repair media errors on disk blocks that are infrequently read by applications. This can prevent data loss in the event of a drive failure, as data for failed drives is reconstructed using redundancy information and data from other drives in the volume group or pool.
+
+You can perform the following actions:
+
+* Enable or disable background media scans for the entire storage array
+* Change the scan duration for the entire storage array
+* Enable or disable media scan for one or more volumes
+* Enable or disable the redundancy check for one or more volumes*Steps*
+
+. From the *Manage* page, select the storage array that contains the volumes for which you want to change media scan settings.
+. Select *Provisioning > Manage Volumes*.
+. Select any volume, and then select *More > Change media scan settings*.
++
+The Change Drive Media Scan Settings dialog box appears. All volumes on the storage array appear in this dialog box.
+
+. To enable the media scan, select the *Scan media over the course of...* check box. Disabling the media scan check box suspends all media scan settings.
+. Specify the number of days over which you want the media scan to run.
+. Select the *Media Scan* check box for each volume you want to perform a media scan on. The system enables the Redundancy Check option for each volume on which you choose to run a media scan. If there are individual volumes for which you do not want to perform a redundancy check, deselect the *Redundancy Check* check box.
+. Click Save.*Result*
+
+The system applies changes to background media scans based on your selection.

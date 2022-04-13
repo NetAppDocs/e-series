@@ -1,0 +1,32 @@
+---
+sidebar: sidebar
+permalink: vc-olh-delete-storage-array-group.html
+keywords:
+summary:
+---
+
+= Delete storage array group
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2022-03-25 16:38:48.088245
+//
+
+[.lead]
+You can remove one or more storage array groups that are no longer needed.
+
+*About this task*
+
+This operation deletes only the storage array group. Storage arrays associated with the deleted group remain accessible through the Manage All view or any other group it is associated with.
+
+*Steps*
+
+. From the *Manage* page, select *Manage Groups > Delete storage array group*.
+. Select one or more storage array groups that you want to delete.
+. Click *Delete*.

@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: vc-olh-when-would-i-want-to-use-the-assign-host-later-selection.html
+keywords:
+summary:
+---
+
+= When would I want to use the assign host later selection
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2022-03-25 16:38:48.241676
+//
+
+[.lead]
+If you want to speed the process for creating volumes, you can skip the host assignment step so that newly created volumes are initialized offline.
+
+Newly created volumes must be initialized. The system can initialize them using one of two modes – either an Immediate Available Format (IAF) background initialization process or an offline process.
+
+When you map a volume to a host, it forces any initializing volumes in that group to transition to background initialization. This background initialization process allows for concurrent host I/O, which can sometimes be time-consuming.
+
+When none of the volumes in a volume group are mapped, offline initialization is performed. The offline process is much faster than the background process.

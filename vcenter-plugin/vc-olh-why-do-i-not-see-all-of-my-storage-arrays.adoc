@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: vc-olh-why-do-i-not-see-all-of-my-storage-arrays.html
+keywords:
+summary:
+---
+
+= Why do I not see all of my storage arrays
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2022-03-25 16:38:48.059000
+//
+
+[.lead]
+During the Import Settings operation, some of your storage arrays might not be available in the target selection dialog box.
+
+Storage arrays might not appear for the following reasons:
+
+* The firmware version is below 8.50.
+* The storage array is offline.
+* The system cannot communicate with that array (for example, the array has certificate, password, or networking problems).

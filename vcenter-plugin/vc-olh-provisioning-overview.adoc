@@ -1,0 +1,105 @@
+---
+sidebar: sidebar
+permalink: vc-olh-provisioning-overview.html
+keywords:
+summary:
+---
+
+= Provisioning overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2022-03-25 16:38:48.137250
+//
+
+[.lead]
+You can create data containers, called volumes, so the host can access storage on the array.
+
+=== Volume types and characteristics
+
+Volumes are data containers that manage and organize the storage space on your storage array.
+
+You create volumes from the storage capacity available on your storage array, which helps organize your system’s resources. The concept of "volumes" is similar to using folders/directories on a computer to organize files for quick access.
+
+Volumes are the only data layer visible to hosts. In a SAN environment, volumes are mapped to logical unit numbers (LUNs). These LUNs hold the user data that is accessible using one or more of the host access protocols supported by the storage array, including FC, iSCSI, and SAS.
+
+Each volume in a pool or volume group can have its own individual characteristics based on what type of data will be stored in it. Some of these characteristics include:
+
+* *Segment size.* A segment is the amount of data in kilobytes (KiB) that is stored on a drive before the storage array moves to the next drive in the stripe (RAID group). The segment size is equal to or less than the capacity of the volume group. The segment size is fixed and cannot be changed for pools.
+* *Capacity.* You create a volume from the free capacity available in either a pool or volume group. Before you create a volume, the pool or volume group must already exist, and it must have enough free capacity to create the volume.
+* *Controller ownership.* All storage arrays can have either one or two controllers. On a single- controller array, a volume’s workload is managed by a single controller. On a dual-controller array, a volume will have a preferred controller (A or B) that “owns” the volume. In a dual- controller configuration, volume ownership is automatically adjusted using the Automatic Load Balancing feature to correct any load balance issues when workloads shift across the controllers. Automatic load balancing provides automated I/O workload balancing and ensures that incoming I/O traffic from the hosts is dynamically managed and balanced across both controllers.
+* *Volume assignment.* You can give hosts access to a volume either when you create the volume or at a later time. All host access is managed through a logical unit number (LUN). Hosts detect LUNs that are, in turn, assigned to volumes. If you are assigning a volume to multiple hosts, use clustering software to make sure that the volume is available to all of the hosts. 
++
+The host type can have specific limits on how many volumes the host can access. Keep this limitation in mind when you create volumes for use by a particular host.
+
+* *Resource provisioning.* For EF600 or EF300 storage arrays, you can specify that volumes be put in use immediately with no background initialization process. A resource-provisioned volume is a thick volume in an SSD volume group or pool, where drive capacity is allocated (assigned to the volume) when the volume is created, but the drive blocks are deallocated (unmapped).
+* *Descriptive name.* You can name a volume whatever name you like, but we recommend making the name descriptive.During volume creation, each volume is allocated capacity and is assigned a name, segment size (volume groups only), controller ownership, and volume-to-host assignment. Volume data is automatically load balanced across controllers, as needed.
+
+=== Capacity for volumes
+
+The drives in your storage array provide the physical storage capacity for your data. Before you can begin storing data, you must configure the allocated capacity into logical components known as pools or volume groups. You use these storage objects to configure, store, maintain, and preserve data on your storage array.
+
+==== Capacity to create and expand volumes
+
+You can create volumes from either the unassigned capacity or free capacity in a pool or volume group.
+
+* When you create a volume from unassigned capacity, you can create a pool or volume group and the volume at the same time.
+* When you create a volume from free capacity, you are creating an additional volume on an already existing pool or volume group.After you expand the volume capacity, you must manually increase the file system size to match. How you do this depends on the file system you are using. See your host operating system documentation for details.
+
+[NOTE]
+The plugin interface does not provide an option to create thin volumes.
+
+==== Reported capacity for volumes
+
+The reported capacity of the volume is equal to the amount of physical storage capacity allocated. The entire amount of physical storage capacity must be present. The physically allocated space is equal to the space that is reported to the host.
+
+You normally set the volume's reported capacity to be the maximum capacity to which you think the volume will grow. Volumes provide high and predictable performance for your applications mainly because all of the user capacity is reserved and allocated upon creation.
+
+==== Capacity limits
+
+The minimum capacity for a volume is 1 MiB, and the maximum capacity is determined by the number and capacity of the drives in the pool or volume group.
+
+When increasing reported capacity for a volume, keep the following guidelines in mind:
+
+* You can specify up to three decimal places (for example, 65.375 GiB).
+* Capacity needs to be less than (or equal to) the maximum available in the volume group. When you create a volume, some additional capacity is pre-allocated for Dynamic Segment Size (DSS) migration. DSS migration is a feature of the software that allows you to change the segment size of a volume.
+* Volumes larger than 2 TiB are supported by some host operating systems (maximum reported capacity is determined by the host operating system). In fact, some host operating systems support up to 128 TiB volumes. Refer to your host operating system documentation for additional details.
+
+=== Application-specific workloads
+
+When creating a volume, you select a workload to customize the storage array configuration for a specific application.
+
+A workload is a storage object that supports an application. You can define one or more workloads, or instances, per application. For some applications, the system configures the workload to contain volumes with similar underlying volume characteristics. These volume characteristics are optimized based on the type of application the workload supports. For example, if you create a workload that supports a Microsoft SQL Server application and then subsequently create volumes for that workload, the underlying volume characteristics are optimized to support Microsoft SQL Server.
+
+During volume creation, the system prompts you to answer questions about a workload’s use. For example, if you are creating volumes for Microsoft Exchange, you are asked how many mailboxes you need, what your average mailbox capacity requirements are, and how many copies of the database you want. The system uses this information to create an optimal volume configuration for you, which can be edited as needed. Optionally, you can skip this step in the volume creation sequence. 
+
+==== Types of workloads
+
+You can create two types of workloads: application-specific and other.
+
+* *Application-specific.* When you are creating volumes using an application-specific workload, the system may recommend an optimized volume configuration to minimize contention between application workload I/O and other traffic from your application instance. Volume characteristics like I/O type, segment size, controller ownership, and read and write cache are automatically recommended and optimized for workloads that are created for the following application types.
+** Microsoft SQL Server
+** Microsoft Exchange Server
+** Video Surveillance applications
+** VMware ESXi (for volumes to be used with Virtual Machine File System)
++
+You can review the recommended volume configuration and edit, add, or delete the system-recommended volumes and characteristics using the Add/Edit Volumes dialog box.
+
+* *Other (or applications without specific volume creation support).* Other workloads use a volume configuration that you must manually specify when you want to create a workload that is not associated with a specific application, or if the system does not have built-in optimization for the application you intend to use on the storage array. You must manually specify the volume configuration using the Add/Edit Volumes dialog box.
+
+==== Application and workload views
+
+To view applications and workloads, launch SANtricity System Manager. From that interface, you can view information associated with an application-specific workload in a couple of different ways:
+
+* You can select the Applications & Workloads tab in the Volumes tile to view the storage array’s volumes grouped by workload and the application type the workload is associated with.
+* You can select the Applications & Workloads tab in the Performance tile to view performance metrics (latency, IOPS, and MBs) for logical objects. The objects are grouped by application and associated workload. By collecting this performance data at regular intervals, you can establish baseline measurements and analyze trends, which can help as you investigate problems related to I/O performance.
+
+==== For more information
+
+For more information about volumes, workloads, data security, and SSD cache, see the System Manager online help.

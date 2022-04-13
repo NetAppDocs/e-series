@@ -1,0 +1,59 @@
+---
+sidebar: sidebar
+permalink: vc-olh-create-pool-automatically.html
+keywords:
+summary:
+---
+
+= Create pool automatically
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2022-03-25 16:38:48.326711
+//
+
+[.lead]
+You can create pools automatically when the system detects at least 11 unassigned drives or it detects one unassigned drive that is eligible for an existing pool. A pool is a set of logically grouped drives.
+
+*Before you begin*
+
+You can launch the Pool Auto-Configuration dialog box when one of these conditions are true:
+
+* At least one unassigned drive has been detected that can be added to an existing pool with similar drive types.
+* Eleven (11) or more unassigned drives have been detected that can be used to create a new pool (if they cannot be added to an existing pool due to dissimilar drive types).*About this task*
+
+You can use automatic pool creation to easily configure all unassigned drives in the storage array into one pool and to add drives into existing pools.
+
+Keep in mind the following:
+
+* When you add drives to a storage array, the system automatically detects the drives and prompts you to create a single pool or multiple pools based on the drive type and the current configuration.
+* If pools were previously defined, the system automatically prompts you with the option of adding the compatible drives to an existing pool. When new drives are added to an existing pool, the system automatically redistributes the data across the new capacity, which now includes the new drives that you added.
+* When configuring an EF600 or EF300 storage array, make sure each controller has access to an equal number of drives in the first 12 slots and an equal number of drives in the last 12 slots. This configuration helps the controllers use both drive-side PCIe buses more effectively. For pool creation, you should use all drives in the storage array.*Steps*
+
+. From the *Manage* page, select the storage array for the pool.
+. Select Provisioning > Configure Pools and Volume Groups.
+. Select *More > Launch pool auto-configuration*.
++
+The results table lists new pools, existing pools with drives added, or both. A new pool is named with a sequential number by default.
++
+Notice that the system does the following:
+
+** Creates a single pool if there are a sufficient number of drives with the same drive type (HDD or SSD) and have similar capacity.
+** Creates multiple pools if the unassigned capacity consists of different drive types.
+** Adds the drives to an existing pool if a pool is already defined in the storage array, and you add new drives of the same drive type to the pool.
+** Adds the drives of the same drive type to the existing pool, and use the other drive types to create different pools if the new drives are of different drive types.
+
+. To change the name of a new pool, click the *Edit* icon (the pencil).
+. To view additional characteristics of the pool, position the cursor over or touch the Details icon (the page).
++
+Information about the drive type, security capability, data assurance (DA) capability, shelf loss protection, and drawer loss protection appears.
++
+For EF600 and EF300 storage arrays, settings are also displayed for resource provisioning and volume block sizes.
+
+. Click *Accept*.
