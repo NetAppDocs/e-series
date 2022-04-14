@@ -746,30 +746,31 @@ sidebar:
             url: "/remote-storage-volumes/modify-remote-storage-task.html"
           - title: Remove remote storage object
             url: "/remote-storage-volumes/remove-remote-storage-task.html"
+
+
+
       - title: Storage plugin for vCenter
         entries:
-          - title: Overview
-            url: "/vcenter-plugin/san-spvc-ic-overview.html"
-          - title: Install the plugin
-            url: "/vcenter-plugin/san-spvc-ic-installation.html"
-          - title: Configure access permissions
-            url: "/vcenter-plugin/san-spvc-ic-user-access.html"
-          - title: Log in and navigate
-            url: "/vcenter-plugin/san-spvc-ic-login-and-navigation.html"
-          - title: Discover storage arrays
-            url: "/vcenter-plugin/san-spvc-ic-storage-array-discovery.html"
-          - title: Provision storage
-            url: "/vcenter-plugin/san-spvc-ic-storage-provisioning.html"
-          - title: Remove plugin
-            url: "/vcenter-plugin/san-spvc-ic-plugin-removal.html"
-          - title: VMware vCenter OLH for Migration
+          - title: Get started
             entries:
-              - title: Interface overview
-                url: /vc-olh-interface-overview.html
-              - title: Open and navigate the plug-in
-                url: /vc-olh-open-and-navigate-the-plug-in.html
-              - title: View status
-                url: /vc-olh-view-status.html
+            - title: Overview
+              url: "/vcenter-plugin/san-spvc-ic-overview.html"
+            - title: Install the plugin
+              url: "/vcenter-plugin/san-spvc-ic-installation.html"
+            - title: Configure access permissions
+              url: "/vcenter-plugin/san-spvc-ic-user-access.html"
+            - title: Log in and navigate
+              url: "/vcenter-plugin/san-spvc-ic-login-and-navigation.html"
+            - title: Discover storage arrays
+              url: "/vcenter-plugin/san-spvc-ic-storage-array-discovery.html"
+            - title: Provision storage
+              url: "/vcenter-plugin/san-spvc-ic-storage-provisioning.html"
+            - title: View status
+              url: /vc-olh-view-status.html
+
+          - title: Manage certificates
+            entries:
+
               - title: Certificates overview
                 url: /vc-olh-certificates-overview.html
               - title: Use CA-signed certificates
@@ -786,6 +787,10 @@ sidebar:
                 url: /vc-olh-delete-trusted-certificates.html
               - title: Resolve untrusted certificates
                 url: /vc-olh-resolve-untrusted-certificates.html
+
+          - title: Manage arrays
+            entries:
+
               - title: Array management overview
                 url: /vc-olh-array-management-overview.html
               - title: Discover storage arrays
@@ -798,6 +803,10 @@ sidebar:
                 url: /vc-olh-remove-storage-arrays.html
               - title: Launch System Manager
                 url: /vc-olh-launch-system-manager.html
+
+          - title: Import settings
+            entries:
+
               - title: Import settings overview
                 url: /vc-olh-import-settings-overview.html
               - title: Import alert settings
@@ -810,10 +819,11 @@ sidebar:
                 url: /vc-olh-import-system-settings.html
               - title: Import storage configuration settings
                 url: /vc-olh-import-storage-configuration-settings.html
-              - title: What settings are imported
-                url: /vc-olh-what-settings-are-imported.html
-              - title: Why do I not see all of my storage arrays
-                url: /vc-olh-why-do-i-not-see-all-of-my-storage-arrays.html
+
+
+          - title: Manage array groups
+            entries:
+
               - title: Array groups overview
                 url: /vc-olh-array-groups-overview.html
               - title: Create storage array group
@@ -826,6 +836,11 @@ sidebar:
                 url: /vc-olh-remove-storage-arrays-from-group.html
               - title: Delete storage array group
                 url: /vc-olh-delete-storage-array-group.html
+
+
+          - title: Upgrade OS software
+            entries:
+
               - title: Upgrade overview
                 url: /vc-olh-upgrade-overview.html
               - title: Perform pre-upgrade health check
@@ -838,6 +853,11 @@ sidebar:
                 url: /vc-olh-clear-staged-os-software.html
               - title: Manage software repository
                 url: /vc-olh-manage-software-repository.html
+
+
+          - title: Provision storage
+            entries:
+
               - title: Provisioning overview
                 url: /vc-olh-provisioning-overview.html
               - title: Create storage
@@ -862,22 +882,11 @@ sidebar:
                 url: /vc-olh-change-media-scan-settings-for-a-volume.html
               - title: Delete volume
                 url: /vc-olh-delete-volume.html
-              - title: Why are these volumes not associated with a workload
-                url: /vc-olh-why-are-these-volumes-not-associated-with-a-workload.html
-              - title: How does my selected workload impact volume creation
-                url: /vc-olh-how-does-my-selected-workload-impact-volume-creation.html
-              - title: Why do I not see all my volumes, hosts, or host clusters
-                url: /vc-olh-why-do-i-not-see-all-my-volumes,-hosts,-or-host-clusters.html
-              - title: Why can I not delete the selected workload
-                url: /vc-olh-why-can-i-not-delete-the-selected-workload.html
-              - title: How do application-specific workloads help me manage my storage array
-                url: /vc-olh-how-do-application-specific-workloads-help-me-manage-my-storage-array.html
-              - title: What do I need to do to recognize the expanded capacity
-                url: /vc-olh-what-do-i-need-to-do-to-recognize-the-expanded-capacity.html
-              - title: When would I want to use the assign host later selection
-                url: /vc-olh-when-would-i-want-to-use-the-assign-host-later-selection.html
-              - title: What do I need to know about host block size requirements
-                url: /vc-olh-what-do-i-need-to-know-about-host-block-size-requirements.html
+
+
+          - title: Configure hosts
+            entries:
+
               - title: Host creation overview
                 url: /vc-olh-host-creation-overview.html
               - title: Create host access
@@ -892,14 +901,12 @@ sidebar:
                 url: /vc-olh-change-the-settings-for-a-host.html
               - title: Delete host or host cluster
                 url: /vc-olh-delete-host-or-host-cluster.html
-              - title: Why would I need to create a host cluster
-                url: /vc-olh-why-would-i-need-to-create-a-host-cluster.html
-              - title: How do I know which host operating system type is correct
-                url: /vc-olh-how-do-i-know-which-host-operating-system-type-is-correct.html
-              - title: How do I match the host ports to a host
-                url: /vc-olh-how-do-i-match-the-host-ports-to-a-host.html
-              - title: What is the default cluster
-                url: /vc-olh-what-is-the-default-cluster.html
+
+
+
+          - title: Configure pools and volume groups
+            entries:
+
               - title: Pools and volume group overview
                 url: /vc-olh-pools-and-volume-group-overview.html
               - title: Create pool automatically
@@ -932,6 +939,44 @@ sidebar:
                 url: /vc-olh-remove-capacity.html
               - title: Enable security for a pool or volume group
                 url: /vc-olh-enable-security-for-a-pool-or-volume-group.html
+
+
+          - title: Remove plugin
+            url: "/vcenter-plugin/san-spvc-ic-plugin-removal.html"
+
+          - title: FAQs
+            entries:
+              - title: What settings are imported
+                url: /vc-olh-what-settings-are-imported.html
+              - title: Why do I not see all of my storage arrays
+                url: /vc-olh-why-do-i-not-see-all-of-my-storage-arrays.html
+
+              - title: Why are these volumes not associated with a workload
+                url: /vc-olh-why-are-these-volumes-not-associated-with-a-workload.html
+              - title: How does my selected workload impact volume creation
+                url: /vc-olh-how-does-my-selected-workload-impact-volume-creation.html
+              - title: Why do I not see all my volumes, hosts, or host clusters
+                url: /vc-olh-why-do-i-not-see-all-my-volumes,-hosts,-or-host-clusters.html
+              - title: Why can I not delete the selected workload
+                url: /vc-olh-why-can-i-not-delete-the-selected-workload.html
+              - title: How do application-specific workloads help me manage my storage array
+                url: /vc-olh-how-do-application-specific-workloads-help-me-manage-my-storage-array.html
+              - title: What do I need to do to recognize the expanded capacity
+                url: /vc-olh-what-do-i-need-to-do-to-recognize-the-expanded-capacity.html
+              - title: When would I want to use the assign host later selection
+                url: /vc-olh-when-would-i-want-to-use-the-assign-host-later-selection.html
+              - title: What do I need to know about host block size requirements
+                url: /vc-olh-what-do-i-need-to-know-about-host-block-size-requirements.html
+
+              - title: Why would I need to create a host cluster
+                url: /vc-olh-why-would-i-need-to-create-a-host-cluster.html
+              - title: How do I know which host operating system type is correct
+                url: /vc-olh-how-do-i-know-which-host-operating-system-type-is-correct.html
+              - title: How do I match the host ports to a host
+                url: /vc-olh-how-do-i-match-the-host-ports-to-a-host.html
+              - title: What is the default cluster
+                url: /vc-olh-what-is-the-default-cluster.html
+
               - title: What is redundancy check
                 url: /vc-olh-what-is-redundancy-check.html
               - title: What is preservation capacity
@@ -968,6 +1013,7 @@ sidebar:
                 url: /vc-olh-what-do-i-need-to-know-before-creating-a-security-key.html
               - title: Why do I need to define a pass phrase
                 url: /vc-olh-why-do-i-need-to-define-a-pass-phrase.html
+
       - title: Legacy solutions
         entries:
         - title: Cloud connector

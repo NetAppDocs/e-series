@@ -33,3 +33,6 @@ The plugin opens within a vSphere Client window. The plugin's main page opens to
 ** *Certificate Management* – Manage certificates to authenticate between browsers and clients.
 ** *Operations* – View the progress of batch operations, such as importing settings from one array to another.
 ** *Support* – View technical support options, resources, and contacts.
+
+[NOTE]
+Some operations are not available when a storage array has a non-optimal status.

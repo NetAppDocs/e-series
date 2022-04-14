@@ -55,7 +55,7 @@ The appropriate wizard appears, depending on the above selection.
 
 . In the Privileges list, select the access permissions to assign to this role.
 +
-To allow Read-Only access to the plugin, select *Datastore* > *Browse* *datastore*. To allow Read-Write access, select *Datastore* > *Configure datastore*.
+To allow Read-Only access to the plugin, select menu:Datastore[Browse datastore]. To allow Read-Write access, select menu:Datastore[Configure datastore].
 
 . Assign other privileges for the list if needed, and then click *Next*.
 . Name the role and provide a description.
