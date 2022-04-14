@@ -5,31 +5,23 @@ keywords:
 summary:
 ---
 
-= Launch System Manager 
+= Launch System Manager
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.006782
-//
-
 [.lead]
-Use the Launch option to open System Manager in a new browser window. The System Manager interface provides additional management operations for a controller in a storage array.
+To manage a single array, use the Launch option to open System Manager in a new browser window.
 
 System Manager is an embedded application on the storage array's controller, which is connected to the network through an Ethernet management port. System Manager includes all array-based functions. To access System Manager, you must have an out-of-band connection to a network management client with a web browser.
 
-/insert image/
-
-*Steps*
+.Steps
 
 . From the *Manage* page, select one or more storage arrays that you want to manage.
 . Click *Launch*.
 +
 The system opens a new tab in the browser, and then displays the System Manager login page.
 
-. Enter your username and password, and then click *Log* *in*.
+. Enter your username and password, and then click *Log in*.

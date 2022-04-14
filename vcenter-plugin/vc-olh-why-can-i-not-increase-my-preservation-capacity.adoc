@@ -5,18 +5,13 @@ keywords:
 summary:
 ---
 
-= Why can I not increase my preservation capacity
+= Why can I not increase my preservation capacity?
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.442489
-//
 
 [.lead]
 If you have created volumes on all available usable capacity, you might not be able to increase preservation capacity.

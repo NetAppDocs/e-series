@@ -6,29 +6,27 @@ summary:
 ---
 
 = Add capacity to a pool or volume group
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.348835
-//
 
 [.lead]
 You can add drives to expand the free capacity in an existing pool or volume group.
 
-*Before you begin*
+.Before you begin
 
 * Drives must be in an Optimal status.
 * Drives must have the same drive type (HDD or SSD).
 * The pool or volume group must be in an Optimal status.
-* If the pool or volume group contains all secure-capable drives, add only drives that are secure-capable to continue to use the encryption abilities of the secure-capable drives.Secure-capable drives can be either Full Disk Encryption (FDE) drives or Federal Information Processing Standard (FIPS) drives.
+* If the pool or volume group contains all secure-capable drives, add only drives that are secure-capable to continue to use the encryption abilities of the secure-capable drives.
 
-*About this task*
+Secure-capable drives can be either Full Disk Encryption (FDE) drives or Federal Information Processing Standard (FIPS) drives.
+
+.About this task
 
 In this task, you can add free capacity to be included in the pool or volume group. You can use this free capacity to create additional volumes. The data in the volumes remains accessible during this operation.
 
@@ -40,41 +38,65 @@ With the addition of drives, your preservation capacity may need to be increased
 [NOTE]
 Avoid using drives that are Data Assurance (DA) capable to add capacity to a pool or volume group that is not DA capable. The pool or volume group cannot take advantage of the capabilities of the DA-capable drive. Consider using drives that are not DA capable in this situation.
 
-*Steps*
+.Steps
 
-. From the *Manage *page, select the storage array with the pool or volume group.
-. Select *Provisioning > Configure Pools and Volume Groups*.
+. From the *Manage* page, select the storage array with the pool or volume group.
+. Select menu:Provisioning[ Configure Pools and Volume Groups].
 . Select the pool or volume group to which you want to add drives, and then click *Add Capacity*.
 +
 The Add Capacity dialog box appears. Only the unassigned drives that are compatible with the pool or volume group appear.
 
-. Under *Select drives to add capacity...*, select one or more drives that you want to add to the existing pool or volume group.The controller firmware arranges the unassigned drives with the best options listed at the top. The total free capacity that is added to the pool or volume group appears below the list in *Total capacity selected*.
-
+. Under *Select drives to add capacity...*, select one or more drives that you want to add to the existing pool or volume group.
++
+The controller firmware arranges the unassigned drives with the best options listed at the top. The total free capacity that is added to the pool or volume group appears below the list in *Total capacity selected*.
++
+.Field Details
+[%collapsible]
+====
+[cols="1a,1a" options="header"]
 |===
 |Field |Description
+a|
+Shelf
+a|
+Indicates the shelf location of the drive.
+a|
+Bay
+a|
+Indicates the bay location of the drive
+a|
+Capacity (GiB)
+a|
+Indicates the drive capacity.
 
-|Shelf
-|Indicates the shelf location of the drive.
-|Bay
-|Indicates the bay location of the drive
-|Capacity (GiB)
-|Indicates the drive capacity.
 * Whenever possible, select drives that have a capacity equal to the capacities of the current drives in the pool or volume group.
 * If you must add unassigned drives with a smaller capacity, be aware that the usable capacity of each drive currently in the pool or volume group is reduced. Therefore, the drive capacity is the same across the pool or volume group.
 * If you must add unassigned drives with a larger capacity, be aware that the usable capacity of the unassigned drives that you add is reduced so that they match the current capacities of the drives in the pool or volume group.
-|Secure-Capable
-|Indicates whether the drive is secure-capable.
+
+a|
+Secure-Capable
+a|
+Indicates whether the drive is secure-capable.
+
 * You can protect your pool or volume group with the Drive Security feature, but all drives must be secure-capable to use this feature.
 * It is possible to create a pool or volume group with a mix of secure-capable and non-secure-capable drives, but the Drive Security feature cannot be enabled.
 * A pool or volume group with all secure-capable drives cannot accept a non-secure-capable drive for sparing or expansion, even if the encryption capability is not in use.
 * Secure-capable drives can be either Full Disk Encryption (FDE) drives or Federal Information Processing Standard (FIPS) drives
-|DA Capable
-|Indicates whether the drive is Data Assurance (DA) capable.
+
+a|
+DA Capable
+a|
+Indicates whether the drive is Data Assurance (DA) capable.
+
 * Using drives that are not Data Assurance (DA) capable to add capacity to a DA-capable pool or volume group is not recommended. The pool or volume group no longer has DA capabilities, and you no longer have the option to enable DA on newly created volumes within the pool or volume group.
 * Using drives that are Data Assurance (DA) capable to add capacity to a pool or volume group that is non DA-capable is not recommended, because that pool or volume group cannot take advantage of the capabilities of the DA-capable drive (the drive attributes do not match). Consider using drives that are not DA-capable in this situation.
-|DULBE Capable
-|Indicates whether the drive has the option for Deallocated or Unwritten Logical Block Error (DULBE). DULBE is an option on NVMe drives that allows the EF300 or EF600 storage array to support resource-provisioned volumes.
+
+a|
+DULBE Capable
+a|
+Indicates whether the drive has the option for Deallocated or Unwritten Logical Block Error (DULBE). DULBE is an option on NVMe drives that allows the EF300 or EF600 storage array to support resource-provisioned volumes.
 |===
+====
 
 . Click *Add*.
 +
@@ -86,6 +108,8 @@ If you are adding drives to a pool or volume group, a confirmation dialog box ap
 ** Data Assurance capability
 ** DULBE capability
 
-. To continue, click *Yes*; otherwise click *Cancel*.*Result*
+. To continue, click *Yes*; otherwise click *Cancel*.
+
+.Result
 
 After you add the unassigned drives to a pool or volume group, the data in each volume of the pool or volume group is redistributed to include the additional drives.

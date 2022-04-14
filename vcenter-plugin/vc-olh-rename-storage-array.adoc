@@ -12,16 +12,11 @@ summary:
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:47.988815
-//
 
 [.lead]
 You can change the storage array’s name displayed on the Manage page.
 
-Steps
+.Steps
 
 . From the *Manage* page, select the checkbox to the left of the storage array name.
 . Select the ellipses at the far right of the row, and then select *Rename storage array* from the pop-up menu.

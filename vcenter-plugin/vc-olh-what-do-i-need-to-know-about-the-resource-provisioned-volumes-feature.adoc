@@ -5,18 +5,12 @@ keywords:
 summary:
 ---
 
-= What do I need to know about the resource-provisioned volumes feature
+= What do I need to know about the resource-provisioned volumes feature?
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.472689
-//
 
 [.lead]
 Resource Provisioning is a feature available in the EF300 and EF600 storage arrays, which allows volumes to be put in use immediately with no background initialization process.

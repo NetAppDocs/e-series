@@ -6,17 +6,12 @@ summary:
 ---
 
 = Add storage array to group
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.075418
-//
 
 [.lead]
 You can add one or more storage arrays to a user-created group.
@@ -24,6 +19,6 @@ You can add one or more storage arrays to a user-created group.
 *Steps*
 
 . From the main view, select *Manage*, and then select the group that you want to add storage arrays to.
-. Select Manage Groups > Add storage arrays to group.
+. Select menu:Manage Groups[Add storage arrays to group].
 . Select the storage arrays that you want to add to the group.
 . Click *Add*.

@@ -6,17 +6,13 @@ summary:
 ---
 
 = Change SSD Cache settings
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.375362
-//
 
 [.lead]
 You can edit the name of the SSD Cache and view its status, maximum and current capacity, Drive Security and Data Assurance status, and its associated volumes and drives.
@@ -24,19 +20,22 @@ You can edit the name of the SSD Cache and view its status, maximum and current 
 [NOTE]
 This feature is not available on the EF600 or EF300 storage system.
 
-*Steps*
+.Steps
 
 . From the *Manage* page, select the storage array with the SSD Cache.
-. Select *Provisioning > Configure Pools and Volume Groups*.
-. Select the SSD Cache that you want to edit, and then click *View/Edit Settings*. 
+. Select menu:Provisioning[Configure Pools and Volume Groups].
+. Select the SSD Cache that you want to edit, and then click *View/Edit Settings*.
 +
 The SSD Cache Settings dialog box appears.
 
 . Review or edit the SSD Cache settings as appropriate.
-
++
+.Field Details
+[%collapsible]
+====
+[cols="1a,1a" options="header"]
 |===
 |Setting |Description
-
 |Name
 |Displays the name of the SSD Cache, which you can change. A name for the SSD Cache is required.
 |Characteristics
@@ -61,5 +60,6 @@ The maximum capacity allowed for the SSD Cache depends on the controller's prima
 |Associated objects
 |Shows the volumes and drives associated with the SSD Cache.
 |===
-
+====
++
 . Click *Save*.

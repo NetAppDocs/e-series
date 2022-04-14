@@ -5,18 +5,13 @@ keywords:
 summary:
 ---
 
-= Why do I not see all my volumes, hosts, or host clusters
+= Why do I not see all my volumes, hosts, or host clusters?
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.225072
-//
 
 [.lead]
 Snapshot volumes with a DA-enabled base volume are not eligible to be assigned to a host that is not Data Assurance (DA) capable. You must disable DA on the base volume before a snapshot volume can be assigned to a host that is not DA capable.

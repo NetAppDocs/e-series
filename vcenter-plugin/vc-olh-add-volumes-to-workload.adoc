@@ -6,29 +6,24 @@ summary:
 ---
 
 = Add volumes to workload
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.171297
-//
-
 [.lead]
 You can add unassigned volumes to an existing or new workload.
 
-*About this task*
+.About this task
 
 Volumes are not associated with a workload if they have been created using the command line interface (CLI) or if they have been migrated (imported/exported) from a different storage array.
 
-*Steps*
+.Steps
 
 . From the *Manage* page, select the storage array that contains the volumes you want to add.
-. Select *Provisioning > Manage Volumes*.
+. Select menu:Provisioning[Manage Volumes].
 . Select the *Applications & Workloads* tab.
 +
 The Applications & Workloads view appears.
@@ -39,8 +34,8 @@ The Select Workload dialog box appears.
 
 . Do one of the following actions:
 
-** *Add volumes to an existing workload.* Select this option to add volumes to an existing workload. Use the drop-down list to select a workload. The workload's associated application type is assigned to the volumes you add to this workload.
-** *Add volumes to a new workload.* Select this option to define a new workload for an application type and add volumes to the new workload.
+** *Add volumes to an existing workload* -- Select this option to add volumes to an existing workload. Use the drop-down list to select a workload. The workload's associated application type is assigned to the volumes you add to this workload.
+** *Add volumes to a new workload* -- Select this option to define a new workload for an application type and add volumes to the new workload.
 
 . Select *Next* to continue with the add to workload sequence.
 +
@@ -48,4 +43,4 @@ The Select Volumes dialog box appears.
 
 . Select the volumes you want to add to the workload.
 . Review the volumes that you want to add to the selected workload.
-. When you are satisfied with your workload configuration, click Finish.
+. When you are satisfied with your workload configuration, click *Finish*.

@@ -6,39 +6,39 @@ summary:
 ---
 
 = Delete host or host cluster
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.291456
-//
 
 [.lead]
 You can remove a host or host cluster so that volumes are no longer associated with that host.
 
-*About this task*
+.About this task
 
 Keep these guidelines in mind when you delete a host or a host cluster:
 
 * Any specific volume assignments are deleted, and the associated volumes are available for a new assignment.
 * If the host is part of a host cluster that has its own specific assignments, the host cluster is unaffected. However, if the host is part of a host cluster that does not have any other assignments, the host cluster and any other associated hosts or host port identifiers inherit any default assignments.
-* Any host port identifiers that were associated with the host become undefined.*Steps*
+* Any host port identifiers that were associated with the host become undefined.
+
+.Steps
 
 . From the *Manage* page, select the storage array with the host connection.
-. Select *Provisioning > Configure Hosts*. 
+. Select menu:Provisioning[Configure Hosts].
 +
 The Configure Hosts page opens.
 
-. Select the host or host cluster that you want to delete, and then click *Delete*. 
+. Select the host or host cluster that you want to delete, and then click *Delete*.
 +
 The confirmation dialog box appears.
 
-. Confirm that you want to perform the operation, and then click *Delete*.*What happens next?*
+. Confirm that you want to perform the operation, and then click *Delete*.
+
+.Results
 
 If you deleted a host, the system performs the following actions:
 
@@ -47,7 +47,7 @@ If you deleted a host, the system performs the following actions:
 * Returns the associated volumes to an unassigned state.
 * Returns any host port identifiers associated with the host to an unassociated state. If you deleted a host cluster, the system performs the following actions:
 
-* Deletes the host cluster and its associated hosts (if any).
-* Removes access to any assigned volumes.
-* Returns the associated volumes to an unassigned state.
-* Returns any host port identifiers associated with the hosts to an unassociated state.
+** Deletes the host cluster and its associated hosts (if any).
+** Removes access to any assigned volumes.
+** Returns the associated volumes to an unassigned state.
+** Returns any host port identifiers associated with the hosts to an unassociated state.

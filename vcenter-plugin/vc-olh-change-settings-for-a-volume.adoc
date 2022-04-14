@@ -6,38 +6,37 @@ summary:
 ---
 
 = Change settings for a volume
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.165465
-//
 
 [.lead]
 You can change a volume's settings such as its name, host assignment, segment size, modification priority, caching, and so on.
 
-*Before you begin*
+.Before you begin
 
 Make sure that the volume you want to change is in Optimal status.
 
-*Steps*
+.Steps
 
 . From the *Manage* page, select the storage array that contains the volumes you want to change.
-. Select *Provisioning > Manage Volumes*.
+. Select menu:Provisioning[Manage Volumes].
 . Select the volume that you want to change, and then select *View/Edit Settings*.
 +
 The Volume Settings dialog box appears. The configuration settings for the volume you selected appear in this dialog box.
 
 . Select the *Basic* tab to change the volume's name and host assignment.
-
++
+.Field Details
+[%collapsible]
+====
+[cols="1a,1a" options="header"]
 |===
 |Setting |Description
-
 |Name
 |Displays the name of the volume. Change the name of a volume when the current name is no longer meaningful or applicable.
 |Capacities
@@ -55,12 +54,16 @@ World-wide identifier (WWID). A unique hexadecimal identifier for the volume.
 Extended unique identifier (EUI). An EUI-64 identifier for the volume.
 Subsystem identifier (SSID). The storage array subsystem identifier of a volume.
 |===
-
+====
++
 . Select the *Advanced* tab to change additional configuration settings for a volume in a pool or in a volume group.
-
++
+.Field Details
+[%collapsible]
+====
+[cols="1a,1a" options="header"]
 |===
 |Setting |Description
-
 |Application & workload information
 |During volume creation, you can create application-specific workloads or other workloads. If applicable, the workload name, application type, and volume type appears for the selected volume.
 You can change the workload name if desired.
@@ -93,7 +96,10 @@ Modification priority rates. The lowest priority rate benefits system performanc
 Shows the SSD Cache setting, which you can enable on compatible volumes as a way to improve read-only performance. Volumes are compatible if they share the same drive security and data assurance capabilities.
 The SSD Cache feature uses a single or multiple solid-state disks (SSDs) to implement a read cache. Application performance is improved because of the faster read times for SSDs. Because the read cache is in the storage array, caching is shared across all applications using the storage array. Simply select the volume that you want to cache, and then caching is automatic and dynamic.
 |===
+====
++
+. Click *Save*.
 
-. Click *Save*.*Result*
+.Result
 
 The volume settings are changed based on your selections.

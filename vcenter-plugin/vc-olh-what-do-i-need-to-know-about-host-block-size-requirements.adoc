@@ -5,18 +5,13 @@ keywords:
 summary:
 ---
 
-= What do I need to know about host block size requirements
+= What do I need to know about host block size requirements?
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.244295
-//
 
 [.lead]
 For EF300 and EF600 systems, a volume can be set to support a 512-byte or a 4KiB block size (also called "sector size"). You must set the correct value during volume creation. If possible, the system suggests the appropriate default value.

@@ -12,32 +12,25 @@ summary:
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:47.932947
-//
 
 [.lead]
 You can obtain and import CA-signed certificates for secure access to the management system hosting the SANtricity Storage Plugin for vCenter.
 
-*About this task*
-
 Using CA-signed certificates is a three-step procedure:
 
-. Xref to step 1.
-. Xref to step 2.
-. Xref to step 3.
+* <<Step 1: Complete a CSR file>>.
+* <<Step 2: Submit CSR file>>.
+* <<Step 3: Import management certificates>>.
 
-=== Step 1: Complete a CSR file
+== Step 1: Complete a CSR file
 
 You must first generate a certificate signing request (CSR) file, which identifies your organization and the host system where the plugin is running.
 
-*About this task*
+.About this task
 
-This task describes how to generate the CSR file from the plugin. Alternatively, you can generate a CSR file using a tool such as OpenSSL and skip to Xref for step 2. 
+This task describes how to generate the CSR file from the plugin. Alternatively, you can generate a CSR file using a tool such as OpenSSL and skip to <<Step 2: Submit CSR file>>.
 
-*Steps*
+.Steps
 
 . Select *Certificate Management*.
 . From the *Management* tab, select *Complete CSR*.
@@ -58,17 +51,17 @@ This task describes how to generate the CSR file from the plugin. Alternatively,
 . Make sure that the host information is correct. If it is not, the certificates returned from the CA will fail when you try to import them.
 . Click *Finish*.
 
-=== Step 2: Submit CSR file
+== Step 2: Submit CSR file
 
 After you create a certificate signing request (CSR) file, send it to a Certificate Authority (CA).
 
-*About this task*
+.About this task
 
 In this task, you send the generated CSR file to a CA to receive signed, management certificates for the system hosting the plugin.
 
 E-Series systems require PEM format (Base64 ASCII encoding) for signed certificates, which includes the following file types: . pem, . crt, . cer, or .key.
 
-*Steps*
+.Steps
 
 . Locate the downloaded CSR file.
 +
@@ -78,11 +71,11 @@ The folder location of the download depends on your browser.
 
 Whenever you generate a CSR, the system creates a private and public key pair. The public key is part of the CSR, while the private key is kept in the system's keystore. When you receive the signed certificates and import them, the system ensures that both the private and public keys are the original pair. If the keys do not match, the signed certificates will not work and you must request new certificates from the CA.
 
-=== Step 3: Import management certificates
+== Step 3: Import management certificates
 
 After you receive signed certificates from the Certificate Authority (CA), import the certificates into the host system where the plugin is installed.
 
-*Before you begin*
+.Before you begin
 
 * You have received signed certificates from the CA. These files include the root certificate, one or more intermediate certificates, and the server certificate.
 * If the CA provided a chained certificate file (for example, a .p7b file), you must unpack the chained file into individual files: the root certificate, one or more intermediate certificates, and the server certificate. You can use the Windows certmgr utility to unpack the files (right-click and select *All Tasks > Export*). Base-64 encoding is recommended. When the exports are complete, a CER file is shown for each certificate file in the chain.

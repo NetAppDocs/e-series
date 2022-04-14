@@ -5,18 +5,12 @@ keywords:
 summary:
 ---
 
-= How do application-specific workloads help me manage my storage array
+= How do application-specific workloads help me manage my storage array?
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.235300
-//
 
 [.lead]
 The volume characteristics of your application-specific workload dictate how the workload interacts with the components of your storage array and helps determine the performance of your environment under a given configuration.

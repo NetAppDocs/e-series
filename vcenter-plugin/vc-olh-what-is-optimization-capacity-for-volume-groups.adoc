@@ -5,18 +5,13 @@ keywords:
 summary:
 ---
 
-= What is optimization capacity for volume groups
+= What is optimization capacity for volume groups?
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.468340
-//
 
 [.lead]
 SSD drives will have longer life and better maximum write performance when a portion of their capacity is unallocated.

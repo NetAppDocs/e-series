@@ -5,18 +5,13 @@ keywords:
 summary:
 ---
 
-= Why do I not see all of my storage arrays
+= Why do I not see all of my storage arrays?
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.059000
-//
 
 [.lead]
 During the Import Settings operation, some of your storage arrays might not be available in the target selection dialog box.

@@ -5,21 +5,16 @@ keywords:
 summary:
 ---
 
-= What settings are imported
+= What settings are imported?
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.055242
-//
 
 [.lead]
-The Import Settings feature is a batch operation that loads configurations from one storage array to multiple storage arrays. The settings that are imported during this operation depend on how the source storage array is configured in SANtricity System Manager.
+The Import Settings feature is a batch operation that loads configurations from one storage array to multiple storage arrays. The settings that are imported during this operation depend on how the source storage array is configured in System Manager.
 
 The following settings can be imported to multiple storage arrays:
 

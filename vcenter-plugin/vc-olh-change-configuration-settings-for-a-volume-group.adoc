@@ -6,43 +6,49 @@ summary:
 ---
 
 = Change configuration settings for a volume group
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.369921
-//
 
 [.lead]
 You can edit the settings for a volume group, including its name and RAID level.
 
-*Before you begin*
+.Before you begin
 
 If you are changing the RAID level to accommodate the performance needs of the applications that are accessing the volume group, be sure to meet the following prerequisites:
 
 * The volume group must be in Optimal status.
-* You must have enough capacity in the volume group to convert to the new RAID level.*Steps*
+* You must have enough capacity in the volume group to convert to the new RAID level.
+
+.Steps
 
 . From the *Manage* page, select the storage array with the volume group.
-. Select *Provisioning > Configure Pools and Volume Groups*.
-. Select the volume group that you want to edit, and then click *View/Edit Settings*. 
+. Select menu:Provisioning[Configure Pools and Volume Groups].
+. Select the volume group that you want to edit, and then click *View/Edit Settings*.
 +
 The Volume Group Settings dialog box appears.
 
 . Select the *Settings* tab, and then edit the volume group settings as appropriate.
-
++
+.Field Details
+[%collapsible]
+====
+[cols="1a,1a" options="header"]
 |===
 |Setting |Description
+a|
+Name
+a|
+You can change the user-supplied name of the volume group. Specifying a name for a volume group is required.
+a|
+RAID level
+a|
+Select the new RAID level from the drop-down menu.
 
-|Name
-|You can change the user-supplied name of the volume group. Specifying a name for a volume group is required.
-|RAID level
-|Select the new RAID level from the drop-down menu.
 * RAID 0 striping. Offers high performance but does not provide any data redundancy. If a single drive fails in the volume group, all the associated volumes fail, and all data is lost. A striping RAID group combines two or more drives into one large, logical drive.
 * RAID 1 mirroring. Offers high performance and the best data availability and is suitable for storing sensitive data on a corporate or personal level. Protects your data by automatically mirroring the contents of one drive to the second drive in the mirrored pair. It provides protection in the event of a single drive failure.
 * RAID 10 striping/mirroring. Provides a combination of RAID 0 (striping) and RAID 1 (mirroring) and is achieved when four or more drives are selected. RAID 10 is suitable for high volume transaction applications, such as a database, that require high performance and fault tolerance.
@@ -50,13 +56,18 @@ The Volume Group Settings dialog box appears.
 * RAID 6. Optimal for environments requiring redundancy protection beyond RAID 5, but not requiring high write performance.
 RAID 3 can be assigned only to volume groups using the command line interface (CLI).
 When you change the RAID level, you cannot cancel this operation after it begins. During the change, your data remains available.
-|Optimization capacity (EF600 arrays only)
-|When a volume group is created, a recommended optimization capacity is generated that provides a balance of available capacity versus performance and drive wear life. You can adjust this balance by moving the slider to the right for better performance and drive wear life at the expense of increased available capacity, or by moving it to the left for increased available capacity at the expense of better performance and drive wear life.
+a|
+Optimization capacity (EF600 arrays only)
+a|
+When a volume group is created, a recommended optimization capacity is generated that provides a balance of available capacity versus performance and drive wear life. You can adjust this balance by moving the slider to the right for better performance and drive wear life at the expense of increased available capacity, or by moving it to the left for increased available capacity at the expense of better performance and drive wear life.
 SSD drives will have longer life and better maximum write performance when a portion of their capacity is unallocated. For drives associated with a volume group, unallocated capacity is comprised of a group’s free capacity (capacity not used by volumes) and a portion of the usable capacity set aside as additional optimization capacity. The additional optimization capacity ensures a minimum level of optimization capacity by reducing the usable capacity, and as such, is not available for volume creation.
 |===
+====
 
-. Click *Save*.A confirmation dialog box appears if capacity is reduced, volume redundancy is lost, or shelf/ drawer loss protection is lost as a result of the RAID level change. Select *Yes* to continue; otherwise click *No*.
+. Click *Save*.
 
-*Result*
+A confirmation dialog box appears if capacity is reduced, volume redundancy is lost, or shelf/ drawer loss protection is lost as a result of the RAID level change. Select *Yes* to continue; otherwise click *No*.
+
+.Result
 
 If you change the RAID level for a volume group, the plugin changes the RAID levels of every volume that comprises the volume group. Performance might be slightly affected during the operation.

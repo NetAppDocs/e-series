@@ -6,30 +6,28 @@ summary:
 ---
 
 = Unassign volumes
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.277363
-//
 
 [.lead]
 If you no longer need I/O access to a volume, you can unassign it from the host or host cluster.
 
-*About this task*
+.About this task
 
 Keep these guidelines in mind when you unassign a volume:
 
 * If you are removing the last assigned volume from a host cluster, and the host cluster also has hosts with specific assigned volumes, make sure that you remove or move those assignments before removing the last assignment for the host cluster.
-* If a host cluster, a host, or a host port is assigned to a volume that is registered to the operating system, you must clear this registration before you can remove these nodes.*Steps*
+* If a host cluster, a host, or a host port is assigned to a volume that is registered to the operating system, you must clear this registration before you can remove these nodes.
+
+.Steps
 
 . From the *Manage* page, select the storage array with the host connection.
-. Select *Provisioning > Configure Hosts*. 
+. Select menu:Provisioning[Configure Hosts].
 +
 The Configure Hosts page opens.
 
@@ -38,7 +36,9 @@ The Configure Hosts page opens.
 A dialog box appears that shows all the volumes that are currently assigned.
 
 . Select the check box next to each volume that you want to unassign or select the check box in the table header to select all volumes.
-. Click *Unassign*.*Result*
+. Click *Unassign*.
+
+.Results
 
 * The volumes that were unassigned are available for a new assignment.
 * Until the changes are configured on the host, the volume is still recognized by the host operating system.

@@ -12,30 +12,26 @@ summary:
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:47.959099
-//
-
 [.lead]
 You can delete one or more certificates that are no longer needed, such as an expired certificate.
 
-*Before you begin*
+.Before you begin
 
 Import the new certificate before deleting the old one.
 
 CAUTION: Be aware that deleting a root or intermediate certificate can impact multiple storage arrays, since these arrays can share the same certificate files.
 
-*Steps*
+.Steps
 
 . Select *Certificate Management*.
 . Select the *Trusted* tab.
 . Select one or more certificates in the table, and then click *Delete*.
-
++
 [NOTE]
 The Delete function is not available for pre-installed certificates.
-
++
 The Confirm Delete Trusted Certificate dialog box opens.
-
-. Confirm the deletion, and then click *Delete*. The certificate is removed from the table.
++
+. Confirm the deletion, and then click *Delete*.
++
+The certificate is removed from the table.

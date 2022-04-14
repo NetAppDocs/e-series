@@ -12,26 +12,20 @@ summary:
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:47.956116
-//
-
 [.lead]
 You can export a certificate to view its complete details.
 
-*Before you begin*
+.Before you begin
 
 To open the exported file, you must have a certificate viewer application.
 
-*Steps*
+.Steps
 
-. Select Certificate Management.
+. Select *Certificate Management*.
 . Select one of the following tabs:
 
-** *Management.* Shows the certificate for the system hosting the plugin. A management certificate can be self-signed or approved by a certificate authority (CA). It allows secure access to the plugin.
-** *Trusted.* Shows certificates that the plugin can access for storage arrays and other remote servers, such as an LDAP server. The certificates can be issued from a certificate authority (CA) or can be self-signed.
+** *Management* -- Shows the certificate for the system hosting the plugin. A management certificate can be self-signed or approved by a certificate authority (CA). It allows secure access to the plugin.
+** *Trusted* -- Shows certificates that the plugin can access for storage arrays and other remote servers, such as an LDAP server. The certificates can be issued from a certificate authority (CA) or can be self-signed.
 
 . Select a certificate from the page, and then click the ellipses at the end of the row.
 . Click *Export*, and then save the certificate file.

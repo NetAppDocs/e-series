@@ -6,50 +6,56 @@ summary:
 ---
 
 = Check volume redundancy
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.389489
-//
-
 [.lead]
 Under the guidance of technical support or as instructed by the Recovery Guru, you can check the redundancy on a volume in a pool or volume group to determine whether the data on that volume is consistent. Redundancy data is used to quickly reconstruct information on a replacement drive if one of the drives in the pool or volume group fails.
 
-*Before you begin*
+.Before you begin
 
 * The status of the pool or volume group must be Optimal.
 * The pool or volume group must have no volume modification operations in progress.
-* You can check redundancy on any RAID level except on RAID 0, because RAID 0 has no data redundancy. (Pools are configured only as RAID 6.)Note: Check volume redundancy only when instructed to do so by the Recovery Guru and under the guidance of technical support.
+* You can check redundancy on any RAID level except on RAID 0, because RAID 0 has no data redundancy. (Pools are configured only as RAID 6.)
 
-*About this task*
+NOTE: Check volume redundancy only when instructed to do so by the Recovery Guru and under the guidance of technical support.
+
+.About this task
 
 You can perform this check only on one pool or volume group at a time. A volume redundancy check performs the following actions:
 
 * Scans the data blocks in a RAID 3 volume, a RAID 5 volume, or a RAID 6 volume, and checks the redundancy information for each block. (RAID 3 can only be assigned to volume groups using the command line interface.)
 * Compares the data blocks on RAID 1 mirrored drives.
-* Returns redundancy errors if the controller firmware determines that the data is inconsistent.Note: Immediately running a redundancy check on the same pool or volume group might cause an error. To avoid this problem, wait one to two minutes before running another redundancy check on the same pool or volume group.
+* Returns redundancy errors if the controller firmware determines that the data is inconsistent.
 
-*Steps*
+NOTE: Immediately running a redundancy check on the same pool or volume group might cause an error. To avoid this problem, wait one to two minutes before running another redundancy check on the same pool or volume group.
+
+.Steps
 
 . From the *Manage* page, select the storage array with the pool or volume group.
-. Select *Provisioning > Configure Pools and Volume Groups*.
-. Select *Uncommon Tasks > Check volume redundancy*.
+. Select menu:Provisioning[Configure Pools and Volume Groups].
+. Select menu:Uncommon Tasks[Check volume redundancy].
 +
 The Check Redundancy dialog box appears.
 
 . Select the volumes you want to check, and then type check to confirm you want to perform this operation.
-. Click *Check*.The check volume redundancy operation starts. The volumes in the pool or volume group are sequentially scanned, starting from the top of the table in the dialog box. These actions occur as each volume is scanned:
+. Click *Check*.
++
+The check volume redundancy operation starts. The volumes in the pool or volume group are sequentially scanned, starting from the top of the table in the dialog box. These actions occur as each volume is scanned:
 
 * The volume is selected in the volume table.
 * The status of the redundancy check is shown in the Status column.
 * The check stops on any media or parity error encountered, and then reports the error. The following table provide more information about the status of the redundancy check:
 
++
+.Field Details
+[%collapsible]
+====
+[cols="1a,1a" options="header"]
 |===
 |Status |Description
 
@@ -68,5 +74,6 @@ The redundancy check operation is being performed on other volumes in the pool o
 |Parity error
 |The parity is not what it should be for a given portion of the data. A parity error is potentially serious and could cause a permanent loss of data.
 |===
+====
 
-. Click Done after the last volume in the pool or volume group has been checked.
+. Click *Done* after the last volume in the pool or volume group has been checked.

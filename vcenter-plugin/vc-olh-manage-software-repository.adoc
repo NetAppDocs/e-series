@@ -6,42 +6,42 @@ summary:
 ---
 
 = Manage software repository
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.131308
-//
 
 [.lead]
-You can view and manage a software repository, which lists all software files associated with the SANtricity Storage Plugin for vCenter.
+You can view and manage a software repository, which lists all software files associated with the Storage Plugin for vCenter.
 
-*Before you begin*
+.Before you begin
 
 If you are using the repository to add SANtricity OS files, make sure that the OS files are available on your local system.
 
-*About this task*
+.About this task
 
 You can use the Manage SANtricity OS Software Repository option to import one or more OS files to the host system where the plugin is running. You can also choose to delete one or more OS files that are available in the software repository.
 
-*Steps*
+.Steps
 
-. From the main view, select *Manage*, and then select *Upgrade Center > Manage SANtricity ware Repository*.The Manage SANtricity OS Software Repository dialog appears.
+. From the main view, select *Manage*, and then select menu:Upgrade Center[Manage SANtricity Software Repository].
++
+The Manage SANtricity OS Software Repository dialog appears.
 
 . Do one of the following actions:
 
-* Import
+* *Import:*
 
 .. Click *Import*.
-.. Click *Browse*, and then navigate to the location where the OS files you want to add reside.  OS files have a filename similar to `N2800-830000-000.dlp`.
+.. Click *Browse*, and then navigate to the location where the OS files you want to add reside. OS files have a filename similar to `N2800-830000-000.dlp`.
 .. Select one or more OS files that you want to add, and then click *Import*.
 
-* Delete
+* *Delete:*
 
 .. Select one or more OS files that you want to remove from the software repository.
-.. Click *Delete*.If you selected import, the file(s) are uploaded and validated. If you selected delete, the files are removed from the software repository.
+.. Click *Delete*.
+
+If you selected import, the file(s) are uploaded and validated. If you selected delete, the files are removed from the software repository.
