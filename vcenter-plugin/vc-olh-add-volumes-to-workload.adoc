@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-add-volumes-to-workload.html
+permalink: vcenter-plugin/vc-olh-add-volumes-to-workload.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Add unassigned volumes to an existing or new workload.
 ---

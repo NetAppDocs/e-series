@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-remove-capacity.html
+permalink: vcenter-plugin/vc-olh-remove-capacity.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: You can remove drives to decrease the capacity of an existing pool or SSD Cache.
 ---

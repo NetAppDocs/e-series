@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-perform-pre-upgrade-health-check.html
+permalink: vcenter-plugin/vc-olh-perform-pre-upgrade-health-check.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: A health check runs as part of the upgrade process, but you also can run a health check separately before you begin.
 ---

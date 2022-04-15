@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-use-ca-signed-certificates.html
+permalink: vcenter-plugin/vc-olh-use-ca-signed-certificates.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Obtain and import CA-signed certificates for secure access to the management system hosting the Storage Plugin for vCenter.
 ---

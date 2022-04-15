@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-what-is-fde-fips-security.html
+permalink: vcenter-plugin/vc-olh-what-is-fde-fips-security.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: FDE/FIPS security refers to secure-capable drives that encrypt data during writes and decrypt data during reads using a unique encryption key.
 ---

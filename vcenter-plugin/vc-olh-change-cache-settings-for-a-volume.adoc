@@ -1,8 +1,9 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-change-cache-settings-for-a-volume.html
-keywords:
 summary:
+permalink: vcenter-plugin/vc-olh-change-cache-settings-for-a-volume.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: You can change read cache and write cache settings to impact the overall I/O performance of a volume.
 ---
 
 = Change cache settings for a volume

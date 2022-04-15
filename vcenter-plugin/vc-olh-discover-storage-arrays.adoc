@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-discover-storage-arrays.html
+permalink: vcenter-plugin/vc-olh-discover-storage-arrays.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: To display and manage storage resources in the Storage Plugin for vCenter, you must discover the IP addresses of arrays in your network.
 ---

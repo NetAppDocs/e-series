@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-import-storage-configuration-settings.html
+permalink: vcenter-plugin/vc-olh-import-storage-configuration-settings.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Import the storage configuration from one storage array to other storage arrays.
 ---

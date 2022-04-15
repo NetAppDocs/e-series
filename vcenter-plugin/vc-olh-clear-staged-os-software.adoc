@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-clear-staged-os-software.html
+permalink: vcenter-plugin/vc-olh-clear-staged-os-software.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: You can remove staged OS software to ensure that a pending version is not inadvertently activated at a later time.
 ---

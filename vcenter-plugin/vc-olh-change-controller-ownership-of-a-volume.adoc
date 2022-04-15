@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-change-controller-ownership-of-a-volume.html
+permalink: vcenter-plugin/vc-olh-change-controller-ownership-of-a-volume.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Change the preferred controller ownership of a volume, so that I/O for host applications is directed through the new path.
 ---

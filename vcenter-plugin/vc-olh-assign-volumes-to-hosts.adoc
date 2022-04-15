@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-assign-volumes-to-hosts.html
+permalink: vcenter-plugin/vc-olh-assign-volumes-to-hosts.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: You must assign a volume to a host or a host cluster so it can be used for I/O operations.
 ---

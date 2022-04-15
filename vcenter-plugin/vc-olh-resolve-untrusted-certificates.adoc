@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-resolve-untrusted-certificates.html
+permalink: vcenter-plugin/vc-olh-resolve-untrusted-certificates.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Resolve untrusted certificates by importing a self-signed certificate from the storage array or by importing a certificate authority (CA) certificate that has been issued by a trusted third party.
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-increase-capacity-of-a-volume.html
+permalink: vcenter-plugin/vc-olh-increase-capacity-of-a-volume.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Resize a volume to increase its reported capacity.
 ---

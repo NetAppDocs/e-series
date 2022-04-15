@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-create-storage.html
+permalink: vcenter-plugin/vc-olh-create-storage.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Create storage by first creating a workload for a specific application type. Next, you add storage capacity to the workload by creating volumes with similar underlying volume characteristics.
 ---

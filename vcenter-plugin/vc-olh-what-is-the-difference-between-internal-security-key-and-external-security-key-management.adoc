@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-what-is-the-difference-between-internal-security-key-and-external-security-key-management.html
+permalink: vcenter-plugin/vc-olh-what-is-the-difference-between-internal-security-key-and-external-security-key-management.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: When you implement the Drive Security feature, you can use an internal security key or an external security key to lock down data when a secure-enabled drive is removed from the storage array.
 ---

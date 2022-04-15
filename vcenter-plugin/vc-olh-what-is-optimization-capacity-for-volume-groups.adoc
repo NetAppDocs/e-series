@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-what-is-optimization-capacity-for-volume-groups.html
+permalink: vcenter-plugin/vc-olh-what-is-optimization-capacity-for-volume-groups.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: SSD drives will have longer life and better maximum write performance when a portion of their capacity is unallocated.
 ---

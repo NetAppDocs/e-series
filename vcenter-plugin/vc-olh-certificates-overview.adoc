@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-certificates-overview.html
+permalink: vcenter-plugin/vc-olh-certificates-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Certificate Management allows you to create certificate signing requests (CSRs), import certificates, and manage existing certificates.
 ---

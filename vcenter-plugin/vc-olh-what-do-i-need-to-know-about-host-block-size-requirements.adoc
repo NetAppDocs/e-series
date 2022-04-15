@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-what-do-i-need-to-know-about-host-block-size-requirements.html
+permalink: vcenter-plugin/vc-olh-what-do-i-need-to-know-about-host-block-size-requirements.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: For EF300 and EF600 systems, a volume can be set to support a 512-byte or a 4KiB block size (also called "sector size"). You must set the correct value during volume creation.
 ---

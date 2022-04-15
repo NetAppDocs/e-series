@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-remove-storage-arrays-from-group.html
+permalink: vcenter-plugin/vc-olh-remove-storage-arrays-from-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Remove one or more managed storage arrays from a group if you no longer want to manage it from a specific storage group.
 ---

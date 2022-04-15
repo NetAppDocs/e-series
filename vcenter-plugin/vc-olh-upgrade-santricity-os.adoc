@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-upgrade-santricity-os.html
+permalink: vcenter-plugin/vc-olh-upgrade-santricity-os.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Upgrade one or more storage arrays with the latest software and NVSRAM to make sure that you have all the latest features and bug fixes.
 ---

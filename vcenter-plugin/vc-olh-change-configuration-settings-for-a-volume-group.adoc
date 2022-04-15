@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-change-configuration-settings-for-a-volume-group.html
+permalink: vcenter-plugin/vc-olh-change-configuration-settings-for-a-volume-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: edit the settings for a volume group, including its name and RAID level.
 ---

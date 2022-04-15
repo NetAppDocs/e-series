@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-what-is-data-assurance.html
+permalink: vcenter-plugin/vc-olh-what-is-data-assurance.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Data Assurance (DA) implements the T10 Protection Information (PI) standard, which increases data integrity by checking for and correcting errors that might occur as data is transferred along the I/O path.
 ---

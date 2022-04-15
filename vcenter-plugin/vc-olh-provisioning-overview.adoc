@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-provisioning-overview.html
+permalink: vcenter-plugin/vc-olh-provisioning-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: You can create data containers, called volumes, so the host can access storage on the array.
 ---

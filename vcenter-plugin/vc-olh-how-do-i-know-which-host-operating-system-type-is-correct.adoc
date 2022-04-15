@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-how-do-i-know-which-host-operating-system-type-is-correct.html
+permalink: vcenter-plugin/vc-olh-how-do-i-know-which-host-operating-system-type-is-correct.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: The Host Operating System Type field contains the operating system of the host. You can select the recommended host type from the drop-down list or allow the Host Context Agent (HCA) to configure the host and appropriate host operating system type.
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-reset-management-certificates.html
+permalink: vcenter-plugin/vc-olh-reset-management-certificates.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Revert the management certificate to the original, factory self-signed state.
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-why-can-i-not-delete-the-selected-workload.html
+permalink: vcenter-plugin/vc-olh-why-can-i-not-delete-the-selected-workload.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Volumes in this workload are not associated with an application-specific workload, so the workload cannot be deleted.
 ---

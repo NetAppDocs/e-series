@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-change-the-settings-for-a-host.html
+permalink: vcenter-plugin/vc-olh-change-the-settings-for-a-host.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: You can change the name, host operating system type, and associated host clusters for a host or host cluster.
 ---

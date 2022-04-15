@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-what-do-i-need-to-know-before-creating-a-security-key.html
+permalink: vcenter-plugin/vc-olh-what-do-i-need-to-know-before-creating-a-security-key.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: A security key is shared by controllers and secure-enabled drives within a storage array.
 ---

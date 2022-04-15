@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-change-ssd-cache-settings.html
+permalink: vcenter-plugin/vc-olh-change-ssd-cache-settings.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Edit the name of the SSD Cache and view its status, maximum and current capacity, Drive Security and Data Assurance status, and its associated volumes and drives.
 ---

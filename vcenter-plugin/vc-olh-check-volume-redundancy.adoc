@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-check-volume-redundancy.html
+permalink: vcenter-plugin/vc-olh-check-volume-redundancy.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: You can check the redundancy on a volume in a pool or volume group to determine whether the data on that volume is consistent. Redundancy data is used to quickly reconstruct information on a replacement drive if one of the drives in the pool or volume group fails.
 ---

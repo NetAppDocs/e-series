@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-how-does-my-selected-workload-impact-volume-creation.html
+permalink: vcenter-plugin/vc-olh-how-does-my-selected-workload-impact-volume-creation.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: During volume creation, you are prompted for information about a workload’s use.
 ---

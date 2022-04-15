@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-change-settings-for-a-volume.html
+permalink: vcenter-plugin/vc-olh-change-settings-for-a-volume.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Change a volume's settings such as its name, host assignment, segment size, modification priority, caching, and so on.
 ---

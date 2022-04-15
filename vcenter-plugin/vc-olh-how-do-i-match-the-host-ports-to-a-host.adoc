@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-how-do-i-match-the-host-ports-to-a-host.html
+permalink: vcenter-plugin/vc-olh-how-do-i-match-the-host-ports-to-a-host.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: If you are manually creating a host, you first must use the appropriate host bus adapter (HBA) utility available on the host to determine the host port identifiers associated with each HBA installed in the host.
 ---

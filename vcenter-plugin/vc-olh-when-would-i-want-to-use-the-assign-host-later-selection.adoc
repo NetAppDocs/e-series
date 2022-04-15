@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-when-would-i-want-to-use-the-assign-host-later-selection.html
+permalink: vcenter-plugin/vc-olh-when-would-i-want-to-use-the-assign-host-later-selection.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: If you want to speed the process for creating volumes, you can skip the host assignment step so that newly created volumes are initialized offline.
 ---

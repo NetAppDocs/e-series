@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-initialize-volumes.html
+permalink: vcenter-plugin/vc-olh-initialize-volumes.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Manually initialize a volume to recover from certain failure conditions.
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-create-host-cluster.html
+permalink: vcenter-plugin/vc-olh-create-host-cluster.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: When two or more hosts require I/O access to the same volumes, you can create a host cluster.
 ---

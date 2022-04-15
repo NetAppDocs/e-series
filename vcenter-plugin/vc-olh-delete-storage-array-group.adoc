@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-delete-storage-array-group.html
+permalink: vcenter-plugin/vc-olh-delete-storage-array-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Remove one or more storage array groups that are no longer needed.
 ---

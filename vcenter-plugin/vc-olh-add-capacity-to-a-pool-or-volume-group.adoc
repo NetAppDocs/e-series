@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-add-capacity-to-a-pool-or-volume-group.html
+permalink: vcenter-plugin/vc-olh-add-capacity-to-a-pool-or-volume-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Add drives to expand the free capacity in an existing pool or volume group.
 ---

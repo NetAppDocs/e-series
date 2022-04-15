@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-why-are-some-drives-not-showing-up.html
+permalink: vcenter-plugin/vc-olh-why-are-some-drives-not-showing-up.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: In the Add Capacity dialog, not all drives are available for adding capacity to an existing pool or volume group.
 ---

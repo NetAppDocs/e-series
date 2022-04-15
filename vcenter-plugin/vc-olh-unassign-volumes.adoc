@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-unassign-volumes.html
+permalink: vcenter-plugin/vc-olh-unassign-volumes.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: If you no longer need I/O access to a volume, you can unassign it from the host or host cluster.
 ---

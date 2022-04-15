@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-change-configuration-settings-for-a-pool.html
+permalink: vcenter-plugin/vc-olh-change-configuration-settings-for-a-pool.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Edit the settings for a pool, including its name, capacity alerts settings, modification priorities, and preservation capacity.
 ---
