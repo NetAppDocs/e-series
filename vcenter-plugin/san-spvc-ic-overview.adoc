@@ -4,6 +4,14 @@ permalink: vcenter-plugin/san-spvc-ic-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter, VMware vSphere Client
 summary: The SANtricity Storage Plugin for vCenter provides integrated management of E-Series storage arrays from within a VMware vSphere Client session.
 ---
+
+= Overview of the Storage Plugin for vCenter
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
 [.lead]
 The SANtricity Storage Plugin for vCenter provides integrated management of E-Series storage arrays from within a VMware vSphere Client session.
 
