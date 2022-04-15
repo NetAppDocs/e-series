@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-initialize-volumes.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Manually initialize a volume to recover from certain failure conditions.
 ---
 
 = Initialize volumes
@@ -42,7 +42,7 @@ This procedure applies only to standard volumes created from pools or volume gro
 
 .Steps
 
-. From the *Manage* page, select the storage array that contains the volumes you want to  initialize.
+. From the *Manage* page, select the storage array that contains the volumes you want to initialize.
 . Select menu:Provisioning[Manage Volumes].
 . Select any volume, and then select menu:More[Initialize volumes].
 +
@@ -50,7 +50,7 @@ The Initialize Volumes dialog box appears. All volumes on the storage array appe
 
 . Select one or more volumes that you want to initialize and confirm that you want to perform the operation.
 
-.Result
+.Results
 
 The system performs the following actions:
 

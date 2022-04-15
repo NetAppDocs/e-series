@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-discover-storage-arrays.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: To display and manage storage resources in the Storage Plugin for vCenter, you must discover the IP addresses of arrays in your network.
 ---
 
 = Discover storage arrays
@@ -57,7 +57,7 @@ If no manageable arrays are discovered, verify that the storage arrays are prope
 The system performs a credential check on each array you are adding to the management domain. You might need to resolve any issues with untrusted certificates before proceeding.
 
 . Click *Next* to proceed to the next step in the wizard.
-. If the storage arrays have valid certificates, go to <<Step 3: Provide passwords>>. If any storage arrays do not have valid certificates, the Step 2: Resolve Self-Signed Certificates dialog box appears; go to <<Step 2: Resolve untrusted certificates during discovery>>. If you want to import CA-signed certificates, cancel out of the discovery dialogs and go to link:vc-olh-import-certificates-for-arrays.html[Import certificates for arrays].
+. If the storage arrays have valid certificates, go to <<Step 3: Provide passwords>>. If any storage arrays do not have valid certificates, the Resolve Self-Signed Certificates dialog box appears; go to <<Step 2: Resolve untrusted certificates during discovery>>. If you want to import CA-signed certificates, cancel out of the discovery dialogs and go to link:vc-olh-import-certificates-for-arrays.html[Import certificates for arrays].
 
 == Step 2: Resolve untrusted certificates during discovery
 
@@ -65,7 +65,7 @@ If necessary, you must resolve any certificate issues before proceeding with the
 
 .About this task
 
-During discovery, if any storage arrays show an "Untrusted Certificates" status, the "Step 2: Resolve Self-Signed Certificates" dialog box appears. You can resolve untrusted certificates in this dialog, or you can import CA certificates (see link:vc-olh-import-certificates-for-arrays.html[Import certificates for arrays]).
+During discovery, if any storage arrays show an "Untrusted Certificates" status, the Resolve Self-Signed Certificates dialog box appears. You can resolve untrusted certificates in this dialog, or you can import CA certificates (see link:vc-olh-import-certificates-for-arrays.html[Import certificates for arrays]).
 
 .Steps
 
@@ -93,6 +93,8 @@ As the last step for discovery, you must enter the passwords for the storage arr
 [NOTE]
 It can take several minutes for the system to connect to the specified storage arrays.
 
+.Result
+
 The storage arrays are added to your management domain and associated with the selected group (if specified).
 
-You can use the Launch option to open the browser-based System Manager for one or more storage arrays when you want to perform management operations.
+NOTE: You can use the Launch option to open the browser-based System Manager for one or more storage arrays when you want to perform management operations.

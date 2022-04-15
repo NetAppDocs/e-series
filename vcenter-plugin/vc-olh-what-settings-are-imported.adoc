@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-what-settings-are-imported.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: The Import Settings feature is a batch operation that loads configurations from one storage array to multiple storage arrays. The settings that are imported during this operation depend on how the source storage array is configured in System Manager.
 ---
 
 = What settings are imported?
@@ -14,14 +14,14 @@ summary:
 
 
 [.lead]
-The Import Settings feature is a batch operation that loads configurations from one storage array to multiple storage arrays. The settings that are imported during this operation depend on how the source storage array is configured in System Manager.
+The Import Settings feature is a batch operation that loads configurations from one storage array to multiple storage arrays.
 
-The following settings can be imported to multiple storage arrays:
+The settings that are imported during this operation depend on how the source storage array is configured in System Manager. The following settings can be imported to multiple storage arrays:
 
-* *Email alerts.* Settings include a mail server address and the email addresses of the alert recipients.
-* *Syslog alerts.* Settings include a syslog server address and a UDP port.
-* *SNMP alerts.* Settings include a community name and IP address for the SNMP server.
-* *AutoSupport.* Settings include the separate features (Basic AutoSupport, AutoSupport OnDemand, and Remote Diagnostics), the maintenance window, delivery method, and dispatch schedule.
-* *Directory services.* Configuration includes the domain name and URL of an LDAP (Lightweight Directory Access Protocol) server, along with the mappings for the LDAP server's user groups to the storage array's predefined roles.
-* *Storage configuration.* Configurations include volumes (only thick and only non-repository volumes), volume groups, pools, and hot spare drive assignments.
-* *System settings.* Configurations include media scan settings for a volume, SSD cache for controllers, and automatic load balancing (does not include host connectivity reporting).
+* *Email alerts* -- Settings include a mail server address and the email addresses of the alert recipients.
+* *Syslog alerts* -- Settings include a syslog server address and a UDP port.
+* *SNMP alerts* -- Settings include a community name and IP address for the SNMP server.
+* *AutoSupport* -- Settings include the separate features (Basic AutoSupport, AutoSupport OnDemand, and Remote Diagnostics), the maintenance window, delivery method, and dispatch schedule.
+* *Directory services* -- Configuration includes the domain name and URL of an LDAP (Lightweight Directory Access Protocol) server, along with the mappings for the LDAP server's user groups to the storage array's predefined roles.
+* *Storage configuration* -- Configurations include volumes (only thick and only non-repository volumes), volume groups, pools, and hot spare drive assignments.
+* *System settings* -- Configurations include media scan settings for a volume, SSD cache for controllers, and automatic load balancing (does not include host connectivity reporting).

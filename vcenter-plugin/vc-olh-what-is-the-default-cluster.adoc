@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-what-is-the-default-cluster.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: The default cluster is a system-defined entity that allows any unassociated host port identifier that has logged into the storage array to gain access to volumes assigned to the default cluster.
 ---
 
 = What is the default cluster?
@@ -14,7 +14,9 @@ summary:
 
 
 [.lead]
-The default cluster is a system-defined entity that allows any unassociated host port identifier that has logged into the storage array to gain access to volumes assigned to the default cluster. An unassociated host port identifier is a host port that is not logically associated with a particular host but is physically installed in a host and logged into the storage array.
+The default cluster is a system-defined entity that allows any unassociated host port identifier that has logged into the storage array to gain access to volumes assigned to the default cluster.
+
+An unassociated host port identifier is a host port that is not logically associated with a particular host but is physically installed in a host and logged into the storage array.
 
 NOTE: If you want hosts to have specific access to certain volumes in the storage array, you must not use the default cluster. Instead, you must associate the host port identifiers with their corresponding hosts. This task can be done either manually during the Create Host operation or automatically using the host context agent (HCA) installed on each host. Then, you assign volumes either to an individual host or to a host cluster.
 

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-create-pool-manually.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: You can create a pool manually if your setup does not meet the requirements for automatic pool configuration. A pool is a set of logically grouped drives.
 ---
 
 = Create pool manually
@@ -12,7 +12,6 @@ summary:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
-
 
 [.lead]
 You can create a pool manually if your setup does not meet the requirements for automatic pool configuration. A pool is a set of logically grouped drives.
@@ -68,21 +67,23 @@ Drive Block Size (EF300 and EF600 only)
 a|
 Shows the block size (sector size) that the drives in the pool can write. Values may include:
 
-* 512. 512-byte sector size.
-* 4K. 4,096-byte sector size.
+* 512 -- 512-byte sector size.
+* 4K -- 4,096-byte sector size.
 
 a|
 Secure-Capable
 a|
 Indicates whether this pool candidate is comprised entirely of secure-capable drives, which can be either Full Disk Encryption (FDE) drives or Federal Information Processing Standard (FIPS) drives.
-You can protect your pool with Drive Security, but all drives must be secure- capable to use this feature.
-If you want to create an FDE-only pool, look for Yes - FDE in the Secure- Capable column. If you want to create a FIPS-only pool, look for Yes - FIPS in the Secure-Capable column.
-You can create a pool comprised of drives that may or may not be secure- capable or are a mix of security levels. If the drives in the pool include drives that are not secure-capable, you cannot make the pool secure.
+
+* You can protect your pool with Drive Security, but all drives must be secure- capable to use this feature.
+* If you want to create an FDE-only pool, look for "Yes - FDE" in the Secure- Capable column. If you want to create a FIPS-only pool, look for Yes - FIPS in the Secure-Capable column.
+* You can create a pool comprised of drives that may or may not be secure- capable or are a mix of security levels. If the drives in the pool include drives that are not secure-capable, you cannot make the pool secure.
 a|
 Enable Security?
 a|
 Provides the option for enabling the Drive Security feature with secure-capable drives. If the pool is secure-capable and you have created a security key, you can enable security by selecting the check box.
-The only way to remove Drive Security after it is enabled is to delete the pool and erase the drives.
+
+NOTE: The only way to remove Drive Security after it is enabled is to delete the pool and erase the drives.
 a|
 DA Capable
 a|
@@ -108,8 +109,8 @@ Volume Block Sizes Supported (EF300 and EF600 only)
 a|
 Shows the block sizes that can be created for the volumes in the pool:
 
-* 512n. 512 bytes native.
-* 512e. 512 bytes emulated.
-* 4K. 4,096 bytes.
+* 512n -- 512 bytes native.
+* 512e -- 512 bytes emulated.
+* 4K -- 4,096 bytes.
 |===
 ====

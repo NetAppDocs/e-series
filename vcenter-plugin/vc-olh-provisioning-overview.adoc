@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-provisioning-overview.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: You can create data containers, called volumes, so the host can access storage on the array.
 ---
 
 = Provisioning overview
@@ -79,7 +79,7 @@ During volume creation, the system prompts you to answer questions about a workl
 
 You can create two types of workloads: application-specific and other.
 
-* *Application-specific.* When you are creating volumes using an application-specific workload, the system may recommend an optimized volume configuration to minimize contention between application workload I/O and other traffic from your application instance. Volume characteristics like I/O type, segment size, controller ownership, and read and write cache are automatically recommended and optimized for workloads that are created for the following application types.
+* *Application-specific* -- When you are creating volumes using an application-specific workload, the system may recommend an optimized volume configuration to minimize contention between application workload I/O and other traffic from your application instance. Volume characteristics like I/O type, segment size, controller ownership, and read and write cache are automatically recommended and optimized for workloads that are created for the following application types.
 ** Microsoft SQL Server
 ** Microsoft Exchange Server
 ** Video Surveillance applications
@@ -87,11 +87,11 @@ You can create two types of workloads: application-specific and other.
 +
 You can review the recommended volume configuration and edit, add, or delete the system-recommended volumes and characteristics using the Add/Edit Volumes dialog box.
 
-* *Other (or applications without specific volume creation support).* Other workloads use a volume configuration that you must manually specify when you want to create a workload that is not associated with a specific application, or if the system does not have built-in optimization for the application you intend to use on the storage array. You must manually specify the volume configuration using the Add/Edit Volumes dialog box.
+* *Other (or applications without specific volume creation support)* -- Other workloads use a volume configuration that you must manually specify when you want to create a workload that is not associated with a specific application, or if the system does not have built-in optimization for the application you intend to use on the storage array. You must manually specify the volume configuration using the Add/Edit Volumes dialog box.
 
 === Application and workload views
 
-To view applications and workloads, launch SANtricity System Manager. From that interface, you can view information associated with an application-specific workload in a couple of different ways:
+To view applications and workloads, launch System Manager. From that interface, you can view information associated with an application-specific workload in a couple of different ways:
 
 * You can select the Applications & Workloads tab in the Volumes tile to view the storage array’s volumes grouped by workload and the application type the workload is associated with.
 * You can select the Applications & Workloads tab in the Performance tile to view performance metrics (latency, IOPS, and MBs) for logical objects. The objects are grouped by application and associated workload. By collecting this performance data at regular intervals, you can establish baseline measurements and analyze trends, which can help as you investigate problems related to I/O performance.

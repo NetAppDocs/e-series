@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-certificates-overview.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Certificate Management allows you to create certificate signing requests (CSRs), import certificates, and manage existing certificates.
 ---
 
 = Certificates overview
@@ -16,7 +16,7 @@ summary:
 Certificate Management allows you to create certificate signing requests (CSRs), import certificates, and manage existing certificates.
 
 == What are certificates?
-Certificates are digital files that identify online entities, such as websites and servers, for secure communications on the internet. They ensure that web communications are transmitted in encrypted form, privately and unaltered, only between the specified server and client. Using the SANtricity Storage Plugin for vCenter, you can manage certificates for the browser on a host management system and the controllers in the discovered storage arrays.
+Certificates are digital files that identify online entities, such as websites and servers, for secure communications on the internet. They ensure that web communications are transmitted in encrypted form, privately and unaltered, only between the specified server and client. Using the Storage Plugin for vCenter, you can manage certificates for the browser on a host management system and the controllers in the discovered storage arrays.
 
 A certificate can be signed by a trusted authority, or it can be self-signed. "Signing" simply means that someone validated the owner’s identity and determined that their devices can be trusted.
 

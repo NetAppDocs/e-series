@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-how-do-i-view-and-interpret-all-ssd-cache-statistics.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: You can view nominal statistics and detailed statistics for SSD Cache.
 ---
 
 = How do I view and interpret all SSD Cache statistics?
@@ -15,7 +15,9 @@ summary:
 
 
 [.lead]
-You can view nominal statistics and detailed statistics for SSD Cache. Nominal statistics are a subset of the detailed statistics. The detailed statistics can be viewed only when you export all SSD statistics to a .csv file. As you review and interpret the statistics, keep in mind that some interpretations are derived by looking at a combination of statistics.
+You can view nominal statistics and detailed statistics for SSD Cache.
+
+Nominal statistics are a subset of the detailed statistics. The detailed statistics can be viewed only when you export all SSD statistics to a .csv file. As you review and interpret the statistics, keep in mind that some interpretations are derived by looking at a combination of statistics.
 
 === Nominal statistics
 

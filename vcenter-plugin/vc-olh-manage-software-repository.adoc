@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-manage-software-repository.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: You can view and manage a software repository, which lists all software files associated with the Storage Plugin for vCenter.
 ---
 
 = Manage software repository
@@ -31,7 +31,7 @@ You can use the Manage SANtricity OS Software Repository option to import one or
 +
 The Manage SANtricity OS Software Repository dialog appears.
 
-. Do one of the following actions:
+. Perform one of the following actions:
 
 * *Import:*
 
@@ -43,5 +43,7 @@ The Manage SANtricity OS Software Repository dialog appears.
 
 .. Select one or more OS files that you want to remove from the software repository.
 .. Click *Delete*.
+
+.Result
 
 If you selected import, the file(s) are uploaded and validated. If you selected delete, the files are removed from the software repository.

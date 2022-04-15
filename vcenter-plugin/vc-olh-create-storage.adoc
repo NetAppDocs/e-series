@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-create-storage.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Create storage by first creating a workload for a specific application type. Next, you add storage capacity to the workload by creating volumes with similar underlying volume characteristics.
 ---
 
 = Create storage
@@ -179,9 +179,9 @@ a|
 Segment Size
 a|
 Shows the setting for segment sizing, which only appears for volumes in a volume group. You can change the segment size to optimize performance.
-Allowed segment size transitions. The system determines the segment size transitions that are allowed. Segment sizes that are inappropriate transitions from the current segment size are unavailable on the drop-down list. Allowed transitions usually are double or half of the current segment size. For example, if the current volume segment size is 32 KiB, a new volume segment size of either 16 KiB or 64 KiB is allowed.
-SSD Cache-enabled volumes. You can specify a 4-KiB segment size for SSD Cache-enabled volumes. Make sure you select the 4-KiB segment size only for SSD Cache-enabled volumes that handle small-block I/O operations (for example, 16 KiB I/O block sizes or smaller). Performance might be impacted if you select 4 KiB as the segment size for SSD Cache-enabled volumes that handle large block sequential operations.
-Amount of time to change segment size. The amount of time to change a volume's segment size depends on these variables:
+*Allowed segment size transitions.* The system determines the segment size transitions that are allowed. Segment sizes that are inappropriate transitions from the current segment size are unavailable on the drop-down list. Allowed transitions usually are double or half of the current segment size. For example, if the current volume segment size is 32 KiB, a new volume segment size of either 16 KiB or 64 KiB is allowed.
+*SSD Cache-enabled volumes.* You can specify a 4-KiB segment size for SSD Cache-enabled volumes. Make sure you select the 4-KiB segment size only for SSD Cache-enabled volumes that handle small-block I/O operations (for example, 16 KiB I/O block sizes or smaller). Performance might be impacted if you select 4 KiB as the segment size for SSD Cache-enabled volumes that handle large block sequential operations.
+*Amount of time to change segment size.* The amount of time to change a volume's segment size depends on these variables:
 
 * The I/O load from the host
 * The modification priority of the volume
@@ -193,18 +193,18 @@ When you change the segment size for a volume, I/O performance is affected, but 
 a|
 Secure-capable
 a|
-“Yes” appears next to "Secure-capable" only if the drives in the pool or volume group are secure-capable.
+“Yes” appears next to “Secure-capable” only if the drives in the pool or volume group are secure-capable.
 Drive Security prevents unauthorized access to the data on a drive that is physically removed from the storage array. This option is available only when the Drive Security feature has been enabled, and a security key is set up for the storage array.
 A pool or volume group can contain both secure-capable and non-secure-capable drives, but all drives must be secure-capable to use their encryption capabilities.
 a|
 DA
 a|
-Yes appears next to DA only if the drives in the pool or volume group support Data Assurance (DA).
+“Yes” appears next to “DA” only if the drives in the pool or volume group support Data Assurance (DA).
 DA increases data integrity across the entire storage system. DA enables the storage array to check for errors that might occur as data is transferred through the controllers down to the drives. Using DA for the new volume ensures that any errors are detected.
 a|
 Resource provisioned (EF300 and EF600 only)
 a|
-Yes appears next to Resource provisioned only if the drives support this option. Resource Provisioning is a feature available in the EF300 and EF600 storage arrays, which allows volumes to be put in use immediately with no background initialization process.
+“Yes” appears next to “Resource provisioned” only if the drives support this option. Resource Provisioning is a feature available in the EF300 and EF600 storage arrays, which allows volumes to be put in use immediately with no background initialization process.
 |===
 ====
 
@@ -235,15 +235,15 @@ Volume Block Size (EF300 and EF600 only)
 a|
 Shows the block sizes that can be created for the volume:
 
-* 512. 512 bytes
-* 4K. 4,096 bytes
+* 512 -- 512 bytes
+* 4K -- 4,096 bytes
 a|
 Segment Size
 a|
 Shows the setting for segment sizing, which only appears for volumes in a volume group. You can change the segment size to optimize performance.
-Allowed segment size transitions. The system determines the segment size transitions that are allowed. Segment sizes that are inappropriate transitions from the current segment size are unavailable on the drop-down list. Allowed transitions usually are double or half of the current segment size. For example, if the current volume segment size is 32 KiB, a new volume segment size of either 16 KiB or 64 KiB is allowed.
-SSD Cache-enabled volumes. You can specify a 4-KiB segment size for SSD Cache-enabled volumes. Make sure you select the 4-KiB segment size only for SSD Cache-enabled volumes that handle small-block I/O operations (for example, 16 KiB I/O block sizes or smaller). Performance might be impacted if you select 4 KiB as the segment size for SSD Cache-enabled volumes that handle large block sequential operations.
-Amount of time to change segment size. The amount of time to change a volume's segment size depends on these variables:
+*Allowed segment size transitions.* The system determines the segment size transitions that are allowed. Segment sizes that are inappropriate transitions from the current segment size are unavailable on the drop-down list. Allowed transitions usually are double or half of the current segment size. For example, if the current volume segment size is 32 KiB, a new volume segment size of either 16 KiB or 64 KiB is allowed.
+*SSD Cache-enabled volumes.* You can specify a 4-KiB segment size for SSD Cache-enabled volumes. Make sure you select the 4-KiB segment size only for SSD Cache-enabled volumes that handle small-block I/O operations (for example, 16 KiB I/O block sizes or smaller). Performance might be impacted if you select 4 KiB as the segment size for SSD Cache-enabled volumes that handle large block sequential operations.
+*Amount of time to change segment size.* The amount of time to change a volume's segment size depends on these variables:
 
 * The I/O load from the host
 * The modification priority of the volume
@@ -255,18 +255,18 @@ When you change the segment size for a volume, I/O performance is affected, but 
 a|
 Secure-capable
 a|
-Yes appears next to "Secure-capable" only if the drives in the pool or volume group are secure-capable.
+“Yes” appears next to “Secure-capable” only if the drives in the pool or volume group are secure-capable.
 Drive security prevents unauthorized access to the data on a drive that is physically removed from the storage array. This option is available only when the drive security feature has been enabled, and a security key is set up for the storage array.
 A pool or volume group can contain both secure-capable and non-secure-capable drives, but all drives must be secure-capable to use their encryption capabilities.
 a|
 DA
 a|
-Yes appears next to DA only if the drives in the pool or volume group support Data Assurance (DA).
+“Yes” appears next to “DA” only if the drives in the pool or volume group support Data Assurance (DA).
 DA increases data integrity across the entire storage system. DA enables the storage array to check for errors that might occur as data is transferred through the controllers down to the drives. Using DA for the new volume ensures that any errors are detected.
 a|
 Resource provisioned (EF300 and EF600 only)
 a|
-Yes appears next to Resource Provisioned only if the drives support this option. Resource Provisioning is a feature available in the EF300 and EF600 storage arrays, which allows volumes to be put in use immediately with no background initialization process.
+“Yes” appears next to “Resource Provisioned” only if the drives support this option. Resource Provisioning is a feature available in the EF300 and EF600 storage arrays, which allows volumes to be put in use immediately with no background initialization process.
 |===
 ====
 

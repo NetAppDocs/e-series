@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-what-do-i-need-to-know-before-creating-a-security-key.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: A security key is shared by controllers and secure-enabled drives within a storage array.
 ---
 
 = What do I need to know before creating a security key?
@@ -22,7 +22,7 @@ You can create and manage security keys using one of the following methods:
 * Internal key management on the controller's persistent memory.
 * External key management on an external key management server.
 
-=== Internal key management
+== Internal key management
 
 Internal keys are maintained and “hidden” in a non-accessible location on the controller's persistent memory. Before creating an internal security key, you must do the following:
 
@@ -31,7 +31,7 @@ Internal keys are maintained and “hidden” in a non-accessible location on th
 
 You can then create an internal security key, which involves defining an identifier and a pass phrase. The identifier is a string that is associated with the security key, and is stored on the controller and on all drives associated with the key. The pass phrase is used to encrypt the security key for backup purposes. When you are finished, the security key is stored on the controller in a non-accessible location. You can then create secure-enabled volume groups or pools, or you can enable security on existing volume groups and pools.
 
-=== External key management
+== External key management
 
 External keys are maintained on a separate key management server, using a Key Management Interoperability Protocol (KMIP). Before creating an external security key, you must do the following:
 

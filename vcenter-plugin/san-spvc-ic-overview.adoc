@@ -44,18 +44,18 @@ When you log in to the plugin, the main page opens to *Manage - All*. From this 
 
 The navigation sidebar displays the following:
 
-* *Manage.* Discover storage arrays in your network, launch System Manager for an array, import settings from one array to multiple arrays, manage array groups, upgrade the SANtricity OS, and provision storage.
-* *Certificate Management.* Manage certificates to authenticate between browsers and clients.
-* *Operations.* View the progress of batch operations, such as importing settings from one array to another.
+* *Manage* -- Discover storage arrays in your network, launch System Manager for an array, import settings from one array to multiple arrays, manage array groups, upgrade the SANtricity OS, and provision storage.
+* *Certificate Management* -- Manage certificates to authenticate between browsers and clients.
+* *Operations* -- View the progress of batch operations, such as importing settings from one array to another.
 
 [NOTE]
 Some operations are not available when a storage array has a non-optimal status.
 
-* *Support.* View technical support options, resources, and contacts.
+* *Support* -- View technical support options, resources, and contacts.
 
 === Supported browsers
 
-The SANtricity Storage Plugin for vCenter can be accessed from several types of browsers. The following browsers and versions are supported.
+The Storage Plugin for vCenter can be accessed from several types of browsers. The following browsers and versions are supported.
 
 * Google Chrome 79 or later
 * Mozilla Firefox 70 or later
@@ -63,7 +63,7 @@ The SANtricity Storage Plugin for vCenter can be accessed from several types of 
 
 === User roles and permissions
 
-To access tasks in the SANtricity Storage Plugin for vCenter, the user must have read-write permissions. By default, all defined VMware vCenter user IDs have no permissions to perform tasks in the plugin.
+To access tasks in the Storage Plugin for vCenter, the user must have read-write permissions. By default, all defined VMware vCenter user IDs have no permissions to perform tasks in the plugin.
 
 
 == Configuration overview

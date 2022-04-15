@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-activate-staged-os-software.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: You can choose to activate the software file at a more convenient time.
 ---
 
 = Activate staged OS software
@@ -17,14 +17,16 @@ summary:
 [.lead]
 You can choose to activate the software file immediately or wait until a more convenient time. This procedure assumes you chose to activate the software file at a later time.
 
-*About this task*
+.About this task
 
 You can transfer the firmware files without activating them. You might choose to activate later for these reasons:
 
 * *Time of day* -- Activating the software can take a long time, so you might want to wait until I/O loads are lighter. The controllers reboot and fail over during activation so performance might be lower than usual until the upgrade completes.
-* *Type of package* -- You might want to test the new software and firmware on one storage array before upgrading the files on other storage arrays.*Attention:* You cannot stop the activation process after it starts.
+* *Type of package* -- You might want to test the new software and firmware on one storage array before upgrading the files on other storage arrays.
 
-*Steps*
+NOTE: You cannot stop the activation process after it starts.
+
+.Steps
 
 . From the main view, select *Manage*. If necessary, click the *Status* column to sort, at the top of the page, all storage arrays with a status of "OS Upgrade (awaiting activation)."
 . Select one or more storage arrays that you want to activate software for, and then select menu:Upgrade Center[Activate Staged SANtricity Software].

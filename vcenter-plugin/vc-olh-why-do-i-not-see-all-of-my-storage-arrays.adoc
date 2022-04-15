@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-why-do-i-not-see-all-of-my-storage-arrays.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: During the Import Settings operation, some of your storage arrays might not be available in the target selection dialog box.
 ---
 
 = Why do I not see all of my storage arrays?

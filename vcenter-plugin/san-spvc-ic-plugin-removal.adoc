@@ -21,8 +21,8 @@ These are two distinct steps that you can perform in any order. However, if you 
 
 To unregister the plugin from a vCenter Server Appliance, select one of these methods:
 
-* Method 1: Executing the registration script
-* Method 2: Using the vCenter Server Mob pages
+* <<Method 1: Executing the registration script>>
+* <<Method 2: Using the vCenter Server Mob pages>>
 
 === Method 1: Executing the registration script
 

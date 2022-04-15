@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-upgrade-santricity-os.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Upgrade one or more storage arrays with the latest software and NVSRAM to make sure that you have all the latest features and bug fixes.
 ---
 
 = Upgrade SANtricity OS
@@ -17,7 +17,7 @@ summary:
 [.lead]
 Upgrade one or more storage arrays with the latest software and NVSRAM to make sure that you have all the latest features and bug fixes. Controller NVSRAM is a controller file that specifies the default settings for the controllers.
 
-*Before you begin*
+.Before you begin
 
 Make sure that:
 
@@ -67,7 +67,7 @@ If there are multiple files, the files are sorted from newest date to oldest dat
 . Click *Start*.
 . Depending on whether you chose to activate now or later, do one of the following:
 
-** Type `TRANSFER` to confirm that you want to transfer the proposed OS software versions on the arrays you selected to upgrade, and then click *Transfer*.  To activate the transferred software, select *Upgrade Center > Activate Staged SANtricity OS Software*.
+** Type `TRANSFER` to confirm that you want to transfer the proposed OS software versions on the arrays you selected to upgrade, and then click *Transfer*.  To activate the transferred software, select menu:Upgrade Center[Activate Staged SANtricity OS Software].
 ** Type `UPGRADE` to confirm that you want to transfer and activate the proposed OS software versions on the arrays you selected to upgrade, and then click *Upgrade*.
 +
 The system transfers the software file to each storage array you selected to upgrade and then activates that file by initiating a reboot.

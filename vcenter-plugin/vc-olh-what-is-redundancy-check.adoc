@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-what-is-redundancy-check.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: A redundancy check determines whether the data on a volume in a pool or volume group is consistent.
 ---
 
-= What is redundancy check
+= What is redundancy check?
 :hardbreaks:
 :nofooter:
 :icons: font

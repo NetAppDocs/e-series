@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-assign-volumes-to-hosts.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: You must assign a volume to a host or a host cluster so it can be used for I/O operations.
 ---
 
 = Assign volumes to hosts
@@ -58,7 +58,7 @@ A dialog box appears that lists all the volumes that can be assigned. You can so
 . Select the check box next to each volume that you want to assign or select the check box in the table header to select all volumes.
 . Click *Assign* to complete the operation.
 
-.Result
+.Results
 
 After successfully assigning a volume or volumes to a host or a host cluster, the system performs the following actions:
 

@@ -749,10 +749,10 @@ sidebar:
 
       - title: Storage plugin for vCenter
         entries:
+          - title: Overview
+            url: "/vcenter-plugin/san-spvc-ic-overview.html"
           - title: Get started
             entries:
-            - title: Overview
-              url: "/vcenter-plugin/san-spvc-ic-overview.html"
             - title: Install the plugin
               url: "/vcenter-plugin/san-spvc-ic-installation.html"
             - title: Configure access permissions

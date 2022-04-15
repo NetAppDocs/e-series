@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-array-groups-overview.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Manage your physical and virtualized infrastructure by grouping a set of storage arrays.
 ---
 
 = Array groups overview

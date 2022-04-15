@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-reset-management-certificates.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Revert the management certificate to the original, factory self-signed state.
 ---
 
 = Reset management certificates
@@ -17,7 +17,7 @@ You can revert the management certificate to the original, factory self-signed s
 
 .About this task
 
-This task deletes the current management certificate from the host system where the SANtricity Storage Plugin for vCenter is running. After the certificate is reset, the host system reverts to using the self-signed certificate.
+This task deletes the current management certificate from the host system where the Storage Plugin for vCenter is running. After the certificate is reset, the host system reverts to using the self-signed certificate.
 
 .Steps
 

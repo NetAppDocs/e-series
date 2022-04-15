@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-array-management-overview.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Use the Add/Discover feature to find and add the storage arrays you want to manage in your organization's network.
 ---
 
 = Array management overview
@@ -19,11 +19,11 @@ Use the Add/Discover feature to find and add the storage arrays you want to mana
 
 For the plugin to display and manage storage resources, you must discover the storage arrays you want to manage in your organization's network. You can discover and then add a single array or multiple arrays.
 
-=== Discovering multiple storage arrays
+=== Multiple storage arrays
 
 If you choose to discover multiple arrays, you enter a network IP address range and then the system attempts individual connections to each IP address in that range. Any storage array successfully reached appears in the plugin and you can then add them to your management domain.
 
-=== Discovering a single storage array
+=== Single storage array
 
 If you choose to discover a single array, you enter the single IP address for one of the controllers in the storage array and then add that array to your management domain.
 
@@ -39,7 +39,7 @@ You must supply the administrator password for each storage array you want to ad
 As part of the discovery process, the system verifies that the discovered storage arrays are using certificates by a trusted source. The system uses two types of certificate-based authentication for all connections that it establishes with the with the browser:
 
 * *Trusted certificates* -- You might need to install additional trusted certificates supplied by the Certificate Authority if one or both controller certificates are expired, revoked, or missing a certificate in its chain.
-* *Self-signed certificates* -- Arrays can also use self-signed certificates. If you attempt to discover arrays without importing signed certificates, the plugin provides an additional step that allows you to accept the self-signed certificate. The storage array's self-signed certificate will be marked as trusted and the storage array will be added to the plugin. If you do not trust the connections to the storage array, select Cancel and validate the storage array's security certificate strategy before adding the storage array to the plugin.
+* *Self-signed certificates* -- Arrays can also use self-signed certificates. If you attempt to discover arrays without importing signed certificates, the plugin provides an additional step that allows you to accept the self-signed certificate. The storage array's self-signed certificate will be marked as trusted and the storage array will be added to the plugin. If you do not trust the connections to the storage array, select *Cancel* and validate the storage array's security certificate strategy before adding the storage array to the plugin.
 
 == Storage array status
 

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-upgrade-overview.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: You can manage SANtricity software and NVSRAM upgrades for multiple storage arrays of the same type.
 ---
 
 = Upgrade overview
@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-From the Upgrade Center, you can manage SANtricity software and NVSRAM upgrades for multiple storage arrays of the same type.
+You can manage SANtricity software and NVSRAM upgrades for multiple storage arrays of the same type.
 
 == Upgrade workflow
 
@@ -41,13 +41,7 @@ You can view the current SANtricity OS software versions from the Manage page of
 
 === Other components requiring upgrade
 
-As part of the upgrade process, you might also need to upgrade the host's multipath/failover driver or the HBA driver so that the host can interact with the controllers correctly.
-
-For compatibility information, refer to the link:https://imt.netapp.com/matrix/[Interoperability Matrix Tool^].  Also, see the procedures in the Express Guides for your operating system: 
-
-* link:../config-linux/index.html[Linux express configuration]
-* link:../config-vmware/index.html[VMware express configuration]
-* link:../config-windows/index.html[Windows express configuration]
+As part of the upgrade process, you might also need to upgrade the host's multipath/failover driver or the HBA driver so that the host can interact with the controllers correctly. For compatibility information, refer to the link:https://imt.netapp.com/matrix/[Interoperability Matrix Tool^]. 
 
 === Dual controllers
 

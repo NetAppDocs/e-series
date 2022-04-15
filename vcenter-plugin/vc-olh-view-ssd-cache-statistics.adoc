@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-view-ssd-cache-statistics.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: View statistics for the SSD Cache, such as reads, writes, cache hits, cache allocation percentage, and cache utilization percentage.
 ---
 
 = View SSD Cache statistics
@@ -17,10 +17,10 @@ summary:
 [.lead]
 You can view statistics for the SSD Cache, such as reads, writes, cache hits, cache allocation percentage, and cache utilization percentage.
 
-.About this task
-
 [NOTE]
 This feature is not available on the EF600 or EF300 storage system.
+
+.About this task
 
 The nominal statistics, which are a subset of the detailed statistics, are shown on the View SSD Cache Statistics dialog box. You can view detailed statistics for the SSD Cache only when you export all SSD statistics to a .csv file.
 

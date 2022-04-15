@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-create-host-cluster.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: When two or more hosts require I/O access to the same volumes, you can create a host cluster.
 ---
 
 = Create host cluster
@@ -55,7 +55,7 @@ The Create Host Cluster dialog box appears.
 . Click *Create*.
 +
 If the selected hosts are attached to interface types that have different Data Assurance (DA) capabilities, a dialog appears with the message that DA will be unavailable on the host cluster. This unavailability prevents DA-enabled volumes from being added to the host cluster. Select *Yes* to continue or *No* to cancel.
-
++
 DA increases data integrity across the entire storage system. DA enables the storage array to check for errors that might occur when data is moved between the hosts and the drives. Using DA for the new volume ensures that any errors are detected.
 
 .Result
@@ -64,4 +64,4 @@ The new host cluster appears in the table with the assigned hosts in the rows be
 
 .After you finish
 
-You must assign a volume to a host cluster so it can be used for I/O operations. Go to `<Assign volumes to hosts>`.
+You must assign a volume to a host cluster so it can be used for I/O operations. Go to link:vc-olh-assign-volumes-to-hosts.html[Assign volumes to hosts].

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-what-raid-level-is-best-for-my-application.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: To maximize the performance of a volume group, you must select the appropriate RAID level.
 ---
 
 = What RAID level is best for my application?
@@ -13,7 +13,9 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-To maximize the performance of a volume group, you must select the appropriate RAID level. You can determine the appropriate RAID level by knowing the read and write percentages for the applications that are accessing the volume group. Use the Performance page to obtain these percentages.
+To maximize the performance of a volume group, you must select the appropriate RAID level.
+
+You can determine the appropriate RAID level by knowing the read and write percentages for the applications that are accessing the volume group. Use the Performance page to obtain these percentages.
 
 == RAID levels and application performance
 

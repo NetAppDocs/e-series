@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-delete-volume.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Delete one or more volumes to increase the free capacity of a pool or volume group.
 ---
 
 = Delete volume
@@ -14,11 +14,10 @@ summary:
 :imagesdir: ./media/
 
 
-
 [.lead]
 You can delete one or more volumes to increase the free capacity of a pool or volume group.
 
-*Before you begin*
+.Before you begin
 
 On the volumes that you plan to delete, make sure that:
 

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-import-alert-settings.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Import alert configurations from one storage array to other storage arrays.
 ---
 
 = Import alert settings
@@ -22,7 +22,7 @@ Make sure that:
 
 * Alerts are configured in System Manager (menu:Settings[Alerts]) for the storage array you want to use as the source.
 * The existing configuration for the target storage arrays are backed up in System Manager (menu:Settings[System > Save Storage Array Configuration]).
-* You have reviewed link:vc-olh-import-settings-overview.html[Import settings overview: Requirements for replicating storage configurations].
+* You have reviewed the requirements for replicating storage configurations in link:vc-olh-import-settings-overview.html[Import settings overview].
 
 .About this task
 

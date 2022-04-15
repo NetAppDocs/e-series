@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-how-do-application-specific-workloads-help-me-manage-my-storage-array.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: The volume characteristics of your application-specific workload dictate how the workload interacts with the components of your storage array and helps determine the performance of your environment under a given configuration.
 ---
 
 = How do application-specific workloads help me manage my storage array?

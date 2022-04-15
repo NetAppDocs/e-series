@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-create-ssd-cache.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: To dynamically accelerate system performance, you can use the SSD Cache feature to cache the most frequently accessed data ("hot" data) onto lower latency Solid State Drives (SSDs).
 ---
 
 = Create SSD Cache
@@ -63,10 +63,11 @@ SSD Cache capacity counts towards your overall allocated capacity.
 |Shows the number of drives available for this SSD cache. Select the SSD candidate with the number of drives that you want
 |Secure-capable
 |Indicates whether the SSD Cache candidate is comprised entirely of secure-capable drives, which can be either Full Disk Encryption (FDE) drives or Federal Information Processing Standard (FIPS) drives.
-If you want to create a secure-enabled SSD Cache, look for Yes - FDE or Yes - FIPS in the Secure-capable column.
+If you want to create a secure-enabled SSD Cache, look for "Yes - FDE" or "Yes - FIPS" in the Secure-capable column.
 |Enable security?
-|Provides the option for enabling the Drive Security feature with secure-capable drives. If you want to create a secure-enabled SSD Cache, select the Enable Security check box.
-Once enabled, security cannot be disabled. You can enable security on the SSD Cache only when you are creating it, not later.
+|Provides the option for enabling the Drive Security feature with secure-capable drives. If you want to create a secure-enabled SSD Cache, select the *Enable Security* check box.
+
+NOTE: Once enabled, security cannot be disabled. You can enable security on the SSD Cache only when you are creating it, not later.
 |DA capable
 |Indicates if Data Assurance (DA) is available for this SSD Cache candidate. Data Assurance (DA) checks for and corrects errors that might occur as data is transferred through the controllers down to the drives.
 If you want to use DA, select an SSD Cache candidate that is DA capable. This option is available only when the DA feature has been enabled.

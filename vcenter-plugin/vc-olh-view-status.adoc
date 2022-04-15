@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-view-status.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: View system status from the Storage Plugin for vCenter or from the vSphere Client
 ---
 
 = View status
@@ -14,13 +14,15 @@ summary:
 
 
 [.lead]
-You can view system status from the SANtricity Storage Plugin for vCenter or from the vSphere Client.
+You can view system status from the Storage Plugin for vCenter or from the vSphere Client.
 
 . Open the plugin from within the vSphere Client.
 . View status from the following panels:
 
 ** *Storage array status* -- Go to the *Manage-All* panel. For each discovered array, the row provides a Status column.
-** *Operations in progress* -- Click *Operations* on the side panel to view all long-running tasks, such as importing settings. You can also view long-running operations from the Provisioning drop-down. For each operation listed on the Operations in Progress dialog, a percentage of completion and estimated time remaining to complete the operation are shown. In some cases, you can stop an operation or place it at a higher or lower priority. If desired, use the links in the Actions column to stop or change priority for an operation.*CAUTION:* Read all cautionary text provided in the dialog boxes, particularly when stopping an operation. 
+** *Operations in progress* -- Click *Operations* on the side panel to view all long-running tasks, such as importing settings. You can also view long-running operations from the Provisioning drop-down. For each operation listed on the Operations in Progress dialog, a percentage of completion and estimated time remaining to complete the operation are shown. In some cases, you can stop an operation or place it at a higher or lower priority. If desired, use the links in the Actions column to stop or change priority for an operation.
+
+CAUTION: Read all cautionary text provided in the dialog boxes, particularly when stopping an operation. 
 
 Operations that might appear for the plugin are listed in the following table. Additional operations might also appear in the System Manager interface.
 

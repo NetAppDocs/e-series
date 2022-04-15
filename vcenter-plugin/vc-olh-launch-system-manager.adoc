@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-launch-system-manager.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: To manage a single array, use the Launch option to open System Manager in a new browser window.
 ---
 
 = Launch System Manager
@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-To manage a single array, use the Launch option to open System Manager in a new browser window.
+To manage a single array, use the Launch option to open SANtricity System Manager in a new browser window.
 
 System Manager is an embedded application on the storage array's controller, which is connected to the network through an Ethernet management port. System Manager includes all array-based functions. To access System Manager, you must have an out-of-band connection to a network management client with a web browser.
 

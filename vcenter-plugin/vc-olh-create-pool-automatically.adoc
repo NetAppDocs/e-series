@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-create-pool-automatically.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: You can create pools automatically when the system detects at least 11 unassigned drives or it detects one unassigned drive that is eligible for an existing pool.
 ---
 
 = Create pool automatically

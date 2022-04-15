@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-delete-trusted-certificates.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Delete one or more certificates that are no longer needed.
 ---
 
 = Delete trusted certificates

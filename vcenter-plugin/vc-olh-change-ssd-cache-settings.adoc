@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-change-ssd-cache-settings.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Edit the name of the SSD Cache and view its status, maximum and current capacity, Drive Security and Data Assurance status, and its associated volumes and drives.
 ---
 
 = Change SSD Cache settings
@@ -35,30 +35,45 @@ The SSD Cache Settings dialog box appears.
 ====
 [cols="1a,1a" options="header"]
 |===
-|Setting |Description
-|Name
-|Displays the name of the SSD Cache, which you can change. A name for the SSD Cache is required.
-|Characteristics
-|Shows the status for the SSD Cache. Possible statuses include:
+a|Setting
+a|
+Description
+a|
+Name
+a|
+Displays the name of the SSD Cache, which you can change. A name for the SSD Cache is required.
+a|
+Characteristics
+a|
+Shows the status for the SSD Cache. Possible statuses include:
+
 * Optimal
 * Unknown
 * Degraded
 * Failed (A failed state results in a critical MEL event.)
 * Suspended
-|Capacities
-|Shows the current capacity and maximum capacity allowed for the SSD Cache.
+a|
+Capacities
+a|
+Shows the current capacity and maximum capacity allowed for the SSD Cache.
 The maximum capacity allowed for the SSD Cache depends on the controller's primary cache size:
+
 * Up to 1 GiB
 * 1 GiB to 2 GiB
 * 2 GiB to 4 GiB
 * More than 4 GiB
-|Security and DA
-|Shows the Drive Security and Data Assurance status for the SSD Cache.
-* Secure-capable. Indicates whether the SSD Cache is comprised entirely of secure-capable drives. A secure-capable drive is a self-encrypting drive that can protect its data from unauthorized access.
-* Secure-enabled. Indicates whether security is enabled on the SSD Cache.
-* DA capable. Indicates whether the SSD Cache is comprised entirely of DA-capable drives. A DA-capable drive can check for and correct errors that might occur as data is communicated between the host and storage array.
-|Associated objects
-|Shows the volumes and drives associated with the SSD Cache.
+a|
+Security and DA
+a|
+Shows the Drive Security and Data Assurance status for the SSD Cache.
+
+* *Secure-capable* --Indicates whether the SSD Cache is comprised entirely of secure-capable drives. A secure-capable drive is a self-encrypting drive that can protect its data from unauthorized access.
+* *Secure-enabled* -- Indicates whether security is enabled on the SSD Cache.
+* *DA capable* -- Indicates whether the SSD Cache is comprised entirely of DA-capable drives. A DA-capable drive can check for and correct errors that might occur as data is communicated between the host and storage array.
+a|
+Associated objects
+a|
+Shows the volumes and drives associated with the SSD Cache.
 |===
 ====
 +

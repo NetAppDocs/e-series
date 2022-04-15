@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-delete-pool-or-volume-group.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Delete a pool or volume group to create more unassigned capacity, which you can reconfigure to meet your application storage needs
 ---
 
 = Delete pool or volume group

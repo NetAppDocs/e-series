@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: vc-olh-remove-storage-arrays.html
-keywords:
-summary:
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Remove one or more storage arrays if you no longer want to manage it from the Storage Plugin for vCenter.
 ---
 
 = Remove storage arrays
