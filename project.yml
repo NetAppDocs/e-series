@@ -966,7 +966,7 @@ sidebar:
               - title: How do I view and interpret all SSD Cache statistics?
                 url: "/vcenter-plugin/vc-olh-how-do-i-view-and-interpret-all-ssd-cache-statistics.html"
               - title:  What is shelf loss protection and drawer loss protection?
-                url: "/vcenter-plugin/vc-olh--what-is-shelf-loss-protection-and-drawer-loss-protection.html"
+                url: "/vcenter-plugin/vc-olh-what-is-shelf-loss-protection-and-drawer-loss-protection.html"
               - title: How do I maintain shelf and drawer loss protection?
                 url: "/vcenter-plugin/vc-olh-how-do-i-maintain-shelf-and-drawer-loss-protection.html"
               - title: What is optimization capacity for pools?

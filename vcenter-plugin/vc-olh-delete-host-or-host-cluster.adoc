@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: vcenter-plugin/vc-olh-delete-host-or-host-cluster.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
-summary:You can remove a host or host cluster so that volumes are no longer associated with that host.
+summary: You can remove a host or host cluster so that volumes are no longer associated with that host.
 ---
 
 = Delete host or host cluster

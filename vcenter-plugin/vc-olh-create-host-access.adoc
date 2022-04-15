@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-create-host-access.html
-keywords: vcenter-plugin/vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+permalink: vcenter-plugin/vc-olh-create-host-access.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: To manage storage with the Storage Plugin for vCenter, you must discover or define each host in the network.
 ---
 
