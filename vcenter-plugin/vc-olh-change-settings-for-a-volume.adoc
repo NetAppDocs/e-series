@@ -1,99 +1,139 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-change-settings-for-a-volume.html
-keywords:
-summary:
+permalink: vcenter-plugin/vc-olh-change-settings-for-a-volume.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Change a volume's settings such as its name, host assignment, segment size, modification priority, caching, and so on.
 ---
 
 = Change settings for a volume
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.165465
-//
 
 [.lead]
 You can change a volume's settings such as its name, host assignment, segment size, modification priority, caching, and so on.
 
-*Before you begin*
+.Before you begin
 
 Make sure that the volume you want to change is in Optimal status.
 
-*Steps*
+.Steps
 
 . From the *Manage* page, select the storage array that contains the volumes you want to change.
-. Select *Provisioning > Manage Volumes*.
+. Select menu:Provisioning[Manage Volumes].
 . Select the volume that you want to change, and then select *View/Edit Settings*.
 +
 The Volume Settings dialog box appears. The configuration settings for the volume you selected appear in this dialog box.
 
 . Select the *Basic* tab to change the volume's name and host assignment.
-
++
+.Field Details
+[%collapsible]
+====
+[cols="1a,1a" options="header"]
 |===
-|Setting |Description
+a|
+Setting
+a|
+Description
+a|
+Name
+a|
+Displays the name of the volume. Change the name of a volume when the current name is no longer meaningful or applicable.
+a|
+Capacities
+a|
+Displays the reported and allocated capacity for the selected volume.
+a|
+Pool / Volume group
+a|
+Displays the name and RAID level of the pool or volume group. Indicates whether the pool or volume group is secure-capable and secure-enabled.
+a|
+Host
+a|
+Displays the volume assignment. You assign a volume to a host or host cluster so it can be accessed for I/O operations. This assignment grants a host or host cluster access to a particular volume or to a number of volumes in a storage array.
 
-|Name
-|Displays the name of the volume. Change the name of a volume when the current name is no longer meaningful or applicable.
-|Capacities
-|Displays the reported and allocated capacity for the selected volume.
-|Pool / Volume group
-|Displays the name and RAID level of the pool or volume group. Indicates whether the pool or volume group is secure-capable and secure-enabled.
-|Host
-|Displays the volume assignment. You assign a volume to a host or host cluster so it can be accessed for I/O operations. This assignment grants a host or host cluster access to a particular volume or to a number of volumes in a storage array.
 * Assigned to. Identifies the host or host cluster that has access to the selected volume.
 * LUN. A logical unit number (LUN) is the number assigned to the address space that a host uses to access a volume. The volume is presented to the host as capacity in the form of a LUN. Each host has its own LUN address space. Therefore, the same LUN can be used by different hosts to access different volumes.
+
 For NVMe interfaces, this column displays Namespace ID. A namespace is NVM storage that is formatted for block access. It is analogous to a logical unit in SCSI, which relates to a volume in the storage array. The namespace ID is the NVMe controller's unique identifier for the namespace, and can be set to a value between 1 and 255. It is analogous to a logical unit number (LUN) in SCSI.
-|Identifiers
-|Displays the identifiers for the selected volume.
-World-wide identifier (WWID). A unique hexadecimal identifier for the volume.
-Extended unique identifier (EUI). An EUI-64 identifier for the volume.
-Subsystem identifier (SSID). The storage array subsystem identifier of a volume.
-|===
+a|
+Identifiers
+a|
+Displays the identifiers for the selected volume.
 
+* World-wide identifier (WWID). A unique hexadecimal identifier for the volume.
+* Extended unique identifier (EUI). An EUI-64 identifier for the volume.
+* Subsystem identifier (SSID). The storage array subsystem identifier of a volume.
+|===
+====
++
 . Select the *Advanced* tab to change additional configuration settings for a volume in a pool or in a volume group.
-
++
+.Field Details
+[%collapsible]
+====
+[cols="1a,1a" options="header"]
 |===
-|Setting |Description
-
-|Application & workload information
-|During volume creation, you can create application-specific workloads or other workloads. If applicable, the workload name, application type, and volume type appears for the selected volume.
+a|
+Setting a|
+Description
+a|
+Application & workload information
+a|
+During volume creation, you can create application-specific workloads or other workloads. If applicable, the workload name, application type, and volume type appears for the selected volume.
 You can change the workload name if desired.
-|Quality of Service settings
-|Permanently disable data assurance. This setting appears only if the volume is Data Assurance (DA)-enabled. DA checks for and corrects errors that might occur as data is transferred through the controllers down to the drives. Use this option to permanently disable DA on the selected volume. When disabled, DA cannot be re-enabled on this volume.
-Enable pre-read redundancy check. This setting appears only if the volume is a thick volume. Pre-read redundancy checks determine whether the data on a volume is consistent any time a read is performed. A volume that has this feature enabled returns read errors if the data is determined to be inconsistent by the controller firmware.
-|Controller ownership
-|Defines the controller that is designated to be the owning, or primary, controller of the volume.
+a|
+Quality of Service settings
+a|
+*Permanently disable data assurance.* This setting appears only if the volume is Data Assurance (DA)-enabled. DA checks for and corrects errors that might occur as data is transferred through the controllers down to the drives. Use this option to permanently disable DA on the selected volume. When disabled, DA cannot be re-enabled on this volume.
+*Enable pre-read redundancy check.* This setting appears only if the volume is a thick volume. Pre-read redundancy checks determine whether the data on a volume is consistent any time a read is performed. A volume that has this feature enabled returns read errors if the data is determined to be inconsistent by the controller firmware.
+a|
+Controller ownership
+a|
+Defines the controller that is designated to be the owning, or primary, controller of the volume.
 Controller ownership is very important and should be planned carefully. Controllers should be balanced as closely as possible for total I/Os.
-|Segment sizing
-|Shows the setting for segment sizing, which appears only for volumes in a volume group. You can change the segment size to optimize performance.
-Allowed segment size transitions. The system determines the segment size transitions that are allowed. Segment sizes that are inappropriate transitions from the current segment size are unavailable on the drop-down list. Allowed transitions usually are double or half of the current segment size. For example, if the current volume segment size is 32 KiB, a new volume segment size of either 16 KiB or 64 KiB is allowed.
-SSD Cache-enabled volumes. You can specify a 4-KiB segment size for SSD Cache-enabled volumes. Make sure you select the 4-KiB segment size only for SSD Cache-enabled volumes that handle small-block I/O operations (for example, 16 KiB I/O block sizes or smaller). Performance might be impacted if you select 4 KiB as the segment size for SSD Cache-enabled volumes that handle large block sequential operations.
-Amount of time to change segment size. The amount of time to change a volume's segment size depends on these variables:
+a|
+Segment sizing
+a|
+Shows the setting for segment sizing, which appears only for volumes in a volume group. You can change the segment size to optimize performance.
+*Allowed segment size transitions.* The system determines the segment size transitions that are allowed. Segment sizes that are inappropriate transitions from the current segment size are unavailable on the drop-down list. Allowed transitions usually are double or half of the current segment size. For example, if the current volume segment size is 32 KiB, a new volume segment size of either 16 KiB or 64 KiB is allowed.
+*SSD Cache-enabled volumes.* You can specify a 4-KiB segment size for SSD Cache-enabled volumes. Make sure you select the 4-KiB segment size only for SSD Cache-enabled volumes that handle small-block I/O operations (for example, 16 KiB I/O block sizes or smaller). Performance might be impacted if you select 4 KiB as the segment size for SSD Cache-enabled volumes that handle large block sequential operations.
+*Amount of time to change segment size.* The amount of time to change a volume's segment size depends on these variables:
+
 * The I/O load from the host
 * The modification priority of the volume
 * The number of drives in the volume group
 * The number of drive channels
 * The processing power of the storage array controllers
+
 When you change the segment size for a volume, I/O performance is affected, but your data remains available.
-|Modification priority
-|Shows the setting for modification priority, which only appears for volumes in a volume group.
+a|
+Modification priority
+a|
+Shows the setting for modification priority, which only appears for volumes in a volume group.
 The modification priority defines how much processing time is allocated for volume modification operations relative to system performance. You can increase the volume modification priority, although this might affect system performance.
 Move the slider bars to select a priority level.
-Modification priority rates. The lowest priority rate benefits system performance, but the modification operation takes longer. The highest priority rate benefits the modification operation, but system performance might be compromised.
-|Caching
-|Shows the caching setting, which you can change to impact the overall I/O performance of a volume.
-|SSD Cache
-|This feature is not available on the EF600 or EF300 storage system.
+*Modification priority rates.* The lowest priority rate benefits system performance, but the modification operation takes longer. The highest priority rate benefits the modification operation, but system performance might be compromised.
+a|
+Caching
+a|
+Shows the caching setting, which you can change to impact the overall I/O performance of a volume.
+a|
+SSD Cache
+a|
+(This feature is not available on the EF600 or EF300 storage system.)
 Shows the SSD Cache setting, which you can enable on compatible volumes as a way to improve read-only performance. Volumes are compatible if they share the same drive security and data assurance capabilities.
 The SSD Cache feature uses a single or multiple solid-state disks (SSDs) to implement a read cache. Application performance is improved because of the faster read times for SSDs. Because the read cache is in the storage array, caching is shared across all applications using the storage array. Simply select the volume that you want to cache, and then caching is automatic and dynamic.
 |===
+====
++
+. Click *Save*.
 
-. Click *Save*.*Result*
+.Result
 
 The volume settings are changed based on your selections.

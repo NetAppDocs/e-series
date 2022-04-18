@@ -1,37 +1,35 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-delete-volume.html
-keywords:
-summary:
+permalink: vcenter-plugin/vc-olh-delete-volume.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Delete one or more volumes to increase the free capacity of a pool or volume group.
 ---
 
 = Delete volume
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.210571
-//
 
 [.lead]
 You can delete one or more volumes to increase the free capacity of a pool or volume group.
 
-*Before you begin*
+.Before you begin
 
 On the volumes that you plan to delete, make sure that:
 
 * All data is backed up.
 * All Input/Output (I/O) is stopped.
-* Any devices and file systems are unmounted.*About this task*
+* Any devices and file systems are unmounted.
+
+.About this task
 
 Typically, you delete volumes if the volumes were created with the wrong parameters or capacity, or it no longer meets storage configuration needs. Deleting a volume increases the free capacity in the pool or volume group.
 
-*Attention: *Deleting a volume causes loss of all data on those volumes.
+CAUTION: Deleting a volume causes loss of all data on those volumes.
 
 Be aware that you *cannot* delete a volume that has one of these conditions:
 
@@ -45,11 +43,13 @@ Be aware that you *cannot* delete a volume that has one of these conditions:
 [NOTE]
 When a volume exceeds a given size (currently 128 TB), the delete operation is performed in the background and the freed space might not be immediately available.
 
-*Steps*
+.Steps
 
 . From the *Manage* page, select the storage array that contains the volumes you want to delete.
-. Select *Provisioning > Manage Volumes*.
-. Click *Delete*.The Delete Volumes dialog box appears.
+. Select menu:Provisioning[Manage Volumes].
+. Click *Delete*.
++
+The Delete Volumes dialog box appears.
 
 . Select one or more volumes that you want to delete, and then confirm that you want to perform the operation.
 . Click *Delete*.

@@ -1,22 +1,17 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-why-are-these-volumes-not-associated-with-a-workload.html
-keywords:
-summary:
+permalink: vcenter-plugin/vc-olh-why-are-these-volumes-not-associated-with-a-workload.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Volumes are not associated with a workload if they have been created using the command line interface (CLI) or if they have been migrated (imported/exported) from a different storage array.
 ---
 
-= Why are these volumes not associated with a workload
+= Why are these volumes not associated with a workload?
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.216121
-//
 
 [.lead]
 Volumes are not associated with a workload if they have been created using the command line interface (CLI) or if they have been migrated (imported/exported) from a different storage array.

@@ -1,33 +1,30 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-certificates-overview.html
-keywords:
-summary:
+permalink: vcenter-plugin/vc-olh-certificates-overview.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Certificate Management allows you to create certificate signing requests (CSRs), import certificates, and manage existing certificates.
 ---
 
-= Certificates overview 
+= Certificates overview
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:47.928571
-//
-
 [.lead]
-Certificates are digital files that identify online entities, such as websites and servers, for secure communications on the internet. They ensure that web communications are transmitted in encrypted form, privately and unaltered, only between the specified server and client. Using the SANtricity Storage Plugin for vCenter, you can manage certificates for the browser on a host management system and the controllers in the discovered storage arrays.
+Certificate Management allows you to create certificate signing requests (CSRs), import certificates, and manage existing certificates.
+
+== What are certificates?
+Certificates are digital files that identify online entities, such as websites and servers, for secure communications on the internet. They ensure that web communications are transmitted in encrypted form, privately and unaltered, only between the specified server and client. Using the Storage Plugin for vCenter, you can manage certificates for the browser on a host management system and the controllers in the discovered storage arrays.
 
 A certificate can be signed by a trusted authority, or it can be self-signed. "Signing" simply means that someone validated the owner’s identity and determined that their devices can be trusted.
 
 Storage arrays ship with an automatically generated self-signed certificate on each controller. You can continue to use the self-signed certificates, or you can obtain CA-signed certificates for a more secure connection between the controllers and the host systems.
 
-Note: Although CA-signed certificates provide better security protection (for example, preventing man-in-the-middle attacks), they also require fees that can be expensive if you have a large network. In contrast, self-signed certificates are less secure, but they are free. Therefore, self-signed certificates are most often used for internal testing environments, not in production environments.
+NOTE: Although CA-signed certificates provide better security protection (for example, preventing man-in-the-middle attacks), they also require fees that can be expensive if you have a large network. In contrast, self-signed certificates are less secure, but they are free. Therefore, self-signed certificates are most often used for internal testing environments, not in production environments.
 
-=== Signed certificates
+== Signed certificates
 
 A signed certificate is validated by a certificate authority (CA), which is a trusted third-party organization. Signed certificates include details about the owner of the entity (typically, a server or website), date of certificate issue and expiration, valid domains for the entity, and a digital signature composed of letters and numbers.
 
@@ -35,20 +32,20 @@ When you open a browser and enter a web address, your system performs a certific
 
 The CA takes steps to verify your identity during the application process. They might send an email to your registered business, verify your business address, and perform an HTTP or DNS verification. When the application process is complete, the CA sends you digital files to load on a host management system. Typically, these files include a chain of trust, as follows:
 
-* *Root.* At the top of the hierarchy is the root certificate, which contains a private key used to sign other certificates. The root identifies a particular CA organization. If you use the same CA for all your network devices, you need only one root certificate.
-* *Intermediate.* Branching off from the root are the intermediate certificates. The CA issues one or more intermediate certificates to act as middlemen between a protected root and server certificates.
-* *Server.* At the bottom of the chain is the server certificate, which identifies your specific entity, such as a website or other device. Each controller in a storage array requires a separate server certificate.
+* *Root* -- At the top of the hierarchy is the root certificate, which contains a private key used to sign other certificates. The root identifies a particular CA organization. If you use the same CA for all your network devices, you need only one root certificate.
+* *Intermediate* -- Branching off from the root are the intermediate certificates. The CA issues one or more intermediate certificates to act as middlemen between a protected root and server certificates.
+* *Server* -- At the bottom of the chain is the server certificate, which identifies your specific entity, such as a website or other device. Each controller in a storage array requires a separate server certificate.
 
-=== Self-signed certificates
+== Self-signed certificates
 
 Each controller in the storage array includes a pre-installed, self-signed certificate. A self-signed certificate is similar to a CA-signed certificate, except that it is validated by the owner of the entity instead of a third party. Like a CA-signed certificate, a self-signed certificate contains its own private key, and also ensures that data is encrypted and sent over an HTTPS connection between a server and client.
 
 Self-signed certificates are not “trusted” by browsers. Each time you attempt to connect to a website that contains only a self-signed certificate, the browser displays a warning message. You must click a link in the warning message that allows you to proceed to the website; by doing so, you are essentially accepting the self-signed certificate.
 
-=== Management certificate
+== Management certificate
 
 When you open the plugin, the browser attempts to verify that the management host is a trusted source by checking for a digital certificate. If the browser does not locate a CA-signed certificate, it opens a warning message. From there, you can continue to the website to accept the self-signed certificate for that session. You can also obtain signed, digital certificates from a CA so you no longer see the warning message.
 
-=== Trusted certificates
+== Trusted certificates
 
 During a plugin session, you might see additional security messages when you attempt to access a controller that does not have a CA-signed certificate. In this event, you can permanently trust the self-signed certificate or you can import the CA-signed certificates for the controllers so the plugin can authenticate incoming client requests from these controllers.

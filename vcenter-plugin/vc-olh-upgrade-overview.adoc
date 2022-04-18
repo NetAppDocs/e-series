@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-upgrade-overview.html
-keywords:
-summary:
+permalink: vcenter-plugin/vc-olh-upgrade-overview.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: You can manage SANtricity software and NVSRAM upgrades for multiple storage arrays of the same type.
 ---
 
 = Upgrade overview
@@ -12,16 +12,10 @@ summary:
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.093724
-//
-
 [.lead]
-From the Upgrade Center, you can manage SANtricity software and NVSRAM upgrades for multiple storage arrays of the same type.
+You can manage SANtricity software and NVSRAM upgrades for multiple storage arrays of the same type.
 
-=== Upgrade workflow
+== Upgrade workflow
 
 The following steps provide a high-level workflow for performing software upgrades:
 
@@ -37,25 +31,25 @@ The following steps provide a high-level workflow for performing software upgrad
 [NOTE]
 You can also specify that the software is activated at a later time.
 
-=== Upgrade considerations
+== Upgrade considerations
 
 Before you upgrade multiple storage arrays, review the key considerations as part of your planning.
 
-*Current versions*
+=== Current versions
 
-You can view the current SANtricity OS software versions from the Manage page of the SANtricity Storage Plugin for vCenter for each discovered storage array. The version is shown in the SANtricity OS Software column. The controller firmware and NVSRAM information is available in a pop-up dialog box when you click on the OS version in each row.
+You can view the current SANtricity OS software versions from the Manage page of the Storage Plugin for vCenter for each discovered storage array. The version is shown in the SANtricity OS Software column. The controller firmware and NVSRAM information is available in a pop-up dialog box when you click on the OS version in each row.
 
-*Other components requiring upgrade*
+=== Other components requiring upgrade
 
-As part of the upgrade process, you might also need to upgrade the host's multipath/failover driver or the HBA driver so that the host can interact with the controllers correctly.
+As part of the upgrade process, you might also need to upgrade the host's multipath/failover driver or the HBA driver so that the host can interact with the controllers correctly. For compatibility information, refer to the link:https://imt.netapp.com/matrix/[Interoperability Matrix Tool^].
 
-For compatibility information, refer to the https://mysupport.netapp.com/matrix%5bNetApp[https://mysupport.netapp.com/matrix[NetApp^] Interoperability Matrix Tool^].  Also, see the procedures in the Express Guides for your operating system. Express Guides are available from <xref to express guides>
-
-*Dual controllers*
+=== Dual controllers
 
 If a storage array contains two controllers and you have a multipath driver installed, the storage array can continue to process I/O while the upgrade occurs. During the upgrade, the following process occurs:
 
 . Controller A fails over all its LUNs to controller B.
 . Upgrade occurs on controller A.
 . Controller A takes back its LUNs and all of controller B's LUNs.
-. Upgrade occurs on controller B.After the upgrade completes, you might need to manually redistribute volumes between the controllers to ensure volumes return to the correct owning controller.
+. Upgrade occurs on controller B.
+
+After the upgrade completes, you might need to manually redistribute volumes between the controllers to ensure volumes return to the correct owning controller.

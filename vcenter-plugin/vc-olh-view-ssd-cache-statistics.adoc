@@ -1,43 +1,44 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-view-ssd-cache-statistics.html
-keywords:
-summary:
+permalink: vcenter-plugin/vc-olh-view-ssd-cache-statistics.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: View statistics for the SSD Cache, such as reads, writes, cache hits, cache allocation percentage, and cache utilization percentage.
 ---
 
 = View SSD Cache statistics
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.379034
-//
 
 [.lead]
 You can view statistics for the SSD Cache, such as reads, writes, cache hits, cache allocation percentage, and cache utilization percentage.
 
-*About this task*
-
 [NOTE]
 This feature is not available on the EF600 or EF300 storage system.
+
+.About this task
 
 The nominal statistics, which are a subset of the detailed statistics, are shown on the View SSD Cache Statistics dialog box. You can view detailed statistics for the SSD Cache only when you export all SSD statistics to a .csv file.
 
 As you review and interpret the statistics, keep in mind that some interpretations are derived by looking at a combination of statistics.
 
-*Steps*
+.Steps
 
 . From the *Manage* page, select the storage array with the SSD Cache.
-. Select *Provisioning > Configure Pools and Volume Groups*.
-. Select the SSD Cache for which you want to view statistics, and then click *More > View SSD Cache* statistics.
+. Select menu:Provisioning[Configure Pools and Volume Groups].
+. Select the SSD Cache for which you want to view statistics, and then click menu:More[View SSD Cache] statistics.
 +
 The View SSD Cache Statistics dialog box appears and displays the nominal statistics for the selected SSD cache.
 
++
+.Field Details
+[%collapsible]
+====
+[cols="1a,1a" options="header"]
 |===
 |Setting |Description
 
@@ -58,5 +59,6 @@ The greater the ratio of Reads to Writes, the better is the operation of the cac
 |Export All
 |Exports all SSD Cache statistics to a CSV format. The exported file contains all available statistics for the SSD Cache (both nominal and detailed).
 |===
+====
 
 . Click *Cancel* to close the dialog box.

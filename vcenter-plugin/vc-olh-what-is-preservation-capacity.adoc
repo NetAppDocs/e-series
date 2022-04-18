@@ -1,22 +1,17 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-what-is-preservation-capacity.html
-keywords:
-summary:
+permalink: vcenter-plugin/vc-olh-what-is-preservation-capacity.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Preservation capacity is the amount of capacity (number of drives) that is reserved in a pool to support potential drive failures.
 ---
 
-= What is preservation capacity
+= What is preservation capacity?
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.427690
-//
 
 [.lead]
 Preservation capacity is the amount of capacity (number of drives) that is reserved in a pool to support potential drive failures.

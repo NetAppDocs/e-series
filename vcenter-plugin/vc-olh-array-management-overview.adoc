@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-array-management-overview.html
-keywords:
-summary:
+permalink: vcenter-plugin/vc-olh-array-management-overview.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Use the Add/Discover feature to find and add the storage arrays you want to manage in your organization's network.
 ---
 
 = Array management overview
@@ -12,44 +12,38 @@ summary:
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:47.969575
-//
-
 [.lead]
 Use the Add/Discover feature to find and add the storage arrays you want to manage in your organization's network. From the Manage page, you can also rename, remove, and provide new passwords for these discovered arrays.
 
-=== Considerations for discovering arrays
+== Considerations for discovering arrays
 
 For the plugin to display and manage storage resources, you must discover the storage arrays you want to manage in your organization's network. You can discover and then add a single array or multiple arrays.
 
-==== Discovering multiple storage arrays
+=== Multiple storage arrays
 
 If you choose to discover multiple arrays, you enter a network IP address range and then the system attempts individual connections to each IP address in that range. Any storage array successfully reached appears in the plugin and you can then add them to your management domain.
 
-==== Discovering a single storage array
+=== Single storage array
 
 If you choose to discover a single array, you enter the single IP address for one of the controllers in the storage array and then add that array to your management domain.
 
 [NOTE]
 The plugin discovers and displays only the single IP address or IP address within a range assigned to a controller. If there are alternate controllers or IP addresses assigned to these controllers that fall outside of this single IP address or IP address range, then the plugin will not discover or display them. However, once you add the storage array, all associated IP addresses will be discovered and displayed in the Manage view.
 
-==== User credentials
+=== User credentials
 
 You must supply the administrator password for each storage array you want to add.
 
-==== Certificates
+=== Certificates
 
 As part of the discovery process, the system verifies that the discovered storage arrays are using certificates by a trusted source. The system uses two types of certificate-based authentication for all connections that it establishes with the with the browser:
 
-* *Trusted certificates.* You might need to install additional trusted certificates supplied by the Certificate Authority if one or both controller certificates are expired, revoked, or missing a certificate in its chain.
-* *Self-signed certificates.* Arrays can also use self-signed certificates. If you attempt to discover arrays without importing signed certificates, the plugin provides an additional step that allows you to accept the self- signed certificate. The storage array's self-signed certificate will be marked as trusted and the storage array will be added to the plugin.If you do not trust the connections to the storage array, select Cancel and validate the storage array's security certificate strategy before adding the storage array to the plugin.
+* *Trusted certificates* -- You might need to install additional trusted certificates supplied by the Certificate Authority if one or both controller certificates are expired, revoked, or missing a certificate in its chain.
+* *Self-signed certificates* -- Arrays can also use self-signed certificates. If you attempt to discover arrays without importing signed certificates, the plugin provides an additional step that allows you to accept the self-signed certificate. The storage array's self-signed certificate will be marked as trusted and the storage array will be added to the plugin. If you do not trust the connections to the storage array, select *Cancel* and validate the storage array's security certificate strategy before adding the storage array to the plugin.
 
-=== Storage array status
+== Storage array status
 
-When you open the SANtricity Storage Plugin for vCenter, communication with each storage array is established and the status for each storage array is displayed.
+When you open the Storage Plugin for vCenter, communication with each storage array is established and the status for each storage array is displayed.
 
 From the *Manage - All* page, you can view the status of the storage array and the status of the storage array connection.
 
@@ -72,9 +66,9 @@ From the *Manage - All* page, you can view the status of the storage array and t
 |The plugin had previously contacted the storage array, but now has lost all connection to it.
 |===
 
-=== Plugin interface compared to System Manager
+== Plugin interface compared to System Manager
 
-You can use SANtricity Storage Plugin for vCenter for basic operating tasks on your storage array; however, there might be times when you need to launch System Manager to perform tasks not available in the plugin.
+You can use Storage Plugin for vCenter for basic operating tasks on your storage array; however, there might be times when you need to launch System Manager to perform tasks not available in the plugin.
 
 System Manager is an embedded application on the storage array's controller, which is connected to the network through an Ethernet management port. System Manager includes all array-based functions.
 

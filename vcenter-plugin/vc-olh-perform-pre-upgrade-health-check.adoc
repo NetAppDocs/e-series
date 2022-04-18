@@ -1,29 +1,25 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-perform-pre-upgrade-health-check.html
-keywords:
-summary:
+permalink: vcenter-plugin/vc-olh-perform-pre-upgrade-health-check.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: A health check runs as part of the upgrade process, but you also can run a health check separately before you begin.
 ---
 
 = Perform pre-upgrade health check
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.100565
-//
 
 [.lead]
 A health check runs as part of the upgrade process, but you also can run a health check separately before you begin. The health check assesses components of the storage array to make sure that the upgrade can proceed.
 
 *Steps*
 
-. From the main view, select *Manage*, and then select *Upgrade Center > Pre-Upgrade Health Check*.
+. From the main view, select *Manage*, and then select menu:Upgrade Center[Pre-Upgrade Health Check].
 +
 The Pre-Upgrade Health Check dialog box opens and lists all the discovered storage systems.
 

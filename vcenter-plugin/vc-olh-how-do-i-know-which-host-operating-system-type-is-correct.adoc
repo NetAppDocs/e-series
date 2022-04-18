@@ -1,22 +1,16 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-how-do-i-know-which-host-operating-system-type-is-correct.html
-keywords:
-summary:
+permalink: vcenter-plugin/vc-olh-how-do-i-know-which-host-operating-system-type-is-correct.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: The Host Operating System Type field contains the operating system of the host. You can select the recommended host type from the drop-down list or allow the Host Context Agent (HCA) to configure the host and appropriate host operating system type.
 ---
 
-= How do I know which host operating system type is correct
+= How do I know which host operating system type is correct?
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.301138
-//
 
 [.lead]
 The Host Operating System Type field contains the operating system of the host. You can select the recommended host type from the drop-down list or allow the Host Context Agent (HCA) to configure the host and appropriate host operating system type.
@@ -24,7 +18,7 @@ The Host Operating System Type field contains the operating system of the host. 
 The host types that appear in the drop-down list depend on the storage array model and the firmware version. The most recent versions display the most common options first, which are the most likely to be appropriate. Appearance on this list does not imply the option is fully supported.
 
 [NOTE]
-For more information about host support, refer to the <NetApp Interoperability Matrix tool>.
+For more information about host support, refer to the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 Some of the following host types might appear in the list:
 

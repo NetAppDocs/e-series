@@ -1,22 +1,17 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-why-do-i-need-to-define-a-pass-phrase.html
-keywords:
-summary:
+permalink: vcenter-plugin/vc-olh-why-do-i-need-to-define-a-pass-phrase.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: The pass phrase is used to encrypt and decrypt the security key file stored on the local management client.
 ---
 
-= Why do I need to define a pass phrase
+= Why do I need to define a pass phrase?
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.487861
-//
 
 [.lead]
-The pass phrase is used to encrypt and decrypt the security key file stored on the local management client. Without the pass phrase, the security key cannot be decrypted and used to unlock data from a secure-enabled drive if it is re-installed in another storage array. 
+The pass phrase is used to encrypt and decrypt the security key file stored on the local management client. Without the pass phrase, the security key cannot be decrypted and used to unlock data from a secure-enabled drive if it is re-installed in another storage array.

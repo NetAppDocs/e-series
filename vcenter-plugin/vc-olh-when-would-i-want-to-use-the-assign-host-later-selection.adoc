@@ -1,22 +1,17 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-when-would-i-want-to-use-the-assign-host-later-selection.html
-keywords:
-summary:
+permalink: vcenter-plugin/vc-olh-when-would-i-want-to-use-the-assign-host-later-selection.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: If you want to speed the process for creating volumes, you can skip the host assignment step so that newly created volumes are initialized offline.
 ---
 
-= When would I want to use the assign host later selection
+= When would I want to use the assign host later selection?
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.241676
-//
 
 [.lead]
 If you want to speed the process for creating volumes, you can skip the host assignment step so that newly created volumes are initialized offline.

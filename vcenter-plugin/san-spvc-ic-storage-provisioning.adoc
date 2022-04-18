@@ -19,7 +19,7 @@ To provision storage, you create volumes, assign volumes to hosts, and then assi
 [NOTE]
 For more information about storage provisioning, see the online help available from the plugin interface.
 
-== Create volumes
+== Step 1: Create volumes
 
 Volumes are data containers that manage and organize the storage space on your storage array. You create volumes from the storage capacity available on your storage array, which helps organize your system’s resources. The concept of "volumes" is similar to using folders/directories on a computer to organize files for quick access.
 
@@ -131,7 +131,7 @@ DA increases data integrity across the entire storage system. DA enables the sto
 . To continue the volume creation sequence for the selected application, click *Next*.
 . In the last step,  review a summary of the volumes you intend to create and make any necessary changes. To make changes, click *Back*.  When you are satisfied with your volume configuration, click *Finish*.
 
-== Create host access and assign volumes
+== Step 2: Create host access and assign volumes
 
 A host can be created automatically or manually:
 
@@ -238,7 +238,7 @@ The system performs the following actions:
 ** The assigned volume receives the next available LUN number. The host uses the LUN number to access the volume.
 ** The user-supplied volume name appears in volume listings associated to the host. If applicable, the factory-configured access volume also appears in volume listings associated to the host.
 
-== Create a datastore in vSphere Client
+== Step 3: Create a datastore in vSphere Client
 
 To create a datastore in the vSphere Client, see the following topic in the VMware Doc Center:
 

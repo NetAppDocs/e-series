@@ -1,53 +1,53 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-increase-capacity-of-a-volume.html
-keywords:
-summary:
+permalink: vcenter-plugin/vc-olh-increase-capacity-of-a-volume.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Resize a volume to increase its reported capacity.
 ---
 
 = Increase capacity of a volume
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.156708
-//
 
 [.lead]
 You can resize a volume to increase its reported capacity.
 
-*Before you begin*
+.Before you begin
 
 Make sure that:
 
 * Enough free capacity is available in the volume's associated pool or volume group.
 * The volume is Optimal and not in any state of modification.
-* No hot spare drives are in use in the volume. (Applies only to volumes in volume groups.)*About this task*
+* No hot spare drives are in use in the volume. (Applies only to volumes in volume groups.)
+
+.About this task
 
 This task describes how to increase the reported capacity (the capacity reported to hosts) of a volume by using the free capacity that is available in the pool or volume group. Be sure to consider any future capacity requirements that you might have for other volumes in this pool or volume group.
 
-Attention: Increasing the capacity of a volume is supported only on certain operating systems. If you increase the volume capacity on a host operating system that is unsupported, the expanded capacity is unusable, and you cannot restore the original volume capacity.
+NOTE: Increasing the capacity of a volume is supported only on certain operating systems. If you increase the volume capacity on a host operating system that is unsupported, the expanded capacity is unusable, and you cannot restore the original volume capacity.
 
-*Steps*
+.Steps
 
 . From the *Manage* page, select the storage array that contains the volumes you want to resize.
-. Select *Provisioning > Manage Volumes*.
+. Select menu:Provisioning[Manage Volumes].
 . Select the volume for which you want to increase capacity, and then select *Increase Capacity*.
 +
 The Confirm Increase Capacity dialog box appears.
 
-. Select Yes to continue.
+. Select *Yes* to continue.
 +
-The *Increase Reported Capacity* dialog box appears. This dialog box displays the volume's current reported capacity and the free capacity available in the volume's associated pool or volume group.
+The Increase Reported Capacity dialog box appears. This dialog box displays the volume's current reported capacity and the free capacity available in the volume's associated pool or volume group.
 
-. Use the Increase reported capacity by adding... box to add capacity to the current available reported capacity. You can change the capacity value to display in either mebibytes (MiB), gibibytes (GiB), or tebibytes (TiB).
-. Click *Increase*.The volume's capacity is increased based on your selection. Be aware that this operation can be lengthy and could affect system performance.
+. Use the *Increase reported capacity by adding...* box to add capacity to the current available reported capacity. You can change the capacity value to display in either mebibytes (MiB), gibibytes (GiB), or tebibytes (TiB).
+. Click *Increase*.
++
+The volume's capacity is increased based on your selection. Be aware that this operation can be lengthy and could affect system performance.
 
-*After you finish*
+.After you finish
 
 After you expand the volume capacity, you must manually increase the file system size to match. How you do this depends on the file system you are using. See your host operating system documentation for details.

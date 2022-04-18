@@ -1,41 +1,41 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-redistribute-volumes.html
-keywords:
-summary:
+permalink: vcenter-plugin/vc-olh-redistribute-volumes.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Redistribute volumes to move volumes back to their preferred controller owners
 ---
 
 = Redistribute volumes
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.185466
-//
 
 [.lead]
 You redistribute volumes to move volumes back to their preferred controller owners. Typically, multipath drivers move volumes from their preferred controller owner when a problem occurs along the data path between the host and storage array.
 
-*Before you begin*
+.Before you begin
 
 * The volumes you want to redistribute are not in use, or I/O errors will occur.
-* A multipath driver is installed on all hosts using the volumes you want to redistribute, or I/O errors will occur. If you want to redistribute volumes without a multipath driver on the hosts, all I/O activity to the volumes while the redistribution operation is in progress must be stopped to prevent application errors.*About this task*
+* A multipath driver is installed on all hosts using the volumes you want to redistribute, or I/O errors will occur. If you want to redistribute volumes without a multipath driver on the hosts, all I/O activity to the volumes while the redistribution operation is in progress must be stopped to prevent application errors.
+
+.About this task
 
 Most host multipath drivers attempt to access each volume on a path to its preferred controller owner. However, if this preferred path becomes unavailable, the multipath driver on the host fails over to an alternate path. This failover might cause the volume ownership to change to the alternate controller. After you have resolved the condition that caused the failover, some hosts might automatically move the volume ownership back to the preferred controller owner, but in some cases, you might need to manually redistribute the volumes.
 
-*Steps*
+.Steps
 
 . From the *Manage* page, select the storage array that contains the volumes you want to redistribute.
-. Select *Provisioning > Manage Volumes*.
-. Select *More > Redistribute volumes*.
+. Select menu:Provisioning[Manage Volumes].
+. Select menu:More[Redistribute volumes].
 +
 The Redistribute Volumes dialog box appears. All volumes on the storage array whose preferred controller owner does not match its current owner appear in this dialog box.
 
-. Select one or more volumes that you want to redistribute, and confirm that you want to perform the operation.*Result*
+. Select one or more volumes that you want to redistribute, and confirm that you want to perform the operation.
+
+.Result
 
 The system moves the selected volumes to their preferred controller owners or you might see a Redistribute Volumes Unnecessary dialog box.

@@ -1,28 +1,23 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-how-do-i-match-the-host-ports-to-a-host.html
-keywords:
-summary:
+permalink: vcenter-plugin/vc-olh-how-do-i-match-the-host-ports-to-a-host.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: If you are manually creating a host, you first must use the appropriate host bus adapter (HBA) utility available on the host to determine the host port identifiers associated with each HBA installed in the host.
 ---
 
-= How do I match the host ports to a host
+= How do I match the host ports to a host?
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.305013
-//
 
 [.lead]
 If you are manually creating a host, you first must use the appropriate host bus adapter (HBA) utility available on the host to determine the host port identifiers associated with each HBA installed in the host.
 
 When you have this information, select the host port identifiers that have logged into the storage array from the list provided in the Create Host dialog.
 
-*Attention:* Make sure you select the appropriate host port identifiers for the host you are creating. If you associate the wrong host port identifiers, you might cause unintended access from another host to this data.
+CAUTION: Make sure you select the appropriate host port identifiers for the host you are creating. If you associate the wrong host port identifiers, you might cause unintended access from another host to this data.
 
 If you are automatically creating hosts using the host context agent (HCA) installed on each host, the HCA should automatically associate the host port identifiers with each host and configure them appropriately.

@@ -746,228 +746,244 @@ sidebar:
             url: "/remote-storage-volumes/modify-remote-storage-task.html"
           - title: Remove remote storage object
             url: "/remote-storage-volumes/remove-remote-storage-task.html"
+
       - title: Storage plugin for vCenter
         entries:
           - title: Overview
             url: "/vcenter-plugin/san-spvc-ic-overview.html"
-          - title: Install the plugin
-            url: "/vcenter-plugin/san-spvc-ic-installation.html"
-          - title: Configure access permissions
-            url: "/vcenter-plugin/san-spvc-ic-user-access.html"
-          - title: Log in and navigate
-            url: "/vcenter-plugin/san-spvc-ic-login-and-navigation.html"
-          - title: Discover storage arrays
-            url: "/vcenter-plugin/san-spvc-ic-storage-array-discovery.html"
+          - title: Get started
+            entries:
+            - title: Install the plugin
+              url: "/vcenter-plugin/san-spvc-ic-installation.html"
+            - title: Configure access permissions
+              url: "/vcenter-plugin/san-spvc-ic-user-access.html"
+            - title: Log in and navigate
+              url: "/vcenter-plugin/san-spvc-ic-login-and-navigation.html"
+            - title: Discover storage arrays
+              url: "/vcenter-plugin/san-spvc-ic-storage-array-discovery.html"
+            - title: Provision storage
+              url: "/vcenter-plugin/san-spvc-ic-storage-provisioning.html"
+            - title: View status
+              url: "/vcenter-plugin/vc-olh-view-status.html"
+          - title: Manage certificates
+            entries:
+              - title: Certificates overview
+                url: "/vcenter-plugin/vc-olh-certificates-overview.html"
+              - title: Use CA-signed certificates
+                url: "/vcenter-plugin/vc-olh-use-ca-signed-certificates.html"
+              - title: Reset management certificates
+                url: "/vcenter-plugin/vc-olh-reset-management-certificates.html"
+              - title: Import certificates for arrays
+                url: "/vcenter-plugin/vc-olh-import-certificates-for-arrays.html"
+              - title: View certificates
+                url: "/vcenter-plugin/vc-olh-view-certificates.html"
+              - title: Export certificates
+                url: "/vcenter-plugin/vc-olh-export-certificates.html"
+              - title: Delete trusted certificates
+                url: "/vcenter-plugin/vc-olh-delete-trusted-certificates.html"
+              - title: Resolve untrusted certificates
+                url: "/vcenter-plugin/vc-olh-resolve-untrusted-certificates.html"
+          - title: Manage arrays
+            entries:
+              - title: Array management overview
+                url: "/vcenter-plugin/vc-olh-array-management-overview.html"
+              - title: Discover storage arrays
+                url: "/vcenter-plugin/vc-olh-discover-storage-arrays.html"
+              - title: Rename storage array
+                url: "/vcenter-plugin/vc-olh-rename-storage-array.html"
+              - title: Change storage array passwords
+                url: "/vcenter-plugin/vc-olh-change-storage-array-passwords.html"
+              - title: Remove storage arrays
+                url: "/vcenter-plugin/vc-olh-remove-storage-arrays.html"
+              - title: Launch System Manager
+                url: "/vcenter-plugin/vc-olh-launch-system-manager.html"
+          - title: Import settings
+            entries:
+              - title: Import settings overview
+                url: "/vcenter-plugin/vc-olh-import-settings-overview.html"
+              - title: Import alert settings
+                url: "/vcenter-plugin/vc-olh-import-alert-settings.html"
+              - title: Import AutoSupport settings
+                url: "/vcenter-plugin/vc-olh-import-autosupport-settings.html"
+              - title: Import directory services settings
+                url: "/vcenter-plugin/vc-olh-import-directory-services-settings.html"
+              - title: Import system settings
+                url: "/vcenter-plugin/vc-olh-import-system-settings.html"
+              - title: Import storage configuration settings
+                url: "/vcenter-plugin/vc-olh-import-storage-configuration-settings.html"
+          - title: Manage array groups
+            entries:
+              - title: Array groups overview
+                url: "/vcenter-plugin/vc-olh-array-groups-overview.html"
+              - title: Create storage array group
+                url: "/vcenter-plugin/vc-olh-create-storage-array-group.html"
+              - title: Add storage array to group
+                url: "/vcenter-plugin/vc-olh-add-storage-array-to-group.html"
+              - title: Rename storage array group
+                url: "/vcenter-plugin/vc-olh-rename-storage-array-group.html"
+              - title: Remove storage arrays from group
+                url: "/vcenter-plugin/vc-olh-remove-storage-arrays-from-group.html"
+              - title: Delete storage array group
+                url: "/vcenter-plugin/vc-olh-delete-storage-array-group.html"
+          - title: Upgrade OS software
+            entries:
+              - title: Upgrade overview
+                url: "/vcenter-plugin/vc-olh-upgrade-overview.html"
+              - title: Perform pre-upgrade health check
+                url: "/vcenter-plugin/vc-olh-perform-pre-upgrade-health-check.html"
+              - title: Upgrade SANtricity OS
+                url: "/vcenter-plugin/vc-olh-upgrade-santricity-os.html"
+              - title: Activate staged OS software
+                url: "/vcenter-plugin/vc-olh-activate-staged-os-software.html"
+              - title: Clear staged OS software
+                url: "/vcenter-plugin/vc-olh-clear-staged-os-software.html"
+              - title: Manage software repository
+                url: "/vcenter-plugin/vc-olh-manage-software-repository.html"
           - title: Provision storage
-            url: "/vcenter-plugin/san-spvc-ic-storage-provisioning.html"
+            entries:
+              - title: Provisioning overview
+                url: "/vcenter-plugin/vc-olh-provisioning-overview.html"
+              - title: Create storage
+                url: "/vcenter-plugin/vc-olh-create-storage.html"
+              - title: Increase capacity of a volume
+                url: "/vcenter-plugin/vc-olh-increase-capacity-of-a-volume.html"
+              - title: Change settings for a volume
+                url: "/vcenter-plugin/vc-olh-change-settings-for-a-volume.html"
+              - title: Add volumes to workload
+                url: "/vcenter-plugin/vc-olh-add-volumes-to-workload.html"
+              - title: Change workload settings
+                url: "/vcenter-plugin/vc-olh-change-workload-settings.html"
+              - title: Initialize volumes
+                url: "/vcenter-plugin/vc-olh-initialize-volumes.html"
+              - title: Redistribute volumes
+                url: "/vcenter-plugin/vc-olh-redistribute-volumes.html"
+              - title: Change controller ownership of a volume
+                url: "/vcenter-plugin/vc-olh-change-controller-ownership-of-a-volume.html"
+              - title: Change cache settings for a volume
+                url: "/vcenter-plugin/vc-olh-change-cache-settings-for-a-volume.html"
+              - title: Change media scan settings for a volume
+                url: "/vcenter-plugin/vc-olh-change-media-scan-settings-for-a-volume.html"
+              - title: Delete volume
+                url: "/vcenter-plugin/vc-olh-delete-volume.html"
+          - title: Configure hosts
+            entries:
+              - title: Host creation overview
+                url: "/vcenter-plugin/vc-olh-host-creation-overview.html"
+              - title: Create host access
+                url: "/vcenter-plugin/vc-olh-create-host-access.html"
+              - title: Create host cluster
+                url: "/vcenter-plugin/vc-olh-create-host-cluster.html"
+              - title: Assign volumes to hosts
+                url: "/vcenter-plugin/vc-olh-assign-volumes-to-hosts.html"
+              - title: Unassign volumes
+                url: "/vcenter-plugin/vc-olh-unassign-volumes.html"
+              - title: Change the settings for a host
+                url: "/vcenter-plugin/vc-olh-change-the-settings-for-a-host.html"
+              - title: Delete host or host cluster
+                url: "/vcenter-plugin/vc-olh-delete-host-or-host-cluster.html"
+          - title: Configure pools and volume groups
+            entries:
+              - title: Pools and volume group overview
+                url: "/vcenter-plugin/vc-olh-pools-and-volume-group-overview.html"
+              - title: Create pool automatically
+                url: "/vcenter-plugin/vc-olh-create-pool-automatically.html"
+              - title: Create pool manually
+                url: "/vcenter-plugin/vc-olh-create-pool-manually.html"
+              - title: Create a volume group
+                url: "/vcenter-plugin/vc-olh-create-a-volume-group.html"
+              - title: Add capacity to a pool or volume group
+                url: "/vcenter-plugin/vc-olh-add-capacity-to-a-pool-or-volume-group.html"
+              - title: Create SSD Cache
+                url: "/vcenter-plugin/vc-olh-create-ssd-cache.html"
+              - title: Change configuration settings for a pool
+                url: "/vcenter-plugin/vc-olh-change-configuration-settings-for-a-pool.html"
+              - title: Change configuration settings for a volume group
+                url: "/vcenter-plugin/vc-olh-change-configuration-settings-for-a-volume-group.html"
+              - title: Change SSD Cache settings
+                url: "/vcenter-plugin/vc-olh-change-ssd-cache-settings.html"
+              - title: View SSD Cache statistics
+                url: "/vcenter-plugin/vc-olh-view-ssd-cache-statistics.html"
+              - title: Check volume redundancy
+                url: "/vcenter-plugin/vc-olh-check-volume-redundancy.html"
+              - title: Delete pool or volume group
+                url: "/vcenter-plugin/vc-olh-delete-pool-or-volume-group.html"
+              - title: Consolidate free capacity for a volume group
+                url: "/vcenter-plugin/vc-olh-consolidate-free-capacity-for-a-volume-group.html"
+              - title: Turn on locator lights
+                url: "/vcenter-plugin/vc-olh-turn-on-locator-lights.html"
+              - title: Remove capacity
+                url: "/vcenter-plugin/vc-olh-remove-capacity.html"
+              - title: Enable security for a pool or volume group
+                url: "/vcenter-plugin/vc-olh-enable-security-for-a-pool-or-volume-group.html"
           - title: Remove plugin
             url: "/vcenter-plugin/san-spvc-ic-plugin-removal.html"
-          - title: VMware vCenter OLH for Migration
+          - title: FAQs
             entries:
-              - title: Interface overview
-                url: /vc-olh-interface-overview.html
-              - title: Open and navigate the plug-in
-                url: /vc-olh-open-and-navigate-the-plug-in.html
-              - title: View status
-                url: /vc-olh-view-status.html
-              - title: Certificates overview
-                url: /vc-olh-certificates-overview.html
-              - title: Use CA-signed certificates
-                url: /vc-olh-use-ca-signed-certificates.html
-              - title: Reset management certificates
-                url: /vc-olh-reset-management-certificates.html
-              - title: Import certificates for arrays
-                url: /vc-olh-import-certificates-for-arrays.html
-              - title: View certificates
-                url: /vc-olh-view-certificates.html
-              - title: Export certificates
-                url: /vc-olh-export-certificates.html
-              - title: Delete trusted certificates
-                url: /vc-olh-delete-trusted-certificates.html
-              - title: Resolve untrusted certificates
-                url: /vc-olh-resolve-untrusted-certificates.html
-              - title: Array management overview
-                url: /vc-olh-array-management-overview.html
-              - title: Discover storage arrays
-                url: /vc-olh-discover-storage-arrays.html
-              - title: Rename storage array
-                url: /vc-olh-rename-storage-array.html
-              - title: Change storage array passwords
-                url: /vc-olh-change-storage-array-passwords.html
-              - title: Remove storage arrays
-                url: /vc-olh-remove-storage-arrays.html
-              - title: Launch System Manager
-                url: /vc-olh-launch-system-manager.html
-              - title: Import settings overview
-                url: /vc-olh-import-settings-overview.html
-              - title: Import alert settings
-                url: /vc-olh-import-alert-settings.html
-              - title: Import AutoSupport settings
-                url: /vc-olh-import-autosupport-settings.html
-              - title: Import directory services settings
-                url: /vc-olh-import-directory-services-settings.html
-              - title: Import system settings
-                url: /vc-olh-import-system-settings.html
-              - title: Import storage configuration settings
-                url: /vc-olh-import-storage-configuration-settings.html
-              - title: What settings are imported
-                url: /vc-olh-what-settings-are-imported.html
-              - title: Why do I not see all of my storage arrays
-                url: /vc-olh-why-do-i-not-see-all-of-my-storage-arrays.html
-              - title: Array groups overview
-                url: /vc-olh-array-groups-overview.html
-              - title: Create storage array group
-                url: /vc-olh-create-storage-array-group.html
-              - title: Add storage array to group
-                url: /vc-olh-add-storage-array-to-group.html
-              - title: Rename storage array group
-                url: /vc-olh-rename-storage-array-group.html
-              - title: Remove storage arrays from group
-                url: /vc-olh-remove-storage-arrays-from-group.html
-              - title: Delete storage array group
-                url: /vc-olh-delete-storage-array-group.html
-              - title: Upgrade overview
-                url: /vc-olh-upgrade-overview.html
-              - title: Perform pre-upgrade health check
-                url: /vc-olh-perform-pre-upgrade-health-check.html
-              - title: Upgrade SANtricity OS
-                url: /vc-olh-upgrade-santricity-os.html
-              - title: Activate staged OS software
-                url: /vc-olh-activate-staged-os-software.html
-              - title: Clear staged OS software
-                url: /vc-olh-clear-staged-os-software.html
-              - title: Manage software repository
-                url: /vc-olh-manage-software-repository.html
-              - title: Provisioning overview
-                url: /vc-olh-provisioning-overview.html
-              - title: Create storage
-                url: /vc-olh-create-storage.html
-              - title: Increase capacity of a volume
-                url: /vc-olh-increase-capacity-of-a-volume.html
-              - title: Change settings for a volume
-                url: /vc-olh-change-settings-for-a-volume.html
-              - title: Add volumes to workload
-                url: /vc-olh-add-volumes-to-workload.html
-              - title: Change workload settings
-                url: /vc-olh-change-workload-settings.html
-              - title: Initialize volumes
-                url: /vc-olh-initialize-volumes.html
-              - title: Redistribute volumes
-                url: /vc-olh-redistribute-volumes.html
-              - title: Change controller ownership of a volume
-                url: /vc-olh-change-controller-ownership-of-a-volume.html
-              - title: Change cache settings for a volume
-                url: /vc-olh-change-cache-settings-for-a-volume.html
-              - title: Change media scan settings for a volume
-                url: /vc-olh-change-media-scan-settings-for-a-volume.html
-              - title: Delete volume
-                url: /vc-olh-delete-volume.html
-              - title: Why are these volumes not associated with a workload
-                url: /vc-olh-why-are-these-volumes-not-associated-with-a-workload.html
-              - title: How does my selected workload impact volume creation
-                url: /vc-olh-how-does-my-selected-workload-impact-volume-creation.html
-              - title: Why do I not see all my volumes, hosts, or host clusters
-                url: /vc-olh-why-do-i-not-see-all-my-volumes,-hosts,-or-host-clusters.html
-              - title: Why can I not delete the selected workload
-                url: /vc-olh-why-can-i-not-delete-the-selected-workload.html
-              - title: How do application-specific workloads help me manage my storage array
-                url: /vc-olh-how-do-application-specific-workloads-help-me-manage-my-storage-array.html
-              - title: What do I need to do to recognize the expanded capacity
-                url: /vc-olh-what-do-i-need-to-do-to-recognize-the-expanded-capacity.html
-              - title: When would I want to use the assign host later selection
-                url: /vc-olh-when-would-i-want-to-use-the-assign-host-later-selection.html
-              - title: What do I need to know about host block size requirements
-                url: /vc-olh-what-do-i-need-to-know-about-host-block-size-requirements.html
-              - title: Host creation overview
-                url: /vc-olh-host-creation-overview.html
-              - title: Create host access
-                url: /vc-olh-create-host-access.html
-              - title: Create host cluster
-                url: /vc-olh-create-host-cluster.html
-              - title: Assign volumes to hosts
-                url: /vc-olh-assign-volumes-to-hosts.html
-              - title: Unassign volumes
-                url: /vc-olh-unassign-volumes.html
-              - title: Change the settings for a host
-                url: /vc-olh-change-the-settings-for-a-host.html
-              - title: Delete host or host cluster
-                url: /vc-olh-delete-host-or-host-cluster.html
-              - title: Why would I need to create a host cluster
-                url: /vc-olh-why-would-i-need-to-create-a-host-cluster.html
-              - title: How do I know which host operating system type is correct
-                url: /vc-olh-how-do-i-know-which-host-operating-system-type-is-correct.html
-              - title: How do I match the host ports to a host
-                url: /vc-olh-how-do-i-match-the-host-ports-to-a-host.html
-              - title: What is the default cluster
-                url: /vc-olh-what-is-the-default-cluster.html
-              - title: Pools and volume group overview
-                url: /vc-olh-pools-and-volume-group-overview.html
-              - title: Create pool automatically
-                url: /vc-olh-create-pool-automatically.html
-              - title: Create pool manually
-                url: /vc-olh-create-pool-manually.html
-              - title: Create a volume group
-                url: /vc-olh-create-a-volume-group.html
-              - title: Add capacity to a pool or volume group
-                url: /vc-olh-add-capacity-to-a-pool-or-volume-group.html
-              - title: Create SSD Cache
-                url: /vc-olh-create-ssd-cache.html
-              - title: Change configuration settings for a pool
-                url: /vc-olh-change-configuration-settings-for-a-pool.html
-              - title: Change configuration settings for a volume group
-                url: /vc-olh-change-configuration-settings-for-a-volume-group.html
-              - title: Change SSD Cache settings
-                url: /vc-olh-change-ssd-cache-settings.html
-              - title: View SSD Cache statistics
-                url: /vc-olh-view-ssd-cache-statistics.html
-              - title: Check volume redundancy
-                url: /vc-olh-check-volume-redundancy.html
-              - title: Delete pool or volume group
-                url: /vc-olh-delete-pool-or-volume-group.html
-              - title: Consolidate free capacity for a volume group
-                url: /vc-olh-consolidate-free-capacity-for-a-volume-group.html
-              - title: Turn on locator lights
-                url: /vc-olh-turn-on-locator-lights.html
-              - title: Remove capacity
-                url: /vc-olh-remove-capacity.html
-              - title: Enable security for a pool or volume group
-                url: /vc-olh-enable-security-for-a-pool-or-volume-group.html
-              - title: What is redundancy check
-                url: /vc-olh-what-is-redundancy-check.html
-              - title: What is preservation capacity
-                url: /vc-olh-what-is-preservation-capacity.html
-              - title: What RAID level is best for my application
-                url: /vc-olh-what-raid-level-is-best-for-my-application.html
-              - title: Why are some drives not showing up
-                url: /vc-olh-why-are-some-drives-not-showing-up.html
-              - title: Why can I not increase my preservation capacity
-                url: /vc-olh-why-can-i-not-increase-my-preservation-capacity.html
-              - title: What is Data Assurance
-                url: /vc-olh-what-is-data-assurance.html
-              - title: What is FDE/FIPS security
-                url: /vc-olh-what-is-fde-fips-security.html
-              - title: What is secure-capable (Drive Security)
-                url: /vc-olh-what-is-secure-capable-@drive-security@.html
-              - title: How do I view and interpret all SSD Cache statistics
-                url: /vc-olh-how-do-i-view-and-interpret-all-ssd-cache-statistics.html
-              - title:  What is shelf loss protection and drawer loss protection
-                url: /vc-olh--what-is-shelf-loss-protection-and-drawer-loss-protection.html
-              - title: How do I maintain shelf and drawer loss protection
-                url: /vc-olh-how-do-i-maintain-shelf-and-drawer-loss-protection.html
-              - title: What is optimization capacity for pools
-                url: /vc-olh-what-is-optimization-capacity-for-pools.html
-              - title: What is optimization capacity for volume groups
-                url: /vc-olh-what-is-optimization-capacity-for-volume-groups.html
-              - title: What is resource provisioning capable
-                url: /vc-olh-what-is-resource-provisioning-capable.html
-              - title: What do I need to know about the resource-provisioned volumes feature
-                url: /vc-olh-what-do-i-need-to-know-about-the-resource-provisioned-volumes-feature.html
+              - title: What settings are imported?
+                url: "/vcenter-plugin/vc-olh-what-settings-are-imported.html"
+              - title: Why do I not see all of my storage arrays?
+                url: "/vcenter-plugin/vc-olh-why-do-i-not-see-all-of-my-storage-arrays.html"
+              - title: Why are these volumes not associated with a workload?
+                url: "/vcenter-plugin/vc-olh-why-are-these-volumes-not-associated-with-a-workload.html"
+              - title: How does my selected workload impact volume creation?
+                url: "/vcenter-plugin/vc-olh-how-does-my-selected-workload-impact-volume-creation.html"
+              - title: Why do I not see all my volumes, hosts, or host clusters?
+                url: "/vcenter-plugin/vc-olh-why-do-i-not-see-all-my-volumes,-hosts,-or-host-clusters.html"
+              - title: Why can I not delete the selected workload?
+                url: "/vcenter-plugin/vc-olh-why-can-i-not-delete-the-selected-workload.html"
+              - title: How do application-specific workloads help me manage my storage array?
+                url: "/vcenter-plugin/vc-olh-how-do-application-specific-workloads-help-me-manage-my-storage-array.html"
+              - title: What do I need to do to recognize the expanded capacity?
+                url: "/vcenter-plugin/vc-olh-what-do-i-need-to-do-to-recognize-the-expanded-capacity.html"
+              - title: When would I want to use the assign host later selection?
+                url: "/vcenter-plugin/vc-olh-when-would-i-want-to-use-the-assign-host-later-selection.html"
+              - title: What do I need to know about host block size requirements?
+                url: "/vcenter-plugin/vc-olh-what-do-i-need-to-know-about-host-block-size-requirements.html"
+              - title: Why would I need to create a host cluster?
+                url: "/vcenter-plugin/vc-olh-why-would-i-need-to-create-a-host-cluster.html"
+              - title: How do I know which host operating system type is correct?
+                url: "/vcenter-plugin/vc-olh-how-do-i-know-which-host-operating-system-type-is-correct.html"
+              - title: How do I match the host ports to a host?
+                url: "/vcenter-plugin/vc-olh-how-do-i-match-the-host-ports-to-a-host.html"
+              - title: What is the default cluster?
+                url: "/vcenter-plugin/vc-olh-what-is-the-default-cluster.html"
+              - title: What is redundancy check?
+                url: "/vcenter-plugin/vc-olh-what-is-redundancy-check.html"
+              - title: What is preservation capacity?
+                url: "/vcenter-plugin/vc-olh-what-is-preservation-capacity.html"
+              - title: What RAID level is best for my application?
+                url: "/vcenter-plugin/vc-olh-what-raid-level-is-best-for-my-application.html"
+              - title: Why are some drives not showing up?
+                url: "/vcenter-plugin/vc-olh-why-are-some-drives-not-showing-up.html"
+              - title: Why can I not increase my preservation capacity?
+                url: "/vcenter-plugin/vc-olh-why-can-i-not-increase-my-preservation-capacity.html"
+              - title: What is Data Assurance?
+                url: "/vcenter-plugin/vc-olh-what-is-data-assurance.html"
+              - title: What is FDE/FIPS security?
+                url: "/vcenter-plugin/vc-olh-what-is-fde-fips-security.html"
+              - title: What is secure-capable (Drive Security)?
+                url: "/vcenter-plugin/vc-olh-what-is-secure-capable-drive-security.html"
+              - title: How do I view and interpret all SSD Cache statistics?
+                url: "/vcenter-plugin/vc-olh-how-do-i-view-and-interpret-all-ssd-cache-statistics.html"
+              - title:  What is shelf loss protection and drawer loss protection?
+                url: "/vcenter-plugin/vc-olh-what-is-shelf-loss-protection-and-drawer-loss-protection.html"
+              - title: How do I maintain shelf and drawer loss protection?
+                url: "/vcenter-plugin/vc-olh-how-do-i-maintain-shelf-and-drawer-loss-protection.html"
+              - title: What is optimization capacity for pools?
+                url: "/vcenter-plugin/vc-olh-what-is-optimization-capacity-for-pools.html"
+              - title: What is optimization capacity for volume groups?
+                url: "/vcenter-plugin/vc-olh-what-is-optimization-capacity-for-volume-groups.html"
+              - title: What is resource provisioning capable?
+                url: "/vcenter-plugin/vc-olh-what-is-resource-provisioning-capable.html"
+              - title: What do I need to know about the resource-provisioned volumes feature?
+                url: "/vcenter-plugin/vc-olh-what-do-i-need-to-know-about-the-resource-provisioned-volumes-feature.html"
               - title: What is the difference between internal security key and external security key management?
-                url: /vc-olh-what-is-the-difference-between-internal-security-key-and-external-security-key-management?.html
-              - title: What do I need to know before creating a security key
-                url: /vc-olh-what-do-i-need-to-know-before-creating-a-security-key.html
-              - title: Why do I need to define a pass phrase
-                url: /vc-olh-why-do-i-need-to-define-a-pass-phrase.html
+                url: "/vcenter-plugin/vc-olh-what-is-the-difference-between-internal-security-key-and-external-security-key-management.html"
+              - title: What do I need to know before creating a security key?
+                url: "/vcenter-plugin/vc-olh-what-do-i-need-to-know-before-creating-a-security-key.html"
+              - title: Why do I need to define a pass phrase?
+                url: "/vcenter-plugin/vc-olh-why-do-i-need-to-define-a-pass-phrase.html"
+
       - title: Legacy solutions
         entries:
         - title: Cloud connector

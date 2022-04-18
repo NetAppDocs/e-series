@@ -1,31 +1,26 @@
 ---
 sidebar: sidebar
-permalink: vc-olh-create-storage.html
-keywords:
-summary:
+permalink: vcenter-plugin/vc-olh-create-storage.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Create storage by first creating a workload for a specific application type. Next, you add storage capacity to the workload by creating volumes with similar underlying volume characteristics.
 ---
 
 = Create storage
+:experimental:
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2022-03-25 16:38:48.144112
-//
-
 [.lead]
 You create storage by first creating a workload for a specific application type. Next, you add storage capacity to the workload by creating volumes with similar underlying volume characteristics.
 
-=== Step 1: Create workloads
+== Step 1: Create workloads
 
-A workload is a storage object that supports an application. You can define one or more workloads, or instances, per application. 
+A workload is a storage object that supports an application. You can define one or more workloads, or instances, per application.
 
-*About this task*
+.About this task
 
 For some applications, the system configures the workload to contain volumes with similar underlying volume characteristics. These volume characteristics are optimized based on the type of application the workload supports. For example,  if you create a workload that supports a Microsoft SQL Server application and then subsequently create volumes for that workload, the underlying volume characteristics are optimized to support Microsoft SQL Server.
 
@@ -34,42 +29,45 @@ The system recommends an optimized volume configuration only for the following a
 * Microsoft SQL Server
 * Microsoft Exchange Server
 * Video Surveillance
-* VMware ESXi (for volumes to be used with Virtual Machine File System)*Steps*
+* VMware ESXi (for volumes to be used with Virtual Machine File System)
+
+.Steps
 
 . From the *Manage* page, select the storage array.
-. Select *Provisioning > Manage Volumes*.
-. Select *Create > Workload*.
+. Select menu:Provisioning[Manage Volumes].
+. Select menu:Create[Workload].
 +
 The Create Application Workload dialog box appears.
 
 . Use the drop-down list to select the type of application that you want to create the workload for and then type a workload name.
-. Click *Create*.*After you finish*
+. Click *Create*.
 
-Go to Step 2: Create volumes.
 
-=== Step 2: Create volumes
+== Step 2: Create volumes
 
-You create volumes to add storage capacity to an application-specific workload, and to make the created volumes visible to a specific host or host cluster. 
+You create volumes to add storage capacity to an application-specific workload, and to make the created volumes visible to a specific host or host cluster.
 
-*About this task*
+.About this task
 
 Most application types default to a user-defined volume configuration, while other types have a smart configuration applied at volume creation. For example, if you are creating volumes for a Microsoft Exchange application, you are asked how many mailboxes you need, what your average mailbox capacity requirements are, and how many copies of the database you want. The system uses this information to create an optimal volume configuration for you, which can be edited as needed.
 
-You can create volumes from *Provisioning > Manage Volumes > Create > Volumes or from Provisioning > Configure Pools and Volume Groups > Create > Volumes*. The procedure is the same for either selection.
+You can create volumes from menu:Provisioning[Manage Volumes > Create > Volumes] or from menu:Provisioning[Configure Pools and Volume Groups > Create > Volumes]. The procedure is the same for either selection.
 
-The process to create a volume is a multi-step procedure. 
+The process to create a volume is a multi-step procedure.
 
-==== Step 2a: Select host for a volume
+=== Step 2a: Select host for a volume
 
 In the first step, you can select a specific host or host cluster for the volume, or you can choose to assign the host later.
 
-*Before you begin*
+.Before you begin
 
 Make sure that:
 
-* Valid hosts or host clusters have been defined (go to *Provisioning > Configure Hosts*).
+* Valid hosts or host clusters have been defined (go to menu:Provisioning[Configure Hosts]).
 * Host port identifiers have been defined for the host.
-* The host connection must support Data Assurance (DA) if you plan to create DA-enabled volumes. If any of the host connections on the controllers in your storage array do not support DA, the associated hosts cannot access data on DA-enabled volumes.*About this task*
+* The host connection must support Data Assurance (DA) if you plan to create DA-enabled volumes. If any of the host connections on the controllers in your storage array do not support DA, the associated hosts cannot access data on DA-enabled volumes.
+
+.About this task
 
 Keep these guidelines in mind when you assign volumes:
 
@@ -82,31 +80,33 @@ Keep these guidelines in mind when you assign volumes:
 [NOTE]
 Assigning a volume to a host will fail if you try to assign a volume to a host cluster that conflicts with an established assignment for a host in the host clusters.
 
-*Steps*
+.Steps
 
 . From the *Manage* page, select the storage array.
-. Select *Provisioning > Manage Volumes*.
-. Select *Create > Volumes*.
+. Select menu:Provisioning[Manage Volumes].
+. Select menu:Create[Volumes].
 +
 The Select Host dialog box appears.
 
 . From the drop-down list, select a specific host or host cluster to which you want to assign volumes, or choose to assign the host or host cluster at a later time.
-. To continue the volume creation sequence for the selected host or host cluster, click *Next*, and go to Step 2b: Select a workload for a volume.
+. To continue the volume creation sequence for the selected host or host cluster, click *Next.*
 +
 The Select Workload dialog box appears.
 
-==== Step 2b: Select a workload for a volume
+=== Step 2b: Select a workload for a volume
 
 In the second step, you select a workload to customize the storage array configuration for a specific application, such as VMware.
 
-*About this task*
+.About this task
 
 This task describes how to create volumes for a workload. Typically, a workload contains volumes with similar characteristics, which are optimized based on the type of application the workload supports. You can define a workload in this step or you can select existing workloads.
 
 Keep these guidelines in mind:
 
 * When using an application-specific workload, the system recommends an optimized volume configuration to minimize contention between application workload I/O and other traffic from your application instance. You can review the recommended volume configuration, and then edit, add, or delete the system-recommended volumes and characteristics using the Add/Edit Volumes dialog box (available in the next step).
-* When using other application types, you manually specify the volume configuration using the Add/Edit Volumes dialog box (available in the next step).*Steps*
+* When using other application types, you manually specify the volume configuration using the Add/Edit Volumes dialog box (available in the next step).
+
+.Steps
 
 . Do one of the following:
 
@@ -115,14 +115,14 @@ Keep these guidelines in mind:
 ** From the drop-down list, select the name of the application you want to create the new workload for. Select one of the "Other" entries if the application you intend to use on this storage array is not listed.
 ** Enter a name for the workload you want to create.
 
-. Click Next.
-. If your workload is associated with a supported application type, enter the information requested; otherwise, go to Step 2c: Add or edit volumes.
+. Click *Next*.
+. If your workload is associated with a supported application type, enter the information requested; otherwise, go to the next step.
 
-==== Step 2c: Add or edit volumes
+=== Step 2c: Add or edit volumes
 
 In the third step, you define the volume configuration.
 
-*Before you begin*
+.Before you begin
 
 * The pools or volume groups must have sufficient free capacity.
 * The maximum number of volumes allowed in a volume group is 256.
@@ -138,103 +138,153 @@ In the third step, you define the volume configuration.
 ** If you want to create a secure-enabled volume, select a pool or volume group that is secure capable (look for Yes next to "Secure-capable" in the pool and volume group candidates table).
 ** Drive security capabilities are presented at the pool and volume group level. Secure-capable drives prevent unauthorized access to the data on a drive that is physically removed from the storage array. A secure-enabled drive encrypts data during writes and decrypts data during reads using a unique encryption key.
 ** A pool or volume group can contain both secure-capable and non-secure-capable drives, but all drives must be secure-capable to use their encryption capabilities.
-* To create a resource-provisioned volume, all drives must be NVMe drives with the Deallocated or Unwritten Logical Block Error (DULBE) option.*About this task*
+* To create a resource-provisioned volume, all drives must be NVMe drives with the Deallocated or Unwritten Logical Block Error (DULBE) option.
+
+.About this task
 
 You create volumes from eligible pools or volume groups, which are shown in the Add/Edit Volumes dialog box. For each eligible pool and volume group, the number of drives available and the total free capacity appears.
 
 For some application-specific workloads, each eligible pool or volume group shows the proposed capacity based on the suggested volume configuration and shows the remaining free capacity in GiB.  For other workloads, the proposed capacity appears as you add volumes to a pool or volume group and specify the reported capacity.
 
-*Steps*
+.Steps
 
 . Choose one of these actions based on whether you selected Other or an application-specific workload in the previous step:
 
-** *Other.* Click *Add new volume* in each pool or volume group that you want to use to create one or more volumes.
-
+** *Other* -- Click *Add new volume* in each pool or volume group that you want to use to create one or more volumes.
++
+.Field Details
+[%collapsible]
+====
+[cols="1a,1a" options="header"]
 |===
 |Field |Description
-
-|Volume Name
-|A volume is assigned a default name during the volume creation sequence. You can either accept the default name or provide a more descriptive one indicating the type of data stored in the volume.
-|Reported Capacity
-|Define the capacity of the new volume and the capacity units to use (MiB, GiB, or TiB). For Thick volumes, the minimum capacity is 1 MiB, and the maximum capacity is determined by the number and capacity of the drives in the pool or volume group.
+a|
+Volume Name
+a|
+A volume is assigned a default name during the volume creation sequence. You can either accept the default name or provide a more descriptive one indicating the type of data stored in the volume.
+a|
+Reported Capacity
+a|
+Define the capacity of the new volume and the capacity units to use (MiB, GiB, or TiB). For Thick volumes, the minimum capacity is 1 MiB, and the maximum capacity is determined by the number and capacity of the drives in the pool or volume group.
 Keep in mind that storage capacity is also required for copy services (snapshot images, snapshot volumes, volume copies, and remote mirrors); therefore, do not allocate all of the capacity to standard volumes.
 Capacity in a pool is allocated in 4GiB increments. Any capacity that is not a multiple of 4GiB is allocated but not usable. To make sure that the entire capacity is usable, specify the capacity in 4GiB increments. If unusable capacity exists, the only way to regain it is to increase the capacity of the volume.
-|Volume Block Size (EF300 and EF600 only)
-|Shows the block sizes that can be created for the volume:
-512 – 512 bytes
-4K – 4,096 bytes
-|Segment Size
-|Shows the setting for segment sizing, which only appears for volumes in a volume group. You can change the segment size to optimize performance.
-Allowed segment size transitions. The system determines the segment size transitions that are allowed. Segment sizes that are inappropriate transitions from the current segment size are unavailable on the drop-down list. Allowed transitions usually are double or half of the current segment size. For example, if the current volume segment size is 32 KiB, a new volume segment size of either 16 KiB or 64 KiB is allowed.
-SSD Cache-enabled volumes. You can specify a 4-KiB segment size for SSD Cache-enabled volumes. Make sure you select the 4-KiB segment size only for SSD Cache-enabled volumes that handle small-block I/O operations (for example, 16 KiB I/O block sizes or smaller). Performance might be impacted if you select 4 KiB as the segment size for SSD Cache-enabled volumes that handle large block sequential operations.
-Amount of time to change segment size. The amount of time to change a volume's segment size depends on these variables:
+a|
+Volume Block Size (EF300 and EF600 only)
+a|
+Shows the block sizes that can be created for the volume:
+
+ * 512 – 512 bytes
+ * 4K – 4,096 bytes
+a|
+Segment Size
+a|
+Shows the setting for segment sizing, which only appears for volumes in a volume group. You can change the segment size to optimize performance.
+*Allowed segment size transitions.* The system determines the segment size transitions that are allowed. Segment sizes that are inappropriate transitions from the current segment size are unavailable on the drop-down list. Allowed transitions usually are double or half of the current segment size. For example, if the current volume segment size is 32 KiB, a new volume segment size of either 16 KiB or 64 KiB is allowed.
+*SSD Cache-enabled volumes.* You can specify a 4-KiB segment size for SSD Cache-enabled volumes. Make sure you select the 4-KiB segment size only for SSD Cache-enabled volumes that handle small-block I/O operations (for example, 16 KiB I/O block sizes or smaller). Performance might be impacted if you select 4 KiB as the segment size for SSD Cache-enabled volumes that handle large block sequential operations.
+*Amount of time to change segment size.* The amount of time to change a volume's segment size depends on these variables:
+
 * The I/O load from the host
 * The modification priority of the volume
 * The number of drives in the volume group
 * The number of drive channels
 * The processing power of the storage array controllers
+
 When you change the segment size for a volume, I/O performance is affected, but your data remains available.
-|Secure-capable
-|“Yes” appears next to "Secure-capable" only if the drives in the pool or volume group are secure-capable.
+a|
+Secure-capable
+a|
+“Yes” appears next to “Secure-capable” only if the drives in the pool or volume group are secure-capable.
 Drive Security prevents unauthorized access to the data on a drive that is physically removed from the storage array. This option is available only when the Drive Security feature has been enabled, and a security key is set up for the storage array.
 A pool or volume group can contain both secure-capable and non-secure-capable drives, but all drives must be secure-capable to use their encryption capabilities.
-|DA
-|Yes appears next to DA only if the drives in the pool or volume group support Data Assurance (DA).
+a|
+DA
+a|
+“Yes” appears next to “DA” only if the drives in the pool or volume group support Data Assurance (DA).
 DA increases data integrity across the entire storage system. DA enables the storage array to check for errors that might occur as data is transferred through the controllers down to the drives. Using DA for the new volume ensures that any errors are detected.
-|Resource provisioned (EF300 and EF600 only)
-|Yes appears next to Resource provisioned only if the drives support this option. Resource Provisioning is a feature available in the EF300 and EF600 storage arrays, which allows volumes to be put in use immediately with no background initialization process.
+a|
+Resource provisioned (EF300 and EF600 only)
+a|
+“Yes” appears next to “Resource provisioned” only if the drives support this option. Resource Provisioning is a feature available in the EF300 and EF600 storage arrays, which allows volumes to be put in use immediately with no background initialization process.
 |===
+====
 
-** *Application-specific workload.* Either click *Next* to accept the system-recommended volumes and characteristics for the selected workload, or click *Edit Volumes* to change, add, or delete the system-recommended volumes and characteristics for the selected workload.
-
+** *Application-specific workload* -- Either click *Next* to accept the system-recommended volumes and characteristics for the selected workload, or click *Edit Volumes* to change, add, or delete the system-recommended volumes and characteristics for the selected workload.
++
+.Field Details
+[%collapsible]
+====
+[cols="1a,1a" options="header"]
 |===
 |Field |Description
-
-|Volume Name
-|A volume is assigned a default name during the volume creation sequence. You can either accept the default name or provide a more descriptive one indicating the type of data stored in the volume.
-|Reported Capacity
-|Define the capacity of the new volume and the capacity units to use (MiB, GiB, or TiB). For Thick volumes, the minimum capacity is 1 MiB, and the maximum capacity is determined by the number and capacity of the drives in the pool or volume group.
+a|
+Volume Name
+a|
+A volume is assigned a default name during the volume creation sequence. You can either accept the default name or provide a more descriptive one indicating the type of data stored in the volume.
+a|
+Reported Capacity
+a|
+Define the capacity of the new volume and the capacity units to use (MiB, GiB, or TiB). For Thick volumes, the minimum capacity is 1 MiB, and the maximum capacity is determined by the number and capacity of the drives in the pool or volume group.
 Keep in mind that storage capacity is also required for copy services (snapshot images, snapshot volumes, volume copies, and remote mirrors); therefore, do not allocate all of the capacity to standard volumes.
 Capacity in a pool is allocated in 4-GiB increments. Any capacity that is not a multiple of 4 GiB is allocated but not usable. To make sure that the entire capacity is usable, specify the capacity in 4-GiB increments. If unusable capacity exists, the only way to regain it is to increase the capacity of the volume.
-|Volume Type
-|Volume type indicates the type of volume that was created for an application- specific workload.
-|Volume Block Size (EF300 and EF600 only)
-|Shows the block sizes that can be created for the volume:
-* 512. 512 bytes
-* 4K. 4,096 bytes
-|Segment Size
-|Shows the setting for segment sizing, which only appears for volumes in a volume group. You can change the segment size to optimize performance.
-Allowed segment size transitions. The system determines the segment size transitions that are allowed. Segment sizes that are inappropriate transitions from the current segment size are unavailable on the drop-down list. Allowed transitions usually are double or half of the current segment size. For example, if the current volume segment size is 32 KiB, a new volume segment size of either 16 KiB or 64 KiB is allowed.
-SSD Cache-enabled volumes. You can specify a 4-KiB segment size for SSD Cache-enabled volumes. Make sure you select the 4-KiB segment size only for SSD Cache-enabled volumes that handle small-block I/O operations (for example, 16 KiB I/O block sizes or smaller). Performance might be impacted if you select 4 KiB as the segment size for SSD Cache-enabled volumes that handle large block sequential operations.
-Amount of time to change segment size. The amount of time to change a volume's segment size depends on these variables:
+a|
+Volume Type
+a|
+Volume type indicates the type of volume that was created for an application- specific workload.
+a|
+Volume Block Size (EF300 and EF600 only)
+a|
+Shows the block sizes that can be created for the volume:
+
+* 512 -- 512 bytes
+* 4K -- 4,096 bytes
+a|
+Segment Size
+a|
+Shows the setting for segment sizing, which only appears for volumes in a volume group. You can change the segment size to optimize performance.
+*Allowed segment size transitions.* The system determines the segment size transitions that are allowed. Segment sizes that are inappropriate transitions from the current segment size are unavailable on the drop-down list. Allowed transitions usually are double or half of the current segment size. For example, if the current volume segment size is 32 KiB, a new volume segment size of either 16 KiB or 64 KiB is allowed.
+*SSD Cache-enabled volumes.* You can specify a 4-KiB segment size for SSD Cache-enabled volumes. Make sure you select the 4-KiB segment size only for SSD Cache-enabled volumes that handle small-block I/O operations (for example, 16 KiB I/O block sizes or smaller). Performance might be impacted if you select 4 KiB as the segment size for SSD Cache-enabled volumes that handle large block sequential operations.
+*Amount of time to change segment size.* The amount of time to change a volume's segment size depends on these variables:
+
 * The I/O load from the host
 * The modification priority of the volume
 * The number of drives in the volume group
 * The number of drive channels
 * The processing power of the storage array controllers
+
 When you change the segment size for a volume, I/O performance is affected, but your data remains available.
-|Secure-capable
-|Yes appears next to "Secure-capable" only if the drives in the pool or volume group are secure-capable.
+a|
+Secure-capable
+a|
+“Yes” appears next to “Secure-capable” only if the drives in the pool or volume group are secure-capable.
 Drive security prevents unauthorized access to the data on a drive that is physically removed from the storage array. This option is available only when the drive security feature has been enabled, and a security key is set up for the storage array.
 A pool or volume group can contain both secure-capable and non-secure-capable drives, but all drives must be secure-capable to use their encryption capabilities.
-|DA
-|Yes appears next to DA only if the drives in the pool or volume group support Data Assurance (DA).
+a|
+DA
+a|
+“Yes” appears next to “DA” only if the drives in the pool or volume group support Data Assurance (DA).
 DA increases data integrity across the entire storage system. DA enables the storage array to check for errors that might occur as data is transferred through the controllers down to the drives. Using DA for the new volume ensures that any errors are detected.
-|Resource provisioned (EF300 and EF600 only)
-|Yes appears next to Resource Provisioned only if the drives support this option. Resource Provisioning is a feature available in the EF300 and EF600 storage arrays, which allows volumes to be put in use immediately with no background initialization process.
+a|
+Resource provisioned (EF300 and EF600 only)
+a|
+“Yes” appears next to “Resource Provisioned” only if the drives support this option. Resource Provisioning is a feature available in the EF300 and EF600 storage arrays, which allows volumes to be put in use immediately with no background initialization process.
 |===
+====
 
-. To continue the volume creation sequence for the selected application, click *Next*, and go to Step 2d: Review volume configuration.
+. To continue the volume creation sequence for the selected application, click *Next*.
 
-==== Step 2d: Review volume configuration
+=== Step 2d: Review volume configuration
 
 In the last step, you review a summary of the volumes you intend to create and make any necessary changes.
 
-*Steps*
+.Steps
 
 . Review the volumes you want to create. To make changes, click *Back*.
-. When you are satisfied with your volume configuration, click *Finish*.*After you finish*
+. When you are satisfied with your volume configuration, click *Finish*.
+
+.After you finish
 
 * In the vSphere Client, create datastores for the volumes.
 * Perform any operating system modifications necessary on the application host so that the applications can use the volume.
-* Run either the host-based `hot_add` utility or an operating system-specific utility (available from a third-party vendor), and then run the `SMdevices` utility to correlate volume names with host storage array names.The `hot_add` utility and the `SMdevices` utility are included as part of the `SMutils` package. The `SMutils` package is a collection of utilities to verify what the host sees from the storage array. It is included as part of the SANtricity software installation.
+* Run either the host-based `hot_add` utility or an operating system-specific utility (available from a third-party vendor), and then run the `SMdevices` utility to correlate volume names with host storage array names.
++
+The `hot_add` utility and the `SMdevices` utility are included as part of the `SMutils` package. The `SMutils` package is a collection of utilities to verify what the host sees from the storage array. It is included as part of the SANtricity software installation.
