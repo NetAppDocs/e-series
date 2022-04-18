@@ -69,11 +69,12 @@ You can choose one of the following options:
 
 * *Add* -- Use Add to associate a new host port identifier to the host. The length of the host port identifier name is determined by the host interface technology. Fibre Channel and Infiniband host port identifier names must have 16 characters. iSCSI host port identifier names have a maximum of 223 characters. The port must be unique. A port number that has already been configured is not allowed.
 * *Delete* -- Use Delete to remove (unassociate) a host port identifier. The Delete option does not physically remove the host port. This option removes the association between the host port and the host. Unless you remove the host bus adapter or the iSCSI initiator, the host port is still recognized by the controller.
-Important: If you delete a host port identifier, it is no longer associated with this host. Also, the host loses access to any of its assigned volumes through this host port identifier.
+
+CAUTION: If you delete a host port identifier, it is no longer associated with this host. Also, the host loses access to any of its assigned volumes through this host port identifier.
 a|
 Label
 a|
-To change the port label name, click the Edit icon (pencil). The port label name must be unique. A label name that has already been configured is not allowed.
+To change the port label name, click the *Edit* icon (pencil). The port label name must be unique. A label name that has already been configured is not allowed.
 a|
 CHAP Secret
 a|
