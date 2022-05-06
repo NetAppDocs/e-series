@@ -98,8 +98,6 @@ image::../media/remove_controller_6.png[]
 
 Install the SAS expansion cards to allow for drive tray expansion.
 
-NOTE: On an EF300 controller shelf, a SAS expansion card may only be installed in port 1.
-
 .Steps
 
 . Remove the controller canister's cover by unscrewing the single thumbscrew and lifting the lid open.
