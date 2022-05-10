@@ -12,4 +12,7 @@ summary:  Review requirements and considerations before replacing an EF300 or EF
 Before replacing a power supply in an EF300 or EF600 array, review the following requirements.
 
 * You must have a replacement power supply that is supported for your controller shelf or drive shelf model.
+
+NOTE: Do not mix PSUs of different voltage types. Always replace like for like.
+
 * You must have an ESD wristband, or you have taken other antistatic precautions.
