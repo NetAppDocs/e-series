@@ -18,23 +18,23 @@ The following tables describe new features in SANtricity OS 11.7 for embedded ma
 [cols="35h,~",options="header"]
 |===
 |New feature |Description
-|Resource Provisioning and DULBE
-|Resource Provisioning capabilities and DULBE drive capabilities are now fully supported in this release. This support includes making host-directed UNMAP on Resource-Provisioned volumes more widely usable.
+a|Resource Provisioning and DULBE
+a|Resource Provisioning capabilities and DULBE drive capabilities are now fully supported in this release. This support includes making host-directed UNMAP on Resource-Provisioned volumes more widely usable.
 
-|EF600 SAS (512e) expansion
-|This release provides support for expansion to SAS-3 enclosures for the EF600 storage system. With this expansion, the 4KiB-block NVMe SSDs can coexist with 512e SAS SSDs and HDDs. However, drives with different block sizes cannot be configured in the same pool or volume group.
+a|EF600 SAS (512e) expansion
+a|This release provides support for expansion to SAS-3 enclosures for the EF600 storage system. With this expansion, the 4KiB-block NVMe SSDs can coexist with 512e SAS SSDs and HDDs. However, drives with different block sizes cannot be configured in the same pool or volume group.
 
-|QLC SSD support
-|This release supports the current generation of QLC SSDs that have ONTAP feature set in the drive firmware but do not have the full E-Series-specific feature set. QLC drives (NVMe only) are lower cost, but have lower write performance and a lower endurance rating so they should not be used with write-intensive workloads.
+a|QLC SSD support
+a|This release supports the current generation of QLC SSDs that have ONTAP feature set in the drive firmware but do not have the full E-Series-specific feature set. QLC drives (NVMe only) are lower cost, but have lower write performance and a lower endurance rating so they should not be used with write-intensive workloads.
 
-|TLS 1.3 support
-|TLS 1.3 is now supported for embedded management. This support applies to System Manager and embedded Web Services, with the ability to enable or disable it. (TLS 1.3 support was added in a previous release for the Web Services Proxy and Unified Manager.)
+a|TLS 1.3 support
+a|TLS 1.3 is now supported for embedded management. This support applies to System Manager and embedded Web Services, with the ability to enable or disable it. (TLS 1.3 support was added in a previous release for the Web Services Proxy and Unified Manager.)
 
-|RAID 1 DDP with 8-drive minimum
-|With this release, RAID 1 DDP no longer requires a minimum of 11 SSDs in a pool. The minimum now allows 8-drive SSD pools if only RAID 1 volumes are created in the pool.
+a|RAID 1 DDP with 8-drive minimum
+a|With this release, RAID 1 DDP no longer requires a minimum of 11 SSDs in a pool. The minimum now allows 8-drive SSD pools if only RAID 1 volumes are created in the pool.
 
-|EKMS key deletion
-|A storage admin can now request an external key management server (EKMS) to delete an old key. The key deletion only takes place during a re-key process after the installed drives have the new key.
+a|EKMS key deletion
+a|A storage admin can now request an external key management server (EKMS) to delete an old key. The key deletion only takes place during a re-key process after the installed drives have the new key.
 
 |===
 
@@ -43,11 +43,14 @@ The following tables describe new features in SANtricity OS 11.7 for embedded ma
 [cols="35h,~",options="header"]
 |===
 |New feature |Description
-|SNMPv3 support |SNMPv3 is now supported for alert notifications, configurable in menu:Settings[Alerts]. SNMPv3 provides security through strong authentication and data encryption.
+a|SNMPv3 support
+a|SNMPv3 is now supported for alert notifications, configurable in menu:Settings[Alerts]. SNMPv3 provides security through strong authentication and data encryption.
 
-|Support replicating keys to multiple key servers |For external key management for self-encrypting drives, the Create External Key Management dialog includes a new option for adding multiple key servers.
+a|Support replicating keys to multiple key servers
+a|For external key management for self-encrypting drives, the Create External Key Management dialog includes a new option for adding multiple key servers.
 
-|Updated browser versions |System Manager minimum browser versions have been updated.
+a|Updated browser versions
+a|System Manager minimum browser versions have been updated.
 
 |===
 
@@ -55,40 +58,27 @@ The following tables describe new features in SANtricity OS 11.7 for embedded ma
 
 [cols="35h,~",options="header"]
 |===
-|New feature |Description
-|EF300 expansion |This release provides support for expansion to SAS-3
-enclosures for the EF300 storage system. With this expansion, the
-4KiB-block NVMe SSDs can coexist with 512e SAS SSDs and HDDs. However,
-drives with different block sizes cannot be configured in the same pool
-or volume group.
+a|New feature |Description
+a|EF300 expansion |This release provides support for expansion to SAS-3 enclosures for the EF300 storage system. With this expansion, the 4KiB-block NVMe SSDs can coexist with 512e SAS SSDs and HDDs. However, drives with different block sizes cannot be configured in the same pool or volume group.
 
-|FEC mode option in iSCSI configuration |For storage arrays using the
-25Gb iSCSI host interface card, a new option is available for setting
-the Forward Error Correction (FEC) mode when you configure iSCSI ports.
+a|FEC mode option in iSCSI configuration
+a|For storage arrays using the 25Gb iSCSI host interface card, a new option is available for setting the Forward Error Correction (FEC) mode when you configure iSCSI ports.
 
-|Remote Storage Volumes |The optional Remote Storage Volumes feature
-allows you to import volumes from a remote storage system to a local E-
-Series storage system using an iSCSI connection. The remote storage may
-be the same brand as your E-Series system or from a different storage
-vendor, as long as it is accessible via iSCSI.
+a|Remote Storage Volumes
+a|The optional Remote Storage Volumes feature allows you to import volumes from a remote storage system to a local E-
+Series storage system using an iSCSI connection. The remote storage may be the same brand as your E-Series system or from a different storage vendor, as long as it is accessible via iSCSI.
 
-|Sanitize (erase) capability added for non-FDE drives
+a|Sanitize (erase) capability added for non-FDE drives
+a|The drive sanitize feature now includes non-FDE drives in the procedure. From the Hardware page, you can open the Drive's context menu and select "Erase" (previously, this selection was "Secure Erase").
 
-|The drive
-sanitize feature now includes non-FDE drives in the procedure. From the
-Hardware page, you can open the Drive's context menu and select "Erase"
-(previously, this selection was "Secure Erase").
+a|Secure connection for email alerts
+a|To enable encrypted email notifications, you can optionally configure outgoing emails (alerts, ASUP dispatches) to supply authentication credentials. Encryption types include SMTPS and STARTTLS.
 
-|Secure connection for email alerts |To enable encrypted email
-notifications, you can optionally configure outgoing emails (alerts,
-ASUP dispatches) to supply authentication credentials. Encryption types
-include SMTPS and STARTTLS.
+a|AutoSupport additions
+a|An alert now appears in the Notifications area when AutoSupport is not enabled.
 
-|AutoSupport additions |An alert now appears in the Notifications area
-when AutoSupport is not enabled.
-
-|Syslog alert format change |The Syslog alert format now supports RFC
-5424.
+a|Syslog alert format change
+a|The Syslog alert format now supports RFC 5424.
 |===
 
 == New features in Version 11.70.0
@@ -97,57 +87,37 @@ when AutoSupport is not enabled.
 |===
 a|New feature a|Description
 
-|New storage system model – EF300 a|This release introduces the EF300 low-cost all-NVMe-flash storage system. The EF300 includes 24 NVME SSD drives and a single host interface card (HIC) per controller. The supported NVMe over Fabrics host interfaces include NVMe over IB, NVMe over RoCE, and NVMe over FC. The supported SCSI interfaces include FC, IB over iSER, and IB over SRP. Multiple EF300 storage systems and other
-E- Series storage systems can be viewed and managed in Unified Manager.
+a|New storage system model – EF300
+a|This release introduces the EF300 low-cost all-NVMe-flash storage system. The EF300 includes 24 NVME SSD drives and a single host interface card (HIC) per controller. The supported NVMe over Fabrics host interfaces include NVMe over IB, NVMe over RoCE, and NVMe over FC. The supported SCSI interfaces include FC, IB over iSER, and IB over SRP. Multiple EF300 storage systems and other E- Series storage systems can be viewed and managed in Unified Manager.
 
-|New Resource Provisioning feature (EF300 and EF600 only) |The Resource
-Provisioning feature is new for the EF300 and EF600 storage systems.
-Resource-provisioned volumes can be put in use immediately with no
-background initialization process.
+a|New Resource Provisioning feature (EF300 and EF600 only)
+a|The Resource Provisioning feature is new for the EF300 and EF600 storage systems. Resource-provisioned volumes can be put in use immediately with no background initialization process.
 
-|Add 512e block size option (EF300 and EF600 only)
-
-|For EF300 and EF600
-storage systems, a volume can be set to support a 512-byte or a 4KiB
-block size. The 512e capability has been added to allow support of the
-iSCSI host interface and the VMware OS. If possible, System Manager
+a|Add 512e block size option (EF300 and EF600 only)
+a|For EF300 and EF600 storage systems, a volume can be set to support a 512-byte or a 4KiB block size. The 512e capability has been added to allow support of the iSCSI host interface and the VMware OS. If possible, System Manager
 suggests the appropriate default value.
 
-|New option for sending AutoSupport dispatches on demand |A new Send
-AutoSupport Dispatch feature allows you to send data to technical
-support without waiting for a scheduled dispatch. This option is
-available in the AutoSupport tab of the Support Center.
+a|New option for sending AutoSupport dispatches on demand
+a|A new Send AutoSupport Dispatch feature allows you to send data to technical support without waiting for a scheduled dispatch. This option is available in the AutoSupport tab of the Support Center.
 
-|External Key Management Server enhancements a|
-The feature for connecting to an external key management server includes
-the following enhancements:
+a|External Key Management Server enhancements
+a|
+The feature for connecting to an external key management server includes the following enhancements:
 
 * Bypass the function for creating a backup key.
 
 * Choose an intermediate certificate for the key management server, in addition to the client and server certificates.
 
-|Certificate enhancements |This release allows for using an external
-tool such as OpenSSL to generate a Certificate Signing Request (CSR),
-which also requires you to import a private key file along with the
-signed certificate.
+a|Certificate enhancements
+a|This release allows for using an external tool such as OpenSSL to generate a Certificate Signing Request (CSR),
+which also requires you to import a private key file along with the signed certificate.
 
-|New Offline Initialization feature for Volume Groups |For volume
-creation, System Manager provides a method for skipping the host
-assignment step so that newly created volumes are initialized offline.
-This capability is applicable only to RAID volume groups on SAS drives (
-i.e., not to dynamic disk pools or to the NVMe SSDs included in the
-EF300 and EF600 storage systems). This feature is for workloads that
-need to have the volumes at full performance when usage begins, rather
-than having initialization run in the background.
+a|New Offline Initialization feature for Volume Groups
+a|For volume creation, System Manager provides a method for skipping the host assignment step so that newly created volumes are initialized offline. This capability is applicable only to RAID volume groups on SAS drives (i.e., not to dynamic disk pools or to the NVMe SSDs included in the EF300 and EF600 storage systems). This feature is for workloads that need to have the volumes at full performance when usage begins, rather than having initialization run in the background.
 
-|New Collect Configuration Data feature
+a|New Collect Configuration Data feature
+a|This new feature saves RAID configuration data from the controller, which includes all data for volume groups and disk pools (the same information as the CLI command for `save storageArray dbmDatabase`). This capability has been added to aid technical support and is located in the Diagnostics tab of the Support Center.
 
-|This new feature saves RAID configuration data from the controller, which includes all data for volume groups and disk pools (the same information as the CLI command for save storageArray dbmDatabase). This capability has been added to aid technical support and is located in the Diagnostics tab of the
-Support Center.
-
-|Change default preservation capacity for disk pools in 12 drive case
-|Previously, a 12-drive disk pool was created with enough preservation
-(spare) capacity to cover two drives. The default is now changed to
-handle a single drive failure to offer a more cost-effective small pool
-default.
+a|Change default preservation capacity for disk pools in 12 drive case
+a|Previously, a 12-drive disk pool was created with enough preservation (spare) capacity to cover two drives. The default is now changed to handle a single drive failure to offer a more cost-effective small pool default.
 |===
