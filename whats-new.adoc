@@ -6,15 +6,45 @@ summary: New features in SANtricity OS.
 ---
 
 = What's new in SANtricity OS
+:experimental:
+:icons: font
+:imagesdir: ../media/
 
 [.lead]
-The following table describes new features in SANtricity OS.
+The following tables describe new features in SANtricity OS 11.7 for embedded management of EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
 
-NOTE: The Resource Provisioning capability, which is available only on
-EF300 and EF600 systems with specific NVMe SSDs, has been disabled in Versions 11.71 and 11.72 so that outstanding issues can be resolved. Note that in some System Manager views, components might be reported as resource-provisioning (or DULBE) capable, but the ability to create
-resource- provisioned volumes is not available.
+== New features in Version 11.70.3
 
-== New features in Version 11.72
+[cols=",",options="header",]
+|===
+|New feature |Description
+|Resource Provisioning and DULBE
+|Resource Provisioning capabilities and DULBE drive capabilities are now fully supported in this release. This support includes making host-directed UNMAP on Resource-Provisioned volumes more widely usable.
+
+|EF600 SAS (512e) expansion
+|This release provides support for expansion to SAS-3 enclosures for the EF600 storage system. With this expansion, the 4KiB-block NVMe SSDs can coexist with 512e SAS SSDs and HDDs. However, drives with different block sizes cannot be configured in the same pool or volume group.
+
+|SRP support (100 Gb/s) on EF600
+|This release delivers SRP support on EF600 HICs with a minimum speed of 100 Gb/s.
+
+|QLC SSD support
+|This release supports the current generation of QLC SSDs that have ONTAP feature set in the drive firmware but do not have the full E-Series-specific feature set. QLC drives (NVMe only) are lower cost, but have lower write performance and a lower endurance rating so they should not be used with write-intensive workloads.
+
+|TLS 1.3 support
+|TLS 1.3 is now supported for embedded management. This support applies to System Manager and embedded Web Services, with the ability to enable or disable it. (TLS 1.3 support was added in a previous release for the Web Services Proxy and Unified Manager.)
+
+|RAID 1 DDP with 8-drive minimum
+|With this release, RAID 1 DDP no longer requires a minimum of 11 SSDs in a pool. The minimum now allows 8-drive SSD pools if only RAID 1 volumes are created in the pool.
+
+|EKMS key rotation
+|A storage admin can now request an external key management server (EKMS) to delete an old key. The key deletion only takes place during a re-key process after the installed drives have the new key.
+
+|Windows 2022 support
+|This release adds support for Windows 2022.
+
+|===
+
+== New features in Version 11.70.2
 
 [cols=",",options="header",]
 |===
@@ -27,7 +57,7 @@ resource- provisioned volumes is not available.
 
 |===
 
-== New features in Version 11.71
+== New features in Version 11.70.1
 
 [cols=",",options="header",]
 |===
@@ -67,7 +97,7 @@ when AutoSupport is not enabled.
 5424.
 |===
 
-== New features in Version 11.70
+== New features in Version 11.70.0
 
 [cols=",",options="header",]
 |===
@@ -126,136 +156,4 @@ Support Center.
 (spare) capacity to cover two drives. The default is now changed to
 handle a single drive failure to offer a more cost-effective small pool
 default.
-|===
-
-== New features in Version 11.62
-
-[cols=",",options="header",]
-|===
-|New feature |Description
-|Downloadable CLI |System Manager for the E5700, EF570, E2800, and EF280
-arrays now includes the ability to download and install the SANtricity
-command line interface (CLI) via a link in the *Settings* > *System* >
-*Add-ons* page. This is the https-based version of the CLI (also
-referred to as "Secure CLI"). This capability was previously released
-with the EF600 array.
-
-|Mirroring configuration changes in System Manager and Unified Manager
-|The tasks for configuring synchronous and asynchronous mirrored pairs
-have moved from System Manager to Unified Manager. All other tasks for
-managing mirrored pairs remain in System Manager.
-
-|New 200Gb-capable HIC (EF600 arrays only) |This release adds a new
-200Gb-capable HIC for EF600 storage arrays. Interfaces supported are
-NVMe/IB, NVMe/RoCE, and iSER/IB. Additionally, 100Gb SRP/IB is
-supported.
-
-|Additional options on 100Gb HIC (EF600 arrays only)
-
-|On the existing 100Gb HIC, iSER/IB and SRP/IB interfaces are now
-supported for EF600 storage arrays. (These interfaces are already
-supported for EF570 and E5700 arrays.)
-
-|Delete mail server in System Manager |System Manager allowed a mail
-server to be configured, but did not have an easy mechanism to remove
-it. With this release, the mail server configuration in System Manager
-can now be removed from Alerts, so that alerts are no longer sent to the
-email addresses associated with this mail server.
-
-|Optimization capacity adjustments for pools and volume groups (SSD
-drives only) in System Manager |For SSD drives, a new optimization
-capacity slider is available in System Manager for the Pool settings and
-Volume Group settings. The slider enables you to adjust the balance of
-available capacity versus SSD write performance and drive wear life.
-
-|New host types in System Manager |When you create new hosts in System
-Manager, the presented host options are now organized into three
-categories to provide better guidance: Common, Uncommon, and Use only if
-directed.
-|===
-
-== New features in Version 11.61
-
-[cols=",",options="header",]
-|===
-|New feature |Description
-|Fibre Channel support for the EF600 |This release adds Fibre Channel
-host support for the EF600 storage system. This is the first SCSI host
-supported by the EF600, which initially released with all NVMe over
-Fabrics host protocols. A single controller for the EF600 can be viewed
-and managed in System Manager. Multiple EF600 storage systems can be
-viewed and managed in Unified Manager.
-
-|Password requirements for admin user |For first-time login in Unified
-Manager, you must now enter a password for the administrator user. There
-is no longer a default "admin" password.
-|===
-
-== New features in Version 11.60
-
-[cols=",",options="header",]
-|===
-|New feature |Description
-|New storage system model – EF600 a|
-This release offers a new EF600 all-flash storage system. The EF600
-includes NVMe-oF host interfaces and NVMe SSDs.
-
-The EF600 significantly increases throughput and reduces latency. The
-supported host interfaces include NVMe over IB, NVMe over RoCE, and NVMe
-over FC, which can be configured in System Manager. Multiple EF600
-storage systems can be viewed and managed in Unified Manager.
-
-|Downloadable CLI |System Manager now includes the ability to download
-and install the SANtricity command line interface (CLI) via a link in
-the *Settings* > *System* > *Add-ons* page. This is the https- based
-version of the CLI. The legacy SANtricity Storage Manager package
-continues to include the CLI as well.
-|===
-
-== New features in Version 11.53
-
-This version includes only minor enhancements and fixes.
-
-== New features in Version 11.52
-
-[cols=",",options="header",]
-|===
-|New feature |Description
-|NVMe over FC host interface |An NVMe over Fibre Channel host connection
-can now be ordered for EF570 or E5700 E-Series controllers, in addition
-to the existing support for NVMe over RoCE and NVMe over InfiniBand.
-System Manager includes statistics for this new connection type in
-*Settings* > *System* under "NVMe over Fibre Channel details."
-|===
-
-== New features in Version 11.51
-
-This version includes only minor enhancements and fixes.
-
-== New features in Version 11.50
-
-[cols=",",options="header",]
-|===
-|New feature |Description
-|NVMe over RoCE interface a|
-An NVMe over RoCE host connection can now be ordered for EF570 or E5700
-E-Series controllers. System Manager includes new functions for
-configuring the network connection to the host (available from the
-Hardware page or from *Settings* > *System*), and functions for viewing data about the NVMe over RoCE connections to the storage array (available from *Support* > *Support Center* or from *Settings* > *System*).
-
-|Manual drive selection for volume groups |In addition to convenient
-automatic selection, a new option is available for selecting individual
-drives when you create a volume group. In general, automatic drive
-selection is recommended, but the individual drive selection option is
-available for environments with special drive location requirements.
-
-|SANtricity Unified Manager
-
-|Unified Manager is a separately installed,
-browser-based application that discovers and manages E2800 series
-controllers and E5700 series controllers. While this new application is
-not a new feature of System Manager, it does provide a new browser-based
-enterprise framework from which System Manager can be launched for
-discovered storage arrays. The new Unified Manager can be downloaded
-from the Support software downloads area.
 |===
