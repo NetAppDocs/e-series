@@ -13,7 +13,7 @@ summary: Use the Add/Discover feature to find and add the storage arrays you wan
 :imagesdir: ./media/
 
 [.lead]
-Use the Add/Discover feature to find and add the storage arrays you want to manage in your organization's network. From the Manage page, you can also rename, remove, and provide new passwords for these discovered arrays.
+Use the Add/Discover feature to find and add the storage arrays you want to manage in the Storage plugin for vCenter. From the Manage page, you can also rename, remove, and provide new passwords for these discovered arrays.
 
 == Considerations for discovering arrays
 

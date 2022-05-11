@@ -27,7 +27,7 @@ You can change controller ownership for one or more volumes in a pool or volume 
 
 .Steps
 
-. From the *Manage* page, select the storage array that contains the volumes for which you want to change the controller ownership.
+. From the Manage page, select the storage array that contains the volumes for which you want to change the controller ownership.
 . Select menu:Provisioning[Manage Volumes].
 . Select any volume, and then select menu:More[Change ownership].
 +

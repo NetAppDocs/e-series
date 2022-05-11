@@ -14,7 +14,7 @@ summary: Manage your physical and virtualized infrastructure by grouping a set o
 
 
 [.lead]
-You can manage your physical and virtualized infrastructure by grouping a set of storage arrays. You might want to group storage arrays to make it easier to run monitoring or reporting jobs.
+You can manage your physical and virtualized infrastructure in the Storage Plugin for vCenter by grouping a set of storage arrays. You might want to group storage arrays to make it easier to run monitoring or reporting jobs.
 
 Types of storage array groups:
 

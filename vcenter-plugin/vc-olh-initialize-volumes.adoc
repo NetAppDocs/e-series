@@ -42,7 +42,7 @@ This procedure applies only to standard volumes created from pools or volume gro
 
 .Steps
 
-. From the *Manage* page, select the storage array that contains the volumes you want to initialize.
+. From the Manage page, select the storage array that contains the volumes you want to initialize.
 . Select menu:Provisioning[Manage Volumes].
 . Select any volume, and then select menu:More[Initialize volumes].
 +

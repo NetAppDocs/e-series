@@ -42,7 +42,7 @@ You can perform the following actions:
 
 .Steps
 
-. From the *Manage* page, select the storage array that contains the volumes for which you want to change media scan settings.
+. From the Manage page, select the storage array that contains the volumes for which you want to change media scan settings.
 . Select menu:Provisioning[Manage Volumes].
 . Select any volume, and then select menu:More[Change media scan settings].
 +

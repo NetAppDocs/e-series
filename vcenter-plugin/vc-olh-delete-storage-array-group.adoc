@@ -23,6 +23,6 @@ This operation deletes only the storage array group. Storage arrays associated w
 
 .Steps
 
-. From the *Manage* page, select menu:Manage Groups[Delete storage array group].
+. From the Manage page, select menu:Manage Groups[Delete storage array group].
 . Select one or more storage array groups that you want to delete.
 . Click *Delete*.

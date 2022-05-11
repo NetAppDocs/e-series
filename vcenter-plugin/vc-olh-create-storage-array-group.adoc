@@ -18,7 +18,7 @@ You create storage groups, and then add storage arrays to the groups. The storag
 
 *Steps*
 
-. From the *Manage* page, select menu:Manage Groups[Create storage array group].
+. From the Manage page, select menu:Manage Groups[Create storage array group].
 . In the *Name* field, type a name for the new group.
 . Select the storage arrays that you want to add to the new group.
 . Click *Create*.

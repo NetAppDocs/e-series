@@ -13,7 +13,7 @@ summary: You can create data containers, called volumes, so the host can access 
 :imagesdir: ./media/
 
 [.lead]
-You can create data containers, called volumes, so the host can access storage on the array.
+In the Storage Plugin for vCenter, you can create data containers, called volumes, so the host can access storage on the array.
 
 == Volume types and characteristics
 

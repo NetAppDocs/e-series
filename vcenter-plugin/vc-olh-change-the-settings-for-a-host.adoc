@@ -19,7 +19,7 @@ You can change the name, host operating system type, and associated host cluster
 
 .Steps
 
-. From the *Manage* page, select the storage array with the host connection.
+. From the Manage page, select the storage array with the host connection.
 . Select menu:Provisioning[Configure Hosts].
 +
 The Configure Hosts page opens.
@@ -33,7 +33,7 @@ A dialog box appears that shows the current host settings.
 .Field Details
 [%collapsible]
 ====
-[cols="1a,1a" options="header"]
+[cols="25h,~",options="header"]
 |===
 |Setting |Description
 a|
@@ -59,7 +59,7 @@ You can change the type of operating system running on the host you defined.
 .Field Details
 [%collapsible]
 ====
-[cols="1a,1a" options="header"]
+[cols="25h,~",options="header"]
 |===
 |Setting |Description
 a|

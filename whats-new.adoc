@@ -15,7 +15,7 @@ The following tables describe new features in SANtricity OS 11.7 for embedded ma
 
 == New features in Version 11.70.3
 
-[cols=",",options="header",]
+[cols="35h,~",options="header"]
 |===
 |New feature |Description
 |Resource Provisioning and DULBE
@@ -23,9 +23,6 @@ The following tables describe new features in SANtricity OS 11.7 for embedded ma
 
 |EF600 SAS (512e) expansion
 |This release provides support for expansion to SAS-3 enclosures for the EF600 storage system. With this expansion, the 4KiB-block NVMe SSDs can coexist with 512e SAS SSDs and HDDs. However, drives with different block sizes cannot be configured in the same pool or volume group.
-
-|SRP support (100 Gb/s) on EF600
-|This release delivers SRP support on EF600 HICs with a minimum speed of 100 Gb/s.
 
 |QLC SSD support
 |This release supports the current generation of QLC SSDs that have ONTAP feature set in the drive firmware but do not have the full E-Series-specific feature set. QLC drives (NVMe only) are lower cost, but have lower write performance and a lower endurance rating so they should not be used with write-intensive workloads.
@@ -36,20 +33,17 @@ The following tables describe new features in SANtricity OS 11.7 for embedded ma
 |RAID 1 DDP with 8-drive minimum
 |With this release, RAID 1 DDP no longer requires a minimum of 11 SSDs in a pool. The minimum now allows 8-drive SSD pools if only RAID 1 volumes are created in the pool.
 
-|EKMS key rotation
+|EKMS key deletion
 |A storage admin can now request an external key management server (EKMS) to delete an old key. The key deletion only takes place during a re-key process after the installed drives have the new key.
-
-|Windows 2022 support
-|This release adds support for Windows 2022.
 
 |===
 
 == New features in Version 11.70.2
 
-[cols=",",options="header",]
+[cols="35h,~",options="header"]
 |===
 |New feature |Description
-|SNMPv3 support |SNMPv3 is now supported for alert notifications, configurable in *Settings > Alerts*. SNMPv3 provides security through strong authentication and data encryption.
+|SNMPv3 support |SNMPv3 is now supported for alert notifications, configurable in menu:Settings[Alerts]. SNMPv3 provides security through strong authentication and data encryption.
 
 |Support replicating keys to multiple key servers |For external key management for self-encrypting drives, the Create External Key Management dialog includes a new option for adding multiple key servers.
 
@@ -59,7 +53,7 @@ The following tables describe new features in SANtricity OS 11.7 for embedded ma
 
 == New features in Version 11.70.1
 
-[cols=",",options="header",]
+[cols="35h,~",options="header"]
 |===
 |New feature |Description
 |EF300 expansion |This release provides support for expansion to SAS-3
@@ -99,7 +93,7 @@ when AutoSupport is not enabled.
 
 == New features in Version 11.70.0
 
-[cols=",",options="header",]
+[cols="35h,~",options="header"]
 |===
 a|New feature a|Description
 

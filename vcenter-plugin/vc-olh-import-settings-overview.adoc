@@ -14,7 +14,7 @@ summary: The Import Settings feature is a batch operation that allows you to rep
 
 
 [.lead]
-The Import Settings feature is a batch operation that allows you to replicate the settings in a single storage array (the source) to multiple arrays (the targets).
+The Import Settings feature is a batch operation that allows you to replicate the settings in a single storage array (the source) to multiple arrays (the targets) in the Storage Plugin for vCenter.
 
 == Settings available for import
 

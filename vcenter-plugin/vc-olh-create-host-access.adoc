@@ -32,7 +32,7 @@ When you create a host, keep these guidelines in mind:
 
 .Steps
 
-. From the *Manage* page, select the storage array with the host connection.
+. From the Manage page, select the storage array with the host connection.
 . Select menu:Provisioning[Configure Hosts].
 +
 The Configure Hosts page opens.
@@ -46,7 +46,7 @@ The Create Host dialog box appears.
 .Field Details
 [%collapsible]
 ====
-[cols="1a,1a" options="header"]
+[cols="25h,~",options="header"]
 |===
 a|
 Setting |Description

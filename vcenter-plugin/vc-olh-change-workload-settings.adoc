@@ -19,7 +19,7 @@ You can change the name for a workload and view its associated application type.
 
 .Steps
 
-. From the *Manage* page, select the storage array that contains the workload you want to change.
+. From the Manage page, select the storage array that contains the workload you want to change.
 . Select menu:Provisioning[Manage Volumes].
 . Select the *Applications & Workloads* tab.
 +

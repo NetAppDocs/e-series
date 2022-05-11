@@ -40,7 +40,7 @@ Avoid using drives that are Data Assurance (DA) capable to add capacity to a poo
 
 .Steps
 
-. From the *Manage* page, select the storage array with the pool or volume group.
+. From the Manage page, select the storage array with the pool or volume group.
 . Select menu:Provisioning[ Configure Pools and Volume Groups].
 . Select the pool or volume group to which you want to add drives, and then click *Add Capacity*.
 +
@@ -53,7 +53,7 @@ The controller firmware arranges the unassigned drives with the best options lis
 .Field Details
 [%collapsible]
 ====
-[cols="1a,1a" options="header"]
+[cols="25h,~",options="header"]
 |===
 |Field |Description
 a|
