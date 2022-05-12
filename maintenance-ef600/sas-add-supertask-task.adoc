@@ -21,6 +21,8 @@ When you add SAS expansion cards, you must power off the storage array, install 
 * Review link:sas-overview-supertask-concept.html[Requirements for EF300 and EF600 SAS expansion card replacement].
 * You must schedule a downtime maintenance window for this procedure. You cannot access data on the storage array until you have successfully completed this procedure.
 
+CAUTION: This procedure must be done with both controller canisters. Controller HIC configurations must match exactly.
+
 .What you'll need
 
 * SAS expansion cards that are compatible with your controller.
@@ -164,6 +166,8 @@ As needed, install the latest version.
   .. Click *Collect*.
 +
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+
+. Repeat this task with your second controller canister.
 
 NOTE: To cable your SAS expansion, see link:../install-hw-cabling/index.html[Cabling E-Series hardware] for instructions.
 
