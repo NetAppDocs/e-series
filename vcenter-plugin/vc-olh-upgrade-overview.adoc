@@ -13,7 +13,7 @@ summary: You can manage SANtricity software and NVSRAM upgrades for multiple sto
 :imagesdir: ./media/
 
 [.lead]
-You can manage SANtricity software and NVSRAM upgrades for multiple storage arrays of the same type.
+In the Storage Plugin for vCenter, you can manage SANtricity software and NVSRAM upgrades for multiple storage arrays of the same type.
 
 == Upgrade workflow
 

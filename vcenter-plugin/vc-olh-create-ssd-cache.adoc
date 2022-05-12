@@ -39,7 +39,7 @@ Follow these guidelines when you create SSD Cache.
 
 .Steps
 
-. From the *Manage* page, select the storage array for the cache.
+. From the Manage page, select the storage array for the cache.
 . Select menu:Provisioning[Configure Pools and Volume Groups].
 . Click menu:Create[SSD Cache].
 +
@@ -52,7 +52,7 @@ The Create SSD Cache dialog box appears.
 .Field Details
 [%collapsible]
 ====
-[cols="1a,1a" options="header"]
+[cols="25h,~",options="header"]
 |===
 |Characteristic |Use
 |Capacity

@@ -22,7 +22,7 @@ This feature is not available on the EF600 or EF300 storage system.
 
 .Steps
 
-. From the *Manage* page, select the storage array with the SSD Cache.
+. From the Manage page, select the storage array with the SSD Cache.
 . Select menu:Provisioning[Configure Pools and Volume Groups].
 . Select the SSD Cache that you want to edit, and then click *View/Edit Settings*.
 +
@@ -33,7 +33,7 @@ The SSD Cache Settings dialog box appears.
 .Field Details
 [%collapsible]
 ====
-[cols="1a,1a" options="header"]
+[cols="25h,~",options="header"]
 |===
 a|Setting
 a|

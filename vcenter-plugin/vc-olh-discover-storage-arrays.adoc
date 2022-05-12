@@ -15,6 +15,14 @@ summary: To display and manage storage resources in the Storage Plugin for vCent
 [.lead]
 To display and manage storage resources in the Storage Plugin for vCenter, you must discover the IP addresses of arrays in your network.
 
+.Before you begin
+
+* You must know the network IP addresses (or range of addresses) of the array controllers.
+* The storage arrays must be correctly set up and configured.
+* Storage array passwords must be set up using System Manager's Access Management tile.
+
+.About this task
+
 Array discovery is a multi-step procedure:
 
 * <<Step 1: Enter network addresses for discovery>>
@@ -23,16 +31,7 @@ Array discovery is a multi-step procedure:
 
 == Step 1: Enter network addresses for discovery
 
-As the first step to discovering storage arrays, you enter a single IP address or a range of IP addresses to search across the local sub-network.
-
-.Before you begin
-
-* You must know the network IP addresses (or range of addresses) of the array controllers.
-* The storage arrays must be correctly set up and configured.
-
-.About this task
-
-The Add/Discover feature opens a wizard that guides you through the process of discovery.
+As the first step to discovering storage arrays, you enter a single IP address or a range of IP addresses to search across the local sub-network. The Add/Discover feature opens a wizard that guides you through the process of discovery.
 
 .Steps
 
@@ -63,8 +62,6 @@ The system performs a credential check on each array you are adding to the manag
 
 If necessary, you must resolve any certificate issues before proceeding with the discovery process.
 
-.About this task
-
 During discovery, if any storage arrays show an "Untrusted Certificates" status, the Resolve Self-Signed Certificates dialog box appears. You can resolve untrusted certificates in this dialog, or you can import CA certificates (see link:vc-olh-import-certificates-for-arrays.html[Import certificates for arrays]).
 
 .Steps
@@ -78,11 +75,6 @@ During discovery, if any storage arrays show an "Untrusted Certificates" status,
 == Step 3: Provide passwords
 
 As the last step for discovery, you must enter the passwords for the storage arrays that you want to add to your management domain.
-
-.Before you begin
-
-* The storage array must be correctly set up and configured.
-* Storage array passwords must be set up using System Manager's Access Management tile.
 
 .Steps
 

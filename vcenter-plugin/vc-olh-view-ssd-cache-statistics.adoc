@@ -28,7 +28,7 @@ As you review and interpret the statistics, keep in mind that some interpretatio
 
 .Steps
 
-. From the *Manage* page, select the storage array with the SSD Cache.
+. From the Manage page, select the storage array with the SSD Cache.
 . Select menu:Provisioning[Configure Pools and Volume Groups].
 . Select the SSD Cache for which you want to view statistics, and then click menu:More[View SSD Cache] statistics.
 +
@@ -38,7 +38,7 @@ The View SSD Cache Statistics dialog box appears and displays the nominal statis
 .Field Details
 [%collapsible]
 ====
-[cols="1a,1a" options="header"]
+[cols="25h,~",options="header"]
 |===
 |Setting |Description
 

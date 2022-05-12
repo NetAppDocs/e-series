@@ -28,7 +28,7 @@ Most host multipath drivers attempt to access each volume on a path to its prefe
 
 .Steps
 
-. From the *Manage* page, select the storage array that contains the volumes you want to redistribute.
+. From the Manage page, select the storage array that contains the volumes you want to redistribute.
 . Select menu:Provisioning[Manage Volumes].
 . Select menu:More[Redistribute volumes].
 +

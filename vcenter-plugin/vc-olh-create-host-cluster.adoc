@@ -32,7 +32,7 @@ If any of the host connections on the controllers in your storage array do not s
 
 .Steps
 
-. From the *Manage* page, select the storage array with the host connection.
+. From the Manage page, select the storage array with the host connection.
 . Select menu:Provisioning[Configure Hosts].
 +
 The Configure Hosts page opens.

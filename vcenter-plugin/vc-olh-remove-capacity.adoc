@@ -40,7 +40,7 @@ The following are impacts to secure-capable drives:
 
 .Steps
 
-. From the *Manage* page, select the storage array.
+. From the Manage page, select the storage array.
 +
 Select menu:Provisioning[Configure Pools and Volume Groups].
 . Select the pool or SSD Cache, and then click menu:More[Remove capacity].

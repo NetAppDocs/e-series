@@ -31,11 +31,11 @@ Imported settings include the domain name and URL of an LDAP (Lightweight Direct
 
 .Steps
 
-. From the *Manage* page, click menu:Actions[Import Settings].
+. From the Manage page, click menu:Actions[Import Settings].
 +
 The Import Settings wizard opens.
 
-. In the *Select Settings* dialog, select *Directory services* and then click *Next*.
+. In the Select Settings dialog, select *Directory services* and then click *Next*.
 +
 A dialog box opens for selecting the source array.
 

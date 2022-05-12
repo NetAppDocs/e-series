@@ -21,10 +21,10 @@ These are two distinct steps that you can perform in any order. However, if you 
 
 To unregister the plugin from a vCenter Server Appliance, select one of these methods:
 
-* <<Method 1: Executing the registration script>>
-* <<Method 2: Using the vCenter Server Mob pages>>
+* <<Method 1: Execute the registration script>>
+* <<Method 2: Use the vCenter Server Mob pages>>
 
-=== Method 1: Executing the registration script
+=== Method 1: Execute the registration script
 
 . Open a prompt through the command line and navigate to the following directory:
 +
@@ -44,7 +44,7 @@ To unregister the plugin from a vCenter Server Appliance, select one of these me
 +
 The logs are saved to `%install_dir%/working/logs/vc-registration.log`.
 
-=== Method 2: Using the vCenter Server Mob pages
+=== Method 2: Use the vCenter Server Mob pages
 
 . Open a web browser and enter the following url:
 +
@@ -60,11 +60,7 @@ The logs are saved to `%install_dir%/working/logs/vc-registration.log`.
 . Verify that the `plugin.netapp.eseries` extension is not on the list.
 
 [NOTE]
-This procedure unregisters the plugin from the vCenter Server Appliance;  however,  it does not remove plugin package files from the server. To remove package files, use SSH to access the vCenter Server Appliance and navigate to the following directory:
-
-`etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity/`
-
-Then remove the directory associated with the plugin.
+This procedure unregisters the plugin from the vCenter Server Appliance;  however,  it does not remove plugin package files from the server. To remove package files, use SSH to access the vCenter Server Appliance and navigate to the following directory: `etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity/`. Then remove the directory associated with the plugin.
 
 == Remove the plugin webserver from the Application host
 

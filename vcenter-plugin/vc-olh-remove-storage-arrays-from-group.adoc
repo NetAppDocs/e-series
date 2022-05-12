@@ -23,6 +23,6 @@ Removing storage arrays from a group does not affect the storage array or its da
 
 .Steps
 
-. From the *Manage* page, select menu:Manage Groups[Remove storage arrays from group].
+. From the Manage page, select menu:Manage Groups[Remove storage arrays from group].
 . From the drop-down, select the group that contains the storage arrays you want to remove, and then click the check box next to each storage array that you want to remove from the group.
 . Click *Remove*.

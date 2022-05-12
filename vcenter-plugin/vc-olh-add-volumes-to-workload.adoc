@@ -22,7 +22,7 @@ Volumes are not associated with a workload if they have been created using the c
 
 .Steps
 
-. From the *Manage* page, select the storage array that contains the volumes you want to add.
+. From the Manage page, select the storage array that contains the volumes you want to add.
 . Select menu:Provisioning[Manage Volumes].
 . Select the *Applications & Workloads* tab.
 +

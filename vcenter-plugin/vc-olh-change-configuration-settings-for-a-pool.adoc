@@ -26,7 +26,7 @@ You cannot change the RAID level of a pool using the plugin interface. The plugi
 
 .Steps
 
-. From the *Manage* page, select the storage array with the pool.
+. From the Manage page, select the storage array with the pool.
 . Select menu:Provisioning[Configure Pools and Volume Groups].
 . Select the pool that you want to edit, and then click *View/Edit Settings*.
 +
@@ -37,7 +37,7 @@ The Pool Settings dialog box appears.
 .Field Details
 [%collapsible]
 ====
-[cols="1a,1a" options="header"]
+[cols="25h,~",options="header"]
 |===
 |Setting |Description
 a|

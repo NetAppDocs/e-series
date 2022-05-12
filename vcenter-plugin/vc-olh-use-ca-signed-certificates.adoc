@@ -25,11 +25,7 @@ Using CA-signed certificates is a three-step procedure:
 
 == Step 1: Complete a CSR file
 
-You must first generate a certificate signing request (CSR) file, which identifies your organization and the host system where the plugin is running.
-
-.About this task
-
-This task describes how to generate the CSR file from the plugin. Alternatively, you can generate a CSR file using a tool such as OpenSSL and skip to <<Step 2: Submit CSR file>>.
+You must first generate a certificate signing request (CSR) file, which identifies your organization and the host system where the plugin is running.  Alternatively, you can generate a CSR file using a tool such as OpenSSL and skip to <<Step 2: Submit CSR file>>.
 
 .Steps
 
@@ -54,13 +50,9 @@ This task describes how to generate the CSR file from the plugin. Alternatively,
 
 == Step 2: Submit CSR file
 
-After you create a certificate signing request (CSR) file, send it to a Certificate Authority (CA).
+After you create a certificate signing request (CSR) file, you send the generated CSR file to a CA to receive signed, management certificates for the system hosting the plugin.
 
-.About this task
-
-In this task, you send the generated CSR file to a CA to receive signed, management certificates for the system hosting the plugin.
-
-E-Series systems require PEM format (Base64 ASCII encoding) for signed certificates, which includes the following file types: . pem, . crt, . cer, or .key.
+E-Series systems require PEM format (Base64 ASCII encoding) for signed certificates, which includes the following file types: .pem, .crt, .cer, or .key.
 
 .Steps
 
@@ -80,9 +72,9 @@ After you receive signed certificates from the Certificate Authority (CA), impor
 
 .Before you begin
 
-* You have received signed certificates from the CA. These files include the root certificate, one or more intermediate certificates, and the server certificate.
+* You must have the signed certificates from the CA. These files include the root certificate, one or more intermediate certificates, and the server certificate.
 * If the CA provided a chained certificate file (for example, a .p7b file), you must unpack the chained file into individual files: the root certificate, one or more intermediate certificates, and the server certificate. You can use the Windows certmgr utility to unpack the files (right-click and select menu:All Tasks[Export]). Base-64 encoding is recommended. When the exports are complete, a CER file is shown for each certificate file in the chain.
-* You have copied the certificate files to the host system where the plugin is running.
+* You must copy the certificate files to the host system where the plugin is running.
 
 .Steps
 

@@ -46,7 +46,7 @@ By consolidating free capacity on a selected volume group, you will notice impro
 
 .Steps
 
-. From the *Manage* page, select the storage array with the volume group.
+. From the Manage page, select the storage array with the volume group.
 . Select menu:Provisioning[Configure Pools and Volume Groups].
 . Select the volume group with free capacity that you want to consolidate, and then select menu:Uncommon Tasks[Consolidate volume group free capacity].
 +

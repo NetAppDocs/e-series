@@ -26,7 +26,7 @@ If you are changing the RAID level to accommodate the performance needs of the a
 
 .Steps
 
-. From the *Manage* page, select the storage array with the volume group.
+. From the Manage page, select the storage array with the volume group.
 . Select menu:Provisioning[Configure Pools and Volume Groups].
 . Select the volume group that you want to edit, and then click *View/Edit Settings*.
 +
@@ -37,7 +37,7 @@ The Volume Group Settings dialog box appears.
 .Field Details
 [%collapsible]
 ====
-[cols="1a,1a" options="header"]
+[cols="25h,~",options="header"]
 |===
 |Setting |Description
 a|

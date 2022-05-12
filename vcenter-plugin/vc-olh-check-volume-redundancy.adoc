@@ -38,7 +38,7 @@ NOTE: Immediately running a redundancy check on the same pool or volume group mi
 
 .Steps
 
-. From the *Manage* page, select the storage array with the pool or volume group.
+. From the Manage page, select the storage array with the pool or volume group.
 . Select menu:Provisioning[Configure Pools and Volume Groups].
 . Select menu:Uncommon Tasks[Check volume redundancy].
 +
@@ -57,7 +57,7 @@ The check volume redundancy operation starts. The volumes in the pool or volume 
 .Field Details
 [%collapsible]
 ====
-[cols="1a,1a" options="header"]
+[cols="25h,~",options="header"]
 |===
 |Status |Description
 
