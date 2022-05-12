@@ -10,7 +10,7 @@ summary: You upgrade a host interface card (HIC) to increase the number of host 
 :imagesdir: ../media/
 
 [.lead]
-You can upgrade a host interface card (HIC) to increase the number of host ports or to change host protocols.
+You can upgrade the host interface cards (HICs) to increase the number of host ports or to change host protocols.
 
 .About this task
 

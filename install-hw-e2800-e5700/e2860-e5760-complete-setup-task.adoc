@@ -25,7 +25,7 @@ The following example shows cabling to the data hosts using a direct-attach topo
 
 |===
 a|
-image:../media/trafford_direct.png[] a|
+image:../media/4U_DirectTopology.png[] a|
 
 . Connect each host adapter directly to the host ports on the controllers.
 
@@ -39,7 +39,7 @@ The following example shows cabling to the data hosts using a fabric topology.
 
 |===
 a|
-image:../media/trafford_direct.png[] a|
+image:../media/4U_FabricTopology.png[] a|
 
 . Connect each host adapter directly to the switch.
 . Connect each switch directly to the host ports on the controllers.

@@ -526,8 +526,6 @@ sidebar:
                 entries:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/hics-overview-supertask-concept.html"
-                - title: Add host interface cards
-                  url: "/maintenance-ef600/hics-add-supertask-task.html"
                 - title: Upgrade host interface card
                   url: "/maintenance-ef600/hics-upgrade-intro.html"
                 - title: Replace failed host interface card
