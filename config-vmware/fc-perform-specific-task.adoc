@@ -11,6 +11,8 @@ summary: For the Fibre Channel protocol, you configure the switches and determin
 [.lead]
 For the Fibre Channel protocol, you configure the switches and determine the host port identifiers.
 
+NOTE: For EF300 and EF600, you must set the block size to 512 bytes to ensure compatibility with VMware. Refer to the SANtricity System Manager online help for more information on setting a volume to 512 bytes.
+
 == Step 1: Configure the FC switches--VMware
 
 Configuring (zoning) the Fibre Channel (FC) switches enables the hosts to connect to the storage array and limits the number of paths. You zone the switches using the management interface for the switches.
