@@ -1,6 +1,6 @@
 ---
 settings:
-  name: "E-Series systems"
+  name: "e-series"
   internal:
     pdf_enabled: true
   prod:
@@ -8,7 +8,7 @@ settings:
     harmony_enabled: true
 sidebar:
   entries:
-    - title: E-Series systems docs
+    - title: E-series docs
       url: /index.html
 #    - section: cloud-connector
 #    - section: config-linux
@@ -1040,17 +1040,17 @@ homepage:
     - title: Online help
       links:
         - title: SANtricity System Manager 11.7
-          url: https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html
+          url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html
         - title: SANtricity Unified Manager 5
-          url: https://docs.netapp.com/us-en/e-series-santricity/unified-manager/index.html
+          url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-5/home.html
         - title: Command Line Interface (CLI) reference
-          url: https://docs.netapp.com/us-en/e-series-cli/index.html
+          url:  https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-cli-115/home.html
     - title: SANtricity APIs
       links:
         - title: Web services
           url: /web-services-proxy/index.html
         - title: Plug-in for vCenter
-          url: /vcenter-plugin/san-spvc-ic-overview.html
+          url: /san-spvc-ic-overview.html
         - title: SMI-S providers
           url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
     - title: Performance apps & add-ons

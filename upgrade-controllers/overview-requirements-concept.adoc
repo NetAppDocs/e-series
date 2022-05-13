@@ -112,6 +112,8 @@ Review the supported upgrade paths for each storage array model.
 
 === SAS enclosures
 
+The E5700 supports DE5600 and DE6600 SAS-2 enclosures via head upgrade. When a E5700 controller is installed in SAS-2 enclosures, support for base host ports is disabled.
+
 [options="header"]
 |===
 | SAS-2 shelves| SAS-3 shelves
