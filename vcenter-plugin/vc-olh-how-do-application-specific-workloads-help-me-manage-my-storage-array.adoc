@@ -1,0 +1,18 @@
+---
+sidebar: sidebar
+permalink: vcenter-plugin/vc-olh-how-do-application-specific-workloads-help-me-manage-my-storage-array.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: The volume characteristics of your application-specific workload dictate how the workload interacts with the components of your storage array and helps determine the performance of your environment under a given configuration.
+---
+
+= How do application-specific workloads help me manage my storage array?
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+The volume characteristics of your application-specific workload dictate how the workload interacts with the components of your storage array and helps determine the performance of your environment under a given configuration.
+
+An application is software such as SQL Server or Exchange. You define one or more workloads to support each application. For some applications, the system automatically recommends a volume configuration that optimizes storage. Characteristics such as I/O type, segment size, controller ownership, and read and write cache are included in the volume configuration.

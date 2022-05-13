@@ -1,0 +1,34 @@
+---
+sidebar: sidebar
+permalink: vcenter-plugin/vc-olh-rename-storage-array-group.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Change the name of a storage array group when the current name is no longer meaningful or applicable.
+---
+
+= Rename storage array group
+:experimental:
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+
+[.lead]
+You can change the name of a storage array group when the current name is no longer meaningful or applicable.
+
+.About this task
+
+Keep these guidelines in mind.
+
+* A name can consist of letters, numbers, and the special characters underscore (_), hyphen (-), and pound (#). If you choose any other characters, an error message appears. You are prompted to choose another name.
+* Limit the name to 30 characters. Any leading and trailing spaces in the name are deleted.
+* Use a unique, meaningful name that is easy to understand and remember.
+* Avoid arbitrary names or names that would quickly lose their meaning in the future.
+
+.Steps
+
+. From the main view, select *Manage*, and then select the storage array group you want to rename.
+. Select menu:Manage Groups[Rename storage array group].
+. In the *Group Name* field, type a new name for the group.
+. Click *Rename*.

@@ -1,0 +1,69 @@
+---
+sidebar: sidebar
+permalink: vcenter-plugin/vc-olh-import-settings-overview.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: The Import Settings feature is a batch operation that allows you to replicate the settings in a single storage array (the source) to multiple arrays (the targets).
+---
+
+= Import settings overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+
+[.lead]
+The Import Settings feature is a batch operation that allows you to replicate the settings in a single storage array (the source) to multiple arrays (the targets) in the Storage Plugin for vCenter.
+
+== Settings available for import
+
+The following configurations can be imported from one array to another:
+
+* *Alerts* -- Alerting methods to send important events to administrators using email, a syslog server, or an SNMP server.
+* *AutoSupport* -- A feature that monitors the health of a storage array and sends automatic dispatches to technical support.
+* *Directory services* -- A method of user authentication that is managed through an LDAP (Lightweight Directory Access Protocol) server and directory service, such as Microsoft's Active Directory.
+* *System settings* -- Configurations relating to the following:
+** Media scan settings for a volume
+** SSD settings
+** Automatic load balancing (does not include host connectivity reporting)
+* *Storage configuration* -- Configurations relating to the following:
+** Volumes (thick and non-repository volumes only)
+** Volume groups and pools
+** Hot spare drive assignments
+
+== Configuration workflow
+
+To import settings, follow this workflow:
+
+. On a storage array to be used as the source, configure the settings using System Manager.
+. On the storage arrays to be used as the targets, back up their configuration using System Manager.
+. From the plugin interface, go to the *Manage* page and import the settings.
+. From the Operations page, review the results of the Import Settings operation.
+
+== Requirements for replicating storage configurations
+
+Before importing a storage configuration from one storage array to another, review the requirements and guidelines.
+
+=== Shelves
+
+* The shelves where the controllers reside must be identical on the source and target arrays.
+* Shelf IDs must be identical on the source and target arrays.
+* Expansion shelves must be populated in the same slots with the same drive types (if the drive is used in the configuration, the location of unused drives does not matter).
+
+=== Controllers
+
+* The controller type can be different between the source and target arrays, but the RBOD enclosure type must be identical.
+* The HICs, including the DA capabilities of the host, must be identical between the source and target arrays.
+* Importing from a duplex to simplex configuration is not supported; however, importing from simplex to duplex is allowed.
+* FDE settings are not included in the import process.
+
+=== Status
+
+* The target arrays must be in Optimal status.
+* The source array does not need to be in Optimal status.
+
+=== Storage
+
+* Drive capacity may vary between the source and target arrays, as long as the volume capacity on the target is larger than the source. (A target array might have newer, larger capacity drives that would not be fully configured into volumes by the replication operation.)
+* Disk pool volumes 64 TB or larger on the source array will prevent the import process on the targets.

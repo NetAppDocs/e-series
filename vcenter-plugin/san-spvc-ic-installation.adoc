@@ -89,6 +89,6 @@ After the plugin is installed and the registration script has executed, verify t
 
 . Open the vSphere Client to the vCenter Server Appliance.
 . On the menu bar, select menu:Administrator[Client Plugins].
-. Make sure the SANtricity Storage Plugin for vCenter is listed as *Enabled*.
+. Make sure the Storage Plugin for vCenter is listed as *Enabled*.
 +
 If the plugin is listed as Disabled with an error message stating that it cannot communicate with the application server, verify that the port number defined for the application server is enabled to pass through any firewalls that might be in use. The default application server Transmission Control Protocol (TCP) port number is 8445.

@@ -38,6 +38,7 @@ successfully deploy Oracle on NetApp EF-Series storage. |
 |Describes the reference architecture and best practices when using
 NetApp E-Series storage in a Commvault Data Platform V11 environment. |Describes the reference architecture and best practices when using NetApp
 E-Series storage in a Veeam Backup & Replication 9.5 environment. |Describes the deployment of Veritas NetBackup on NetApp E-Series storage.
+|
 |===
 
 == VSS
@@ -50,6 +51,13 @@ E-Series storage in a Veeam Backup & Replication 9.5 environment. |Describes the
 |Describes best practices for deploying E-Series arrays into video
 surveillance environments. |Describes how to design and deploy video management systems with NetApp E-Series storage. |Describes the
 video surveillance solution architecture and includes details of the components and storage best practices.
+|https://www.netapp.com/pdf.html?item=/media/19427-tr-4838.pdf&v=2020106216[*TR-4838: E2800 and E5700 with Milestone XProtect VMS Certification Report*^]
+|https://www.netapp.com/media/17106-tr4771design.pdf[*TR-4771-DESIGN: NetApp E-Series and Genetec video management software*^]
+|
+|Describes the certification test results performed on NetApp E2800 and E5700 hybrid storage arrays.
+|Describes the certification results of Genetec Security Center Video Management Software (VMS) on the NetApp
+E2800 and E5700 hybrid storage arrays.
+|
 |===
 
 == HPC

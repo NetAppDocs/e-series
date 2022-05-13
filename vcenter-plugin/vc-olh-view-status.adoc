@@ -1,0 +1,62 @@
+---
+sidebar: sidebar
+permalink: vcenter-plugin/vc-olh-view-status.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: View system status from the Storage Plugin for vCenter or from the vSphere Client
+---
+
+= View status
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+
+[.lead]
+You can view system status from the Storage Plugin for vCenter or from the vSphere Client.
+
+. Open the plugin from within the vSphere Client.
+. View status from the following panels:
+
+** *Storage array status* -- Go to the *Manage-All* panel. For each discovered array, the row provides a Status column.
+** *Operations in progress* -- Click *Operations* on the side panel to view all long-running tasks, such as importing settings. You can also view long-running operations from the Provisioning drop-down. For each operation listed on the Operations in Progress dialog, a percentage of completion and estimated time remaining to complete the operation are shown. In some cases, you can stop an operation or place it at a higher or lower priority. If desired, use the links in the Actions column to stop or change priority for an operation.
+
+CAUTION: Read all cautionary text provided in the dialog boxes, particularly when stopping an operation.
+
+Operations that might appear for the plugin are listed in the following table. Additional operations might also appear in the System Manager interface.
+
+|===
+|Operation |Possible status of the operation |Actions you can take
+
+|Volume create (thick pool volumes larger than 64TiB only)
+|In progress
+|none
+|Volume delete (thick pool volumes larger than 64TiB only)
+|In progress
+|none
+|Add capacity to pool or volume group
+|In progress
+|none
+|Change a RAID level for a volume
+|In progress
+|none
+|Reduce capacity for a pool
+|In progress
+|none
+|Check the time remaining on an instant availability format (IAF) operation for pool volumes
+|In progress
+|none
+|Check the data redundancy of a volume group
+|In progress
+|none
+|Initialize a volume
+|In progress
+|none
+|Increase capacity for a volume
+|In progress
+|none
+|Change segment size for a volume
+|In progress
+|none
+|===

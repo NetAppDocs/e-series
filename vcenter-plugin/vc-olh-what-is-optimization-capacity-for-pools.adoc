@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+permalink: vcenter-plugin/vc-olh-what-is-optimization-capacity-for-pools.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: SSD drives will have longer life and better maximum write performance when a portion of their capacity is unallocated.
+---
+
+= What is optimization capacity for pools?
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+
+[.lead]
+SSD drives will have longer life and better maximum write performance when a portion of their capacity is unallocated.
+
+For drives associated with a pool, unallocated capacity is comprised of a pool’s preservation capacity, the free capacity (capacity not used by volumes), and a portion of the usable capacity set aside as additional optimization capacity. The additional optimization capacity ensures a minimum level of optimization capacity by reducing the usable capacity, and as such, is not available for volume creation.
+
+When a pool is created, a recommended optimization capacity is generated that provides a balance of performance, drive wear life, and available capacity. The Additional Optimization Capacity slider located in the Pool Settings dialog allows adjustments to the pool’s optimization capacity. Adjusting the slider provides for better performance and drive wear life at the expense of available capacity, or additional available capacity at the expense of performance and drive wear life.
+
+[NOTE]
+The Additional Optimization Capacity slider is only available for EF600 and EF300 storage systems.

@@ -1,0 +1,92 @@
+---
+sidebar: sidebar
+permalink: vcenter-plugin/vc-olh-create-host-access.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: To manage storage with the Storage Plugin for vCenter, you must discover or define each host in the network.
+---
+
+= Create host access
+:experimental:
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+
+[.lead]
+To manage storage with the Storage Plugin for vCenter, you must discover or define each host in the network.
+
+.About this task
+
+By creating a host, you define the host parameters to provide connection to the storage array and I/O access to the volumes.
+
+You can allow the Host Context Agent (HCA) to automatically detect the hosts, and then verify that the information is correct by selecting *View/Edit Settings* from the Configure Hosts page. However, the HCA is not available on all supported operating systems and you must create the host manually.
+
+When you create a host, keep these guidelines in mind:
+
+* You must define the host identifier ports that are associated with the host.
+* Make sure that you provide the same name as the host's assigned system name.
+* This operation does not succeed if the name you choose is already in use.
+* The length of the name cannot exceed 30 characters.
+
+.Steps
+
+. From the Manage page, select the storage array with the host connection.
+. Select menu:Provisioning[Configure Hosts].
++
+The Configure Hosts page opens.
+
+. Click menu:Create[Host].
++
+The Create Host dialog box appears.
+
+. Select the settings for the host as appropriate.
++
+.Field Details
+[%collapsible]
+====
+[cols="25h,~",options="header"]
+|===
+a|
+Setting |Description
+a|
+Name
+a|
+Type a name for the new host.
+a|
+Host operating system type
+a|
+Select the operating system that is running on the new host from the drop-down list.
+a|
+Host interface type
+a|
+(Optional) If you have more than one type of host interface supported on your storage array, select the host interface type that you want to use.
+a|
+Host ports
+a|
+Do one of the following:
+
+* *Select I/O Interface* -- Generally, the host ports should have logged in and be available from the drop-down list. You can select the host port identifiers from the list.
+* *Manual add* -- If a host port identifier is not displayed in the list, it means that the host port has not logged in. An HBA utility or the iSCSI initiator utility may be used to find the host port identifiers and associate them with the host. You can manually enter the host port identifiers or copy/paste them from the utility (one at a time) into the Host ports field. You must select one host port identifier at a time to associate it with the host, but you can continue to select as many identifiers that are associated with the host. Each identifier is displayed in the Host ports field. If necessary, you also can remove an identifier by selecting the *X* next to it.
+a|
+Set CHAP initiator secret
+a|
+(Optional) If you selected or manually entered a host port with an iSCSI IQN, and if you want to require a host that tries to access the storage array to authenticate using Challenge Handshake Authentication Protocol (CHAP), select the “Set CHAP initiator secret” checkbox. For each iSCSI host port you selected or manually entered, do the following:
+
+* Enter the same CHAP secret that was set on each iSCSI host initiator for CHAP authentication. If you are using mutual CHAP authentication (two-way authentication that enables a host to validate itself to the storage array and for a storage array to validate itself to the host), you also must set the CHAP secret for the storage array at initial setup or by changing settings.
+* Leave the field blank if you do not require host authentication.
+Currently, the only iSCSI authentication method used is CHAP.
+|===
+====
+
+. Click *Create*.
+. If you need to update the host information, select the host from the table and click *View/Edit Settings*.
+
+.Result
+
+After the host is successfully created, the system creates a default name for each host port configured for the host (user label). The default alias is `<Hostname_Port Number>`. For example, the default alias for the first port created for host IPT is `IPT_1`.
+
+.After you finish
+
+You must assign a volume to a host so it can be used for I/O operations. Go to link:vc-olh-assign-volumes-to-hosts.html[Assign volumes to hosts].

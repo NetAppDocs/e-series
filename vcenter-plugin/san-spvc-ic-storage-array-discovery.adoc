@@ -16,12 +16,12 @@ summary: Use the Plugin for vCenter interface to discover the IP addresses of ar
 [.lead]
 To display and manage storage resources, you must use the Storage Plugin for vCenter interface to discover the IP addresses of arrays in your network.
 
-== Step 1: Enter network addresses for discovery
-
 .Before you begin
 
 ** You must know the network IP addresses (or range of addresses) of the array controllers.
 ** The storage arrays must be correctly set up and configured, and you must know the storage array login credentials (user name and password).
+
+== Step 1: Enter network addresses for discovery
 
 .Steps
 

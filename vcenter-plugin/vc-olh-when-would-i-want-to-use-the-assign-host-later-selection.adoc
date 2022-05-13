@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+permalink: vcenter-plugin/vc-olh-when-would-i-want-to-use-the-assign-host-later-selection.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: If you want to speed the process for creating volumes, you can skip the host assignment step so that newly created volumes are initialized offline.
+---
+
+= When would I want to use the assign host later selection?
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+
+[.lead]
+If you want to speed the process for creating volumes, you can skip the host assignment step so that newly created volumes are initialized offline.
+
+Newly created volumes must be initialized. The system can initialize them using one of two modes – either an Immediate Available Format (IAF) background initialization process or an offline process.
+
+When you map a volume to a host, it forces any initializing volumes in that group to transition to background initialization. This background initialization process allows for concurrent host I/O, which can sometimes be time-consuming.
+
+When none of the volumes in a volume group are mapped, offline initialization is performed. The offline process is much faster than the background process.
