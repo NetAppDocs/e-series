@@ -145,7 +145,7 @@ Hosts are created as stand-alone hosts; the HCA does not automatically create or
 
 * *Manual* – During manual host creation, you associate host port identifiers by selecting them from a list or manually entering them. After you create a host, you can assign volumes to it or add it to a host cluster if you plan to share access to volumes.
 
-==== Using the HCA to auto-discover the host
+=== Using the HCA to auto-discover the host
 
 You can allow the Host Context Agent (HCA) to automatically detect the hosts, and then verify that the information is correct.
 
@@ -163,7 +163,7 @@ The table lists the automatically created hosts.
 . Verify that the information provided by the HCA is correct (name, host type, host port identifiers).
 . If you need to change any of the information, select the host, and then click *View/Edit Settings*.
 
-==== Manually creating the host
+=== Manually creating the host
 
 .Before you begin
 

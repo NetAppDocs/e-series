@@ -36,7 +36,7 @@ You can generate and print a PDF of this page, and then use the following worksh
 
 image::../media/sas_topology_diagram_conf-vmw.gif[Diagram: SAS topology]
 
-==== Host identifiers
+=== Host identifiers
 
 [options="header"]
 |===
@@ -73,11 +73,11 @@ a|
 
 |===
 
-==== Target identifiers
+=== Target identifiers
 
 Recommended configurations consist of two target ports.
 
-==== Mapping host name
+=== Mapping host name
 
 |===
 a|
