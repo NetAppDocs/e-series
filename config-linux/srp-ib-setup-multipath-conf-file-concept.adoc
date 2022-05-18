@@ -11,4 +11,8 @@ summary: Use the multipath.conf file is the configuration file for the multipath
 [.lead]
 The multipath.conf file is the configuration file for the multipath daemon, multipathd.
 
-The multipath.conf file overrides the built-in configuration table for multipathd. /etc/multipath.conf should be empty.
+The multipath.conf file overrides the built-in configuration table for multipathd.
+
+NOTE: For SANtricity operating system 8.30 and newer, NetApp recommends using the default settings as provided.
+
+The multipath.conf files are available in /etc/multipath.conf
