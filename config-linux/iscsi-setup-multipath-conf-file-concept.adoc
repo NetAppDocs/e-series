@@ -15,4 +15,4 @@ The multipath.conf file overrides the built-in configuration table for multipath
 
 NOTE: For SANtricity operating system 8.30 and newer, NetApp recommends using the default settings as provided.
 
-The multipath.conf files are available in /etc/multipath.conf
+No changes to /etc/multipath.conf are required.
