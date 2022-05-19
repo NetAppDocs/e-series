@@ -55,7 +55,7 @@ rdma_pkey: 0x0000
 ----
 
 . Repeat step 1 for any other connections.
-. Connect to the discovered subsystem on the first path using the command: `nvme connect -t rdma -n discovered_sub_nqn-a target_ip_address -Q queue_depth_setting-l controller_loss_timeout_period`
+. Connect to the discovered subsystem on the first path using the command: `nvme connect -t rdma -n discovered_sub_nqn -a target_ip_address -Q queue_depth_setting -l controller_loss_timeout_period`
 +
 NOTE: The command listed above does not persist through reboot. The `NVMe connect` command will need to be executed after each reboot to re-establish the NVMe connections.
 +
