@@ -1029,22 +1029,20 @@ homepage:
       links:
         - title: Quick start
           url: /getting-started/getup-run-concept.html
-        - title: EF-Series overview
+        - title: EF-Series datasheet
           url: https://www.netapp.com/pdf.html?item=/media/19339-DS-4082.pdf
-        - title: E5700 series overview
+        - title: E5700 datasheet
           url: https://www.netapp.com/pdf.html?item=/media/7572-ds-3894.pdf
-        - title: E2800 series overview
+        - title: E2800 datasheet
           url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf
-        - title: SANtricity software overview
-          url: https://www.netapp.com/pdf.html?item=/media/7676-ds-3891.pdf
     - title: Online help
       links:
         - title: SANtricity System Manager 11.7
-          url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html
+          url: https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html
         - title: SANtricity Unified Manager 5
-          url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-5/home.html
+          url: https://docs.netapp.com/us-en/e-series-santricity/unified-manager/index.html
         - title: Command Line Interface (CLI) reference
-          url:  https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-cli-115/home.html
+          url:  https://docs.netapp.com/us-en/e-series-cli/index.html
     - title: SANtricity APIs
       links:
         - title: Web services
