@@ -13,12 +13,12 @@ summary: New features in SANtricity OS.
 [.lead]
 The following tables describe new features in SANtricity OS 11.7 for embedded management of EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
 
-== New features in Version 11.70.3
+== New features in Version 11.73
 
 [cols="35h,~",options="header"]
 |===
 |New feature |Description
-a|Resource Provisioning and DULBE
+a|Resource Provisioning and DULBE support
 a|Resource Provisioning capabilities and DULBE drive capabilities are now fully supported in this release. This support includes making host-directed UNMAP on Resource-Provisioned volumes more widely usable.
 
 a|EF600 SAS (512e) expansion
@@ -38,7 +38,7 @@ a|A storage admin can now request an external key management server (EKMS) to de
 
 |===
 
-== New features in Version 11.70.2
+== New features in Version 11.72
 
 [cols="35h,~",options="header"]
 |===
@@ -54,7 +54,7 @@ a|System Manager minimum browser versions have been updated.
 
 |===
 
-== New features in Version 11.70.1
+== New features in Version 11.71
 
 [cols="35h,~",options="header"]
 |===
@@ -81,7 +81,7 @@ a|Syslog alert format change
 a|The Syslog alert format now supports RFC 5424.
 |===
 
-== New features in Version 11.70.0
+== New features in Version 11.70
 
 [cols="35h,~",options="header"]
 |===
