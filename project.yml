@@ -1035,7 +1035,7 @@ homepage:
           url: https://www.netapp.com/pdf.html?item=/media/7572-ds-3894.pdf
         - title: E2800 datasheet
           url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf
-    - title: Online help
+    - title: SANtricity software
       links:
         - title: SANtricity System Manager 11.7
           url: https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html
