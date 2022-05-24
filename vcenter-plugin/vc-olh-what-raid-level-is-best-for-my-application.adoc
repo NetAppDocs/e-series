@@ -1,0 +1,120 @@
+---
+sidebar: sidebar
+permalink: vcenter-plugin/vc-olh-what-raid-level-is-best-for-my-application.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: To maximize the performance of a volume group, you must select the appropriate RAID level.
+---
+
+= What RAID level is best for my application?
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+To maximize the performance of a volume group, you must select the appropriate RAID level.
+
+You can determine the appropriate RAID level by knowing the read and write percentages for the applications that are accessing the volume group. Use the Performance page to obtain these percentages.
+
+== RAID levels and application performance
+
+RAID relies on a series of configurations, called levels, to determine how user and redundancy data is written and retrieved from the drives. Each RAID level provides different performance features. Applications with a high read percentage will perform well using RAID 5 volumes or RAID 6 volumes because of the outstanding read performance of the RAID 5 and RAID 6 configurations.
+
+Applications with a low read percentage (write-intensive) do not perform as well on RAID 5 volumes or RAID 6 volumes. The degraded performance is the result of the way that a controller writes data and redundancy data to the drives in a RAID 5 volume group or a RAID 6 volume group.
+
+Select a RAID level based on the following information.
+
+=== RAID 0
+
+*Description:*
+
+* Non-redundant, striping mode.
+* RAID 0 stripes data across all of the drives in the volume group.
+
+*Data protection features:*
+
+* RAID 0 is not recommended for high availability needs. RAID 0 is better for non-critical data.
+* If a single drive fails in the volume group, all of the associated volumes fail, and all data is lost.
+
+*Drive number requirements:*
+
+* A minimum of one drive is required for RAID Level 0.
+* RAID 0 volume groups can have more than 30 drives.
+* You can create a volume group that includes all of the drives in the storage array.
+
+=== RAID 1 or RAID 10
+
+*Description:*
+
+* Striping/mirror mode.
+
+*How it works:*
+
+* RAID 1 uses disk mirroring to write data to two duplicate disks simultaneously.
+* RAID 10 uses drive striping to stripe data across a set of mirrored drive pairs.
+
+*Data protection features:*
+
+* RAID 1 and RAID 10 offer high performance and the best data availability.
+* RAID 1 and RAID 10 use drive mirroring to make an exact copy from one drive to another drive.
+* If one of the drives in a drive pair fails, the storage array can instantly switch to the other drive without any loss of data or service.
+* A single drive failure causes associated volumes to become degraded. The mirror drive allows access to the data.
+* A drive-pair failure in a volume group causes all of the associated volumes to fail, and data loss could occur.
+
+*Drive number requirements:*
+
+* A minimum of two drives is required for RAID 1: one drive for the user data, and one drive for the mirrored data.
+* If you select four or more drives, RAID 10 is automatically configured across the volume group: two drives for user data, and two drives for the mirrored data.
+* You must have an even number of drives in the volume group. If you do not have an even number of drives and you have some remaining unassigned drives, go to *Pools & Volume Groups* to add additional drives to the volume group, and retry the operation.
+* RAID 1 and RAID 10 volume groups can have more than 30 drives. A volume group can be created that includes all of the drives in the storage array.
+
+=== RAID 5
+
+*Description:*
+
+* High I/O mode.
+
+*How it works:*
+
+* User data and redundant information (parity) are striped across the drives.
+* The equivalent capacity of one drive is used for redundant information.
+
+*Data protection features*
+
+* If a single drive fails in a RAID 5 volume group, all of the associated volumes become degraded. The redundant information allows the data to still be accessed.
+* If two or more drives fail in a RAID 5 volume group, all of the associated volumes fail, and all data is lost.
+
+*Drive number requirements:*
+
+* You must have a minimum of three drives in the volume group.
+* Typically, you are limited to a maximum of 30 drives in the volume group.
+
+=== RAID 6
+
+*Description:*
+
+* High I/O mode.
+
+*How it works:*
+
+* User data and redundant information (dual parity) are striped across the drives.
+* The equivalent capacity of two drives is used for redundant information.
+
+*Data protection features:*
+
+* If one or two drives fail in a RAID 6 volume group, all of the associated volumes become degraded, but the redundant information allows the data to still be accessed.
+* If three or more drives fail in a RAID 6 volume group, all of the associated volumes fail, and all data is lost.
+
+*Drive number requirements:*
+
+* You must have a minimum of five drives in the volume group.
+* Typically, you are limited to a maximum of 30 drives in the volume group.
+
+NOTE: You cannot change the RAID level of a pool. The user interface automatically configures pools as RAID 6.
+
+== RAID levels and data protection
+
+RAID 1, RAID 5, and RAID 6 write redundancy data to the drive media for fault tolerance. The redundancy data might be a copy of the data (mirrored) or an error-correcting code derived from the data. You can use the redundancy data to quickly reconstruct information on a replacement drive if a drive fails.
+
+You configure a single RAID level across a single volume group. All redundancy data for that volume group is stored within the volume group. The capacity of the volume group is the aggregate capacity of the member drives minus the capacity reserved for redundancy data. The amount of capacity needed for redundancy depends on the RAID level used.

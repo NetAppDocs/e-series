@@ -11,7 +11,7 @@ summary: Use the express configuration for a Windows host with an E-Series syste
 [.lead]
 The Windows express method for installing your storage array and accessing SANtricity System Manager is appropriate for setting up a standalone Windows host to an E-Series system. It is designed to get the storage system up and running as quickly as possible with minimal decision points.
 
-=== Procedure overview
+== Procedure overview
 
 The express method includes the following steps, which are also outlined in the link:understand-windows-concept.html[Windows workflow].
 
@@ -25,7 +25,7 @@ The express method includes the following steps, which are also outlined in the 
 
 . Make the volumes available to the data host.
 
-=== Find more information
+== Find more information
 
 * Online help -- Describes how to use SANtricity System Manager to complete configuration and storage management tasks. It is available within the product.
 * https://kb.netapp.com/[NetApp Knowledgebase^] (a database of articles) -- Provides troubleshooting information, FAQs, and instructions for a wide range of NetApp products and technologies.

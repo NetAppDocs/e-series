@@ -1,0 +1,21 @@
+---
+sidebar: sidebar
+permalink: vcenter-plugin/vc-olh-what-is-preservation-capacity.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Preservation capacity is the amount of capacity (number of drives) that is reserved in a pool to support potential drive failures.
+---
+
+= What is preservation capacity?
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+
+[.lead]
+Preservation capacity is the amount of capacity (number of drives) that is reserved in a pool to support potential drive failures.
+
+When a pool is created, the system automatically reserves a default amount of preservation capacity depending on the number of drives in the pool.
+
+Pools use preservation capacity during reconstruction, whereas volume groups use hot spare drives for the same purpose. The preservation capacity method is an improvement over hot spare drives because it allows reconstruction to happen faster. Preservation capacity is spread over a number of drives in the pool instead of on one drive in the case of a hot spare drive, so you are not limited by the speed or availability of one drive.

@@ -1,0 +1,26 @@
+---
+sidebar: sidebar
+permalink: vcenter-plugin/vc-olh-view-certificates.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: View summary information for a certificate, which includes the organization using the certificate, the authority that issued the certificate, the period of validity, and the fingerprints (unique identifiers)
+---
+
+= View certificates
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can view summary information for a certificate, which includes the organization using the certificate, the authority that issued the certificate, the period of validity, and the fingerprints (unique identifiers).
+
+.Steps
+
+. Select *Certificate Management*.
+. Select one of the following tabs:
+
+** *Management* -- Shows the certificate for the system hosting the plugin. A management certificate can be self-signed or approved by a certificate authority (CA). It allows secure access to the plugin.
+** *Trusted* -- Shows certificates that the plugin can access for storage arrays and other remote servers, such as an LDAP server. The certificates can be issued from a certificate authority (CA) or can be self-signed.
+
+. To see more information about a certificate, select its row, select the ellipses at the end of the row, and then click *View* or *Export*.

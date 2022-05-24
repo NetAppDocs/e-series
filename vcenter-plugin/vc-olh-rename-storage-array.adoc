@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+permalink: vcenter-plugin/vc-olh-rename-storage-array.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Change the storage array’s name displayed on the Manage page.
+---
+
+= Rename storage array
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+
+[.lead]
+You can change the storage array’s name displayed on the Manage page of the Storage Plugin for vCenter.
+
+.Steps
+
+. From the *Manage* page, select the checkbox to the left of the storage array name.
+. Select the ellipses at the far right of the row, and then select *Rename storage array* from the pop-up menu.
+. Enter the new name and click *Save*.

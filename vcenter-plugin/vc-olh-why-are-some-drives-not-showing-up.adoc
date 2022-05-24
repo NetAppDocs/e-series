@@ -1,0 +1,33 @@
+---
+sidebar: sidebar
+permalink: vcenter-plugin/vc-olh-why-are-some-drives-not-showing-up.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: In the Add Capacity dialog, not all drives are available for adding capacity to an existing pool or volume group.
+---
+
+= Why are some drives not showing up?
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+
+[.lead]
+In the Add Capacity dialog, not all drives are available for adding capacity to an existing pool or volume group.
+
+Drives are not eligible for any of the following reasons:
+
+* A drive must be unassigned and not secure-enabled. Drives already part of another pool, another volume group, or configured as a hot spare are not eligible. If a drive is unassigned but is secure-enabled, you must manually erase that drive for it to become eligible.
+* A drive that is in a non-optimal state is not eligible.
+* If the capacity of a drive is too small, it is not eligible.
+* The drive media type must match within a pool or volume group. You cannot mix the following:
+** Hard Disk Drives (HDDs) with Solid State Disks (SSDs)
+** NVMe with SAS drives
+** Drives with 512-byte and 4KiB volume block sizes
+* If a pool or volume group contains all secure-capable drives, non-secure-capable drives are not listed.
+* If a pool or volume group contains all Federal Information Processing Standards (FIPS) drives, non-FIPS drives are not listed.
+* If a pool or volume group contains all Data Assurance (DA)-capable drives and there is at least one DA-enabled volume in the pool or volume group, a drive that is not DA capable is not eligible, so it cannot be added to that pool or volume group. However, if there is no DA- enabled volume in the pool or volume group, a drive that is not DA capable can be added to that pool or volume group. If you decide to mix these drives, keep in mind that you cannot create any DA-enabled volumes.
+
+[NOTE]
+Capacity can be increased in your storage array by adding new drives or by deleting pools or volume groups.

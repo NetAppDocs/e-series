@@ -16,10 +16,7 @@ summary: Use the Plugin for vCenter to create volumes, assign volumes to hosts, 
 [.lead]
 To provision storage, you create volumes, assign volumes to hosts, and then assign volumes to datastores.
 
-[NOTE]
-For more information about storage provisioning, see the online help available from the plugin interface.
-
-== Create volumes
+== Step 1: Create volumes
 
 Volumes are data containers that manage and organize the storage space on your storage array. You create volumes from the storage capacity available on your storage array, which helps organize your system’s resources. The concept of "volumes" is similar to using folders/directories on a computer to organize files for quick access.
 
@@ -51,7 +48,7 @@ The Add/Edit Volumes dialog box appears. In this dialog, you create volumes from
 +
 . Before you begin adding volumes, read the guidelines in the following table.
 +
-[options="header"]
+[cols="25h,~",options="header"]
 |===
 a|Field a|Description
 a|
@@ -63,7 +60,7 @@ Data Assurance (DA)
 a|
 To create a DA-enabled volume, the host connection you are planning to use must support DA.
 
-* If you want to create a DA-enabled volume, select a pool or volume group that is DA capable (look for Yes next to "DA" in the pool and volume group candidates table).
+* If you want to create a DA-enabled volume, select a pool or volume group that is DA capable (look for *Yes* next to "DA" in the pool and volume group candidates table).
 * DA capabilities are presented at the pool and volume group level. DA protection checks for and corrects errors that might occur as data is transferred through the controllers down to the drives. Selecting a DA-capable pool or volume group for the new volume ensures that any errors are detected and corrected.
 * If any of the host connections on the controllers in your storage array do not support DA, the associated hosts cannot access data on DA-enabled volumes.
 a|
@@ -71,7 +68,7 @@ Drive security
 a|
 To create a secure-enabled volume, a security key must be created for the storage array.
 
-* If you want to create a secure-enabled volume, select a pool or volume group that is secure capable (look for Yes next to "Secure-capable" in the pool and volume group candidates table).
+* If you want to create a secure-enabled volume, select a pool or volume group that is secure capable (look for *Yes* next to "Secure-capable" in the pool and volume group candidates table).
 * Drive security capabilities are presented at the pool and volume group level. Secure-capable drives prevent unauthorized access to the data on a drive that is physically removed from the storage array. A secure-enabled drive encrypts data during writes and decrypts data during reads using a unique encryption key.
 * A pool or volume group can contain both secure-capable and non-secure-capable drives, but all drives must be secure-capable to use their encryption capabilities.
 a|
@@ -80,14 +77,14 @@ a|
 To create a resource-provisioned volume, all drives must be NVMe drives with the Deallocated or Unwritten Logical Block Error (DULBE) option.
 |===
 
-. Choose one of these actions based on whether you selected Other or an application-specific workload in the previous step:
+. Choose one of these actions based on whether you selected "Other" or an application-specific workload in the previous step:
 
 ** *Other* – Click *Add new volume* in each pool or volume group that you want to use to create one or more volumes.
 ** *Application-specific workload* – Either click *Next* to accept the system-recommended volumes and characteristics for the selected workload, or click *Edit Volumes* to change, add, or delete the system-recommended volumes and characteristics for the selected workload.
 +
 The following fields appear.
 +
-[options="header"]
+[cols="25h,~",options="header"]
 |===
 a|Field a|Description
 a|Volume Name a|A volume is assigned a default name during the volume creation sequence. You can either accept the default name or provide a more descriptive one indicating the type of data stored in the volume.
@@ -95,7 +92,7 @@ a|Reported Capacity
 a|Define the capacity of the new volume and the capacity units to use (MiB, GiB, or TiB). For thick volumes, the minimum capacity is 1 MiB, and the maximum capacity is determined by the number and capacity of the drives in the pool or volume group.
 Capacity in a pool is allocated in 4-GiB increments. Any capacity that is not a multiple of 4 GiB is allocated but not usable. To make sure that the entire capacity is usable, specify the capacity in 4-GiB increments. If unusable capacity exists, the only way to regain it is to increase the capacity of the volume.
 a|Volume Type
-a|If you selected Application-specific workload, the Volume Type field appears. This indicates the type of volume that was created for an application-specific workload.
+a|If you selected "Application-specific workload," the Volume Type field appears. This indicates the type of volume that was created for an application-specific workload.
 a|Volume Block Size (EF300 and EF600 only)
 a|Shows the block sizes that can be created for the volume:
 
@@ -131,7 +128,7 @@ DA increases data integrity across the entire storage system. DA enables the sto
 . To continue the volume creation sequence for the selected application, click *Next*.
 . In the last step,  review a summary of the volumes you intend to create and make any necessary changes. To make changes, click *Back*.  When you are satisfied with your volume configuration, click *Finish*.
 
-== Create host access and assign volumes
+== Step 2: Create host access and assign volumes
 
 A host can be created automatically or manually:
 
@@ -148,7 +145,7 @@ Hosts are created as stand-alone hosts; the HCA does not automatically create or
 
 * *Manual* – During manual host creation, you associate host port identifiers by selecting them from a list or manually entering them. After you create a host, you can assign volumes to it or add it to a host cluster if you plan to share access to volumes.
 
-==== Using the HCA to auto-discover the host
+=== Using the HCA to auto-discover the host
 
 You can allow the Host Context Agent (HCA) to automatically detect the hosts, and then verify that the information is correct.
 
@@ -166,7 +163,7 @@ The table lists the automatically created hosts.
 . Verify that the information provided by the HCA is correct (name, host type, host port identifiers).
 . If you need to change any of the information, select the host, and then click *View/Edit Settings*.
 
-==== Manually creating the host
+=== Manually creating the host
 
 .Before you begin
 
@@ -190,7 +187,7 @@ The Create Host dialog box appears.
 
 . Select the settings for the host as appropriate.
 +
-[options="header"]
+[cols="25h,~",options="header"]
 |===
 a|Field a|Description
 a|Name a|Type a name for the new host.
@@ -202,14 +199,14 @@ a|(Optional) If you have more than one type of host interface supported on your 
 a|Host ports
 a|Do one of the following:
 
-* *Select I/O Interface*. Generally, the host ports should have logged in and be available from the drop-down list. You can select the host port identifiers from the list.
-* *Manual add*. If a host port identifier is not displayed in the list, it means that the host port has not logged in. An HBA utility or the iSCSI initiator utility may be used to find the host port identifiers and associate them with the host.
+* *Select I/O Interface* -- Generally, the host ports should have logged in and be available from the drop-down list. You can select the host port identifiers from the list.
+* *Manual add* -- If a host port identifier is not displayed in the list, it means that the host port has not logged in. An HBA utility or the iSCSI initiator utility may be used to find the host port identifiers and associate them with the host.
 
 You can manually enter the host port identifiers or copy/paste them from the utility (one at a time) into the Host ports field.
 
-You must select one host port identifier at a time to associate it with the host, but you can continue to select as many identifiers that are associated with the host. Each identifier is displayed in the Host ports field. If necessary, you also can remove an identifier by selecting the X next to it.
+You must select one host port identifier at a time to associate it with the host, but you can continue to select as many identifiers that are associated with the host. Each identifier is displayed in the Host ports field. If necessary, you also can remove an identifier by selecting the *X* next to it.
 a|Set CHAP initiator secret
-a|(Optional) If you selected or manually entered a host port with an iSCSI IQN, and if you want to require a host that tries to access the storage array to authenticate using Challenge Handshake Authentication Protocol (CHAP), select the Set CHAP initiator secret checkbox. For each iSCSI host port you selected or manually entered, do the following:
+a|(Optional) If you selected or manually entered a host port with an iSCSI IQN, and if you want to require a host that tries to access the storage array to authenticate using Challenge Handshake Authentication Protocol (CHAP), select the *Set CHAP initiator secret* checkbox. For each iSCSI host port you selected or manually entered, do the following:
 
 * Enter the same CHAP secret that was set on each iSCSI host initiator for CHAP authentication. If you are using mutual CHAP authentication (two-way authentication that enables a host to validate itself to the storage array and for a storage array to validate itself to the host), you also must set the CHAP secret for the storage array at initial setup or by changing settings.
 * Leave the field blank if you do not require host authentication.
@@ -238,7 +235,7 @@ The system performs the following actions:
 ** The assigned volume receives the next available LUN number. The host uses the LUN number to access the volume.
 ** The user-supplied volume name appears in volume listings associated to the host. If applicable, the factory-configured access volume also appears in volume listings associated to the host.
 
-== Create a datastore in vSphere Client
+== Step 3: Create a datastore in vSphere Client
 
 To create a datastore in the vSphere Client, see the following topic in the VMware Doc Center:
 
@@ -246,7 +243,7 @@ To create a datastore in the vSphere Client, see the following topic in the VMwa
 
 === Increase capacity of existing datastore by increasing volume capacity
 
-You can increase the reported capacity (the capacity reported to hosts) of a volume by using the free capacity that is available in the pool or volume group. To learn more about pools and volume groups, see the online help for the plugin.
+You can increase the reported capacity (the capacity reported to hosts) of a volume by using the free capacity that is available in the pool or volume group.
 
 .Before you begin
 
@@ -283,7 +280,7 @@ This dialog box displays the volume's current reported capacity and the free cap
 
 === Increase capacity of existing datastore by adding volumes
 
-. You can increase the capacity of a datastore by adding volumes. Follow the steps in _Create volumes_.
+. You can increase the capacity of a datastore by adding volumes. Follow the steps in <<Step 1: Create volumes>>.
 . Next, assign the volumes to the desired host to increase the datastore’s capacity. See the following topic:
 
 ** https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.hostclient.doc/GUID-B0D89816-02E5-4C42-AAFC-19751800A284.html[Increase VMFS Datastore Capacity in the vSphere Client^]

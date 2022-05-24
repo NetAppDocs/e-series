@@ -1,0 +1,35 @@
+---
+sidebar: sidebar
+permalink: vcenter-plugin/vc-olh-reset-management-certificates.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: Revert the management certificate to the original, factory self-signed state.
+---
+
+= Reset management certificates
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+For the management system hosting the Storage Plugin for vCenter, you can revert the management certificate to the original, factory self-signed state.
+
+.About this task
+
+This task deletes the current management certificate from the host system where the Storage Plugin for vCenter is running. After the certificate is reset, the host system reverts to using the self-signed certificate.
+
+.Steps
+
+. Select *Certificate Management*.
+. From the *Management* tab, select *Reset*.
++
+A Confirm Reset Management Certificate dialog box opens.
++
+. Type reset in the field, and then click *Reset*.
++
+After your browser refreshes, the browser might block access to the destination site and report that the site is using HTTP Strict Transport Security. This condition arises when you switch back to self-signed certificates. To clear the condition that is blocking access to the destination, you must clear the browsing data from the browser.
+
+.Result
+
+The system reverts to using the self-signed certificate from the server. As a result, the system prompts users to manually accept the self-signed certificate for their sessions.

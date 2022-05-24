@@ -1,0 +1,86 @@
+---
+sidebar: sidebar
+permalink: vcenter-plugin/vc-olh-change-the-settings-for-a-host.html
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
+summary: You can change the name, host operating system type, and associated host clusters for a host or host cluster.
+---
+
+= Change the settings for a host
+:experimental:
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+
+[.lead]
+You can change the name, host operating system type, and associated host clusters for a host or host cluster.
+
+.Steps
+
+. From the Manage page, select the storage array with the host connection.
+. Select menu:Provisioning[Configure Hosts].
++
+The Configure Hosts page opens.
+
+. Select the host that you want to edit, and then click *View/Edit Settings*.
++
+A dialog box appears that shows the current host settings.
+
+. To change host properties, make sure the *Properties* tab is selected and then change the settings as appropriate.
++
+.Field Details
+[%collapsible]
+====
+[cols="25h,~",options="header"]
+|===
+|Setting |Description
+a|
+Name
+a|
+You can change the user-supplied name of the host. Specifying a name for the host is required.
+a|
+Associated host cluster
+a|
+You can choose one of the following options:
+
+* *None* -- The host remains a standalone host. If the host was associated to a host cluster, the system removes the host from the cluster.
+* *<Host Cluster>* -- The system associates the host to the selected cluster.
+a|
+Host operating system type
+a|
+You can change the type of operating system running on the host you defined.
+|===
+====
+
+. To change port settings, click the *Host Ports* tab and then change the settings as appropriate.
++
+.Field Details
+[%collapsible]
+====
+[cols="25h,~",options="header"]
+|===
+|Setting |Description
+a|
+Host Port
+a|
+You can choose one of the following options:
+
+* *Add* -- Use Add to associate a new host port identifier to the host. The length of the host port identifier name is determined by the host interface technology. Fibre Channel and Infiniband host port identifier names must have 16 characters. iSCSI host port identifier names have a maximum of 223 characters. The port must be unique. A port number that has already been configured is not allowed.
+* *Delete* -- Use Delete to remove (unassociate) a host port identifier. The Delete option does not physically remove the host port. This option removes the association between the host port and the host. Unless you remove the host bus adapter or the iSCSI initiator, the host port is still recognized by the controller.
+
+CAUTION: If you delete a host port identifier, it is no longer associated with this host. Also, the host loses access to any of its assigned volumes through this host port identifier.
+a|
+Label
+a|
+To change the port label name, click the *Edit* icon (pencil). The port label name must be unique. A label name that has already been configured is not allowed.
+a|
+CHAP Secret
+a|
+Appears only for iSCSI hosts. You can set or change the CHAP secret for the initiators (iSCSI hosts).
+The system uses the Challenge Handshake Authentication Protocol (CHAP) method, which validates the identity of targets and initiators during the initial link. Authentication is based on a shared security key called a CHAP secret.
+|===
+====
+
+. Click *Save*.
