@@ -17,6 +17,6 @@ To configure an iSCSI network with basic redundancy, connect each host port and 
 
 You must enable send and receive hardware flow control *end to end*. You must disable priority flow control.
 
-If you are using jumbo frames within the IP SAN for performance reasons, make sure to configure the array, switches, and hosts to use jumbo frames. Consult your operating system and switch documentation for information on how to enable jumbo frames on the hosts and on the switches. To enable jumbo frames on the array, complete the steps in link:../iscsi-configure-array-side-network-task.html[Configure array-side networking].
+If you are using jumbo frames within the IP SAN for performance reasons, make sure to configure the array, switches, and hosts to use jumbo frames. Consult your operating system and switch documentation for information on how to enable jumbo frames on the hosts and on the switches. To enable jumbo frames on the array, complete the steps in link:iscsi-configure-array-side-network-task.html[Configure array-side networking].
 
 NOTE: Many network switches must be configured above 9,000 bytes for IP overhead. Consult your switch documentation for more information.
