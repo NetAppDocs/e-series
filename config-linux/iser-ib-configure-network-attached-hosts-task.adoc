@@ -39,10 +39,10 @@ A NetApp recommended OFED installed on the system. For more information, see the
 # systemctl enable iscsid.service
 ----
 
-. Configure IPoIB network interfaces:
+. Configure InfiniBand card network interfaces:
  .. Identify the InfiniBand ports that will be used. Document the HW Address (MAC address) of each port.
  .. Configure persistent names for the InfiniBand network interface devices.
- .. Configure the IP address and network information for the IPoIB interfaces identified.
+ .. Configure the IP address and network information for the InfiniBand interfaces identified.
 +
 The specific interface configuration required might vary depending on the operating system used. Consult your vendor's operating system documentation for specific information on implementation.
 
