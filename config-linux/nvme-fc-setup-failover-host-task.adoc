@@ -60,7 +60,7 @@ devices {
 # systemctl status multipathd
 ----
 
-== Set up Native NMVe Multipathign for RHEL 8
+== Set up Native NVMe Multipathing for RHEL 8
 
 .About this task
 Native NVMe Multipathing is disabled by default in RHEL 8 and must be enabled using the steps below.
