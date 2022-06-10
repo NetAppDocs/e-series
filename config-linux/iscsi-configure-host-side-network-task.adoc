@@ -61,16 +61,24 @@ Optionally, you set `node.startup = automatic` in /etc/iscsi/iscsid.conf before 
 +
 NOTE: In addition to the public network port, iSCSI initiators should use two or more NICs on separate private segments or vLANs.
 
- .. Determine the iSCSI port names using the `# ifconfig -a` command.
+ .. Determine the iSCSI port names using the `ifconfig -a` command.
  .. Set the IP address for the iSCSI initiator ports. The initiator ports should be present on the same subnet as the iSCSI target ports.
 +
 ----
 # vim /etc/sysconfig/network-scripts/ifcfg-<NIC port>
+----
++
 Edit:
++
+----
 BOOTPROTO=none
 ONBOOT=yes
 NM_CONTROLLED=no
+----
++
 Add:
++
+----
 IPADDR=192.168.xxx.xxx
 NETMASK=255.255.255.0
 ----
