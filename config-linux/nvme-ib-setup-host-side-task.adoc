@@ -42,11 +42,16 @@ You must be running the latest compatible RHEL 7, RHEL 8, SUSE Linux Enterprise 
 ----
 IPOIB_LOAD=yes
 ----
-
+. Get the host NQN, which will be used to configure the host to an array.
++
+----
+# cat /etc/nvme/hostnqn
+----
++
 . Check that both ib port links are up and the State = Active:
 +
 ----
- # ibstat
+# ibstat
 ----
 +
 ----
@@ -87,32 +92,32 @@ Create the file /etc/sysconfig/network/ifcfg-ib0 with the following contents.
 +
 ----
 
-  BOOTPROTO='static'
-  BROADCAST=
-  ETHTOOL_OPTIONS=
-  IPADDR='10.10.10.100/24'
-  IPOIB_MODE='connected'
-  MTU='65520'
-  NAME=
-  NETWORK=
-  REMOTE_IPADDR=
-  STARTMODE='auto'
+BOOTPROTO='static'
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='10.10.10.100/24'
+IPOIB_MODE='connected'
+MTU='65520'
+NAME=
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'
 ----
 +
-Then, create the file /etc/sysconfig/network/ifcfg-ib1.
+Then, create the file /etc/sysconfig/network/ifcfg-ib1:
 +
 ----
 
-  BOOTPROTO='static'
-  BROADCAST=
-  ETHTOOL_OPTIONS=
-  IPADDR='11.11.11.100/24'
-  IPOIB_MODE='connected'
-  MTU='65520'
-  NAME=
-  NETWORK=
-  REMOTE_IPADDR=
-  STARTMODE='auto'
+BOOTPROTO='static'
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='11.11.11.100/24'
+IPOIB_MODE='connected'
+MTU='65520'
+NAME=
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'
 ----
 +
 *RHEL 7 or RHEL 8*
@@ -121,34 +126,34 @@ Create the file /etc/sysconfig/network-scripts/ifcfg-ib0 with the following cont
 +
 ----
 
-  CONNECTED_MODE=no
-  TYPE=InfiniBand
-  PROXY_METHOD=none
-  BROWSER_ONLY=no
-  BOOTPROTO=static
-  IPADDR='10.10.10.100/24'
-  DEFROUTE=no
-  IPV4=FAILURE_FATAL=yes
-  IPV6INIT=no
-  NAME=ib0
-  ONBOOT=yes
+CONNECTED_MODE=no
+TYPE=InfiniBand
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=static
+IPADDR='10.10.10.100/24'
+DEFROUTE=no
+IPV4=FAILURE_FATAL=yes
+IPV6INIT=no
+NAME=ib0
+ONBOOT=yes
 ----
 +
 Then, create the file /etc/sysconfig/network-scripts/ifcfg-ib1:
 +
 ----
 
-  CONNECTED_MODE=no
-  TYPE=InfiniBand
-  PROXY_METHOD=none
-  BROWSER_ONLY=no
-  BOOTPROTO=static
-  IPADDR='11.11.11.100/24'
-  DEFROUTE=no
-  IPV4=FAILURE_FATAL=yes
-  IPV6INIT=no
-  NAME=ib1
-  ONBOOT=yes
+CONNECTED_MODE=no
+TYPE=InfiniBand
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=static
+IPADDR='11.11.11.100/24'
+DEFROUTE=no
+IPV4=FAILURE_FATAL=yes
+IPV6INIT=no
+NAME=ib1
+ONBOOT=yes
 ----
 
 . Enable the `ib` interface:
@@ -188,7 +193,6 @@ As shown in the example below, the IP address for `ib1` is `11.11.11.255`.
     inet6 fe80::202:c903:31:7851/64 scope link
        valid_lft forever preferred_lft forever
 ----
-
 . Set up the NVMe-oF layer on the host. Create the following files under /etc/modules-load.d/ to load the `nvme-rdma` kernel module and make sure the kernel module will always be on, even after a reboot:
 +
 ----
