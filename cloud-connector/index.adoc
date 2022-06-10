@@ -13,6 +13,8 @@ The SANtricity Cloud Connector is a host-based Linux application that enables yo
 
 Available for installation on RedHat and SUSE Linux platforms, the SANtricity Cloud Connector is a packaged solution (.bin file). After you install SANtricity Cloud Connector, you can configure the application to perform backup and restore jobs for E-Series volumes to an AltaVault appliance or to your existing Amazon S3 or StorageGRID accounts. All jobs performed through the SANtricity Cloud Connector use REST-based APIs.
 
+NOTE: The SANtricity Cloud Connector tool is deprecated and no longer available for download.
+
 == Considerations
 
 When using these procedures, be aware that:
