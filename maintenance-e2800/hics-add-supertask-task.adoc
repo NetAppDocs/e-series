@@ -18,7 +18,7 @@ During this procedure, you must power off the storage array, install the HIC, an
 
 .Before you begin
 
-* Review link:hics_overview_supertask_concept[Requirements for E2800 HIC replacement].
+* Review link:hics-overview-supertask-concept.html[Requirements for E2800 HIC replacement].
 * Schedule a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)
 
 .What you'll need
