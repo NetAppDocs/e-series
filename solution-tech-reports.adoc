@@ -10,11 +10,15 @@ summary: E-Series technical reports
 
 == Splunk
 
-[grid="none", frame="none", cols="9,1,9,1,9",]
+[%rotate, grid="none", frame="none", cols="9,9,9",]
 |===
-|https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf[*TR-4623: E5700 with Splunk Enterprise*^] |
-|https://www.netapp.com/media/57104-tr-4903.pdf[*TR-4903: EF300 with Splunk Enterprise*^] | |
-|Describes the integrated architecture of the E5700 system and Splunk design. This document also summarizes the performance test results obtained from a Splunk machine log event simulation tool. | |Describes the integrated architecture of the EF300 all-flash array and Splunk design. This document also summarizes the performance test results obtained from a Splunk machine log event simulation tool.| |
+|https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf[*TR-4623: E5700 with Splunk Enterprise*^]
+|https://www.netapp.com/media/57104-tr-4903.pdf[*TR-4903: EF300 with Splunk Enterprise*^]
+|https://www.netapp.com/pdf.html?item=/media/72003-tr-4930.pdf[*TR-4930: EF600 with Splunk Enterprise*^]
+|Describes the integrated architecture of the E5700 system and Splunk design. This document also summarizes the performance test results obtained from a Splunk machine log event simulation tool.
+|Describes the integrated architecture of the EF300 all-flash array and Splunk design. This document also summarizes the performance test results obtained from a Splunk machine log event simulation tool.
+|Describes the integrated architecture of the EF600 all-flash array and Splunk design. This document also summarizes the performance test results obtained from a Splunk machine log event simulation tool.
+|
 |===
 
 
