@@ -10,13 +10,16 @@ summary: E-Series technical reports
 
 == Splunk
 
-[grid="none", frame="none", cols="9,1,9,1,9",]
+[%rotate, grid="none", frame="none", cols="9,9,9",]
 |===
-|https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf[*TR-4623: E5700 with Splunk Enterprise*^] |
-|https://www.netapp.com/media/57104-tr-4903.pdf[*TR-4903: EF300 with Splunk Enterprise*^] | |
-|Describes the integrated architecture of the E5700 system and Splunk design. This document also summarizes the performance test results obtained from a Splunk machine log event simulation tool. | |Describes the integrated architecture of the EF300 all-flash array and Splunk design. This document also summarizes the performance test results obtained from a Splunk machine log event simulation tool.| |
+|https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf[*TR-4623: E5700 with Splunk Enterprise*^]
+|https://www.netapp.com/media/57104-tr-4903.pdf[*TR-4903: EF300 with Splunk Enterprise*^]
+|https://www.netapp.com/pdf.html?item=/media/72003-tr-4930.pdf[*TR-4930: EF600 with Splunk Enterprise*^]
+|Describes the integrated architecture of the E5700 system and Splunk design. This document also summarizes the performance test results obtained from a Splunk machine log event simulation tool.
+|Describes the integrated architecture of the EF300 all-flash array and Splunk design. This document also summarizes the performance test results obtained from a Splunk machine log event simulation tool.
+|Describes the integrated architecture of the EF600 all-flash array and Splunk design. This document also summarizes the performance test results obtained from a Splunk machine log event simulation tool.
+|
 |===
-
 
 == Enterprise Databases
 
@@ -36,8 +39,10 @@ successfully deploy Oracle on NetApp EF-Series storage. |
 |https://www.netapp.com/pdf.html?item=/media/17159-tr4471pdf.pdf[*TR-4471: Best Practices with Veeam Backup and Replication*^]
 |https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf[*TR-4704: Deploying Veritas NetBackup with NetApp E-Series Storage*^]
 |Describes the reference architecture and best practices when using
-NetApp E-Series storage in a Commvault Data Platform V11 environment. |Describes the reference architecture and best practices when using NetApp
-E-Series storage in a Veeam Backup & Replication 9.5 environment. |Describes the deployment of Veritas NetBackup on NetApp E-Series storage.
+NetApp E-Series storage in a Commvault Data Platform V11 environment.
+|Describes the reference architecture and best practices when using NetApp
+E-Series storage in a Veeam Backup & Replication 9.5 environment.
+|Describes the deployment of Veritas NetBackup on NetApp E-Series storage.
 |
 |===
 
