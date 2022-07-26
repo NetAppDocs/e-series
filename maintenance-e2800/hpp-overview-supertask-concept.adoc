@@ -13,6 +13,8 @@ Before converting the host protocol for an E2800 array, review the requirements.
 
 == Host ports you can change
 
+NOTE: Only the 16Gb FC/10Gb iSCSI HICs and optical base ports on an E2800 controller are able to be converted.
+
 The following figure shows the back of an E2800 controller that has two SFP+ (optical) baseboard host ports *(1)* and four SFP+ (optical) HIC ports *(2)*.
 
 image::../media/28_dwg_e2800_optical_base_quad_sfp_hic.gif[]
