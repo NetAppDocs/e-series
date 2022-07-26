@@ -4,13 +4,13 @@ sidebar: sidebar
 keywords: replace EF300 SAS expansion card, replacing SAS card, drive tray expansion, expansion card
 summary: Add a SAS expansion card to EF300 controllers to allow for drive tray expansion.
 ---
-= Add SAS expansion card to EF300
+= Add SAS expansion card to EF300 and EF600
 :experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can add a SAS expansion card to an EF300 controller to allow for drive tray expansion.
+You can add a SAS expansion card to an EF300 or EF600 controller to allow for drive tray expansion.
 
 .About this task
 
@@ -18,7 +18,7 @@ When you add a SAS expansion card, you must power off the storage array, install
 
 .Before you begin
 
-* Review link:sas-overview-supertask-concept.html[Requirements for EF300 SAS expansion card replacement].
+* Review link:sas-overview-supertask-concept.html[Requirements for EF300 and EF600 SAS expansion card replacement].
 * You must schedule a downtime maintenance window for this procedure. You cannot access data on the storage array until you have successfully completed this procedure.
 
 CAUTION: This procedure must be done with both controller canisters. Controller HIC configurations must match exactly.

@@ -43,13 +43,13 @@ The following image shows a representation of the controller shelf and the drive
 
 image::../media/60_cabling.png[]
 
-== Cabling EF300
+== Cabling EF300 and EF600
 
-The following information applies to cabling an EF300 controller shelf to a DE212C, DE224C, or DE460 drive shelf.
+The following information applies to cabling an EF300 or EF600 controller shelf to a DE212C, DE224C, or DE460 drive shelf.
 
 .Before you begin
 
-Before cabling an EF300, make sure the firmware is updated to the latest version. To update the firmware, follow the instructions in  link:../upgrade-santricity/index.html[Upgrading SANtricity OS^].
+Before cabling an EF300 or EF600, make sure the firmware is updated to the latest version. To update the firmware, follow the instructions in  link:../upgrade-santricity/index.html[Upgrading SANtricity OS^].
 
 === Cabling a 12-drive or 24-drive shelf
 
