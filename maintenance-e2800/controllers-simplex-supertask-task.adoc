@@ -20,10 +20,6 @@ You can replace a failed controller canister in a simplex (single-controller) co
 
 The controller canister contains a controller card, a battery, and an optional host interface card (HIC). When you replace a failed controller canister, you must remove the battery and HIC, if one is installed, from the original controller canister, and install them in the replacement controller canister.
 
-This procedure applies to IOM12 and IOM12B drive shelves.
-
-NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. This means you can only replace an IOM12 module with another IOM12 module or replace an IOM12B module with another IOM12B module. (Your shelf can have two IOM12 modules or have two IOM12B modules.)
-
 .What you'll need
 
 * A replacement controller canister with the same part number as the controller canister you are replacing.
