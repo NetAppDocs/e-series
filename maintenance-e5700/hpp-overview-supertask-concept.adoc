@@ -11,6 +11,10 @@ summary: Convert the host protocol for an E5700.
 [.lead]
 Before converting the host port protocol in the E5700, review the requirements.
 
+== Host ports you can change
+
+NOTE: Only the optical base ports on an E5700 controller are able to be converted.
+
 The following figure shows the E5700 with its SFP+ (optical) baseboard host ports *(1)* and the optional two IB HIC ports *(2)*.
 
 image::../media/e5700_with_2_port_100g_edr_infiniband_hic_w_callouts.gif[]
