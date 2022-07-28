@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: replace EF300 SAS expansion card, replacing SAS card, drive tray expansion, expansion card
 summary:  Review requirements and considerations before replacing an EF300 SAS expansion card.
 ---
-=  Requirements for EF300 SAS expansion card replacement
+=  Requirements for EF300 and EF600 SAS expansion card replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If you plan to add a SAS expansion card to an EF300, review the following requirements.
+If you plan to add a SAS expansion card to an EF300 or EF600, review the following requirements.
 
 * You must follow the link:../install-hw-ef600/index.html[Install and set up EF300 and EF600 storage systems] to set up your controller.
 * You must update your firmware to the latest version. To update your firmware, follow the instructions in the link:../upgrade-santricity/index.html[Upgrading SANtricity OS].
