@@ -21,7 +21,7 @@ A NetApp recommended OFED installed on the system. For more information, see the
 
 . Enable and start iSCSI services on the host(s):
 +
-*Red Hat Enterprise Linux 7 and 8 (RHEL 7 and RHEL 8)*
+*Red Hat Enterprise Linux 7, 8, and 9 (RHEL 7, RHEL 8, and RHEL 9)*
 +
 ----
 

@@ -37,6 +37,7 @@ You use the device mapper multipath (DM-MP) tool for Linux installations. By def
 ----
 
 . Save your kernel version by running the `uname -r` command.
+[#step4]
 +
 ----
 # uname -r
@@ -45,35 +46,20 @@ You use the device mapper multipath (DM-MP) tool for Linux installations. By def
 +
 You will use this information when you assign volumes to the host.
 
-. Do one of the following to enable the `multipathd` daemon on boot.
+. Enable the `multipathd` daemon on boot.
 +
-[options="header"]
-|===
-| If you are using....| Do this...
-a|
-RHEL 7.x and 8.x systems:
-a|
+----
 `systemctl enable multipathd`
-a|
-SLES 12.x and 15.x systems:
-a|
-`systemctl enable multipathd`
-|===
+----
 
 . Rebuild the `initramfs` image or the `initrd` image under /boot directory:
 +
-[options="header"]
-|===
-| If you are using....| Do this...
-a|
-RHEL 7.x and 8.x systems:
-a|
+----
 `dracut --force --add multipath`
-a|
-SLES 12.x and 15.x systems:
-a|
-`dracut --force --add multipath`
-|===
+----
 
-. Use the "Create host manually" procedure in the online help to check whether the hosts are defined. Verify that each host type is either *Linux DM-MP (Kernel 3.10 or later)* if you enable the Automatic Load Balancing feature, or *Linux DM-MP (Kernel 3.9 or earlier)* if you disable the Automatic Load Balancing feature. If necessary, change the selected host type to the appropriate setting.
+. Use the "Create host manually" procedure in the online help to check whether the hosts are defined. Verify that each host type setting is based on the kernel information gathered in <<step4,step 4>>.
+
+NOTE: Automatic Load Balancing is disabled for any volumes mapped to hosts running kernel 3.9 or earlier.
+
 . Reboot the host.

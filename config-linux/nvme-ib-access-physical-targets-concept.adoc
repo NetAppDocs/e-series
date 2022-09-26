@@ -11,24 +11,18 @@ summary: 'You can configure the I/O directed to the device target based on your 
 [.lead]
 You can configure the I/O directed to the device target based on which OS (and by extension multipathing method) you are using.
 
-For RHEL 8 and SLES 15, I/O is directed to the physical NVMe device targets by the Linux host. A native NVMe multipathing solution manages the physical paths underlying the single apparent physical device displayed by the host.
-
-It is best practice to use the links in /dev/disk/by-id/ rather than /dev/nvme0n1. For example:
-
-----
-# ls /dev/disk/by-id/ -l lrwxrwxrwx 1 root root 13 Oct 18 15:14
-nvme-eui.0000320f5cad32cf00a0980000af4112 -> ../../nvme0n1
-----
+For RHEL 8, RHEL 9, and SLES 15, I/O is directed to the physical NVMe device targets by the Linux host. A native NVMe multipathing solution manages the physical paths underlying the single apparent physical device displayed by the host.
 
 == Physical NVMe devices are I/O targets
 
-Run I/O to the physical nvme device path. There should only be one of these devices present for each namespace using the following format:
+It is best practice to run IO to the links in `/dev/disk/by-id/nvme-eui.[uuid#]` rather than directly to the physical nvme device path `/dev/nvme[subsys#]n[id#]`. The link between these two locations can be found using the following command:
 
 ----
-/dev/nvme[subsys#]n[id#]
+# ls /dev/disk/by-id/ -l
+lrwxrwxrwx 1 root root 13 Oct 18 15:14 nvme-eui.0000320f5cad32cf00a0980000af4112 -> ../../nvme0n1
 ----
 
-All paths are virtualized using the native multipathing solution underneath this device.
+IO run to `/dev/disk/by-id/nvme-eui.[uuid#]` will be passed directly through `/dev/nvme[subsys#]n[id#]` which has all paths virtualized underneath it using the Native NVMe multipathing solution.
 
 You can view your paths by running:
 
@@ -45,7 +39,7 @@ nvme-subsys0 - NQN=nqn.1992-08.com.netapp:5700.600a098000a522500000000589aa8a6
 +- nvme1 rdma traddr=192.4.22.141 trsvcid=4420 live
 ----
 
-If you specify a namespace device when using the 'nvme list-subsys' command, it provides additional information about the paths to that namespace:
+If you specify a physical nvme device when using the 'nvme list-subsys' command, it provides additional information about the paths to that namespace:
 
 ----
 # nvme list-subsys /dev/nvme0n1
