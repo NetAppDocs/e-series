@@ -20,7 +20,7 @@ You must install the required packages on your system.
 
 .About this task
 
-RHEL 7 and SLES 12 use Device Mapper Multipath (DMMP) for multipathing when using NVMe over Fibre Channel. RHEL 8 and SLES 15 use a built in Native NVMe Failover. Depending on which OS you are running, some additional configuration of multipath is required to get it running properly.
+RHEL 7 and SLES 12 use Device Mapper Multipath (DMMP) for multipathing when using NVMe over Fibre Channel. RHEL 8, RHEL 9, and SLES 15 use a built in Native NVMe Failover. Depending on which OS you are running, some additional configuration of multipath is required to get it running properly.
 
 == Enable Device Mapper Multipath (DMMP) for RHEL 7 or SLES 12
 By default, DM-MP is disabled in RHEL and SLES. Complete the following steps to enable DM-MP components on the host.
@@ -94,4 +94,4 @@ Native NVMe Multipathing is disabled by default in RHEL 8 and must be enabled us
 .. If the command output is `N`, then Native NVMe Multipathing is still disabled.
 .. If the command output is `Y`, then Native NVMe Multipathing is enabled and any NVMe devices you discover will use it.
 
-NOTE: For SLES 15, Native NVMe Multipathing is enabled by default and no additional configuration is required.
+NOTE: For RHEL 9 and SLES 15, Native NVMe Multipathing is enabled by default and no additional configuration is required.
