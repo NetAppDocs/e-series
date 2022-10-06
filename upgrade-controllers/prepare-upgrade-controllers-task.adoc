@@ -20,9 +20,7 @@ NOTE: Gathering support data can temporarily impact performance on your storage 
 +
 NOTE: If you are upgrading to controllers that support SANtricity OS version 8.50, you must install the latest versions of SANtricity OS and the latest NVSRAM after you install and power on the new controllers. If you do not perform this upgrade, you might not be able to configure the storage array for Automatic Load Balancing (ALB).
 
-. If you are *not* using Drive Security, you can skip this step and go to step 3 below the table. However, if you *are* using Drive Security and all FDE or FIPS drives are installed and enabled when you perform a complete controller replacement, refer to the following table to complete the appropriate steps for your security type (internal or external) and drive state.
-+
-NOTE: Drive Security is a storage array feature that provides an extra layer of security with either Full Disk Encryption (FDE) drives or Federal Information Processing Standard (FIPS) drives. When these drives are used with the Drive Security feature, they require a security key for access to their data.
+. If you have secure-enabled drives installed when you perform a complete controller replacement, refer to the following table to complete the appropriate steps for your security type (internal or external) and drive state. If you do *not* have secure-enabled drives installed, you can skip this step and go to step 3 below the table.
 +
 [options="header"]
 |===
@@ -31,7 +29,7 @@ a|
 Internal key management, one or more drives locked
 a|
 
- .. Export the internal security key file to a known location on the management client (the system with a browser used for accessing System Manager). Use the `export storageArray securityKey` CLI command. You must provide the pass phrase associated with the security key and specify the location where you want to save the command. For information about using this command, see the _Command Line Reference_.
+ .. Export the internal security key file to a known location on the management client (the system with a browser used for accessing System Manager). Use the `export storageArray securityKey` CLI command. You must provide the pass phrase associated with the security key and specify the location where you want to save the key. For information about using this command, see the https://docs.netapp.com/us-en/e-series-cli/index.html[Command Line Interface reference].
  .. Know the pass phrase associated with the internal security key.
 
 a|
@@ -40,10 +38,9 @@ a|
 Perform the following steps, in order:
 
  .. Record the External KMS server address and port number. From System Manager, go to menu:Settings[System > Security Key Management > View/Edit Key Management Server Settings].
- .. Ensure that the client and server certificates are available on your local host so the storage array and key management server can authenticate each other after the controller replacement is finished. Use the `save storageArray keyManagementCertificate` CLI command to save the certificates. Be sure to run the command twice, once with the `certificateType` parameter set to `client`, and the other with the parameter set to `server`. For information about using this command, see the _Command Line Reference_.
+ .. Ensure that the client and server certificates are available on your local host so the storage array and key management server can authenticate each other after the controller replacement is finished. Use the `save storageArray keyManagementCertificate` CLI command to save the certificates. Be sure to run the command twice, once with the `certificateType` parameter set to `client`, and the other with the parameter set to `server`. For information about using this command, see the https://docs.netapp.com/us-en/e-series-cli/index.html[Command Line Interface reference].
  .. Transition to internal key management by running the `disable storageArray externalKeyManagement` CLI command.
- .. Export the internal security key file to a known location on the management client (the system with a browser used for accessing System Manager). Use the `export storageArray securityKey` CLI command. You must provide the pass phrase associated with the security key and specify the location where you want to save the command. For information about using this command, see the https://docs.netapp.com/us-en/e-series-cli/index.html[Command Line Interface reference].
- .. Know the pass phrase associated with the internal security key.
+ .. Export the internal security key file to a known location on the management client (the system with a browser used for accessing System Manager). Use the `export storageArray securityKey` CLI command. You must provide the pass phrase associated with the security key and specify the location where you want to save the key. For information about using this command, see the https://docs.netapp.com/us-en/e-series-cli/index.html[Command Line Interface reference].
 
 a|
 External key management, all drives locked, you are *not* able to transition to internal key management temporarily for the controller replacement.
@@ -51,8 +48,8 @@ a|
 Perform the following steps, in order:
 
  .. Record the External KMS server address and port number. From System Manager, go to menu:Settings[System > Security Key Management > View/Edit Key Management Server Settings].
- .. Ensure that the client and server certificates are available on your local host so the storage array and key management server can authenticate each other after the controller replacement is finished.
- .. Use the `save storageArray keyManagementCertificate` CLI command to save the certificates. Be sure to run the command twice, once with the `certificateType` parameter set to `client`, and the other with the parameter set to `server`. For information about using this command, see the https://docs.netapp.com/us-en/e-series-cli/index.html[Command Line Interface reference].
+ .. Ensure that the client and server certificates are available on your local host so the storage array and key management server can authenticate each other after the controller replacement is finished. Use the `save storageArray keyManagementCertificate` CLI command to save the certificates. Be sure to run the command twice, once with the `certificateType` parameter set to `client`, and the other with the parameter set to `server`. For information about using this command, see the https://docs.netapp.com/us-en/e-series-cli/index.html[Command Line Interface reference].
+ .. Export the internal security key file to a known location on the management client (the system with a browser used for accessing System Manager). Use the `export storageArray securityKey` CLI command. You must provide the pass phrase associated with the security key and specify the location where you want to save the key. For information about using this command, see the https://docs.netapp.com/us-en/e-series-cli/index.html[Command Line Interface reference].
 
 
 a|
