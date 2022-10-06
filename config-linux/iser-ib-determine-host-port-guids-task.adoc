@@ -1,5 +1,5 @@
 ---
-permalink: config-linux/srp-ib-determine-host-port-guids-task.html
+permalink: config-linux/iser-ib-determine-host-port-guids-task.html
 sidebar: sidebar
 keywords: host port GUIDs, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: Determine host port GUIDs.
@@ -15,7 +15,7 @@ The infiniband-diags package includes commands to display the globally unique ID
 
 . Install the InfiniBand-diags package using the operating system's package management commands.
 . Run the `ibstat` command to display the port information.
-. Record the initiator's GUIDs on the xref:srp-ib-worksheet-concept.adoc[SRP worksheet].
+. Record the initiator's GUIDs on the xref:iser-ib-worksheet-concept.adoc[SRP worksheet].
 . Select the appropriate settings in the HBA utility.
 +
 Appropriate settings for your configuration are listed in the Notes column of the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].

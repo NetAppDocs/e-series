@@ -124,6 +124,9 @@ Data Assurance considerations:
 * The Data Assurance (DA) feature is not supported for iSCSI.
 +
 To ensure that data access remains uninterrupted, you might need to remap or remove DA volumes from host clusters before applying the feature pack.
+[NOTE]
+The Data Assurance feature for iSCSI is supported on SANtricity versions 11.40 and newer.  
+
 +
 [options = "header"]
 |===

@@ -67,7 +67,7 @@ The destination volume must meet the following criteria:
 * Must have a valid state (optimal).
 * Cannot have any of the following relationships: volume copy, snapshot copies, asynchronous or synchronous mirroring.
 * Cannot be undergoing any reconfiguration operations: Dynamic Volume Expansion, Dynamic Capacity Expansion, Dynamic Segment Size, Dynamic RAID Migration, Dynamic Capacity Reduction, or Defragmentation.
-* Cannot be mapped to a host before the import starts (however, it can be mapped after import completes).
+* Cannot be mapped to a host before the import starts (however, it can be mapped after import starts).
 * Cannot have Flash Read Cached (FRC) enabled.
 
 System Manager automatically checks these requirements as part of the Import Remote Storage wizard. Only volumes that meet all the requirements are displayed for destination volume selection.

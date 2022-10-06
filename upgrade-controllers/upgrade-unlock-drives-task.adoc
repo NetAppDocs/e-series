@@ -44,7 +44,7 @@ Ctrl B port 2: 192.168.129.102
 /storage-systems/{system-id}/security-key/import
 ----
 +
-NOTE: For additional information on installing and using the REST API, see the https://docs.netapp.com/us-en/e-series-santricity/san-getstarted/install-um.html[SANtricity Online Help].
+NOTE: For additional information on installing and using the REST API, see the https://docs.netapp.com/us-en/e-series/web-services-proxy/index.html[SANtricity Web Services Proxy].
 
 Controllers will continue with the autocode synchronization process from the drives and reboot. After reboot the controllers will be accessible through the original IP configuration.
 
@@ -72,7 +72,7 @@ NOTE: Your storage array must be in an optimal state to retrieve client and serv
 /storage-systems/{system-id}/external-key-server
 ----
 +
-NOTE: For additional information on installing and using the REST API, see the https://docs.netapp.com/us-en/e-series-santricity/san-getstarted/install-um.html[SANtricity Online Help].
+NOTE: For additional information on installing and using the REST API, see the https://docs.netapp.com/us-en/e-series/web-services-proxy/index.html[SANtricity Web Services Proxy].
 
 . Using the default IP address 192.168.128.101 with the username *admin* and the password remaining blank, download the certificates using the `storageArray keyManagementCertificate` CLI command: once for the client certificate and a second time for the server certificate.
 +
