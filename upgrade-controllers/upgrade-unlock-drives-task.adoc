@@ -32,7 +32,7 @@ Ctrl B port 2: 192.168.129.102
 
 .Steps
 
-. Make a direct, private connection between the storage array and the SANtricity client's laptop or PC. To do this:
+. Make a direct, private ethernet connection between the storage array and the SANtricity client's laptop or PC. To do this:
 .. Use an RJ45 ethernet cable to connect the laptop to management port 1 on controller A.
 .. To complete the connection, you might need to assign the laptop to an IP address in the same subnet as controller A. During controller lockdown, controller A defaults to a management address of 192.168.128.101. So you can assign the laptop to a subnet such as "192.168.128.201".
 
@@ -56,7 +56,7 @@ NOTE: Your storage array must be in an optimal state to retrieve client and serv
 
 .Steps
 
-. Make a direct, private connection between the storage array and the SANtricity client's laptop or PC. To do this:
+. Make a direct, private ethernet connection between the storage array and the SANtricity client's laptop or PC. To do this:
 .. Use an RJ45 ethernet cable to connect the laptop to management port 1 on controller A.
 .. To complete the connection, you might need to assign the laptop to an IP address in the same subnet as controller A. During controller lockdown, controller A defaults to a management address of 192.168.128.101. So you can assign the laptop to a subnet such as "192.168.128.201".
 . Using default IP address 192.168.128.101 with username *admin* and the password blank, set up the external key management server using the `set storageArray externalKeyManagement` CLI command and provide the `serverAddress` and `serverPort` saved from link:prepare-upgrade-controllers-task.html[Prepare to upgrade controllers]. For information about using this command, see the https://docs.netapp.com/us-en/e-series-cli/index.html[Command Line Interface reference].
