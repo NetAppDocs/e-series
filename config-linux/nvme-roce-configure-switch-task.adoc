@@ -11,7 +11,7 @@ summary: You configure the switches according to the vendor’s recommendations 
 [.lead]
 You configure the switches according to the vendor's recommendations for NVMe over RoCE. These recommendations might include both configuration directives as well as code updates.
 
-NOTE: *RISK OF DATA LOSS.* You must enable flow control for use with Global Pause Control on the switch to eliminate the risk of data loss in an NVMe over RoCE environment.
+CAUTION: *RISK OF DATA LOSS.* You must enable flow control for use with Global Pause Control on the switch to eliminate the risk of data loss in an NVMe over RoCE environment.
 
 .Steps
 

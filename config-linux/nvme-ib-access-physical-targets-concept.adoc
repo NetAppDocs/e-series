@@ -15,14 +15,14 @@ For RHEL 8, RHEL 9, and SLES 15, I/O is directed to the physical NVMe device tar
 
 == Physical NVMe devices are I/O targets
 
-It is best practice to run IO to the links in `/dev/disk/by-id/nvme-eui.[uuid#]` rather than directly to the physical nvme device path `/dev/nvme[subsys#]n[id#]`. The link between these two locations can be found using the following command:
+It is best practice to run I/O to the links in `/dev/disk/by-id/nvme-eui.[uuid#]` rather than directly to the physical nvme device path `/dev/nvme[subsys#]n[id#]`. The link between these two locations can be found using the following command:
 
 ----
 # ls /dev/disk/by-id/ -l
 lrwxrwxrwx 1 root root 13 Oct 18 15:14 nvme-eui.0000320f5cad32cf00a0980000af4112 -> ../../nvme0n1
 ----
 
-IO run to `/dev/disk/by-id/nvme-eui.[uuid#]` will be passed directly through `/dev/nvme[subsys#]n[id#]` which has all paths virtualized underneath it using the Native NVMe multipathing solution.
+I/O run to `/dev/disk/by-id/nvme-eui.[uuid#]` will be passed directly through `/dev/nvme[subsys#]n[id#]` which has all paths virtualized underneath it using the Native NVMe multipathing solution.
 
 You can view your paths by running:
 

@@ -49,20 +49,20 @@ You will use this information when you assign volumes to the host.
 . Enable the multipathd daemon on boot.
 +
 ----
-`systemctl enable multipathd`
+systemctl enable multipathd
 ----
 
 . Rebuild the `initramfs` image or the `initrd` image under /boot directory:
 +
 ----
-`dracut --force --add multipath`
+dracut --force --add multipath
 ----
 
 . Make sure that the newly created /boot/initrams-* image or /boot/initrd-* image is selected in the boot configuration file.
 +
 For example, for grub it is `/boot/grub/menu.lst` and for grub2 it is `/boot/grub2/menu.cfg`.
 
-. Use the "Create host manually" procedure in the online help to check whether the hosts are defined. Verify that each host type setting is based on the kernel information gathered in <<step4,step 4>>.
+. Use the https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-manually.html[Create host manually] procedure in the online help to check whether the hosts are defined. Verify that each host type setting is based on the kernel information gathered in <<step4,step 4>>.
 
 NOTE: Automatic Load Balancing is disabled for any volumes mapped to hosts running kernel 3.9 or earlier.
 
