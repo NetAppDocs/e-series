@@ -35,7 +35,7 @@ Before using NVMe over RoCE, see the https://mysupport.netapp.com/matrix[NetApp 
 
 === Switch restrictions
 
-NOTE: *RISK OF DATA LOSS.* You must enable flow control for use with Global Pause Control on the switch to eliminate the risk of data loss in an NVMe over RoCE environment.
+CAUTION: *RISK OF DATA LOSS.* You must enable flow control for use with Global Pause Control on the switch to eliminate the risk of data loss in an NVMe over RoCE environment.
 
 === Storage and disaster recovery restrictions
 
