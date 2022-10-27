@@ -21,7 +21,7 @@ A NetApp recommended OFED installed on the system. For more information, see the
 
 . Enable and start iSCSI services on the host(s):
 +
-*Red Hat Enterprise Linux 7 and 8 (RHEL 7 and RHEL 8)*
+*Red Hat Enterprise Linux 7, 8, and 9 (RHEL 7, RHEL 8, and RHEL 9)*
 +
 ----
 
@@ -105,13 +105,13 @@ iscsiadm -m discovery -t st -p 192.168.130.101 -I iser
 +
 ----
 # Controller A Port 1
-iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN> -I iface-ib0 -p <Target Port IP\> -l -o new
 # Controller B Port 1
-iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN> -I iface-ib0 -p <Target Port IP\> -l -o new
 # Controller A Port 2
-iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN> -I iface-ib1 -p <Target Port IP\> -l -o new
 # Controller B Port 2
-iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN> -I iface-ib1 -p <Target Port IP\> -l -o new
 ----
 . Log in to iSCSI sessions.
 +
@@ -119,13 +119,13 @@ For each session, run the iscsiadm command to log in to the session.
 +
 ----
 # Controller A Port 1
-iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN> -I iface-ib0 -p <Target Port IP\> -l
 # Controller B Port 1
-iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN> -I iface-ib0 -p <Target Port IP\> -l
 # Controller A Port 2
-iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN> -I iface-ib1 -p <Target Port IP\> -l
 # Controller B Port 2
-iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN> -I iface-ib1 -p <Target Port IP\> -l
 ----
 
 . Verify the iSER/iSCSI sessions.

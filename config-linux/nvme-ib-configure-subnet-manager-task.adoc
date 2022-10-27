@@ -11,6 +11,10 @@ summary: Using an InfiniBand switch to run subnet manager might cause unexpected
 [.lead]
 A subnet manager must be running in your environment on your switch or on your hosts. If you are running it host-side, use the following procedure to set it up.
 
+[NOTE]
+Before configuring the subnet manager, you must install the infiniband-diags package to obtain the globally unique ID (GUID) through the `ibstat -p` command. See xref:nvme-ib-determine-host-port-guids-task.adoc[Determine host port GUIDs and make the recommended settings] for information on how to install the infiniband-diags package.
+
+
 .Steps
 
 . Install the `opensm` package on any hosts that will be running the subnet manager.
@@ -22,39 +26,60 @@ A subnet manager must be running in your environment on your switch or on your h
  0x248a070300a80a81
 ----
 
-. Enable Subnet Manager on each port of the connected HCA on the host:
+. Create a subnet manager script that runs once as part of the boot process.
++
+----
+# vim /usr/sbin/subnet-manager.sh
+----
 
-+
-*SLES example*
-+
-** Add the following two lines to /etc/rc.d/rc.after. Substitute the values you found in step 2 for `GUID0` and `GUID1`. For `P0` and `P1`, use the subnet manager priorities, with 1 being the lowest and 15 the highest:
+. Add the following lines. Substitute the values you found in step 2 for `GUID0` and `GUID1`. For `P0` and `P1`, use the subnet manager priorities, with 1 being the lowest and 15 the highest.
 +
 ----
- opensm -B -g GUID0 -p P0 -f /var/log/opensm-ib0.log
- opensm -B -g GUID1 -p P1 -f /var/log/opensm-ib1.log
+#!/bin/bash
+
+opensm -B -g <GUID0> -p <P0> -f /var/log/opensm-ib0.log
+opensm -B -g <GUID1> -p <P1> -f /var/log/opensm-ib1.log
 ----
+
 +
 An example of the command with value substitutions:
 +
 ----
-# cat /etc/rc.d/rc.local
- opensm -B -g 0x248a070300a80a80 -p 15 -f /var/log/opensm-ib0.log
- opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
+#!/bin/bash
+
+opensm -B -g 0x248a070300a80a80 -p 15 -f /var/log/opensm-ib0.log
+opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
 ----
 
-+
-*RHEL example*
-** Add the following two lines to /etc/rc.d/rc.local. Substitute the values you found in step 2 for `GUID0` and `GUID1`. For `P0` and `P1`, use the subnet manager priorities, with 1 being the lowest and 15 the highest:
+. Create a systemd service unit file named `subnet-manager service`.
 +
 ----
-opensm -B -g GUID0 -p P0 -f /var/log/opensm-ib0.log
-opensm -B -g GUID1 -p P1 -f /var/log/opensm-ib1.log
+# vim /etc/systemd/system/subnet-manager.service
 ----
-+
-An example of the command with value substitutions:
+
+. Add the following lines.
 +
 ----
-# cat /etc/rc.d/rc.local
- opensm -B -g 0x248a070300a80a80 -p 15 -f /var/log/opensm-ib0.log
- opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
+[Unit]
+Description=systemd service unit file for subnet manager
+
+[Service]
+Type=forking
+ExecStart=/bin/bash /usr/sbin/subnet-manager.sh
+
+[Install]
+WantedBy=multi-user.target
+----
+
+. Notify systemd of the new service.
++
+----
+# systemctl daemon-reload
+----
+
+. Enable and start the `subnet manager service`.
++
+----
+# systemctl enable subnet-manager.service
+# systemctl start subnet-manager.service
 ----

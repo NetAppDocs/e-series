@@ -65,4 +65,4 @@ The Manual method lets you select which specific drives comprise the volume grou
 
 . Based on the displayed drive characteristics, select the drives you want to use in the volume group, and then click *Create*.
 
-The drive characteristics displayed depend on whether you selected the automatic method or manual method.
+The drive characteristics displayed depend on whether you selected the automatic method or manual method. For more information, see the SANtricity System Manager documentation, https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-volume-group.html[Create a volume group^].
