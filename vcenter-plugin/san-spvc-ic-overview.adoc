@@ -58,9 +58,9 @@ Some operations are not available when a storage array has a non-optimal status.
 
 The Storage Plugin for vCenter can be accessed from several types of browsers. The following browsers and versions are supported.
 
-* Google Chrome 79 or later
-* Mozilla Firefox 70 or later
-* Microsoft Edge 79 or later
+* Google Chrome 89 or later
+* Mozilla Firefox 80 or later
+* Microsoft Edge 90 or later
 
 === User roles and permissions
 
