@@ -76,7 +76,7 @@ a|
 Indicates whether this pool candidate is comprised entirely of secure-capable drives, which can be either Full Disk Encryption (FDE) drives or Federal Information Processing Standard (FIPS) drives.
 
 * You can protect your pool with Drive Security, but all drives must be secure- capable to use this feature.
-* If you want to create an FDE-only pool, look for *Yes - FDE* in the Secure- Capable column. If you want to create a FIPS-only pool, look for *Yes - FIPS* in the Secure-Capable column.
+* If you want to create an FDE-only pool, look for *Yes - FDE* in the Secure-Capable column. If you want to create a FIPS-only pool, look for *Yes - FIPS* or *Yes - FIPS (Mixed)*. "Mixed" indicates a mixture of 140-2 and 140-3 level drives. If you use a mixture of these levels, be aware that the pool will then operate at the lower level of security (140-2).
 * You can create a pool comprised of drives that may or may not be secure- capable or are a mix of security levels. If the drives in the pool include drives that are not secure-capable, you cannot make the pool secure.
 a|
 Enable Security?

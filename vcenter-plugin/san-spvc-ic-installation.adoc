@@ -21,11 +21,11 @@ You can install the Storage Plugin for vCenter and verify the plugin registratio
 
 Be sure that your systems meet the following requirements:
 
-* VMware vCenter Server Appliance supported versions: 6.7U3J, 7.0U1, or 7. 0U2
+* VMware vCenter Server Appliance supported versions: 6.7U3J, 7.0U1, 7.0U2, 7.0U3, and 8.0.
 * NetApp SANtricity OS version: 11.60.2 or higher
-* Supported application host versions: Windows 2016 or Windows 2019
+* Supported application host versions: Windows 2016, Windows 2019, Windows 2022.
 * CPU requirements for the host system:
-** System memory: 1.5GB
+** System memory: 512 MB
 ** Storage space: 275 MB + 200 MB (logging)
 
 == Install the plugin software

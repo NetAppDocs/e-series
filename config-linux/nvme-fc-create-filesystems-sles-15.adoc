@@ -1,25 +1,25 @@
 ---
-permalink: config-linux/nvme-ib-create-filesystems-sles-15-task.html
+permalink: config-linux/nvme-fc-create-filesystems-sles-15-task.html
 sidebar: sidebar
 keywords: file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: For RHEL 8 and SLES 15, you create a filesystem on the native nvme device and mount the filesystem.
 ---
 = Create filesystems (RHEL 8, RHEL 9, SLES 15)
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ../media
 
 [.lead]
-For RHEL 8, RHEL 9, SLES 15, you create a filesystem on the native nvme device and mount the filesystem.
+For RHEL 8, RHEL 9, and SLES 15, you create a filesystem on the native nvme device and mount the filesystem.
 
 .Steps
 
-. Run the `multipath -ll` command to get a list of nvme devices.
+. Run the multipath -ll command to get a list of nvme devices.
 +
 ----
 # multipath -ll
 ----
 +
-The result of this command can be used to find the devices associated with the `/dev/disk/by-id/nvme-eui.[uuid#]` location. For the example below, this would be `/dev/disc/by-id/nvme-eui.000082dd5c05d39300a0980000a52225`.
+The result of this command can be used to find the devices associated `/dev/disk/by-id/nvme-eui.[uuid#]` location. For the example below this would be `/dev/disc/by-id/nvme-eui.000082dd5c05d39300a0980000a52225`.
 +
 ----
 eui.000082dd5c05d39300a0980000a52225 [nvme]:nvme0n6 NVMe,NetApp E-Series,08520000
@@ -36,7 +36,7 @@ size=4194304 features='n/a' hwhandler='ANA' wp=rw
 
 . Create a file system on the partition for the desired nvme device using the location `/dev/disk/by-id/nvme-eui.[id#]`.
 +
-The method for creating a file system varies depending on the file system chosen. This example shows creating an `ext4` file system.
+The method for creating a file system varies depending on the file system chosen. This example shows creating an ext4 file system.
 +
 ----
 # mkfs.ext4 /dev/disk/by-id/nvme-eui.000082dd5c05d39300a0980000a52225

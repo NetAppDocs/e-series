@@ -222,6 +222,8 @@ sidebar:
                     url: "/config-linux/iser-ib-verify-linux-config-support-task.html"
                   - title: Configure IP addresses using DHCP
                     url: "/config-linux/iser-ib-configure-ip-address-dhcp-task.html"
+                  - title: Determine host port GUIDs and make the recommended settings
+                    url: "/config-linux/iser-ib-determine-host-port-guids-task.html"
                   - title: Configure subnet manager
                     url: "/config-linux/iser-ib-configure-subnet-manager-task.html"
                   - title: Install and configure host utilities
@@ -250,6 +252,8 @@ sidebar:
                     url: "/config-linux/srp-ib-verify-linux-config-support-task.html"
                   - title: Configure IP addresses using DHCP
                     url: "/config-linux/srp-ib-configure-ip-address-dhcp-task.html"
+                  - title: Determine host port GUIDs
+                    url: "/config-linux/srp-ib-determine-host-port-guids-task.html"
                   - title: Configure subnet manager
                     url: "/config-linux/srp-ib-configure-subnet-manager-task.html"
                   - title: Install and configure host utilities
@@ -262,8 +266,6 @@ sidebar:
                     url: "/config-linux/srp-ib-configure-multipath-software-task.html"
                   - title: Set up multipath.conf file
                     url: "/config-linux/srp-ib-setup-multipath-conf-file-concept.html"
-                  - title: Determine host port GUIDs
-                    url: "/config-linux/srp-ib-determine-host-port-guids-task.html"
                   - title: Configure network connections—​SRP over Infiniband
                     url: "/config-linux/srp-ib-configure-network-connections-task.html"
                   - title: Create partitions and filesystems
@@ -282,6 +284,8 @@ sidebar:
                     url: "/config-linux/nvme-ib-install-smcli-11-53-task.html"
                   - title: Access SANtricity System Manager and use the Setup wizard
                     url: "/config-linux/nvme-ib-access-sam-setup-wizard-task.html"
+                  - title: Determine host port GUIDs and make the recommended settings
+                    url: "/config-linux/nvme-ib-determine-host-port-guids-task.html"
                   - title: Configure subnet manager
                     url: "/config-linux/nvme-ib-configure-subnet-manager-task.html"
                   - title: Set up NVMe over InfiniBand on the host side
@@ -304,7 +308,7 @@ sidebar:
                     url: "/config-linux/nvme-ib-access-physical-targets-concept.html"
                   - title: Create filesystems (RHEL 7 and SLES 12)
                     url: "/config-linux/nvme-ib-create-filesystems-sles-12-task.html"
-                  - title: Create filesystems (RHEL 8 and SLES 15)
+                  - title: Create filesystems (RHEL 8, RHEL 9, and SLES 15)
                     url: "/config-linux/nvme-ib-create-filesystems-sles-15-task.html"
                   - title: Verify storage access on the host
                     url: "/config-linux/nvme-ib-verify-storage-access-host-task.html"
@@ -342,7 +346,7 @@ sidebar:
                     url: "/config-linux/nvme-roce-access-physical-targets-concept.html"
                   - title: Create filesystems (RHEL 7 and SLES 12)
                     url: "/config-linux/nvme-roce-create-filesystems-sles-12-task.html"
-                  - title: Create filesystems (RHEL 8 and SLES 15)
+                  - title: Create filesystems (RHEL 8, RHEL 9, and SLES 15)
                     url: "/config-linux/nvme-roce-create-filesystems-sles-15-task.html"
                   - title: Verify storage access on host
                     url: "/config-linux/nvme-roce-verify-storage-access-host-task.html"
@@ -374,8 +378,10 @@ sidebar:
                     url: "/config-linux/nvme-fc-access-virtual-targets-concept.html"
                   - title: Access NVMe volumes for physical device targets
                     url: "/config-linux/nvme-fc-access-physical-targets-concept.html"
-                  - title: Create partitions and filesystems
-                    url: "/config-linux/nvme-fc-create-partition-files-task.html"
+                  - title: Create filesystems (RHEL 7 and SLES 12)
+                    url: "/config-linux/nvme-fc-create-filesystems-sles-12-task.html"
+                  - title: Create filesystems (RHEL 8, RHEL 9, and SLES 15)
+                    url: "/config-linux/nvme-fc-create-filesystems-sles-15-task.html"
                   - title: Verify storage access on host
                     url: "/config-linux/nvme-fc-verify-storage-access-host-task.html"
                   - title: NVMe over Fibre Channel worksheet for Linux

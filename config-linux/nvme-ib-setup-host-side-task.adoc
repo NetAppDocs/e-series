@@ -13,7 +13,7 @@ Configuring an NVMe initiator in an InfiniBand environment includes installing a
 
 .What you'll need
 
-You must be running the latest compatible RHEL 7, RHEL 8, SUSE Linux Enterprise Server 12 or 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a complete list of the latest requirements.
+You must be running the latest compatible RHEL 7, RHEL 8, RHEL9, SUSE Linux Enterprise Server 12 or 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a complete list of the latest requirements.
 
 .Steps
 
@@ -28,7 +28,7 @@ You must be running the latest compatible RHEL 7, RHEL 8, SUSE Linux Enterprise 
 # zypper install nvme-cli
 ----
 +
-*RHEL 7 or RHEL 8*
+*RHEL 7, RHEL 8, or RHEL 9*
 +
 ----
 
@@ -120,7 +120,7 @@ REMOTE_IPADDR=
 STARTMODE='auto'
 ----
 +
-*RHEL 7 or RHEL 8*
+*RHEL 7, RHEL 8, or RHEL 9*
 +
 Create the file /etc/sysconfig/network-scripts/ifcfg-ib0 with the following contents.
 +

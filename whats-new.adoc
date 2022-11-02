@@ -13,6 +13,26 @@ summary: New features in SANtricity OS.
 [.lead]
 The following tables describe new features in SANtricity OS 11.7 for embedded management of EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
 
+== New features in Version 11.74
+
+[cols="35h,~",options="header"]
+|===
+|New feature |Description
+
+a|Support for FIPS 140-3
+a|FIPS 140-3 is now supported on certain drives for both SAS and NVMe-based SSDs. FIPS 140-3 level SSD drives can co-exist with FIPS 140-2 level SSD drives, provided that the drives are either all NVMe-based or all SAS-based. When using a mixture of these levels in volume groups and disk pools, be aware that the group or pool will then operate at the lower level of security (140-2).
+
+a|MFA and SSH support
+a|For SANtricity versions 11.74 and later, the Remote Login feature allows you to configure multifactor authorization (MFA) by requiring users to enter an SSH key and/or SSH password. The menu option in the Hardware section has changed from *Change remote login* to *Configure remote login (SSH)*.
+
+a|Access tokens
+a|This release includes a new feature for creating access tokens. These tokens allow you to authenticate with the REST API or command line interface (CLI), without exposing user names and passwords. This feature is provided in the Access Management section.
+
+a|US Government Executive Order
+a|To comply with the Executive Order, this release includes several security changes.
+
+|===
+
 == New features in Version 11.73
 
 [cols="35h,~",options="header"]
