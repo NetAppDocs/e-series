@@ -28,9 +28,6 @@ a|For SANtricity versions 11.74 and later, the Remote Login feature allows you t
 a|Access tokens
 a|This release includes a new feature for creating access tokens. These tokens allow you to authenticate with the REST API or command line interface (CLI), without exposing user names and passwords. This feature is provided in the Access Management section.
 
-a|US Government Executive Order
-a|To comply with the Executive Order, this release includes several security changes.
-
 |===
 
 == New features in Version 11.73
