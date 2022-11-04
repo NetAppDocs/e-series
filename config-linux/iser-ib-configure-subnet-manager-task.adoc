@@ -21,8 +21,8 @@ Before configuring the subnet manager, you must install the infiniband-diags pac
 +
 ----
 # ibstat -p
- 0x248a070300a80a80
- 0x248a070300a80a81
+0x248a070300a80a80
+0x248a070300a80a81
 ----
 
 . Create a subnet manager script that runs once as part of the boot process.
@@ -50,7 +50,7 @@ opensm -B -g 0x248a070300a80a80 -p 15 -f /var/log/opensm-ib0.log
 opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
 ----
 
-. Create a systemd service unit file named `subnet-manager service`.
+. Create a systemd service unit file named `subnet-manager.service`.
 +
 ----
 # vim /etc/systemd/system/subnet-manager.service
@@ -76,7 +76,7 @@ WantedBy=multi-user.target
 # systemctl daemon-reload
 ----
 
-. Enable and start the `subnet manager service`.
+. Enable and start the `subnet-manager` service.
 +
 ----
 # systemctl enable subnet-manager.service
