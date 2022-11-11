@@ -9,11 +9,11 @@ summary: Determine host port GUIDs.
 :imagesdir: ../media/
 
 [.lead]
-The infiniband-diags package includes commands to display the globally unique ID (GUID) of each InfiniBand (IB) port. Most Linux distributions with OFED/RDMA supported through the included packages also have the InfiniBand-diags package, which includes commands to display information about the HCA.
+The infiniband-diags package includes commands to display the globally unique ID (GUID) of each InfiniBand (IB) port. Most Linux distributions with OFED/RDMA supported through the included packages also have the infiniband-diags package, which includes commands to display information about the HCA.
 
 .Steps
 
-. Install the InfiniBand-diags package using the operating system's package management commands.
+. Install the `infiniband-diags` package using the operating system's package management commands.
 . Run the `ibstat` command to display the port information.
 . Record the initiator's GUIDs on the xref:nvme-ib-worksheet-concept.adoc[SRP worksheet].
 . Select the appropriate settings in the HBA utility.
