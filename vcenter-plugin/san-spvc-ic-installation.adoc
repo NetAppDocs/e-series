@@ -15,18 +15,13 @@ summary: Install the SANtricity Storage Plugin for vCenter.
 
 
 [.lead]
-You can install the Storage Plugin for vCenter and verify the plugin registration.
+You can install the Storage Plugin for vCenter and verify the plugin registration. You can also upgrade the plugin using these instructions.
 
 == Review installation prerequisites
 
-Be sure that your systems meet the following requirements:
+Be sure that your systems meet the requirements in link:vcenter-plugin/san-spvc-ic-reqs.html[Review installation and upgrade requirements].
 
-* VMware vCenter Server Appliance supported versions: 6.7U3J, 7.0U1, 7.0U2, 7.0U3, and 8.0.
-* NetApp SANtricity OS version: 11.60.2 or higher
-* Supported application host versions: Windows 2016, Windows 2019, Windows 2022.
-* CPU requirements for the host system:
-** System memory: 512 MB
-** Storage space: 275 MB + 200 MB (logging)
+NOTE: The upgrade process does not preserve the vcenter.properties files. If you are upgrading, you must un-register the plugin prior to the upgrade. Once the upgrade is successful, then you can re-register the plugin back to the vCSA.
 
 == Install the plugin software
 
