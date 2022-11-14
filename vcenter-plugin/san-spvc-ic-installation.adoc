@@ -19,9 +19,9 @@ You can install the Storage Plugin for vCenter and verify the plugin registratio
 
 == Review installation prerequisites
 
-Be sure that your systems meet the requirements in link:vcenter-plugin/san-spvc-ic-reqs.html[Review installation and upgrade requirements].
+Be sure that your systems meet the requirements in link:san-spvc-ic-reqs.html[Review installation and upgrade requirements].
 
-NOTE: The upgrade process does not preserve the vcenter.properties files. If you are upgrading, you must un-register the plugin prior to the upgrade. Once the upgrade is successful, then you can re-register the plugin back to the vCSA.
+NOTE: The upgrade process does not preserve the *vcenter.properties* files. If you are upgrading, you must un-register the plugin prior to the upgrade. Once the upgrade is successful, then you can re-register the plugin back to the vCSA.
 
 == Install the plugin software
 

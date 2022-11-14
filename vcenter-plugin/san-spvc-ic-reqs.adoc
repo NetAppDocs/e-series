@@ -37,7 +37,6 @@ a|
 Capacity planning
 a|
 Storage plugin for vCenter requires adequate space for execution and logging. Make sure that your system meets the following available disk space requirements:
-/question for Brook -- are these the same?//
 
 *	Required installation space — 275 MB
 *	Storage space: 275 MB + 200 MB (logging)
