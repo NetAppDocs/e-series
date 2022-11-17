@@ -105,7 +105,7 @@ a|
 Drives and HICs:
 
 a|
-Supports up to 24 NVMe SSD drives in the controller shelf and then a further 96 SAS SSD drives in SAS expansions shelves, with a single host interface card (HIC) per controller.
+Supports up to 24 NVMe SSD drives in the controller shelf and then a further 96 SAS SSD drives in SAS expansion shelves, with a single host interface card (HIC) per controller.
 a|
 Interfaces:
 
@@ -215,7 +215,7 @@ a|
 Drives and HICs:
 
 a|
-Supports up to 24 NVMe SSD drives in the controller shelf and then a further 96 SAS SSD drives in SAS expansions shelves, with a single host interface card (HIC) per controller.
+Supports up to 24 NVMe SSD drives in the controller shelf and then a further 96 SAS SSD drives in SAS expansion shelves, with a single host interface card (HIC) per controller.
 a|
 Interfaces:
 

@@ -42,10 +42,6 @@ Storage plugin for vCenter requires adequate space for execution and logging. Ma
 *	Storage space: 275 MB + 200 MB (logging)
 *	System memory — 512 MB
 
-* CPU requirements for the host system:
-** System memory: 512 MB
-** Storage space: 275 MB + 200 MB (logging)
-
 a|
 License
 a|
