@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: vcenter-plugin/san-spvc-ic-installation.html
 keywords: install vCenter plugin, installing vCenter plugin, vCenter plugin,
-summary: Install the SANtricity Storage Plugin for vCenter.
+summary: Install or upgrade the SANtricity Storage Plugin for vCenter.
 ---
 
-= Install the Storage Plugin for vCenter
+= Install or upgrade the Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:
@@ -15,18 +15,13 @@ summary: Install the SANtricity Storage Plugin for vCenter.
 
 
 [.lead]
-You can install the Storage Plugin for vCenter and verify the plugin registration.
+Folow these steps to install the Storage Plugin for vCenter and verify the plugin registration. You can also upgrade the plugin using these instructions.
 
 == Review installation prerequisites
 
-Be sure that your systems meet the following requirements:
+Be sure that your systems meet the requirements in link:san-spvc-ic-reqs.html[Review installation and upgrade requirements].
 
-* VMware vCenter Server Appliance supported versions: 6.7U3J, 7.0U1, 7.0U2, 7.0U3, and 8.0.
-* NetApp SANtricity OS version: 11.60.2 or higher
-* Supported application host versions: Windows 2016, Windows 2019, Windows 2022.
-* CPU requirements for the host system:
-** System memory: 512 MB
-** Storage space: 275 MB + 200 MB (logging)
+NOTE: The upgrade process does not preserve the *vcenter.properties* files. If you are upgrading, you must un-register the plugin prior to the upgrade. Once the upgrade is successful, then you can re-register the plugin back to the vCSA.
 
 == Install the plugin software
 
@@ -39,28 +34,19 @@ To install the plugin software:
 +
 In the above filename, `nn.nn.nn.nnnn` represents the version number.
 
-. When the installation starts, follow the on-screen prompts.
+. When the installation starts, follow the on-screen prompts to enable several features and enter some configuration parameters. If necessary, you can change any of these selections later in the configuration files.
 +
-During the installation, you are prompted to enter some configuration parameters.
-
-.. On the first screen, select your preferred language for the software and click *OK*.
-.. In the Introduction screen, click *Next*.
-.. In the Copyright screen, click *Next*.
-.. In the License Agreement screen, select the box for accepting the terms and then click *Next*.
-.. Select the folder where you want to install the software and then click *Next*.
-.. In the Certificate Validation screen, keep the checkbox selected if you want to enforce certificate validation between the plugin and the storage arrays. With this enforcement, the storage array certificates are checked to be trusted against the plugin. If the certificates are not trusted, then they are not allowed to be added to the plugin. If you want to override certificate validation, deselect the checkbox so that all storage arrays can be added to the plugin using self-signed certificates. Click *Next*.
+NOTE: During an upgrade, you are not prompted for configuration parameters.
 +
-To learn more about certificates, refer to the online help available from the plugin interface.
-
-.. In the HTTPS Web Service Port screen, leave the default at 8445, or if necessary, change the port number. Click *Next*.
-.. In the Pre-Installation Summary screen, click *Next* to install the files.
-.. When the Webserver Started message appears, click *OK* to complete the installation.
-.. Click *Done*.
-[NOTE]
-If necessary, you can change the Certificate Validation and Web Service Port settings after installation. From the installation directory, open the wsconfig.xml file. To remove the Certificate Validation on storage arrays, change the `env` key, `trust.all.arrays`, to `true`. To change the Web Services port, modify the `sslport` value to the desired port value ranging from 0-65535. Ensure that the port number used is not binding to another process. When you are done, save the changes and restart the plugin webserver. If the port value of the plugin webserver is changed after registering the plugin to a vCSA, then you must unregister and re-register the plugin so the vCSA is communicating on the changed port to the plugin webserver.
+NOTE: During installation, you are prompted for certificate validation. Keep the checkbox selected if you want to enforce certificate validation between the plugin and the storage arrays. With this enforcement, the storage array certificates are checked to be trusted against the plugin. If the certificates are not trusted, then they are not allowed to be added to the plugin. If you want to override certificate validation, deselect the checkbox so that all storage arrays can be added to the plugin using self-signed certificates. To learn more about certificates, refer to the online help available from the plugin interface. 
++
+. When the Webserver Started message appears, click *OK* to complete the installation, and then click *Done*.
 +
 . Verify that the application server was installed successfully by running the *services.msc* command.
 . Verify that the Application Server (vCP) service, *NetApp SANtricity Storage Plugin for vCenter*,  was installed and the service has started.
++
+NOTE: If necessary, you can change the Certificate Validation and Web Service Port settings after installation. From the installation directory, open the wsconfig.xml file. To remove the Certificate Validation on storage arrays, change the `env` key, `trust.all.arrays`, to `true`. To change the Web Services port, modify the `sslport` value to the desired port value ranging from 0-65535. Ensure that the port number used is not binding to another process. When you are done, save the changes and restart the plugin webserver. If the port value of the plugin webserver is changed after registering the plugin to a vCSA, then you must unregister and re-register the plugin so the vCSA is communicating on the changed port to the plugin webserver.
+
 
 == Register the plugin with a vCenter Server Appliance
 

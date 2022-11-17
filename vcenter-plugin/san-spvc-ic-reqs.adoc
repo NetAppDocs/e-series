@@ -1,0 +1,62 @@
+---
+permalink: vcenter-plugin/san-spvc-ic-reqs.html
+sidebar: sidebar
+keywords: upgrade vCenter
+summary: Installation and upgrade requirements and considerations for vCenter plugin.
+---
+= Review installation and upgrade requirements
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before installing or upgrading the SANtricity Storage Plugin for vCenter, review the installation requirements and upgrade considerations.
+
+== Installation requirements
+
+You can install and configure the Storage Plugin for vCenter on a Window host system.
+Plugin installation includes the following requirements.
+
+
+[options="header"]
+|===
+| Requirement| Description
+a|
+Supported versions
+a|
+* VMware vCenter Server Appliance supported versions: 6.7U3J, 7.0U1, 7.0U2, 7.0U3, and 8.0.
+* NetApp SANtricity OS version: 11.60.2 or higher
+* Supported application host versions: Windows 2016, Windows 2019, Windows 2022.
+
+For more information on compatibility, see the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
+a|
+Multiple instances
+a|
+You can install only one instance of Storage plugin for vCenter on a Windows host and only registered to one vCSA.
+
+a|
+Capacity planning
+a|
+Storage plugin for vCenter requires adequate space for execution and logging. Make sure that your system meets the following available disk space requirements:
+
+*	Required installation space — 275 MB
+*	Storage space: 275 MB + 200 MB (logging)
+*	System memory — 512 MB
+
+* CPU requirements for the host system:
+** System memory: 512 MB
+** Storage space: 275 MB + 200 MB (logging)
+
+a|
+License
+a|
+The Storage Plugin for vCenter is a free, standalone product that does not require a license key. However, applicable copyrights and terms of service apply. If you are installing the plugin in Graphical mode, you must accept the End User License Agreement (EULA).
+
+|===
+
+== Upgrade considerations
+
+If you are upgrading from a previous version, be aware that the plugin must be un-registered from the vCSA prior to the upgrade.
+
+* During the upgrade, most of the plugin's previous configuration settings are preserved. These settings include user passwords, all discovered storage systems, server certificates, trusted certificates, and server runtime configuration.
+* The upgrade process does not preserve the *vcenter.properties* files, so you must un-register the plugin prior to the upgrade. Once the upgrade is successful, then you can re-register the plugin back to the vCSA.
+* All SANtricity OS files previously loaded in the repository are removed during the upgrade.

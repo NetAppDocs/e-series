@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: installation, download, install proxy,
 summary: Installation involves downloading the file and then installing the proxy package on a Linux or Windows server.
 ---
-= Download and install Web Services Proxy file
+= Install or upgrade Web Services Proxy file
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Installation involves downloading the file and then installing the proxy package on a Linux or Windows server.
+Installation involves downloading the file and then installing the proxy package on a Linux or Windows server. You can also upgrade the proxy using these instructions.
 
 == Download Web Services Proxy files
 
@@ -57,7 +57,9 @@ The installation process starts and the NetApp SANtricity Web Services Proxy + U
 . Follow the on-screen prompts.
 +
 During the installation, you are prompted to enable several features and enter some configuration parameters. If necessary, you can change any of these selections later in the configuration files.
-
++
+NOTE: During an upgrade, you are not prompted for configuration parameters.
++
 . When the Webserver Started message appears, click *OK* to complete the installation.
 +
 The Install Complete dialog box appears.
@@ -81,6 +83,9 @@ The installation process starts and the Launching Installer -- Introduction mess
 . Follow the on-screen prompts.
 +
 During the installation, you are prompted to enable several features and enter some configuration parameters. If necessary, you can change any of these selections later in the configuration files.
++
+NOTE: During an upgrade, you are not prompted for configuration parameters.
++
 
 . When the installation is complete, press *Enter* to exit the installer.
 
