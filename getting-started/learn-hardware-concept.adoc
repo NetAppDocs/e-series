@@ -24,7 +24,7 @@ E-Series arrays are available in the following models:
 
 == E2800 models
 
-[options="header"]
+[cols="35h,~",options="header"]
 |===
 a|Component a|Specification
 
@@ -92,7 +92,7 @@ Available with the following interfaces:
 
 == EF300 models
 
-[options="header"]
+[cols="35h,~",options="header"]
 |===
 a|Component a|Specification
 a|
@@ -131,7 +131,7 @@ Available with the following interfaces:
 
 == E5700 models
 
-[options="header"]
+[cols="35h,~",options="header"]
 |===
 a|Component a|Specification
 a|
@@ -176,7 +176,7 @@ Available with the following interfaces:
 
 == EF570 models
 
-[options="header"]
+[cols="35h,~",options="header"]
 |===
 a|Component a|Specification
 a|
@@ -209,7 +209,7 @@ Available with the following interfaces:
 
 == EF600 models
 
-[options="header"]
+[cols="35h,~",options="header"]
 |===
 a|Component a|Specification
 a|
