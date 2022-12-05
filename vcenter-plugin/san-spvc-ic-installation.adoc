@@ -15,13 +15,13 @@ summary: Install or upgrade the SANtricity Storage Plugin for vCenter.
 
 
 [.lead]
-Folow these steps to install the Storage Plugin for vCenter and verify the plugin registration. You can also upgrade the plugin using these instructions.
+Follow these steps to install the Storage Plugin for vCenter and verify the plugin registration. You can also upgrade the plugin using these instructions.
 
 == Review installation prerequisites
 
 Be sure that your systems meet the requirements in link:san-spvc-ic-reqs.html[Review installation and upgrade requirements].
 
-NOTE: The upgrade process does not preserve the *vcenter.properties* files. If you are upgrading, you must un-register the plugin prior to the upgrade. Once the upgrade is successful, then you can re-register the plugin back to the vCSA.
+NOTE: The upgrade process does not preserve the *vcenter.properties* files. If you are upgrading, you must unregister the plugin prior to the upgrade. Once the upgrade is successful, you can then register the plugin again to the vCSA.
 
 == Install the plugin software
 
@@ -53,7 +53,7 @@ NOTE: If necessary, you can change the Certificate Validation and Web Service Po
 After the plugin software is installed, register the plugin with a vCSA.
 
 [NOTE]
-The plugin can only be registered to one vCSA at a time. To register to a different vCSA, then you must un-register the plugin from the current vCSA and uninstall it from the application host. Then you can re-install the plugin and register it to the other vCSA.
+The plugin can only be registered to one vCSA at a time. To register to a different vCSA, you must unregister the plugin from the current vCSA and uninstall it from the application host. You can then re-install the plugin and register it to the other vCSA.
 
 . Open a prompt through the command line and navigate to the following directory:
 +

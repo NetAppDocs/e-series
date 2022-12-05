@@ -93,14 +93,14 @@ NOTE: See the installation instructions for your model for the full procedure fo
 
 == Step 3: Cable your system
 
-Select one of the following options, depending on whether you are cabling an E2800 and E5700 storage system or an EF300 storage system.
+Select one of the following options:
 
-* <<Option 1: Connect the drive shelf for E2800 and E5700>>
-* <<Option 2: Connect the drive shelf for EF300 and EF600>>
+* <<Option 1: Connect the drive shelf for E2800 or E5700>>
+* <<Option 2: Connect the drive shelf for EF300 or EF600>>
 
 If you are cabling an older controller shelf to a DE212C, DE224C, or DE460, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf^].
 
-=== Option 1: Connect the drive shelf for E2800 and E5700
+=== Option 1: Connect the drive shelf for E2800 or E5700
 
 You connect the drive shelf to controller A, confirm IOM status, and then connect the drive shelf to controller B.
 
@@ -141,7 +141,7 @@ image::../media/hot_e5700_2.png[]
 +
 NOTE: Optimal status indicates that the loss of redundancy error associated with the new drive shelf has been resolved and the storage system is stabilized.
 
-=== Option 2: Connect the drive shelf for EF300 and EF600
+=== Option 2: Connect the drive shelf for EF300 or EF600
 
 You connect the drive shelf to controller A, confirm IOM status, and then connect the drive shelf to controller B.
 
