@@ -17,7 +17,7 @@ The AutoSupport (ASUP) feature automatically transmits messages to NetApp based 
 
 Each AutoSupport message is a collection of log files, configuration data, state data, and performance metrics. By default, AutoSupport transmits the files listed in the following table to the NetApp Support team once each week.
 
-[options="header"]
+[cols="35h,~",options="header"]
 |===
 | File Name| Description
 a|
@@ -75,7 +75,7 @@ The AutoSupport feature is enabled or disabled during the initial installation o
 You can enable or disable AutoSupport through the ASUPConfig.xml file, as described in the steps below. Alternatively, you can enable or disable this feature through the API using *Configuration* and *POST/asup*, and then entering "true" or "false."
 
 . Open the ASUPConfig.xml file in the working directory.
-. Locate the lines for `<asupdata enabled="(Boolean)" timestamp=>`
+. Locate the lines for `<asupdata enable="Boolean_value" timestamp="timestamp">`
 . Enter `true` (enable) or `false` (disable). For example:
 +
 ----
@@ -93,7 +93,7 @@ You can configure the AutoSupport feature to use HTTPS, HTTP, or SMTP delivery m
 . Access the ASUPConfig.xml file in the working directory.
 . In the string, `<delivery type="n">`, enter 1, 2, or 3 as described in the table:
 +
-[options="header"]
+[cols="25h,~",options="header"]
 |===
 | Value| Description
 a|

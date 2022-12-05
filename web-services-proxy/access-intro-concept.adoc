@@ -21,7 +21,7 @@ Role-based access control (RBAC) associates predefined users with roles. Each ro
 
 The following table describes each role.
 
-[options="header"]
+[cols="35h,~",options="header"]
 |===
 | Role| Description
 a|
@@ -45,7 +45,7 @@ Default user accounts are defined in the users.properties file. You can change u
 
 The following table lists the user logins available for the Web Services Proxy.
 
-[options="header"]
+[cols="35h,~",options="header"]
 |===
 | Predefined user login| Description
 a|
@@ -69,13 +69,14 @@ monitor
 a|
 A user with read-only access to the system. This user includes only the storage.monitor role. This account is disabled until a password is set.
 a|
-rw
+rw (legacy for older arrays)
 a|
 The rw (read/write) user includes the following roles: storage.admin, support.admin, and storage.monitor. This account is disabled until a password is set.
 a|
-ro
+ro (legacy for older arrays)
 a|
 The ro (read only) user includes only the storage.monitor role. This account is disabled until a password is set.
+
 |===
 
 === Password encryption
