@@ -9,7 +9,7 @@ summary: E-Series storage arrays are available in several configurations and mod
 :imagesdir: ../media/
 
 [.lead]
-E-Series storage arrays are available in several configurations and models.
+E-Series storage arrays are available in several configurations and models. 
 
 A storage array includes shelves, controllers, drives, software, and firmware. The array can be installed in a rack or cabinet, with customizable hardware for one or two controllers, in a 12-, 24-, or 60-drive shelf. You can connect the storage array to a SAN from multiple interface types and to a variety of host operating systems.
 
@@ -24,7 +24,7 @@ E-Series arrays are available in the following models:
 
 == E2800 models
 
-[options="header"]
+[cols="35h,~",options="header"]
 |===
 a|Component a|Specification
 
@@ -64,7 +64,7 @@ Available with the following interfaces:
 
 == EF280 models
 
-[options="header"]
+[cols="35h,~",options="header"]
 |===
 a|Component a|Specification
 a|
@@ -92,7 +92,7 @@ Available with the following interfaces:
 
 == EF300 models
 
-[options="header"]
+[cols="35h,~",options="header"]
 |===
 a|Component a|Specification
 a|
@@ -105,7 +105,14 @@ a|
 Drives and HICs:
 
 a|
-Supports up to 24 NVMe SSDs, with a single host interface card (HIC) per controller.
+Supports the following drives with a single host interface card (HIC) per controller:
+
+* NVMe SSD drives: Up to 24 NVMe SSD drives in the controller shelf.
+
+* NL-SAS drives with expansion shelves: Any mixture of DE212C and DE460C shelves not to exceed a total of 240 NL-SAS drive slots and 4 expansion shelves unless only DE212C shelves are used, then 8 DE212C shelves are allowed. For example, 4 DE460C shelves, or 8 DE212C shelves, or 2 DE460C shelves plus 2 DE212 shelves.
+
+* SAS SSD drives with expansion shelves: Any mixture of DE212C, DE224C, and DE460C shelves not to exceed a total of 96 SAS SSD drive slots and 4 expansion shelves unless only DE212C shelves are used, then 8 DE212C shelves are allowed. For example, 1 DE460C shelf plus 1 DE224C shelf plus 1 DE212C shelf, or 4 DE224C shelves, or 8 DE212C shelves. 
+
 a|
 Interfaces:
 
@@ -124,7 +131,7 @@ Available with the following interfaces:
 
 == E5700 models
 
-[options="header"]
+[cols="35h,~",options="header"]
 |===
 a|Component a|Specification
 a|
@@ -169,7 +176,7 @@ Available with the following interfaces:
 
 == EF570 models
 
-[options="header"]
+[cols="35h,~",options="header"]
 |===
 a|Component a|Specification
 a|
@@ -202,7 +209,7 @@ Available with the following interfaces:
 
 == EF600 models
 
-[options="header"]
+[cols="35h,~",options="header"]
 |===
 a|Component a|Specification
 a|
@@ -215,7 +222,14 @@ a|
 Drives and HICs:
 
 a|
-Supports up to 24 NVMe SSDs, with two host interface cards (HICs) per controller.
+Supports the following drives with a single host interface card (HIC) per controller:
+
+* NVMe SSD drives: Up to 24 NVMe SSD drives in the controller shelf.
+
+* NL-SAS drives with expansion shelves: Any mixture of DE212C and DE460C shelves not to exceed a total of 420 NL-SAS drive slots and 7 expansion shelves unless only DE212C shelves are used, then 8 DE212C shelves are allowed. For example, 7 DE460C shelves, or 8 DE212C shelves, or 5 DE460C shelves plus 2 DE212 shelves.
+
+* SAS SSD drives with expansion shelves: Any mixture of DE212C, DE224C, and DE460C shelves not to exceed a total of 96 SAS SSD drive slots and 7 expansion shelves unless only DE212C shelves are used, then 8 DE212C shelves are allowed. For example, 1 DE460C shelf plus 1 DE224C shelf plus 1 DE212C shelf, or 4 DE224C shelves, or 8 DE212C shelves.
+
 a|
 Interfaces:
 
