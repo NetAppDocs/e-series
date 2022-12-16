@@ -521,6 +521,8 @@ sidebar:
                   url: "/maintenance-ef600/drives-replace-EF300-task.html"
                 - title: Replace EF600 drive
                   url: "/maintenance-ef600/drives-replace-supertask-task.html"
+                - title: Hot add a drive shelf
+                  url: "/maintenance-ef600/drives-hotadd-drive-shelf-task.html"
               - title: Fans
                 pdf-filename: EF300-EF600 Maintain Fans
                 entries:
@@ -614,6 +616,8 @@ sidebar:
                 url: "/maintenance-e2800/drives-60-replace-task.html"
               - title: Replace drive drawer (60-drive)
                 url: "/maintenance-e2800/drives-60-supertask-task.html"
+              - title: Hot add a drive shelf
+                  url: "/maintenance-e2800/drives-hotadd-drive-shelf-task.html"
             - title: Host interface cards
               pdf-filename: E2800 Maintain HICs
               entries:
@@ -675,6 +679,8 @@ sidebar:
                   url: "/maintenance-e5700/drives-60-replace-task.html"
                 - title: Replace drive drawer (60-drive)
                   url: "/maintenance-e5700/drives-drawer-supertask-task.html"
+                - title: Hot add a drive shelf
+                  url: "/maintenance-e5700/drives-hotadd-drive-shelf-task.html"
               - title: Host interface cards
                 pdf-filename: E5700 Maintain HICs
                 entries:
