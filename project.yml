@@ -617,7 +617,7 @@ sidebar:
               - title: Replace drive drawer (60-drive)
                 url: "/maintenance-e2800/drives-60-supertask-task.html"
               - title: Hot add a drive shelf
-                  url: "/maintenance-e2800/drives-hotadd-drive-shelf-task.html"
+                url: "/maintenance-e2800/drives-hotadd-drive-shelf-task.html"
             - title: Host interface cards
               pdf-filename: E2800 Maintain HICs
               entries:
