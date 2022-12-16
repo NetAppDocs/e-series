@@ -8,4 +8,4 @@ summary: Add a new drive shelf while power is still applied to the other compone
 :icons: font
 :imagesdir: ../media/
 
-include::../_include/drives-hotadd-drive-shelf-task.adoc[]
+include::../_include/drives-hotadd-shelf-task.adoc[]
