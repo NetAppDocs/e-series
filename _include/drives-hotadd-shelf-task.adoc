@@ -1,13 +1,3 @@
----
-permalink: install-hw-cabling/hotadd-drive-shelf-task.html
-sidebar: sidebar
-keywords: cabling, cables, hot add, hot add drive shelf, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C
-summary: Add a new drive shelf while power is still applied to the other components.
----
-= Hot adding a drive shelf
-:icons: font
-:imagesdir: ../media/
-
 [.lead]
 You can add a new drive shelf while power is still applied to the other components of the storage system. You can configure, reconfigure, add, or relocate storage system capacity without interrupting user access to data.
 
