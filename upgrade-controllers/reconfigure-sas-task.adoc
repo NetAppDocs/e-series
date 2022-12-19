@@ -21,7 +21,7 @@ In this procedure, you convert the controller shelf in an approved SAS-2 array t
 This procedure applies to IOM12 and IOM12B drive shelves.
 
 [NOTE]
-IOM12B modules are only supported on SANtricity OS 11.07.2 onward. Ensure your controller’s
+IOM12B modules are only supported on SANtricity OS 11.70.2 onward. Ensure your controller’s
 firmware has been updated before installing or upgrading to an IOM12B.
 
 .Before you begin
