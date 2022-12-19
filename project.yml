@@ -518,9 +518,9 @@ sidebar:
                 - title: Overview and requirements
                   url: "/maintenance-ef600/drives-overview-supertask-concept.html"
                 - title: Replace EF300 drive
-                  url: "/maintenance-ef600/drives-replace-EF300-task.html"
+                  url: "/maintenance-ef600/drives-replace-EF300-supertask-task.html"
                 - title: Replace EF600 drive
-                  url: "/maintenance-ef600/drives-replace-supertask-task.html"
+                  url: "/maintenance-ef600/drives-replace-EF600-supertask-task.html"
                 - title: Hot add a drive shelf
                   url: "/maintenance-ef600/drives-hotadd-drive-shelf-task.html"
               - title: Fans
