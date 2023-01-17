@@ -118,13 +118,13 @@ NOTE: To list the interfaces, use `iscsiadm -m iface`.
  .. Discover iSCSI targets. Save the IQN (it will be the same with each discovery) in the worksheet for the next step.
 +
 ----
-# iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260 -I iface0 -P 1
+# iscsiadm -m discovery -t sendtargets -p <target_ip_address>:3260 -I iface0 -P 1
 ----
 +
 or
 +
 ----
-# iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260
+# iscsiadm -m discovery -t sendtargets -p <target_ip_address>:3260
 ----
 +
 NOTE: The IQN looks like the following:
@@ -137,7 +137,7 @@ iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
 +
 ----
 # iscsiadm -m node -T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
--p 192.168.0.1:3260 -I iface0 -l
+-p <target_ip_address>:3260 -I iface0 -l
 ----
 +
 or
