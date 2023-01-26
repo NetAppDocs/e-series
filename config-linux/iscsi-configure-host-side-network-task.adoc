@@ -28,8 +28,10 @@ node.session.nr_sessions = 1
 . Change the `node.session.timeo.replacement_timeout` variable in the /etc/iscsi/iscsid.conf file to `20`, from a default value of `120`.
 +
 ----
-node.session.timeo.replacement_timeout=20
+node.session.timeo.replacement_timeout = 20
 ----
+
+. Optionally, you can set `node.startup = automatic` in /etc/iscsi/iscsid.conf before running any `iscsiadm` commands to have sessions persist after reboot.
 
 . Make sure `iscsid` and `(open-)iscsi` services are on and enabled for boot.
 +
@@ -40,7 +42,6 @@ node.session.timeo.replacement_timeout=20
 # systemctl enable iscsid
 ----
 +
-Optionally, you set `node.startup = automatic` in /etc/iscsi/iscsid.conf before running any `iscsiadm` commands to have sessions persist after reboot.
 
 . Get the host IQN initiator name, which will be used to configure the host to an array.
 +
