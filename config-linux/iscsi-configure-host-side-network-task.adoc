@@ -135,14 +135,14 @@ NOTE: To list the interfaces, use `iscsiadm -m iface`.
 +
  .. Discover iSCSI targets. Save the IQN (it will be the same with each discovery) in the worksheet for the next step.
 +
-*With ifaces*
+*Method 1 (with ifaces)*
 +
 ----
 # iscsiadm -m discovery -t sendtargets -p <target_ip_address>:<target_tcp_listening_port> -I iface0
 # iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260 -I iface0
 ----
 +
-*Without ifaces*
+*Method 2 (without ifaces)*
 +
 ----
 # iscsiadm -m discovery -t sendtargets -p <target_ip_address>:<target_tcp_listening_port>
@@ -157,14 +157,14 @@ iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
 
  .. Create the connection between the iSCSI initiators and iSCSI targets.
 +
-*With ifaces*
+*Method 1 (with ifaces)*
 +
 ----
 # iscsiadm -m node -T <target_iqn> -p <target_ip_address>:<target_tcp_listening_port> -I iface0 -l
 # iscsiadm -m node -T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3 -p 192.168.0.1:3260 -I iface0 -l
 ----
 +
-*Without ifaces*
+*Method 2 (without ifaces)*
 +
 ----
 # iscsiadm -m node -L all
