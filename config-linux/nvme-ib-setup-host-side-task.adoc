@@ -13,7 +13,7 @@ Configuring an NVMe initiator in an InfiniBand environment includes installing a
 
 .What you'll need
 
-You must be running the latest compatible RHEL 7, RHEL 8, RHEL9, SUSE Linux Enterprise Server 12 or 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a complete list of the latest requirements.
+You must be running the latest compatible RHEL 7, RHEL 8, RHEL 9, SUSE Linux Enterprise Server 12 or 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a complete list of the latest requirements.
 
 .Steps
 
@@ -36,8 +36,21 @@ You must be running the latest compatible RHEL 7, RHEL 8, RHEL9, SUSE Linux Ente
 # yum install rdma-core
 # yum install nvme-cli
 ----
+. For RHEL 8 or RHEL 9, install network scripts:
++
+*RHEL 8*
++
+----
+# yum install network-scripts
+----
++
+*RHEL 9*
++
+----
+# yum install NetworkManager-initscripts-updown
+----
 
-. Enable `ipoib`. Edit the /etc/rdma/rdma.conf file and modify the entry for loading `ipoib`:
+. For RHEL 7, enable `ipoib`. Edit the /etc/rdma/rdma.conf file and modify the entry for loading `ipoib`:
 +
 ----
 IPOIB_LOAD=yes
@@ -48,7 +61,7 @@ IPOIB_LOAD=yes
 # cat /etc/nvme/hostnqn
 ----
 +
-. Check that both ib port links are up and the State = Active:
+. Check that both IB port links are up and the State = Active:
 +
 ----
 # ibstat
@@ -120,7 +133,7 @@ REMOTE_IPADDR=
 STARTMODE='auto'
 ----
 +
-*RHEL 7, RHEL 8, or RHEL 9*
+*RHEL 7 or RHEL 8*
 +
 Create the file /etc/sysconfig/network-scripts/ifcfg-ib0 with the following contents.
 +
@@ -155,7 +168,52 @@ IPV6INIT=no
 NAME=ib1
 ONBOOT=yes
 ----
+*RHEL 9*
++
+Use the `nmtui` tool to activate and edit a connection. Below is an example file `/etc/NetworkManager/system-connections/ib0.nmconnection` the tool will generate:
++
+----
+[connection]
+id=ib0
+uuid=<unique uuid>
+type=infiniband
+interface-name=ib0
 
+[infiniband]
+mtu=4200
+
+[ipv4]
+address1=10.10.10.100/24
+method=manual
+
+[ipv6]
+addr-gen-mode=default
+method=auto
+
+[proxy]
+----
+Below is an example file `/etc/NetworkManager/system-connections/ib1.nmconnection` the tool will generate:
++
+----
+[connection]
+id=ib1
+uuid=<unique uuid>
+type=infiniband
+interface-name=ib1
+
+[infiniband]
+mtu=4200
+
+[ipv4]
+address1=11.11.11.100/24'
+method=manual
+
+[ipv6]
+addr-gen-mode=default
+method=auto
+
+[proxy]
+----
 . Enable the `ib` interface:
 +
 ----
