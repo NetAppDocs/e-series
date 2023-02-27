@@ -19,6 +19,19 @@ In most cases, you can use the inbox software-initiator for iSCSI CNA/NIC. You d
 
 .Steps
 
+. Install the iSCSI package:
++
+*RHEL 7, RHEL 8, or RHEL 9*
++
+----
+# yum install iscsi-initiator-utils
+----
++
+*SLES 12 or SLES 15*
++
+----
+# zypper install open-iscsi
+----
 . Check the `node.session.nr_sessions` variable in the /etc/iscsi/iscsid.conf file to see the default number of sessions per physical path. If necessary, change the default number of sessions to one session.
 +
 ----
@@ -33,7 +46,7 @@ node.session.timeo.replacement_timeout = 20
 
 . Optionally, you can set `node.startup = automatic` in /etc/iscsi/iscsid.conf before running any `iscsiadm` commands to have sessions persist after reboot.
 
-. Make sure `iscsid` and `(open-)iscsi` services are on and enabled for boot.
+. Make sure iSCSI services are on and enabled for boot.
 +
 ----
 # systemctl start iscsi
@@ -54,6 +67,7 @@ node.session.timeo.replacement_timeout = 20
 NOTE: In addition to the public network port, iSCSI initiators should use two or more NICs on separate private segments or vLANs.
 
  .. Determine the iSCSI port names using the `ifconfig -a` command.
+ .. (Optional) Configure persistent names for the iSCSI ports in the event the interface moves around.
  .. Set the IP address for the iSCSI initiator ports. The initiator ports should be present on the same subnet as the iSCSI target ports.
 +
 *Red Hat Enterprise Linux 7 and 8 (RHEL 7 and RHEL 8)*
