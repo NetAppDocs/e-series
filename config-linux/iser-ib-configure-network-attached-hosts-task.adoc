@@ -38,7 +38,7 @@ A NetApp recommended OFED installed on the system. For more information, see the
 ----
 
 +
-. Edit the iSCSI settings in /etc/iscsi/iscsid.conf.
+. Edit the iSCSI settings in `/etc/iscsi/iscsid.conf`.
 +
 ----
 node.startup = automatic
