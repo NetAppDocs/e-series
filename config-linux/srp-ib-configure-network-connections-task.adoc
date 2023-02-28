@@ -22,13 +22,13 @@ To connect the Linux host to the storage array, you must enable the InfiniBand d
 *SLES*
 +
 ----
-zypper install rdma-core
+# zypper install rdma-core
 ----
 +
 *RHEL*
 +
 ----
-yum install rdma-core
+# yum install rdma-core
 ----
 
 . Configure OFED/RDMA to load the SRP module.
@@ -36,63 +36,48 @@ yum install rdma-core
 *SLES*
 +
 ----
-zypper install srp_daemon
+# zypper install srp_daemon
 ----
 +
 *RHEL*
 +
 ----
- yum install srp_daemon
+ # yum install srp_daemon
 ----
-
-. In the OFED/RDMA configuration file, set `SRP_LOAD=yes` and `SRP_DAEMON_ENABLE=yes`.
 +
-The RDMA configuration file is located at the following location:
-+
-----
-/etc/rdma/rdma.conf
-----
 
-. Enable and start the OFED/RDMA service.
-+
-*RHEL 7.x and SLES 12.x or greater*
+. For RHEL 7, set `SRP_LOAD=yes` in the `/etc/rdma/rdma.conf`.
 
- ** To enable the InfiniBand modules to load on boot:
-+
-----
-systemctl enable rdma
-----
-
- ** To load the InfiniBand modules immediately:
-+
-----
-systemctl start rdma
-----
-
-. Enable the SRP daemon.
-+
-*RHEL 7.x and SLES 12 or greater*
-
- ** To enable the SRP daemon to start on boot:
-+
-----
-systemctl enable srp_daemon
-----
-
- ** To start the SRP daemon immediately:
-+
-----
-systemctl start srp_daemon
-----
-
-. If you need to modify the SRP configuration, enter the following command to create `/etc/modprobe.d/ib_srp.conf` .
+. Create `/etc/modprobe.d/ib_srp.conf` and add the following.
 +
 ----
 options ib_srp cmd_sg_entries=255 allow_ext_sg=y indirect_sg_entries=2048
 ----
 
- .. Under the `/etc/srp_daemon.conf`, add the following line.
+ . Add the following to `/etc/srp_daemon.conf`.
 +
 ----
 a    max_sect=4096
+----
+
+. Edit the following in `/usr/sbin/srp_daemon.sh`.
++
+----
+rescan_interval=30
+----
+
+. For RHEL 7, enable and start the OFED/RDMA service.
++
+----
+# systemctl enable rdma
+# systemctl start rdma
+----
++
+
+. Enable and start the SRP daemon.
+
++
+----
+# systemctl enable srp_daemon
+# systemctl start srp_daemon
 ----
