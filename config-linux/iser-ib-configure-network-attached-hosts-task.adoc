@@ -54,14 +54,13 @@ node.session.timeo.replacement_timeout = 20
 # systemctl enable iscsid
 ----
 +
-. Restart services to load the iSER module. The iSER module will load automatically for RHEL 8, RHEL 9, and SLES 15.
-+
-*RHEL 7 or SLES 12*
+. For RHEL 7, restart services to load the iSER module. The iSER module will load automatically for RHEL 8, RHEL 9, SLES 12, and SLES 15 if any RDMA devices are installed.
 +
 ----
 # systemctl start rdma
 # systemctl enable rdma
 ----
++
 To verify the `iser` kernel module is loaded, run this command:
 +
 ----
@@ -88,9 +87,6 @@ ib_core               397312  14 rdma_cm,ib_ipoib,rpcrdma,ib_srp,nvme_rdma,iw_cm
 +
 ----
 # ibstat
-----
-+
-----
 CA 'mlx4_0'
         CA type: MT4099
         Number of ports: 2
