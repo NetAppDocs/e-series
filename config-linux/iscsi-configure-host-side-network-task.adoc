@@ -38,15 +38,14 @@ In most cases, you can use the inbox software-initiator for iSCSI CNA/NIC. You d
 node.session.nr_sessions = 1
 ----
 
-. Change the `node.session.timeo.replacement_timeout` variable in the /etc/iscsi/iscsid.conf file to `20`, from a default value of `120`.
+. Edit the iSCSI settings in /etc/iscsi/iscsid.conf.
 +
 ----
+node.startup = automatic
 node.session.timeo.replacement_timeout = 20
 ----
 
-. Optionally, you can set `node.startup = automatic` in /etc/iscsi/iscsid.conf before running any `iscsiadm` commands to have sessions persist after reboot.
-
-. Make sure iSCSI services are on and enabled for boot.
+. Enable and start iSCSI services on the host(s):
 +
 ----
 # systemctl start iscsi
@@ -62,17 +61,17 @@ node.session.timeo.replacement_timeout = 20
 # cat /etc/iscsi/initiatorname.iscsi
 ----
 
-. Configure the network for iSCSI ports. These are example instructions for RHEL and SLES:
+. Configure the network for iSCSI ports.
 +
 NOTE: In addition to the public network port, iSCSI initiators should use two or more NICs on separate private segments or vLANs.
 
  .. Determine the iSCSI port names using the `ifconfig -a` command.
  .. (Optional) Configure persistent names for the iSCSI ports in the event the interface moves around.
- .. Set the IP address for the iSCSI initiator ports. The initiator ports should be present on the same subnet as the iSCSI target ports.
+ .. Set the IP address for each iSCSI initiator port. The initiator ports should be present on the same subnet as the iSCSI target ports.
 +
 *Red Hat Enterprise Linux 7 and 8 (RHEL 7 and RHEL 8)*
 +
-Create the example file `/etc/sysconfig/network-scripts/ifcfg-<NIC port>` with the following contents.
+Create the example file `/etc/sysconfig/network-scripts/ifcfg-<NIC port #>` with the following contents.
 +
 ----
 TYPE=Ethernet
@@ -81,9 +80,9 @@ BROWSER_ONLY=no
 BOOTPROTO=static
 DEFROUTE=yes
 IPV4_FAILURE_FATAL=no
-NAME=<NIC port>
+NAME=<NIC port #>
 UUID=<unique UUID>
-DEVICE=<NIC port>
+DEVICE=<NIC port #>
 ONBOOT=yes
 IPADDR=192.168.xxx.xxx
 PREFIX=24
@@ -105,11 +104,11 @@ IPV6_ADDR_GEN_MODE=eui64
 +
 *Red Hat Enterprise Linux 9 (RHEL 9)*
 +
-Use the `nmtui` tool to activate and edit a connection. The tool will generate a `<NIC port>.nmconnection` file within `/etc/NetworkManager/system-connections/`.
+Use the `nmtui` tool to activate and edit a connection. The tool will generate a `<NIC port #>.nmconnection` file within `/etc/NetworkManager/system-connections/`.
 +
 *SUSE Linux Enterprise Server 12 and 15 (SLES 12 and SLES 15)*
 +
-Create the example file `/etc/sysconfig/network/ifcfg-<NIC port>` with the following contents.
+Create the example file `/etc/sysconfig/network/ifcfg-<NIC port #>` with the following contents.
 +
 ----
 IPADDR='192.168.xxx.xxx/24'
@@ -122,7 +121,7 @@ Optional addition with regards to IPv6:
 IPADDR_0='fdxx::192:168:xxxx:xxxx/32'
 ----
 +
-NOTE: Be sure to set the address for both iSCSI initiator ports.
+NOTE: Be sure to set the address for all iSCSI initiator ports.
 
  .. Restart network services.
 +
@@ -131,57 +130,55 @@ NOTE: Be sure to set the address for both iSCSI initiator ports.
 ----
 
  .. Make sure the Linux server can ping _all_ of the iSCSI target ports.
-
-. Establish the iSCSI sessions between initiators and targets (four total) by one of two methods.
- .. (Optional) When using ifaces, configure the iSCSI interfaces by creating two iSCSI iface bindings.
+ . (Optional) Create iSCSI iface bindings for each iSCSI interface.
 +
 ----
-# iscsiadm -m iface -I iface0 -o new
-# iscsiadm -m iface -I iface0 -o update -n iface.net_ifacename -v <NIC port1>
-----
-+
-----
-# iscsiadm -m iface -I iface1 -o new
-# iscsiadm -m iface -I iface1 -o update -n iface.net_ifacename -v <NIC port2>
+# iscsiadm -m iface -I iface-<NIC port #> -o new
+# iscsiadm -m iface -I iface-eth2 -o new
+# iscsiadm -m iface -I iface-<NIC port #> -o update -n iface.net_ifacename -v <NIC port #>
+# iscsiadm -m iface -I iface-eth2 -o update -n iface.net_ifacename -v eth2
 ----
 +
 NOTE: To list the interfaces, use `iscsiadm -m iface`.
 +
- .. Discover iSCSI targets. Save the IQN (it will be the same with each discovery) in the worksheet for the next step.
+. Establish the iSCSI sessions between initiators and targets by one of two methods.
 +
-*Method 1 (with ifaces)*
+The preferred method to create the sessions is to use the SendTargets discovery method. However, this method does not work on some operating system releases.
 +
-----
-# iscsiadm -m discovery -t sendtargets -p <target_ip_address>:<target_tcp_listening_port> -I iface0
-# iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260 -I iface0
-----
-+
-*Method 2 (without ifaces)*
+NOTE: Use *Method 2* for RHEL 6.x or SLES 11.3 or earlier.
+
+ .. Discover iSCSI targets. Save the target IQN (it will be the same with each discovery) in the worksheet for the next step.
+ ... *Method 1 (without ifaces) - SendTargets discovery:* Use the SendTargets discovery mechanism to one of the target portal IP addresses. This will create sessions for each of the target portals.
 +
 ----
-# iscsiadm -m discovery -t sendtargets -p <target_ip_address>:<target_tcp_listening_port>
-# iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260
+# iscsiadm -m discovery -t st -p <target_ip_address>:<target_tcp_listening_port if changed from the default of 3260>
+# iscsiadm -m discovery -t st -p 192.168.0.1
 ----
 +
-NOTE: The IQN looks like the following:
+ ... *Method 2 (with ifaces) - Manual creation:* For each target portal IP address, create a session using the appropriate host interface iface configuration.
++
+----
+# iscsiadm -m discovery -t st -p <target_ip_address>:<target_tcp_listening_port if changed from default of 3260> -I iface-<NIC port#>
+# iscsiadm -m discovery -t st -p 192.168.0.1 -I iface-eth2
+----
+NOTE: The target IQN looks like the following:
 +
 ----
 iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
 ----
-
- .. Create the connection between the iSCSI initiators and iSCSI targets.
+ .. Log in to the iSCSI sessions.
 +
-*Method 1 (with ifaces)*
-+
-----
-# iscsiadm -m node -T <target_iqn> -p <target_ip_address>:<target_tcp_listening_port> -I iface0 -l
-# iscsiadm -m node -T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3 -p 192.168.0.1:3260 -I iface0 -l
-----
-+
-*Method 2 (without ifaces)*
+*Method 1 (without ifaces) - SendTargets*
 +
 ----
 # iscsiadm -m node -L all
+----
++
+*Method 2 (with ifaces) - Manual creation*
++
+----
+# iscsiadm -m node -T <target_iqn> -p <target_ip_address>:<target_tcp_listening_port if changed from default> -I iface-<NIC port #> -l
+# iscsiadm -m node -T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3 -p 192.168.0.1 -I iface-eth2 -l
 ----
 +
  .. List the iSCSI sessions established on the host.
