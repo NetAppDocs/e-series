@@ -4,59 +4,67 @@ sidebar: sidebar
 keywords: E-Series, eseries, E2800, E5700, EF300, EF600,
 summary: To get up and running with E-Series systems, you install hardware components, configure host systems, and configure storage.
 ---
-= Get up and running with E-Series
+= Quick start for E-Series
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 To get up and running with E-Series systems, you install hardware components, configure host systems, and configure storage.
 
-Deploying the storage array involves the following workflow:
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Install hardware
 
-image::../media/doccenterworkflow.gif[]
-
-== Step 1: Install hardware
-
+[role="quick-margin-para"]
 To install the E-Series hardware, access the Installation and Setup instructions for your storage array and shelf type:
 
 * link:../install-hw-ef600/index.html[EF600 or EF300 series with 24-drive shelf^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2842063[E2800/EF280 or E5700/EF570 series with 12- or 24-drive shelves^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2842061[E2800 or E5700 series with 60-drive shelf^]
 
-== Step 2: Set up cabinet
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up cabinet
 
+[role="quick-margin-para"]
 If you are setting up a new cabinet for the storage array, you need to move the cabinet to its permanent location, install the hardware, and connect it to a power source. To set up the cabinet, access the following instructions:
 
+[role="quick-margin-list"]
 * link:../install-hw-cabinet/index.html[Install 3040 40U cabinet^]
 
-== Step 3: Install rails
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Install rails
 
+[role="quick-margin-para"]
 When shipped, each shelf includes rack-mounting hardware. For detailed instructions on installing the rails, select your rail types:
 
+[role="quick-margin-list"]
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1652045[Install adjustable support rails^]
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2484194[Install 2U enclosure into a four-post rack^]
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMM1280302[Install DE224C shelf into a two-post rack^]
 * http://docs.netapp.com/platstor/topic/com.netapp.doc.hw-rail-superrail/home.html[Install SuperRail into a four-post rack (DE224C/DE460C shelves)^]
 
-== Step 4: Connect cables
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Connect cables
 
+[role="quick-margin-para"]
 The Installation and Setup instructions (Step 1) include instructions for connecting cables. However, if you need lists of supported cables and transceivers, best practices for cabling, and detailed information about the host ports for your controller, access the following instructions:
 
+[role="quick-margin-list"]
 * link:../install-hw-cabling/index.html[Cable E-Series hardware]
 
-== Step 5: Configure hosts
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Configure hosts
 
+[role="quick-margin-para"]
 To make storage available to a host, select a guide for the host's operating system type:
 
+[role="quick-margin-list"]
 * link:../config-linux/index.html[Linux express configuration]
 * link:../config-vmware/index.html[VMware express configuration]
 * link:../config-windows/index.html[Windows express configuration]
 
-== Step 6: Configure storage
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six] Configure storage
 
+[role="quick-margin-para"]
 To configure storage, you can access the web-based interface, System Manager, by pointing a browser to the controller's IP address. A setup wizard helps you get started with system configuration. As an alternative, you can also use the command line interface (CLI).
 
+[role="quick-margin-para"]
 Select the interface you want to use:
 
+[role="quick-margin-list"]
 * https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html[SANtricity System Manager Online Help for 11.7x]
 * https://docs.netapp.com/us-en/e-series-santricity-116/index.html[SANtricity System Manager Online Help for 11.6x]
