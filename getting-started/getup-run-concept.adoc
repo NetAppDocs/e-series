@@ -16,6 +16,7 @@ To get up and running with E-Series systems, you install hardware components, co
 [role="quick-margin-para"]
 To install the E-Series hardware, access the Installation and Setup instructions for your storage array and shelf type:
 
+[role="quick-margin-list"]
 * link:../install-hw-ef600/index.html[EF600 or EF300 series with 24-drive shelf^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2842063[E2800/EF280 or E5700/EF570 series with 12- or 24-drive shelves^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2842061[E2800 or E5700 series with 60-drive shelf^]

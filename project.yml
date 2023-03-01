@@ -50,7 +50,7 @@ sidebar:
                   url: "/getting-started/learn-software-concept.html"
                 - title: E-Series videos
                   url: "/getting-started/learn-video-concept.html"
-          - title: Quick start for E-Series
+          - title: Quick start
             url: "/getting-started/getup-run-concept.html"
     - title: Install hardware
       entries:
