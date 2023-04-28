@@ -104,7 +104,7 @@ Usage                 Format           FW Rev
  nvme1n1    259:0    0     5G  0 disk
 ----
 
-. Use the `nvme list` command to see a new list of the NVMe devices currently connected. In the example below, it is `nvme0n1` and `nvme0n1`.
+. Use the `nvme list` command to see a new list of the NVMe devices currently connected. In the example below, it is `nvme0n1` and `nvme1n1`.
 +
 ----
  # nvme list
