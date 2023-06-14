@@ -15,15 +15,7 @@ The following tables describe new features in SANtricity OS 11.7 for embedded ma
 
 == New features in Version 11.75
 
-[cols="35,65",options="header"]
-|===
-|New feature |Description
-
-a|Allow upgrades to 11.80.x
-a| Systems must be running 11.70.5 in order to upgrade to 11.80.x or later.
-
-|===
-
+Systems must be running 11.70.5 in order to upgrade to 11.80.x or later.
 
 == New features in Version 11.74
 
