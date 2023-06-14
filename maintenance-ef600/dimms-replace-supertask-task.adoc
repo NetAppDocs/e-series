@@ -21,7 +21,7 @@ To replace a DIMM, you must verify the cache size of your controller, place the 
 * Review link:dimms-overview-supertask-concept.html[Requirements for replacing an EF300 or EF600 DIMM].
 * Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
 
-.What you'll need
+.Before you begin
 
 * A replacement DIMM.
 * An ESD wristband, or you have taken other antistatic precautions.

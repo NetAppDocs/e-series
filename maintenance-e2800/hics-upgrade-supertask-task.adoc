@@ -21,7 +21,7 @@ When you upgrade the HICs, you must power off the storage array, remove the exis
 * Review link:hics-overview-supertask-concept.html[Requirements for E2800 HIC replacement].
 * Schedule a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)
 
-.What you'll need
+.Before you begin
 
 * One or two HICs, based on whether you have one or two controllers in your storage array. The HICs must be compatible with your controllers.
 * Labels to identify each cable that is connected to the controller canister.

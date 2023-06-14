@@ -23,7 +23,7 @@ This task applies to DCM and DCM2 drive shelves.
 
 * Review drive handling requirements in link:drives-overview-supertask-concept.html[Requirements for E5700 drive replacement].
 
-.What you'll need
+.Before you begin
 
 * A replacement drive that is supported by NetApp for your controller shelf or drive shelf.
 * An ESD wristband, or you have taken other antistatic precautions.

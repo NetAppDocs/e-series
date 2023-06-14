@@ -20,7 +20,7 @@ When you add HICs, you must power off the storage array, install the HIC, and re
 * Review link:hics-overview-supertask-concept.html[Requirements for E5700 HIC replacement].
 * Schedule a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, both controllers must have the same HIC configuration when they are powered on.)
 
-.What you'll need
+.Before you begin
 
 * One or two HICs, based on whether you have one or two controllers in your storage array. The HICs must be compatible with your controllers.
 * New host hardware installed for the new host ports, such as switches or host bus adapters (HBAs).

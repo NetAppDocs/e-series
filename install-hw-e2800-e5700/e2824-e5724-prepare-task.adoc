@@ -13,7 +13,7 @@ Learn how to prepare to install your E5724, EF570, EF280, E2812, E2824, DE212C, 
 
 .Steps
 
-. Create an account and register your hardware at http://mysupport.netapp.com/[mysupport.netapp.com^].
+. Create an account and register your hardware at http://mysupport.netapp.com/[NetApp Support^].
 . Ensure that the following items are in the box that you received.
 +
 |===
@@ -96,7 +96,7 @@ a|
 A supported browser for the management software:
 
 * Google Chrome (version 89 and later)
-* Microsoft Edge (90 and later)
+* Microsoft Edge (version 90 and later)
 * Mozilla Firefox (version 80 and later)
 * Safari (version 14 and later)
 

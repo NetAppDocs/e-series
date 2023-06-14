@@ -22,7 +22,7 @@ When you replace a failed HIC, you must power off the storage array, replace the
 * Schedule a downtime maintenance window for this procedure. You cannot access data on the storage array until you have successfully completed this procedure. Because both controllers must have the same HIC configuration when they are powered on, the power must be off when you install HICs.
 
 
-.What you'll need
+.Before you begin
 
 * HICs that are compatible with your controllers.
 * An ESD wristband, or you have taken other antistatic precautions.

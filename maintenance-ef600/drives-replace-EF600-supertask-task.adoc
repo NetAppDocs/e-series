@@ -19,7 +19,7 @@ The Recovery Guru in SANtricity System Manager monitors the drives in the storag
 
 * Review link:drives-overview-supertask-concept.html[Requirements for EF300 or EF600 drive replacement].
 
-.What you'll need
+.Before you begin
 
 * A replacement drive that is supported by NetApp for your controller shelf or drive shelf.
 * An ESD wristband, or you have taken other antistatic precautions.

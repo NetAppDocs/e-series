@@ -21,7 +21,7 @@ Each controller canister includes a battery that preserves cached data if the AC
 * Verify that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
 * Review the link:batteries-overview-requirements-concept.html[Requirements for EF300 or EF600 battery replacement].
 
-.What you'll need
+.Before you begin
 
 * The replacement battery.
 * An ESD wristband, or other antistatic precautions.

@@ -22,7 +22,7 @@ When you replace a HIC, you place the controller offline (for duplex configurati
 * Verify that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
 * From SANtricity System Manager, verify the details in the Recovery Guru to confirm that you have a failed HIC and to ensure no other items must be addressed before you can remove and replace the HIC.
 
-.What you'll need
+.Before you begin
 
 * Two HICs that are compatible with your controllers.
 +

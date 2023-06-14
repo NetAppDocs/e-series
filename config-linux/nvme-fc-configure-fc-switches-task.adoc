@@ -11,7 +11,7 @@ summary: Configuring \(zoning\) the Fibre Channel \(FC\) switches enables the ho
 [.lead]
 Configuring (zoning) the Fibre Channel (FC) switches enables the hosts to connect to the storage array and limits the number of paths. You zone the switches using the management interface for the switches.
 
-.What you'll need
+.Before you begin
 
 * Administrator credentials for the switches.
 * The WWPN of each host initiator port and of each controller target port connected to the switch. (Use your HBA utility for discovery.)

@@ -16,7 +16,7 @@ For the iSCSI protocol, you configure the switches, configure networking on the 
 
 You configure the switches according to the vendor's recommendations for iSCSI. These recommendations might include both configuration directives as well as code updates.
 
-.What you'll need
+.Before you begin
 
 * Two separate networks for high availability. Make sure that you isolate your iSCSI traffic to separate network segments by using VLANs or two separate networks.
 * Enabled send and receive hardware flow control *end to end*.
@@ -34,7 +34,7 @@ You can set up your iSCSI network in many ways, depending on your data storage r
 
 An effective strategy for configuring the iSCSI network with basic redundancy is to connect each host port and one port from each controller to separate switches and partition each set of host and controller ports on separate network segments using VLANs.
 
-.What you'll need
+.Before you begin
 
 * Enabled send and receive hardware flow control *end to end*.
 * Disabled priority flow control.
@@ -51,7 +51,7 @@ NOTE: Many network switches have to be configured above 9,000 bytes for IP overh
 
 You use the SANtricity System Manager GUI to configure iSCSI networking on the array side.
 
-.What you'll need
+.Before you begin
 
 * The IP address or domain name for one of the storage array controllers.
 * A password for the System Manager GUI, or Role-Based Access Control (RBAC) or LDAP and a directory service configured for the appropriate security access to the storage array. See the SANtricity System Manager online help for more information about Access Management.
@@ -159,7 +159,7 @@ In a shared local area network (LAN) environment, such as Ethernet, many station
 
 You must configure iSCSI networking on the host side so that the Microsoft iSCSI Initiator can establish sessions with the array.
 
-.What you'll need
+.Before you begin
 
 * Fully configured switches that will be used to carry iSCSI storage traffic.
 * Enabled send and receive hardware flow control *end to end*

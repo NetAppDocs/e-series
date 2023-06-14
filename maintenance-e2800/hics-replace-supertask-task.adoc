@@ -21,7 +21,7 @@ When you replace a HIC, you place the controller offline, remove the controller 
 * You must schedule a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)
 * Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
 
-.What you'll need
+.Before you begin
 
 * One or two HICs, based on whether you have one or two controllers in your storage array. The HICs must be compatible with your controllers. If two controllers are present, each controller must have identical HICs.
 * Labels to identify each cable that is connected to the controller canister.

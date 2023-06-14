@@ -23,7 +23,7 @@ When you add a SAS expansion card, you must power off the storage array, install
 
 CAUTION: This procedure must be done with both controller canisters. Controller HIC configurations must match exactly.
 
-.What you'll need
+.Before you begin
 
 * A SAS expansion card that is compatible with your controller.
 * An ESD wristband, or you have taken other antistatic precautions.

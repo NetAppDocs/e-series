@@ -11,7 +11,7 @@ summary: Use Dynamic Host Configuration Protocol \(DHCP\) to provide IP addresse
 [.lead]
 To configure communications between the management station and the storage array, use Dynamic Host Configuration Protocol (DHCP) to provide IP addresses.
 
-.What you'll need
+.Before you begin
 
 A DHCP server installed and configured on the same subnet as the storage management ports.
 
