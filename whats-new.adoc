@@ -13,9 +13,9 @@ summary: New features in SANtricity OS.
 [.lead]
 The following tables describe new features in SANtricity OS 11.7 for embedded management of EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
 
-== New features in Version 11.70.5
+== New features in Version 11.75
 
-[cols="35h,~",options="header"]
+[cols="35h,65",options="header"]
 |===
 |New feature |Description
 
