@@ -18,6 +18,8 @@ NOTE: If you are using SANtricity software 11.60 and newer, you do not need to f
 
 .Before you begin
 
+Make sure you have the following:
+
 * SANtricity software 11.53 or earlier.
 * Correct administrator or superuser privileges.
 * A system for the SANtricity Storage Manager client with the following minimum requirements:

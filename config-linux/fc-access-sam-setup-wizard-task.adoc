@@ -16,7 +16,10 @@ SANtricity System Manager is a web-based interface embedded on each controller. 
 
 .Before you begin
 
+Make sure you have the following:
+
 * Out-of-band management.
+
 * A management station for accessing SANtricity System Manager that includes one of the following browsers:
 +
 [options="header"]

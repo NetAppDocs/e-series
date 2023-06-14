@@ -15,7 +15,9 @@ You can initialize the disk as a basic disk with a GPT or MBR partition table. T
 
 .Before you begin
 
-A LUN discovered by the host.
+Make sure you have the following:
+
+* A LUN discovered by the host.
 
 .Steps
 

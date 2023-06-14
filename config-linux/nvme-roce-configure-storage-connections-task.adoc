@@ -14,6 +14,8 @@ If your controller includes a connection for NVMe over RoCE (RDMA over Converged
 
 .Before you begin
 
+Make sure you have the following:
+
 * An NVMe over RoCE host port on your controller; otherwise, the NVMe over RoCE settings are not available in System Manager.
 * The IP address of the host connection.
 

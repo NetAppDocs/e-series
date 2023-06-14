@@ -13,7 +13,9 @@ Before using the namespace, verify that the host can write data to the namespace
 
 .Before you begin
 
-An initialized namespace that is formatted with a file system.
+Make sure you have the following:
+
+* An initialized namespace that is formatted with a file system.
 
 .Steps
 

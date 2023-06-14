@@ -13,6 +13,8 @@ Configuring (zoning) the Fibre Channel (FC) switches enables the hosts to connec
 
 .Before you begin
 
+Make sure you have the following:
+
 * Administrator credentials for the switches.
 * The WWPN of each host initiator port and of each controller target port connected to the switch. (Use your HBA utility for discovery.)
 

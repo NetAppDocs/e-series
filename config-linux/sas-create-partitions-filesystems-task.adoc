@@ -13,6 +13,8 @@ A new LUN has no partition or file system when the Linux host first discovers it
 
 .Before you begin
 
+Make sure you have the following:
+
 * A LUN that is discovered by the host.
 * A list of available disks. (To see available disks, run the `ls` command in the /dev/mapper folder.)
 

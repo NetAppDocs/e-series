@@ -13,7 +13,8 @@ To configure communications between the management station and the storage array
 
 .Before you begin
 
-A DHCP server installed and configured on the same subnet as the storage management ports.
+Make sure you have the following:
+* A DHCP server installed and configured on the same subnet as the storage management ports.
 
 .About this task
 

@@ -14,6 +14,8 @@ You use the SANtricity System Manager GUI to configure iSCSI networking on the a
 
 .Before you begin
 
+Make sure you have the following:
+
 * The IP address or domain name for one of the storage array controllers.
 * A password for the System Manager GUI, or Role-Based Access Control (RBAC) or LDAP and a directory service configured for the appropriate security access to the storage array. See the SANtricity System Manager online help for more information about Access Management.
 

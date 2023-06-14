@@ -18,6 +18,8 @@ You configure the switches according to the vendor's recommendations for iSCSI. 
 
 .Before you begin
 
+Make sure you have the following:
+
 * Two separate networks for high availability. Make sure that you isolate your iSCSI traffic to separate network segments by using VLANs or two separate networks.
 * Enabled send and receive hardware flow control *end to end*.
 * Disabled priority flow control.
@@ -35,6 +37,8 @@ You can set up your iSCSI network in many ways, depending on your data storage r
 An effective strategy for configuring the iSCSI network with basic redundancy is to connect each host port and one port from each controller to separate switches and partition each set of host and controller ports on separate network segments using VLANs.
 
 .Before you begin
+
+Make sure you have the following:
 
 * Enabled send and receive hardware flow control *end to end*.
 * Disabled priority flow control.
@@ -160,6 +164,8 @@ In a shared local area network (LAN) environment, such as Ethernet, many station
 You must configure iSCSI networking on the host side so that the Microsoft iSCSI Initiator can establish sessions with the array.
 
 .Before you begin
+
+Make sure you have the following:
 
 * Fully configured switches that will be used to carry iSCSI storage traffic.
 * Enabled send and receive hardware flow control *end to end*

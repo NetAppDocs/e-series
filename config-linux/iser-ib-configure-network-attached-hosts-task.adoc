@@ -15,7 +15,9 @@ The InfiniBand OFED driver stack supports running both iSER and SRP simultaneous
 
 .Before you begin
 
-A NetApp recommended OFED installed on the system. For more information, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
+Make sure you have the following:
+
+* A NetApp recommended OFED installed on the system. For more information, see the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 .Steps
 
