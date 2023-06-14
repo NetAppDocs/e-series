@@ -20,7 +20,7 @@ The following tables describe new features in SANtricity OS 11.7 for embedded ma
 |New feature |Description
 
 a|Allow upgrades to 11.80.x
-a| Systems must be running 11.70.5 in order to upgrade to 11.80.x or later. FIPS 140-3 is now supported on certain drives for both SAS and NVMe-based SSDs. FIPS 140-3 level SSD drives can co-exist with FIPS 140-2 level SSD drives, provided that the drives are either all NVMe-based or all SAS-based. When using a mixture of these levels in volume groups and disk pools, be aware that the group or pool will then operate at the lower level of security (140-2).
+a| Systems must be running 11.70.5 in order to upgrade to 11.80.x or later.
 
 |===
 
