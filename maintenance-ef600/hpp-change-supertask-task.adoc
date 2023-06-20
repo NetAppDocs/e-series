@@ -41,15 +41,11 @@ image::../media/storage_array_profile2_maint-ef600.gif[]
 .4+a|
 443
 .4+a|
-NVMe/FC
-
-or
-
-NVMe/RoCE
+NVMe/FC, NVMe/RoCE, or iSCSI
 a|
 444
 a|
-NVMe/IB
+NVME/FC or NVMe/IB
 a|
 DH5-HB4-ZK9QH
 a|
@@ -73,15 +69,11 @@ NHD-V75-ZB6ZX
 .4+a|
 444
 .4+a|
-NVMe/FC
-
-or
-
-NVMe/IB
+NVMe/FC or NVMe/IB
 a|
 443
 a|
-NVMe/RoCE
+NVMe/FC, NVMe/RoCE, or iSCSI
 a|
 YH3-XB4-ZJRIZ
 a|
@@ -109,21 +101,13 @@ FC
 a|
 443
 a|
-NVMe/FC
-
-or
-
-NVMe/RoCE
+NVMe/FC, NVMe/RoCE, or iSCSI
 a|
 JHX-UB4-ZGTP1
 a|
 444
 a|
-NVMe/FC
-
-or
-
-NVMe/IB
+NVMe/FC or NVMe/IB
 a|
 LHS-RB4-ZDV29
 a|
@@ -145,7 +129,7 @@ iSER/IB
 a|
 443
 a|
-NVMe/FC or NVMe/RoCE
+NVMe/FC, NVMe/RoCE, or iSCSI
 a|
 MHQ-M85-ZIJNT
 a|
@@ -179,7 +163,7 @@ SRP/IB
 a|
 443
 a|
-NVMe/FC or NVMe/RoCE
+NVMe/FC, NVMe/RoCE, or iSCSI
 a|
 EH3-C85-Z0V93
 a|
@@ -225,11 +209,11 @@ NHL-J75-ZFL3W
 .5+a|
 516
 .5+a|
-NVMe/RoCE
+NVMe/FC, NVMe/RoCE, or iSCSI
 a|
 517
 a|
-NVMe/IB
+NVMe/IB or NVMe/FC
 a|
 LHF-285-ZV9YZ
 a|
@@ -259,11 +243,11 @@ GHP-895-Z25BD
 .5+a|
 517
 .5+a|
-NVMe/IB
+NVMe/IB or NVMe/FC
 a|
 516
 a|
-NVMe/RoCE
+NVMe/FC, NVMe/RoCE, or iSCSI
 a|
 7HS-R95-Z3M06
 a|
@@ -297,17 +281,13 @@ FC
 a|
 516
 a|
-NVMe/FC     or
-
-NVMe/RoCE
+NVMe/FC, NVMe/RoCE, or iSCSI
 a|
 UH5-H95-Z9Z58
 a|
 517
 a|
-NVMe/FC     or
-
-NVMe/IB
+NVMe/FC or NVMe/IB
 a|
 XH7-195-ZBGJC
 a|
@@ -335,7 +315,7 @@ FC-PTL
 a|
 516
 a|
-NVMe/FC or NVMe/RoCE
+NVMe/FC, NVMe/RoCE, or iSCSI
 a|
 YHH-895-ZGCXS
 a|
@@ -369,7 +349,7 @@ iSER/IB
 a|
 516
 a|
-NVMe/FC or NVMe/RoCE
+NVMe/FC, NVMe/RoCE, or iSCSI
 a|
 HHU-XA5-ZNPLT
 a|
@@ -403,7 +383,7 @@ SRP/IB
 a|
 516
 a|
-NVMe/FC or NVMe/RoCE
+NVMe/FC, NVMe/RoCE, or iSCSI
 a|
 1H7-NA5-ZT31W
 a|
