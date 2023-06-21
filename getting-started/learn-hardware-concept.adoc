@@ -22,6 +22,8 @@ E-Series arrays are available in the following models:
 * EF570 series -- midrange all flash
 * EF600 series -- midrange all flash, all NVMe
 
+NOTE: All USB ports are disabled on the E2800, EF280, E5700, EF570, EF600, and EF300 arrays. 
+
 == E2800 models
 
 [cols="35h,~",options="header"]
