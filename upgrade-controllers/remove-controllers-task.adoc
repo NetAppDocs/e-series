@@ -15,7 +15,9 @@ After preparing for the upgrade, you can remove the controllers, and if necessar
 
 Remove the controller canister so you can upgrade it with a new one. You must disconnect all cables and remove any SFP transceivers. Then, you can slide the controller canister out of the controller shelf.
 
-.What you'll need
+.Before you begin
+
+Make sure you have the following:
 
 * An ESD wristband or take other antistatic precautions.
 * Labels to identify each cable that is connected to the controller canister.

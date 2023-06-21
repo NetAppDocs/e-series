@@ -11,7 +11,7 @@ summary: Configuring an NVMe initiator in an InfiniBand environment includes ins
 [.lead]
 Configuring an NVMe initiator in an InfiniBand environment includes installing and configuring the infiniband, nvme-cli, and rdma packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
 
-.What you'll need
+.Before you begin
 
 You must be running the latest compatible RHEL 7, RHEL 8, RHEL 9, SUSE Linux Enterprise Server 12 or 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a complete list of the latest requirements.
 

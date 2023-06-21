@@ -40,6 +40,8 @@ You first must create an internal security key and then import the security key 
 
  .. Create internal security key
  .. Controller swap with internal key management and one or more drives secured
+ .. Run the SMclient command, `set allDrives nativeState`.
+ .. Wait for both controllers to reboot.
 
 a|
 All secured drives, Internal Key Management
@@ -60,6 +62,8 @@ You must first unlock the secured drives using the Internal Key Management proce
 
  .. Controller swap with internal key management and one or more drives secured
  .. Create external security key
+ .. Run the SMclient command, `set allDrives nativeState`.
+ .. Wait for both controllers to reboot.
 
 a|
 All secured drives, External Key Management, you have not temporarily switched to Internal Key Management for the controller replacement procedure
