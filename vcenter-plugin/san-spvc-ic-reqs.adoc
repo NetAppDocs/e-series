@@ -40,7 +40,7 @@ Storage Plugin for vCenter requires adequate space for execution and logging. Ma
 
 *	Required installation space — 275 MB
 *	Storage space — 275 MB + 200 MB (logging)
-*	System memory — 512 MB
+*	System memory —  1.5 GB
 
 a|
 License
