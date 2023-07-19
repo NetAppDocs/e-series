@@ -179,14 +179,17 @@ method=auto
 # ifup eth5
 ----
 
-. Set up the NVMe-oF layer on the host. Create the following file under `/etc/modules-load.d/` to load the `nvme-rdma` kernel module and make sure the kernel module will always be on, even after a reboot:
+. Set up the NVMe-oF layer on the host. Create the following file under `/etc/modules-load.d/` to load the `nvme_rdma` kernel module and make sure the kernel module will always be on, even after a reboot:
 +
 ----
 
-# cat /etc/modules-load.d/nvme-rdma.conf
-  nvme-rdma
+# cat /etc/modules-load.d/nvme_rdma.conf
+  nvme_rdma
 ----
-To verify the `nvme-rdma` kernel module is loaded, run this command:
+
+. Reboot the host.  
++
+To verify the `nvme_rdma` kernel module is loaded, run this command:
 +
 ----
 # lsmod | grep nvme
