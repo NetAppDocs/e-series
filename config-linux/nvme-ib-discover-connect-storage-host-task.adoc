@@ -73,21 +73,7 @@ NOTE: The recommended controller loss timeout period in seconds is 60 minutes (3
 # nvme connect -t rdma -a 10.10.10.200 -n nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
 ----
 
-. Use the `nvme list` command to see a list of the NVMe devices currently connected. In the example below, it is `nvme0n1`.
-+
-----
- # nvme list
-
- Node          SN            Model             Namespace
- -------------------------------------------------------
- /dev/nvme0n1  021648023161  NetApp E-Series      1
-----
-+
-----
-Usage                 Format           FW Rev
---------------------------------------------------------------
-5.37 GB /5.37 GB      512 B + 0 B      0842XXXX
-----
+. Use the `nvme list-subsys` command to see a list of the NVMe devices currently connected. 
 
 . Connect to the discovered subsystem on the second path:
 +
