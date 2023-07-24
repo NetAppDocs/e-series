@@ -11,130 +11,45 @@ summary: New features in SANtricity OS.
 :imagesdir: ../media/
 
 [.lead]
-The following tables describe new features in SANtricity OS 11.7 for embedded management of EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
+The following table describes new features in SANtricity OS 11.8x for embedded management of EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
 
-== New features in Version 11.74
-
-[cols="35h,~",options="header"]
-|===
-|New feature |Description
-
-a|Support for FIPS 140-3
-a|FIPS 140-3 is now supported on certain drives for both SAS and NVMe-based SSDs. FIPS 140-3 level SSD drives can co-exist with FIPS 140-2 level SSD drives, provided that the drives are either all NVMe-based or all SAS-based. When using a mixture of these levels in volume groups and disk pools, be aware that the group or pool will then operate at the lower level of security (140-2).
-
-a|MFA and SSH support
-a|For SANtricity versions 11.74 and later, the Remote Login feature allows you to configure multifactor authorization (MFA) by requiring users to enter an SSH key and/or SSH password. The menu option in the Hardware section has changed from *Change remote login* to *Configure remote login (SSH)*.
-
-a|Access tokens
-a|This release includes a new feature for creating access tokens. These tokens allow you to authenticate with the REST API or command line interface (CLI), without exposing user names and passwords. This feature is provided in the Access Management section.
-
-|===
-
-== New features in Version 11.73
+== New features in Version 11.80
 
 [cols="35h,~",options="header"]
 |===
 |New feature |Description
-a|Resource Provisioning and DULBE support
-a|Resource Provisioning capabilities and DULBE drive capabilities are now fully supported in this release. This support includes making host-directed UNMAP on Resource-Provisioned volumes more widely usable.
 
-a|EF600 SAS (512e) expansion
-a|This release provides support for expansion to SAS-3 enclosures for the EF600 storage system. With this expansion, the 4KiB-block NVMe SSDs can coexist with 512e SAS SSDs and HDDs. However, drives with different block sizes cannot be configured in the same pool or volume group.
+a|Enhanced Volume Parity Scan
+a|Volume parity scan can now be launched as a background process either via the REST API or via CLI. The resulting parity scan will run in the background as long as is required to complete the scan operation. Scan operations will survive controller reboots and failover operations.  
 
-a|QLC SSD support
-a|This release supports the current generation of QLC SSDs that have ONTAP feature set in the drive firmware but do not have the full E-Series-specific feature set. QLC drives (NVMe only) are lower cost, but have lower write performance and a lower endurance rating so they should not be used with write-intensive workloads.
+a|SAML Support for Unified Manager 
+a|Unified Manager now supports SAML (Security Assertion Markup Language). Once SAML is enabled for Unified Manager, users must use multi factor authentication against the identity provider in order to interact with the user interface. Note that once SAML is enabled on Unified Manager, the REST API cannot be used without going through the IdP to authenticate requests.  
 
-a|TLS 1.3 support
-a|TLS 1.3 is now supported for embedded management. This support applies to System Manager and embedded Web Services, with the ability to enable or disable it. (TLS 1.3 support was added in a previous release for the Web Services Proxy and Unified Manager.)
+a|Auto Configuration Feature 
+a|Now supports the ability to set the volume block size parameter to use with the Auto Configuration feature for initial array setup. This feature is available in the CLI only as a "blockSize" parameter.  
 
-a|RAID 1 DDP with 8-drive minimum
-a|With this release, RAID 1 DDP no longer requires a minimum of 11 SSDs in a pool. The minimum now allows 8-drive SSD pools if only RAID 1 volumes are created in the pool.
+a|Controller Firmware Cryptographic Signing 
+a|Controller firmware is cryptographically signed. Signatures are checked during initial download and at each controller boot. No end user impact expected. Signatures are backed by a CA issued Extended Validation certificate.  
 
-a|EKMS key deletion
-a|A storage admin can now request an external key management server (EKMS) to delete an old key. The key deletion only takes place during a re-key process after the installed drives have the new key.
+a|Drive Firmware Cryptographic Signing 
+a|Drive firmware is cryptographically signed. Signatures are checked during initial download and backed by a CA issued Extended Validation certificate. Drive firmware content is now delivered as a ZIP file, which contains the older non-signed firmware as well as the new signed firmware. The user must chose the appropriate file based on the release version of code that is running on the target system.  
+
+a|External Key Server Management - Certificate Key Size 
+a|The new default certificate key size is 3072 bits (from 2048). Key sizes up to 4096 bits are supported. An NVSRAM bit must be changed in order to support the non-default key sizes.  
+
+a|Support for larger dynamic disk pool sizes using drives with 512b block sizes 
+a|Customers that utilize the Version 1 pool version type may now have a 48 TB maximum size disk pool. The older version supports up to a 24 TB disk pool size. If existing disk pools are to be converted to the larger size, all volumes must be removed first. A downgrade operation is restricted when a Version 1 disk pool exists.  
+
+a|System Manager and Unified Manager will not launch unless minimum browser requirements are met
+a|A minimum version of the browser is required before either System Manager or Unified Manager will launch. The following are the minimum supported versions:
+
+* Firefox minimum version 80 
+* Chrome minimum version 89 
+* Edge minimum version 90 
+* Safari minimum version 14 
+
+a|Support for FIPS 140-3 NVMe SSD drives 
+a|Netapp certified FIPS 140-3 NVMe SSD drives are now supported. They will be correctly identified as such in the storage array profile and in System Manager.  
 
 |===
 
-== New features in Version 11.72
-
-[cols="35h,~",options="header"]
-|===
-|New feature |Description
-a|SNMPv3 support
-a|SNMPv3 is now supported for alert notifications, configurable in menu:Settings[Alerts]. SNMPv3 provides security through strong authentication and data encryption.
-
-a|Support replicating keys to multiple key servers
-a|For external key management for self-encrypting drives, the Create External Key Management dialog includes a new option for adding multiple key servers.
-
-a|Updated browser versions
-a|System Manager minimum browser versions have been updated.
-
-|===
-
-== New features in Version 11.71
-
-[cols="35h,~",options="header"]
-|===
-a|New feature |Description
-a|EF300 expansion |This release provides support for expansion to SAS-3 enclosures for the EF300 storage system. With this expansion, the 4KiB-block NVMe SSDs can coexist with 512e SAS SSDs and HDDs. However, drives with different block sizes cannot be configured in the same pool or volume group.
-
-a|FEC mode option in iSCSI configuration
-a|For storage arrays using the 25Gb iSCSI host interface card, a new option is available for setting the Forward Error Correction (FEC) mode when you configure iSCSI ports.
-
-a|Remote Storage Volumes
-a|The optional Remote Storage Volumes feature allows you to import volumes from a remote storage system to a local E-
-Series storage system using an iSCSI connection. The remote storage may be the same brand as your E-Series system or from a different storage vendor, as long as it is accessible via iSCSI.
-
-a|Sanitize (erase) capability added for non-FDE drives
-a|The drive sanitize feature now includes non-FDE drives in the procedure. From the Hardware page, you can open the Drive's context menu and select "Erase" (previously, this selection was "Secure Erase").
-
-a|Secure connection for email alerts
-a|To enable encrypted email notifications, you can optionally configure outgoing emails (alerts, ASUP dispatches) to supply authentication credentials. Encryption types include SMTPS and STARTTLS.
-
-a|AutoSupport additions
-a|An alert now appears in the Notifications area when AutoSupport is not enabled.
-
-a|Syslog alert format change
-a|The Syslog alert format now supports RFC 5424.
-|===
-
-== New features in Version 11.70
-
-[cols="35h,~",options="header"]
-|===
-a|New feature a|Description
-
-a|New storage system model – EF300
-a|This release introduces the EF300 low-cost all-NVMe-flash storage system. The EF300 includes 24 NVME SSD drives and a single host interface card (HIC) per controller. The supported NVMe over Fabrics host interfaces include NVMe over IB, NVMe over RoCE, and NVMe over FC. The supported SCSI interfaces include FC, IB over iSER, and IB over SRP. Multiple EF300 storage systems and other E- Series storage systems can be viewed and managed in Unified Manager.
-
-a|New Resource Provisioning feature (EF300 and EF600 only)
-a|The Resource Provisioning feature is new for the EF300 and EF600 storage systems. Resource-provisioned volumes can be put in use immediately with no background initialization process.
-
-a|Add 512e block size option (EF300 and EF600 only)
-a|For EF300 and EF600 storage systems, a volume can be set to support a 512-byte or a 4KiB block size. The 512e capability has been added to allow support of the iSCSI host interface and the VMware OS. If possible, System Manager
-suggests the appropriate default value.
-
-a|New option for sending AutoSupport dispatches on demand
-a|A new Send AutoSupport Dispatch feature allows you to send data to technical support without waiting for a scheduled dispatch. This option is available in the AutoSupport tab of the Support Center.
-
-a|External Key Management Server enhancements
-a|
-The feature for connecting to an external key management server includes the following enhancements:
-
-* Bypass the function for creating a backup key.
-
-* Choose an intermediate certificate for the key management server, in addition to the client and server certificates.
-
-a|Certificate enhancements
-a|This release allows for using an external tool such as OpenSSL to generate a Certificate Signing Request (CSR),
-which also requires you to import a private key file along with the signed certificate.
-
-a|New Offline Initialization feature for Volume Groups
-a|For volume creation, System Manager provides a method for skipping the host assignment step so that newly created volumes are initialized offline. This capability is applicable only to RAID volume groups on SAS drives (i.e., not to dynamic disk pools or to the NVMe SSDs included in the EF300 and EF600 storage systems). This feature is for workloads that need to have the volumes at full performance when usage begins, rather than having initialization run in the background.
-
-a|New Collect Configuration Data feature
-a|This new feature saves RAID configuration data from the controller, which includes all data for volume groups and disk pools (the same information as the CLI command for `save storageArray dbmDatabase`). This capability has been added to aid technical support and is located in the Diagnostics tab of the Support Center.
-
-a|Change default preservation capacity for disk pools in 12 drive case
-a|Previously, a 12-drive disk pool was created with enough preservation (spare) capacity to cover two drives. The default is now changed to handle a single drive failure to offer a more cost-effective small pool default.
-|===

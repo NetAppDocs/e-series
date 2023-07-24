@@ -53,7 +53,7 @@ NOTE: If necessary, you can change the Certificate Validation and Web Service Po
 After the plugin software is installed, register the plugin with a vCSA.
 
 [NOTE]
-The plugin can only be registered to one vCSA at a time. To register to a different vCSA, then you must unregister the plugin from the current vCSA and uninstall it from the application host. You can then re-install the plugin and register it to the other vCSA.
+The plugin can only be registered to one vCSA at a time. To register to a different vCSA, you must unregister the plugin from the current vCSA and uninstall it from the application host. You can then re-install the plugin and register it to the other vCSA.
 
 . Open a prompt through the command line and navigate to the following directory:
 +

@@ -9,7 +9,7 @@ summary: E-Series storage arrays are available in several configurations and mod
 :imagesdir: ../media/
 
 [.lead]
-E-Series storage arrays are available in several configurations and models.
+E-Series storage arrays are available in several configurations and models. 
 
 A storage array includes shelves, controllers, drives, software, and firmware. The array can be installed in a rack or cabinet, with customizable hardware for one or two controllers, in a 12-, 24-, or 60-drive shelf. You can connect the storage array to a SAN from multiple interface types and to a variety of host operating systems.
 
@@ -226,6 +226,7 @@ a|
 Drives and HICs:
 
 a|
+
 Supports the following drives with a single host interface card (HIC) per controller:
 
 * NVMe SSD drives: Up to 24 NVMe SSD drives in the controller shelf.
