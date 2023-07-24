@@ -22,6 +22,8 @@ E-Series arrays are available in the following models:
 * EF570 series -- midrange all flash
 * EF600 series -- midrange all flash, all NVMe
 
+NOTE: All USB ports are disabled on the E2800, EF280, E5700, EF570, EF600, and EF300 arrays. 
+
 == E2800 models
 
 [cols="35h,~",options="header"]
@@ -111,7 +113,9 @@ Supports the following drives with a single host interface card (HIC) per contro
 
 * NL-SAS drives with expansion shelves: Any mixture of DE212C and DE460C shelves not to exceed a total of 240 NL-SAS drive slots and 4 expansion shelves unless only DE212C shelves are used, then 8 DE212C shelves are allowed. For example, 4 DE460C shelves, or 8 DE212C shelves, or 2 DE460C shelves plus 2 DE212 shelves.
 
-* SAS SSD drives with expansion shelves: Any mixture of DE212C, DE224C, and DE460C shelves not to exceed a total of 96 SAS SSD drive slots and 4 expansion shelves unless only DE212C shelves are used, then 8 DE212C shelves are allowed. For example, 1 DE460C shelf plus 1 DE224C shelf plus 1 DE212C shelf, or 4 DE224C shelves, or 8 DE212C shelves. 
+* SAS SSD drives with expansion shelves: Any mixture of DE212C, DE224C, and DE460C shelves not to exceed a total of 96 SAS SSD drive slots and 4 expansion shelves unless only DE212C shelves are used, then 8 DE212C shelves are allowed. For example, 1 DE460C shelf plus 1 DE224C shelf plus 1 DE212C shelf, or 4 DE224C shelves, or 8 DE212C shelves.
+
+NOTE: The EF300 supports expansion shelf configurations with no drives in the base tray. When using this configuration, ensure the drives are populated within the expansion shelf and properly connected to the base tray before powering on the system.   
 
 a|
 Interfaces:
@@ -222,7 +226,17 @@ a|
 Drives and HICs:
 
 a|
-Supports up to 24 NVMe SSDs, with two host interface cards (HICs) per controller.
+
+Supports the following drives with a single host interface card (HIC) per controller:
+
+* NVMe SSD drives: Up to 24 NVMe SSD drives in the controller shelf.
+
+* NL-SAS drives with expansion shelves: Any mixture of DE212C and DE460C shelves not to exceed a total of 420 NL-SAS drive slots and 7 expansion shelves unless only DE212C shelves are used, then 8 DE212C shelves are allowed. For example, 7 DE460C shelves, or 8 DE212C shelves, or 5 DE460C shelves plus 2 DE212 shelves.
+
+* SAS SSD drives with expansion shelves: Any mixture of DE212C, DE224C, and DE460C shelves not to exceed a total of 96 SAS SSD drive slots and 7 expansion shelves unless only DE212C shelves are used, then 8 DE212C shelves are allowed. For example, 1 DE460C shelf plus 1 DE224C shelf plus 1 DE212C shelf, or 4 DE224C shelves, or 8 DE212C shelves
+
+NOTE: The EF600 supports expansion shelf configurations with no drives in the base tray. When using this configuration, ensure the drives are populated within the expansion shelf and properly connected to the base tray before powering on the system.
+
 a|
 Interfaces:
 

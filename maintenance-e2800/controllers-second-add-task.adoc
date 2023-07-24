@@ -16,7 +16,9 @@ You can add a second controller canister in the E2800 array.
 
 This task describes how to add a second controller canister to the simplex version of either a E2812 controller shelf, E2824 controller shelf, or EF280 flash array. This procedure is also referred to as a simplex-to-duplex conversion, which is an online procedure. You can access data on the storage array while you perform this procedure.
 
-.What you'll need
+.Before you begin
+
+Make sure you have the following:
 
 * A new controller canister with the same part number as the currently installed controller canister. (See step 1 to verify the part number.)
 * A new HIC that is identical to the HIC in the currently installed controller canister (only necessary if the currently installed controller canister includes a host interface card).

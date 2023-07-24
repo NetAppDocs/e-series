@@ -24,7 +24,7 @@ In this command, `target_ip_address` is the IP address of the target port.
 NOTE: The `nvme discover` command discovers all controller ports in the subsystem, regardless of host access.
 +
 ----
-# nvme discover -t rdma -a 10.10.10.100
+# nvme discover -t rdma -a 10.10.10.200
  Discovery Log Number of Records 2, Generation counter 0
  =====Discovery Log Entry 0======
  trtype:  rdma
@@ -34,7 +34,7 @@ NOTE: The `nvme discover` command discovers all controller ports in the subsyste
  portid:  0
  trsvcid: 4420
  subnqn:  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be
- traddr: 10.10.10.100
+ traddr: 10.10.10.200
  rdma_prtype: infiniband
  rdma_qptype: connected
  rdma_cms:    rdma-cm
@@ -70,24 +70,10 @@ NOTE: The recommended queue depth setting is 1024. Override the default setting 
 NOTE: The recommended controller loss timeout period in seconds is 60 minutes (3600 seconds). Override the default setting of 600 seconds with 3600 seconds using the `-l 3600` command line option, as shown in the following example:
 +
 ----
-# nvme connect -t rdma -a 10.10.10.100 -n nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
+# nvme connect -t rdma -a 10.10.10.200 -n nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
 ----
 
-. Use the `nvme list` command to see a list of the NVMe devices currently connected. In the example below, it is `nvme0n1`.
-+
-----
- # nvme list
-
- Node          SN            Model             Namespace
- -------------------------------------------------------
- /dev/nvme0n1  021648023161  NetApp E-Series      1
-----
-+
-----
-Usage                 Format           FW Rev
---------------------------------------------------------------
-5.37 GB /5.37 GB      512 B + 0 B      0842XXXX
-----
+. Use the `nvme list-subsys` command to see a list of the NVMe devices currently connected. 
 
 . Connect to the discovered subsystem on the second path:
 +

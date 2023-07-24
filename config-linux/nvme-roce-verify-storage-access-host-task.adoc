@@ -11,9 +11,11 @@ summary: Before using the namespace, you verify that the host can write data to 
 [.lead]
 Before using the namespace, verify that the host can write data to the namespace and read it back.
 
-.What you'll need
+.Before you begin
 
-An initialized namespace that is formatted with a file system.
+Make sure you have the following:
+
+* An initialized namespace that is formatted with a file system.
 
 .Steps
 

@@ -19,7 +19,9 @@ You can replace a failed controller canister in a simplex (single-controller) co
 
 The controller canister contains a controller card, a battery, and an optional host interface card (HIC). When you replace a failed controller canister, you must remove the battery and HIC, if one is installed, from the original controller canister, and install them in the replacement controller canister.
 
-.What you'll need
+.Before you begin
+
+Make sure you have the following:
 
 * A replacement controller canister with the same part number as the controller canister you are replacing.
 * An ESD wristband, or you have taken other antistatic precautions.

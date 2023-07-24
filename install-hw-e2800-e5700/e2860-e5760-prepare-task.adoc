@@ -13,7 +13,7 @@ Learn how to prepare to install your E2860, E5760, or DE460 series storage syste
 
 .Steps
 
-. Create an account and register your hardware at http://mysupport.netapp.com/[mysupport.netapp.com^].
+. Create an account and register your hardware at http://mysupport.netapp.com/[NetApp Support^].
 . Ensure that the following items are in the box that you received.
 +
 |===
@@ -95,10 +95,9 @@ image:../media/management_station_inst-hw-e2800-e5700_g60b3.png[]
 a|
 A supported browser for the management software:
 
-* Google Chrome (version 47 and later)
-* Microsoft Internet Explorer (version 11 and later)
-* Microsoft Edge (EdgeHTML 12 and later)
-* Mozilla Firefox (version 31 and later)
-* Safari (version 9 and later)
+* Google Chrome (version 89 and later)
+* Microsoft Edge (version 90 and later)
+* Mozilla Firefox (version 80 and later)
+* Safari (version 14 and later)
 
 |===

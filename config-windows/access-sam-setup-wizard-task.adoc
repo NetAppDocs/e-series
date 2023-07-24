@@ -14,7 +14,9 @@ To configure your storage array, you can use the Setup wizard in SANtricity Syst
 
 SANtricity System Manager is a web-based interface embedded on each controller. To access the user interface, you point a browser to the controller’s IP address. A setup wizard helps you get started with system configuration.
 
-.What you'll need
+.Before you begin
+
+Make sure you have the following:
 
 * Out-of-band management.
 * A management station for accessing SANtricity System Manager that includes one of the following browsers:
@@ -25,23 +27,19 @@ SANtricity System Manager is a web-based interface embedded on each controller. 
 a|
 Google Chrome
 a|
-79
-a|
-Microsoft Internet Explorer (MSE)
-a|
-11
+89
 a|
 Microsoft Edge
 a|
-79
+90
 a|
 Mozilla Firefox
 a|
-70
+80
 a|
 Safari
 a|
-12
+14
 |===
 
 
