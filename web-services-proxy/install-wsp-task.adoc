@@ -9,8 +9,7 @@ summary: Installation involves downloading the file and then installing the prox
 :imagesdir: ../media/
 
 [.lead]
-Follow these steps to download and install the proxy package on a Linux or Windows server. You can also upgrade the proxy using these instructions.
-
+Installation involves downloading the file and then installing the proxy package on a Linux or Windows server. You can also upgrade the proxy using these instructions.
 
 == Download Web Services Proxy files
 
