@@ -11,7 +11,7 @@ summary: Verify that the host can write data to the LUN and read it back.
 [.lead]
 Before using the volume, verify that the host can write data to the LUN and read it back.
 
-.What you'll need
+.Before you begin
 
 You must have initialized the LUN and formatted it with a file system.
 

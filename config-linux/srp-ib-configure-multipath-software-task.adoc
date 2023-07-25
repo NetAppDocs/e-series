@@ -11,7 +11,7 @@ summary: Configure multipath software to provide a redundant path to the storage
 [.lead]
 To provide a redundant path to the storage array, you can configure multipath software.
 
-.What you'll need
+.Before you begin
 
 You must install the required packages on your system.
 

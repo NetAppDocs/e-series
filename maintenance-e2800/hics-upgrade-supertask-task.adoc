@@ -20,18 +20,16 @@ When you upgrade the HICs, you must power off the storage array, remove the exis
 
 * Review link:hics-overview-supertask-concept.html[Requirements for E2800 HIC replacement].
 * Schedule a downtime maintenance window for this procedure. The power must be off when you install HICs, so you cannot access data on the storage array until you have successfully completed this procedure. (In a duplex configuration, this is because both controllers must have the same HIC configuration when they are powered on.)
-
-.What you'll need
-
-* One or two HICs, based on whether you have one or two controllers in your storage array. The HICs must be compatible with your controllers.
-* Labels to identify each cable that is connected to the controller canister.
-* An ESD wristband, or you have taken other antistatic precautions.
-* A #1 Phillips screwdriver.
-* Any new host hardware installed for the new host ports, such as switches or host bus adapters (HBAs).
-* All cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new host ports.
+* Make sure you have the following:
+** One or two HICs, based on whether you have one or two controllers in your storage array. The HICs must be compatible with your controllers.
+** Labels to identify each cable that is connected to the controller canister.
+** An ESD wristband, or you have taken other antistatic precautions.
+** A #1 Phillips screwdriver.
+** Any new host hardware installed for the new host ports, such as switches or host bus adapters (HBAs).
+** All cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new host ports.
 +
 For information about compatible hardware, refer to the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] or the http://hwu.netapp.com/home.aspx[NetApp Hardware Universe^].
-* A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
+** A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
 
 == Step 1: Prepare to upgrade host interface cards
 

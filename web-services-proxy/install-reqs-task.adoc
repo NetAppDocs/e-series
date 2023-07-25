@@ -17,7 +17,7 @@ You can install and configure the Web Services Proxy on a Windows or Linux host 
 
 Proxy installation includes the following requirements.
 
-[options="header"]
+[cols="35h,~",options="header"]
 |===
 | Requirement| Description
 a|

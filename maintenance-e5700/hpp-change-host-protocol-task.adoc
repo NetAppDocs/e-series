@@ -90,6 +90,8 @@ image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-e5700.
  .. Select the *Support Center* tile.
  .. On the Support Resources tab, locate and select the *Storage Array Profile* link.
  .. Type *feature pack submodel ID* in the text box, and click *Find*.
++
+NOTE: "Submodel" may also be written as "sub-model."
  .. Locate the feature pack submodel ID for the starting configuration.
 +
 image::../media/storage_array_profile2_maint-e5700.gif[]

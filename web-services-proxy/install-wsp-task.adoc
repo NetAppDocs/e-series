@@ -86,7 +86,6 @@ During the installation, you are prompted to enable several features and enter s
 +
 NOTE: During an upgrade, you are not prompted for configuration parameters.
 +
-
 . When the installation is complete, press *Enter* to exit the installer.
 
 === Silent mode install
@@ -112,7 +111,6 @@ For Linux systems that are compatible with the RPM package management system, yo
 . Download the RPM file to the server where you want to install the proxy and Unified Manager.
 . Open a terminal window.
 . Enter the following command:
-
 +
 `rpm -u santricity_webservices-nn.nn.nn.nnnn-n.x86_64.rpm`
 +

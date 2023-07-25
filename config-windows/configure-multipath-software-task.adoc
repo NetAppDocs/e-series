@@ -11,9 +11,11 @@ summary: Install DSM package, which contains multipath software for Windows.
 [.lead]
 To provide a redundant path to the storage array, you can install the SANtricity Windows DSM package and use the multipath package for Windows.
 
-.What you'll need
+.Before you begin
 
-The correct administrator or superuser privileges.
+Make sure you have the following:
+
+* The correct administrator or superuser privileges.
 
 .About this task
 

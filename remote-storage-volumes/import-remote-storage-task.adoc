@@ -11,7 +11,7 @@ summary: The import of the remote storage device is performed through the Import
 [.lead]
 To initiate a storage import from a remote system to a local E-Series storage system, use the Import Remote Storage wizard in the SANtricity System Manager user interface.
 
-.What you'll need
+.What you will need
 
 * The E-Series storage system must be configured to communicate with the remote storage system. See link:setup-remote-volumes-concept.html[Configure hardware].
 * For the remote storage system, gather the following information:
