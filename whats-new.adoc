@@ -11,7 +11,7 @@ summary: New features in SANtricity OS.
 :imagesdir: ../media/
 
 [.lead]
-The following table describes new features in SANtricity OS 11.8x for embedded management of EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
+The following table describes new features in SANtricity OS 11.8 for embedded management of EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
 
 == New features in Version 11.80
 
@@ -50,6 +50,18 @@ a|A minimum version of the browser is required before either System Manager or U
 
 a|Support for FIPS 140-3 NVMe SSD drives 
 a|Netapp certified FIPS 140-3 NVMe SSD drives are now supported. They will be correctly identified as such in the storage array profile and in System Manager.  
+
+a|Support for SSD Read cache on EF300 and EF600
+a|SSD Read cache is now supported on EF300 and EF600 controllers using HDD with a SAS expansion.  
+
+a|Support for iSCSI and Fibre Channel asynchronous remote mirroring on EF300 and EF600
+a|Asynchronous remote mirroring (ARVM) is now supported on EF300 and EF600 controllers with NVMe and SAS based volumes. 
+
+a|Support EF300 and EF600 without drives on the base tray
+a|EF300 and EF600 controller configurations without NVMe drives on the base tray is now supported. 
+
+a|USB ports disabled for all platforms
+a|USB ports are now disabled on all platforms. 
 
 |===
 
