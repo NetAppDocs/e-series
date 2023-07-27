@@ -11,7 +11,7 @@ summary: Configure multipath software, which  provides a redundant path to the s
 [.lead]
 To provide a redundant path to the storage array, you can configure multipath software.
 
-.What you'll need
+.Before you begin
 
 You must install the required packages on your system.
 
@@ -59,7 +59,7 @@ dracut --force --add multipath
 ----
 
 . Use the https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-manually.html[Create host manually] procedure in the online help to check whether the hosts are defined. Verify that each host type setting is based on the kernel information gathered in <<step4,step 4>>.
-
++
 NOTE: Automatic Load Balancing is disabled for any volumes mapped to hosts running kernel 3.9 or earlier.
 
 . Reboot the host.

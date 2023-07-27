@@ -19,12 +19,10 @@ The Recovery Guru in SANtricity System Manager monitors the drives in the storag
 .Before you begin
 
 * Review drive handling requirements in link:drives-overview-supertask-concept.html[Requirements for E5700 drive replacement].
-
-.What you'll need
-
-* A replacement drive that is supported by NetApp for your controller shelf or drive shelf.
-* An ESD wristband, or you have taken other antistatic precautions.
-* A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
+* Make sure you have the following:
+** A replacement drive that is supported by NetApp for your controller shelf or drive shelf.
+** An ESD wristband, or you have taken other antistatic precautions.
+** A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
 
 == Step 1: Prepare to replace drive (24-drive)
 

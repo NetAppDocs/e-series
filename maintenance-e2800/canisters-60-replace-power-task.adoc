@@ -28,11 +28,9 @@ While you perform this task, the other power canister supplies power to both fan
 * Review the power canister requirements in  link:canisters-overview-supertask-concept.html[Requirements for canister replacement].
 * Review the details in the Recovery Guru to confirm that there is an issue with the power canister and select *Recheck* from the Recovery Guru to ensure no other items must be addressed first.
 * Check that the amber Attention LED on the power canister is on, indicating that the canister has a fault. Contact technical support for assistance if both power canisters in the shelf have their amber Attention LEDs on.
-
-.What you'll need
-
-* A replacement power canister that is supported for your controller shelf or drive shelf model.
-* An ESD wristband, or you have taken other antistatic precautions.
+* Make sure you have the following:
+** A replacement power canister that is supported for your controller shelf or drive shelf model.
+** An ESD wristband, or you have taken other antistatic precautions.
 
 == Step 1: Prepare to replace power canister
 

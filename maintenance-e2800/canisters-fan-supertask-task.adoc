@@ -27,11 +27,9 @@ CAUTION: *Possible equipment damage* -- If you perform this procedure with the p
 * Review the fan canister requirements in link:canisters-overview-supertask-concept.html[Requirements for canister replacement].
 * Review the details in the Recovery Guru to confirm that there is an issue with the fan canister and select *Recheck* from the Recovery Guru to ensure no other items must be addressed first.
 * Check that the amber Attention LED on the fan canister is on, indicating that the fan has a fault. Contact technical support for assistance if both fan canisters in the shelf have their amber Attention LEDs on.
-
-.What you'll need
-
-* A replacement fan canister (fan) that is supported for your controller shelf or drive shelf model.
-* An ESD wristband, or you have taken other antistatic precautions.
+* Make sure you have the following:
+** A replacement fan canister (fan) that is supported for your controller shelf or drive shelf model.
+** An ESD wristband, or you have taken other antistatic precautions.
 
 == Step 1: Prepare to replace fan canister
 

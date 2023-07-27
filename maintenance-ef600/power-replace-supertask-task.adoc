@@ -18,12 +18,10 @@ If a power supply fails, you must replace it as soon as possible so the controll
 
 * Review the details in the Recovery Guru to confirm that there is an issue with the power supply. Select *Recheck* from the Recovery Guru to ensure no other items must be addressed first.
 * Check that the amber Attention LED on the power supply is on, indicating that the power supply or its integrated fan has a fault.
-
-.What you'll need
-
-* A replacement power supply that is supported for your controller shelf.
-* An ESD wristband, or you have taken other antistatic precautions.
-* A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
+* Make sure you have the following:
+** A replacement power supply that is supported for your controller shelf.
+** An ESD wristband, or you have taken other antistatic precautions.
+** A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
 
 == Step 1: Remove failed power supply
 

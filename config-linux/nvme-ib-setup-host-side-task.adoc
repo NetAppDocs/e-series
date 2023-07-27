@@ -11,7 +11,7 @@ summary: Configuring an NVMe initiator in an InfiniBand environment includes ins
 [.lead]
 Configuring an NVMe initiator in an InfiniBand environment includes installing and configuring the infiniband, nvme-cli, and rdma packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
 
-.What you'll need
+.Before you begin
 
 You must be running the latest compatible RHEL 7, RHEL 8, RHEL 9, SUSE Linux Enterprise Server 12 or 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a complete list of the latest requirements.
 
@@ -251,14 +251,17 @@ As shown in the example below, the IP address for `ib1` is `11.11.11.255`.
     inet6 fe80::202:c903:31:7851/64 scope link
        valid_lft forever preferred_lft forever
 ----
-. Set up the NVMe-oF layer on the host. Create the following files under /etc/modules-load.d/ to load the `nvme-rdma` kernel module and make sure the kernel module will always be on, even after a reboot:
+. Set up the NVMe-oF layer on the host. Create the following files under /etc/modules-load.d/ to load the `nvme_rdma` kernel module and make sure the kernel module will always be on, even after a reboot:
 +
 ----
 
-# cat /etc/modules-load.d/nvme-rdma.conf
-  nvme-rdma
+# cat /etc/modules-load.d/nvme_rdma.conf
+  nvme_rdma
 ----
-To verify the `nvme-rdma` kernel module is loaded, run this command:
+
+. Reboot the host. 
++
+To verify the `nvme_rdma` kernel module is loaded, run this command:
 +
 ----
 
@@ -271,3 +274,5 @@ ib_core               393216  15 rdma_cm,ib_ipoib,rpcrdma,ib_srpt,ib_srp,nvme_rd
 t10_pi                 16384  2 sd_mod,nvme_core
 ----
 +
+
+ 
