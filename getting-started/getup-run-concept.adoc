@@ -46,7 +46,7 @@ When shipped, each shelf includes rack-mounting hardware. For detailed instructi
 The Installation and Setup instructions (Step 1) include instructions for connecting cables. However, if you need lists of supported cables and transceivers, best practices for cabling, and detailed information about the host ports for your controller, access the following instructions:
 
 [role="quick-margin-list"]
-* link:../install-hw-cabling/index.html[Cable E-Series hardware]
+* link:../install-hw-cabling/index.html[Cable E-Series hardware^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Configure hosts
 
@@ -54,9 +54,9 @@ The Installation and Setup instructions (Step 1) include instructions for connec
 To make storage available to a host, select a guide for the host's operating system type:
 
 [role="quick-margin-list"]
-* link:../config-linux/index.html[Linux express configuration]
-* link:../config-vmware/index.html[VMware express configuration]
-* link:../config-windows/index.html[Windows express configuration]
+* link:../config-linux/index.html[Linux express configuration^]
+* link:../config-vmware/index.html[VMware express configuration^]
+* link:../config-windows/index.html[Windows express configuration^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six] Configure storage
 
@@ -67,5 +67,6 @@ To configure storage, you can access the web-based interface, System Manager, by
 Select the interface you want to use:
 
 [role="quick-margin-list"]
-* https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html[SANtricity System Manager Help for 11.7x]
-* https://docs.netapp.com/us-en/e-series-santricity-116/index.html[SANtricity System Manager Help for 11.6x]
+* https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html[SANtricity System Manager Online Help for 11.8x^]
+* https://docs.netapp.com/us-en/e-series-santricity-117/system-manager/index.html[SANtricity System Manager Online Help for 11.7x^]
+* https://docs.netapp.com/us-en/e-series-santricity-116/index.html[SANtricity System Manager Online Help for 11.6x^]
