@@ -37,8 +37,27 @@ a|Drive firmware is cryptographically signed. Signatures are checked during init
 a|External Key Server Management - Certificate Key Size 
 a|The new default certificate key size is 3072 bits (from 2048). Key sizes up to 4096 bits are supported. An NVSRAM bit must be changed in order to support the non-default key sizes.  
 
-a|Support for larger dynamic disk pool sizes using drives with 512b block sizes 
-a|Customers that utilize the Version 1 pool version type may now have a 48 TB maximum size disk pool. The older version supports up to a 24 TB disk pool size. If existing disk pools are to be converted to the larger size, all volumes must be removed first. A downgrade operation is restricted when a Version 1 disk pool exists.  
+Key size selection values are as follows:
+ 
+* DEFAULT = 0
+* LENGTH 2048 = 1
+* LENGTH 3072 = 2
+* LENGTH 4096 = 3
+ 
+To change key size to 4096 via the SMcli:
+
+`set controller[b] globalnvsrambyte[0xc0]=3;`
+`set controller[a] globalnvsrambyte[0xc0]=3;`
+
+Interrogate the key size: 
+
+`show allcontrollers globalnvsrambyte[0xc0];`
+
+
+a|Disk Pool Improvements
+a|Disk pools created with controllers running 11.80 or above will be _Version 1_ pools as opposed to _Version 0_ pools. A downgrade operation is restricted when a _Version 1_ disk pool exists.
+ 
+The version of a disk pool can be identified in the storage array profile.
 
 a|System Manager and Unified Manager will not launch unless minimum browser requirements are met
 a|A minimum version of the browser is required before either System Manager or Unified Manager will launch. The following are the minimum supported versions:
