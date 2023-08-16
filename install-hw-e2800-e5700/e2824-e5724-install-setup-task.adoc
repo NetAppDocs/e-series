@@ -10,3 +10,17 @@ summary: These instructions describe how to install and set up your new storage 
 
 [.lead]
 These instructions describe how to install and set up your new storage system and provide links to additional content.
+
+You can choose one of the following formats to guide you through installing and setting up your new storage system.
+
+* *PDF*
++
+This is a printable PDF of step-by-step instructions with live links to additional content. 
+
+** https://library.netapp.com/ecm/ecm_download_file/ECMLP2842063[E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C PDF poster^]
+
+* *Online instructions*
++
+These are the setup instructions described on this site. Start with one of the following topics to get started.
+
+** xref:e2824-e5724-prepare-task.adoc[Prepare to install E5724, EF570, EF280, E2812, E2824, DE212C, and DE224C]
