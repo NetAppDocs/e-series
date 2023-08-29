@@ -110,7 +110,7 @@ a|The following CLI commands were implemented to support job-based volume parity
 For more information on the new job-based volume parity scan CLI commands, see the https://docs.netapp.com/us-en/e-series-cli/whats-new.html[SANtricity CLI What's New].
 
 a|MFA Support for Unified Manager
-a|Multi-Factor Authentication (MFA) support is now supported under Unified Manager.
+a|Multi-factor authentication (MFA) support is now supported under Unified Manager.
 
 a|Toggle icon for front-back hardware view
 a|In the Hardware view of System Manager/Unified Manager, the following two tabs are now available to control the front and back view:
