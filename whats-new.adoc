@@ -60,7 +60,9 @@ a|Disk pools created with controllers running 11.80 or above will be _Version 1_
 The version of a disk pool can be identified in the storage array profile.
 
 a|System Manager and Unified Manager will not launch unless minimum browser requirements are met
-a|A minimum version of the browser is required before either System Manager or Unified Manager will launch. The following are the minimum supported versions:
+a|A minimum version of the browser is required before either System Manager or Unified Manager will launch. 
+
+The following are the minimum supported versions:
 
 * Firefox minimum version 80 
 * Chrome minimum version 89 
@@ -82,48 +84,51 @@ a|EF300 and EF600 controller configurations without NVMe drives on the base tray
 a|USB ports disabled for all platforms
 a|USB ports are now disabled on all platforms. 
 
-a|#Increased SSD Read Cache maximum#
-a|#SSD Read cache maximum increased from 5TB to 8TB#
+a|Increased SSD Read Cache maximum
+a|SSD Read cache maximum increased from 5TB to 8TB.
 
-a|#Assign all flash read cache to a single volume in duplex configs#
-a|#All SSD Read cache can now be assigned to the same volume on duplex systems whenever a single volume uses the entire SSD cache.#
+a|Assign all flash read cache to a single volume in duplex configs
+a|All SSD Read cache can now be assigned to the same volume on duplex systems whenever a single volume uses the entire SSD cache.
 
-a|#Drive serial number added to drive summary table of storage array profile#
-a|#For the REST API, the drive serial number has been added to the drive summary table in the Storage Array profile.#
+a|Drive serial number added to drive summary table of storage array profile
+a|The drive serial number has been added to the drive summary table in the Storage Array profile.
 
-a|#Added dom0-misc-logs to daily ASUP#
-a|#For the REST API, the dom0-misc logs for controller A and B have been added to the daily ASUPs.#
+a|Added dom0-misc-logs to daily ASUP
+a|The dom0-misc logs for controller A and B have been added to the daily ASUPs.
 
-a|#Port 443 now used by default for application communicating with embedded web services.#
-a|#Port 443 is now used by the default when communicating with the embedded webserver. The  -useLegacyTransferPort CLI command has been added for those who instead want to use the legacy 8443 transfer port. For more information on the new -useLegacyTransferPort CLI command, see the https://docs.netapp.com/us-en/e-series-cli/whats-new.html[SANtricity CLI What's New].#
+a|Port 443 now used by default for application communicating with embedded web services
+a|Port 443 is now used by the default when communicating with the embedded webserver. The  `-useLegacyTransferPort` CLI command has been added for those who instead want to use the legacy 8443 transfer port. For more information on the new -useLegacyTransferPort CLI command, see the https://docs.netapp.com/us-en/e-series-cli/whats-new.html[SANtricity CLI What's New].
 
-a|#Scan volume parity progress capability#
-a|#The following CLI commands were implemented to support job-based volume parity scan operations:
+a|Scan volume parity progress capability
+a|The following CLI commands were implemented to support job-based volume parity scan operations:
+
 * Start check volume parity
 * Save check volume parity job errors
 * Stop check volume parity job
 * Show check volume parity job or jobs
-For more information on the new job-based volume parity scan CLI commands, see the https://docs.netapp.com/us-en/e-series-cli/whats-new.html[SANtricity CLI What's New].#
 
-a|#MFA Support for Unified Manager#
-a|#Multi-Factor Authentication (MFA) support is now available under Unified Manager.#
+For more information on the new job-based volume parity scan CLI commands, see the https://docs.netapp.com/us-en/e-series-cli/whats-new.html[SANtricity CLI What's New].
 
-a|#Toggle icon for front-back hardware view#
-a|#In the Hardware view of System Manager/Unified Manager, the following two tabs are now available to control the front/view: 
+a|MFA Support for Unified Manager
+a|Multi-Factor Authentication (MFA) support is now supported under Unified Manager.
+
+a|Toggle icon for front-back hardware view
+a|In the Hardware view of System Manager/Unified Manager, the following two tabs are now available to control the front and back view:
+
 * Drives tab
-* Controllers & Components tab#
+* Controllers & Components tab
 
-a|#vCenter Storage plugin#
-a|#The vCenter Storage plugin has been updated for compatibility with the E-Series 11.80 release.#
+a|vCenter Storage plugin
+a|The vCenter Storage plugin has been updated for compatibility with the E-Series 11.80 release.
 
-a|#Web Services Proxy 6.0#
-a|#The Web Services Proxy has been updated to version 6.0 for compatibility with the E-Series 11.80 release.#
+a|Web Services Proxy 6.0
+a|The Web Services Proxy has been updated to version 6.0 for compatibility with the E-Series 11.80 release.
 
-a|#Removed ASUP case creation flag for E-Series nominal and maximum temperature exceeded events#
-a|#Case creation flag is now disabled for nominal and maximum temperature exceeded events requiring no action.#
+a|Removed ASUP case creation flag for E-Series nominal and maximum temperature exceeded events
+a|Case creation flag is now disabled for nominal and maximum temperature exceeded events requiring no action.
 
-a|#Priority case creation flag enabled for the 0x1209 Mel event#
-a|#A case creation flag is now created for the `MEL_EV_DEGRADE_CHANNEL 0x1209` MEL event.#
+a|Priority case creation flag enabled for the 0x1209 Mel event
+a|A case creation flag is now created for the `MEL_EV_DEGRADE_CHANNEL 0x1209` MEL event.
 
 |===
 
