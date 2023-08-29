@@ -122,12 +122,8 @@ a|#The Web Services Proxy has been updated to version 6.0 for compatibility with
 a|#Removed ASUP case creation flag for E-Series nominal and maximum temperature exceeded events#
 a|#Case creation flag is now disabled for nominal and maximum temperature exceeded events requiring no action.#
 
-a|#Support external key management CSR with key over 2048 bits#
-a|#The RSA Key to sign the CSR for External Key Management now supports 3072 bits.#
-
 a|#Priority case creation flag enabled for the 0x1209 Mel event#
 a|#A case creation flag is now created for the `MEL_EV_DEGRADE_CHANNEL 0x1209` MEL event.#
-
 
 |===
 
