@@ -22,7 +22,7 @@ E-Series arrays are available in the following models:
 * EF570 series -- midrange all flash
 * EF600 series -- midrange all flash, all NVMe
 
-NOTE: For SANtricity OS releases 11.80GA and greater, all USB ports are disabled on the E2800, EF280, E5700, EF570, EF600, and EF300 arrays. 
+NOTE: For SANtricity OS 11.80GA and greater, all USB ports are disabled on the E2800, EF280, E5700, EF570, EF600, and EF300 arrays. 
 
 == E2800 models
 
@@ -115,7 +115,7 @@ Supports the following drives with a single host interface card (HIC) per contro
 
 * SAS SSD drives with expansion shelves: Any mixture of DE212C, DE224C, and DE460C shelves not to exceed a total of 96 SAS SSD drive slots and 4 expansion shelves unless only DE212C shelves are used, then 8 DE212C shelves are allowed. For example, 1 DE460C shelf plus 1 DE224C shelf plus 1 DE212C shelf, or 4 DE224C shelves, or 8 DE212C shelves.
 
-NOTE: For SANtricity OS releases 11.80GA and greater, the EF300 supports expansion shelf configurations with no drives in the base tray. When using this configuration, ensure the drives are populated within the expansion shelf and properly connected to the base tray before powering on the system.   
+NOTE: For SANtricity OS 11.80GA and greater, the EF300 supports expansion shelf configurations with no drives in the base tray. When using this configuration, ensure the drives are populated within the expansion shelf and properly connected to the base tray before powering on the system.   
 
 a|
 Interfaces:
@@ -235,7 +235,7 @@ Supports the following drives with a single host interface card (HIC) per contro
 
 * SAS SSD drives with expansion shelves: Any mixture of DE212C, DE224C, and DE460C shelves not to exceed a total of 96 SAS SSD drive slots and 7 expansion shelves unless only DE212C shelves are used, then 8 DE212C shelves are allowed. For example, 1 DE460C shelf plus 1 DE224C shelf plus 1 DE212C shelf, or 4 DE224C shelves, or 8 DE212C shelves
 
-NOTE: For SANtricity OS releases 11.80GA and greater, the EF600 supports expansion shelf configurations with no drives in the base tray. When using this configuration, ensure the drives are populated within the expansion shelf and properly connected to the base tray before powering on the system.
+NOTE: For SANtricity OS 11.80GA and greater, the EF600 supports expansion shelf configurations with no drives in the base tray. When using this configuration, ensure the drives are populated within the expansion shelf and properly connected to the base tray before powering on the system.
 
 a|
 Interfaces:
