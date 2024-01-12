@@ -358,10 +358,6 @@ If the status is not Optimal or if any of the Attention LEDs are on, confirm tha
 +
 NOTE: If you cannot resolve the problem, contact technical support.
 
-. Upgrade to the latest firmware and NVSRAM for the controller.
-+
-See https://kb.netapp.com/onprem/E-Series/Hardware/How_to_upgrade_E-Series_SANtricity_firmware_using_SANtricity_System_Manager_(SAM)[How to upgrade E-Series SANtricity firmware using SANtricity System Manager (SAM)^] for more information.
-
 . Click menu:Hardware[Support > Upgrade Center] to ensure that the latest version of SANtricity OS is installed.
 +
 As needed, install the latest version.
