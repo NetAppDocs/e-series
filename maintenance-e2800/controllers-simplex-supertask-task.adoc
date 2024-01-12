@@ -399,6 +399,7 @@ The controller will reboot automatically.
  .. Confirm that the controller's *Status* is Optimal.
  .. If the status is not Optimal, highlight the controller, and select *Place Online*.
 +
+
 . Collect support data for your storage array using SANtricity System Manager.
  .. Select menu:Support[Support Center > *Diagnostics].
  .. Select *Collect Support Data*.
