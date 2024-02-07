@@ -1,7 +1,7 @@
 ---
 permalink: config-windows/install-configure-host-utilities-task.html
 sidebar: sidebar
-keywords: Windows Unified Host Utilities, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries
+keywords: Windows Unified Host Utilities, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries, SMcli, SMdevices
 summary: Install Windows Unified Host Utilities for Windows express method.
 ---
 = Install and configure Windows Unified Host Utilities
@@ -23,4 +23,4 @@ The versions are listed in a column within each supported configuration.
 +
 NOTE: This utilities package cannot be installed using the SANtricity Storage Manager installer.
 +
-NOTE: Alternatively, you can use the SANtricity SMdevices utility to perform the same functions as the Unified Host Utility tool. The SMdevices utility is included as part of the SMutils package. The SMutils package is a collection of utilities to verify what the host sees from the storage array. It is included as part of the SANtricity software installation.
+NOTE: Alternatively, you can use the SMcli command `-identifyDevices` to perform the same functions as the Unified Host Utility tool. The SMcli is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricity System Manager, refer to the https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html[Download command line interface (CLI) topic under the SANtricity System Manager Online Help^].
