@@ -285,6 +285,6 @@ In the last step, you review a summary of the volumes you intend to create and m
 
 * In the vSphere Client, create datastores for the volumes.
 * Perform any operating system modifications necessary on the application host so that the applications can use the volume.
-* Run either the host-based `hot_add` utility or an operating system-specific utility (available from a third-party vendor), and then run the `SMdevices` utility to correlate volume names with host storage array names.
+* Run the operating system-specific utility (available from a third-party vendor), and then run the SMcli command `-identifyDevices` to correlate volume names with host storage array names.
 +
-The SMdevices utility is included as part of the Secure CLI (SMcli). The SMcli is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricity System Manager, refer to the https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html[Download command line interface (CLI) topic under the SANtricity System Manager Online Help^]. 
+The SMcli is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricity System Manager, refer to the https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html[Download command line interface (CLI) topic under the SANtricity System Manager Online Help^].

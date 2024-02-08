@@ -113,7 +113,7 @@ You can use either of the following options to use the new iSCSI ports. The exac
 . Use the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] tool to configure the iSCSI hosts.
 . Edit the host partition to add the iSCSI host port IDs and remove the FC host port IDs.
 . After the iSCSI hosts reboot, use the applicable procedures on the hosts to register the volumes and to make them available to your operating system.
- ** Depending on your operating system, two utilities are included with the storage management software (hot_add and SMdevices). These utilities help register the volumes with the hosts and also show the applicable device names for the volumes.
+ ** You can use the SMcli command `-identifyDevices` to show the applicable device names for the volumes. The SMcli is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricity System Manager, refer to the https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html[Download command line interface (CLI) topic under the SANtricity System Manager Online Help^].
  ** You might need to use specific tools and options that are provided with your operating system to make the volumes available (that is, assign drive letters, create mount points, and so on). Refer to your host operating system documentation for details.
 
 == Complete iSCSI to FC/iSCSI conversion
@@ -139,7 +139,7 @@ You can use either of the following options to use the new FC ports. The exact s
 . Use the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] tool to configure the FC hosts.
 . Edit the host partition to add the FC host port IDs and remove the iSCSI host port IDs.
 . After the new FC hosts reboot, use the applicable procedures on the hosts to register the volumes and to make them available to your operating system.
- ** Depending on your operating system, two utilities are included with the storage management software (hot_add and SMdevices). These utilities help register the volumes with the hosts and also show the applicable device names for the volumes.
+ ** You can use the SMcli command `-identifyDevices` to show the applicable device names for the volumes. The SMcli is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricity System Manager, refer to the https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html[Download command line interface (CLI) topic under the SANtricity System Manager Online Help^].
  ** You might need to use specific tools and options that are provided with your operating system to make the volumes available (that is, assign drive letters, create mount points, and so on). Refer to your host operating system documentation for details.
 
 == Complete FC/iSCSI to FC conversion
@@ -165,7 +165,8 @@ You can use either of the following options to use the new FC ports. The exact s
 . Use the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] tool to configure the FC hosts.
 . Edit the host partition to add the FC host port IDs and remove the iSCSI host port IDs.
 . After the new FC hosts reboot, use the applicable procedures on the hosts to register the volumes and to make them available to your operating system.
- ** Depending on your operating system, two utilities are included with the storage management software (hot_add and SMdevices). These utilities help register the volumes with the hosts and also show the applicable device names for the volumes.
+ ** You can use the SMcli command `-identifyDevices` to show the applicable device names for the volumes. The SMcli is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricity System Manager, refer to the https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html[Download command line interface (CLI) topic under the SANtricity System Manager Online Help^].
+ 
  ** You might need to use specific tools and options that are provided with your operating system to make the volumes available (that is, assign drive letters, create mount points, and so on). Refer to your host operating system documentation for details.
 
 == Complete FC/iSCSI to iSCSI conversion
@@ -190,5 +191,5 @@ You can use either of the following options to use the new iSCSI ports. The exac
 . Use the https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability Matrix^] tool to configure the ISCSI hosts.
 . Edit the host partition to add the iSCSI host port IDs and remove the FC host port IDs.
 . After the new iSCSI hosts reboot, use the applicable procedures on the hosts to register the volumes and to make them available to your operating system.
- ** Depending on your operating system, two utilities are included with the storage management software (hot_add and SMdevices). These utilities help register the volumes with the hosts and also show the applicable device names for the volumes.
+ ** You can use the SMcli command `-identifyDevices` to show the applicable device names for the volumes. The SMcli is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricity System Manager, refer to the https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html[Download command line interface (CLI) topic under the SANtricity System Manager Online Help^].
  ** You might need to use specific tools and options that are provided with your operating system to make the volumes available (that is, assign drive letters, create mount points, and so on). Refer to your host operating system documentation for details.
