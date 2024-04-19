@@ -20,7 +20,6 @@ Find the SAS addresses using the HBA utility, and then use the HBA BIOS to make 
 Review the guidelines for HBA utilities:
 
 * Most HBA vendors offer an HBA utility.
-* Host I/O ports might automatically register if the host context agent is installed.
 
 .Steps
 

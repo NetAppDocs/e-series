@@ -14,7 +14,9 @@ If you are using SANtricity software 11.53 or earlier, you can install the SANtr
 
 SANtricity Storage Manager includes the command line interface (CLI) for additional management tasks, and also the Host Context Agent for pushing host configuration information to the storage array controllers through the I/O path.
 
-NOTE: If you are using SANtricity software 11.60 and newer, you do not need to follow these steps. The SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricity System Manager, refer to the _Download command line interface (CLI)_ topic under the SANtricity System Manager Online Help.
+NOTE: If you are using SANtricity software 11.60 and newer, you do not need to follow these steps. The SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricity System Manager, refer to the link:https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html[Download command line interface (CLI)_ topic under the SANtricity System Manager Online Help^]
+ 
+NOTE: Starting with SANtricity software version 11.80.1, the Host Context Agent is no longer supported.
 
 .Before you begin
 

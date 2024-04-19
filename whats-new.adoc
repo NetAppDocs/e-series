@@ -13,6 +13,25 @@ summary: New features in SANtricity OS.
 [.lead]
 The following table describes new features in SANtricity OS 11.8 for embedded management of EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
 
+== New features in Version 11.80.1
+
+[cols="35h,~",options="header"]
+|===
+|New feature |Description
+a|`-identifyDevices` parameter
+a|A new `-identifyDevices` parameter is now available in the SMcli. This new parameter allows you to look for all SCSI native block devices that are associated with your Storage Arrays. For more information, see link: https://docs.netapp.com/us-en/e-series-cli/get-started/downloadable-smcli-parameters.html#identify-Devices[Downloadable SMcli command line parameters^].
+
+a|Ethernet Kernel Statistics 
+a|A new Ethernet Kernel Statistics option is now available under the View iSCSI Statistics Packages page in System Manager. This new option allows you to view statistics for platform kernel drivers of the iSCSI device. For more information, see link: https://docs.netapp.com/us-en/e-series-santricity/sm-support/view-iscsi-statistics-packages-support.html[View iSCSI Statistics Packages^].
+
+a|vCenter Storage plugin
+a|The vCenter Storage plugin has been updated for compatibility with the E-Series 11.80.1 release.
+
+a|Web Services Proxy 
+a|The Web Services Proxy has been updated to version 6.1 for compatibility with the E-Series 11.80.1 release.
+
+|===
+
 == New features in Version 11.80
 
 [cols="35h,~",options="header"]
