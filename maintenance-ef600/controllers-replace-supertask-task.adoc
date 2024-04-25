@@ -23,14 +23,14 @@ When you replace a failed controller canister, you must remove the battery, powe
 ** The amber Attention LED on the controller canister is on, indicating that the controller has a fault.
 +
 ====
-NOTE: The controller's amber Attention LED  will be turned off whenever the following service not allowed conditions exist:
+NOTE: The controller's amber Attention LED  will be turned off whenever the following conditions exist:
 
-*** Alt Power Supply is failed
-*** Alt drive Path Failed
+*** Alt power supply is failed
+*** Alt drive path Failed
 *** Alt local ESM Failed
 *** Drawer is open/missing
 *** Fan is failed/missing
-*** Power Supply missing
+*** Power supply missing
 ====
 
 * Make sure you have the following:
