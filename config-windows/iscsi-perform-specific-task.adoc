@@ -204,7 +204,7 @@ You verify Internet Protocol (IP) network connections by using ping tests to ens
  ** If jumbo frames are not enabled, run this command:
 +
 ----
-ping -s <hostIP\> <targetIP\>
+ping -S <hostIP\> <targetIP\>
 ----
 
  ** If jumbo frames are enabled, run the ping command with a payload size of 8,972 bytes. The IP and ICMP combined headers are 28 bytes, which when added to the payload, equals 9,000 bytes. The -f switch sets the `don’t fragment (DF)` bit. The -l switch allows you to set the size. These options allow jumbo frames of 9,000 bytes to be successfully transmitted between the iSCSI initiator and the target.

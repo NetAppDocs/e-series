@@ -402,12 +402,12 @@ The controller will reboot automatically.
 
 . When the controller is back online, check whether an NVSRAM mismatch is reported in Recovery Guru. 
   .. If an NVSRAM mismatch is reported, upgrade NVSRAM using the following SMcli command: 
-  + 
-  ----
-  SMcli <controller A IP> <controller B IP> -u admin -p <password> -k -c "download storageArray NVSRAM file=\"C:\Users\testuser\Downloads\NVSRAM .dlp file>\" forceDownload=TRUE;"
-  ----
-  +
-  The `-k` parameter is needed if the array is not https secure. 
++ 
+----
+SMcli <controller A IP> <controller B IP> -u admin -p <password> -k -c "download storageArray NVSRAM file=\"C:\Users\testuser\Downloads\NVSRAM .dlp file>\" forceDownload=TRUE;"
+----
++
+The `-k` parameter is needed if the array is not https secure. 
 
 +
 NOTE: If the SMcli command cannot be completed, contact https://www.netapp.com/company/contact-us/support/[NetApp Technical Support^] or log in to the https://mysupport.netapp.com[NetApp Support Site^] to create a case. 
