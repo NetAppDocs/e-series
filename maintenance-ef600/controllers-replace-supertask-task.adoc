@@ -112,7 +112,6 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 +
 Because you must remove the HIC from the failed controller canister, you must remove any SFPs from the HIC ports. When you reconnect the cables, you can move those SFPs to the new controller canister.
 
-. Confirm that the Cache Active LED on the back of the controller is off.
 . Squeeze the handles on either side of the controller, and pull back until it releases from the shelf.
 +
 image::../media/remove_controller_5.png[]
