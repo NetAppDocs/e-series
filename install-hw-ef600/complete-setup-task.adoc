@@ -105,6 +105,8 @@ image:../media/ethernet_callout.png[]
 |===
 +
 . Open a browser and use the default IP address (169.254.128.101) to establish a connection to the controller. The controller sends back a self-signed certificate. The browser informs you that the connection is not secure.
++
+NOTE: For platforms running SANtricity 11.60 and greater, the default subnet mask is 255.255.0.0.
 . Follow the browser's instructions to proceed and launch SANtricity System Manager.
 +
 NOTE: If you are unable to establish a connection, verify that you are not receiving network configuration from a DHCP server.

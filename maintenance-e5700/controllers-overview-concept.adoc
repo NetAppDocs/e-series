@@ -22,6 +22,15 @@ You can determine if you have a failed controller canister in two ways:
 
 * The Recovery Guru in SANtricity System Manager directs you to replace the controller canister.
 * The amber Attention LED on the controller canister is on, indicating that the controller has a fault.
++
+====
+NOTE: The controller's amber Attention LED  will be turned off whenever the following replacement conditions exist:
+
+*** Alt drive path failed
+*** Drawer is open/missing
+*** Fan is failed/missing
+*** Power supply missing
+====
 
 image::../media/e5700_attention_led_callout.png[]
 

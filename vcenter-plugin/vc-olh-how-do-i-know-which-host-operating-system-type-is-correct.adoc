@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: vcenter-plugin/vc-olh-how-do-i-know-which-host-operating-system-type-is-correct.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
-summary: The Host Operating System Type field contains the operating system of the host. You can select the recommended host type from the drop-down list or allow the Host Context Agent (HCA) to configure the host and appropriate host operating system type.
+summary: The Host Operating System Type field contains the operating system of the host. You can select the recommended host type from the drop-down list.
 ---
 
 = How do I know which host operating system type is correct?
@@ -13,7 +13,7 @@ summary: The Host Operating System Type field contains the operating system of t
 :imagesdir: ./media/
 
 [.lead]
-The Host Operating System Type field contains the operating system of the host. You can select the recommended host type from the drop-down list or allow the Host Context Agent (HCA) to configure the host and appropriate host operating system type.
+The Host Operating System Type field contains the operating system of the host. You can select the recommended host type from the drop-down list.
 
 The host types that appear in the drop-down list depend on the storage array model and the firmware version. The most recent versions display the most common options first, which are the most likely to be appropriate. Appearance on this list does not imply the option is fully supported.
 
@@ -53,7 +53,3 @@ Some of the following host types might appear in the list:
 |If your host operating system type is set to this value, use the Windows (clustered or non-clustered) setting instead.
 |===
 
-After the HCA is installed and the storage is attached to the host, the HCA sends the host topology to the storage controllers through the I/O path. Based on the host topology, the storage controllers automatically define the host and the associated host ports, and then set the host type.
-
-[NOTE]
-If the HCA does not select the recommended host type, you must manually set the host type.

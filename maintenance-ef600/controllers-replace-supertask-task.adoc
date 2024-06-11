@@ -21,6 +21,17 @@ When you replace a failed controller canister, you must remove the battery, powe
 * Determine if you have a failed controller canister in one of two ways:
 ** The Recovery Guru in SANtricity System Manager directs you to replace the controller canister.
 ** The amber Attention LED on the controller canister is on, indicating that the controller has a fault.
++
+====
+NOTE: The controller's amber Attention LED will be turned off whenever the following replacement conditions exist:
+
+*** Alt power supply failed
+*** Alt drive path failed
+*** Drawer is open/missing
+*** Fan is failed/missing
+*** Power supply missing
+====
+
 * Make sure you have the following:
 ** A replacement controller canister with the same part number as the controller canister you are replacing.
 ** An ESD wristband, or you have taken other antistatic precautions.
@@ -101,7 +112,6 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 +
 Because you must remove the HIC from the failed controller canister, you must remove any SFPs from the HIC ports. When you reconnect the cables, you can move those SFPs to the new controller canister.
 
-. Confirm that the Cache Active LED on the back of the controller is off.
 . Squeeze the handles on either side of the controller, and pull back until it releases from the shelf.
 +
 image::../media/remove_controller_5.png[]
@@ -352,13 +362,25 @@ When communication with the other controller is reestablished:
  ** The amber Attention LED remains on.
  ** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
 
-. When the controller is back online, confirm that its status is Optimal and check the controller shelf's Attention LEDs.
+. When the controller is back online, check whether an NVSRAM mismatch is reported in Recovery Guru. 
+.. If an NVSRAM mismatch is reported, upgrade NVSRAM using the following SMcli command: 
++ 
+----
+SMcli <controller A IP> <controller B IP> -u admin -p <password> -k -c "download storageArray NVSRAM file=\"C:\Users\testuser\Downloads\NVSRAM .dlp file>\" forceDownload=TRUE;"
+----
++
+The `-k` parameter is needed if the array is not https secure. 
+
++
+NOTE: If the SMcli command cannot be completed, contact https://www.netapp.com/company/contact-us/support/[NetApp Technical Support^] or log in to the https://mysupport.netapp.com[NetApp Support Site^] to create a case. 
+
+. Confirm the status of the system is Optimal and check the controller shelf's Attention LEDs.
 +
 If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller canister is installed correctly. If necessary, remove and reinstall the controller canister.
 +
 NOTE: If you cannot resolve the problem, contact technical support.
 
-. Click menu:Hardware[Support > Upgrade Center] to ensure that the latest version of SANtricity OS is installed.
+. Click menu:Hardware[Support > Upgrade Center] to ensure that the firmware and NVSRAM versions on the system are at the desired levels.
 +
 As needed, install the latest version.
 
