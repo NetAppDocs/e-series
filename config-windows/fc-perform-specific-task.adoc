@@ -44,7 +44,6 @@ Review these guidelines for HBA utilities:
 * Most HBA vendors offer an HBA utility. You will need the correct version of HBA for your host operating system and CPU. Examples of FC HBA utilities include:
  ** Emulex OneCommand Manager for Emulex HBAs
  ** QLogic QConverge Console for QLogic HBAs
-* Host I/O ports might automatically register if the host context agent is installed.
 
 .Steps
 

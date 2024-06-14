@@ -339,16 +339,28 @@ image:../media/e5700_hic_3_callouts_maint-e5700.gif[]
 +
 CAUTION: *Possible loss of data access* -- If the controller you just installed shows one these codes, and the other controller is reset for any reason, the second controller also could lock down.
 
-. When the controller is back online, confirm that its status is Optimal and check the controller shelf's Attention LEDs.
+. When the controller is back online, check whether an NVSRAM mismatch is reported in Recovery Guru. 
+.. If an NVSRAM mismatch is reported, upgrade NVSRAM using the following SMcli command: 
++ 
+----
+SMcli <controller A IP> <controller B IP> -u admin -p <password> -k -c "download storageArray NVSRAM file=\"C:\Users\testuser\Downloads\NVSRAM .dlp file>\" forceDownload=TRUE;"
+----
++
+The `-k` parameter is needed if the array is not https secure. 
+
++
+NOTE: If the SMcli command cannot be completed, contact https://www.netapp.com/company/contact-us/support/[NetApp Technical Support^] or log in to the https://mysupport.netapp.com[NetApp Support Site^] to create a case. 
+
+. Confirm the status of the system is Optimal and check the controller shelf's Attention LEDs.
 +
 If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller canister is installed correctly. If necessary, remove and reinstall the controller canister.
 +
 NOTE: If you cannot resolve the problem, contact technical support.
-
-. If required, redistribute all volumes back to their preferred owner.
+  
+. If required, redistribute all volumes back to their preferred owner using SANtricity System Manager.
  .. Select menu:Storage[Volumes].
  .. Select menu:More[Redistribute volumes].
-. Click menu:Hardware[Support > Upgrade Center] to ensure that the latest version of SANtricity OS software (controller firmware) is installed.
+. Click menu:Hardware[Support > Upgrade Center] to ensure that the firmware and NVSRAM versions on the system are at the desired levels.
 +
 As needed, install the latest version.
 

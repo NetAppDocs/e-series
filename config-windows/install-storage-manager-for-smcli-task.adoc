@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install Storage Manager Windows, install CLI Windows, install command line interface, install Host Context Agent, install HCA, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: Install Storage Manager for CLI and HCA in Windows express method.
 ---
-= Install SANtricity Storage Manager for SMcli and Host Context Agent (HCA)
+= Install SANtricity Storage Manager for SMcli (SANtricity software version 11.53 or earlier)
 :experimental:
 :icons: font
 :imagesdir: ../media/
@@ -14,7 +14,9 @@ If you are using SANtricity software 11.53 or earlier, you can install the SANtr
 
 SANtricity Storage Manager includes the command line interface (CLI) for additional management tasks, and also the Host Context Agent for pushing host configuration information to the storage array controllers through the I/O path.
 
-NOTE: If you are using SANtricity software 11.60 and newer, you do not need to follow these steps. The SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricity System Manager, refer to the _Download command line interface (CLI)_ topic under the SANtricity System Manager Online Help.
+NOTE: If you are using SANtricity software 11.60 and newer, you do not need to follow these steps. The SANtricity Secure CLI (SMcli) is included in the SANtricity OS and downloadable through the SANtricity System Manager. For more information on how to download the SMcli through the SANtricity System Manager, refer to the link:https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html[Download command line interface (CLI) topic under the SANtricity System Manager Online Help^]
+ 
+NOTE: Starting with SANtricity software version 11.80.1, the Host Context Agent is no longer supported.
 
 .Before you begin
 

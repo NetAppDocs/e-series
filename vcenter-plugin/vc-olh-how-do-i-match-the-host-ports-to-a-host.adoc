@@ -20,4 +20,3 @@ When you have this information, select the host port identifiers that have logge
 
 CAUTION: Make sure you select the appropriate host port identifiers for the host you are creating. If you associate the wrong host port identifiers, you might cause unintended access from another host to this data.
 
-If you are automatically creating hosts using the host context agent (HCA) installed on each host, the HCA should automatically associate the host port identifiers with each host and configure them appropriately.
