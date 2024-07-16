@@ -24,9 +24,6 @@ a|A new `-identifyDevices` parameter is now available in the SMcli. This new par
 a|Ethernet Kernel Statistics 
 a|A new Ethernet Kernel Statistics option is now available under the View iSCSI Statistics Packages page in System Manager. This new option allows you to view statistics for platform kernel drivers of the iSCSI device. For more information, see link: https://docs.netapp.com/us-en/e-series-santricity/sm-support/view-iscsi-statistics-packages-support.html[View iSCSI Statistics Packages^].
 
-a|Improved filtering for Unassigned and Secure Enabled drives within System Manager
-a|System Manager now filters out Unassigned and Secured Enabled drives when selecting manual drives. As such, the System Manager drive selection count now matches the automatic drive selection candidates list found under the CLI and REST API. A unique icon and hover text is now also applied to Unassigned and Secure Enabled drives within System Manager.
-
 a|Added ability to block IP addresses through REST API endpoint
 a|Users can now block specific IP addresses through the Settings endpoint (`/devmgr/v2/settings`). Once configured through the Settings endpoint, only IP addresses specified through a whitelist can communicate with the storage device. This new feature supports IPv4 and IPv6 address lists.
 
