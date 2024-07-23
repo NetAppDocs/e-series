@@ -1,7 +1,7 @@
 ---
 permalink: getting-started/learn-software-concept.html
 sidebar: sidebar
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, E-Series software, E-Series user interface
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, SANtricity, E-Series software, E-Series user interface
 summary: E-Series systems include SANtricity software for storage provisioning and other tasks.
 ---
 = SANtricity software overview
@@ -72,7 +72,7 @@ View diagnostic data, manage upgrades, and configure AutoSupport, which monitors
 
 == SANtricity Unified Manager
 
-Unified Manager is web-based software used for managing your entire domain. From a central view, you can see status for all newer E-Series and EF-Series arrays, such as the E2800, EF280, EF300, E5700, EF570, and EF600. You can also perform batch operations on selected storage arrays.
+Unified Manager is web-based software used for managing your entire domain. From a central view, you can see status for all newer E-Series and EF-Series arrays, such as the E4000, E2800, EF280, EF300, E5700, EF570, and EF600. You can also perform batch operations on selected storage arrays.
 
 Unified Manager is installed on a management server along with the Web Services Proxy. To access Unified Manager, you open a browser and enter the URL pointing to the server where the Web Services Proxy is installed.
 

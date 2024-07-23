@@ -15,6 +15,7 @@ A storage array includes shelves, controllers, drives, software, and firmware. T
 
 E-Series arrays are available in the following models:
 
+* E4000 series -- entry-level hybrid 
 * E2800 series -- entry-level hybrid
 * EF280 series -- entry-level all flash
 * EF300 series -- entry-level all flash, all NVMe
@@ -23,6 +24,46 @@ E-Series arrays are available in the following models:
 * EF600 series -- midrange all flash, all NVMe
 
 NOTE: For SANtricity OS 11.80GA and greater, all USB ports are disabled on the E2800, EF280, E5700, EF570, EF600, and EF300 arrays. 
+
+== E4000 models
+
+[cols="35h,~",options="header"]
+|===
+a|Component a|Specification
+
+a|Rack sizes:
+
+a|
+* 2U12 (2 rack units; 12 drives)
+* 2U24 (2 rack units; 24 drives)
++
+image::
+
+* 4U60 (4 rack units; 60 drives)
++
+image::
+
+a|
+Drives:
+
+a|
+Supports the following drive types:
+
+* 3.5" NL-SAS (up to 180)
+* 2.5" SAS SSD (up to 120)
+* 2.5" SAS HDD (up to 180)
+
+a|
+Interfaces:
+
+a|
+Available with the following interfaces:
+
+* 12Gb SAS
+* 10Gb iSCSI
+* 32Gb Fibre Channel
+
+|===
 
 == E2800 models
 
