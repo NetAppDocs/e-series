@@ -13,6 +13,16 @@ summary: New features in SANtricity OS.
 [.lead]
 The following table describes new features in SANtricity OS 11.8 for embedded management of EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
 
+== New features in Version 11.80.1R1
+
+[cols="35h,~",options="header"]
+|===
+|New feature |Description
+a|Increased key size length of new self-signed and CA-signed management certificates.
+a|The management certificate key size length for SANtricity System Manager and Unified Manager applications self-signed certificate have been modified from 2048 to 3072 bits. The change applies to newly generated self-signed and CA-signed certificates from the SANtricity applications. The key length is fixed and is not affected by the default key size definitions in NVSRAM. 
+
+|===
+
 == New features in Version 11.80.1
 
 [cols="35h,~",options="header"]
