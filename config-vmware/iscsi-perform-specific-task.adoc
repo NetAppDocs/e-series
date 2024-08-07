@@ -76,7 +76,7 @@ Make sure you have the following:
 
 This task describes how to access the iSCSI port configuration from the Hardware page. You can also access the configuration from menu:System[Settings > Configure iSCSI ports].
 
-NOTE: For additional information on how to set up the array-side networking on your VMware configuration, see the following technical report: https://www.netapp.com/us/media/tr-4789.pdf[VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.x and 7.x].
+NOTE: For additional information on how to set up the array-side networking on your VMware configuration, see the following technical report: https://www.netapp.com/pdf.html?item=/media/17017-tr4789pdf.pdf[VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.x and 7.x^].
 
 .Steps
 
