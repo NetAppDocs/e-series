@@ -13,6 +13,16 @@ summary: New features in SANtricity OS.
 [.lead]
 The following table describes new features in SANtricity OS 11.8 for embedded management of EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
 
+== New features in Version 11.80.1R1
+
+[cols="35h,~",options="header"]
+|===
+|New feature |Description
+a|Increased key size length of new self-signed and CA-signed management certificates.
+a|The management certificate key size length for SANtricity System Manager and Unified Manager applications self-signed certificate have been modified from 2048 to 3072 bits. The change applies to newly generated self-signed and CA-signed certificates from the SANtricity applications. The key length is fixed and is not affected by the default key size definitions in NVSRAM. 
+
+|===
+
 == New features in Version 11.80.1
 
 [cols="35h,~",options="header"]
@@ -23,9 +33,6 @@ a|A new `-identifyDevices` parameter is now available in the SMcli. This new par
 
 a|Ethernet Kernel Statistics 
 a|A new Ethernet Kernel Statistics option is now available under the View iSCSI Statistics Packages page in System Manager. This new option allows you to view statistics for platform kernel drivers of the iSCSI device. For more information, see link: https://docs.netapp.com/us-en/e-series-santricity/sm-support/view-iscsi-statistics-packages-support.html[View iSCSI Statistics Packages^].
-
-a|Improved filtering for Unassigned and Secure Enabled drives within System Manager
-a|System Manager now filters out Unassigned and Secured Enabled drives when selecting manual drives. As such, the System Manager drive selection count now matches the automatic drive selection candidates list found under the CLI and REST API. A unique icon and hover text is now also applied to Unassigned and Secure Enabled drives within System Manager.
 
 a|Added ability to block IP addresses through REST API endpoint
 a|Users can now block specific IP addresses through the Settings endpoint (`/devmgr/v2/settings`). Once configured through the Settings endpoint, only IP addresses specified through a whitelist can communicate with the storage device. This new feature supports IPv4 and IPv6 address lists.
