@@ -1,0 +1,82 @@
+---
+permalink: install-hw-e4000/connect-cables-60.html
+sidebar: sidebar
+keywords: E4000 connect power cables
+summary: Attach the power cables and power on the drive shelves.
+---
+= Cable the shelves (E4060)
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Learn how to attach the power cables and power on the drive shelves.
+
+.Before you begin
+
+* Install your hardware.
+* Take anti-static precautions.
+
+This procedure applies to IOM12 and IOM12B drive shelves.
+
+NOTE: IOM12B modules are only supported on SANtricity OS 11.70.2 onward. Ensure your controller's firmware has been updated before installing or upgrading to an IOM12B.
+
+NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. This means you can only replace an IOM12 module with another IOM12 module or replace an IOM12B module with another IOM12B module. (Your shelf can have two IOM12 modules or have two IOM12B modules.)
+
+.Steps
+
+. Cable the shelves.
++
+Cable the system according to your configuration. If you need more cabling options than the examples shown in this section, see link:../install-hw-cabling/index.html[Cabling].
++
+For the examples shown in this section, you need the following cables:
++
+|===
+a|
+image:../media/sas_cable.png[] a|
+*SAS cables*
+|===
+
++
+
+.Example A: An E4060 controller shelf with two DE460C disk shelves in a standard SAS configuration.
+
+image:../media/example_a_2860.png[]
+
+.. Cable controller A to IOM A of the first drive shelf.
+.. Cable IOM A of the first drive shelf to IOM A of the second drive shelf.
+.. Cable IOM B of the first drive shelf to IOM B of the second drive shelf.
+.. Cable controller B to IOM B of the second drive shelf.
+
++
+
+.Example B: An E4060 controller shelf with one DE460C disk shelf in a standard SAS configuration.
+
+image:../media/example_b_2860.png[]
+
+.. Cable controller A to IOM A.
+.. Cable controller B to IOM B.
+
+. Power the drive shelves.
++
+You need the following cables:
++
+|===
+a|
+image:../media/power_cable_inst-hw-e2800-e5700.png[] a|
+*Power cables*
+|===
+CAUTION: Confirm the drive shelf power switches are off.
+
+ .. Connect the two power cables for each shelf to different power distribution units (PDUs) in the cabinet or rack.
+ .. If you have drive shelves, turn on their two power switches first. Wait 2 minutes before applying power to the controller shelf.
+ .. Turn on the two power switches on the controller shelf.
+ .. Check the LEDs and seven-segment display on each controller.
++
+During boot, the seven-segment display shows the repeating sequence of OS, Sd, blank to indicate the controller is performing start-of-day processing. After the controller has booted up, the shelf ID is displayed.
+
++
+|===
+a|*Example: Power connections are on the rear of the shelf.*
+image:../media/trafford_power.png[]
+
+|===

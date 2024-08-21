@@ -24,15 +24,16 @@ E-Series arrays are available in the following models:
 
 NOTE: For SANtricity OS 11.80GA and greater, all USB ports are disabled on the E2800, EF280, E5700, EF570, EF600, and EF300 arrays. 
 
-== E2800 models
 
-[cols="35h,~",options="header"]
-|===
-a|Component a|Specification
+[role="tabbed-block"]
+====
 
-a|Rack sizes:
+.E2800 models
+--
 
-a|
+
+Rack sizes::
++
 * 2U12 (2 rack units; 12 drives)
 * 2U24 (2 rack units; 24 drives)
 +
@@ -42,87 +43,78 @@ image::../media/e2800_2u_front.gif[]
 +
 image::../media/e2860_front.gif[]
 
-a|
-Drives:
-
-a|
+Drives::
++
 Supports the following drive types:
-
++
 * 3.5" NL-SAS (up to 180)
 * 2.5" SAS SSD (up to 120)
 * 2.5" SAS HDD (up to 180)
 
-a|
-Interfaces:
-
-a|
+Interfaces::
++
 Available with the following interfaces:
-
++
 * 12Gb SAS
 * 10Gb or 25Gb iSCSI
 * 16Gb or 32Gb Fibre Channel
 
-|===
 
-== EF280 models
+--
 
-[cols="35h,~",options="header"]
-|===
-a|Component a|Specification
-a|
-Rack sizes:
+.EF280 models
+--
 
-a|
-2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif[]
+Rack sizes::
++
+2U24 (2 rack units; 24 drives)
++
+image:../media/ef570_front.gif[]
 
-a|
-Drives:
 
-a|
+Drives::
++
 Supports up to 96 SSD 2.5" drives
-a|
-Interfaces:
 
-a|
+
+Interfaces::
++
 Available with the following interfaces:
-
++
 * 12Gb SAS
 * 10Gb or 25Gb iSCSI
 * 16Gb or 32Gb Fibre Channel
 
-|===
 
-== EF300 models
+--
 
-[cols="35h,~",options="header"]
-|===
-a|Component a|Specification
-a|
-Rack sizes:
+.EF300 models
+--
 
-a|
-2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif[]
 
-a|
-Drives and HICs:
+Rack sizes::
++
+2U24 (2 rack units; 24 drives)
++
+image:../media/ef570_front.gif[]
 
-a|
+
+Drives and HICs::
++
 Supports the following drives with a single host interface card (HIC) per controller:
-
++
 * NVMe SSD drives: Up to 24 NVMe SSD drives in the controller shelf.
-
 * NL-SAS drives with expansion shelves: Any mixture of DE212C and DE460C shelves not to exceed a total of 240 NL-SAS drive slots and 4 expansion shelves unless only DE212C shelves are used, then 8 DE212C shelves are allowed. For example, 4 DE460C shelves, or 8 DE212C shelves, or 2 DE460C shelves plus 2 DE212 shelves.
-
 * SAS SSD drives with expansion shelves: Any mixture of DE212C, DE224C, and DE460C shelves not to exceed a total of 96 SAS SSD drive slots and 4 expansion shelves unless only DE212C shelves are used, then 8 DE212C shelves are allowed. For example, 1 DE460C shelf plus 1 DE224C shelf plus 1 DE212C shelf, or 4 DE224C shelves, or 8 DE212C shelves.
 
++
 NOTE: For SANtricity OS 11.80GA and greater, the EF300 supports expansion shelf configurations with no drives in the base tray. When using this configuration, ensure the drives are populated within the expansion shelf and properly connected to the base tray before powering on the system.   
 
-a|
-Interfaces:
 
-a|
+Interfaces::
++
 Available with the following interfaces:
-
++
 * 25Gb iSCSI
 * 32Gb NVMe / Fibre Channel
 * 32Gb SCSI / Fibre Channel
@@ -131,42 +123,39 @@ Available with the following interfaces:
 * 100Gb NVMe / IB
 * 100Gb NVMe / RoCE
 
-|===
 
-== E5700 models
+--
 
-[cols="35h,~",options="header"]
-|===
-a|Component a|Specification
-a|
+
+.E5700 models
+
+--
+
+
 Rack sizes:
-
-a|
-
++
 * 2U24 (2 rack units; 24 drives)
 +
 image::../media/e2800_2u_front.gif[]
-
++
 * 4U60 (4 rack units; 60 drives)
 +
 image::../media/e2860_front.gif[]
 
-a|
-Drives:
 
-a|
+Drives::
++
 Supports up to 480 of the following drive types:
-
++
 * 3.5" NL-SAS drives
 * 2.5" SAS SSD drives
 * 2.5" SAS HDD drives
 
-a|
-Interfaces:
 
-a|
+Interfaces::
++
 Available with the following interfaces:
-
++
 * 12Gb SAS
 * 10Gb or 25Gb iSCSI
 * 16Gb or 32Gb Fibre Channel
@@ -176,30 +165,29 @@ Available with the following interfaces:
 * 100Gb NVMe / IB
 * 100Gb NVMe / RoCE
 
-|===
 
-== EF570 models
+--
 
-[cols="35h,~",options="header"]
-|===
-a|Component a|Specification
-a|
-Rack sizes:
+.EF570 models
+--
 
-a|
-2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif[]
 
-a|
-Drives:
+Rack sizes::
++
+2U24 (2 rack units; 24 drives)
++
+image:../media/ef570_front.gif[]
 
-a|
+
+Drives::
++
 Supports up to 120 SSD 2.5" drives
-a|
-Interfaces:
 
-a|
+
+Interfaces::
++
 Available with the following interfaces:
-
++
 * 12Gb SAS
 * 10Gb or 25Gb iSCSI
 * 16Gb or 32Gb Fibre Channel
@@ -209,40 +197,36 @@ Available with the following interfaces:
 * 100Gb NVMe / IB
 * 100Gb NVMe / RoCE
 
-|===
 
-== EF600 models
+--
 
-[cols="35h,~",options="header"]
-|===
-a|Component a|Specification
-a|
-Rack sizes:
+.EF600 models
+--
 
-a|
-2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif[]
 
-a|
-Drives and HICs:
+Rack sizes::
++
+2U24 (2 rack units; 24 drives)
++
+image:../media/ef570_front.gif[]
 
-a|
 
+Drives and HICs::
++
 Supports the following drives with a single host interface card (HIC) per controller:
-
++
 * NVMe SSD drives: Up to 24 NVMe SSD drives in the controller shelf.
-
 * NL-SAS drives with expansion shelves: Any mixture of DE212C and DE460C shelves not to exceed a total of 420 NL-SAS drive slots and 7 expansion shelves unless only DE212C shelves are used, then 8 DE212C shelves are allowed. For example, 7 DE460C shelves, or 8 DE212C shelves, or 5 DE460C shelves plus 2 DE212 shelves.
-
 * SAS SSD drives with expansion shelves: Any mixture of DE212C, DE224C, and DE460C shelves not to exceed a total of 96 SAS SSD drive slots and 7 expansion shelves unless only DE212C shelves are used, then 8 DE212C shelves are allowed. For example, 1 DE460C shelf plus 1 DE224C shelf plus 1 DE212C shelf, or 4 DE224C shelves, or 8 DE212C shelves
 
++
 NOTE: For SANtricity OS 11.80GA and greater, the EF600 supports expansion shelf configurations with no drives in the base tray. When using this configuration, ensure the drives are populated within the expansion shelf and properly connected to the base tray before powering on the system.
 
-a|
-Interfaces:
 
-a|
+Interfaces::
++
 Available with the following interfaces:
-
++
 * 25Gb iSCSI
 * 32Gb NVMe / Fibre Channel
 * 32Gb SCSI / Fibre Channel
@@ -254,4 +238,40 @@ Available with the following interfaces:
 * 200Gb NVMe / IB
 * 200Gb NVMe / RoCE
 
-|===
+
+--
+
+
+.E4000 models
+--
+
+
+Rack sizes::
++
+* 2U12 (2 rack units; 12 drives)
+* 2U24 (2 rack units; 24 drives)
++
+image::../media/e2800_2u_front.gif[]
+
+* 4U60 (4 rack units; 60 drives)
++
+image::../media/e2860_front.gif[]
+
+Drives::
++
+Supports the following drive types:
++
+* 3.5" NL-SAS (up to 180)
+* 2.5" SAS SSD (up to 120)
+* 2.5" SAS HDD (up to 180)
+
+Interfaces::
++
+Available with the following interfaces:
++
+* 12Gb SAS
+* 1Gb, 10Gb, or 25Gb iSCSI
+* 8Gb, 16Gb, or 32Gb Fibre Channel
+
+--
+====

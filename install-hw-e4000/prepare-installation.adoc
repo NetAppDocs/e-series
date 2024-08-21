@@ -1,0 +1,137 @@
+---
+permalink: install-hw-e4000/prepare-installation.html
+sidebar: sidebar
+keywords: 
+summary: 
+---
+= Prepare for installation
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must prepare your site to meet the specifications for your E4000 series storage system.
+
+.Steps
+
+. Create an account and register your hardware at http://mysupport.netapp.com/[NetApp Support^].
+. Ensure the following items are in the box you received:
++
+[role="tabbed-block"]
+====
+
+.E4012 or E4024
+--
+
+Shelf with drives installed (bezel packaged separately)::
++
+image:../media/trafford_overview.png[]
+
+Rack-mount hardware::
++
+image:../media/superrails_inst-hw-e2800-e5700.png[]
+
+Ethernet cables for management connection (if ordered)::
++
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png[]
+
+I/O cables for cabling data hosts::
++
+image:../media/cable_io_inst-hw-e2800-e5700.png[]
+
+Power cables::
++
+image:../media/cable_power_inst-hw-e2800-e5700.png[]
+
+SAS cables::
++
+image:../media/sas_cable.png[]
+
+--
+
+.E4060
+--
+
+Shelf, bezel, and rackmount hardware::
++
+image:../media/trafford_overview.png[]
+
+Four shelf handles x4::
+image:../media/handles_counted.png[]
+
+Ethernet cables for management connection (if ordered)::
++
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png[]
+
+I/O cables for cabling data hosts::
++
+image:../media/cable_io_inst-hw-e2800-e5700.png[]
+
+Power cables::
++
+image:../media/cable_power_inst-hw-e2800-e5700.png[]
+
+SAS cables::
++
+image:../media/sas_cable.png[]
+
+--
+
+====
+
+. Obtain the additional items needed for installation:
+
+** A philips #2 screwdriver
+** A flashlight
+** An ESD strap
+** A cabinet or rack fits shelves of the following sizes:
++
+[role="tabbed-block"]
+====
+
+.E4012
+--
+
+*Depth*:
+
+*Width*:
+
+*Height*:
+
+*Max Weight*:
+
+--
+
+.E4024
+--
+
+*Depth*:
+
+*Width*:
+
+*Height*:
+
+*Max Weight*:
+
+--
+
+.E4060
+--
+
+*Depth*:
+
+*Width*:
+
+*Height*:
+
+*Max Weight*:
+
+--
+
+====
+
+** A supported browser for the management software:
+
+*** Google Chrome (version 89 and later)
+*** Microsoft Edge (version 90 and later)
+*** Mozilla Firefox (version 80 and later)
+*** Safari (version 14 and later)

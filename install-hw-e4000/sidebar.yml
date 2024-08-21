@@ -1,0 +1,25 @@
+section: install-hw-e4000
+title: Install E4000 hardware
+entries:
+  - title: Installation overview
+    url: "/install-hw-e4000/index.html"
+  - title: Prepare for Installation
+    url: "/install-hw-e4000/prepare-installation.html"
+  - title: Install hardware
+    entries:
+      - title: 12 or 24 drives
+        url: "/install-hw-e4000/install-hardware-12-24.html"
+      - title: 60 drives
+        url: "/install-hw-e4000/install-hardware-60.html"
+  - title: Cable shelves
+    entries:
+      - title: 12 or 24 drives
+        url: "/install-hw-e4000/connect-cables-12-24.html"
+      - title: 60 drives
+        url: "/install-hw-e4000/connect-cables-60.html"
+  - title: Complete storage system setup
+    entries:
+      - title: 12 or 24 drives
+        url: "/install-hw-e4000/complete-setup-12-24.html"
+      - titles: 60 drives
+        url: "/install-hw-e4000/complete-setup-12-24.html"
