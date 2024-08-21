@@ -94,6 +94,7 @@ sidebar:
                   url: "/install-hw-e2800-e5700/e2824-e5724-connect-cables-task.html"
                 - title: Complete storage system setup
                   url: "/install-hw-e2800-e5700/e2824-e5724-complete-setup-task.html"
+        - section: install-hw-e4000
         - title: 3040 40U cabinet
           entries:
               - title: Overview
