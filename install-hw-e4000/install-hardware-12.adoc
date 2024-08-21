@@ -1,15 +1,15 @@
 ---
-permalink: install-hw-e4000/install-hardware-12-24.html
+permalink: install-hw-e4000/install-hardware-12.html
 sidebar: sidebar
 keywords: 
 summary: Learn how to install a E4012, E4024, DE212C, or DE224C storage system in a two-post rack or a NetApp system cabinet.
 ---
-= Install hardware (E4012, E4024)
+= Install hardware (E4012)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Learn how to install a E4012, E4024, DE212C, or DE224C storage system in a two-post rack or a NetApp system cabinet.
+Learn how to install a E4012, DE212C, or DE224C storage system in a two-post rack or a NetApp system cabinet.
 
 .Before you begin
 
@@ -19,7 +19,6 @@ Make sure you do the following:
 * Prepare a flat, static-free work area.
 * Obtain an ESD wristband and take anti-static precautions.
 
-Read through all the instructions before proceeding with the steps below.
 
 .Steps
 
@@ -36,7 +35,7 @@ image:../media/install_rails_inst-hw-e2800-e5700.png[]
 
 . Install the shelf.
 +
-CAUTION: When fully loaded with drives, each shelf weighs approximately *insert weight here*. Two persons or mechanical lift are required to safely move the shelf.
+CAUTION: When fully loaded with drives, each shelf weighs approximately 64 lb (20 kg). Two people or a mechanical lift are required to safely move the shelf.
 +
 
 .. Starting with the shelf you want at the bottom of the cabinet, place the back of the shelf (the end with the connectors) on the rails.

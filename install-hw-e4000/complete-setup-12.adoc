@@ -1,10 +1,10 @@
 ---
-permalink: install-hw-e4000/complete-setup-12-24.html
+permalink: install-hw-e4000/complete-setup-12.html
 sidebar: sidebar
 keywords: 
 summary: Learn how to cable the controllers to your network and complete storage system setup and configuration.
 ---
-= Complete storage system setup (E4012, E4024)
+= Complete storage system setup (E4012)
 :icons: font
 :imagesdir: ../media/
 
@@ -72,10 +72,9 @@ Learn how to configure the management ports with a DHCP server.
 +
 The following figures show examples of the controller's management port location:
 +
-image:../media/e2800_mgmt_ports.png[]
+image:../media/e4000_management_port.png[]
 +
-E2800 controller P1 Management Port 
-*insert new graphic here of P1 management port*
+E4000 controller Management Port 
 
 . Open a browser and connect to the storage system using one of the controller IP addresses provided to you by your network administrator.
 
@@ -97,32 +96,26 @@ Learn how to configure the management ports manually by entering the IP address 
 +
 The following figures show examples of the controller's management port location:
 +
-image:../media/e2800_mgmt_ports.png[]
+image:../media/e4000_management_port.png[]
 +
-E2800 controller P1 Management Port 
-+
-*insert new graphic here of P1 management port*
+E4000 controller Management Port 
+
 
 . Open a browser and use the default IP address (169.254.128.101) to establish a connection to the controller. The controller sends back a self-signed certificate. The browser informs you that the connection is not secure.
 +
 NOTE: For platforms running SANtricity 11.60 and greater, the default subnet mask is 255.255.0.0.
-. Follow the browser's instructions to proceed and launch SANtricity System Manager.
-+
-NOTE: If you are unable to establish a connection, verify that you are not receiving network configuration from a DHCP server.
-
+. Follow the browser's instructions to proceed and launch SANtricity System Manager. If you are unable to establish a connection, verify that you are not receiving network configuration from a DHCP server.
 . Set the storage system's password to login.
 . Use the network settings provided by your network administrator in the *Configure Network Settings* wizard to configure controller A's network settings, and then select *Finish*.
 +
 NOTE: Because you reset the IP address, System Manager loses connection to the controller.
 
 . Disconnect your laptop from the storage system, and connect the management port on controller A to your network.
-. Open a browser on a computer connected to your network, and enter controller A's newly configured IP address.
+. Open a browser on a computer connected to your network, and enter controller A's newly configured IP address. 
 +
 NOTE: If you lose the connection to controller A, you can connect an ethernet cable to controller B to reestablish connection to controller A through controller B (169.254.128.102).
 
-. Log in using the password you set previously.
-+
-The Configure Network Settings wizard will appear.
+. Log in using the password you set previously. The Configure Network Settings wizard will appear.
 
 . Use the network settings provided by your network administrator in the *Configure Network Settings* wizard to configure controller B's network settings, and then select *Finish*.
 . Connect controller B to your network.
@@ -145,11 +138,5 @@ After you have installed your hardware, use the SANtricity software to configure
 .Steps
 
 . Use the SANtricity software to configure and manage your storage arrays.
-. In the simplest network configuration, connect your controller to a web browser and use SANtricity System Manager for managing a single E4000 series storage array.
+. In the simplest network configuration, connect your controller to a web browser and use SANtricity System Manager for managing a single E4000 series storage array. For accessing System Manager, use the same IP addresses that you used to configure your management ports.
 
-|===
-a|
-image:../media/management_s_g2285tation_inst-hw-e2800-e5700_g2285.png[] a|
-For accessing System Manager, use the same IP addresses that you used to configure your management ports.
-
-|===
