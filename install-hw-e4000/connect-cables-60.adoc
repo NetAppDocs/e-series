@@ -70,13 +70,4 @@ CAUTION: Confirm the drive shelf power switches are off.
  .. Connect the two power cables for each shelf to different power distribution units (PDUs) in the cabinet or rack.
  .. If you have drive shelves, turn on their two power switches first. Wait 2 minutes before applying power to the controller shelf.
  .. Turn on the two power switches on the controller shelf.
- .. Check the LEDs and seven-segment display on each controller.
-+
-During boot, the seven-segment display shows the repeating sequence of OS, Sd, blank to indicate the controller is performing start-of-day processing. After the controller has booted up, the shelf ID is displayed.
-
-+
-|===
-a|*Example: Power connections are on the rear of the shelf.*
-image:../media/trafford_power.png[]
-
-|===
+ .. Check the LEDs on each controller.
