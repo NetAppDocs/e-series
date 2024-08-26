@@ -132,7 +132,7 @@ Available with the following interfaces:
 --
 
 
-Rack sizes:
+Rack sizes::
 +
 * 2U24 (2 rack units; 24 drives)
 +
@@ -249,7 +249,6 @@ Available with the following interfaces:
 Rack sizes::
 +
 * 2U12 (2 rack units; 12 drives)
-* 2U24 (2 rack units; 24 drives)
 +
 image::../media/e2800_2u_front.gif[]
 
@@ -263,15 +262,16 @@ Supports the following drive types:
 +
 * 3.5" NL-SAS (up to 180)
 * 2.5" SAS SSD (up to 120)
-* 2.5" SAS HDD (up to 180)
 
 Interfaces::
 +
 Available with the following interfaces:
 +
 * 12Gb SAS
+* 10Gbase-T
 * 1Gb, 10Gb, or 25Gb iSCSI
 * 8Gb, 16Gb, or 32Gb Fibre Channel
+* 100 Gb IB/iSER
 
 --
 ====
