@@ -28,7 +28,7 @@ The following example shows cabling to the data hosts using a direct-attach topo
 
 image:../media/2U_DirectTopology.png[]
 
-. Connect each host adapter directly to the host ports on the controllers. 
+. Connect each host adapter directly to the host ports 0b1 and 0b2 on the controllers. 
 
 
 --
@@ -42,7 +42,7 @@ The following example shows cabling to the data hosts using a fabric topology.
 image:../media/2U_FabricTopology.png[]
 
 . Connect each host adapter directly to the switch.
-. Connect each switch directly to the host ports on the controllers.
+. Connect each switch directly to the host ports 0b1 and 0b2 on the controllers.
 
 
 --

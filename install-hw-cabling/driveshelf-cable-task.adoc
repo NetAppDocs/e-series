@@ -99,9 +99,6 @@ The following information applies to cabling an E4000 controller shelf to a DE21
 
 You can cable your controller shelf to one or more 12-drive shelves.
 
-The following image shows a representation of the controller shelf and the drive shelves. To locate the ports on your model, see https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe^].
-
-
 image::../media/e4012_cabling.png[A controller shelf and 12-drive shelf]
 
 --
@@ -110,9 +107,6 @@ image::../media/e4012_cabling.png[A controller shelf and 12-drive shelf]
 --
 
 You can cable your controller shelf to one or more 60-drive shelves.
-
-The following image shows a representation of the controller shelf and the drive shelves. To locate the ports on your model, see https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe^].
-
 
 image::../media/e4060_cabling.png[A controller shelf and 60-drive shelves]
 
