@@ -72,9 +72,7 @@ Learn how to configure the management ports with a DHCP server.
 +
 The following figures show examples of the controller's management port location:
 +
-image:../media/e4000_management_port.png[]
-+
-E4000 controller Management Port 
+image:../media/e4000_management_port.png[E4000 controller Management Port]
 
 . Open a browser and connect to the storage system using one of the controller IP addresses provided to you by your network administrator.
 
@@ -96,9 +94,7 @@ Learn how to configure the management ports manually by entering the IP address 
 +
 The following figures show examples of the controller's management port location:
 +
-image:../media/e4000_management_port.png[]
-+
-E4000 controller Management Port 
+image:../media/e4000_management_port.png[E4000 controller Management Port]
 
 
 . Open a browser and use the default IP address (169.254.128.101) to establish a connection to the controller. The controller sends back a self-signed certificate. The browser informs you that the connection is not secure.

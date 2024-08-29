@@ -91,13 +91,13 @@ image:../media/sas_cable.png[]
 .E4012
 --
 
-*Depth*:
+*Depth*: 21.1. in (53.59 cm)
 
-*Width*:
+*Width*: 17.64 in (44.8)
 
-*Height*:
+*Height*: 3.4 in (8.64 cm)
 
-*Max Weight*:
+*Max Weight*: 65.25 lb (29.6 kg)
 
 
 --
@@ -105,17 +105,22 @@ image:../media/sas_cable.png[]
 .E4060
 --
 
-*Depth*:
+*Depth*: 36.3 in (92.2 cm)
 
-*Width*:
+*Width*: 17.64 in (44.8 cm)
 
-*Height*:
+*Height*: 7.0 in (17.78 cm)
 
-*Max Weight*:
+*Max Weight*: 253.33 lb (114.91 kg)
 
 --
 
 ====
+
+** A location providing the correct voltage of AC power:
+
+*** E4012: 120 to 240-volt AC
+*** E4060: 240-volt AC
 
 ** A supported browser for the management software:
 
