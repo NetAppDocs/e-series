@@ -37,7 +37,7 @@ image:../media/sas_cable.png[] a|
 |===
 +
 
-.Example A: An E4000 controller shelf with three DE212C/DE224 disk shelves in a standard SAS configuration.
+.Example A: An E4000 controller shelf with three DE212C/DE224C disk shelves in a standard SAS configuration.
 +
 image:../media/example_a_28_57.png[]
 +
@@ -49,7 +49,7 @@ image:../media/example_a_28_57.png[]
  .. Cable IOM B of the first drive shelf to IOM B of the second drive shelf.
 
 +
-.Example B: An E4000 controller shelf with one DE212C/DE224 disk shelf in a standard SAS configuration.
+.Example B: An E4000 controller shelf with one DE212C/DE224C disk shelf in a standard SAS configuration.
 +
 image:../media/example_b_57_28.png[]
 +

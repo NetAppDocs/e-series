@@ -270,7 +270,7 @@ Available with the following interfaces:
 * 12Gb SAS
 * 10Gbase-T
 * 1Gb, 10Gb, or 25Gb iSCSI
-* 8Gb, 16Gb, or 32Gb Fibre Channel
+* 8Gb, 16Gb, or 32Gb FC
 * 100 Gb IB/iSER
 
 --
