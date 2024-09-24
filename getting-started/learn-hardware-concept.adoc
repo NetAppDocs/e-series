@@ -76,11 +76,11 @@ a|
 * 2U12 (2 rack units; 12 drives)
 * 2U24 (2 rack units; 24 drives)
 +
-image::../media/e2800_2u_front.gif[]
+image::../media/e2800_2u_front.gif["E2800 2U"]
 
 * 4U60 (4 rack units; 60 drives)
 +
-image::../media/e2860_front.gif[]
+image::../media/e2860_front.gif[E2800 4U"]
 
 a|
 Drives:
@@ -113,7 +113,7 @@ a|
 Rack sizes:
 
 a|
-2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif[]
+2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif["EF280 2U"]
 
 a|
 Drives:
@@ -141,7 +141,7 @@ a|
 Rack sizes:
 
 a|
-2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif[]
+2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif["EF300 2U"]
 
 a|
 Drives and HICs:
@@ -185,11 +185,11 @@ a|
 
 * 2U24 (2 rack units; 24 drives)
 +
-image::../media/e2800_2u_front.gif[]
+image::../media/e2800_2u_front.gif["E5700 2U"]
 
 * 4U60 (4 rack units; 60 drives)
 +
-image::../media/e2860_front.gif[]
+image::../media/e2860_front.gif[E5700 4U"]
 
 a|
 Drives:
@@ -227,7 +227,7 @@ a|
 Rack sizes:
 
 a|
-2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif[]
+2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif["Ef570 2U"]
 
 a|
 Drives:
@@ -260,7 +260,7 @@ a|
 Rack sizes:
 
 a|
-2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif[]
+2U24 (2 rack units; 24 drives)image:../media/ef570_front.gif["EF600 2U"]
 
 a|
 Drives and HICs:

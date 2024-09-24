@@ -25,7 +25,7 @@ The leveling feet are located near each bottom corner of the cabinet.
 +
 The following figure provides a close-up view of the stability foot and the leveling feet.
 +
-image::../media/83000_08.gif[]
+image::../media/83000_08.gif["Leveling and stability feet"]
 +
 |===
 a|1. a| Leveling feet
@@ -63,7 +63,7 @@ After you reinstall the trays, install the cable spools and tie wraps. The cable
 
 . Install the cable spools and the tie wraps along both sides of the vertical power distribution outlets.
 +
-image::../media/83003_01_dwg_3040_cable_spools.gif[]
+image::../media/83003_01_dwg_3040_cable_spools.gif["Tie wrap and cable spool"]
 +
 |===
 a| 1. a| Tie wrap location
@@ -88,7 +88,6 @@ Covering the empty spaces is necessary so that the correct airflow through the c
 
 == Step 5: Install additional mounting rails
 
-[.lead]
 If you are installing controller-drive trays, or drive trays that were shipped separately (not already installed in the cabinet), you might need to install additional mounting rails in the cabinet.
 
 .Steps
@@ -100,7 +99,7 @@ If you are installing controller-drive trays, or drive trays that were shipped s
   *** 17.8 cm (7 in.) for 4U controller-drive trays or drive trays
 . Use the measurement markers on the right-front and left-front vertical supports to attach the mounting rails to the same position on each side of the cabinet.
 +
-image::../media/92042_06.gif[]
+image::../media/92042_06.gif["Rail mounting"]
 +
 |===
 a| 1. a| Front adjustable rail
@@ -169,7 +168,7 @@ NOTE: You must connect each PDU to an independent power source outside of the ca
 
 . Turn all 12 circuit breakers to their on (up) position.
 +
-image::../media/83002_05_dwg_3040_cabinet_pdus.gif[]
+image::../media/83002_05_dwg_3040_cabinet_pdus.gif["Circuit breakers and electrical outlets"]
 +
 |===
 a| 1. a| Circuit breakers

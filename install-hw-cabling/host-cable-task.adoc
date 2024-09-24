@@ -19,7 +19,7 @@ The following figure shows an example connection. To help ensure maximum perform
 
 .Two hosts and two controllers
 
-image::../media/topology_host_direct_generic_web_low.png[]
+image::../media/topology_host_direct_generic_web_low.png["Two hosts and two controllers cabling"]
 
 *(1)* _Connect each host adapter port directly to the host ports on the controllers._
 
@@ -31,7 +31,7 @@ The following figure shows an example connection. For switches that provide prov
 
 .Two hosts and two switches
 
-image::../media/topology_host_fabric_generic.png[]
+image::../media/topology_host_fabric_generic.png["Two hosts and two switches cabling"]
 
 *(1)* _Connect each host adapter directly to the switch._
 

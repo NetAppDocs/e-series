@@ -31,7 +31,7 @@ The following image shows a representation of the controller shelf and the drive
 
 ==== A controller shelf and 12-drive or 24-drive shelves
 
-image::../media/12_24_cabling.png[]
+image::../media/12_24_cabling.png["12-drive and 24-drive shelf cabling"]
 
 === Cabling a 60-drive shelf
 
@@ -41,7 +41,7 @@ The following image shows a representation of the controller shelf and the drive
 
 ==== A controller shelf and 60-drive shelves
 
-image::../media/60_cabling.png[]
+image::../media/60_cabling.png["60-drive shelf cabling"]
 
 == Cabling EF300 and EF600
 
@@ -59,7 +59,7 @@ The following image shows a representation of the controller shelf and the drive
 
 ==== A controller shelf and 12-drive or 24-drive shelves
 
-image::../media/ef_to_de224c_four_shelves.png[]
+image::../media/ef_to_de224c_four_shelves.png["12-drive and 24-drive shelf cabling"]
 
 === Cabling a 60-drive shelf
 
@@ -69,4 +69,4 @@ The following image shows a representation of the controller shelf and the drive
 
 ==== A controller shelf and 60-drive shelves
 
-image::../media/ef_to_de460c.png[]
+image::../media/ef_to_de460c.png["60-drive shelf cabling"]

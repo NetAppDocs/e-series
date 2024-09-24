@@ -193,8 +193,6 @@ These protocols include, but are not limited to, QoS, File and Print Sharing, an
 . Retain the default values for the remaining check boxes, and then select *OK*.
 . Select *OK* again as you return to the *Connect to Target* dialog box.
 . Repeat this procedure for each initiator port and session (logical path) to the storage array that you want to establish.
-+
-image::../media/82012_00.gif[]
 
 == Step 5: Verify IP network connections--iSCSI, Windows
 
@@ -239,7 +237,7 @@ You can generate and print a PDF of this page, and then use the following worksh
 
 Recommended configurations consist of two initiator ports and four target ports with one or more VLANs.
 
-image::../media/50001_01_conf-win.gif[]
+image::../media/50001_01_conf-win.gif["iSCSI port identifiers"]
 
 === Target IQN
 

@@ -25,7 +25,7 @@ The following example shows cabling to the data hosts using a direct-attach topo
 
 |===
 a|
-image:../media/2U_DirectTopology.png[] a|
+image:../media/2U_DirectTopology.png["Direct-attach topology cabling"] a|
 
 . Connect each host adapter directly to the host ports on the controllers.
 
@@ -39,7 +39,7 @@ The following example shows cabling to the data hosts using a fabric topology.
 
 |===
 a|
-image:../media/2U_FabricTopology.png[] a|
+image:../media/2U_FabricTopology.png["Fabric topology cabling"] a|
 
 . Connect each host adapter directly to the switch.
 . Connect each switch directly to the host ports on the controllers.
@@ -65,7 +65,7 @@ Learn how to configure the management ports with a DHCP server.
 +
 |===
 a|
-image:../media/cable_ethernet_inst-hw-e2800-e5700.png[] a|
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png["Ethernet cabling"] a|
 Ethernet cables (if ordered)
 |===
 +
@@ -73,11 +73,11 @@ The following figures show examples of the controller's management port location
 +
 |===
 a|
-image:../media/e2800_mgmt_ports.png[]
+image:../media/e2800_mgmt_ports.png["E2800 management port"]
 
 E2800 controller P1 Management Port a|
 
-image:../media/e5700_mgmt_ports.png[]
+image:../media/e5700_mgmt_ports.png["E5700 management port"]
 
 E5700 controller P1 Management Port
 |===
@@ -100,7 +100,7 @@ Learn how to configure the management ports manually by entering the IP address 
 +
 |===
 a|
-image:../media/cable_ethernet_inst-hw-e2800-e5700.png[] a|
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png["Ethernet cable"] a|
 Ethernet cables (if ordered)
 |===
 +
@@ -108,11 +108,11 @@ The following figures show examples of the controller's management port location
 +
 |===
 a|
-image:../media/e2800_mgmt_ports.png[]
+image:../media/e2800_mgmt_ports.png["E2800 management port"]
 
 E2800 controller P1 Management Port a|
 
-image:../media/e5700_mgmt_ports.png[]
+image:../media/e5700_mgmt_ports.png["E5700 management port"]
 
 E5700 controller P1 Management Port
 |===
@@ -160,7 +160,7 @@ After you have installed your hardware, use the SANtricity software to configure
 
 |===
 a|
-image:../media/management_s_g2285tation_inst-hw-e2800-e5700_g2285.png[] a|
+image:../media/management_s_g2285tation_inst-hw-e2800-e5700_g2285.png["Access System Manager to configure your management ports"] a|
 For accessing System Manager, use the same IP addresses that you used to configure your management ports.
 
 |===

@@ -55,7 +55,7 @@ Save all packing materials.
 
 . Press the release button on the failed drive.
 +
-image::../media/drw_drive_latch_maint-e2800.gif[]
+image::../media/drw_drive_latch_maint-e2800.gif["Press the release button to remove the failed drive"]
 
  ** For drives in E2812 controller shelves or DE212C drive shelves, the release button is located at the left of the drive.
  ** For drives in E2824 controller shelves, EF280 flash array, for DE224C drive shelves, the release button is located at the top of the drive.

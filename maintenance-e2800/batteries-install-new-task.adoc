@@ -33,7 +33,7 @@ You must insert the metal flange at the front of the battery into the slot on th
 +
 When the latch clicks into place, the bottom of the latch hooks into a metal slot on the chassis.
 +
-image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif[]
+image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif["E2800 insert battery"]
 +
 *(1)* _Battery release latch_
 +
@@ -45,10 +45,10 @@ CAUTION: *Possible hardware damage* -- The metal flange at the front of the batt
 +
  ** *Correct* -- The battery's metal flange is completely inserted in the slot on the controller:
 +
-image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif[]
+image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif["Correct battery flange insert"]
 
  ** *Incorrect* -- The battery's metal flange is not inserted into the slot on the controller:
  +
-image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[]
+image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif["Incorrect battery flange insert"]
 
 . Go to link:batteries-reinstall-controller-canister-task.html[Re-install E2800 controller canister].

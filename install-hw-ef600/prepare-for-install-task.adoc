@@ -27,10 +27,10 @@ If you are cabling your EF300 for SAS expansion, review the following informatio
 +
 |===
 a|
-image:../media/ef600_w_faceplate.png[] a|
+image:../media/ef600_w_faceplate.png["Shelf with installed drives and bezel"] a|
 Shelf with drives installed (bezel and end caps packaged separately)
 a|
-image:../media/superrails_inst-hw-ef600.png[]
+image:../media/superrails_inst-hw-ef600.png["Rack-mount hardware"]
 a|
 Rack-mount hardware
 |===
@@ -40,21 +40,21 @@ The following table identifies the types of cables you might receive. If you rec
 |===
 | Connector type| Cable type| Use
 a|
-image:../media/cable_ethernet_inst-hw-ef600.png[]
+image:../media/cable_ethernet_inst-hw-ef600.png["RJ-45 ethernet cable"]
 a|
 RJ-45 Ethernet cables
 (if ordered)
 a|
 Management connection
 a|
-image:../media/cable_io_inst-hw-ef600.png[]
+image:../media/cable_io_inst-hw-ef600.png["I/O cable"]
 a|
 I/O cables
 (if ordered)
 a|
 Cabling the data hosts
 a|
-image:../media/cable_power_inst-hw-ef600.png[]
+image:../media/cable_power_inst-hw-ef600.png["Power cables"]
 a|
 Power cables
 (if ordered)
@@ -66,18 +66,18 @@ Powering up the storage system
 +
 |===
 a|
-image:../media/screwdriver_inst-hw-ef600.png[] a|
+image:../media/screwdriver_inst-hw-ef600.png["Phillips #2 screwdriver"] a|
 Phillips #2 screwdriver
 a|
-image:../media/flashlight_inst-hw-ef600.png[]
+image:../media/flashlight_inst-hw-ef600.png["Flashlight"]
 a|
 Flashlight
 a|
-image:../media/wrist_strap_inst-hw-ef600.png[]
+image:../media/wrist_strap_inst-hw-ef600.png["ESD strap"]
 a|
 ESD strap
 a|
-image:../media/2u_rackspace_inst-hw-ef600.png[]
+image:../media/2u_rackspace_inst-hw-ef600.png["2U rack"]
 a|
 2U rack space: A standard 19 in. (48.30 cm) rack to fit 2U shelves of the following dimensions.
 
@@ -93,7 +93,7 @@ a|
 
 NOTE: Using third-party cabinets might cause the power cables to restrict access to the controller.
 a|
-image:../media/management_station_inst-hw-ef600_g60b3.png[]
+image:../media/management_station_inst-hw-ef600_g60b3.png["Management station with supported browser for management software"]
 a|
 A supported browser for the management software:
 

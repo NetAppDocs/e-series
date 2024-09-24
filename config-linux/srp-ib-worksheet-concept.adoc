@@ -11,7 +11,7 @@ summary: Use this worksheet to record SRP over Infiniband storage configuration 
 [.lead]
 You can generate and print a PDF of this page, and then use the following worksheet to record SRP over InfiniBand storage configuration information. You need this information to perform provisioning tasks.
 
-image::../media/port_identifiers_ib_srp.gif[]
+image::../media/port_identifiers_ib_srp.gif["SRB over IB port identifiers"]
 
 == Host identifiers
 

@@ -32,7 +32,7 @@ When communication with the other controller is reestablished:
  ** The seven-segment display shows the repeating sequence *OS*, *OL*, *_blank_* to indicate that the controller is offline.
  ** The amber Attention LED remains lit.
  ** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
-image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif[]
+image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif["E2800 LED display"]
 +
 *(1)* _Attention LED (amber)_
 +
@@ -91,7 +91,7 @@ NOTE: Perform this task only if your storage array has one controller.
 +
 NOTE: The figure shows an example controller canister. Your controller might have a different number and a different type of host ports.
 +
-image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[]
+image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif["E2800 LED display"]
 +
 *(1)* _Attention LED (amber)_
 +

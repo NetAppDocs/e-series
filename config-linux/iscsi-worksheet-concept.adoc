@@ -15,7 +15,7 @@ You can generate and print a PDF of this page, and then use the following worksh
 
 Recommended configurations consist of two initiator ports and four target ports with one or more VLANs.
 
-image::../media/50001_01_conf-lin.gif[]
+image::../media/50001_01_conf-lin.gif["iSCSI network configuration"]
 
 == Target IQN
 

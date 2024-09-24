@@ -28,43 +28,43 @@ System Manager offers a variety of management features, including:
 
 |===
 a|
-image:../media/sam1130_icon_performance.gif[] *Performance*  a|
+image:../media/sam1130_icon_performance.gif["Performance"] *Performance*  a|
 View up to 30 days of performance data, including I/O latency, IOPS, CPU utilization, and throughput.
 
 
 
 a|
-image:../media/sam1130_icon_volumes.gif[] *Storage*
+image:../media/sam1130_icon_volumes.gif["Storage"] *Storage*
 
 a|
 Provision storage using pools or volume groups, and create application workloads.
 a|
-image:../media/sam1130_icon_async_mirroring.gif[] *Data protection*
+image:../media/sam1130_icon_async_mirroring.gif["Data protection"] *Data protection*
 
 a|
 Perform backup and disaster recovery using snapshots, volume copy, and remote mirroring.
 a|
-image:../media/sam1130_icon_controllers.gif[] *Hardware*
+image:../media/sam1130_icon_controllers.gif["Hardware"] *Hardware*
 
 a|
 Check component status and perform some functions related to those components, such as assigning hot spare drives.
 a|
-image:../media/sam1130_icon_alerts.gif[] *Alerts*
+image:../media/sam1130_icon_alerts.gif["Alerts"] *Alerts*
 
 a|
 Notify administrators about important events occurring on the storage array. Alerts can be sent through email, SNMP traps, and syslog.
 a|
-image:../media/sam1140_icon_active_directory.gif[] *Access Management*
+image:../media/sam1140_icon_active_directory.gif['Access Management"] *Access Management*
 
 a|
 Configure user authentication that requires users to log in to the system with assigned credentials.
 a|
-image:../media/sam1130_icon_settings.gif[] *System Settings*
+image:../media/sam1130_icon_settings.gif["System Settings"] *System Settings*
 
 a|
 Configure other system performance features, such as SSD cache and autoload balancing.
 a|
-image:../media/sam1130_icon_support.gif[] *Support*
+image:../media/sam1130_icon_support.gif["Support"] *Support*
 
 a|
 View diagnostic data, manage upgrades, and configure AutoSupport, which monitors the health of a storage array and sends automatic dispatches to technical support.
@@ -80,42 +80,42 @@ Unified Manager offers a variety of management features, including:
 
 |===
 a|
-image:../media/artboard_9.png[] *Discover storage arrays*  a|
+image:../media/artboard_9.png["Discover storage arrays"] *Discover storage arrays*  a|
 Find and add the storage arrays you want to manage in your organization's network. You can then view the status of all storage arrays from a single page.
 
 
 a|
-image:../media/artboard_11.png[] *Launch*
+image:../media/artboard_11.png["Launch"] *Launch*
 
 a|
 Open an instance of System Manager to perform individual management operations on a particular storage array.
 a|
-image:../media/sam1130_icon_system.gif[] *Import Settings*
+image:../media/sam1130_icon_system.gif["Import Settings"] *Import Settings*
 
 a|
 Perform a batch import from one storage array to multiple arrays, including settings for alerts, AutoSupport, and directory services.
 a|
-image:../media/sam1130_icon_async_mirroring.gif[] *Mirroring*
+image:../media/sam1130_icon_async_mirroring.gif["Mirroring"] *Mirroring*
 
 a|
 Configure asynchronous or synchronous mirrored pairs between two storage arrays.
 a|
-image:../media/artboard_10.png[] *Manage Groups*
+image:../media/artboard_10.png["Manage Groups"] *Manage Groups*
 
 a|
 Organize storage arrays into groups for easier management.
 a|
-image:../media/sam1130_icon_upgrade_center.gif[] *Upgrade Center*
+image:../media/sam1130_icon_upgrade_center.gif["Upgrade Center"] *Upgrade Center*
 
 a|
 Upgrade the SANtricity OS software on multiple storage arrays.
 a|
-image:../media/sam1140_icon_certs.gif[] *Certificates*
+image:../media/sam1140_icon_certs.gif["Certificates"] *Certificates*
 
 a|
 Create certificate signing requests (CSRs), import certificates, and manage existing certificates for multiple storage arrays.
 a|
-image:../media/sam1140_icon_active_directory.gif[] *Access Management*
+image:../media/sam1140_icon_active_directory.gif["Access Management"] *Access Management*
 
 a|
 Configure user authentication that requires users to log in to Unified Manager with assigned credentials.
