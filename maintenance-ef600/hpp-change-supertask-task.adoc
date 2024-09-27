@@ -23,7 +23,7 @@ To obtain the feature pack key, you need the serial number from the controller s
  .. With the *Support Resources* tab selected, scroll to the *View top storage array properties* section.
  .. Locate the *Chassis Serial Number*, and copy this value to a text file.
 +
-image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.gif[]
+image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.gif["Chassis serial number"]
 . Locate the *feature pack submodel ID*.
  .. From the SANtricity System Manager, select *Support*.
  .. Select the *Support Center* tile.
@@ -31,7 +31,7 @@ image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.
  .. Type *feature pack submodel ID* in the text box, and click *Find*.
  .. Locate the feature pack submodel ID for the starting configuration.
 +
-image::../media/storage_array_profile2_maint-ef600.gif[]
+image::../media/storage_array_profile2_maint-ef600.gif["Storage array profile"]
 . Using the feature pack submodel ID, locate the corresponding Controller submodel ID for the starting configuration and find the Feature Activation Code for the desired ending configuration within the following table. Then, copy that Feature Activation Code to a text file.
 +
 [options="header"]
@@ -459,7 +459,7 @@ Change the feature pack to convert the host protocol of your host ports.
 . From SANtricity System Manager, select menu:Settings[System].
 . Under *Add-ons*, select *Change Feature Pack*.
 +
-image::../media/sam1130_ss_system_change_feature_pack_maint-ef600.gif[]
+image::../media/sam1130_ss_system_change_feature_pack_maint-ef600.gif["Change feature pack"]
 
 . Click *Browse*, and then select the feature pack you want to apply.
 . Type *CHANGE* in the field.

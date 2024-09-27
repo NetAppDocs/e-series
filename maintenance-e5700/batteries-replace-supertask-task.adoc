@@ -101,7 +101,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 +
 The following figure is an example of an E5724 controller shelf:
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif["Remove controller canister"]
 +
 *(1)* _Controller canister_
 +
@@ -110,7 +110,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[]
 +
 The following figure is an example of an E5760 controller shelf:
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif["Remove controller canister"]
 +
 *(1)* _Controller canister_
 +
@@ -136,7 +136,7 @@ After removing the controller canister from the controller shelf, remove the bat
 +
 If this green LED is on, the controller is still using battery power. You must wait for this LED to go off before removing any components.
 +
-image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[]
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif["Internal cache active LED"]
 +
 *(1)* _Internal Cache Active LED_
 +
@@ -145,7 +145,7 @@ image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[]
 . Locate the blue release latch for the battery.
 . Unlatch the battery by pushing the release latch down and away from the controller canister.
 +
-image::../media/28_dwg_e2800_remove_battery_maint-e5700.gif[]
+image::../media/28_dwg_e2800_remove_battery_maint-e5700.gif["Remove battery"]
 +
 *(1)* _Battery release latch_
 +
@@ -176,7 +176,7 @@ You must insert the metal flange at the front of the battery into the slot on th
 +
 When the latch clicks into place, the bottom of the latch hooks into a metal slot on the chassis.
 +
-image::../media/28_dwg_e2800_insert_battery_maint-e5700.gif[]
+image::../media/28_dwg_e2800_insert_battery_maint-e5700.gif["Install battery"]
 +
 *(1)* _Battery release latch_
 +
@@ -188,10 +188,10 @@ CAUTION: *Possible hardware damage* -- The metal flange at the front of the batt
 +
 ** *Correct* -- The battery's metal flange is completely inserted in the slot on the controller:
 +
-image:../media/28_dwg_e2800_battery_flange_ok_maint-e5700.gif[]
+image:../media/28_dwg_e2800_battery_flange_ok_maint-e5700.gif["Correct battery flange"]
 ** *Incorrect* -- The battery's metal flange is not inserted into the slot on the controller:
 +
-image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e5700.gif[]
+image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e5700.gif["Incorrect battery flange"]
 
 == Step 5: Re-install controller canister
 
@@ -203,13 +203,13 @@ After installing the new battery, reinstall the controller canister into the con
 . Turn the controller canister over, so that the removable cover faces down.
 . With the cam handle in the open position, slide the controller canister all the way into the controller shelf.
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif["Reinstall controller canister"]
 +
 *(1)* _Controller canister_
 +
 *(2)* _Cam handle_
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif["Reinstall controller canister"]
 +
 *(1)* _Controller canister_
 +
@@ -235,7 +235,7 @@ When communication with the other controller is reestablished:
  ** The seven-segment display shows the repeating sequence *OS*, *OL*, *_blank_* to indicate that the controller is offline.
  ** The amber Attention LED remains lit.
  ** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
-image:../media/e5700_hic_3_callouts_maint-e5700.gif[]
+image:../media/e5700_hic_3_callouts_maint-e5700.gif["E5700 controller LEDs"]
 +
 *(1)* _Host Link LEDs_
 +

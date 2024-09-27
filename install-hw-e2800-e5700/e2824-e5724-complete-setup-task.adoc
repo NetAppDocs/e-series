@@ -86,7 +86,6 @@ E5700 controller P1 Management Port
 
 === Option 2: Static IP address
 
-[.lead]
 Learn how to configure the management ports manually by entering the IP address and the subnet mask.
 
 .Before you begin

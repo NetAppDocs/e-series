@@ -42,4 +42,4 @@ When inserting fewer than 24 drives into an EF300 or EF600 controller, you must 
 
 The following figure shows how to stagger the drives between the two halves.
 
-image::../media/ef600_drives_staggering.png[]
+image::../media/ef600_drives_staggering.png["Drive staggering in a 24-drive shelf"]

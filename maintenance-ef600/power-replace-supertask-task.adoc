@@ -38,14 +38,14 @@ Save all packing materials for use when returning the failed power supply.
  .. Unplug the power cord from the power source.
 . Locate the tab to the right of the power supply and press it towards the power supply unit.
 +
-image::../media/psup_2.png[]
+image::../media/psup_2.png["Press the tab next to the power supply"]
 
 . Locate the handle on the front of the power supply.
 . Use the handle to slide the power supply straight out of the system.
 +
 CAUTION: When removing a power supply, always use two hands to support its weight.
 +
-image::../media/psup_3.png[]
+image::../media/psup_3.png["Slide the power supply out"]
 
 == Step 2: Install new power supply and complete the replacement
 
@@ -59,7 +59,7 @@ The power supplies are keyed and can only be installed one way.
 +
 CAUTION: Do not use excessive force when sliding the power supply into the system; you can damage the connector.
 +
-image::../media/psup_4.png[]
+image::../media/psup_4.png["Install power supply into controller"]
 
 . Confirm that its status is Optimal and check the controller shelf's Attention LEDs.
 +
