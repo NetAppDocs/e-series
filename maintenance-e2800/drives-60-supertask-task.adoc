@@ -36,6 +36,7 @@ CAUTION: *Possible loss of data access* -- If a volume is already in a Degraded 
 *** *For SANtricity System Manager (version 11.60 and above)* -- Download the CLI package (zip file) from System Manager. Go to menu:Settings[System > Add-ons > Command Line Interface]. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
 *** *For SANtricity Storage Manager/Enterprise Management Window (EMW)* -- Follow the instructions in the express guide to download and install the software. You can run CLI commands from the EMW by selecting menu:Tools[Execute Script].
 
+NOTE: If you need information on how to replace an E-Series DE460c expansion shelf, please refer to the https://kb.netapp.com/on-prem/E-Series/Hardware-KBs/How_to_replace_an_E_Series_DE460c_controller_expansion_shelf[NetApp Knowledge base^].
 
 == Step 1: Prepare to replace drive drawer
 
