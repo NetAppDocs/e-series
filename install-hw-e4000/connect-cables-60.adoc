@@ -18,7 +18,6 @@ Learn how to attach the power cables and power on the drive shelves.
 
 This procedure applies to IOM12 and IOM12B drive shelves.
 
-NOTE: IOM12B modules are only supported on SANtricity OS 11.70.2 onward. Ensure your controller's firmware has been updated before installing or upgrading to an IOM12B.
 
 NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. This means you can only replace an IOM12 module with another IOM12 module or replace an IOM12B module with another IOM12B module. (Your shelf can have two IOM12 modules or have two IOM12B modules.)
 
@@ -40,7 +39,6 @@ image:../media/sas_cable.png[] a|
 
 .Example A: An E4060 controller shelf with two DE460C disk shelves in a standard SAS configuration.
 
-image:../media/example_a_2860.png[]
 
 .. Cable controller A to IOM A of the first drive shelf.
 .. Cable IOM A of the first drive shelf to IOM A of the second drive shelf.
@@ -51,7 +49,6 @@ image:../media/example_a_2860.png[]
 
 .Example B: An E4060 controller shelf with one DE460C disk shelf in a standard SAS configuration.
 
-image:../media/example_b_2860.png[]
 
 .. Cable controller A to IOM A.
 .. Cable controller B to IOM B.

@@ -15,7 +15,6 @@ Learn how to cable the controllers to your network and complete storage system s
 
 Cable the system according to your network topology.
 
-NOTE: If you are using AIX®, you must install the E-Series multipath driver on the host before connecting it to the array.
 
 [role="tabbed-block"]
 ====
@@ -98,8 +97,6 @@ image:../media/e4000_management_port.png[E4000 controller Management Port]
 
 
 . Open a browser and use the default IP address (169.254.128.101) to establish a connection to the controller. The controller sends back a self-signed certificate. The browser informs you that the connection is not secure.
-+
-NOTE: For platforms running SANtricity 11.60 and greater, the default subnet mask is 255.255.0.0.
 . Follow the browser's instructions to proceed and launch SANtricity System Manager. If you are unable to establish a connection, verify that you are not receiving network configuration from a DHCP server.
 . Set the storage system's password to login.
 . Use the network settings provided by your network administrator in the *Configure Network Settings* wizard to configure controller A's network settings, and then select *Finish*.

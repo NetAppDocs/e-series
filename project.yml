@@ -639,6 +639,7 @@ sidebar:
                 url: "/maintenance-e2800/hpp-change-host-protocol-task.html"
               - title: Complete host protocol conversion
                 url: "/maintenance-e2800/hpp-complete-protocol-conversion-task.html"
+        - section: maintenance-e4000
         - title: E5700
           pdf-filename: E5700 Maintain System
           entries:
