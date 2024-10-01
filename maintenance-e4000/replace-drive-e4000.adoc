@@ -1,0 +1,49 @@
+---
+permalink: maintenance-e4000/replace-drive-e4000.html
+sidebar: sidebar
+keywords: 
+summary: Before you replace an E4000 drive, review the requirements and considerations. 
+---
+= Replace E4000 drive overview
+:icons: font
+:imagesdir: ../media/
+
+
+[.lead]
+Before you replace an E4000 drive, review the requirements and considerations. 
+
+== Shelf types
+
+You can replace a drive in either a 12-drive, 24-drive, or 60-drive controller shelf or drive shelf.
+
+NOTE: Standard 24-drive shelves require drive staggering. When inserting fewer than 24 drives into an E4000 controller, you must alternate between the two halves of the controller. Beginning with the far left and then moving to the far right, place the drives in one at a time.
+
+== Drive handling
+
+The drives in your storage array are fragile. Improper drive handling is a leading cause of drive failure.
+
+Follow these rules to avoid damaging the drives in your storage array:
+
+* Prevent electrostatic discharge (ESD):
+ ** Keep the drive in the ESD bag until you are ready to install it.
+ ** Do not insert a metal tool or knife into the ESD bag.
++
+Open the ESD bag by hand or cut the top off with a pair of scissors.
+
+ ** Keep the ESD bag and any packing materials in case you must return a drive later.
+ ** Always wear an ESD wrist strap grounded to an unpainted surface on your storage enclosure chassis.
++
+If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling the drive.
+* Handle drives carefully:
+ ** Always use two hands when removing, installing, or carrying a drive.
+ ** Never force a drive into a shelf, and use gentle, firm pressure to completely engage the drive latch.
+ ** Place drives on cushioned surfaces, and never stack drives on top of each other.
+ ** Do not bump drives against other surfaces.
+ ** Before removing a drive from a shelf, unlatch the handle and wait 30 seconds for the drive to spin down.
+ ** Always use approved packaging when shipping drives.
+* Avoid magnetic fields:
+ ** Keep drives away from magnetic devices.
++
+Magnetic fields can destroy all data on the drive and cause irreparable damage to the drive circuitry.
+
+
