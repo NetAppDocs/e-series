@@ -11,7 +11,7 @@ summary: A health check runs as part of the upgrade process, but you also can ru
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

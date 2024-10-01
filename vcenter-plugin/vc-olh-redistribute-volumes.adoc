@@ -11,7 +11,7 @@ summary: Redistribute volumes to move volumes back to their preferred controller
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

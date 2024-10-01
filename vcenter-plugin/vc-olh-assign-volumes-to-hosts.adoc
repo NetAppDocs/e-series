@@ -11,7 +11,7 @@ summary: You must assign a volume to a host or a host cluster so it can be used 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

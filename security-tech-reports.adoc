@@ -9,6 +9,9 @@ summary: E-Series technical reports
 :icons: font
 :imagesdir: ./media/
 
+[.lead]
+Check out the links below to access security technical reports related to E-Series hardware and SANtricity software. The links take you to a different documentation site.
+
 == Security TRs
 
 [%rotate, grid="none", frame="none", cols="9,9,9",]

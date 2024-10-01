@@ -10,7 +10,7 @@ summary: Certificate Management allows you to create certificate signing request
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Certificate Management in the Storage Plugin for vCenter allows you to create certificate signing requests (CSRs), import certificates, and manage existing certificates.

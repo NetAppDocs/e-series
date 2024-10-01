@@ -11,7 +11,7 @@ summary: A media scan is a background operation that scans all data and redundan
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

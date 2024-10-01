@@ -11,7 +11,7 @@ summary: Upgrade one or more storage arrays with the latest software and NVSRAM 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

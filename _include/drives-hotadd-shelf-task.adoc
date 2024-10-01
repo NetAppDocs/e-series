@@ -125,7 +125,7 @@ The *Shelf Component Settings* dialog box appears.
 +
 The following figure shows an example connection between an additional drive shelf and controller B. To locate the ports on your model, see the https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe^].
 +
-image::../media/hot_e5700_2.png[]
+image::../media/hot_e5700_2.png["Drive shelf connection example"]
 
 . If it is not already selected, select the *ESMs/IOMs* tab in the *Shelf Component Settings* dialog box, and then select *Show more options*. Verify that Card communications is *YES*.
 +

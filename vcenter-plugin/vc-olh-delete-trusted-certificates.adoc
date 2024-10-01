@@ -10,7 +10,7 @@ summary: Delete one or more certificates that are no longer needed.
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can delete one or more certificates that are no longer needed, such as an expired certificate.

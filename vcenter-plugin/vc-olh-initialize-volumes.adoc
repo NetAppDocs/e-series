@@ -11,7 +11,7 @@ summary: Manually initialize a volume to recover from certain failure conditions
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

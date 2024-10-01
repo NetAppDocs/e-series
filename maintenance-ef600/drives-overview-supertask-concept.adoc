@@ -36,7 +36,7 @@ Magnetic fields can destroy all data on the drive and cause irreparable damage t
 
 Standard 24-drive shelves require drive staggering. The following figure shows how the drives are numbered in each shelf (the shelf's front bezel has been removed). 
 
-image::../media/ef600_drives_numbered.png[]
+image::../media/ef600_drives_numbered.png["Drive numbering in a 24-drive shelf"]
 
 When inserting fewer than 24 drives into an EF300 or EF600 controller, you must alternate between the two halves of the controller. Beginning with the far left and then moving to the far right, place the drives in one at a time.
 

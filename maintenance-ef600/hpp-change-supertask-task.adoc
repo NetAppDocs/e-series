@@ -419,7 +419,7 @@ NOTE: If your controller submodel ID is not listed, contact https://mysupport.ne
  .. Under *Change Feature Pack*, locate the *Feature Enable Identifier*.
  .. Copy and paste this 32-digit number to a text file.
 +
-image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-ef600.gif[]
+image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-ef600.gif["Change Feature Pack dialog"]
 . Go to http://partnerspfk.netapp.com[NetApp License Activation: Storage Array Premium Feature Activation^], and enter the information required to obtain the feature pack.
  ** Chassis Serial Number
  ** Feature Activation Code

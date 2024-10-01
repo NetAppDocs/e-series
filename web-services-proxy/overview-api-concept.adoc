@@ -15,7 +15,7 @@ In the Web Services API, HTTP communications involve a request-response cycle.
 
 Regardless of the programming language or tool used, each call to the Web Services API has a similar structure, with a URL, HTTP verb, and an Accept header.
 
-image::../media/web_services_proxy_api.gif[]
+image::../media/web_services_proxy_api.gif["Web Services API call diagram"]
 
 All requests include a URL, as in the following example, and contain the elements described in the table.
 
