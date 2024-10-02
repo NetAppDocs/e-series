@@ -145,7 +145,7 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 +
 NOTE: DIMMs fit tightly. You might need to gently press on one side at a time and secure with each tab individually.
 +
-image::../media/dimm_5.png[]
+image::../media/dimm_5.png["Insert DIMMS into the slot and secure with tabs""]
 
 == Step 6: Reinstall controller canister
 
