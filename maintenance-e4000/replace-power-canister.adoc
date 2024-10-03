@@ -12,7 +12,7 @@ summary: Replace a 60-drive controller shelf or drive shelf, which includes two 
 [.lead]
 You can replace a power canister in an E4000 array with a 60-drive shelf, which include the following shelf types:
 
-* E2860 controller shelf
+* E4060 controller shelf
 * DE460C drive shelf
 
 .About this task
@@ -38,7 +38,7 @@ Prepare to replace a power canister in a 60-drive controller shelf or drive shel
 .Steps
 
 . Collect support data for your storage array using SANtricity System Manager.
- .. Select menu:Support[Support Center > Diagnostics].
+ .. Select *Support Center > Diagnostics*.
  .. Select *Collect Support Data*.
  .. Click *Collect*.
 +
@@ -106,7 +106,7 @@ Confirm that the new power canister is working correctly, gather support data, a
 . If a failed power canister is still being reported, repeat the steps in <<Step 2: Remove failed power canister>> and in <<Step 3: Install new power canister>>. If the problem continues to persist, contact technical support.
 . Remove the antistatic protection.
 . Collect support data for your storage array using SANtricity System Manager.
- .. Select menu:Support[Support Center > Diagnostics].
+ .. Select *Support Center > Diagnostics*.
  .. Select *Collect Support Data*.
  .. Click *Collect*.
 +

@@ -10,9 +10,7 @@ entries:
       - title: Add second controller canister
         url: maintenance-e4000/replace-controller-second-e4000.html
       - title: Replace controller
-        url: 
-      - title: 
-        url: 
+        url: "/maintenance-e4000/replace-controller-e4000.html"
   - title: Canisters
     entries:
       - title: Replace power supply (E4012)
@@ -28,7 +26,11 @@ entries:
       - title: Considerations and requirements
         url: "/maintenance-e4000/replace-drive-e4000.html"
       - title: Replace drive
-        url: Replace drives
+        entries:
+          - title: 12 or 24 drive
+            url: "/maintenance-e4000/replace-drives-12-24.html"
+          - title: 60 drive
+            url: "/maintenance-e4000/replace-drives-60.html"
       - title: Hot add a drive shelf
         url: "/maintenance-e4000/replace-drives-hotadd-drive-shelf.html"
   - title: Host interface cards

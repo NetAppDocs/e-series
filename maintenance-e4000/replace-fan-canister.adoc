@@ -11,7 +11,7 @@ summary: Review E4000 canister types and requirements.
 [.lead]
 You can replace a fan canister in an E4000 array with a 60-drive shelf, which include the following shelf types:
 
-* E2860 controller shelf
+* E4060 controller shelf
 * DE460C drive shelf
 
 .About this task
@@ -36,7 +36,7 @@ Prepare to replace a fan canister in a 60-drive controller shelf or drive shelf 
 .Steps
 
 . Collect support data for your storage array using SANtricity System Manager.
- .. Select menu:Support[Support Center > Diagnostics].
+ .. Select *Support Center > Diagnostics*.
  .. Select *Collect Support Data*.
  .. Click *Collect*.
 +
@@ -93,7 +93,7 @@ NOTE: After you replace the fan canister, the Attention LED stays on (solid ambe
 . If a failed fan canister is still being reported, repeat the steps in <<Step 2: Remove failed fan canister and install new one>>. If the problem persists, contact technical support.
 . Remove the antistatic protection.
 . Collect support data for your storage array using SANtricity System Manager.
- .. Select menu:Support[Support Center > Diagnostics].
+ .. Select *Support Center > Diagnostics*.
  .. Select *Collect Support Data*.
  .. Click *Collect*.
 +
