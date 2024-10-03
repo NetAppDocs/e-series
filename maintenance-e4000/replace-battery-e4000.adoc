@@ -32,54 +32,14 @@ If you have a duplex configuration, you must place the affected controller offli
 
 If you have a simplex configuration, power down the controller shelf so you can safely remove the failed battery.
 
-.Steps
 
 [role="tabbed-block"]
 ====
-.Place controller offline (duplex)
---
-. From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
-. From the Details area of the Recovery Guru, determine which battery to replace.
-. Back up the storage array’s configuration database using SANtricity System Manager.
-+
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
-+
-** From System Manager:
-+
-.. Select *Support › Support Center › Diagnostics*.
-.. Select *Collect Configuration Data*.
-.. Click *Collect*.
-+
-The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
-** Alternatively, you can back up the configuration database by using the following CLI command:
-+
-`save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";`
-. Collect support data for your storage array using SANtricity System Manager.
-. If a problem occurs when you remove a controller, you can use the saved file to troubleshoot the issue. The system will save inventory, status, and performance data about your storage array in a single file.
-.. Select *Support › Support Center › Diagnostics*.
-.. Select *Collect Support Data*.
-.. Click *Collect*.
-+
-The file is saved in the Downloads folder for your browser with the name, support-data.7z.
-. If the controller is not already offline, take it offline now using SANtricity System Manager.
-** From SANtricity System Manager:
-.. Select *Hardware*.
-.. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
-.. Select the controller that you want to place offline.
-.. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
-+
-NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
-** Alternatively, you can take the controllers offline by using the following CLI commands:
-+
-*For controller A*: `set controller [a] availability=offline`
-+
-*For controller B*: `set controller [b] availability=offline`
-. Wait for SANtricity System Manager to update the controller’s status to offline.
-. Select *Recheck* from the Recovery Guru, and confirm that the *Okay to remove* field in the *Details* area displays *Yes*. This indicates that it is safe to proceed to removing the controller canister.
 
---
 .Power down the controller shelf (simplex)
 --
+
+.Steps
 
 . Back up the storage array’s configuration database using SANtricity System Manager.
 +
@@ -121,7 +81,51 @@ The green Cache Active LED on the back of the controller is on when cached data 
 . Wait for all LEDs on the controller shelf to turn off.
 
 --
+.Place controller offline (duplex)
+--
 
+.Steps
+
+. From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
+. From the Details area of the Recovery Guru, determine which battery to replace.
+. Back up the storage array’s configuration database using SANtricity System Manager.
++
+If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
++
+** From System Manager:
++
+.. Select *Support › Support Center › Diagnostics*.
+.. Select *Collect Configuration Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
+** Alternatively, you can back up the configuration database by using the following CLI command:
++
+`save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";`
+. Collect support data for your storage array using SANtricity System Manager.
+. If a problem occurs when you remove a controller, you can use the saved file to troubleshoot the issue. The system will save inventory, status, and performance data about your storage array in a single file.
+.. Select *Support › Support Center › Diagnostics*.
+.. Select *Collect Support Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, support-data.7z.
+. If the controller is not already offline, take it offline now using SANtricity System Manager.
+** From SANtricity System Manager:
+.. Select *Hardware*.
+.. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
+.. Select the controller that you want to place offline.
+.. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
++
+NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
+** Alternatively, you can take the controllers offline by using the following CLI commands:
++
+*For controller A*: `set controller [a] availability=offline`
++
+*For controller B*: `set controller [b] availability=offline`
+. Wait for SANtricity System Manager to update the controller’s status to offline.
+. Select *Recheck* from the Recovery Guru, and confirm that the *Okay to remove* field in the *Details* area displays *Yes*. This indicates that it is safe to proceed to removing the controller canister.
+
+--
 ====
 
 == Step 2: Remove E4000 controller canister
@@ -218,12 +222,43 @@ The controller begins to boot as soon as it is seated in the chassis.
 
 The steps to complete battery replacement depend on whether you have a duplex (two controllers) or simplex (one controller) configuration.
 
-.Steps
 
 [role="tabbed-block"]
 ====
+.Power up controller (simplex)
+--
+
+.Steps
+
+. Turn on the two power switches at the back of the controller shelf.
+
+** Do not turn off the power switches during the power-on process, which typically takes 90 seconds or less to complete.
+** The fans in each shelf are very loud when they first start up. The loud noise during start-up is normal.
+
+. When the controller is back online, check the controller shelf's Attention LEDs.
++
+If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated, and check that the battery and the controller canister are installed correctly. If necessary, remove and reinstall the controller canister and the battery.
++
+NOTE: If you cannot resolve the problem, contact technical support.
+If needed, collect support data for your storage array using SANtricity System Manager.
+. Verify that all volumes have been returned to the preferred owner.
+.. Select *Storage › Volumes*. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select *More › Change ownership* to view volume owners.
+.. If volumes are all owned by preferred owner continue to step 5.
+.. If none of the volumes are returned, you must manually return the volumes. Go to *More › Redistribute volumes*.
+.. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution, you must check the Recovery Guru for host connectivity issues.
+.. If there is no Recovery Guru present or if after following the recovery guru steps the volumes are still not returned to their preferred owners, contact support.
+. Collect support data for your storage array using SANtricity System Manager.
+.. Select *Support › Support Center › Diagnostics*.
+.. Select Collect Support Data.
+.. Click Collect.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+
+--
 .Place controller online (duplex)
 --
+
+.Steps
 
 . Bring the controller online using SANtricity System Manager.
 
@@ -258,41 +293,10 @@ If needed, collect support data for your storage array using SANtricity System M
 .. Select Collect Support Data.
 .. Click Collect.
 +
-The file is saved in the Downloads folder for your browser with the name, support-data.7z.
-
-.What's next?
-Your battery replacement is complete. You can resume normal operations.
-
---
-.Power up controller (simplex)
---
-
-. Turn on the two power switches at the back of the controller shelf.
-
-** Do not turn off the power switches during the power-on process, which typically takes 90 seconds or less to complete.
-** The fans in each shelf are very loud when they first start up. The loud noise during start-up is normal.
-
-. When the controller is back online, check the controller shelf's Attention LEDs.
-+
-If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated, and check that the battery and the controller canister are installed correctly. If necessary, remove and reinstall the controller canister and the battery.
-+
-NOTE: If you cannot resolve the problem, contact technical support.
-If needed, collect support data for your storage array using SANtricity System Manager.
-. Verify that all volumes have been returned to the preferred owner.
-.. Select *Storage › Volumes*. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select *More › Change ownership* to view volume owners.
-.. If volumes are all owned by preferred owner continue to step 5.
-.. If none of the volumes are returned, you must manually return the volumes. Go to *More › Redistribute volumes*.
-.. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution, you must check the Recovery Guru for host connectivity issues.
-.. If there is no Recovery Guru present or if after following the recovery guru steps the volumes are still not returned to their preferred owners, contact support.
-. Collect support data for your storage array using SANtricity System Manager.
-.. Select *Support › Support Center › Diagnostics*.
-.. Select Collect Support Data.
-.. Click Collect.
-+
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 
+--
+====
+
 .What's next?
 Your battery replacement is complete. You can resume normal operations.
---
-
-====

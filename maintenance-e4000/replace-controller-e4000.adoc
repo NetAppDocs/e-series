@@ -24,69 +24,10 @@ Make sure you have the following:
 
 == Step 1: Prepare to replace controller
 
-Prepare to replace a controller canister by saving the drive security key, backing up the configuration, and collecting support data. Then, you can stop host I/O operations and place the controller offline.
+Prepare to replace a controller canister by saving the drive security key, backing up the configuration, and collecting support data. Then, you can stop host I/O operations and place the controller offline or power it down.
 
 [role="tabbed-block"]
 ====
-.Place controller offline (duplex)
---
-
-.Steps
-
-. Unpack the new controller canister, and set it on a flat, static-free surface.
-+
-Save the packing materials to use when shipping the failed controller canister.
-. Locate the MAC address and FRU part number labels on the back of the controller canister.
-. From SANtricity System Manager, locate the replacement part number for the controller canister you are replacing.
-+
-When a controller has a fault and needs to be replaced, the replacement part number is displayed in the Details area of the Recovery Guru. If you need to find this number manually, follow these steps:
-
-.. Select *Hardware*.
-.. Locate the controller shelf, which is marked with the controller icon.
-.. Click the controller icon.
-.. Select the controller, and click *Next*.
-.. On the *Base* tab, make a note of the *Replacement Part Number* for the controller.
-. Confirm that the replacement part number for the failed controller is the same as the FRU part number for the replacement controller.
-+
-CAUTION: *Possible loss of data access* — If the two part numbers are not the same, do not attempt this procedure. The presence of mismatched controllers will cause the new controller to lock down when you bring it online.
-. Back up the storage array's configuration database using SANtricity System Manager.
-+
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
-
-** From System Manager:
-.. Select *Support › Support Center › Diagnostics*.
-.. Select *Collect Configuration Data*.
-.. Click *Collect*.
-+
-The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
-
-** Alternatively, you can back up the configuration database by using the following CLI command:
-+
-----
-save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";
-----
-
-. If the controller is not already offline, take it offline now using SANtricity System Manager.
-
-** From SANtricity System Manager:
-.. Select *Hardware*.
-.. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
-.. Select the controller that you want to place offline.
-.. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
-+
-NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select Connect to an alternate network connection to automatically access SANtricity System Manager using the other controller.
-
-** Alternatively, you can take the controllers offline by using the following CLI commands:
-+
-*For controller A*: `set controller [a] availability=offline`
-+
-*For controller B*: `set controller [b] availability=offline`
-. Wait for SANtricity System Manager to update the controller's status to offline.
-+
-CAUTION: Do not begin any other operations until after the status has been updated.
-. Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove this component.
-
---
 .Power down the controller shelf (simplex)
 --
 
@@ -149,6 +90,66 @@ The green Cache Active LED on the back of the controller is on when cached data 
 . Wait for all LEDs on the controller shelf to turn off.
 . Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove this component.
 Data on the storage array will not be accessible until you replace the controller canister.
+--
+
+.Place controller offline (duplex)
+--
+
+.Steps
+
+. Unpack the new controller canister, and set it on a flat, static-free surface.
++
+Save the packing materials to use when shipping the failed controller canister.
+. Locate the MAC address and FRU part number labels on the back of the controller canister.
+. From SANtricity System Manager, locate the replacement part number for the controller canister you are replacing.
++
+When a controller has a fault and needs to be replaced, the replacement part number is displayed in the Details area of the Recovery Guru. If you need to find this number manually, follow these steps:
+
+.. Select *Hardware*.
+.. Locate the controller shelf, which is marked with the controller icon.
+.. Click the controller icon.
+.. Select the controller, and click *Next*.
+.. On the *Base* tab, make a note of the *Replacement Part Number* for the controller.
+. Confirm that the replacement part number for the failed controller is the same as the FRU part number for the replacement controller.
++
+CAUTION: *Possible loss of data access* — If the two part numbers are not the same, do not attempt this procedure. The presence of mismatched controllers will cause the new controller to lock down when you bring it online.
+. Back up the storage array's configuration database using SANtricity System Manager.
++
+If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
+
+** From System Manager:
+.. Select *Support › Support Center › Diagnostics*.
+.. Select *Collect Configuration Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
+
+** Alternatively, you can back up the configuration database by using the following CLI command:
++
+----
+save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";
+----
+
+. If the controller is not already offline, take it offline now using SANtricity System Manager.
+
+** From SANtricity System Manager:
+.. Select *Hardware*.
+.. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
+.. Select the controller that you want to place offline.
+.. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
++
+NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select Connect to an alternate network connection to automatically access SANtricity System Manager using the other controller.
+
+** Alternatively, you can take the controllers offline by using the following CLI commands:
++
+*For controller A*: `set controller [a] availability=offline`
++
+*For controller B*: `set controller [b] availability=offline`
+. Wait for SANtricity System Manager to update the controller's status to offline.
++
+CAUTION: Do not begin any other operations until after the status has been updated.
+. Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove this component.
+
 --
 ====
 
@@ -272,6 +273,14 @@ The DIMM fits tightly in the slot, but should go in easily. If not, realign the 
 NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
 . Repeat these steps for the other DIMM.
 
+== Step 7: Install the HIC
+
+Install the HIC into the replacement controller canister.
+
+. Align the socket on the replacement HIC plug with the socket on the motherboard, and then gently seat the card squarely into the socket.
+. Tighten the three thumbscrews on the HIC.
+. Reinstall the HIC faceplate.
+
 
 == Step 7: Install the battery
 
@@ -295,49 +304,6 @@ Reestablish connection to the controller shelf, collect support data, and resume
 
 [role="tabbed-block"]
 ====
-.Place controller online (duplex)
---
-
-.Steps
-
-. Install the replacement controller into the appliance.
- .. Turn the controller over, so that the removable cover faces down.
- .. With the cam handle in the open position, slide the controller all the way into the appliance.
- .. Move the cam handle to the left to lock the controller in place.
- .. Replace the cables.
- .. If the original controller used DHCP for the IP address, locate the MAC address on the label on the back of the replacement controller. Ask your network administrator to associate the DNS/network and IP address for the controller you removed with the MAC address for the replacement controller.
-+
-NOTE: If the original controller did not use DHCP for the IP address, the new controller will adopt the IP address of the controller you removed.
-. Place controller online.
-.. In System Manager, navigate to the *Hardware* page.
-.. Select *Show back of controller*.
-.. Select the replaced controller.
-.. Select *Place online* from the drop-down list.
-. As the controller boots, check the controller LEDs.
-
-** The amber Attention LED on the controller turns on and then turns off, unless there is an error.
-** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
-
-. When the controller is back online, confirm that its status is Optimal and check the controller shelf's Attention LEDs.
-+
-If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller canister is installed correctly. If necessary, remove and reinstall the controller canister.
-+
-NOTE: If you cannot resolve the problem, contact technical support.
-. If required, redistribute all volumes back to their preferred owner using SANtricity System Manager.
-.. Select *Storage › Volumes*.
-.. Select *More › Redistribute volumes*.
-. Click *Hardware › Support › Upgrade Center* to ensure that the latest version of SANtricity OS software (controller firmware) is installed.
-+
-As needed, install the latest version.
-
-. Collect support data for your storage array using SANtricity System Manager.
-.. Select *Support › Support Center › Diagnostics*.
-.. Select *Collect Support Data*.
-.. Click *Collect*.
-+
-The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
-
---
 .Power on controller shelf (simplex)
 --
 
@@ -406,6 +372,50 @@ where:
 
 . Collect support data for your storage array using SANtricity System Manager.
 .. Select *Support › Support Center › *Diagnostics*.
+.. Select *Collect Support Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+
+--
+
+.Place controller online (duplex)
+--
+
+.Steps
+
+. Install the replacement controller into the appliance.
+ .. Turn the controller over, so that the removable cover faces down.
+ .. With the cam handle in the open position, slide the controller all the way into the appliance.
+ .. Move the cam handle to the left to lock the controller in place.
+ .. Replace the cables.
+ .. If the original controller used DHCP for the IP address, locate the MAC address on the label on the back of the replacement controller. Ask your network administrator to associate the DNS/network and IP address for the controller you removed with the MAC address for the replacement controller.
++
+NOTE: If the original controller did not use DHCP for the IP address, the new controller will adopt the IP address of the controller you removed.
+. Place controller online.
+.. In System Manager, navigate to the *Hardware* page.
+.. Select *Show back of controller*.
+.. Select the replaced controller.
+.. Select *Place online* from the drop-down list.
+. As the controller boots, check the controller LEDs.
+
+** The amber Attention LED on the controller turns on and then turns off, unless there is an error.
+** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
+
+. When the controller is back online, confirm that its status is Optimal and check the controller shelf's Attention LEDs.
++
+If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller canister is installed correctly. If necessary, remove and reinstall the controller canister.
++
+NOTE: If you cannot resolve the problem, contact technical support.
+. If required, redistribute all volumes back to their preferred owner using SANtricity System Manager.
+.. Select *Storage › Volumes*.
+.. Select *More › Redistribute volumes*.
+. Click *Hardware › Support › Upgrade Center* to ensure that the latest version of SANtricity OS software (controller firmware) is installed.
++
+As needed, install the latest version.
+
+. Collect support data for your storage array using SANtricity System Manager.
+.. Select *Support › Support Center › Diagnostics*.
 .. Select *Collect Support Data*.
 .. Click *Collect*.
 +

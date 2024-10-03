@@ -275,6 +275,7 @@ When communication with the other controller is reestablished:
 . When the controller is back online, confirm that its status is Optimal and check the controller shelf’s Attention LEDs.
 +
 If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller canister is installed correctly. If necessary, remove and reinstall the controller canister.
++
 NOTE: If you cannot resolve the problem, contact technical support.
 . Click *Hardware › Support › Upgrade Center* to ensure that the latest version of SANtricity OS is installed.
 +

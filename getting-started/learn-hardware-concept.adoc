@@ -18,6 +18,7 @@ E-Series arrays are available in the following models:
 * E2800 series -- entry-level hybrid
 * EF280 series -- entry-level all flash
 * EF300 series -- entry-level all flash, all NVMe
+* E4000 series -- entry-level hybrid
 * E5700 series -- midrange hybrid
 * EF570 series -- midrange all flash
 * EF600 series -- midrange all flash, all NVMe
@@ -261,7 +262,7 @@ Drives::
 Supports the following drive types:
 +
 * 3.5" NL-SAS (up to 300)
-* 2.5" SAS SSD (up to 240)
+* 2.5" SAS SSD (up to 200)
 
 Interfaces::
 +
