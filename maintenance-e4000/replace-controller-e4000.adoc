@@ -277,6 +277,8 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 
 Install the HIC into the replacement controller canister.
 
+.Steps
+
 . Align the socket on the replacement HIC plug with the socket on the motherboard, and then gently seat the card squarely into the socket.
 . Tighten the three thumbscrews on the HIC.
 . Reinstall the HIC faceplate.
