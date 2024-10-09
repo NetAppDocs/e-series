@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: whats-new.html
-keywords: whats new, new features, SANtricity 11.73
+keywords: whats new, new features, SANtricity 11.90
 summary: New features in SANtricity OS.
 ---
 
@@ -11,7 +11,21 @@ summary: New features in SANtricity OS.
 :imagesdir: ../media/
 
 [.lead]
-The following table describes new features in SANtricity OS 11.8 for embedded management of EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
+The following table describes new features in the latest SANtricity OS releases for embedded management of E4000, EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
+
+== New features in Version 11.90
+
+[cols="35h,~",options="header"]
+|===
+|New feature |Description
+
+a|New storage system model – E4000
+a|This release introduces the E4000 low-cost storage system. The E4000 supports 12 and 60 drives and a single host interface card (HIC) per controller. The supported host interface cards include iSCSI, Fibre Channel, and SAS. E4000 storage systems and other E-Series storage systems can be viewed and managed in Unified Manager.
+
+a|Automatic drive firmware upgrade notification 
+a|A new upgrade alert is now generated whenever a drive with down version firmware is detected in your storage array. For more information, see https://docs.netapp.com/us-en/e-series-santricity/sm-hardware/automatic-drive-fw-upgrade.html[Automatic drive firmware upgrade notification^].
+
+|===
 
 == New features in Version 11.80.1R1
 

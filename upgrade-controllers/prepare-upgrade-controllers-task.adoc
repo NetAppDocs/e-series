@@ -75,9 +75,8 @@ All matching terms are highlighted. To scroll through all the results one at a t
 +
 You need this serial number to perform the steps in link:complete-upgrade-controllers-task.html[Complete controller upgrade].
 . Gather support data about your storage array by using either the GUI or the CLI:
- ** Use either System Manager or the Array Management Window in Storage Manager to collect and save a support bundle of your storage array.
+ ** Use System Manager to collect and save a support bundle of your storage array.
   *** From System Manager, select menu:Support[Support Center > Diagnostics tab]. Then select *Collect Support Data* and click *Collect*.
-  *** From the Array Management Window toolbar, select menu:Monitor[Health > Collect Support Data Manually]. Then enter a name and specify a location on your system where you want to store the support bundle.
 +
 The file is saved in the Downloads folder for your browser with the name `support-data.7z`.
 +
