@@ -94,6 +94,7 @@ sidebar:
                   url: "/install-hw-e2800-e5700/e2824-e5724-connect-cables-task.html"
                 - title: Complete storage system setup
                   url: "/install-hw-e2800-e5700/e2824-e5724-complete-setup-task.html"
+        - section: install-hw-e4000
         - title: 3040 40U cabinet
           entries:
               - title: Overview
@@ -638,6 +639,7 @@ sidebar:
                 url: "/maintenance-e2800/hpp-change-host-protocol-task.html"
               - title: Complete host protocol conversion
                 url: "/maintenance-e2800/hpp-complete-protocol-conversion-task.html"
+        - section: maintenance-e4000
         - title: E5700
           pdf-filename: E5700 Maintain System
           entries:

@@ -1,7 +1,7 @@
 ---
 permalink: install-hw-cabling/driveshelf-cable-task.html
 sidebar: sidebar
-keywords: cabling, cables, drive shelf cabling, controller shelf cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C
+keywords: cabling, cables, drive shelf cabling, controller shelf cabling, E-Series, eseries, E2800, E5700, EF300, EF600, E4000, DE212C, DE224C, DE460C
 summary: Connect each controller in the controller shelf to an I/O module (IOM) in a drive shelf.
 ---
 = Drive shelf cabling
@@ -23,25 +23,33 @@ If you are cabling an older controller shelf to a DE212C, DE224C, or DE460, see 
 
 The following information applies to cabling an E2800, E2800B, EF280, E5700, EF5700B, or EF570 controller shelf to a DE212C, DE224C, or DE460 drive shelf.
 
-=== Cabling a 12-drive or 24-drive shelf
+[role="tabbed-block"]
+====
+
+.12-drive or 24-drive shelf
+--
 
 You can cable your controller shelf to one or more 12-drive or 24-drive shelves.
 
 The following image shows a representation of the controller shelf and the drive shelves. To locate the ports on your model, see https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe^].
 
-==== A controller shelf and 12-drive or 24-drive shelves
 
-image::../media/12_24_cabling.png["12-drive and 24-drive shelf cabling"]
+image::../media/12_24_cabling.png[A controller shelf and 12-drive or 24-drive shelves]
 
-=== Cabling a 60-drive shelf
+--
+
+.60-drive shelf
+--
 
 You can cable your controller shelf to one or more 60-drive shelves.
 
 The following image shows a representation of the controller shelf and the drive shelves. To locate the ports on your model, see https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe^].
 
-==== A controller shelf and 60-drive shelves
 
-image::../media/60_cabling.png["60-drive shelf cabling"]
+image::../media/60_cabling.png[A controller shelf and 60-drive shelves]
+
+--
+====
 
 == Cabling EF300 and EF600
 
@@ -51,22 +59,56 @@ The following information applies to cabling an EF300 or EF600 controller shelf 
 
 Before cabling an EF300 or EF600, make sure the firmware is updated to the latest version. To update the firmware, follow the instructions in  link:../upgrade-santricity/index.html[Upgrading SANtricity OS^].
 
-=== Cabling a 12-drive or 24-drive shelf
+[role="tabbed-block"]
+====
+
+.12-drive or 24-drive shelf
+--
 
 You can cable your controller shelf to one or more 12-drive or 24-drive shelves.
 
 The following image shows a representation of the controller shelf and the drive shelves. To locate the ports on your model, see https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe^].
 
-==== A controller shelf and 12-drive or 24-drive shelves
 
-image::../media/ef_to_de224c_four_shelves.png["12-drive and 24-drive shelf cabling"]
+image::../media/ef_to_de224c_four_shelves.png[A controller shelf and 12-drive or 24-drive shelves]
 
-=== Cabling a 60-drive shelf
+--
+
+.60-drive shelf
+--
 
 You can cable your controller shelf to one or more 60-drive shelves.
 
 The following image shows a representation of the controller shelf and the drive shelves. To locate the ports on your model, see https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe^].
 
-==== A controller shelf and 60-drive shelves
 
-image::../media/ef_to_de460c.png["60-drive shelf cabling"]
+image::../media/ef_to_de460c.png[A controller shelf and 60-drive shelves]
+
+--
+====
+
+== Cabling E4000
+
+The following information applies to cabling an E4000 controller shelf to a DE212C, DE224C, or DE460 drive shelf.
+
+[role="tabbed-block"]
+====
+
+.12-drive shelf
+--
+
+You can cable your controller shelf to one or more 12-drive shelves.
+
+image::../media/e4012_cabling.png[A controller shelf and 12-drive shelf]
+
+--
+
+.60-drive shelf
+--
+
+You can cable your controller shelf to one or more 60-drive shelves.
+
+image::../media/e4060_cabling.png[A controller shelf and 60-drive shelves]
+
+--
+====

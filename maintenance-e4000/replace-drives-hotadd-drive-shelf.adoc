@@ -1,3 +1,13 @@
+---
+permalink: maintenance-e4000/replace-drives-hotadd-drive-shelf.html
+sidebar: sidebar
+keywords: E4000 replace drive, replacing E4000 drive, E4000 replace drive, replacing E4000 drive, E4000, E-Series, eseries
+summary: Replace a drive in an E4000 with a 12-drive or 24-drive shelf.
+---
+= Hot adding a drive shelf
+:icons: font
+:imagesdir: ../media/
+
 [.lead]
 You can add a new drive shelf while power is still applied to the other components of the storage system. You can configure, reconfigure, add, or relocate storage system capacity without interrupting user access to data.
 
@@ -10,11 +20,9 @@ Due to the complexity of this procedure, the following is recommended:
 
 .About this task
 
-This procedure applies to hot adding a DE212C, DE224C, or DE460C drive shelf to an E2800, E2800B, EF280, E5700, E5700B, EF570, EF300, EF600, or E4000 controller shelf.
+This procedure applies to hot adding a DE212C, DE224C, or DE460C drive shelf to an E4000 controller shelf.
 
 This procedure applies to IOM12 and IOM12B drive shelves.
-
-NOTE: IOM12B modules are only supported on SANtricity OS 11.70.2 onward. Ensure your controller's firmware has been updated before installing or upgrading to an IOM12B.
 
 NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. This means you can only replace an IOM12 module with another IOM12 module or replace an IOM12B module with another IOM12B module. (Your shelf can have two IOM12 modules or have two IOM12B modules.)
 
@@ -54,7 +62,7 @@ NOTE: If unresolved critical events have occurred within the previous two to thr
 . Select *Hardware*.
 . Select the *IOMs (ESMs)* icon.
 +
-image::../media/sam1130_ss_hardware_iom_icon.gif["IOMs (ESMs) icon"]
+image::../media/sam1130_ss_hardware_iom_icon.gif[]
 +
 The Shelf Component Settings dialog box appears with the *IOMs (ESMs)* tab selected.
 
@@ -83,15 +91,9 @@ NOTE: See the installation instructions for your model for the full procedure fo
 
 == Step 3: Cable your system
 
-If you are cabling an older controller shelf to a DE212C, DE224C, or DE460, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf^].
-
-[role="tabbed-block"]
-====
-
-.Connect the drive shelf for E2800 or E5700
---
-
 You connect the drive shelf to controller A, confirm IOM status, and then connect the drive shelf to controller B.
+
+If you are cabling an older controller shelf to a DE212C, DE224C, or DE460, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf^].
 
 .Steps
 
@@ -99,103 +101,9 @@ You connect the drive shelf to controller A, confirm IOM status, and then connec
 +
 The following figure shows an example connection between an additional drive shelf and controller A. To locate the ports on your model, see the https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe^].
 +
-image::../media/hot_e5700_0.png["Connect drive shelf to controller"]
+image::../media/hot_e5700_0.png[]
 +
-image::../media/hot_e5700_1.png["Connect drive shelf to controller"]
-
-. In SANtricity System Manager, click *Hardware*.
-+
-NOTE: At this point in the procedure, you have only one active path to the controller shelf.
-
-. Scroll down, as necessary, to see all the drive shelves in the new storage system. If the new drive shelf is not displayed, resolve the connection issue.
-. Select the *ESMs/IOMs* icon for the new drive shelf.
-+
-image::../media/sam1130_ss_hardware_iom_icon.gif["ESMs/IOMs icon"]
-+
-The *Shelf Component Settings* dialog box appears.
-
-. Select the *ESMs/IOMs* tab in the *Shelf Component Settings* dialog box.
-. Select *Show more options*, and verify the following:
- ** IOM/ESM A is listed.
- ** Current data rate is 12 Gbps for a SAS-3 drive shelf.
- ** Card communications is OK.
-. Disconnect all expansion cables from controller B.
-. Connect the drive shelf to controller B.
-+
-The following figure shows an example connection between an additional drive shelf and controller B. To locate the ports on your model, see the https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe^].
-+
-image::../media/hot_e5700_2.png["Drive shelf connection example"]
-
-. If it is not already selected, select the *ESMs/IOMs* tab in the *Shelf Component Settings* dialog box, and then select *Show more options*. Verify that Card communications is *YES*.
-+
-NOTE: Optimal status indicates that the loss of redundancy error associated with the new drive shelf has been resolved and the storage system is stabilized.
-
---
-
-.Connect the drive shelf for EF300 or EF600
---
-
-You connect the drive shelf to controller A, confirm IOM status, and then connect the drive shelf to controller B.
-
-.Before you begin
-
-* You have updated your firmware to the latest version. To update your firmware, follow the instructions in the link:../upgrade-santricity/index.html[Upgrading SANtricity OS].
-
-.Steps
-
-. Disconnect both of the A-side controller cables from IOM12 ports one and two from previous last shelf in the stack and then connect them to the new shelf IOM12 ports one and two.
-+
-image::../media/de224c_sides.png["Disconnect cables from controller A and connect to new shelf"]
-
-. Connect the cables to A-side IOM12 ports three and four from the new shelf to previous last shelf IOM12 ports one and two.
-+
-The following figure shows an example connection for A side between an additional drive shelf and the previous last shelf. To locate the ports on your model, see the https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe^].
-+
-image::../media/hot_ef_0.png["Drive shelf cabling example"]
-+
-image::../media/hot_ef_1.png["Drive shelf cabling example"]
-
-. In SANtricity System Manager, click *Hardware*.
-+
-NOTE: At this point in the procedure, you have only one active path to the controller shelf.
-
-. Scroll down, as necessary, to see all the drive shelves in the new storage system. If the new drive shelf is not displayed, resolve the connection issue.
-. Select the *ESMs/IOMs* icon for the new drive shelf.
-+
-image::../media/sam1130_ss_hardware_iom_icon.gif["ESMs/IOMs icon"]
-+
-The *Shelf Component Settings* dialog box appears.
-
-. Select the *ESMs/IOMs* tab in the *Shelf Component Settings* dialog box.
-. Select *Show more options*, and verify the following:
- ** IOM/ESM A is listed.
- ** Current data rate is 12 Gbps for a SAS-3 drive shelf.
- ** Card communications is OK.
-. Disconnect both the B-side controller cables from IOM12 ports one and two from the previous last shelf in the stack then connect them to the new shelf IOM12 ports one and two.
-. Connect the cables to B-side IOM12 ports three and four from the new shelf to the previous last shelf IOM12 ports one and two.
-+
-The following figure shows an example connection for B side between an additional drive shelf and the previous last shelf. To locate the ports on your model, see the https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe^].
-+
-image::../media/hot_ef_2.png["Drive shelf cabling example"]
-
-. If it is not already selected, select the *ESMs/IOMs* tab in the *Shelf Component Settings* dialog box, and then select *Show more options*. Verify that Card communications is *YES*.
-+
-NOTE: Optimal status indicates that the loss of redundancy error associated with the new drive shelf has been resolved and the storage system is stabilized.
-
---
-
-.Connect the drive shelf for E4000
---
-
-You connect the drive shelf to controller A, confirm IOM status, and then connect the drive shelf to controller B.
-
-.Steps
-
-. Connect the drive shelf to controller A.
-+
-image::../media/hot_e4000_cabling_0.png[]
-+
-image::../media/hot_e4000_cabling_1.png[]
+image::../media/hot_e5700_1.png[]
 
 . In SANtricity System Manager, click *Hardware*.
 +
@@ -216,15 +124,14 @@ The *Shelf Component Settings* dialog box appears.
 . Disconnect all expansion cables from controller B.
 . Connect the drive shelf to controller B.
 +
-image::../media/hot_e4000_cabling_2.png[]
+The following figure shows an example connection between an additional drive shelf and controller B. To locate the ports on your model, see the https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe^].
++
+image::../media/hot_e5700_2.png[]
 
 . If it is not already selected, select the *ESMs/IOMs* tab in the *Shelf Component Settings* dialog box, and then select *Show more options*. Verify that Card communications is *YES*.
 +
 NOTE: Optimal status indicates that the loss of redundancy error associated with the new drive shelf has been resolved and the storage system is stabilized.
 
-
---
-====
 
 == Step 4: Complete hot add
 

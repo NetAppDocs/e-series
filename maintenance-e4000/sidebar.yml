@@ -1,0 +1,42 @@
+section: maintenance-e4000
+title: E4000
+entries:
+  - title: Batteries
+    url: "/maintenance-e4000/replace-battery-e4000.html"
+  - title: Controllers
+    entries:
+      - title: Considerations and requirements
+        url: "/maintenance-e4000/replace-controller-requirements-e4000.html"
+      - title: Add second controller canister
+        url: maintenance-e4000/replace-controller-second-e4000.html
+      - title: Replace controller
+        url: "/maintenance-e4000/replace-controller-e4000.html"
+  - title: Canisters
+    entries:
+      - title: Replace power supply (E4012)
+        url: "/maintenance-e4000/replace-power-supply.html"
+      - title: Replace power canister (E4060)
+        url: "/maintenance-e4000/replace-power-canister.html"
+      - title: Replace fan canister (E4060)
+        url: "/maintenance-e4000/replace-fan-canister.html"
+  - title: DIMMs
+    url: "/maintenance-e4000/replace-dimms-e4000.html"
+  - title: Drives
+    entries:
+      - title: Considerations and requirements
+        url: "/maintenance-e4000/replace-drive-e4000.html"
+      - title: Replace drive
+        entries:
+          - title: 12 or 24 drive
+            url: "/maintenance-e4000/replace-drives-12-24.html"
+          - title: 60 drive
+            url: "/maintenance-e4000/replace-drives-60.html"
+      - title: Hot add a drive shelf
+        url: "/maintenance-e4000/replace-drives-hotadd-drive-shelf.html"
+  - title: Host interface cards
+    entries:
+      - title: Upgrade HIC
+        url: "/maintenance-e4000/replace-hic-upgrade-e4000.html"
+      - title: Replace failed HIC
+        url: "/maintenance-e4000/replace-hic-e4000.html"
+

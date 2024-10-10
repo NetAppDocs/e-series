@@ -1,0 +1,48 @@
+---
+permalink: install-hw-e4000/index.html
+sidebar: sidebar
+keywords: 
+summary: Follow these steps to install and set up you E4000 storage system.
+---
+= Install and set up E4000 systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Follow these steps to install and set up you E4000 storage system.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Prepare for installation
+
+[role="quick-margin-para"]
+You must prepare your site to meet the specifications for your E4000 series storage system.
+
+[role="quick-margin-list"]
+* link:../install-hw-e4000/prepare-installation.html[Prepare for installation^]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Install hardware
+
+[role="quick-margin-para"]
+Learn how to install a E4012, E4060, DE212C, DE224C, or DE460C storage system in a rack or a NetApp system cabinet.
+
+[role="quick-margin-list"]
+* link:../install-hw-e4000/install-hardware-12.html[Install E4012 hardware^]
+* link:../install-hw-e4000/install-hardware-60.html[Install E4060 hardware^]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Cable hardware shelves
+
+[role="quick-margin-para"]
+Learn how to attach the power cables and power on the drive shelves for an E4000 storage system.
+
+[role="quick-margin-list"]
+* link:../install-hw-e4000/connect-cables-12.html[Cable E4012 hardware^]
+* link:../install-hw-e4000/connect-cables-60.html[Cable E4060 hardware^]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Four] Complete storage system setup
+
+[role="quick-margin-para"]
+Learn how to cable the controllers to your network and complete storage system setup and configuration.
+
+[role="quick-margin-list"]
+* link:../install-hw-e4000/complete-setup-12.html[Complete E4012 setup^]
+* link:../install-hw-e4000/complete-setup-60.html[Complete E4060 setup^]
