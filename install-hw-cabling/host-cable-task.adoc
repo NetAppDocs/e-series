@@ -23,6 +23,8 @@ image::../media/topology_host_direct_generic_web_low.png[]
 
 *(1)* _Connect each host adapter port directly to the host ports on the controllers._
 
+NOTE: For the E4000, connect to host ports 0b1 and 0b2.
+
 == Cabling for a switch topology
 
 A switch topology uses switches to connect hosts to the controllers in your storage system. The switch must support the connection type used between the host and the controller.
@@ -36,3 +38,5 @@ image::../media/topology_host_fabric_generic.png[]
 *(1)* _Connect each host adapter directly to the switch._
 
 *(2)* _Connect each switch directly to the host ports on the controllers. To help ensure maximum performance, use all available host adapter ports._
+
+NOTE: For the E4000, connect to host ports 0b1 and 0b2.
