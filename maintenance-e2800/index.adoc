@@ -9,27 +9,39 @@ summary: Perform maintenance on E2800 components.
 :imagesdir: ../media/
 
 [.lead]
+You might need to perform maintenance procedures on your hardware. Procedures specific to maintaining your E2800 system components are in this section.
+
+The procedures in this section assume that the E2800 system has already been deployed in the E-Series environment.
+
+== System components
 For the E2800 storage system, you can perform maintenance procedures on the following components.
 
-== Batteries
-Each controller canister includes a battery that preserves cached data if the AC power fails.
+[%rotate, grid="none", frame="none", cols="25,65"]
 
-== Controllers
+|===
 
-A controller consists of a board, firmware, and software. It controls the drives and implements the System Manager functions.
+a| https://docs.netapp.com/us-en/e-series/maintenance-e2800/batteries-overview-requirements-concept.html[Batteries]
 
-== Canisters
+a| Each controller canister includes a battery that preserves cached data if the AC power fails.
 
-Canisters consist of three different types: power-fan canisters (power supplies) that supply a redundant power source and adequate cooling in a 12-drive or 24-drive controller shelf or drive shelf; power canisters that are used for power redundancy in a 60-drive controller shelf or drive shelf; and fan canisters that are used for cooling the 60-drive controller shelf or drive shelf.
+a| https://docs.netapp.com/us-en/e-series/maintenance-e2800/controllers-overview-supertask-concept.html[Controllers]
 
-== Drives
+a| A controller consists of a board, firmware, and software. It controls the drives and implements the System Manager functions.
 
-A drive is an electromagnetic mechanical device that provides the physical storage media for data.
+a| https://docs.netapp.com/us-en/e-series/maintenance-e2800/canisters-overview-supertask-concept.html[Canisters]
 
-== Host interface cards (HICs)
+a| Canisters consist of three different types: power-fan canisters (power supplies) that supply a redundant power source and adequate cooling in a 12-drive or 24-drive controller shelf or drive shelf; power canisters that are used for power redundancy in a 60-drive controller shelf or drive shelf; and fan canisters that are used for cooling the 60-drive controller shelf or drive shelf.
 
-A host interface card (HIC) can optionally be installed within a controller canister. The E2800 controller includes built-in host ports on the controller card itself, as well as host ports on the optional HIC. Host ports that are built into the controller are called baseboard host ports. Host ports that are built into the HIC are called HIC ports.
+a| https://docs.netapp.com/us-en/e-series/maintenance-e2800/drives-overview-supertask-concept.html[Drives]
 
-== Host port protocol
+a| A drive is an electromagnetic mechanical device that provides the physical storage media for data.
 
-You can convert the protocol of a host to a different protocol so that compatibility and communication can be established.
+a| https://docs.netapp.com/us-en/e-series/maintenance-e2800/hics-overview-supertask-concept.html[Host interface cards (HICs)]
+
+a| A host interface card (HIC) can optionally be installed within a controller canister. The E2800 controller includes built-in host ports on the controller card itself, as well as host ports on the optional HIC. Host ports that are built into the controller are called baseboard host ports. Host ports that are built into the HIC are called HIC ports.
+
+a| https://docs.netapp.com/us-en/e-series/maintenance-e2800/hpp-overview-supertask-concept.html[Host port protocol]
+
+a| You can convert the protocol of a host to a different protocol so that compatibility and communication can be established.
+
+|===

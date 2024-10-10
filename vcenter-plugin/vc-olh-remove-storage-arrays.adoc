@@ -11,7 +11,7 @@ summary: Remove one or more storage arrays if you no longer want to manage it fr
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

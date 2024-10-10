@@ -11,7 +11,7 @@ summary: Import the system settings from one storage array to other storage arra
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can import the system settings from one storage array to other storage arrays. This batch operation saves time when you need to configure multiple arrays in the network.

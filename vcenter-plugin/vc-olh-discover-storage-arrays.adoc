@@ -10,7 +10,7 @@ summary: To display and manage storage resources in the Storage Plugin for vCent
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 To display and manage storage resources in the Storage Plugin for vCenter, you must discover the IP addresses of arrays in your network.

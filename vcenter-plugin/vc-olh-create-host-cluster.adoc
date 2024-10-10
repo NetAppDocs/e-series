@@ -11,7 +11,7 @@ summary: When two or more hosts require I/O access to the same volumes, you can 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 When two or more hosts require I/O access to the same volumes, you can create a host cluster.

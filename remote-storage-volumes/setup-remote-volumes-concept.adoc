@@ -33,7 +33,7 @@ As part of the setup process, the storage arrays and I/O host must be cabled to 
 
 The following diagrams provide examples of how to cable the systems such that they perform Remote Storage Volume operations over an iSCSI connection.
 
-image:../media/remote_target_volumes_iscsi_use_case_1.png[] image:../media/remote_target_volumes_iscsi_use_case_2.png[]
+image:../media/remote_target_volumes_iscsi_use_case_1.png["iSCSI storage cabling"] image:../media/remote_target_volumes_iscsi_use_case_2.png["iSCSI storage cabling"]
 
 == Configure the iSCSI ports
 

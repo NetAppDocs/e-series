@@ -11,7 +11,7 @@ summary: You can enable Drive Security for a pool or volume group to prevent una
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can enable Drive Security for a pool or volume group to prevent unauthorized access to the data on the drives contained in the pool or volume group.

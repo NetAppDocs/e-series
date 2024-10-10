@@ -19,17 +19,17 @@ Before installing the 3040 40U cabinet, make sure you have required tools and eq
 |===
 |  | Item| Included with the cabinet
 a|
-image:../media/83009_02.gif[]
+image:../media/83009_02.gif["3/4-in wrench and Allen wrench"]
 a|
 *3/4-in. wrench* (supplied in the shipping crate) -- To raise and lower the leveling feet under the cabinet.
 
 *1/4-in. Allen wrench* -- To raise and lower the stability foot in the front of the cabinet.
 a|
-image:../media/77037_11.gif[]
+image:../media/77037_11.gif["Included with the cabinet"]
 a|
 *NEMA L6-30*
 
-image:../media/73121_01_dwg_nema_l6_30_power_cord.gif[]
+image:../media/73121_01_dwg_nema_l6_30_power_cord.gif["NEMA L6-30 cord"]
 .2+a|
 *AC power cords* -- To connect the cabinet to external power sources (wall plugs).
 
@@ -40,15 +40,15 @@ NOTE:  Each PDU must be connected to an independent power source.
 
 
 .2+a|
-image:../media/77037_11.gif[]
+image:../media/77037_11.gif["Included with the cabinet"]
 
 
 a|
 **IEC-60309**
 
-image:../media/73122_01_dwg_iec_60309_power_cord.gif[]
+image:../media/73122_01_dwg_iec_60309_power_cord.gif["IEC-60309 cord"]
 a|
-image:../media/78038_21.png[]
+image:../media/78038_21.png["Included with the cabinet"]
 
 a|
 **SAS cables** (optional) – Two cables are included with each drive tray, while host side cables must be purchased separately.
@@ -61,7 +61,7 @@ Refer to the appropriate controller-drive tray installation guide for additional
 a|
 
 a|
-image:../media/77038_06.gif[]
+image:../media/77038_06.gif["SAS and communication cables"]
 
 
 a|
@@ -69,7 +69,7 @@ a|
 
 
 a|
-image:../media/77037_11.gif[]
+image:../media/77037_11.gif["Mountable cable spools"]
 
 
 a|

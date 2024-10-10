@@ -73,13 +73,13 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 . Confirm that the Cache Active LED on the back of the controller is off.
 . Squeeze the handles on either side of the controller, and pull back until it releases from the shelf.
 +
-image::../media/remove_controller_5.png[]
+image::../media/remove_controller_5.png["Squeeze handles to remove controller"]
 
 . Using two hands and the handles, slide the controller canister out of the shelf. When the front of the controller is free of the enclosure, use two hands to pull it out completely.
 +
 CAUTION: Always use two hands to support the weight of a controller canister.
 +
-image::../media/remove_controller_6.png[]
+image::../media/remove_controller_6.png["Use two hands to support weight of controller as you remove"]
 
 . Place the controller canister on a flat, static-free surface.
 
@@ -96,7 +96,7 @@ If this green LED is on, the controller is still using battery power. You must w
 
 . Gently lift the failed fan from the controller.
 +
-image::../media/fan_2.png[]
+image::../media/fan_2.png["Remove the fan"]
 
 == Step 4: Install new fan
 
@@ -106,9 +106,9 @@ Install a new fan to replace the failed one.
 
 . Slide the replacement fan all the way into the shelf.
 +
-image::../media/fan_3.png[]
+image::../media/fan_3.png["Install fan into controller"]
 +
-image::../media/fan_3_a.png[]
+image::../media/fan_3_a.png["Install fan into controller"]
 
 == Step 5: Reinstall controller canister
 
@@ -121,7 +121,7 @@ After installing the new fan, reinstall the controller canister into the control
 +
 NOTE: The controller audibly clicks when correctly installed into the shelf.
 +
-image::../media/remove_controller_7.png[]
+image::../media/remove_controller_7.png["Install controller into shelf"]
 
 == Step 6: Complete fan replacement
 

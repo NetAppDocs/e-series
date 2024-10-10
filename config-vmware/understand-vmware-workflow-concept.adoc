@@ -11,4 +11,4 @@ summary:  Use the WVMware express configuration workflow.
 [.lead]
 This workflow guides you through the "express method" for configuring your storage array and SANtricity System Manager to make storage available to a VMware host.
 
-image::../media/1130_flw_sys_mgr_vmware_express_guide_all_protocols.png[]
+image::../media/1130_flw_sys_mgr_vmware_express_guide_all_protocols.png[VMware express guide workflow"]

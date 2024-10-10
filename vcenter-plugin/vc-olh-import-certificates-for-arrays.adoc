@@ -11,7 +11,7 @@ summary: Import certificates for the storage arrays so they can authenticate wit
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 If necessary, you can import certificates for the storage arrays so they can authenticate with the system hosting the Storage Plugin for vCenter. Certificates can be signed by a certificate authority (CA) or can be self-signed.

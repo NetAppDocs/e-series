@@ -81,7 +81,7 @@ CAUTION: *Possible data loss* -- If you continue this procedure while I/O operat
 +
 The green Cache Active LED on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
 +
-image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[]
+image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif["Cache active LED on E5700 controller"]
 +
 *(1)* _Cache Active LED_
 
@@ -105,7 +105,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 +
 The green Cache Active LED on the back of the controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off before removing the controller canister.
 +
-image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[]
+image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif["Cache active LED on E5700 controller"]
 +
 *(1)* _Cache Active LED_
 
@@ -113,7 +113,7 @@ image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[]
 +
 The following figure is an example of an E5724 controller shelf:
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif["Remove controller canister"]
 +
 *(1)* _Controller canister_
 +
@@ -121,7 +121,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[]
 +
 The following figure is an example of an E5760 controller shelf:
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif["Remove controller canister"]
 +
 *(1)* _Controller canister_
 +
@@ -152,7 +152,7 @@ CAUTION: *Possible loss of data access* -- Never install a HIC in an E5700 contr
 +
 If this green LED is on, the controller is still using battery power. You must wait for this LED to go off before removing any components.
 +
-image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[]
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif["Inernal cache active LED"]
 +
 *(1)* _Internal Cache Active_
 +
@@ -167,7 +167,7 @@ Be careful not to scratch or bump the components on the bottom of the HIC or on 
 +
 CAUTION: *Possible equipment damage* -- Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrews.
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif["Install HIC onto controller card"]
 +
 *(1)* _Host interface card (HIC)_
 +
@@ -179,7 +179,7 @@ Do not use a screwdriver, or you might over tighten the screws.
 
 . Using a #1 Phillips screwdriver, attach the new HIC faceplate to the controller canister with the four screws you removed previously.
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif["Install HIC onto controller"]
 
 == Step 4: Reinstall controller canister
 
@@ -192,7 +192,7 @@ Reinstall the controller canister into the controller shelf after installing the
 +
 The following figure is an example of an E5724 controller shelf:
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif["Reinstall controller canister"]
 +
 *(1)* _Controller canister_
 +
@@ -200,7 +200,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[]
 +
 The following figure is an example of an E5760 controller shelf:
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif["Reinstall controller canister"]
 +
 *(1)* _Controller canister_
 +
@@ -229,7 +229,7 @@ Check the controller LEDs and seven-segment display, and then confirm that the c
 +
 NOTE: The figure shows an example controller canister. Your controller might have a different number and a different type of host ports.
 +
-image::../media/e5700_hic_3_callouts_maint-e5700.gif[]
+image::../media/e5700_hic_3_callouts_maint-e5700.gif["E5700 controller LEDs"]
 +
 *(1)* _Host Link LEDs_
 +

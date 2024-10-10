@@ -10,7 +10,7 @@ summary: To manage storage with the Storage Plugin for vCenter, you must discove
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 To manage storage with the Storage Plugin for vCenter, you must discover or define each host in the network. A host is a server that sends I/O to a volume on a storage array.

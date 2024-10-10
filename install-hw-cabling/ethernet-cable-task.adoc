@@ -19,7 +19,7 @@ You must connect management port 1 on each controller for out-of-band management
 
 .Direct storage management connections
 
-image::../media/74167.gif[]
+image::../media/74167.gif["Direct storage management connections"]
 
 == Fabric topology
 
@@ -29,4 +29,4 @@ You must connect management port 1 on each controller for out-of-band management
 
 .Fabric storage management connections
 
-image::../media/74110.gif[]
+image::../media/74110.gif["Fabric storage management connections"]

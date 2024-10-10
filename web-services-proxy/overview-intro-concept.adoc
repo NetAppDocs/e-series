@@ -27,7 +27,7 @@ Web Services is available in two implementations:
 
 The core of the API is available in both implementations.
 
-image::../media/web_services_proxy_overview.gif[]
+image::../media/web_services_proxy_overview.gif["Web Services Proxy overview"]
 
 The following table provides a comparison of the proxy and the embedded version.
 

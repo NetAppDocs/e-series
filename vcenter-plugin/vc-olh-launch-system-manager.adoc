@@ -10,7 +10,7 @@ summary: To manage a single array, use the Launch option to open System Manager 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 To manage a single array, use the Launch option to open SANtricity System Manager in a new browser window.

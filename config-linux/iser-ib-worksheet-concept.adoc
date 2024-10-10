@@ -56,7 +56,7 @@ a|
 
 Recommended configurations consist of two host (initiator) ports and four target ports.
 
-image::../media/port_identifiers_ib_iser.gif[]
+image::../media/port_identifiers_ib_iser.gif["iSER over IB network configuration"]
 
 == Target IQN
 

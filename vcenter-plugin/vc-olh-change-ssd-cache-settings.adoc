@@ -11,7 +11,7 @@ summary: Edit the name of the SSD Cache and view its status, maximum and current
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

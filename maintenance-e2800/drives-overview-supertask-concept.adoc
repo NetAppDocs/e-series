@@ -21,11 +21,11 @@ The figures show how the drives are numbered in each type of shelf (the shelf's 
 
 *Drive numbering in an E2812 controller shelf or DE212C drive shelf:*
 
-image::../media/28_dwg_e2812_de212c_drive_numbering.gif[]
+image::../media/28_dwg_e2812_de212c_drive_numbering.gif["Drive numbering for 12-drive shelf"]
 
 *Drive numbering in an E2824 controller shelf, EF280 flash array, or DE224C drive shelf:*
 
-image::../media/28_dwg_e2824_de224c_drive_numbering_maint-e2800.gif[]
+image::../media/28_dwg_e2824_de224c_drive_numbering_maint-e2800.gif["Drive numbering for 24-drive shelf"]
 
 NOTE: Your E2812, E2824, EF280 storage array might include one or more SAS-2 legacy expansion drive trays, including the DE1600 12-drive tray, the DE5600 24-drive tray, or the DE6600 60-drive tray. For instructions for replacing a drive in one of these drive trays, see link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2577975[Replacing a Drive in E2660, E2760, E5460, E5560, or E5660 Trays^] and link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2577971[Replacing a Drive in E2600, E2700, E5400, E5500, and E5600 12-Drive or 24-Drive Trays^].
 
@@ -33,11 +33,11 @@ NOTE: Your E2812, E2824, EF280 storage array might include one or more SAS-2 leg
 
 Both the E2860 controller shelf and the DE460C drive shelf consist of five drive drawers that each contain 12 drive slots. Drive drawer 1 is at the top, and drive drawer 5 is at the bottom.
 
-image::../media/28_dwg_e2860_de460c_front_no_callouts_maint-e2800.gif[]
+image::../media/28_dwg_e2860_de460c_front_no_callouts_maint-e2800.gif[60-drive drawers"]
 
 For both an E2860 controller shelf drawer and a DE460C drive shelf drawer, drives are numbered from 0 to 11 in each drive drawer within the shelf.
 
-image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif[]
+image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif["Drive slot numbers"]
 
 NOTE: Your E2860 storage array might include one or more SAS-2 legacy expansion drive trays, including the DE1600 12-drive tray, the DE5600 24-drive tray, or the DE6600 60-drive tray. For instructions for replacing a drive in one of these drive trays, see link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2577975[Replacing a Drive in E2660, E2760, E5460, E5560, or E5660 Trays^] and link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2577971[Replacing a Drive in E2600, E2700, E5400, E5500, and E5600 12-Drive or 24-Drive Trays^].
 
@@ -45,11 +45,11 @@ NOTE: Your E2860 storage array might include one or more SAS-2 legacy expansion 
 
 You can replace a drive drawer in a E2860 controller shelf and a DE460C drive shelf. Each of these 60-drive shelves has five drive drawers.
 
-image::../media/28_dwg_e2860_de460c_front_no_callouts_maint-e2800.gif[]
+image::../media/28_dwg_e2860_de460c_front_no_callouts_maint-e2800.gif[60-drive drawer"]
 
 Each of the five drawers can hold up to 12 drives.
 
-image:../media/92_dwg_de6600_drawer_with_hdds_no_callouts_maint-e2800.gif[]
+image:../media/92_dwg_de6600_drawer_with_hdds_no_callouts_maint-e2800.gif["Drawer with drives installed"]
 
 == Drive handling
 

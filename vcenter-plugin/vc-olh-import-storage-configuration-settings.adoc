@@ -11,7 +11,7 @@ summary: Import the storage configuration from one storage array to other storag
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

@@ -11,7 +11,7 @@ summary: Change the preferred controller ownership of a volume, so that I/O for 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

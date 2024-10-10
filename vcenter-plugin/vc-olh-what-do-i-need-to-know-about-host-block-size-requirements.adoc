@@ -10,7 +10,7 @@ summary: For EF300 and EF600 systems, a volume can be set to support a 512-byte 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

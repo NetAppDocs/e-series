@@ -36,6 +36,7 @@ CAUTION: *Possible loss of data access* -- If a volume is already in a Degraded 
 *** *For SANtricity System Manager (version 11.60 and above)* -- Download the CLI package (zip file) from System Manager. Go to menu:Settings[System > Add-ons > Command Line Interface]. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
 *** *For SANtricity Storage Manager/Enterprise Management Window (EMW)* -- Follow the instructions in the express guide to download and install the software. You can run CLI commands from the EMW by selecting menu:Tools[Execute Script].
 
+NOTE: If you need information on how to replace an E-Series DE460c expansion shelf, please refer to the https://kb.netapp.com/on-prem/E-Series/Hardware-KBs/How_to_replace_an_E_Series_DE460c_controller_expansion_shelf[NetApp Knowledge base^].
 
 == Step 1: Prepare to replace drive drawer
 
@@ -90,7 +91,7 @@ CAUTION: *Possible data loss* -- If you continue this procedure while I/O operat
 +
 The green Cache Active LED on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
 +
-image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[]
+image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif["Cache active LED on E2800 controller"]
 +
 *(1)* _Cache Active LED_
 
@@ -138,7 +139,7 @@ CAUTION: *Possible hardware damage* -- If the drive tray is powered on, the cabl
 +
 The figure shows the handle for the fan canister extended and released from the orange tab on the left.
 +
-image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e2800.gif[]
+image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e2800.gif["Fan canister handle"]
 +
 *(1)* _Fan canister handle_
 
@@ -153,7 +154,7 @@ The figure shows the right side of the drive shelf with the fan canister removed
 +
 The top cable chain is attached to drive drawer 1. The bottom cable chain is attached to drive drawer 5. The callouts for drive drawer 1 are provided.
 +
-image::../media/trafford_cable_rail_1_maint-e2800.gif[]
+image::../media/trafford_cable_rail_1_maint-e2800.gif["Cable chain and connectors for the drive drawer"]
 +
 *(1)* _Cable chain_
 +
@@ -165,7 +166,7 @@ image::../media/trafford_cable_rail_1_maint-e2800.gif[]
 . Disconnect any of the right cable chains from their corresponding vertical guide rail.
  .. Using a flashlight, locate the orange ring on the end of the cable chain that is connected to the vertical guide rail in the enclosure.
 +
-image::../media/trafford_cable_rail_3_maint-e2800.gif[]
+image::../media/trafford_cable_rail_3_maint-e2800.gif["Orange ring for vertical rail and cable chain for the drive drawer"]
 +
 *(1)* _Orange ring on vertical guide rail_
 +
@@ -178,7 +179,7 @@ image::../media/trafford_cable_rail_3_maint-e2800.gif[]
 +
 The figure shows the horizontal connector on the right and the cable chain disconnected and partially pulled out on the left side.
 +
-image::../media/trafford_cable_rail_2_maint-e2800.gif[]
+image::../media/trafford_cable_rail_2_maint-e2800.gif["Orange ring for horizontal rail and cable chain for the drive drawer"]
 +
 *(1)* _Orange ring on horizontal guide rail_
 +
@@ -235,7 +236,7 @@ CAUTION: *Possible loss of data access* -- Magnetic fields can destroy all data 
 . Using the extended levers, carefully pull the drive drawer out until it stops. Do not completely remove the drive drawer from the drive shelf.
 . If volumes have already been created and assigned, use a permanent marker to note the exact location of each drive. For example, using the following drawing as a reference, write the appropriate slot number on the top of each drive.
 +
-image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif[]
+image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif["Drive slot numbers"]
 +
 CAUTION: **Possible loss of data access** -- Make sure to record the exact location of each drive before removing it.
 
@@ -244,13 +245,13 @@ CAUTION: **Possible loss of data access** -- Make sure to record the exact locat
  .. Raise the drive handle to vertical.
  .. Use the handle to lift the drive from the drive drawer.
 +
-image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif[]
+image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif["Use cam handle to lift drive from the drawer"]
 
  .. Place the drive on a flat, static-free surface and away from magnetic devices.
 . Remove the drive drawer:
  .. Locate the plastic release lever on each side of the drive drawer.
 +
-image::../media/92_pht_de6600_drive_drawer_release_lever_maint-e2800.gif[]
+image::../media/92_pht_de6600_drive_drawer_release_lever_maint-e2800.gif["Release lever to remove the drawer"]
 +
 *(1)* _Drive drawer release lever_
 
@@ -268,7 +269,7 @@ Install a new drive drawer to replace the failed one.
 +
 The lock-out tumbler assembly is a safety feature that prevents you from being able to open more than one drive drawer at one time.
 +
-image::../media/92_pht_de6600_lock_out_tumbler_detail_maint-e2800.gif[]
+image::../media/92_pht_de6600_lock_out_tumbler_detail_maint-e2800.gif["Lock-out tumbler and drawer guide"]
 +
 *(1)* _Lock-out tumbler_
 +
@@ -317,7 +318,7 @@ CAUTION: *Risk of equipment malfunction* -- Make sure to slide the connector int
 +
 The figure shows the horizontal and vertical guide rails for the second drive drawer in the enclosure.
 +
-image::../media/2860_dwg_both_guide_rails_maint-e2800.gif[]
+image::../media/2860_dwg_both_guide_rails_maint-e2800.gif["Horizontal and veritical guide rails"]
 +
 *(1)* _Horizontal guide rail_
 +
@@ -370,20 +371,20 @@ CAUTION: *Possible loss of data access* -- You must install each drive in its or
  .. Using the extended levers, carefully pull the drive drawer out until it stops. Do not completely remove the drive drawer from the drive shelf.
  .. Determine which drive to install in each slot by using the notes you made when removing the drives.
 +
-image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif[]
+image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif["Drive slot numbers"]
 
  .. Raise the handle on the drive to vertical.
  .. Align the two raised buttons on each side of the drive with the notches on the drawer.
 +
 The figure shows the right side view of a drive, showing the location of the raised buttons.
 +
-image::../media/28_dwg_e2860_de460c_drive_cru_maint-e2800.gif[]
+image::../media/28_dwg_e2860_de460c_drive_cru_maint-e2800.gif["Raised button on the drive carrier must match the drive channel on the drive drawer"]
 +
 *(1)* _Raised button on the right side of the drive_
 
  .. Lower the drive straight down, making sure the drive is pressed all the way down into the bay, and then rotate the drive handle down until the drive snaps into place.
 +
-image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif[]
+image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif["Use the handle to lower drive onto the the drawer"]
 
  .. Repeat these steps to install all the drives.
 . Slide the drawer back into the drive shelf by pushing it from the center and closing both levers.

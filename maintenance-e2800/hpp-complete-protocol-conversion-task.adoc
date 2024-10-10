@@ -40,7 +40,7 @@ The Host Settings dialog box appears.
 
  .. Click the *Host Ports* tab.
 +
-image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif[]
+image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif["Host ports dialog box"]
 
  .. Click *Add*, and use the *Add Host Port* dialog box to associate a new host port identifier to the host.
 +
@@ -75,7 +75,7 @@ The Host Settings dialog box appears.
 
  .. Click the *Host Ports* tab.
 +
-image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif[]
+image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif["Host ports dialog"]
 
  .. Click *Add*, and use the *Add Host Port* dialog box to associate a new host port identifier to the host.
 +

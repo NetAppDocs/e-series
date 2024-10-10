@@ -11,7 +11,7 @@ summary: Create storage by first creating a workload for a specific application 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 In the Storage Plugin for vCenter, you create storage by first creating a workload for a specific application type. Next, you add storage capacity to the workload by creating volumes with similar underlying volume characteristics.

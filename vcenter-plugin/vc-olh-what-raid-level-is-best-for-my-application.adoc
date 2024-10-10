@@ -10,7 +10,7 @@ summary: To maximize the performance of a volume group, you must select the appr
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 To maximize the performance of a volume group, you must select the appropriate RAID level.

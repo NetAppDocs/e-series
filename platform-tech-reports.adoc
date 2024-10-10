@@ -6,8 +6,11 @@ summary: E-Series technical reports
 ---
 
 = Browse platform technical reports
+:icons: font
+:imagesdir: ./media/
 
-
+[.lead]
+Check out the links below to access technical reports related to E-Series platforms. The links take you to a different documentation site.
 == Platform TRs
 
 [%rotate, grid="none", frame="none", cols="9,9,9"]

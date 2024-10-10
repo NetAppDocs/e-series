@@ -11,7 +11,7 @@ summary: edit the settings for a volume group, including its name and RAID level
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

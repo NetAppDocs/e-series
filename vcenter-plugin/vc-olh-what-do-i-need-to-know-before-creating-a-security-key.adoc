@@ -11,7 +11,7 @@ summary: A security key is shared by controllers and secure-enabled drives withi
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

@@ -11,7 +11,7 @@ summary: Import a directory services configuration from one storage array to oth
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

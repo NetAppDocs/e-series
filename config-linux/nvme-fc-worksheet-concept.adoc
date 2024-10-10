@@ -15,7 +15,7 @@ You can generate and print a PDF of this page, and then use the following worksh
 
 In a direct connect topology, one or more hosts are directly connected to the controller.
 
-image::../media/nvme_fc_direct_topology.png[]
+image::../media/nvme_fc_direct_topology.png["Direct connect topology example"]
 
 * Host 1 HBA Port 1 and Controller A Host port 1
 * Host 1 HBA Port 2 and Controller B Host port 1
@@ -30,7 +30,7 @@ image::../media/nvme_fc_direct_topology.png[]
 
 In a fabric topology, one or more switches are used. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a list of supported switches.
 
-image::../media/nvme_fc_fabric_topology.png[]
+image::../media/nvme_fc_fabric_topology.png["Switch connect topology example"]
 
 == Host identifiers
 

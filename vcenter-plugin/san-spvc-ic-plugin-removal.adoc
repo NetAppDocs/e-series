@@ -10,7 +10,7 @@ summary: Remove the Plugin for vCenter.
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can remove the plugin from the vCenter Server Appliance and uninstall the plugin webserver from the application host.

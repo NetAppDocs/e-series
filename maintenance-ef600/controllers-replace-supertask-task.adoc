@@ -114,13 +114,13 @@ Because you must remove the HIC from the failed controller canister, you must re
 
 . Squeeze the handles on either side of the controller, and pull back until it releases from the shelf.
 +
-image::../media/remove_controller_5.png[]
+image::../media/remove_controller_5.png["Squeeze handles to remove controller"]
 
 . Using two hands and the handles, slide the controller canister out of the shelf. When the front of the controller is free of the enclosure, use two hands to pull it out completely.
 +
 CAUTION: Always use two hands to support the weight of a controller canister.
 +
-image::../media/remove_controller_6.png[]
+image::../media/remove_controller_6.png["Use two hands to support weight of controller as you remove"]
 
 . Place the controller canister on a flat, static-free surface.
 
@@ -134,10 +134,10 @@ Remove the battery from the failed controller canister so you can install it in 
 . Locate the 'press' tab on the side of the controller.
 . Unlatch the battery by pressing the tab and squeezing the battery casing.
 +
-image::../media/batt_3.png[]
+image::../media/batt_3.png["Press tab to unlatch battery]
 
-. Gently squeeze the connector housing the battery wiring. Pull up, disconnecting the battery from the board.image:../media/batt_2.png[]
-. Lift the battery out of the controller and place on a flat, static-free surface.image:../media/batt_4.png[]
+. Gently squeeze the connector housing the battery wiring. Pull up, disconnecting the battery from the board.image:../media/batt_2.png["Remove connector housing the battery wiring"]
+. Lift the battery out of the controller and place on a flat, static-free surface.image:../media/batt_4.png["Lift battery out of controller"]
 
 === Step 2c: Remove the HIC
 
@@ -147,14 +147,14 @@ If the controller canister includes a HIC, you must remove the HIC from the orig
 
 . Using a Phillips screwdriver, remove the two screws that attach the HIC faceplate to the controller canister.
 +
-image::../media/hic_2.png[]
+image::../media/hic_2.png["Remove HIC faceplate"]
 +
 NOTE: The image above is an example, the appearance of your HIC may differ.
 
 . Remove the HIC faceplate.
 . Using your fingers or a Phillips screwdriver, loosen the single thumbscrew that secure the HIC to the controller card.
 +
-image::../media/hic_3.png[]
+image::../media/hic_3.png["Loosen HIC thumbscrews"]
 +
 NOTE: The HIC comes with three screw locations on the top but is secured with only one.
 
@@ -162,7 +162,7 @@ NOTE: The HIC comes with three screw locations on the top but is secured with on
 +
 CAUTION: Be careful not to scratch or bump the components on the bottom of the HIC or on the top of the controller card.
 +
-image::../media/hic_4.png[]
+image::../media/hic_4.png["Remove HIC from the controller card"]
 
 . Place the HIC on a flat, static-free surface.
 
@@ -177,12 +177,12 @@ Remove the power supply so you can install it in the new controller.
  .. Unplug the power cord from the power source.
 . Locate the tab to the right of the power supply and press it towards the power supply unit.
 +
-image::../media/psup_2.png[]
+image::../media/psup_2.png["Press the tab next to the power supply"]
 
 . Locate the handle on the front of the power supply.
 . Use the handle to slide the power supply straight out of the system.
 +
-image::../media/psup_3.png[]
+image::../media/psup_3.png["Slide the power supply out"]
 +
 CAUTION: When removing a power supply, always use two hands to support its weight.
 
@@ -201,9 +201,9 @@ NOTE: A notch at the bottom of the DIMM helps you align the DIMM during installa
 +
 NOTE: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
 +
-image::../media/dimm_2.png[]
+image::../media/dimm_2.png["Press the ejector tab downs on the DIMM slot"]
 +
-image::../media/dimim_3.png[]
+image::../media/dimim_3.png["Remove the DIMM"]
 
 === Step 2f: Remove fans
 
@@ -213,7 +213,7 @@ Remove the fans so you can install them in the new controller.
 
 . Gently lift the fan from the controller.
 +
-image::../media/fan_2.png[]
+image::../media/fan_2.png["Remove the fan"]
 
 . Repeat until all fans are removed.
 
@@ -236,7 +236,7 @@ Install the battery into the replacement controller canister.
 
 . Insert the battery into the controller by lining up the battery casing with the metal latches on the side of the controller.
 +
-image::../media/batt_5.png[]
+image::../media/batt_5.png["Install the battery"]
 +
 The battery clicks into place.
 
@@ -253,7 +253,7 @@ If you removed a HIC from the original controller canister, you must install tha
 +
 Be careful not to scratch or bump the components on the bottom of the HIC or on the top of the controller card.
 +
-image::../media/hic_7.png[]
+image::../media/hic_7.png["Install the HIC"]
 +
 NOTE: The image above is an example; the appearance of your HIC may differ.
 
@@ -265,7 +265,7 @@ CAUTION: *Possible equipment damage* -- Be very careful not to pinch the gold ri
 +
 Do not use a screwdriver, or you might over tighten the screw.
 +
-image::../media/hic_3.png[]
+image::../media/hic_3.png["Hand-tighten HIC thumbscrews to the controller"]
 +
 NOTE: The image above is an example; the appearance of your HIC may differ.
 
@@ -283,7 +283,7 @@ The power supplies are keyed and can only be installed one way.
 +
 CAUTION: Do not use excessive force when sliding the power supply into the system; you can damage the connector.
 +
-image::../media/psup_4.png[]
+image::../media/psup_4.png["Install power supply into controller"]
 
 === Step 3d: Install DIMMs
 
@@ -297,7 +297,7 @@ The notch among the pins on the DIMM should line up with the tab in the socket.
 
 . Insert the DIMM squarely into the slot.
 +
-image::../media/dimm_4.png[]
+image::../media/dimm_4.png["Install DIMM into slot on the controller"]
 +
 The DIMM fits tightly in the slot, but should go in easily. If not, realign the DIMM with the slot and reinsert it.
 +
@@ -307,7 +307,7 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 +
 NOTE: DIMMs fit tightly. You might need to gently press on one side at a time and secure with each tab individually.
 +
-image::../media/dimm_5.png[]
+image::../media/dimm_5.png["Press latches up on the DIMM slot to secure"]
 
 === Step 3e: Install fans
 
@@ -317,9 +317,9 @@ Install the fans into the replacement controller canister.
 
 . Slide the fan all the way into the replacement controller.
 +
-image::../media/fan_3.png[]
+image::../media/fan_3.png["Install fan into controller"]
 +
-image::../media/fan_3_a.png[]
+image::../media/fan_3_a.png["Install fan into controller"]
 
 . Repeat until all fans are installed.
 
@@ -334,7 +334,7 @@ Last, install the new controller canister into the controller shelf.
 +
 NOTE: The controller audibly clicks when correctly installed into the shelf.
 +
-image::../media/remove_controller_7.png[]
+image::../media/remove_controller_7.png["Install controller into shelf"]
 
 . Install the SFPs from the original controller in the host ports on the new controller, if they were installed in the original controller, and reconnect all the cables.
 +

@@ -1,7 +1,7 @@
 ---
 permalink: getting-started/learn-hardware-concept.html
 sidebar: sidebar
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, hardware, all flash array, E-Series protocols, E-Series rack
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, hardware, all flash array, E-Series protocols, E-Series rack
 summary: E-Series storage arrays are available in several configurations and models.
 ---
 = E-Series hardware overview
@@ -38,11 +38,11 @@ Rack sizes::
 * 2U12 (2 rack units; 12 drives)
 * 2U24 (2 rack units; 24 drives)
 +
-image::../media/e2800_2u_front.gif[]
+image::../media/e2800_2u_front.gif["E2800 2U"]
 
 * 4U60 (4 rack units; 60 drives)
 +
-image::../media/e2860_front.gif[]
+image::../media/e2860_front.gif["E2800 4U']
 
 Drives::
 +
@@ -70,7 +70,7 @@ Rack sizes::
 +
 2U24 (2 rack units; 24 drives)
 +
-image:../media/ef570_front.gif[]
+image:../media/ef570_front.gif["EF280 2U"]
 
 
 Drives::
@@ -97,7 +97,7 @@ Rack sizes::
 +
 2U24 (2 rack units; 24 drives)
 +
-image:../media/ef570_front.gif[]
+image:../media/ef570_front.gif["EF300 2U"]
 
 
 Drives and HICs::
@@ -137,11 +137,11 @@ Rack sizes::
 +
 * 2U24 (2 rack units; 24 drives)
 +
-image::../media/e2800_2u_front.gif[]
+image::../media/e2800_2u_front.gif["E5700 2U"]
 +
 * 4U60 (4 rack units; 60 drives)
 +
-image::../media/e2860_front.gif[]
+image::../media/e2860_front.gif["E5700 4U"]
 
 
 Drives::
@@ -177,7 +177,7 @@ Rack sizes::
 +
 2U24 (2 rack units; 24 drives)
 +
-image:../media/ef570_front.gif[]
+image:../media/ef570_front.gif["EF570 2U"]
 
 
 Drives::
@@ -209,7 +209,7 @@ Rack sizes::
 +
 2U24 (2 rack units; 24 drives)
 +
-image:../media/ef570_front.gif[]
+image:../media/ef570_front.gif["EF600 2U"]
 
 
 Drives and HICs::
@@ -251,11 +251,11 @@ Rack sizes::
 +
 * 2U12 (2 rack units; 12 drives)
 +
-image::../media/e2800_2u_front.gif[]
+image::../media/e2800_2u_front.gif["E4000 2U"]
 
 * 4U60 (4 rack units; 60 drives)
 +
-image::../media/e2860_front.gif[]
+image::../media/e2860_front.gif["E4000 4U"]
 
 Drives::
 +

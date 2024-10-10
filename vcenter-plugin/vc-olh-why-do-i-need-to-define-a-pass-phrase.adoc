@@ -10,7 +10,7 @@ summary: The pass phrase is used to encrypt and decrypt the security key file st
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

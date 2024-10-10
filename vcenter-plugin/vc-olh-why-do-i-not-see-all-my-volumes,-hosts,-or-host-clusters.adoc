@@ -10,7 +10,7 @@ summary: Snapshot volumes with a DA-enabled base volume are not eligible to be a
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

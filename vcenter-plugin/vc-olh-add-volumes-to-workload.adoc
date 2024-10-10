@@ -11,7 +11,7 @@ summary: Add unassigned volumes to an existing or new workload.
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can add unassigned volumes to an existing or new workload.

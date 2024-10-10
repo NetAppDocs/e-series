@@ -11,7 +11,7 @@ summary: Install or upgrade the SANtricity Storage Plugin for vCenter.
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

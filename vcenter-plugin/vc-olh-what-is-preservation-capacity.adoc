@@ -10,7 +10,7 @@ summary: Preservation capacity is the amount of capacity (number of drives) that
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

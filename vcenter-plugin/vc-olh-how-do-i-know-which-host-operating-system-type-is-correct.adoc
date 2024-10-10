@@ -10,7 +10,7 @@ summary: The Host Operating System Type field contains the operating system of t
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The Host Operating System Type field contains the operating system of the host. You can select the recommended host type from the drop-down list.

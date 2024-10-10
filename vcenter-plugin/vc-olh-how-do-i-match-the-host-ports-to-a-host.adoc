@@ -10,7 +10,7 @@ summary: If you are manually creating a host, you first must use the appropriate
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

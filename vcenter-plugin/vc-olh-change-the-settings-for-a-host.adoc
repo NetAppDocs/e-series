@@ -11,7 +11,7 @@ summary: You can change the name, host operating system type, and associated hos
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

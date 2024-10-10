@@ -11,7 +11,7 @@ summary: Add drives to expand the free capacity in an existing pool or volume gr
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]
