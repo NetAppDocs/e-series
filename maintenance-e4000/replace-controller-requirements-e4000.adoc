@@ -13,18 +13,9 @@ Before you replace or add an E4000 controller, review the requirements and consi
 
 Each controller canister contains a controller card and a battery. You can add a second controller to a simplex configuration or replace a failed controller.
 
-These procedures apply to IOM12 and IOM12B drive shelves.
-
-
-NOTE: These procedures are for like-for-like shelf IOM hot-swaps or replacements. This means you can only replace an IOM12 module with another IOM12 module or replace an IOM12B module with another IOM12B module. (Your shelf can have two IOM12 modules or have two IOM12B modules.)
 
 == Requirements for adding second controller
-You can add a second controller canister to the simplex version of the following controller shelves:
-
-* E4012 controller shelf
-* EF400
-
-Before you add a second controller, you must have:
+You can add a second controller canister to the simplex version of the E4000 controller shelf. Before you add a second controller, you must have:
 
 * A new controller canister with the same part number as the currently installed controller canister.
 +
@@ -44,7 +35,7 @@ Optionally, you can use the command line interface (CLI) to perform some of the 
 
 == Requirements for replacing controller
 
-When you replace a failed controller canister, you must remove the battery from the original controller canister, and install it in the replacement controller canister.
+When you replace a failed controller canister, you must remove the battery, HIC, and DIMMs from the original controller canister and install them in the replacement controller canister.
 
 You can determine if you have a failed controller canister in two ways:
 
@@ -59,7 +50,7 @@ Before you replace a controller, you must have:
 * #1 Phillips screwdriver.
 * A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller’s domain name or IP address.)
 +
-Optionally, you can use the command line interface (CLI) to perform some of the procedures. For SANtricity System Manager (version 11.60 and above), you can download the CLI package (zip file) from System Manager. Then, go to *Settings > System > Add-ons > Command Line Interface*. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
+Optionally, you can use the command line interface (CLI) to perform some of the procedures. You can download the CLI package (zip file) from System Manager. Then, go to *Settings > System > Add-ons > Command Line Interface*. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
 
 
 === Duplex configuration requirements

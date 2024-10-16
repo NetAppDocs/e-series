@@ -148,7 +148,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 . If the host ports on the controller canister use SFP+ transceivers, leave them installed.
 . Confirm that the Cache Active LED on the back of the controller is off.
 . Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller canister from the midplane, and then, using two hands, pull the controller canister half-way out of the chassis.
-. Check the NVMEM LED located on the back of the controller canister. Look for the NV icon.
+. Check the Cache Active LED located on the back of the controller canister. Look for the NV icon.
 +
 NOTE: The green NV LED on the faceplate will start flashing when power is removed from the controller if the system was in the "waiting for giveback" state, or the system was not taken over or halted properly (uncommitted data). If the impaired controller canister was not successfully taken over by the partner controller canister, contact NetApp Support
 
@@ -177,7 +177,7 @@ image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[Open contro
 .. Slide the battery up until it clears the holding brackets, and then lift the battery out of the controller canister.
 .. Unplug the battery from the controller canister.
 +
-image::../media/drw_E4000_replace_nvbattery_IEOPS-862.png[Remove NVMEM battery.]
+image::../media/drw_E4000_replace_nvbattery_IEOPS-862.png[Remove battery.]
 +
 |===
 a|image::../media/legend_icon_01.png[] |Battery release tab
