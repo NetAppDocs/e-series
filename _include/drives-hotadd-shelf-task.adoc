@@ -193,8 +193,6 @@ You connect the drive shelf to controller A, confirm IOM status, and then connec
 
 . Connect the drive shelf to controller A.
 +
-image::../media/hot_e4000_cabling_0.png[]
-+
 image::../media/hot_e4000_cabling_1.png[]
 
 . In SANtricity System Manager, click *Hardware*.

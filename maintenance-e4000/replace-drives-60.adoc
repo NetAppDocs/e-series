@@ -37,8 +37,6 @@ Prepare to replace a drive by checking the Recovery Guru in SANtricity System Ma
  .. Select the failed drive on the shelf graphic.
  .. Click the drive to display its context menu, and then select *View settings*.
  .. Confirm that the replacement drive has a capacity equal to or greater than the drive you are replacing and that it has the features you expect.
-+
-For example, do not attempt to replace a hard disk drive (HDD) with a solid-state disk (SSD). Similarly, if you are replacing a secure-capable drive, make sure the replacement drive is also secure-capable.
 . If needed, use SANtricity System Manager to locate the drive within the storage array.
  .. If the shelf has a bezel, remove it so you can see the LEDs.
  .. From the drive's context menu, select *Turn on locator light*.

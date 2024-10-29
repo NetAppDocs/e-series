@@ -224,6 +224,31 @@ The controller begins to boot as soon as it is seated in the chassis.
 [role="tabbed-block"]
 ====
 
+.Power up controller (simplex)
+--
+Place the controller online, collect support data, and resume operations.
+
+.Steps
+
+. As the controller boots, check the controller LEDs.
++
+When communication with the other controller is reestablished:
+
+* The amber Attention LED remains on.
+* The Host Link LEDs might be on, blinking, or off, depending on the host interface.
+. When the controller is back online, confirm that its status is Optimal and check the controller shelf’s Attention LEDs.
++
+If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller canister is installed correctly. If necessary, remove and reinstall the controller canister.
+NOTE: If you cannot resolve the problem, contact technical support.
+. Collect support data for your storage array using SANtricity System Manager.
+.. Select *Support › Support Center › Diagnostics*.
+.. Select *Collect Support Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+
+
+--
 .Place controller online (duplex)
 --
 

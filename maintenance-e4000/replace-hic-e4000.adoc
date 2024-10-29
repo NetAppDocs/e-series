@@ -238,14 +238,8 @@ Place the controller online, collect support data, and resume operations.
 +
 If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated, and check that the battery and the controller canister are installed correctly. If necessary, remove and reinstall the controller canister and the battery.
 +
-NOTE: If you cannot resolve the problem, contact technical support.
-If needed, collect support data for your storage array using SANtricity System Manager.
-. Verify that all volumes have been returned to the preferred owner.
-.. Select *Storage › Volumes*. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select *More › Change ownership* to view volume owners.
-.. If volumes are all owned by preferred owner continue to step 5.
-.. If none of the volumes are returned, you must manually return the volumes. Go to *More › Redistribute volumes*.
-.. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution, you must check the Recovery Guru for host connectivity issues.
-.. If there is no Recovery Guru present or if after following the recovery guru steps the volumes are still not returned to their preferred owners, contact support.
+NOTE: If you cannot resolve the problem, contact technical support. If needed, collect support data for your storage array using SANtricity System Manager.
+
 . Collect support data for your storage array using SANtricity System Manager.
 .. Select *Support › Support Center › Diagnostics*.
 .. Select Collect Support Data.

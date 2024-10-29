@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can replace a failed controller canister in a simplex (single-controller) configuration.
+You can replace a failed controller canister.
 
 
 .Before you begin
@@ -306,7 +306,12 @@ NOTE: _Unsecure drives_ are unassigned drives, global hot spare drives, or drive
 
 ** *Only secured drives (no unsecure drives)*:
 .. Access the storage array's command line interface (CLI).
-.. Enter the following command to import the security key:
+.. Load the appropriate simplex NVSRAM on the controller.
++
+For example: `download storageArray NVSRAM file=\"N4000-881834-SG4.dlp\" forceDownload=TRUE;`
+.. Confirm that the controller is *Optimal* after loading simplex NVSRAM.
+.. If using external security key management, https://docs.netapp.com/us-en/e-series/upgrade-controllers/upgrade-unlock-drives-task.html#external-key-management[setup external key management on the controller].
+.. If using internal security key management, enter the following command to import the security key:
 +
 ----
 import storageArray securityKey file="C:/file.slk"
@@ -327,7 +332,7 @@ where:
 .. Power off the system.
 .. Remove the unsecure drives.
 .. Replace the controller.
-.. Power on the system and wait for the seven-segment display to show the tray number.
+.. Power on the system.
 .. From SANtricity System Manager, select *Settings › System*.
 .. In the Security Key Management section, select *Create/Change Key* to create a new security key.
 .. Select *Unlock Secure Drives* to import the security key you saved.
