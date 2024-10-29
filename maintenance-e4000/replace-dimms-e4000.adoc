@@ -152,8 +152,7 @@ Locate the DIMM inside the controller, remove it, and replace it.
 
 . If you are not already grounded, properly ground yourself.
 . You must perform a clean system shutdown before replacing system components to avoid losing unwritten data in the DIMM. The LED is located on the back of the controller canister.
-. If the Cache Active LED is not flashing, there is no content in the DIMM; you can skip the following steps and proceed to the next task in this procedure.
-. If the Cache Active LED is flashing, there is data in the Cache Active and you must disconnect the battery to clear the memory:
+. Once the LED is off, you must disconnect the battery to clear the memory in the NVMEM:
 .. Remove the battery from the controller canister by pressing the blue button on the side of the controller canister.
 .. Slide the battery up until it clears the holding brackets, and then lift the battery out of the controller canister.
 .. Locate the battery cable, press the clip on the battery plug to release the lock clip from the plug socket, and then unplug the battery cable from the socket.
