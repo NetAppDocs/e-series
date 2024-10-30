@@ -148,13 +148,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 . If the host ports on the controller canister use SFP+ transceivers, leave them installed.
 . Confirm that the Cache Active LED on the back of the controller is off.
 . Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller canister from the midplane, and then, using two hands, pull the controller canister half-way out of the chassis.
-. Check the NVMEM LED located on the back of the controller canister. Look for the NV icon.
-+
-NOTE: The green NV LED on the faceplate will start flashing when power is removed from the controller if the system was in the "waiting for giveback" state, or the system was not taken over or halted properly (uncommitted data). If the impaired controller canister was not successfully taken over by the partner controller canister, contact NetApp Support
 
-** If the green NV status LED begins flashing when the controller canister is removed from the chassis:
-*** Confirm that the controller had a clean takeover by the partner controller canister or the impaired controller shows waiting for giveback, the flashing LED can be ignored and you can complete removing the impaired controller from the chassis.
-** If the green NV LED if off, you can complete removing the impaired controller from the chassis.
 
 == Step 3: Install the new battery
 
@@ -177,7 +171,7 @@ image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[Open contro
 .. Slide the battery up until it clears the holding brackets, and then lift the battery out of the controller canister.
 .. Unplug the battery from the controller canister.
 +
-image::../media/drw_E4000_replace_nvbattery_IEOPS-862.png[Remove NVMEM battery.]
+image::../media/drw_E4000_replace_nvbattery_IEOPS-862.png[Remove battery.]
 +
 |===
 a|image::../media/legend_icon_01.png[] |Battery release tab
@@ -239,14 +233,7 @@ The steps to complete battery replacement depend on whether you have a duplex (t
 +
 If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated, and check that the battery and the controller canister are installed correctly. If necessary, remove and reinstall the controller canister and the battery.
 +
-NOTE: If you cannot resolve the problem, contact technical support.
-If needed, collect support data for your storage array using SANtricity System Manager.
-. Verify that all volumes have been returned to the preferred owner.
-.. Select *Storage › Volumes*. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select *More › Change ownership* to view volume owners.
-.. If volumes are all owned by preferred owner continue to step 5.
-.. If none of the volumes are returned, you must manually return the volumes. Go to *More › Redistribute volumes*.
-.. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution, you must check the Recovery Guru for host connectivity issues.
-.. If there is no Recovery Guru present or if after following the recovery guru steps the volumes are still not returned to their preferred owners, contact support.
+NOTE: If you cannot resolve the problem, contact technical support. If needed, collect support data for your storage array using SANtricity System Manager.
 . Collect support data for your storage array using SANtricity System Manager.
 .. Select *Support › Support Center › Diagnostics*.
 .. Select Collect Support Data.
@@ -290,8 +277,8 @@ If needed, collect support data for your storage array using SANtricity System M
 .. If there is no Recovery Guru present or if after following the recovery guru steps the volumes are still not returned to their preferred owners, contact support.
 . Collect support data for your storage array using SANtricity System Manager.
 .. Select *Support › Support Center › Diagnostics*.
-.. Select Collect Support Data.
-.. Click Collect.
+.. Select *Collect Support Data*.
+.. Click *Collect*.
 +
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 

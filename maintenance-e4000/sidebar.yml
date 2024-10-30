@@ -8,7 +8,7 @@ entries:
       - title: Considerations and requirements
         url: "/maintenance-e4000/replace-controller-requirements-e4000.html"
       - title: Add second controller canister
-        url: maintenance-e4000/replace-controller-second-e4000.html
+        url: "/maintenance-e4000/replace-controller-second-e4000.html"
       - title: Replace controller
         url: "/maintenance-e4000/replace-controller-e4000.html"
   - title: Canisters
@@ -31,6 +31,8 @@ entries:
             url: "/maintenance-e4000/replace-drives-12-24.html"
           - title: 60 drive
             url: "/maintenance-e4000/replace-drives-60.html"
+      - title: Replace drive drawer (4060)
+        url: "/maintenance-e4000/drive-drawer-60.html"
       - title: Hot add a drive shelf
         url: "/maintenance-e4000/replace-drives-hotadd-drive-shelf.html"
   - title: Host interface cards

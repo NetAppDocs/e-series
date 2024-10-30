@@ -151,13 +151,12 @@ Locate the DIMM inside the controller, remove it, and replace it.
 .Steps
 
 . If you are not already grounded, properly ground yourself.
-. You must perform a clean system shutdown before replacing system components to avoid losing unwritten data in the nonvolatile memory (NVMEM). The LED is located on the back of the controller canister.
-. If the NVMEM LED is not flashing, there is no content in the NVMEM; you can skip the following steps and proceed to the next task in this procedure.
-. If the NVMEM LED is flashing, there is data in the NVMEM and you must disconnect the battery to clear the memory:
+. You must perform a clean system shutdown before replacing system components to avoid losing unwritten data in the DIMM. The LED is located on the back of the controller canister.
+. Once the LED is off, you must disconnect the battery to clear the memory in the NVMEM:
 .. Remove the battery from the controller canister by pressing the blue button on the side of the controller canister.
 .. Slide the battery up until it clears the holding brackets, and then lift the battery out of the controller canister.
 .. Locate the battery cable, press the clip on the battery plug to release the lock clip from the plug socket, and then unplug the battery cable from the socket.
-.. Confirm that the NVMEM LED is no longer lit.
+.. Confirm that the Cache Active LED is no longer lit.
 .. Reconnect the battery connector and recheck the LED on the back of the controller.
 .. Unplug the battery cable.
 . Locate the DIMMs on your controller canister.
@@ -224,6 +223,31 @@ The controller begins to boot as soon as it is seated in the chassis.
 [role="tabbed-block"]
 ====
 
+.Power up controller (simplex)
+--
+Place the controller online, collect support data, and resume operations.
+
+.Steps
+
+. As the controller boots, check the controller LEDs.
++
+When communication with the other controller is reestablished:
+
+* The amber Attention LED remains on.
+* The Host Link LEDs might be on, blinking, or off, depending on the host interface.
+. When the controller is back online, confirm that its status is Optimal and check the controller shelf’s Attention LEDs.
++
+If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller canister is installed correctly. If necessary, remove and reinstall the controller canister.
+NOTE: If you cannot resolve the problem, contact technical support.
+. Collect support data for your storage array using SANtricity System Manager.
+.. Select *Support › Support Center › Diagnostics*.
+.. Select *Collect Support Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+
+
+--
 .Place controller online (duplex)
 --
 

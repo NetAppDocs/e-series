@@ -26,8 +26,6 @@ This procedure applies to IOM12 and IOM12B drive shelves.
 
 NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. This means you can only replace an IOM12 module with another IOM12 module or replace an IOM12B module with another IOM12B module. (Your shelf can have two IOM12 modules or have two IOM12B modules.)
 
-If you are cabling an older controller shelf to a DE212C, DE224C, or DE460, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf^].
-
 NOTE: To maintain system integrity, you must follow the procedure exactly in the order presented.
 
 == Step 1: Prepare to add the drive shelf
@@ -93,17 +91,13 @@ NOTE: See the installation instructions for your model for the full procedure fo
 
 You connect the drive shelf to controller A, confirm IOM status, and then connect the drive shelf to controller B.
 
-If you are cabling an older controller shelf to a DE212C, DE224C, or DE460, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf^].
-
 .Steps
 
 . Connect the drive shelf to controller A.
 +
 The following figure shows an example connection between an additional drive shelf and controller A. To locate the ports on your model, see the https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe^].
 +
-image::../media/hot_e5700_0.png[]
-+
-image::../media/hot_e5700_1.png[]
+image::../media/hot_e4000_cabling_1.png[]
 
 . In SANtricity System Manager, click *Hardware*.
 +
@@ -126,7 +120,7 @@ The *Shelf Component Settings* dialog box appears.
 +
 The following figure shows an example connection between an additional drive shelf and controller B. To locate the ports on your model, see the https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe^].
 +
-image::../media/hot_e5700_2.png[]
+image::../media/hot_e4000_cabling_2.png[]
 
 . If it is not already selected, select the *ESMs/IOMs* tab in the *Shelf Component Settings* dialog box, and then select *Show more options*. Verify that Card communications is *YES*.
 +

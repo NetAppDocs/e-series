@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can replace a failed controller canister in a simplex (single-controller) configuration.
+You can replace a failed controller canister.
 
 
 .Before you begin
@@ -184,7 +184,7 @@ Remove the battery from the impaired controller and install it in the replacemen
 .. Slide the battery up until it clears the holding brackets, and then lift the battery out of the controller canister.
 .. Unplug the battery plug by squeezing the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
 +
-image::../media/drw_E4000_replace_nvbattery_IEOPS-862.png[Remove NVMEM battery.]
+image::../media/drw_E4000_replace_nvbattery_IEOPS-862.png[Remove battery.]
 +
 |===
 a|image::../media/legend_icon_01.png[] |Battery release tab
@@ -212,32 +212,8 @@ image::../media/drw_E4000_replace_HIC_source_IEOPS-864.png[Remove HIC from contr
 NOTE: You can loosen the thumbscrews with your fingers or a screwdriver.
 . Lift the HIC straight up and set it aside on an anti-static surface.
 
-== Step 5: Move the boot media
 
-Remove the boot media from the impaired controller canister and install it in the replacement controller canister.
-
-.Steps
-
-. Locate the boot media using the following illustration or the FRU map on the controller canister:
-. Remove the boot media:
-.. Press the blue button on the boot media housing to release the boot media from its housing.
-.. Rotate the boot media up, and then gently pull it straight out of the boot media socket.
-+
-NOTE: Do not twist or pull the boot media straight up, because this could damage the socket or the boot media.
-+
-image::../media/drw_E4000_replace_boot_media_IEOPS-866.png[Remove boot media.]
-+
-|===
-a|image::../media/legend_icon_01.png[] |Boot media release button
-|===
-. Install the the boot media to the replacement controller canister:
-. Align the edges of the replacement boot media with the boot media socket, and then gently push it into the socket.
-.. Check the boot media to make sure that it is seated squarely and completely in the socket.
-.. If necessary, remove the boot media and reseat it into the socket.
-.. Push the blue locking button on the boot media housing, rotate the boot media all the way down, and then release the locking button to lock the boot media in place.
-
-
-== Step 6: Move the DIMMs
+== Step 5: Move the DIMMs
 
 Remove the DIMMs from the impaired controller canister and install them into the replacement controller canister.
 
@@ -273,7 +249,7 @@ The DIMM fits tightly in the slot, but should go in easily. If not, realign the 
 NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
 . Repeat these steps for the other DIMM.
 
-== Step 7: Install the HIC
+== Step 6: Install the HIC
 
 Install the HIC into the replacement controller canister.
 
@@ -330,7 +306,12 @@ NOTE: _Unsecure drives_ are unassigned drives, global hot spare drives, or drive
 
 ** *Only secured drives (no unsecure drives)*:
 .. Access the storage array's command line interface (CLI).
-.. Enter the following command to import the security key:
+.. Load the appropriate simplex NVSRAM on the controller.
++
+For example: `download storageArray NVSRAM file=\"N4000-881834-SG4.dlp\" forceDownload=TRUE;`
+.. Confirm that the controller is *Optimal* after loading simplex NVSRAM.
+.. If using external security key management, https://docs.netapp.com/us-en/e-series/upgrade-controllers/upgrade-unlock-drives-task.html#external-key-management[setup external key management on the controller].
+.. If using internal security key management, enter the following command to import the security key:
 +
 ----
 import storageArray securityKey file="C:/file.slk"
@@ -351,7 +332,7 @@ where:
 .. Power off the system.
 .. Remove the unsecure drives.
 .. Replace the controller.
-.. Power on the system and wait for the seven-segment display to show the tray number.
+.. Power on the system.
 .. From SANtricity System Manager, select *Settings › System*.
 .. In the Security Key Management section, select *Create/Change Key* to create a new security key.
 .. Select *Unlock Secure Drives* to import the security key you saved.
