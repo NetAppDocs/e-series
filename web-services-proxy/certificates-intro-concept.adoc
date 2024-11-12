@@ -104,3 +104,16 @@ The */certificates/reload* endpoint usually returns a successful http 202 respon
 . Close the current browser session to the Web Services Proxy, open a new browser session, and confirm that a new secure browser connection to the Web Services Proxy can be established.
 +
 By using an incognito or in-private browsing session, you can open a connection to the server without using any saved data from previous browsing sessions.
+
+== Login lockout feature 
+
+Configurable through the REST API only, you can limit the number of login attempts for the embedded and proxy Web Services. Based on your settings, the lockout feature will be enabled once the number of login attempts for the Web Services is exceeded. 
+
+.Steps
+
+. Log in to the link:install-login-task.html[interactive API documentation].
+. Go to the drop-down menu in the upper right and then select *v2*.
+. Click the *GET:/settings/lockout* endpoint to retrieve the lockout settings. 
+. Click the *POST:/settings/lockout* endpoint, and then click *Try it out* to configure the lockout settings. 
+
+
