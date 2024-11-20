@@ -20,11 +20,19 @@ The following table describes new features in the latest SANtricity OS releases 
 |New feature |Description
 
 a|New storage system model – E4000
-a|This release introduces the E4000 low-cost storage system. The E4000 supports 12 and 60 drives and a single host interface card (HIC) per controller. The supported host interface cards include iSCSI, Fibre Channel, and SAS. E4000 storage systems and other E-Series storage systems can be viewed and managed in Unified Manager.
+a|This release introduces the E4000 low-cost storage system. The E4000 supports 12 and 60 drives and a single host interface card (HIC) per controller. For the initial release, supported host interface cards include iSCSI and Fibre Channel. E4000 storage systems and other E-Series storage systems can be viewed and managed in Unified Manager.
 
-a|Automatic drive firmware upgrade notification 
-a|A new upgrade alert is now generated whenever a drive with down version firmware is detected in your storage array. For more information, see https://docs.netapp.com/us-en/e-series-santricity/sm-hardware/automatic-drive-fw-upgrade.html[Automatic drive firmware upgrade notification^].
+a|Increased capacity for Dynamic Disk Pools 
+a|The capacity for Dynamic Disk Pools (DDP) has been increased to 12 PB whenever the drive total is greater than 23 TB in size. If the drive total is less than 23 TB in size, the DDP capacity is 6 PB.     
 
+a|Default media scan settings increased
+a|The default media scan settings has been increased to 120 days. 
+
+a|Private key now accepted for External Key Management 
+a|Certificate signing request (CSR) file generated externally through private and public key pairs can now be imported through System Manager.
+
+a|Login lockout feature now available for Web Services  
+a|Configurable through the REST API only, a new login lockout setting is now available for embedded and proxy Web Services. 
 |===
 
 == New features in Version 11.80.1R1
