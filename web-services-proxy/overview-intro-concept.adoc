@@ -22,7 +22,7 @@ When using the Web Services API to manage storage systems, you should be familia
 
 Web Services is available in two implementations:
 
-* *Embedded* -- A RESTful API server is embedded on each controller of an E2800/EF280 storage system running NetApp SANtricity 11.30 or later versions, an E5700/EF570 running SANtricity 11.40 or later versions, and an EF300 or EF600 running SANtricity 11.60 or later versions. No installation is required.
+* *Embedded* -- A RESTful API server is embedded on each controller of an E2800/EF280 storage system running NetApp SANtricity 11.30 or later versions, an E5700/EF570 running SANtricity 11.40 or later versions, an EF300 or EF600 running SANtricity 11.60 or later versions, and an E4000 running SANtricity 11.90 or later versions. No installation is required.
 * *Proxy* -- The SANtricity Web Services Proxy is a RESTful API server installed separately on a Windows or Linux server. This host-based application can manage hundreds of new and legacy NetApp E-Series storage systems. In general, you should use the proxy for networks with more than 10 storage systems. The proxy can handle numerous requests more efficiently than the embedded API.
 
 The core of the API is available in both implementations.
