@@ -87,15 +87,15 @@ image::../media/trafford_drive_rel_button_maint-e2800.gif["Orange release latch 
 *(1)* _Orange release latch_
 
 . Open the cam handle, and lift out the drive slightly.
-. Wait 30 seconds.
+. Wait 60 seconds.
 . Use the cam handle to lift the drive from the shelf.
 +
 image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif["Use cam handle to lift drive from the shelf"]
 
 . Place the drive on an antistatic, cushioned surface away from magnetic fields.
-. Wait 30 seconds for the software to recognize that the drive has been removed.
+. Wait 60 seconds for the software to recognize that the drive has been removed.
 +
-NOTE: If you accidentally remove an active drive, wait at least 30 seconds, and then reinstall it. For the recovery procedure, refer to the storage management software.
+NOTE: If you accidentally remove an active drive, wait at least 60 seconds, and then reinstall it. For the recovery procedure, refer to the storage management software.
 
 == Step 3: Install new drive
 
@@ -131,7 +131,7 @@ Confirm that the new drive is working correctly.
 
 . Check the Power LED and the Attention LED on the drive you replaced. (When you first insert a drive, its Attention LED might be on. However, the LED should go off within a minute.)
  ** Power LED is on or blinking, and the Attention LED is off: Indicates that the new drive is working correctly.
- ** Power LED is off: Indicates that the drive might not be installed correctly. Remove the drive, wait 30 seconds, and then reinstall it.
+ ** Power LED is off: Indicates that the drive might not be installed correctly. Remove the drive, wait 60 seconds, and then reinstall it.
  ** Attention LED is on: Indicates that the new drive might be defective. Replace it with another new drive.
 . If the Recovery Guru in SANtricity System Manager still shows an issue, select *Recheck* to ensure the problem has been resolved.
 . If the Recovery Guru indicates that drive reconstruction did not start automatically, start reconstruction manually, as follows:
