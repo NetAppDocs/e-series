@@ -22,8 +22,13 @@ Check out the links below to access documentation for earlier versions of E-Seri
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1394872[Add second controller to E2600 and E2700^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2353447[Change or add host protocols^]
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1656638[Convert from AC to DC power^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2589397[Controller Upgrade Guide - Legacy controller models^]
 
 == Software documentation for earlier releases
+
+=== SANtricity Release 11.8
+* https://docs.netapp.com/us-en/e-series-santricity-118/index.html[System Manager help^]
+* https://docs.netapp.com/us-en/e-series-santricity-118/index.html[Unified Manager help^]
 
 === SANtricity Release 11.7
 * https://docs.netapp.com/us-en/e-series-santricity-117/index.html[System Manager help^]
