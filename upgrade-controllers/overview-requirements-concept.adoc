@@ -11,6 +11,8 @@ summary: Review requirements for upgrading and replacing E-Series controllers.
 [.lead]
 Before you upgrade controllers, review the following considerations.
 
+NOTE: Refer to the https://docs.netapp.com/us-en/e-series/getting-started/learn-hardware-concept.html#e2800-models[E-Series hardware overview] for specific information on supported configurations for each E-Series controller.  
+
 == Hardware and firmware requirements
 
 * *Duplex and simplex controller upgrades*
@@ -25,24 +27,24 @@ Storage arrays with an E-Series controller shelf are typically managed with the 
 +
 A new controller is shipped without a battery installed. When possible, you should remove the battery from your old controller and then install that battery in the new controller. However, for some controller upgrades, the battery from the old controller is not compatible with the new controller. In those cases, you must order a battery along with your new controller, and have that battery available before you begin these tasks.
 
-* *Vendor Identification*
-+
-Some controller upgrades result in the Vendor ID in SCSI Inquiry Data changing from `LSI` to `NETAPP`. When the Vendor ID changes from `LSI` to `NETAPP`, additional steps are required on the Windows, VMware, and AIX operating systems to reclaim devices. Steps for these operating systems are included in this upgrade procedure.
-
 * *Synchronous Mirroring and Asynchronous Mirroring*
 +
 If your storage array participates in Synchronous Mirroring, only iSCSI or Fibre Channel connections are supported between the primary site and the remote site. If the host interface card (HIC) configuration in your new controllers does not include iSCSI or Fibre Channel connections, Synchronous Mirroring will not be supported.
 +
 For Asynchronous Mirroring, the local storage array and remote storage array can run different versions of firmware. The minimum firmware version supported is SANtricity firmware version 7.84.
 
+NOTE: For E4000 controllers, mirroring is only supported on Fibre Channel connections. 
+
 * *Storage object limits*
 +
-If you change your controllers from 5x00 models to 2x00 models, your new storage array configuration will support lower numbers of some storage objects (for example, volumes) in the storage management software than your old configuration. You must make sure that your old configuration does not exceed the storage object limits. See http://hwu.netapp.com/home.aspx[Hardware Universe^] for more information.
+If you change your controllers from midrange to entry-level models (for example, 5x00 models to 2x00 models), your new storage array configuration will support lower numbers of some storage objects (for example, volumes) in the storage management software than your old configuration. You must make sure that your old configuration does not exceed the storage object limits. 
++
+See http://hwu.netapp.com/home.aspx[Hardware Universe^] for more information.
 
-== Upgrade to newer models
-
+* *Upgrade to newer models*
++
 If you are replacing the controllers to upgrade to a new model, keep in mind that your current storage array might have premium features installed that the new model cannot support.
-
++
 When upgrading your E-Series controller, you should disable any premium features used on your storage array that are not supported on the new controllers.
 
 == Upgrade compatibility
@@ -74,9 +76,9 @@ a|
 +
 * E4000 can only support 512 volumes
 +
-* Infiniband Host interface card support is not available
+* E4000 does not support SAS configurations
 +
-* E4000 cannot be a remote volume target  
+* E4000 does not support Remote Storage Volumes 
 
 a|
 E4000 controllers must use SAS-3 shelves.
@@ -101,7 +103,8 @@ a|
 +
 * Infiniband Host interface card support is not available
 +
-* E4000 cannot be a remote volume target  
+* E4000 does not support SAS configurations 
++
 
 a|
 E4000 controllers must use SAS-3 shelves.
@@ -267,9 +270,9 @@ SAS-3 shelves include the following models:
 
 * E4000 controller shelves
 +
-* EF600 controller shelves
+* EF600 controller shelves ^1^
 +
-* EF300 controller shelves
+* EF300 controller shelves ^1^
 +
 * E2800 controller shelves
 +
@@ -278,6 +281,10 @@ SAS-3 shelves include the following models:
 * DE212C, DE224C, DE460C drive shelves
 
 |===
+
+Notes:
+
+. EF600 and EF300 controllers can only use SAS-3 shelves as expansion. 
 
 == SAS-2 to SAS-3 investment protection
 
