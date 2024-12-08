@@ -47,7 +47,7 @@ CAUTION: *Possible loss of data access* — If all drives in the storage arr
 To save the key (might not be possible, depending on the state of the controller):
 
 .. From SANtricity System Manager, select *Settings › System*.
-.. Under *Drive security key management*, select *Back Up Key*.
+.. Under *Security key management*, select *Back Up Key*.
 .. In the *Define a pass phrase/Re-enter pass phrase* fields, enter and confirm a pass phrase for this backup copy.
 .. Click *Backup*.
 .. Record your key information in a secure location, and then click *Close*.
@@ -212,11 +212,9 @@ If you removed the media converters (QSFPs or SFPs), remember to reinstall them 
 .. With the cam handle in the open position, firmly push the controller canister in until it meets the midplane and is fully seated, and then close the cam handle to the locked position.
 +
 NOTE: Do not use excessive force when sliding the controller canister into the chassis to avoid damaging the connectors.
-+
-The controller begins to boot as soon as it is seated in the chassis.
+
 .. If you have not already done so, reinstall the cable management device.
 .. Bind the cables to the cable management device with the hook and loop strap.
-. Reboot the controller canister.
 
 == Step 5: Complete HIC replacement
 
