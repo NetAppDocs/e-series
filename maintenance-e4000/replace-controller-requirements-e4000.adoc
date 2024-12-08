@@ -30,7 +30,7 @@ For information about compatible hardware, refer to the https://mysupport.netapp
 * Labels to identify the new cables.
 * A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller’s domain name or IP address.)
 +
-Optionally, you can use the command line interface (CLI) to perform some of the procedures. For SANtricity System Manager (version 11.60 and above), you can download the CLI package (zip file) from System Manager. Then, go to *Settings >System > Add-ons > Command Line Interface*. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
+Optionally, you can use the command line interface (CLI) to perform some of the procedures. For SANtricity System Manager (version 11.60 and above), you can download the CLI package (zip file) from System Manager. To do so, go to *Settings > System > Add-ons > Command Line Interface* in System Manager. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
 
 
 == Requirements for replacing controller
@@ -50,7 +50,8 @@ Before you replace a controller, you must have:
 * #1 Phillips screwdriver.
 * A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller’s domain name or IP address.)
 +
-Optionally, you can use the command line interface (CLI) to perform some of the procedures. You can download the CLI package (zip file) from System Manager. Then, go to *Settings > System > Add-ons > Command Line Interface*. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
+Optionally, you can use the command line interface (CLI) to perform some of the procedures. For SANtricity System Manager (version 11.60 and above), you can download the CLI package (zip file) from System Manager. To do so, go to *Settings > System > Add-ons > Command Line Interface* in System Manager. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
+
 
 
 === Duplex configuration requirements
