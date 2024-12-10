@@ -150,4 +150,4 @@ NOTE: Gathering support data can temporarily impact performance on your storage 
 
 .What's next?
 
-If your controller upgrade results in changing the vendor ID from LSI to NETAPP, go to link:remount-volumes-lsi-task.html[Remount volumes after changing the vendor from LSI to NETAPP]; otherwise, your controller upgrade is complete and you can resume normal operations.
+Your controller upgrade is complete and you can resume normal operations.

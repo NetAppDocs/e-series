@@ -468,10 +468,6 @@ sidebar:
                 url: "/upgrade-controllers/upgrade-unlock-drives-task.html"
               - title: Complete controller upgrade
                 url: "/upgrade-controllers/complete-upgrade-controllers-task.html"
-              - title: Remount volumes after changing the vendor from LSI to NETAPP
-                url: "/upgrade-controllers/remount-volumes-lsi-task.html"
-              - title: Reconfigure SAS-2 system
-                url: "/upgrade-controllers/reconfigure-sas-task.html"
         - title: SANtricity OS
           pdf-filename: SANtricity Software Upgrade
           entries:
