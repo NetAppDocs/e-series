@@ -51,17 +51,7 @@ If a problem occurs when you remove a controller, you can use the saved file to 
 .. Click *Collect*.
 +
 The file is saved in the *Downloads* folder for your browser with the name *configurationData-	<arrayName>-<dateTime>.7z*.
-. If the controller is not already offline, take it offline now using SANtricity System Manager.
-.. Select *Hardware*.
-.. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
-.. Select the controller that you want to place offline.
-.. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
-+
-NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a *SANtricity System Manager Unavailable* message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller. 
-. Wait for SANtricity System Manager to update the controller’s status to offline.
-+
-NOTE: Do not begin any other operations until after the status has been updated. 
-. Select Recheck from the Recovery Guru, and confirm that the OK to remove field in the Details area displays Yes, indicating that it is safe to remove this component.
+
 
 
 == Step 2: Install host interface card
@@ -75,9 +65,7 @@ If the currently installed controller includes a host interface card (HIC), you 
 CAUTION: *Possible loss of data access*: The HICs installed in the two controller canisters must be identical. If the replacement HIC is not identical to the HIC you are replacing, do not attempt this procedure. The presence of mismatched HICs will cause the new controller to lock down when it comes online.
 
 . Remove the HIC card bezel by sliding it straight out from the controller module.
-. Loosen the thumbscrews on the Hic card with your fingers or a screwdriver.
-. Lift the HIC card straight up and set it aside on a non-static surface.
-. Take the replacement HIC card and align it with the socket on the motherboard.
+. Take the HIC card and align it with the socket on the motherboard.
 . Gently push down on the card to seat it in the socket.
 . Tighten the three thumbscrews.
 +
@@ -161,7 +149,7 @@ The file is saved in the Downloads folder for your browser with the name, *lates
 
 ** When you upgrade controller NVSRAM, any custom settings that you have applied to the existing NVSRAM are lost during the process of activation. You must apply the custom settings to the NVSRAM again after the process of activation is complete.
 
-. Change the storage array setting to duplex using CLI commands. To use CLI, you can either open a command prompt if you downloaded the CLI package.
+. Change the storage array setting to duplex using CLI commands. To use CLI, you can open a command prompt if you downloaded the CLI package.
 
 ** From a command prompt:
 .. Use the following command to switch the array from simplex to duplex:
