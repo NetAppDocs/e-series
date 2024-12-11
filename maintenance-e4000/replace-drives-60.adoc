@@ -68,9 +68,9 @@ The cam handle on the drive springs open partially, and the drive is released fr
 . Wait 30 seconds.
 . Use the cam handle to lift the drive from the shelf.
 . Place the drive on an antistatic, cushioned surface away from magnetic fields.
-. Wait 30 seconds for the software to recognize that the drive has been removed.
+. Wait 30 seconds for the software to recognize that the drive has been removed before moving on to "Step 3: Install new drive."
 +
-NOTE: If you accidentally remove an active drive, wait at least 30 seconds, and then reinstall it. For the recovery procedure, refer to the storage management software.
+NOTE: If you accidentally remove an active drive, wait at least 60 seconds, and then reinstall it. For the recovery procedure, refer to the storage management software.
 
 == Step 3: Install new drive
 
