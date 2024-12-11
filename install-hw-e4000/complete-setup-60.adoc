@@ -24,9 +24,9 @@ Cable the system according to your network topology.
 The following example shows cabling to the data hosts using a direct-attach topology.
 
 
-image:../media/4U_DirectTopology.png[]
+image:../media/drw_e4060_direct_topology_ieops-2048.svg[]
 
-. Connect each host adapter directly to the host ports 0b1 and 0b2 on the controllers.
+. Connect each host adapter directly to the host ports e0a and e0b on the controllers.
 
 
 --
@@ -37,10 +37,10 @@ image:../media/4U_DirectTopology.png[]
 The following example shows cabling to the data hosts using a fabric topology.
 
 
-image:../media/4U_FabricTopology.png[]
+image:../media/drw_e4060_fabric_topology_ieops-2049.svg[]
 
 . Connect each host adapter directly to the switch.
-. Connect each switch directly to the host ports 0b1 and 0b2 on the controllers.
+. Connect each switch directly to the host ports e0a and e0b on the controllers.
 
 
 --
