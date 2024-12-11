@@ -220,7 +220,7 @@ If you have a duplex configuration, the controller will begin to boot as soon as
 
 == Step 5: Complete HIC replacement
 
-Place the controller online, collect support data, and resume operations.
+Power up the controller (simplex) or place the controller online (duplex), collect support data, and resume operations.
 
 [role="tabbed-block"]
 ====
