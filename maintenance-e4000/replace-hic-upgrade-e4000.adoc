@@ -38,7 +38,9 @@ Place the controller shelf offline so you can safely upgrade the HICs.
 . From the Home page of SANtricity System Manager, ensure that the storage array has Optimal status.
 +
 If the status is not Optimal, use the Recovery Guru or contact technical support to resolve the problem. Do not continue with this procedure.
-
+. Click *Support > Upgrade Center* to ensure that the latest version of SANtricity OS is installed.
++
+As needed, install the latest version.
 . Back up the storage array's configuration database using SANtricity System Manager.
 +
 If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
@@ -68,6 +70,7 @@ The green Cache Active LED on the back of each controller is on when cached data
  .. Label and then unplug both power cables from controller shelf.
  .. Wait for all LEDs on the controller shelf to turn off.
 
+[[step2_remove_controller_canister]]
 == Step 2: Remove controller canister
 
 Remove the controller canister from the system and then remove the controller canister cover.
@@ -85,7 +88,7 @@ Leave the cables in the cable management device so that when you reinstall the c
 +
 image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[Open controller canister cover.]
 
-
+[[step3_upgrade_hic]]
 == Step 3: Upgrade the HIC
 
 Remove and replace the HIC.
@@ -103,6 +106,7 @@ image::../media/drw_E4000_replace_HIC_source_IEOPS-864.png[Remove HIC from contr
 .. Reinstall the HIC faceplate.
 . Reinstall the controller module cover and lock it into place.
 
+[[step4_reinstall_controller]]
 == Step 4: Reinstall controller canister
 
 Reinstall the controller canister into the chassis.
@@ -122,37 +126,32 @@ If you removed the media converters (QSFPs or SFPs), remember to reinstall them 
 .. With the cam handle in the open position, firmly push the controller canister in until it meets the midplane and is fully seated, and then close the cam handle to the locked position.
 +
 NOTE: Do not use excessive force when sliding the controller canister into the chassis to avoid damaging the connectors.
-+
-The controller begins to boot as soon as it is seated in the chassis.
 .. If you have not already done so, reinstall the cable management device.
 .. Bind the cables to the cable management device with the hook and loop strap.
-. Reboot the controller canister.
+. Repeat <<step2_remove_controller_canister, Step 2: Remove controller canister>>, <<step3_upgrade_hic, Step 3: Upgrade the HIC>>, and <<step4_reinstall_controller, Step 4: Reinstall controller canister>> for the second controller.
 
 == Step 5: Complete the HIC upgrade
 
-Place the controller online, collect support data, and resume operations.
+Place both controllers online, collect support data, and resume operations.
 
 .Steps
 
-. Place controller online.
+. Place controllers online.
  .. Plug in power cables.
-. As the controller boots, check the controller LEDs.
+. As the controllers boot, check the controller LEDs.
  ** The amber Attention LED remains on.
  ** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
-. When the controller is back online, confirm that its status is Optimal and check the controller shelf's Attention LEDs.
+. When the controllers are back online, confirm that their status is Optimal and check the controller shelf's Attention LEDs.
 +
-If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller canister is installed correctly. If necessary, remove and reinstall the controller canister.
+If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller canisters are installed correctly. If necessary, remove and reinstall the controller canisters.
 +
 NOTE: If you cannot resolve the problem, contact technical support.
 
-. Click *Support > Upgrade Center* to ensure that the latest version of SANtricity OS is installed.
-+
-As needed, install the latest version.
 
 . Verify that all volumes have been returned to the preferred owner.
-.. Select *Volumes*. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select *Change ownership* to view volume owners.
+.. Select *Storage › Volumes*. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select *More › Change ownership* to view volume owners.
 .. If volumes are all owned by preferred owner continue to Step 6.
-.. If none of the volumes are returned, you must manually return the volumes. Go to *Redistribute volumes*.
+.. If none of the volumes are returned, you must manually return the volumes. Go to *More › Redistribute volumes*.
  .. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution you must check the Recovery Guru for host connectivity issues.
  .. If there is no Recovery Guru present or if following the recovery guru steps the volumes are still not returned to their preferred owners contact support.
 

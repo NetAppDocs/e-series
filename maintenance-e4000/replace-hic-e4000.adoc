@@ -30,7 +30,7 @@ CAUTION: *Possible loss of data access* -- Never install a HIC in an E4000 contr
 
 == Step 1: Prepare to replace HIC
 
-Place the affected controller offline so you can safely replace the HICs.
+Power down the controller shelf (simplex) or place the affected controller offline (duplex) so you can safely replace the HICs.
 
 [role="tabbed-block"]
 ====
@@ -212,6 +212,8 @@ If you removed the media converters (QSFPs or SFPs), remember to reinstall them 
 .. With the cam handle in the open position, firmly push the controller canister in until it meets the midplane and is fully seated, and then close the cam handle to the locked position.
 +
 NOTE: Do not use excessive force when sliding the controller canister into the chassis to avoid damaging the connectors.
++
+If you have a duplex configuration, the controller will begin to boot as soon as it is seated in the chassis.
 
 .. If you have not already done so, reinstall the cable management device.
 .. Bind the cables to the cable management device with the hook and loop strap.
