@@ -22,4 +22,8 @@ The power source for your storage system must be able to accommodate the power r
 
 .Step
 
+. Connect a power cable to each of the power supply units on your storage system.
 . Connect the two power cables for each shelf to different power distribution units (PDUs) in the cabinet or rack.
+. Turn on both power switches.
++
+NOTE: EF300 and EF600 storage systems do not have power switches. They will power on as soon as the cables are connected.
