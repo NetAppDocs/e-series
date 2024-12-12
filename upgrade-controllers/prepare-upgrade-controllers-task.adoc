@@ -99,7 +99,7 @@ CAUTION: *Possible data loss* -- If you continue this procedure while I/O operat
 +
 The Change Cache Setting dialog box appears. All volumes on the storage array appear in this dialog box.
 
- .. Select the *Basic* tab and change the settings for read caching and write caching.
+ .. Select the *Basic* tab and disable the settings for read caching and write caching.
  .. Click *Save*.
  .. Wait five minutes to allow any data in cache memory to be flushed to disk.
 . If the Security Assertion Markup Language (SAML) is enabled on the controller, contact technical support to disable the SAML authentication.

@@ -68,7 +68,8 @@ You must first unlock the secured drives using the Internal Key Management proce
 a|
 All secured drives, External Key Management, you have not temporarily switched to Internal Key Management for the controller replacement procedure
 a|
-Controller swap with external key management and all drives secured
+Controller swap with external key management and all drives secured. See https://docs.netapp.com/us-en/e-series/upgrade-controllers/upgrade-unlock-drives-task.html#external-key-management[External key management^] for detailed instructions.
+
 |===
 
 == Step 2: Check status of controllers and trays
@@ -79,9 +80,9 @@ You can use the LEDs and the storage management software to check the status of 
 
 . Look at the LEDs on controller A to make sure that it is booting correctly.
 +
-The Host Link Service Action Required LEDs turn green during the reboot. The seven-segment display shows the sequence OS+ Sd+ blank- to indicate that the controller is performing Start-of-day (SOD) processing.
+The Host Link Service Action Required LEDs turn green during the reboot. 
 +
-After the controller successfully completes rebooting, the seven-segment display shows the tray ID matching the seven-segment display on the second controller. You can then discover the new controller canister by using the storage management software.
+After the controller successfully completes rebooting, you can then discover the new controller canister by using the storage management software.
 
 . If any of the controller-drive tray's Service Action Required LEDs are _on_, or if the Controller Service Action Required LED is _on_:
  .. Check that the controller canister has been installed correctly and that all of the cables are correctly seated. Reinstall the controller canister, if necessary.
@@ -95,9 +96,6 @@ You must ensure that your new controllers are running with the correct operating
 
 .Steps
 
-. Do one of the following:
- ** If you are upgrading to controllers that do not support SANtricity 11.30 and controller firmware 8.30, make sure that the version running on the new controllers matches the version that was last running on the original controllers. Normally, this will be the most recent release supported by the old controllers. If necessary, install the appropriate version on the new controllers.
- ** If you are upgrading to controllers that run SANtricity 11.30 and controller firmware 8.30, download and install the latest NVSRAM after you power on the new controllers.
 . If your controller upgrade involves a protocol change (for example, Fibre Channel to iSCSI), and you already have hosts defined for your storage array, associate the new host ports with your hosts:
  .. From System Manager, select menu:Storage[Hosts].
  .. Select the host to which the ports will be associated, and then click *View/Edit Settings*.
@@ -120,7 +118,7 @@ For information about compatible hardware, refer to the https://mysupport.netapp
 +
 The Change Cache Setting dialog box appears. All volumes on the storage array appear in this dialog box.
 
-.. Select the *Basic* tab and change the settings for read caching and write caching.
+.. Select the *Basic* tab and enable the settings for read caching and write caching.
 .. Click *Save*.
 
 . If SAML was disabled in preparing for the headswap, re-enable SAML.
@@ -152,4 +150,4 @@ NOTE: Gathering support data can temporarily impact performance on your storage 
 
 .What's next?
 
-If your controller upgrade results in changing the vendor ID from LSI to NETAPP, go to link:remount-volumes-lsi-task.html[Remount volumes after changing the vendor from LSI to NETAPP]; otherwise, your controller upgrade is complete and you can resume normal operations.
+Your controller upgrade is complete and you can resume normal operations.

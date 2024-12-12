@@ -23,6 +23,7 @@ Make sure you have the following:
 * A battery from the original controller canister or a new battery that you ordered.
 * The new controller canister.
 
+NOTE: For detailed information on how to replace the battery and controller canister on your specific controller model, please refer to the https://docs.netapp.com/us-en/e-series/maintenance-e4000/replace-controller-e4000.html[E4000^], https://docs.netapp.com/us-en/e-series/maintenance-e2800/index.html[E2800^], https://docs.netapp.com/us-en/e-series/maintenance-e5700/index.html[E5700^], or https://docs.netapp.com/us-en/e-series/maintenance-ef600/index.html[EF300 and EF600^] maintenance instructions.  
 
 == Step 1: Install battery
 
@@ -33,15 +34,7 @@ Install the battery that you removed from the original controller canister or a 
 . Unpack the new controller canister, and set it on a flat, static-free surface so that the removable cover faces up.
 . Press down on the cover button, and slide the cover off.
 . Orient the controller canister so that the slot for the battery faces toward you.
-. Depending on your controller model, do one of the following:
- ** For E2600 or E2700 controller models:
-  .. Insert the battery circuit board by sliding it towards the front of the new controller canister.
-  .. Tighten the thumbscrew to secure the battery circuit board in the new controller canister card.
-  .. Reinstall the top cover on the new controller canister by sliding it forward until the top latch covers click.
-+
-When the latch clicks into place, the bottom of the latch hooks into a metal slot on the chassis.
- ** For other controller models:
-  .. Insert the battery into the new controller canister.
+. Insert the battery into the new controller canister.
 +
 Slide the battery into the canister, making sure it stays below the rivets on the wall of the new canister.
 
@@ -61,7 +54,7 @@ Install the new controller canister into the controller shelf.
 
 .Steps
 
-. Slide the new controller canister all the way into the controller-drive tray. Rotate the release levers towards the center of the controller canister to lock it into place.
+. Slide the new controller canister all the way into the controller-drive tray. Rotate the release handles towards the center of the controller canister to lock it into place.
 . If your new controller canister has a Fibre Channel HIC or an InfiniBand HIC, install the SFP+ transceivers (Fibre Channel) or QSFP+ transceiver (InfiniBand) into the controller canister and reconnect the host cables.
 +
 Depending on the HICs involved in your upgrade, you might be able to reuse SFP+ transceiver or QSFP+ transceivers that you removed from your old controller canister.
@@ -69,9 +62,7 @@ Depending on the HICs involved in your upgrade, you might be able to reuse SFP+ 
 . Reconnect all of the cables between the controller-drive tray and the drive trays.
 +
 If the drive cabling configuration is the same as it was with your old controllers, use the labels that you attached to the cables to reconnect the cables correctly.
-+
-NOTE: If you are upgrading to E2700 controllers from an earlier model, the drive cabling configuration might be different from the configuration used for the old controllers.
 
 .What's next?
 
-If you are upgrading E2800 and E5700 controllers and the Drive Security feature is enabled, go to link:upgrade-unlock-drives-task.html[Unlock drives]. Otherwise, go to link:complete-upgrade-controllers-task.html[Complete controller upgrade].
+If the Drive Security feature is enabled, go to link:upgrade-unlock-drives-task.html[Unlock drives]. Otherwise, go to link:complete-upgrade-controllers-task.html[Complete controller upgrade].
