@@ -25,7 +25,7 @@ Cable the system according to your network topology.
 The following example shows cabling to the data hosts using a direct-attach topology.
 
 
-image:../media/drw_e4012_direct_topology_ieops-2047.svg[E4012 Direct Topology, width=500px]
+image:../media/drw_e4012_direct_topology_ieops-2047.svg[E4012 Direct Topology, width=1000px]
 
 . If you do not have expansion shelves installed, connect each host adapter directly to the host ports e0a and e0b on the controllers. If expansion shelves are installed, connect each host adapter directly to the 0b1 and 0b2 ports on the controller.
 +
@@ -40,7 +40,7 @@ NOTE: The image above shows the host adaptor cabled to ports e0a and e0b.
 The following example shows cabling to the data hosts using a fabric topology.
 
 
-image:../media/drw_e4012_fabric_topology_ieops-2046.svg[E4012 Fabric Topology, width=500px]
+image:../media/drw_e4012_fabric_topology_ieops-2046.svg[E4012 Fabric Topology, width=1000px]
 
 . Connect each host adapter directly to the switch.
 . Connect each switch directly to the host ports e0a and e0b on the controllers.
