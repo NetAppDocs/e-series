@@ -41,7 +41,7 @@ The file is saved in the Downloads folder for your browser with the name, *suppo
 You can find this information in the Details area of the Recovery Guru, or you can review the information displayed for the shelf.
 
  .. Select *Hardware*.
- .. Look at the power image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif[] and fan image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif[] icons to the right of the *Shelf* drop-down lists to determine which shelf has the failed power supply.
+ .. Look at the power image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif[Power icon] and fan image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif[Fan icon] icons to the right of the *Shelf* drop-down lists to determine which shelf has the failed power supply.
 +
 If a component has failed, either or both of these icons are red.
 

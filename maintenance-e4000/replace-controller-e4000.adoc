@@ -187,9 +187,9 @@ Remove the battery from the impaired controller and install it in the replacemen
 image::../media/drw_E4000_replace_nvbattery_IEOPS-862.png[Remove battery.]
 +
 |===
-a|image::../media/legend_icon_01.png[] |Battery release tab
+a|image::../media/legend_icon_01.png[One icon] |Battery release tab
 a|
-image::../media/legend_icon_02.png[]
+image::../media/legend_icon_02.png[Two icon]
 |Battery power connector
 |===
 . Move the battery to the replacement controller canister and install it:
@@ -235,9 +235,9 @@ NOTE: Carefully hold the DIMM by the edges to avoid pressure on the components o
 image::../media/drw_E4000_replace_dimms_IEOPS-865.png[Remove DIMMS.]
 +
 |===
-a|image::../media/legend_icon_01.png[] |DIMM ejector tabs
+a|image::../media/legend_icon_01.png[One icon] |DIMM ejector tabs
 a|
-image::../media/legend_icon_02.png[]
+image::../media/legend_icon_02.png[Two icon]
 |DIMMS
 |===
 . Verify that the battery is not plugged into the replacement controller canister.

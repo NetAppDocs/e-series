@@ -18,7 +18,6 @@ The steps to replace a failed drive drawer in an E4060 controller shelf or a DE4
 
 .Before you begin
 
-* Review the drive drawer requirements in link:drives-overview-supertask-concept.html[Requirements for E4000 drive replacement].
 * Make sure the drive shelf meets all of these conditions:
  ** The drive shelf cannot be over temperature.
  ** Both fans must be installed and have a status of Optimal.
