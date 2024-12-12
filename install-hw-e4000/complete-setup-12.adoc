@@ -27,9 +27,7 @@ The following example shows cabling to the data hosts using a direct-attach topo
 
 image:../media/drw_e4012_direct_topology_ieops-2047.svg[E4012 Direct Topology, width=1000px]
 
-. If you do not have expansion shelves installed, connect each host adapter directly to the host ports e0a and e0b on the controllers. If expansion shelves are installed, connect each host adapter directly to the 0b1 and 0b2 ports on the controller.
-+
-NOTE: The image above shows the host adaptor cabled to ports e0a and e0b.
+. If you do not have expansion shelves installed, connect each host adapter directly to the host ports e0a and e0b on the controllers.
 
 
 --

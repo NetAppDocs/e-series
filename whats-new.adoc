@@ -8,7 +8,7 @@ summary: New features in SANtricity OS.
 = What's new in SANtricity OS
 :experimental:
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 The following table describes new features in the latest SANtricity OS releases for embedded management of E4000, EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
