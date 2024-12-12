@@ -1,7 +1,7 @@
 ---
 permalink: upgrade-controllers/install-controllers-task.html
 sidebar: sidebar
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, installing new controller, install new controller, install battery, installing battery, install controller canister
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, installing new controller, install new controller, install battery, installing battery, install controller canister
 summary: After you have removed the old controllers, you can install new controllers in the controller-drive tray.
 ---
 = Install new controllers
@@ -22,9 +22,7 @@ Make sure you have the following:
 * An ESD wristband or take other antistatic precautions.
 * A battery from the original controller canister or a new battery that you ordered.
 * The new controller canister.
-
-NOTE: For detailed information on how to replace the battery and controller canister on your specific controller model, please refer to the https://docs.netapp.com/us-en/e-series/maintenance-e4000/replace-controller-e4000.html[E4000^], https://docs.netapp.com/us-en/e-series/maintenance-e2800/index.html[E2800^], https://docs.netapp.com/us-en/e-series/maintenance-e5700/index.html[E5700^], or https://docs.netapp.com/us-en/e-series/maintenance-ef600/index.html[EF300 and EF600^] maintenance instructions.  
-
+  
 == Step 1: Install battery
 
 Install the battery that you removed from the original controller canister or a new battery that you ordered.

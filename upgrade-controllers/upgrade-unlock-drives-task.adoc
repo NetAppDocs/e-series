@@ -1,7 +1,7 @@
 ---
 permalink: upgrade-controllers/upgrade-unlock-drives-task.html
 sidebar: sidebar
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, E4000, upgrade controller, upgrading controller, unlock drives, key management, Drive Security,
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, unlock drives, key management, Drive Security,
 summary: If you are upgrading E2800 and E5700 controllers and the Drive Security feature is enabled, you must manually unlock the drives.
 ---
 = Unlock drives
