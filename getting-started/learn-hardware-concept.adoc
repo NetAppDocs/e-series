@@ -251,27 +251,27 @@ Rack sizes::
 +
 * 2U12 (2 rack units; 12 drives)
 +
-image::../media/e2800_2u_front.gif["E4000 2U"]
+image::../media/e4000_2u_front.png["E4000 2U"]
 
 * 4U60 (4 rack units; 60 drives)
 +
-image::../media/e2860_front.gif["E4000 4U"]
+image::../media/e4000_4u_front.png["E4000 4U"]
 
 Drives::
 +
 Supports the following drive types:
 +
 * 3.5" NL-SAS (up to 300)
-* 2.5" SAS SSD (up to 200)
+* 2.5" SAS SSD (up to 120)
 
 Interfaces::
 +
 Available with the following interfaces:
 +
 * 12Gb SAS
+* 1 GB or 10Gbase-T iSCSI
 * 1Gb, 10Gb, or 25Gb iSCSI
 * 8Gb, 16Gb, or 32Gb FC
-* 100 Gb IB/iSER
 
 --
 ====

@@ -1,7 +1,7 @@
 ---
 permalink: getting-started/getup-run-concept.html
 sidebar: sidebar
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600,
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, E4000
 summary: To get up and running with E-Series systems, you install hardware components, configure host systems, and configure storage.
 ---
 = Quick start for E-Series
@@ -20,6 +20,7 @@ To install the E-Series hardware, access the Installation and Setup instructions
 * link:../install-hw-ef600/index.html[EF600 or EF300 series with 24-drive shelf^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2842063[E2800/EF280 or E5700/EF570 series with 12- or 24-drive shelves^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2842061[E2800 or E5700 series with 60-drive shelf^]
+* link:../install-hw-e4000/index.html[E4000 series with 12- or 60-drive shelf^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up cabinet
 

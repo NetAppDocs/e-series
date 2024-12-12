@@ -51,20 +51,22 @@ The Event Log page displays the event data.
 +
 NOTE: If unresolved critical events have occurred within the previous two to three weeks, stop the procedure and contact technical support. Continue the procedure only when the issue is resolved.
 
-. Select *Hardware*.
-. Select the *IOMs (ESMs)* icon.
+. If you have IOMs connected to your hardware, complete the following steps. Otherwise, go to <<step2_install_drive_shelf, Step 2: Install the drive shelf and apply power.>>
+.. Select *Hardware*.
+.. Select the *IOMs (ESMs)* icon.
 +
 image::../media/sam1130_ss_hardware_iom_icon.gif["IOMs (ESMs) icon"]
 +
 The Shelf Component Settings dialog box appears with the *IOMs (ESMs)* tab selected.
 
-. Make sure that the status shown for each IOM/ESM is _Optimal_.
-. Click *Show more settings*.
-. Confirm that the following conditions exist:
- ** The number of ESMs/IOMs detected matches the number of ESMs/IOMs installed in the system and that for each drive shelf.
- ** Both of the ESMs/IOMs show that communication is OK.
- ** The data rate is 12Gb/s for DE212C, DE224C, and DE460C drive shelves or 6 Gb/s for other drive trays.
+.. Make sure that the status shown for each IOM/ESM is _Optimal_.
+.. Click *Show more settings*.
+.. Confirm that the following conditions exist:
+ *** The number of ESMs/IOMs detected matches the number of ESMs/IOMs installed in the system and that for each drive shelf.
+ *** Both of the ESMs/IOMs show that communication is OK.
+ *** The data rate is 12Gb/s for DE212C, DE224C, and DE460C drive shelves or 6 Gb/s for other drive trays.
 
+[[step2_install_drive_shelf]]
 == Step 2: Install the drive shelf and apply power
 
 You install a new drive shelf or a previously installed drive shelf, turn on the power, and check for any LEDs that require attention.
@@ -193,7 +195,7 @@ You connect the drive shelf to controller A, confirm IOM status, and then connec
 
 . Connect the drive shelf to controller A.
 +
-image::../media/hot_e4000_cabling_1.png[]
+image::../media/hot_e4000_cabling_1.png[Drive shelf cabling]
 
 . In SANtricity System Manager, click *Hardware*.
 +
@@ -202,7 +204,7 @@ NOTE: At this point in the procedure, you have only one active path to the contr
 . Scroll down, as necessary, to see all the drive shelves in the new storage system. If the new drive shelf is not displayed, resolve the connection issue.
 . Select the *ESMs/IOMs* icon for the new drive shelf.
 +
-image::../media/sam1130_ss_hardware_iom_icon.gif[]
+image::../media/sam1130_ss_hardware_iom_icon.gif[IOM hardware icon]
 +
 The *Shelf Component Settings* dialog box appears.
 
@@ -214,7 +216,7 @@ The *Shelf Component Settings* dialog box appears.
 . Disconnect all expansion cables from controller B.
 . Connect the drive shelf to controller B.
 +
-image::../media/hot_e4000_cabling_2.png[]
+image::../media/hot_e4000_cabling_2.png[Drive shelf cabling]
 
 . If it is not already selected, select the *ESMs/IOMs* tab in the *Shelf Component Settings* dialog box, and then select *Show more options*. Verify that Card communications is *YES*.
 +

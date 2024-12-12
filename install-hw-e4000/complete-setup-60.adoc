@@ -24,9 +24,9 @@ Cable the system according to your network topology.
 The following example shows cabling to the data hosts using a direct-attach topology.
 
 
-image:../media/4U_DirectTopology.png[]
+image:../media/drw_e4060_direct_topology_ieops-2048.svg[E4060 Direct Topology, width=1000px]
 
-. Connect each host adapter directly to the host ports 0b1 and 0b2 on the controllers.
+. Connect each host adapter directly to the host ports e0a and e0b on the controllers.
 
 
 --
@@ -37,10 +37,10 @@ image:../media/4U_DirectTopology.png[]
 The following example shows cabling to the data hosts using a fabric topology.
 
 
-image:../media/4U_FabricTopology.png[]
+image:../media/drw_e4060_fabric_topology_ieops-2049.svg[E4060 Fabric Topology, width=1000px]
 
 . Connect each host adapter directly to the switch.
-. Connect each switch directly to the host ports 0b1 and 0b2 on the controllers.
+. Connect each switch directly to the host ports e0a and e0b on the controllers.
 
 
 --
@@ -99,7 +99,7 @@ image:../media/e4000_management_port.png[E4000 controller Management Port]
 +
 NOTE: Because you reset the IP address, System Manager loses connection to the controller.
 
-. Disconnect your laptop from the storage system, and connect the management port on controller A to your network.
+. Disconnect the ethernet cable from the storage system, and connect the management port on controller A to your network.
 . Open a browser on a computer connected to your network, and enter controller A's newly configured IP address.
 +
 NOTE: If you lose the connection to controller A, you can connect an ethernet cable to controller B to reestablish connection to controller A through controller B (169.254.128.102).

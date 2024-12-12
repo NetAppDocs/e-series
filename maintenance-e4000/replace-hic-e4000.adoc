@@ -13,24 +13,24 @@ Follow this procedure to replace a failed host interface card (HIC) in an E4000 
 
 .About this task
 
-When you replace a failed HIC, you must power off the storage array, replace the HIC, and reapply power.
+When you replace a failed HIC, you must power off the storage array (simplex) or place affected controller offline (duplex), replace the HIC, and reapply power (simplex) or bring controller online (duplex).
 
 .Before you begin
 
-* Schedule a downtime maintenance window for this procedure. You cannot access data on the storage array until you have successfully completed this procedure. Because both controllers must have the same HIC configuration when they are powered on, the power must be off when you install HICs.
+* If you have a simplex configuration, schedule a downtime maintenance window for this procedure. You cannot access data on the storage array until you have successfully completed this procedure. 
 * Make sure you have the following:
-** HICs that are compatible with your controllers.
+** HICs that are compatible with your controller(s).
 ** An ESD wristband, or you have taken other antistatic precautions.
 ** A flat, static free work area.
 ** Labels to identify each cable that is connected to the controller canister.
 ** A #1 Phillips screwdriver.
 ** A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
 +
-CAUTION: *Possible loss of data access* -- Never install a HIC in an E4000 controller canister if that HIC was designed for another E-Series controller. In addition, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs causes the controllers to lock down when you apply power.
+CAUTION: *Possible loss of data access* -- Never install a HIC in an E4000 controller canister if that HIC was designed for another E-Series controller. In addition, both controllers and both HICs must be identical in a duplex configuration. The presence of incompatible or mismatched HICs causes the controllers to lock down when you apply power.
 
 == Step 1: Prepare to replace HIC
 
-Place the affected controller offline so you can safely replace the HICs.
+Power down the controller shelf (simplex) or place the affected controller offline (duplex) so you can safely replace the HICs.
 
 [role="tabbed-block"]
 ====
@@ -47,7 +47,7 @@ CAUTION: *Possible loss of data access* — If all drives in the storage arr
 To save the key (might not be possible, depending on the state of the controller):
 
 .. From SANtricity System Manager, select *Settings › System*.
-.. Under *Drive security key management*, select *Back Up Key*.
+.. Under *Security key management*, select *Back Up Key*.
 .. In the *Define a pass phrase/Re-enter pass phrase* fields, enter and confirm a pass phrase for this backup copy.
 .. Click *Backup*.
 .. Record your key information in a secure location, and then click *Close*.
@@ -213,14 +213,14 @@ If you removed the media converters (QSFPs or SFPs), remember to reinstall them 
 +
 NOTE: Do not use excessive force when sliding the controller canister into the chassis to avoid damaging the connectors.
 +
-The controller begins to boot as soon as it is seated in the chassis.
+If you have a duplex configuration, the controller will begin to boot as soon as it is seated in the chassis.
+
 .. If you have not already done so, reinstall the cable management device.
 .. Bind the cables to the cable management device with the hook and loop strap.
-. Reboot the controller canister.
 
 == Step 5: Complete HIC replacement
 
-Place the controller online, collect support data, and resume operations.
+Power up the controller (simplex) or place the controller online (duplex), collect support data, and resume operations.
 
 [role="tabbed-block"]
 ====

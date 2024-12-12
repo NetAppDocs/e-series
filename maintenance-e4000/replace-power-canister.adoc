@@ -45,11 +45,11 @@ Prepare to replace a power canister in a 60-drive controller shelf or drive shel
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 . From SANtricity System Manager, determine which power canister has failed.
  .. Select *Hardware*.
- .. Look at the power image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif[] icon to the right of the *Shelf* drop-down lists to determine which shelf has the failed power canister.
+ .. Look at the power image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif[Power icon] icon to the right of the *Shelf* drop-down lists to determine which shelf has the failed power canister.
 +
 If a component has failed, this icon is red.
 
- .. When you find the shelf with a red icon, select *Show back of shelf*.
+ .. When you find the shelf with a red icon, select *Controller & Components*.
  .. Select either power canister or the red power icon.
  .. On the *Power Supplies* tab, look at the statuses of the power canisters to determine which power canister must be replaced.
 +

@@ -151,14 +151,6 @@ Locate the DIMM inside the controller, remove it, and replace it.
 .Steps
 
 . If you are not already grounded, properly ground yourself.
-. You must perform a clean system shutdown before replacing system components to avoid losing unwritten data in the DIMM. The LED is located on the back of the controller canister.
-. Once the LED is off, you must disconnect the battery to clear the memory in the NVMEM:
-.. Remove the battery from the controller canister by pressing the blue button on the side of the controller canister.
-.. Slide the battery up until it clears the holding brackets, and then lift the battery out of the controller canister.
-.. Locate the battery cable, press the clip on the battery plug to release the lock clip from the plug socket, and then unplug the battery cable from the socket.
-.. Confirm that the Cache Active LED is no longer lit.
-.. Reconnect the battery connector and recheck the LED on the back of the controller.
-.. Unplug the battery cable.
 . Locate the DIMMs on your controller canister.
 . Note the orientation and location of the DIMM in the socket so that you can insert the replacement DIMM in the proper orientation.
 . Eject the DIMM from its slot by slowly pushing apart the two DIMM ejector tabs on either side of the DIMM, and then slide the DIMM out of the slot.
@@ -171,9 +163,9 @@ NOTE: Carefully hold the DIMM by the edges to avoid pressure on the components o
 image::../media/drw_E4000_replace_dimms_IEOPS-865.png[Remove DIMMS.]
 +
 |===
-a|image::../media/legend_icon_01.png[] |DIMM ejector tabs
+a|image::../media/legend_icon_01.png[One icon] |DIMM ejector tabs
 a|
-image::../media/legend_icon_02.png[]
+image::../media/legend_icon_02.png[Two icon]
 |DIMMS
 |===
 . Remove the replacement DIMM from the antistatic shipping bag, hold the DIMM by the corners, and align it to the slot.
@@ -185,11 +177,6 @@ The DIMM fits tightly in the slot, but should go in easily. If not, realign the 
 +
 NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
 . Push carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at the ends of the DIMM.
-. Reconnect the battery:
-.. Plug in the battery.
-.. Make sure that the plug locks down into the battery power socket on the motherboard.
-.. Align the battery with the holding brackets on the sheet metal side wall.
-.. Slide the battery pack down until the battery latch engages and clicks into the opening on the side wall.
 . Reinstall the controller canister cover.
 
 
@@ -255,7 +242,6 @@ Place the controller online, collect support data, and resume operations.
 
 .Steps
 
-. Reboot the controller canister.
 . Place controller online.
 .. In System Manager, navigate to the Hardware page.
 .. Select *Controllers & Components*.
@@ -271,9 +257,6 @@ When communication with the other controller is reestablished:
 +
 If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller canister is installed correctly. If necessary, remove and reinstall the controller canister.
 NOTE: If you cannot resolve the problem, contact technical support.
-. Click *Hardware › Support › Upgrade Center* to ensure that the latest version of SANtricity OS is installed.
-+
-As needed, install the latest version.
 . Verify that all volumes have been returned to the preferred owner.
 .. Select *Storage › Volumes*. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select *More › Change ownership* to view volume owners.
 .. If volumes are all owned by preferred owner continue to Step 6.

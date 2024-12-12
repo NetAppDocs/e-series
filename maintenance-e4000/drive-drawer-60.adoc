@@ -18,7 +18,6 @@ The steps to replace a failed drive drawer in an E4060 controller shelf or a DE4
 
 .Before you begin
 
-* Review the drive drawer requirements in link:drives-overview-supertask-concept.html[Requirements for E4000 drive replacement].
 * Make sure the drive shelf meets all of these conditions:
  ** The drive shelf cannot be over temperature.
  ** Both fans must be installed and have a status of Optimal.
@@ -74,7 +73,7 @@ serviceAllowedIndicator=forceOnWarning;"
 . Determine if you need to stop host I/O activity, as follows:
  ** If the command succeeds, you do not need to stop host I/O activity. All drives in the drawer are in pools or volume groups with Drawer Loss Protection. Go to <<Step 2: Remove cable chains>>.
 +
-CAUTION: *Possible damage to drives* -- Wait 30 seconds after the command completes before you open the drive drawer. Waiting 30 seconds allows the drives to spin down, which prevents possible damage to the hardware.
+CAUTION: *Possible damage to drives* -- Wait 60 seconds after the command completes before you open the drive drawer. Waiting 60 seconds allows the drives to spin down, which prevents possible damage to the hardware.
 
  ** If a warning is displayed indicating that this command could not be completed, you must stop host I/O activity before removing the drawer. The warning is displayed because one or more drives in the affected drawer are in pools or volume groups without Drawer Loss Protection. To avoid losing data, you must complete the next steps to stop host I/O activity and to power off the drive shelf and the controller shelf.
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:

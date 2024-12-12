@@ -112,7 +112,7 @@ The file is saved in the Downloads folder for your browser with the name, suppor
 . If the controller is not already offline, take it offline now using SANtricity System Manager.
 ** From SANtricity System Manager:
 .. Select *Hardware*.
-.. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
+.. If the graphic shows the drives, select *Controller & Components* to show the controllers.
 .. Select the controller that you want to place offline.
 .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 +
@@ -167,24 +167,24 @@ NOTE: To comply with IATA safely regulations, replacement batteries are shipped 
 image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[Open controller module cover.]
 . Locate the battery in the controller canister.
 . Remove the failed battery from the controller canister:
-.. Press the blue button on the side of the controller canister.
+.. Push the battery release tab on the side of the controller canister.
 .. Slide the battery up until it clears the holding brackets, and then lift the battery out of the controller canister.
 .. Unplug the battery from the controller canister.
 +
 image::../media/drw_E4000_replace_nvbattery_IEOPS-862.png[Remove battery.]
 +
 |===
-a|image::../media/legend_icon_01.png[] |Battery release tab
+a|image::../media/legend_icon_01.png[One icon] |Battery release tab
 a|
-image::../media/legend_icon_02.png[]
+image::../media/legend_icon_02.png[Two icon]
 |Battery power connector
 |===
 . Remove the replacement battery from its package. Install the replacement battery:
-.. Plug the battery plug back into the socket on the controller canister.
+.. Plug the battery connector back into the socket on the controller canister.
 +
-Make sure that the plug locks down into the battery socket on the motherboard.
+Make sure that the connector locks down into the battery socket on the motherboard.
 .. Align the battery with the holding brackets on the sheet metal side wall.
-.. Slide the battery pack down until the battery latch engages and clicks into the opening on the side wall.
+.. Slide the battery release tab down until the battery latch engages and clicks into the opening on the side wall.
 . Reinstall the controller canister cover and lock it into place.
 
 
@@ -251,7 +251,7 @@ The file is saved in the Downloads folder for your browser with the name, *suppo
 
 ** From SANtricity System Manager:
 .. Select *Hardware*.
-.. If the graphic shows the drives, select *Show back of shelf*.
+.. If the graphic shows the drives, select *Controller & Components*.
 .. Select the controller you want to place online.
 .. Select *Place Online* from the context menu, and confirm that you want to perform the operation.
 +

@@ -11,21 +11,15 @@ summary: Review E4000 canister types and requirements.
 [.lead]
 You can replace a power supply in an E4000.
 
-.About this task
-
-If you plan to replace a power supply, keep the following requirements in mind.
-
-* You must have a replacement power supply that is supported for your controller shelf or drive shelf model.
-* You have an ESD wristband, or you have taken other antistatic precautions.
-+
-NOTE: Do not mix PSUs of the different voltage types. Always replace like for like.
-
 .Before you begin
 
 * Review the details in the Recovery Guru to confirm that there is an issue with the power supply. Select *Recheck* from the Recovery Guru to ensure no other items must be addressed first.
 * Check that the amber Attention LED on the power supply is on, indicating that the power supply or its integrated fan has a fault. Contact technical support for assistance if both power supplies in the shelf have their amber Attention LEDs on.
 * Make sure you have the following:
 ** A replacement power supply that is supported for your controller shelf or drive shelf model.
++
+NOTE: Do not mix PSUs of the different voltage types. Always replace like for like.
+
 ** An ESD wristband, or you have taken other antistatic precautions.
 ** A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller’s domain name or IP address.)
 
@@ -47,11 +41,11 @@ The file is saved in the Downloads folder for your browser with the name, *suppo
 You can find this information in the Details area of the Recovery Guru, or you can review the information displayed for the shelf.
 
  .. Select *Hardware*.
- .. Look at the power image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif[] and fan image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif[] icons to the right of the *Shelf* drop-down lists to determine which shelf has the failed power supply.
+ .. Look at the power image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif[Power icon] and fan image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif[Fan icon] icons to the right of the *Shelf* drop-down lists to determine which shelf has the failed power supply.
 +
 If a component has failed, either or both of these icons are red.
 
- .. When you find the shelf with a red icon, select *Show back of shelf*.
+ .. When you find the shelf with a red icon, select *Controller & Components*.
  .. Select either power supply.
  .. On the *Power Supplies* and *Fans* tabs, look at the statuses of the power-fan canisters, the power supplies, and the fans to determine which power supply must be replaced.
 +
