@@ -46,7 +46,7 @@ If you are using jumbo frames within the IP SAN for performance reasons, make su
 
 .About this task
 
-While planning your iSCSI networking, remember that the https://configmax.vmware.com/home[VMware Configuration Maximums^] guide states that the maximum supported iSCSI storage paths is 8. You must consider this requirement to avoid configuring too many paths.
+While planning your iSCSI networking, remember that the https://configmax.broadcom.com/home[VMware Configuration Maximums^] guide states that the maximum supported iSCSI storage paths is 8. You must consider this requirement to avoid configuring too many paths.
 
 By default, the VMware iSCSI software initiator creates a single session per iSCSI target when you are not using iSCSI port binding.
 
