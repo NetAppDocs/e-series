@@ -38,7 +38,7 @@ Confirm that the new controller has the same part number as the currently instal
 . Unpack the new controller canister, and set it on a flat, static-free surface.
 . Locate the MAC address and FRU part number labels on the back of the controller canister.
 +
-image::../media/28_dwg_e2800_labels_maint-e2800.gif[]
+image::../media/28_dwg_e2800_labels_maint-e2800.gif["MAC address and FRU part number on E2800 controller"]
 +
 *(1)* _MAC address:_ The MAC address for management port 1 ("`P1`"). If you used DHCP to obtain the original controller's IP address, you will need this address to connect to the new controller.
 +
@@ -47,7 +47,7 @@ image::../media/28_dwg_e2800_labels_maint-e2800.gif[]
 
 . From SANtricity System Manager, locate the replacement part number for the installed controller canister.
  .. Select *Hardware*.
- .. Locate the controller shelf, which is marked with the controller icon image:../media/sam1130_ss_hardware_controller_icon_maint-e2800.gif[].
+ .. Locate the controller shelf, which is marked with the controller icon image:../media/sam1130_ss_hardware_controller_icon_maint-e2800.gif["Controller icon"].
  .. Click the controller icon.
  .. Select the controller, and click *Next*.
  .. On the *Base* tab, make a note of the *Replacement Part Number* for the controller.
@@ -76,7 +76,7 @@ Be careful not to scratch or bump the components on the bottom of the HIC or on 
 +
 CAUTION: *Possible equipment damage* -- Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrews.
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif["Install HIC onto the controller"]
 +
 *(1)* _Host interface card_
 +
@@ -88,7 +88,7 @@ Do not use a screwdriver, or you might over tighten the screws.
 
 . Using a #1 Phillips screwdriver, attach the new HIC faceplate to the controller canister with the four screws you removed previously.
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif["Install faceplate"]
 
 . Reinstall the cover on the controller canister by sliding the cover from back to front until the button clicks.
 . Set the controller canister aside until you are ready to install it.
@@ -228,7 +228,7 @@ Install a second controller canister to change a simplex configuration to a dupl
 . Turn the controller canister over, so that the removable cover faces down.
 . With the cam handle in the open position, slide the controller canister all the way into the controller shelf.
 +
-image::../media/28_dwg_e2824_add_controller_canister.gif[]
+image::../media/28_dwg_e2824_add_controller_canister.gif["Install second controller canister"]
 +
 *(1)* _Controller canister_
 +
@@ -250,7 +250,7 @@ When communication with the other controller is reestablished:
  ** The seven-segment display shows the repeating sequence *OS*, *OL*, *_blank_* to indicate that the controller is offline.
  ** The amber Attention LED remains on.
  ** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
-image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif[]
+image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif["E2800 controller LEDs"]
 +
 *(1)* _Attention LED (amber)_
 +
@@ -300,7 +300,7 @@ The Change Ownership button is enabled.
 
  .. For each volume you want to redistribute, select *Controller B* from the *Preferred Owner* list.
 +
-image::../media/sam1130_ss_change_volume_ownership.gif[]
+image::../media/sam1130_ss_change_volume_ownership.gif["System Manager screen for Change Volume Ownership"]
 
  .. Click *Change Ownership*.
 +

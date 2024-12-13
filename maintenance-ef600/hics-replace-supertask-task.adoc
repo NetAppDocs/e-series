@@ -80,13 +80,13 @@ Depending on what type of HIC you are upgrading to, you might be able to reuse t
 . Confirm that the Cache Active LED on the back of the controller is off.
 . Squeeze the handles on either side of the controller, and pull back until it releases from the shelf.
 +
-image::../media/remove_controller_5.png[]
+image::../media/remove_controller_5.png["Squeeze handles to remove controller"]
 
 . Using two hands and the handles, slide the controller canister out of the shelf. When the front of the controller is free of the enclosure, use two hands to pull it out completely.
 +
 CAUTION: Always use two hands to support the weight of a controller canister.
 +
-image::../media/remove_controller_6.png[]
+image::../media/remove_controller_6.png["Use two hands to support weight of controller as you remove"]
 
 . Place the controller canister on a flat, static-free surface.
 
@@ -103,14 +103,14 @@ If this green LED is on, the controller is still using battery power. You must w
 
 . Using a Phillips screwdriver, remove the two screws that attach the HIC faceplate to the controller canister.
 +
-image::../media/hic_2.png[]
+image::../media/hic_2.png["Remove HIC faceplate"]
 +
 NOTE: The image above is an example; the appearance of your HIC may differ.
 
 . Remove the HIC faceplate.
 . Using your fingers or a Phillips screwdriver, loosen the single thumbscrew that secure the HIC to the controller card.
 +
-image::../media/hic_3.png[]
+image::../media/hic_3.png["Loosen HIC thumbscrews"]
 +
 NOTE: The HIC comes with three screw locations on the top, but is secured with only one.
 +
@@ -120,7 +120,7 @@ NOTE: The image above is an example; the appearance of your HIC may differ.
 +
 CAUTION: Be careful not to scratch or bump the components on the bottom of the HIC or on the top of the controller card.
 +
-image::../media/hic_4.png[]
+image::../media/hic_4.png["Remove HIC from the controller card"]
 +
 NOTE: The image above is an example; the appearance of your HIC may differ.
 
@@ -143,7 +143,7 @@ Be careful not to scratch or bump the components on the bottom of the HIC or on 
 +
 CAUTION: **Possible equipment damage** -- Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrew.
 +
-image::../media/hic_7.png[]
+image::../media/hic_7.png["Install the HIC"]
 +
 NOTE: The image above is an example; the appearance of your HIC may differ.
 
@@ -164,7 +164,7 @@ After replacing the HIC, reinstall the controller canister into the controller s
 +
 NOTE: The controller audibly clicks when correctly installed into the shelf.
 +
-image::../media/remove_controller_7.png[]
+image::../media/remove_controller_7.png["Install controller into shelf"]
 
 . Install the SFPs into the new HIC and reconnect all the cables.
 +

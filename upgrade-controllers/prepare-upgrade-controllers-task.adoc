@@ -1,7 +1,7 @@
 ---
 permalink: upgrade-controllers/prepare-upgrade-controllers-task.html
 sidebar: sidebar
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, upgrade controller requirements, upgrade controller key management, prepare upgrade controller, upgrade controller preparation, preparing controller upgrade
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, upgrade controller requirements, upgrade controller key management, prepare upgrade controller, upgrade controller preparation, preparing controller upgrade
 summary: Prepare to upgrade controllers by saving the drive security key, gathering support data, and taking the controller offline.
 ---
 = Prepare to upgrade controllers
@@ -75,9 +75,8 @@ All matching terms are highlighted. To scroll through all the results one at a t
 +
 You need this serial number to perform the steps in link:complete-upgrade-controllers-task.html[Complete controller upgrade].
 . Gather support data about your storage array by using either the GUI or the CLI:
- ** Use either System Manager or the Array Management Window in Storage Manager to collect and save a support bundle of your storage array.
+ ** Use System Manager to collect and save a support bundle of your storage array.
   *** From System Manager, select menu:Support[Support Center > Diagnostics tab]. Then select *Collect Support Data* and click *Collect*.
-  *** From the Array Management Window toolbar, select menu:Monitor[Health > Collect Support Data Manually]. Then enter a name and specify a location on your system where you want to store the support bundle.
 +
 The file is saved in the Downloads folder for your browser with the name `support-data.7z`.
 +
@@ -100,7 +99,7 @@ CAUTION: *Possible data loss* -- If you continue this procedure while I/O operat
 +
 The Change Cache Setting dialog box appears. All volumes on the storage array appear in this dialog box.
 
- .. Select the *Basic* tab and change the settings for read caching and write caching.
+ .. Select the *Basic* tab and disable the settings for read caching and write caching.
  .. Click *Save*.
  .. Wait five minutes to allow any data in cache memory to be flushed to disk.
 . If the Security Assertion Markup Language (SAML) is enabled on the controller, contact technical support to disable the SAML authentication.

@@ -11,7 +11,7 @@ summary: The storage group defines which drives provide the storage that makes u
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You create storage groups, and then add storage arrays to the groups. The storage group defines which drives provide the storage that makes up the volume.

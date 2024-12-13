@@ -50,7 +50,7 @@ The file is saved in the Downloads folder for your browser with the name, *suppo
 You can find this information in the Details area of the Recovery Guru, or you can review the information displayed for the shelf.
 
  .. Select *Hardware*.
- .. Look at the power image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif[] and fan image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif[] icons to the right of the *Shelf* drop-down lists to determine which shelf has the failed power supply.
+ .. Look at the power image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif["Power icon"] and fan image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif['Fan icon"] icons to the right of the *Shelf* drop-down lists to determine which shelf has the failed power supply.
 +
 If a component has failed, either or both of these icons are red.
 
@@ -66,7 +66,7 @@ CAUTION: If the second power supply canister in the shelf does not have *Optimal
 +
 You must replace the power supply that has its Attention LED on.
 +
-image::../media/28_dwg_913w_power_supply_back_view_maint-e2800.gif[]
+image::../media/28_dwg_913w_power_supply_back_view_maint-e2800.gif["Power supply LEDs"]
 +
 * Power LED: If it is *solid green*, the power supply is functioning correctly. If it is *Off*, the power supply failed, the AC switch is turned off, the AC power cord is not properly installed, or the AC power cord input voltage is not within margin (there is a problem at the source end of the AC power cord).
 +
@@ -88,7 +88,7 @@ Save all packing materials for use when returning the failed power supply.
  .. Unplug the power cord from the power source.
 . Squeeze the latch on the power supply cam handle, and then open the cam handle to fully release the power supply from the mid plane.
 +
-image::../media/drw_2600_psu_maint-e2800.gif[]
+image::../media/drw_2600_psu_maint-e2800.gif["Pull the cam handle to release the power supply form the mid plane"]
 
 . Use the cam handle to slide the power supply out of the system.
 +

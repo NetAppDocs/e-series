@@ -10,7 +10,7 @@ summary: Volumes in this workload are not associated with an application-specifi
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

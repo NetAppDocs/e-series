@@ -33,7 +33,7 @@ If your current SFPs support data rates of 16 Gbps and 10 Gbps, you can continue
 . Type *SFP* in the text box, and click *Find*.
 . For each SFP listed in the Storage Array Profile, locate the entry for *Supported data rate(s)*.
 +
-image::../media/sam1130_ss_e2800_unified_spf_maint-e5700.gif[]
+image::../media/sam1130_ss_e2800_unified_spf_maint-e5700.gif["Supported data rate(s)"]
 
 . Refer to the table to determine whether you can reuse the SFPs, as follows:
 +
@@ -84,7 +84,7 @@ To obtain the feature pack, you need the serial number from the controller shelf
  .. With the *Support Resources* tab selected, scroll to the *View top storage array properties* section.
  .. Locate the *Chassis Serial Number*, and copy this value to a text file.
 +
-image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-e5700.gif[]
+image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-e5700.gif["Chassis serial number"]
 . Locate the *feature pack submodel ID*.
  .. From the SANtricity System Manager, select *Support*.
  .. Select the *Support Center* tile.
@@ -94,7 +94,7 @@ image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-e5700.
 NOTE: "Submodel" may also be written as "sub-model."
  .. Locate the feature pack submodel ID for the starting configuration.
 +
-image::../media/storage_array_profile2_maint-e5700.gif[]
+image::../media/storage_array_profile2_maint-e5700.gif["Feature pack submodel ID"]
 . Using the feature pack submodel ID, locate the corresponding Controller submodel ID for the starting configuration and find the Feature Activation Code for the desired ending configuration within the table below. Then, copy that Feature Activation Code to a text file.
 +
 NOTE: Baseboard ports are disabled when running an NVMe protocol on the HIC.
@@ -836,7 +836,7 @@ NOTE: If your controller submodel ID is not listed, contact http://mysupport.net
  .. Under *Change Feature Pack*, locate the *Feature Enable Identifier*.
  .. Copy and paste this 32-digit number to a text file.
 +
-image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-e5700.gif[]
+image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-e5700.gif["Change feature pack"]
 . Go to http://partnerspfk.netapp.com[NetApp License Activation: Storage Array Premium Feature Activation^], and enter the information required to obtain the feature pack.
  ** Chassis serial number
  ** Feature Activation Code
@@ -867,7 +867,7 @@ CAUTION: *Possible data loss* -- If you continue this procedure while I/O operat
 . Wait for any data in cache memory to be written to the drives.
 +
 The green Cache Active LED *(1)* on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
-image:../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[]
+image:../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif["Cache active LED on E5700 controller"]
 
 . From the Home page of SANtricity System Manager, select *View Operations in Progress*.
 . Wait for all operations to complete before continuing with the next step.
@@ -881,7 +881,7 @@ Change the feature pack to convert the host protocol of the baseboard host ports
 . From SANtricity System Manager, select menu:Settings[System].
 . Under *Add-ons*, select *Change Feature Pack*.
 +
-image::../media/sam1130_ss_system_change_feature_pack_maint-e5700.gif[]
+image::../media/sam1130_ss_system_change_feature_pack_maint-e5700.gif["Change feature pack"]
 
 . Click *Browse*, and then select the feature pack you want to apply.
 . Type *CHANGE* in the field.

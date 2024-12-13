@@ -1,7 +1,7 @@
 ---
 permalink: upgrade-controllers/overview-requirements-concept.html
 sidebar: sidebar
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, upgrade controller requirements, upgrade compatibility, upgrade SAS shelf, upgrade SAS shelves, upgrade SAS enclosures, SAS-2 to SAS-3
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, upgrade controller requirements, upgrade compatibility, upgrade SAS shelf, upgrade SAS shelves, upgrade SAS enclosures, SAS-2 to SAS-3
 summary: Review requirements for upgrading and replacing E-Series controllers.
 ---
 = Upgrade considerations
@@ -11,6 +11,8 @@ summary: Review requirements for upgrading and replacing E-Series controllers.
 [.lead]
 Before you upgrade controllers, review the following considerations.
 
+NOTE: Refer to the https://docs.netapp.com/us-en/e-series/getting-started/learn-hardware-concept.html#e2800-models[E-Series hardware overview] for specific information on supported configurations for each E-Series controller.  
+
 == Hardware and firmware requirements
 
 * *Duplex and simplex controller upgrades*
@@ -19,15 +21,11 @@ For duplex controller-drive trays, you replace both controllers. For simplex con
 
 * *Trays and shelves*
 +
-Storage arrays with an E2800 or E5700 controller shelf are typically managed with the SANtricity System Manager user interface. You might also use the SANtricity Storage Manager interface to manage E2800 or E5700 controller shelves. All other controller-drive trays referenced in this procedure use SANtricity Storage Manager.
+Storage arrays with an E-Series controller shelf are typically managed with the SANtricity System Manager user interface.
 
 * *Controller batteries*
 +
 A new controller is shipped without a battery installed. When possible, you should remove the battery from your old controller and then install that battery in the new controller. However, for some controller upgrades, the battery from the old controller is not compatible with the new controller. In those cases, you must order a battery along with your new controller, and have that battery available before you begin these tasks.
-
-* *Vendor Identification*
-+
-Some controller upgrades result in the Vendor ID in SCSI Inquiry Data changing from `LSI` to `NETAPP`. When the Vendor ID changes from `LSI` to `NETAPP`, additional steps are required on the Windows, VMware, and AIX operating systems to reclaim devices. Steps for these operating systems are included in this upgrade procedure.
 
 * *Synchronous Mirroring and Asynchronous Mirroring*
 +
@@ -35,82 +33,221 @@ If your storage array participates in Synchronous Mirroring, only iSCSI or Fibre
 +
 For Asynchronous Mirroring, the local storage array and remote storage array can run different versions of firmware. The minimum firmware version supported is SANtricity firmware version 7.84.
 
+NOTE: For E4000 controllers, mirroring is only supported on Fibre Channel connections. 
+
 * *Storage object limits*
 +
-If you change your controllers from 5x00 models to 2x00 models, your new storage array configuration will support lower numbers of some storage objects (for example, volumes) in the storage management software than your old configuration. You must make sure that your old configuration does not exceed the storage object limits. See http://hwu.netapp.com/home.aspx[Hardware Universe^] for more information.
+If you change your controllers from midrange to entry-level models (for example, 5x00 models to 2x00 models), your new storage array configuration will support lower numbers of some storage objects (for example, volumes) in the storage management software than your old configuration. You must make sure that your old configuration does not exceed the storage object limits. 
++
+See http://hwu.netapp.com/home.aspx[Hardware Universe^] for more information.
 
-== Upgrade to newer models
-
-If you are replacing the controllers to upgrade to a new model, keep in mind that your current storage array might have premium features installed that the new model cannot support. For example, E2700 controllers do not support the legacy Snapshots premium feature.
-
-If you replace E2600 controllers with E2700 controllers, and your storage array was using the legacy Snapshots feature, you must disable that feature and delete or convert all volumes (that is, snapshots, repositories) associated with that feature before you replace the controllers. You can convert legacy Snapshots to the updated Snapshots feature. Before you upgrade a controller-drive tray, you should disable any premium features used on your storage array that are not supported on the new controllers.
+* *Upgrade to newer models*
++
+If you are replacing the controllers to upgrade to a new model, keep in mind that your current storage array might have premium features installed that the new model cannot support.
++
+When upgrading your E-Series controller, you should disable any premium features used on your storage array that are not supported on the new controllers.
 
 == Upgrade compatibility
 
-[.lead]
 Review the supported upgrade paths for each storage array model.
 
-=== From E2x00 to E2x00
+[role="tabbed-block"]
+====
 
-* *Battery*: Reuse the old battery.
-* *Vendor ID*: Additional steps required.
-* *Feature support*: Legacy snapshots are not supported on the E2700.
-* *SAS-2 shelves*: E2800 controllers must not be placed into SAS-2 shelves.
+.E4000 controller upgrade compatibility
+--
+[cols=4*,cols="h,d,d,d",options="header"]
+|===
+| Upgrade path 
+| Battery 
+| Feature Support
+| SAS-3 shelves
 
-=== From E2x00 to E5x00
+| From E2800 to E4000 
 
-* *Battery*: Order a new battery.
-* *Vendor ID*: Additional steps are required when upgrading from E2600 to E5500 or E5600, or when upgrading from E2700 to E5400.
-* *Feature support*:
+a| Order a new battery.
+
+a|
+* E4000 does not support ARVM iSCSI
 +
-** Legacy snapshots are not supported on the E5500 or E5600.
+* E4000 baseboard port is iSCSI only and cannot be changed to FC
 +
-** Legacy remote volume mirroring (RVM) is not supported on the E5500 or E5600 with iSCSI HICs.
+* E4000 can only support 300 drives
 +
-** Data Assurance is not supported on the E5500 or E5600 with iSCSI HICs.
+* E4000 can only support 512 volumes
 +
-** E5700 controllers must not be placed into SAS-2 shelves.
-
-* *SAS-3 shelves*: E5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
-
-=== From E5x00 to E2x00
-
-* *Battery*: Order a new battery.
-* *Vendor ID*: Additional steps are required when upgrading from E5500 or E5600 to E2600, or when upgrading from E5400 to E2700.
-* *Feature support*: Legacy snapshots are not supported on the E2700.
-* *SAS-3 shelves*: E5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
-
-=== From E5x00 to E5x00
-
-* *Battery*: Reuse the old battery.
-* *Vendor ID*: Additional steps required when upgrading from E5400 to E5500 or E5600.
-* *Feature support*:
+* E4000 does not support SAS configurations
 +
-** Legacy snapshots are not supported on the E5500 or E5600.
-+
-** Legacy remote volume mirroring (RVM) is not supported on the E5400 or E5500 with iSCSI HICs.
-+
-** Data Assurance is not supported on the E5400 or E5500 with iSCSI HICs.
-+
-** E5700 controllers must not be placed into SAS-2 shelves.
+* E4000 does not support Remote Storage Volumes 
 
-* *SAS-3 shelves*: E5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
+a|
+E4000 controllers must use SAS-3 shelves.
 
-=== From EF5x0 to EF5x0
+| From E5700 to E4000 
 
-* *Battery*: Reuse the old battery.
-* *Vendor ID*: Additional steps required when upgrading from EF540 to EF550 or EF560.
-* *Feature support*:
+a|
+Order a new battery.
+
+a|
+* E4000 does not support ARVM iSCSI
 +
-** No Legacy Snapshots for EF550/EF560.
+* E4000 baseboard port is iSCSI only and cannot be changed to FC
 +
-** No Data Assurance for EF550/EF560 with iSCSI.
+* E4000 can only support 300 drives
 +
-** EF570 controllers must not be placed into SAS-3 shelves.
+** E5700 can support up to 480 drives
++
+* E4000 can only support 512 volumes
++
+** E5700 can support up to 2048 volumes
++
+* Infiniband Host interface card support is not available
++
+* E4000 does not support SAS configurations 
++
 
-* *SAS-3 shelves*: EF540, EF550, and EF560 controllers must not be placed into SAS-3 shelves.
+a|
+E4000 controllers must use SAS-3 shelves.
 
-=== SAS enclosures
+|===
+
+--
+
+.EF600 and EF300 controller upgrade compatibility
+--
+[cols=4*,cols="h,d,d,d",options="header"]
+|===
+| Upgrade path 
+| Battery 
+| Feature Support
+| SAS-3 shelves
+
+| From EF600 to EF600 with a different Host Interface Card 
+
+a|
+Reuse the old battery.
+
+a|
+* No support for thin provisioned volumes
++
+* No support Synchronous mirroring 
+
+|
+EF600 controllers must use SAS-3 shelves.
+
+| From EF300 to EF600 
+
+a|
+Reuse the old battery.
+
+a|
+* No support for thin provisioned volumes
++
+* No support Synchronous mirroring 
+
+a|
+EF600 controllers must use SAS-3 shelves.
+--
+
+.Legacy controller upgrade compatibility
+--
+[cols=5*,cols="h,d,d,d,d",options="header"]
+|===
+| Upgrade path 
+| Battery 
+| Vendor ID
+| Feature Support
+| SAS-3 shelves
+
+| From E2x00 to E2x00
+
+a|
+Reuse the old battery.
+
+a| 
+Additional steps required.
+
+a| 
+Legacy snapshots are not supported on the E2700.
+
+a|
+E2800 controllers must not be placed into SAS-2 shelves.
+
+| From E2x00 to E5x00
+
+a|
+Order a new battery.
+
+a|
+Additional steps are required when upgrading from E2600 to E5500 or E5600, or when upgrading from E2700 to E5400.
+
+a|
+* Legacy snapshots are not supported on the E5500 or E5600.
++
+* Legacy remote volume mirroring (RVM) is not supported on the E5500 or E5600 with iSCSI HICs.
++
+* Data Assurance is not supported on the E5500 or E5600 with iSCSI HICs.
++
+* E5700 controllers must not be placed into SAS-2 shelves.
+
+a|
+E5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
+
+| From E5x00 to E2x00
+
+a|
+Order a new battery.
+
+a|
+Additional steps are required when upgrading from E5500 or E5600 to E2600, or when upgrading from E5400 to E2700.
+
+a|
+Legacy snapshots are not supported on the E2700.
+
+a|
+5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
+
+| From E5x00 to E5x00
+
+a|
+Reuse the old battery.
+
+a|
+Additional steps required when upgrading from E5400 to E5500 or E5600.
+
+a|
+* Legacy snapshots are not supported on the E5500 or E5600.
++
+* Legacy remote volume mirroring (RVM) is not supported on the E5400 or E5500 with iSCSI HICs.
++
+* Data Assurance is not supported on the E5400 or E5500 with iSCSI HICs.
++
+* E5700 controllers must not be placed into SAS-2 shelves.
+
+a|
+E5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
+
+| From EF5x0 to EF5x0
+
+a|
+Reuse the old battery.
+
+a|
+Additional steps required when upgrading from EF540 to EF550 or EF560.
+
+a|
+* No Legacy Snapshots for EF550/EF560.
++
+* No Data Assurance for EF550/EF560 with iSCSI.
++
+* EF570 controllers must not be placed into SAS-3 shelves.
+
+a|
+EF540, EF550, and EF560 controllers must not be placed into SAS-3 shelves.
+--
+====
+
+== SAS enclosures
 
 The E5700 supports DE5600 and DE6600 SAS-2 enclosures via head upgrade. When a E5700 controller is installed in SAS-2 enclosures, support for base host ports is disabled.
 
@@ -121,20 +258,35 @@ a|
 SAS-2 shelves include the following models:
 
 * DE1600, DE5600, and DE6600 drive trays
++
 * E5400, E5500, and E5600 controller-drive trays
++
 * EF540, EF550 and EF560 flash arrays
++
 * E2600 and E2700 controller-drive trays
 
 a|
 SAS-3 shelves include the following models:
 
+* E4000 controller shelves
++
+* EF600 controller shelves ^1^
++
+* EF300 controller shelves ^1^
++
 * E2800 controller shelves
++
 * E5700 controller shelves
++
 * DE212C, DE224C, DE460C drive shelves
 
 |===
 
-=== SAS-2 to SAS-3 investment protection
+Notes:
+
+. EF600 and EF300 controllers can only use SAS-3 shelves as expansion. 
+
+== SAS-2 to SAS-3 investment protection
 
 You can reconfigure your SAS-2 system to be used behind a new SAS-3 controller shelf (E57XX/EF570/E28XX).
 

@@ -19,9 +19,11 @@ The following figure shows an example connection. To help ensure maximum perform
 
 .Two hosts and two controllers
 
-image::../media/topology_host_direct_generic_web_low.png[]
+image::../media/topology_host_direct_generic_web_low.png["Two hosts and two controllers cabling"]
 
 *(1)* _Connect each host adapter port directly to the host ports on the controllers._
+
+NOTE: For the E4000, connect to host ports e0a and e0b.
 
 == Cabling for a switch topology
 
@@ -31,8 +33,10 @@ The following figure shows an example connection. For switches that provide prov
 
 .Two hosts and two switches
 
-image::../media/topology_host_fabric_generic.png[]
+image::../media/topology_host_fabric_generic.png["Two hosts and two switches cabling"]
 
 *(1)* _Connect each host adapter directly to the switch._
 
 *(2)* _Connect each switch directly to the host ports on the controllers. To help ensure maximum performance, use all available host adapter ports._
+
+NOTE: For the E4000, connect to host ports e0a and e0b.

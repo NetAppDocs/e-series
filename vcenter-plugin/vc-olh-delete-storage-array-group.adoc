@@ -11,7 +11,7 @@ summary: Remove one or more storage array groups that are no longer needed.
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

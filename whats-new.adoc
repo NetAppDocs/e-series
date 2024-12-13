@@ -1,17 +1,39 @@
 ---
 sidebar: sidebar
 permalink: whats-new.html
-keywords: whats new, new features, SANtricity 11.73
+keywords: whats new, new features, SANtricity 11.90
 summary: New features in SANtricity OS.
 ---
 
 = What's new in SANtricity OS
 :experimental:
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
-The following table describes new features in SANtricity OS 11.8 for embedded management of EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
+The following table describes new features in the latest SANtricity OS releases for embedded management of E4000, EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
+
+== New features in Version 11.90
+
+[cols="35h,~",options="header"]
+|===
+|New feature |Description
+
+a|New storage system model – E4000
+a|This release introduces the E4000 low-cost storage system. The E4000 supports 12 and 60 drives and a single host interface card (HIC) per controller. For the initial release, supported host interface cards include iSCSI and Fibre Channel. E4000 storage systems and other E-Series storage systems can be viewed and managed in Unified Manager.
+
+a|Increased capacity for Dynamic Disk Pools 
+a|The capacity for Dynamic Disk Pools (DDP) has been increased to 12 PB whenever the capacity of each of the individual drives within the pool is greater than 23 TB in size. If the individual drive capacity is less than 23 TB in size, the DDP capacity is 6 PB.
+
+a|Default media scan settings increased
+a|The default media scan rate has been increased to 120 days.
+
+a|Private key now accepted for External Key Management 
+a|Certificate signing request (CSR) file generated externally through private and public key pairs can now be imported through System Manager.
+
+a|Login lockout feature now available for Web Services  
+a|Configurable through the REST API only, a new login lockout setting is now available for embedded and proxy Web Services.
+|===
 
 == New features in Version 11.80.1R1
 

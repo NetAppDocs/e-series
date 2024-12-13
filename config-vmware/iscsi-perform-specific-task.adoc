@@ -50,7 +50,7 @@ While planning your iSCSI networking, remember that the https://configmax.vmware
 
 By default, the VMware iSCSI software initiator creates a single session per iSCSI target when you are not using iSCSI port binding.
 
-NOTE: VMware iSCSI port binding is a feature that forces all bound VMkernel ports to log into all target ports that are accessible on the configured network segments. It is meant to be used with arrays that present a single network address for the iSCSI target. NetApp recommends that iSCSI port binding not be used. For additional information, see the http://kb.vmware.com/[VMware Knowledge Base] for the article regarding considerations for using software iSCSI port binding in ESX/ESXi. If the ESXi host is attached to another vendor's storage, NetApp recommends that you use separate iSCSI vmkernel ports to avoid any conflict with port binding.
+NOTE: VMware iSCSI port binding is a feature that forces all bound VMkernel ports to log into all target ports that are accessible on the configured network segments. It is meant to be used with arrays that present a single network address for the iSCSI target. NetApp recommends that iSCSI port binding not be used. For additional information, see the https://support.broadcom.com/[VMware Knowledge Base] for the article regarding considerations for using software iSCSI port binding in ESX/ESXi. If the ESXi host is attached to another vendor's storage, NetApp recommends that you use separate iSCSI vmkernel ports to avoid any conflict with port binding.
 
 For best practice, you should NOT use port binding on E-Series storage arrays. See https://www.netapp.com/media/17017-tr4789.pdf[TR-4789:VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.x and 7.x^] for more information. 
 
@@ -232,7 +232,7 @@ You can generate and print a PDF of this page, and then use the following worksh
 
 Recommended configurations consist of two initiator ports and four target ports with one or more VLANs.
 
-image::../media/50001_01_conf-vmw.gif[]
+image::../media/50001_01_conf-vmw.gif["iSCSI port identifier"]
 
 === Target IQN
 

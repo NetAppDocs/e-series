@@ -10,7 +10,7 @@ summary: The Import Settings feature is a batch operation that loads configurati
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

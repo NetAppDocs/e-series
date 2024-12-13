@@ -10,7 +10,7 @@ summary: Volumes are not associated with a workload if they have been created us
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

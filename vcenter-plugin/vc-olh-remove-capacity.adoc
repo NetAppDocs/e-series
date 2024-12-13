@@ -11,7 +11,7 @@ summary: You can remove drives to decrease the capacity of an existing pool or S
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can remove drives to decrease the capacity of an existing pool or SSD Cache.

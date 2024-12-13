@@ -6,9 +6,13 @@ summary: Known issues
 ---
 
 = Release notes
+:icons: font
+:imagesdir: ./media/
 
 [.lead]
 Release Notes are available outside this site. You will be prompted to log in using your NetApp Support Site credentials.
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP3334464[11.90 Release notes^]
 
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2885976[11.80 Release notes^]
 

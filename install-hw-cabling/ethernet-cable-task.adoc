@@ -11,6 +11,8 @@ summary: Connect your storage system to an Ethernet network for out-of-band mana
 [.lead]
 You can connect your storage system to an Ethernet network for out-of-band storage array management. You must use Ethernet cables for all storage array management connections.
 
+NOTE: The EF300, EF600, and E4000 have only one out-of-band ethernet management port.
+
 == Direct topology
 
 A direct topology connects your controller directly to an Ethernet network.
@@ -19,7 +21,7 @@ You must connect management port 1 on each controller for out-of-band management
 
 .Direct storage management connections
 
-image::../media/74167.gif[]
+image::../media/74167.gif["Direct storage management connections"]
 
 == Fabric topology
 
@@ -29,4 +31,4 @@ You must connect management port 1 on each controller for out-of-band management
 
 .Fabric storage management connections
 
-image::../media/74110.gif[]
+image::../media/74110.gif["Fabric storage management connections"]

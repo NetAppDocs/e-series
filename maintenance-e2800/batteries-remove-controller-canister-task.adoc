@@ -34,7 +34,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 +
 The following figure is an example of an E2812 controller shelf, E2824 controller shelf, or EF280 flash array:
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif["24 drive controller reinstall"]
 +
 *(1)* _Controller canister_
 +
@@ -42,7 +42,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[]
 +
 The following figure is an example of an E2860 controller shelf:
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif["60 drive controller reinstall"]
 +
 *(1)* _Controller canister_
 +

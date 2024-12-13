@@ -1,0 +1,135 @@
+---
+permalink: install-hw-e4000/complete-setup-12.html
+sidebar: sidebar
+keywords: 
+summary: Learn how to cable the controllers to your network and complete storage system setup and configuration.
+---
+= Complete storage system setup (E4012)
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Learn how to cable the controllers to your network and complete storage system setup and configuration.
+
+== Step 1: Cable the data hosts
+
+Cable the system according to your network topology.
+
+
+[role="tabbed-block"]
+====
+
+.Option 1: Direct-attach topology
+--
+
+The following example shows cabling to the data hosts using a direct-attach topology.
+
+
+image:../media/drw_e4012_direct_topology_ieops-2047.svg[E4012 Direct Topology, width=1000px]
+
+. If you do not have expansion shelves installed, connect each host adapter directly to the host ports e0a and e0b on the controllers.
+
+
+--
+
+.Option 2: Fabric topology
+--
+
+The following example shows cabling to the data hosts using a fabric topology.
+
+
+image:../media/drw_e4012_fabric_topology_ieops-2046.svg[E4012 Fabric Topology, width=1000px]
+
+. Connect each host adapter directly to the switch.
+. Connect each switch directly to the host ports e0a and e0b on the controllers.
+
+
+--
+====
+
+== Step 2: Connect and configure the management connection
+
+You can configure the controller management ports using a DHCP server or a static IP address.
+
+[role="tabbed-block"]
+====
+
+.Option 1: DHCP server
+
+--
+
+Learn how to configure the management ports with a DHCP server.
+
+.Before you begin
+
+* Configure your DHCP server to associate an IP address, subnet mask, and gateway address as a permanent lease for each controller.
+* Obtain the assigned IP addresses to connect to the storage system from your network administrator.
+
+.Steps
+
+. Connect an Ethernet cable to each controller's management port, and connect the other end to your network.
++
+The following figures show examples of the controller's management port location:
++
+image:../media/e4000_management_port.png[E4000 controller Management Port]
+
+. Open a browser and connect to the storage system using one of the controller IP addresses provided to you by your network administrator.
+
+--
+
+.Option 2: Static IP address
+--
+
+Learn how to configure the management ports manually by entering the IP address and the subnet mask.
+
+.Before you begin
+
+* Obtain the controllers' IP address, subnet mask, gateway address, and DNS and NTP server information from your network administrator.
+* Make sure the laptop you are using is not receiving network configuration from a DHCP server.
+
+.Steps
+
+. Using an Ethernet cable, connect controller A's management port to the Ethernet port on a laptop.
++
+The following figures show examples of the controller's management port location:
++
+image:../media/e4000_management_port.png[E4000 controller Management Port]
+
+
+. Open a browser and use the default IP address (169.254.128.101) to establish a connection to the controller. The controller sends back a self-signed certificate. The browser informs you that the connection is not secure.
+. Follow the browser's instructions to proceed and launch SANtricity System Manager. If you are unable to establish a connection, verify that you are not receiving network configuration from a DHCP server.
+. Set the storage system's password to login.
+. Use the network settings provided by your network administrator in the *Configure Network Settings* wizard to configure controller A's network settings, and then select *Finish*.
++
+NOTE: Because you reset the IP address, System Manager loses connection to the controller.
+
+. Disconnect the ethernet cable from the storage system, and connect the management port on controller A to your network.
+. Open a browser on a computer connected to your network, and enter controller A's newly configured IP address. 
++
+NOTE: If you lose the connection to controller A, you can connect an ethernet cable to controller B to reestablish connection to controller A through controller B (169.254.128.102).
+
+. Log in using the password you set previously. The Configure Network Settings wizard will appear.
+
+. Use the network settings provided by your network administrator in the *Configure Network Settings* wizard to configure controller B's network settings, and then select *Finish*.
+. Connect controller B to your network.
+. Validate controller B's network settings by entering controller B's newly configured IP address in a browser.
++
+NOTE: If you lose the connection to controller B, you can use your previously validated connection to controller A to reestablish connection to controller B through controller A.
+
+--
+====
+
+== Step 3: Configure and manage your storage system
+
+After you have installed your hardware, use the SANtricity software to configure and manage your storage system.
+
+.Before you begin
+
+* Configure your management ports.
+* Verify and record your password and IP addresses.
+
+.Steps
+
+. Use the SANtricity software to configure and manage your storage arrays.
+. In the simplest network configuration, connect your controller to a web browser and use SANtricity System Manager for managing a single E4000 series storage array. For accessing System Manager, use the same IP addresses that you used to configure your management ports.
+

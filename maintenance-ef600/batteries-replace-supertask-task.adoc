@@ -75,13 +75,13 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 . Confirm that the Cache Active LED on the back of the controller is off.
 . Squeeze the handles on either side of the controller, and pull back until it releases from the shelf.
 +
-image::../media/remove_controller_5.png[]
+image::../media/remove_controller_5.png["Squeeze handles to remove controller"]
 
 . Using two hands and the handles, slide the controller canister out of the shelf. When the front of the controller is free of the enclosure, use two hands to pull it out completely.
 +
 CAUTION: Always use two hands to support the weight of a controller canister.
 +
-image::../media/remove_controller_6.png[]
+image::../media/remove_controller_6.png["Use two hands to support weight of controller as you remove"]
 
 . Place the controller canister on a flat, static-free surface.
 
@@ -99,15 +99,15 @@ If this green LED is on, the controller is still using battery power. You must w
 . Locate the 'press' tab on the side of the controller.
 . Unlatch the battery by pressing the tab and squeezing the battery casing.
 +
-image::../media/batt_3.png[]
+image::../media/batt_3.png["Press tab to unlatch battery]
 
 . Gently squeeze the connector housing the battery wiring. Pull up, disconnecting the battery from the board.
 +
-image::../media/batt_2.png[]
+image::../media/batt_2.png["Remove connector housing the battery wiring"]
 
 . Lift the battery out of the controller and place on a flat, static-free surface.
 +
-image::../media/batt_4.png[]
+image::../media/batt_4.png["Lift battery out of controller"]
 
 . Follow the appropriate procedures for your location to recycle or dispose of the failed battery.
 +
@@ -125,7 +125,7 @@ NOTE: To comply with IATA safely regulations, replacement batteries are shipped 
 
 . Insert the battery into the controller by lining up the battery casing with the metal latches on the side of the controller.
 +
-image::../media/batt_5.png[]
+image::../media/batt_5.png["Insert battery"]
 +
 The battery clicks into place.
 
@@ -142,7 +142,7 @@ Reinstall the controller into the controller shelf.
 +
 NOTE: The controller audibly clicks when correctly installed into the shelf.
 +
-image::../media/remove_controller_7.png[]
+image::../media/remove_controller_7.png["Install controller into the shelf"]
 
 == Step 6: Complete battery replacement
 

@@ -10,7 +10,7 @@ summary: If you increase the capacity for a volume, the host might not immediate
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

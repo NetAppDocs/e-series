@@ -119,13 +119,13 @@ The green Cache Active LED on the back of the controller is on when cached data 
 +
 NOTE: The figure shows an example controller canister. Your controller might have a different number and a different type of host ports.
 +
-image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[]
+image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif["E2800 cache active LED"]
 +
 *(1)* _Cache Active LED_
 
 . Squeeze the latch on the cam handle until it releases, and then open the cam handle to the right to release the controller canister from the midplane.
 +
-image::../media/28_dwg_e2824_remove_controller_canister_simplex_maint-e2800.gif[]
+image::../media/28_dwg_e2824_remove_controller_canister_simplex_maint-e2800.gif["Remove controller canister"]
 +
 *(1)* _Controller canister_
 +
@@ -151,7 +151,7 @@ After removing the controller canister from the controller shelf, remove the bat
 +
 If this green LED is on, the controller is still using battery power. You must wait for this LED to go off before removing any components.
 +
-image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[]
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif["Internal cache active LED"]
 +
 *(1)* _Internal Cache Active_
 +
@@ -160,7 +160,7 @@ image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[]
 . Locate the blue release latch for the battery.
 . Unlatch the battery by pushing the release latch down and away from the controller canister.
 +
-image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[]
+image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif["Remove battery from the controller canister"]
 +
 *(1)* _Battery release latch_
 +
@@ -179,7 +179,7 @@ If the controller canister includes a host interface card (HIC), remove the HIC 
 +
 There are four screws: one on the top, one on the side, and two on the front.
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif["Remove faceplate from the controller canister"]
 
 . Remove the HIC faceplate.
 . Using your fingers or a Phillips screwdriver, loosen the three thumbscrews that secure the HIC to the controller card.
@@ -187,7 +187,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
 +
 CAUTION: Be careful not to scratch or bump the components on the bottom of the HIC or on the top of the controller card.
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif["Remove HIC from controller card"]
 +
 *(1)* _Host interface card_
 +
@@ -219,7 +219,7 @@ You must insert the metal flange at the front of the battery into the slot on th
 +
 When the latch clicks into place, the bottom of the latch hooks into a metal slot on the chassis.
 +
-image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif[]
+image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif['Reinstall battery onto controller canister"]
 +
 *(1)* _Battery release latch_
 +
@@ -232,11 +232,11 @@ CAUTION: *Possible hardware damage* -- The metal flange at the front of the batt
 +
 ** *Correct* -- The battery's metal flange is completely inserted in the slot on the controller:
 +
-image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif[]
+image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif["Correct metal flange"]
 
 ** *Incorrect* -- The battery's metal flange is not inserted into the slot on the controller:
 +
-image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[]
+image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif["Incorrect metal flange"]
 
 === Step 3b: Install host interface card (simplex)
 
@@ -253,7 +253,7 @@ Be careful not to scratch or bump the components on the bottom of the HIC or on 
 +
 CAUTION: *Possible equipment damage* -- Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrews.
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif["Reinstall HIC onto the controller"]
 +
 *(1)* _Host interface card_
 +
@@ -265,7 +265,7 @@ Do not use a screwdriver, or you might over tighten the screws.
 
 . Using a #1 Phillips screwdriver, attach the HIC faceplate you removed from the original controller canister to the new controller canister with four screws.
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[Reinstall faceplate onto the controller"]
 
 === Step 3c: Install new controller canister (simplex)
 
@@ -277,7 +277,7 @@ After installing the battery and the HIC, if one was initially installed, you ca
 . Turn the controller canister over, so that the removable cover faces down.
 . With the cam handle in the open position, slide the controller canister all the way into the controller shelf.
 +
-image::../media/28_dwg_e2824_remove_controller_canister_simplex_maint-e2800.gif[]
+image::../media/28_dwg_e2824_remove_controller_canister_simplex_maint-e2800.gif["Reinstall controller canister into the controller shelf"]
 +
 *(1)* _Controller canister_
 +
@@ -335,7 +335,7 @@ Power on the controller shelf, collect support data, and resume operations.
 +
 NOTE: The figure shows an example controller canister. Your controller might have a different number and a different type of host ports.
 +
-image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[]
+image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif["E2800 controller LEDs"]
 +
 *(1)* _Attention LED (amber)_
 +

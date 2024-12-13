@@ -23,7 +23,7 @@ The following example shows cabling to the data hosts using a direct-attach topo
 
 |===
 a|
-image:../media/direct_topo.png[] a|
+image:../media/direct_topo.png["Direct-attach topology cabling"] a|
 . Connect each host adapter directly to the host ports on the controllers.
 
 |===
@@ -36,7 +36,7 @@ The following example shows cabling to the data hosts using a fabric topology.
 
 |===
 a|
-image:../media/fabric_topo.png[] a|
+image:../media/fabric_topo.png["Fabric topology cabling"] a|
 . Connect each host adapter directly to the switch.
 . Connect each switch directly to the host ports on the controllers.
 
@@ -61,7 +61,7 @@ Learn how to configure the management ports with a DHCP server.
 +
 |===
 a|
-image:../media/cable_ethernet_inst-hw-ef600.png[] a|
+image:../media/cable_ethernet_inst-hw-ef600.png["RJ-45 cables"] a|
 RJ-45 Ethernet cables (if ordered)
 |===
 +
@@ -69,7 +69,7 @@ RJ-45 Ethernet cables (if ordered)
 a|
 The following figure shows an example of the controller's management port location (EF600 shown):
 a|
-image:../media/ethernet_callout.png[]
+image:../media/ethernet_callout.png["EF600 management ports"]
 
 |===
 
@@ -92,7 +92,7 @@ NOTE: Controller A is the upper controller canister, and controller B is the low
 +
 |===
 a|
-image:../media/cable_ethernet_inst-hw-ef600.png[] a|
+image:../media/cable_ethernet_inst-hw-ef600.png[RJ-45 cables"] a|
 RJ-45 Ethernet cables (if ordered)
 |===
 +
@@ -100,7 +100,7 @@ RJ-45 Ethernet cables (if ordered)
 a|
 The following figure shows an example of the controller's management port location (EF600 shown):
 a|
-image:../media/ethernet_callout.png[]
+image:../media/ethernet_callout.png["EF600 management ports"]
 
 |===
 +
@@ -148,7 +148,7 @@ After you have installed the EF300 or EF600 hardware, use the SANtricity softwar
 
 |===
 a|
-image:../media/management_station_inst-hw-ef600_g2285.png[] a|
+image:../media/management_station_inst-hw-ef600_g2285.png["Access System Manager to configure your management ports"] a|
 For accessing System Manager, use the same IP addresses that you used to configure your management ports.
 |===
 

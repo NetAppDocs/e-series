@@ -9,7 +9,7 @@ summary: If you are upgrading E2800 and E5700 controllers and the Drive Security
 :imagesdir: ../media/
 
 [.lead]
-If you are upgrading E2800 and E5700 controllers, the Drive Security feature for these controllers will lock down the drives partially, externally, or internally. If the Drive Security feature is enabled, you must manually unlock these drives.
+The Drive Security feature for these controllers will lock down the drives partially, externally, or internally. If the Drive Security feature is enabled, you must manually unlock these drives.
 
 Follow the appropriate procedure for:
 

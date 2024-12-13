@@ -11,7 +11,7 @@ summary: Delete a pool or volume group to create more unassigned capacity, which
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can delete a pool or volume group to create more unassigned capacity, which you can reconfigure to meet your application storage needs.

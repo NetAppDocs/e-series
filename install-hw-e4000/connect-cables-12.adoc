@@ -1,0 +1,66 @@
+---
+permalink: install-hw-e4000/connect-cables-12.html
+sidebar: sidebar
+keywords: E4000, connect power cables
+summary: Attach the power cables and power on the drive shelves.
+---
+= Connect the cables (E4012)
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Learn how to attach the power cables and power on the drive shelves.
+
+.Before you begin
+
+* Install your hardware.
+* Take anti-static precautions.
+
+This procedure applies to IOM12 and IOM12B drive shelves.
+
+
+.Steps
+
+. Cable the shelves.
++
+Cable the system according to your configuration. If you need more cabling options than the examples shown, see link:../install-hw-cabling/index.html[Cabling].
++
+For the examples shown, you need the following cables:
++
+|===
+a|
+image:../media/sas_cable.png[SAS cable] a|
+*SAS cables*
+|===
++
+
+.Example A: An E4000 controller shelf with three DE212C/DE224C disk shelves in a standard SAS configuration.
+
+ .. Cable controller A to IOM A of the first drive shelf.
+ .. Cable IOM A of the first drive shelf to IOM A of the second drive shelf.
+ .. Cable IOM A of the second drive shelf to IOM A of the third drive shelf.
+ .. Cable controller B to IOM B of the third drive shelf.
+ .. Cable IOM B of the second drive shelf to IOM B of the third drive shelf.
+ .. Cable IOM B of the first drive shelf to IOM B of the second drive shelf.
+
++
+.Example B: An E4000 controller shelf with one DE212C/DE224C disk shelf in a standard SAS configuration.
+
+.. Cable controller A to IOM A.
+.. Cable controller B to IOM B.
+
+. Power the drive shelves.
++
+You need the following cables:
++
+|===
+a|
+image:../media/power_cable_inst-hw-e2800-e5700.png[Power cable] a|
+*Power cables*
+|===
+CAUTION: Confirm the drive shelf power switches are off.
+
+ .. Connect the two power cables for each shelf to different power distribution units (PDUs) in the cabinet or rack.
+ .. If you have drive shelves, turn on their two power switches first. Wait 2 minutes before applying power to the controller shelf.
+ .. Turn on the two power switches on the controller shelf.
+

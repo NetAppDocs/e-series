@@ -10,7 +10,7 @@ summary: FDE/FIPS security refers to secure-capable drives that encrypt data dur
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 FDE/FIPS security refers to secure-capable drives that encrypt data during writes and decrypt data during reads using a unique encryption key.

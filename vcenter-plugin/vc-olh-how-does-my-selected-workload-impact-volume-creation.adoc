@@ -10,7 +10,7 @@ summary: During volume creation, you are prompted for information about a worklo
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

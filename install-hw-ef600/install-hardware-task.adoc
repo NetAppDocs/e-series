@@ -32,7 +32,7 @@ NOTE: To prevent the equipment from toppling over, install the hardware from the
 a|
 If instructions were included with your rack-mounting hardware, refer to them to learn  how to install the rails. For additional rack-mounting instructions, see link:../rackmount-hardware.html[Rack-mount hardware].
 a|
-image:../media/install_rails_inst-hw-ef600.png[]
+image:../media/install_rails_inst-hw-ef600.png["Install rails"]
 |===
 
 . Install the shelf.
@@ -47,7 +47,7 @@ CAUTION: When installing the shelf, use a team-lift with two people.
  .. Supporting the shelf from the bottom, slide it into the cabinet.
 
 a|
-image:../media/install_ef600.png[]
+image:../media/install_ef600.png["Install shelf into cabinet with two people"]
 |===
 
 . Secure the shelf.
@@ -56,7 +56,7 @@ image:../media/install_ef600.png[]
 a|
 For more information, see link:../rackmount-hardware.html[Rack-mount hardware].
 a|
-image:../media/secure_shelf_inst-hw-ef600.png[]
+image:../media/secure_shelf_inst-hw-ef600.png["Secure the shelf"]
 |===
 
 . Install the faceplate.
@@ -67,5 +67,5 @@ a|
  .. Align the faceplate with the shelf, and snap into place.
 
 a|
-image:../media/install_faceplate_2_0_inst-hw-ef600.png[]
+image:../media/install_faceplate_2_0_inst-hw-ef600.png["Install the faceplate"]
 |===

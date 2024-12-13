@@ -32,7 +32,7 @@ For the examples shown in this section, you need the following cables:
 +
 |===
 a|
-image:../media/sas_cable.png[] a|
+image:../media/sas_cable.png["SAS cables"] a|
 *SAS cables*
 |===
 
@@ -40,7 +40,7 @@ image:../media/sas_cable.png[] a|
 
 .Example A: An E2860 controller shelf with two DE460C disk shelves in a standard SAS configuration.
 
-image:../media/example_a_2860.png[]
+image:../media/example_a_2860.png["E2860 controller in a SAS configuration"]
 
 .. Cable controller A to IOM A of the first drive shelf.
 .. Cable IOM A of the first drive shelf to IOM A of the second drive shelf.
@@ -51,7 +51,7 @@ image:../media/example_a_2860.png[]
 
 .Example B: An E2860 controller shelf with one DE460C disk shelf in a standard SAS configuration.
 
-image:../media/example_b_2860.png[]
+image:../media/example_b_2860.png["E2860 controller in a SAS configuration"]
 
 .. Cable controller A to IOM A.
 .. Cable controller B to IOM B.
@@ -62,7 +62,7 @@ You need the following cables:
 +
 |===
 a|
-image:../media/power_cable_inst-hw-e2800-e5700.png[] a|
+image:../media/power_cable_inst-hw-e2800-e5700.png["Power cables"] a|
 *Power cables*
 |===
 CAUTION: Confirm the drive shelf power switches are off.
@@ -77,6 +77,6 @@ During boot, the seven-segment display shows the repeating sequence of OS, Sd, b
 +
 |===
 a|*Example: Power connections are on the rear of the shelf.*
-image:../media/trafford_power.png[]
+image:../media/trafford_power.png["Power connections for the rear of the shelf"]
 
 |===
