@@ -10,7 +10,7 @@ summary: To provision storage, you create either a pool or volume group that wil
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 To provision storage in the Storage Plugin for vCenter, you create either a pool or volume group that will contain the Hard Disk Drives (HDD) or Solid State Disk (SSD) drives that you want to use in your storage array.

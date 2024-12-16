@@ -22,6 +22,8 @@ Use the following workflow:
 . link:setup-remote-volumes-concept.html[Configure hardware].
 . link:import-remote-storage-task.html[Import remote storage].
 
+NOTE: SANtricity Remote Storage Volumes is currently not supported on E4000 systems.
+
 == Find more information
 
 * Online help, available in the System Manager user interface or in the https://docs.netapp.com/us-en/e-series-santricity/index.html[SANtricity software doc site^].

@@ -13,7 +13,7 @@ You can generate and print a PDF of this page, and then use the following worksh
 
 The illustration shows a host connected to an E-Series storage array in two zones. One zone is indicated by the blue line; the other zone is indicated by the red line. Any single port has two paths to the storage (one to each controller).
 
-image::../media/port_identifiers_host_and_target_conf-lin.gif[]
+image::../media/port_identifiers_host_and_target_conf-lin.gif["FC network configuration"]
 
 == Host identifiers
 

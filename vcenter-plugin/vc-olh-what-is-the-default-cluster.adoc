@@ -10,7 +10,7 @@ summary: The default cluster is a system-defined entity that allows any unassoci
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

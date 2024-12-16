@@ -12,7 +12,7 @@ summary: You can change read cache and write cache settings to impact the overal
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

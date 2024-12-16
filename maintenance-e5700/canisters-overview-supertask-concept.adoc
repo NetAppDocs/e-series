@@ -28,7 +28,7 @@ You can replace a power supply in the following shelves:
 
 The following figure shows an example E5724 controller shelf with two power supplies (power-fan canisters). The DE224C drive shelves are identical, but they include I/O modules (IOMs) instead of controller canisters.
 
-image::../media/e5700_power_supply_callout.png[]
+image::../media/e5700_power_supply_callout.png["E5700 controller power supply"]
 
 *(1)* _Controller shelf with two power supplies (power-fan canisters) below the controller canisters._
 
@@ -61,11 +61,11 @@ The _Replace power canister_ topics do not describe how to replace a failed powe
 
 The following figure shows the back of a DE460C drive shelf with the two power canisters:
 
-image::../media/28_dwg_de460c_rear_no_callouts_maint-e5700.gif[]
+image::../media/28_dwg_de460c_rear_no_callouts_maint-e5700.gif["DE460C with two power canisters"]
 
 The following figure shows a power canister:
 
-image::../media/28_dwg_e2860_de460c_psu_maint-e5700.gif[]
+image::../media/28_dwg_e2860_de460c_psu_maint-e5700.gif["Power canister"]
 
 === Requirements for replacing a power canister
 
@@ -98,11 +98,11 @@ The _Replace fan canister_ topics do not describe how to replace a failed fan ca
 
 The following figure shows a fan canister:
 
-image::../media/28_dwg_e2860_de460c_single_fan_canister_no_callouts_maint-e5700.gif[]
+image::../media/28_dwg_e2860_de460c_single_fan_canister_no_callouts_maint-e5700.gif["Fan canister"]
 
 The following figure shows the back of a DE460C shelf with two fan canisters:
 
-image::../media/28_dwg_de460c_rear_no_callouts_maint-e5700.gif[]
+image::../media/28_dwg_de460c_rear_no_callouts_maint-e5700.gif["DE460C with two fan canisters"]
 
 CAUTION: *Possible equipment damage* -- If you replace a fan canister with the power turned on, you must complete the replacement procedure within 30 minutes to prevent the possibility of overheating the equipment.
 

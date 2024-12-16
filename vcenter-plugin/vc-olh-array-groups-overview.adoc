@@ -10,7 +10,7 @@ summary: Manage your physical and virtualized infrastructure by grouping a set o
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

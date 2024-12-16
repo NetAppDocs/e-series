@@ -10,7 +10,7 @@ summary: You can manage SANtricity software and NVSRAM upgrades for multiple sto
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 In the Storage Plugin for vCenter, you can manage SANtricity software and NVSRAM upgrades for multiple storage arrays of the same type.

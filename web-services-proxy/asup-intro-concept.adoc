@@ -88,7 +88,7 @@ NOTE: The timestamp entry is superfluous.
 
 === Configure AutoSupport delivery method
 
-You can configure the AutoSupport feature to use HTTPS, HTTP, or SMTP delivery methods. HTTPS is the default delivery method.
+You can configure the AutoSupport feature to use HTTPS or SMTP delivery methods. HTTPS is the default delivery method.
 
 . Access the ASUPConfig.xml file in the working directory.
 . In the string, `<delivery type="n">`, enter 1, 2, or 3 as described in the table:
@@ -102,14 +102,9 @@ a|
 *HTTPS* (default)
 
 <delivery type="1">
+
 a|
 2
-a|
-*HTTP*
-
-<delivery type="2">
-a|
-3
 a|
 *SMTP* -- To properly configure the AutoSupport delivery type to SMTP, you must include the SMTP mail server address, along with the sender and recipient user emails, similar to the following example:
 

@@ -10,7 +10,7 @@ summary: Use the Plugin for vCenter interface to discover the IP addresses of ar
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

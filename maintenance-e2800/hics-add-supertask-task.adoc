@@ -81,7 +81,7 @@ CAUTION: *Possible data loss* -- If you continue this procedure while I/O operat
 +
 The green Cache Active LED on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
 +
-image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[]
+image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif["Cache active LED on E2800 controller"]
 +
 *(1)* _Cache Active LED_
 
@@ -105,7 +105,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 +
 The green Cache Active LED on the back of the controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off before removing the controller canister.
 +
-image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[]
+image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif["Cache active LED on E2800 controller"]
 +
 *(1)* _Cache Active LED_
 
@@ -113,7 +113,7 @@ image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[]
 +
 The following figure is an example of an E2812 controller shelf, E2824 controller shelf, or EF280 flash array:
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif["Remove controller canister from shelf"]
 +
 *(1)* _Controller canister_
 +
@@ -121,7 +121,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[]
 +
 The following figure is an example of an E2860 controller shelf:
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif['Remove controller canister from shelf"]
 +
 *(1)* _Controller canister_
 +
@@ -150,7 +150,7 @@ CAUTION: *Possible loss of data access* -- Never install a HIC in an E2800 contr
 +
 If this green LED is on, the controller is still using battery power. You must wait for this LED to go off before removing any components.
 +
-image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[]
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif["Internal Cache Active LED"]
 +
 *(1)* _Internal Cache Active_
 +
@@ -165,7 +165,7 @@ Be careful not to scratch or bump the components on the bottom of the HIC or on 
 +
 CAUTION: *Possible equipment damage* -- Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrews.
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif["Install HIC onto the controller card"]
 +
 *(1)* _Host interface card (HIC)_
 +
@@ -178,7 +178,7 @@ Do not use a screwdriver, or you might over tighten the screws.
 
 . Using a #1 Phillips screwdriver, attach the new HIC faceplate to the controller canister with the four screws you removed previously.
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif["Install the faceplate onto the controller"]
 
 == Step 4: Reinstall controller canister
 
@@ -191,13 +191,13 @@ Reinstall the controller canister into the controller shelf after installing the
 +
 The following figure is an example of an E2824 controller shelf, or EF280 flash array:
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif["Reinstall the controller canister"]
 +
 *(1)* _Controller canister_
 +
 *(2)* _Cam handle_
 +
-The following figure is an example of an E2860 controller shelf: image:../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[]
+The following figure is an example of an E2860 controller shelf: image:../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif["Reinstall the controller canister"]
 +
 *(1)* _Controller canister_
 +
@@ -226,7 +226,7 @@ Check the controller LEDs and seven-segment display, and then confirm that the c
 +
 NOTE: The figure shows an example controller canister. Your controller might have a different number and a different type of host ports.
 +
-image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[]
+image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif["E2800 controller LEDs"]
 +
 *(1)* _Attention LED (amber)_
 +

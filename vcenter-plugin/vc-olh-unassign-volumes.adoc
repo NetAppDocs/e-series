@@ -11,7 +11,7 @@ summary: If you no longer need I/O access to a volume, you can unassign it from 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

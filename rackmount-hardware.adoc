@@ -6,6 +6,8 @@ summary: Rack mount the hardware.
 ---
 
 = Rack-mount hardware
+:icons: font
+:imagesdir: ./media/
 
 [.lead]
 Use the links below to access documentation that describes how to install rack-mounting hardware.

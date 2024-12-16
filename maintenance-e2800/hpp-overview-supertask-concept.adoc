@@ -17,7 +17,7 @@ NOTE: Only the 16Gb FC/10Gb iSCSI HICs and optical base ports on an E2800 contro
 
 The following figure shows the back of an E2800 controller that has two SFP+ (optical) baseboard host ports *(1)* and four SFP+ (optical) HIC ports *(2)*.
 
-image::../media/28_dwg_e2800_optical_base_quad_sfp_hic.gif[]
+image::../media/28_dwg_e2800_optical_base_quad_sfp_hic.gif[Host and HIC ports on a E2800 controller"]
 
 NOTE: A two-port HIC is also available.
 
@@ -192,7 +192,7 @@ Before and after the conversion, mirroring will occur on the highest-numbered FC
 +
 When you apply the feature pack, mirroring support will move from the highest-numbered baseboard host port (labeled *1* in the figure) to the highest-numbered HIC port (labeled *2* in the figure).
 +
-image::../media/28_dwg_e2800_fc_iscsi_to_fc.gif[]
+image::../media/28_dwg_e2800_fc_iscsi_to_fc.gif[Ports on a E2800 controller"]
 +
 [options = "header"]
 |===

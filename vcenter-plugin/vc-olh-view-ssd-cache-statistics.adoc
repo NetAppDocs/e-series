@@ -11,7 +11,7 @@ summary: View statistics for the SSD Cache, such as reads, writes, cache hits, c
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [.lead]

@@ -11,7 +11,7 @@ summary: Use the Plugin for vCenter to create volumes, assign volumes to hosts, 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 To provision storage, you create volumes, assign volumes to hosts, and then assign volumes to datastores.

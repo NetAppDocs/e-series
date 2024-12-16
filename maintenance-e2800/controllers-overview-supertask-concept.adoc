@@ -29,9 +29,9 @@ You can add a second controller canister to the simplex version of the following
 
 The figures show an example controller shelf before adding a second controller (one controller canister and a controller blank) and after adding a second controller (two controller canisters).
 
-image::../media/28_dwg_2800_controller_simplex.gif[]
+image::../media/28_dwg_2800_controller_simplex.gif["E2800 simplex configuration"]
 
-image::../media/28_dwg_2800_controller_duplex.gif[]
+image::../media/28_dwg_2800_controller_duplex.gif["E2800 duplex configuration"]
 
 NOTE: The figures show example controller canisters; the host ports on your controller canisters might be different.
 
@@ -73,7 +73,7 @@ NOTE: The controller's amber Attention LED  will be turned off whenever the foll
 *** Power supply missing
 ====
 
-image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[]
+image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif["E2800 attention LED"]
 
 *(1)* _Attention LED_
 

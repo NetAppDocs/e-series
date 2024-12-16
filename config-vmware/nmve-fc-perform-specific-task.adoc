@@ -83,7 +83,7 @@ You can generate and print a PDF of this page, and then use the following worksh
 
 The illustration shows a host connected to an E-Series storage array in two zones. One zone is indicated by the blue line; the other zone is indicated by the red line. Each zone contains one initiator port and all target ports.
 
-image::../media/port_identifiers_host_and_target_conf-vmw.gif[]
+image::../media/port_identifiers_host_and_target_conf-vmw.gif[NVMe over Fibre Channel port identifiers"]
 
 === Host identifiers
 

@@ -47,7 +47,7 @@ For example, do not attempt to replace a hard disk drive (HDD) with a solid-stat
 +
 The drive drawer's Attention LED (amber) blinks so you can open the correct drive drawer to identify which drive to replace.
 +
-image::../media/2860_dwg_attn_led_on_drawer_maint-e5700.gif[]
+image::../media/2860_dwg_attn_led_on_drawer_maint-e5700.gif["Attention LED"]
 +
 *(1)* _Attention LED_
 +
@@ -55,13 +55,13 @@ image::../media/2860_dwg_attn_led_on_drawer_maint-e5700.gif[]
  .. Using the extended levers, carefully pull the drive drawer out until it stops.
  .. Look at the top of the drive drawer to find the Attention LED in front of each drive.
 +
-image::../media/2860_dwg_amber_on_drive_maint-e5700.gif[]
+image::../media/2860_dwg_amber_on_drive_maint-e5700.gif["Attention LED on drive drawer"]
 +
 *(1)* _Attention LED light on for the drive on the top right side_
 +
 The drive drawer Attention LEDs are on the left side in front of each drive, with an attention icon on the drive handle just behind the LED.
 +
-image::../media/28_dwg_e2860_de460c_attention_led_drive_maint-e5700.gif[]
+image::../media/28_dwg_e2860_de460c_attention_led_drive_maint-e5700.gif["Attention LED on drive drawer"]
 +
 *(1)* _Attention icon_
 +
@@ -83,20 +83,20 @@ Save all packing materials for the next time you need to send a drive back.
 +
 The cam handle on the drive springs open partially, and the drive is released from the drawer.
 +
-image::../media/trafford_drive_rel_button_maint-e5700.gif[]
+image::../media/trafford_drive_rel_button_maint-e5700.gif["Orange release latch to remove drive"]
 +
 *(1)* _Orange release latch_
 
 . Open the cam handle, and lift out the drive slightly.
-. Wait 30 seconds.
+. Wait 60 seconds.
 . Use the cam handle to lift the drive from the shelf.
 +
-image::../media/92_dwg_de6600_install_or_remove_drive_maint-e5700.gif[]
+image::../media/92_dwg_de6600_install_or_remove_drive_maint-e5700.gif["Use cam handle to remove drive"]
 
 . Place the drive on an antistatic, cushioned surface away from magnetic fields.
-. Wait 30 seconds for the software to recognize that the drive has been removed.
+. Wait 60 seconds for the software to recognize that the drive has been removed.
 +
-NOTE: If you accidentally remove an active drive, wait at least 30 seconds, and then reinstall it. For the recovery procedure, refer to the storage management software.
+NOTE: If you accidentally remove an active drive, wait at least 60 seconds, and then reinstall it. For the recovery procedure, refer to the storage management software.
 
 == Step 3: Install new drive (60-drive)
 
@@ -109,7 +109,7 @@ CAUTION: *Possible loss of data access* -- When pushing the drive drawer back in
 . Raise the cam handle on the new drive to vertical.
 . Align the two raised buttons on each side of the drive carrier with the matching gap in the drive channel on the drive drawer.
 +
-image::../media/28_dwg_e2860_de460c_drive_cru_maint-e5700.gif[]
+image::../media/28_dwg_e2860_de460c_drive_cru_maint-e5700.gif["Raised button on the drive carrier must match the drive channel on the drive drawer"]
 +
 *(1)* _Raised button on the right side of the drive carrier_
 
@@ -129,7 +129,7 @@ Confirm that the new drive is working correctly.
 
 . Check the Power LED and the Attention LED on the drive you replaced. (When you first insert a drive, its Attention LED might be on. However, the LED should go off within a minute.)
  ** Power LED is on or blinking, and the Attention LED is off: Indicates that the new drive is working correctly.
- ** Power LED is off: Indicates that the drive might not be installed correctly. Remove the drive, wait 30 seconds, and then reinstall it.
+ ** Power LED is off: Indicates that the drive might not be installed correctly. Remove the drive, wait 60 seconds, and then reinstall it.
  ** Attention LED is on: Indicates that the new drive might be defective. Replace it with another new drive.
 . If the Recovery Guru in SANtricity System Manager still shows an issue, select *Recheck* to ensure the problem has been resolved.
 . If the Recovery Guru indicates that drive reconstruction did not start automatically, start reconstruction manually, as follows:

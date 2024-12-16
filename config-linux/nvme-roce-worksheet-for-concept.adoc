@@ -15,7 +15,7 @@ You can generate and print a PDF of this page, and then use the following worksh
 
 In a direct connect topology, one or more hosts are directly connected to the subsystem. In the SANtricity OS 11.50 release, we support a single connection from each host to a subsystem controller, as shown below. In this configuration, one HCA (host channel adapter) port from each host should be on the same subnet as the E-Series controller port it is connected to, but on a different subnet from the other HCA port.
 
-image::../media/nvmeof_direct_connect.gif[]
+image::../media/nvmeof_direct_connect.gif["NVME over RoCE direct connect example"]
 
 An example configuration that satisfies the requirements consists of four network subnets as follows:
 
@@ -28,7 +28,7 @@ An example configuration that satisfies the requirements consists of four networ
 
 In a fabric topology, one or more switches are used. Refer to https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a list of supported switches.
 
-image::../media/nvmeof_switch_connect.gif[]
+image::../media/nvmeof_switch_connect.gif["NVMe over RoCE switch connect example"]
 
 == Host identifiers
 

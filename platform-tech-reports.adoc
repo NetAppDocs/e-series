@@ -6,7 +6,11 @@ summary: E-Series technical reports
 ---
 
 = Browse platform technical reports
+:icons: font
+:imagesdir: ./media/
 
+[.lead]
+Check out the links below to access technical reports related to E-Series platforms. The links take you to a different documentation site.
 
 == Platform TRs
 
@@ -29,8 +33,12 @@ features of the EF300 all-flash array and new SANtricity OS features.
 | | |
 
 |https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf[*TR-4800:
-EF600 arrays feature overview*] | |
-
+EF600 arrays feature overview*]
+|https://www.netapp.com/pdf.html?item=/media/116236-tr-5001-intro-to-netapp-e4000-arrays-with-santricity.pdf[*TR-5001: 
+E4000 arrays feature overview*^]  |
 |Describes the hardware and software features of the EF600 all-flash
-array and new SANtricity OS features. | |
+array and new SANtricity OS features.
+|Describes the hardware and software features of the E4000 hybrid array and the latest SANtricity OS features.  |
 |===
+
+

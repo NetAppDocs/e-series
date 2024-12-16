@@ -9,40 +9,51 @@ summary: Maintain the EF300 and EF600 hardware
 :imagesdir: ../media/
 
 [.lead]
+You might need to perform maintenance procedures on your hardware. Procedures specific to maintaining your EF300 or EF600 system components are in this section.
+
+The procedures in this section assume that the EF300 or EF600 system has already been deployed in the E-Series environment.
+
+== System components
 For the EF300 and EF600 storage systems, you can perform maintenance procedures on the following components.
 
-== Batteries
+[%rotate, grid="none", frame="none", cols="25,65"]
 
-A battery is included with a controller and preserves cached data if the AC power fails.
+|===
 
-== Controllers
+a| https://docs.netapp.com/us-en/e-series/maintenance-ef600/batteries-overview-requirements-concept.html[Batteries]
 
-A controller consists of a board, firmware, and software. It controls the drives and implements the SANtricity System Manager functions.
+a| A battery is included with a controller and preserves cached data if the AC power fails.
 
-== DIMMs
+a| https://docs.netapp.com/us-en/e-series/maintenance-ef600/controllers-overview-supertask-concept.html[Controllers]
 
-You must replace a DIMM (dual in-line memory module) when a memory mismatch is present, or you have a failed DIMM.
+a| A controller consists of a board, firmware, and software. It controls the drives and implements the SANtricity System Manager functions.
 
-== Drives
+a| https://docs.netapp.com/us-en/e-series/maintenance-ef600/dimms-overview-supertask-concept.html[DIMMs]
 
-A drive is a device that provides the physical storage media for data.
+a| You must replace a DIMM (dual in-line memory module) when a memory mismatch is present, or you have a failed DIMM.
 
-== Fans
+a| https://docs.netapp.com/us-en/e-series/maintenance-ef600/drives-overview-supertask-concept.html[Drives]
 
-Each EF300 or EF600 controller shelf or drive shelf includes five fans for cooling the controller.
+a| A drive is a device that provides the physical storage media for data.
 
-== Host interface cards (HICs)
+a| https://docs.netapp.com/us-en/e-series/maintenance-ef600/fans-overview-requirements-replacing2-concept.html[Fans]
 
-A host interface card (HIC) must be installed within a controller canister. The EF600 controller includes host ports on the optional HIC. Host ports that are built into the HIC are called HIC ports.
+a| Each EF300 or EF600 controller shelf or drive shelf includes five fans for cooling the controller.
 
-== Host port protocol
+a| https://docs.netapp.com/us-en/e-series/maintenance-ef600/hics-overview-supertask-concept.html[Host interface cards (HICs)]
 
-You can convert the protocol of a host to a different protocol so that compatibility and communication can be established.
+a| A host interface card (HIC) must be installed within a controller canister. The EF600 controller includes host ports on the optional HIC. Host ports that are built into the HIC are called HIC ports.
 
-== Power supplies
+a| https://docs.netapp.com/us-en/e-series/maintenance-ef600/hpp-overview-supertask-concept.html[Host port protocol]
 
-A power supply provides a redundant power source in a controller shelf.
+a| You can convert the protocol of a host to a different protocol so that compatibility and communication can be established.
 
-== SAS expansion cards
+a| https://docs.netapp.com/us-en/e-series/maintenance-ef600/power-overview-requirements2-concept.html[Power supplies]
 
-A SAS expansion card may be installed within a controller canister. The EF300 controller supports SAS expansion.
+a| A power supply provides a redundant power source in a controller shelf.
+
+a| https://docs.netapp.com/us-en/e-series/maintenance-ef600/sas-overview-supertask-concept.html[SAS expansion cards]
+
+a| A SAS expansion card may be installed within a controller canister. The EF300 controller supports SAS expansion.
+
+|===

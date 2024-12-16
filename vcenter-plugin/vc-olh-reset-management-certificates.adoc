@@ -10,7 +10,7 @@ summary: Revert the management certificate to the original, factory self-signed 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 For the management system hosting the Storage Plugin for vCenter, you can revert the management certificate to the original, factory self-signed state.

@@ -18,10 +18,10 @@ Learn how to prepare to install your E5724, EF570, EF280, E2812, E2824, DE212C, 
 +
 |===
 a|
-image:../media/trafford_overview.png[] a|
+image:../media/trafford_overview.png["Shelf with installed drives and bezel"] a|
 Shelf with drives installed     (bezel packaged separately)
 a|
-image:../media/superrails_inst-hw-e2800-e5700.png[]
+image:../media/superrails_inst-hw-e2800-e5700.png["Rack-mount hardware"]
 a|
 Rack-mount hardware
 |===
@@ -31,7 +31,7 @@ The following table identifies the types of cables you might receive. If you rec
 |===
 | Connector type| Cable type| Use
 a|
-image:../media/cable_ethernet_inst-hw-e2800-e5700.png[]
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png["Ethernet cables"]
 a|
 Ethernet cables
 
@@ -39,7 +39,7 @@ Ethernet cables
 a|
 Management connection
 a|
-image:../media/cable_io_inst-hw-e2800-e5700.png[]
+image:../media/cable_io_inst-hw-e2800-e5700.png["I/O cables"]
 a|
 I/O cables
 
@@ -47,7 +47,7 @@ I/O cables
 a|
 Cabling the data hosts
 a|
-image:../media/cable_power_inst-hw-e2800-e5700.png[]
+image:../media/cable_power_inst-hw-e2800-e5700.png["Power cables"]
 a|
 Power cables
 
@@ -55,7 +55,7 @@ Power cables
 a|
 Powering up the storage system
 a|
-image:../media/sas_cable.png[]
+image:../media/sas_cable.png["SAS cables"]
 a|
 SAS cables included only with the drive shelves
 a|
@@ -66,18 +66,18 @@ SAS cables
 +
 |===
 a|
-image:../media/screwdriver_inst-hw-e2800-e5700.png[] a|
+image:../media/screwdriver_inst-hw-e2800-e5700.png["Phillips #2 screwdriver"] a|
 Phillips #2 screwdriver
 a|
-image:../media/flashlight_inst-hw-e2800-e5700.png[]
+image:../media/flashlight_inst-hw-e2800-e5700.png["Flashlight"]
 a|
 Flashlight
 a|
-image:../media/wrist_strap_inst-hw-e2800-e5700.png[]
+image:../media/wrist_strap_inst-hw-e2800-e5700.png["ESD strap"]
 a|
 ESD strap
 a|
-image:../media/2u_rackspace_inst-hw-e2800-e5700.png[]
+image:../media/2u_rackspace_inst-hw-e2800-e5700.png[2U rack"]
 a|
 2U rack space: A standard 19 in. (48.30 cm) rack to fit 2U shelves of the following dimensions.
 
@@ -91,7 +91,7 @@ a|
 
 *Max Weight*: 60.5 lb (27.4 kg)
 a|
-image:../media/management_station_inst-hw-e2800-e5700_g60b3.png[]
+image:../media/management_station_inst-hw-e2800-e5700_g60b3.png["Management station with supported browser for management software"]
 a|
 A supported browser for the management software:
 

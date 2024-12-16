@@ -44,7 +44,7 @@ Save the packing materials to use when shipping the failed controller canister.
 
 . Locate the MAC address and FRU part number labels on the back of the controller canister.
 +
-image::../media/28_dwg_e2800_labels_maint-e2800.gif[]
+image::../media/28_dwg_e2800_labels_maint-e2800.gif["Mac address and FRU part number on E2800 controller"]
 +
 *(1)* _MAC address:_ The MAC address for management port 1 ("`P1`"). If you used DHCP to obtain the original controller's IP address, you need this address to connect to the new controller.
 +
@@ -56,7 +56,7 @@ image::../media/28_dwg_e2800_labels_maint-e2800.gif[]
 When a controller has a fault and needs to be replaced, the replacement part number is displayed in the Details area of the Recovery Guru. If you need to find this number manually, follow these steps:
 
  .. Select *Hardware*.
- .. Locate the controller shelf, which is marked with the controller icon image:../media/sam1130_ss_hardware_controller_icon_maint-e2800.gif[].
+ .. Locate the controller shelf, which is marked with the controller icon image:../media/sam1130_ss_hardware_controller_icon_maint-e2800.gif["Controller icon"].
  .. Click the controller icon.
  .. Select the controller, and click *Next*.
  .. On the *Base* tab, make a note of the *Replacement Part Number* for the controller.
@@ -138,7 +138,7 @@ Because you must remove the HIC from the failed controller canister, you must re
 +
 The following figure is an example of an E2812 controller shelf, E2824 controller shelf, or EF280 flash array:
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif["Remove controller canister"]
 +
 *(1)* _Controller canister_
 +
@@ -146,7 +146,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[]
 +
 The following figure is an example of an E2860 controller shelf:
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif["Remove controller canister"]
 +
 *(1)* _Controller canister_
 +
@@ -172,7 +172,7 @@ Remove the battery so you can install the new controller.
 +
 If this green LED is on, the controller is still using battery power. You must wait for this LED to go off before removing any components.
 +
-image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[]
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif["Internal Cache Active LED"]
 +
 *(1)* _Internal Cache Active LED_
 +
@@ -182,7 +182,7 @@ image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[]
 . Locate the blue release latch for the battery.
 . Unlatch the battery by pushing the release latch down and away from the controller canister.
 +
-image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[]
+image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif["Remove battery from controller canister"]
 +
 *(1)* _Battery release latch_
 +
@@ -200,7 +200,7 @@ If the controller canister includes a host interface card (HIC), you must remove
 +
 There are four screws: one on the top, one on the side, and two on the front.
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif["Remove faceplate"]
 
 . Remove the HIC faceplate.
 . Using your fingers or a Phillips screwdriver, loosen the three thumbscrews that secure the HIC to the controller card.
@@ -208,7 +208,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
 +
 CAUTION: Be careful not to scratch or bump the components on the bottom of the HIC or on the top of the controller card.
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif["Remove HIC from controller card"]
 +
 *(1)* _Host interface card (HIC)_
 +
@@ -237,7 +237,7 @@ You must insert the metal flange at the front of the battery into the slot on th
 +
 When the latch clicks into place, the bottom of the latch hooks into a metal slot on the chassis.
 +
-image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif[]
+image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif["Reinstall battery"]
 +
 *(1)* _Battery release latch_
 +
@@ -250,11 +250,11 @@ CAUTION: *Possible hardware damage* -- The metal flange at the front of the batt
 +
  ** *Correct* -- The battery's metal flange is completely inserted in the slot on the controller:
 +
-image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif[]
+image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif["Correct metal flange"]
 +
  ** *Incorrect* -- The battery's metal flange is not inserted into the slot on the controller:
 +
-image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[]
+image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif["Incorrect metal flange"]
 
 === Step 3b: Install host interface card (duplex)
 
@@ -271,7 +271,7 @@ Be careful not to scratch or bump the components on the bottom of the HIC or on 
 +
 CAUTION: *Possible equipment damage* -- Be very careful not to pinch the gold ribbon connector for the controller LEDs between the HIC and the thumbscrews.
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif["Reinstall HIC on the controller"]
 +
 *(1)* _Host interface card (HIC)_
 +
@@ -283,7 +283,7 @@ Do not use a screwdriver, or you might over tighten the screws.
 
 . Using a #1 Phillips screwdriver, attach the HIC faceplate you removed from the original controller canister to the new controller canister with four screws.
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif["Reinstall faceplate"]
 
 === Step 3c: Install new controller canister (duplex)
 
@@ -295,14 +295,14 @@ After installing the battery and the host interface card (HIC), if one was initi
 . Turn the controller canister over, so that the removable cover faces down.
 . With the cam handle in the open position, slide the controller canister all the way into the controller shelf.
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif["Reinstall controller canister"]
 +
 *(1)* _Controller canister_
 +
 *(2)* _Cam handle_
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif["Reinstall controller canister"]
 +
 *(1)* _Controller canister_
 +
@@ -330,7 +330,7 @@ When communication with the other controller is reestablished:
  ** The seven-segment display shows the repeating sequence *OS*, *OL*, *_blank_* to indicate that the controller is offline.
  ** The amber Attention LED remains on.
  ** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
-image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif[]
+image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif["E2800 controller LEDs"]
 +
 *(1)* _Attention LED (amber)_
 +
