@@ -10,7 +10,7 @@ summary: Replace a failed EF300 or EF600 host interface card (HIC).
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to replace a failed host interface card (HIC) in an EF300 or EF600 array.
+Follow this procedure to replace a failed host interface card (HIC) in an EF300, EF600, EF300C, or EF600C array.
 
 .About this task
 

@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/drives-replace-EF600-supertask-task.html
 sidebar: sidebar
-keywords: replace EF300 DIMM, replace EF600 DIMM, drive failure
+keywords: EF600, EF600C replace DIMM, drive failure
 summary: Replace a drive in an EF600 array.
 ---
 = Replace drive in an EF600 array
@@ -9,7 +9,7 @@ summary: Replace a drive in an EF600 array.
 :imagesdir: ../media/
 
 [.lead]
-You can replace a drive in an EF600 array.
+You can replace a drive in an EF600 or EF600C array.
 
 .About this task
 

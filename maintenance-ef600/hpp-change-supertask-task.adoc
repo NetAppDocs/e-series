@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/hpp-change-supertask-task.html
 sidebar: sidebar
-keywords: host protocol change, EF300 host protocol, EF600 host protocol
+keywords: host protocol change, EF300, EF600, EF600C, EF300C
 summary: Change the host port protocol for an EF300 or EF600 array.
 ---
 = Change host protocol for an EF300 or EF600
@@ -10,7 +10,7 @@ summary: Change the host port protocol for an EF300 or EF600 array.
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to change the host port protocol in an EF300 or EF600 array. This procedure applies only to host interface cards (HICs) using either Infiniband (IB) or Fibre Channel (FC).
+Follow this procedure to change the host port protocol in an EF300, EF600, EF300C, or EF600C array. This procedure applies only to host interface cards (HICs) using either Infiniband (IB) or Fibre Channel (FC).
 
 == Step 1: Obtain the feature pack key
 

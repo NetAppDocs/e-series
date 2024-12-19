@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/fans-replace-supertask-task.html
 sidebar: sidebar
-keywords: replace EF300 fan, replace EF600 fan, fan fail
+keywords: EF600, EF300, EF600C, EF300C, replace fan, fan fail
 summary: Replace a fan in an EF300 or EF600.
 ---
 = Replace an EF300 or EF600 fan
@@ -10,7 +10,7 @@ summary: Replace a fan in an EF300 or EF600.
 :imagesdir: ../media/
 
 [.lead]
-You can replace a fan in an EF300 or EF600 array.
+You can replace a fan in an EF300, EF600, EF300C, or EF600C array.
 
 .About this task
 Each EF300 and EF600 controller shelf or drive shelf includes five fans. If a fan fails, you must replace it as soon as possible to ensure that the shelf has adequate cooling.

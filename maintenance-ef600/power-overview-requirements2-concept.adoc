@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/power-overview-requirements2-concept.html
 sidebar: sidebar
-keywords: replace EF300 power supply, replace EF600 power supply,
+keywords: EF300, EF600, EF300C, EF600C, replace EF600 power supply,
 summary:  Review requirements and considerations before replacing an EF300 or EF600 power supply.
 ---
 =  Requirements for EF300 or EF600 power supply replacement
@@ -9,7 +9,7 @@ summary:  Review requirements and considerations before replacing an EF300 or EF
 :imagesdir: ../media/
 
 [.lead]
-Before replacing a power supply in an EF300 or EF600 array, review the following requirements.
+Before replacing a power supply in an EF300, EF600, EF300C, or EF600C array, review the following requirements.
 
 * You must have a replacement power supply that is supported for your controller shelf or drive shelf model.
 

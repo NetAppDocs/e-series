@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/hics-upgrade-intro.html
 sidebar: sidebar
-keywords: upgrade EF300 HIC, upgrade EF600 HIC, increase host ports, change host protocol
+keywords: EF600, EF300, EF300C, EF600C, upgrade HIC, upgrade HIC, increase host ports, change host protocol
 summary: You upgrade a host interface card (HIC) to increase the number of host ports or to change host protocols.
 ---
 = Upgrade EF300 or EF600 host interface card (HIC)
@@ -15,7 +15,7 @@ You can upgrade the host interface cards (HICs) to increase the number of host p
 .About this task
 
 * When you upgrade HICs, you must power off the storage array, upgrade the HICs, and reapply power.
-* When upgrading HICs in an EF300 or EF600 controller repeat all steps to remove the second controller, upgrade the second controller's HICs, and reinstall the second controller before reapplying power to the controller shelf.
+* When upgrading HICs in an EF300, EF600, EF300C, or EF600C controller repeat all steps to remove the second controller, upgrade the second controller's HICs, and reinstall the second controller before reapplying power to the controller shelf.
 
 .Before you begin
 

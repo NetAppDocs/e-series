@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/drives-overview-supertask-concept.html
 sidebar: sidebar
-keywords: replace EF300 drive, replace EF600 drive,
+keywords: EF300, EF600, EF600C, EF300C, replace drive,
 summary:  Review requirements and considerations before replacing  drives in EF300 or EF600.
 ---
 =  Requirements for EF300 or EF600 drive replacement
@@ -9,7 +9,7 @@ summary:  Review requirements and considerations before replacing  drives in EF3
 :imagesdir: ../media/
 
 [.lead]
-Before replacing a drive in an EF300 or EF600 array, review the requirements and considerations.
+Before replacing a drive in an EF300, EF600, EF300C, or EF600C array, review the requirements and considerations.
 
 CAUTION: Be aware that the drives in your storage array are fragile; improper drive handling is a leading cause of drive failure.
 
