@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/controllers-overview-supertask-concept.html
 sidebar: sidebar
-keywords: replace EF300 controller, replace EF600 controller,
+keywords: replace controller, EF300, EF600, EF300C, EF600C
 summary:  Requirements and considerations for EF300 or EF600 controller replacement
 ---
 = Requirements for EF300 or EF600 controller replacement
@@ -9,7 +9,7 @@ summary:  Requirements and considerations for EF300 or EF600 controller replacem
 :imagesdir: ../media/
 
 [.lead]
-Before you replace an EF300 or EF600 controller, review the requirements and considerations.
+Before you replace an EF300, EF600. EF300C, or EF600C controller, review the requirements and considerations.
 
 A controller consists of a board, firmware, and software. It controls the drives and implements the SANtricity System Manager functions.
 

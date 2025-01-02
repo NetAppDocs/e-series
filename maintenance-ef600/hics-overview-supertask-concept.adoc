@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/hics-overview-supertask-concept.html
 sidebar: sidebar
-keywords: replace EF600 HIC, replace EF300 HIC, host interface card failed, HIC failure
+keywords: EF300, EF600, EF300C, EF600C, replace HIC, replace HIC, host interface card failed, HIC failure
 summary:  Review requirements and considerations before replacing an EF300 or EF600 HIC.
 ---
 =  Requirements for EF300 or EF600 HIC upgrades
@@ -9,7 +9,7 @@ summary:  Review requirements and considerations before replacing an EF300 or EF
 :imagesdir: ../media/
 
 [.lead]
-Before upgrading or replacing a host interface card (HIC) in a EF300 or EF600 array, review the following requirements.
+Before upgrading or replacing a host interface card (HIC) in a EF300, EF600, EF300C, or EF600C array, review the following requirements.
 
 * You have scheduled a downtime maintenance window for this procedure. You cannot access data on the storage array until you have successfully completed this procedure. Because both controllers must have the same HIC configuration when they are powered on, the power must be off when you change HIC configuration. The presence of mismatched HICs causes the controller with the replacement HIC to lock down when you bring it online.
 * You have all cables, transceivers, switches, and host bus adapters (HBAs) needed to connect the new host ports.

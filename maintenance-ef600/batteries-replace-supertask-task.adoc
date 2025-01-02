@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/batteries-replace-supertask-task.html
 sidebar: sidebar
-keywords: replace EF300 battery, replace EF600 battery, EF300 battery fail, EF600 battery fail
+keywords: replace battery, battery fail, EF300C, EF600C, EF300, EF600
 summary: Replace a battery in an EF300 or EF600 array.
 ---
 = Replace EF300 or EF600 battery
@@ -10,7 +10,7 @@ summary: Replace a battery in an EF300 or EF600 array.
 :imagesdir: ../media/
 
 [.lead]
-You can replace a battery in an EF300 or EF600 storage system.
+You can replace a battery in an EF300, EF600, EF300C, or EF600C storage system.
 
 .About this task
 
