@@ -8,6 +8,8 @@ indexpage:
       links:
         - title: Quick start
           url: /getting-started/getup-run-concept.html
+        - title: E4000 datasheet
+          url: https://www.netapp.com/pdf.html?item=/media/116571-ds-4309-hybrid-flash-arrays-e4060-e4012.pdf
         - title: EF-Series datasheet
           url: https://www.netapp.com/pdf.html?item=/media/19339-DS-4082.pdf
         - title: E5700 datasheet
