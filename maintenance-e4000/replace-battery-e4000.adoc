@@ -146,7 +146,7 @@ Make sure you have the following:
 CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
 
 . If the host ports on the controller canister use SFP+ transceivers, leave them installed.
-. Confirm that the Cache Active LED on the back of the controller and the controller faceplate is off.
+. Confirm that the Cache Active LEDs on the back of the controller and the controller faceplate are off.
 +
 If either LED is on, the controller is still using battery power. They must be off before you continue with this procedure.
 . Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller canister from the midplane, and then, using two hands, pull the controller canister half-way out of the chassis.
