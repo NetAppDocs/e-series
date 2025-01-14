@@ -59,25 +59,13 @@ NOTE: Your storage array must be in an optimal state to retrieve client and serv
 . Make a direct, private ethernet connection between the storage array and the SANtricity client's laptop or PC. To do this:
 .. Use an RJ45 ethernet cable to connect the laptop to management port 1 on controller A.
 .. To complete the connection, you might need to assign the laptop to an IP address in the same subnet as controller A. During controller lockdown, controller A defaults to a management address of 192.168.128.101. So you can assign the laptop to a subnet such as "192.168.128.201".
-. Using default IP address 192.168.128.101 with username *admin* and the password blank, set up the external key management server using the `set storageArray externalKeyManagement` CLI command and provide the `serverAddress` and `serverPort` saved from link:prepare-upgrade-controllers-task.html[Prepare to upgrade controllers]. For information about using this command, see the https://docs.netapp.com/us-en/e-series-cli/index.html[Command Line Interface reference].
-+
-*Example:* `SMcli 192.168.128.101 -u admin -p "" -c "set storageArray externalKeyManagement serverAddress=<ServerIPAddress> serverPort=<serverPort>;"`
-+
-Alternatively, you can set up the external key management server via the Rest API through the following call: `/storage-systems/{system-id}/external-key-server`
-
-
-. Using the default IP address 192.168.128.101 with the username *admin* and the password remaining blank, import the certificates using the `storageArray keyManagementCertificate` CLI command: once for the client certificate and a second time for the server certificate.
-+
-*Example A:* `SMcli 192.168.128.101 -u admin -p "" -c "download storageArray keyManagementCertificate certificateType=client file=\"Directory&FileName\";"`
-+
-*Example B:* `SMcli 192.168.128.101 -u admin -p "" -c "download storageArray keyManagementCertificate certificateType=server file=\"Directory&FileName\";"`
-+
-Alternatively, you can import the keyserver certificate via the Rest API through the following call: `/storage-systems/{system-id}/external-key-server/certificate`
-
 . Using the security key saved from link:prepare-upgrade-controllers-task.html[Prepare to upgrade controllers], import the external key to IP address 192.168.128.101 with the username *admin* and the password remaining blank.
 +
 *Example:* `SMcli 192.168.128.101 -u admin -p "" -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
 +
 Alternatively, you can import the external key via the Rest API through the following call: `/storage-systems/{system-id}/security-key/import`
-
++
 Controllers will continue with the autocode synchronization process from the drives and reboot. After reboot the controllers will be accessible through the original IP configuration.
+. (Optional) If needed, the drives can be rekeyed by performing the following: 
++
+*Example:* `SMcli <original_controller _ip> -u admin -p "<original_array_password>" -c "create storageArray securityKey keyIdentifier=\"keyIdentifierString\" passPhrase=\"passPhraseString\" file=\"filename\";”`
