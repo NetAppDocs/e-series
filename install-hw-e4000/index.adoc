@@ -38,7 +38,7 @@ Learn how to attach the power cables and power on the drive shelves for an E4000
 * link:../install-hw-e4000/connect-cables-12.html[Cable E4012 hardware^]
 * link:../install-hw-e4000/connect-cables-60.html[Cable E4060 hardware^]
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Four] Complete storage system setup
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Complete storage system setup
 
 [role="quick-margin-para"]
 Learn how to cable the controllers to your network and complete storage system setup and configuration.
