@@ -144,6 +144,7 @@ Drives::
 * NVMe SSD drives: Up to 24 NVMe SSD drives in the controller shelf.
 ** No support for expansion shelf configurations.
 * Support for one host interface card per controller.
+* A single disk pool is created automatically if there are not enough unassigned drives during system boot. 
 
 Interfaces::
 +
@@ -294,6 +295,7 @@ Drives::
 * Support for two host interface cards per controller. 
 ** Alternatively, support for one 200Gb IB host interface card per controller. 
 ** No support for expansion shelf configurations.
+* A single disk pool is created automatically if there are not enough unassigned drives during system boot. 
 
 Interfaces::
 +
