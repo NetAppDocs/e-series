@@ -85,6 +85,8 @@ a|
 * E4000 does not support SAS configurations
 +
 * E4000 does not support Remote Storage Volumes 
++
+* The E4000 does not support in-band management using the Access volume. 
 
 a|
 E4000 controllers must use SAS-3 shelves.
@@ -110,6 +112,8 @@ a|
 * Infiniband Host interface card support is not available
 +
 * E4000 does not support SAS configurations 
++
+* E4000 does not support Remote Storage Volumes 
 +
 * The E4000 does not support in-band management using the Access volume. 
 
