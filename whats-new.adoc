@@ -35,6 +35,15 @@ a|Login lockout feature now available for Web Services
 a|Configurable through the REST API only, a new login lockout setting is now available for embedded and proxy Web Services.
 |===
 
+== New features in Version 11.80.1R3
+
+This version contains only minor changes and no new features or restrictions. For more information on the changes in this release, please refer to the README file.
+
+== New features in Version 11.80.1R2
+
+This version contains only minor changes and no new features or restrictions. For more information on the changes in this release, please refer to the README file.
+
+
 == New features in Version 11.80.1R1
 
 [cols="35h,~",options="header"]
