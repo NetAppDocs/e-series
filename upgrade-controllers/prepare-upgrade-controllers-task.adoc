@@ -46,11 +46,7 @@ Perform the following steps, in order:
 a|
 External key management, all drives locked, you are *not* able to transition to internal key management temporarily for the controller replacement.
 a|
-Perform the following steps, in order:
-
- .. Record the External KMS server address and port number. From System Manager, go to menu:Settings[System > Security Key Management > View/Edit Key Management Server Settings].
- .. Ensure that the client and server certificates are available on your local host so the storage array and key management server can authenticate each other after the controller replacement is finished. Use the `save storageArray keyManagementCertificate` CLI command to save the certificates. Be sure to run the command twice, once with the `certificateType` parameter set to `client`, and the other with the parameter set to `server`.
- .. Export the internal security key file to a known location on the management client (the system with a browser used for accessing System Manager). Use the `export storageArray securityKey` CLI command. You must provide the pass phrase associated with the security key and specify the location where you want to save the key.
+Contact Customer Support. 
 
 
 a|
