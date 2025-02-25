@@ -15,15 +15,25 @@ You can cable a host directly to a controller (direct-attached topology) or use 
 
 A direct-attached topology connects host adapters directly to controllers in your storage system.
 
-The following figure shows an example connection. To help ensure maximum performance, use all available host adapter ports.
+To help ensure maximum performance, use all available host adapter ports.
 
-.Two hosts and two controllers
+.One host with two HBAs 
 
-image::../media/topology_host_direct_generic_web_low.png["Two hosts and two controllers cabling"]
+The following figure shows an example of one host with two HBA installed.
 
-*(1)* _Connect each host adapter port directly to the host ports on the controllers._
+image::../media/1host_2hbas_ieops-2145.svg["One host/two HBAs and two controllers cabling"]
 
-NOTE: For the E4000, connect to host ports e0a and e0b.
+.One host with two HBAs (alternate cabling) 
+
+The following figure shows an example of one host with two HBA installed. 
+
+image::../media/1host_2hbas_alternate_wkflw_ieops-2147.svg["One host/two HBAs and two controllers cabling (alternate cabling)"]
+
+.Two hosts with two HBAs per host
+
+The following figure shows an example of two hosts each with two HBAs installed. 
+
+image::../media/2hosts_4hbas_ieops-2146.svg["Two host/four HBAs and two controllers cabling"]
 
 == Cabling for a switch topology
 
@@ -39,4 +49,3 @@ image::../media/topology_host_fabric_generic.png["Two hosts and two switches cab
 
 *(2)* _Connect each switch directly to the host ports on the controllers. To help ensure maximum performance, use all available host adapter ports._
 
-NOTE: For the E4000, connect to host ports e0a and e0b.
