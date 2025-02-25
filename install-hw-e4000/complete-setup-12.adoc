@@ -39,8 +39,7 @@ The following example shows cabling to the data hosts using a fabric topology.
 image:../media/drw_e4012_fabric_topology_ieops-2046.svg[E4012 Fabric Topology, width=1000px]
 
 . Connect each host adapter directly to the switch.
-. Connect each switch directly to the host ports e0a and e0b on the controllers.
-
+. Connect each switch directly to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
 
 --
 ====
