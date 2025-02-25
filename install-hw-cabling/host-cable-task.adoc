@@ -15,47 +15,25 @@ You can cable a host directly to a controller (direct-attached topology) or use 
 
 A direct-attached topology connects host adapters directly to controllers in your storage system.
 
-.Host bus adapter (HBA) guidelines
-For the highest level of redundancy and reliability, refer to the following guidelines when cabling a controller to a host bus adapter:
+To help ensure maximum performance, use all available host adapter ports.
 
-* port 0 connects to controller A
-* port 1 connects to controller B
-* port 2 connects to controller A
-* port 3 connects to controller B
-
-.Two hosts and two controllers
-
-The following figure shows an example connection. To help ensure maximum performance, use all available host adapter ports.
-
-image::../media/topology_host_direct_generic_web_low.png["Two hosts and two controllers cabling"]
-
-*(1)* _Connect each host adapter port directly to the host ports on the controllers._
-
-NOTE: For the E4000, connect to host ports e0a and e0b.
-
-.One host/two HBAs and two controllers 
+.One host and two HBAs 
 
 The following figure shows an example of one host and two HBA connections.
 
 image::../media/1host_2hbas_ieops-2145.png["One host/two HBAs and two controllers cabling"]
 
-*(1)* _Connect each host adapter port directly to the host ports on the controllers._
-
-.One host/two HBAs and one controller (alternate cabling) 
+.One host and two HBAs (alternate cabling) 
 
 The following figure shows an example of one host and two HBA connections. 
 
 image::../media/1host_2hbas_alternate_wkflw_ieops-2147.png["One host/two HBAs and two controllers cabling (alternate cabling)"]
 
-*(1)* _Connect each host adapter port directly to the host ports on the controllers._
-
-.Two host/four HBAs and two controller
+.Two host with two HBAs per host
 
 The following figure shows an example of two hosts and four HBA connections.
 
 image::../media/2hosts_4hbas_ieops-2146.png["Two host/four HBAs and two controllers cabling"]
-
-*(1)* _Connect each host adapter port directly to the host ports on the controllers._
 
 == Cabling for a switch topology
 
@@ -71,4 +49,3 @@ image::../media/topology_host_fabric_generic.png["Two hosts and two switches cab
 
 *(2)* _Connect each switch directly to the host ports on the controllers. To help ensure maximum performance, use all available host adapter ports._
 
-NOTE: For the E4000, connect to host ports e0a and e0b.
