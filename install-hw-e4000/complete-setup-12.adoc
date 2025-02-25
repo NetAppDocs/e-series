@@ -15,6 +15,7 @@ Learn how to cable the controllers to your network and complete storage system s
 
 Cable the system according to your network topology.
 
+NOTE: Host ports on the bottom left-side (e1a, e1b, e1c, and e1d) and upper right-side (e0a and e0b) of the controller can be used for data host cabling.
 
 [role="tabbed-block"]
 ====
@@ -26,9 +27,6 @@ The following example shows cabling to the data hosts using a direct-attach topo
 
 
 image:../media/drw_e4012_direct_topology_ieops-2047.svg[E4012 Direct Topology, width=1000px]
-
-. If you do not have expansion shelves installed, connect each host adapter directly to the host ports e0a and e0b on the controllers.
-
 
 --
 
