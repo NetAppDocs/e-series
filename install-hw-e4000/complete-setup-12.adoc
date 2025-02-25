@@ -28,7 +28,7 @@ The following example shows cabling to the data hosts using a direct-attach topo
 
 image:../media/drw_e4012_direct_topology_ieops-2047.svg[E4012 Direct Topology, width=1000px]
 
-. Connect each switch directly to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
+. Connect each host HBA port to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
 
 --
 
