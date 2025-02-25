@@ -30,6 +30,7 @@ image:../media/drw_e4060_direct_topology_ieops-2048.svg[E4060 Direct Topology, w
 
 . Connect each host HBA port to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
 
+NOTE: For additional cabling diagram examples, see https://docs.netapp.com/us-en/e-series/install-hw-cabling/host-cable-task.html#cabling-for-a-direct-attached-topology[Host Cabling^].
 
 --
 
