@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/hpp-overview-supertask-concept.html
 sidebar: sidebar
-keywords: convert EF300 host protocol, convert EF600 host protocol,
+keywords: convert host protocol, EF600, EF300, EF600C, EF300C
 summary:  Review requirements and considerations before converting the EF300 or EF600 host protocol.
 ---
 =  Requirements for EF300 or EF600 host protocol conversion
@@ -9,7 +9,7 @@ summary:  Review requirements and considerations before converting the EF300 or 
 :imagesdir: ../media/
 
 [.lead]
-Before converting the host protocol for an EF300 or EF600 array, review the following requirements.
+Before converting the host protocol for an EF300, EF600, EF300C, or EF600C array, review the following requirements.
 
 * You have scheduled a downtime maintenance window for this procedure.
 * You must stop host I/O operations when you perform the conversion. You cannot access data on the storage array until you have successfully completed the conversion.

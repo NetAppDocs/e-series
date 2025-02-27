@@ -1,7 +1,7 @@
 ---
 permalink: install-hw-ef600/prepare-for-install-task.html
 sidebar: sidebar
-keywords: EF300, EF600, installation, create account, register hardware
+keywords: EF300, EF600, EF300C, EF600C, installation, create account, register hardware
 summary: To install an EF300 or EF600, create an account and register your hardware.
 ---
 = Prepare for installation
@@ -9,7 +9,7 @@ summary: To install an EF300 or EF600, create an account and register your hardw
 :imagesdir: ../media/
 
 [.lead]
-Learn how to prepare for installation of your EF300 or EF600 series storage system.
+Learn how to prepare for installation of your EF300, EF600, EF300C, or EF600C series storage system.
 
 .Before you begin
 

@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/sas-add-supertask-task.html
 sidebar: sidebar
-keywords: replace EF300 SAS expansion card, replacing SAS card, drive tray expansion, expansion card
+keywords: replace SAS expansion card, replacing SAS card, drive tray expansion, expansion card, EF300C, EF600C, EF300, EF600
 summary: Add a SAS expansion card to EF300 controllers to allow for drive tray expansion.
 ---
 = Add SAS expansion card to EF300 and EF600
@@ -10,7 +10,7 @@ summary: Add a SAS expansion card to EF300 controllers to allow for drive tray e
 :imagesdir: ../media/
 
 [.lead]
-You can add a SAS expansion card to an EF300 or EF600 controller to allow for drive tray expansion.
+You can add a SAS expansion card to an EF300, EF600, EF300C, EF600C controller to allow for drive tray expansion.
 
 .About this task
 

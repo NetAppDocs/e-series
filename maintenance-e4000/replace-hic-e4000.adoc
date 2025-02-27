@@ -191,7 +191,9 @@ image::../media/drw_E4000_replace_HIC_source_IEOPS-864.png[Remove HIC and facepl
 NOTE: If you are using your fingers to the loosen the thumbscrew, you may need to press the battery release tab and rotate the battery up for better access. 
 . Reinstall the HIC:
 .. Align the socket on the replacement HIC plug with the socket on the motherboard, and then gently seat the card squarely into the socket.
-.. Tighten the three thumbscrews on the HIC.
+.. Hand-tighten the three thumbscrews on the HIC.
++
+Do not use a screwdriver, or you might over tighten the screws.
 .. Reinstall the HIC faceplate.
 . Reinstall the controller module cover and lock it into place.
 

@@ -47,7 +47,7 @@ a|
 
 * 2u24 (2 rack units; 24 drives)
 * 2.5" NVMe SSD drives
-* EF300 and EF600 controllers
+* EF300, EF600. EF300C, and EF600C controllers
 
 a|
 image:../media/ne224.gif["NE224"]

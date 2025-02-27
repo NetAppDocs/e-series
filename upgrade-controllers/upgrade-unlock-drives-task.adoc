@@ -25,20 +25,20 @@ Follow these steps for internal key management when all drives are locked.
 The newly swapped controllers will lock down with a seven-segment display code of *L5*. This lock-down occurs when no drives can perform autocode synchronization (ACS). After the security key is imported, ACS resumes and updates the new controllers.
 
 NOTE: If you are not using management port 1, try with other default IP addresses: +
-Ctrl A port 1: 192.168.128.101 +
-Ctrl A port 2: 192.168.128.102 +
-Ctrl B port 1: 192.168.129.101 +
-Ctrl B port 2: 192.168.129.102
+Ctrl A port 1: 169.254.128.101 +
+Ctrl A port 2: 169.254.128.102 +
+Ctrl B port 1: 169.254.128.101 +
+Ctrl B port 2: 169.254.128.102
 
 .Steps
 
 . Make a direct, private ethernet connection between the storage array and the SANtricity client's laptop or PC. To do this:
 .. Use an RJ45 ethernet cable to connect the laptop to management port 1 on controller A.
-.. To complete the connection, you might need to assign the laptop to an IP address in the same subnet as controller A. During controller lockdown, controller A defaults to a management address of 192.168.128.101. So you can assign the laptop to a subnet such as "192.168.128.201".
+.. To complete the connection, you might need to assign the laptop to an IP address in the same subnet as controller A. During controller lockdown, controller A defaults to a management address of 169.254.128.101. So you can assign the laptop to a subnet such as "169.254.128.201".
 
-. Using the IP address 192.168.128.101 with username *admin* and the password blank, import the internal key using the `import storageArray securityKey file` CLI command, with the security key saved from link:prepare-upgrade-controllers-task.html[Prepare to upgrade controllers]. For information about using this command, see the https://docs.netapp.com/us-en/e-series-cli/index.html[Command Line Interface reference].
+. Using the IP address 169.254.128.101 with username *admin* and the password blank, import the internal key using the `import storageArray securityKey file` CLI command, with the security key saved from link:prepare-upgrade-controllers-task.html[Prepare to upgrade controllers]. For information about using this command, see the https://docs.netapp.com/us-en/e-series-cli/index.html[Command Line Interface reference].
 +
-*Example:* `SMcli 192.168.128.101 -u admin -p "" -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
+*Example:* `SMcli 169.254.128.101 -k -u admin -p "" -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
 +
 Alternatively, you can import the internal key via the Rest API through the following call: `/storage-systems/{system-id}/security-key/import`
 
@@ -52,32 +52,18 @@ Follow these steps for external key management when all drives are locked.
 
 The newly swapped controllers will lock down with a seven-segment display code of *L5*. This lock-down occurs when no drives can perform autocode synchronization (ACS). After the security key is imported, ACS resumes and updates the new controllers.
 
-NOTE: Your storage array must be in an optimal state to retrieve client and server certificates. If the certificates are not retrievable, then you must create a new certificate signing request (CSR) and then import the server certificate from the external key management server.
-
 .Steps
 
 . Make a direct, private ethernet connection between the storage array and the SANtricity client's laptop or PC. To do this:
 .. Use an RJ45 ethernet cable to connect the laptop to management port 1 on controller A.
-.. To complete the connection, you might need to assign the laptop to an IP address in the same subnet as controller A. During controller lockdown, controller A defaults to a management address of 192.168.128.101. So you can assign the laptop to a subnet such as "192.168.128.201".
-. Using default IP address 192.168.128.101 with username *admin* and the password blank, set up the external key management server using the `set storageArray externalKeyManagement` CLI command and provide the `serverAddress` and `serverPort` saved from link:prepare-upgrade-controllers-task.html[Prepare to upgrade controllers]. For information about using this command, see the https://docs.netapp.com/us-en/e-series-cli/index.html[Command Line Interface reference].
+.. To complete the connection, you might need to assign the laptop to an IP address in the same subnet as controller A. During controller lockdown, controller A defaults to a management address of 169.254.128.101. So you can assign the laptop to a subnet such as "169.254.128.201".
+. Using the security key saved from link:prepare-upgrade-controllers-task.html[Prepare to upgrade controllers], import the external key to IP address 169.254.128.101 with the username *admin* and the password remaining blank.
 +
-*Example:* `SMcli 192.168.128.101 -u admin -p "" -c "set storageArray externalKeyManagement serverAddress=<ServerIPAddress> serverPort=<serverPort>;"`
-+
-Alternatively, you can set up the external key management server via the Rest API through the following call: `/storage-systems/{system-id}/external-key-server`
-
-
-. Using the default IP address 192.168.128.101 with the username *admin* and the password remaining blank, import the certificates using the `storageArray keyManagementCertificate` CLI command: once for the client certificate and a second time for the server certificate.
-+
-*Example A:* `SMcli 192.168.128.101 -u admin -p "" -c "download storageArray keyManagementCertificate certificateType=client file=\"Directory&FileName\";"`
-+
-*Example B:* `SMcli 192.168.128.101 -u admin -p "" -c "download storageArray keyManagementCertificate certificateType=server file=\"Directory&FileName\";"`
-+
-Alternatively, you can import the keyserver certificate via the Rest API through the following call: `/storage-systems/{system-id}/external-key-server/certificate`
-
-. Using the security key saved from link:prepare-upgrade-controllers-task.html[Prepare to upgrade controllers], import the external key to IP address 192.168.128.101 with the username *admin* and the password remaining blank.
-+
-*Example:* `SMcli 192.168.128.101 -u admin -p "" -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
+*Example:* `SMcli 169.254.128.101 -k -u admin -p "" -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
 +
 Alternatively, you can import the external key via the Rest API through the following call: `/storage-systems/{system-id}/security-key/import`
-
++
 Controllers will continue with the autocode synchronization process from the drives and reboot. After reboot the controllers will be accessible through the original IP configuration.
+. (Optional) If needed, the drives can be rekeyed by performing the following: 
++
+*Example:* `SMcli <original_controller _ip> -u admin -p "<original_array_password>" -c "create storageArray securityKey" passPhrase=\"passPhraseString\" file=\"filename\";”`
