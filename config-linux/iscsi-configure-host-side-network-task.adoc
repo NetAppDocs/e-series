@@ -157,7 +157,6 @@ iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
 
  .. Create the connection between the iSCSI initiators and iSCSI targets.
 +
-
 *Method 1 (with ifaces)*
 +
 ----
