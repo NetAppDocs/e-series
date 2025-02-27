@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/drives-replace-EF300-supertask-task.html
 sidebar: sidebar
-keywords: replace EF300 drive, replace EF600 drive, drive failure
+keywords: EF300, EF300C, replace drive, drive failure
 summary: Replace a drive in an EF300 array.
 ---
 = Replace drive in an EF300 array
@@ -9,9 +9,9 @@ summary: Replace a drive in an EF300 array.
 :imagesdir: ../media/
 
 [.lead]
-You can replace a drive in an EF300 array.
+You can replace a drive in an EF300 or EF300C array.
 
-The EF300 supports SAS expansion with 24-drive and 60-drive shelves. The procedure you follow depends on whether you have a 24-drive shelf or a 60-drive shelf:
+The EF300 and EF300C supports SAS expansion with 24-drive and 60-drive shelves. The procedure you follow depends on whether you have a 24-drive shelf or a 60-drive shelf:
 
 * <<Replace drive in an EF300 (24-drive shelf)>>
 * <<Replace drive in an EF300 (60-drive shelf)>>
