@@ -11,7 +11,19 @@ summary: New features in SANtricity OS.
 :imagesdir: ./media/
 
 [.lead]
-The following table describes new features in the latest SANtricity OS releases for embedded management of E4000, EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
+The following table describes new features in the latest SANtricity OS releases for embedded management of E4000, EF300/EF300C, EF600/EF600C, E2800/EF280, and E5700/EF570 controllers.
+
+
+== New features in Version 11.90R1
+
+[cols="35h,~",options="header"]
+|===
+|New feature |Description
+a|New storage system models – EF300C and EF600C
+a|This release introduces the EF300C and EF600C all flash NVMe storage systems. The EF300C and EF600C are high-capacity flash versions of the existing EF300 and EF600 storage systems. High-capacity NVMe SSD drives of 30TB or 60TB sizes are supported with the EF300C and EF600C. The EF300C/EF600C is compatible for Dynamic Disk Pool use only with no legacy RAID support.  
+a|Support for 12Gb SAS interfaces on E4000 controllers
+a|The E4000 controller now supports 12Gb SAS host interface cards.   
+|===
 
 
 == New features in Version 11.90.1

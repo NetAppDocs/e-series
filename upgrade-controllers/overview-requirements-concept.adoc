@@ -47,6 +47,12 @@ If you are replacing the controllers to upgrade to a new model, keep in mind tha
 +
 When upgrading your E-Series controller, you should disable any premium features used on your storage array that are not supported on the new controllers.
 
+* *In-band management using the Access volume*
++
+** The E4000 does not support in-band management using the Access volume. 
++
+Before upgrading to E4000 controllers, unmap the Access volume from all defined hosts and host clusters.
+
 == Upgrade compatibility
 
 Review the supported upgrade paths for each storage array model.
@@ -79,6 +85,8 @@ a|
 * E4000 does not support SAS configurations
 +
 * E4000 does not support Remote Storage Volumes 
++
+* The E4000 does not support in-band management using the Access volume. 
 
 a|
 E4000 controllers must use SAS-3 shelves.
@@ -105,6 +113,9 @@ a|
 +
 * E4000 does not support SAS configurations 
 +
+* E4000 does not support Remote Storage Volumes 
++
+* The E4000 does not support in-band management using the Access volume. 
 
 a|
 E4000 controllers must use SAS-3 shelves.

@@ -15,6 +15,7 @@ Learn how to cable the controllers to your network and complete storage system s
 
 Cable the system according to your network topology.
 
+NOTE: Host ports on the bottom left-side (e1a, e1b, e1c, and e1d) and upper right-side (e0a and e0b) of the controller can be used for data host cabling.
 
 [role="tabbed-block"]
 ====
@@ -27,8 +28,9 @@ The following example shows cabling to the data hosts using a direct-attach topo
 
 image:../media/drw_e4012_direct_topology_ieops-2047.svg[E4012 Direct Topology, width=1000px]
 
-. If you do not have expansion shelves installed, connect each host adapter directly to the host ports e0a and e0b on the controllers.
+. Connect each host HBA port to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
 
+NOTE: For additional cabling diagram examples, see https://docs.netapp.com/us-en/e-series/install-hw-cabling/host-cable-task.html#cabling-for-a-direct-attached-topology[Host Cabling^].
 
 --
 
@@ -41,8 +43,7 @@ The following example shows cabling to the data hosts using a fabric topology.
 image:../media/drw_e4012_fabric_topology_ieops-2046.svg[E4012 Fabric Topology, width=1000px]
 
 . Connect each host adapter directly to the switch.
-. Connect each switch directly to the host ports e0a and e0b on the controllers.
-
+. Connect each switch directly to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
 
 --
 ====
