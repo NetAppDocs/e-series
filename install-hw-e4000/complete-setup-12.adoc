@@ -26,7 +26,7 @@ NOTE: Host ports on the bottom left-side (e1a, e1b, e1c, and e1d) and upper righ
 The following example shows cabling to the data hosts using a direct-attach topology.
 
 
-image:../media/drw_e4012_direct_topology_ieops-2047.svg[E4012 Direct Topology, width=1000px]
+image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, width=1000px]
 
 . Connect each host HBA port to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
 
@@ -40,7 +40,7 @@ NOTE: For additional cabling diagram examples, see https://docs.netapp.com/us-en
 The following example shows cabling to the data hosts using a fabric topology.
 
 
-image:../media/drw_e4012_fabric_topology_ieops-2046.svg[E4012 Fabric Topology, width=1000px]
+image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, width=1000px]
 
 . Connect each host adapter directly to the switch.
 . Connect each switch directly to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
