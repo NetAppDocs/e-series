@@ -13,6 +13,14 @@ summary: New features in SANtricity OS.
 [.lead]
 The following table describes new features in the latest SANtricity OS releases for embedded management of E4000, EF300/EF300C, EF600/EF600C, E2800/EF280, and E5700/EF570 controllers.
 
+== New features in Version 11.90R2
+
+[cols="35h,~",options="header"]
+|===
+|New feature |Description
+a|Added support for IOM12C and DCM3 SAS-3 shelves
+a|Support for IOM12C and DCM3 SAS-3 shelves is now available. The IOM12C and DCM3 shelves are replacements for the IOM12B and DCM3 shelves, respectively.      
+|===
 
 == New features in Version 11.90R1
 
