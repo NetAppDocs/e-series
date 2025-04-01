@@ -18,8 +18,8 @@ The following table describes new features in the latest SANtricity OS releases 
 [cols="35h,~",options="header"]
 |===
 |New feature |Description
-a|Added support for IOM12C and DCM3 SAS-3 shelves
-a|Support for IOM12C and DCM3 SAS-3 shelves is now available. The IOM12C and DCM3 shelves are replacements for the IOM12B and DCM3 shelves, respectively.      
+a|Additional host side cabling configurations now supported on E4000 controllers with SAS host interface cards 
+a|Host side cabling restrictions for E4000 controllers with SAS host interface cards have been lifted. See the https://review.docs.netapp.com/us-en/e-series_dev-thunderboltR2-dr/known-issues.html[E-Series 11.90R2 Release Notes^] for additional information.    
 |===
 
 == New features in Version 11.90R1
