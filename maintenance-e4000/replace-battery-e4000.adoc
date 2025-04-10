@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You must replace the affected battery in your E4000 appliance if the Recovery Guru in SANtricity System Manager indicates a "Battery Failed" or "Battery Replacement Required" status. To protect your data, the battery must be replaced as soon as possible.
+You must replace the affected battery in your E4000 if the Recovery Guru in SANtricity System Manager indicates a "Battery Failed" or "Battery Replacement Required" status. To protect your data, the battery must be replaced as soon as possible.
 
 From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a battery and to ensure no other items must be addressed first.
 
@@ -198,20 +198,12 @@ After you replace components in the controller canister, reinstall it into the c
 
 . If you are not already grounded, properly ground yourself.
 . If you have not already done so, replace the cover on the controller canister.
-. Turn the controller canister over and align the end with the opening in the chassis.
-. Align the end of the controller canister with the opening in the chassis, and then gently push the controller canister halfway into the system.
+. Turn the controller over, so that the removable cover faces down.
+. With the cam handle in the open position, slide the controller all the way into the shelf.
+. Replace the cables.
 +
-NOTE: Do not completely insert the controller canister in the chassis until instructed to do so.
-. Recable the system, as needed.
-. If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
-. Complete the reinstallation of the controller canister:
-.. With the cam handle in the open position, firmly push the controller canister in until it meets the midplane and is fully seated, and then close the cam handle to the locked position.
-+
-NOTE: Do not use excessive force when sliding the controller canister into the chassis to avoid damaging the connectors.
-+
-The controller begins to boot as soon as it is seated in the chassis.
-.. If you have not already done so, reinstall the cable management device.
-.. Bind the cables to the cable management device with the hook and loop strap.
+NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
+. Bind the cables to the cable management device with the hook and loop strap.
 
 
 == Step 5: Complete battery replacement
