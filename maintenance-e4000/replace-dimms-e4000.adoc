@@ -196,14 +196,6 @@ Reinstall the controller canister into the chassis.
 +
 NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 . Bind the cables to the cable management device with the hook and loop strap.
-. Complete the reinstallation of the controller canister:
-.. With the cam handle in the open position, firmly push the controller canister in until it meets the midplane and is fully seated, and then close the cam handle to the locked position.
-+
-NOTE: Do not use excessive force when sliding the controller canister into the chassis to avoid damaging the connectors.
-+
-The controller begins to boot as soon as it is seated in the chassis.
-.. If you have not already done so, reinstall the cable management device.
-.. Bind the cables to the cable management device with the hook and loop strap.
 
 
 == Step 6: Complete DIMMs replacement
