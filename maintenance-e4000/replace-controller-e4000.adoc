@@ -297,14 +297,17 @@ Reestablish connection to the controller shelf, collect support data, and resume
 
 .Steps
 
-. Install the replacement controller into the appliance.
- .. Turn the controller over, so that the removable cover faces down.
- .. With the cam handle in the open position, slide the controller all the way into the appliance.
- .. Move the cam handle to the left to lock the controller in place.
- .. Replace the cables.
- .. Power on the controller shelf.
- .. Wait for the E4000 controller to reboot.
- .. Determine how you will assign an IP address to the replacement controller.
+. Install the replacement controller into the shelf.
+.. If you are not already grounded, properly ground yourself.
+.. Turn the controller over, so that the removable cover faces down.
+.. With the cam handle in the open position, slide the controller all the way into the shelf.
+.. Replace the cables.
++
+NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
+.. Bind the cables to the cable management device with the hook and loop strap.
+.. Power on the controller shelf.
+.. Wait for the E4000 controller to reboot.
+.. Determine how you will assign an IP address to the replacement controller.
 +
 NOTE: The steps for assigning an IP address to the replacement controller depend on whether you connected the management port to a network with a DHCP server and on whether all drives are secured.
 +
@@ -377,12 +380,16 @@ The file is saved in the Downloads folder for your browser with the name, *suppo
 
 .Steps
 
-. Install the replacement controller into the appliance.
- .. Turn the controller over, so that the removable cover faces down.
- .. With the cam handle in the open position, slide the controller all the way into the appliance.
- .. Move the cam handle to the left to lock the controller in place.
- .. Replace the cables.
- .. If the original controller used DHCP for the IP address, locate the MAC address on the label on the back of the replacement controller. Ask your network administrator to associate the DNS/network and IP address for the controller you removed with the MAC address for the replacement controller.
+. Install the replacement controller into the shelf.
+.. If you are not already grounded, properly ground yourself.
+.. If you have not already done so, replace the cover on the controller canister.
+.. Turn the controller over, so that the removable cover faces down.
+.. With the cam handle in the open position, slide the controller all the way into the shelf.
+.. Replace the cables.
++
+NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
+.. Bind the cables to the cable management device with the hook and loop strap.
+.. If the original controller used DHCP for the IP address, locate the MAC address on the label on the back of the replacement controller. Ask your network administrator to associate the DNS/network and IP address for the controller you removed with the MAC address for the replacement controller.
 +
 NOTE: If the original controller did not use DHCP for the IP address, the new controller will adopt the IP address of the controller you removed.
 . Place controller online.

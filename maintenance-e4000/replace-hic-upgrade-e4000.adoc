@@ -115,19 +115,12 @@ Reinstall the controller canister into the chassis.
 
 . If you are not already grounded, properly ground yourself.
 . If you have not already done so, replace the cover on the controller canister.
-. Turn the controller canister over and align the end with the opening in the chassis.
-. Align the end of the controller canister with the opening in the chassis, and then gently push the controller canister halfway into the system.
+. Turn the controller over, so that the removable cover faces down.
+. With the cam handle in the open position, slide the controller all the way into the shelf.
+. Replace the cables.
 +
-NOTE: Do not completely insert the controller canister in the chassis until instructed to do so.
-. Recable the system, as needed.
-+
-If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
-. Complete the reinstallation of the controller canister:
-.. With the cam handle in the open position, firmly push the controller canister in until it meets the midplane and is fully seated, and then close the cam handle to the locked position.
-+
-NOTE: Do not use excessive force when sliding the controller canister into the chassis to avoid damaging the connectors.
-.. If you have not already done so, reinstall the cable management device.
-.. Bind the cables to the cable management device with the hook and loop strap.
+NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
+. Bind the cables to the cable management device with the hook and loop strap.
 . Repeat <<step2_remove_controller_canister, Step 2: Remove controller canister>>, <<step3_upgrade_hic, Step 3: Upgrade the HIC>>, and <<step4_reinstall_controller, Step 4: Reinstall controller canister>> for the second controller.
 
 == Step 5: Complete the HIC upgrade
