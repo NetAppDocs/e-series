@@ -28,6 +28,18 @@ a|Support for 12Gb SAS interfaces on E4000 controllers
 a|The E4000 controller now supports 12Gb SAS host interface cards.   
 |===
 
+
+== New features in Version 11.90.1
+
+[cols="35h,~",options="header"]
+|===
+|New feature |Description
+a|New storage system models – EF300C and EF600C
+a|This release introduces the EF300C and EF600C all flash NVMe storage systems. The EF300C and EF600C are all high-capacity flash versions of the existing EF300 and EF600 storage systems. High-capacity NVMe SSD drives of 30TB and 60TB sizes are supported with the EF300C and EF600C. 
+a|Support for 12Gb SAS interfaces on EF4000
+a|The E4000 controller now supports 12Gb SAS host interface cards.   
+|===
+
 == New features in Version 11.90
 
 [cols="35h,~",options="header"]
