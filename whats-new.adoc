@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: whats-new.html
-keywords: whats new, new features, SANtricity 11.90
+keywords: whats new, new features, SANtricity 11.90, SANtricity 11.80
 summary: New features in SANtricity OS.
 ---
 
@@ -49,6 +49,10 @@ a|Certificate signing request (CSR) file generated externally through private an
 a|Login lockout feature now available for Web Services  
 a|Configurable through the REST API only, a new login lockout setting is now available for embedded and proxy Web Services.
 |===
+
+== New features in Version 11.80.1R4
+
+This version contains only minor changes and no new features or restrictions. For more information on the changes in this release, please refer to the README file.
 
 == New features in Version 11.80.1R3
 
