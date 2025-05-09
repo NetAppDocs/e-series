@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: You verify Internet Protocol \(IP\) network connections by using ping tests to ensure the host and array are able to communicate.
 ---
-= Verify IP network connections
+= Verify IP network connections in E-Series - Linux (iSCSI)
 :icons: font
 :imagesdir: ../media/
 

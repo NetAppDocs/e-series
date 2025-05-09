@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: define Linux host, configure linux host, express linux configuration, linux host,
 summary: Using SANtricity System Manager, you define the hosts that send data to the storage array. Defining a host is one of the steps required to let the storage array know which hosts are attached to it and to allow I/O access to the volumes.
 ---
-= Define a host
+= Create a host using SANtricity System Manager - Linux (NVMe over RoCE)
 :experimental:
 :icons: font
 :imagesdir: ../media/

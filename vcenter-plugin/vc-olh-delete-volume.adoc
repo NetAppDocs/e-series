@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Delete one or more volumes to increase the free capacity of a pool or volume group.
 ---
 
-= Delete volume
+= Delete volume in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

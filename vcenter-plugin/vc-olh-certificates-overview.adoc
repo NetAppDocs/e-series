@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Certificate Management allows you to create certificate signing requests (CSRs), import certificates, and manage existing certificates.
 ---
 
-= Certificates overview
+= Learn about managing certificates in SANtricity Storage Plugin for vCenter
 :hardbreaks:
 :nofooter:
 :icons: font

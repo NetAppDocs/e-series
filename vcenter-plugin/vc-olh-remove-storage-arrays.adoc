@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Remove one or more storage arrays if you no longer want to manage it from the Storage Plugin for vCenter.
 ---
 
-= Remove storage arrays
+= Remove storage arrays in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

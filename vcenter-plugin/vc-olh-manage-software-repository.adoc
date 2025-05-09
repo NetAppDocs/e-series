@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: You can view and manage a software repository, which lists all software files associated with the Storage Plugin for vCenter.
 ---
 
-= Manage software repository
+= Manage software repository in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

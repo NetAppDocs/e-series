@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Manually initialize a volume to recover from certain failure conditions.
 ---
 
-= Initialize volumes
+= Initialize volumes in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

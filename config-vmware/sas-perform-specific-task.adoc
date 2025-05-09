@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sas, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: For the SAS protocol, you determine host port addresses and make the recommended settings.
 ---
-= Perform SAS-specific tasks
+= Perform SAS-specific tasks in E-Series - VMware
 :icons: font
 :imagesdir: ../media/
 

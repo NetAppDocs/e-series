@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: View statistics for the SSD Cache, such as reads, writes, cache hits, cache allocation percentage, and cache utilization percentage.
 ---
 
-= View SSD Cache statistics
+= View SSD Cache statistics in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

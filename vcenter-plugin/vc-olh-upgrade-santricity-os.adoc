@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Upgrade one or more storage arrays with the latest software and NVSRAM to make sure that you have all the latest features and bug fixes.
 ---
 
-= Upgrade SANtricity OS
+= Upgrade SANtricity software and NVSRAM using the Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

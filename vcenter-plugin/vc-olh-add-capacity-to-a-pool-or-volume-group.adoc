@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Add drives to expand the free capacity in an existing pool or volume group.
 ---
 
-= Add capacity to a pool or volume group
+= Add capacity to a pool or volume group in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

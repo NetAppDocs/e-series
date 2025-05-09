@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Export a certificate to view its complete details.
 ---
 
-= Export certificates
+= Export certificates in SANtricity Storage Plugin for vCenter
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: access System Manager Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: You use the Setup wizard in SANtricity System Manager to configure your storage array.
 ---
-= Access SANtricity System Manager and use Setup wizard
+= Configure your storage using SANtricity System Manager - Linux (NVMe over FC)
 :experimental:
 :icons: font
 :imagesdir: ../media/
