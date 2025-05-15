@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: multipath software for Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: Configure multipath software, which  provides a redundant path to the storage array in case one of the physical paths is disrupted.
 ---
-= Configure the multipath software
+= Configure multipath software in E-Series - Linux (SAS)
 :icons: font
 :imagesdir: ../media/
 

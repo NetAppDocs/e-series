@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: The Import Settings feature is a batch operation that allows you to replicate the settings in a single storage array (the source) to multiple arrays (the targets).
 ---
 
-= Import settings overview
+= Learn about Import Settings feature in SANtricity Storage Plugin for vCenter
 :hardbreaks:
 :nofooter:
 :icons: font

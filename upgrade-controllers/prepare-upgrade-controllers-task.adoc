@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, upgrade controller requirements, upgrade controller key management, prepare upgrade controller, upgrade controller preparation, preparing controller upgrade
 summary: Prepare to upgrade controllers by saving the drive security key, gathering support data, and taking the controller offline.
 ---
-= Prepare to upgrade controllers
+= Prepare to upgrade E-Series controllers
 :experimental:
 :icons: font
 :imagesdir: ../media/

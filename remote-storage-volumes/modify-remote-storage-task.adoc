@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: modify Remote Storage Volumes settings, RTV settings, remote volume settings, remote storage E-Series
 summary: You can modify the connection settings for any configured Remote Storage import through the View/Edit Settings option under the Remote Storage screen of the SANtricity System Manager.
 ---
-= Modify remote storage connection settings
+= Modify remote storage connection settings for SANtricity Remote Storage Volumes
 :icons: font
 :imagesdir: ../media/
 

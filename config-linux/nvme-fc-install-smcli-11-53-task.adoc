@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install Storage Manager Linux, install CLI Windows, install command line interface, install Host Context Agent, install HCA, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: Install Storage Manager for CLI and HCA in Linux express method.
 ---
-= Install SANtricity Storage Manager for SMcli (SANtricity software version 11.53 or earlier)
+= Install SANtricity Storage Manager for SMcli (11.53 or earlier) - Linux (NVMe over FC)
 :experimental:
 :icons: font
 :imagesdir: ../media/

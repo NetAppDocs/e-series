@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: import Remote Storage Volumes, RTV import, import remote volumes, remote storage E-Series
 summary: The import of the remote storage device is performed through the Import Remote Storage wizard under the SANtricity System Manager. The Remote Storage Import feature allows data from a remote storage device to be moved to the local E-Series array.
 ---
-= Import remote storage
+= Import remote storage for SANtricity Remote Storage Volumes
 :icons: font
 :imagesdir: ../media/
 

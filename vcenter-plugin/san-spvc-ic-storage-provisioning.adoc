@@ -5,7 +5,7 @@ keywords: create volumes vCenter plugin, provision Plugin for vCenter, vCenter p
 summary: Use the Plugin for vCenter to create volumes, assign volumes to hosts, and then assign volumes to datastores.
 ---
 
-= Provision storage in the plugin
+= Provision storage in the SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

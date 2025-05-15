@@ -5,7 +5,7 @@ keywords: user access vCenter plugin, user roles vCenter plugin, privileges vCen
 summary: Configure access permissions for Storage Plugin for vCenter.
 ---
 
-= Configure plugin access permissions
+= Configure the SANtricity Storage Plugin for vCenter access permissions
 :experimental:
 :hardbreaks:
 :nofooter:

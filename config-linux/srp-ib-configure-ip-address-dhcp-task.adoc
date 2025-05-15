@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: Use Dynamic Host Configuration Protocol \(DHCP\) to provide IP addresses.
 ---
-= Configure IP addresses using DHCP
+= Configure IP addresses using DHCP in E-Series - Linux (SRP over InfiniBand)
 :icons: font
 :imagesdir: ../media/
 

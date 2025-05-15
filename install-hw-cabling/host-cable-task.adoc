@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, host cabling, direct-attached topology, switch topology, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C,
 summary: You can cable a host directly to a controller or use switches.
 ---
-= Host cabling
+= Cabling to connect a host to controllers or swtiches (E-Series)
 :icons: font
 :imagesdir: ../media/
 

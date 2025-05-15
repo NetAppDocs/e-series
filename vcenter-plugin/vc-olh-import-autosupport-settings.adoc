@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Import an AutoSupport configuration from one storage array to other storage arrays.
 ---
 
-= Import AutoSupport settings
+= Import AutoSupport settings in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

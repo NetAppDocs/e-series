@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Channel protocol, iSCSI protocol, convert HPP, converting host port protocol, SFP+ (optical) host ports, E2800, E-Series, eseries
 summary: Change the host port protocol from Fibre Channel (FC) to iSCSI or from iSCSI to FC.
 ---
-= Change host protocol for E2800
+= Change the host protocol - E2800
 :experimental:
 :icons: font
 :imagesdir: ../media/

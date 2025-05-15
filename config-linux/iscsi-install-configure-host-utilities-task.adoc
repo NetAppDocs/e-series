@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Linux Unified Host Utilities, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries, SMcli, SMdevices
 summary: Install Linux Unified Host Utilities when using iSCSI.
 ---
-= Install and configure Linux Unified Host Utilities
+= Install and configure Linux Unified Host Utilities in E-Series (iSCSI)
 :icons: font
 :imagesdir: ../media/
 

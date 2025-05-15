@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Change the storage array’s name displayed on the Manage page.
 ---
 
-= Rename storage array
+= Rename a storage array in SANtricity Storage Plugin for vCenter
 :hardbreaks:
 :nofooter:
 :icons: font

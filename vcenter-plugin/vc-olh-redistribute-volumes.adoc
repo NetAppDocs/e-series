@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Redistribute volumes to move volumes back to their preferred controller owners
 ---
 
-= Redistribute volumes
+= Redistribute volumes in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

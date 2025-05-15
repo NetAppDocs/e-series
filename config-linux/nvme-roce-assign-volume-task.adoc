@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: assign volume Linux, assign namespace Linux, express linux configuration, linux host,
 summary: You must assign a volume \(namespace\) to a host or host cluster so it can be used for I/O operations. This assignment grants a host or host cluster access to one or more namespaces in a storage array.
 ---
-= Assign a volume
+= Assign a volume using SANtricity System Manager - Linux (NVMe over RoCE)
 :experimental:
 :icons: font
 :imagesdir: ../media/

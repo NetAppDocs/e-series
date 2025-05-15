@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Delete one or more certificates that are no longer needed.
 ---
 
-= Delete trusted certificates
+= Delete trusted certificates in SANtricity Storage Plugin for vCenter
 :hardbreaks:
 :nofooter:
 :icons: font

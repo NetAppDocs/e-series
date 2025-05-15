@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: Using an InfiniBand switch to run subnet manager might cause unexpected path loss during high loads. To avoid path loss, configure the subnet manager on one or more of your hosts using opensm.
 ---
-= Configure subnet manager
+= Configure subnet manager in E-Series - Linux (SRP over InfiniBand)
 :icons: font
 :imagesdir: ../media/
 

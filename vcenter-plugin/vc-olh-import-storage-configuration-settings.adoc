@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Import the storage configuration from one storage array to other storage arrays.
 ---
 
-= Import storage configuration settings
+= Import storage configuration settings in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:
