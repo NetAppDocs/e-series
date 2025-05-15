@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: The storage group defines which drives provide the storage that makes up the volume.
 ---
 
-= Create storage array group
+= Create a storage array group in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

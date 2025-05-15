@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: multipath software for vmware, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: Configure m software to provide a redundant path to the storage array in case one of the physical paths is disrupted.
 ---
-= Configure the multipath software
+= Configure the multipath software in E-Series - VMware
 :icons: font
 :imagesdir: ../media/
 

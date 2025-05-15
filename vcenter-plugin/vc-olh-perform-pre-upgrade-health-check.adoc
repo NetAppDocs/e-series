@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: A health check runs as part of the upgrade process, but you also can run a health check separately before you begin.
 ---
 
-= Perform pre-upgrade health check
+= Perform pre-upgrade health check in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: polling Web Services Proxy, WSP statistics, poll WSP,
 summary: You can configure automatic polling for all disk and volume statistics on discovered storage systems.
 ---
-= Manage automatic polling for Web Services Proxy statistics
+= Manage automatic polling for SANtricity Web Services Proxy statistics
 :icons: font
 :imagesdir: ../media/
 

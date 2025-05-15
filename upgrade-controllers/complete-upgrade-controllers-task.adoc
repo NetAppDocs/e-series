@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, vendor ID, upgrade status, upgrade validate
 summary: Complete the controller upgrade by powering on the controller shelf and validating the controller software version. Then, you can collect support data and resume operations.
 ---
-= Complete controller upgrade
+= Complete the E-Series controller upgrade
 :experimental:
 :icons: font
 :imagesdir: ../media/

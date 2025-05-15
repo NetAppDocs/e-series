@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host port GUIDs, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: Determine host port GUIDs.
 ---
-= Determine host port GUIDs and make the recommended settings
+= Determine host port global unique IDs in E-Series - Linux (SRP over InfiniBand)
 :icons: font
 :imagesdir: ../media/
 

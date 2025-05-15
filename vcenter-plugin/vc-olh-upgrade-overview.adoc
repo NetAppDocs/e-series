@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: You can manage SANtricity software and NVSRAM upgrades for multiple storage arrays of the same type.
 ---
 
-= Upgrade overview
+= Learn about managing SANtricity software upgrades using the Storage Plugin for vCenter
 :hardbreaks:
 :nofooter:
 :icons: font

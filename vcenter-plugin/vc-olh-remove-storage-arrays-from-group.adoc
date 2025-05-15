@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Remove one or more managed storage arrays from a group if you no longer want to manage it from a specific storage group.
 ---
 
-= Remove storage arrays from group
+= Remove storage arrays from a group in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

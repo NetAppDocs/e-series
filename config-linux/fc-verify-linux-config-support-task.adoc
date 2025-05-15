@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host,
 summary: Verify that the Linux configuration is supported.
 ---
-= Verify the Linux configuration is supported
+= Verify Linux configuration support in E-Series (FC)
 :experimental:
 :icons: font
 :imagesdir: ../media/
