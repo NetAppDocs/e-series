@@ -15,7 +15,7 @@ You can replace a drive in an E4000 with a 60-drive shelf.
 
 The Recovery Guru in SANtricity System Manager monitors the drives in the storage array and can notify you of an impending drive failure or an actual drive failure. When a drive has failed, its amber Attention LED is on. You can hot-swap a failed drive while the storage array is receiving I/O operations.
 
-This procedure applies to DCM and DCM3 drive shelves.
+This procedure applies to DCM, DCM2, and DCM3 drive shelves.
 
 .Before you begin
 

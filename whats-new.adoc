@@ -13,16 +13,18 @@ summary: New features in SANtricity OS.
 [.lead]
 The following table describes new features in the latest SANtricity OS releases for embedded management of E4000, EF300/EF300C, EF600/EF600C, E2800/EF280, and E5700/EF570 controllers.
 
-== New features in Version 11.90R2
+== New features in Version 11.90R3
 
 [cols="35h,~",options="header"]
 |===
 |New feature |Description
-a|Added support for IOM12C and DCM3 SAS-3 shelves
-a|Support for IOM12C and DCM3 SAS-3 shelves is now available. The IOM12C and DCM3 shelves are replacements for the IOM12B and DCM2 shelves, respectively.
-a|Additional host side cabling configurations now supported on E4000 controllers with SAS host interface cards 
-a|Host side cabling restrictions for E4000 controllers with SAS host interface cards have been lifted. See the https://review.docs.netapp.com/us-en/e-series_dev-thunderboltR2-dr/known-issues.html[E-Series 11.90R2 Release Notes^] for additional information.    
+a|SANtricity OS Support for IOM12C and  DCM3
+a|Support for IOM12C and DCM3 SAS-3 shelves is now available for controller firmware 11.90R3 or above. The IOM12C and DCM3 shelves are replacements for the IOM12B and DCM2 shelves.   
 |===
+
+== New features in Version 11.90R2
+
+This version contains only minor changes and no new features. For more information on the changes in this release, please refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3334464[E-Series 11.90 Release Notes^].
 
 == New features in Version 11.90R1
 
@@ -56,6 +58,10 @@ a|Certificate signing request (CSR) file generated externally through private an
 a|Login lockout feature now available for Web Services  
 a|Configurable through the REST API only, a new login lockout setting is now available for embedded and proxy Web Services.
 |===
+
+== New features in Version 11.80.1R4
+
+This version contains only minor changes and no new features or restrictions. For more information on the changes in this release, please refer to the README file.
 
 == New features in Version 11.80.1R3
 

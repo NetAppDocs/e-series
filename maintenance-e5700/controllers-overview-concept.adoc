@@ -38,9 +38,9 @@ image::../media/e5700_attention_led_callout.png["E5700 controller attention LED"
 
 NOTE: The figure shows an example controller canister; the host ports on your controller canister might be different.
 
-* This procedure applies to IOM12 and IOM12C drive shelves.
+* This procedure applies to IOM12, IOM12B, and IOM12C drive shelves.
 
-NOTE: IOM12C modules are only supported on SANtricity OS 11.90R2 onward. Ensure your controller's firmware has been updated before installing or upgrading to an IOM12C.
+NOTE: IOM12C modules are only supported on SANtricity OS 11.90R3 onward. Ensure your controller's firmware has been updated before installing or upgrading to an IOM12C.
 
 NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. This means you can only replace an IOM12 module with another IOM12 module or replace an IOM12C module with another IOM12C module. (Your shelf can have two IOM12 modules or have two IOM12C modules.)
 
