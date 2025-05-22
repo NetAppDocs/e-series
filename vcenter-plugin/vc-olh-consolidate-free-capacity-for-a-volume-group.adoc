@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Use the Consolidate Free Capacity option to consolidate existing free extents on a selected volume group. By performing this action, you can create additional volumes from the maximum amount of free capacity in a volume group.
 ---
 
-= Consolidate free capacity for a volume group
+= Consolidate free capacity for a volume group in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

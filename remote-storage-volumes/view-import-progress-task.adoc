@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Remote Storage Volumes, RTV, remote volumes, remote storage E-Series
 summary: You can view the status of each remote storage import from the result list section of the Remote Storage screen of the SANtricity System Manager.
 ---
-= Manage import progress
+= Manage import progress for SANtricity Remote Storage Volumes
 :icons: font
 :imagesdir: ../media/
 

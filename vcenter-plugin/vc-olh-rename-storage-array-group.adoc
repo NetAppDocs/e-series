@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Change the name of a storage array group when the current name is no longer meaningful or applicable.
 ---
 
-= Rename storage array group
+= Rename a storage array group in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

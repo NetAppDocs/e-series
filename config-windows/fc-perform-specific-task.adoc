@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Fibre Channel protocol, switches, zone switches, zoning, host port identifiers, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: For the Fibre Channel protocol, you configure the switches and determine the host port identifiers.
 ---
-= Perform FC-specific tasks
+= Perform FC-specific tasks in E-Series - Windows
 :icons: font
 :imagesdir: ../media/
 

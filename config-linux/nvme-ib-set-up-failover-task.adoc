@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: failover, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: Configure the host to run failover.
 ---
-= Set up failover
+= Set up failover on the host in E-Series - Linux (NVMe over InfiniBand)
 :icons: font
 :imagesdir: ../media/
 

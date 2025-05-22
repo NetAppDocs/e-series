@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, hardware, all flash array, E-Series protocols, E-Series rack
 summary: E-Series storage arrays are available in several configurations and models.
 ---
-= E-Series hardware overview
+= Learn about E-Series hardware
 :icons: font
 :imagesdir: ../media/
 
@@ -312,6 +312,7 @@ Available with the following interfaces:
 * 200Gb NVMe / IB
 * 200Gb NVMe / RoCE
 
+
 --
 
 .E4000 models
@@ -343,6 +344,7 @@ Available with the following interfaces:
 * 1 GB or 10Gbase-T iSCSI
 * 1Gb, 10Gb, or 25Gb iSCSI
 * 8Gb, 16Gb, or 32Gb FC
+* 12gb SAS
 
 --
 ====

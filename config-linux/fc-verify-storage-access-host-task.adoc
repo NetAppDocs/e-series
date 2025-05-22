@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host,
 summary: Before using the volume, you verify that the host can write data to the volume and read it back.
 ---
-= Verify storage access on the host
+= Verify storage access on the host in E-Series - Linux (FC)
 :icons: font
 :imagesdir: ../media/
 

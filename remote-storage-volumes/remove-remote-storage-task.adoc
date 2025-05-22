@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: remove storage object, disconnect remote storage
 summary: You can remove any configured Remote Storage object through the SANtricity System Manager.
 ---
-= Remove remote storage object
+= Remove remote storage object for SANtricity Remote Storage Volumes
 :icons: font
 :imagesdir: ../media/
 

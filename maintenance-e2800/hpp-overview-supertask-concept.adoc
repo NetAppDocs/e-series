@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Channel protocol, iSCSI protocol, convert HPP, converting host port protocol, SFP+ (optical) host ports, E2800, E-Series, eseries
 summary: Review the requirements for host port protocol conversion on an E2800.
 ---
-= Requirements for changing E2800 host port protocol
+= Requirements to change host port protocol - E2800
 :icons: font
 :imagesdir: ../media/
 

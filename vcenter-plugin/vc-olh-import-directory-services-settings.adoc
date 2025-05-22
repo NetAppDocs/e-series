@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Import a directory services configuration from one storage array to other storage arrays.
 ---
 
-= Import directory services settings
+= Import directory services settings in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

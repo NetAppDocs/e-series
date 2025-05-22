@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure subnet manager Linux, path loss, subnet manager, opensm, express linux configuration, linux host,
 summary: Using an InfiniBand switch to run subnet manager might cause unexpected path loss during high loads. To avoid path loss, configure the subnet manager on one or more of your hosts using opensm.
 ---
-= Configure subnet manager
+= Configure subnet manager in E-Series - Linux (NVMe over InfiniBand)
 :icons: font
 :imagesdir: ../media/
 

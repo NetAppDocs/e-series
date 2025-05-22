@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: A media scan is a background operation that scans all data and redundancy information in the volume. Use this option to enable or disable the media scan settings for one or more volumes, or to change the scan duration.
 ---
 
-= Change media scan settings for a volume
+= Change media scan settings for a volume in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

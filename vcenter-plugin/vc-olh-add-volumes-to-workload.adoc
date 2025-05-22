@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Add unassigned volumes to an existing or new workload.
 ---
 
-= Add volumes to workload
+= Add volumes to workload in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

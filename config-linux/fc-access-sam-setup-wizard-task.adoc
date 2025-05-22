@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: access System Manager Linux, express linux configuration, software configuration, linux host,
 summary: You use the Setup wizard in SANtricity System Manager to configure your storage array.
 ---
-= Access SANtricity System Manager and use the Setup wizard
+= Configure your storage using SANtricity System Manager - Linux (FC)
 :experimental:
 :icons: font
 :imagesdir: ../media/

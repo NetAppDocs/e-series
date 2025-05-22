@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: upgrade vCenter
 summary: Installation and upgrade requirements and considerations for vCenter plugin.
 ---
-= Review installation and upgrade requirements
+= Installation and upgrade requirements for the SANtricity Storage Plugin for vCenter
 :icons: font
 :imagesdir: ../media/
 

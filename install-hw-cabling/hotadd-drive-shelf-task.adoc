@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, hot add, hot add drive shelf, E-Series, eseries, E4000, E2800, E5700, EF300, EF300C, EF600, EF600C, DE212C, DE224C, DE460C
 summary: Add a new drive shelf while power is still applied to the other components.
 ---
-= Hot adding a drive shelf
+= Hot-add a drive shelf - IOM12 or IOM12B modules (E-Series)
 :icons: font
 :imagesdir: ../media/
 

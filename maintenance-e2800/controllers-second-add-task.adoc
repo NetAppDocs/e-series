@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: add E2800 controller, adding E2800 controller, simplex to duplex, convert to duplex, E2800, E-Series, eseries
 summary: Add a second controller to a controller shelf that has only one controller canister, or add a second controller canister to the simplex version.
 ---
-= Add second controller canister in E2800
+= Add second controller canister - E2800
 :experimental:
 :icons: font
 :imagesdir: ../media/
