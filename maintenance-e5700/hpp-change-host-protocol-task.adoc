@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 change host protocol, E5700 baseboard ports, convert E5700 protocol, IB protocol, Infiniband protocol, Fibre Channel protocol, FC protocol, iSCSI protocol, iSER, RoCE, NVMe, converting host port protocol,
 summary: Change host port protocol for E5700.
 ---
-= Change E5700 host protocol
+= Change the host protocol - 5700
 :experimental:
 :icons: font
 :imagesdir: ../media/

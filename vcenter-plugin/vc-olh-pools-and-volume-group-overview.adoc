@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: To provision storage, you create either a pool or volume group that will contain the Hard Disk Drives (HDD) or Solid State Disk (SSD) drives that you want to use in your storage array.
 ---
 
-= Pools and volume group overview
+= Learn about storage pools and volume groups in SANtricity Storage Plugin for vCenter
 :hardbreaks:
 :nofooter:
 :icons: font

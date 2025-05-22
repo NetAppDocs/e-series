@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Create storage by first creating a workload for a specific application type. Next, you add storage capacity to the workload by creating volumes with similar underlying volume characteristics.
 ---
 
-= Create storage
+= Create storage in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

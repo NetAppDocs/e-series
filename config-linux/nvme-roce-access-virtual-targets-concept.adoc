@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe volume virtual, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: You can configure the I/O directed to the device target based on your Linux version.
 ---
-= Access NVMe volumes for virtual device targets
+= Access NVMe volumes for virtual device targets in E-Series - Linux (NVMe over RoCE)
 :icons: font
 :imagesdir: ../media/
 

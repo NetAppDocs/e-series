@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: Change the preferred controller ownership of a volume, so that I/O for host applications is directed through the new path.
 ---
 
-= Change controller ownership of a volume
+= Change controller ownership of a volume in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

@@ -5,7 +5,7 @@ keywords: remove vCenter plugin, uninstall Plugin for vCenter, unregister vCente
 summary: Remove the Plugin for vCenter.
 ---
 
-= Remove the Storage Plugin for vCenter
+= Remove the SANtricity Storage Plugin for vCenter
 :hardbreaks:
 :nofooter:
 :icons: font

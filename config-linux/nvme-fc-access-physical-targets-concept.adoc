@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe volumes physical, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: Configure the I/O directed to the device target based on your Linux version.
 ---
-= Access NVMe volumes for physical NVMe device targets
+= Access NVMe volumes for physical NVMe device targets in E-Series - Linux (NVMe over FC)
 :icons: font
 :imagesdir: ../media/
 

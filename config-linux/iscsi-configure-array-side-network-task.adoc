@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure iSCSI networking, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: Configure iSCSI networking on the array side.
 ---
-= Configure array-side networking
+= Configure array-side networking in E-Series - Linux (iSCSI)
 :experimental:
 :icons: font
 :imagesdir: ../media/

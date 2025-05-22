@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: View summary information for a certificate, which includes the organization using the certificate, the authority that issued the certificate, the period of validity, and the fingerprints (unique identifiers)
 ---
 
-= View certificates
+= View certificates in SANtricity Storage Plugin for vCenter
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: You can locate drives to physically identify all of the drives that comprise a selected pool, volume group, or SSD Cache. An LED indicator lights up on each drive in the selected pool, volume group, or SSD Cache.
 ---
 
-= Turn on locator lights
+= Turn on LED indicator lights on a drive in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

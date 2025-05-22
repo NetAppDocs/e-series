@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: You can enable Drive Security for a pool or volume group to prevent unauthorized access to the data on the drives contained in the pool or volume group.
 ---
 
-= Enable security for a pool or volume group
+= Enable security for a pool or volume group in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

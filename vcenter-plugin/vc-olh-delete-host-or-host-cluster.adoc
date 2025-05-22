@@ -5,7 +5,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 summary: You can remove a host or host cluster so that volumes are no longer associated with that host.
 ---
 
-= Delete host or host cluster
+= Delete a host or host cluster in SANtricity Storage Plugin for vCenter
 :experimental:
 :hardbreaks:
 :nofooter:

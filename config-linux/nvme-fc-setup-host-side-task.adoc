@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe over Fibre Channel, host side, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: NVMe initiator configuration in a Fibre Channel environment includes installing and configuring the nvme-cli package, and enabling the NVMe/FC initiator on the host.
 ---
-= Set up NVMe over Fibre Channel on the host side
+= Set up NVMe over FC initiator on the host in E-Series - Linux
 :icons: font
 :imagesdir: ../media/
 

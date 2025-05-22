@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: discover storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: After assigning volumes to the host, you perform a rescan so that the host detects and configures the volumes for multipathing.
 ---
-= Discover storage on the host
+= Discover storage on the host in E-Series - VMware
 :icons: font
 :imagesdir: ../media/
 

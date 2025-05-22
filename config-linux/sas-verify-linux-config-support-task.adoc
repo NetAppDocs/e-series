@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: To ensure reliable operation, you create an implementation plan and then use the NetApp Interoperability Matrix Tool (IMT) to verify that the entire configuration is supported.
 ---
-= Verify the Linux configuration is supported
+= Verify Linux configuration support in E-Series (SAS)
 :experimental:
 :icons: font
 :imagesdir: ../media/

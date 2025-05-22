@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Cloud Connector restore,
 summary: You can access the Restore option in the left navigation panel of the SANtricity Cloud Connector application. The Restore option displays the Restore page, which allows you to create new image-based or file-based restore jobs.
 ---
-= Restores
+= Create new image-based or file-based restores in SANtricity Cloud Connector
 :icons: font
 :imagesdir: ../media/
 
