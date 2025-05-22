@@ -41,8 +41,6 @@ Some of the following host types might appear in the list:
 |Supports Mac OS versions using an ATTO Technology, Inc., multipathing driver.
 |Windows (ATTO)
 |Supports Windows operating systems using an ATTO Technology, Inc., multipathing driver.
-|FlexArray (ALUA)
-|Supports a NetApp FlexArray system using ALUA for multipathing.
 |IBM SVC
 |Supports an IBM SAN Volume Controller configuration.
 |Factory Default
