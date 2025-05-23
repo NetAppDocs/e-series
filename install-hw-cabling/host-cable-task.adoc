@@ -43,7 +43,7 @@ The following figure shows an example connection. For switches that provide prov
 
 .Two hosts and two switches
 
-image::../media/topology_host_fabric_generic.png["Two hosts and two switches cabling"]
+image::../media/topology_host_fabric_generic_ieops-2152.svg["Two hosts and two switches cabling"]
 
 *(1)* _Connect each host adapter directly to the switch._
 
