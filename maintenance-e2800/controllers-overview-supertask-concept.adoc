@@ -52,8 +52,6 @@ For information about compatible hardware, refer to the https://mysupport.netapp
 Optionally, you can use the command line interface (CLI) to perform some of the procedures. If you do not have access to the CLI, you can do one of the following:
 
 ** *For SANtricity System Manager (version 11.60 and above)* -- Download the CLI package (zip file) from System Manager. Go to menu:Settings[System > Add-ons > Command Line Interface]. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
-** *For SANtricity Storage Manager/Enterprise Management Window (EMW)* -- Follow the instructions in the express guide to download and install the software. You can run CLI commands from the EMW by selecting menu:Tools[Execute Script].
-
 
 == Requirements for replacing controller
 
@@ -90,7 +88,6 @@ Before you replace a controller, you must have:
 Optionally, you can use the command line interface (CLI) to perform some of the procedures. If you do not have access to the CLI, you can do one of the following:
 
 ** *For SANtricity System Manager (version 11.60 and above)* -- Download the CLI package (zip file) from System Manager. Go to menu:Settings[System > Add-ons > Command Line Interface]. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
-** *For SANtricity Storage Manager/Enterprise Management Window (EMW)* -- Follow the instructions in the express guide to download and install the software. You can run CLI commands from the EMW by selecting menu:Tools[Execute Script].
 
 === Duplex configuration requirements
 
