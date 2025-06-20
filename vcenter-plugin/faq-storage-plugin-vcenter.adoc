@@ -331,7 +331,6 @@ Capacity can be increased in your storage array by adding new drives or by delet
 
 == Why can I not increase my preservation capacity?
 
-[.lead]
 If you have created volumes on all available usable capacity, you might not be able to increase preservation capacity.
 
 Preservation capacity is the amount of capacity (number of drives) that is reserved on a pool to support potential drive failures. When a pool is created, the system automatically reserves a default amount of preservation capacity depending on the number of drives in the pool. If you have created volumes on all available usable capacity, you cannot increase preservation capacity without adding capacity to the pool by either adding drives or deleting volumes.
