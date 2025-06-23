@@ -23,33 +23,30 @@ This procedure applies to IOM12, IOM12B, and IOM12C drive shelves.
 
 . Cable the shelves.
 +
-Cable the system according to your configuration. If you need more cabling options than the examples shown in this section, see link:../install-hw-cabling/index.html[Cabling].
+Cable the system according to your configuration. 
 +
-For the examples shown in this section, you need the following cables:
+NOTE: If you need more cabling options than the examples provided below, see link:https://docs.netapp.com/us-en/e-series/install-hw-cabling/driveshelf-cable-task.html#cabling-e4000[Cabling^].
++
+You need the following cables:
 +
 |===
 a|
 image:../media/sas_cable.png[SAS cable] a|
 *SAS cables*
 |===
++
+.. *Example A: An E4060 controller shelf with two DE460C disk shelves in a standard SAS configuration*
+
+... Cable controller A to IOM A of the first drive shelf.
+... Cable IOM A of the first drive shelf to IOM A of the second drive shelf.
+... Cable IOM B of the first drive shelf to IOM B of the second drive shelf.
+... Cable controller B to IOM B of the second drive shelf.
 
 +
+.. *Example B: An E4060 controller shelf with one DE460C disk shelf in a standard SAS configuration*
 
-.Example A: An E4060 controller shelf with two DE460C disk shelves in a standard SAS configuration.
-
-
-.. Cable controller A to IOM A of the first drive shelf.
-.. Cable IOM A of the first drive shelf to IOM A of the second drive shelf.
-.. Cable IOM B of the first drive shelf to IOM B of the second drive shelf.
-.. Cable controller B to IOM B of the second drive shelf.
-
-+
-
-.Example B: An E4060 controller shelf with one DE460C disk shelf in a standard SAS configuration.
-
-
-.. Cable controller A to IOM A.
-.. Cable controller B to IOM B.
+... Cable controller A to IOM A.
+... Cable controller B to IOM B.
 
 . Power the drive shelves.
 +

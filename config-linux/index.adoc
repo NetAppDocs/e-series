@@ -33,4 +33,4 @@ The Linux express method includes the following steps.
 * https://kb.netapp.com/[NetApp Knowledgebase^] (a database of articles)
  -- Provides troubleshooting information, FAQs, and instructions for a wide range of NetApp products and technologies.
  * http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] -- Enables you to search for configurations of NetApp products and components that meet the standards and requirements specified by NetApp.
-  * https://docs.netapp.com/us-en/ontap-sanhost/hu_luhu_71.html#recommended-driver-settings-with-linux-kernel[Install Linux Unified Host Utilities 7.1^] -- Describes how to install the Linux Unified Host Utilities 7.1.
+

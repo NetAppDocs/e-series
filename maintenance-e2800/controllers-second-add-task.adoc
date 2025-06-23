@@ -174,7 +174,7 @@ The file is saved in the Downloads folder for your browser with the name, *lates
 
  * When you upgrade controller NVSRAM, any custom settings that you have applied to the existing NVSRAM are lost during the process of activation. You must apply the custom settings to the NVSRAM again after the process of activation is complete.
 
-. Change the storage array setting to duplex using CLI commands. To use CLI, you can either open a command prompt if you downloaded the CLI package or you can open the Enterprise Management Window (EMW) if you have Storage Manager installed.
+. Change the storage array setting to duplex using CLI commands. To use CLI, open a command prompt if you downloaded the CLI package or you can open the Enterprise Management Window (EMW) if you have Storage Manager installed.
 
 * From a command prompt:
 .. Use the following command to switch the array from simplex to duplex:
