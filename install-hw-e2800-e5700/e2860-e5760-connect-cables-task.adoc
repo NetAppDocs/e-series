@@ -26,35 +26,30 @@ NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. T
 
 . Cable the shelves.
 +
-Cable the system according to your configuration. If you need more cabling options than the examples shown in this section, see link:../install-hw-cabling/index.html[Cabling].
+Cable the system according to your configuration.
++ 
+NOTE: If you need more cabling options than the examples provided below, see link:https://docs.netapp.com/us-en/e-series/install-hw-cabling/driveshelf-cable-task.html#cabling-e2800-and-e5700[Cabling^].
 +
-For the examples shown in this section, you need the following cables:
+You need the following cables:
 +
 |===
 a|
 image:../media/sas_cable.png["SAS cables"] a|
 *SAS cables*
 |===
++
+.. *Example A: Controller shelf with two DE460C disk shelves in a standard SAS configuration*
++
+... Cable controller A to IOM A of the first drive shelf.
+... Cable IOM A of the first drive shelf to IOM A of the second drive shelf.
+... Cable IOM B of the first drive shelf to IOM B of the second drive shelf.
+... Cable controller B to IOM B of the second drive shelf.
 
 +
-
-.Example A: An E2860 controller shelf with two DE460C disk shelves in a standard SAS configuration.
-
-image:../media/example_a_2860.png["E2860 controller in a SAS configuration"]
-
-.. Cable controller A to IOM A of the first drive shelf.
-.. Cable IOM A of the first drive shelf to IOM A of the second drive shelf.
-.. Cable IOM B of the first drive shelf to IOM B of the second drive shelf.
-.. Cable controller B to IOM B of the second drive shelf.
-
+.. *Example B: Controller shelf with one DE460C disk shelf in a standard SAS configuration*
 +
-
-.Example B: An E2860 controller shelf with one DE460C disk shelf in a standard SAS configuration.
-
-image:../media/example_b_2860.png["E2860 controller in a SAS configuration"]
-
-.. Cable controller A to IOM A.
-.. Cable controller B to IOM B.
+... Cable controller A to IOM A.
+... Cable controller B to IOM B.
 
 . Power the drive shelves.
 +
