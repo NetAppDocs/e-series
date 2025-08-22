@@ -13,7 +13,7 @@ NVMe initiator configuration in a RoCE environment includes installing and confi
 
 .Before you begin
 
-You must be running the latest compatible RHEL 7, RHEL 8, RHEL 9, SUSE Linux Enterprise Server 12 or 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a complete list of the latest requirements.
+You must be running the latest compatible RHEL 8, RHEL 9, SUSE Linux Enterprise Server 12 or 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a complete list of the latest requirements.
 
 .Steps
 
@@ -27,7 +27,7 @@ You must be running the latest compatible RHEL 7, RHEL 8, RHEL 9, SUSE Linux Ent
 # zypper install nvme-cli
 ----
 +
-*RHEL 7, RHEL 8, and RHEL 9*
+*RHEL 8, and RHEL 9*
 +
 ----
 
@@ -90,7 +90,7 @@ REMOTE_IPADDR=
 STARTMODE='auto'
 ----
 +
-*RHEL 7 or RHEL 8*
+*RHEL 8*
 +
 Create the example file `/etc/sysconfig/network-scripts/ifcfg-eth4` with the following contents.
 +
