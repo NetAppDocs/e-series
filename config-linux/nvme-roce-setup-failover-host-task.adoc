@@ -22,10 +22,10 @@ NOTE: Refer to the https://mysupport.netapp.com/matrix[NetApp Interoperability M
 
 .About this task
 
-RHEL 7 and SLES 12 use Device Mapper Multipath (DMMP) for multipathing for NVMe over RoCE. RHEL 8, RHEL 9, and SLES 15 use a built-in Native NVMe Failover. Depending on which OS you are running, some additional configuration of multipath is required to get it running properly.
+SLES 12 use Device Mapper Multipath (DMMP) for multipathing for NVMe over RoCE. RHEL 8, RHEL 9, and SLES 15 use a built-in Native NVMe Failover. Depending on which OS you are running, some additional configuration of multipath is required to get it running properly.
 
-== Enable Device Mapper Multipath (DMMP) for RHEL 7 or SLES 12
-By default, DM-MP is disabled in RHEL and SLES. Complete the following steps to enable DM-MP components on the host.
+== Enable Device Mapper Multipath (DMMP) for SLES 12
+By default, DM-MP is disabled in SLES. Complete the following steps to enable DM-MP components on the host.
 
 .Steps
 

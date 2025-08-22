@@ -23,7 +23,7 @@ Make sure you have the following:
 
 . Enable and start iSCSI services on the host(s):
 +
-*Red Hat Enterprise Linux 7, 8, and 9 (RHEL 7, RHEL 8, and RHEL 9)*
+*Red Hat Enterprise Linux 8 and 9 (RHEL 8 and RHEL 9)*
 +
 ----
 

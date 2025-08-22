@@ -55,7 +55,7 @@ The RDMA configuration file is located at the following location:
 
 . Enable and start the OFED/RDMA service.
 +
-*RHEL 7.x and SLES 12.x or greater*
+*SLES 12.x or greater*
 
  ** To enable the InfiniBand modules to load on boot:
 +
@@ -71,7 +71,7 @@ systemctl start rdma
 
 . Enable the SRP daemon.
 +
-*RHEL 7.x and SLES 12 or greater*
+*SLES 12 or greater*
 
  ** To enable the SRP daemon to start on boot:
 +
