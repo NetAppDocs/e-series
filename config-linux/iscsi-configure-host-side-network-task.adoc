@@ -56,7 +56,7 @@ NOTE: In addition to the public network port, iSCSI initiators should use two or
  .. Determine the iSCSI port names using the `ifconfig -a` command.
  .. Set the IP address for the iSCSI initiator ports. The initiator ports should be present on the same subnet as the iSCSI target ports.
 +
-*Red Hat Enterprise Linux 7 and 8 (RHEL 7 and RHEL 8)*
+*Red Hat Enterprise Linux 8 (RHEL 8)*
 +
 Create the example file `/etc/sysconfig/network-scripts/ifcfg-<NIC port>` with the following contents.
 +
