@@ -54,6 +54,20 @@ sidebar:
             url: "/getting-started/getup-run-concept.html"
     - title: Install hardware
       entries:
+        - title: EF50, EF50C, EF80, and EF80C
+          entries:
+              - title: Installation workflow
+                url: "/install-hw-ef50-ef50c-ef80-ef80c/install-workflow.html"
+              - title: Prepare for Installation
+                url: "/install-hw-ef50-ef50c-ef80-ef80c/install-prepare.html"
+              - title: Install hardware
+                url: "/install-hw-ef50-ef50c-ef80-ef80c/install-hardware.html"
+              - title: Cable hardware
+                url: "/install-hw-ef50-ef50c-ef80-ef80c/install-cable-host-mirroring.html"
+              - title: Power on hardware
+                url: "/install-hw-ef50-ef50c-ef80-ef80c/install-power-hardware.html"
+              - title: Complete storage system setup
+                url: "/install-hw-ef50-ef50c-ef80-ef80c/install-complete-setup.html" 
         - title: EF300 and EF600
           entries:
               - title: Overview
