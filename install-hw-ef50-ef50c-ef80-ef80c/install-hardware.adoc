@@ -1,15 +1,15 @@
 ---
-permalink: install-hw-ef50-ef50c-ef80-ef80c/install-hardware-12.html
+permalink: install-hw-ef50-ef50c-ef80-ef80c/install-hardware.html
 sidebar: sidebar
 keywords: 
-summary: Learn how to install a E4012, DE212C, or DE224C storage system in a two-post rack or a NetApp system cabinet.
+summary: Learn how to install a EF50, EF50C, EF80, or EF80C storage system in a two-post rack or a NetApp system cabinet.
 ---
-= Install the hardware  - E4012
+= Install the hardware - EF50, EF50C, EF80, and EF80C
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Learn how to install an E4012 or DE212C storage system in a two-post rack or a NetApp system cabinet.
+Learn how to install an EF50, EF50C, EF80, or EF80C storage system in a two-post rack or a NetApp system cabinet.
 
 .Before you begin
 

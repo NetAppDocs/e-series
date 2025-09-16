@@ -1,20 +1,20 @@
 ---
-permalink: install-hw-ef50-ef50c-ef80-ef80c/index.html
+permalink: install-hw-ef50-ef50c-ef80-ef80c/install-workflow.html
 sidebar: sidebar
 keywords: 
-summary: Follow these steps to install and set up you E4000 storage system.
+summary: Follow these steps to install and set up you EF50, EF50C, EF80, or EF80C storage system.
 ---
-= Install and setup - E4000 storage systems
+= Install and setup - EF50, EF50C, EF80, and EF80C storage systems
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow these steps to install and set up you E4000 storage system.
+Follow these steps to install and set up you EF50, EF50C, EF80, or EF80C storage system.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Prepare for installation
 
 [role="quick-margin-para"]
-You must prepare your site to meet the specifications for your E4000 series storage system.
+You must prepare your site to meet the specifications for your EF50, EF50C, EF80, and EF80C storage systems.
 
 [role="quick-margin-list"]
 * link:../install-hw-e4000/prepare-installation.html[Prepare for installation^]
