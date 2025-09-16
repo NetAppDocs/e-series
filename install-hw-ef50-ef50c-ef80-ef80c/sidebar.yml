@@ -1,25 +1,16 @@
-section: install-hw-e4000
-title: E4000
+section: install-hw-ef50-ef50c-ef80-ef80c
+title: EF50, EF50C, EF80, EF80C
 entries:
-  - title: Installation overview
-    url: "/install-hw-e4000/index.html"
+  - title: Installation workflow
+    url: "/install-hw-ef50-ef50c-ef80-ef80c/install-workflow.html"
   - title: Prepare for Installation
-    url: "/install-hw-e4000/prepare-installation.html"
+    url: "/install-hw-ef50-ef50c-ef80-ef80c/install-prepare.html"
   - title: Install hardware
-    entries:
-      - title: E4012
-        url: "/install-hw-e4000/install-hardware-12.html"
-      - title: E4060
-        url: "/install-hw-e4000/install-hardware-60.html"
-  - title: Cable shelves
-    entries:
-      - title: E4012
-        url: "/install-hw-e4000/connect-cables-12.html"
-      - title: E4060
-        url: "/install-hw-e4000/connect-cables-60.html"
+    url: "/install-hw-ef50-ef50c-ef80-ef80c/install-hardware.html"
+  - title: Cable hardware
+    url: "/install-hw-ef50-ef50c-ef80-ef80c/install-cable-host-mirroring.html"
+  - title: Power on hardware
+    url: "/install-hw-ef50-ef50c-ef80-ef80c/install-power-hardware.html"
   - title: Complete storage system setup
-    entries:
-      - title: E4012
-        url: "/install-hw-e4000/complete-setup-12.html"
-      - title: E4060
-        url: "/install-hw-e4000/complete-setup-60.html"
+    url: "/install-hw-ef50-ef50c-ef80-ef80c/install-complete-setup.html"
+      

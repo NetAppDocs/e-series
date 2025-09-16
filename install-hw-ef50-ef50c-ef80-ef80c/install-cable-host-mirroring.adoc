@@ -1,15 +1,15 @@
 ---
-permalink: install-hw-e4000/complete-setup-12.html
+permalink: install-hw-ef50-ef50c-ef80-ef80c/install-cable-host-mirroring.html
 sidebar: sidebar
 keywords: 
-summary: Learn how to cable the controllers to your network and complete storage system setup and configuration.
+summary: Cable the controller shelf's mirroring and data host network connections.
 ---
-= Complete storage system setup - E4012
+= Complete storage system setup - EF50, EF50C, EF80, EF80C
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Learn how to cable the controllers to your network and complete storage system setup and configuration.
+Cable the controller shelf's mirroring and data host network connections.
 
 == Step 1: Cable the data hosts
 
