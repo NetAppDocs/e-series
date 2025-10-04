@@ -4,45 +4,41 @@ sidebar: sidebar
 keywords: 
 summary: Follow these steps to install and set up you EF50, EF50C, EF80, or EF80C storage system.
 ---
-= Install and setup - EF50, EF50C, EF80, and EF80C storage systems
+= Install and setup - EF50, EF50C, EF80, and EF80C
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow these steps to install and set up you EF50, EF50C, EF80, or EF80C storage system.
+To install and set up your EF50, EF50C, EF80, or EF80C storage system, you must prepare your site, install and cable the hardware components, power on the storage system, and complete storage system setup and configuration.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Prepare for installation
+Kill: Follow these steps to install and set up you EF50, EF50C, EF80, or EF80C storage system.
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:install-prepare.html[Prepare for installation]
 [role="quick-margin-para"]
-You must prepare your site to meet the specifications for your EF50, EF50C, EF80, and EF80C storage systems.
 
-[role="quick-margin-list"]
-* link:../install-hw-e4000/prepare-installation.html[Prepare for installation^]
+To prepare for installation, get the site ready, check environmental and electrical requirements, and ensure there’s enough rack space. Then, unpack the equipment, compare contents to the packing slip, and register the hardware to access support benefits.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Install hardware
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:install-hardware.html[Install the hardware]
 [role="quick-margin-para"]
-Learn how to install a E4012, E4060, DE212C, or DE460C storage system in a rack or a NetApp system cabinet.
 
-[role="quick-margin-list"]
-* link:../install-hw-e4000/install-hardware-12.html[Install E4012 hardware^]
-* link:../install-hw-e4000/install-hardware-60.html[Install E4060 hardware^]
+To install the hardware, install the rack-mount hardware in the cabinet or rack, and then install and secure your storage system.
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Cable hardware shelves
-
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:install-cable.html[Cable the hardware]
 [role="quick-margin-para"]
-Learn how to attach the power cables and power on the drive shelves for an E4000 storage system.
 
+To cable the hardware, cable the mirroring connections between the two controllers, and then cable the controllers to your network.
+
+Kill?:
 [role="quick-margin-list"]
 * link:../install-hw-e4000/connect-cables-12.html[Cable E4012 hardware^]
 * link:../install-hw-e4000/connect-cables-60.html[Cable E4060 hardware^]
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Complete storage system setup
-
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:install-power-hardware.html[Power on the storage system]
 [role="quick-margin-para"]
-Learn how to cable the controllers to your network and complete storage system setup and configuration.
+To power on your storage system, attach the power cables and power on each of the controllers in your storage system.
 
-[role="quick-margin-list"]
-* link:../install-hw-e4000/complete-setup-12.html[Complete E4012 setup^]
-* link:../install-hw-e4000/complete-setup-60.html[Complete E4060 setup^]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:install-complete-setup.html[Complete the storage system setup]
+[role="quick-margin-para"]
+After you've powered on your storage system, complete the storage system setup and configuration.
