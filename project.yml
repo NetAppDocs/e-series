@@ -63,7 +63,7 @@ sidebar:
               - title: Install hardware
                 url: "/install-hw-ef50-ef50c-ef80-ef80c/install-hardware.html"
               - title: Cable hardware
-                url: "/install-hw-ef50-ef50c-ef80-ef80c/install-cable-host-mirroring.html"
+                url: "/install-hw-ef50-ef50c-ef80-ef80c/install-cable.html"
               - title: Power on hardware
                 url: "/install-hw-ef50-ef50c-ef80-ef80c/install-power-hardware.html"
               - title: Complete storage system setup
