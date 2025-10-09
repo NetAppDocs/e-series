@@ -3,14 +3,14 @@ title: EF50, EF50C, EF80, EF80C
 entries:
   - title: Installation workflow
     url: "/install-hw-ef50-ef50c-ef80-ef80c/install-workflow.html"
-  - title: Prepare for Installation
+  - title: Prepare to Install
     url: "/install-hw-ef50-ef50c-ef80-ef80c/install-prepare.html"
   - title: Install hardware
     url: "/install-hw-ef50-ef50c-ef80-ef80c/install-hardware.html"
   - title: Cable hardware
     url: "/install-hw-ef50-ef50c-ef80-ef80c/install-cable.html"
-  - title: Power on hardware
+  - title: Power on system
     url: "/install-hw-ef50-ef50c-ef80-ef80c/install-power-hardware.html"
-  - title: Complete storage system setup
+  - title: Complete system setup
     url: "/install-hw-ef50-ef50c-ef80-ef80c/install-complete-setup.html"
       
