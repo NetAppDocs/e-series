@@ -24,7 +24,7 @@ You can configure the controller management ports using a DHCP server or a stati
 
 --
 
-Learn how to configure the management ports with a DHCP server.
+Configure the management ports using a DHCP server.
 
 .Before you begin
 
@@ -46,7 +46,7 @@ image:../media/e4000_management_port.png[E4000 controller Management Port]
 .Option 2: Static IP address
 --
 
-Learn how to configure the management ports manually by entering the IP address and the subnet mask.
+Configure the management ports manually by entering the IP address and the subnet mask.
 
 .Before you begin
 
@@ -87,7 +87,7 @@ NOTE: If you lose the connection to controller B, you can use your previously va
 
 == Step 2: Configure and manage your storage system
 
-After you have installed your hardware, use the SANtricity software to configure and manage your storage system.
+Use the SANtricity software to configure and manage your storage system.
 
 .Before you begin
 

@@ -2,16 +2,22 @@
 permalink: install-hw-ef50-ef50c-ef80-ef80c/install-cable.html
 sidebar: sidebar
 keywords: 
-summary: Cable the controller shelf's mirroring and data host network connections.
+summary: Cable the mirroring and data host network connections for your EF50, EF50C, EF80, or EF80C storage system.
 ---
 = Cable the hardware - EF50, EF50C, EF80, and EF80C
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Cable the controller shelf's mirroring and data host network connections for your EF50, EF50C, EF80, or EF80C storage system.
+Cable the mirroring and data host network connections for your EF50, EF50C, EF80, or EF80C storage system.
 
-== Step 1: Cable the data hosts
+== Step 1: Cable the mirroring connections
+
+Cable the controllers to each other to enable the inter-controller communication for caching.
+
+Lisa note: is the same for all EF50/80 systems. So show generic graphic of system back.
+
+== Step 2: Cable the data hosts
 
 Cable the system according to your network topology.
 
@@ -48,7 +54,7 @@ image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, w
 --
 ====
 
-== Step 2: Connect and configure the management connection
+== Step 3: Connect and configure the management connection
 
 You can configure the controller management ports using a DHCP server or a static IP address.
 
@@ -120,7 +126,7 @@ NOTE: If you lose the connection to controller B, you can use your previously va
 --
 ====
 
-== Step 3: Configure and manage your storage system
+== Step 4: Configure and manage your storage system
 
 After you have installed your hardware, use the SANtricity software to configure and manage your storage system.
 
