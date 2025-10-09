@@ -9,11 +9,10 @@ summary: Cable and configure the controllers management connections, and complet
 :imagesdir: ../media/
 
 [.lead]
-Cable and configure the controllers management connections, and complete storage system setup and configuration for your EF50, EF50C, EF80, or EF80C storage system.
+Cable and configure the controller management ports, and then complete storage system setup and configuration for your EF50, EF50C, EF80, or EF80C storage system.
 
 
-
-== Step 1: Connect and configure the management connection
+== Step 1: Cable and configure the management ports
 
 You can configure the controller management ports using a DHCP server or a static IP address.
 
@@ -91,7 +90,7 @@ Use the SANtricity software to configure and manage your storage system.
 
 .Before you begin
 
-* Configure your management ports.
+* Cable and configure your controller management ports.
 * Verify and record your password and IP addresses.
 
 .Steps

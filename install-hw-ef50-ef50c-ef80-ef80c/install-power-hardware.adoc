@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef50c, ef80, ef80c, connect power cables
 summary: Attach the power cables and power on your EF50, EF50C, EF80, or EF80C storage system.
 ---
-= Connect the power cables - EF50, EF50C, EF80, and EF80C
+= Power on the hardware - EF50, EF50C, EF80, and EF80C
 :icons: font
 :imagesdir: ../media/
 
@@ -16,52 +16,32 @@ Attach the power cables and power on your EF50, EF50C, EF80, or EF80C storage sy
 * Install your hardware.
 * Take anti-static precautions.
 
-This procedure applies to IOM12, IOM12B, and IOM12C drive shelves.
-
-
 .Steps
 
-. Cable the shelves.
-+
-Cable the system according to your configuration. 
-+
-NOTE: If you need more cabling options than the examples provided below, see link:https://docs.netapp.com/us-en/e-series/install-hw-cabling/driveshelf-cable-task.html#cabling-e4000[Cabling^].
-+
-You need the following cables:
+. Plug in the power cables, one to each controller (EF600 pictured below).
 +
 |===
 a|
-image:../media/sas_cable.png[SAS cable] a|
-*SAS cables*
-|===
-+
-.. *Example A: An E4000 controller shelf with three DE212C/DE224C disk shelves in a standard SAS configuration*
-
- ... Cable controller A to IOM A of the first drive shelf.
- ... Cable IOM A of the first drive shelf to IOM A of the second drive shelf.
- ... Cable IOM A of the second drive shelf to IOM A of the third drive shelf.
- ... Cable controller B to IOM B of the third drive shelf.
- ... Cable IOM B of the second drive shelf to IOM B of the third drive shelf.
- ... Cable IOM B of the first drive shelf to IOM B of the second drive shelf.
-
-+
-.. *Example B: An E4000 controller shelf with one DE212C/DE224C disk shelf in a standard SAS configuration*
-
-... Cable controller A to IOM A.
-... Cable controller B to IOM B.
-
-. Power the drive shelves.
-+
-You need the following cables:
-+
-|===
-a|
-image:../media/power_cable_inst-hw-e2800-e5700.png[Power cable] a|
+image:../media/power_cable_inst-hw-ef600.png["Power cables"] a|
 *Power cables*
 |===
-CAUTION: Confirm the drive shelf power switches are off.
++
+|===
+a|
+image:../media/cabling_power.png["EF600/EF300 power cabling"]
 
- .. Connect the two power cables for each shelf to different power distribution units (PDUs) in the cabinet or rack.
- .. If you have drive shelves, turn on their two power switches first. Wait 2 minutes before applying power to the controller shelf.
- .. Turn on the two power switches on the controller shelf.
+
+|===
+
+. Connect the two power cables, one from each controller, to two separate power distribution units (PDUs) in the cabinet or rack.
++
+CAUTION: Accessing a EF300 or EF600 controller canister from the shelf can be blocked by third-party PDUs. Do not use power outlets directly behind the controller canister.
+
+. Allow the controller to boot for five minutes before completing the storage system set up and configuration.
+
+.Result
+
+The controller boots automatically. The LEDs flash on and the fans start to indicate that the controller is powering on.
+
+NOTE: Fans are very loud when they first power on.
 
