@@ -31,6 +31,9 @@ NOTE: Host ports on the bottom left-side (e1a, e1b, e1c, and e1d) and upper righ
 
 The following example shows cabling to the data hosts using a direct-attach topology.
 
+Lisa: I do like the very generic rear view of the system used in EF600. Just show HICs in the slots that are cabled to host network:
+image:../media/direct_topo.png["Direct-attach topology cabling"]
+
 
 image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, width=1000px]
 
@@ -44,6 +47,9 @@ NOTE: For additional cabling diagram examples, see https://docs.netapp.com/us-en
 --
 
 The following example shows cabling to the data hosts using a fabric topology.
+
+Lisa: I do like the very generic rear view of the system used in EF600. Just show HICs in the slots that are cabled thru switches to the host network:
+image:../media/fabric_topo.png["Fabric topology cabling"]
 
 
 image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, width=1000px]
