@@ -15,11 +15,17 @@ After you install your EF50, EF50C, EF80, or EF80C storage system hardware, cabl
 
 Cable the controllers to each other to enable the inter-controller communication for caching.
 
+.About this task
+The cabling for the mirroring connections is the same for EF50, EF50C, EF80, and EF80C storage systems.
+
 Lisa note: is the same for all EF50/80 systems. So show generic graphic of system back.
 
 == Step 2: Cable the data host network connections
 
 Cable the data host connections for your storage system according to your network topology.
+
+.About this task
+EF50 and EF50C storage system data host cabling is different from the EF80 and EF80C storage system data host cabling.
 
 NOTE: Host ports on the bottom left-side (e1a, e1b, e1c, and e1d) and upper right-side (e0a and e0b) of the controller can be used for data host cabling.
 
