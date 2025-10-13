@@ -333,6 +333,21 @@ image:../media/e5700_hic_3_callouts_maint-e5700.gif[E5700 controller LEDs"]
 *(3)* _Seven-segment display_
 +
 
+. Bring the controller online using SANtricity System Manager.
+ * From SANtricity System Manager:
+  .. Select *Hardware*.
+  .. If the graphic shows the drives, select *Show back of shelf*.
+  .. Select the controller you want to place online.
+  .. Select *Place Online* from the context menu, and confirm that you want to perform the operation.
++
+The system places the controller online.
+
+* Alternatively, you can bring the controllers online by using the following CLI commands:
++
+*For controller A:* `set controller [a] availability=online;`
++
+*For controller B:* `set controller [b] availability=online;`
+
 . Check the codes on the controller's seven-segment display as it comes back online. If the display shows one of the following repeating sequences, immediately remove the controller.
  ** *OE*, *L0*, *_blank_* (mismatched controllers)
  ** *OE*, *L6*, *_blank_* (unsupported HIC)
