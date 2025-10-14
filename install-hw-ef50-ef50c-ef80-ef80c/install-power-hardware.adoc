@@ -14,50 +14,30 @@ After you cable the controller's mirroring and host data network connections for
 .Before you begin
 Take anti-static precautions.
 
-. Plug the two power cords into the controller power supplies, and then connect them to power sources on different circuits.
+. Plug a power cable into each controller power supply, and then connect them to power sources on different circuits.
++
+NOTE: If you are using third-party power distribution units (PDUs), do not use power outlets directly behind the controllers because you might block access to the controllers.
+// CAUTION: Accessing a EF300 or EF600 controller canister from the shelf can be blocked by third-party PDUs. Do not use power outlets directly behind the controller canister.
++
+*Power cables*
++
+image:../media/power_cable_inst-hw-ef600.png["Power cables"]
 +
 image::../media/drw_psu_layout_1_ieops-1886.svg[storage system power connection diagram]
 +
 * The system begins to boot. Initial booting might take up to eight minutes. 
 +
-* The LEDs flash on and the fans start, which indicates that the controllers are powering on.
+* The LEDs on the system chassis flash and the fans start, which indicates that the controllers are powering on.
 +
 During start-up it is normal for the fans to be very loud.
 
-* The shelf ID display on the front of the system chassis does not illuminate.
+* The digital display on the front left end cap of the system chassis does not illuminate.
 
 . Secure the power cords using the securing device on each power supply.
 
-=======================================
-EF300 and 600
-.Steps
-
-. Plug in the power cables, one to each controller (EF600 pictured below).
-+
-|===
-a|
-image:../media/power_cable_inst-hw-ef600.png["Power cables"] a|
-*Power cables*
-|===
-+
-|===
-a|
-image:../media/cabling_power.png["EF600/EF300 power cabling"]
-
-
-|===
-
-. Connect the two power cables, one from each controller, to two separate power distribution units (PDUs) in the cabinet or rack.
-+
-CAUTION: Accessing a EF300 or EF600 controller canister from the shelf can be blocked by third-party PDUs. Do not use power outlets directly behind the controller canister.
-
-. Allow the controller to boot for five minutes before completing the storage system set up and configuration.
-
-.Result
-
-The controller boots automatically. The LEDs flash on and the fans start to indicate that the controller is powering on.
-
-NOTE: Fans are very loud when they first power on.
-
 .What's next?
 After you've powered on your storage system, you link:install-complete-setup.html[complete storage system setup].
+
+
+
+
