@@ -68,7 +68,7 @@ a|
 MTU size     (Available by clicking *Show more port settings*.)
 a|
 If necessary, enter a new size in bytes for the maximum transmission unit (MTU).
-The default MTU size is 1500 bytes per frame. You must enter a value between 1500 and 4200.
+The default MTU size is 1500 bytes per frame. You must enter a value between 1500 and 9000.
 |===
 If you selected *Enable IPv4*, a dialog box opens for selecting IPv4 settings after you click *Next*. If you selected *Enable IPv6*, a dialog box opens for selecting IPv6 settings after you click *Next*. If you selected both options, the dialog box for IPv4 settings opens first, and then after you click *Next*, the dialog box for IPv6 settings opens.
 

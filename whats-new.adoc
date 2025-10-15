@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: whats-new.html
-keywords: whats new, new features, SANtricity, 11.9, 11.8
+keywords: whats new, new features, SANtricity, 12.0, 11.9, 11.8
 summary: New features in SANtricity OS.
 ---
 
@@ -12,6 +12,17 @@ summary: New features in SANtricity OS.
 
 [.lead]
 The following table describes new features in the latest SANtricity OS releases for embedded management of E4000, EF300/EF300C, EF600/EF600C, E2800/EF280, and E5700/EF570 controllers.
+
+== New features in Version 12.0
+
+[cols="35h,~",options="header"]
+|===
+|New feature |Description
+a|New user interface for SANtricity System Manager and Unified Manager
+a|The SANtricity System Manager and Unified Manager user interfaces have been redesigned to provide a more modern look and feel. The new interface includes a left-panel navigation and enhanced usability to streamline management tasks.
+a|DULBE support for EF300C and EF600C storage systems
+a|EF300C and EF600C high-capacity flash storage systems now support the Deallocated or Unwritten Logical Block Error (DULBE) feature. This feature allows the storage system to support resource-provisioned volumes, which can improve SSD wear life and increase maximum write performance.
+|===
 
 == New features in Version 11.90R3
 
