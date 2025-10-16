@@ -83,18 +83,21 @@ NOTE: If you lose the connection to controller B, you can use your previously va
 
 --
 ====
+== Step 2: Configure storage system
 
-== Step 2: Configure and manage your storage system
+After you have installed your EF50, EF50C, EF80, or EF80C storage system, use SANtricity System Manager to configure and manage your storage system.
 
-Use the SANtricity software to configure and manage your storage system.
+.Before You Begin
 
-.Before you begin
-
-* Cable and configure your controller management ports.
+* Cable and configure your management ports.
 * Verify and record your password and IP addresses.
 
 .Steps
 
-. Use the SANtricity software to configure and manage your storage arrays.
-. In the simplest network configuration, connect your controller to a web browser and use SANtricity System Manager for managing a single E4000 series storage array. For accessing System Manager, use the same IP addresses that you used to configure your management ports.
+. Connect your controller to a web browser.
 
+. Access SANtricity System Manager using the same IP addresses that you used to configure your management ports.
+
+. Use SANtricity System Manager to manage your EF50, EF50C, EF80, or EF80C storage system. 
++
+You can refer to the online help included with SANtricity System Manager.
