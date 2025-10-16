@@ -9,10 +9,10 @@ summary: Prepare to install your EF50, EF50C, EF80, or EF80C storage system by g
 :imagesdir: ../media/
 
 [.lead]
-Prepare to install your EF50, EF50C, EF80, or EF80C storage system by getting the site ready, unpacking the boxes and comparing the contents to the packing slip, and registering the storage system to access support benefits.
+Prepare to install your EF50, EF50C, EF80, or EF80C storage system by getting the site ready, understanding the lifting precautions for your storage systemunpacking the boxes and comparing the contents to the packing slip, and registering the storage system to access support benefits.
 
 == Step 1: Prepare the site
-To install your storage system, ensure that the site and the cabinet or rack that you plan to use meet specifications for your configuration.
+Ensure that the site and the cabinet or rack that you plan to use meet specifications for your configuration.
 
 .Steps
 
@@ -43,14 +43,14 @@ See the https://docs.netapp.com/us-en/ontap-systems-switches/index.html[Switch d
 ** Flashlight
 
 == Step 2: Understand the lifting precautions
-Take the necessary precautions when lifting or moving your storage system.
+Before you unpack the boxes (and later when you install your storage system) you should understand the weight of your storage system so that you can take the necessary precautions when lifting and moving it.
 
 An EF50, EF50C, EF80, or EF80C storage system can weigh up to 61.5 lbs (27.9 kg). To lift the storage system, use two people or a hydraulic lift.
 
 image::../media/drw_g_lifting_weight_ieops-1831.svg[AFF A20 A30 A50 and C30 and C60 weight caution icon]
 
 == Step 3: Unpack the boxes
-After you've ensured that the site and the cabinet or rack that you plan to use for your storage system meet the required specifications, unpack all boxes and compare the contents to the items on the packing slip.
+After you've ensured that the site and the cabinet or rack that you plan to use meet the specifications for your storage system, and you understand the lifting precautions,unpack all boxes and compare the contents to the items on the packing slip.
 
 .Steps
 
@@ -108,7 +108,7 @@ Cabling each controller to a power source
 |===
 
 == Step 4: Register your storage system
-After you've ensured that your site meets the requirements for your storage system specifications, and you've verified that you have all the parts you ordered, you should register your storage system.
+After you've ensured that your site meets the specifications for your storage system, and you've verified that you have all the parts you ordered, you should register your storage system.
 
 . Create an account and register your hardware at http://mysupport.netapp.com/[NetApp Support^].
 
