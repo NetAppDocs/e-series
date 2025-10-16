@@ -10,9 +10,9 @@ summary: Rack-mount hardware is used to install your hardware in a rack or cabin
 :imagesdir: ./media/
 
 [.lead]
-Rack-mount hardware is used to install your hardware in a rack or cabinet. Installation instructions should be included in the rack-mount hardware box. However, if you need to access installation instructions, use the applicable link below.
+Rack-mount hardware is used to install your storage system in a rack or cabinet. Installation instructions should be included in the rack-mount hardware box. However, if you need to access installation instructions, use the applicable link below.
 
-If needed, you can verify the rack-mount hardware supported for your hardware by seeing the NetApp Hardware Universe at https://hwu.netapp.com[NetApp Hardware Universe^].
+If needed, you can verify the rack-mount hardware supported for your storage system by seeing the NetApp Hardware Universe at https://hwu.netapp.com[NetApp Hardware Universe^].
 
 
 == Adjustable support rails
