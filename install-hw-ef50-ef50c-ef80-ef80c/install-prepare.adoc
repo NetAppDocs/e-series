@@ -42,7 +42,14 @@ See the https://docs.netapp.com/us-en/ontap-systems-switches/index.html[Switch d
 ** Philips #2 screwdriver
 ** Flashlight
 
-== Step 2: Unpack the boxes
+== Step 2: Understand the lifting precautions
+Take the necessary precautions when lifting or moving your storage system.
+
+An EF50, EF50C, EF80, or EF80C storage system can weigh up to 61.5 lbs (27.9 kg). To lift the storage system, use two people or a hydraulic lift.
+
+image::../media/drw_g_lifting_weight_ieops-1831.svg[AFF A20 A30 A50 and C30 and C60 weight caution icon]
+
+== Step 3: Unpack the boxes
 After you've ensured that the site and the cabinet or rack that you plan to use for your storage system meet the required specifications, unpack all boxes and compare the contents to the items on the packing slip.
 
 .Steps
@@ -100,7 +107,7 @@ a|
 Cabling each controller to a power source
 |===
 
-== Step 3: Register your storage system
+== Step 4: Register your storage system
 After you've ensured that your site meets the requirements for your storage system specifications, and you've verified that you have all the parts you ordered, you should register your storage system.
 
 . Create an account and register your hardware at http://mysupport.netapp.com/[NetApp Support^].
