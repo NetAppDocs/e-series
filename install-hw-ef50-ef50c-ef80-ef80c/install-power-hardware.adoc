@@ -14,6 +14,8 @@ After you cable the controller's mirroring and host data network connections for
 .Before you begin
 Take anti-static precautions.
 
+.Steps
+
 . Plug a power cable into each controller power supply, and then connect them to power sources on different circuits.
 +
 NOTE: If you are using third-party power distribution units (PDUs), do not use power outlets directly behind the controllers because you might block access to the controllers.
