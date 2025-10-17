@@ -9,7 +9,7 @@ summary: Prepare to install your EF50, EF50C, EF80, or EF80C storage system by g
 :imagesdir: ../media/
 
 [.lead]
-Prepare to install your EF50, EF50C, EF80, or EF80C storage system by getting the site ready, understanding the lifting precautions for your storage systemunpacking the boxes and comparing the contents to the packing slip, and registering the storage system to access support benefits.
+Prepare to install your EF50, EF50C, EF80, or EF80C storage system by getting the site ready, understanding the lifting precautions for your storage system, unpacking the boxes and comparing the contents to the packing slip, and registering the storage system to access support benefits.
 
 == Step 1: Prepare the site
 Ensure that the site and the cabinet or rack that you plan to use meet specifications for your configuration.
@@ -25,9 +25,9 @@ If needed, see https://hwu.netapp.com[NetApp Hardware Universe^] for the exact d
 ** 2U for a storage system
 ** 1U for most switches
 
-. Install any required network switches?
-+
-See the https://docs.netapp.com/us-en/ontap-systems-switches/index.html[Switch documentation^] for installation instructions and link:https://hwu.netapp.com[NetApp Hardware Universe^] for compatibility information.
+. Install any required network switches.
+// +
+// See the https://docs.netapp.com/us-en/ontap-systems-switches/index.html[Switch documentation^] for installation instructions and link:https://hwu.netapp.com[NetApp Hardware Universe^] for compatibility information.
 
 . Make sure you have a supported browser for the management software:
 
@@ -50,24 +50,24 @@ An EF50, EF50C, EF80, or EF80C storage system can weigh up to 61.5 lbs (27.9 kg)
 image::../media/drw_g_lifting_weight_ieops-1831.svg[AFF A20 A30 A50 and C30 and C60 weight caution icon]
 
 == Step 3: Unpack the boxes
-After you've ensured that the site and the cabinet or rack that you plan to use meet the specifications for your storage system, and you understand the lifting precautions,unpack all boxes and compare the contents to the items on the packing slip.
+After you've ensured that the site and the cabinet or rack that you plan to use meet the specifications for your storage system, and you understand the lifting precautions, unpack all boxes and compare the contents to the items on the packing slip.
 
 .Steps
 
 . Carefully open all the boxes and lay out the contents in an organized manner.
 
-. Compare the contents you’ve unpacked with the list on the packing slip. 
+. Compare the contents you’ve unpacked with the packing slip.
 +
-If there are any discrepancies, note them down for further action.
-
+You can get your packing slip by scanning the QR code on the side of the shipping box.
 +
-NOTE: You can get your packing list by scanning the QR code on the side of the shipping carton.
+NOTE: If there are any discrepancies, note them down for further action.
 
 +
 The following items are some of the contents you might see in the boxes. 
 +
-
-[%rotate, grid="none", frame="none", cols="12,9,4"]
+If needed, see https://hwu.netapp.com/[NetApp Hardware Universe] for other supported cables and identify their use.
++
+[%rotate, grid="none", frame="none", cols="9,9,5"]
 |===
 |*Hardware*
 |*Cables* |
@@ -75,37 +75,13 @@ a|* Bezel
 * Storage system with drives
 * Rack-mount hardware with instructions 
 a|
-* RJ-45 Ethernet cables for the Management port connection on each controller
-* I/O cables for the controllers' mirroring and host network connections
-* Power cables for the controllers' power supplies|
+* RJ-45 Ethernet cables for the Management port connections
+
+* I/O cables for the mirroring and data host connections
+
+* Power cables for the power supply connections|
 |===
 
-Kill but might need graphics for cabling sections:
-
-The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see https://hwu.netapp.com/[Hardware Universe] to locate the cable and identify its use.
-
-[options="header"]
-|===
-| Connector type| Cable type| Use
-a|
-image:../media/cable_ethernet_inst-hw-ef600.png["RJ-45 ethernet cable"]
-a|
-RJ-45 Ethernet cables
-a|
-Management connection
-a|
-image:../media/cable_io_inst-hw-ef600.png["I/O cable"]
-a|
-I/O cables
-a|
-Cabling the data hosts
-a|
-image:../media/cable_power_inst-hw-ef600.png["Power cables"]
-a|
-Power cables
-a|
-Cabling each controller to a power source
-|===
 
 == Step 4: Register your storage system
 After you've ensured that your site meets the specifications for your storage system, and you've verified that you have all the parts you ordered, you should register your storage system.
@@ -113,7 +89,7 @@ After you've ensured that your site meets the specifications for your storage sy
 . Create an account and register your hardware at http://mysupport.netapp.com/[NetApp Support^].
 
 .What's next?
-After you’ve prepared to install your storage system, you link:install-hardware.html[install the hardware for your storage system].
+After you’ve prepared to install your storage system, you link:install-hardware.html[install the hardware].
 
 
 =================================================
