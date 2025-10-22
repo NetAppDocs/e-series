@@ -485,6 +485,11 @@ sidebar:
                 url: "/upgrade-santricity/upgrade-drive-firmware-task.html"
     - title: Maintain systems
       entries:
+        - title: EF50, EF50C, EF80, and EF80C
+          pdf-filename: EF50-EF50C-EF80-EF80C Maintain Systems
+          entries:
+              - title: Overview
+                url: "/maintenance-ef50-ef50c-ef80-ef80c/index.html"
         - title: EF300 and EF600
           pdf-filename: EF300-EF600 Maintain Systems
           entries:
