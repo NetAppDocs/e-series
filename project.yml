@@ -488,8 +488,63 @@ sidebar:
         - title: EF50, EF50C, EF80, and EF80C
           pdf-filename: EF50-EF50C-EF80-EF80C Maintain Systems
           entries:
-              - title: Overview
+              - title: Maintenance overview
                 url: "/maintenance-ef50-ef50c-ef80-ef80c/index.html"
+              - title: Boot media
+                url: "/maintenance-ef50-ef50c-ef80-ef80c/bootmedia-replace-requirements-bmr.html"
+              - title: Chassis
+                pdf-filename: EF50, EF50C, EF80, and EF80C Chassis
+                entries:
+                    - title: Chassis replace workflow
+                      url: "/maintenance-ef50-ef50c-ef80-ef80c/chassis-replace-workflow.html"
+                    - title: Review requirements
+                      url: "/maintenance-ef50-ef50c-ef80-ef80c/chassis-replace-requirements.html"
+                    - title: Shut down controllers
+                      url: "/maintenance-ef50-ef50c-ef80-ef80c/chassis-replace-shutdown.html"
+                    - title: Replace chassis
+                      url: "/maintenance-ef50-ef50c-ef80-ef80c/chassis-replace-move-hardware.html"
+                    - title: Complete chassis replacement
+                      url: "/maintenance-ef50-ef50c-ef80-ef80cchassis-replace-complete-system-restore-rma.html"
+              - title: Controller
+                pdf-filename: EF50, EF50C, EF80, and EF80C Controller Module
+                entries:
+                    - title: Controller replace workflow
+                      url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-workflow.html"
+                    - title: Review requirements
+                      url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-requirements.html"
+                    - title: Shut down impaired controller
+                      url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-shutdown.html"
+                    - title: Replace controller
+                      url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-move-hardware.html"
+                    - title: Restore system configuration
+                      url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-system-config-restore-and-verify.html"
+                    - title: Give back controller
+                      url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-recable-reassign-disks.html"
+                    - title: Complete controller replacement
+                      url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-restore-system-rma.html"
+              - title: DIMM
+                url: "/maintenance-ef50-ef50c-ef80-ef80c/dimm-replace.html"
+              - title: Drive
+                url: "/maintenance-ef50-ef50c-ef80-ef80c/drive-replace.html"
+              - title: Fan
+                url: "/maintenance-ef50-ef50c-ef80-ef80c/fan-replace.html"
+              - title: I/O module
+                pdf-filename: EF50, EF50C, EF80, and EF80C I/O module
+                entries:
+                    - title: I/O module overview
+                      url: "/maintenance-ef50-ef50c-ef80-ef80c/io-module-overview.html"
+                    - title: Add I/O module
+                      url: "/maintenance-ef50-ef50c-ef80-ef80c/io-module-add.html"
+                    - title: Hot-swap cluster/HA module
+                      url: "/maintenance-ef50-ef50c-ef80-ef80c/io-module-hotswap-ha-slot4.html"
+                    - title: Replace I/O module
+                      url: "/maintenance-ef50-ef50c-ef80-ef80c/io-module-replace.html"
+              - title: NV battery
+                url: "/maintenance-ef50-ef50c-ef80-ef80c/nvdimm-battery-replace.html"
+              - title: Power supply
+                url: "/maintenance-ef50-ef50c-ef80-ef80c/power-supply-replace.html"
+              - title: Real-time clock battery
+                url: "/maintenance-ef50-ef50c-ef80-ef80c/rtc-battery-replace.html"
         - title: EF300 and EF600
           pdf-filename: EF300-EF600 Maintain Systems
           entries:
