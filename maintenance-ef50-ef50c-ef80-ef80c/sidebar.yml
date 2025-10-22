@@ -8,9 +8,9 @@ entries:
       url: /ef50-ef50c-ef80-ef80c/maintain-overview.html
     - title: Review requirements
       url: /ef50-ef50c-ef80-ef80c/bootmedia-replace-requirements-bmr.html
-   - title: Chassis
-     pdf-filename: EF50, EF50C, EF80, and EF80C Chassis
-     entries:
+    - title: Chassis
+      pdf-filename: EF50, EF50C, EF80, and EF80C Chassis
+      entries:
       - title: Chassis replace workflow
         url: /ef50-ef50c-ef80-ef80c/chassis-replace-workflow.html
       - title: Review requirements
@@ -21,9 +21,9 @@ entries:
         url: /ef50-ef50c-ef80-ef80c/chassis-replace-move-hardware.html
       - title: Complete chassis replacement
         url: /ef50-ef50c-ef80-ef80c/chassis-replace-complete-system-restore-rma.html
-   - title: Controller
-     pdf-filename: EF50, EF50C, EF80, and EF80CController Module
-     entries:
+    - title: Controller
+      pdf-filename: EF50, EF50C, EF80, and EF80C Controller Module
+      entries:
       - title: Controller replace workflow
         url: /ef50-ef50c-ef80-ef80c/controller-replace-workflow.html
       - title: Review requirements
@@ -38,26 +38,26 @@ entries:
         url: /ef50-ef50c-ef80-ef80c/controller-replace-recable-reassign-disks.html
       - title: Complete controller replacement
         url: /ef50-ef50c-ef80-ef80c/controller-replace-restore-system-rma.html
-   - title: DIMM
-     url: /ef50-ef50c-ef80-ef80c/dimm-replace.html
-   - title: Drive
-     url: /ef50-ef50c-ef80-ef80c/drive-replace.html
-   - title: Fan
-     url: /ef50-ef50c-ef80-ef80c/fan-replace.html
-   - title: I/O module
-     pdf-filename: EF50, EF50C, EF80, and EF80C I/O module
-     entries:
-        - title: I/O module overview
-          url: /ef50-ef50c-ef80-ef80c/io-module-overview.html
-        - title: Add I/O module
-          url: /ef50-ef50c-ef80-ef80c/io-module-add.html
-        - title: Hot-swap cluster/HA module
-          url: /ef50-ef50c-ef80-ef80c/io-module-hotswap-ha-slot4.html
-        - title: Replace I/O module
-          url: /ef50-ef50c-ef80-ef80c/io-module-replace.html
-   - title: NV battery
-     url: /ef50-ef50c-ef80-ef80c/nvdimm-battery-replace.html
-   - title: Power supply
-     url: /ef50-ef50c-ef80-ef80c/power-supply-replace.html
-   - title: Real-time clock battery
-     url: /ef50-ef50c-ef80-ef80c/rtc-battery-replace.html
+    - title: DIMM
+      url: /ef50-ef50c-ef80-ef80c/dimm-replace.html
+    - title: Drive
+      url: /ef50-ef50c-ef80-ef80c/drive-replace.html
+    - title: Fan
+      url: /ef50-ef50c-ef80-ef80c/fan-replace.html
+    - title: I/O module
+      pdf-filename: EF50, EF50C, EF80, and EF80C I/O module
+      entries:
+      - title: I/O module overview
+        url: /ef50-ef50c-ef80-ef80c/io-module-overview.html
+      - title: Add I/O module
+        url: /ef50-ef50c-ef80-ef80c/io-module-add.html
+      - title: Hot-swap cluster/HA module
+        url: /ef50-ef50c-ef80-ef80c/io-module-hotswap-ha-slot4.html
+      - title: Replace I/O module
+        url: /ef50-ef50c-ef80-ef80c/io-module-replace.html
+    - title: NV battery
+      url: /ef50-ef50c-ef80-ef80c/nvdimm-battery-replace.html
+    - title: Power supply
+      url: /ef50-ef50c-ef80-ef80c/power-supply-replace.html
+    - title: Real-time clock battery
+      url: /ef50-ef50c-ef80-ef80c/rtc-battery-replace.html
