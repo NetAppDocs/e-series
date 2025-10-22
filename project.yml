@@ -504,7 +504,7 @@ sidebar:
                     - title: Replace chassis
                       url: "/maintenance-ef50-ef50c-ef80-ef80c/chassis-replace-move-hardware.html"
                     - title: Complete chassis replacement
-                      url: "/maintenance-ef50-ef50c-ef80-ef80cchassis-replace-complete-system-restore-rma.html"
+                      url: "/maintenance-ef50-ef50c-ef80-ef80c/chassis-replace-complete-system-restore-rma.html"
               - title: Controller
                 pdf-filename: EF50, EF50C, EF80, and EF80C Controller Module
                 entries:
@@ -535,8 +535,6 @@ sidebar:
                       url: "/maintenance-ef50-ef50c-ef80-ef80c/io-module-overview.html"
                     - title: Add I/O module
                       url: "/maintenance-ef50-ef50c-ef80-ef80c/io-module-add.html"
-                    - title: Hot-swap cluster/HA module
-                      url: "/maintenance-ef50-ef50c-ef80-ef80c/io-module-hotswap-ha-slot4.html"
                     - title: Replace I/O module
                       url: "/maintenance-ef50-ef50c-ef80-ef80c/io-module-replace.html"
               - title: NV battery

@@ -1,5 +1,5 @@
 ---
-permalink: ef50-ef50c-ef80-ef80c/dimm-replace.html
+permalink: maintenance-ef50-ef50c-ef80-ef80c/dimm-replace.html
 sidebar: sidebar
 keywords: ef50, ef50c, ef80, ef80c, replace a dimm
 summary: Replace a DIMM in your EF50, EF50C, EF80, or EF80C storage system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.

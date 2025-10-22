@@ -48,8 +48,6 @@ entries:
       url: /maintenance-ef50-ef50c-ef80-ef80c/io-module-overview.html
     - title: Add I/O module
       url: /maintenance-ef50-ef50c-ef80-ef80c/io-module-add.html
-    - title: Hot-swap cluster/HA module
-      url: /maintenance-ef50-ef50c-ef80-ef80c/io-module-hotswap-ha-slot4.html
     - title: Replace I/O module
       url: /maintenance-ef50-ef50c-ef80-ef80c/io-module-replace.html
   - title: NV battery
