@@ -1,15 +1,15 @@
 ---
-permalink: a20-30-50/dimm-replace.html
+permalink: ef50-ef50c-ef80-ef80c/dimm-replace.html
 sidebar: sidebar
-keywords: aff a20, aff a30, aff a50, replace a dimm
-summary: Replace a DIMM in your AFF A20, AFF A30, or AFF A50 storage system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
+keywords: ef50, ef50c, ef80, ef80c, replace a dimm
+summary: Replace a DIMM in your EF50, EF50C, EF80, or EF80C storage system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 ---
-= Replace a DIMM - AFF A20, AFF A30, and AFF A50
+= Replace a DIMM - EF50, EF50C, EF80, and EF80C
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace a DIMM in your AFF A20, AFF A30, or AFF A50 storage system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
+Replace a DIMM in your EF50, EF50C, EF80, or EF80C storage system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 
 
 .Before you begin

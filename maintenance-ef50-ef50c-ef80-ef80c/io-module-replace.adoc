@@ -1,15 +1,15 @@
 ---
-permalink: a20-30-50/io-module-replace.html
+permalink: ef50-ef50c-ef80-ef80c/io-module-replace.html
 sidebar: sidebar
-keywords: aff a20, aff a30, aff a50, replace a pcie card
-summary: Replace an I/O module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails or requires an upgrade to support higher performance or additional features. The replacement process involves shutting down the controller, replacing the failed I/O module, rebooting the controller, and returning the failed part to NetApp.
+keywords: ef50, ef50c, ef80, ef80c, replace a pcie card
+summary: Replace an I/O module in your EF50, EF50C, EF80, or EF80C storage system when the module fails or requires an upgrade to support higher performance or additional features. The replacement process involves shutting down the controller, replacing the failed I/O module, rebooting the controller, and returning the failed part to NetApp.
 ---
-= Replace an I/O module - AFF A20, AFF A30, and AFF A50
+= Replace an I/O module - EF50, EF50C, EF80, and EF80C
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace an I/O module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails or requires an upgrade to support higher performance or additional features. The replacement process involves shutting down the controller, replacing the failed I/O module, rebooting the controller, and returning the failed part to NetApp.
+Replace an I/O module in your EF50, EF50C, EF80, or EF80C storage system when the module fails or requires an upgrade to support higher performance or additional features. The replacement process involves shutting down the controller, replacing the failed I/O module, rebooting the controller, and returning the failed part to NetApp.
 
 .Before you begin
 All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.

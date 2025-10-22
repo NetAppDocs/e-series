@@ -1,20 +1,20 @@
 ---
-permalink: a20-30-50/maintain-overview.html
+permalink: ef50-ef50c-ef80-ef80c/maintain-overview.html
 sidebar: sidebar
-keywords: aff a20 aff a30 aff a50 maintenance, maintenance, repairing a20 aff a30 aff a50, replace a20 aff a30 aff a50 components
-summary: Maintain the hardware of your AFF A20, AFF A30, or AFF A50 storage systems to ensure long-term reliability and optimal performance. Perform regular maintenance tasks such as replacing faulty components, as this helps prevent downtime and data loss.
+keywords: ef50 ef50c ef80 ef80c maintenance, maintenance, repairing ef50 ef50c ef80 ef80c, replace ef50 ef50c ef80 ef80c components
+summary: Maintain the hardware of your EF50, EF50C, EF80, or EF80C storage systems to ensure long-term reliability and optimal performance. Perform regular maintenance tasks such as replacing faulty components, as this helps prevent downtime and data loss.
 ---
-= Overview of the maintenance procedures -  AFF A20, AFF A30, and AFF A50
+= Overview of the maintenance procedures -  EF50, EF50C, EF80, and EF80C
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 Maintain the hardware of your AFF A20, AFF A30, or AFF A50 storage system to ensure long-term reliability and optimal performance. Perform regular maintenance tasks such as replacing faulty components, as this helps prevent downtime and data loss.
 
-The maintenance procedures assume that the AFF A20, AFF A30, or AFF A50 storage system has already been deployed as a storage node in the ONTAP environment.
+The maintenance procedures assume that the EF50, EF50C, EF80, or EF80C storage system has already been deployed as a storage node in the ONTAP environment.
 
 == System components
-For the AFF A20, AFF A30, or AFF A50 storage system, you can perform maintenance procedures on the following components.
+For the EF50, EF50C, EF80, or EF80C storage system, you can perform maintenance procedures on the following components.
 
 [%rotate, grid="none", frame="none", cols="25,65"]
 

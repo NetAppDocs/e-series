@@ -1,5 +1,5 @@
 ---
-permalink: a20-30-50/controller-replace-system-config-restore-and-verify.html
+permalink: ef50-ef50c-ef80-ef80c/controller-replace-system-config-restore-and-verify.html
 sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, restore and verify the system configuration, verify and set the ha state of the controller module
 summary: Verify that the controller’s HA configuration is active and functioning correctly in your AFF A20, AFF A30, or AFF A50 storage system, and confirm that the system’s adapters list all the paths to the disks.
