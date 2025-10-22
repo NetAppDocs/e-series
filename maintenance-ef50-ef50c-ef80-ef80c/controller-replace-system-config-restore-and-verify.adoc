@@ -1,7 +1,7 @@
 ---
 permalink: ef50-ef50c-ef80-ef80c/controller-replace-system-config-restore-and-verify.html
 sidebar: sidebar
-keywords: ef50-ef50c-ef80-ef80c, restore and verify the system configuration, verify and set the ha state of the controller module
+keywords: ef50, ef50c, ef80, ef80c, restore and verify the system configuration, verify and set the ha state of the controller module
 summary: Verify that the controller’s HA configuration is active and functioning correctly in your EF50, EF50C, EF80, or EF80C storage system, and confirm that the system’s adapters list all the paths to the disks.
 ---
 = Restore and verify the system configuration - EF50, EF50C, EF80, and EF80C
