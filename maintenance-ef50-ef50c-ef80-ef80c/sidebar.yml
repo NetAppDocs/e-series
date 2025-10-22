@@ -3,9 +3,11 @@ title: EF50, EF50C, EF80, EF80C
 entries:
   - title: Maintenance overview
     url: /ef50-ef50c-ef80-ef80c/maintain-overview.html
-  - title: Review requirements
+  - title: Boot media
     url: /ef50-ef50c-ef80-ef80c/bootmedia-replace-requirements-bmr.html
   - title: Chassis
+    pdf-filename: EF50, EF50C, EF80, and EF80C Chassis
+    entries:
     - title: Chassis replace workflow
       url: /ef50-ef50c-ef80-ef80c/chassis-replace-workflow.html
     - title: Review requirements
@@ -17,6 +19,8 @@ entries:
     - title: Complete chassis replacement
       url: /ef50-ef50c-ef80-ef80c/chassis-replace-complete-system-restore-rma.html
   - title: Controller
+    pdf-filename: EF50, EF50C, EF80, and EF80C Controller Module
+    entries:
     - title: Controller replace workflow
       url: /ef50-ef50c-ef80-ef80c/controller-replace-workflow.html
     - title: Review requirements
@@ -38,6 +42,8 @@ entries:
   - title: Fan
     url: /ef50-ef50c-ef80-ef80c/fan-replace.html
   - title: I/O module
+    pdf-filename: EF50, EF50C, EF80, and EF80C I/O module
+    entries:
     - title: I/O module overview
       url: /ef50-ef50c-ef80-ef80c/io-module-overview.html
     - title: Add I/O module
