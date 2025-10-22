@@ -13,4 +13,65 @@ entries:
     url: "/install-hw-ef50-ef50c-ef80-ef80c/install-power-hardware.html"
   - title: Complete system setup
     url: "/install-hw-ef50-ef50c-ef80-ef80c/install-complete-setup.html"
+  - title: Maintain
+    pdf-filename: EF50, EF50C, EF80, and EF80C Maintain
+    entries:
+    - title: Maintenance overview
+      url: /ef50-ef50c-ef80-ef80c/maintain-overview.html
+    - title: Review requirements
+      url: /ef50-ef50c-ef80-ef80c/bootmedia-replace-requirements-bmr.html
+   - title: Chassis
+     pdf-filename: AFF A20, AFF A30, and AFF A50 Chassis
+     entries:
+      - title: Chassis replace workflow
+        url: /ef50-ef50c-ef80-ef80c/chassis-replace-workflow.html
+      - title: Review requirements
+        url: /ef50-ef50c-ef80-ef80c/chassis-replace-requirements.html
+      - title: Shut down controllers
+        url: /ef50-ef50c-ef80-ef80c/chassis-replace-shutdown.html
+      - title: Replace chassis
+        url: /ef50-ef50c-ef80-ef80c/chassis-replace-move-hardware.html
+      - title: Complete chassis replacement
+        url: /ef50-ef50c-ef80-ef80c/chassis-replace-complete-system-restore-rma.html
+   - title: Controller
+     pdf-filename: AFF A20, AFF A30, and AFF A50 Controller Module
+     entries:
+      - title: Controller replace workflow
+        url: /ef50-ef50c-ef80-ef80c/controller-replace-workflow.html
+      - title: Review requirements
+        url: /ef50-ef50c-ef80-ef80c/controller-replace-requirements.html
+      - title: Shut down impaired controller
+        url: /ef50-ef50c-ef80-ef80c/controller-replace-shutdown.html
+      - title: Replace controller
+        url: /ef50-ef50c-ef80-ef80c/controller-replace-move-hardware.html
+      - title: Restore system configuration
+        url: /ef50-ef50c-ef80-ef80c/controller-replace-system-config-restore-and-verify.html
+      - title: Give back controller
+        url: /ef50-ef50c-ef80-ef80c/controller-replace-recable-reassign-disks.html
+      - title: Complete controller replacement
+        url: /ef50-ef50c-ef80-ef80c/controller-replace-restore-system-rma.html
+   - title: DIMM
+     url: /ef50-ef50c-ef80-ef80c/dimm-replace.html
+   - title: Drive
+     url: /ef50-ef50c-ef80-ef80c/drive-replace.html
+   - title: Fan
+     url: /ef50-ef50c-ef80-ef80c/fan-replace.html
+   - title: I/O module
+     pdf-filename: EF50, EF50C, EF80, and EF80C I/O module
+     entries:
+        - title: I/O module overview
+          url: /ef50-ef50c-ef80-ef80c/io-module-overview.html
+        - title: Add I/O module
+          url: /ef50-ef50c-ef80-ef80c/io-module-add.html
+        - title: Hot-swap cluster/HA module
+          url: /ef50-ef50c-ef80-ef80c/io-module-hotswap-ha-slot4.html
+        - title: Replace I/O module
+          url: /ef50-ef50c-ef80-ef80c/io-module-replace.html
+   - title: NV battery
+     url: /ef50-ef50c-ef80-ef80c/nvdimm-battery-replace.html
+   - title: Power supply
+     url: /ef50-ef50c-ef80-ef80c/power-supply-replace.html
+   - title: Real-time clock battery
+     url: /ef50-ef50c-ef80-ef80c/rtc-battery-replace.html
+
       
