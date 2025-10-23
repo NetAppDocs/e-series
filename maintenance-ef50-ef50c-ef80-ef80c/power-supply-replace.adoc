@@ -11,6 +11,4 @@ summary: Replace an AC or DC power supply unit (PSU) in your EF50, EF50C, EF80, 
 [.lead]
 Replace an AC or DC power supply unit (PSU) in your EF50, EF50C, EF80, or EF80C storage system when it fails or becomes faulty, ensuring that your system continues to receive the required power for stable operation. The replacement process involves disconnecting the faulty PSU from the power source, unplugging the power cord, replacing the faulty PSU, and then reconnecting it to the power source.
 
-image::../media/ef50-50c-80-80c_psu_ac_orange_tab_replace_ieops-2611.svg
-
 include::../_include/ge_power_supply_replace.adoc[]
