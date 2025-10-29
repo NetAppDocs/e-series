@@ -27,7 +27,7 @@ Check out the links below to access technical reports related to E-Series hardwa
 
 | | |
 
-|https://www.netapp.com/ko/media/12421-tr4652.pdf[*TR-4652: SANtricity Dynamic Disk Pools*^]
+|https://www.netapp.com/media/12421-tr-4652-santricity-os-ddp.pdf[*TR-4652: SANtricity Dynamic Disk Pools*^]
 |https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf[*TR-4737: SANtricity Automatic Load Balancing*^]
 |https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf[*TR-4736: SANtricity Web Services API*^]
 |Describes how storage administrators can group sets of like disks into a pool topology where all the drives in the pool participate in the I/O workflow.
