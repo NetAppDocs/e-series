@@ -34,7 +34,7 @@ a| The chassis is the physical enclosure housing all the controller components s
 
 a| link:controller-replace-workflow.html[Controller]
 
-a| A controller consists of a board, firmware, and software. It controls the drives and runs the SANtricity operating system software.
+a| A controller consists of a board, firmware, and software. It controls the drives and runs the SANtricity operating system software. A controller also contains the boot media. When the boot media fails, the controller must be replaced.
 
 a| link:dimm-replace.html[DIMM]
 
