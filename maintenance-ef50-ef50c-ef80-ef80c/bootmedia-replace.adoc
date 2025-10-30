@@ -1,10 +1,10 @@
 ---
-permalink: maintenance-ef50-ef50c-ef80-ef80c/bootmedia-replace-requirements-bmr.html
+permalink: maintenance-ef50-ef50c-ef80-ef80c/bootmedia-replace.html
 sidebar: sidebar
 keywords: ef50, ef50c, ef80, ef80c, replace the boot media
 summary: Before replacing the boot media in your EF50, EF50C, EF80, and EF80C storage system, ensure you meet the necessary requirements for a successful replacement. This includes verifying that you have the correct replacement boot media, confirming that the e0M (wrench) port on the impaired controller is working properly, and determining whether Onboard Key Manager (OKM) or External Key Manager (EKM) is enabled.
 ---
-= Requirements for automated boot media recovery - EF50, EF50C, EF80, and EF80C
+= Replace the boot media - EF50, EF50C, EF80, and EF80C
 :icons: font
 :imagesdir: ../media/
 
@@ -21,4 +21,3 @@ include::../_include/bootmedia_replace_requirements_e0s_bmr.adoc[]
 
 After you've reviewed the boot media requirements, you link:bootmedia-shutdown-bmr.html[shut down the controller].
 
-//May 22, 2025: GH#1231, changed include name g_bootmedia_replace_requirements_bmr to make generic (remove "g") and add the "eos" designation. This include is used for the following platform family: aff a20-30-50, aff c30-60, fas50, asa a20-30-50, asa c30; and for some older platforms.
