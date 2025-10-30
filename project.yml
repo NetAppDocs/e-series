@@ -489,7 +489,7 @@ sidebar:
           pdf-filename: EF50-EF50C-EF80-EF80C Maintain Systems
           entries:
               - title: Maintenance overview
-                url: "/maintenance-ef50-ef50c-ef80-ef80c/index.html"
+                url: "/maintenance-ef50-ef50c-ef80-ef80c/maintain-overview.html"
               - title: Boot media
                 url: "/maintenance-ef50-ef50c-ef80-ef80c/bootmedia-replace.html"
               - title: Chassis
