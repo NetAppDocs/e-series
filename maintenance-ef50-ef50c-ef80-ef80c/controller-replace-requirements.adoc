@@ -11,7 +11,7 @@ summary: Before replacing the controller in your EF50, EF50C, EF80, or EF80C sto
 [.lead]
 Before replacing the controller in your EF50, EF50C, EF80, or EF80C storage system, ensure you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have the correct replacement controller, and saving the controller's console output to a text log file.
 
-include::../_include/g_controller_replace_requirements.adoc[]
+include::../_include/ge_controller_replace_requirements.adoc[]
 
 .What's next?
 

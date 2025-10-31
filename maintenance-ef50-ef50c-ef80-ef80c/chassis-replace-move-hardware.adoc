@@ -11,7 +11,7 @@ summary: Replace the chassis of your EF50, EF50C, EF80, or EF80C storage system 
 [.lead]
 Replace the chassis of your EF50, EF50C, EF80, or EF80C storage system when a hardware failure requires it. The replacement process involves removing the controllers, removing the drives, installing the replacement chassis, and reinstalling the chassis components.
 
-include::../_include/g_chassis_replace_move_hardware.adoc[]
+include::../_include/ge_chassis_replace_move_hardware.adoc[]
 
 .What's next?
 

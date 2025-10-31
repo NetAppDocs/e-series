@@ -1,0 +1,37 @@
+Remove the failed RTC battery and install the replacement RTC battery.
+
+You must use an approved RTC battery.
+
+.Steps
+
+. Locate the RTC battery.
+
+. Remove the RTC battery:
++
+image::../media/drw_g_rtc_battery_replace_ieops-1902.svg[Replace the RTC battery]
+
++
+[cols="1,4"]
+
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Gently rotate the RTC battery at an angle away from its holder.
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Lift the RTC battery out of its holder.
+
+|===
+
+. Install the replacement RTC battery:
+
+.. Remove the replacement battery from the antistatic shipping bag.
+
+.. Position the battery so that the plus sign on the battery faces out to correspond with the plus sign on the motherboard.
+
+.. Insert the battery into the holder at an angle, and then push it into an upright position so it is fully seated in the holder.
+
+.. Visually inspect the battery to make sure that it is completely seated in its holder and that the polarity is correct.
+

@@ -25,9 +25,4 @@ include::../_include/complete_rma.adoc[]
 
 
 
-// No longer being used: Mar 6 2025.
-// == Step 1: Verify LIFs and check cluster health
-
-// include::../_include/check_lifs_cluster_health.adoc[]
-
 

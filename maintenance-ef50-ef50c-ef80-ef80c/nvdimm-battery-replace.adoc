@@ -42,20 +42,20 @@ include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 
 == Step 2: Remove the controller
 
-include::../_include/g_controller_remove.adoc[]
+include::../_include/ge_controller_remove.adoc[]
 
 . Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
 
 == Step 3: Replace the NV battery
 
-include::../_include/g_nvdimm_battery_replace.adoc[]
+include::../_include/ge_nvdimm_battery_replace.adoc[]
 
 
 == Step 4: Reinstall the controller
 
 Reinstall the controller into the chassis and reboot it.
 
-include::../_include/g_controller_reinstall.adoc[]
+include::../_include/ge_controller_reinstall.adoc[]
 
 
 == Step 5: Return the failed part to NetApp
