@@ -516,8 +516,6 @@ sidebar:
                       url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-shutdown.html"
                     - title: Replace controller
                       url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-move-hardware.html"
-                    - title: Restore system configuration
-                      url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-system-config-restore-and-verify.html"
                     - title: Give back controller
                       url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-recable-reassign-disks.html"
                     - title: Complete controller replacement

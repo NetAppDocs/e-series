@@ -5,8 +5,6 @@ If the original controller used DHCP for the IP address, locate the MAC address 
 
 NOTE: If the original controller did not use DHCP for the IP address, the new controller adopts the IP address of the controller you removed.
 
-== Step 1: Place the new controller online
-
 .Steps
 
 . Place controller online.
