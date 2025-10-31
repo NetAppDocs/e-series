@@ -9,7 +9,7 @@ You can turn them off by entering the `system location-led _off_` command. If yo
 
 == Step 1: Remove the controller
 
-include::../_include/g_controller_remove.adoc[]
+include::../_include/ge_controller_remove.adoc[]
 
 . Repeat these steps for the other controller in the chassis.
 
