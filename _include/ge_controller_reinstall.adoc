@@ -1,5 +1,3 @@
-// Install the controller module - AFF A20, A30, and AFF A50
-
 
 .About this task
 
@@ -54,23 +52,10 @@ NOTE: The replacement controller receives power from the healthy controller and 
 . Reconnect the power cord to the power supply (PSU).
 +
 Once power is restored to the PSU, the status LED should be green.
-+
-[options="header" cols="1,2"]
 
-|===
-| If you are reconnecting a...| Then...
-a|
-AC PSU
-a|
-. Plug the power cord into the PSU.
-. Secure the power cord with the power cord retainer.
-a|
-DC PSU
-a|
-. Plug the D-SUB DC power cord connector into the PSU.
-. Tighten the two thumb screws to secure the D-SUB DC power cord connector to the PSU.
+.. Plug the power cord into the PSU.
+.. Secure the power cord with the power cord retainer.
 
-|===
 
 . Return the impaired controller to normal operation by giving back its storage: 
 +

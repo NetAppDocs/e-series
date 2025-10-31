@@ -50,7 +50,7 @@ include::../_include/ge_dimm_replace.adoc[]
 
 Reinstall the controller into the chassis and reboot it.
 
-include::../_include/g_controller_reinstall.adoc[]
+include::../_include/ge_controller_reinstall.adoc[]
 
 == Step 5: Return the failed part to NetApp
 
