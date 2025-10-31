@@ -11,7 +11,7 @@ summary: Return control of storage resources to the replacement controller so yo
 [.lead]
 After you have installed the replacement/new controller, place the new controller online for your EF50, EF50C, EF80, or EF80C storage system.
 
-include::../_include/ge_controller_replace_online_controller.adoc[]
+include::../_include/ge_controller_replace_recable_reassign_disks.adoc[]
 //This include needs to be place controller online
 
 .What's next?
