@@ -20,7 +20,7 @@ For your EF50, EF50C, EF80, or EF80C storage system, you can perform maintenance
 
 |===
 
-a| link:bootmedia-replace.html[Boot media]
+a| link: /maintenance-ef50-ef50c-ef80-ef80c/bootmedia-replace.html[Boot media]
 
 a|The boot media stores a primary and secondary set of SANtricity image files that the storage system uses to boot the image and restore the configuration from the partner node. 
 
@@ -28,40 +28,40 @@ a|The boot media stores a primary and secondary set of SANtricity image files th
 
 When the boot media fails in a controller, the controller must be replaced.
 
-a| link:chassis-replace-workflow.html[Chassis]
+a| link: /maintenance-ef50-ef50c-ef80-ef80c/chassis-replace-workflow.html[Chassis]
 
 a| The chassis is the physical enclosure housing all the controller components such as the controller/CPU unit, power supply, and I/O.
 
-a| link:controller-replace-workflow.html[Controller]
+a| link: /maintenance-ef50-ef50c-ef80-ef80c/controller-replace-workflow.html[Controller]
 
 a| A controller consists of a board, firmware, and software. It controls the drives and runs the SANtricity operating system software. A controller also contains the boot media. When the boot media fails, the controller must be replaced.
 
-a| link:dimm-replace.html[DIMM]
+a| link: /maintenance-ef50-ef50c-ef80-ef80c/dimm-replace.html[DIMM]
 
 a| A dual in-line memory module (DIMM) is a type of computer memory. They are installed to add system memory to a controller motherboard.
 
-a| link:drive-replace.html[Drive]
+a| link: /maintenance-ef50-ef50c-ef80-ef80c/drive-replace.html[Drive]
 
 a| A drive is a device that provides the physical storage needed for data.
 
-a| link:fan-replace.html[Fan]
+a| link: /maintenance-ef50-ef50c-ef80-ef80c/fan-replace.html[Fan]
 
 a| A fan cools the controller and drives.
 
-a| link:io-module-overview.html[I/O module]
+a| link: /maintenance-ef50-ef50c-ef80-ef80c/io-module-overview.html[I/O module]
 
 a| The I/O module (Input/Output module) is a hardware component that acts as an intermediary between the controller and various devices or systems that need to exchange data with the controller.
 
-a| link:nvdimm-battery-replace.html[NV battery]
+a| link: /maintenance-ef50-ef50c-ef80-ef80c/nvdimm-battery-replace.html[NV battery]
 
 a| The non-volatile memory (NV) battery is responsible for providing power to the NVMEM components while data in-flight is being destaged to flash memory after a power loss.
 
 
-a| link:power-supply-replace.html[Power supply]
+a| link: /maintenance-ef50-ef50c-ef80-ef80c/power-supply-replace.html[Power supply]
 
 a| A power supply provides a redundant power source in a controller.
 
-a| link:rtc-battery-replace.html[Real-time clock battery]
+a| link: /maintenance-ef50-ef50c-ef80-ef80c/rtc-battery-replace.html[Real-time clock battery]
 
 a| A real-time clock battery preserves system date and time information if the power is off.
 |===
