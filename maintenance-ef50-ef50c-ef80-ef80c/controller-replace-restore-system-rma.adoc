@@ -11,63 +11,12 @@ summary: To complete the controller replacement for your EF50, EF50C, EF80, or E
 [.lead]
 To complete the controller replacement for your EF50, EF50C, EF80, or EF80C storage system, place the new controller online, collect support data, and then return the failed part to NetApp.
 
-.Before you begin
+After you have onlined the new controller in your EF50, EF50C, EF80, or EF80C storage system, verify firmware and volume configurations, collect support data and then return the failed part to NetApp.
 
-If the original controller used DHCP for the IP address, locate the MAC address on the label on the back of the replacement controller. Ask your network administrator to associate the DNS/network and IP address for the controller you removed with the MAC address for the replacement controller.
+== Step 1: Restore and verify the system configuration
 
-NOTE: If the original controller did not use DHCP for the IP address, the new controller adopts the IP address of the controller you removed.
 
-== Step 1: Place the new controller online
-
-.Steps
-
-. Place controller online.
- .. In System Manager, navigate to the Hardware page.
- .. Select *Show back of controller*.
- .. Select the replaced controller.
- .. Select *Place online* from the drop-down list.
-. As the controller boots, check the controller LEDs.
-+
-When communication with the other controller is reestablished:
-
- ** The amber Attention LED remains on.
- ** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
-
-. When the controller is back online, check whether an NVSRAM mismatch is reported in Recovery Guru. 
-.. If an NVSRAM mismatch is reported, upgrade NVSRAM using the following SMcli command: 
-+ 
-----
-SMcli <controller A IP> <controller B IP> -u admin -p <password> -k -c "download storageArray NVSRAM file=\"C:\Users\testuser\Downloads\NVSRAM .dlp file>\" forceDownload=TRUE;"
-----
-+
-The `-k` parameter is needed if the array is not https secure. 
-
-+
-NOTE: If the SMcli command cannot be completed, contact https://www.netapp.com/company/contact-us/support/[NetApp Technical Support^] or log in to the https://mysupport.netapp.com[NetApp Support Site^] to create a case. 
-
-. Confirm the status of the system is Optimal and check the controller shelf's Attention LEDs.
-+
-If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller canister is installed correctly. If necessary, remove and reinstall the controller canister.
-+
-NOTE: If you cannot resolve the problem, contact technical support.
-
-. Click menu:Hardware[Support > Upgrade Center] to ensure that the firmware and NVSRAM versions on the system are at the desired levels.
-+
-As needed, install the latest version.
-
-. Verify that all volumes have been returned to the preferred owner.
-.. Select menu:Storage[Volumes]. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select menu:More[Change ownership] to view volume owners.
-.. If volumes are all owned by preferred owner continue to Step 6.
-.. If none of the volumes are returned, you must manually return the volumes. Go to menu:More[Redistribute volumes].
- .. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution you must check the Recovery Guru for host connectivity issues.
- .. If there is no Recovery Guru present or if following the recovery guru steps the volumes are still not returned to their preferred owners contact support.
-
-. Collect support data for your storage array using SANtricity System Manager.
-  .. Select menu:Support[Support Center > Diagnostics].
-  .. Select *Collect Support Data*.
-  .. Click *Collect*.
-+
-The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+include::../_include/ge_controller_replace_system_config_restore_and_verify.adoc[]
 
 
 == Step 2: Return the failed part to NetApp
