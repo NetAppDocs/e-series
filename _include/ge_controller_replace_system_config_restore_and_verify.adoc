@@ -1,54 +1,20 @@
 
-== Step 1: Verify HA config settings
+.Steps
 
-You must verify the `HA` state of the controller and, if necessary, update the state to match your storage system configuration.
-
-. Boot to maintenance mode: 
+. Click menu:Hardware[Support > Upgrade Center] to ensure that the firmware and NVSRAM versions on the system are at the desired levels.
 +
-`boot_ontap maint` 
+As needed, install the latest version.
 
-.. Enter `y` when you see _Continue with boot?_.
+. Verify that all volumes have been returned to the preferred owner.
+.. Select menu:Storage[Volumes]. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select menu:More[Change ownership] to view volume owners.
+.. If volumes are all owned by preferred owner continue to Step 6.
+.. If none of the volumes are returned, you must manually return the volumes. Go to menu:More[Redistribute volumes].
+ .. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution you must check the Recovery Guru for host connectivity issues.
+ .. If there is no Recovery Guru present or if following the recovery guru steps the volumes are still not returned to their preferred owners contact support.
+
+. Collect support data for your storage array using SANtricity System Manager.
+  .. Select menu:Support[Support Center > Diagnostics].
+  .. Select *Collect Support Data*.
+  .. Click *Collect*.
 +
-If you see the _System ID mismatch_ warning message, enter `y`.
-
-. Enter `sysconfig -v` and capture the display contents.
-
-+
-NOTE: If you see _PERSONALITY MISMATCH_ contact customer support.
-
-. From the `sysconfig -v` output, compare the adapter card information with the cards and locations in the replacement controller.
-
-. Verify that all components display the same `HA` state: 
-+
-`ha-config show`
-+
-The HA state should be the same for all components.
-
-. If the displayed system state of the controller does not match your storage system configuration, set the `HA` state for the controller: 
-+
-`ha-config modify controller ha`
-
-+
-The value for the HA state can be one of the following:
-
-*** `ha`
-*** `mcc` (not supported)
-*** `mccip` (not supported in ASA systems)
-*** `non-ha` (not supported)
-
-. Confirm that the setting has changed: 
-+
-`ha-config show`
-
-== Step 2: Verify disk list
-
-. Verify that the adapter lists the paths to all disks:
-+
-`storage show disk -p`
-+
-If you see any issues, check cabling and reseat cables.
-
-. Exit Maintenance mode: 
-+
-`halt`
-
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
