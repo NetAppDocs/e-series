@@ -32,7 +32,6 @@ Place the impaired controller offline so you can safely remove and replace the D
 include::../_include/ge_offline_controller.adoc[]
 
 
-
 == Step 2: Remove the controller
 
 include::../_include/ge_controller_remove.adoc[]

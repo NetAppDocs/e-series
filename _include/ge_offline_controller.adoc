@@ -1,0 +1,28 @@
+.Steps
+
+. From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a mismatched memory and to ensure no other items must be addressed first.
+. From the Details area of the Recovery Guru, determine which DIMM to replace.
+. Back up the storage array's configuration database using SANtricity System Manager.
++
+If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
++
+* From System Manager:
+.. Select menu:Support[Support Center > Diagnostics].
+.. Select *Collect Configuration Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
+
+. If the controller is not already offline, take it offline now using SANtricity System Manager.
+ .. Select *Hardware*.
+ .. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
+ .. Select the controller that you want to place offline.
+ .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
++
+NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
+
+. Wait for SANtricity System Manager to update the controller's status to offline.
++
+NOTE: Do not begin any other operations until after the status has been updated.
+
+. Select *Recheck* from the Recovery Guru, and confirm that the OK to remove field in the Details area displays Yes, indicating that it is safe to remove this component.
