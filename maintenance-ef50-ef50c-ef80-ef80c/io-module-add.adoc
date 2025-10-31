@@ -21,21 +21,11 @@ A storage system has three location LEDs: one on the operator display panel and 
 
 You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
-== Step 1: Shut down the impaired controller module
-
-[role="tabbed-block"]
-====
-
-.Option 1: Most systems
---
-include::../_include/shutdown_most_frus.adoc[]
---
-.Option 2: MetroCluster configuration
---
-include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
---
-
-====
+== Step 1: Place the impaired controller offline
+ 
+Place the impaired controller offline so you can safely remove and replace the DIMMs.
+ 
+include::../_include/ge_offline_controller.adoc[]
 
 
 == Step 2: Add the new I/O module

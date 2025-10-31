@@ -125,25 +125,10 @@ Be sure to close the cam handle slowly so that it aligns correctly with the face
 Once power is restored to a PSU, the status LED should be green.
 +
 NOTE: The controllers begin to boot as soon as the power is restored. 
-+
-[options="header" cols="1,2"]
 
-|===
-| If you are reconnecting a...| Then...
-a|
-AC PSU
-a|
-. Plug the power cord into the PSU.
-. Secure the power cord with the power cord retainer.
-a|
-DC PSU
-a|
-. Plug the D-SUB DC power cord connector into the PSU.
-. Tighten the two thumb screws to secure the D-SUB DC power cord connector to the PSU.
+.. Plug the power cord into the PSU.
+.. Secure the power cord with the power cord retainer.
 
-|===
-
-+
 
 . If controllers boot to the LOADER prompt, reboot the controllers: 
 +
