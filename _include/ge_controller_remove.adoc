@@ -34,22 +34,8 @@ NV icon and LED on the controller
 +
 NOTE: Power supplies (PSUs) do not have a power switch.
 +
-[options="header" cols="1,2"]
-
-|===
-| If you are disconnecting a...| Then...
-a|
-AC PSU
-a|
-. Open the power cord retainer.
-. Unplug the power cord from the PSU and set it aside.
-a|
-DC PSU
-a|
-. Unscrew the two thumb screws on the D-SUB DC power cord connector.
-. Unplug the power cord from the PSU and set it aside.
-
-|===
+.. Open the power cord retainer.
+.. Unplug the power cord from the PSU and set it aside.
 
 +
 . Unplug all cables from the impaired controller.
