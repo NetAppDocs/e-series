@@ -1,0 +1,140 @@
+== Step 1: Prepare to replace controller
+
+Prepare to replace a controller canister by saving the drive security key, backing up the configuration, and collecting support data. Then, you can stop host I/O operations and place the controller offline or power it down.
+
+[role="tabbed-block"]
+====
+.Power down the controller shelf (simplex)
+--
+
+.Steps
+
+. If possible, make a note of which version of SANtricity OS software is currently installed on the controller. Open SANtricity System Manager and select *Support › Upgrade Center › View Software and Firmware Inventory*.
+. If the Drive Security feature is enabled, be sure a saved key exists and that you know the pass phrase required to install it.
++
+CAUTION: *Possible loss of data access* — If all drives in the storage array are security enabled, the new controller will not be able to access the storage array until you unlock the secured drives using the Enterprise Management Window in SANtricity Storage Manager.
++
+To save the key (might not be possible, depending on the state of the controller):
+
+.. From SANtricity System Manager, select *Settings › System*.
+.. Under *Drive security key management*, select *Back Up Key*.
+.. In the *Define a pass phrase/Re-enter pass phrase* fields, enter and confirm a pass phrase for this backup copy.
+.. Click *Backup*.
+.. Record your key information in a secure location, and then click *Close*.
+
+. Back up the storage array's configuration database using SANtricity System Manager.
++
+If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
+
+** From System Manager:
+
+.. *Select Support › Support Center › Diagnostics*.
+.. Select *Collect Configuration Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
+
+** Alternatively, you can back up the configuration database by using the following CLI command:
++
+`save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";`
+
+. Collect support data for your storage array using SANtricity System Manager.
++
+If a problem occurs when you remove a controller, you can use the saved file to troubleshoot the issue. The system will save inventory, status, and performance data about your storage array in a single file.
+
+.. *Select Support › Support Center › Diagnostics*.
+.. Select *Collect Support Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+. Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
+
+** Stop all processes that involve the LUNs mapped from the storage to the hosts.
+** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
+** Unmount all file systems associated with volumes on the array.
++
+NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
++
+CAUTION: *Possible data loss* — If you continue this procedure while I/O operations are occurring, you might lose data.
+
+. Wait for any data in cache memory to be written to the drives.
++
+The green Cache Active LED on the back of the controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
+. From the home page of SANtricity System Manager, select *View Operations in Progress*.
+. Confirm that all operations have completed before continuing with the next step.
+. Turn off both power switches on the controller shelf.
+. Wait for all LEDs on the controller shelf to turn off.
+. Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove this component.
+Data on the storage array will not be accessible until you replace the controller canister.
+--
+
+.Place controller offline (duplex)
+--
+
+.Steps
+
+. Unpack the new controller canister, and set it on a flat, static-free surface.
++
+Save the packing materials to use when shipping the failed controller canister.
+. Locate the MAC address and FRU part number labels on the back of the controller canister.
+. From SANtricity System Manager, locate the replacement part number for the controller canister you are replacing.
++
+When a controller has a fault and needs to be replaced, the replacement part number is displayed in the Details area of the Recovery Guru. If you need to find this number manually, follow these steps:
+
+.. Select *Hardware*.
+.. Locate the controller shelf, which is marked with the controller icon.
+.. Click the controller icon.
+.. Select the controller, and click *Next*.
+.. On the *Base* tab, make a note of the *Replacement Part Number* for the controller.
+. Confirm that the replacement part number for the failed controller is the same as the FRU part number for the replacement controller.
++
+CAUTION: *Possible loss of data access* — If the two part numbers are not the same, do not attempt this procedure. The presence of mismatched controllers will cause the new controller to lock down when you bring it online.
+. Back up the storage array's configuration database using SANtricity System Manager.
++
+If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
+
+** From System Manager:
+.. Select *Support › Support Center › Diagnostics*.
+.. Select *Collect Configuration Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
+
+** Alternatively, you can back up the configuration database by using the following CLI command:
++
+----
+save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";
+----
+
+. Collect support data for your storage array using SANtricity System Manager.
++
+If a problem occurs when you remove a controller, you can use the saved file to troubleshoot the issue. The system will save inventory, status, and performance data about your storage array in a single file.
+
+.. *Select Support › Support Center › Diagnostics*.
+.. Select *Collect Support Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+
+. If the controller is not already offline, take it offline now using SANtricity System Manager.
+
+** From SANtricity System Manager:
+.. Select *Hardware*.
+.. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
+.. Select the controller that you want to place offline.
+.. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
++
+NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select Connect to an alternate network connection to automatically access SANtricity System Manager using the other controller.
+
+** Alternatively, you can take the controllers offline by using the following CLI commands:
++
+*For controller A*: `set controller [a] availability=offline`
++
+*For controller B*: `set controller [b] availability=offline`
+. Wait for SANtricity System Manager to update the controller's status to offline.
++
+CAUTION: Do not begin any other operations until after the status has been updated.
+. Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove this component.
+
+--
+====
