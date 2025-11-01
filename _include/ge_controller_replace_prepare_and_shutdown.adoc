@@ -1,9 +1,6 @@
-== Step 1: Prepare to replace controller
+== Step 1: Prepare to replace the controller
 
-Prepare to replace a controller canister by saving the drive security key, backing up the configuration, and collecting support data. Then, you can stop host I/O operations and place the controller offline or power it down.
-
-
-.Place controller offline (duplex)
+Prepare to replace a controller canister by saving the drive security key, backing up the configuration, and collecting support data. Then, you can stop host I/O operations and take the controller offline.
 
 
 .Steps
@@ -51,7 +48,13 @@ If a problem occurs when you remove a controller, you can use the saved file to 
 +
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 
-. If the controller is not already offline, take it offline now using SANtricity System Manager.
+== Step 1: Take the controller offline
+
+If the impaired controller is not already offline, take it offline using SANtricity System Manager.
+
+.Steps
+
+. If the impaired controller is not already offline, take it offline now using SANtricity System Manager.
 
 ** From SANtricity System Manager:
 .. Select *Hardware*.
