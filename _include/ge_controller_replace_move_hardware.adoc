@@ -57,6 +57,8 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
 
 Move the fans to the replacement controller.
 
+.Steps
+
 . Remove one of the fans from the impaired controller:
 +
 image::../media/drw_g_fan_replace_ieops-1903.svg[Fan replace]
@@ -81,6 +83,8 @@ Pull the fan straight up and out its socket.
 == Step 4: Move the NV battery
 
 Move the NV battery to the replacement controller.
+
+.Steps
 
 . Remove the NV battery from the impaired controller:
 +
@@ -120,6 +124,8 @@ The NV battery should sit flush in its compartment.
 Move the DIMMs to the replacement controller.
 
 If you have DIMM blanks, you do not need to move them, the replacement controller should come with them installed.
+
+.Steps
 
 . Remove one of the DIMMs from the impaired controller:
 +
@@ -166,41 +172,44 @@ When inserted correctly, the DIMM goes in easily but fits tightly in the slot. I
 
 . Repeat these steps for the remaining DIMMs.
 
-== Step 6: Move the boot media
+// == Step 6: Move the boot media
 
-Move the boot media to the replacement controller.
+//Move the boot media to the replacement controller.
 
-. Remove the boot media from the impaired controller:
-+
-image::../media/drw_g_boot_media_replace_ieops-1872.svg[Boot media replace graphic]
-+
-[cols="1,4"]
-|===
-a|
-image::../media/icon_round_1.png[Callout number 1]
-a|
-Boot media location
-a|
-image::../media/icon_round_2.png[Callout number 2]
-a|
-Press down on the blue tab to release the right end of the boot media.
-a|
-image::../media/icon_round_3.png[Callout number 3]
-a|
-Lift the right end of the boot media up at a slight angle to get a good grip along the sides of the boot media.
-a|
-image::../media/icon_round_4.png[Callout number 4]
-a|
-Gently pull the left end of the boot media out of its socket.
-|===
-+
-. Install the boot media into the replacement controller:
-.. Slide the socket end of the boot media into its socket.
-.. At the opposite end of the boot media, press down and hold the blue tab (in the open position), gently push down on that end of the boot media until it stops, and then release the tab to lock the boot media into place.
+// .Steps
+// . Remove the boot media from the impaired controller:
+// +
+// image::../media/drw_g_boot_media_replace_ieops-1872.svg[Boot media replace graphic]
+// +
+// [cols="1,4"]
+// |===
+// a|
+// image::../media/icon_round_1.png[Callout number 1]
+// a|
+// Boot media location
+// a|
+// image::../media/icon_round_2.png[Callout number 2]
+// a|
+// Press down on the blue tab to release the right end of the boot media.
+// a|
+// image::../media/icon_round_3.png[Callout number 3]
+// a|
+// Lift the right end of the boot media up at a slight angle to get a good grip along the sides of the boot media.
+// a|
+// image::../media/icon_round_4.png[Callout number 4]
+// a|
+// Gently pull the left end of the boot media out of its socket.
+// |===
+// +
+// . Install the boot media into the replacement controller:
+// .. Slide the socket end of the boot media into its socket.
+// .. At the opposite end of the boot media, press down and hold the blue tab (in the open position), gently push down on that end of the boot media until it stops, and then release the tab to lock the boot media into place.
 
-== Step 7: Move the I/O modules
+== Step 6: Move the I/O modules
 
 Move the I/O modules and any I/O blanking modules to the replacement controller.
+
+.Steps
 
 . Unplug cabling from one of the I/O modules.
 +

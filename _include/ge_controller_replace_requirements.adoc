@@ -1,21 +1,28 @@
 Review the requirements and considerations for the controller replacement procedure.
 
-== Requirements
+== Requirements for replacing a controller
 
-* All shelves must be working properly.
-* The healthy controller must be able to take over the controller that is being replaced (referred to in this procedure as the "`impaired controller`").
-* If your system is in a MetroCluster configuration, you must review the section https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html[Choosing the correct recovery procedure] to determine whether you should use this procedure.
-* You must replace a controller with a controller of the same model type. You cannot upgrade your system by just replacing the controller.
-* You cannot change any drives or shelves as part of this procedure.
-* You must always capture the controller's console output to a text log file.
+You must meet the following requirements before replacing a controller in your EF50, EF50C, EF80, or EF80C storage system:
+
+* You should have verified that you have a failed controller. You can determine this in two ways:
+
+** The Recovery Guru in SANtricity System Manager directed you to replace the controller.
+** The amber Attention LED on the controller is on, indicating that the controller has a fault.
+
+* You must have the following:
+** A replacement controller with the same part number as the controller you are replacing.
+** An ESD wristband, or you have taken other antistatic precautions.
+** Labels to identify each cable that you will be disconnecting from the controller.
+** A management station with a browser that can access SANtricity System Manager for the controller.
 +
-The console output provides you with a record of the procedure you can use to troubleshoot issues you might encounter during the replacement process.
+You can open the System Manager interface by pointing the browser to the controller’s domain name or IP address.
++
+Optionally, you can use the command line interface (CLI) to perform some of the procedures. Download the CLI package (zip file) from System Manager. To do so, go to *Settings > System > Add-ons > Command Line Interface* in System Manager. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
 
-== Considerations
-It is important that you apply the commands in this procedure to the correct controller:
 
-* The _impaired_ controller is the controller that is being replaced.
-* The _replacement_ controller is the new controller that is replacing the impaired controller.
-* The _healthy_ controller is the surviving controller.
+== Considerations for replacing a controller
+You can replace a controller while your storage system is powered on and performing host I/O operations, when the following conditions are true:
 
+* The second controller canister in the shelf has Optimal status.
+* The *OK to remove* field in the Details area of the Recovery Guru in SANtricity System Manager displays *Yes*, indicating that it is safe to remove this component.
 
