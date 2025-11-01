@@ -28,7 +28,7 @@ entries:
             url: /maintenance-ef50-ef50c-ef80-ef80c/controller-replace-workflow.html
           - title: Review requirements
             url: /maintenance-ef50-ef50c-ef80-ef80c/controller-replace-requirements.html
-          - title: Shut down impaired controller
+          - title: Prepare and shut down controller
             url: /maintenance-ef50-ef50c-ef80-ef80c/controller-replace-shutdown.html
           - title: Replace controller
             url: /maintenance-ef50-ef50c-ef80-ef80c/controller-replace-move-hardware.html
