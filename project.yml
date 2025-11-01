@@ -517,9 +517,9 @@ sidebar:
                     - title: Replace controller
                       url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-move-hardware.html"
                     - title: Online controller
-                      url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-recable-reassign-disks.html"
+                      url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-online-controller.html"
                     - title: Complete controller replacement
-                      url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-restore-system-rma.html"
+                      url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-complete-replacement.html"
               - title: DIMM
                 url: "/maintenance-ef50-ef50c-ef80-ef80c/dimm-replace.html"
               - title: Drive
