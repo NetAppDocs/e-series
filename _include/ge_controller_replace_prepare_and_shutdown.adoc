@@ -38,9 +38,9 @@ The file is saved in the Downloads folder for your browser with the name, *confi
 save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";
 ----
 
-. Collect support data for your storage array using SANtricity System Manager.
-+
-If a problem occurs when you remove a controller, you can use the saved file to troubleshoot the issue. The system will save inventory, status, and performance data about your storage array in a single file.
+. Collect support data for your storage system using SANtricity System Manager.
+
+If a problem occurs when you remove a controller, you can use the saved file to troubleshoot the issue. The system will save inventory, status, and performance data about your storage system in a single file.
 
 .. *Select Support › Support Center › Diagnostics*.
 .. Select *Collect Support Data*.
