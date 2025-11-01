@@ -11,7 +11,7 @@ summary: To complete the controller replacement for your EF50, EF50C, EF80, or E
 [.lead]
 To complete the controller replacement for your EF50, EF50C, EF80, or EF80C storage system, place the new controller online, collect support data, and then return the failed part to NetApp.
 
-After you have onlined the new controller in your EF50, EF50C, EF80, or EF80C storage system, verify firmware and volume configurations, collect support data and then return the failed part to NetApp.
+After you have onlined the new controller in your EF50, EF50C, EF80, or EF80C storage system, verify firmware and volume ownership, collect support data and then return the failed part to NetApp.
 
 == Step 1: Verify system firmware and volume ownership
 
