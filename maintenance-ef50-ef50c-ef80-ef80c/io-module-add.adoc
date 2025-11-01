@@ -25,7 +25,7 @@ You can turn them off by entering the `system location-led _off_` command. If yo
  
 Place the impaired controller offline so you can safely remove and replace the DIMMs.
  
-include::../_include/ge_offline_controller.adoc[]
+include::../_include/ge_internal_frus_controller_shutdown.adoc[]
 
 
 == Step 2: Add the new I/O module

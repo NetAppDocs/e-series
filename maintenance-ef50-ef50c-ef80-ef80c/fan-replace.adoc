@@ -26,7 +26,7 @@ Shut down or take over the impaired controller using one of the following option
  
 Place the impaired controller offline so you can safely remove and replace the DIMMs.
  
-include::../_include/ge_offline_controller.adoc[]
+include::../_include/ge_internal_frus_controller_shutdown.adoc[]
 
 == Step 2: Remove the controller
 

@@ -11,7 +11,7 @@ summary: Shut down the impaired controller in your EF50, EF50C, EF80, or EF80C s
 [.lead]
 Place the impaired controller offline in your EF50, EF50C, EF80, or EF80C storage system to prevent data loss and ensure system stability when replacing the controller.
  
-include::../_include/ge_offline_controller.adoc[]
+include::../_include/ge_internal_frus_controller_shutdown.adoc[]
 
 .What's next?
 
