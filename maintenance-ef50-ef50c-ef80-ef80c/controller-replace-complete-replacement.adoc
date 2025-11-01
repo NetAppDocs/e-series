@@ -16,7 +16,7 @@ After you have onlined the new controller in your EF50, EF50C, EF80, or EF80C st
 == Step 1: Verify system firmware and volume ownership
 
 
-include::../_include/ge_controller_replace_system_config_restore_and_verify.adoc[]
+include::../_include/ge_controller_replace_complete_replacement.adoc[]
 
 
 == Step 2: Return the failed part to NetApp
