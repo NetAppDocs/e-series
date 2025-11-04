@@ -28,8 +28,10 @@ entries:
             url: /maintenance-ef50-ef50c-ef80-ef80c/controller-replace-workflow.html
           - title: Review requirements
             url: /maintenance-ef50-ef50c-ef80-ef80c/controller-replace-requirements.html
-          - title: Prepare and shut down controller
-            url: /maintenance-ef50-ef50c-ef80-ef80c/controller-replace-shutdown.html
+          - title: Prepare system
+            url: /maintenance-ef50-ef50c-ef80-ef80c/controller-replace-prepare.html
+          - title: Offline controller
+            url: /maintenance-ef50-ef50c-ef80-ef80c/controller-replace-offline-controller.html
           - title: Replace controller
             url: /maintenance-ef50-ef50c-ef80-ef80c/controller-replace-move-hardware.html
           - title: Online controller
