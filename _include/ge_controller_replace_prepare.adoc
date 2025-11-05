@@ -1,29 +1,27 @@
 
-
-Prepare to replace a controller canister by saving the drive security key, backing up the configuration, and collecting support data. Then, you can stop host I/O operations and take the controller offline.
-
-
 .Steps
 
-. Unpack the new controller canister, and set it on a flat, static-free surface.
+. Unpack the replacement controller, and set it on a flat, static-free surface.
 +
-Save the packing materials to use when shipping the failed controller canister.
-. Locate the MAC address and FRU part number labels on the back of the controller canister.
-. From SANtricity System Manager, locate the replacement part number for the controller canister you are replacing.
+Save the packing materials to use when shipping the impaired controller.
+. Confirm that the MAC address and FRU part number on the impaired controller is the same as the replacement controller's part number in SANtricity System Manager.
 +
-When a controller has a fault and needs to be replaced, the replacement part number is displayed in the Details area of the Recovery Guru. If you need to find this number manually, follow these steps:
+CAUTION: *Possible loss of data access* — If the two part numbers are not the same, do not attempt this procedure. The presence of mismatched controllers causes the replacement controller to lock down when you bring it online.
++
+.. Locate the MAC address and FRU part number labels on the back of the impaired controller.
+.. From SANtricity System Manager, locate the replacement controller part number displayed in the Details area of the Recovery Guru. 
++
+If you need to find this number manually, follow these steps:
++
+... Select *Hardware*.
+... Locate the controller, which is marked with the controller icon.
+... Click the controller icon.
+... Select the controller, and click *Next*.
+... On the *Base* tab, make a note of the *Replacement Part Number* for the controller.
 
-.. Select *Hardware*.
-.. Locate the controller shelf, which is marked with the controller icon.
-.. Click the controller icon.
-.. Select the controller, and click *Next*.
-.. On the *Base* tab, make a note of the *Replacement Part Number* for the controller.
-. Confirm that the replacement part number for the failed controller is the same as the FRU part number for the replacement controller.
+. Back up the storage array's configuration database using SANtricity System Manager or the CLI command.
 +
-CAUTION: *Possible loss of data access* — If the two part numbers are not the same, do not attempt this procedure. The presence of mismatched controllers will cause the new controller to lock down when you bring it online.
-. Back up the storage array's configuration database using SANtricity System Manager.
-+
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
+If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
 
 ** From System Manager:
 .. Select *Support › Support Center › Diagnostics*.
@@ -39,8 +37,8 @@ save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filen
 ----
 
 . Collect support data for your storage system using SANtricity System Manager.
-
-If a problem occurs when you remove a controller, you can use the saved file to troubleshoot the issue. The system will save inventory, status, and performance data about your storage system in a single file.
++
+If a problem occurs when you remove the impaired controller, you can use the saved file to troubleshoot the issue. The system saves inventory, status, and performance data about your storage system in a single file.
 
 .. *Select Support › Support Center › Diagnostics*.
 .. Select *Collect Support Data*.
