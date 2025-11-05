@@ -6,8 +6,6 @@ entries:
     entries:
       - title: Maintenance overview
         url: /maintenance-ef50-ef50c-ef80-ef80c/maintain-overview.html
-      - title: Boot media
-        url: /maintenance-ef50-ef50c-ef80-ef80c/bootmedia-replace.html
       - title: Chassis
         pdf-filename: EF50, EF50C, EF80, and EF80C Chassis
         entries:
