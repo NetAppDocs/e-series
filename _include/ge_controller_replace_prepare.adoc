@@ -1,4 +1,4 @@
-== Step 1: Prepare to replace the controller
+
 
 Prepare to replace a controller canister by saving the drive security key, backing up the configuration, and collecting support data. Then, you can stop host I/O operations and take the controller offline.
 
@@ -48,28 +48,3 @@ If a problem occurs when you remove a controller, you can use the saved file to 
 +
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 
-== Step 1: Take the controller offline
-
-If the impaired controller is not already offline, take it offline using SANtricity System Manager.
-
-.Steps
-
-. If the impaired controller is not already offline, take it offline now using SANtricity System Manager.
-
-** From SANtricity System Manager:
-.. Select *Hardware*.
-.. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
-.. Select the controller that you want to place offline.
-.. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
-+
-NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select Connect to an alternate network connection to automatically access SANtricity System Manager using the other controller.
-
-** Alternatively, you can take the controllers offline by using the following CLI commands:
-+
-*For controller A*: `set controller [a] availability=offline`
-+
-*For controller B*: `set controller [b] availability=offline`
-. Wait for SANtricity System Manager to update the controller's status to offline.
-+
-CAUTION: Do not begin any other operations until after the status has been updated.
-. Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove this component.
