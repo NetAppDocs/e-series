@@ -1,6 +1,8 @@
 
 
-If the impaired controller is not already offline, take it offline using SANtricity System Manager.
+.Before you begin
+* You must have met the link:controller-replace-requirements.html[requirements] for this procedure.
+* You must have completed the link:controller-replace-prepare.html[preparation] for this procedure.
 
 .Steps
 

@@ -1,23 +1,24 @@
 
-.Before you begin
-
-If the original controller used DHCP for the IP address, locate the MAC address on the label on the back of the replacement controller. Ask your network administrator to associate the DNS/network and IP address for the controller you removed with the MAC address for the replacement controller.
-
-NOTE: If the original controller did not use DHCP for the IP address, the new controller adopts the IP address of the controller you removed.
 
 .Steps
 
+. If the impaired controller used DHCP for the IP address, complete the following substeps; otherwise, go to the next step: 
+.. Locate the MAC address on the label on the back of the replacement controller. 
+.. Ask your network administrator to associate the DNS/network and IP address for the impaired controller with the MAC address for the replacement controller.
+
+NOTE: If the impaired controller did not use DHCP for the IP address, the new controller adopts the IP address of the controller you removed.
+
 . Place controller online.
- .. In System Manager, navigate to the Hardware page.
- .. Select *Show back of controller*.
- .. Select the replaced controller.
- .. Select *Place online* from the drop-down list.
+.. In System Manager, navigate to the Hardware page.
+.. Select *Show back of controller*.
+.. Select the replaced controller.
+.. Select *Place online* from the drop-down list.
 . As the controller boots, check the controller LEDs.
 +
 When communication with the other controller is reestablished:
 
- ** The amber Attention LED remains on.
- ** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
+** The amber Attention LED remains on.
+** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
 
 . When the controller is back online, check whether an NVSRAM mismatch is reported in Recovery Guru. 
 .. If an NVSRAM mismatch is reported, upgrade NVSRAM using the following SMcli command: 
