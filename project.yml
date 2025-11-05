@@ -512,7 +512,7 @@ sidebar:
                       url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-workflow.html"
                     - title: Review requirements
                       url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-requirements.html"
-                    - title: Prepare the system
+                    - title: Prepare system
                       url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-prepare.html"
                     - title: Offline controller
                       url: "/maintenance-ef50-ef50c-ef80-ef80c/controller-replace-offline-controller.html"

@@ -15,4 +15,4 @@ include::../_include/ge_controller_replace_offline_controller.adoc[]
 
 .What's next?
 
-After you've taken the impaired controller offline, you need to link:controller-replace-move-hardware.html[replace the controller].
+After you've taken the impaired controller offline, you need to link:controller-replace-move-hardware.html[replace the impaired controller].
