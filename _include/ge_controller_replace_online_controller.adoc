@@ -37,18 +37,3 @@ NOTE: If the SMcli command cannot be completed, contact https://www.netapp.com/c
 If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller canister is installed correctly. If necessary, remove and reinstall the controller canister.
 +
 NOTE: If you cannot resolve the problem, contact technical support.
-+
-. If required, redistribute all volumes back to their preferred owner using SANtricity System Manager.
-.. Select *Storage › Volumes*.
-.. Select *More › Redistribute volumes*.
-
-. Ensure that the latest version of SANtricity OS software (controller firmware) is installed by clicking *Hardware › Support › Upgrade Center*.
-+
-As needed, install the latest version.
-
-. Collect support data for your storage system using SANtricity System Manager.
-.. Select *Support › Support Center › Diagnostics*.
-.. Select *Collect Support Data*.
-.. Click *Collect*.
-+
-The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.

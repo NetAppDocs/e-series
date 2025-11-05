@@ -9,7 +9,7 @@ summary: Return control of storage resources to the replacement controller so yo
 :imagesdir: ../media/
 
 [.lead]
-After you have installed the replacement controller for your EF50, EF50C, EF80, or EF80C storage system, place the controller online, confirm the system status is Optimal, and if needed redistribute volumes back to their preferred owners, ensure controller firmware is current, and collect support data.
+After you have installed the replacement controller for your EF50, EF50C, EF80, or EF80C storage system, place the controller online confirm the system status is Optimal.
 
 include::../_include/ge_controller_replace_online_controller.adoc[]
 
