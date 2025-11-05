@@ -2,7 +2,7 @@ section: maintenance-ef50-ef50c-ef80-ef80c
 title: EF50, EF50C, EF80, EF80C storage systems
 entries:
   - title: Maintain
-  - pdf-filename: EF50, EF50C, EF80, and EF80C Maintain
+    pdf-filename: EF50, EF50C, EF80, and EF80C Maintain
     entries:
       - title: Maintenance overview
         url: /maintenance-ef50-ef50c-ef80-ef80c/maintain-overview.html
