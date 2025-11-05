@@ -21,20 +21,16 @@ After meeting all of the storage system requirements, you must prepare the stora
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:controller-replace-offline-controller.html[Take the impaired controller offline]
 [role="quick-margin-para"]
-To replace the controller, after preparing your storage system, you must take the impaired controller offline.
+Take the impaired controller offline so that you can replace it while the healthy controller continues to serve data from the impaired controller storage.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:controller-replace-shutdown.html[Shut down the impaired controller]
-[role="quick-margin-para"]
-Shut down or take over the impaired controller so that the healthy controller continues to serve data from the impaired controller storage. 
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:controller-replace-move-hardware.html[Replace the controller]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:controller-replace-move-hardware.html[Replace the controller]
 [role="quick-margin-para"]
 The replacement process involves removing the impaired controller, moving the components to the replacement controller, and installing the replacement controller.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[six]link:controller-replace-online-controller.html[Online the controller]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:controller-replace-online-controller.html[Online the controller]
 [role="quick-margin-para"]
 Place the new controller online. 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png[Seven]link:controller-replace-complete-replacement.html[Complete controller replacement]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:controller-replace-complete-replacement.html[Complete controller replacement]
 [role="quick-margin-para"]
 Verify firmware and volume ownership, collect support data, and then return the failed part to NetApp.

@@ -22,7 +22,7 @@ entries:
           - title: Complete chassis replacement
             url: /maintenance-ef50-ef50c-ef80-ef80c/chassis-replace-complete-system-restore-rma.html
       - title: Controller
-        pdf-filename: EF50, EF50C, EF80, and EF80C Controller Module
+        pdf-filename: EF50, EF50C, EF80, and EF80C Controller
         entries:
           - title: Controller replace workflow
             url: /maintenance-ef50-ef50c-ef80-ef80c/controller-replace-workflow.html
