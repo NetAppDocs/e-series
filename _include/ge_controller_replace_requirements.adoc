@@ -1,13 +1,20 @@
-Review the requirements and considerations for the controller replacement procedure.
 
-== Requirements for replacing a controller
 
-You must meet the following requirements before replacing a controller in your EF50, EF50C, EF80, or EF80C storage system:
+You must meet the following requirements before replacing a controller in your EF50, EF50C, EF80, or EF80C storage system.
 
 * You should have verified that you have a failed controller. You can determine this in two ways:
 
 ** The Recovery Guru in SANtricity System Manager directed you to replace the controller.
 ** The amber Attention LED on the controller is on, indicating that the controller has a fault.
+
+NOTE: When the boot media device fails, you must replace the controller.
+
+* You must verify that the following conditions of your storage system are true. 
++
+This ensures that you can replace the impaired controller while your storage system is powered on and performing host I/O operations.
++
+** The second controller in the chassis has Optimal status.
+** The *OK to remove* field in the Details area of the Recovery Guru in SANtricity System Manager displays *Yes*, indicating that it is safe to remove this component.
 
 * You must have the following:
 ** A replacement controller with the same part number as the controller you are replacing.
@@ -19,11 +26,3 @@ You must meet the following requirements before replacing a controller in your E
 You can open the System Manager interface by pointing the browser to the controller’s domain name or IP address.
 +
 Optionally, you can use the command line interface (CLI) to perform some of the procedures. Download the CLI package (zip file) from System Manager. To do so, go to *Settings > System > Add-ons > Command Line Interface* in System Manager. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
-
-
-== Considerations for replacing a controller
-You can replace a controller while your storage system is powered on and performing host I/O operations, when the following conditions are true:
-
-* The second controller canister in the shelf has Optimal status.
-* The *OK to remove* field in the Details area of the Recovery Guru in SANtricity System Manager displays *Yes*, indicating that it is safe to remove this component.
-
