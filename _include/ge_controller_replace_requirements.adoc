@@ -1,7 +1,5 @@
 
 
-You must meet the following requirements before replacing a controller in your EF50, EF50C, EF80, or EF80C storage system.
-
 * You should have verified that you have a failed controller. You can determine this in two ways:
 
 ** The Recovery Guru in SANtricity System Manager directed you to replace the controller.

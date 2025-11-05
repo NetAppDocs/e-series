@@ -9,7 +9,7 @@ summary: Before replacing the controller in your EF50, EF50C, EF80, or EF80C sto
 :imagesdir: ../media/
 
 [.lead]
-Before replacing the controller in your EF50, EF50C, EF80, or EF80C storage system, ensure you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have the correct replacement controller, and saving the controller's console output to a text log file.
+Before replacing the controller in your EF50, EF50C, EF80, or EF80C storage system, ensure you meet the requirements for a successful replacement. This includes verifying you have a failed controller, verifying the state of your storage system, acquiring tools, and having a management station and browser to access SANtricity System Manager.
 
 include::../_include/ge_controller_replace_requirements.adoc[]
 
