@@ -9,15 +9,8 @@ summary: To complete the controller replacement for your EF50, EF50C, EF80, or E
 :imagesdir: ../media/
 
 [.lead]
-To complete the controller replacement for your EF50, EF50C, EF80, or EF80C storage system, collect support data, and then return the failed part to NetApp.
+To complete the controller replacement for your EF50, EF50C, EF80, or EF80C storage system,  return the failed part to NetApp.
 
-After you have onlined the new controller in your EF50, EF50C, EF80, or EF80C storage system, verify firmware and volume ownership, collect support data and then return the failed part to NetApp.
-
-== Step 1: Verify system firmware and volume ownership
-include::../_include/ge_controller_replace_complete_replacement.adoc[]
-
-
-== Step 2: Return the failed part to NetApp
 include::../_include/complete_rma.adoc[]
 
 .What's next?

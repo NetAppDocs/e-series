@@ -37,8 +37,6 @@ If the status is not Optimal or if any of the Attention LEDs are on, confirm tha
 +
 NOTE: If you cannot resolve the problem, contact technical support.
 +
-//Below 3 steps is from E4000, I assume it would apply here too.
-+
 . If required, redistribute all volumes back to their preferred owner using SANtricity System Manager.
 .. Select *Storage › Volumes*.
 .. Select *More › Redistribute volumes*.
