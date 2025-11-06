@@ -71,7 +71,13 @@ The following examples show cabling to the data hosts using a direct-attached to
 
 .Steps
 
-. Connect each host HBA port to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
+. Cable the data host connections:
+.. Cable Controller A port exx to host 1.
+.. Cable Controller A port exx to host 2
+.. Cable Controller B port exx to host 1.
+.. Cable Controller B port exx to host 2.
+
+.. Connect each host HBA port to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
 
 image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, width=1000px]
 
@@ -101,7 +107,11 @@ image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg
 
 .Steps
 
-. Connect each host HBA port to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
+. Cable the data host connections:
+.. Cable Controller A port exx to host 1.
+.. Cable Controller A port exx to host 2
+.. Cable Controller B port exx to host 1.
+.. Cable Controller B port exx to host 2.
 
 image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, width=1000px]
 
@@ -129,7 +139,11 @@ image::../media/drw_isi_a30-50_switchless_2p_100gbe_1card_cabling_ieops-1925.svg
 
 .Steps
 
-. Connect each host HBA port to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
+. Cable the data host connections:
+.. Cable Controller A port exx to host 1.
+.. Cable Controller A port exx to host 2
+.. Cable Controller B port exx to host 1.
+.. Cable Controller B port exx to host 2.
 
 image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, width=1000px]
 
@@ -164,8 +178,12 @@ The following examples show cabling to the data hosts using a fabric-attached to
 
 .Steps
 
-. Connect each host adapter directly to the switch.
-. Connect each switch directly to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
+. Cable Host 1 to each switch.
+. Cable Host 2 to each switch.
+. Cable Controller A port exx to switch 1.
+. Cable Controller A port exx to switch 2.
+. Cable Controller B port exx to switch 1.
+. Cable Controller B port exx to switch 2.
 
 image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, width=1000px]
 
@@ -199,8 +217,12 @@ image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[a
 
 .Steps
 
-. Connect each host adapter directly to the switch.
-. Connect each switch directly to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
+. Cable Host 1 to each switch.
+. Cable Host 2 to each switch.
+. Cable Controller A port exx to switch 1.
+. Cable Controller A port exx to switch 2.
+. Cable Controller B port exx to switch 1.
+. Cable Controller B port exx to switch 2.
 
 image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, width=1000px]
 
@@ -232,8 +254,12 @@ image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[C
 
 .Steps
 
-. Connect each host adapter directly to the switch.
-. Connect each switch directly to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
+. Cable Host 1 to each switch.
+. Cable Host 2 to each switch.
+. Cable Controller A port exx to switch 1.
+. Cable Controller A port exx to switch 2.
+. Cable Controller B port exx to switch 1.
+. Cable Controller B port exx to switch 2.
 
 image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, width=1000px]
 
