@@ -5,9 +5,9 @@
 . If the impaired controller used DHCP for the IP address, complete the following substeps; otherwise, go to the next step: 
 .. Locate the MAC address on the label on the back of the replacement controller. 
 .. Ask your network administrator to associate the DNS/network and IP address for the impaired controller with the MAC address for the replacement controller.
-
++
 NOTE: If the impaired controller did not use DHCP for the IP address, the new controller adopts the IP address of the controller you removed.
-
++
 . Place controller online.
 .. In System Manager, navigate to the Hardware page.
 .. Select *Show back of controller*.

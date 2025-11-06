@@ -9,28 +9,28 @@ summary: Get started with replacing the controller in your EF50, EF50C, EF80, or
 :imagesdir: ../media/
 
 [.lead]
-Get started with replacing the controller in your EF50, EF50C, EF80, or EF80C storage system by shutting down the impaired controller, removing and replacing the controller, restoring the system configuration, and returning control of storage resources to the replacement controller.
+You can replace an impaired controller in your EF50, EF50C, EF80, or EF80C storage system by meeting storage system requirements, preparing the system, taking the impaired controller offline, replacing the controller hardware, bringing the new controller online, and completing the replacement process.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:controller-replace-requirements.html[Review the controller replacement requirements]
 [role="quick-margin-para"]
-To replace the controller, you must meet certain requirements. 
+Ensure your storage system has a failed controller, verify the state of your storage system, acquire tools for the procedure, and have a management station and browser to access SANtricity System Manager.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:controller-replace-prepare.html[Prepare the storage system]
 [role="quick-margin-para"]
-After meeting all of the storage system requirements, you must prepare the storage system before taking the impaired controller offline.
+Unpack the replacement controller, confirm it's part number is correct, back up the configuration database, and collect support data.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:controller-replace-offline-controller.html[Take the impaired controller offline]
 [role="quick-margin-para"]
-Take the impaired controller offline so that you can replace it while the healthy controller continues to serve data from the impaired controller storage.
+Safely take the impaired controller offline so that you can replace it while the healthy controller continues to serve data from the impaired controller storage.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:controller-replace-move-hardware.html[Replace the controller]
 [role="quick-margin-para"]
-The replacement process involves removing the impaired controller, moving the components to the replacement controller, and installing the replacement controller.
+Remove the impaired controller, move the components to the replacement controller, and install the replacement controller.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:controller-replace-online-controller.html[Online the controller]
 [role="quick-margin-para"]
-Place the new controller online, verify controller firmware is current, redistribute volume ownership, collect system support data, and then return the failed part to NetApp.
+Place the new controller online and confirm the storage system status is Optimal.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:controller-replace-complete-replacement.html[Complete controller replacement]
 [role="quick-margin-para"]
- Return the failed part to NetApp.
+Verify volume ownership, ensure controller firmware is current, collect system support data, and return the failed part to NetApp.

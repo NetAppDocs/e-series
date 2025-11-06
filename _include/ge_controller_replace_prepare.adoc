@@ -19,7 +19,7 @@ If you need to find this number manually, follow these steps:
 ... Select the controller, and click *Next*.
 ... On the *Base* tab, make a note of the *Replacement Part Number* for the controller.
 
-. Back up the storage array's configuration database using SANtricity System Manager or the CLI command.
+. Back up the storage system's configuration database using SANtricity System Manager or the CLI command.
 +
 If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
 
