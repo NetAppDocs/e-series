@@ -63,7 +63,7 @@ If you do not see your configuration here, go to link:https://hwu.netapp.com[Net
 .Direct-attached topology cabling
 --
 
-The following examples show cabling to the data hosts using a direct-attach topology.
+The following examples show cabling to the data hosts using a direct-attached topology.
 
 .EF80 or EF80C with three 2-port 200 GbE HICs (Natasha)
 [%collapsible]
