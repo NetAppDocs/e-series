@@ -11,6 +11,16 @@ summary: After you install your EF50, EF50C, EF80, or EF80C storage system hardw
 [.lead]
 After you install your EF50, EF50C, EF80, or EF80C storage system hardware, cable the mirroring and data host network connections for the controllers.
 
+.About this task
+
+* The cabling graphics have arrow icons showing the proper orientation (up or down) of the cable connector pull-tab when inserting a connector into a port.
++
+As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
++
+image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direction]
+
+* If cabling to an optical switch, insert the optical transceiver into the controller port before cabling to the switch port.
+
 == Step 1: Cable the mirroring connections
 
 Cable the controllers to each other to enable the inter-controller communication for caching.
@@ -18,54 +28,241 @@ Cable the controllers to each other to enable the inter-controller communication
 .About this task
 The cabling for the mirroring connections is the same for EF50, EF50C, EF80, and EF80C storage systems.
 
-Lisa note: is the same for all EF50/80 systems. So show generic graphic of system back.
+.Steps
+
+. Using an Ethernet cable?, connect the controller A e4a port to the controller B e4a port. And then connect the controller A e4b port to the controller B e4b port.
++
+*100 GbE Cluster/HA interconnect cables*
++
+image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable]
++
+image:../media/drw_ef50-ef50c-ef80-ef80c_mirroring_2p_100gbe_ieops-2659.svg[ef50 ef50c ef80 ef80c controller to controller mirroring connections]
 
 == Step 2: Cable the data host network connections
 
-Cable the data host connections for your storage system according to your network topology.
+Cable the data host connections for your storage system according to your network topology: direct-attached or fabric-attached.
 
-.About this task
-EF50 and EF50C storage system data host cabling is different from the EF80 and EF80C storage system data host cabling.
-
-NOTE: Host ports on the bottom left-side (e1a, e1b, e1c, and e1d) and upper right-side (e0a and e0b) of the controller can be used for data host cabling.
-
-[role="tabbed-block"]
+[NOTE]
 ====
+The data host cabling examples show common configurations. 
 
-.Option 1: Direct-attach topology
---
-
-The following example shows cabling to the data hosts using a direct-attach topology.
-
-Lisa: I do like the very generic rear view of the system used in EF600. Just show HICs in the slots that are cabled to host network:
-image:../media/direct_topo.png["Direct-attach topology cabling"]
-
-
-image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, width=1000px]
-
-. Connect each host HBA port to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
+If you do not see your configuration here, go to link:https://hwu.netapp.com[NetApp Hardware Universe^] for comprehensive configuration and slot priority information to cable your storage system.
+====
 
 NOTE: For additional cabling diagram examples, see https://docs.netapp.com/us-en/e-series/install-hw-cabling/host-cable-task.html#cabling-for-a-direct-attached-topology[Host Cabling^].
 
+.About this task
+The data host cabling examples show common configurations. 
+
+If you do not see your configuration here, go to link:https://hwu.netapp.com[NetApp Hardware Universe^] for comprehensive configuration and slot priority information to cable your storage system.
+
+
+//open tabbed block 
+[role="tabbed-block"]
+=====
+.Direct-attached topology cabling
 --
 
-.Option 2: Fabric topology
+The following examples show cabling to the data hosts using a direct-attach topology.
+
+.EF80 or EF80C with three 2-port 200 GbE HICs (Natasha)
+[%collapsible]
+====
+
+.Steps
+
+. Connect each host HBA port to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
+
+image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, width=1000px]
+
+
+.Steps
+
+. Cable the Cluster/HA interconnect connections: 
++
+NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O modules in slots 2 and 4). The ports are 40/100 GbE. 
++
+.. Cable controller A port e2a to controller B port e2a.
+.. Cable controller A port e4a to controller B port e4a.
++
+NOTE: I/O module ports e2b and e4b are unused and available for host network connectivity.
++
+*100 GbE Cluster/HA interconnect cables*
++
+image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable]
++
+image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg[a30 and a50 switchless cluster cabling diagram using two 100gbe io modules]
+
+====
+
+.EF80 or EF80C with three 4-port 64Gb FC HICs (Veliceraptor)
+[%collapsible]
+====
+
+.Steps
+
+. Connect each host HBA port to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
+
+image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, width=1000px]
+
+.Steps
+
+. Cable the Cluster/HA interconnect connections: 
++
+NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O module in slot 4). The ports are 40/100 GbE.
++
+.. Cable controller A port e4a to controller B port e4a.
+.. Cable controller A port e4b to controller B port e4b.
++
+*100 GbE Cluster/HA interconnect cables*
++
+image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable]
++
+image::../media/drw_isi_a30-50_switchless_2p_100gbe_1card_cabling_ieops-1925.svg[a30 and a50 switchless cluster cabling diagram using one 100gbe io module]
+
+====
+
+
+.EF50 or EF50C with three 4-port 64Gb FC HICs (Veloceraptor)
+[%collapsible]
+====
+
+.Steps
+
+. Connect each host HBA port to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
+
+image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, width=1000px]
+
+.Steps
+. Cable the Cluster/HA interconnect connections: 
++
+NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O module in slot 4). The ports are 10/25 GbE.
++
+.. Cable controller A port e4a to controller B port e4a.
+.. Cable controller A port e4b to controller B port e4b.
++
+*25 GbE Cluster/HA interconnect cables*
++
+image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
++
+image::../media/drw_isi_a20_switchless_2p_25gbe_cabling_ieops-2018.svg[a20 switchless cluster cabling diagram using one 25 gbe io module]
+
+
+====
+
+
+
+--
+.Fabric-attached topology cabling
 --
 
-The following example shows cabling to the data hosts using a fabric topology.
+The following examples show cabling to the data hosts using a fabric-attached topology.
 
-Lisa: I do like the very generic rear view of the system used in EF600. Just show HICs in the slots that are cabled thru switches to the host network:
-image:../media/fabric_topo.png["Fabric topology cabling"]
+.EF80 or EF80C with three 2-port 200 GbE HICs (Natasha)
+[%collapsible]
+====
 
-
-image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, width=1000px]
+.Steps
 
 . Connect each host adapter directly to the switch.
 . Connect each switch directly to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
 
---
+image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, width=1000px]
+
+
+
+.Steps
+
+. Cable the Cluster/HA interconnect connections: 
++
+NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O modules in slots 2 and 4). The ports are 40/100 GbE.
++
+.. Cable controller A port e4a to cluster network switch A.
+.. Cable controller A port e2a to cluster network switch B.
+.. Cable controller B port e4a to cluster network switch A.
+.. Cable controller B port e2a to cluster network switch B.
++
+NOTE: I/O module ports e2b and e4b are unused and available for host network connectivity.
++
+*40/100 GbE Cluster/HA interconnect cables*
++
+image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable]
++
+image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[a30 and a50 switched cluster cabling diagram using two 100gbe io modules]
+
+
 ====
+
+.EF80 or EF80C with three 4-port 64Gb FC HICs (Veliceraptor)
+[%collapsible]
+====
+
+.Steps
+
+. Connect each host adapter directly to the switch.
+. Connect each switch directly to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
+
+image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, width=1000px]
+
+
+
+.Steps
+
+. Cable the controllers to the cluster network switches:
++
+NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O module in slot 4). The ports are 40/100 GbE.
++
+.. Cable controller A port e4a to cluster network switch A. 
+.. Cable controller A port e4b to cluster network switch B.
+.. Cable controller B port e4a to cluster network switch A. 
+.. Cable controller B port e4b to cluster network switch B.
++
+*40/100 GbE Cluster/HA interconnect cables*
++
+image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable]
++
+image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[Cable cluster connections to cluster network]
+
+====
+
+
+.EF50 or EF50C with three 4-port 64Gb FC HICs (Veloceraptor)
+[%collapsible]
+====
+
+.Steps
+
+. Connect each host adapter directly to the switch.
+. Connect each switch directly to the host ports on the controllers (e1a, e1b, e1c, and e1d or e0a and e0b).
+
+image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, width=1000px]
+
+
+
+.Steps
+
+. Cable the controllers to the cluster network switches:
++
+NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports(on the I/O module in slot 4). The ports are 10/25 GbE.
++
+.. Cable controller A port e4a to cluster network switch A. 
+.. Cable controller A port e4b to cluster network switch B.
+.. Cable controller B port e4a to cluster network switch A. 
+.. Cable controller B port e4b to cluster network switch B.
++
+*10/25 GbE Cluster/HA interconnect cables*
++
+image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
++
+image:../media/drw_isi_a20_switched_2p_25gbe_cabling_ieops-2019.svg[a20 switched cluster cabling diagram using one 25gbe io module]
++
+
+====
+--
+=====
+//closed tabbed block
+
 
 .What's next?
 
-After you’ve cabled the hardware for your storage system, you link:install-power-hardware.html[power on the storage system].
+After you’ve cabled the mirroring and data host connections for your storage system, you link:install-power-hardware.html[power on the storage system].

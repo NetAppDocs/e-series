@@ -11,7 +11,6 @@ summary: Cable and configure the controllers management connections, and complet
 [.lead]
 Cable and configure the controller management ports, and then configure and manage your EF50, EF50C, EF80, or EF80C storage system.
 
-
 == Step 1: Cable and configure the management ports
 
 You can configure the controller management ports using a DHCP server or a static IP address.
