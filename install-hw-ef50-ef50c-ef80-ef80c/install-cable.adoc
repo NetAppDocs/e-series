@@ -44,6 +44,8 @@ image:../media/drw_ef50-ef50c-ef80-ef80c_mirroring_2p_100gbe_ieops-2659.svg[ef50
 
 Cable the data host connections for your storage system according to your network topology: direct-attached or fabric-attached.
 
+Depending on your storage system model, the type of host interface cards (HICs) installed can be Ethernet or Fibre Channel (FC).
+
 [NOTE]
 ====
 The data host cabling examples show common configurations. 
@@ -53,13 +55,9 @@ If you do not see your configuration here, go to link:https://hwu.netapp.com[Net
 
 NOTE: For additional cabling diagram examples, see https://docs.netapp.com/us-en/e-series/install-hw-cabling/host-cable-task.html#cabling-for-a-direct-attached-topology[Host Cabling^].
 
-.About this task
-The data host cabling examples show common configurations. 
-
-If you do not see your configuration here, go to link:https://hwu.netapp.com[NetApp Hardware Universe^] for comprehensive configuration and slot priority information to cable your storage system.
-
 
 //open tabbed block 
+
 [role="tabbed-block"]
 =====
 .Direct-attached topology cabling
@@ -79,7 +77,11 @@ The following examples show cabling to the data hosts using a direct-attached to
 .. Cable host 1 to controller B port exx.
 .. Cable host 2 to controller A port exx.
 .. Cable host 2 to controller B port exx.
-
++
+*200 GbE cables*
++
+image::../media/oie_cable_sfp_gbe_copper.png[200 GbE cable]
++
 image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, width=1000px]
 
 
@@ -96,7 +98,11 @@ image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, w
 .. Cable host 1 to controller B port exx.
 .. Cable host 2 to controller A port exx.
 .. Cable host 2 to controller B port exx.
-
++
+*64 Gb/s FC cables*
++
+image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable]
++
 image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, width=1000px]
 
 ====
@@ -113,7 +119,11 @@ image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, w
 .. Cable host 1 to controller B port exx.
 .. Cable host 2 to controller A port exx.
 .. Cable host 2 to controller B port exx.
-
++
+*64 Gb/s FC cables*
++
+image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable]
++
 image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, width=1000px]
 
 
@@ -141,7 +151,11 @@ The following examples show cabling to the data hosts using a fabric-attached to
 .. Cable switch 1 to controller B port exx.
 .. Cable switch 2 to controller A port exx.
 .. Cable switch 2 to controller B port exx.
-
++
+*200 GbE cables?*
++
+image::../media/oie_cable_sfp_gbe_copper.png[200 GbE cable]
++
 image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, width=1000px]
 
 
@@ -162,7 +176,11 @@ image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, w
 .. Cable switch 1 to controller B port exx.
 .. Cable switch 2 to controller A port exx.
 .. Cable switch 2 to controller B port exx.
-
++
+*64 Gb/s FC cables*
++
+image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable]
++
 image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, width=1000px]
 
 
@@ -183,7 +201,11 @@ image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, w
 .. Cable switch 1 to controller B port exx.
 .. Cable switch 2 to controller A port exx.
 .. Cable switch 2 to controller B port exx.
-
++
+*64 Gb/s FC cables*
++
+image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable]
++
 image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, width=1000px]
 
 

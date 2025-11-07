@@ -33,7 +33,7 @@ Configure the management ports using a DHCP server.
 
 . Connect an Ethernet cable to each controller's management port, and connect the other end to your network.
 +
-image:../media/drw_ef50-ef50c-ef80-ef80c_wrench_cabling_ieops-2613.svg[ef50 ef50c ef80 ef80c controller management port cabling]
+image:../media/drw_ef50-ef50c-ef80-ef80c_wrench_to_network_ieops-2613.svg[ef50 ef50c ef80 ef80c controller management port cabling]
 
 . Open a browser and connect to the storage system using one of the controller IP addresses provided to you by your network administrator.
 
@@ -53,7 +53,7 @@ Configure the management ports manually by entering the IP address and the subne
 
 . Using an Ethernet cable, connect controller A's management port to the Ethernet port on a laptop.
 +
-image:../media/drw_ef50-ef50c-ef80-ef80c_wrench_cabling_ieops-2613.svg[ef50 ef50c ef80 ef80c controller management port cabling]
+image:../media/drw_ef50-ef50c-ef80-ef80c_wrench_to_laptop_ieops-2663.svg[ef50 ef50c ef80 ef80c controller management port cabling]
 
 
 . Open a browser and use the default IP address (169.254.128.101) to establish a connection to the controller. The controller sends back a self-signed certificate. The browser informs you that the connection is not secure.
