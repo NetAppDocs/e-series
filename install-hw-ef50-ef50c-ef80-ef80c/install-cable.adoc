@@ -65,7 +65,7 @@ NOTE: For additional cabling diagram examples, see https://docs.netapp.com/us-en
 
 The following examples show cabling to the data hosts using a direct-attached topology.
 
-.EF80 or EF80C with three 2-port 200 GbE HICs (Natasha)
+.EF80 or EF80C with three 2-port 200 GbE HICs
 [%collapsible]
 ====
 
@@ -87,7 +87,7 @@ image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, w
 
 ====
 
-.EF80 or EF80C with three 4-port 64Gb FC HICs (Veliceraptor)
+.EF80 or EF80C with three 4-port 64Gb FC HICs
 [%collapsible]
 ====
 
@@ -108,7 +108,7 @@ image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, w
 ====
 
 
-.EF50 or EF50C with three 4-port 64Gb FC HICs (Veloceraptor)
+.EF50 or EF50C with three 4-port 64Gb FC HICs
 [%collapsible]
 ====
 
@@ -137,7 +137,7 @@ image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, w
 
 The following examples show cabling to the data hosts using a fabric-attached topology.
 
-.EF80 or EF80C with three 2-port 200 GbE HICs (Natasha)
+.EF80 or EF80C with three 2-port 200 GbE HICs
 [%collapsible]
 ====
 
@@ -174,7 +174,7 @@ image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, w
 
 ====
 
-.EF80 or EF80C with three 4-port 64Gb FC HICs (Veliceraptor)
+.EF80 or EF80C with three 4-port 64Gb FC HICs
 [%collapsible]
 ====
 
@@ -211,7 +211,7 @@ image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, w
 ====
 
 
-.EF50 or EF50C with two 4-port 64Gb FC HICs (Veloceraptor)
+.EF50 or EF50C with two 4-port 64Gb FC HICs
 [%collapsible]
 ====
 

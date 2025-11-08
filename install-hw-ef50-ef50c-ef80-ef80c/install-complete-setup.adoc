@@ -9,11 +9,11 @@ summary: Cable and configure the controllers management connections, and complet
 :imagesdir: ../media/
 
 [.lead]
-Cable and configure the controller management ports, and then configure and manage your EF50, EF50C, EF80, or EF80C storage system.
+Cable and configure the controller management port on each controller for out-of-band storage system management, and then configure your EF50, EF50C, EF80, or EF80C storage system.
 
 == Step 1: Cable and configure the management ports
 
-You can configure the controller management ports using a DHCP server or a static IP address.
+Cable the management port on each controller and then configure the ports using a DHCP server or a static IP address.
 
 [role="tabbed-block"]
 ====
@@ -22,7 +22,7 @@ You can configure the controller management ports using a DHCP server or a stati
 
 --
 
-Configure the management ports using a DHCP server.
+Cable and then configure the management ports using a DHCP server.
 
 .Before you begin
 
@@ -33,6 +33,11 @@ Configure the management ports using a DHCP server.
 
 . Connect an Ethernet cable to each controller's management port, and connect the other end to your network.
 +
+*1000BASE-T RJ-45 cables*
++
+image::../media/oie_cable_rj45.png[RJ-45 cables]
++
++
 image:../media/drw_ef50-ef50c-ef80-ef80c_wrench_to_network_ieops-2613.svg[ef50 ef50c ef80 ef80c controller management port cabling]
 
 . Open a browser and connect to the storage system using one of the controller IP addresses provided to you by your network administrator.
@@ -42,7 +47,7 @@ image:../media/drw_ef50-ef50c-ef80-ef80c_wrench_to_network_ieops-2613.svg[ef50 e
 .Option 2: Static IP address
 --
 
-Configure the management ports manually by entering the IP address and the subnet mask.
+Cable and then configure the management ports manually by entering the IP address and the subnet mask.
 
 .Before you begin
 
@@ -56,17 +61,22 @@ Configure the management ports manually by entering the IP address and the subne
 image:../media/drw_ef50-ef50c-ef80-ef80c_wrench_to_laptop_ieops-2663.svg[ef50 ef50c ef80 ef80c controller management port cabling]
 
 
-. Open a browser and use the default IP address (169.254.128.101) to establish a connection to the controller. The controller sends back a self-signed certificate. The browser informs you that the connection is not secure.
-. Follow the browser's instructions to proceed and launch SANtricity System Manager. If you are unable to establish a connection, verify that you are not receiving network configuration from a DHCP server.
+. Open a browser and use the default IP address (169.254.128.101) to establish a connection to the controller. 
++
+The controller sends back a self-signed certificate. The browser informs you that the connection is not secure.
+. Follow the browser's instructions to proceed and launch SANtricity System Manager. 
++
+If you are unable to establish a connection, verify that you are not receiving network configuration from a DHCP server.
 . Set the storage system's password to login.
 . Use the network settings provided by your network administrator in the *Configure Network Settings* wizard to configure controller A's network settings, and then select *Finish*.
 +
 NOTE: Because you reset the IP address, System Manager loses connection to the controller.
 
-. Disconnect the ethernet cable from the storage system, and connect the management port on controller A to your network.
+. Disconnect the Ethernet cable from your laptop (leaving it connected to controller A), and connect it to your network.
+
 . Open a browser on a computer connected to your network, and enter controller A's newly configured IP address. 
 +
-NOTE: If you lose the connection to controller A, you can connect an ethernet cable to controller B to reestablish connection to controller A through controller B (169.254.128.102).
+NOTE: If you lose the connection to controller A, you can connect an Ethernet cable to controller B to reestablish connection to controller A through controller B (169.254.128.102).
 
 . Log in using the password you set previously. The Configure Network Settings wizard will appear.
 
@@ -80,7 +90,7 @@ NOTE: If you lose the connection to controller B, you can use your previously va
 ====
 == Step 2: Configure storage system
 
-After you have installed your EF50, EF50C, EF80, or EF80C storage system, use SANtricity System Manager to configure and manage your storage system.
+Use SANtricity System Manager to configure and manage your storage system.
 
 .Before You Begin
 
@@ -89,7 +99,7 @@ After you have installed your EF50, EF50C, EF80, or EF80C storage system, use SA
 
 .Steps
 
-. Connect your controller to a web browser.
+. Connect either controller to a web browser.
 
 . Access SANtricity System Manager using the same IP addresses that you used to configure your management ports.
 
