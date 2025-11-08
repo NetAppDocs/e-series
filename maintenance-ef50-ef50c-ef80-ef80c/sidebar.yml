@@ -51,6 +51,15 @@ entries:
             url: /maintenance-ef50-ef50c-ef80-ef80c/io-module-add.html
           - title: Replace I/O module
             url: /maintenance-ef50-ef50c-ef80-ef80c/io-module-replace.html
+      - title: Convert host port protocol
+        pdf-filename: EF50, EF50C, EF80, and EF80C Convert host port protocol
+        entries:
+          - title: Review requirements
+            url: /maintenance-ef50-ef50c-ef80-ef80c/io-module-convert-protocol-requirements.html
+          - title: Convert protocol
+            url: /maintenance-ef50-ef50c-ef80-ef80c/io-module-convert-protocol.html
+          - title: Complete protocol conversion
+            url: /maintenance-ef50-ef50c-ef80-ef80c/io-module-complete-protocol-conversion.html
       - title: NV battery
         url: /maintenance-ef50-ef50c-ef80-ef80c/nvdimm-battery-replace.html
       - title: Power supply
