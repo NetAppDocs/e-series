@@ -535,8 +535,8 @@ sidebar:
                       url: "/maintenance-ef50-ef50c-ef80-ef80c/io-module-upgrade.html"
                     - title: Replace I/O module
                       url: "/maintenance-ef50-ef50c-ef80-ef80c/io-module-replace.html"
-              - title: Convert host port protocol
-                pdf-filename: EF50, EF50C, EF80, and EF80C Convert host port protocol
+              - title: I/O module host port protocol
+                pdf-filename: EF50, EF50C, EF80, and EF80C Convert I/O module host port protocol
                 entries:
                     - title: Review requirements
                       url: /maintenance-ef50-ef50c-ef80-ef80c/io-module-convert-protocol-requirements.html
