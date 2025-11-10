@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can upgrade the host interface cards (HICs) to increase the number of host ports or to change host protocols.
+You can upgrade the host interface cards (HICs) to increase the number of host ports.
 
 .About this task
 
