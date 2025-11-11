@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: 
 summary: 
 ---
-= Replace the host interface card (HIC) - E4000
+= Replace the host interface card (HIC) - EF50, EF50C, EF80, and EF80C
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to replace a failed host interface card (HIC) in an E4000 array.
+Follow this procedure to replace a failed host interface card (HIC) in an EF50, EF50C, EF80, or EF80C storage system.
 
 .About this task
 
