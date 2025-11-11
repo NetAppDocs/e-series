@@ -13,6 +13,13 @@ After you install your EF50, EF50C, EF80, or EF80C storage system hardware, cabl
 
 .About this task
 
+* The following data host network connection rules are exemplified in the data host cabling steps in this procedure. These rules apply to the EF50, EF50C, EF80, and EF80C storage systems:
+** Each host (Host 1 and Host 2) has three two-port HBAs. The HBA 'a' ports connect together and the HBA 'b' ports connect together. These connections make a total of six connections for HBA 'a' ports and for HBA 'b' ports.
+** The host HBA 'a' ports connect to Switch 1 through one cable. The host HBA 'b' ports connect to Switch 2 through one cable.
+** Each switch (Switch A and Switch B) has one cable connection to the cluster of blue or red cabling to the HICs on each controller. These connections make a total of 12 connections for the blue and for the red cabling.
+*** Switch 1 (blue cabling) connects to the cluster of cabling that is cabled to 'a' and 'c' ports on each host HIC.
+*** Switch 2 (red cabling) connects to the cluster of cabling that is cabled to 'b' and 'd' ports on each host HIC.
+
 * The cabling graphics have arrow icons showing the proper orientation (up or down) of the cable connector pull-tab when inserting a connector into a port.
 +
 As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
@@ -68,7 +75,7 @@ The following examples show cabling to the data hosts using a direct-attached to
 ====
 
 .About this task
-The cabling example shows data host I/O modules in slots 1, 2, and 3 - the maximum number of data host I/O modules supported for the EF80 and EF80C storage systems. However, only the data host I/O module in slot 1 is required; data host I/O modules in slot 2 and slot 3 are both optional.
+The cabling example shows data host I/O modules in slots 1, 2, and 3. This is the maximum number of data host I/O modules supported for the EF80 and EF80C storage systems. However, only the data host I/O module in slot 1 is required; data host I/O modules in slot 2 and slot 3 are both optional.
 
 .Steps
 
@@ -93,7 +100,7 @@ image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, w
 ====
 
 .About this task
-The cabling example shows data host I/O modules in slots 1, 2, and 3 - the maximum number of data host I/O modules supported for the EF80 and EF80C storage systems. However, only the data host I/O module in slot 1 is required; data host I/O modules in slot 2 and slot 3 are both optional.
+The cabling example shows data host I/O modules in slots 1, 2, and 3. This is the maximum number of data host I/O modules supported for the EF80 and EF80C storage systems. However, only the data host I/O module in slot 1 is required; data host I/O modules in slot 2 and slot 3 are both optional.
 
 .Steps
 
@@ -117,7 +124,7 @@ image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, w
 ====
 
 .About this task
-The cabling example shows data host I/O modules in slots 1 and 2 - the maximum number of data host I/O modules supported for the EF50 and EF50C storage systems. However, only the data host I/O module in slot 1 is required; the data host I/O module in slot 2 is optional.
+The cabling example shows data host I/O modules in slots 1 and 2. This is the maximum number of data host I/O modules supported for the EF50 and EF50C storage systems. However, only the data host I/O module in slot 1 is required; the data host I/O module in slot 2 is optional.
 
 .Steps
 
@@ -149,7 +156,7 @@ The following examples show cabling to the data hosts using a fabric-attached to
 ====
 
 .About this task
-The cabling example shows data host I/O modules in slots 1, 2, and 3 - the maximum number of data host I/O modules supported for the EF80 and EF80C storage systems. However, only the data host I/O module in slot 1 is required; data host I/O modules in slot 2 and slot 3 are both optional.
+The cabling example shows data host I/O modules in slots 1, 2, and 3. This is the maximum number of data host I/O modules supported for the EF80 and EF80C storage systems. However, only the data host I/O module in slot 1 is required; data host I/O modules in slot 2 and slot 3 are both optional.
 
 .Steps
 
@@ -189,7 +196,7 @@ image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, w
 ====
 
 .About this task
-The cabling example shows data host I/O modules in slots 1, 2, and 3 - the maximum number of data host I/O modules supported for the EF80 and EF80C storage systems. However, only the data host I/O module in slot 1 is required; data host I/O modules in slot 2 and slot 3 are both optional.
+The cabling example shows data host I/O modules in slots 1, 2, and 3. This is the maximum number of data host I/O modules supported for the EF80 and EF80C storage systems. However, only the data host I/O module in slot 1 is required; data host I/O modules in slot 2 and slot 3 are both optional.
 
 .Steps
 
@@ -229,7 +236,7 @@ image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, w
 ====
 
 .About this task
-The cabling example shows data host I/O modules in slots 1 and 2 - the maximum number of data host I/O modules supported for the EF50 and EF50C storage systems. However, only the data host I/O module in slot 1 is required; the data host I/O module in slot 2 is optional.
+The cabling example shows data host I/O modules in slots 1 and 2. This is the maximum number of data host I/O modules supported for the EF50 and EF50C storage systems. However, only the data host I/O module in slot 1 is required; the data host I/O module in slot 2 is optional.
 
 .Steps
 
