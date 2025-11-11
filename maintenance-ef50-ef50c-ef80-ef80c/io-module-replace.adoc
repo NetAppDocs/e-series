@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to replace a failed host interface card (HIC) in an EF50, EF50C, EF80, or EF80C storage system.
+Follow this procedure to replace a failed host interface card (HIC) or I/O module in an EF50, EF50C, EF80, or EF80C storage system.
 
 .About this task
 
