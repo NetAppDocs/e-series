@@ -37,8 +37,7 @@ Cable and then configure the management ports using a DHCP server.
 +
 image::../media/oie_cable_rj45.png[RJ-45 cables]
 +
-+
-image:../media/drw_ef50-ef50c-ef80-ef80c_wrench_to_network_ieops-2613.svg[ef50 ef50c ef80 ef80c controller management port cabling]
+image:../media/drw_ef50-ef50c-ef80-ef80c_wrench_to_network_ieops-2613.svg[ef50 ef50c ef80 ef80c controller management port cabling to network]
 
 . Open a browser and connect to the storage system using one of the controller IP addresses provided to you by your network administrator.
 
@@ -57,6 +56,10 @@ Cable and then configure the management ports manually by entering the IP addres
 .Steps
 
 . Using an Ethernet cable, connect controller A's management port to the Ethernet port on a laptop.
++
+*1000BASE-T RJ-45 cables*
++
+image::../media/oie_cable_rj45.png[RJ-45 cables]
 +
 image:../media/drw_ef50-ef50c-ef80-ef80c_wrench_to_laptop_ieops-2663.svg[ef50 ef50c ef80 ef80c controller management port cabling]
 
@@ -82,6 +85,11 @@ NOTE: If you lose the connection to controller A, you can connect an Ethernet ca
 
 . Use the network settings provided by your network administrator in the *Configure Network Settings* wizard to configure controller B's network settings, and then select *Finish*.
 . Connect controller B to your network.
++
+Both controller management ports are now connected to the network:
++
+image:../media/drw_ef50-ef50c-ef80-ef80c_wrench_to_network_ieops-2613.svg[ef50 ef50c ef80 ef80c controller management port cabling to network]
+
 . Validate controller B's network settings by entering controller B's newly configured IP address in a browser.
 +
 NOTE: If you lose the connection to controller B, you can use your previously validated connection to controller A to reestablish connection to controller B through controller A.
