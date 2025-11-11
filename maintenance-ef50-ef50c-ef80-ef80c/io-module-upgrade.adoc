@@ -13,25 +13,28 @@ You can upgrade the host interface cards (HICs) to increase the number of host p
 
 .About this task
 
-* When you upgrade HICs, you must power off the storage array, upgrade the HICs, and reapply power.
-* When upgrading HICs in an E4000 controller repeat all steps to remove the second controller, upgrade the second controller's HICs, and reinstall the second controller before reapplying power to the controller shelf.
+* When you upgrade HICs, you must power off the storage system, upgrade the HICs, and reapply power.
+* You upgrade a HIC one controller at a time by using this procedure for the first controller an then repeating it for the second controller.
 
 .Before you begin
 
-* Schedule a downtime maintenance window for this procedure. You cannot access data on the storage array until you have successfully completed this procedure. Because both controllers must have the same HIC configuration when they are powered on, the power must be off when you change HIC configuration. The presence of mismatched HICs causes the controller with the replacement HIC to lock down when you bring it online.
+* Schedule a downtime maintenance window for this procedure. You cannot access data on the storage system until you have successfully completed this procedure.
+
+* Make sure that the HICs you are upgrading to are supported by your storage system and that you have the same type and number of HICs for each controller.
++
+CAUTION: *Possible loss of data access* -- The presence of incompatible or mismatched HICs causes the controllers to lock down when you apply power.
++
+If needed, you can confirm supported HICs for your storage system at https://hwu.netapp.com
+
 * Make sure you have the following:
-** Two HICs that are compatible with your controllers.
 ** An ESD wristband, or you have taken other antistatic precautions.
 ** A flat, static free work area.
-** Labels to identify each cable that is connected to the controller canister.
-** A #1 Phillips screwdriver.
+** Labels to identify each cable that is connected to the controllers. BUT hey, not removing the controllers...or do you have to
 ** A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
-+
-CAUTION: *Possible loss of data access* -- Never install a HIC in an E4000 controller canister if that HIC was designed for another E-Series controller. In addition, both controllers and both HICs must be identical. The presence of incompatible or mismatched HICs causes the controllers to lock down when you apply power.
 
-== Step 1: Place controller shelf offline
+== Step 1: Place controller offline
 
-Place the controller shelf offline so you can safely upgrade the HICs.
+Place one of the controllers offline so you can safely upgrade the HICs.
 
 .Steps
 
@@ -53,9 +56,9 @@ If a problem occurs when you remove a controller, you can use the saved file to 
 The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
 . Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
- ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
- ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
- ** Unmount all file systems associated with volumes on the array.
+** Stop all processes that involve the LUNs mapped from the storage to the hosts.
+** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
+** Unmount all file systems associated with volumes on the array.
 +
 NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
 +
@@ -66,32 +69,32 @@ CAUTION: *Possible data loss* -- If you continue this procedure while I/O operat
 The green Cache Active LED on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
 
 . From the Home page of SANtricity System Manager, select *View Operations in Progress*. Wait for all operations to complete before continuing with the next step.
-. Power down the controller shelf.
- .. Label and then unplug both power cables from controller shelf.
- .. Wait for all LEDs on the controller shelf to turn off.
+. Power down the controller.
+.. Label and then unplug both power cables from the controller.
+.. Wait for all LEDs on the controller to turn off.
 
 [[step2_remove_controller_canister]]
-== Step 2: Remove controller canister
+== Step 2: Remove controller
 
-Remove the controller canister from the system and then remove the controller canister cover.
+Remove the controller from the chassis Is this needed since these are I/Os with thumbscrews? Look at G-O.
 
 .Steps
 
 . If you are not already grounded, properly ground yourself.
-. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller canister, keeping track of where the cables were connected.
+. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller, keeping track of where the cables were connected.
 +
 Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
-. Remove and set aside the cable management devices from the left and right sides of the controller canister.
-. Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller canister from the midplane, and then, using two hands, pull the controller canister out of the chassis.
-. Turn the controller canister over and place it on a flat, stable surface.
-. Open the cover by pressing the blue buttons on the sides of the controller canister to release the cover, and then rotate the cover up and off of the controller canister.
+. Remove and set aside the cable management devices from the left and right sides of the controller.
+. Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller from the midplane, and then, using two hands, pull the controller out of the chassis.
+. Turn the controller over and place it on a flat, stable surface.
+. Open the cover by pressing the blue buttons on the sides of the controller to release the cover, and then rotate the cover up and off of the controller.
 +
-image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[Open controller canister cover.]
+image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[Open controller cover.]
 
 [[step3_upgrade_hic]]
 == Step 3: Upgrade the HIC
 
-Remove and replace the HIC.
+Remove and replace the HIC. There is no removing needed for gE.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
@@ -107,21 +110,21 @@ image::../media/drw_E4000_replace_HIC_source_IEOPS-864.png[Remove HIC from contr
 . Reinstall the controller module cover and lock it into place.
 
 [[step4_reinstall_controller]]
-== Step 4: Reinstall controller canister
+== Step 4: Reinstall controller
 
-Reinstall the controller canister into the chassis.
+Reinstall the controller into the chassis.
 
 .Steps
 
 . If you are not already grounded, properly ground yourself.
-. If you have not already done so, replace the cover on the controller canister.
+. If you have not already done so, replace the cover on the controller.
 . Turn the controller over, so that the removable cover faces down.
-. With the cam handle in the open position, slide the controller all the way into the shelf.
+. With the cam handle in the open position, slide the controller all the way into the chassis.
 . Replace the cables.
 +
 NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 . Bind the cables to the cable management device with the hook and loop strap.
-. Repeat <<step2_remove_controller_canister, Step 2: Remove controller canister>>, <<step3_upgrade_hic, Step 3: Upgrade the HIC>>, and <<step4_reinstall_controller, Step 4: Reinstall controller canister>> for the second controller.
+. Repeat <<step2_remove_controller, Step 2: Remove controller>>, <<step3_upgrade_hic, Step 3: Upgrade the HIC>>, and <<step4_reinstall_controller, Step 4: Reinstall controller>> for the second controller.
 
 == Step 5: Complete the HIC upgrade
 
@@ -134,9 +137,9 @@ Place both controllers online, collect support data, and resume operations.
 . As the controllers boot, check the controller LEDs.
  ** The amber Attention LED remains on.
  ** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
-. When the controllers are back online, confirm that their status is Optimal and check the controller shelf's Attention LEDs.
+. When the controllers are back online, confirm that their status is Optimal and check the controller's Attention LEDs.
 +
-If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller canisters are installed correctly. If necessary, remove and reinstall the controller canisters.
+If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller is installed correctly. If necessary, remove and reinstall the controller.
 +
 NOTE: If you cannot resolve the problem, contact technical support.
 
@@ -157,4 +160,4 @@ The file is saved in the Downloads folder for your browser with the name, *suppo
 
 .What's next?
 
-The process of upgrading a host interface card in your storage array is complete. You can resume normal operations.
+The process of upgrading a host interface card in your storage system is complete. You can resume normal operations.
