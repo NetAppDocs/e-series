@@ -78,7 +78,7 @@ NOTE: Because you reset the IP address, System Manager loses connection to the c
 +
 NOTE: If you lose the connection to controller A, you can connect an Ethernet cable to controller B to reestablish connection to controller A through controller B (169.254.128.102).
 
-. Log in using the password you set previously. The Configure Network Settings wizard will appear.
+. Log in using the password you set previously. The Configure Network Settings wizard appears.
 
 . Use the network settings provided by your network administrator in the *Configure Network Settings* wizard to configure controller B's network settings, and then select *Finish*.
 . Connect controller B to your network.
