@@ -13,28 +13,12 @@ After you install your EF50, EF50C, EF80, or EF80C storage system hardware, cabl
 
 .About this task
 
-* The following data host network connection rules are exemplified in the data host cabling steps in this procedure. These rules apply to the EF50, EF50C, EF80, and EF80C storage systems:
-** A storage system has two Client Domains, which must be separated for redundancy by having the two hosts (Host 1 and Host 2) connected to two different switches (Switch 1 and Switch 2). 
-+
-In the host cabling steps in this procedure, Client Domain A connections are shown in blue and Client Domain B connections are shown in red. 
-+
-Switch 1 is in Client Domain A and Switch 2 is in Client Domain B.
-+
-Switch 1 connections to the controller HICs always connect to the 'a' and 'c' ports on each host HIC. Switch 2 connections to the controller HICs always connect to the 'b' and 'd' ports on each host HIC.
-** Each host (Host 1 and Host 2) has three two-port HBAs. The HBA 'a' ports connect together and the HBA 'b' ports connect together. These connections make a total of six connections for HBA 'a' ports and for HBA 'b' ports.
-** The host HBA 'a' ports connect to Switch 1 through one cable. The host HBA 'b' ports connect to Switch 2 through one cable.
-** Each switch (Switch A and Switch B) has one cable connection (4:1 breakout cable) to the cluster of blue or red cabling to the HICs on each controller. These connections make a total of 12 connections for the blue and for the red cabling.
-*** Switch 1 connections to the controller HICs always connect to the 'a' and 'c' ports on each host HIC and are shown in blue. Switch 2 connections to the controller HICs always connect to the 'b' and 'd' ports on each host HIC and are shown in red.
-*** Switch 1 (blue cabling) always connects to the cluster of cabling that is cabled to 'a' and 'c' ports on each host HIC.
-*** Switch 2 (red cabling) always connects to the cluster of cabling that is cabled to 'b' and 'd' ports on each host HIC.
-
 * The cabling graphics have arrow icons showing the proper orientation (up or down) of the cable connector pull-tab when inserting a connector into a port.
 +
 As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 +
 image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direction]
 
-* If cabling to an optical switch, insert the optical transceiver into the controller port before cabling to the switch port.
 
 == Step 1: Cable the mirroring connections
 
@@ -59,6 +43,7 @@ image:../media/drw_ef50-ef50c-ef80-ef80c_mirroring_2p_100gbe_ieops-2659.svg[ef50
 
 Cable the data host connections for your storage system according to your network topology: direct-attached or fabric-attached.
 
+.About this task
 Depending on your storage system model, the type of host interface cards (HICs) installed can be Ethernet or Fibre Channel (FC).
 
 [NOTE]
@@ -160,6 +145,23 @@ image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, w
 --
 
 The following examples show cabling to the data hosts using a fabric-attached topology.
+
+.About this task
+
+* The following data host network connection rules are exemplified in the data host cabling steps in this procedure. These rules apply to the EF50, EF50C, EF80, and EF80C storage systems:
+** A storage system has two Client Domains, which must be separated for redundancy by having the two hosts (Host 1 and Host 2) connected to two different switches (Switch 1 and Switch 2). 
++
+In the host cabling steps in this procedure, Client Domain A connections are shown in blue and Client Domain B connections are shown in red. 
++
+Switch 1 is in Client Domain A and Switch 2 is in Client Domain B.
++
+Switch 1 connections to the controller HICs always connect to the 'a' and 'c' ports on each host HIC. Switch 2 connections to the controller HICs always connect to the 'b' and 'd' ports on each host HIC.
+** Each host (Host 1 and Host 2) has three two-port HBAs. The HBA 'a' ports connect together and the HBA 'b' ports connect together. These connections make a total of six connections for HBA 'a' ports and for HBA 'b' ports.
+** The host HBA 'a' ports connect to Switch 1 through one cable. The host HBA 'b' ports connect to Switch 2 through one cable.
+** Each switch (Switch A and Switch B) has one cable connection (4:1 breakout cable) to the cluster of blue or red cabling to the HICs on each controller. These connections make a total of 12 connections for the blue and for the red cabling.
+*** Switch 1 connections to the controller HICs always connect to the 'a' and 'c' ports on each host HIC and are shown in blue. Switch 2 connections to the controller HICs always connect to the 'b' and 'd' ports on each host HIC and are shown in red.
+*** Switch 1 (blue cabling) always connects to the cluster of cabling that is cabled to 'a' and 'c' ports on each host HIC.
+*** Switch 2 (red cabling) always connects to the cluster of cabling that is cabled to 'b' and 'd' ports on each host HIC.
 
 .EF80 or EF80C with three 2-port 200 GbE HICs
 [%collapsible]
