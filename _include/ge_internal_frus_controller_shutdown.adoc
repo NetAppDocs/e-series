@@ -1,5 +1,7 @@
 .Steps
 
+. Remove the following three steps since I'm moving them to Prepare topics....but make sure that works for all the internal FRUs.
+
 . From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a mismatched memory and to ensure no other items must be addressed first.
 . From the Details area of the Recovery Guru, determine which DIMM to replace.
 . Back up the storage array's configuration database using SANtricity System Manager.

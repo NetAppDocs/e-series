@@ -38,15 +38,17 @@ Place one of the controllers offline so you can safely upgrade the HICs.
 
 .Steps
 
-. From the Home page of SANtricity System Manager, ensure that the storage array has Optimal status.
+. From the Home page of SANtricity System Manager, ensure that the storage system has Optimal status.
 +
-If the status is not Optimal, use the Recovery Guru or contact technical support to resolve the problem. Do not continue with this procedure.
+If the status is not Optimal, use the Recovery Guru or contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support^] to resolve the problem. Do not continue with this procedure.
+
 . Click *Support > Upgrade Center* to ensure that the latest version of SANtricity OS is installed.
 +
 As needed, install the latest version.
-. Back up the storage array's configuration database using SANtricity System Manager.
+
+. Back up the storage system's configuration database using SANtricity System Manager.
 +
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
+If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
 +
 * From System Manager:
 .. Select *Support > Support Center > Diagnostics*.
@@ -55,10 +57,10 @@ If a problem occurs when you remove a controller, you can use the saved file to 
 +
 The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
-. Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
-** Stop all processes that involve the LUNs mapped from the storage to the hosts.
-** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
-** Unmount all file systems associated with volumes on the array.
+. Ensure that no I/O operations are occurring between the storage system and all connected hosts. For example, you can perform these steps:
+** Stop all processes that involve the LUNs mapped from the storage system to the hosts.
+** Ensure that no applications are writing data to any LUNs mapped from the storage system to the hosts.
+** Unmount all file systems associated with volumes on the storage system.
 +
 NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
 +
@@ -69,7 +71,7 @@ CAUTION: *Possible data loss* -- If you continue this procedure while I/O operat
 The green Cache Active LED on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
 
 . From the Home page of SANtricity System Manager, select *View Operations in Progress*. Wait for all operations to complete before continuing with the next step.
-. Power down the controller.
+. Power down the controller:
 .. Label and then unplug both power cables from the controller.
 .. Wait for all LEDs on the controller to turn off.
 
