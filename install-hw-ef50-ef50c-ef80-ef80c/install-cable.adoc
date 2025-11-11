@@ -23,9 +23,10 @@ Switch 1 is in Client Domain A and Switch 2 is in Client Domain B.
 Switch 1 connections to the controller HICs always connect to the 'a' and 'c' ports on each host HIC. Switch 2 connections to the controller HICs always connect to the 'b' and 'd' ports on each host HIC.
 ** Each host (Host 1 and Host 2) has three two-port HBAs. The HBA 'a' ports connect together and the HBA 'b' ports connect together. These connections make a total of six connections for HBA 'a' ports and for HBA 'b' ports.
 ** The host HBA 'a' ports connect to Switch 1 through one cable. The host HBA 'b' ports connect to Switch 2 through one cable.
-** Each switch (Switch A and Switch B) has one cable connection to the cluster of blue or red cabling to the HICs on each controller. These connections make a total of 12 connections for the blue and for the red cabling.
-*** Switch 1 (blue cabling) connects to the cluster of cabling that is cabled to 'a' and 'c' ports on each host HIC.
-*** Switch 2 (red cabling) connects to the cluster of cabling that is cabled to 'b' and 'd' ports on each host HIC.
+** Each switch (Switch A and Switch B) has one cable connection (4:1 breakout cable) to the cluster of blue or red cabling to the HICs on each controller. These connections make a total of 12 connections for the blue and for the red cabling.
+*** Switch 1 connections to the controller HICs always connect to the 'a' and 'c' ports on each host HIC and are shown in blue. Switch 2 connections to the controller HICs always connect to the 'b' and 'd' ports on each host HIC and are shown in red.
+*** Switch 1 (blue cabling) always connects to the cluster of cabling that is cabled to 'a' and 'c' ports on each host HIC.
+*** Switch 2 (red cabling) always connects to the cluster of cabling that is cabled to 'b' and 'd' ports on each host HIC.
 
 * The cabling graphics have arrow icons showing the proper orientation (up or down) of the cable connector pull-tab when inserting a connector into a port.
 +
