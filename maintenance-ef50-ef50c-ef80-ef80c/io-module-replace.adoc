@@ -13,16 +13,15 @@ Follow this procedure to replace a failed host interface card (HIC) in an EF50, 
 
 .About this task
 
-When you replace a failed HIC, you must power off the storage array (simplex) or place affected controller offline (duplex), replace the HIC, and reapply power (simplex) or bring controller online (duplex).
+When you replace a failed HIC, you must place affected controller offline, replace the HIC, and then bring controller back online.
 
 .Before you begin
 
-* If you have a simplex configuration, schedule a downtime maintenance window for this procedure. You cannot access data on the storage array until you have successfully completed this procedure. 
 * Make sure you have the following:
 ** HICs that are compatible with your controller(s).
 ** An ESD wristband, or you have taken other antistatic precautions.
 ** A flat, static free work area.
-** Labels to identify each cable that is connected to the controller canister.
+** Labels to identify each cable that is connected to the controller.
 ** A #1 Phillips screwdriver.
 ** A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
 +
@@ -30,76 +29,7 @@ CAUTION: *Possible loss of data access* -- Never install a HIC in an E4000 contr
 
 == Step 1: Prepare to replace HIC
 
-Power down the controller shelf (simplex) or place the affected controller offline (duplex) so you can safely replace the HICs.
-
-[role="tabbed-block"]
-====
-.Power down the controller shelf (simplex)
---
-
-.Steps
-
-. If possible, make a note of which version of SANtricity OS software is currently installed on the controller. Open SANtricity System Manager and select *Support › Upgrade Center › View Software and Firmware Inventory*.
-. If the Drive Security feature is enabled, be sure a saved key exists and that you know the pass phrase required to install it.
-+
-CAUTION: *Possible loss of data access* — If all drives in the storage array are security enabled, the new controller will not be able to access the storage array until you unlock the secured drives using the Enterprise Management Window in SANtricity Storage Manager.
-+
-To save the key (might not be possible, depending on the state of the controller):
-
-.. From SANtricity System Manager, select *Settings › System*.
-.. Under *Security key management*, select *Back Up Key*.
-.. In the *Define a pass phrase/Re-enter pass phrase* fields, enter and confirm a pass phrase for this backup copy.
-.. Click *Backup*.
-.. Record your key information in a secure location, and then click *Close*.
-
-. Back up the storage array's configuration database using SANtricity System Manager.
-+
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
-
-** From System Manager:
-
-.. *Select Support › Support Center › Diagnostics*.
-.. Select *Collect Configuration Data*.
-.. Click *Collect*.
-+
-The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
-
-** Alternatively, you can back up the configuration database by using the following CLI command:
-+
-`save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";`
-
-. Collect support data for your storage array using SANtricity System Manager.
-+
-If a problem occurs when you remove a controller, you can use the saved file to troubleshoot the issue. The system will save inventory, status, and performance data about your storage array in a single file.
-
-.. *Select Support › Support Center › Diagnostics*.
-.. Select *Collect Support Data*.
-.. Click *Collect*.
-+
-The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
-. Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
-
-** Stop all processes that involve the LUNs mapped from the storage to the hosts.
-** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
-** Unmount all file systems associated with volumes on the array.
-+
-NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
-+
-CAUTION: *Possible data loss* — If you continue this procedure while I/O operations are occurring, you might lose data.
-
-. Wait for any data in cache memory to be written to the drives.
-+
-The green Cache Active LED on the back of the controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
-. From the home page of SANtricity System Manager, select *View Operations in Progress*.
-. Confirm that all operations have completed before continuing with the next step.
-. Turn off both power switches on the controller shelf.
-. Wait for all LEDs on the controller shelf to turn off.
-. Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove this component.
-Data on the storage array will not be accessible until you replace the controller canister.
---
-
-.Place controller offline (duplex)
---
+Place the affected controller offline so you can safely replace the HIC.
 
 .Steps
 
@@ -156,9 +86,6 @@ NOTE: If you are accessing SANtricity System Manager using the controller you ar
 CAUTION: Do not begin any other operations until after the status has been updated.
 . Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove this component.
 
---
-====
-
 == Step 2: Remove controller canister
 
 Remove the controller canister from the system and then remove the controller canister cover.
@@ -214,36 +141,7 @@ NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall
 
 == Step 5: Complete HIC replacement
 
-Power up the controller (simplex) or place the controller online (duplex), collect support data, and resume operations.
-
-[role="tabbed-block"]
-====
-.Power up controller (simplex)
---
-
-.Steps
-
-. Turn on the two power switches at the back of the controller shelf.
-
-** Do not turn off the power switches during the power-on process, which typically takes 90 seconds or less to complete.
-** The fans in each shelf are very loud when they first start up. The loud noise during start-up is normal.
-
-. When the controller is back online, check the controller shelf's Attention LEDs.
-+
-If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated, and check that the battery and the controller canister are installed correctly. If necessary, remove and reinstall the controller canister and the battery.
-+
-NOTE: If you cannot resolve the problem, contact technical support. If needed, collect support data for your storage array using SANtricity System Manager.
-
-. Collect support data for your storage array using SANtricity System Manager.
-.. Select *Support › Support Center › Diagnostics*.
-.. Select Collect Support Data.
-.. Click Collect.
-+
-The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
-
---
-.Place controller online (duplex)
---
+Place the controller online, collect support data, and resume operations.
 
 .Steps
 
@@ -282,9 +180,6 @@ If needed, collect support data for your storage array using SANtricity System M
 +
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 
---
-====
-
 .What's next?
 
-Your host interface card replacement is complete. You can resume normal operations.
+Your HIC or I/O module replacement is complete. You can resume normal operations.
