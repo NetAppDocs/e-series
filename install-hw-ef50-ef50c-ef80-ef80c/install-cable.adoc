@@ -13,7 +13,7 @@ After you install your EF50, EF50C, EF80, or EF80C storage system hardware, cabl
 
 .About this task
 
-* The term "I/O module" is used to refer to the host interface cards (HICs) in this procedure.
+* The term _I/O module_ is used to refer to the host interface cards (HICs) in this procedure.
 
 * The cabling graphics have arrow icons showing the proper orientation (up or down) of the cable connector pull-tab when inserting a connector into a port.
 +
@@ -165,9 +165,7 @@ The following host network connection rules are exemplified in the cabling steps
 
 * A fabric-attached storage system has two separate switch paths (Switch 1 path and Switch 2 path) for redundancy, which connect to each host and each controller in the storage system.
 
-* Switch 1 path connections are shown in blue and Switch 2 path connections are shown in red. 
-
-* The Switch 1 (blue) path connects to the 'a' and 'c' ports on each host and each controller. The Switch 2 (red) path connects to the 'b' and 'd' ports on each host and each controller.
+* The Switch 1 path (blue) connects to the 'a' and 'c' ports on each host and each controller. The Switch 2 path (red) connects to the 'b' and 'd' ports on each host and each controller.
 
 .EF80 or EF80C with three 2-port 200 GbE I/O modules
 [%collapsible]
