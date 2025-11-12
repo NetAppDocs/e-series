@@ -165,7 +165,7 @@ The following data host network connection rules are exemplified in the cabling 
 
 * Switch 1 path connections are shown in blue and Switch 2 path connections are shown in red. 
 
-* The Switch 1 path connects to the 'a' and 'c' ports on each host and on each controller. The Switch 2 path connects to the 'b' and 'd' ports on each host and on each controller.
+* The Switch 1 (blue) path connects to the 'a' and 'c' ports on each host and each controller. The Switch 2 (red) path connects to the 'b' and 'd' ports on each host and each controller.
 
 .EF80 or EF80C with three 2-port 200 GbE HICs
 [%collapsible]
