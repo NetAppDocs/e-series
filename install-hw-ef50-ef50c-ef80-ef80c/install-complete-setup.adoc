@@ -31,7 +31,7 @@ Cable and then configure the management ports using a DHCP server.
 
 .Steps
 
-. Connect an Ethernet cable to each controller's management port, and connect the other end to your network.
+. Using Ethernet cables, connect each controller's management port to your network.
 +
 *1000BASE-T RJ-45 cables*
 +

@@ -1,8 +1,10 @@
 
-
 .Before you begin
 * You must have met the link:controller-replace-requirements.html[requirements] for this procedure.
 * You must have completed the link:controller-replace-prepare.html[preparation] for this procedure.
+
+.About this task
+Whenever you take a controller offline, you need to wait at least one minute before bringing the controller back online. This waiting period allows the storage system to update the status of the controller and ensure that all cached data is written to the drives.
 
 .Steps
 

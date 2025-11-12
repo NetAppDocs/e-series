@@ -1,3 +1,7 @@
+
+.About this task
+Whenever you take a controller offline, you need to wait at least one minute before bringing the controller back online. This waiting period allows the storage system to update the status of the controller and ensure that all cached data is written to the drives.
+
 .Steps
 
 . Remove the following three steps since I'm moving them to Prepare topics....but make sure that works for all the internal FRUs.
