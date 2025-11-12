@@ -52,9 +52,17 @@ If your storage system has fewer host I/O modules installed, you can ignore the 
 
 * The data host cabling examples show Host 1 and Host 2 with three 2-port HBAs each. If your hosts have less than three HBAs, you can ignore the cabling to the additional HBAs and only cable to the installed HBAs.
 +
-The cabling examples do not show 4-port 64Gb FC HBAs in the hosts; however, you cable these ports in the same manner as shown for the 2-port HBAs by using the cabling rule in the bullet below.
+The cabling examples do not show 4-port 64Gb FC HBAs in the hosts; however, you cable these ports in the same manner as shown for the 2-port HBAs by using the cabling rules in the bullets below.
 
-* The cabling rule for ports on the hosts and ports on the controllers is that ports 'a' and 'c' always connect to through Switch 1 (Switch 1 path: blue) and ports 'b' and 'd' always connect through Switch 2 (Switch 2 path: red).
+* The cabling rule for ports 'a' and 'c' on the hosts and the controllers:
+** If you have a direct-attached topology, they always connect through the primary path, Path A: blue.
+** If you have a fabric-attached topology, they always connect through Switch 1 (Switch 1 path: blue) 
+
+* The cabling rule for ports 'b' and 'd' on the hosts and the controllers: 
+** If you have a direct-attached topology, they always connect through the secondary path, Path B: red.
+** If you have a fabric-attached topology, they always connect through Switch 2 (Switch 2 path: red).
+
+// * The cabling rule for ports on the hosts and ports on the controllers is that ports 'a' and 'c' always connect through Switch 1 (Switch 1 path: blue) and ports 'b' and 'd' always connect through Switch 2 (Switch 2 path: red).
 
 * If you need comprehensive configuration and slot priority information for your storage system, go to link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
@@ -151,23 +159,13 @@ The following examples show cabling to the data hosts using a fabric-attached to
 
 .About this task
 
-The following data host network connection rules are exemplified in the data host cabling steps in this procedure. These rules apply to the EF50, EF50C, EF80, and EF80C storage systems:
+The following data host network connection rules are exemplified in the cabling steps in this procedure. These rules apply to the EF50, EF50C, EF80, and EF80C storage systems:
 
-* A storage system has two switch paths (Switch 1 path and Switch 2 path), which must be separated for redundancy by having the two hosts (Host 1 and Host 2) connected to two different switches (Switch 1 and Switch 2). 
-+
-In the host cabling steps in this procedure, Switch 1 path connections are shown in blue and Switch 2 path connections are shown in red. 
-+
-Switch 1 connections to the controller HICs always connect to the 'a' and 'c' ports on each host HIC. Switch 2 connections to the controller HICs always connect to the 'b' and 'd' ports on each host HIC.
+* A fabric-attached storage system has two separate switch paths (Switch 1 path and Switch 2 path) for redundancy, which connect to each host and each controller in the storage system.
 
-* The host HBA 'a' ports connect to Switch 1 through one cable. The host HBA 'b' ports connect to Switch 2 through one cable.
+* In the host cabling steps in this procedure, Switch 1 path connections are shown in blue and Switch 2 path connections are shown in red. 
 
-* Each switch (Switch A and Switch B) has one cable connection (4:1 breakout cable) to the cluster of blue or red cabling to the HICs on each controller. These connections make a total of 12 connections for the blue and for the red cabling.
-
-** Switch 1 connections to the controller HICs always connect to the 'a' and 'c' ports on each host HIC and are shown in blue. Switch 2 connections to the controller HICs always connect to the 'b' and 'd' ports on each host HIC and are shown in red.
-
-** Switch 1 (blue cabling) always connects to the cluster of cabling that is cabled to 'a' and 'c' ports on each host HIC.
-
-** Switch 2 (red cabling) always connects to the cluster of cabling that is cabled to 'b' and 'd' ports on each host HIC.
+* The Switch 1 path connects to the 'a' and 'c' ports on each host and on each controller. The Switch 2 path connects to the 'b' and 'd' ports on each host and on each controller.
 
 .EF80 or EF80C with three 2-port 200 GbE HICs
 [%collapsible]
