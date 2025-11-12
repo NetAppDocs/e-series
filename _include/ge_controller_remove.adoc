@@ -4,16 +4,28 @@
 Make sure all other components in the storage system are functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 .Steps
-. On the impaired controller, make sure the NV LED is off.
+//. Wait for any data in cache memory to be written to the drives.
+
+//The green Cache Active LED (NV Caching Active LED) on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
+
+. On the impaired controller, make sure the NV Caching Active LED is off.
 +
-When the NV LED is off, destaging is complete and it is safe to remove the impaired controller.
+When the green NV Caching Active LED is off, any data in cache memory has been written to the drives and it is safe to remove the impaired controller.
 +
+NOTE: If the NV Caching Active LED is on (green), cached data is being written to the drives. You must wait for the process to complete and the NV Caching Active LED to turn off. However, if the LED remains on for longer than five minutes, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+
+//. On the impaired controller, make sure the NV LED is off.
+//+
+//When the NV LED is off, destaging is complete and it is safe to remove the impaired controller.
+//+
 // The NV LED is off when destaging of the outstanding/uncommitted data to persistent flash (a partition on the boot media) has completed. Then it is safe to continue with this procedure.
-+
-NOTE: If the NV LED is flashing (green), destage is in progress. You must wait for the NV LED to turn off. However, if the flashing continues for longer than five minutes, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
-+
-The NV LED is located next to the NV icon on the controller.
-+
+//+
+//NOTE: If the NV LED is flashing (green), destage is in progress. You must wait for the NV LED to turn off. However, if the flashing continues for longer than five minutes, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+//+
+//The NV LED is located next to the NV icon on the controller.
+
+The NV Caching Active LED is located next to the NV icon on the controller.
+
 image::../media/drw_g_nvmem_led_ieops-1839.svg[NV status LED location]
 
 [cols="1,4"]
