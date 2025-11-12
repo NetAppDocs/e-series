@@ -94,7 +94,9 @@ After you’ve prepared to install your storage system, you link:install-hardwar
 
 
 =================================================
-OR use ONTAP-side content as a base and update with above E-Series content as needed
+OR use ONTAP-side content as a base and update with above E-Series content as needed.
+
+Lisa Adam Erker said: We [E-Series] have a single SN on the chassis of the shelf that holds the controllers. We don't have individual SNs per controller that get registered. SO if you do use the ONTAP text, you need to make this change.
 
 == Step 3: Register your storage system
 After you've ensured that your site meets the requirements for your storage system specifications, and you've verified that you have all the parts you ordered, you should register your storage system.
