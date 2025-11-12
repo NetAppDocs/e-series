@@ -44,16 +44,19 @@ image:../media/drw_ef50-ef50c-ef80-ef80c_mirroring_2p_100gbe_ieops-2659.svg[ef50
 Cable the data host connections for your storage system according to your network topology: direct-attached or fabric-attached.
 
 .About this task
-Depending on your storage system model, the type of host interface cards (HICs) installed can be Ethernet or Fibre Channel (FC).
+* Depending on your storage system model, the type of host interface cards (HICs) installed in the storage system can be Ethernet or Fibre Channel (FC). The cabling examples in this procedure show both types of HICs.
 
-[NOTE]
-====
-The data host cabling examples show storage systems with the maximum number of supported host I/O modules. 
-
+* The data host cabling examples show storage systems with the maximum number of supported host I/O modules. 
++
 If your storage system has fewer host I/O modules installed, you can ignore the cabling to the additional host HICs and only cable to the installed host HICs.
 
-If you do not see your configuration here, go to link:https://hwu.netapp.com[NetApp Hardware Universe^] for comprehensive configuration and slot priority information to cable your storage system.
-====
+* The data host cabling examples show Host 1 and Host 2 with three 2-port HBAs each. If your hosts have less than three HBAs, you can ignore the cabling to the additional HBAs and only cable to the installed HBAs.
++
+The cabling examples do not show 4-port 64Gb FC HBAs in the hosts; however, you cable these ports in the same manner as shown for the 2-port HBAs by using the cabling rule in the bullet below.
+
+* The cabling rule for ports on the hosts and ports on the controllers is that ports 'a' and 'c' always connect to through Switch 1 (Switch 1 path: blue) and ports 'b' and 'd' always connect through Switch 2 (Switch 2 path: red).
+
+* If you need comprehensive configuration and slot priority information for your storage system, go to link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
 
 //open tabbed block 
@@ -150,15 +153,11 @@ The following examples show cabling to the data hosts using a fabric-attached to
 
 The following data host network connection rules are exemplified in the data host cabling steps in this procedure. These rules apply to the EF50, EF50C, EF80, and EF80C storage systems:
 
-* A storage system has two Client Domains, which must be separated for redundancy by having the two hosts (Host 1 and Host 2) connected to two different switches (Switch 1 and Switch 2). 
+* A storage system has two switch paths (Switch 1 path and Switch 2 path), which must be separated for redundancy by having the two hosts (Host 1 and Host 2) connected to two different switches (Switch 1 and Switch 2). 
 +
-In the host cabling steps in this procedure, Client Domain A connections are shown in blue and Client Domain B connections are shown in red. 
-+
-Switch 1 is in Client Domain A and Switch 2 is in Client Domain B.
+In the host cabling steps in this procedure, Switch 1 path connections are shown in blue and Switch 2 path connections are shown in red. 
 +
 Switch 1 connections to the controller HICs always connect to the 'a' and 'c' ports on each host HIC. Switch 2 connections to the controller HICs always connect to the 'b' and 'd' ports on each host HIC.
-
-* Each host (Host 1 and Host 2) has three two-port HBAs. The HBA 'a' ports connect together and the HBA 'b' ports connect together. These connections make a total of six connections for HBA 'a' ports and for HBA 'b' ports.
 
 * The host HBA 'a' ports connect to Switch 1 through one cable. The host HBA 'b' ports connect to Switch 2 through one cable.
 
