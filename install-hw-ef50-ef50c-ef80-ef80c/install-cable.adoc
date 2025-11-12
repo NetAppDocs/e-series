@@ -180,14 +180,10 @@ The cabling example shows data host I/O modules in slots 1, 2, and 3. This is th
 
 . Connect each host to each switch.
 +
-You can use any ports on the hosts and switches.
+You can use any ports on the switches.
 +
 .. Cable Host 1 to each switch.
 .. Cable Host 2 to each switch.
-+
-You can use the following table for the host to switch cabling or use the cabling graphic:
-+
-image:../media/drw_ef50-ef50c-ef80-ef80c_host_to_switch_table_ieops-xxxx.svg[host to switch cabling in table format]
 +
 . Connect each switch to each controller:
 .. Cable switch 1 to controller A port exx.
@@ -196,8 +192,6 @@ image:../media/drw_ef50-ef50c-ef80-ef80c_host_to_switch_table_ieops-xxxx.svg[hos
 .. Cable switch 2 to controller B port exx.
 +
 You can use the following table for the switch to controller cabling or use the cabling graphic:
-+
-image:../media/drw_ef80-ef80c_switch_to_controller_table_2p_200gbe_3hic_fabric_ieops-xxxx.svg[ef80 and ef80c switch to controller cabling in table format for 2p 200gbe 3 hic fabric]
 +
 *200 GbE cables?*
 +
@@ -225,19 +219,11 @@ You can use any ports on the hosts and switches.
 .. Cable Host 1 to each switch.
 .. Cable Host 2 to each switch.
 +
-You can use the following table for the host to switch cabling or use the cabling graphic:
-+
-image:../media/drw_ef50-ef50c-ef80-ef80c_host_to_switch_table_ieops-xxxx.svg[host to switch cabling in table format]
-+
 . Connect each switch to each controller:
 .. Cable switch 1 to controller A port exx.
 .. Cable switch 1 to controller B port exx.
 .. Cable switch 2 to controller A port exx.
 .. Cable switch 2 to controller B port exx.
-+
-You can use the following table for the switch to controller cabling or use the cabling graphic:
-+
-image:../media/drw_ef80-ef80c_switch_to_controller_table_4p_64gb_fc_3hic_fabric_ieops-xxxx.svg[ef80 and ef80c switch to controller cabling in table format for 4p 64gb fc 3 hic fabric]
 +
 *64 Gb/s FC cables*
 +
@@ -265,19 +251,11 @@ You can use any ports on the hosts and switches.
 .. Cable Host 1 to each switch.
 .. Cable Host 2 to each switch.
 +
-You can use the following table for the host to switch cabling or use the cabling graphic:
-+
-image:../media/drw_ef50-ef50c-ef80-ef80c_host_to_switch_table_ieops-xxxx.svg[host to switch cabling in table format]
-+
 . Connect each switch to each controller:
 .. Cable switch 1 to controller A port exx.
 .. Cable switch 1 to controller B port exx.
 .. Cable switch 2 to controller A port exx.
 .. Cable switch 2 to controller B port exx.
-+
-You can use the following table for the switch to controller cabling or use the cabling graphic:
-+
-image:../media/drw_ef50-ef50c_switch_to_controller_table_4p_64gb_fc_2hic_fabric_ieops-xxxx.svg[ef50 and ef50c switch to controller cabling in table format for 4p 64gb fc 2 hic fabric]
 +
 *64 Gb/s FC cables*
 +
