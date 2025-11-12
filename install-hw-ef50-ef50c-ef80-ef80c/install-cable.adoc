@@ -56,7 +56,7 @@ The cabling examples do not show 4-port 64Gb FC HBAs in the hosts; however, you 
 
 * The cabling rule for ports 'a' and 'c' on the hosts and the controllers:
 ** If you have a direct-attached topology, they always connect through the primary path, Path A: blue.
-** If you have a fabric-attached topology, they always connect through Switch 1 (Switch 1 path: blue) 
+** If you have a fabric-attached topology, they always connect through Switch 1 (Switch 1 path: blue).
 
 * The cabling rule for ports 'b' and 'd' on the hosts and the controllers: 
 ** If you have a direct-attached topology, they always connect through the secondary path, Path B: red.
@@ -163,7 +163,7 @@ The following data host network connection rules are exemplified in the cabling 
 
 * A fabric-attached storage system has two separate switch paths (Switch 1 path and Switch 2 path) for redundancy, which connect to each host and each controller in the storage system.
 
-* In the host cabling steps in this procedure, Switch 1 path connections are shown in blue and Switch 2 path connections are shown in red. 
+* Switch 1 path connections are shown in blue and Switch 2 path connections are shown in red. 
 
 * The Switch 1 path connects to the 'a' and 'c' ports on each host and on each controller. The Switch 2 path connects to the 'b' and 'd' ports on each host and on each controller.
 
