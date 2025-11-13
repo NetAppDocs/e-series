@@ -75,7 +75,7 @@ The green Cache Active LED on the back of each controller is on when cached data
 .. Label and then unplug both power cables from the controller.
 .. Wait for all LEDs on the controller to turn off.
 
-[[step2_remove_controller_canister]]
+//[[step2_remove_controller_canister]]
 == Step 2: Remove controller
 
 Remove the controller from the chassis Is this needed since these are I/Os with thumbscrews? Look at G-O.
@@ -93,7 +93,7 @@ Leave the cables in the cable management device so that when you reinstall the c
 +
 image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[Open controller cover.]
 
-[[step3_upgrade_hic]]
+//[[step3_upgrade_hic]]
 == Step 3: Upgrade the HIC
 
 Remove and replace the HIC. There is no removing needed for gE.
@@ -111,7 +111,7 @@ image::../media/drw_E4000_replace_HIC_source_IEOPS-864.png[Remove HIC from contr
 .. Reinstall the HIC faceplate.
 . Reinstall the controller module cover and lock it into place.
 
-[[step4_reinstall_controller]]
+//[[step4_reinstall_controller]]
 == Step 4: Reinstall controller
 
 Reinstall the controller into the chassis.
@@ -135,10 +135,10 @@ Place both controllers online, collect support data, and resume operations.
 .Steps
 
 . Place controllers online.
- .. Plug in power cables.
+.. Plug in power cables.
 . As the controllers boot, check the controller LEDs.
- ** The amber Attention LED remains on.
- ** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
+** The amber Attention LED remains on.
+** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
 . When the controllers are back online, confirm that their status is Optimal and check the controller's Attention LEDs.
 +
 If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller is installed correctly. If necessary, remove and reinstall the controller.

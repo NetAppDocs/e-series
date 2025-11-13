@@ -478,4 +478,4 @@ The feature pack migration begins. Both controllers automatically reboot twice t
 
 .What's next?
 
-Go to link:hpp-complete-protocol-conversion-task.html[Complete host protocol conversion].
+After you've changed the host protocol, you need to link:io-module-convert-protocol-complete.html[Complete host protocol conversion].
