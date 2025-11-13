@@ -126,15 +126,15 @@ Reinstall the controller into the chassis.
 +
 NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 . Bind the cables to the cable management device with the hook and loop strap.
-. Repeat <<step2_remove_controller, Step 2: Remove controller>>, <<step3_upgrade_hic, Step 3: Upgrade the HIC>>, and <<step4_reinstall_controller, Step 4: Reinstall controller>> for the second controller.
 
 == Step 5: Complete the HIC upgrade
 
-Place both controllers online, collect support data, and resume operations.
+Repeat the procedure for the other controller and then place both controllers online, collect support data, and resume operations.
 
 .Steps
 
-. Place controllers online.
+. Repeat procedure Step 1 through Step 4 for the second controller.
+Place both controllers online.
 .. Plug in power cables.
 . As the controllers boot, check the controller LEDs.
 ** The amber Attention LED remains on.
