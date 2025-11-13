@@ -64,6 +64,7 @@ The cabling examples do not show 4-port 64Gb FC HBAs in the hosts; however, you 
 ** If you have a direct-attached topology, they always connect through Path B: red.
 ** If you have a fabric-attached topology, they always connect through Switch 2 (Switch 2 path: red).
 
+
 // * The cabling rule for ports on the hosts and ports on the controllers is that ports 'a' and 'c' always connect through Switch 1 (Switch 1 path: blue) and ports 'b' and 'd' always connect through Switch 2 (Switch 2 path: red).
 
 * If you need comprehensive configuration and slot priority information for your storage system, go to link:https://hwu.netapp.com[NetApp Hardware Universe^].
@@ -108,7 +109,9 @@ image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, w
 ====
 
 .About this task
-The cabling example shows host I/O modules in slots 1, 2, and 3. This is the maximum number of host I/O modules supported for the EF80 and EF80C storage systems. However, only the host I/O module in slot 1 is required; host I/O modules in slot 2 and slot 3 are both optional.
+* The cabling example shows host I/O modules in slots 1, 2, and 3. This is the maximum number of host I/O modules supported for the EF80 and EF80C storage systems. However, only the host I/O module in slot 1 is required; host I/O modules in slot 2 and slot 3 are both optional.
+
+* Although the cabling example shows I/O module ports 'a' and 'c' connected to the hosts, you can use ports 'a' and 'b' or ports 'c' and 'd'.
 
 .Steps
 
@@ -132,7 +135,9 @@ image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, w
 ====
 
 .About this task
-The cabling example shows host I/O modules in slots 1 and 2. This is the maximum number of host I/O modules supported for the EF50 and EF50C storage systems. However, only the host I/O module in slot 1 is required; the host I/O module in slot 2 is optional.
+* The cabling example shows host I/O modules in slots 1 and 2. This is the maximum number of host I/O modules supported for the EF50 and EF50C storage systems. However, only the host I/O module in slot 1 is required; the host I/O module in slot 2 is optional.
+
+* Although the cabling example shows I/O module ports 'a' and 'c' connected to the hosts, you can use ports 'a' and 'b' or ports 'c' and 'd'.
 
 .Steps
 
