@@ -104,6 +104,7 @@ image:../media/ethernet_callout.png["EF600 management ports"]
 
 |===
 +
+. Connect controller B to your network.
 . Open a browser and use the default IP address (169.254.128.101) to establish a connection to the controller. The controller sends back a self-signed certificate. The browser informs you that the connection is not secure.
 +
 NOTE: For platforms running SANtricity 11.60 and greater, the default subnet mask is 255.255.0.0.
@@ -126,7 +127,6 @@ NOTE: If you lose the connection to controller A, you can connect an ethernet ca
 The Configure Network Settings wizard will appear.
 +
 . Use the network settings provided by your network administrator in the *Configure Network Settings* wizard to configure controller B's network settings, and then select *Finish*.
-. Connect controller B to your network.
 . Validate controller B's network settings by entering controller B's configured IP address in a browser.
 +
 NOTE: If you lose the connection to controller B, you can use your previously validated connection to controller A to reestablish connection to controller B through controller A.
