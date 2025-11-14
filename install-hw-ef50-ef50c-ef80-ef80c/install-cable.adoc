@@ -39,7 +39,7 @@ The cabling for the mirroring connections is the same for EF50, EF50C, EF80, and
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 or 200 GbE Ethernet cable used for mirroring connections]
 +
-image:../media/drw_ef50-ef50c-ef80-ef80c_mirroring_2p_100gbe_ieops-2659.svg[ef50 ef50c ef80 ef80c controller to controller mirroring connections]
+image:../media/drw_ef50-ef80_mirroring_2p_100gbe_ieops-2659.svg[ef50 and ef80 controller to controller mirroring connections]
 
 == Step 2: Cable the data host network connections
 
