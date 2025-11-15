@@ -2,9 +2,9 @@
 permalink: maintenance-ef50-ef80/chassis-replace-shutdown.html
 sidebar: sidebar
 keywords: ef50, ef50c, ef80, ef80c, shutdown the controllers
----summary: Shut down the controllers in your EF50 or EF80 storage system to prevent data loss and ensure system stability when replacing the chassis.
+summary: Shut down the controllers in your EF50 or EF80 storage system to prevent data loss and ensure system stability when replacing the chassis.
 ---
-= Shut down the controllers - EF50, EF50C, EF80, and EF80C
+= Shut down the controllers - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
