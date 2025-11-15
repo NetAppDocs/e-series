@@ -21,9 +21,7 @@ If your storage system came in a cabinet, you can skip this procedure and go to 
 
 * Make sure you have the installation instructions packaged with the rack-mount hardware. If not, see link:../rackmount-hardware.html[Rack-mount hardware].
 
-* Be aware of the lifting precautions associated with the weight of your storage system. See link:../install-prepare.html[Prepare to install^].
-
-//* Be aware of the lifting precautions associated with the weight of your storage system. See link:../install-hw-ef50-ef50c-ef80-ef80c/install-prepare.html#step-2-understand-the-lifting-precautions.html[Understand the lifting precautions^].
+* Be aware of the lifting precautions associated with the weight of your storage system. See link:install-prepare.html#step-2-understand-the-lifting-precautions.html[Understand the lifting precautions^].
 
 * Understand that the airflow through the storage system enters from the front where the drives are installed and exhausts out the rear where the ports are located.
 
