@@ -1,5 +1,5 @@
 ---
-permalink: maintenance-ef50-ef50c-ef80-ef80c/controller-replace-online-controller.html
+permalink: maintenance-ef50-ef80/controller-replace-online-controller.html
 sidebar: sidebar
 keywords: ef50, ef50c, ef80, ef80c, how to reboot the system
 summary: Return control of storage resources to the replacement controller so your EF50, EF50C, EF80, or EF80C storage system can resume normal operation. The give back procedure varies based on the encryption type used by your system, no encryption, Onboard Key Manager (OKM) encryption, or External Key Manager (EKM) encryption.

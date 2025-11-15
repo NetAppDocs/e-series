@@ -1,65 +1,65 @@
-section: maintenance-ef50-ef50c-ef80-ef80c
+section: maintenance-ef50-ef80
 title: EF50 and EF80
 entries:
   - title: Maintenance overview
-    url: /maintenance-ef50-ef50c-ef80-ef80c/maintain-overview.html
+    url: /maintenance-ef50-ef80/maintain-overview.html
   - title: Chassis
     pdf-filename: EF50, EF50C, EF80, and EF80C Chassis
     entries:
       - title: Chassis replace workflow
-        url: /maintenance-ef50-ef50c-ef80-ef80c/chassis-replace-workflow.html
+        url: /maintenance-ef50-ef80/chassis-replace-workflow.html
       - title: Review requirements
-        url: /maintenance-ef50-ef50c-ef80-ef80c/chassis-replace-requirements.html
+        url: /maintenance-ef50-ef80/chassis-replace-requirements.html
       - title: Shut down controllers
-        url: /maintenance-ef50-ef50c-ef80-ef80c/chassis-replace-shutdown.html
+        url: /maintenance-ef50-ef80/chassis-replace-shutdown.html
       - title: Replace chassis
-        url: /maintenance-ef50-ef50c-ef80-ef80c/chassis-replace-move-hardware.html
+        url: /maintenance-ef50-ef80/chassis-replace-move-hardware.html
       - title: Complete chassis replacement
-        url: /maintenance-ef50-ef50c-ef80-ef80c/chassis-replace-complete-system-restore-rma.html
+        url: /maintenance-ef50-ef80/chassis-replace-complete-system-restore-rma.html
   - title: Controller
     pdf-filename: EF50, EF50C, EF80, and EF80C Controller
     entries:
       - title: Controller replace workflow
-        url: /maintenance-ef50-ef50c-ef80-ef80c/controller-replace-workflow.html
+        url: /maintenance-ef50-ef80/controller-replace-workflow.html
       - title: Review requirements
-        url: /maintenance-ef50-ef50c-ef80-ef80c/controller-replace-requirements.html
+        url: /maintenance-ef50-ef80/controller-replace-requirements.html
       - title: Prepare system
-        url: /maintenance-ef50-ef50c-ef80-ef80c/controller-replace-prepare.html
+        url: /maintenance-ef50-ef80/controller-replace-prepare.html
       - title: Offline controller
-        url: /maintenance-ef50-ef50c-ef80-ef80c/controller-replace-offline-controller.html
+        url: /maintenance-ef50-ef80/controller-replace-offline-controller.html
       - title: Replace controller
-        url: /maintenance-ef50-ef50c-ef80-ef80c/controller-replace-move-hardware.html
+        url: /maintenance-ef50-ef80/controller-replace-move-hardware.html
       - title: Online controller
-        url: /maintenance-ef50-ef50c-ef80-ef80c/controller-replace-online-controller.html
+        url: /maintenance-ef50-ef80/controller-replace-online-controller.html
       - title: Complete controller replacement
-        url: /maintenance-ef50-ef50c-ef80-ef80c/controller-replace-complete-replacement.html
+        url: /maintenance-ef50-ef80/controller-replace-complete-replacement.html
   - title: DIMM
-    url: /maintenance-ef50-ef50c-ef80-ef80c/dimm-replace.html
+    url: /maintenance-ef50-ef80/dimm-replace.html
   - title: Drive
-    url: /maintenance-ef50-ef50c-ef80-ef80c/drive-replace.html
+    url: /maintenance-ef50-ef80/drive-replace.html
   - title: Fan
-    url: /maintenance-ef50-ef50c-ef80-ef80c/fan-replace.html
+    url: /maintenance-ef50-ef80/fan-replace.html
   - title: I/O module
     pdf-filename: EF50, EF50C, EF80, and EF80C I/O module
     entries:
       - title: I/O module overview
-        url: /maintenance-ef50-ef50c-ef80-ef80c/io-module-overview.html
+        url: /maintenance-ef50-ef80/io-module-overview.html
       - title: Upgrade I/O module
-        url: /maintenance-ef50-ef50c-ef80-ef80c/io-module-upgrade.html
+        url: /maintenance-ef50-ef80/io-module-upgrade.html
       - title: Replace I/O module
-        url: /maintenance-ef50-ef50c-ef80-ef80c/io-module-replace.html
+        url: /maintenance-ef50-ef80/io-module-replace.html
   - title: I/O module host port protocol
     pdf-filename: EF50, EF50C, EF80, and EF80C Convert I/O module host port protocol
     entries:
       - title: Review requirements
-        url: /maintenance-ef50-ef50c-ef80-ef80c/io-module-convert-protocol-requirements.html
+        url: /maintenance-ef50-ef80/io-module-convert-protocol-requirements.html
       - title: Convert protocol
-        url: /maintenance-ef50-ef50c-ef80-ef80c/io-module-convert-protocol.html
+        url: /maintenance-ef50-ef80/io-module-convert-protocol.html
       - title: Complete protocol conversion
-        url: /maintenance-ef50-ef50c-ef80-ef80c/io-module-convert-protocol-complete.html
+        url: /maintenance-ef50-ef80/io-module-convert-protocol-complete.html
   - title: NV battery
-    url: /maintenance-ef50-ef50c-ef80-ef80c/nvdimm-battery-replace.html
+    url: /maintenance-ef50-ef80/nvdimm-battery-replace.html
   - title: Power supply
-    url: /maintenance-ef50-ef50c-ef80-ef80c/power-supply-replace.html
+    url: /maintenance-ef50-ef80/power-supply-replace.html
   - title: Real-time clock battery
-    url: /maintenance-ef50-ef50c-ef80-ef80c/rtc-battery-replace.html
+    url: /maintenance-ef50-ef80/rtc-battery-replace.html
