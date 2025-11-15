@@ -1,10 +1,10 @@
 ---
 permalink: maintenance-ef50-ef80/chassis-replace-workflow.html
 sidebar: sidebar
-keywords: ef50, ef50c, ef80, ef80c, replace the chassis workflow
+keywords: ef50, ef80, replace the chassis workflow
 summary: Get started with replacing the chassis of your EF50 or EF80 storage system by reviewing the replacement requirements, shutting down the controllers, replacing the chassis, and verifying system operations.
 ---
-= Chassis replacement workflow - EF50, EF50C, EF80, and EF80C
+= Chassis replacement workflow - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 

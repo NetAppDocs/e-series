@@ -1,30 +1,30 @@
 ---
 permalink: maintenance-ef50-ef80/io-module-upgrade.html
 sidebar: sidebar
-keywords: ef50, ef50c, ef80, ef80c,
-summary: You can upgrade the host interface cards (HICs) or I/O modules to increase the number of host ports.
+keywords: ef50, ef80,
+summary: You can upgrade the I/O modules to increase the number of host ports.
 ---
-= Upgrade the host interface card (HIC) - EF50, EF50C, EF80, and EF80C
+= Upgrade the I/O module - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can upgrade the host interface cards (HICs) or I/O modules to increase the number of host ports.
+You can upgrade the I/O modules to increase the number of host ports.
 
 .About this task
 
-* When you upgrade HICs, you must power off the storage system, upgrade the HICs, and then reapply power.
-* You upgrade a HIC one controller at a time by using this procedure for the first controller an then repeating it for the second controller.
+* When you upgrade I/O modules, you must power off the storage system, upgrade the I/O modules, and then reapply power.
+* You upgrade an I/O module one controller at a time by using this procedure for the first controller an then repeating it for the second controller.
 
 .Before you begin
 
 * Schedule a downtime maintenance window for this procedure. You cannot access data on the storage system until you have successfully completed this procedure.
 
-* Make sure that the HICs you are upgrading to are supported by your storage system and that you have the same type and number of HICs for each controller.
+* Make sure that the I/O modules you are upgrading to are supported by your storage system and that you have the same type and number of I/O modules for each controller.
 +
-CAUTION: *Possible loss of data access* -- The presence of incompatible or mismatched HICs causes the controllers to lock down when you apply power.
+CAUTION: *Possible loss of data access* -- The presence of incompatible or mismatched I/O modules causes the controllers to lock down when you apply power.
 +
-If needed, you can confirm supported HICs for your storage system at https://hwu.netapp.com[NetApp Hardware Universe^].
+If needed, you can confirm supported I/O modules for your storage system at https://hwu.netapp.com[NetApp Hardware Universe^].
 
 * Make sure you have the following:
 ** An ESD wristband, or you have taken other antistatic precautions.
@@ -34,7 +34,7 @@ If needed, you can confirm supported HICs for your storage system at https://hwu
 
 == Step 1: Place controller offline
 
-Place one of the controllers offline so you can safely upgrade the HICs.
+Place one of the controllers offline so you can safely upgrade the I/O modules.
 
 .Steps
 
@@ -94,13 +94,13 @@ Leave the cables in the cable management device so that when you reinstall the c
 image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[Open controller cover.]
 
 //[[step3_upgrade_hic]]
-== Step 3: Upgrade the HIC
+== Step 3: Upgrade the I/O module
 
-Remove and replace the HIC. There is no removing needed for gE.
+Remove and replace the I/O module. There is no removing needed for gE.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
-. Remove the HIC:
+. Remove the I/O module:
 +
 image::../media/drw_E4000_replace_HIC_source_IEOPS-864.png[Remove HIC from controller module.]
 .. Remove the HIC faceplate by loosening all screws and sliding it straight out from the controller module.
@@ -127,7 +127,7 @@ Reinstall the controller into the chassis.
 NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 . Bind the cables to the cable management device with the hook and loop strap.
 
-== Step 5: Complete the HIC upgrade
+== Step 5: Complete the I/O module upgrade
 
 Repeat the procedure for the other controller and then place both controllers online, collect support data, and resume operations.
 

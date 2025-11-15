@@ -1,15 +1,15 @@
 ---
 permalink: maintenance-ef50-ef80/io-module-overview.html
 sidebar: sidebar
-keywords: ef50, ef50c, ef80, ef80c, replace io module, upgrade io module, io module overview
-summary: The EF50, EF50C, EF80, and EF80C storage systems offer flexibility in upgrading or replacing I/O modules to enhance network connectivity and performance.
+keywords: ef50, ef80, replace io module, upgrade io module, io module overview
+summary: The EF50 and EF80 storage systems offer flexibility in upgrading or replacing I/O modules to enhance network connectivity and performance.
 ---
-= Overview of I/O module maintenance - EF50, EF50C, EF80, and EF80C
+= Overview of I/O module maintenance - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The EF50, EF50C, EF80, and EF80C storage systems offer flexibility in upgrading or replacing I/O modules to enhance network connectivity and performance.
+The EF50 and EF80 storage systems offer flexibility in upgrading or replacing I/O modules to enhance network connectivity and performance.
 
 You can upgrade the host interface cards (HICs) or I/O modules to increase the number of host ports in your storage system. You can also replace a failed I/O module with the same type of I/O module in your storage system.
 

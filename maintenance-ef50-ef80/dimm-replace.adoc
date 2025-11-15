@@ -1,10 +1,10 @@
 ---
 permalink: maintenance-ef50-ef80/dimm-replace.html
 sidebar: sidebar
-keywords: ef50, ef50c, ef80, ef80c, replace a dimm
+keywords: ef50, ef80, replace a dimm
 summary: Replace a DIMM in your EF50 or EF80 storage system when a memory mismatch is present, or you have a failed DIMM. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 ---
-= Replace a DIMM - EF50, EF50C, EF80, and EF80C
+= Replace a DIMM - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 

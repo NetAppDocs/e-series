@@ -1,15 +1,15 @@
 ---
 permalink: maintenance-ef50-ef80/fan-replace.html
 sidebar: sidebar
-keywords: ef50, ef50c, ef80, ef80c, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module
+keywords: ef50, ef80, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module
 summary: Replace a fan module in your EF50 or EF80 storage system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
 ---
-= Replace a fan module - EF50, EF50C, EF80, and EF80C
+= Replace a fan module - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace a fan module in your EF50, EF50C, EF80, or EF80C storage system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
+Replace a fan module in your EF50 or EF80 storage system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
 
 .About this task
 If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
