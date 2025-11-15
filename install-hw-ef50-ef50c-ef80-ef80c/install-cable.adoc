@@ -9,7 +9,7 @@ summary: After you install your EF50, EF50C, EF80, or EF80C storage system hardw
 :imagesdir: ../media/
 
 [.lead]
-After you install your EF50 or EF80 storage system hardware, cable the mirroring and host network connections for the controllers.
+After you install your EF50 or EF80 storage system hardware, cable the mirroring and host network connections for the controllers.(You cable the management ports later.)
 
 .About this task
 
