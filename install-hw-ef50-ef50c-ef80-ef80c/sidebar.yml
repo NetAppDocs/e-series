@@ -1,8 +1,8 @@
 section: install-hw-ef50-ef50c-ef80-ef80c
-title: EF50, EF50C, EF80, and EF80C storage systems
+title: EF50 and EF80
 entries:
  - title: Install and setup
-   pdf-filename: EF50, EF50C, EF80, and EF80C Install and Setup
+   pdf-filename: EF50 and EF80 Install and Setup
    entries:
     - title: Installation workflow
       url: /install-hw-ef50-ef50c-ef80-ef80c/install-workflow.html
