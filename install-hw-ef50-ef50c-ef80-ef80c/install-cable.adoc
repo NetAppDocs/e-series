@@ -155,8 +155,6 @@ The following examples show cabling to the hosts using a fabric-attached topolog
 
 .About this task
 
-The following host network connection rules are exemplified in the cabling steps in this procedure. These rules apply to the EF50, EF50C, EF80, and EF80C storage systems:
-
 * A fabric-attached storage system has two separate switch paths (Switch 1 path and Switch 2 path) for redundancy, which connect to each host and each controller in the storage system.
 
 * The Switch 1 path (blue) connects to the 'a' and 'c' ports on each controller and to the HBAs on each host. The Switch 2 path (red) connects to the 'b' and 'd' ports on each controller and to the HBAs on each host.
