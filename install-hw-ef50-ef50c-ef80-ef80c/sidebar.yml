@@ -1,21 +1,18 @@
 section: install-hw-ef50-ef50c-ef80-ef80c
 title: EF50 and EF80
 entries:
- - title: Install and setup
-   pdf-filename: EF50 and EF80 Install and Setup
-   entries:
-    - title: Installation workflow
-      url: /install-hw-ef50-ef50c-ef80-ef80c/install-workflow.html
-    - title: Prepare to Install
-      url: /install-hw-ef50-ef50c-ef80-ef80c/install-prepare.html
-    - title: Install hardware
-      url: /install-hw-ef50-ef50c-ef80-ef80c/install-hardware.html
-    - title: Cable hardware
-      url: /install-hw-ef50-ef50c-ef80-ef80c/install-cable.html
-    - title: Power on system
-      url: /install-hw-ef50-ef50c-ef80-ef80c/install-power-hardware.html
-    - title: Complete system setup
-      url: /install-hw-ef50-ef50c-ef80-ef80c/install-complete-setup.html
+  - title: Installation workflow
+    url: /install-hw-ef50-ef50c-ef80-ef80c/install-workflow.html
+  - title: Prepare to Install
+    url: /install-hw-ef50-ef50c-ef80-ef80c/install-prepare.html
+  - title: Install hardware
+    url: /install-hw-ef50-ef50c-ef80-ef80c/install-hardware.html
+  - title: Cable hardware
+    url: /install-hw-ef50-ef50c-ef80-ef80c/install-cable.html
+  - title: Power on system
+    url: /install-hw-ef50-ef50c-ef80-ef80c/install-power-hardware.html
+  - title: Complete system setup
+    url: /install-hw-ef50-ef50c-ef80-ef80c/install-complete-setup.html
 
 
       
