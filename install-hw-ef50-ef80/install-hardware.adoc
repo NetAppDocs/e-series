@@ -2,14 +2,14 @@
 permalink: install-hw-ef50-ef80/install-hardware.html
 sidebar: sidebar
 keywords: 
-summary: After you prepare to install your EF50, EF50C, EF80, or EF80C storage system, install the rack-mount hardware and then install and secure your storage system in a cabinet or telco rack.
+summary: After you prepare to install your EF50 or EF80 storage system, install the rack-mount hardware and then install and secure your storage system in a cabinet or telco rack.
 ---
 = Install the hardware - EF50, EF50C, EF80, and EF80C
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After you prepare to install your EF50, EF50C, EF80, or EF80C storage system, install the rack-mount hardware in a cabinet or telco rack, and then install and secure your storage system. 
+After you prepare to install your EF50 or EF80 storage system, install the rack-mount hardware in a cabinet or telco rack, and then install and secure your storage system. 
 
 If your storage system came in a cabinet, you can skip this procedure and go to link:install-cable.html[Cable the hardware].
 

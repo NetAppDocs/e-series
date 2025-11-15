@@ -2,14 +2,14 @@
 permalink: maintenance-ef50-ef80/chassis-replace-move-hardware.html
 sidebar: sidebar
 keywords: ef50, ef50c, ef80, ef80c, move hardware components, replace the chassis
-summary: Replace the chassis of your EF50, EF50C, EF80, or EF80C storage system when a hardware failure requires it. The replacement process involves removing the controllers and power supply units (PSUs), removing the drives, installing the replacement chassis, and reinstalling the chassis components.
+summary: Replace the chassis of your EF50 or EF80 storage system when a hardware failure requires it. The replacement process involves removing the controllers and power supply units (PSUs), removing the drives, installing the replacement chassis, and reinstalling the chassis components.
 ---
 = Replace the chassis - EF50, EF50C, EF80, and EF80C
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace the chassis of your EF50, EF50C, EF80, or EF80C storage system when a hardware failure requires it. The replacement process involves removing the controllers, removing the drives, installing the replacement chassis, and reinstalling the chassis components.
+Replace the chassis of your EF50 or EF80 storage system when a hardware failure requires it. The replacement process involves removing the controllers, removing the drives, installing the replacement chassis, and reinstalling the chassis components.
 
 include::../_include/ge_chassis_replace_move_hardware.adoc[]
 

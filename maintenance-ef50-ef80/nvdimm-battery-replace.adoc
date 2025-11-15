@@ -9,8 +9,7 @@ summary: Replace the NV battery in your EF50, EF50C, EF80, or EF80C storage syst
 :imagesdir: ../media/
 
 [.lead]
-Replace the NV battery in your EF50, EF50C, EF80, or EF80C storage system when the battery begins to lose charge or fails, as it is responsible for preserving critical system data during power outages. The replacement process involves shutting down the impaired controller, removing the controller module, replacing the NV battery, reinstalling the controller module, and returning the failed part to NetApp.
-
+Replace the NV battery in your EF50 or EF80 storage system when the battery begins to lose charge or fails, as it is responsible for preserving critical system data during power outages. The replacement process involves shutting down the impaired controller, removing the controller module, replacing the NV battery, reinstalling the controller module, and returning the failed part to NetApp.
 
 .Before you begin
 All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.

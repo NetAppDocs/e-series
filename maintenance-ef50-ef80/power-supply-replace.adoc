@@ -2,13 +2,13 @@
 permalink: maintenance-ef50-ef80/power-supply-replace.html
 sidebar: sidebar
 keywords: ef50, ef50c, ef80, ef80c, replace a power supply
-summary: Replace an AC or DC power supply unit (PSU) in your EF50, EF50C, EF80, or EF80C storage system when it fails or becomes faulty, ensuring that your system continues to receive the required power for stable operation. The replacement process involves disconnecting the faulty PSU from the power source, unplugging the power cord, replacing the faulty PSU, and then reconnecting it to the power source.
+summary: Replace a power supply unit (PSU) in your EF50 or EF80 storage system when it fails or becomes faulty, ensuring that your system continues to receive the required power for stable operation. The replacement process involves disconnecting the faulty PSU from the power source, unplugging the power cord, replacing the faulty PSU, and then reconnecting it to the power source.
 ---
 = Replace a power supply - EF50, EF50C, EF80, and EF80C
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace an AC or DC power supply unit (PSU) in your EF50, EF50C, EF80, or EF80C storage system when it fails or becomes faulty, ensuring that your system continues to receive the required power for stable operation. The replacement process involves disconnecting the faulty PSU from the power source, unplugging the power cord, replacing the faulty PSU, and then reconnecting it to the power source.
+Replace a power supply unit (PSU) in your EF50 or EF80 storage system when it fails or becomes faulty, ensuring that your system continues to receive the required power for stable operation. The replacement process involves disconnecting the faulty PSU from the power source, unplugging the power cord, replacing the faulty PSU, and then reconnecting it to the power source.
 
 include::../_include/ge_power_supply_replace.adoc[]
