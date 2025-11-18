@@ -27,7 +27,7 @@ NOTE: The NVMe over RoCE settings and functions appear only if your storage arra
 
 .Steps
 
-. From the System Manager interface, select *Hardware*.
+. From the left panel of the System Manager interface, select *Hardware*.
 . Click the controller with the NVMe over RoCE port you want to configure.
 +
 The controller's context menu appears.

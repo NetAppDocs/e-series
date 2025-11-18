@@ -28,6 +28,10 @@ a|Subject Alternative Names (SANs) for Server certificate now only permits Lette
 a|When creating or editing a Server certificate in SANtricity System Manager or Unified Manager, the Subject Alternative Names (SANs) field now only permits letters, digits, and hyphen characters. This change enhances security and ensures compatibility with industry standards for SSL/TLS certificates.
 |===
 
+== New features in Version 11.90R4
+
+This version contains only minor changes and no new features. For more information on the changes in this release, please refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3334464[E-Series 11.90 Release Notes^].
+
 == New features in Version 11.90R3
 
 [cols="35h,~",options="header"]
