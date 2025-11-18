@@ -88,6 +88,15 @@ a|
 After you've ensured that your site meets the specifications for your storage system, and you've verified that you have all the parts you ordered, you should register your storage system.
 
 . Create an account and register your hardware at http://mysupport.netapp.com/[NetApp Support^].
++
+The registration process requires the System Serial Number (SSN) for each controller. You can find the serial number in the following locations:
+
+- On each controller
+- On the packing slip
+- In your confirmation email
++
+image::../media/drw_ssn_label.svg[Example of the system serial number label,width=200]
++
 
 .What's next?
 After you’ve prepared to install your storage system, you link:install-hardware.html[install the hardware].
@@ -96,7 +105,7 @@ After you’ve prepared to install your storage system, you link:install-hardwar
 =================================================
 OR use ONTAP-side content as a base and update with above E-Series content as needed.
 
-Lisa Adam Erker said: We [E-Series] have a single SN on the chassis of the shelf that holds the controllers. We don't have individual SNs per controller that get registered. SO if you do use the ONTAP text, you need to make this change.
+Lisa Adam Erker said: We [E-Series] have a single SN on the chassis of the shelf that holds the controllers. We don't have individual SNs per controller that get registered. SO if you do use the ONTAP text, you need to make this change. BUT ME said differentin Oct email: just like gO, SN is on each controller.
 
 == Step 3: Register your storage system
 After you've ensured that your site meets the requirements for your storage system specifications, and you've verified that you have all the parts you ordered, you should register your storage system.
