@@ -77,18 +77,18 @@ The cabling example shows host I/O modules in slots 1, 2, and 3. This is the max
 
 .Steps
 
-. Cable the host connections so that each host has a connection to each controller:
+. Cable the host connections so that each host has a connection to each controller through path A and path B:
 . Or Cable the host connections so that each host HBA port (two ports on each host) has a connection to host ports on each controller:
-.. Cable host 1 to controller A port exx.
-.. Cable host 1 to controller B port exx.
-.. Cable host 2 to controller A port exx.
-.. Cable host 2 to controller B port exx.
+.. Cable host 1 path A (blue) ports to controller A's 'a' ports.
+.. Cable host 1 path B (red) ports to controller B's 'a' ports.
+.. Cable host 2 path A (blue) ports to controller A's 'b' ports.
+.. Cable host 2 path B (red) ports to controller B's 'b' ports.
 +
 *200 GbE cables*
 +
 image::../media/oie_cable_sfp_gbe_copper.png[200 GbE cable]
 +
-image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, width=1000px]
+image:../media/drw_ef80_2p_200gbe_ib_3hic_direct_ieops-XXXX.svg[EF80 direct-attached topology to hosts using three 2 port 200gbe ib io modules]
 
 
 ====
@@ -104,22 +104,22 @@ image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, w
 
 .Steps
 
-. Cable the host connections so that each host has a connection to each controller:
-.. Cable host 1 to controller A port exx.
-.. Cable host 1 to controller B port exx.
-.. Cable host 2 to controller A port exx.
-.. Cable host 2 to controller B port exx.
+. Cable the host connections so that each host has a connection to each controller through path A and path B:
+.. Cable host 1 path A (blue) ports to controller A's 'a' ports.
+.. Cable host 1 path B (red) ports to controller B's 'a' ports.
+.. Cable host 2 path A (blue) ports to controller A's 'c' ports.
+.. Cable host 2 path B (red) ports to controller B's 'c' ports.
 +
 *64 Gb/s FC cables*
 +
 image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable]
 +
-image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, width=1000px]
+image:../media/drw_ef80_4p_64gb_fc_3hic_direct_ieops-2674.svg[EF80 direct-attached topology to hosts using three 4 port 64gb fc io modules]
 
 ====
 
 
-.EF50 with three 4-port 64Gb FC I/O modules
+.EF50 with two 4-port 64Gb FC I/O modules
 [%collapsible]
 ====
 
@@ -130,17 +130,17 @@ image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, w
 
 .Steps
 
-. Cable the host connections so that each host has a connection to each controller:
-.. Cable host 1 to controller A port exx.
-.. Cable host 1 to controller B port exx.
-.. Cable host 2 to controller A port exx.
-.. Cable host 2 to controller B port exx.
+. Cable the host connections so that each host has a connection to each controller through path A and path B:
+.. Cable host 1 path A (blue) ports to controller A's 'a' ports.
+.. Cable host 1 path B (red) ports to controller B's 'a' ports.
+.. Cable host 2 path A (blue) ports to controller A's 'c' ports.
+.. Cable host 2 path B (red) ports to controller B's 'c' ports.
 +
 *64 Gb/s FC cables*
 +
 image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable]
 +
-image:../media/drw_e4012_direct_topology_ieops-2156.svg[E4012 Direct Topology, width=1000px]
+image:../media/drw_ef50_4p_64gb_fc_2hic_direct_ieops-2670.svg[EF50 direct-attached topology to hosts using two 4 port 64gb fc io modules]
 
 
 ====
@@ -172,26 +172,24 @@ The cabling example shows host I/O modules in slots 1, 2, and 3. This is the max
 
 .Steps
 
-. Connect each host to each switch.
+. Connect the hosts to the switches:
 +
 You can use any ports on the switches.
 +
-.. Cable Host 1 to each switch.
-.. Cable Host 2 to each switch.
+.. Cable host 1 and host 2 path A (blue) ports to switch 1 (switch path A).
+.. Cable host 1 and host 2 path B (red) ports to switch 2 (switch path B).
 +
 . Connect each switch to each controller:
-.. Cable switch 1 to controller A port exx.
-.. Cable switch 1 to controller B port exx.
-.. Cable switch 2 to controller A port exx.
-.. Cable switch 2 to controller B port exx.
-+
-You can use the following table for the switch to controller cabling or use the cabling graphic:
+.. Cable switch 1 (blue) to controller A's 'a' ports.
+.. Cable switch 1 (blue) to controller B's 'a' ports.
+.. Cable switch 2 (red) to controller A's 'b' ports.
+.. Cable switch 2 (red) to controller B's 'b' ports.
 +
 *200 GbE cables?*
 +
 image::../media/oie_cable_sfp_gbe_copper.png[200 GbE cable]
 +
-image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, width=1000px]
+image:../media/drw_ef80_2p_200gbe_ib_3hic_fabric_ieops-xxxx.svg[EF80 fabric-attached topology using three 2 port 200gbe io modules]
 
 
 
@@ -208,22 +206,22 @@ The cabling example shows host I/O modules in slots 1, 2, and 3. This is the max
 
 . Connect each host to each switch.
 +
-You can use any ports on the hosts and switches.
+You can use any ports on the switches.
 +
-.. Cable Host 1 to each switch.
-.. Cable Host 2 to each switch.
+.. Cable host 1 and host 2 path A (blue) ports to switch 1 (switch path A).
+.. Cable host 1 and host 2 path B (red) ports to switch 2 (switch path B).
 +
 . Connect each switch to each controller:
-.. Cable switch 1 to controller A port exx.
-.. Cable switch 1 to controller B port exx.
-.. Cable switch 2 to controller A port exx.
-.. Cable switch 2 to controller B port exx.
+.. Cable switch 1 (blue) to controller A's 'a' and 'c' ports.
+.. Cable switch 1 (blue) to controller B's 'a' and 'c' ports.
+.. Cable switch 2 (red) to controller A's 'b' and 'd' ports.
+.. Cable switch 2 (red) to controller B's 'b' and 'd' ports.
 +
 *64 Gb/s FC cables*
 +
 image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable]
 +
-image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, width=1000px]
+image:../media/drw_ef80_4p_64gb_fc_3hic_fabric_ieops-2675.svg[EF80 fabric-attached topology using three 4 port 64gb fc io modules]
 
 
 ====
@@ -240,22 +238,22 @@ The cabling example shows host I/O modules in slots 1 and 2. This is the maximum
 
 . Connect each host to each switch.
 +
-You can use any ports on the hosts and switches.
+You can use any ports on the switches.
 +
-.. Cable Host 1 to each switch.
-.. Cable Host 2 to each switch.
+.. Cable host 1 and host 2 path A (blue) ports to switch 1 (switch path A).
+.. Cable host 1 and host 2 path B (red) ports to switch 2 (switch path B).
 +
 . Connect each switch to each controller:
-.. Cable switch 1 to controller A port exx.
-.. Cable switch 1 to controller B port exx.
-.. Cable switch 2 to controller A port exx.
-.. Cable switch 2 to controller B port exx.
+.. Cable switch 1 (blue) to controller A's 'a' and 'c' ports.
+.. Cable switch 1 (blue) to controller B's 'a' and 'c' ports.
+.. Cable switch 2 (red) to controller A's 'b' and 'd' ports.
+.. Cable switch 2 (red) to controller B's 'b' and 'd' ports.
 +
 *64 Gb/s FC cables*
 +
 image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable]
 +
-image:../media/drw_e4012_fabric_topology_ieops-2157.svg[E4012 Fabric Topology, width=1000px]
+image:../media/drw_ef50_4p_64gb_fc_fabric_ieops-2673.svg[EF50 fabric-attached topology using two 4 port 64gb fc io modules]
 
 
 ====

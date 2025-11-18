@@ -101,53 +101,49 @@ image::../media/drw_ssn_label.svg[Example of the system serial number label,widt
 .What's next?
 After you’ve prepared to install your storage system, you link:install-hardware.html[install the hardware].
 
+//OR use ONTAP-side content as a base and update with above E-Series content as needed.
 
-=================================================
-OR use ONTAP-side content as a base and update with above E-Series content as needed.
+//== Step 3: Register your storage system
+//After you've ensured that your site meets the requirements for your storage system specifications, and you've verified that you have all the parts you ordered, you should register your storage system.
 
-Lisa Adam Erker said: We [E-Series] have a single SN on the chassis of the shelf that holds the controllers. We don't have individual SNs per controller that get registered. SO if you do use the ONTAP text, you need to make this change. BUT ME said differentin Oct email: just like gO, SN is on each controller.
+//.Steps
 
-== Step 3: Register your storage system
-After you've ensured that your site meets the requirements for your storage system specifications, and you've verified that you have all the parts you ordered, you should register your storage system.
+//. Locate the System Serial Number (SSN) on each controller being installed.
+//+
+//You can find the serial number in the following locations:
 
-.Steps
+//- On the packing slip
+//- In your confirmation email
+//- On each controller
+//+
+//image::../media/drw_ssn_label.svg[Example of the system serial number label,width=200]
+//+
 
-. Locate the System Serial Number (SSN) on each controller being installed.
-+
-You can find the serial number in the following locations:
+//. Go to the http://mysupport.netapp.com/[NetApp Support Site^].
+//. Determine whether you need to register your storage system:
+//+
+//[cols="1a,2a" options="header"]
+//|===
+//| If you are a...| Follow these steps...
+//a|
+//Existing NetApp customer
+//a|
 
-- On the packing slip
-- In your confirmation email
-- On each controller
-+
-image::../media/drw_ssn_label.svg[Example of the system serial number label,width=200]
-+
+//.. Sign in with your username and password.
+//.. Select *Systems* > *My Systems*.
+//.. Confirm that the new serial numbers are listed.
+//.. If it is not, follow the instructions for new NetApp customers.
 
-. Go to the http://mysupport.netapp.com/[NetApp Support Site^].
-. Determine whether you need to register your storage system:
-+
-[cols="1a,2a" options="header"]
-|===
-| If you are a...| Follow these steps...
-a|
-Existing NetApp customer
-a|
+//a|
+//New NetApp customer
+//a|
 
- .. Sign in with your username and password.
- .. Select *Systems* > *My Systems*.
- .. Confirm that the new serial numbers are listed.
- .. If it is not, follow the instructions for new NetApp customers.
+//.. Click *Register Now*, and create an account.
+//.. Select *Systems* > *Register Systems*.
+//.. Enter the storage system's serial numbers and requested details.
 
-a|
-New NetApp customer
-a|
-
- .. Click *Register Now*, and create an account.
- .. Select *Systems* > *Register Systems*.
- .. Enter the storage system's serial numbers and requested details.
-
-After your registration is approved, you can download any required software. The approval process might take up to 24 hours.
-|===
+//After your registration is approved, you can download any required software. The approval process might take up to 24 hours.
+//|===
 
 .What's next?
 After you’ve prepared to install your storage system, you link:install-hardware.html[install the hardware].
