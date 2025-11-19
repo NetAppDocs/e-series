@@ -9,7 +9,7 @@ summary: After you install your EF50 or EF80 storage system hardware, cable the 
 :imagesdir: ../media/
 
 [.lead]
-After you install your EF50 or EF80 storage system hardware, cable the mirroring and host network connections for the controllers.(You cable the management ports later.)
+After you install your EF50 or EF80 storage system hardware, cable the mirroring and host network connections for the controllers. (You cable the management ports later.)
 
 .About this task
 
@@ -41,7 +41,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 or 200 GbE Ethernet cable used f
 +
 image:../media/drw_ef50-ef80_mirroring_2p_100gbe_ieops-2659.svg[ef50 and ef80 controller to controller mirroring connections]
 
-== Step 2: Cable the host network connections
+== Step 2: Cable the host connections
 
 Cable the host connections for your storage system according to your network topology: direct attached or fabric attached.
 
