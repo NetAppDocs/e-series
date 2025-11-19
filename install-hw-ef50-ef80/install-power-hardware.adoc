@@ -2,14 +2,14 @@
 permalink: install-hw-ef50-ef80/install-power-hardware.html
 sidebar: sidebar
 keywords: ef50, ef80, connect power cables
-summary: After you cable the controller's mirroring and data host network connections for your EF50 or EF80 storage system, you power on the controllers.
+summary: After you cable the controller's mirroring and host network connections for your EF50 or EF80 storage system, you power on the controllers.
 ---
 = Power on the hardware - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After you cable the controller's mirroring and data host network connections for your EF50 or EF80 storage system, you power on the controllers.
+After you cable the controller's mirroring and host network connections for your EF50 or EF80 storage system, you power on the controllers.
 
 .Before you begin
 Take anti-static precautions.
