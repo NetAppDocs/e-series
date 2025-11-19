@@ -50,8 +50,7 @@ If a problem occurs when you remove a controller, you can use the saved file to 
 The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
 . If the controller is not already offline, take it offline now using SANtricity System Manager.
- .. Select *Hardware*.
- .. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
+ .. Select menu:Hardware[Controllers and components].
  .. Select the controller that you want to place offline.
  .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 +
@@ -199,7 +198,7 @@ NOTE: If you cannot resolve the problem, contact technical support.
 As needed, install the latest version.
 
 . Verify that all volumes have been returned to the preferred owner.
-.. Select menu:Storage[Volumes]. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select menu:More[Change ownership] to view volume owners.
+.. Select menu:Storage[Volumes]. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select menu:elispse icon[Change ownership] to view volume owners.
 .. If volumes are all owned by preferred owner continue to Step 6.
 .. If none of the volumes are returned, you must manually return the volumes. Go to menu:More[Redistribute volumes].
  .. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution you must check the Recovery Guru for host connectivity issues.

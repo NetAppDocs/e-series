@@ -21,7 +21,7 @@ Make sure you have the following:
 
 .About this task
 
-This task describes how to access the iSCSI port configuration from System Manager's Hardware page. You can also access the configuration from menu:System[Settings > Configure iSCSI ports].
+This task describes how to access the iSCSI port configuration from System Manager's Hardware page. You can also access the configuration from menu:System[Settings > System > Configure iSCSI ports].
 
 .Steps
 
@@ -39,10 +39,7 @@ The Setup wizard launches if there are no pools, volumes groups, workloads, or n
 +
 You will use the wizard later to complete additional setup tasks.
 
-. Select *Hardware*.
-. If the graphic shows the drives, click *Show back of shelf*.
-+
-The graphic changes to show the controllers instead of the drives.
+. From the left panel, select menu:Hardware[Controllers and components].
 
 . Click the controller with the iSCSI ports you want to configure.
 +
