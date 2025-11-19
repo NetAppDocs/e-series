@@ -157,18 +157,18 @@ The following examples show cabling to the hosts using a fabric-attached topolog
 
 * A fabric-attached storage system has two separate switch paths (Switch 1 path and Switch 2 path) for redundancy, which connect to each host and each controller in the storage system.
 
-* The Switch 1 path (blue) connects to the 'a' and 'c' ports on each controller and to the HBAs on each host. The Switch 2 path (red) connects to the 'b' and 'd' ports on each controller and to the HBAs on each host.
-
-* Cabling examples for fabric-attached topographies show Host 1 and Host 2 with three 2-port HBAs each. If your hosts have less than three HBAs, you can ignore the cabling to the additional HBAs and only cable to the installed HBAs.
-
-//* The fabric-attached cabling examples show controller ports 'a' and 'c' connect through Switch 1 (Switch 1 path: blue) and ports 'b' and 'd' connect through Switch 2 (Switch 2 path: red).
+* The Switch 1 path, shown in blue, connects to the 'a' and 'c' ports on each controller and to the HBAs on each host. 
++
+The Switch 2 path, shown in red, connects to the 'b' and 'd' ports on each controller and to the HBAs on each host. 
 
 .EF80 with three 2-port 200 GbE I/O modules
 [%collapsible]
 ====
 
 .About this task
-The cabling example shows host I/O modules in slots 1, 2, and 3. This is the maximum number of host I/O modules supported for the EF80 storage system. However, only the host I/O module in slot 1 is required; host I/O modules in slot 2 and slot 3 are both optional.
+* The cabling example shows host I/O modules in slots 1, 2, and 3. This is the maximum number of host I/O modules supported for the EF80 storage system. However, only the host I/O module in slot 1 is required; host I/O modules in slot 2 and slot 3 are both optional.
+
+* The EF80 fabric-attached cabling examples show three HBAs on each host. If your hosts have less than three HBAs, you can ignore the cabling to the additional HBAs and only cable to the installed HBAs.
 
 .Steps
 
@@ -200,7 +200,9 @@ image:../media/drw_ef80_2p_200gbe_ib_3hic_fabric_ieops-xxxx.svg[EF80 fabric-atta
 ====
 
 .About this task
-The cabling example shows host I/O modules in slots 1, 2, and 3. This is the maximum number of host I/O modules supported for the EF80 storage system. However, only the host I/O module in slot 1 is required; host I/O modules in slot 2 and slot 3 are both optional.
+* The cabling example shows host I/O modules in slots 1, 2, and 3. This is the maximum number of host I/O modules supported for the EF80 storage system. However, only the host I/O module in slot 1 is required; host I/O modules in slot 2 and slot 3 are both optional.
+
+* The EF80 fabric-attached cabling examples show three HBAs on each host. If your hosts have less than three HBAs, you can ignore the cabling to the additional HBAs and only cable to the installed HBAs.
 
 .Steps
 
@@ -253,7 +255,7 @@ You can use any ports on the switches.
 +
 image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable]
 +
-image:../media/drw_ef50_4p_64gb_fc_fabric_ieops-2673.svg[EF50 fabric-attached topology using two 4 port 64gb fc io modules]
+image:../media/drw_ef50_4p_64gb_fc_2hic_fabric_ieops-2673.svg[EF50 fabric-attached topology using two 4 port 64gb fc io modules]
 
 
 ====
@@ -264,4 +266,4 @@ image:../media/drw_ef50_4p_64gb_fc_fabric_ieops-2673.svg[EF50 fabric-attached to
 
 .What's next?
 
-After you’ve cabled the mirroring and data host connections for your storage system, you link:install-power-hardware.html[power on your storage system].
+After you’ve cabled the mirroring and host connections for your storage system, you link:install-power-hardware.html[power on your storage system].
