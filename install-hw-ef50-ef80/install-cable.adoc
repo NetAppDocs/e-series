@@ -64,7 +64,7 @@ If your storage system has fewer host I/O modules installed, you can ignore the 
 The following examples show cabling to the hosts using a direct-attached topology.
 
 .About this task
-The cabling examples show two paths for redundancy: path A (shown in blue) and path B (shown in red).
+A direct-attached storage system has two separate paths for redundancy: path A (shown in blue) and path B (shown in red).
 
 .EF80 with three 2-port 200 GbE I/O modules
 [%collapsible]
@@ -152,11 +152,15 @@ The following examples show cabling to the hosts using a fabric-attached topolog
 
 .About this task
 
-* A fabric-attached storage system has two separate switch paths, switch 1 path (shown in blue) and switch 2 path (shown in red), which connect HBA ports on the hosts through the switches to the controllers in the storage system.
+* A fabric-attached storage system has two separate switch paths for redundancy: switch 1 path (shown in blue) and switch 2 path (shown in red), which connect HBA ports on the hosts through the switches to the controllers in the storage system.
 
-* The switch 1 path (blue) connects to 'a' and 'c' ports on each controller.
-+
-The switch 2 path (red) connects to 'b' and 'd' ports on each controller.
+* The switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to the 'a' and 'c' ports on each controller.
+
+The switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to the 'b' and 'd' ports on each controller.
+
+//* The switch 1 path (blue) connects to 'a' and 'c' ports on each controller.
+//+
+//The switch 2 path (red) connects to 'b' and 'd' ports on each controller.
 
 .EF80 with three 2-port 200 GbE I/O modules
 [%collapsible]
@@ -167,9 +171,6 @@ The switch 2 path (red) connects to 'b' and 'd' ports on each controller.
 
 * The cabling example shows three HBAs on each host. If your hosts have less than three HBAs, you can ignore the cabling to the additional HBAs and only cable to the installed HBAs.
 
-* The switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to the 'a' ports on each controller.
-+
-The switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to the 'b' ports on each controller.
 
 .Steps
 
@@ -177,10 +178,10 @@ The switch 2 path connectivity is shown with red cabling and red ports on the ho
 +
 You can use any ports on the switches.
 +
-.. Cable host 1 and host 2 path A (blue) ports to switch 1 (switch path A).
-.. Cable host 1 and host 2 path B (red) ports to switch 2 (switch path B).
+.. Cable host 1 and host 2 switch 1 path (blue) HBA ports to switch 1.
+.. Cable host 1 and host 2 switch 2 path (red) HBA ports to switch 2.
 +
-. Connect each switch to each controller:
+. Connect the switches to the controllers:
 .. Cable switch 1 (blue) to controller A's 'a' ports.
 .. Cable switch 1 (blue) to controller B's 'a' ports.
 .. Cable switch 2 (red) to controller A's 'b' ports.
@@ -203,11 +204,7 @@ image:../media/drw_ef80_2p_200gbe_ib_3hic_fabric_ieops-2679.svg[EF80 fabric-atta
 .About this task
 * The cabling example shows host I/O modules in slots 1, 2, and 3. This is the maximum number of host I/O modules supported for the EF80 storage system. However, only the host I/O module in slot 1 is required; host I/O modules in slot 2 and slot 3 are both optional.
 
-* The EF80 fabric-attached cabling examples show three HBAs on each host. If your hosts have less than three HBAs, you can ignore the cabling to the additional HBAs and only cable to the installed HBAs.
-
-* The switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to the 'a' and 'c' ports on each controller.
-+
-* The switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to the 'b' and 'd' ports on each controller.
+* The cabling example shows three HBAs on each host. If your hosts have less than three HBAs, you can ignore the cabling to the additional HBAs and only cable to the installed HBAs.
 
 .Steps
 
@@ -240,10 +237,6 @@ image:../media/drw_ef80_4p_64gb_fc_3hic_fabric_ieops-2675.svg[EF80 fabric-attach
 
 .About this task
 * The cabling example shows host I/O modules in slots 1 and 2. This is the maximum number of host I/O modules supported for the EF50 storage system. However, only the host I/O module in slot 1 is required; the host I/O module in slot 2 is optional.
-
-* The switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to the 'a' and 'c' ports on each controller.
-+
-* The switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to the 'b' and 'd' ports on each controller.
 
 .Steps
 
