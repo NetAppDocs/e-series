@@ -155,7 +155,7 @@ The following examples show cabling to the hosts using a fabric-attached topolog
 * A fabric-attached storage system has two separate switch paths for redundancy: switch 1 path (shown in blue) and switch 2 path (shown in red), which connect HBA ports on the hosts through the switches to the controllers in the storage system.
 
 * The switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to the 'a' and 'c' ports on each controller.
-
++
 The switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to the 'b' and 'd' ports on each controller.
 
 //* The switch 1 path (blue) connects to 'a' and 'c' ports on each controller.
