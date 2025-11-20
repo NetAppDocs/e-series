@@ -24,10 +24,7 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direct
 
 == Step 1: Cable the mirroring connections
 
-Cable the controllers to each other to enable mirroring.
-
-.About this task
-The cabling for the mirroring connections is the same for EF50 and EF80C storage systems.
+Cable the controllers to each other to enable mirroring. The cabling is the same for EF50 and EF80C storage systems.
 
 .Steps
 
@@ -36,9 +33,9 @@ The cabling for the mirroring connections is the same for EF50 and EF80C storage
 .. Cable controller A port e4b to controller B port e4b.
 +
 *100 GbE Ethernet cables*
-
++
 image::../media/oie_cable100_gbe_qsfp28.png[100 gbe ethernet cable used for mirroring connections]
-
++
 image:../media/drw_ef50-ef80_mirroring_2p_100gbe_ieops-2659.svg[ef50 and ef80 controller to controller mirroring connection cabling]
 
 == Step 2: Cable the host connections
@@ -52,9 +49,7 @@ Cable the host connections for your storage system according to your network top
 +
 If your storage system has fewer host I/O modules installed, you can ignore the cabling to the additional host I/O modules and only cable to the installed host I/O modules.
 
-* The cabling examples show two paths (for redundancy): _Path A_ is blue and _Path B_ is red.
-
-* Cabling examples do not show 4-port 64Gb FC HBAs in the Host 1 and Host 2; however, if you have these installed, you cable every other port in the same manner as shown for the 2-port HBAs.
+* Cabling examples do not show 4-port 64Gb FC HBAs in Host 1 and Host 2; however, if you have these installed, you cable every other port in the same manner as shown for the 2-port HBAs.
 
 //* If you need comprehensive configuration and slot priority information for your storage system, go to link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
@@ -63,7 +58,7 @@ If your storage system has fewer host I/O modules installed, you can ignore the 
 
 [role="tabbed-block"]
 =====
-.Direct-attached topology cabling
+.Direct-attached topology
 --
 
 The following examples show cabling to the hosts using a direct-attached topology.
@@ -73,11 +68,13 @@ The following examples show cabling to the hosts using a direct-attached topolog
 ====
 
 .About this task
-The cabling example shows host I/O modules in slots 1, 2, and 3. This is the maximum number of host I/O modules supported for the EF80 storage system. However, only the host I/O module in slot 1 is required; host I/O modules in slot 2 and slot 3 are both optional.
+* The cabling example shows host I/O modules in slots 1, 2, and 3. This is the maximum number of host I/O modules supported for the EF80 storage system. However, only the host I/O module in slot 1 is required; host I/O modules in slot 2 and slot 3 are both optional.
+
+* The cabling examples show two paths for redundancy: Path A (shown in blue) and Path B (shown in red).
 
 .Steps
 
-. Cable the host connections so that each host has a connection to each controller through path A and path B:
+. Cable the host connections so that each host has a connection to each controller through Path A and Path B:
 . Or Cable the host connections so that each host HBA port (two ports on each host) has a connection to host ports on each controller:
 .. Cable host 1 path A (blue) ports to controller A's 'a' ports.
 .. Cable host 1 path B (red) ports to controller B's 'a' ports.
@@ -148,18 +145,18 @@ image:../media/drw_ef50_4p_64gb_fc_2hic_direct_ieops-2670.svg[EF50 direct-attach
 
 
 --
-.Fabric-attached topology cabling
+.Fabric-attached topology
 --
 
 The following examples show cabling to the hosts using a fabric-attached topology.
 
 .About this task
 
-* A fabric-attached storage system has two separate switch paths (Switch 1 path and Switch 2 path) for redundancy, which connect to each host and each controller in the storage system.
+* A fabric-attached storage system has two separate switch paths, Switch 1 path (shown in blue) and Switch 2 path (shown in red), for redundancy, which connect to each host and each controller in the storage system.
 
-* The Switch 1 path, shown in blue, connects to the 'a' and 'c' ports on each controller and to the HBAs on each host. 
+* The Switch 1 path (blue) connects to the 'a' and 'c' ports on each controller and to the HBAs on each host. 
 +
-The Switch 2 path, shown in red, connects to the 'b' and 'd' ports on each controller and to the HBAs on each host. 
+The Switch 2 path (red) connects to the 'b' and 'd' ports on each controller and to the HBAs on each host.
 
 .EF80 with three 2-port 200 GbE I/O modules
 [%collapsible]
