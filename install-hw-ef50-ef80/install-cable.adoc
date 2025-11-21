@@ -61,7 +61,7 @@ If your storage system has fewer host I/O modules installed, you can ignore the 
 .Direct-attached topology
 --
 
-The following examples show cabling to the hosts using a direct-attached topology.
+The following examples show cabling a storage system to the hosts using a direct-attached topology.
 
 .About this task
 * A direct-attached storage system has two separate paths for redundancy: path A and path B.
@@ -154,7 +154,7 @@ image:../media/drw_ef50_4p_64gb_fc_2hic_direct_ieops-2670.svg[EF50 direct-attach
 .Fabric-attached topology
 --
 
-The following examples show cabling to the hosts using a fabric-attached topology.
+The following examples show cabling a storage system to the hosts using a fabric-attached topology.
 
 .About this task
 
