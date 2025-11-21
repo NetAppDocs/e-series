@@ -94,12 +94,12 @@ Path B connectivity (red ports and cables) connects HBA ports on each host to co
 
 .Steps
 
-. Cable the host connections to the controllers:
+. Cable the hosts to the controllers:
 .. Cable host 1 path A (blue) HBA ports to controller A's a ports (e1a, e2a and e3a).
 .. Cable host 1 path B (red) HBA ports to controller B's a ports (e1a, e2a and e3a).
 .. Cable host 2 path A (blue) HBA ports to controller A's b ports (e1b, e2b and e3b).
 .. Cable host 2 path B (red) HBA ports to controller B's b ports (e1b, e2b and e3b).
-
++
 *200 GbE cables*
 +
 image::../media/oie_cable_sfp_gbe_copper.png[200 GbE cable]
@@ -127,12 +127,12 @@ Path B connectivity (red ports and cables) connects HBA ports on each host to co
 
 .Steps
 
-. Cable the host connections to the controllers:
+. Cable the hosts to the controllers:
 .. Cable host 1 path A (blue) HBA ports to controller A's a ports (1a, 2a and 3a).
 .. Cable host 1 path B (red) HBA ports to controller B's a ports (1a, 2a and 3a).
 .. Cable host 2 path A (blue) HBA ports to controller A's c ports (1c, 2c and 3c).
 .. Cable host 2 path B (red) HBA ports to controller B's c ports (1c, 2c and 3c).
-
++
 *64 Gb/s FC cables*
 +
 image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable]
@@ -158,7 +158,7 @@ Path B connectivity (red ports and cables) connects HBA ports on each host to co
 
 .Steps
 
-. Cable the host connections to the controllers:
+. Cable the hosts to the controllers:
 .. Cable host 1 path A (blue) HBA ports to controller A's a ports (1a and 2a).
 .. Cable host 1 path B (red) HBA ports to controller B's a ports (1a and 2a).
 .. Cable host 2 path A (blue) HBA ports to controller A's c ports (1c and 2c).
@@ -223,7 +223,7 @@ You can use any ports on the switches.
 .. Cable switch 2 (red) to controller A's b ports (e1b, e2b, and e3b).
 .. Cable switch 2 (red) to controller B's b ports (e1b, e2b, and e3b).
 +
-*200 GbE cables?*
+*200 GbE cables*
 +
 image::../media/oie_cable_sfp_gbe_copper.png[200 GbE cable]
 +
