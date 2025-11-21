@@ -66,18 +66,30 @@ The following examples show cabling a storage system to the hosts using a direct
 .About this task
 * A direct-attached storage system has two separate paths for redundancy: path A and path B.
 
-* For the following cabling examples:
+* Test: For the following cabling examples:
 
-** The path A connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host to the 'a' and 'c' ports on controller A.
+** Path A connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host to ports on controller A.
 
-** The path B connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host to the 'a' and 'c' ports on controller B.
+** Path B connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host to ports on controller B.
+
+//* For the following cabling examples:
+
+//** Path A connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host to 'a' and 'c' ports on controller A.
+
+//** Path B connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host to 'a' and 'c' ports on controller B.
 
 .EF80 with three 2-port 200 GbE I/O modules
 [%collapsible]
 ====
 
 .About this task
-The cabling example shows host I/O modules in slots 1, 2, and 3. This is the maximum number of host I/O modules supported for the EF80 storage system. However, only the host I/O module in slot 1 is required; host I/O modules in slot 2 and slot 3 are both optional.
+* The cabling example shows host I/O modules in slots 1, 2, and 3. This is the maximum number of host I/O modules supported for the EF80 storage system. However, only the host I/O module in slot 1 is required; host I/O modules in slot 2 and slot 3 are both optional.
+
+* For the following cabling example:
+
+** Path A connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host to 'a' and 'b' ports on controller A.
+
+** Path B connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host to 'a' and 'b' ports on controller B.
 
 .Steps
 
@@ -105,6 +117,12 @@ image:../media/drw_ef80_2p_200gbe_ib_3hic_direct_ieops-2680.svg[EF80 direct-atta
 
 * Although the cabling example shows I/O module ports 'a' and 'c' connected to the hosts, you can use ports 'a' and 'b' or ports 'c' and 'd'.
 
+* For the following cabling example:
+
+** Path A connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host to 'a' and 'c' ports on controller A.
+
+** Path B connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host to 'a' and 'c' ports on controller B.
+
 .Steps
 
 . Cable the host connections so that the path A HBA ports on each host connect to controller A and the path B HBA ports on each host connect to controller B:
@@ -130,6 +148,12 @@ image:../media/drw_ef80_4p_64gb_fc_3hic_direct_ieops-2674.svg[EF80 direct-attach
 * The cabling example shows host I/O modules in slots 1 and 2. This is the maximum number of host I/O modules supported for the EF50 storage system. However, only the host I/O module in slot 1 is required; the host I/O module in slot 2 is optional.
 
 * Although the cabling example shows I/O module ports 'a' and 'c' connected to the hosts, you can use ports 'a' and 'b' or ports 'c' and 'd'.
+
+* For the following cabling example:
+
+** Path A connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host to 'a' and 'c' ports on controller A.
+
+** Path B connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host to 'a' and 'c' ports on controller B.
 
 .Steps
 
@@ -162,9 +186,9 @@ The following examples show cabling a storage system to the hosts using a fabric
 
 * For the following cabling examples:
 
-** The switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to the 'a' and 'c' ports on each controller.
+** The switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to 'a' and 'c' ports on each controller.
 
-** The switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to the 'b' and 'd' ports on each controller.
+** The switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to 'b' and 'd' ports on each controller.
 
 //* The switch 1 path (blue) connects to 'a' and 'c' ports on each controller.
 //+
