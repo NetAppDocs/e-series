@@ -94,7 +94,7 @@ If your storage system has one host I/O module installed, you can ignore the cab
 //+
 //* Path B connectivity (red ports and cables) connects HBA ports on each host to controller B ports a and c.
 
-* Although the cabling example shows I/O module ports 'a' and 'c' connected to the hosts, you can use ports 'a' and 'b' or ports 'c' and 'd'.
+* Although the cabling example shows I/O module ports a and c connected to the hosts, you can use ports a and b or ports c and d.
 
 .Steps
 
