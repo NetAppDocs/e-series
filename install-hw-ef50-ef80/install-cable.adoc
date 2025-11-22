@@ -303,7 +303,7 @@ image:../media/drw_ef80_4p_64gb_fc_3hic_fabric_ieops-2675.svg[EF80 fabric-attach
 .About this task
 * The cabling example shows host I/O modules in slots 1 and 2. This is the maximum number of host I/O modules supported for the EF50 storage system. However, only the host I/O module in slot 1 is required; the host I/O module in slot 2 is optional.
 +
-If your storage system has fewer host I/O modules installed, you can ignore the cabling to the additional host I/O modules and only cable to the installed host I/O modules.
+If your storage system has one host I/O module installed, you can ignore the cabling to the additional host I/O module and only cable to the installed host I/O modules.
 
 * A fabric-attached storage system has two separate switch paths for redundancy: switch 1 path and switch 2 path.
 
@@ -325,11 +325,6 @@ You can use any ports on the switches.
 .. Cable host 1 and host 2 switch 2 path (red) HBA ports to switch 2.
 +
 . Connect the switches to the controllers:
-.. Cable switch 1 (blue) to controller A's a and c ports.
-.. Cable switch 1 (blue) to controller B's a and c ports.
-.. Cable switch 2 (red) to controller A's b and d ports.
-.. Cable switch 2 (red) to controller B's b and d ports.
-
 .. Cable switch 1 (blue) to controller A's a and c ports (1a, 2a, 1c, and 2c).
 .. Cable switch 1 (blue) to controller B's a and c ports (1a, 2a, 1c, and 2c).
 .. Cable switch 2 (red) to controller A's b and d ports (1b, 2b, 1d, and 2d).
