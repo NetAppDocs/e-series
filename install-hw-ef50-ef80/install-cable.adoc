@@ -49,7 +49,7 @@ Cable the host connections for your storage system according to your network top
 //+
 //If your storage system has fewer host I/O modules installed, you can ignore the cabling to the additional host I/O modules and only cable to the installed host I/O modules.
 
-* Cabling examples do not show 4-port 64Gb FC HBAs in Host 1 and Host 2; however, if you have these installed, you cable every other port in the same manner as shown for the 2-port HBAs.
+* Cabling examples do not show 4-port 64Gb FC HBAs in host 1 and host 2; however, if you have these installed, you cable every other port in the same manner as shown for the 2-port HBAs.
 
 //* If you need comprehensive configuration and slot priority information for your storage system, go to link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
@@ -211,9 +211,13 @@ If your storage system has fewer host I/O modules installed, you can ignore the 
 
 * The cabling example shows three HBAs on each host. If your hosts have less than three HBAs, you can ignore the cabling to the additional HBAs and only cable to the installed HBAs.
 
-* Switch 1 path connectivity (blue ports and cables) connects HBA ports on each host through switch 1 to controller A's and controller B's a ports.
+* The switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to controller A's and controller B's a ports.
 +
-Switch 2 path connectivity (red ports and cables) connects HBA ports on each host through switch 2 to controller A's and controller B's b ports.
+The switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to controller A's and controller B's b ports.
+
+//* Switch 1 path connectivity (blue ports and cables) connects HBA ports on each host through switch 1 to controller A's and controller B's a ports.
+//+
+//Switch 2 path connectivity (red ports and cables) connects HBA ports on each host through switch 2 to controller A's and controller B's b ports.
 
 
 .Steps
@@ -254,9 +258,13 @@ If your storage system has fewer host I/O modules installed, you can ignore the 
 
 * The cabling example shows three HBAs on each host. If your hosts have less than three HBAs, you can ignore the cabling to the additional HBAs and only cable to the installed HBAs.
 
-* Switch 1 path connectivity (blue ports and cables) connects HBA ports on each host through switch 1 to controller A's and controller B's a and c ports.
+* The switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to controller A's and controller B's a and c ports.
 +
-Switch 2 path connectivity (red ports and cables) connects HBA ports on each host through switch 2 to controller A's and controller B's b and d ports.
+The switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to controller A's and controller B's b and d ports.
+
+//* Switch 1 path connectivity (blue ports and cables) connects HBA ports on each host through switch 1 to controller A's and controller B's a and c ports.
+//+
+//Switch 2 path connectivity (red ports and cables) connects HBA ports on each host through switch 2 to controller A's and controller B's b and d ports.
 
 .Steps
 
@@ -293,9 +301,13 @@ image:../media/drw_ef80_4p_64gb_fc_3hic_fabric_ieops-2675.svg[EF80 fabric-attach
 +
 If your storage system has fewer host I/O modules installed, you can ignore the cabling to the additional host I/O modules and only cable to the installed host I/O modules.
 
-* Switch 1 path connectivity (blue ports and cables) connects HBA ports on each host through switch 1 to controller A's and controller B's a and c ports.
+* The switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to controller A's and controller B's a ports.
 +
-Switch 2 path connectivity (red ports and cables) connects HBA ports on each host through switch 2 to controller A's and controller B's b and d ports.
+The switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to controller A's and controller B's b ports.
+
+//* Switch 1 path connectivity (blue ports and cables) connects HBA ports on each host through switch 1 to controller A's and controller B's a ports.
+//+
+//Switch 2 path connectivity (red ports and cables) connects HBA ports on each host through switch 2 to controller A's and controller B's b ports.
 
 .Steps
 
