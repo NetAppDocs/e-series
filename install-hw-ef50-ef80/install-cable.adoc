@@ -187,15 +187,15 @@ image:../media/drw_ef50_4p_64gb_fc_2hic_direct_ieops-2670.svg[EF50 direct-attach
 
 The following examples show cabling a storage system to the hosts using a fabric-attached topology.
 
-.About this task
+//.About this task
 
-* A fabric-attached storage system has two separate switch paths for redundancy: switch 1 path and switch 2 path.
+//* A fabric-attached storage system has two separate switch paths for redundancy: switch 1 path and switch 2 path.
 
-* For the following cabling examples:
+//* For the following cabling examples:
 
-** The switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to 'a' and 'c' ports on each controller.
+//** Switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to 'a' and 'c' ports on each controller.
 
-** The switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to 'b' and 'd' ports on each controller.
+//** Switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to 'b' and 'd' ports on each controller.
 
 
 //1 Fabric-attached topology examples
@@ -211,9 +211,11 @@ If your storage system has fewer host I/O modules installed, you can ignore the 
 
 * The cabling example shows three HBAs on each host. If your hosts have less than three HBAs, you can ignore the cabling to the additional HBAs and only cable to the installed HBAs.
 
-* The switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to controller A's and controller B's a ports.
-+
-The switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to controller A's and controller B's b ports.
+* A fabric-attached storage system has two separate switch paths for redundancy: switch 1 path and switch 2 path.
+
+** Switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to controller A's and controller B's a ports.
+
+** Switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to controller A's and controller B's b ports.
 
 //* Switch 1 path connectivity (blue ports and cables) connects HBA ports on each host through switch 1 to controller A's and controller B's a ports.
 //+
@@ -258,9 +260,11 @@ If your storage system has fewer host I/O modules installed, you can ignore the 
 
 * The cabling example shows three HBAs on each host. If your hosts have less than three HBAs, you can ignore the cabling to the additional HBAs and only cable to the installed HBAs.
 
-* The switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to controller A's and controller B's a and c ports.
-+
-The switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to controller A's and controller B's b and d ports.
+* A fabric-attached storage system has two separate switch paths for redundancy: switch 1 path and switch 2 path.
+
+** Switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to controller A's and controller B's a and c ports.
+
+** Switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to controller A's and controller B's b and d ports.
 
 //* Switch 1 path connectivity (blue ports and cables) connects HBA ports on each host through switch 1 to controller A's and controller B's a and c ports.
 //+
@@ -301,9 +305,11 @@ image:../media/drw_ef80_4p_64gb_fc_3hic_fabric_ieops-2675.svg[EF80 fabric-attach
 +
 If your storage system has fewer host I/O modules installed, you can ignore the cabling to the additional host I/O modules and only cable to the installed host I/O modules.
 
-* The switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to controller A's and controller B's a ports.
-+
-The switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to controller A's and controller B's b ports.
+* A fabric-attached storage system has two separate switch paths for redundancy: switch 1 path and switch 2 path.
+
+** Switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to controller A's and controller B's a ports.
+
+** Switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to controller A's and controller B's b ports.
 
 //* Switch 1 path connectivity (blue ports and cables) connects HBA ports on each host through switch 1 to controller A's and controller B's a ports.
 //+
