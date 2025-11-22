@@ -89,9 +89,15 @@ The following examples show cabling a storage system to the hosts using a direct
 +
 If your storage system has fewer host I/O modules installed, you can ignore the cabling to the additional host I/O modules and only cable to the installed host I/O modules.
 
-* Path A connectivity (blue ports and cables) connects HBA ports on each host to controller A ports a and b.
-+
-Path B connectivity (red ports and cables) connects HBA ports on each host to controller B ports a and b.
+* A direct-attached storage system has two separate paths for redundancy: path A and path B.
+
+** Path A connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host to controller A ports a and b.
+
+** Path B connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host to controller B ports a and b.
+
+//* Path A connectivity (blue ports and cables) connects HBA ports on each host to controller A ports a and b.
+//+
+//Path B connectivity (red ports and cables) connects HBA ports on each host to controller B ports a and b.
 
 
 .Steps
@@ -122,9 +128,15 @@ image:../media/drw_ef80_2p_200gbe_ib_3hic_direct_ieops-2680.svg[EF80 direct-atta
 +
 If your storage system has fewer host I/O modules installed, you can ignore the cabling to the additional host I/O modules and only cable to the installed host I/O modules.
 
-* Path A connectivity (blue ports and cables) connects HBA ports on each host to controller A ports a and c.
-+
-Path B connectivity (red ports and cables) connects HBA ports on each host to controller B ports a and c.
+* A direct-attached storage system has two separate paths for redundancy: path A and path B.
+
+** Path A connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host to controller A ports a and c.
+
+** Path B connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host to controller B ports a and c.
+
+//* Path A connectivity (blue ports and cables) connects HBA ports on each host to controller A ports a and c.
+//+
+//* Path B connectivity (red ports and cables) connects HBA ports on each host to controller B ports a and c.
 
 * Although the cabling example shows I/O module ports a and c connected to the hosts, you can use ports a and b or ports c and d.
 
@@ -156,9 +168,15 @@ image:../media/drw_ef80_4p_64gb_fc_3hic_direct_ieops-2674.svg[EF80 direct-attach
 +
 If your storage system has fewer host I/O modules installed, you can ignore the cabling to the additional host I/O modules and only cable to the installed host I/O modules.
 
-* Path A connectivity (blue ports and cables) connects HBA ports on each host to controller A ports a and c.
-+
-Path B connectivity (red ports and cables) connects HBA ports on each host to controller B ports a and c.
+* A direct-attached storage system has two separate paths for redundancy: path A and path B.
+
+** Path A connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host to controller A ports a and c.
+
+** Path B connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host to controller B ports a and c.
+
+//* Path A connectivity (blue ports and cables) connects HBA ports on each host to controller A ports a and c.
+//+
+//* Path B connectivity (red ports and cables) connects HBA ports on each host to controller B ports a and c.
 
 * Although the cabling example shows I/O module ports 'a' and 'c' connected to the hosts, you can use ports 'a' and 'b' or ports 'c' and 'd'.
 
