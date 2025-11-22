@@ -66,17 +66,12 @@ The following examples show cabling a storage system to the hosts using a direct
 .About this task
 * A direct-attached storage system has two separate paths for redundancy: path A and path B.
 
-* For the following cabling examples:
-
-** Path A connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host to ports on controller A.
-
-** Path B connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host to ports on controller B.
-
 //* For the following cabling examples:
 
-//** Path A connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host to 'a' and 'c' ports on controller A.
+//** Path A connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host to ports on controller A.
 
-//** Path B connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host to 'a' and 'c' ports on controller B.
+//** Path B connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host to ports on controller B.
+
 
 //1 Direct-attached topology examples
 
