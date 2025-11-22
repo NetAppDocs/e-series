@@ -45,9 +45,9 @@ Cable the host connections for your storage system according to your network top
 .About this task
 * Depending on your storage system model, the type of host I/O modules installed in the storage system can be Ethernet or Fibre Channel (FC). The cabling examples in this procedure show both types of I/O modules as supported by the storage system models.
 
-* The host cabling examples show storage systems with the maximum number of supported host I/O modules.
-+
-If your storage system has fewer host I/O modules installed, you can ignore the cabling to the additional host I/O modules and only cable to the installed host I/O modules.
+//* The host cabling examples show storage systems with the maximum number of supported host I/O modules.
+//+
+//If your storage system has fewer host I/O modules installed, you can ignore the cabling to the additional host I/O modules and only cable to the installed host I/O modules.
 
 * Cabling examples do not show 4-port 64Gb FC HBAs in Host 1 and Host 2; however, if you have these installed, you cable every other port in the same manner as shown for the 2-port HBAs.
 
@@ -86,6 +86,8 @@ The following examples show cabling a storage system to the hosts using a direct
 
 .About this task
 * The cabling example shows host I/O modules in slots 1, 2, and 3. This is the maximum number of host I/O modules supported for the EF80 storage system. However, only the host I/O module in slot 1 is required; host I/O modules in slot 2 and slot 3 are both optional.
++
+If your storage system has fewer host I/O modules installed, you can ignore the cabling to the additional host I/O modules and only cable to the installed host I/O modules.
 
 * Path A connectivity (blue ports and cables) connects HBA ports on each host to controller A ports a and b.
 +
@@ -117,6 +119,8 @@ image:../media/drw_ef80_2p_200gbe_ib_3hic_direct_ieops-2680.svg[EF80 direct-atta
 
 .About this task
 * The cabling example shows host I/O modules in slots 1, 2, and 3. This is the maximum number of host I/O modules supported for the EF80 storage system. However, only the host I/O module in slot 1 is required; host I/O modules in slot 2 and slot 3 are both optional.
++
+If your storage system has fewer host I/O modules installed, you can ignore the cabling to the additional host I/O modules and only cable to the installed host I/O modules.
 
 * Path A connectivity (blue ports and cables) connects HBA ports on each host to controller A ports a and c.
 +
@@ -149,6 +153,8 @@ image:../media/drw_ef80_4p_64gb_fc_3hic_direct_ieops-2674.svg[EF80 direct-attach
 
 .About this task
 * The cabling example shows host I/O modules in slots 1 and 2. This is the maximum number of host I/O modules supported for the EF50 storage system. However, only the host I/O module in slot 1 is required; the host I/O module in slot 2 is optional.
++
+If your storage system has fewer host I/O modules installed, you can ignore the cabling to the additional host I/O modules and only cable to the installed host I/O modules.
 
 * Path A connectivity (blue ports and cables) connects HBA ports on each host to controller A ports a and c.
 +
@@ -200,6 +206,8 @@ The following examples show cabling a storage system to the hosts using a fabric
 
 .About this task
 * The cabling example shows host I/O modules in slots 1, 2, and 3. This is the maximum number of host I/O modules supported for the EF80 storage system. However, only the host I/O module in slot 1 is required; host I/O modules in slot 2 and slot 3 are both optional.
++
+If your storage system has fewer host I/O modules installed, you can ignore the cabling to the additional host I/O modules and only cable to the installed host I/O modules.
 
 * The cabling example shows three HBAs on each host. If your hosts have less than three HBAs, you can ignore the cabling to the additional HBAs and only cable to the installed HBAs.
 
@@ -241,6 +249,8 @@ image:../media/drw_ef80_2p_200gbe_ib_3hic_fabric_ieops-2679.svg[EF80 fabric-atta
 
 .About this task
 * The cabling example shows host I/O modules in slots 1, 2, and 3. This is the maximum number of host I/O modules supported for the EF80 storage system. However, only the host I/O module in slot 1 is required; host I/O modules in slot 2 and slot 3 are both optional.
++
+If your storage system has fewer host I/O modules installed, you can ignore the cabling to the additional host I/O modules and only cable to the installed host I/O modules.
 
 * The cabling example shows three HBAs on each host. If your hosts have less than three HBAs, you can ignore the cabling to the additional HBAs and only cable to the installed HBAs.
 
@@ -280,6 +290,8 @@ image:../media/drw_ef80_4p_64gb_fc_3hic_fabric_ieops-2675.svg[EF80 fabric-attach
 
 .About this task
 * The cabling example shows host I/O modules in slots 1 and 2. This is the maximum number of host I/O modules supported for the EF50 storage system. However, only the host I/O module in slot 1 is required; the host I/O module in slot 2 is optional.
++
+If your storage system has fewer host I/O modules installed, you can ignore the cabling to the additional host I/O modules and only cable to the installed host I/O modules.
 
 * Switch 1 path connectivity (blue ports and cables) connects HBA ports on each host through switch 1 to controller A's and controller B's a and c ports.
 +
