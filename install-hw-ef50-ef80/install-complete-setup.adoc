@@ -2,14 +2,14 @@
 permalink: install-hw-ef50-ef80/install-complete-setup.html
 sidebar: sidebar
 keywords: 
-summary: Cable and configure the controller management port on each controller for out-of-band storage system management, and then configure your EF50 or EF80 storage system.
+summary: Cable and configure the management port on each controller for out-of-band storage system management, and then configure your EF50 or EF80 storage system.
 ---
 = Complete storage system setup - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Cable and configure the controller management port on each controller for out-of-band storage system management, and then configure your EF50 or EF80 storage system.
+Cable and configure the management port on each controller for out-of-band storage system management, and then configure your EF50 or EF80 storage system.
 
 == Step 1: Cable and configure the management ports
 

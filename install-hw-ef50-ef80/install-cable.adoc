@@ -2,14 +2,14 @@
 permalink: install-hw-ef50-ef80/install-cable.html
 sidebar: sidebar
 keywords: ef50, ef80, cabling, cable, host cabling, direct-attached topology, fabric-attached topology
-summary: After you install your EF50 or EF80 storage system hardware, cable the mirroring and data host network connections for the controllers.
+summary: After you install your EF50 or EF80 storage system hardware, cable the mirroring and host network connections. (You cable the management ports later in the Complete storage system setup section.)
 ---
 = Cable the hardware - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After you install your EF50 or EF80 storage system hardware, cable the mirroring and host network connections for the controllers. (You cable the management ports later.)
+After you install your EF50 or EF80 storage system hardware, cable the mirroring and host network connections. (You cable the management ports later in the Complete storage system setup section.)
 
 .About this task
 
@@ -43,7 +43,7 @@ image:../media/drw_ef50-ef80_mirroring_2p_100gbe_ieops-2659.svg[ef50 and ef80 co
 Cable the host connections for your storage system according to your network topology: direct attached or fabric attached.
 
 .About this task
-* Depending on your storage system model, the type of host I/O modules installed in the storage system can be Ethernet or Fibre Channel (FC). The cabling examples in this procedure show both types of I/O modules as supported by the storage system models.
+* Depending on your storage system model, the type of host I/O modules installed in the storage system can be Ethernet or Fibre Channel (FC). The cabling examples in this procedure show both types of host I/O modules as supported by the storage system models.
 
 //* The host cabling examples show storage systems with the maximum number of supported host I/O modules.
 //+
@@ -161,7 +161,7 @@ image:../media/drw_ef80_4p_64gb_fc_3hic_direct_ieops-2674.svg[EF80 direct-attach
 .About this task
 * The cabling example shows host I/O modules in slots 1 and 2. This is the maximum number of host I/O modules supported for the EF50 storage system. However, only the host I/O module in slot 1 is required; the host I/O module in slot 2 is optional.
 +
-If your storage system has fewer host I/O modules installed, you can ignore the cabling to the additional host I/O modules and only cable to the installed host I/O modules.
+If your storage system has one host I/O module installed, you can ignore the cabling to the additional host I/O module and only cable to the installed host I/O module.
 
 * A direct-attached storage system has two separate paths for redundancy: path A and path B.
 
@@ -316,7 +316,7 @@ image:../media/drw_ef80_4p_64gb_fc_3hic_fabric_ieops-2675.svg[EF80 fabric-attach
 .About this task
 * The cabling example shows host I/O modules in slots 1 and 2. This is the maximum number of host I/O modules supported for the EF50 storage system. However, only the host I/O module in slot 1 is required; the host I/O module in slot 2 is optional.
 +
-If your storage system has one host I/O module installed, you can ignore the cabling to the additional host I/O module and only cable to the installed host I/O modules.
+If your storage system has one host I/O module installed, you can ignore the cabling to the additional host I/O module and only cable to the installed host I/O module.
 
 * A fabric-attached storage system has two separate switch paths for redundancy: switch 1 path and switch 2 path.
 
