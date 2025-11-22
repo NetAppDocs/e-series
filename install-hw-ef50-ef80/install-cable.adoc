@@ -63,8 +63,8 @@ Cable the host connections for your storage system according to your network top
 
 The following examples show cabling a storage system to the hosts using a direct-attached topology.
 
-.About this task
-* A direct-attached storage system has two separate paths for redundancy: path A and path B.
+//.About this task
+//* A direct-attached storage system has two separate paths for redundancy: path A and path B.
 
 //* For the following cabling examples:
 
