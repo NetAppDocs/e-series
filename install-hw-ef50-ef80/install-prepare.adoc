@@ -89,7 +89,7 @@ After you've ensured that your site meets the specifications for your storage sy
 
 . Create an account and register your hardware at http://mysupport.netapp.com/[NetApp Support^].
 +
-The registration process requires the System Serial Number (SSN) for each controller. You can find the serial number in the following locations:
+The registration process requires the Serial Number (SN) for each controller. You can find the serial number in the following locations:
 
 - On each controller
 - On the packing slip
