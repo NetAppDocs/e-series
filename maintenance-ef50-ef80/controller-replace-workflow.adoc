@@ -2,14 +2,14 @@
 permalink: maintenance-ef50-ef80/controller-replace-workflow.html
 sidebar: sidebar
 keywords: ef50, ef80, replace the controller workflow
-summary: Get started with replacing the controller in your EF50 or EF80 storage system by shutting down the impaired controller, removing and replacing the controller, restoring the system configuration, and returning control of storage resources to the replacement controller.
+summary: You can replace an impaired controller in your EF50 or EF80 storage system by meeting storage system requirements, preparing the system, taking the impaired controller offline, replacing the controller, bringing the new controller online, and completing the replacement process.
 ---
 = Controller replacement workflow - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can replace an impaired controller in your EF50 or EF80 storage system by meeting storage system requirements, preparing the system, taking the impaired controller offline, replacing the controller hardware, bringing the new controller online, and completing the replacement process.
+You can replace an impaired controller in your EF50 or EF80 storage system by meeting storage system requirements, preparing the system, taking the impaired controller offline, replacing the controller, bringing the new controller online, and completing the replacement process.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:controller-replace-requirements.html[Review the controller replacement requirements]
 [role="quick-margin-para"]
