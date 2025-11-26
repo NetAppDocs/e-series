@@ -8,11 +8,12 @@
 +
 NOTE: If the impaired controller did not use DHCP for the IP address, the new controller adopts the IP address of the controller you removed.
 +
-. Place the controller online.
-.. In System Manager, navigate to the Hardware page.
+. Place the controller online using SANtricity System Manager.
+.. Navigate to the Hardware page.
 .. Select *Show back of controller*.
 .. Select the replaced controller.
 .. Select *Place online* from the drop-down list.
+
 . As the controller boots, check the controller LEDs.
 +
 When communication with the other controller is reestablished:
