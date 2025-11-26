@@ -6,7 +6,7 @@
 Save the packing materials to use when shipping the impaired controller.
 . Confirm that the MAC address and FRU part number on the impaired controller is the same as the replacement controller's part number in SANtricity System Manager.
 +
-CAUTION: *Possible loss of data access* — If the two part numbers are not the same, do not attempt this procedure. The presence of mismatched controllers causes the replacement controller to lock down when you bring it online.
+CAUTION: *Possible loss of data access*: If the two part numbers are not the same, do not attempt this procedure. The presence of mismatched controllers causes the replacement controller to lock down when you bring it online.
 +
 .. Locate the MAC address and FRU part number labels on the back of the impaired controller.
 .. From SANtricity System Manager, locate the replacement controller part number displayed in the Details area of the Recovery Guru. 
