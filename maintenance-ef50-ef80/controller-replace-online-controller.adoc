@@ -9,7 +9,9 @@ summary: After you have installed the replacement controller for your EF50 or EF
 :imagesdir: ../media/
 
 [.lead]
-After you have installed the replacement controller for your EF50 or EF80 storage system, place the controller online and confirm the system status is Optimal.
+After you have installed the replacement controller for your EF50 or EF80 storage system, place the controller online and confirm the system status is Optimal. 
+
+Place the controller online, collect support data, and resume operations.
 
 include::../_include/ge_controller_replace_online_controller.adoc[]
 
