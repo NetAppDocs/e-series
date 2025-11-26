@@ -5,16 +5,16 @@
 +
 Install the latest version, if needed.
 
-. Verify that all volumes have been returned to the preferred owner.
+. Verify that all volumes have been returned to the preferred owner:
 .. Select *Storage > Volumes*. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select *More > Change ownership* to view volume owners.
 .. If volumes are all owned by the preferred owner continue to the next step.
 .. If none of the volumes are returned, you must manually return the volumes. Go to *More > Redistribute volumes*.
 .. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution you must check the Recovery Guru for host connectivity issues.
-.. If there is no Recovery Guru present or if following the recovery guru steps the volumes are still not returned to their preferred owners contact support.
+.. If there is no Recovery Guru present or if following the recovery guru steps the volumes are still not returned to their preferred owners contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
-. Collect support data for your storage array using SANtricity System Manager.
+. Collect support data for your storage array using SANtricity System Manager:
 .. Select *Support > Support Center > Diagnostics*.
 .. Select *Collect Support Data*.
-. Click *Collect*.
+.. Click *Collect*.
 +
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
