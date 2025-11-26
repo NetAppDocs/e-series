@@ -8,7 +8,7 @@
 +
 NOTE: If the impaired controller did not use DHCP for the IP address, the new controller adopts the IP address of the controller you removed.
 +
-. Place controller online.
+. Place the controller online.
 .. In System Manager, navigate to the Hardware page.
 .. Select *Show back of controller*.
 .. Select the replaced controller.

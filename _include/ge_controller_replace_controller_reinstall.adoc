@@ -45,9 +45,6 @@ NOTE: Do not use excessive force when sliding the controller into the chassis; i
 +
 Once power is restored to the PSU, the status LED should be green.
 
-. If the impaired controller used DHCP for the IP address, locate the MAC address on the label on the back of the replacement controller and then ask your network administrator to associate the DNS/network and IP address for the impaired controller with the MAC address for the replacement controller.
-+
-NOTE: If the impaired controller did not use DHCP for the IP address, the replacement controller adopts the IP address of the impaired controller.
 
 
 
