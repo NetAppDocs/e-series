@@ -39,7 +39,9 @@ NV icon and LED on the controller
 |===
 
 [start=2]
-. If you are not already grounded, properly ground yourself.
+. Put on an ESD wristband or take other antistatic precautions.
+
+. Label each cable that is attached to the impaired controller.
 
 . Disconnect the power on the impaired controller:
 +
@@ -50,8 +52,6 @@ NOTE: Power supplies (PSUs) do not have a power switch.
 
 +
 . Unplug all cables from the impaired controller.
-+
-Keep track of where the cables were connected.
 
 . Remove the impaired controller:
 +
