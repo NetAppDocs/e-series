@@ -19,30 +19,25 @@ If you need to find this number manually, follow these steps:
 ... Select the controller, and click *Next*.
 ... On the *Base* tab, make a note of the *Replacement Part Number* for the controller.
 
-. Back up the storage system's configuration database using SANtricity System Manager or the CLI command.
+. Back up the storage system's configuration database using SANtricity System Manager.
 +
 If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
 
-** From System Manager:
 .. Select *Support › Support Center › Diagnostics*.
 .. Select *Collect Configuration Data*.
 .. Click *Collect*.
 +
 The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
-** Alternatively, you can back up the configuration database by using the following CLI command:
-+
-----
-save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";
-----
+//From E4000, but might not apply for gE
 
-. Collect support data for your storage system using SANtricity System Manager.
-+
-If a problem occurs when you remove the impaired controller, you can use the saved file to troubleshoot the issue. The system saves inventory, status, and performance data about your storage system in a single file.
+//. Collect support data for your storage system using SANtricity System Manager.
+//+
+//If a problem occurs when you remove the impaired controller, you can use the saved file to troubleshoot the issue. The system saves inventory, status, and performance data about your storage system in a single file.
 
-.. *Select Support › Support Center › Diagnostics*.
-.. Select *Collect Support Data*.
-.. Click *Collect*.
-+
-The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+//.. Select *Support › Support Center › Diagnostics*.
+//.. Select *Collect Support Data*.
+//.. Click *Collect*.
+//+
+//The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 
