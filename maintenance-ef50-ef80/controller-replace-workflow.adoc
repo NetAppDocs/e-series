@@ -21,7 +21,7 @@ Unpack the replacement controller, confirm it's part number is correct, back up 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:controller-replace-offline-controller.html[Take the impaired controller offline]
 [role="quick-margin-para"]
-Safely take the impaired controller offline so that you can replace it while the healthy controller continues to serve data from the impaired controller storage.
+Take the impaired controller offline to prevent data loss and ensure system stability when replacing the controller.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:controller-replace-move-hardware.html[Replace the controller]
 [role="quick-margin-para"]

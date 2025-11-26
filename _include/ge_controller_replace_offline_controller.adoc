@@ -8,9 +8,9 @@ Whenever you take a controller offline, you need to wait at least one minute bef
 
 .Steps
 
-. If the impaired controller is not already offline, take it offline now using SANtricity System Manager.
+. If the impaired controller is not already offline, take it offline using one of the following methods:
 
-** From SANtricity System Manager:
+** SANtricity System Manager:
 .. Select *Hardware*.
 .. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
 .. Select the controller that you want to place offline.
@@ -18,7 +18,7 @@ Whenever you take a controller offline, you need to wait at least one minute bef
 +
 NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select Connect to an alternate network connection to automatically access SANtricity System Manager using the other controller.
 
-** Alternatively, you can take the controllers offline by using the following CLI commands:
+** CLI command:
 +
 *For controller A*: `set controller [a] availability=offline`
 +
