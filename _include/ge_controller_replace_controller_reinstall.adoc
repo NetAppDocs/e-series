@@ -46,58 +46,18 @@ NOTE: Do not connect any other cables or power cords at this time.
 NOTE: Do not use excessive force when sliding the controller into the chassis; it could damage the connectors.
 +
 .. Rotate the controller handles up and lock in place with the tabs.
-+
-NOTE: The replacement controller receives power from the healthy controller and begins to boot as soon as it is fully seated in the chassis.
-+
-. Take the controller to the LOADER prompt by pressing CTRL-C to abort AUTOBOOT.
-
-. Set the time and date on the controller:
-+
-Make sure you are at the controller's LOADER prompt.
-+
-.. Display the date and time on the controller: 
-+
-`show date`
-+
-NOTE: Time and date default is in GMT. You have the option to display in local time and in 24hr mode.
-+
-.. Set the current time in GMT: 
-+
-`set time hh:mm:ss`
-+
-You can get the current GMT from the healthy node: 
-+
-`date -u`
-+
-.. Set the current date in GMT: 
-+
-`set date mm/dd/yyyy`
-+
-You can get the current GMT from the healthy node: +
-`date -u`
-+
 
 . Recable the controller as needed.
 +
-. Reconnect the power cord to the power supply (PSU).
+. Reconnect the power cord to the power supply (PSU):
+.. Plug the power cord into the PSU.
+.. Secure the power cord with the power cord retainer.
 +
 Once power is restored to the PSU, the status LED should be green.
+
+. If the impaired controller used DHCP for the IP address, locate the MAC address on the label on the back of the replacement controller and then ask your network administrator to associate the DNS/network and IP address for the impaired controller with the MAC address for the replacement controller.
 +
-[options="header" cols="1,2"]
+NOTE: If the impaired controller did not use DHCP for the IP address, the replacement controller adopts the IP address of the impaired controller.
 
-|===
-| If you are reconnecting a...| Then...
-a|
-AC PSU
-a|
-. Plug the power cord into the PSU.
-. Secure the power cord with the power cord retainer.
-a|
-DC PSU
-a|
-. Plug the D-SUB DC power cord connector into the PSU.
-. Tighten the two thumb screws to secure the D-SUB DC power cord connector to the PSU.
-
-|===
 
 

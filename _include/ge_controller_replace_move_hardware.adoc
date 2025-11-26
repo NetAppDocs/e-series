@@ -215,11 +215,7 @@ Move the I/O modules and any I/O blanking modules to the replacement controller.
 
 .Steps
 
-. Unplug cabling from one of the I/O modules.
-+
-Make sure to label the cables so that you know where they came from.
-
-. Remove the I/O module from the impaired controller:
+. Remove one of the I/O modules from the impaired controller:
 +
 Make sure that you keep track of which slot the I/O module was in.
 +
