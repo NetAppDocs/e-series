@@ -11,7 +11,7 @@ summary: The EF50 and EF80 storage systems offer flexibility in upgrading or rep
 [.lead]
 The EF50 and EF80 storage systems offer flexibility in upgrading or replacing I/O modules to enhance network connectivity and performance.
 
-You can upgrade the host interface cards (HICs) or I/O modules to increase the number of host ports in your storage system. You can also replace a failed I/O module with the same type of I/O module in your storage system.
+You can upgrade the I/O modules to increase the number of host ports in your storage system. You can also replace a failed I/O module with the same type of I/O module in your storage system.
 
 * link:io-module-upgrade.html[Upgrade an I/O module]
 +

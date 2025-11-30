@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef50-ef80/io-module-upgrade.html
 sidebar: sidebar
-keywords: ef50, ef80,
+keywords: ef50, ef80, upgrade io module, upgrade hic, upgrade host interface card
 summary: You can upgrade the I/O modules to increase the number of host ports.
 ---
 = Upgrade the I/O module - EF50 and EF80
@@ -9,12 +9,14 @@ summary: You can upgrade the I/O modules to increase the number of host ports.
 :imagesdir: ../media/
 
 [.lead]
-You can upgrade the I/O modules to increase the number of host ports.
+You can upgrade the I/O modules in your EF50 or EF80 storage system to increase the number of host ports.
+
+From gO:You can upgrade the I/O module to your EF50 or EF80 storage system to enhance network connectivity and expand your system’s ability to handle data traffic.
 
 .About this task
 
 * When you upgrade I/O modules, you must power off the storage system, upgrade the I/O modules, and then reapply power.
-* You upgrade an I/O module one controller at a time by using this procedure for the first controller an then repeating it for the second controller.
+* You upgrade an I/O module one controller at a time by using this procedure for the first controller and then repeating it for the second controller.
 
 .Before you begin
 
@@ -38,19 +40,18 @@ Place one of the controllers offline so you can safely upgrade the I/O modules.
 
 .Steps
 
-. From the Home page of SANtricity System Manager, ensure that the storage system has Optimal status.
+. From the home page of SANtricity System Manager, ensure that the storage system has Optimal status.
 +
-If the status is not Optimal, use the Recovery Guru or contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support^] to resolve the problem. Do not continue with this procedure.
+NOTE: If the status is not Optimal, use the Recovery Guru or contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support^] to resolve the problem. Do not continue with this procedure.
 
-. Click *Support > Upgrade Center* to ensure that the latest version of SANtricity OS is installed.
-+
-As needed, install the latest version.
+. Ensure that the latest version of SANtricity OS is installed:
+.. Select *Support > Upgrade Center*.
+.. Install the latest version of SANtricity OS if needed.
 
 . Back up the storage system's configuration database using SANtricity System Manager.
 +
 If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
-+
-* From System Manager:
+
 .. Select *Support > Support Center > Diagnostics*.
 .. Select *Collect Configuration Data*.
 .. Click *Collect*.
@@ -76,7 +77,7 @@ The green Cache Active LED on the back of each controller is on when cached data
 .. Wait for all LEDs on the controller to turn off.
 
 //[[step2_remove_controller_canister]]
-== Step 2: Remove controller
+== Step 2: Remove controller - not needed for gE
 
 Remove the controller from the chassis Is this needed since these are I/Os with thumbscrews? Look at G-O.
 
@@ -96,7 +97,9 @@ image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[Open contro
 //[[step3_upgrade_hic]]
 == Step 3: Upgrade the I/O module
 
-Remove and replace the I/O module. There is no removing needed for gE.
+Remove and replace the I/O module. 
+
+Reuse gE steps, which include uncable the I/O module first.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
@@ -112,7 +115,7 @@ image::../media/drw_E4000_replace_HIC_source_IEOPS-864.png[Remove HIC from contr
 . Reinstall the controller module cover and lock it into place.
 
 //[[step4_reinstall_controller]]
-== Step 4: Reinstall controller
+== Step 4: Reinstall controller - Not needed for gE
 
 Reinstall the controller into the chassis.
 

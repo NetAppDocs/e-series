@@ -1,31 +1,29 @@
 ---
 permalink: maintenance-ef50-ef80/io-module-replace.html
 sidebar: sidebar
-keywords: 
-summary: 
+keywords: ef50, ef80 replace io module, replace hic, replace host interface card
+summary: Replace an I/O module in your EF50 or EF80 storage system when the module fails. The replacement process involves placing the controller offline, replacing the failed I/O module, bringing the controller back online, and returning the failed part to NetApp.
 ---
-= Replace the host interface card (HIC) - EF50, EF50C, EF80, and EF80C
+= Replace the I/O module - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to replace a failed host interface card (HIC) or I/O module in an EF50 or EF80 storage system.
+Replace an I/O module in your EF50 or EF80 storage system when the module fails. The replacement process involves placing the controller offline, replacing the failed I/O module, bringing the controller back online, and returning the failed part to NetApp.
 
-.About this task
-
-When you replace a failed HIC, you must place affected controller offline, replace the HIC, and then bring controller back online.
 
 .Before you begin
 
+* Make sure use EF600 content not E4000!
+
 * Make sure you have the following:
-** HICs that are compatible with your controller(s).
+** I/O modules that are compatible with your storage system.
 ** An ESD wristband, or you have taken other antistatic precautions.
 ** A flat, static free work area.
 ** Labels to identify each cable that is connected to the controller.
-** A #1 Phillips screwdriver.
 ** A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
 +
-CAUTION: *Possible loss of data access* -- Never install a HIC in an E4000 controller canister if that HIC was designed for another E-Series controller. In addition, both controllers and both HICs must be identical in a duplex configuration. The presence of incompatible or mismatched HICs causes the controllers to lock down when you apply power.
+CAUTION: *Possible loss of data access* -- Never install an I/O module in an E4000 controller canister if that HIC was designed for another E-Series controller. In addition, both controllers and both HICs must be identical in a duplex configuration. The presence of incompatible or mismatched HICs causes the controllers to lock down when you apply power.
 
 == Step 1: Prepare to replace HIC
 
