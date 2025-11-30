@@ -7,7 +7,7 @@ These steps are done using SANtricity System Manager.
 .. Click *Hardware > Support > Upgrade Center*.
 .. Install the latest version, if needed.
 
-. Verify that all volumes have been returned to the preferred owners:
+. Verify that all volumes have been returned to their preferred owners:
 .. Select *Storage > Volumes*. 
 .. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. 
 .. Select *More > Change ownership* to view volume owners.
@@ -19,15 +19,15 @@ These steps are done using SANtricity System Manager.
 |===
 | If...| Then...
 a|
-Volumes are all owned by the preferred owner 
+Volumes are all owned by their preferred owners 
 a|
 Go to the next step.
 a|
-None of the volumes are returned
+None of the volumes are returned to their preferred owners
 a|
 Go to *More > Redistribute volumes* to automatically return the volumes to their preferred owners.
 a|
-If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution 
+Only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution 
 a|
 Check the Recovery Guru for host connectivity issues.
 
