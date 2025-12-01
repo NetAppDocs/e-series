@@ -95,8 +95,7 @@ The registration process requires the Serial Number (SN) for each controller. Yo
 - On the packing slip
 - In your confirmation email
 +
-image::../media/drw_ssn_label.svg[Example of the system serial number label,width=200]
-//creating new graphic: drw_ef50-ef80_sn_label_ieops-2689.svg (due by Dec 12)
+image::../media/drw_ef50-ef80_sn_label_ieops-2689.svg[example of the serial number label]
 
 .What's next?
 After you’ve prepared to install your storage system, you link:install-hardware.html[install the hardware].
