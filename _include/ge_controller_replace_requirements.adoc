@@ -17,7 +17,7 @@ This ensures that you can replace the impaired controller while your storage sys
 * You must have the following:
 ** A replacement controller with the same part number as the controller you are replacing.
 ** An ESD wristband, or you have taken other antistatic precautions.
-** A flat, static free work area.
+** A flat, static-free surface.
 ** Labels to identify each cable that you will be disconnecting from the controller.
 ** A management station with a browser that can access SANtricity System Manager for the controller.
 +
