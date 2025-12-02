@@ -53,12 +53,12 @@ You can turn them off by entering the `system location-led _off_` command. If yo
 
 == Step 1: Power off both controllers
 
-include::../_include/ge_io_module_upgrade_power_off.adoc[]
+include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
 
 
 == Step 2: Upgrade the I/O modules
 
-include::../_include/ge_io_module_upgrade_install.adoc[]
+include::../_include/ge_io_module_upgrade_install_additional_modules.adoc[]
 
 
 == Step 3: Complete the I/O module upgrade
