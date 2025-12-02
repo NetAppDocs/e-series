@@ -2,14 +2,16 @@
 permalink: maintenance-ef50-ef80/io-module-replace.html
 sidebar: sidebar
 keywords: ef50, ef80 replace io module, replace hic, replace host interface card
-summary: Replace an I/O module in your EF50 or EF80 storage system when the module fails. The replacement process involves placing the controller offline, replacing the failed I/O module, bringing the controller back online, and returning the failed part to NetApp.
+summary: Replace a failed I/O module in your EF50 or EF80 storage system with the same type of I/O module to restore the storage system to its optimal operating state.
 ---
 = Replace an I/O module - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace an I/O module in your EF50 or EF80 storage system when the module fails. The replacement process involves placing the controller offline, replacing the failed I/O module, bringing the controller back online, and returning the failed part to NetApp.
+Replace a failed I/O module in your EF50 or EF80 storage system with the same type of I/O module to restore the storage system to its optimal operating state. 
+
+The replacement process involves placing the impaired controller offline, replacing the failed I/O module, bringing the controller back online, and returning the failed part to NetApp.
 
 
 .Before you begin
@@ -24,6 +26,10 @@ CAUTION: *Possible loss of data access* -- The presence of incompatible or misma
 +
 If needed, you can confirm supported I/O modules for your storage system at https://hwu.netapp.com[NetApp Hardware Universe^].
 
+* Unpack the replacement I/O module, and set it on a flat, static-free surface.
++
+Save the packing materials to use when returning the failed I/O module to NetApp.
+
 * Make sure you have the following:
 ** An ESD wristband, or you have taken other antistatic precautions.
 ** A flat, static free work area.
@@ -32,48 +38,15 @@ If needed, you can confirm supported I/O modules for your storage system at http
 To open the System Manager interface, point the browser to the controller's domain name or IP address.
 
 
-. About this task
+.About this task
 
 * The term _I/O module_ is used to refer to the host interface cards (HICs) in this procedure.
 
-== Step 1: Prepare to replace HIC
+== Step 1: Offline the impaired controller
 
-Place the affected controller offline so you can safely replace the HIC.
+Place the impaired controller offline so you can safely replace the failed I/O module.
 
 .Steps
-
-. Unpack the new controller canister, and set it on a flat, static-free surface.
-+
-Save the packing materials to use when shipping the failed controller canister.
-. Locate the MAC address and FRU part number labels on the back of the controller canister.
-. From SANtricity System Manager, locate the replacement part number for the controller canister you are replacing.
-+
-When a controller has a fault and needs to be replaced, the replacement part number is displayed in the Details area of the Recovery Guru. If you need to find this number manually, follow these steps:
-
-.. Select *Hardware*.
-.. Locate the controller shelf, which is marked with the controller icon.
-.. Click the controller icon.
-.. Select the controller, and click *Next*.
-.. On the *Base* tab, make a note of the *Replacement Part Number* for the controller.
-. Confirm that the replacement part number for the failed controller is the same as the FRU part number for the replacement controller.
-+
-CAUTION: *Possible loss of data access* — If the two part numbers are not the same, do not attempt this procedure. The presence of mismatched controllers will cause the new controller to lock down when you bring it online.
-. Back up the storage array's configuration database using SANtricity System Manager.
-+
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
-
-** From System Manager:
-.. Select *Support › Support Center › Diagnostics*.
-.. Select *Collect Configuration Data*.
-.. Click *Collect*.
-+
-The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
-
-** Alternatively, you can back up the configuration database by using the following CLI command:
-+
-----
-save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filename";
-----
 
 . If the controller is not already offline, take it offline now using SANtricity System Manager.
 
@@ -95,7 +68,7 @@ NOTE: If you are accessing SANtricity System Manager using the controller you ar
 CAUTION: Do not begin any other operations until after the status has been updated.
 . Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove this component.
 
-== Step 2: Remove controller canister
+== Step 2: Remove impaired controller
 
 Remove the controller canister from the system and then remove the controller canister cover.
 

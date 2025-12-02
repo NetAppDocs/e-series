@@ -63,3 +63,9 @@ include::../_include/ge_io_module_upgrade_install.adoc[]
 
 include::../_include/ge_io_module_upgrade_complete.adoc[]
 
+
+.What's next?
+
+The process of upgrading I/O modules in your storage system is complete. You can resume normal operations.
+
+

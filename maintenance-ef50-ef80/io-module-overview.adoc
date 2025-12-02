@@ -11,12 +11,10 @@ summary: The EF50 and EF80 storage systems offer flexibility in upgrading or rep
 [.lead]
 The EF50 and EF80 storage systems offer flexibility in upgrading or replacing I/O modules to enhance network connectivity and performance.
 
-You can upgrade the I/O modules to increase the number of host ports in your storage system. You can also replace a failed I/O module with the same type of I/O module in your storage system.
-
 * link:io-module-upgrade.html[Upgrade an I/O module]
 +
-Upgrading I/O modules can improve redundancy, helping to ensure that the storage system remains operational even if one I/O module fails.
+You can upgrade one or more I/O modules in your storage system to increase the number of host ports to ensure that the storage system remains operational even if one I/O module fails.
 
 * link:io-module-replace.html[Replace an I/O module]
 +
-Replacing a failing I/O module can restore the storage system to its optimal operating state. 
+When an I/O module in your storage system fails, you can replace it with the same type of I/O module to restore the storage system to its optimal operating state. 
