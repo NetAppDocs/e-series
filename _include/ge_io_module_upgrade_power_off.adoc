@@ -1,5 +1,4 @@
 
-Need to use include for all internal FRUs...or need a new one: ge_internal_frus_controller_shutdown...but rename to "ge_internal_frus_controller_offline".
 
 Power off both controllers in the storage system so you can safely upgrade the I/O modules in both controllers.
 
@@ -19,7 +18,10 @@ NOTE: If the status is not Optimal, use the Recovery Guru or contact https://mys
 //+
 //The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
-. Ensure that no I/O operations are occurring between the storage system and all connected hosts. For example, you can perform these steps:
+. Ensure that no I/O operations are occurring between the storage system and all connected hosts. 
++
+For example, you can perform these steps:
++
 ** Stop all processes that involve the LUNs mapped from the storage system to the hosts.
 ** Ensure that no applications are writing data to any LUNs mapped from the storage system to the hosts.
 ** Unmount all file systems associated with volumes on the storage system.

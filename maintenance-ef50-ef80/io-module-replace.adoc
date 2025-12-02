@@ -32,6 +32,10 @@ If needed, you can confirm supported I/O modules for your storage system at http
 To open the System Manager interface, point the browser to the controller's domain name or IP address.
 
 
+. About this task
+
+* The term _I/O module_ is used to refer to the host interface cards (HICs) in this procedure.
+
 == Step 1: Prepare to replace HIC
 
 Place the affected controller offline so you can safely replace the HIC.

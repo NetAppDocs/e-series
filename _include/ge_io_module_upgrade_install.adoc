@@ -1,5 +1,8 @@
 
-Replace I/O modules or I/O module blanks in both controllers. Begin with one controller, and then repeat steps for the other controller.
+Replace I/O modules or I/O module blanks in both controllers. 
+
+.About this task
+You begin with one controller, and then repeat steps for the other controller.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
@@ -27,6 +30,8 @@ Pull the I/O module or I/O blanking module out of the controller using the tab o
 You can use the tab on the left and the thumbscrew to push in the I/O module.
 +
 .. Turn the thumbscrew clockwise to tighten.
-. Cable the I/O module to the designated devices.
+. Cable the I/O module to the host network.
++
+You can use the link:install-cable.html[Cable the hardware] section of the system installation and setup content for host network cabling.
 
 . Repeat these steps to add an I/O module to the other controller.
