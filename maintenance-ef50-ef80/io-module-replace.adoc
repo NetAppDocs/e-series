@@ -68,24 +68,8 @@ NOTE: If you are accessing SANtricity System Manager using the controller you ar
 CAUTION: Do not begin any other operations until after the status has been updated.
 . Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove this component.
 
-== Step 2: Remove impaired controller
 
-Remove the controller canister from the system and then remove the controller canister cover.
-
-.Steps
-
-. If you are not already grounded, properly ground yourself.
-. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller canister, keeping track of where the cables were connected.
-+
-Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
-. Remove and set aside the cable management devices from the left and right sides of the controller canister.
-. Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller canister from the midplane, and then, using two hands, pull the controller canister out of the chassis.
-. Turn the controller canister over and place it on a flat, stable surface.
-. Open the cover by pressing the blue buttons on the sides of the controller canister to release the cover, and then rotate the cover up and off of the controller canister.
-+
-image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[Open controller canister cover.]
-
-== Step 3: Replace the HIC
+== Step 2: Replace the I/O module
 
 Replace the HIC.
 
@@ -106,30 +90,15 @@ Do not use a screwdriver, or you might over tighten the screws.
 .. Reinstall the HIC faceplate.
 . Reinstall the controller module cover and lock it into place.
 
-== Step 4: Reinstall controller canister
+== Step 3: Bring the impaired controller online
 
-Reinstall the controller canister into the chassis.
-
-.Steps
-
-. If you are not already grounded, properly ground yourself.
-. If you have not already done so, replace the cover on the controller canister.
-. Turn the controller over, so that the removable cover faces down.
-. With the cam handle in the open position, slide the controller all the way into the shelf.
-. Replace the cables.
-+
-NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
-. Bind the cables to the cable management device with the hook and loop strap.
-
-== Step 5: Complete HIC replacement
-
-Place the controller online, collect support data, and resume operations.
+Bring the controller back online, collect support data, and resume operations.
 
 .Steps
 
-. Bring the controller online using SANtricity System Manager.
+. Bring the controller online using SANtricity System Manager or CLI commands.
 
-** From SANtricity System Manager:
+** Using SANtricity System Manager:
 .. Select *Hardware*.
 .. If the graphic shows the drives, select *Show back of shelf*.
 .. Select the controller you want to place online.
@@ -137,7 +106,7 @@ Place the controller online, collect support data, and resume operations.
 +
 The system places the controller online.
 
-** Alternatively, you can bring the controller back online by using the following CLI commands:
+** Using CLI commands:
 +
 *For controller A*: `set controller [a] availability=online`;
 +
@@ -162,6 +131,10 @@ If needed, collect support data for your storage array using SANtricity System M
 +
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 
+== Step 4: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
+
 .What's next?
 
-Your HIC or I/O module replacement is complete. You can resume normal operations.
+Your I/O module replacement is complete. You can resume normal operations.
