@@ -9,15 +9,15 @@ summary: You can upgrade the I/O modules to increase the number of host ports.
 :imagesdir: ../media/
 
 [.lead]
-You can upgrade the I/O modules in your EF50 or EF80 storage system to increase the number of host ports.
+You can upgrade the I/O modules in your EF50 or EF80 storage system to increase the number of host ports for enhanced network connectivity and expand your system’s ability to handle data traffic. 
 
-From gO:You can upgrade the I/O module to your EF50 or EF80 storage system to enhance network connectivity and expand your system’s ability to handle data traffic.
+The upgrade procedure involves powering off both controllers, upgrading the I/O modules in each controller, powering on both controllers, and verifying that the upgrade was successful.
 
-.About this task
+//.About this task
 
-* When you upgrade I/O modules, you must power off the storage system, upgrade the I/O modules, and then reapply power.
+//* When you upgrade I/O modules, you must power off the storage system, upgrade the I/O modules, and then reapply power.
 
-* You upgrade I/O modules one controller at a time by using this procedure for the first controller and then repeating it for the second controller.
+//* You upgrade I/O modules one controller at a time by using this procedure for the first controller and then repeating it for the second controller.
 
 .Before you begin
 
