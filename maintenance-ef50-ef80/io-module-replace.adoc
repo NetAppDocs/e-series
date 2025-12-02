@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80 replace io module, replace hic, replace host interface card
 summary: Replace an I/O module in your EF50 or EF80 storage system when the module fails. The replacement process involves placing the controller offline, replacing the failed I/O module, bringing the controller back online, and returning the failed part to NetApp.
 ---
-= Replace the I/O module - EF50 and EF80
+= Replace an I/O module - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 

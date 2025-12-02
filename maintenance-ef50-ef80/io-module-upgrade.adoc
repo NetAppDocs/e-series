@@ -2,16 +2,16 @@
 permalink: maintenance-ef50-ef80/io-module-upgrade.html
 sidebar: sidebar
 keywords: ef50, ef80, upgrade io module, upgrade hic, upgrade host interface card
-summary: You can upgrade the I/O modules in your EF50 or EF80 storage system to increase the number of host ports for enhanced network connectivity and expand your system’s ability to handle data traffic.
+summary: You can upgrade one or more I/O modules in your EF50 or EF80 storage system to increase the number of host ports for enhanced network connectivity and expand your system’s ability to handle data traffic. 
 ---
-= Upgrade the I/O module - EF50 and EF80
+= Upgrade I/O modules - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can upgrade the I/O modules in your EF50 or EF80 storage system to increase the number of host ports for enhanced network connectivity and expand your system’s ability to handle data traffic. 
+You can upgrade one or more I/O modules in your EF50 or EF80 storage system to increase the number of host ports for enhanced network connectivity and expand your system’s ability to handle data traffic. 
 
-The upgrade procedure involves powering off both controllers, upgrading the I/O modules in each controller, powering on both controllers, and verifying that the upgrade was successful.
+The upgrade procedure involves powering off both controllers, upgrading I/O modules in each controller, powering on both controllers, and verifying that the upgrade was successful.
 
 .Before you begin
 
