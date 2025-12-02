@@ -8,6 +8,8 @@ You begin with one controller, and then repeat steps for the other controller.
 . If you are not already grounded, properly ground yourself.
 . On one of the controllers, remove the I/O module or I/O blanking module from the target slot.
 +
+The following illustration shows an I/O blanking module being removed.
++
 image::../media/drw_g_io_blanking_module_replace_ieops-1901.svg[Remove an I/O blanking module]
 +
 [cols="1,4"]
