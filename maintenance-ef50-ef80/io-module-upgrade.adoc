@@ -2,7 +2,7 @@
 permalink: maintenance-ef50-ef80/io-module-upgrade.html
 sidebar: sidebar
 keywords: ef50, ef80, upgrade io module, upgrade hic, upgrade host interface card
-summary: You can upgrade the I/O modules to increase the number of host ports.
+summary: You can upgrade the I/O modules in your EF50 or EF80 storage system to increase the number of host ports for enhanced network connectivity and expand your system’s ability to handle data traffic.
 ---
 = Upgrade the I/O module - EF50 and EF80
 :icons: font
@@ -14,6 +14,12 @@ You can upgrade the I/O modules in your EF50 or EF80 storage system to increase 
 The upgrade procedure involves powering off both controllers, upgrading the I/O modules in each controller, powering on both controllers, and verifying that the upgrade was successful.
 
 .About this task
+
+*Does this apply: Some HIC replacements or upgrades might require a host port protocol conversion. Follow the instructions in the xref:hpp-change-supertask-task.html[Change host protocol for an EF300 or EF600] for this requirement.
+
+* You can upgrade I/O modules by replacing existing I/O modules or adding I/O modules to unused I/O slots.
++
+Unused I/O slots should have blanking modules installed to prevent possible thermal issues and for EMC compliance.
 
 * Controllers do not need to be removed from the chassis since the I/O modules are accessible with the controllers in place.
 
@@ -27,7 +33,7 @@ You can turn them off by entering the `system location-led _off_` command. If yo
 
 * Schedule a downtime maintenance window for this procedure. You cannot access data on the storage system until you have successfully completed this procedure.
 
-* Make sure that the I/O modules you are upgrading to are supported by your storage system, that you have the same type and number of I/O modules for each controller, and that you understand the slot priority.
+* Make sure that the I/O modules you are upgrading to are supported by your storage system, that you have the same type and number of I/O modules for each controller, and that you understand the slot priority (the new I/O module must be installed in the same slot on each controller).
 +
 CAUTION: *Possible loss of data access* -- The presence of incompatible or mismatched I/O modules causes the controllers to lock down when you apply power.
 +
@@ -51,10 +57,6 @@ Power off both controllers in the storage system so you can safely upgrade the I
 . From the home page of SANtricity System Manager, ensure that the storage system has Optimal status.
 +
 NOTE: If the status is not Optimal, use the Recovery Guru or contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support^] to resolve the problem.
-+
-. Ensure that the latest version of SANtricity OS is installed:
-.. Select *Support > Upgrade Center*.
-.. Install the latest version of SANtricity OS if needed.
 +
 //Controllers do not need to be removed since I/O modules are accessible with controllers in place; therefore, no need to backup the database, correct?
 //. Back up the storage system's configuration database using SANtricity System Manager.
@@ -122,15 +124,11 @@ NV icon and LED on the controller
 //[[step2_upgrade_hic]]
 == Step 2: Upgrade the I/O modules
 
-Remove and replace the I/O modules in both controllers. Begin with one controller, and then the other controller.
-
-Reuse gE steps, which include uncable the I/O module first.
+Replace I/O modules or I/O module blanks in both controllers. Begin with one controller, and then repeat steps for the other controller.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
-. On one of the controllers, remove the I/O blanking module from the target slot.
-+
-Unused I/O slots should have blanking module installed to prevent possible thermal issues and for EMC compliance.
+. On one of the controllers, remove the I/O module or I/O blanking module from the target slot.
 +
 image::../media/drw_g_io_blanking_module_replace_ieops-1901.svg[Remove an I/O blanking module]
 +
@@ -139,11 +137,11 @@ image::../media/drw_g_io_blanking_module_replace_ieops-1901.svg[Remove an I/O bl
 a|
 image:../media/icon_round_1.png[Callout number 1]
 a|
-On the I/O blanking module, turn the thumbscrew counterclockwise to loosen.
+On the I/O module or I/O blanking module, turn the thumbscrew counterclockwise to loosen.
 a|
 image:../media/icon_round_2.png[Callout number 2]
 a|
-Pull the I/O blanking module out of the controller using the tab on the left and the thumbscrew.
+Pull the I/O module or I/O blanking module out of the controller using the tab on the left and the thumbscrew.
 
 |===
 
@@ -160,7 +158,7 @@ You can use the tab on the left and the thumbscrew to push in the I/O module.
 
 == Step 3: Complete the I/O module upgrade
 
-Power on both controllers, collect support data, and resume operations.
+Power on both controllers, verify that all volumes have been returned to their preferred owners, collect support data, and resume operations.
 
 .Steps
 . Plug in the power cable on both controllers.
