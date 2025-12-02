@@ -25,16 +25,16 @@ Go to the next step.
 a|
 None of the volumes are returned to their preferred owners
 a|
-Go to *More > Redistribute volumes* to automatically return the volumes to their preferred owners.
+Go to *More > Redistribute volumes* to return the volumes to their preferred owners.
 a|
 Only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution 
 a|
 Check the Recovery Guru for host connectivity issues.
 
-If there is no Recovery Guru present or if following the recovery guru steps the volumes are still not returned to their preferred owners contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+If there is no Recovery Guru present or if following the recovery guru steps the volumes are still not returned to their preferred owners, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 |===
 
-. Collect support data for your storage array:
+. Collect support data for your storage system:
 .. Select *Support > Support Center > Diagnostics*.
 .. Select *Collect Support Data*.
 .. Click *Collect*.

@@ -44,7 +44,7 @@ SMcli <controller A IP> <controller B IP> -u admin -p <password> -k -c "download
 +
 NOTE: If the SMcli command cannot be completed, contact https://www.netapp.com/company/contact-us/support/[NetApp Technical Support^] or log in to the https://mysupport.netapp.com[NetApp Support Site^] to create a case. 
 
-. Confirm the status of the system is Optimal and that the controller's Attention LEDs are off.
+. Confirm the status of the storage system is Optimal and that the controller's Attention LEDs are off.
 +
 If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller is installed correctly. If necessary, remove and reinstall the controller.
 +
