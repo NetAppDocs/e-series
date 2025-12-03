@@ -43,7 +43,7 @@ Save the packing materials to use when returning the failed I/O module to NetApp
 * The term _I/O module_ is used to refer to the host interface cards (HICs) in this procedure.
 
 
-== Step 1: Offline the impaired controller
+== Step 1: Offline the controller
 
 include::../_include/ge_io_module_replace_offline_impaired_controller.adoc[]
 
@@ -53,15 +53,17 @@ include::../_include/ge_io_module_replace_offline_impaired_controller.adoc[]
 include::../_include/ge_io_module_replace_replace_failed_module.adoc[]
 
 
-== Step 3: Complete the I/O module upgrade or Bring the impaired controller online
+== Step 3: Bring the controller online
 
-include::../_include/ge_io_module_replace_complete_bring_online.adoc[]
+include::../_include/ge_io_module_replace_online_impaired_controller.adoc[]
+
+
+== Step 4: Complete the I/O module replacement
+
+include::../_include/ge_io_module_replace_complete.adoc[]
 
 
 == Step 4: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
 
-.What's next?
-
-Your I/O module replacement is complete. You can resume normal operations.

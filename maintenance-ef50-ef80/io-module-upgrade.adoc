@@ -61,7 +61,12 @@ include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
 include::../_include/ge_io_module_upgrade_install_additional_modules.adoc[]
 
 
-== Step 3: Complete the I/O module upgrade
+== Step 3: Power on both controllers
+
+include::../_include/ge_io_module_upgrade_power_on_controllers.adoc[]
+
+
+== Step 4: Complete the I/O module upgrade
 
 include::../_include/ge_io_module_upgrade_complete.adoc[]
 

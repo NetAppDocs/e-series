@@ -15,9 +15,9 @@ NOTE: If you are accessing SANtricity System Manager using the controller you ar
 
 ** Using CLI commands:
 +
-*For controller A*: `set controller [a] availability=offline`
+If the impaired controller is *controller A*: `set controller [a] availability=offline`
 +
-*For controller B*: `set controller [b] availability=offline`
+If the impaired controller is *controller B*: `set controller [b] availability=offline`
 . Wait for SANtricity System Manager to update the controller's status to offline.
 +
 CAUTION: Do not begin any other operations until after the status has been updated.

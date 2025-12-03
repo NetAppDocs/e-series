@@ -1,23 +1,7 @@
 
-Power on both controllers, verify that all volumes have been returned to their preferred owners, collect support data, and resume operations.
+Complete the I/O upgrade by verifying that all volumes have been returned to their preferred owners, collecting support data, and resuming operations.
 
 .Steps
-. Plug in the power cable on both controllers.
-+
-The controllers begin to boot.
-
-. Check the LEDs on the controllers to make sure communication between the controllers is reestablished:
-
-** The Attention LED remains on.
-** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
-
-. When the controllers are back online:
-.. Confirm their status is Optimal.
-.. Confirm that the Attention LED on each controller is off.
-+
-If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated.
-+
-NOTE: If you cannot resolve the problem, contact https://www.netapp.com/company/contact-us/support/[NetApp Technical Support^].
 
 . Verify that all volumes have been returned to their preferred owners using SANtricity System Manager:
 .. Select *Storage > Volumes*. 
