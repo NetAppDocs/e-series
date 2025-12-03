@@ -63,7 +63,7 @@ include::../_include/ge_io_module_replace_online_impaired_controller.adoc[]
 include::../_include/ge_io_module_replace_complete.adoc[]
 
 
-== Step 4: Return the failed part to NetApp
+== Step 5: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
 
