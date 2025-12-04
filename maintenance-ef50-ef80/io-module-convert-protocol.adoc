@@ -1,20 +1,20 @@
 ---
 permalink: maintenance-ef50-ef80/io-module-convert-protocol.html
 sidebar: sidebar
-keywords: host protocol change, EF300, EF600, EF600C, EF300C
-summary: Change the host port protocol for an EF300 or EF600 array.
+keywords: host protocol change, EF50, EF80
+summary: You can change the host port protocol on I/O modules using either Infiniband (IB) or Fibre Channel (FC) in an EF50 or EF80 storage system.
 ---
-= Change the host protocol - EF300 and EF600
+= Change the host protocol - EF50 and EF80
 :experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow this procedure to change the host port protocol in an EF300, EF600, EF300C, or EF600C array. This procedure applies only to host interface cards (HICs) using either Infiniband (IB) or Fibre Channel (FC).
+You can change the host port protocol on I/O modules using either Infiniband (IB) or Fibre Channel (FC) in an EF50 or EF80 storage system.
 
 == Step 1: Obtain the feature pack key
 
-To obtain the feature pack key, you need the serial number from the controller shelf, a Feature Activation Code, and the Feature Enable Identifier for the storage array.
+To obtain the feature pack key, you need the serial number from the controller, a Feature Activation Code, and the Feature Enable Identifier for the storage system.
 
 .Steps
 
@@ -32,7 +32,7 @@ image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.
 .. Locate the feature pack submodel ID for the starting configuration.
 +
 image::../media/storage_array_profile2_maint-ef600.gif["Storage array profile"]
-. Using the feature pack submodel ID, locate the corresponding Controller submodel ID for the starting configuration and find the Feature Activation Code for the desired ending configuration within the following table. Then, copy that Feature Activation Code to a text file.
+. Using the feature pack submodel ID, locate the corresponding controller submodel ID for the starting configuration and find the Feature Activation Code for the desired ending configuration within the following table. Then, copy that Feature Activation Code to a text file.
 +
 [options="header"]
 |===
@@ -432,14 +432,14 @@ NOTE: The Premium Feature Activation web site includes a link to "`Premium Featu
 
 Stop all I/O operations from the host before converting the protocol of the host ports.
 
-You cannot access data on the storage array until you successfully complete the conversion.
+You cannot access data on the storage system until you successfully complete the conversion.
 
 .Steps
 
-. Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
+. Ensure that no I/O operations are occurring between the storage system and all connected hosts. For example, you can perform these steps:
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
  ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
- ** Unmount all file systems associated with volumes on the array.
+ ** Unmount all file systems associated with volumes on the storage system.
 +
 NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
 +
@@ -466,7 +466,7 @@ image::../media/sam1130_ss_system_change_feature_pack_maint-ef600.gif["Change fe
 . Type *CHANGE* in the field.
 . Click *Change*.
 +
-The feature pack migration begins. Both controllers automatically reboot twice to allow the new feature pack to take effect. The storage array returns to a responsive state after the reboot is complete.
+The feature pack migration begins. Both controllers automatically reboot twice to allow the new feature pack to take effect. The storage system returns to a responsive state after the reboot is complete.
 
 . Confirm the host ports have the protocol you expect.
 .. From SANtricity System Manager, select *Hardware*.
