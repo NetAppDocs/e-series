@@ -133,10 +133,15 @@ Remove the battery from the failed controller canister so you can install it in 
 . Locate the 'press' tab on the side of the controller.
 . Unlatch the battery by pressing the tab and squeezing the battery casing.
 +
-image::../media/batt_3.png["Press tab to unlatch battery]
+image::../media/batt_3.png["Press tab to unlatch battery"]
 
-. Gently squeeze the connector housing the battery wiring. Pull up, disconnecting the battery from the board.image:../media/batt_2.png["Remove connector housing the battery wiring"]
-. Lift the battery out of the controller and place on a flat, static-free surface.image:../media/batt_4.png["Lift battery out of controller"]
+. Gently squeeze the connector housing the battery wiring. Pull up, disconnecting the battery from the board.
++
+image:../media/batt_2.png["Remove connector housing the battery wiring"]
+
+. Lift the battery out of the controller and place on a flat, static-free surface.
++
+image:../media/batt_4.png["Lift battery out of controller"]
 
 === Step 2c: Remove the HIC
 

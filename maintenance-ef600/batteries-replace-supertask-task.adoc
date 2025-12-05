@@ -98,7 +98,7 @@ If this green LED is on, the controller is still using battery power. You must w
 . Locate the 'press' tab on the side of the controller.
 . Unlatch the battery by pressing the tab and squeezing the battery casing.
 +
-image::../media/batt_3.png["Press tab to unlatch battery]
+image::../media/batt_3.png["Press tab to unlatch battery"]
 
 . Gently squeeze the connector housing the battery wiring. Pull up, disconnecting the battery from the board.
 +
