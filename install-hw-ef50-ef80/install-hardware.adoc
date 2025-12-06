@@ -23,14 +23,14 @@ If your storage system came in a cabinet, you can skip this procedure and go to 
 
 * Be aware of the lifting precautions associated with the weight of your storage system. See link:install-prepare.html#step-2-understand-the-lifting-precautions[Understand the lifting precautions^].
 
-* Understand that the airflow through the storage system enters from the front where the drives are installed and exhausts out the rear where the ports are located.
+* Understand that the airflow through the storage system enters from the front where the drives are installed and exits out the rear where the ports are located.
 
 
 .Steps
 
 . Install the rack-mounting hardware for your storage system using the instructions included with the rack-mounting hardware.
-+
-NOTE: To prevent the equipment from toppling over, install the rack-mounting hardware at the bottom of the rack or cabinet.
+//+
+//NOTE: To prevent the equipment from toppling over, install the rack-mounting hardware at the bottom of the rack or cabinet.
 
 . Install and secure your storage system in the cabinet or telco rack:
 

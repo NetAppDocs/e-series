@@ -107,7 +107,7 @@ Use SANtricity System Manager to configure and manage your storage system.
 
 .Steps
 
-. Connect either controller to a web browser.
+. Connect either controller to a network switch.
 
 . Access SANtricity System Manager using the same IP addresses that you used to configure your management ports.
 
