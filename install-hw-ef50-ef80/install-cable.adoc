@@ -24,7 +24,11 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direct
 
 == Step 1: Cable the mirroring connections
 
-Cable the controllers to each other to enable mirroring. The cabling is the same for EF50 and EF80C storage systems.
+Cable the controllers to each other to enable mirroring. The cabling is the same for EF50 and EF80 storage systems.
+
+NOTE: No matter the speed of the mirroring I/O modules installed in your storage system, you use the included 200 GbE cables for the mirroring connections.
+
+// Dec 17 fdbk: AE - The cables that are included in the box for mirroring are 200Gb speed cables. The EF80 has a choice of either a 100Gb or 200Gb mirroring card, and the EF50 only has 100Gb, but the cables included are all 200Gb capable no matter the card speed. I'm not sure how we would want to specify this difference or this consideration in the documentation. I'm trying to think of how best we can relay to the customer the speed and how it will work with 200Gb connectivity as well.
 
 .Steps
 
@@ -32,7 +36,7 @@ Cable the controllers to each other to enable mirroring. The cabling is the same
 .. Cable controller A port e4a to controller B port e4a. 
 .. Cable controller A port e4b to controller B port e4b.
 +
-*100 GbE Ethernet cables*
+*200 GbE Ethernet cables* 
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 gbe ethernet cable used for mirroring connections]
 +
