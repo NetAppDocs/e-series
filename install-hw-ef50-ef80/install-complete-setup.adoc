@@ -32,6 +32,7 @@ Cable and then configure the management ports using a DHCP server.
 .Steps
 
 . Using Ethernet cables, connect each controller's management port to your network.
+// network switch
 +
 *1000BASE-T RJ-45 cables*
 +
@@ -87,6 +88,7 @@ NOTE: If you lose the connection to controller A, you can connect an Ethernet ca
 . Connect controller B to your network.
 +
 Both controller management ports are now connected to the network:
+// network switch
 +
 image:../media/drw_ef50-ef80_wrench_to_network_ieops-2613.svg[ef50 and ef80 controller management port cabling to network]
 
@@ -102,17 +104,14 @@ Use SANtricity System Manager to configure and manage your storage system.
 
 .Before You Begin
 
-* Cable and configure your management ports.
+* Cable and configure your management ports to the network.
+// network switch
 * Verify and record your password and IP addresses.
 
 .Steps
-
-. Connect either controller to a network switch.
 
 . Access SANtricity System Manager using the same IP addresses that you used to configure your management ports.
 
 . Use SANtricity System Manager to manage your storage system. 
 +
 You can refer to the online help included with SANtricity System Manager.
-
-. Use SANtricity System Manager to manage your storage system.
