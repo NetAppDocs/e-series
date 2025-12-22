@@ -16,6 +16,8 @@ Follow this procedure to replace a failed host interface card (HIC) in an EF300,
 
 When you replace a failed HIC, you must power off the storage array, replace the HIC, and reapply power.
 
+NOTE: The EF300 and EF600 storage array does not have to be powered off when replacing a HIC of the same protocol type (for example, replacing a Fibre Channel HIC with another Fibre Channel HIC). 
+
 .Before you begin
 
 * Review link:hics-overview-supertask-concept.html[Requirements for EF300 or EF600 HIC upgrades].
