@@ -18,9 +18,7 @@ Replace a DIMM in your EF50 or EF80 storage system when a memory mismatch is pre
 * Verify the replacement DIMM is the correct size for your storage system configuration.
 
 .About this task
-If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Location LEDs remain illuminated for 30 minutes. 
-
-Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*.
+You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
 
 == Step 1: Determine if you need to replace a DIMM
 
@@ -64,7 +62,7 @@ Prepare to replace a DIMM by saving the drive security key, backing up the confi
  
 Place the impaired controller offline so you can safely replace a DIMM.
  
-include::../_include/ge_internal_frus_controller_shutdown.adoc[]
+include::../_include/ge_internal_frus_controller_offline.adoc[]
 
 
 == Step 4: Remove the controller

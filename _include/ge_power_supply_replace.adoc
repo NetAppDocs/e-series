@@ -7,9 +7,7 @@ The PSUs are redundant and hot-swappable.
 
 * IMPORTANT: Do not mix PSUs with different efficiency ratings or different input types. Always replace like for like.
 
-* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Location LEDs remain illuminated for 30 minutes. 
-+
-Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*.
+* You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
 
 
 .Steps

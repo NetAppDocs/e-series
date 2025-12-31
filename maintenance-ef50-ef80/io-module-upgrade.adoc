@@ -44,9 +44,7 @@ Unused I/O slots should have blanking modules installed to prevent possible ther
 
 * Controllers do not need to be removed from the chassis since the I/O modules are accessible with the controllers in place.
 
-* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Location LEDs remain illuminated for 30 minutes. 
-+
-Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*.
+* You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
 
 
 == Step 1: Power off both controllers

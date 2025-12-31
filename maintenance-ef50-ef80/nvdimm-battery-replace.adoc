@@ -15,9 +15,7 @@ Replace the NV battery in your EF50 or EF80 storage system when the battery begi
 All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 .About this task
-If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Location LEDs remain illuminated for 30 minutes. 
-
-Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*.
+You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
 
 == Step 1: Place the impaired controller offline
  

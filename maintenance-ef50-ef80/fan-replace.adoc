@@ -12,9 +12,7 @@ summary: Replace a fan module in your EF50 or EF80 storage system when a fan fai
 Replace a fan module in your EF50 or EF80 storage system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
 
 .About this task
-If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Location LEDs remain illuminated for 30 minutes. 
-
-Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*.
+You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
 
 == Step 1: Shut down the impaired controller
  
@@ -24,7 +22,7 @@ Shut down or take over the impaired controller using one of the following option
  
 Place the impaired controller offline so you can safely remove and replace the DIMMs.
  
-include::../_include/ge_internal_frus_controller_shutdown.adoc[]
+include::../_include/ge_internal_frus_controller_offline.adoc[]
 
 == Step 2: Remove the controller
 
