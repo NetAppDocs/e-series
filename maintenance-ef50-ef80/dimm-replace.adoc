@@ -32,7 +32,7 @@ Verify the cache size of your controller before replacing a DIMM.
 
 . Access the Storage Array profile for the controller. From SANtricity System Manager, go to menu:Support[Support Center]. From the Support Resources page, select *Storage Array Profile*.
 . Scroll down or use the Search field to locate the *Data Cache Module* information.
-. If one of the following is present, note the DIMM's location and continue with remaining procedures in this section to replace the DIMMs on your controller:
+. If one of the following is present, note the DIMM's location and continue with this procedure to replace the DIMMs on your controller:
 ** A failed DIMM, or a DIMM reporting *Data Cache Module* as not optimal.
 ** A DIMM with a mismatched *Data Cache Module* capacity.
  
