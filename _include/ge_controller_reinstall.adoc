@@ -27,45 +27,15 @@ Rotate the handles to the upright position and lock in place with the locking ta
 
 . Close the controller cover and turn the thumbscrew clockwise until tightened.
 
-. Insert the controller halfway into the chassis.
+. Insert the controller all the way into the chassis:
 +
-Align the rear of the controller with the opening in the chassis, and then gently push the controller using the handles.
-+
-NOTE: Do not completely insert the controller in the chassis until instructed to do so.
-
-. Connect the console cable to the console port on the controller and to the laptop so that the laptop receives console messages when the controller reboots.
-+
-NOTE: Do not connect any other cables or power cords at this time.
-
-. Fully seat the controller in the chassis:
-+
-.. Firmly push on the handles until the controller meets the midplane and is fully seated.
+.. Align the rear of the controller with the opening in the chassis, and gently but firmly push on the handles until the controller meets the midplane and is fully seated.
 +
 NOTE: Do not use excessive force when sliding the controller into the chassis; it could damage the connectors.
 +
 .. Rotate the controller handles up and lock in place with the tabs.
-+
-NOTE: The replacement controller receives power from the healthy controller and begins to boot as soon as it is fully seated in the chassis.
-+
-. Recable the controller as needed.
-+
-. Reconnect the power cord to the power supply (PSU).
+
+. Recable the controller.
 +
 Once power is restored to the PSU, the status LED should be green.
-
-.. Plug the power cord into the PSU.
-.. Secure the power cord with the power cord retainer.
-
-
-. Return the impaired controller to normal operation by giving back its storage: 
-+
-`storage failover giveback -ofnode _impaired_node_name_`
-
-. Restore automatic giveback from the console of the healthy controller:
-+
-`storage failover modify -node local -auto-giveback true`
-
-. If AutoSupport is enabled, restore (unsuppress) automatic case creation:
-+
-`system node autosupport invoke -node * -type all -message MAINT=END`
 

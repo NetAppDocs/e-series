@@ -24,7 +24,7 @@ Using SANtricity System Manager, select *Hardware*, click the *Controller shelf*
 
 == Step 1: Determine if you need to replace a DIMM
 
-Verify the cache size of your controller before replacing the DIMMS.
+Verify the cache size of your controller before replacing a DIMM.
 
 //include::../_include/ge_internal_frus_controller_shutdown.adoc[]
 
@@ -58,28 +58,18 @@ Prepare to replace a DIMM by saving the drive security key, backing up the confi
 * A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller’s domain name or IP address.)
 . From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a mismatched memory and to ensure no other items must be addressed first.
 . From the Details area of the Recovery Guru, determine which DIMM to replace.
-. Back up the storage array’s configuration database using SANtricity System Manager.
-+
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
-
-.. Select *Support › Support Center › Diagnostics*.
-.. Select *Collect Configuration Data*.
-.. Click *Collect*.
-+
-The file is saved in the Downloads folder for your browser with the name, *configurationData-
-<arrayName>-<dateTime>.7z*.
 
 
 == Step 3: Place the impaired controller offline
  
-Place the impaired controller offline so you can safely remove and replace the DIMMs.
+Place the impaired controller offline so you can safely replace a DIMM.
  
 include::../_include/ge_internal_frus_controller_shutdown.adoc[]
 
 
 == Step 4: Remove the controller
 
-You must remove the impaired controller from the chassis to replace a DIMM.
+Remove the impaired controller from the chassis to replace a DIMM.
 
 include::../_include/ge_controller_remove.adoc[]
 
@@ -88,7 +78,7 @@ include::../_include/ge_controller_remove.adoc[]
 
 == Step 5: Replace a DIMM
 
-To replace a DIMM, locate the faulty DIMM inside the controller and follow the specific sequence of steps.
+Locate the faulty DIMM inside the controller and replace it.
 
 include::../_include/ge_dimm_replace.adoc[]
 
@@ -100,6 +90,13 @@ Reinstall the controller into the chassis and reboot it.
 include::../_include/ge_controller_reinstall.adoc[]
 
 
-== Step 7: Return the failed part to NetApp
+== Step 7: Place the controller back online
+
+Place the controller online, collect support data, and resume operations.
+
+include::../_include/ge_internal_frus_controller_back_online.adoc[]
+
+
+== Step 8: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
