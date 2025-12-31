@@ -23,7 +23,7 @@ All other components in the storage system must be functioning properly; if not,
  
 Place the impaired controller offline so you can safely remove and replace the DIMMs.
  
-include::../_include/ge_internal_frus_controller_shutdown.adoc[]
+include::../_include/ge_internal_frus_controller_offline.adoc[]
 
 == Step 2: Remove the controller
 
@@ -42,7 +42,14 @@ Reinstall the controller into the chassis and reboot it.
 
 include::../_include/ge_controller_reinstall.adoc[]
 
-== Step 5: Reset the time and date on the controller
+
+== Step 5: Place the controller back online
+
+Place the controller online, collect support data, and resume operations.
+
+include::../_include/ge_internal_frus_controller_back_online.adoc[]
+
+== Step 6: Reset the time and date on the controller
 
 NOTE: After replacing the RTC battery, inserting the controller and powering on first BIOS reset, you will see the following error messages: 
 `RTC date/time error. Reset date/time to default`
@@ -70,6 +77,6 @@ NOTE: If your storage system stops at the boot menu, select the option for  `Reb
 .. Confirm the date and time.
 . At the LOADER prompt, enter `bye` to reinitialize the I/O modules, other components, and let the controller reboot.
 
-== Step 6: Return the failed part to NetApp
+== Step 7: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]

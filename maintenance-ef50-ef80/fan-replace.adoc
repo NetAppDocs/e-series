@@ -43,6 +43,13 @@ Reinstall the controller into the chassis and reboot it.
 include::../_include/ge_controller_reinstall.adoc[]
 
 
-== Step 5: Return the failed part to NetApp
+== Step 5: Place the controller back online
+
+Place the controller online, collect support data, and resume operations.
+
+include::../_include/ge_internal_frus_controller_back_online.adoc[]
+
+
+== Step 6: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
