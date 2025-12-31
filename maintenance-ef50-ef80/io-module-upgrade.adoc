@@ -36,7 +36,7 @@ To open the System Manager interface, point the browser to the controller's doma
 
 *Does this apply: Some I/O module upgrades might require a host port protocol conversion. Follow the instructions in the xref:io-module-convert-protocol.html[Change host protocol for an EF50 or EF80] for this requirement.
 
-* The term _I/O module_ is used to refer to the host interface cards (HICs) in this procedure.
+* The term _I/O module_ is used instead of host interface cards (HICs) in this procedure.
 
 * You can upgrade I/O modules by replacing existing I/O modules or adding I/O modules to unused I/O slots.
 +
@@ -44,11 +44,9 @@ Unused I/O slots should have blanking modules installed to prevent possible ther
 
 * Controllers do not need to be removed from the chassis since the I/O modules are accessible with the controllers in place.
 
-* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
+* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Location LEDs remain illuminated for 30 minutes. 
 +
-A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
-+
-You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
+Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*.
 
 
 == Step 1: Power off both controllers
