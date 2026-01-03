@@ -4,9 +4,9 @@ Whenever you take a controller offline, you need to wait at least one minute bef
 
 .Steps
 
-. Back up the storage array's configuration database using SANtricity System Manager.
+. Back up the storage system's configuration database using SANtricity System Manager.
 +
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
+If a problem occurs when you remove the impaired controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the impaired controller.
 +
 * From System Manager:
 .. Select menu:Support[Support Center > Diagnostics].

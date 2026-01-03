@@ -3,6 +3,9 @@
 
 Make sure all other components in the storage system are functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
+.About this task
+You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
+
 .Steps
 //. Wait for any data in cache memory to be written to the drives.
 

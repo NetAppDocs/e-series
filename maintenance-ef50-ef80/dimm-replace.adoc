@@ -2,33 +2,18 @@
 permalink: maintenance-ef50-ef80/dimm-replace.html
 sidebar: sidebar
 keywords: ef50, ef80, replace a dimm
-summary: Replace a DIMM in your EF50 or EF80 storage system when a memory mismatch is present, or you have a failed DIMM. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
+summary: Replace a DIMM in your EF50 or EF80 storage system when it has failed, it is reporting it is not in an optimal state, or it has a mismatched capacity The replacement process involves placing the impaired controller offline, removing the controller, replacing the DIMM, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
 ---
 = Replace a DIMM - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace a DIMM in your EF50 or EF80 storage system when a memory mismatch is present, or you have a failed DIMM. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
-
-.Before you begin
-
-* All other components in the storage system must be working correctly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support^] before continuing.
-
-* Verify the replacement DIMM is the correct size for your storage system configuration.
-
-.About this task
-* Prevent electrostatic discharge (ESD) during handling and installation of a DIMM:
-** Keep the DIMM in the ESD bag until you are ready to install it.
-** Open the ESD bag by hand or cut the top off with a pair of scissors. Do not insert a metal tool or knife into the ESD bag.
-** Keep the ESD bag and any packing materials to return the failed DIMM.
-** Always wear an ESD wrist strap grounded to an unpainted surface on your storage system chassis.
-* Avoid magnetic fields. Keep DIMMs away from magnetic devices.
-* You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
+Replace a DIMM in your EF50 or EF80 storage system when it has failed, it is reporting it is not in an optimal state, or it has a mismatched capacity The replacement process involves placing the impaired controller offline, removing the controller, replacing the DIMM, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
 
 == Step 1: Determine if you need to replace a DIMM
 
-Verify the cache size of your controller before replacing a DIMM.
+You need to determine if the state of the DIMM requires it be replaced. Replace a DIMM only if the DIMM is in one of the following states: it has failed, it is reporting it is not in an optimal state, or it has a mismatched capacity.
 
 //include::../_include/ge_internal_frus_controller_shutdown.adoc[]
 
@@ -36,16 +21,21 @@ Verify the cache size of your controller before replacing a DIMM.
 
 .Steps
 
-. Access the Storage Array profile for the controller. From SANtricity System Manager, go to menu:Support[Support Center]. From the Support Resources page, select *Storage Array Profile*.
-. Scroll down or use the Search field to locate the *Data Cache Module* information.
-. If one of the following is present, note the DIMM's location and continue with this procedure to replace the DIMMs on your controller:
+. From SANtricity System Manager, access the Storage Array profile for the impaired controller:
+.. Go to menu:Support[Support Center]. 
+.. From the Support Resources page, select *Storage Array Profile*.
+.. Scroll down or use the Search field to locate the *Data Cache Module* information.
+. If one of the following states is shown for a DIMM, note the DIMM's location and continue with this procedure to replace the DIMM.
++
+If neither of these conditions is present, you do not need to replace a DIMM. Exit this procedure.
++
 ** A failed DIMM, or a DIMM reporting *Data Cache Module* as not optimal.
 ** A DIMM with a mismatched *Data Cache Module* capacity.
  
 
 == Step 2: Prepare to replace a DIMM
 
-Prepare to replace a DIMM by saving the drive security key, backing up the configuration, and collecting support data. Then, you can stop host I/O operations and place the controller offline?
+Prepare to replace a DIMM by making sure the volumes are in the correct state, gathering the necessary tools and equipment, and understanding how to prevent electrostatic discharge.
 
 //include::../_include/ge_internal_frus_controller_shutdown.adoc[]
 
@@ -54,26 +44,35 @@ Prepare to replace a DIMM by saving the drive security key, backing up the confi
 .Steps
 
 . Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
-. Make sure you have the following:
-* A replacement DIMM.
-* An ESD wristband, or you have taken other antistatic precautions.
-* A flat, static-free surface.
-* Labels to identify each cable that is connected to the controller.
-* A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller’s domain name or IP address.)
 . From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a mismatched memory and to ensure no other items must be addressed first.
 . From the Details area of the Recovery Guru, determine which DIMM to replace.
+. Make sure you have the following:
+* A replacement DIMM that is the correct size for your storage system configuration.
+* An ESD wristband, or you have taken other antistatic precautions.
+* A flat, static free work area.
+* Labels to identify each cable that is connected to the impaired controller.
+* A management station with a browser that can access SANtricity System Manager for the impaired controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
+. Prevent electrostatic discharge (ESD) during handling and installation of a DIMM:
+** Keep the DIMM in the ESD bag until you are ready to install it.
+** Open the ESD bag by hand or cut the top off with a pair of scissors. Do not insert a metal tool or knife into the ESD bag.
+** Keep the ESD bag and any packing materials to return the failed DIMM.
+** Always wear an ESD wrist strap grounded to an unpainted surface on your storage system chassis.
+** Avoid magnetic fields. Keep DIMMs away from magnetic devices.
 
 
 == Step 3: Place the impaired controller offline
  
-Place the impaired controller offline so you can safely replace a DIMM.
+Back up the storage system's configuration database, and then place the impaired controller offline so you can safely replace a DIMM.
  
 include::../_include/ge_internal_frus_controller_offline.adoc[]
 
 
 == Step 4: Remove the controller
 
-Remove the impaired controller from the chassis to replace a DIMM.
+Remove the controller with the faulty DIMM from the chassis.
+
+.About this task
+You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
 
 include::../_include/ge_controller_remove.adoc[]
 
@@ -89,14 +88,14 @@ include::../_include/ge_dimm_replace.adoc[]
 
 == Step 6: Reinstall the controller
 
-Reinstall the controller into the chassis and reboot it.
+Reinstall the controller into the chassis.
 
 include::../_include/ge_controller_reinstall.adoc[]
 
 
 == Step 7: Place the controller back online
 
-Place the controller online, collect support data, and resume operations.
+Place the controller back online, collect support data, and resume operations.
 
 include::../_include/ge_internal_frus_controller_back_online.adoc[]
 
