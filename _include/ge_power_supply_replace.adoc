@@ -1,14 +1,4 @@
 
-.About this task
-
-* This procedure is written for replacing one PSU at a time, if needed.
-+
-The PSUs are redundant and hot-swappable.
-
-* IMPORTANT: Do not mix PSUs with different efficiency ratings or different input types. Always replace like for like.
-
-* You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
-
 
 .Steps
 
@@ -54,9 +44,17 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
 
 . Reconnect the power cord to the PSU and secure the power cord with the power cord retainer. 
 +
-Once power is restored to the PSU, the status LED should be green.
+Once power is restored to the PSU, the status LED should be green?
 
-. include::../_include/complete_rma_step.adoc[]
+. Confirm that its status is Optimal and check the controller shelf's Attention LEDs.
++
+If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller canister is installed correctly. If necessary, remove and reinstall the controller canister.
++
+NOTE: If you cannot resolve the problem, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+
+. From SANtricity System Manager, click menu:Support[Upgrade Center] to ensure that the latest version of SANtricity OS is installed.
++
+As needed, install the latest version.
 
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 +
