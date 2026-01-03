@@ -9,43 +9,42 @@ summary: Replace a fan module in your EF50 or EF80 storage system when a fan fai
 :imagesdir: ../media/
 
 [.lead]
-Replace a fan module in your EF50 or EF80 storage system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
+Replace a fan module in your EF50 or EF80 storage system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves placing the impaired controller offline, removing the controller, replacing the fan, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
 
 .About this task
 You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
 
-== Step 1: Shut down the impaired controller
- 
-Shut down or take over the impaired controller using one of the following options.
- 
 == Step 1: Place the impaired controller offline
  
-Place the impaired controller offline so you can safely remove and replace the DIMMs.
+Back up the storage system's configuration database, and then place the impaired controller offline so you can safely replace a fan.
  
 include::../_include/ge_internal_frus_controller_offline.adoc[]
+ 
 
 == Step 2: Remove the controller
 
+Remove the controller with the faulty fan from the chassis.
+
 include::../_include/ge_controller_remove.adoc[]
 
-. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
 
+== Step 3: Replace a fan
 
-== Step 3: Replace fan
+Locate the faulty fan inside the controller and replace it.
 
 include::../_include/ge_fan_replace.adoc[]
 
 
-== Step 4: Reinstall the controller module
+== Step 4: Reinstall the controller
 
-Reinstall the controller into the chassis and reboot it.
+Reinstall the controller into the chassis.
 
 include::../_include/ge_controller_reinstall.adoc[]
 
 
 == Step 5: Place the controller back online
 
-Place the controller online, collect support data, and resume operations.
+Place the controller back online, collect support data, and resume operations.
 
 include::../_include/ge_internal_frus_controller_back_online.adoc[]
 

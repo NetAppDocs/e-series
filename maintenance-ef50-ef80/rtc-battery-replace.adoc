@@ -9,29 +9,29 @@ summary: Replace the real-time clock (RTC) battery, commonly known as a coin cel
 :imagesdir: ../media/
 
 [.lead]
-Replace the real-time clock (RTC) battery, commonly known as a coin cell battery, in your EF50 or EF80 storage system to ensure that services and applications relying on accurate time synchronization remain operational.
+Replace the real-time clock (RTC) battery, commonly known as a coin cell battery, in your EF50 or EF80 storage system to ensure that services and applications relying on accurate time synchronization remain operational. The replacement process involves placing the impaired controller offline, removing the controller, replacing the RTC battery, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
 
-
-.Before you begin
-All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 .About this task
-* You can use this procedure with all versions of ONTAP supported by your storage system.
 * You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
 
 == Step 1: Place the impaired controller offline
  
-Place the impaired controller offline so you can safely remove and replace the DIMMs.
+Place the impaired controller offline so you can safely remove and replace the faulty RTC battery.
  
 include::../_include/ge_internal_frus_controller_offline.adoc[]
 
+
 == Step 2: Remove the controller
 
-include::../_include/ge_controller_remove.adoc[]
+Remove the controller with the faulty RTC battery from the chassis.
 
-. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
+include::../_include/ge_controller_remove.adoc[]
  
+
 == Step 3: Replace the RTC battery
+
+Locate the faulty RTC battery inside the controller and replace it.
 
 include::../_include/ge_rtc_battery_replace.adoc[]
 

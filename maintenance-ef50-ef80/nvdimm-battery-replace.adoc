@@ -9,41 +9,42 @@ summary: Replace the NV battery in your EF50 or EF80 storage system when the bat
 :imagesdir: ../media/
 
 [.lead]
-Replace the NV battery in your EF50 or EF80 storage system when the battery begins to lose charge or fails, as it is responsible for preserving critical system data during power outages. The replacement process involves shutting down the impaired controller, removing the controller module, replacing the NV battery, reinstalling the controller module, and returning the failed part to NetApp.
-
-.Before you begin
-All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+Replace the NV battery in your EF50 or EF80 storage system when the battery begins to lose charge or fails, as it is responsible for preserving critical system data during power outages. The replacement process involves placing the impaired controller offline, removing the controller, replacing the NV battery, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
 
 .About this task
 You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
 
 == Step 1: Place the impaired controller offline
  
-Place the impaired controller offline so you can safely remove and replace the DIMMs.
+Back up the storage system's configuration database, and then place the impaired controller offline so you can safely replace a NV battery.
  
 include::../_include/ge_internal_frus_controller_offline.adoc[]
 
+
 == Step 2: Remove the controller
+
+Remove the controller with the faulty NV battery from the chassis.
 
 include::../_include/ge_controller_remove.adoc[]
 
-. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
 
 == Step 3: Replace the NV battery
+
+Locate the faulty NV battery inside the controller and replace it.
 
 include::../_include/ge_nvdimm_battery_replace.adoc[]
 
 
 == Step 4: Reinstall the controller
 
-Reinstall the controller into the chassis and reboot it.
+Reinstall the controller into the chassis.
 
 include::../_include/ge_controller_reinstall.adoc[]
 
 
 == Step 5: Place the controller back online
 
-Place the controller online, collect support data, and resume operations.
+Place the controller back online, collect support data, and resume operations.
 
 include::../_include/ge_internal_frus_controller_back_online.adoc[]
 
