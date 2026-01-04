@@ -9,40 +9,47 @@ summary: Replace a drive in your EF50 or EF80 storage system when a drive fails 
 :imagesdir: ../media/
 
 [.lead]
-Replace a drive in your EF50 or EF80 storage system when a drive fails or requires an upgrade. 
+You can hot-swap a failed drive while your EF50 or EF80 storage system is receiving I/O to ensure continued data access and system performance.  
 
-The replacement process involves identifying the faulty drive, safely removing it, and installing a new drive to ensure continued data access and system performance.
+The hot-swap process involves preparing for the hot-swap, safely replacing the failed drive, and then returning the failed part to NetApp.
 
 .Before you begin
 
 * Make sure you have the following:
-** A replacement drive that is supported by NetApp for your controller shelf or drive shelf.
+** A replacement drive that is supported for your storage system configuration.
 ** An ESD wristband, or you have taken other antistatic precautions.
 ** A flat, static-free work surface.
 ** A management station with a browser that can access SANtricity System Manager for the controller.
 +
 To open the System Manager interface, point the browser to the controller's domain name or IP address.
 
-* Prevent electrostatic discharge (ESD) during handling and installation of a drive:
-** Keep the drive in the ESD bag until you are ready to install it.
-** Open the ESD bag by hand or cut the top off with a pair of scissors. Do not insert a metal tool or knife into the ESD bag.
-** Keep the ESD bag and any packing materials to return the failed drive or use approved packaging when shipping a drive.
-** Always wear an ESD wrist strap grounded to an unpainted surface on your storage system chassis. If a wrist strap is unavailable, touch an unpainted surface on your storage system chassis before handling the drive.
-** Avoid magnetic fields. Keep drives away from magnetic devices.
-+
-Magnetic fields can destroy all data on the drive and cause irreparable damage to the drive circuitry.
+//* Prevent electrostatic discharge (ESD) during handling and installation of a drive:
+//** Keep the drive in the ESD bag until you are ready to install it.
+//** Open the ESD bag by hand or cut the top off with a pair of scissors. Do not insert a metal tool or knife into the ESD bag.
+//** Keep the ESD bag and any packing materials to return the failed drive or use approved packaging when shipping a drive.
+//** Always wear an ESD wrist strap grounded to an unpainted surface on your storage system chassis. If a wrist strap is unavailable, touch an unpainted surface on your storage system chassis before handling the drive.
+//** Avoid magnetic fields. Keep drives away from magnetic devices.
+//+
+//Magnetic fields can destroy all data on the drive and cause irreparable damage to the drive circuitry.
 
-* Follow these rules to avoid damaging drives:
-+
-CAUTION: Drives are fragile; improper drive handling is a leading cause of drive failure.
-+
-** Always use two hands when removing, installing, or carrying a drive.
-** Never force a drive into a slot. Always use gentle, firm pressure to completely engage the drive latch.
-** Place drives on cushioned surfaces, and never stack drives on top of each other.
-** Do not bump drives against other surfaces.
+//* Follow these rules to avoid damaging drives:
+//+
+//CAUTION: Drives are fragile; improper drive handling is a leading cause of drive failure.
+//+
+//** Always use two hands when removing, installing, or carrying a drive.
+//** Never force a drive into a drive bay. Always use gentle, firm pressure to completely engage the drive latch.
+//** Place drives on cushioned surfaces, and never stack drives on top of each other.
+//** Do not bump drives against other surfaces.
 
 .About this task
-* The Recovery Guru in SANtricity System Manager monitors the drives in the storage array and can notify you of an impending drive failure or an actual drive failure. When a drive has failed, its amber Attention LED is on. You can hot-swap a failed drive while the storage array is receiving I/O.
-* You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
+* The Recovery Guru in SANtricity System Manager monitors the drives in the storage system and can notify you of an impending drive failure or an actual drive failure. When a drive has failed, its Attention (amber) LED illuminates.
+* You can physically locate the affected storage system by turning on its location (blue) LEDs (on the front of the storage system and both controllers). 
++
+Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
+* You can physically locate the failed drive within your storage system by making its Attention (amber) LED blink.
++
+Using SANtricity System Manager, from the drive's context menu, select *Turn on locator light*.
++
+NOTE: You must remove the bezel from the front of the storage system to see the drive LEDs.
 
 include::../_include/ge_replace_drive.adoc[]

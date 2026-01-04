@@ -1,25 +1,46 @@
 
-== Step 1: Prepare to replace drive
+== Step 1: Prepare to replace the drive
 
-Prepare for drive replacement by checking the Recovery Guru in SANtricity System Manager and completing any prerequisite steps. Then, you can locate the failed component.
+Prepare for the drive replacement by using SANtricity System Manager to make sure the drive has failed, confirm you have a supported drive replacement, and take appropriate precautions when handling the drive.
 
 .Steps
 
 . If the Recovery Guru in SANtricity System Manager has notified you of an _impending drive failure_, but the drive has not yet failed, follow the instructions in the Recovery Guru to fail the drive.
-. If needed, use SANtricity System Manager to confirm you have a suitable replacement drive.
- .. Select *Hardware*.
- .. Select the failed drive on the shelf graphic.
- .. Click the drive to display its context menu, and then select *View settings*.
- .. Confirm that the replacement drive has a capacity equal to or greater than the drive you are replacing and that it has the features you expect.
+. If needed, confirm that the replacement drive you have is supported for you storage system configuration:
+.. Access SANtricity System Manager.
+.. Select *Hardware*.
+.. Select the failed drive on the graphic.
+.. Click the drive to display its context menu, and then select *View settings*.
+.. Confirm that the replacement drive has a capacity equal to or greater than the drive you are replacing and that it has the features you expect.
 +
-For example, do not attempt to replace a hard disk drive (HDD) with a solid-state disk (SSD). Similarly, if you are replacing a secure-capable drive, make sure the replacement drive is also secure-capable.
-. If needed, use SANtricity System Manager to locate the drive within your storage array: From the drive's context menu, select *Turn on locator light*.
-+
-The drive's Attention LED (amber) blinks so you can identify which drive to replace.
-+
-NOTE: If you are replacing a drive in a shelf that has a bezel, you must remove the bezel to see the drive LEDs.
+For example, if you are replacing a secure-capable drive, make sure the replacement drive is also secure-capable.
 
-== Step 2: Replace drive
+. Prevent electrostatic discharge (ESD) during handling and installation of a drive:
+** Keep the drive in the ESD bag until you are ready to install it.
+** Open the ESD bag by hand or cut the top off with a pair of scissors. Do not insert a metal tool or knife into the ESD bag.
+** Keep the ESD bag and any packing materials to return the failed drive or use approved packaging when shipping a drive.
+** Always wear an ESD wrist strap grounded to an unpainted surface on your storage system chassis. If a wrist strap is unavailable, touch an unpainted surface on your storage system chassis before handling the drive.
+** Avoid magnetic fields. Keep drives away from magnetic devices.
++
+Magnetic fields can destroy all data on the drive and cause irreparable damage to the drive circuitry.
++
+. Follow these rules to avoid damaging drives:
++
+CAUTION: Drives are fragile; improper drive handling is a leading cause of drive failure.
++
+** Always use two hands when removing, installing, or carrying a drive.
+** Never force a drive into a drive bay. Always use gentle, firm pressure to completely engage the drive latch.
+** Place drives on cushioned surfaces, and never stack drives on top of each other.
+** Do not bump drives against other surfaces.
+//. If needed, physically locate the failed drive within your storage system by turning on its Attention (amber) LED.
+//+
+//Using SANtricity System Manager, from the drive's context menu, select *Turn on locator light*.
+//+
+//The failed drive's Attention LED (amber) blinks.
+//+
+//NOTE: You must remove the bezel from the front of the storage system to see the drive LEDs.
+
+== Step 2: Replace the drive
 
 Replace a failed drive with a new one.
 
@@ -27,17 +48,13 @@ NOTE: You should install the replacement drive as soon as possible after removin
 
 .Steps
 
+. If not already removed, remove the bezel from the front of the storage system.
 . Unpack the replacement drive, and set it on a flat, static-free surface near the shelf.
 +
 Save all packing materials.
-
-. Press the black release button on the failed drive.
-+
-The latch on the drive springs partially opens, and then the drive releases from the controller.
-
-. Open the cam handle, and slide out the drive slightly.
-. Wait 60 seconds for the drive to spin down.
 . Remove the failed drive: 
++
+NOTE: If you accidentally remove an active drive, wait at least 60 seconds, and then reinstall it. For the recovery procedure, refer to the storage management software.
 +
 image::../media/drw_nvme_drive_replace_ieops-1904.svg[Remove NVMe drive]
 +
@@ -46,46 +63,35 @@ image::../media/drw_nvme_drive_replace_ieops-1904.svg[Remove NVMe drive]
 a|
 image::../media/icon_round_1.png[Callout number 1]
 a|
-Press the release button on the drive face to open the cam handle.
+Press the black release button on the drive face to open the cam handle. 
 a|
 image::../media/icon_round_2.png[Callout number 2]
 a|
-Rotate the cam handle downward to disengage the drive from the midplane.
+Rotate the cam handle downward to disengage the drive from the midplane. 
 a|
 image::../media/icon_round_3.png[Callout number 3]
 a|
-Slide the drive out of the drive bay using the cam handle and supporting the drive with your other hand. 
-
-When removing a drive, always use two hands to support its weight.
-
-NOTE: Because drives are fragile, minimize handling to avoid damaging them.
+a. Partially slide the drive out of the drive bay using the cam handle and supporting the drive with your other hand.
+b. Wait 60 seconds for the drive to spin down.
+c. Using two hands, fully remove the drive from the drive bay.
 
 |===
-+
 
 . Place the drive on an antistatic, cushioned surface away from magnetic fields.
-. Wait 60 seconds for the software to recognize that the drive has been removed.
-+
-NOTE: If you accidentally remove an active drive, wait at least 60 seconds, and then reinstall it. For the recovery procedure, refer to the storage management software.
-
-== Step 3: Install new drive
-
-Install a new drive to replace the failed one. You should install the replacement drive as soon as possible after removing the failed drive.
-
-.Steps
+. Wait 60 seconds for the software to recognize that the drive was removed.
 
 . Insert the replacement drive:
 .. Open the cam handle.
-.. Using two hands, insert the replacement drive into the open slot, firmly pushing until the drive stops.
+.. Using two hands, insert the replacement drive into the open drive bay, firmly pushing until the drive stops.
 .. Close the cam handle so that the drive is fully seated into the midplane and the handle clicks into place.
 +
 Be sure to close the cam handle slowly so that it aligns correctly with the face of the drive.
 +
 The green LED on the drive illuminates when the drive is inserted correctly.
 +
-NOTE: Depending on your configuration, the controller might automatically reconstruct data to the new drive. If the storage system uses hot spare drives, the controller might need to perform a complete reconstruction on the hot spare before it can copy the data to the replaced drive. This reconstruction process increases the time that is required to complete this procedure.
+NOTE: Depending on your configuration, the controller might automatically reconstruct data to the new drive. If the storage system uses hot spare drives, the controller might need to perform a complete reconstruction on the hot spare before it can copy the data to the replacement drive. This reconstruction process increases the time that is required to complete this procedure.
 
-== Step 4: Complete drive replacement
+== Step 3: Complete the drive replacement
 
 Complete the drive replacement to confirm that the new drive is working correctly.
 
