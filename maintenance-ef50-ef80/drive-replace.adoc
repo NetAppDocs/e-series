@@ -43,13 +43,6 @@ To open the System Manager interface, point the browser to the controller's doma
 
 .About this task
 * The Recovery Guru in SANtricity System Manager monitors the drives in the storage system and can notify you of an impending drive failure or an actual drive failure. When a drive has failed, its Attention (amber) LED illuminates.
-* You can physically locate the affected storage system by turning on its location (blue) LEDs (on the front of the storage system and both controllers). 
-+
-Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
-* You can physically locate the failed drive within your storage system by making its Attention (amber) LED blink.
-+
-Using SANtricity System Manager, from the drive's context menu, select *Turn on locator light*.
-+
-NOTE: You must remove the bezel from the front of the storage system to see the drive LEDs.
+
 
 include::../_include/ge_replace_drive.adoc[]
