@@ -13,15 +13,16 @@ You can hot-swap a failed drive while your EF50 or EF80 storage system is receiv
 
 The hot-swap process involves preparing for the hot-swap, safely replacing the failed drive, and then returning the failed part to NetApp.
 
-.Before you begin
+//.Before you begin
 
-* Make sure you have the following:
-** A replacement drive that is supported for your storage system configuration.
-** An ESD wristband, or you have taken other antistatic precautions.
-** A flat, static-free work surface.
-** A management station with a browser that can access SANtricity System Manager for the controller.
-+
-To open the System Manager interface, point the browser to the controller's domain name or IP address.
+//Make sure you have the following:
+
+//* A replacement drive that is supported for your storage system configuration.
+//* An ESD wristband, or you have taken other antistatic precautions.
+//* A flat, static-free work surface.
+//* A management station with a browser that can access SANtricity System Manager for the controller.
+//+
+//To open the System Manager interface, point the browser to the controller's domain name or IP address.
 
 //* Prevent electrostatic discharge (ESD) during handling and installation of a drive:
 //** Keep the drive in the ESD bag until you are ready to install it.
@@ -42,7 +43,8 @@ To open the System Manager interface, point the browser to the controller's doma
 //** Do not bump drives against other surfaces.
 
 .About this task
-* The Recovery Guru in SANtricity System Manager monitors the drives in the storage system and can notify you of an impending drive failure or an actual drive failure. When a drive has failed, its Attention (amber) LED illuminates.
+
+The Recovery Guru in SANtricity System Manager monitors the drives in the storage system and can notify you of an impending drive failure or an actual drive failure. When a drive has failed, its Attention (amber) LED illuminates.
 
 
 include::../_include/ge_replace_drive.adoc[]
