@@ -56,7 +56,7 @@ NOTE: You must remove the bezel from the front of the storage system to see the 
 
 == Step 2: Replace the drive
 
-Replace a failed drive with a new one.
+Replace the failed drive with a new one.
 
 NOTE: You should install the replacement drive as soon as possible after removing the failed drive.
 
@@ -105,16 +105,46 @@ The green LED on the drive illuminates when the drive is inserted correctly.
 +
 NOTE: Depending on your configuration, the controller might automatically reconstruct data to the new drive. If the storage system uses hot spare drives, the controller might need to perform a complete reconstruction on the hot spare before it can copy the data to the replacement drive. This reconstruction process increases the time that is required to complete this procedure.
 
+
 == Step 3: Complete the drive replacement
 
-Complete the drive replacement to confirm that the new drive is working correctly.
+Confirm that the replacement drive is working correctly or take corrective action if it is not, and make sure that drive reconstruction started.
 
 .Steps
 
-. Check the Power LED and the Attention LED on the replacement drive. (When you first insert a drive, its Attention LED might be on. However, the LED should go off within a minute.)
-** Power LED is on or blinking, and the Attention LED is off: Indicates that the new drive is working correctly.
-** Power LED is off: Indicates that the drive might not be installed correctly. Remove the drive, wait 60 seconds, and then reinstall it.
-** Attention LED is on: Indicates that the new drive might be defective. Replace it with another new drive.
+. Confirm the replacement drive is working correctly by checking the LED behavior and if it is not, take the appropriate corrective action:
++
+NOTE: When you first insert a drive, its Attention LED might be on. However, the LED should go off within a minute.
++
+//. Check the Power LED and the Attention LED on the replacement drive. (When you first insert a drive, its Attention LED might be on. However, the LED should go off within a minute.)
+//** Power LED is on or blinking, and the Attention LED is off: Indicates that the new drive is working correctly.
+//** Power LED is off: Indicates that the drive might not be installed correctly. Remove the drive, wait 60 seconds, and then reinstall it.
+//** Attention LED is on: Indicates that the new drive might be defective. Replace it with another new drive.
++
+[options="header" cols="1,2"]
+
+|===
+|Replacement drive LED behavior...| Action to take...
+a|
+Power LED is on or blinking, and the Attention LED is off.
+a|
+None. Go to the next step.
+
+The replacement drive is working correctly.
+a|
+Power LED is off
+a|
+Remove the drive, wait 60 seconds, and then reinstall it.
+
+The drive might not be installed correctly. 
+a|
+Attention LED is on
+a|
+Replace the new drive with another new drive.
+
+The new drive might be defective.
+
+|===
 . If the Recovery Guru in SANtricity System Manager still shows an issue, select *Recheck* to ensure the problem has been resolved.
 . If the Recovery Guru indicates that drive reconstruction did not start automatically, start reconstruction manually, as follows:
 +
@@ -128,11 +158,10 @@ NOTE: Perform this operation only when instructed to do so by technical support 
 When the drive reconstruction completes, the volume group is in an Optimal state.
 
 . Reinstall the bezel.
-. Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
-+
-Contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number or additional help with the replacement procedure.
 
-.What's next?
 
-Your drive replacement is complete. You can resume normal operations.
+== Step 4: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
+
 
