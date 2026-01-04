@@ -2,7 +2,7 @@
 permalink: maintenance-ef50-ef80/controller-replace-prepare.html
 sidebar: sidebar
 keywords: ef50, ef80, prepare the impaired controller
-summary: Prepare to replace the impaired controller in your EF50 or EF80 storage system by unpacking the replacement controller, confirming it's part number is correct, backing up the configuration database, and collecting support data.
+summary: Prepare to replace the impaired controller in your EF50 or EF80 storage system by unpacking the replacement controller, confirming it's part number is correct, and backing up the configuration database.
 ---
 = Prepare for controller replacement - EF50 and EF80
 :icons: font

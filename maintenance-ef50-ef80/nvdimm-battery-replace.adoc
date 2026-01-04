@@ -2,25 +2,31 @@
 permalink: maintenance-ef50-ef80/nvdimm-battery-replace.html
 sidebar: sidebar
 keywords: ef50, ef80, replace the NV battery, NV battery
-summary: Replace the NV battery in your EF50 or EF80 storage system when the battery begins to lose charge or fails, as it is responsible for preserving critical system data during power outages. The replacement process involves shutting down the impaired controller, removing the controller module, replacing the NV battery, reinstalling the controller module, and returning the failed part to NetApp.
+summary: Replace the NV battery in your EF50 or EF80 storage system when the battery begins to lose charge or fails, as it is responsible for preserving critical system data during power outages.
 ---
 = Replace the NV battery - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace the NV battery in your EF50 or EF80 storage system when the battery begins to lose charge or fails, as it is responsible for preserving critical system data during power outages. The replacement process involves placing the impaired controller offline, removing the controller, replacing the NV battery, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
+Replace the NV battery in your EF50 or EF80 storage system when the battery begins to lose charge or fails, as it is responsible for preserving critical system data during power outages. 
+
+The replacement process involves placing the impaired controller offline, removing the controller, replacing the NV battery, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
 
 .Before you begin
 A battery is included with a controller and preserves cached data if the AC power fails.
 * Verify that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
 * Review the link:batteries-overview-requirements-concept.html[Requirements for EF300 or EF600 battery replacement].
+
 * Make sure you have the following:
-** The replacement battery.
+
+** The replacement NV battery.
 ** An ESD wristband, or other antistatic precautions.
-** A flat, static free work area.
-** Labels to identify each cable that is connected to the controller canister.
-** A management station with a browser that can access SANtricity System Manager for the controller. (To open the System Manager interface, point the browser to the controller's domain name or IP address.)
+** A flat, static-free work surface.
+** Labels to identify each cable that is connected to the impaired controller.
+** A management station with a browser that can access SANtricity System Manager for the controller.
++
+To open the System Manager interface, point the browser to the controller's domain name or IP address.
 
 == Recovery Guru alerts
 

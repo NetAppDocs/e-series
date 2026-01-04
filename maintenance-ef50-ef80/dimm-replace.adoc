@@ -2,14 +2,16 @@
 permalink: maintenance-ef50-ef80/dimm-replace.html
 sidebar: sidebar
 keywords: ef50, ef80, replace a dimm
-summary: Replace a DIMM in your EF50 or EF80 storage system when it has failed, it is reporting it is not in an optimal state, or it has a mismatched capacity The replacement process involves placing the impaired controller offline, removing the controller, replacing the DIMM, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
+summary: Replace a DIMM in your EF50 or EF80 storage system when it has failed, it is reporting it is not in an optimal state, or it has a mismatched capacity.
 ---
 = Replace a DIMM - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace a DIMM in your EF50 or EF80 storage system when it has failed, it is reporting it is not in an optimal state, or it has a mismatched capacity. The replacement process involves placing the impaired controller offline, removing the controller, replacing the DIMM, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
+Replace a DIMM in your EF50 or EF80 storage system when it has failed, it is reporting it is not in an optimal state, or it has a mismatched capacity. 
+
+The replacement process involves placing the impaired controller offline, removing the controller, replacing the DIMM, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
 
 .About this task
 You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
@@ -17,14 +19,14 @@ You can turn on the storage system location (blue) LEDs to aid in physically loc
 
 == Step 1: Determine if you need to replace a DIMM
 
-You need to replace a DIMM only if it is in one of the following states: it has failed, it is reporting it is not in an optimal state, or it has a mismatched capacity.
+You need to replace a DIMM when it is in one of the following states: it has failed, it is reporting it is not in an optimal state, or it has a mismatched capacity.
 
 include::../_include/ge_dimm_replace_determine_if_needed.adoc[]
 
 
 == Step 2: Prepare to replace a DIMM
 
-Prepare to replace a DIMM by making sure the volumes are in the correct state, making sure there are no other storage system issues you need to address first, gathering the necessary tools and equipment, and taking precautions to prevent electrostatic discharge.
+Prepare to replace a DIMM by making sure the volumes are in the correct state, making sure there are no other storage system issues you need to address, gathering the necessary tools and equipment, and taking precautions to prevent electrostatic discharge.
 
 include::../_include/ge_dimm_replace_prepare.adoc[]
 
