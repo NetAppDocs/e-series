@@ -20,6 +20,6 @@ To open the System Manager interface, point the browser to the controller's doma
 . Prevent electrostatic discharge (ESD) during handling and installation of a DIMM:
 ** Keep the DIMM in the ESD bag until you are ready to install it.
 ** Open the ESD bag by hand or cut the top off with a pair of scissors. Do not insert a metal tool or knife into the ESD bag.
-** Keep the ESD bag and any packing materials to return the failed DIMM.
+** Keep the ESD bag and any packing materials to return the failed DIMM or use approved packaging when shipping a DIMM.
 ** Always wear an ESD wrist strap grounded to an unpainted surface on your storage system chassis.
 ** Avoid magnetic fields. Keep DIMMs away from magnetic devices.
