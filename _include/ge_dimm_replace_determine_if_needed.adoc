@@ -2,7 +2,7 @@
 .Steps
 
 . From SANtricity System Manager, access the Storage Array profile for the impaired controller:
-.. Go to menu:Support[Support Center]. 
+.. Go to *Support* > *Support Center*. 
 .. From the Support Resources page, select *Storage Array Profile*.
 .. Scroll down or use the Search field to locate the *Data Cache Module* information.
 . If any of the following states is shown for a DIMM, note the DIMM's location and continue with this procedure to replace the DIMM.

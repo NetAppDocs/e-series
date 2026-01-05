@@ -9,7 +9,7 @@ Whenever you take a controller offline, you need to wait at least one minute bef
 If a problem occurs when you remove the impaired controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the impaired controller.
 +
 * From System Manager:
-.. Select menu:Support[Support Center > Diagnostics].
+.. Select *Support* > *Support Center > Diagnostics*.
 .. Select *Collect Configuration Data*.
 .. Click *Collect*.
 +
