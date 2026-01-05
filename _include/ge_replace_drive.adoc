@@ -8,7 +8,7 @@ Prepare for the drive replacement by making sure the drive has failed, confirmin
 . If the Recovery Guru in SANtricity System Manager has notified you of an _impending drive failure_, but the drive has not yet failed, follow the instructions in the Recovery Guru to fail the drive.
 . Make sure you have a replacement drive that is suitable for your storage system configuration.
 +
-If needed, you can use SANtricity System Manager for confirmation:
+If needed, you can use SANtricity System Manager to confirm:
 +
 .. Select *Hardware*.
 .. Select the failed drive on the graphic.
@@ -20,14 +20,11 @@ For example, if you are replacing a secure-capable drive, make sure the replacem
 . Make sure you have a management station with a browser that can access SANtricity System Manager for either of the controllers.
 +
 To open the System Manager interface, point the browser to one of the controller's domain name or IP address.
-+
-. Make sure you have an electrostatic discharge (ESD) wristband.
-+
-Always wear an ESD wrist strap grounded to an unpainted surface on your storage system chassis. If a wrist strap is unavailable, touch an unpainted surface on your storage system chassis before handling the drive.
-+
-//* A flat, static-free work surface.
 
 . Prevent electrostatic discharge (ESD) during handling and installation of a drive:
+** Make sure you have an electrostatic discharge (ESD) wristband.
++
+Always wear an ESD wrist strap grounded to an unpainted surface on your storage system chassis. If a wrist strap is unavailable, touch an unpainted surface on your storage system chassis before handling the drive.
 ** Keep the drive in the ESD bag until you are ready to install it.
 ** Open the ESD bag by hand or cut the top off with a pair of scissors. Do not insert a metal tool or knife into the ESD bag.
 ** Make sure you have a flat, static-free work surface.
@@ -85,25 +82,23 @@ Rotate the cam handle downward to disengage the drive from the midplane.
 a|
 image::../media/icon_round_3.png[Callout number 3]
 a|
-a. Partially slide the drive out of the drive bay using the cam handle and supporting the drive with your other hand.
+a. Partially slide the drive out of the drive bay using the cam handle.
 b. Wait 60 seconds for the drive to spin down.
 c. Using two hands, fully remove the drive from the drive bay.
 
 |===
 
 . Place the drive on an antistatic, cushioned surface away from magnetic fields.
-. Wait 60 seconds for the software to recognize that the drive was removed.
+. Wait 60 seconds for the system software to recognize that the drive was removed.
 
 . Insert the replacement drive:
 .. Open the cam handle.
 .. Using two hands, insert the replacement drive into the open drive bay, firmly pushing until the drive stops.
-.. Close the cam handle so that the drive is fully seated into the midplane and the handle clicks into place.
+.. Close the cam handle so that the drive is fully seated into the midplane and the cam handle clicks into place.
 +
 Be sure to close the cam handle slowly so that it aligns correctly with the face of the drive.
 +
 The green LED on the drive illuminates when the drive is inserted correctly.
-+
-NOTE: Depending on your configuration, the controller might automatically reconstruct data to the new drive. If the storage system uses hot spare drives, the controller might need to perform a complete reconstruction on the hot spare before it can copy the data to the replacement drive. This reconstruction process increases the time that is required to complete this procedure.
 
 
 == Step 3: Complete the drive replacement
@@ -112,9 +107,9 @@ Confirm that the replacement drive is working correctly and make sure that drive
 
 .Steps
 
-. Confirm the replacement drive is working correctly by checking the LED behavior and if it is not, take the appropriate corrective action.
+. Confirm the replacement drive is working correctly by checking the LED behavior, and if it is not, take the appropriate corrective action.
 +
-NOTE: When you first insert a drive, its Attention LED might be on. However, the LED should go off within a minute.
+NOTE: When you first insert a drive, its Attention LED might be on. However, the LED should go off within a minute if the replacement drive is working correctly.
 +
 //. Check the Power LED and the Attention LED on the replacement drive. (When you first insert a drive, its Attention LED might be on. However, the LED should go off within a minute.)
 //** Power LED is on or blinking, and the Attention LED is off: Indicates that the new drive is working correctly.
@@ -134,21 +129,25 @@ The replacement drive is working correctly.
 a|
 Power LED is off
 a|
-Remove the drive, wait 60 seconds, and then reinstall it.
-
-The drive might not be installed correctly. 
+. Remove the drive, wait 60 seconds, and then reinstall it.
++
+The drive might not be installed correctly.
+.  If the Recovery Guru in SANtricity System Manager still shows an issue, select *Recheck* to ensure the problem has been resolved.
 a|
 Attention LED is on
 a|
-Replace the new drive with another new drive.
-
+. Replace the new drive with another new drive.
++
 The new drive might be defective.
+.  If the Recovery Guru in SANtricity System Manager still shows an issue, select *Recheck* to ensure the problem has been resolved.
 
 |===
-. If the Recovery Guru in SANtricity System Manager still shows an issue, select *Recheck* to ensure the problem has been resolved.
-. If the Recovery Guru indicates that drive reconstruction did not start automatically, start reconstruction manually, as follows:
+//. If the Recovery Guru in SANtricity System Manager still shows an issue, select *Recheck* to ensure the problem has been resolved.
+. If the Recovery Guru in SANtricity System Manager indicates that drive reconstruction did not start automatically, start reconstruction manually.
 +
-NOTE: Perform this operation only when instructed to do so by technical support or the Recovery Guru.
+NOTE: Depending on your configuration, the controller might automatically reconstruct data to the new drive. If the storage system uses hot spare drives, the controller might need to perform a complete reconstruction on the hot spare before it can copy the data to the replacement drive. This reconstruction process increases the time that is required to complete this procedure.
++
+NOTE: Perform the following manual reconstruction steps only when instructed to do so by NetApp Support or the Recovery Guru.
 
  .. Select *Hardware*.
  .. Click the drive that you replaced.
