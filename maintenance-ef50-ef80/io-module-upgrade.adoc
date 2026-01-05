@@ -11,8 +11,6 @@ summary: The upgrade procedure involves powering off both controllers, upgrading
 [.lead]
 You can upgrade one or more I/O modules in your EF50 or EF80 storage system to increase the number of host ports for enhanced network connectivity and expand your system’s ability to handle data traffic. 
 
-The upgrade procedure involves powering off both controllers, upgrading I/O modules in both controllers, powering on both controllers, and verifying that the upgrade was successful.
-
 .Before you begin
 
 * Schedule a downtime maintenance window for this procedure. You cannot access data on the storage system until you have successfully completed this procedure.
@@ -35,6 +33,8 @@ To open the System Manager interface, point the browser to the target controller
 * Unpack the new I/O modules, and set them on a flat, static-free work surface.
 
 .About this task
+
+* The upgrade procedure involves powering off both controllers, upgrading I/O modules in both controllers, powering on both controllers, and verifying that the upgrade was successful.
 
 *Does this apply: Some I/O module upgrades might require a host port protocol conversion. Follow the instructions in the xref:io-module-convert-protocol.html[Change host protocol for an EF50 or EF80] for this requirement.
 

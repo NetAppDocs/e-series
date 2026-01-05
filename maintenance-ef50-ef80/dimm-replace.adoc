@@ -11,10 +11,9 @@ summary: Replace a DIMM in your EF50 or EF80 storage system when it has failed, 
 [.lead]
 Replace a DIMM in your EF50 or EF80 storage system when it has failed, it is reporting it is not in an optimal state, or it has a mismatched capacity. 
 
-The replacement process involves placing the impaired controller offline, removing the controller, replacing the DIMM, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
-
 .About this task
-You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
+* The replacement process involves placing the impaired controller offline, removing the controller, replacing the DIMM, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
+* You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
 
 
 == Step 1: Determine if you need to replace a DIMM

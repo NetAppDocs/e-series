@@ -11,8 +11,6 @@ summary: Replace a drive in your EF50 or EF80 storage system when a drive fails 
 [.lead]
 You can hot-swap a failed drive while your EF50 or EF80 storage system is receiving I/O to ensure continued data access and system performance.  
 
-The hot-swap process involves preparing for the hot-swap, safely replacing the failed drive, and then returning the failed part to NetApp.
-
 //.Before you begin
 
 //Make sure you have the following:
@@ -44,7 +42,9 @@ The hot-swap process involves preparing for the hot-swap, safely replacing the f
 
 .About this task
 
-The Recovery Guru in SANtricity System Manager monitors the drives in the storage system and can notify you of an impending drive failure or an actual drive failure. When a drive has failed, its Attention (amber) LED illuminates.
+* The hot-swap process involves preparing for the hot-swap, safely replacing the failed drive, and then returning the failed part to NetApp.
+
+* The Recovery Guru in SANtricity System Manager monitors the drives in the storage system and can notify you of an impending drive failure or an actual drive failure. When a drive has failed, its Attention (amber) LED illuminates.
 
 
 include::../_include/ge_replace_drive.adoc[]

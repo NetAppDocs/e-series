@@ -11,8 +11,6 @@ summary: Replace a power supply unit (PSU) in your EF50 or EF80 storage system w
 [.lead]
 Replace a power supply unit (PSU) in your EF50 or EF80 storage system when it fails or becomes faulty, ensuring that your system continues to receive the required power for stable operation. 
 
-The replacement process involves disconnecting the faulty PSU from the power source, unplugging the power cord, replacing the faulty PSU, and then reconnecting it to the power source.
-
 .Before you begin
 * Review the details in the Recovery Guru to confirm that there is an issue with the power supply. Select *Recheck* from the Recovery Guru to ensure no other items must be addressed first.
 * Check that the amber Attention LED on the power supply is on, indicating that the power supply or its integrated fan has a fault.
@@ -29,7 +27,9 @@ To open the System Manager interface, point the browser to the impaired controll
 
 .About this task
 
-You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
+* The replacement process involves disconnecting the faulty PSU from the power source, unplugging the power cord, replacing the faulty PSU, and then reconnecting it to the power source.
+
+* You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
 
 
 include::../_include/ge_power_supply_replace.adoc[]

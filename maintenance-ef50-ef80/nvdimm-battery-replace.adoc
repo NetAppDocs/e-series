@@ -11,8 +11,6 @@ summary: Replace the NV battery in your EF50 or EF80 storage system when the bat
 [.lead]
 Replace the NV battery in your EF50 or EF80 storage system when the battery begins to lose charge or fails, as it is responsible for preserving critical system data during power outages. 
 
-The replacement process involves placing the impaired controller offline, removing the controller, replacing the NV battery, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
-
 .Before you begin
 A battery is included with a controller and preserves cached data if the AC power fails.
 * Verify that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
@@ -51,6 +49,9 @@ Optionally, you can use the command line interface (CLI) to perform some of the 
 ** *For SANtricity System Manager (version 11.60 and above)* -- Download the CLI package (zip file) from System Manager. Go to menu:Settings[System > Add-ons > Command Line Interface]. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
 
 .About this task
+
+* The replacement process involves placing the impaired controller offline, removing the controller, replacing the NV battery, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
+
 * Each controller canister includes a battery that preserves cached data if the AC power fails. If the Recovery Guru in SANtricity System Manager reports either a Battery Failed status or a Battery Replacement Required status, you must replace the affected battery.
 
 * You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
