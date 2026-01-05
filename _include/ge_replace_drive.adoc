@@ -17,9 +17,9 @@ If needed, you can use SANtricity System Manager for confirmation:
 +
 For example, if you are replacing a secure-capable drive, make sure the replacement drive is also secure-capable.
 +
-. Make sure you have a management station with a browser that can access SANtricity System Manager for the controller.
+. Make sure you have a management station with a browser that can access SANtricity System Manager for either of the controllers.
 +
-To open the System Manager interface, point the browser to the controller's domain name or IP address.
+To open the System Manager interface, point the browser to one of the controller's domain name or IP address.
 +
 . Make sure you have an electrostatic discharge (ESD) wristband.
 +
@@ -108,11 +108,11 @@ NOTE: Depending on your configuration, the controller might automatically recons
 
 == Step 3: Complete the drive replacement
 
-Confirm that the replacement drive is working correctly or take corrective action if it is not, and make sure that drive reconstruction started.
+Confirm that the replacement drive is working correctly and make sure that drive reconstruction started.
 
 .Steps
 
-. Confirm the replacement drive is working correctly by checking the LED behavior and if it is not, take the appropriate corrective action:
+. Confirm the replacement drive is working correctly by checking the LED behavior and if it is not, take the appropriate corrective action.
 +
 NOTE: When you first insert a drive, its Attention LED might be on. However, the LED should go off within a minute.
 +
@@ -126,7 +126,7 @@ NOTE: When you first insert a drive, its Attention LED might be on. However, the
 |===
 |Replacement drive LED behavior...| Action to take...
 a|
-Power LED is on or blinking, and the Attention LED is off.
+Power LED is on or blinking, and the Attention LED is off
 a|
 None. Go to the next step.
 

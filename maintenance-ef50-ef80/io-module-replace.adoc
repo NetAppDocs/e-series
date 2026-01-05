@@ -29,9 +29,9 @@ CAUTION: *Possible loss of data access* -- The presence of incompatible or misma
 +
 ** An ESD wristband, or you have taken other antistatic precautions.
 ** A flat, static-free work surface.
-** A management station with a browser that can access SANtricity System Manager for the controller.
+** A management station with a browser that can access SANtricity System Manager for the impaired controller.
 +
-To open the System Manager interface, point the browser to the controller's domain name or IP address.
+To open the System Manager interface, point the browser to the impaired controller's domain name or IP address.
 
 * Unpack the replacement I/O module, and set it on a flat, static-free work surface.
 +

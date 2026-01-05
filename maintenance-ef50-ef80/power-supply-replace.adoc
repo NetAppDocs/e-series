@@ -23,9 +23,9 @@ NOTE: Do not mix PSUs of different voltage types. Always replace like for like.
 +
 ** An ESD wristband, or you have taken other antistatic precautions.
 ** A flat, static-free work surface.
-** A management station with a browser that can access SANtricity System Manager for the controller.
+** A management station with a browser that can access SANtricity System Manager for the impaired controller.
 +
-To open the System Manager interface, point the browser to the controller's domain name or IP address.
+To open the System Manager interface, point the browser to the impaired controller's domain name or IP address.
 
 .About this task
 

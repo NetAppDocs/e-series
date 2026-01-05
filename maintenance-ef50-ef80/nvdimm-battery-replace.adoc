@@ -24,9 +24,9 @@ A battery is included with a controller and preserves cached data if the AC powe
 ** An ESD wristband, or other antistatic precautions.
 ** A flat, static-free work surface.
 ** Labels to identify each cable that is connected to the impaired controller.
-** A management station with a browser that can access SANtricity System Manager for the controller.
+** A management station with a browser that can access SANtricity System Manager for the impaired controller.
 +
-To open the System Manager interface, point the browser to the controller's domain name or IP address.
+To open the System Manager interface, point the browser to the impaired controller's domain name or IP address.
 
 == Recovery Guru alerts
 
