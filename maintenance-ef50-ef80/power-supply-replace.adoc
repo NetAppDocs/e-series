@@ -13,7 +13,7 @@ Replace a power supply unit (PSU) in your EF50 or EF80 storage system when it fa
 
 .Before you begin
 * Review the details in the Recovery Guru to confirm that there is an issue with the power supply. Select *Recheck* from the Recovery Guru to ensure no other items must be addressed first.
-* Check that the amber Attention LED on the power supply is on, indicating that the power supply or its integrated fan has a fault.
+* Check that the Attention (amber) LED on the power supply is on, indicating that the power supply or its integrated fan has a fault.
 * Make sure you have the following:
 ** A replacement power supply.
 +
@@ -26,6 +26,8 @@ NOTE: Do not mix PSUs of different voltage types. Always replace like for like.
 To open the System Manager interface, point the browser to the impaired controller's domain name or IP address.
 
 .About this task
+
+* When a power supply fails, you must replace it as soon as possible so the storage system has a redundant power source.
 
 * The replacement process involves disconnecting the faulty PSU from the power source, unplugging the power cord, replacing the faulty PSU, and then reconnecting it to the power source.
 

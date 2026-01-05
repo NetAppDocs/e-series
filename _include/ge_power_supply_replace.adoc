@@ -3,7 +3,12 @@
 .Steps
 
 . If you are not already grounded, properly ground yourself.
-. Identify the faulty PSU based on console error messages or through the red Attention LED on the PSU.
+
+. Unpack the new power supply, and set it on a level surface near the storage system.
++
+Save all packing materials for use when returning the failed power supply.
+
+. Identify the faulty PSU based on console error messages or through the Attention (red) LED on the PSU.
 
 .  Disconnect the power cord from the PSU by opening the power cord retainer, and then unplug the power cord from the PSU.
 +
@@ -43,16 +48,16 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
 .. Rotate the handle down, so it is out of the way of normal operations.
 
 . Reconnect the power cord to the PSU and secure the power cord with the power cord retainer. 
-+
-Once power is restored to the PSU, the status LED should be green?
+//+
+//Once power is restored to the PSU, the status LED should be green.
 
-. Confirm that its status is Optimal and check the controller shelf's Attention LEDs.
+. Confirm that the PSU's status is Optimal and check the storage system's Attention LEDs.
 +
-If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller canister is installed correctly. If necessary, remove and reinstall the controller canister.
+If the status is not Optimal or if any of the Attention LEDs are on, confirm that the power cable is correctly seated and the PSU is installed correctly. If necessary, remove and reinstall the PSU.
 +
 NOTE: If you cannot resolve the problem, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
-. From SANtricity System Manager, click menu:Support[Upgrade Center] to ensure that the latest version of SANtricity OS is installed.
+. From SANtricity System Manager, click *Support > Upgrade Center* to ensure that the latest version of SANtricity OS is installed.
 +
 As needed, install the latest version.
 
