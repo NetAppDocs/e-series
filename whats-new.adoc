@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: whats-new.html
-keywords: whats new, new features, SANtricity, 12.0, 11.9, 11.8
+keywords: whats new, new features, SANtricity, 12.00, 11.9, 11.8
 summary: New features in SANtricity OS.
 ---
 
@@ -29,11 +29,19 @@ High-capacity NVMe SSD drives of 30TB or 60TB sizes are also supported with the 
 [cols="35h,~",options="header"]
 |===
 |New feature |Description
-a|New user interface for SANtricity System Manager and Unified Manager
-a|The SANtricity System Manager and Unified Manager user interfaces have been redesigned to provide a more modern look and feel. The new interface includes a left-panel navigation and enhanced usability to streamline management tasks.
+a|New user interface for SANtricity System Manager
+a|The SANtricity System Manager user interfaces have been redesigned to provide a more modern look and feel. The new interface includes a left-panel navigation and enhanced usability to streamline management tasks.
 a|DULBE support for EF300C and EF600C storage systems
 a|EF300C and EF600C high-capacity flash storage systems now support the Deallocated or Unwritten Logical Block Error (DULBE) feature. This feature allows the storage system to support resource-provisioned volumes, which can improve SSD wear life and increase maximum write performance.
+a|Dynamic Disk Pools segment size now defaults to 32K for SSD and NVMe-based systems
+a|For Dynamic Disk Pools on SSD and NVMe-based systems, the default segment size has been changed to 32K. Previously, the dynamic disk pools default segment size was fixed at 128K for these systems. This change optimizes performance for workloads that involve a mix of small and large I/O operations.
+a|Subject Alternative Names (SANs) for Server certificate now only permits Letters, digits, and hyphen characters
+a|When creating or editing a Server certificate in SANtricity System Manager or Unified Manager, the Subject Alternative Names (SANs) field now only permits letters, digits, and hyphen characters. This change enhances security and ensures compatibility with industry standards for SSL/TLS certificates.
 |===
+
+== New features in Version 11.90R4
+ 
+This version contains only minor changes and no new features. For more information on the changes in this release, please refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3334464[E-Series 11.90 Release Notes^].
 
 == New features in Version 11.90R3
 
@@ -110,10 +118,10 @@ a|The management certificate key size length for SANtricity System Manager and U
 |===
 |New feature |Description
 a|`-identifyDevices` parameter
-a|A new `-identifyDevices` parameter is now available in the SMcli. This new parameter allows you to look for all SCSI native block devices that are associated with your Storage Arrays. For more information, see link: https://docs.netapp.com/us-en/e-series-cli/get-started/downloadable-smcli-parameters.html#identify-Devices[Downloadable SMcli command line parameters^].
+a|A new `-identifyDevices` parameter is now available in the SMcli. This new parameter allows you to look for all SCSI native block devices that are associated with your Storage Arrays. For more information, see link:https://docs.netapp.com/us-en/e-series-cli/get-started/downloadable-smcli-parameters.html#identify-Devices[Downloadable SMcli command line parameters^].
 
 a|Ethernet Kernel Statistics 
-a|A new Ethernet Kernel Statistics option is now available under the View iSCSI Statistics Packages page in System Manager. This new option allows you to view statistics for platform kernel drivers of the iSCSI device. For more information, see link: https://docs.netapp.com/us-en/e-series-santricity/sm-support/view-iscsi-statistics-packages-support.html[View iSCSI Statistics Packages^].
+a|A new Ethernet Kernel Statistics option is now available under the View iSCSI Statistics Packages page in System Manager. This new option allows you to view statistics for platform kernel drivers of the iSCSI device. For more information, see link:https://docs.netapp.com/us-en/e-series-santricity/sm-support/view-iscsi-statistics-packages-support.html[View iSCSI Statistics Packages^].
 
 a|Added ability to block IP addresses through REST API endpoint
 a|Users can now block specific IP addresses through the Settings endpoint (`/devmgr/v2/settings`). Once configured through the Settings endpoint, only IP addresses specified through a whitelist can communicate with the storage device. This new feature supports IPv4 and IPv6 address lists.

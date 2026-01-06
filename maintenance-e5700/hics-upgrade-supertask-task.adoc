@@ -87,7 +87,9 @@ image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif["Cache active 
 +
 *(1)* _Cache Active LED_
 
-. From the Home page of SANtricity System Manager, select *View Operations in Progress*. Wait for all operations to complete before continuing with the next step.
+. From the left panel of SANtricity System Manager, select menu:Storage[Operations in Progress]. 
++
+Wait for all operations to complete before continuing with the next step.
 . Power down the controller shelf.
  .. Turn off both power switches on the controller shelf.
  .. Wait for all LEDs on the controller shelf to turn off.

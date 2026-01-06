@@ -66,7 +66,7 @@ During discovery, if any storage arrays show an "Untrusted Certificates" status,
 
 .Steps
 
-. If the Resolve Self-Signed Certificates dialog box opens, review the information displayed for the untrusted certificates. For more information, you can also click the ellipses at the far end of the table and select *View* from the pop-up menu.
+. If the Resolve Self-Signed Certificates dialog box opens, review the information displayed for the untrusted certificates. For more information, you can also click the ellipsis at the far end of the table and select *View* from the pop-up menu.
 . Do one of the following:
 
 ** If you trust the connections to the discovered storage arrays, click *Next* and then click *Yes* to confirm and continue to the next card in the wizard. The self-signed certificates will be marked as trusted and the storage arrays will be added to the plugin.

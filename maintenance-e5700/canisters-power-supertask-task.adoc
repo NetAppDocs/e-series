@@ -51,13 +51,12 @@ If a problem occurs during this procedure, you can use the saved file to trouble
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 
 . From SANtricity System Manager, determine which power canister has failed.
- .. Select *Hardware*.
+ .. Select menu:Hardware[Controllers and components].
  .. Look at the power image:../media/sam1130_ss_hardware_power_icon_maint-e5700.gif["Power icon"] icon to the right of the *Shelf* drop-down lists to determine which shelf has the failed power canister.
 +
 If a component has failed, this icon is red.
 
- .. When you find the shelf with a red icon, select *Show back of shelf*.
- .. Select either power canister or the red power icon.
+ .. When you find the shelf with a red icon, select either power canister or the red power icon.
  .. On the *Power Supplies* tab, look at the statuses of the power canisters to determine which power canister must be replaced.
 +
 A component with a *Failed* status must be replaced.
