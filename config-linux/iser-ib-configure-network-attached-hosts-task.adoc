@@ -137,6 +137,6 @@ iscsiadm -m node --target <Target IQN> -I iface-ib1 -p <Target Port IP\> -l
 iscsiadm -m session
 ----
 
- .. Check the iscsi session status from the array. From SANtricity System Manager, navigate to *Storage Array* > *iSER* > *View/End Sessions*.
+ .. Check the iscsi session status from the array. From SANtricity System Manager, navigate to *Settings* > *System* > *View/End iSCSISessions*.
 
 When the OFED/RDMA service starts, the iSER kernel module(s) loads by default when the iSCSI services are running. To complete the iSER connection setup, the iSER module(s) should be loaded. Currently this requires a host reboot.

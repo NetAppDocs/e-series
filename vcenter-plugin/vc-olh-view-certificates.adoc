@@ -23,4 +23,4 @@ You can view summary information for a certificate, which includes the organizat
 ** *Management* -- Shows the certificate for the system hosting the plugin. A management certificate can be self-signed or approved by a certificate authority (CA). It allows secure access to the plugin.
 ** *Trusted* -- Shows certificates that the plugin can access for storage arrays and other remote servers, such as an LDAP server. The certificates can be issued from a certificate authority (CA) or can be self-signed.
 
-. To see more information about a certificate, select its row, select the ellipses at the end of the row, and then click *View* or *Export*.
+. To see more information about a certificate, select its row, select the ellipsis at the end of the row, and then click *View* or *Export*.
