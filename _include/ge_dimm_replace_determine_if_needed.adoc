@@ -1,13 +1,13 @@
 
 .Steps
 
-. From SANtricity System Manager, access the Storage Array profile for the impaired controller:
+. From SANtricity System Manager, access the Storage controller profile for the impaired controller:
 .. Go to *Support* > *Support Center*. 
 .. From the Support Resources page, select *Storage Array Profile*.
 .. Scroll down or use the Search field to locate the *Data Cache Module* information.
-. If any of the following states is shown for a DIMM, note the DIMM's location and continue with this procedure to replace the DIMM.
+. If any of the following conditions are shown for a DIMM, note the DIMM's location and continue with this procedure to replace the DIMM.
 +
-If none of these conditions is present, you do not need to replace a DIMM. Exit this procedure.
+If none of these conditions are present, you do not need to replace a DIMM. Exit this procedure.
 +
 ** A failed DIMM
 ** A DIMM reporting *Data Cache Module* as not optimal

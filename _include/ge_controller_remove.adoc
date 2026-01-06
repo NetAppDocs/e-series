@@ -8,7 +8,7 @@
 +
 When the green NV Caching Active LED is off, any data in cache memory has been written to the drives and it is safe to remove the impaired controller.
 +
-NOTE: If the NV Caching Active LED is on (green), cached data is being written to the drives. You must wait for the process to complete and the NV Caching Active LED to turn off. However, if the LED remains on for longer than five minutes, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+NOTE: If the NV Caching Active (green) LED is on, cached data is being written to the drives. You must wait for the process to complete and the NV Caching Active LED to turn off. However, if the LED remains on for longer than five minutes, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 //. On the impaired controller, make sure the NV LED is off.
 //+

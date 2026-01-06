@@ -42,7 +42,7 @@ Save the packing materials to use when returning the failed I/O module to NetApp
 
 * The term _I/O module_ is used instead of host interface cards (HICs) in this procedure.
 
-* You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
+* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*.
 
 
 == Step 1: Offline the controller

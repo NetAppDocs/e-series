@@ -42,12 +42,9 @@ CAUTION: Drives are fragile; improper drive handling is a leading cause of drive
 ** Never force a drive into a drive bay. Always use gentle, firm pressure to completely engage the drive latch.
 ** Place drives on cushioned surfaces, and never stack drives on top of each other.
 ** Do not bump drives against other surfaces.
-. If needed, you can physically locate the affected storage system by turning on its location (blue) LEDs (on the front of the storage system and both controllers). 
-+
-Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*. Location LEDs remain illuminated for 30 minutes.
-. If needed, you can physically locate the failed drive within your storage system by making its Attention (amber) LED blink.
-+
-Using SANtricity System Manager, from the drive's context menu, select *Turn on locator light*.
+. If needed, you can physically locate the affected storage system by turning on its location (blue) LEDs (on the front of the storage system and both controllers). Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*.
+
+. If needed, you can physically locate the failed drive within your storage system by making its Attention (amber) LED blink. Using SANtricity System Manager, from the drive's context menu, select *Turn on locator light*.
 +
 NOTE: You must remove the bezel from the front of the storage system to see the drive LEDs.
 

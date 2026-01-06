@@ -3,7 +3,7 @@
 
 . If you are not already grounded, properly ground yourself.
 
-. Locate the DIMMs on your controller and identify the faulty DIMM.
+. Locate the faulty DIMM.
 
 +
 NOTE: Consult either the https://hwu.netapp.com[Netapp Hardware Universe] or the FRU map on the cover of the controller for exact DIMM locations. 
