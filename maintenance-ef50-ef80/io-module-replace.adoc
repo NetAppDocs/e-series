@@ -31,9 +31,6 @@ CAUTION: *Possible loss of data access* -- The presence of incompatible or misma
 +
 To open the System Manager interface, point the browser to the impaired controller's domain name or IP address.
 
-* Unpack the replacement I/O module, and set it on a flat, static-free work surface.
-+
-Save the packing materials to use when returning the failed I/O module to NetApp.
 
 
 .About this task
@@ -41,6 +38,8 @@ Save the packing materials to use when returning the failed I/O module to NetApp
 * The replacement process involves placing the impaired controller offline, replacing the failed I/O module, bringing the controller back online, and returning the failed part to NetApp.
 
 * The term _I/O module_ is used instead of host interface cards (HICs) in this procedure.
+
+* The impaired controller does not need to be removed from the chassis since I/O modules are accessible with the controller in place.
 
 * You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*.
 

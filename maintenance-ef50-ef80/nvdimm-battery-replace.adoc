@@ -41,7 +41,7 @@ Optionally, you can use the command line interface (CLI) to perform some of the 
 
 == Step 1: Place the impaired controller offline
  
-Back up the storage system's configuration database, and then place the impaired controller offline so you can safely replace a NV battery.
+Back up the storage system's configuration database and then place the impaired controller offline so you can safely replace a NV battery.
  
 include::../_include/ge_internal_frus_controller_offline.adoc[]
 

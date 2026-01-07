@@ -24,7 +24,7 @@ For example, you can perform these steps:
 ** Ensure that no applications are writing data to any LUNs mapped from the storage system to the hosts.
 ** Unmount all file systems associated with volumes on the storage system.
 +
-NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
+NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host or contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support^].
 +
 CAUTION: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, the host application might lose access to the data because the storage is not accessible.
 
