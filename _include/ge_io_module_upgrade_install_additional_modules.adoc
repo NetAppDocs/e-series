@@ -1,5 +1,4 @@
 
-Replace I/O modules or I/O module blanks in both controllers. 
 
 .About this task
 You begin with one controller, and then repeat steps for the other controller.
@@ -24,6 +23,8 @@ a|
 Pull the I/O module or I/O blanking module out of the controller using the tab on the left and the thumbscrew.
 
 |===
+
+. Unpack the new I/O modules, and set them on a flat, static-free surface near the storage system.
 
 . Install the new I/O module:
 .. Align the I/O module with the edges of the controller slot opening.

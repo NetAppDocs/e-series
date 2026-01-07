@@ -1,5 +1,4 @@
 
-Replace the failed I/O module with the replacement I/O module.
 
 .Steps
 
@@ -26,6 +25,10 @@ a|
 Pull the I/O module out of the controller using the port label tab on the left and the thumbscrew.
 
 |===
+
+. Unpack the replacement I/O module, and set it on a flat, static-free surface near the storage system.
++
+Save the packing materials to use when returning the faulty I/O module.
 
 . Install the replacement I/O module into the target slot:
 

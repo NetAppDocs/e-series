@@ -62,14 +62,10 @@ include::../_include/ge_nvdimm_battery_replace.adoc[]
 
 == Step 4: Reinstall the controller
 
-Reinstall the controller into the chassis.
-
 include::../_include/ge_controller_reinstall.adoc[]
 
 
 == Step 5: Place the controller back online
-
-Place the controller back online, collect support data, and resume operations.
 
 include::../_include/ge_internal_frus_controller_back_online.adoc[]
 

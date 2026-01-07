@@ -45,22 +45,30 @@ Save the packing materials to use when returning the failed I/O module to NetApp
 * You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*.
 
 
-== Step 1: Offline the controller
+== Step 1: Place the impaired controller offline
+
+Place the impaired controller offline so you can safely replace the failed I/O module.
 
 include::../_include/ge_io_module_replace_offline_impaired_controller.adoc[]
 
 
 == Step 2: Replace the I/O module
 
+Replace the failed I/O module with the replacement I/O module.
+
 include::../_include/ge_io_module_replace_replace_failed_module.adoc[]
 
 
-== Step 3: Bring the controller online
+== Step 3: Place the controller back online
+
+Place the impaired controller back online using SANtricity System Manager or CLI commands.
 
 include::../_include/ge_io_module_replace_online_impaired_controller.adoc[]
 
 
 == Step 4: Complete the I/O module replacement
+
+Complete the I/O module replacement by verifying that all volumes have been returned to their preferred owners and collecting support data so that you can resume operations.
 
 include::../_include/ge_io_module_replace_complete.adoc[]
 

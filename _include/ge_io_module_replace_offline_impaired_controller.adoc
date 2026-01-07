@@ -1,6 +1,4 @@
 
-Place the impaired controller offline so you can safely replace the failed I/O module.
-
 .Steps
 
 . If the controller is not already offline, take it offline now using SANtricity System Manager or CLI commands:

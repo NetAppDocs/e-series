@@ -33,7 +33,7 @@ include::../_include/ge_dimm_replace_prepare.adoc[]
 
 == Step 3: Place the impaired controller offline
  
-Back up the storage system's configuration database, and then place the impaired controller offline so you can safely replace a DIMM.
+Back up the storage system's configuration database and then place the impaired controller offline so you can safely replace a DIMM.
  
 include::../_include/ge_internal_frus_controller_offline.adoc[]
 
@@ -54,14 +54,10 @@ include::../_include/ge_dimm_replace.adoc[]
 
 == Step 6: Reinstall the controller
 
-Reinstall the controller into the chassis.
-
 include::../_include/ge_controller_reinstall.adoc[]
 
 
 == Step 7: Place the controller back online
-
-Place the controller back online and collect support data before resuming operations.
 
 include::../_include/ge_internal_frus_controller_back_online.adoc[]
 

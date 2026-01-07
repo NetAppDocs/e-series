@@ -30,7 +30,6 @@ If needed, you can confirm supported I/O modules and slot priority for your stor
 +
 To open the System Manager interface, point the browser to the target controller's domain name or IP address.
 
-* Unpack the new I/O modules, and set them on a flat, static-free work surface.
 
 .About this task
 
@@ -51,26 +50,31 @@ Unused I/O slots should have blanking modules installed to prevent possible ther
 
 == Step 1: Power off both controllers
 
+Power off both controllers in the storage system so you can safely upgrade the I/O modules in both controllers.
+
 include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
 
 
 == Step 2: Upgrade the I/O modules
+
+Replace I/O modules or I/O module blanks with the new I/O modules in both controllers.
 
 include::../_include/ge_io_module_upgrade_install_additional_modules.adoc[]
 
 
 == Step 3: Power on both controllers
 
+Power on both controllers.
+
 include::../_include/ge_io_module_upgrade_power_on_controllers.adoc[]
 
 
 == Step 4: Complete the I/O module upgrade
 
+Complete the I/O upgrade by verifying that all volumes have been returned to their preferred owners and collecting support data so that you can resume operations.
+
 include::../_include/ge_io_module_upgrade_complete.adoc[]
 
 
-.What's next?
-
-The process of upgrading I/O modules in your storage system is complete. You can resume normal operations.
 
 

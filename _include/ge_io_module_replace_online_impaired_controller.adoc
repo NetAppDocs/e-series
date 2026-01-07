@@ -1,9 +1,8 @@
 
-Bring the impaired controller back online.
 
 .Steps
 
-. Bring the impaired controller online using SANtricity System Manager or CLI commands.
+. Place the impaired controller online using SANtricity System Manager or CLI commands.
 
 ** Using SANtricity System Manager:
 .. Select *Hardware*.

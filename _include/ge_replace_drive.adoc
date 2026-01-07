@@ -57,10 +57,8 @@ NOTE: You should install the replacement drive as soon as possible after removin
 .Steps
 
 . If not already removed, remove the bezel from the front of the storage system.
-. Unpack the replacement drive, and set it on a flat, static-free surface near the storage system.
-+
-Save all packing materials.
-. Remove the failed drive: 
+
+. Remove the failed drive:
 +
 NOTE: If you accidentally remove an active drive, wait at least 60 seconds, and then reinstall it. For the recovery procedure, refer to the storage management software.
 +
@@ -87,6 +85,10 @@ c. Using two hands, fully remove the drive from the drive bay.
 
 . Place the drive on an antistatic, cushioned surface away from magnetic fields.
 . Wait 60 seconds for the system software to recognize that the drive was removed.
+
+. Unpack the replacement drive, and set it on a flat, static-free surface near the storage system.
++
+Save the packing materials to use when returning the faulty drive.
 
 . Insert the replacement drive:
 .. Open the cam handle.

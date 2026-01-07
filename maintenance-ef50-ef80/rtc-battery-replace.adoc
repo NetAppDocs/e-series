@@ -31,7 +31,7 @@ To open the System Manager interface, point the browser to the impaired controll
 
 == Step 1: Place the impaired controller offline
  
-Place the impaired controller offline so you can safely remove and replace the faulty RTC battery.
+Back up the storage system's configuration database and then place the impaired controller offline so you can safely replace the faulty RTC battery.
  
 include::../_include/ge_internal_frus_controller_offline.adoc[]
 
@@ -52,14 +52,10 @@ include::../_include/ge_rtc_battery_replace.adoc[]
 
 == Step 4: Reinstall the controller
 
-Reinstall the controller into the chassis and reboot it.
-
 include::../_include/ge_controller_reinstall.adoc[]
 
 
 == Step 5: Place the controller back online
-
-Place the controller online, collect support data, and resume operations.
 
 include::../_include/ge_internal_frus_controller_back_online.adoc[]
 
