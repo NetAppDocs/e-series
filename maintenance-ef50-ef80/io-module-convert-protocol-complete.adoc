@@ -1,15 +1,15 @@
 ---
 permalink: maintenance-ef50-ef80/io-module-convert-protocol-complete.html
 sidebar: sidebar
-keywords: host protocol change, EF300 host protocol, EF600 host protocol
-summary: After converting the protocol of the host ports, perform additional steps to use the new protocol.
+keywords: host protocol change, EF50 host protocol, EF80 host protocol
+summary: After converting the protocol of the host ports, you must configure the host to use the new protocol.
 ---
-= Complete host protocol conversion - EF300 and EF600
+= Complete host protocol conversion - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After you apply the feature pack key to convert the protocol, you must configure the host to use the appropriate protocol.
+After converting the protocol of the host ports, you must configure the host to use the new protocol.
 
 For step-by-step instructions, see the guide appropriate for your system:
 

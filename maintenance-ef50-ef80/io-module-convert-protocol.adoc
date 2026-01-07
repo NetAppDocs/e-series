@@ -19,7 +19,7 @@ To obtain the feature pack key, you need the serial number from the controller, 
 .Steps
 
 . Locate the serial number.
-.. From SANtricity System Manager, select menu:Support[Support Center].
+.. From SANtricity System Manager, select *Support*.
 .. With the *Support Resources* tab selected, scroll to the *View top storage array properties* section.
 .. Locate the *Chassis Serial Number*, and copy this value to a text file.
 +
@@ -414,7 +414,7 @@ SHH-TA5-ZZYHS
 NOTE: If your controller submodel ID is not listed, contact https://mysupport.netapp.com/site/[NetApp Support^].
 
 . In System Manager, locate the Feature Enable Identifier.
-.. Go to menu:Settings[System].
+.. Go to *Settings*.
 .. Scroll down to *Add-ons*.
 .. Under *Change Feature Pack*, locate the *Feature Enable Identifier*.
 .. Copy and paste this 32-digit number to a text file.
@@ -432,7 +432,7 @@ NOTE: The Premium Feature Activation web site includes a link to "`Premium Featu
 
 Stop all I/O operations from the host before converting the protocol of the host ports.
 
-You cannot access data on the storage system until you successfully complete the conversion.
+NOTE: You cannot access data on the storage system until you successfully complete the conversion.
 
 .Steps
 
@@ -441,7 +441,7 @@ You cannot access data on the storage system until you successfully complete the
  ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
  ** Unmount all file systems associated with volumes on the storage system.
 +
-NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
+NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host or contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support].
 +
 CAUTION: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, you might lose data.
 . Wait for any data in cache memory to be written to the drives.
