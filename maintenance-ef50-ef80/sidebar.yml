@@ -49,14 +49,14 @@ entries:
       - title: Replace I/O module
         url: /maintenance-ef50-ef80/io-module-replace.html
   - title: I/O module host port protocol
-    pdf-filename: EF50, EF50C, EF80, and EF80C Convert I/O module host port protocol
+    pdf-filename: EF50, EF50C, EF80, and EF80C Change I/O module host port protocol
     entries:
       - title: Review requirements
-        url: /maintenance-ef50-ef80/io-module-convert-protocol-requirements.html
-      - title: Convert protocol
-        url: /maintenance-ef50-ef80/io-module-convert-protocol.html
-      - title: Complete protocol conversion
-        url: /maintenance-ef50-ef80/io-module-convert-protocol-complete.html
+        url: /maintenance-ef50-ef80/io-module-change-protocol-requirements.html
+      - title: Change protocol
+        url: /maintenance-ef50-ef80/io-module-change-protocol.html
+      - title: Complete protocol change
+        url: /maintenance-ef50-ef80/io-module-change-protocol-complete.html
   - title: NV battery
     url: /maintenance-ef50-ef80/nvdimm-battery-replace.html
   - title: Power supply

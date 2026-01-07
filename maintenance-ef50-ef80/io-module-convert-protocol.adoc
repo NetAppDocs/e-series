@@ -1,5 +1,5 @@
 ---
-permalink: maintenance-ef50-ef80/io-module-convert-protocol.html
+permalink: maintenance-ef50-ef80/io-module-change-protocol.html
 sidebar: sidebar
 keywords: host protocol change, EF50, EF80
 summary: You can change the host port protocol on I/O modules using either Infiniband (IB) or Fibre Channel (FC) in an EF50 or EF80 storage system.
@@ -430,9 +430,9 @@ NOTE: The Premium Feature Activation web site includes a link to "`Premium Featu
 
 == Step 2: Stop host I/O
 
-Stop all I/O operations from the host before converting the protocol of the host ports.
+Stop all I/O operations from the host before changing the protocol of the host ports.
 
-NOTE: You cannot access data on the storage system until you successfully complete the conversion.
+NOTE: You cannot access data on the storage system until you successfully complete the protocol change.
 
 .Steps
 
@@ -441,7 +441,7 @@ NOTE: You cannot access data on the storage system until you successfully comple
  ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
  ** Unmount all file systems associated with volumes on the storage system.
 +
-NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host or contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support].
+NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host or contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support^].
 +
 CAUTION: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, you might lose data.
 . Wait for any data in cache memory to be written to the drives.
@@ -453,7 +453,7 @@ The green Cache Active LED on the back of each controller is on when cached data
 
 == Step 3: Change the feature pack
 
-Change the feature pack to convert the host protocol of your host ports.
+Change the feature pack to change the host protocol of your host ports.
 
 .Steps
 
@@ -478,4 +478,4 @@ The feature pack migration begins. Both controllers automatically reboot twice t
 
 .What's next?
 
-After you've changed the host protocol, you need to link:io-module-convert-protocol-complete.html[Complete the host protocol conversion].
+After you've changed the host protocol, you need to link:io-module-change-protocol-complete.html[Complete the host protocol change].

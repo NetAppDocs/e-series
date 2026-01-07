@@ -1,23 +1,23 @@
 ---
-permalink: maintenance-ef50-ef80/io-module-convert-protocol-requirements.html
+permalink: maintenance-ef50-ef80/io-module-change-protocol-requirements.html
 sidebar: sidebar
-keywords: convert host protocol, EF50, EF80, requirements to convert host protocol
-summary:  Before converting the host protocol for an EF50 or EF80 storage system, ensure you meet the following requirements.
+keywords: change host protocol, EF50, EF80, requirements to change host protocol
+summary:  Before changing the host protocol for an EF50 or EF80 storage system, ensure you meet the following requirements.
 ---
-=  Requirements to convert host protocol - EF50 or EF80
+=  Requirements to change the host protocol - EF50 or EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before converting the host protocol for an EF50 or EF80 storage system, ensure you meet the following requirements.
+Before changing the host protocol for an EF50 or EF80 storage system, ensure you meet the following requirements.
 
 * You have scheduled a downtime maintenance window for this procedure.
-* You must stop host I/O operations when you perform the conversion. You cannot access data on the storage system until you have successfully completed the conversion.
+* You must stop host I/O operations when you perform a protocol change. You cannot access data on the storage system until you have successfully completed the a protocol change.
 * You are using out-of-band management. (You cannot use in-band management to complete this procedure.)
-* You have obtained the necessary hardware for the conversion, which may include a new set of I/O modules and/or SFPs. Your NetApp Sales Representative can help you determine what hardware you need and help you order the correct parts.
+* You have obtained the necessary hardware for the conversion, which might include a new set of I/O modules and/or SFPs. Your NetApp Sales Representative can help you determine what hardware you need and help you order the correct parts.
 * The dual-protocol SFP transceivers support 16Gb and 8Gb FC, as well as 10Gb iSCSI. Therefore, you may not need to change SFPs if you have the dual-protocol and are simply switching between FC and iSCSI or vice versa.
-* Some host port protocol conversions might require a host interface card addition, or upgrade.
+* Some host port protocol conversions might require a host interface card addition or upgrade.
 
 .What's next?
 
-After you’ve met the requirements to convert the host protocol, you link:io-module-convert-protocol.html[convert the protocol].
+After you’ve met the requirements to change the host protocol, you link:io-module-change-protocol.html[change the protocol].

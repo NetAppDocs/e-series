@@ -35,7 +35,7 @@ To open the System Manager interface, point the browser to the target controller
 
 * The upgrade procedure involves powering off both controllers, upgrading I/O modules in both controllers, powering on both controllers, and verifying that the upgrade was successful.
 
-*Does this apply: Some I/O module upgrades might require a host port protocol conversion. Follow the instructions in the xref:io-module-convert-protocol.html[Change host protocol for an EF50 or EF80] for this requirement.
+*Some I/O module upgrades might require a host port protocol conversion. Follow the instructions in the xref:io-module-change-protocol.html[Change host protocol for an EF50 or EF80] for this requirement.
 
 * The term _I/O module_ is used instead of host interface cards (HICs) in this procedure.
 
