@@ -20,9 +20,9 @@ For your EF50 or EF80 storage system, you can perform maintenance procedures on 
 
 |===
 
-a| link:chassis-replace-workflow.html[Chassis]
+// a| link:chassis-replace-workflow.html[Chassis]
 
-a| The chassis is the physical enclosure housing all the controller components such as the controller/CPU unit, power supply, and I/O.
+// a| The chassis is the physical enclosure housing all the controller components such as the controller/CPU unit, power supply, and I/O.
 
 a| link:controller-replace-workflow.html[Controller]
 
