@@ -4,9 +4,9 @@
 
 //The green Cache Active LED (NV Caching Active LED) on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
 
-. On the impaired controller, make sure the NV Caching Active LED is off.
+. On the impaired controller, make sure the NV Caching Active (green) LED is off.
 +
-When the green NV Caching Active LED is off, any data in cache memory has been written to the drives and it is safe to remove the impaired controller.
+When the NV Caching Active (green) LED is off, any data in cache memory has been written to the drives and it is safe to remove the impaired controller.
 +
 NOTE: If the NV Caching Active (green) LED is on, cached data is being written to the drives. You must wait for the process to complete and the NV Caching Active LED to turn off. However, if the LED remains on for longer than five minutes, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
@@ -20,7 +20,7 @@ NOTE: If the NV Caching Active (green) LED is on, cached data is being written t
 //+
 //The NV LED is located next to the NV icon on the controller.
 
-The NV Caching Active LED is located next to the NV icon on the controller.
+The NV Caching Active (green) LED is located next to the NV icon on the controller.
 
 image::../media/drw_g_nvmem_led_ieops-1839.svg[NV status LED location]
 
@@ -30,7 +30,7 @@ image::../media/drw_g_nvmem_led_ieops-1839.svg[NV status LED location]
 a|
 image::../media/icon_round_1.png[Callout number 1]
 a|
-NV icon and LED on the controller
+NV icon and NV Caching Active LED on the controller
 
 |===
 
@@ -41,7 +41,7 @@ NV icon and LED on the controller
 
 . Disconnect the power on the impaired controller:
 +
-NOTE: Power supplies (PSUs) do not have a power switch.
+NOTE: The power supply (PSU) does not have a power switch.
 +
 .. Open the power cord retainer.
 .. Unplug the power cord from the PSU and set it aside.
@@ -69,7 +69,7 @@ a|
 +
 As you pull, the handles extend out from the controller and then you feel some resistance, keep pulling.
 +
-* Slide the controller out of the chassis while supporting the bottom of the controller, and place it on a flat, stable surface. 
+* Slide the controller out of the chassis while supporting the bottom of the controller, and place it on a flat, static-free work surface.
 a|
 image::../media/icon_round_3.png[Callout number 3] 
 a|

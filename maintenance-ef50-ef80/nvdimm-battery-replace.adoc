@@ -13,11 +13,9 @@ Replace the NV battery in your EF50 or EF80 storage system when the battery begi
 
 .Before you begin
 
-* Make sure you address any other storage system issues.
-+
-Using SANtricity System Manager, review the details in the Recovery Guru to see if there are any other issues.
-
 * Confirm that the Recovery Guru in SANtricity System Manager reports either a _Battery Failed_ status or a _Battery Replacement Required_ status. If either status is reported, you must replace the affected NV battery.
+
+* Make sure you address any other storage system issues. Using SANtricity System Manager, review the details in the Recovery Guru to see if there are any other issues.
 
 * Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
 
