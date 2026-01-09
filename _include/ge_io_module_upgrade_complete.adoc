@@ -28,7 +28,7 @@ Only some of the volumes are returned to their preferred owners after auto-distr
 a|
 Check the Recovery Guru for host connectivity issues.
 
-If there is no Recovery Guru present or if following the recovery guru steps the volumes are still not returned to their preferred owners, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+If there is no Recovery Guru present or if after following the recovery guru steps the volumes are still not returned to their preferred owners, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 |===
 
 . Collect support data for your storage system using SANtricity System Manager.

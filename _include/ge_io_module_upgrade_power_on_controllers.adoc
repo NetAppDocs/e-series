@@ -16,4 +16,4 @@ The controllers begin to boot.
 +
 If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated.
 +
-NOTE: If you cannot resolve the problem, contact https://www.netapp.com/company/contact-us/support/[NetApp Technical Support^]. If needed, collect support data for your storage system using SANtricity System Manager.
+NOTE: If you cannot resolve the problem, contact https://www.netapp.com/company/contact-us/support/[NetApp Support^]. If needed, collect support data for your storage system using SANtricity System Manager.

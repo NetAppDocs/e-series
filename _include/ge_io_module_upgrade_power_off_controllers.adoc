@@ -28,13 +28,13 @@ NOTE: The exact steps to stop host I/O operations depend on the host operating s
 +
 CAUTION: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, the host application might lose access to the data because the storage is not accessible.
 
-. On each controller, make sure the NV Caching Active LED is off.
+. On each controller, make sure the NV Caching Active (green) LED is off.
 +
-When the green NV Caching Active LED is off, any data in cache memory has been written to the drives and it is safe to remove the impaired controller.
+When the NV Caching Active (green) LED is off, any data in cache memory has been written to the drives and it is safe to remove the impaired controller.
 +
-NOTE: If the NV Caching Active LED is on (green), cached data is being written to the drives. You must wait for the process to complete and the NV Caching Active LED to turn off. However, if the LED remains on for longer than five minutes, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+NOTE: If the NV Caching Active (green) LED is on, cached data is being written to the drives. You must wait for the process to complete and the NV Caching Active (green) LED to turn off. However, if the LED remains on for longer than five minutes, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 +
-The NV Caching Active LED is located next to the NV icon on the controller.
+The NV Caching Active (green) LED is located next to the NV icon on the controller.
 +
 image::../media/drw_g_nvmem_led_ieops-1839.svg[NV status LED location]
 +
@@ -44,7 +44,7 @@ image::../media/drw_g_nvmem_led_ieops-1839.svg[NV status LED location]
 a|
 image::../media/icon_round_1.png[Callout number 1]
 a|
-NV icon and LED on the controller
+NV icon and NV Caching Active LED on the controller
 |===
 +
 . Confirm operations on the controllers have completed:
