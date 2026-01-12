@@ -36,7 +36,7 @@ NOTE: Perform this task only if your storage array has two controllers (duplex c
 If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system will save the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
 +
 * From System Manager:
-.. Select menu:Support[Support Center > Diagnostics].
+.. Select menu:Support[Support Center > Diagnostics] under the left panel.
 .. Select *Collect Configuration Data*.
 .. Click *Collect*.
 +
@@ -51,7 +51,7 @@ The file is saved in the Downloads folder for your browser with the name, *confi
 +
 If a problem occurs when you remove a controller, you can use the saved file to troubleshoot the issue. The system will save inventory, status, and performance data about your storage array in a single file.
 
-.. Select menu:Support[Support Center > Diagnostics].
+.. From the left panel, select menu:Support[Support Center > Diagnostics].
 .. Select *Collect Support Data*.
 .. Click *Collect*.
 +
@@ -60,8 +60,7 @@ The file is saved in the Downloads folder for your browser with the name, *suppo
 . If the controller is not already offline, take it offline now using SANtricity System Manager.
 
  * From SANtricity System Manager:
-  .. Select *Hardware*.
-  .. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
+  .. Select menu:Hardware[Controllers and components] under the left panel.
   .. Select the controller that you want to place offline.
   .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 +
@@ -124,7 +123,7 @@ CAUTION: *Possible data loss* -- If you continue this procedure while I/O operat
 +
 The green Cache Active LED on the back of the controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
 
-. From the home page of SANtricity System Manager, select *View Operations in Progress*.
+. From the home page of SANtricity System Manager, select menu:Storage[Operations in Progress] under the left panel.
 . Confirm that all operations have completed before continuing with the next step.
 . Turn off both power switches on the controller shelf.
 . Wait for all LEDs on the controller shelf to turn off.

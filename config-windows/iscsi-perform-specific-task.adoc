@@ -62,7 +62,7 @@ You use the SANtricity System Manager GUI to configure iSCSI networking on the a
 
 .About this task
 
-This task describes how to access the iSCSI port configuration from the Hardware page. You can also access the configuration from menu:System[Settings > Configure iSCSI ports].
+This task describes how to access the iSCSI port configuration from the Hardware page. You can also access the configuration from menu:Settings[System > Configure iSCSI ports].
 
 .Steps
 
@@ -80,10 +80,7 @@ When you open System Manager and no pools, volumes groups, workloads, or notific
 +
 You will use the wizard later to complete additional setup tasks.
 
-. Select *Hardware*.
-. If the graphic shows the drives, click *Show back of shelf*.
-+
-The graphic changes to show the controllers instead of the drives.
+. From the left panel, select menu:Hardware[Controllers and components].
 
 . Click the controller with the iSCSI ports you want to configure.
 +

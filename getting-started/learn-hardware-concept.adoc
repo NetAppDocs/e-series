@@ -44,7 +44,7 @@ image::../media/e2800_2u_front.gif["E2800 2U"]
 
 * 4U60 (4 rack units; 60 drives)
 +
-image::../media/e2860_front.gif["E2800 4U']
+image::../media/e2860_front.gif["E2800 4U"]
 
 Drives::
 +
@@ -340,9 +340,8 @@ Interfaces::
 Available with the following interfaces:
 +
 * 12Gb SAS
-* 1 GB or 10Gbase-T iSCSI
+* 1Gb or 10Gb Base-T iSCSI
 * 1Gb, 10Gb, or 25Gb iSCSI
 * 8Gb, 16Gb, or 32Gb FC
-
 --
 ====

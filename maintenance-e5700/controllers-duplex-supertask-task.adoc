@@ -57,7 +57,7 @@ image::../media/e5700_mac_address_and_fru_part_number.png[MAC address and FRU pa
 +
 When a controller has a fault and needs to be replaced, the replacement part number is displayed in the Details area of the Recovery Guru. If you need to find this number manually, follow these steps:
 
- .. Select *Hardware*.
+ .. Select menu:Hardware[Controllers and components].
  .. Locate the controller shelf, which is marked with the controller icon image:../media/sam1130_ss_hardware_controller_icon_maint-e5700.gif["Controller icon"].
  .. Click the controller icon.
  .. Select the controller, and click *Next*.
@@ -96,8 +96,7 @@ The file is saved in the Downloads folder for your browser with the name, *suppo
 . If the controller is not already offline, take it offline now using SANtricity System Manager.
 
  * From SANtricity System Manager:
-  .. Select *Hardware*.
-  .. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
+  .. Select menu:Hardware[Controllers and components].
   .. Select the controller that you want to place offline.
   .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 +
@@ -333,6 +332,21 @@ image:../media/e5700_hic_3_callouts_maint-e5700.gif[E5700 controller LEDs"]
 *(3)* _Seven-segment display_
 +
 
+. Bring the controller online using SANtricity System Manager.
+ * From SANtricity System Manager:
+  .. Select *Hardware*.
+  .. If the graphic shows the drives, select *Show back of shelf*.
+  .. Select the controller you want to place online.
+  .. Select *Place Online* from the context menu, and confirm that you want to perform the operation.
++
+The system places the controller online.
+
+* Alternatively, you can bring the controllers online by using the following CLI commands:
++
+*For controller A:* `set controller [a] availability=online;`
++
+*For controller B:* `set controller [b] availability=online;`
+
 . Check the codes on the controller's seven-segment display as it comes back online. If the display shows one of the following repeating sequences, immediately remove the controller.
  ** *OE*, *L0*, *_blank_* (mismatched controllers)
  ** *OE*, *L6*, *_blank_* (unsupported HIC)
@@ -359,7 +373,7 @@ NOTE: If you cannot resolve the problem, contact technical support.
   
 . If required, redistribute all volumes back to their preferred owner using SANtricity System Manager.
  .. Select menu:Storage[Volumes].
- .. Select menu:More[Redistribute volumes].
+ .. Select menu:elispse icon[Redistribute volumes].
 . Click menu:Hardware[Support > Upgrade Center] to ensure that the firmware and NVSRAM versions on the system are at the desired levels.
 +
 As needed, install the latest version.
