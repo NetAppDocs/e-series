@@ -20,10 +20,6 @@ For your EF50 or EF80 storage system, you can perform maintenance procedures on 
 
 |===
 
-a| link:chassis-replace-workflow.html[Chassis]
-
-a| The chassis is the physical enclosure housing all the controller components such as the controller/CPU unit, power supply, and I/O.
-
 a| link:controller-replace-workflow.html[Controller]
 
 a| A controller consists of a board, firmware, and software. It controls the drives and runs the SANtricity operating system software. A controller also contains the boot media. When the boot media fails, the controller must be replaced.
@@ -53,8 +49,5 @@ a| link:power-supply-replace.html[Power supply]
 
 a| A power supply provides a redundant power source in a controller.
 
-a| link:rtc-battery-replace.html[Real-time clock battery]
-
-a| A real-time clock battery preserves system date and time information if the power is off.
 |===
 
