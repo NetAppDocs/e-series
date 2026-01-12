@@ -1,0 +1,94 @@
+---
+permalink: maintenance-ef50-ef80/io-module-change-protocol.html
+sidebar: sidebar
+keywords: host protocol change, EF50, EF80
+summary: You can change the host port protocol on I/O modules using either Infiniband (IB) or Fibre Channel (FC) in an EF50 or EF80 storage system.
+---
+= Change the host protocol - EF50 and EF80
+:experimental:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can change the host port protocol on I/O modules using either Infiniband (IB) or Fibre Channel (FC) in an EF50 or EF80 storage system.
+
+// Include list of use cases. Now they are in the About this task section.
+
+.Before you begin
+
+* You have scheduled a downtime maintenance window for this procedure.
+* You must stop host I/O operations when you perform a protocol change. You cannot access data on the storage system until you have successfully completed the a protocol change.
+* You are using out-of-band management. (You cannot use in-band management to complete this procedure.)
+* You have obtained the necessary hardware for the conversion, which might include a new set of I/O modules and/or SFPs. Your NetApp Sales Representative can help you determine what hardware you need and help you order the correct parts.
+* The dual-protocol SFP transceivers support 16Gb and 8Gb FC, as well as 10Gb iSCSI. Therefore, you may not need to change SFPs if you have the dual-protocol and are simply switching between FC and iSCSI or vice versa.
+* Some host port protocol conversions might require a host interface card addition or upgrade.
+
+.About this task
+
+* Host I/O protocol is changed on all host I/O modules in your storage system.
+
+* Both Controllers are rebooted.
+
+* Host access to all volumes is disrupted...
+
+* New storage system installations and new controllers being used in a controller upgrade ship with a default host protocol dictated by the make of the I/O module. You need to check if the default host protocol is what you want (for your storage system) and if not, you need to change it. The following table shows the default host protocol for the different I/O module makes and the supported protocol options.
+
+== Step 1: Stop host I/O
+
+Stop all I/O operations from the host before changing the protocol of the host ports.
+
+NOTE: You cannot access data on the storage system until you successfully complete the protocol change.
+
+// include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
+
+.Steps
+
+. Ensure that no I/O operations are occurring between the storage system and all connected hosts. For example, you can perform these steps:
+ ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
+ ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
+ ** Unmount all file systems associated with volumes on the storage system.
++
+NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host or contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support^].
++
+CAUTION: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, you might lose data.
+. Wait for any data in cache memory to be written to the drives.
++
+The green Cache Active LED on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
+
+. From the Home page of SANtricity System Manager, select *View Operations in Progress*.
+. Wait for all operations to complete before continuing with the next step.
+
+== Step 2: Change the protocol
+
+Change the protocol of the host ports to either Infiniband (IB) or Fibre Channel (FC).
+
+// include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
+
+.Steps
+
+. From the Home page of SANtricity System Manager: 
+.. Select *Settings* > *System*.
+.. Scroll down the page to the "Additional Settings" section and click "Change host I/O protocol".
+.. Choose the host I/O protocol you want from the drop down menu.
+.. Type "CHANGE" to confirm your choice.
+.. Click the Change button.
+
+== Step 3: Configure the host to use the new protocol
+
+After changing the protocol of the host ports, you must configure the host to use the new protocol.
+
+// include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
+
+For step-by-step instructions, see the guide appropriate for your storage system:
+
+* link:../config-linux/index.html[Linux express configuration]
++
+* link:../config-vmware/index.html[VMware express configuration]
++
+* link:../config-windows/index.html[Windows express configuration]
++
+Specific settings might vary. Check the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix^] for specific instructions and additional recommended settings for your solution.
+
+
+
+

@@ -1,0 +1,22 @@
+
+.Before you begin
+* You must have met the link:controller-replace-requirements.html[requirements] for this procedure.
+* You must have completed the link:controller-replace-prepare.html[preparation] for this procedure.
+
+.About this task
+Whenever you take a controller offline, you need to wait at least one minute before bringing the controller back online. This waiting period allows the storage system to update the status of the controller and ensure that all cached data is written to the drives.
+
+.Steps
+
+. If the impaired controller is not already offline, take it offline using SANtricity System Manager:
+.. Select *Hardware*.
+.. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
+.. Select the controller that you want to place offline.
+.. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
++
+NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select Connect to an alternate network connection to automatically access SANtricity System Manager using the other controller.
+
+. Wait for SANtricity System Manager to update the controller's status to offline.
++
+CAUTION: Do not begin any other operations until after the status has been updated.
+. Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove this component.

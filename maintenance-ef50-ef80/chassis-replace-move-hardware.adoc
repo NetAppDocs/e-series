@@ -1,0 +1,18 @@
+---
+permalink: maintenance-ef50-ef80/chassis-replace-move-hardware.html
+sidebar: sidebar
+keywords: ef50, ef80, move hardware components, replace the chassis
+summary: Replace the chassis of your EF50 or EF80 storage system when a hardware failure requires it. The replacement process involves removing the controllers, removing the drives, installing the replacement chassis, and reinstalling the chassis components.
+---
+= Replace the chassis - EF50 and EF80
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Replace the chassis of your EF50 or EF80 storage system when a hardware failure requires it. The replacement process involves removing the controllers, removing the drives, installing the replacement chassis, and reinstalling the chassis components.
+
+include::../_include/ge_chassis_replace_move_hardware.adoc[]
+
+.What's next?
+
+After you’ve replaced the impaired chassis and reinstalled the components into it, you need to link:chassis-replace-complete-system-restore-rma.html[complete the chassis replacement]. 

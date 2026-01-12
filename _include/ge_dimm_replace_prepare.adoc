@@ -1,0 +1,25 @@
+
+.Steps
+
+. Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
+. Make sure you address any other storage system issues. 
++
+Using SANtricity System Manager, review the details in the Recovery Guru to see if there are any other issues.
++
+//. From SANtricity System Manager, review the details in the Recovery Guru to see if there are any other items that must be addressed before replacing the DIMM. If there are, address them. 
+//. From SANtricity System Manager, review the details in the Recovery Guru to confirm that there is an issue with a mismatched memory and to ensure no other items must be addressed first.
+//. From the Details area of the Recovery Guru, determine which DIMM to replace.
+. Make sure you have the following:
+* A replacement DIMM that is the correct size for your storage system configuration.
+* An ESD wristband, or you have taken other antistatic precautions.
+* A flat, static-free work surface.
+* Labels to identify each cable that is connected to the impaired controller.
+* A management station with a browser that can access SANtricity System Manager for the impaired controller.
++
+To open the System Manager interface, point the browser to the impaired controller's domain name or IP address.
+. Prevent electrostatic discharge (ESD) during handling and installation of a DIMM:
+** Keep the DIMM in the ESD bag until you are ready to install it.
+** Open the ESD bag by hand or cut the top off with a pair of scissors. Do not insert a metal tool or knife into the ESD bag.
+** Keep the ESD bag and any packing materials to return the failed DIMM or use approved packaging when shipping a DIMM.
+** Always wear an ESD wrist strap grounded to an unpainted surface on your storage system chassis.
+** Avoid magnetic fields. Keep DIMMs away from magnetic devices.

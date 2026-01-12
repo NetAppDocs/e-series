@@ -1,0 +1,18 @@
+---
+permalink: maintenance-ef50-ef80/controller-replace-offline-controller.html
+sidebar: sidebar
+keywords: ef50, ef80, offline the impaired controller
+summary: Take the impaired controller offline in your EF50 or EF80 storage system to prevent data loss and ensure system stability when replacing the controller.
+---
+= Offline the impaired controller - EF50 and EF80
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Take the impaired controller offline in your EF50 or EF80 storage system to prevent data loss and ensure system stability when replacing the controller.
+ 
+include::../_include/ge_controller_replace_offline_controller.adoc[]
+
+.What's next?
+
+After you've taken the impaired controller offline, you need to link:controller-replace-move-hardware.html[replace the impaired controller].

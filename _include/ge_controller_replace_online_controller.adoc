@@ -1,0 +1,51 @@
+
+
+.Steps
+
+. The next step depends on whether the impaired controller used DHCP for the IP address:
++
+[options="header" cols="1,2"]
+
+|===
+| If...| Then...
+a|
+The impaired controller did not use DHCP for the IP address
+a|
+Go to the next step.
+
+The replacement controller adopts the IP address of the impaired controller you removed.
+a|
+The impaired controller used DHCP for the IP address
+a|
+.. Locate the MAC address on the label on the back of the replacement controller. 
+.. Ask your network administrator to associate the DNS/network and IP address for the impaired controller with the MAC address for the replacement controller.
+
+|===
+
+. Place the controller online using SANtricity System Manager.
+.. Navigate to the Hardware page.
+.. Select *Show back of controller*.
+.. Select the replaced controller.
+.. Select *Place online* from the drop-down list.
+
+. As the controller boots, check the controller LEDs to make sure communication with the other controller is reestablished:
+
+** The amber Attention LED remains on.
+** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
+
+. When the controller is back online, check whether an NVSRAM mismatch is reported in Recovery Guru. 
++
+If an NVSRAM mismatch is reported, upgrade NVSRAM using the following SMcli command. The `-k` parameter is needed if the array is not https secure.
++ 
+----
+SMcli <controller A IP> <controller B IP> -u admin -p <password> -k -c "download storageArray NVSRAM file=\"C:\Users\testuser\Downloads\NVSRAM .dlp file>\" forceDownload=TRUE;"
+----
+
++
+NOTE: If the SMcli command cannot be completed, contact https://www.netapp.com/company/contact-us/support/[NetApp Support^] or log in to the https://mysupport.netapp.com[NetApp Support Site^] to create a case. 
+
+. Confirm the status of the storage system is Optimal and that the controller's Attention LEDs are off.
++
+If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller is installed correctly. If necessary, remove and reinstall the controller.
++
+NOTE: If you cannot resolve the problem, contact https://www.netapp.com/company/contact-us/support/[NetApp Support^].

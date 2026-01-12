@@ -1,0 +1,165 @@
+
+== Step 1: Prepare to replace the drive
+
+Prepare for the drive replacement by making sure the drive has failed, confirming you have a supported replacement drive, making sure you have access to SANtricity System Manager, taking electrostatic discharge precautions when handling a drive, and physically locating the failed drive.
+
+.Steps
+
+. If the Recovery Guru in SANtricity System Manager has notified you of an _impending drive failure_, but the drive has not yet failed, follow the instructions in the Recovery Guru to fail the drive.
+. Make sure you have a replacement drive that is suitable for your storage system configuration.
++
+If needed, you can use SANtricity System Manager to confirm:
++
+.. Select *Hardware*.
+.. Select the failed drive on the graphic.
+.. Click the drive to display its context menu, and then select *View settings*.
+.. Confirm that the replacement drive has a capacity equal to or greater than the drive you are replacing and that it has the features you expect.
++
+For example, if you are replacing a secure-capable drive, make sure the replacement drive is also secure-capable.
++
+. Make sure you have a management station with a browser that can access SANtricity System Manager for either of the controllers.
++
+To open the System Manager interface, point the browser to one of the controller's domain name or IP address.
+
+. Prevent electrostatic discharge (ESD) during handling and installation of a drive:
+** Make sure you have an electrostatic discharge (ESD) wristband.
++
+Always wear an ESD wrist strap grounded to an unpainted surface on your storage system chassis. If a wrist strap is unavailable, touch an unpainted surface on your storage system chassis before handling the drive.
+** Keep the drive in the ESD bag until you are ready to install it.
+** Open the ESD bag by hand or cut the top off with a pair of scissors. Do not insert a metal tool or knife into the ESD bag.
+** Make sure you have a flat, static-free work surface.
+** Keep the ESD bag and any packing materials to return the failed drive or use approved packaging when shipping a drive.
+//** Always wear an ESD wrist strap grounded to an unpainted surface on your storage system chassis. If a wrist strap is unavailable, touch an unpainted surface on your storage system chassis before handling the drive.
+** Avoid magnetic fields. Keep drives away from magnetic devices.
++
+Magnetic fields can destroy all data on the drive and cause irreparable damage to the drive circuitry.
++
+. Avoid physical damage during handling and installation of a drive:
++
+CAUTION: Drives are fragile; improper drive handling is a leading cause of drive failure.
++
+** Always use two hands when removing, installing, or carrying a drive.
+** Never force a drive into a drive bay. Always use gentle, firm pressure to completely engage the drive latch.
+** Place drives on cushioned surfaces, and never stack drives on top of each other.
+** Do not bump drives against other surfaces.
+. If needed, you can physically locate the affected storage system by turning on its location (blue) LEDs (on the front of the storage system and both controllers). Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*.
+
+. If needed, you can physically locate the failed drive within your storage system by making its Attention (amber) LED blink. Using SANtricity System Manager, from the drive's context menu, select *Turn on locator light*.
++
+NOTE: You must remove the bezel from the front of the storage system to see the drive LEDs.
+
+== Step 2: Replace the drive
+
+Replace the failed drive with a new one.
+
+NOTE: You should install the replacement drive as soon as possible after removing the failed drive.
+
+.Steps
+
+. If not already removed, remove the bezel from the front of the storage system.
+
+. Remove the failed drive:
++
+NOTE: If you accidentally remove an active drive, wait at least 60 seconds, and then reinstall it. For the recovery procedure, refer to the storage management software.
++
+image::../media/drw_nvme_drive_replace_ieops-1904.svg[Remove NVMe drive]
++
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Press the black release button on the drive face to open the cam handle. 
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Rotate the cam handle downward to disengage the drive from the midplane. 
+a|
+image::../media/icon_round_3.png[Callout number 3]
+a|
+a. Partially slide the drive out of the drive bay using the cam handle.
+b. Wait 60 seconds for the drive to spin down.
+c. Using two hands, fully remove the drive from the drive bay.
+
+|===
+
+. Place the drive on an antistatic, cushioned surface away from magnetic fields.
+. Wait 60 seconds for the system software to recognize that the drive was removed.
+
+. Unpack the replacement drive, and set it on a flat, static-free surface near the storage system.
++
+Save the packing materials to use when returning the faulty drive.
+
+. Insert the replacement drive:
+.. Open the cam handle.
+.. Using two hands, insert the replacement drive into the open drive bay, firmly pushing until the drive stops.
+.. Close the cam handle so that the drive is fully seated into the midplane and the cam handle clicks into place.
++
+Be sure to close the cam handle slowly so that it aligns correctly with the face of the drive.
++
+The green LED on the drive illuminates when the drive is inserted correctly.
+
+
+== Step 3: Complete the drive replacement
+
+Confirm that the replacement drive is working correctly and make sure that drive reconstruction started.
+
+.Steps
+
+. Confirm the replacement drive is working correctly by checking the LED behavior, and if it is not, take the appropriate corrective action.
++
+NOTE: When you first insert a drive, its Attention LED might be on. However, the LED should go off within a minute if the replacement drive is working correctly.
++
+//. Check the Power LED and the Attention LED on the replacement drive. (When you first insert a drive, its Attention LED might be on. However, the LED should go off within a minute.)
+//** Power LED is on or blinking, and the Attention LED is off: Indicates that the new drive is working correctly.
+//** Power LED is off: Indicates that the drive might not be installed correctly. Remove the drive, wait 60 seconds, and then reinstall it.
+//** Attention LED is on: Indicates that the new drive might be defective. Replace it with another new drive.
++
+[options="header" cols="1,2"]
+
+|===
+|Replacement drive LED behavior...| Action to take...
+a|
+Power LED is on or blinking, and the Attention LED is off
+a|
+None. Go to the next step.
+
+The replacement drive is working correctly.
+a|
+Power LED is off
+a|
+. Remove the drive, wait 60 seconds, and then reinstall it.
++
+The drive might not be installed correctly.
+.  If the Recovery Guru in SANtricity System Manager still shows an issue, select *Recheck* to ensure the problem has been resolved.
+a|
+Attention LED is on
+a|
+. Replace the new drive with another new drive.
++
+The new drive might be defective.
+.  If the Recovery Guru in SANtricity System Manager still shows an issue, select *Recheck* to ensure the problem has been resolved.
+
+|===
+//. If the Recovery Guru in SANtricity System Manager still shows an issue, select *Recheck* to ensure the problem has been resolved.
+. If the Recovery Guru in SANtricity System Manager indicates that drive reconstruction did not start automatically, start reconstruction manually.
++
+NOTE: Depending on your configuration, the controller might automatically reconstruct data to the new drive. If the storage system uses hot spare drives, the controller might need to perform a complete reconstruction on the hot spare before it can copy the data to the replacement drive. This reconstruction process increases the time that is required to complete this procedure.
++
+NOTE: Perform the following manual reconstruction steps only when instructed to do so by NetApp Support or the Recovery Guru.
+
+ .. Select *Hardware*.
+ .. Click the drive that you replaced.
+ .. From the drive's context menu, select *Reconstruct*.
+ .. Confirm that you want to perform this operation.
++
+When the drive reconstruction completes, the volume group is in an Optimal state.
+
+. Reinstall the bezel.
+
+
+== Step 4: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
+
+

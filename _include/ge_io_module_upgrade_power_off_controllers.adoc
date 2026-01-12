@@ -1,0 +1,73 @@
+
+
+.Steps
+
+. From the home page of SANtricity System Manager, ensure that the storage system has Optimal status.
++
+NOTE: If the status is not Optimal, use the Recovery Guru or contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support^] to resolve the problem.
++
+//Controllers do not need to be removed since I/O modules are accessible with controllers in place; therefore, no need to backup the database, correct?
+//. Back up the storage system's configuration database using SANtricity System Manager.
+//+
+//If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
+//.. Select *Support > Support Center > Diagnostics*.
+//.. Select *Collect Configuration Data*.
+//.. Click *Collect*.
+//+
+//The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
+
+. Ensure that no I/O operations are occurring between the storage system and all connected hosts. 
++
+For example, you can perform these steps:
++
+** Stop all processes that involve the LUNs mapped from the storage system to the hosts.
+** Ensure that no applications are writing data to any LUNs mapped from the storage system to the hosts.
+** Unmount all file systems associated with volumes on the storage system.
++
+NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host or contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support^].
++
+CAUTION: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, the host application might lose access to the data because the storage is not accessible.
+
+. On each controller, make sure the NV Caching Active (green) LED is off.
++
+When the NV Caching Active (green) LED is off, any data in cache memory has been written to the drives and it is safe to remove the impaired controller.
++
+NOTE: If the NV Caching Active (green) LED is on, cached data is being written to the drives. You must wait for the process to complete and the NV Caching Active (green) LED to turn off. However, if the LED remains on for longer than five minutes, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
++
+The NV Caching Active (green) LED is located next to the NV icon on the controller.
++
+image::../media/drw_g_nvmem_led_ieops-1839.svg[NV status LED location]
++
+[cols="1,4"]
+
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+NV icon and NV Caching Active LED on the controller
+|===
++
+. Confirm operations on the controllers have completed:
+.. From the Home page of SANtricity System Manager, select *View Operations in Progress*. 
+.. Wait for all operations to complete before continuing with the next step.
+. Power off both controllers:
+.. Label and then unplug the power cable from both controllers.
+.. Wait for all LEDs on both controllers to turn off.
+
+//[[step2_remove_controller_canister]]
+//== Step 2: Remove controller - not needed for gE
+
+//Remove the controller from the chassis.
+
+//.Steps
+
+//. If you are not already grounded, properly ground yourself.
+//. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller, keeping track of where the cables were connected.
+//+
+//Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
+//. Remove and set aside the cable management devices from the left and right sides of the controller.
+//. Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller from the midplane, and then, using two hands, pull the controller out of the chassis.
+//. Turn the controller over and place it on a flat, stable surface.
+//. Open the cover by pressing the blue buttons on the sides of the controller to release the cover, and then rotate the cover up and off of the controller.
+//+
+//image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[Open controller cover.]

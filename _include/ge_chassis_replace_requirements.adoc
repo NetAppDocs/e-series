@@ -1,0 +1,17 @@
+Review the following requirements and considerations.
+
+== Requirements
+
+* The replacement chassis must be the same model as the impaired chassis. This procedure is for a like-for-like replacement, not for an upgrade.
+
+* All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+
+
+== Considerations
+
+* The chassis replacement procedure is disruptive. For a two-node cluster, you will have a complete service outage and a partial outage in a multi-node cluster.
+
+* You can use the chassis replacement procedure with all versions of ONTAP supported by your storage system.
+
+* The chassis replacement procedure is written with the assumption that you are moving the bezel, drives, any drive blanks, and controllers to the new chassis.
+

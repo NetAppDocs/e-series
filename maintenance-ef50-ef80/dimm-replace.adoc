@@ -1,0 +1,67 @@
+---
+permalink: maintenance-ef50-ef80/dimm-replace.html
+sidebar: sidebar
+keywords: ef50, ef80, replace a dimm
+summary: Replace a DIMM in your EF50 or EF80 storage system when it has failed, it is reporting it is not in an optimal state, or it has a mismatched capacity.
+---
+= Replace a DIMM - EF50 and EF80
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Replace a DIMM in your EF50 or EF80 storage system when it has failed, it is reporting it is not in an optimal state, or it has a mismatched capacity. 
+
+.About this task
+* The replacement process involves placing the impaired controller offline, removing the controller, replacing the DIMM, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
+
+* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*.
+
+
+== Step 1: Determine if you need to replace a DIMM
+
+You need to replace a DIMM when it has failed, it is reporting it is not in an optimal state, or it has a mismatched capacity.
+
+include::../_include/ge_dimm_replace_determine_if_needed.adoc[]
+
+
+== Step 2: Prepare to replace a DIMM
+
+Prepare to replace a DIMM by making sure the volumes are in the correct state, making sure there are no other storage system issues you need to address, gathering the necessary tools and equipment, and taking precautions to prevent electrostatic discharge.
+
+include::../_include/ge_dimm_replace_prepare.adoc[]
+
+
+== Step 3: Place the impaired controller offline
+ 
+Back up the storage system's configuration database and then place the impaired controller offline so you can safely replace a DIMM.
+ 
+include::../_include/ge_internal_frus_controller_offline.adoc[]
+
+
+== Step 4: Remove the controller
+
+Remove the controller with the faulty DIMM (the impaired controller) from the chassis.
+
+include::../_include/ge_controller_remove.adoc[]
+
+
+== Step 5: Replace a DIMM
+
+Locate the faulty DIMM inside the impaired controller and replace it.
+
+include::../_include/ge_dimm_replace.adoc[]
+
+
+== Step 6: Reinstall the controller
+
+include::../_include/ge_controller_reinstall.adoc[]
+
+
+== Step 7: Place the controller back online
+
+include::../_include/ge_internal_frus_controller_back_online.adoc[]
+
+
+== Step 8: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]

@@ -1,0 +1,24 @@
+---
+permalink: maintenance-ef50-ef80/controller-replace-complete-replacement.html
+sidebar: sidebar
+keywords: ef50, ef80, how to complete the controller replacement process
+summary: To complete the controller replacement for your EF50 or EF80 storage system, ensure storage system firmware is current, verify volumes are returned to their owners, collect system support data, and return the failed part to NetApp.
+---
+= Complete controller replacement - EF50 and EF80
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To complete the controller replacement for your EF50 or EF80 storage system, ensure storage system firmware is current, verify volumes are returned to their owners, collect system support data, and return the failed part to NetApp.
+
+== Step 1: Ensure system firmware version, verify ownership of volumes, and collect support data
+include::../_include/ge_controller_replace_complete_replacement.adoc[]
+
+== Step 2: Return the failed part to NetApp
+include::../_include/complete_rma.adoc[]
+
+.What's next?
+Your controller replacement is complete. You can resume normal operations.
+
+
+

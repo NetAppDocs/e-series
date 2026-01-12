@@ -1,0 +1,79 @@
+---
+permalink: maintenance-ef50-ef80/io-module-replace.html
+sidebar: sidebar
+keywords: ef50, ef80 replace io module, replace hic, replace host interface card
+summary: Replace a failed I/O module in your EF50 or EF80 storage system with the same type of I/O module to restore the storage system to its optimal operating state. 
+---
+= Replace an I/O module - EF50 and EF80
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Replace a failed I/O module in your EF50 or EF80 storage system with the same type of I/O module to restore the storage system to its optimal operating state. 
+
+
+.Before you begin
+
+// * Schedule a downtime maintenance window for this procedure. You cannot access data on the storage system until you have successfully completed this procedure. Because both controllers must have the same I/O module configuration when they are powered on, the power must be off when you replace an I/O module.
+
+* Make sure you have the following:
+** The replacement I/O module.
++
+Make sure that you are replacing the failed I/O module with the same type of I/O module. You cannot install a different type of I/O module. 
++
+You must have the same type and number of I/O modules in each controller in your storage system.
++
+CAUTION: *Possible loss of data access* -- The presence of incompatible or mismatched I/O modules causes the controllers to lock down when you apply power.
++
+** An ESD wristband, or you have taken other antistatic precautions.
+** A flat, static-free work surface.
+** Labels to identify each cable that is connected to the faulty I/O module.
+** A management station with a browser that can access SANtricity System Manager for the impaired controller.
++
+To open the System Manager interface, point the browser to the impaired controller's domain name or IP address.
+
+
+
+.About this task
+
+* The replacement process involves placing the impaired controller offline, replacing the failed I/O module, bringing the controller back online, and returning the failed part to NetApp.
+
+* The term _I/O module_ is used instead of host interface cards (HICs) in this procedure.
+
+* The impaired controller does not need to be removed from the chassis since I/O modules are accessible with the controller in place.
+
+* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*.
+
+
+== Step 1: Place the impaired controller offline
+
+Place the impaired controller offline so you can safely replace the failed I/O module.
+
+include::../_include/ge_io_module_replace_offline_impaired_controller.adoc[]
+
+
+== Step 2: Replace the I/O module
+
+Replace the failed I/O module with the replacement I/O module.
+
+include::../_include/ge_io_module_replace_replace_failed_module.adoc[]
+
+
+== Step 3: Place the controller back online
+
+Place the impaired controller back online using SANtricity System Manager or CLI commands.
+
+include::../_include/ge_io_module_replace_online_impaired_controller.adoc[]
+
+
+== Step 4: Complete the I/O module replacement
+
+Complete the I/O module replacement by verifying that all volumes have been returned to their preferred owners and collecting support data so that you can resume operations.
+
+include::../_include/ge_io_module_replace_complete.adoc[]
+
+
+== Step 5: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
+

@@ -1,0 +1,81 @@
+---
+permalink: maintenance-ef50-ef80/io-module-upgrade.html
+sidebar: sidebar
+keywords: ef50, ef80, upgrade io module, upgrade hic, upgrade host interface card
+summary: The upgrade procedure involves powering off both controllers, upgrading I/O modules in both controllers, powering on both controllers, and verifying that the upgrade was successful.
+---
+= Upgrade I/O modules - EF50 and EF80
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can upgrade one or more I/O modules in your EF50 or EF80 storage system to increase the number of host ports for enhanced network connectivity and expand your system’s ability to handle data traffic. 
+
+.Before you begin
+
+* Schedule a downtime maintenance window for this procedure. You cannot access data on the storage system until you have successfully completed this procedure. Because both controllers must have the same I/O module configuration when they are powered on, the power must be off when you upgrade I/O modules.
+ 
+* Make sure you have the following:
+** The new I/O modules that you are upgrading to.
++
+Make sure that the I/O modules you are upgrading to are supported by your storage system, that you have the same type and number of I/O modules for each controller, and that you understand the slot priority (the new I/O module must be installed in the same slot on each controller).
++
+CAUTION: *Possible loss of data access* -- The presence of incompatible or mismatched I/O modules causes the controllers to lock down when you apply power.
++
+If needed, you can confirm supported I/O modules and slot priority for your storage system at https://hwu.netapp.com[NetApp Hardware Universe^].
++
+** Cables to connect the new I/O modules to your network.
+** An ESD wristband, or you have taken other antistatic precautions.
+** A flat, static-free work surface.
+** A management station with a browser that can access SANtricity System Manager for the controllers.
++
+To open the System Manager interface, point the browser to the target controller's domain name or IP address.
+
+
+.About this task
+
+* The upgrade procedure involves powering off both controllers, upgrading I/O modules in both controllers, powering on both controllers, and verifying that the upgrade was successful.
+
+* Some I/O module upgrades might require a host port protocol conversion. Follow the instructions in the xref:io-module-change-protocol.html[Change host protocol for an EF50 or EF80] for this requirement.
+
+* The term _I/O module_ is used instead of host interface cards (HICs) in this procedure.
+
+* You can upgrade I/O modules by replacing existing I/O modules or adding I/O modules to unused I/O slots.
++
+Unused I/O slots should have blanking modules installed to prevent possible thermal issues and for EMC compliance.
+
+* Controllers do not need to be removed from the chassis since the I/O modules are accessible with the controllers in place.
+
+* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*.
+
+
+== Step 1: Power off both controllers
+
+Power off both controllers in the storage system so you can safely upgrade the I/O modules in both controllers.
+
+include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
+
+
+== Step 2: Upgrade the I/O modules
+
+Replace I/O modules or I/O module blanks with the new I/O modules in both controllers.
+
+include::../_include/ge_io_module_upgrade_install_additional_modules.adoc[]
+
+
+== Step 3: Power on both controllers
+
+Power on both controllers.
+
+include::../_include/ge_io_module_upgrade_power_on_controllers.adoc[]
+
+
+== Step 4: Complete the I/O module upgrade
+
+Complete the I/O upgrade by verifying that all volumes have been returned to their preferred owners and collecting support data so that you can resume operations.
+
+include::../_include/ge_io_module_upgrade_complete.adoc[]
+
+
+
+

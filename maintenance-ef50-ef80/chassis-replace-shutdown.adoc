@@ -1,0 +1,18 @@
+---
+permalink: maintenance-ef50-ef80/chassis-replace-shutdown.html
+sidebar: sidebar
+keywords: ef50, ef80, shutdown the controllers
+summary: Place the impaired controller offline in your EF50 or EF80 storage system to prevent data loss and ensure system stability when replacing the chassis.
+---
+= Shut down the controllers - EF50 and EF80
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Place the impaired controller offline in your EF50 or EF80 storage system to prevent data loss and ensure system stability when replacing the chassis.
+
+include::../_include/ge_shutdown_chassis.adoc[]
+
+.What's next?
+
+After you've shut down the controllers, you need to link:chassis-replace-move-hardware.html[replace the chassis].

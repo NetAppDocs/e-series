@@ -13,7 +13,7 @@ E-Series storage arrays are available in several configurations and models.
 
 A storage array includes shelves, controllers, drives, software, and firmware. The array can be installed in a rack or cabinet, with customizable hardware for one or two controllers, in a 12-, 24-, or 60-drive shelf. You can connect the storage array to a SAN from multiple interface types and to a variety of host operating systems.
 
-E-Series arrays are available in the following models:
+Some of the available E-Series array models are shown below. For a complete list of E-Series array models and their hardware specifications, see the NetApp Hardware Universe at https://hwu.netapp.com[NetApp Hardware Universe^].
 
 * E2800 series -- entry-level hybrid
 * EF280 series -- entry-level all flash

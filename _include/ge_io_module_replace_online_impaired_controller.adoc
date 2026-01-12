@@ -1,0 +1,28 @@
+
+
+.Steps
+
+. Place the impaired controller online using SANtricity System Manager or CLI commands.
+
+** Using SANtricity System Manager:
+.. Select *Hardware*.
+.. If the graphic shows the drives, select *Show back of shelf*.
+.. Select the controller you want to place online.
+.. Select *Place Online* from the context menu, and confirm that you want to perform the operation.
++
+The system places the controller online.
+
+** Using CLI commands:
++
+If the impaired controller is *controller A*: `set controller [a] availability=online`
++
+If the impaired controller is *controller B*: `set controller [b] availability=online`
+
+. When the controller is back online:
+.. Confirm its status is Optimal.
+.. Confirm that the Attention LED on the controller is off.
++
+If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated.
++
+NOTE: If you cannot resolve the problem, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support^].
+If needed, collect support data for your storage system using SANtricity System Manager.

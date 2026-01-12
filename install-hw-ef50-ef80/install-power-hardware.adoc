@@ -1,0 +1,45 @@
+---
+permalink: install-hw-ef50-ef80/install-power-hardware.html
+sidebar: sidebar
+keywords: ef50, ef80, connect power cables
+summary: After you cable the controller's mirroring and host network connections for your EF50 or EF80 storage system, you power on the controllers.
+---
+= Power on the hardware - EF50 and EF80
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After you cable the controller's mirroring and host network connections for your EF50 or EF80 storage system, you power on the controllers.
+
+.Before you begin
+Take anti-static precautions.
+
+.Steps
+
+. Plug a power cable into each controller power supply, and then connect them to power sources on different circuits.
++
+NOTE: If you are using third-party power distribution units (PDUs), do not use power outlets directly behind the controllers because you might block access to the controllers.
+// CAUTION: Accessing a EF300 or EF600 controller canister from the shelf can be blocked by third-party PDUs. Do not use power outlets directly behind the controller canister.
++
+*Power cables*
++
+image:../media/power_cable_inst-hw-ef600.png["Power cables"]
++
+image::../media/drw_psu_layout_1_ieops-1886.svg[storage system power connection diagram]
++
+* The system begins to boot. Initial booting might take up to eight minutes. 
++
+* The LEDs on the system chassis flash and the fans start, which indicates that the controllers are powering on.
++
+During start-up it is normal for the fans to be very loud.
+
+* The digital display on the front of the system chassis (behind the bezel) does not illuminate.
+
+. Secure the power cords using the securing device on each power supply.
+
+.What's next?
+After you've powered on your storage system, you link:install-complete-setup.html[complete storage system setup].
+
+
+
+
