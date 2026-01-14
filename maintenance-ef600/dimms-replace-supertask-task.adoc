@@ -61,6 +61,7 @@ The file is saved in the Downloads folder for your browser with the name, *confi
 
 . If the controller is not already offline, take it offline now using SANtricity System Manager.
  .. Select menu:Hardware[Controllers and components].
+ .. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
  .. Select the controller that you want to place offline.
  .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 +
@@ -167,7 +168,8 @@ Place the controller online, collect support data, and resume operations.
 .Steps
 
 . Place controller online.
- .. In SANtricity System Manager, select menu:Hardware[Controllers and components].
+ .. In System Manager, navigate to the Hardware page.
+ .. Select *Show back of controller*.
  .. Select the controller with the replaced DIMMs.
  .. Select *Place online* from the drop-down list.
 . As the controller boots, check the controller LEDs.

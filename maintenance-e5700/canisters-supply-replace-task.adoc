@@ -48,12 +48,13 @@ If a problem occurs during this procedure, you can use the saved file to trouble
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 
 . From SANtricity System Manager, determine which power supply has failed. You can find this information in the Details area of the Recovery Guru, or you can review the information displayed for the shelf.
- .. Select menu:Hardware[Controllers and components].
+ .. Select *Hardware*.
  .. Look at the power image:../media/sam1130_ss_hardware_power_icon_maint-e5700.gif["Power icon"] and fan image:../media/sam1130_ss_hardware_fan_icon_maint-e5700.gif["Fan icon"] icons to the right of the *Shelf* drop-down lists to determine which shelf has the failed power supply.
 +
 If a component has failed, either or both icons are red.
 
- .. When you find the shelf with a red icon, select either power supply.
+ .. When you find the shelf with a red icon, select *Show back of shelf*.
+ .. Select either power supply.
  .. On the *Power Supplies* and *Fans* tabs, look at the statuses of the power-fan canisters, the power supplies, and the fans to determine which power supply must be replaced.
 +
 A component with a *Failed* status must be replaced.

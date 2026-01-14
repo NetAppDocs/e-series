@@ -13,7 +13,7 @@ summary: New features in SANtricity OS.
 [.lead]
 The following table describes new features in the latest SANtricity OS releases for embedded management of E4000, EF300/EF300C, EF600/EF600C, E2800/EF280, and E5700/EF570 controllers.
 
-== New features in Version 12.0x
+== New features in Version 12.0
 
 [cols="35h,~",options="header"]
 |===
@@ -22,21 +22,8 @@ a|New storage system models – EF80 and EF50 all-flash storage systems
 a|This release introduces the EF80 and EF50 all-NVMe-flash storage systems. The EF80 and EF50 supports 24 NVME SSD drives and a single host interface card (HIC) per controller. The supported NVMe over Fabrics host interfaces include NVMe over RoCE, NVMe over IB for EF80, and NVMe over FC for EF50. The supported SCSI interfaces include Fibre Channel. 
 
 High-capacity NVMe SSD drives of 30TB or 60TB sizes are also supported with the EF80 and EF30. The EF80 and EF30 is compatible for Dynamic Disk Pool use only with no legacy RAID support.
-|===
-
-== New features in Version 12.0
-
-[cols="35h,~",options="header"]
-|===
-|New feature |Description
 a|New user interface for SANtricity System Manager
-a|The SANtricity System Manager user interfaces have been redesigned to provide a more modern look and feel. The new interface includes a left-panel navigation and enhanced usability to streamline management tasks.
-a|DULBE support for EF300C and EF600C storage systems
-a|EF300C and EF600C high-capacity flash storage systems now support the Deallocated or Unwritten Logical Block Error (DULBE) feature. This feature allows the storage system to support resource-provisioned volumes, which can improve SSD wear life and increase maximum write performance.
-a|Dynamic Disk Pools segment size now defaults to 32K for SSD and NVMe-based systems
-a|For Dynamic Disk Pools on SSD and NVMe-based systems, the default segment size has been changed to 32K. Previously, the dynamic disk pools default segment size was fixed at 128K for these systems. This change optimizes performance for workloads that involve a mix of small and large I/O operations.
-a|Subject Alternative Names (SANs) for Server certificate now only permits Letters, digits, and hyphen characters
-a|When creating or editing a Server certificate in SANtricity System Manager or Unified Manager, the Subject Alternative Names (SANs) field now only permits letters, digits, and hyphen characters. This change enhances security and ensures compatibility with industry standards for SSL/TLS certificates.
+a|For the new EF80 and EF50 controllers, the SANtricity System Manager user interface has been redesigned to provide a more modern look and feel. The new interface includes a left-panel navigation and enhanced usability to streamline management tasks.
 |===
 
 == New features in Version 11.90R4

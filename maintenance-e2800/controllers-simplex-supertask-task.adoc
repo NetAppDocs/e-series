@@ -85,7 +85,7 @@ CAUTION: *Possible data loss* -- If you continue this procedure while I/O operat
 +
 The green Cache Active LED on the back of the controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
 
-. From the home page of SANtricity System Manager, select menu:Storage[Operations in Progress].
+. From the home page of SANtricity System Manager, select *View Operations in Progress*.
 . Confirm that all operations have completed before continuing with the next step.
 . Turn off both power switches on the controller shelf.
 . Wait for all LEDs on the controller shelf to turn off.
@@ -392,7 +392,8 @@ The controller will reboot automatically.
 +
 
 . From SANtricity System Manager, confirm that the new controller is Optimal.
- .. Select menu:Hardware[Controllers and components] under the left panel
+ .. Select *Hardware*.
+ .. For the controller shelf, select *Show back of shelf*.
  .. Select the controller canister you replaced.
  .. Select *View settings*.
  .. Confirm that the controller's *Status* is Optimal.
