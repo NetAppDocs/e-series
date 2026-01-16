@@ -115,3 +115,58 @@ Use SANtricity System Manager to configure and manage your storage system.
 . Use SANtricity System Manager to manage your storage system. 
 +
 You can refer to the online help included with SANtricity System Manager.
+
+
+== Step 3: Check that the protocol on the host I/O modules is correct
+
+Your storage system ships with a default protocol on the host I/O modules. If the default protocol is not the protocol you want, you can change it.
+
+.Before You Begin
+
+.About this task
+
+.Steps
+
+. Check to see the default protocol being used by the type of host I/O modules on your storage system.
++
+Go to the Change the protocol procedure, section xyz to see the default protocols for the supported host I/O modules and the optional protocols you can choose from. Or you can see the same information in SANtricity System Manager.
++
+//See the table below for the default protocols for the different types of host I/O modules. Or go into SAM - same steps as to change it, but will see their default protocol in the change field. either way, still need to point to change protocol topic or repeat here. POINT.
++
+Link to the change protocol topic, table section or repeat the table here and in controller upgrade?
++
+[options="header" cols="1,2"]
+
+|===
+|If your storage system has host I/O module type...| Then these are the default and optional protocols...
+a|
+200 GbE IB 2-port CX7 
+
+(Mfg part no. 111-05683)
+a|
+Default: NVMe RoCE
+
+Optional: NVMe IB
+a|
+100 GbE RoCE 2-port CX7 
+
+(Mfg part no. 111-05682)
+a|
+Default: NVMe RoCE
+
+Optional: none
+a|
+64 Gb/s FC 4-port 
+
+(Mfg part no. 111-05342)
+a|
+Default: NVMe FC
+
+Optional: FCP
+a|
+
+|===
+
+. If the default protocol is not the protocol you want, change it using SANtricity System Manager.
+
+//link to the protocol topic. 
