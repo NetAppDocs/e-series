@@ -8,7 +8,7 @@ Whenever you take a controller offline, you need to wait at least one minute bef
 +
 If a problem occurs when you remove the impaired controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the impaired controller.
 +
-.. Select *Support* > *Support Center > Diagnostics*.
+.. Select *Support* > *Support Center* > *Diagnostics*.
 .. Select *Collect Configuration Data*.
 .. Click *Collect*.
 +
@@ -16,9 +16,9 @@ The file is saved in the Downloads folder for your browser with the name, *confi
 
 . If the controller is not already offline, take it offline using SANtricity System Manager:
 .. Select *Hardware*.
-.. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
+.. Select *Controllers and components* to show the controllers.
 .. Select the controller that you want to place offline.
-.. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
+.. Select *Place offline* from the context menu and confirm that you want to perform the operation.
 +
 NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
 

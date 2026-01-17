@@ -49,6 +49,7 @@ NV icon and NV Caching Active LED on the controller
 +
 . Confirm operations on the controllers have completed:
 .. From the Home page of SANtricity System Manager, select *View Operations in Progress*. 
+// Jan 16 I don't see "View operations in progress" as an option the click/choose. The Home page provides an Overview with an IOPS graph (as the default view). Is that the operations in process view...so nothing to click on? 
 .. Wait for all operations to complete before continuing with the next step.
 . Power off both controllers:
 .. Label and then unplug the power cable from both controllers.

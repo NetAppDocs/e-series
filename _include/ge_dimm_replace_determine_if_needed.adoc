@@ -12,4 +12,6 @@ If none of these conditions are present, you do not need to replace a DIMM. Exit
 ** A failed DIMM
 ** A DIMM reporting *Data Cache Module* as not optimal
 ** A DIMM with a mismatched *Data Cache Module* capacity
+
+//Jan 16: when tested in Sim, didn't see any "DIMM" text or listing. I also did a search and nothing came up. Only saw "caching module" references and in slot 3...Is that a DIMM?
  

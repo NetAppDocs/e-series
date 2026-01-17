@@ -10,9 +10,8 @@ Prepare for the drive replacement by making sure the drive has failed, confirmin
 +
 If needed, you can use SANtricity System Manager to confirm:
 +
-.. Select *Hardware*.
-.. Select the failed drive on the graphic.
-.. Click the drive to display its context menu, and then select *View settings*.
+.. Select *Hardware* > *Drives*.
+.. Click the failed drive on the graphic to display its context menu, and then select *View settings*.
 .. Confirm that the replacement drive has a capacity equal to or greater than the drive you are replacing and that it has the features you expect.
 +
 For example, if you are replacing a secure-capable drive, make sure the replacement drive is also secure-capable.
@@ -42,9 +41,9 @@ CAUTION: Drives are fragile; improper drive handling is a leading cause of drive
 ** Never force a drive into a drive bay. Always use gentle, firm pressure to completely engage the drive latch.
 ** Place drives on cushioned surfaces, and never stack drives on top of each other.
 ** Do not bump drives against other surfaces.
-. If needed, you can physically locate the affected storage system by turning on its location (blue) LEDs (on the front of the storage system and both controllers). Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*.
+. You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, click the *Controller shelf* tab, and from the drop-down menu select *Turn on locator light*.
 
-. If needed, you can physically locate the failed drive within your storage system by making its Attention (amber) LED blink. Using SANtricity System Manager, from the drive's context menu, select *Turn on locator light*.
+. If needed, you can physically locate the failed drive within your storage system by making its Attention (amber) LED blink. Using SANtricity System Manager, select *Hardware* > *Drives*, click the failed drive on the graphic to display its context menu, and then select *Turn on locator light*.
 +
 NOTE: You must remove the bezel from the front of the storage system to see the drive LEDs.
 
@@ -149,8 +148,7 @@ NOTE: Depending on your configuration, the controller might automatically recons
 NOTE: Perform the following manual reconstruction steps only when instructed to do so by NetApp Support or the Recovery Guru.
 
  .. Select *Hardware*.
- .. Click the drive that you replaced.
- .. From the drive's context menu, select *Reconstruct*.
+ .. Click the replacement drive on the graphic to display its context menu, and then select *Reconstruct*.
  .. Confirm that you want to perform this operation.
 +
 When the drive reconstruction completes, the volume group is in an Optimal state.

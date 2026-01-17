@@ -27,7 +27,7 @@ To open the System Manager interface, point the browser to the impaired controll
 
 * The replacement process involves placing the impaired controller offline, removing the controller, replacing the RTC battery, reinstalling the controller, placing the controller back online, resetting the time and date on the controller, and then returning the failed part to NetApp.
 
-* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*.
+* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, click the *Controller shelf* tab, and from the drop-down menu select *Turn on locator light*.
 
 == Step 1: Place the impaired controller offline
  
