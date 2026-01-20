@@ -5,10 +5,9 @@
 . Place the impaired controller online using SANtricity System Manager or CLI commands.
 
 ** Using SANtricity System Manager:
-.. Select *Hardware*.
-.. If the graphic shows the drives, select *Show back of shelf*.
-.. Select the controller you want to place online.
-.. Select *Place Online* from the context menu, and confirm that you want to perform the operation.
+.. Select *Hardware* > *Controllers and components* to show the controllers.
+.. Click on the controller that you want to place online to display its content menu.
+.. Select *Place online*, and then confirm that you want to perform the operation.
 +
 The system places the controller online.
 
@@ -18,11 +17,17 @@ If the impaired controller is *controller A*: `set controller [a] availability=o
 +
 If the impaired controller is *controller B*: `set controller [b] availability=online`
 
+. As the controller boots, check the controller LEDs.
++
+When communication with the other controller is reestablished:
+
+** The amber Attention LED remains on.
+** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
+
 . When the controller is back online:
 .. Confirm its status is Optimal.
 .. Confirm that the Attention LED on the controller is off.
 +
-If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated.
+If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller is installed correctly. If necessary, remove and reinstall the controller.
 +
-NOTE: If you cannot resolve the problem, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support^].
-If needed, collect support data for your storage system using SANtricity System Manager.
+NOTE: If you cannot resolve the problem, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support^] before continuing with this procedure. If needed, collect support data for your storage system using SANtricity System Manager.
