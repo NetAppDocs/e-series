@@ -73,7 +73,8 @@ The file is saved in the Downloads folder for your browser with the name, *suppo
 . If the controller is not already offline, take it offline now using SANtricity System Manager.
 
  * From SANtricity System Manager:
-  .. Select menu:Hardware[Controllers and components].
+  .. Select *Hardware*.
+  .. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
   .. Select the controller that you want to place offline.
   .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 +
@@ -136,7 +137,7 @@ CAUTION: *Possible data loss* -- If you continue this procedure while I/O operat
 +
 The green Cache Active LED on the back of the controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
 
-. From the left panel of SANtricity System Manager, select menu:Storage[Operations in Progress]. 
+. From the home page of SANtricity System Manager, select *View Operations in Progress*.
 . Confirm that all operations have completed before continuing with the next step.
 . Turn off both power switches on the controller shelf.
 . Wait for all LEDs on the controller shelf to turn off.
@@ -293,7 +294,8 @@ image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif[E2800 controller LEDs"
 
 . Bring the controller online using SANtricity System Manager.
  * From SANtricity System Manager:
-  .. Select menu:Hardware[Controllers and components].
+  .. Select *Hardware*.
+  .. If the graphic shows the drives, select *Show back of shelf*.
   .. Select the controller you want to place online.
   .. Select *Place Online* from the context menu, and confirm that you want to perform the operation.
 +

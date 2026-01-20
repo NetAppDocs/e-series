@@ -89,7 +89,7 @@ CAUTION: *Possible data loss* -- If you continue this procedure while I/O operat
 +
 The green Cache Active LED on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
 
-. From the left panel of SANtricity System Manager, select menu:Storage[Operations in Progress].
+. From the Home page of SANtricity System Manager, select *View Operations in Progress*.
 . Wait for all operations to complete before continuing with the next step.
 . Power off the shelves, using one of the following procedures:
 +

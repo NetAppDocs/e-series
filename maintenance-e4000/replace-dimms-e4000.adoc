@@ -109,7 +109,8 @@ If a problem occurs when you remove a controller, you can use the saved file to 
 The file is saved in the Downloads folder for your browser with the name, *configurationData-
 <arrayName>-<dateTime>.7z*.
 . If the controller is not already offline, take it offline now using SANtricity System Manager.
-.. Select menu:Hardware[Controllers and components]
+.. Select *Hardware*.
+.. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
 .. Select the controller that you want to place offline.
 .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 +
@@ -250,9 +251,9 @@ When communication with the other controller is reestablished:
 If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller canister is installed correctly. If necessary, remove and reinstall the controller canister.
 NOTE: If you cannot resolve the problem, contact technical support.
 . Verify that all volumes have been returned to the preferred owner.
-.. Select *Storage › Volumes*. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select *ellipse icon › Change ownership* to view volume owners.
+.. Select *Storage › Volumes*. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select *More › Change ownership* to view volume owners.
 .. If volumes are all owned by preferred owner continue to Step 6.
-.. If none of the volumes are returned, you must manually return the volumes. Go to *ellipse icon › Redistribute volumes*.
+.. If none of the volumes are returned, you must manually return the volumes. Go to *More › Redistribute volumes*.
 .. If there is no Recovery Guru present or if following the Recovery Guru steps the volumes are still not returned to their preferred owners contact support.
 . Collect support data for your storage array using SANtricity System Manager.
 .. Select *Support › Support Center › Diagnostics*.
