@@ -23,21 +23,21 @@ If the status is not Optimal or if any of the Attention LEDs are on, confirm tha
 +
 NOTE: If you cannot resolve the problem, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support^] before continuing with this procedure. If needed, collect support data for your storage system using SANtricity System Manager.
 
-. Click *Support* > *Upgrade Center* to ensure that the latest version of SANtricity OS is installed.
-+
-As needed, install the latest version.
+//. Ensure that the latest version of SANtricity OS is installed using SANtricity System Manager: 
+//.. Select *Support* > *Upgrade Center*
+//..  As needed, install the latest version.
 
-. Verify that all volumes are returned to their preferred owner.
-.. Select *Storage* > *Volumes*. 
-.. From the *All Volumes* page, verify that volumes are returned to their preferred owner. Select *More* > *Change volume ownership* to view volume owners.
+//. Verify that all volumes are returned to their preferred owner.
+//.. Select *Storage* > *Volumes*. 
+//.. From the *All Volumes* page, verify that volumes are returned to their preferred owner. Select *More* > *Change volume ownership* to view volume owners.
 // Above step is confusing. I think it should read, "Select More>change volume ownership to view volume owners and verify that volumes are returned to their preferred owner."
-.. If volumes are all owned by their preferred owner, continue to the next step.
-.. If none of the volumes are returned, you must manually return the volumes. Go to *More* > *Redistribute volumes*.
-.. If there is no Recovery Guru present or if following the Recovery Guru steps the volumes are still not returned to their preferred owner, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+//.. If volumes are all owned by their preferred owner, continue to the next step.
+//.. If none of the volumes are returned, you must manually return the volumes. Go to *More* > *Redistribute volumes*.
+//.. If there is no Recovery Guru present or if following the Recovery Guru steps the volumes are still not returned to their preferred owner, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
-. Collect support data for your storage system using SANtricity System Manager.
-.. Select *Support* > *Support Center > Diagnostics*.
-.. Select *Collect Support Data*.
-.. Click *Collect*.
-+
-The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+//. Collect support data for your storage system using SANtricity System Manager.
+//.. Select *Support* > *Support Center > Diagnostics*.
+//.. Select *Collect Support Data*.
+//.. Click *Collect*.
+//+
+//The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.

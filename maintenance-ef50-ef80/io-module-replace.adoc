@@ -78,7 +78,7 @@ include::../_include/ge_io_module_replace_online_impaired_controller.adoc[]
 
 == Step 4: Complete the I/O module replacement
 
-Complete the I/O module replacement by verifying that all volumes have been returned to their preferred owners and collecting support data so that you can resume operations.
+Using SANtricity System Manager, ensure the latest version of SANtricity OS is installed, verify that all volumes are returned to their preferred owners and collect support data so that you can resume operations.
 
 include::../_include/ge_io_module_replace_complete.adoc[]
 
