@@ -33,7 +33,7 @@ Optionally, you can use the command line interface (CLI) to perform some of the 
 
 * Back up the storage system's configuration database using SANtricity System Manager.
 +
-If a problem occurs when you remove the impaired controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the impaired controller.
+If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the impaired controller.
 +
 .. Select *Support* > *Support Center* > *Diagnostics*.
 .. Select *Collect Configuration Data*.

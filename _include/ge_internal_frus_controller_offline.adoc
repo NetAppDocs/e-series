@@ -14,7 +14,7 @@ Whenever you take a controller offline, you need to wait at least one minute bef
 //+
 //The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
-. If the controller is not already offline, take it offline using SANtricity System Manager:
+. If the impaired controller is not already offline, take it offline using SANtricity System Manager:
 .. Select *Hardware* > *Controllers and components* to show the controllers.
 .. Click on the controller that you want to take offline to display its content menu.
 .. Select *Place offline*, and then confirm that you want to perform the operation.
