@@ -1,9 +1,9 @@
 
 .Steps
 
-. Ensure that the firmware and NVSRAM versions on the storage system are at the desired levels:
-.. Select *Support* > *Upgrade Center*.
-.. Install the latest version, if needed.
+. Ensure that the latest version of SANtricity OS is installed using SANtricity System Manager: 
+.. Select *Support* > *Upgrade Center*
+..  As needed, install the latest version.
 
 . Verify that all volumes are returned to their preferred owners:
 .. Select *Storage* > *Volumes*. 

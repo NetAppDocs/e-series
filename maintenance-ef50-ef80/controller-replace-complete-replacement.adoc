@@ -11,9 +11,9 @@ summary: To complete the controller replacement for your EF50 or EF80 storage sy
 [.lead]
 To complete the controller replacement for your EF50 or EF80 storage system, verify storage system firmware is current, verify volumes are returned to their owners, collect system support data, and return the failed part to NetApp.
 
-== Step 1: Verify system firmware version, volume ownership, and collect support data
+== Step 1: Ensure latest version of SANtricity OS, verify volume ownership, and collect support data
 
-Use SANtricity System Manager to verify the version of storage system firmware, verify that all volumes are returned to their owners, and collect system support data.
+Using SANtricity System Manager, ensure the latest version of SANtricity OS is installed, verify that all volumes are returned to their preferred owners and collect support data so that you can resume operations.
 
 include::../_include/ge_controller_replace_complete_replacement.adoc[]
 
