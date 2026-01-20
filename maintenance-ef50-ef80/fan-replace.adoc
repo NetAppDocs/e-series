@@ -42,7 +42,7 @@ The file is saved in the Downloads folder for your browser with the name, *confi
 
 * You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, click the *Controller shelf* tab, and from the drop-down menu select *Turn on locator light*.
 
-== Step 1: Place the impaired controller offline
+== Step 1: Place the controller offline
  
 Place the impaired controller offline so you can safely replace a faulty fan.
  
@@ -51,14 +51,14 @@ include::../_include/ge_internal_frus_controller_offline.adoc[]
 
 == Step 2: Remove the controller
 
-Remove the controller with the faulty fan from the chassis.
+Remove the impaired controller from the chassis.
 
 include::../_include/ge_controller_remove.adoc[]
 
 
 == Step 3: Replace a fan
 
-Locate the faulty fan inside the controller and replace it.
+Locate the faulty fan inside the impaired controller and replace it.
 
 include::../_include/ge_fan_replace.adoc[]
 

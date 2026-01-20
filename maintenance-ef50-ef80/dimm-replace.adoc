@@ -31,16 +31,16 @@ Prepare to replace a DIMM by making sure the volumes are in the correct state, m
 include::../_include/ge_dimm_replace_prepare.adoc[]
 
 
-== Step 3: Place the impaired controller offline
+== Step 3: Place the controller offline
  
-Place the impaired controller offline so you can safely replace a DIMM.
+Place the impaired controller offline so you can safely replace a faulty DIMM.
  
 include::../_include/ge_internal_frus_controller_offline.adoc[]
 
 
 == Step 4: Remove the controller
 
-Remove the controller with the faulty DIMM (the impaired controller) from the chassis.
+Remove the impaired controller from the chassis.
 
 include::../_include/ge_controller_remove.adoc[]
 

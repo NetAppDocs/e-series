@@ -9,7 +9,7 @@ summary: To complete the controller replacement for your EF50 or EF80 storage sy
 :imagesdir: ../media/
 
 [.lead]
-To complete the controller replacement for your EF50 or EF80 storage system, verify storage system firmware is current, verify volumes are returned to their owners, collect system support data, and return the failed part to NetApp.
+To complete the controller replacement for your EF50 or EF80 storage system, ensure the latest version of SANtricity OS is installed, verify volumes are returned to their owners, collect system support data, and return the failed part to NetApp.
 
 == Step 1: Ensure latest version of SANtricity OS, verify volume ownership, and collect support data
 
