@@ -25,8 +25,18 @@ Replace a fan module in your EF50 or EF80 storage system when a fan fails or is 
 +
 To open the System Manager interface, point the browser to the impaired controller's domain name or IP address.
 
+* Back up the storage system's configuration database using SANtricity System Manager.
++
+If a problem occurs when you remove the impaired controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the impaired controller.
++
+.. Select *Support* > *Support Center* > *Diagnostics*.
+.. Select *Collect Configuration Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
+
 .About this task
-* The replacement process involves placing the impaired controller offline, removing the controller, replacing the fan, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
+* The replacement process involves meeting the Before you begin requirements, placing the impaired controller offline, removing the controller, replacing the fan, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
 
 * Each controller includes five fans. If a fan fails, you must replace it as soon as possible to ensure that the controller has adequate cooling.
 
@@ -34,7 +44,7 @@ To open the System Manager interface, point the browser to the impaired controll
 
 == Step 1: Place the impaired controller offline
  
-Back up the storage system's configuration database, and then place the impaired controller offline so you can safely replace a faulty fan.
+Place the impaired controller offline so you can safely replace a faulty fan.
  
 include::../_include/ge_internal_frus_controller_offline.adoc[]
  

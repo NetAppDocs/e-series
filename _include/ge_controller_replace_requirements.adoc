@@ -5,14 +5,14 @@
 ** The Recovery Guru in SANtricity System Manager directed you to replace the controller.
 ** The amber Attention LED on the controller is on, indicating that the controller has a fault.
 
-NOTE: When the boot media device fails, you must replace the controller.
+//NOTE: When the boot media device fails, you must replace the controller.
 
 * You must verify that the following conditions of your storage system are true. 
 +
 This ensures that you can replace the impaired controller while your storage system is powered on and performing host I/O operations.
 +
 ** The second controller in the chassis has Optimal status.
-** The *OK to remove* field in the Details area of the Recovery Guru in SANtricity System Manager displays *Yes*, indicating that it is safe to remove this component.
+** The *OK to remove* field in the Details area of the Recovery Guru in SANtricity System Manager displays *Yes*, indicating that it is safe to remove the impaired controller.
 
 * You must have the following:
 ** A replacement controller with the same part number as the controller you are replacing.
@@ -23,4 +23,4 @@ This ensures that you can replace the impaired controller while your storage sys
 +
 You can open the System Manager interface by pointing the browser to the controller’s domain name or IP address.
 +
-Optionally, you can use the command line interface (CLI) to perform some of the procedures. Download the CLI package (zip file) from System Manager. To do so, go to *Settings > System > Add-ons > Command Line Interface* in System Manager. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
+Optionally, you can use the command line interface (CLI) to perform some of the procedures. Download the CLI package (zip file) using SANtricity System Manager: *Settings* > *System* > *Add-ons* and select  *Command Line Interface*. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.

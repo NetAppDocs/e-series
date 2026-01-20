@@ -32,11 +32,21 @@ CAUTION: *Possible loss of data access* -- The presence of incompatible or misma
 +
 To open the System Manager interface, point the browser to the impaired controller's domain name or IP address.
 
+* Back up the storage system's configuration database using SANtricity System Manager.
++
+If a problem occurs when you remove the impaired controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the impaired controller.
++
+.. Select *Support* > *Support Center* > *Diagnostics*.
+.. Select *Collect Configuration Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
+
 
 
 .About this task
 
-* The replacement process involves placing the impaired controller offline, replacing the failed I/O module, bringing the controller back online, and returning the failed part to NetApp.
+* The replacement process involves meeting the Before you begin requirements, placing the impaired controller offline, replacing the failed I/O module, bringing the controller back online, and returning the failed part to NetApp.
 
 * The term _I/O module_ is used instead of host interface cards (HICs) in this procedure.
 

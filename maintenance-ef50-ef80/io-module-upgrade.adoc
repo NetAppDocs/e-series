@@ -31,10 +31,20 @@ If needed, you can confirm supported I/O modules and slot priority for your stor
 +
 To open the System Manager interface, point the browser to the target controller's domain name or IP address.
 
+* Back up the storage system's configuration database using SANtricity System Manager.
++
+If a problem occurs when you remove the impaired controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the impaired controller.
++
+.. Select *Support* > *Support Center* > *Diagnostics*.
+.. Select *Collect Configuration Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
+
 
 .About this task
 
-* The upgrade procedure involves powering off both controllers, upgrading I/O modules in both controllers, powering on both controllers, and verifying that the upgrade was successful.
+* The upgrade procedure involves meeting the Before you begin requirements, powering off both controllers, upgrading I/O modules in both controllers, powering on both controllers, and verifying that the upgrade was successful.
 
 * Some I/O module upgrades might require a host port protocol conversion. Follow the instructions in the xref:io-module-change-protocol.html[Change host protocol for an EF50 or EF80] for this requirement.
 

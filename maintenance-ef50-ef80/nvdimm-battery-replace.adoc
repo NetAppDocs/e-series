@@ -31,15 +31,25 @@ To open the System Manager interface, point the browser to the impaired controll
 +
 Optionally, you can use the command line interface (CLI) to perform some of the steps. To access the CLI, download the CLI package (zip file) from System Manager and then go to *Settings System > Add-ons > Command Line Interface*. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
 
+* Back up the storage system's configuration database using SANtricity System Manager.
++
+If a problem occurs when you remove the impaired controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the impaired controller.
++
+.. Select *Support* > *Support Center* > *Diagnostics*.
+.. Select *Collect Configuration Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
+
 .About this task
 
-* The replacement process involves placing the impaired controller offline, removing the controller, replacing the NV battery, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
+* The replacement process involves meeting the Before you begin requirements, placing the impaired controller offline, removing the controller, replacing the NV battery, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
 
 * You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, click the *Controller shelf* tab, and from the drop-down menu select *Turn on locator light*.
 
 == Step 1: Place the impaired controller offline
  
-Back up the storage system's configuration database and then place the impaired controller offline so you can safely replace a NV battery.
+Place the impaired controller offline so you can safely replace a NV battery.
  
 include::../_include/ge_internal_frus_controller_offline.adoc[]
 
