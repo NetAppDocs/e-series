@@ -31,29 +31,39 @@ To open the System Manager interface, point the browser to the impaired controll
 +
 Optionally, you can use the command line interface (CLI) to perform some of the steps. To access the CLI, download the CLI package (zip file) from System Manager and then go to *Settings System > Add-ons > Command Line Interface*. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
 
+* Back up the storage system's configuration database using SANtricity System Manager.
++
+If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the impaired controller.
++
+.. Select *Support* > *Support Center* > *Diagnostics*.
+.. Select *Collect Configuration Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
+
 .About this task
 
-* The replacement process involves placing the impaired controller offline, removing the controller, replacing the NV battery, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
+* The replacement process involves meeting the Before you begin requirements, placing the impaired controller offline, removing the controller, replacing the NV battery, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
 
-* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*.
+* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, click the *Controller shelf* tab, and from the drop-down menu select *Turn on locator light*.
 
-== Step 1: Place the impaired controller offline
+== Step 1: Place the controller offline
  
-Back up the storage system's configuration database and then place the impaired controller offline so you can safely replace a NV battery.
+Place the impaired controller offline so you can safely replace the NV battery.
  
 include::../_include/ge_internal_frus_controller_offline.adoc[]
 
 
 == Step 2: Remove the controller
 
-Remove the controller with the faulty NV battery from the chassis.
+Remove the impaired controller from the chassis.
 
 include::../_include/ge_controller_remove.adoc[]
 
 
 == Step 3: Replace the NV battery
 
-Locate the faulty NV battery inside the controller and replace it.
+Locate the faulty NV battery inside the impaired controller and replace it.
 
 include::../_include/ge_nvdimm_battery_replace.adoc[]
 
@@ -63,12 +73,19 @@ include::../_include/ge_nvdimm_battery_replace.adoc[]
 include::../_include/ge_controller_reinstall.adoc[]
 
 
-== Step 5: Place the controller back online
+== Step 5: Place the controller online
 
 include::../_include/ge_internal_frus_controller_back_online.adoc[]
 
 
-== Step 6: Return the failed part to NetApp
+== Step 6: Complete the NV battery replacement
+
+Using SANtricity System Manager, ensure the latest version of SANtricity OS is installed, verify that all volumes are returned to their preferred owners and collect support data so that you can resume operations.
+
+include::../_include/ge_io_module_upgrade_complete.adoc[]
+
+
+== Step 7: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
 

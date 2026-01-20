@@ -32,20 +32,30 @@ CAUTION: *Possible loss of data access* -- The presence of incompatible or misma
 +
 To open the System Manager interface, point the browser to the impaired controller's domain name or IP address.
 
+* Back up the storage system's configuration database using SANtricity System Manager.
++
+If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the impaired controller.
++
+.. Select *Support* > *Support Center* > *Diagnostics*.
+.. Select *Collect Configuration Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
+
 
 
 .About this task
 
-* The replacement process involves placing the impaired controller offline, replacing the failed I/O module, bringing the controller back online, and returning the failed part to NetApp.
+* The replacement process involves meeting the Before you begin requirements, placing the impaired controller offline, replacing the failed I/O module, bringing the controller back online, and returning the failed part to NetApp.
 
 * The term _I/O module_ is used instead of host interface cards (HICs) in this procedure.
 
 * The impaired controller does not need to be removed from the chassis since I/O modules are accessible with the controller in place.
 
-* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*.
+* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, click the *Controller shelf* tab, and from the drop-down menu select *Turn on locator light*.
 
 
-== Step 1: Place the impaired controller offline
+== Step 1: Place the controller offline
 
 Place the impaired controller offline so you can safely replace the failed I/O module.
 
@@ -59,7 +69,7 @@ Replace the failed I/O module with the replacement I/O module.
 include::../_include/ge_io_module_replace_replace_failed_module.adoc[]
 
 
-== Step 3: Place the controller back online
+== Step 3: Place the controller online
 
 Place the impaired controller back online using SANtricity System Manager or CLI commands.
 
@@ -68,7 +78,7 @@ include::../_include/ge_io_module_replace_online_impaired_controller.adoc[]
 
 == Step 4: Complete the I/O module replacement
 
-Complete the I/O module replacement by verifying that all volumes have been returned to their preferred owners and collecting support data so that you can resume operations.
+Using SANtricity System Manager, ensure the latest version of SANtricity OS is installed, verify that all volumes are returned to their preferred owners and collect support data so that you can resume operations.
 
 include::../_include/ge_io_module_replace_complete.adoc[]
 

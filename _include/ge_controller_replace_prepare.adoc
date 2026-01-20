@@ -13,7 +13,7 @@ CAUTION: *Possible loss of data access*: If the two part numbers are not the s
 +
 If you need to find this number manually, follow these steps:
 +
-... Select *Hardware*.
+... Select *Hardware* > *Controllers and components*.
 ... Locate the controller, which is marked with the controller icon.
 ... Click the controller icon.
 ... Select the controller, and click *Next*.

@@ -23,10 +23,9 @@ a|
 |===
 
 . Place the controller online using SANtricity System Manager.
-.. Navigate to the Hardware page.
-.. Select *Show back of controller*.
-.. Select the replaced controller.
-.. Select *Place online* from the drop-down list.
+.. Select *Hardware* > *Controllers and components* to show the controllers.
+.. Click on the controller that you replaced to display its content menu.
+.. Select *Place online*.
 
 . As the controller boots, check the controller LEDs to make sure communication with the other controller is reestablished:
 

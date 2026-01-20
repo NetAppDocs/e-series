@@ -10,18 +10,17 @@ summary: You can change the host port protocol on I/O modules using either Infin
 :imagesdir: ../media/
 
 [.lead]
-You can change the host port protocol on I/O modules using either Infiniband (IB) or Fibre Channel (FC) in an EF50 or EF80 storage system.
+// You can change the host port protocol on I/O modules using either Infiniband (IB) or Fibre Channel (FC) in an EF50 or EF80 storage system.
 
-// Include list of use cases. Now they are in the About this task section.
+You can change the protocol on I/O modules used for host connectivity when you need to use a different protocol on your existing I/O modules, as part of an I/O module upgrade or when the default protocol on new controllers part of a new storage system installation or controller upgrade on an existing storage system is not the protocol you want.
+
+// BUT I'm not addressing all these use cases here, only the change on existing modules? For the other 3 use cases, I need to embed steps in the right place for each procedure and each version of steps would mostly be unique per the use case? I need to understand if I got the uses cases right. TK seemed to think upgrading a module had nothing to do with changing the protocol, but customer would upgrade 
 
 .Before you begin
 
 * You have scheduled a downtime maintenance window for this procedure.
-* You must stop host I/O operations when you perform a protocol change. You cannot access data on the storage system until you have successfully completed the a protocol change.
-* You are using out-of-band management. (You cannot use in-band management to complete this procedure.)
+* You must stop host I/O operations when you perform a protocol change. You cannot access data on the storage system until you have successfully completed the protocol change.
 * You have obtained the necessary hardware for the conversion, which might include a new set of I/O modules and/or SFPs. Your NetApp Sales Representative can help you determine what hardware you need and help you order the correct parts.
-* The dual-protocol SFP transceivers support 16Gb and 8Gb FC, as well as 10Gb iSCSI. Therefore, you may not need to change SFPs if you have the dual-protocol and are simply switching between FC and iSCSI or vice versa.
-* Some host port protocol conversions might require a host interface card addition or upgrade.
 
 .About this task
 
@@ -60,8 +59,10 @@ The green Cache Active LED on the back of each controller is on when cached data
 
 == Step 2: Change the protocol
 
-Change the protocol of the host ports to either Infiniband (IB) or Fibre Channel (FC).
+Change the protocol of the host ports to a supported protocol.
 
+//Need to create includes
+//syntax example:
 // include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
 
 .Steps
@@ -70,6 +71,8 @@ Change the protocol of the host ports to either Infiniband (IB) or Fibre Channel
 .. Select *Settings* > *System*.
 .. Scroll down the page to the "Additional Settings" section and click "Change host I/O protocol".
 .. Choose the host I/O protocol you want from the drop down menu.
++
+The host protocol field shows you the protocol currently on the host I/O modules in your storage system and the drop down menu lists the supported protocol options to choose from.
 .. Type "CHANGE" to confirm your choice.
 .. Click the Change button.
 

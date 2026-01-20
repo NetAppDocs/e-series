@@ -31,10 +31,20 @@ If needed, you can confirm supported I/O modules and slot priority for your stor
 +
 To open the System Manager interface, point the browser to the target controller's domain name or IP address.
 
+* Back up the storage system's configuration database using SANtricity System Manager.
++
+If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the impaired controller.
++
+.. Select *Support* > *Support Center* > *Diagnostics*.
+.. Select *Collect Configuration Data*.
+.. Click *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
+
 
 .About this task
 
-* The upgrade procedure involves powering off both controllers, upgrading I/O modules in both controllers, powering on both controllers, and verifying that the upgrade was successful.
+* The upgrade procedure involves meeting the Before you begin requirements, powering off both controllers, upgrading I/O modules in both controllers, powering on both controllers, and verifying that the upgrade was successful.
 
 * Some I/O module upgrades might require a host port protocol conversion. Follow the instructions in the xref:io-module-change-protocol.html[Change host protocol for an EF50 or EF80] for this requirement.
 
@@ -46,7 +56,7 @@ Unused I/O slots should have blanking modules installed to prevent possible ther
 
 * Controllers do not need to be removed from the chassis since the I/O modules are accessible with the controllers in place.
 
-* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware*, click the *Controller shelf* tab, and from the menu select *Turn on location light*.
+* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, click the *Controller shelf* tab, and from the drop-down menu select *Turn on locator light*.
 
 
 == Step 1: Power off both controllers
@@ -72,7 +82,7 @@ include::../_include/ge_io_module_upgrade_power_on_controllers.adoc[]
 
 == Step 4: Complete the I/O module upgrade
 
-Complete the I/O upgrade by verifying that all volumes have been returned to their preferred owners and collecting support data so that you can resume operations.
+Using SANtricity System Manager, ensure the latest version of SANtricity OS is installed, verify that all volumes are returned to their preferred owners and collect support data so that you can resume operations.
 
 include::../_include/ge_io_module_upgrade_complete.adoc[]
 
