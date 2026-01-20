@@ -17,6 +17,8 @@ Using SANtricity System Manager, ensure the latest version of SANtricity OS is i
 
 include::../_include/ge_controller_replace_complete_replacement.adoc[]
 
+//Is the include above the same content as Complete replace used for IO module upgrade and replace and other FRU replacements?
+
 == Step 2: Return the failed part to NetApp
 include::../_include/complete_rma.adoc[]
 
