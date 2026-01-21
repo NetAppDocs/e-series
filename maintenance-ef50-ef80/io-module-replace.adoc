@@ -25,8 +25,8 @@ You must have the same type and number of I/O modules in each controller in your
 +
 CAUTION: *Possible loss of data access* -- The presence of incompatible or mismatched I/O modules causes the controllers to lock down when you apply power.
 +
-** An ESD wristband, or you have taken other antistatic precautions.
-** A flat, static-free work surface.
+** An ESD wristband or you have taken other antistatic precautions.
+** A flat static-free work surface.
 ** Labels to identify each cable that is connected to the faulty I/O module.
 ** A management station with a browser that can access SANtricity System Manager for the impaired controller.
 +
