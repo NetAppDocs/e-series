@@ -46,7 +46,7 @@ The file is saved in the Downloads folder for your browser with the name, *confi
 
 .About this task
 
-* The replacement process involves meeting the Before you begin requirements, placing the impaired controller offline, replacing the failed I/O module, bringing the controller back online, and returning the failed part to NetApp.
+* The replacement process involves meeting the Before you begin requirements, placing the impaired controller offline, replacing the failed I/O module, placing the controller back online, and returning the failed part to NetApp.
 
 * The term _I/O module_ is used instead of host interface cards (HICs) in this procedure.
 

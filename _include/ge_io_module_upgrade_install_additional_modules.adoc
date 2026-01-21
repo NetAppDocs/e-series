@@ -37,4 +37,4 @@ You can use the tab on the left and the thumbscrew to push in the I/O module.
 +
 You can use the link:../install-hw-ef50-ef80/install-cable.html[Cable the hardware^] section of the system installation and setup content for host network cabling.
 
-. Repeat these steps to add an I/O module to the other controller.
+. Repeat these steps to upgrade an I/O module in the other controller.

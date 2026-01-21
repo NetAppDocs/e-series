@@ -6,7 +6,7 @@
 .. Select *Support* > *Upgrade Center*.
 ..  As needed, install the latest version.
 
-. Verify that all volumes have been returned to their preferred owners:
+. Verify that all volumes are returned to their preferred owners:
 .. Select *Storage > Volumes*. 
 .. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. 
 .. Select *More > Change ownership* to view volume owners.
