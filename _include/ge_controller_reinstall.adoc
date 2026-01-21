@@ -1,4 +1,3 @@
-Reinstall the controller into the chassis.
 
 .About this task
 
@@ -39,4 +38,5 @@ NOTE: Do not use excessive force when sliding the controller into the chassis; i
 . Recable the controller.
 +
 Once power is restored to the PSU, the status LED should be green.
+
 

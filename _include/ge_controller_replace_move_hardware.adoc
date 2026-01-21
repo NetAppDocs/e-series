@@ -248,7 +248,9 @@ You can use the tab on the left and the thumbscrew on the right to push in the I
 
 Install the replacement controller into the chassis.
 
-include::../_include/ge_controller_replace_controller_reinstall.adoc[]
+include::../_include/ge_controller_reinstall.adoc[]
+
+//include::../_include/ge_controller_replace_controller_reinstall.adoc[]
 
  
 

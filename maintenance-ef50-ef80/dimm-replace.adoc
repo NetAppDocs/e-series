@@ -52,6 +52,8 @@ include::../_include/ge_dimm_replace.adoc[]
 
 == Step 6: Reinstall the controller
 
+Reinstall the controller into the chassis.
+
 include::../_include/ge_controller_reinstall.adoc[]
 
 
