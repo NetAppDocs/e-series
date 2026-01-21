@@ -1,6 +1,6 @@
 
 
-* You should have verified that you have a failed controller. You can determine this in two ways:
+* You must verify that you have a failed controller. You can determine this in two ways:
 
 ** The Recovery Guru in SANtricity System Manager directed you to replace the controller.
 ** The amber Attention LED on the controller is on, indicating that the controller has a fault.
@@ -21,6 +21,6 @@ This ensures that you can replace the impaired controller while your storage sys
 ** Labels to identify each cable that you will be disconnecting from the controller.
 ** A management station with a browser that can access SANtricity System Manager for the controller.
 +
-You can open the System Manager interface by pointing the browser to the controller’s domain name or IP address.
+You can open the SANtricity System Manager interface by pointing the browser to the controller’s domain name or IP address.
 +
 Optionally, you can use the command line interface (CLI) to perform some of the procedures. Download the CLI package (zip file) using SANtricity System Manager: *Settings* > *System* > *Add-ons* and select  *Command Line Interface*. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.

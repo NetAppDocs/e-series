@@ -45,7 +45,7 @@ The file is saved in the Downloads folder for your browser with the name, *confi
 
 * The replacement process involves meeting the Before you begin requirements, placing the impaired controller offline, removing the controller, replacing the NV battery, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
 
-* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, click the *Controller shelf* tab, and from the drop-down menu select *Turn on locator light*.
+* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, click the *Controller shelf* tab, and from the context menu select *Turn on locator light*.
 
 == Step 1: Place the controller offline
  
@@ -55,8 +55,6 @@ include::../_include/ge_internal_frus_controller_offline.adoc[]
 
 
 == Step 2: Remove the controller
-
-Remove the impaired controller from the chassis.
 
 include::../_include/ge_controller_remove.adoc[]
 

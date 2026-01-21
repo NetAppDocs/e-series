@@ -1,22 +1,21 @@
 
 .Steps
 
-. Unpack the replacement controller, and set it on a flat, static-free surface.
+. Unpack the replacement controller and set it on a flat static-free surface.
 +
-Save the packing materials to use when shipping the impaired controller.
-. Confirm that the MAC address and FRU part number on the impaired controller is the same as the replacement controller's part number in SANtricity System Manager:
+Save the packing materials to use when shipping the impaired controller back to NetApp.
+. Confirm that the MAC address and FRU part number on the impaired controller is the same as the impaired controller's replacement part number in SANtricity System Manager:
 +
 CAUTION: *Possible loss of data access*: If the two part numbers are not the same, do not attempt this procedure. The presence of mismatched controllers causes the replacement controller to lock down when you bring it online.
 +
 .. Locate the MAC address and FRU part number labels on the back of the impaired controller.
-.. From SANtricity System Manager, locate the replacement controller part number displayed in the details area of the Recovery Guru. 
+.. Locate the impaired controller's replacement part number displayed in the details area of the Recovery Guru. 
 +
 If you need to find this number manually, follow these steps:
 +
 ... Select *Hardware* > *Controllers and components*.
-... Locate the controller, which is marked with the controller icon.
-... Click the controller icon.
-... Select the controller, and click *Next*.
+... Click the controller graphic for your impaired controller (Controller A or Controller B) to view the context menu.
+... Click *View settings*.
 ... On the *Base* tab, make a note of the *Replacement Part Number* for the controller.
 
 . Back up the storage system's configuration database using SANtricity System Manager.
@@ -28,16 +27,4 @@ If a problem occurs when you remove a controller, you can use the saved file to 
 .. Click *Collect*.
 +
 The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
-
-//From E4000, but might not apply for gE
-
-//. Collect support data for your storage system using SANtricity System Manager.
-//+
-//If a problem occurs when you remove the impaired controller, you can use the saved file to troubleshoot the issue. The system saves inventory, status, and performance data about your storage system in a single file.
-
-//.. Select *Support › Support Center › Diagnostics*.
-//.. Select *Collect Support Data*.
-//.. Click *Collect*.
-//+
-//The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 
