@@ -158,7 +158,7 @@ The ejector tabs remain in the open position.
 
 .. Make sure that the DIMM ejector tabs on the connector are in the open position.
 
-.. Hold the DIMM by the corners, and then insert the DIMM squarely into the slot.
+.. Hold the DIMM by the corners and insert it squarely into the slot.
 +
 The notch on the bottom of the DIMM, among the pins, should line up with the tab in the slot.
 +
@@ -250,6 +250,7 @@ Install the replacement controller into the chassis.
 
 include::../_include/ge_controller_reinstall.adoc[]
 
+//Delete this include:
 //include::../_include/ge_controller_replace_controller_reinstall.adoc[]
 
  

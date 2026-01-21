@@ -1,6 +1,6 @@
 
 .About this task
-Whenever you take a controller offline, you need to wait at least one minute before bringing the controller back online. This waiting period allows the storage system to update the status of the controller and ensure that all cached data is written to the drives.
+Whenever you place a controller offline, you need to wait at least one minute before placing the controller back online. This waiting period allows the storage system to update the status of the controller and ensure that all cached data is written to the drives.
 
 .Steps
 
@@ -14,12 +14,12 @@ Whenever you take a controller offline, you need to wait at least one minute bef
 //+
 //The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
-. If the impaired controller is not already offline, take it offline using SANtricity System Manager:
+. If the impaired controller is not already offline, place it offline using SANtricity System Manager:
 .. Select *Hardware* > *Controllers and components* to show the controllers.
-.. Click on the controller that you want to take offline to display its content menu.
+.. Click on the controller that you want to place offline to display its content menu.
 .. Select *Place offline*, and then confirm that you want to perform the operation.
 +
-NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to take offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
+NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to place offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
 
 . Wait for SANtricity System Manager to update the controller's status to offline.
 +
