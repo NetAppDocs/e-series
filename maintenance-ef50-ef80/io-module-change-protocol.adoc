@@ -24,6 +24,8 @@ You can change the protocol on I/O modules used for host connectivity when you n
 
 .About this task
 
+* Changing the host port protocol involves stopping the host I/O, changing the protocol, and then configuring the host to use the new protocol.
+
 * Host I/O protocol is changed on all host I/O modules in your storage system.
 
 * Both Controllers are rebooted.

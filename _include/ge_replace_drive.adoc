@@ -117,26 +117,28 @@ NOTE: When you first insert a drive, its Attention LED might be on. However, the
 [options="header" cols="1,2"]
 
 |===
-|Replacement drive LED behavior...| Action to take...
+|If the replacement drive LED behavior shows...| Then...
 a|
 Power LED is on or blinking, and the Attention LED is off
 a|
-None. Go to the next step.
+Go to the next step.
 
 The replacement drive is working correctly.
 a|
 Power LED is off
 a|
-. Remove the drive, wait 60 seconds, and then reinstall it.
-+
 The drive might not be installed correctly.
+
+. Remove the drive, wait 60 seconds, and then reinstall it.
+
 .  If the Recovery Guru in SANtricity System Manager still shows an issue, select *Recheck* to ensure the problem has been resolved.
 a|
 Attention LED is on
 a|
-. Replace the new drive with another new drive.
-+
 The new drive might be defective.
+
+. Replace the new drive with another new drive.
+
 .  If the Recovery Guru in SANtricity System Manager still shows an issue, select *Recheck* to ensure the problem has been resolved.
 
 |===

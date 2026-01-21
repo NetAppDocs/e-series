@@ -36,7 +36,7 @@ If a problem occurs when you remove a controller, you can use the saved file to 
 The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
 .About this task
-* The replacement process involves meeting the Before you begin requirements, placing the impaired controller offline, removing the controller, replacing the fan, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
+* The replacement process involves meeting the Before you begin requirements, placing the controller offline, removing the controller, replacing the fan, reinstalling the controller, placing the controller back online, completing the fan replacement, and then returning the failed part to NetApp.
 
 * Each controller includes five fans. If a fan fails, you must replace it as soon as possible to ensure that the controller has adequate cooling.
 
