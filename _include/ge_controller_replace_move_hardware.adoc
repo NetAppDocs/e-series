@@ -8,9 +8,7 @@ CAUTION: To prevent overheating, do not leave the controller bay empty for longe
 
 == Step 1: Remove the controller
 
-include::../_include/ge_controller_remove.adoc[]
-
-. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover. 
+include::../_include/ge_controller_remove.adoc[] 
 
 == Step 2: Move the power supply
 
@@ -34,7 +32,7 @@ Rotate the PSU handle up, to its horizontal position, and then grasp it.
 a|
 image::../media/icon_round_2.png[Callout number 2]
 a|
-With your thumb, press the orange tab to release the PSU from the controller.
+With your thumb, press the orange locking tab to release the PSU from the controller.
 a|
 image::../media/icon_round_3.png[Callout number 3]
 a|
@@ -45,7 +43,7 @@ CAUTION: The PSU is short. Always use two hands to support it when removing it f
 +
 . Insert the PSU into the replacement controller:
 .. Using both hands, support and align the edges of the PSU with the opening in the controller.
-.. Gently slide the PSU into the controller until the locking tab clicks into place.
+.. Gently slide the PSU into the controller until the orange locking tab clicks into place.
 +
 A PSU must properly engage with the internal connector and locking mechanism. Repeat this step if you feel the PSU is not properly seated.
 +
@@ -229,7 +227,7 @@ Turn the I/O module thumbscrew counterclockwise to loosen.
 a|
 image::../media/icon_round_2.png[Callout number 2]
 a|
-Pull the I/O module out of the controller using the port label tab on the left and the thumbscrew.
+Pull the I/O module out of the controller using the port label tab on the left and the thumbscrew on the right.
 
 |===
 
@@ -239,17 +237,18 @@ Pull the I/O module out of the controller using the port label tab on the left a
 
 .. Gently push the I/O module all the way into the slot, making sure to properly seat the module into the connector.
 +
-You can use the tab on the left and the thumbscrew to push in the I/O Module.
+You can use the tab on the left and the thumbscrew on the right to push in the I/O Module.
 +
 .. Turn the thumbscrew clockwise to tighten.
 
 . Repeat these steps to move the remaining I/O modules and any I/O blanking modules to the replacement controller. 
 
 
-== Step 8: Install the controller
+== Step 7: Install the controller
 
-Reinstall the controller into the chassis and reboot it.
+Install the replacement controller into the chassis.
 
 include::../_include/ge_controller_replace_controller_reinstall.adoc[]
+
  
 
