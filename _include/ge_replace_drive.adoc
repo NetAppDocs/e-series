@@ -143,18 +143,16 @@ The new drive might be defective.
 
 |===
 //. If the Recovery Guru in SANtricity System Manager still shows an issue, select *Recheck* to ensure the problem has been resolved.
-. If the Recovery Guru in SANtricity System Manager indicates that drive reconstruction did not start automatically, start reconstruction manually.
+. If the Recovery Guru in SANtricity System Manager indicates that drive reconstruction did not start automatically, start reconstruction manually, when instructed to do so by NetApp Support or the Recovery Guru and use the following steps:
 +
 NOTE: Depending on your configuration, the controller might automatically reconstruct data to the new drive. If the storage system uses hot spare drives, the controller might need to perform a complete reconstruction on the hot spare before it can copy the data to the replacement drive. This reconstruction process increases the time that is required to complete this procedure.
 +
-NOTE: Perform the following manual reconstruction steps only when instructed to do so by NetApp Support or the Recovery Guru.
-
- .. Select *Hardware*.
- .. Click the replacement drive on the graphic to display its context menu, and then select *Reconstruct*.
- .. Confirm that you want to perform this operation.
+.. Select *Hardware*.
+.. Click the replacement drive on the graphic to display its context menu, and then select *Reconstruct*.
+.. Confirm that you want to perform this operation.
 +
 When the drive reconstruction completes, the volume group is in an Optimal state.
-
++
 . Reinstall the bezel.
 
 
