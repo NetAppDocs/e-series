@@ -4,7 +4,7 @@ entries:
   - title: Maintenance overview
     url: /maintenance-ef50-ef80/maintain-overview.html
   - title: Controller
-    pdf-filename: EF50, EF50C, EF80, and EF80C Controller
+    pdf-filename: EF50 and EF80 Controller
     entries:
       - title: Controller replace workflow
         url: /maintenance-ef50-ef80/controller-replace-workflow.html
@@ -27,7 +27,7 @@ entries:
   - title: Fan
     url: /maintenance-ef50-ef80/fan-replace.html
   - title: I/O module
-    pdf-filename: EF50, EF50C, EF80, and EF80C I/O module
+    pdf-filename: EF50 and EF80 I/O module
     entries:
       - title: I/O module overview
         url: /maintenance-ef50-ef80/io-module-overview.html

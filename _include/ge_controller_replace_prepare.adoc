@@ -4,7 +4,7 @@
 . Unpack the replacement controller and set it on a flat static-free surface.
 +
 Save the packing materials to use when returning the faulty controller.
-//+
++
 //For step below: These numbers are located on the side of the controller, so can't be seen until the controller is removed frm the chassis; therefore, this prep step MUST be moved to the Removed the controller step (after the shutdown). But at that point is this step needed?
 
 . Confirm that the MAC address and FRU part number on the impaired controller is the same as the impaired controller's replacement part number in SANtricity System Manager:
