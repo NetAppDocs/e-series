@@ -121,6 +121,8 @@ You can refer to the online help included with SANtricity System Manager.
 
 Your storage system ships with a default protocol on the host I/O modules. If the default protocol is not the protocol you want, you can change it.
 
+Lisa, Since R.1 and 2 add more protocol and HIC support, I'd have to update this table. I prefer users go to SAM to see/confirm the protocol on their system.
+
 .Before You Begin
 
 .About this task

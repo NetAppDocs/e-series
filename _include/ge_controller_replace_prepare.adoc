@@ -4,23 +4,6 @@
 . Unpack the replacement controller and set it on a flat static-free surface.
 +
 Save the packing materials to use when returning the faulty controller.
-+
-//For step below: These numbers are located on the side of the controller, so can't be seen until the controller is removed frm the chassis; therefore, this prep step MUST be moved to the Removed the controller step (after the shutdown). But at that point is this step needed?
-
-. Confirm that the MAC address and FRU part number on the impaired controller is the same as the impaired controller's replacement part number in SANtricity System Manager:
-+
-CAUTION: *Possible loss of data access*: If the two part numbers are not the same, do not attempt this procedure. The presence of mismatched controllers causes the replacement controller to lock down when you bring it online.
-+
-.. Locate the MAC address and FRU part number labels on the back of the impaired controller.
-
-.. Locate the impaired controller's replacement part number displayed in the details area of the Recovery Guru. 
-+
-If you need to find this number manually, follow these steps:
-+
-... Select *Hardware* > *Controllers and components*.
-... Click the controller graphic for your impaired controller (Controller A or Controller B) to view the context menu.
-... Click *View settings*.
-... On the *Base* tab, make a note of the *Replacement Part Number* for the controller.
 
 . Back up the storage system's configuration database using SANtricity System Manager.
 +

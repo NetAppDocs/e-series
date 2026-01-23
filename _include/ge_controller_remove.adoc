@@ -1,4 +1,4 @@
-Remove the impaired controller from the chassis.
+Remove the impaired controller from the chassis, note its MAC address and confirm you have the correct replacement controller part number.
 
 .Steps
 //. Wait for any data in cache memory to be written to the drives.
@@ -10,21 +10,11 @@ Remove the impaired controller from the chassis.
 When the NV Caching Active (green) LED is off, any data in cache memory has been written to the drives and it is safe to remove the impaired controller.
 +
 NOTE: If the NV Caching Active (green) LED is on, cached data is being written to the drives. You must wait for the process to complete and the NV Caching Active LED to turn off. However, if the LED remains on for longer than five minutes, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
-
-//. On the impaired controller, make sure the NV LED is off.
-//+
-//When the NV LED is off, destaging is complete and it is safe to remove the impaired controller.
-//+
-// The NV LED is off when destaging of the outstanding/uncommitted data to persistent flash (a partition on the boot media) has completed. Then it is safe to continue with this procedure.
-//+
-//NOTE: If the NV LED is flashing (green), destage is in progress. You must wait for the NV LED to turn off. However, if the flashing continues for longer than five minutes, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
-//+
-//The NV LED is located next to the NV icon on the controller.
-
++
 The NV Caching Active (green) LED is located next to the NV icon on the controller.
-
++
 image::../media/drw_g_nvmem_led_ieops-1839.svg[NV status LED location]
-
++
 [cols="1,4"]
 
 |===
@@ -75,6 +65,49 @@ a|
 image::../media/icon_round_3.png[Callout number 3] 
 a|
 If needed, rotate the handles upright (next to the tabs) to move them out of the way.
+|===
+
+. Make note of the MAC address on the side of the impaired controller.
++
+You use the MAC address later in the controller replacement procedure.
+
+. Confirm that the part number on the impaired controller is the same as the impaired controller's replacement part number in SANtricity System Manager:
++
+CAUTION: *Possible loss of data access*: If the two part numbers are not the same, do not attempt this procedure. The presence of mismatched controllers causes the replacement controller to lock down when you bring it online.
++
+.. Make note of the part number on the side of the impaired controller.
+
+.. Locate the impaired controller's replacement part number displayed in the details area of the Recovery Guru. 
++
+If you need to find this number manually, follow these steps:
++
+... Select *Hardware* > *Controllers and components*.
+... Click the controller graphic for your impaired controller (Controller A or Controller B) to view the context menu.
+... Click *View settings*.
+... On the *Base* tab, make a note of the *Replacement Part Number* for the controller.
+
+.. Compare the two part numbers to confirm they are the same.
+
+.. The next step depends on whether the part numbers are the same or not:
++
+[options="header" cols="1,2"]
+
+|===
+|If...| Then...
+a|
+The two part numbers are the same
+a|
+Continue to the next step.
+a|
+The two part numbers are different
+a|
+You cannot continue with this procedure. 
+
+. Contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] for assistance.
+
+. Reinstall the impaired controller into the chassis (within 60 minutes of its removal) to prevent overheating of the storage system.
+a|
+
 |===
 
 . Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover. 

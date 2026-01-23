@@ -11,14 +11,13 @@
 a|
 The impaired controller did not use DHCP for the IP address
 a|
-Go to the next step.
-
 The replacement controller adopts the IP address of the impaired controller you removed.
+
+Go to the next step.
 a|
 The impaired controller used DHCP for the IP address
 a|
-.. Locate the MAC address on the label on the back of the replacement controller. 
-.. Ask your network administrator to associate the DNS/network and IP address for the impaired controller with the MAC address for the replacement controller.
+Ask your network administrator to associate the DNS/network and IP address for the impaired controller with the MAC address for the replacement controller.
 
 |===
 

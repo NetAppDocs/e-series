@@ -17,7 +17,7 @@ Verify your storage system has a failed controller, verify the state of your sto
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:controller-replace-prepare.html[Prepare for the controller replacement]
 [role="quick-margin-para"]
-Unpack the replacement controller, confirm its part number is correct, and back up the configuration database.
+Unpack the replacement controller and back up the configuration database.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:controller-replace-offline-controller.html[Offline the impaired controller]
 [role="quick-margin-para"]
@@ -25,7 +25,7 @@ Offline the impaired controller to prevent data loss and ensure system stability
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:controller-replace-move-hardware.html[Replace the impaired controller]
 [role="quick-margin-para"]
-Remove the impaired controller from the system chassis, move the components to the replacement controller, and install the replacement controller into the system chassis.
+Remove the impaired controller from the system chassis, note the MAC address on the controller, confirm you have the correct replacement controller, move the components to the replacement controller, and install the replacement controller into the system chassis.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:controller-replace-online-controller.html[Online the replacement controller]
 [role="quick-margin-para"]
