@@ -9,7 +9,7 @@
 . Verify that all volumes are returned to their preferred owners:
 .. Select *Storage > Volumes*. 
 .. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. 
-.. Select *More > Change ownership* to view volume owners.
+.. Select *More > Change volume ownership* to view volume owners.
 
 . The next step depends on whether the volumes are returned to their preferred owners:
 +
@@ -24,7 +24,7 @@ Go to the next step.
 a|
 None of the volumes are returned to their preferred owners
 a|
-Go to *More > Redistribute volumes* to return the volumes to their preferred owners.
+Select *Storage* > *Volumes* > *More* and from the drop-down menu choose *Redistribute volumes* to return the volumes to their preferred owners.
 a|
 Only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution 
 a|
