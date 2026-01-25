@@ -3,7 +3,7 @@
 
 . Unpack the replacement controller and set it on a flat static-free surface.
 +
-Save the packing materials to use when returning the faulty controller.
+Save the packing materials to use when returning the impaired controller.
 
 . Make note of the MAC address on the side of the replacement controller.
 +
@@ -20,7 +20,7 @@ CAUTION: *Possible loss of data access*: If the two part numbers are not the sam
 If you need to find this number manually, follow these steps:
 +
 ... Select *Hardware* > *Controllers and components*.
-... Click the controller graphic for your impaired controller (Controller A or Controller B) to view the context menu.
+... Click the controller graphic for the impaired controller (Controller A or Controller B) to view the context menu.
 ... Click *View settings*.
 ... On the *Base* tab, make a note of the *Replacement Part Number* for the controller.
 

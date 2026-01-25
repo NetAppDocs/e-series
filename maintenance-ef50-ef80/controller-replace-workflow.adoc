@@ -17,7 +17,7 @@ Verify your storage system has a failed controller, verify the state of your sto
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:controller-replace-prepare.html[Prepare for the controller replacement]
 [role="quick-margin-para"]
-Unpack the replacement controller, make note of its MAC address, confirm its part number is correct and back up the configuration database.
+Unpack the replacement controller, make note of its MAC address, confirm its part number is correct, and back up the configuration database.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:controller-replace-offline-controller.html[Offline the impaired controller]
 [role="quick-margin-para"]
