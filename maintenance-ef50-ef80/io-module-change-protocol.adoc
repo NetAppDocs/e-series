@@ -18,25 +18,25 @@ You can change the protocol on the host I/O modules in your EF50 or EF80 storage
 
 .About this task
 
-* Changing the host port protocol involves preparing for the protocol change, stopping the host I/O operations, changing the protocol, and then configuring the host to use the new protocol.
+* Changing the protocol on the host I/O modules involves preparing for the protocol change, stopping the host I/O operations, changing the protocol, and then configuring the host to use the new protocol.
 
 * Host I/O protocol is changed on all host I/O modules in your storage system.
 
-* Changing the host port protocol temporarily disrupts host access to all volumes and causes the storage system to be unavailable during the reboot process (both controllers are rebooted), which can take a few minutes.
+* Changing the protocol on the host I/O modules temporarily disrupts host access to all volumes and causes the storage system to be unavailable during the reboot process (both controllers are rebooted), which can take a few minutes.
 
 //* New storage system installations and new controllers being used in a controller upgrade ship with a default host protocol. You need to check if the default host protocol is what you want and if not, you need to change it.
 
 
 == Step 1: Prepare for the protocol change
 
-Prepare to change the protocol on the host I/O modules in your storage system by verifying the current protocol on the host I/O modules, determining if you need to change the protocol, and if yes, then stopping host I/O operations, and obtaining any necessary hardware.
+Prepare to change the protocol on the host I/O modules in your storage system by verifying the current protocol on the host I/O modules, determining if you need to change the protocol, and if yes, scheduling a downtime maintenance window, and obtaining any necessary hardware.
 
 .Steps
 
-. If you do not know the current protocol on the host I/O modules in your storage system, verify it now using SANtricity System Manager.
+. If you do not know the current protocol on the host I/O modules in your storage system, verify it using SANtricity System Manager.
 
 .. Select *Settings* > *System*.
-.. In the *Additional Settings* section, choose *Change host I/O protocol* to open that page.
+.. In the *Additional Settings* section, click *Change host I/O protocol* to open that page.
 .. See the default host I/O protocol used on the host I/O modules in your storage system displayed in the *Host I/O Protocol* field.
 
 . The next step depends on whether the default protocol is the protocol you want or not:
@@ -50,14 +50,9 @@ a|
 No action is needed. You can exit this procedure
 a|
 The default protocol is not the protocol you want
-a|You need to change it using SANtricity System Manager:
-
-.. On the *Change host I/O protocol* page, click on the drop-down menu in the *Host I/O Protocol* field to see the supported protocol options.
-.. Click the protocol you want to use.
-.. Type *CHANGE* in the open field to confirm your change. 
-.. Click the *Change* button.
-
-. If the current protocol is not the protocol you want, continue with the next step; otherwise, you are done with this procedure.
+a|Continue with this procedure to change the protocol. 
+|===
+//+
 //+
 //. The next step depends on whether you need to change the protocol or not:
 //+
@@ -78,7 +73,7 @@ a|You need to change it using SANtricity System Manager:
 
 == Step 2: Stop host I/O operations
 
-You must stop all I/O operations from the host before changing the protocol of the host ports.
+You must stop all I/O operations from the host before changing the protocol on the host I/O modules.
 
 NOTE: You cannot access data on the storage system until you successfully complete the protocol change.
 
@@ -103,7 +98,7 @@ The green Cache Active LED on the back of each controller is on when cached data
 
 == Step 3: Change the protocol
 
-Change the protocol of the host ports to a supported protocol.
+Change the protocol on the host I/O modules to a supported protocol, using SANtricity System Manager.
 
 //Need to create includes
 //syntax example:
@@ -111,14 +106,11 @@ Change the protocol of the host ports to a supported protocol.
 
 .Steps
 
-. From the Home page of SANtricity System Manager: 
-.. Select *Settings* > *System*.
-.. Scroll down the page to the "Additional Settings" section and click "Change host I/O protocol".
-.. Choose the host I/O protocol you want from the drop down menu.
-+
-The host protocol field shows you the protocol currently on the host I/O modules in your storage system and the drop down menu lists the supported protocol options to choose from.
-.. Type "CHANGE" to confirm your choice.
-.. Click the Change button.
+. Select *Settings* > *System*.
+. In the *Additional Settings* section, click *Change host I/O protocol* to open that page.
+. In the *Host I/O Protocol* field, click the drop-down menu and choose the protocol you want to use.
+. Type *CHANGE* in the open field to confirm your change. 
+. Click the *Change* button.
 
 == Step 4: Configure the host to use the new protocol
 
