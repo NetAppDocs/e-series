@@ -31,6 +31,10 @@ You can change the protocol on the host I/O modules in your EF50 or EF80 storage
 
 Prepare to change the protocol on the host I/O modules in your storage system by verifying the current protocol on the host I/O modules, determining if you need to change the protocol, and if yes, scheduling a downtime maintenance window, and obtaining any necessary hardware.
 
+//Need to create includes
+//syntax example:
+// include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
+
 .Steps
 
 . If you do not know the current protocol on the host I/O modules in your storage system, verify it using SANtricity System Manager.
@@ -47,7 +51,7 @@ Prepare to change the protocol on the host I/O modules in your storage system by
 a| 
 The default protocol is the protocol you want
 a|
-No action is needed. You can exit this procedure
+No action is needed. You can exit this procedure.
 a|
 The default protocol is not the protocol you want
 a|Continue with this procedure to change the protocol. 
@@ -77,6 +81,8 @@ You must stop all I/O operations from the host before changing the protocol on t
 
 NOTE: You cannot access data on the storage system until you successfully complete the protocol change.
 
+//Need to create includes
+//syntax example:
 // include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
 
 .Steps
@@ -89,12 +95,30 @@ NOTE: You cannot access data on the storage system until you successfully comple
 NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host or contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support^].
 +
 CAUTION: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, you might lose data.
-. Wait for any data in cache memory to be written to the drives.
-+
-The green Cache Active LED on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
 
-. From the Home page of SANtricity System Manager, select *View Operations in Progress*.
-. Wait for all operations to complete before continuing with the next step.
+. On each controller, make sure the NV Caching Active (green) LED is off.
++
+When the NV Caching Active (green) LED is off, any data in cache memory has been written to the drives and it is safe to continue with the procedure.
++
+NOTE: If the NV Caching Active (green) LED is on, cached data is being written to the drives. You must wait for the process to complete and the NV Caching Active (green) LED to turn off. However, if the LED remains on for longer than five minutes, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
++
+The NV Caching Active (green) LED is located next to the NV icon on the controller.
++
+image::../media/drw_g_nvmem_led_ieops-1839.svg[NV status LED location]
++
+[cols="1,4"]
+
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+NV icon and NV Caching Active LED on the controller
+|===
++
+
+. Confirm operations on the controllers have completed in SANtricity System Manager:
+.. Select *Storage* > *Operations in progress* to see the Overview screen. 
+.. Wait for all operations to complete and the Overview screen displays *No operations currently in progress*, before continuing to the next step.
 
 == Step 3: Change the protocol
 
@@ -116,6 +140,8 @@ Change the protocol on the host I/O modules to a supported protocol, using SANtr
 
 After changing the protocol of the host ports, you must configure the host to use the new protocol.
 
+//Need to create includes
+//syntax example:
 // include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
 
 For step-by-step instructions, see the guide appropriate for your storage system:
