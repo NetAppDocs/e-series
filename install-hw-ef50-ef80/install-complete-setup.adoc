@@ -125,9 +125,9 @@ Your storage system ships with a default protocol on the host I/O modules. If th
 
 . Verify the default protocol being used on the host I/O modules in your storage system by using SANtricity System Manager.
 
-.. SAM
-
-.. SAM
+.. Select *Settings* > *System*.
+.. In the *Additional Settings* section, choose *Change host I/O protocol* to open that page.
+.. See the default host I/O protocol used on the host I/O modules in your storage system displayed in the *Host I/O Protocol* field.
 
 . The next step depends on whether the default protocol is the protocol you want or not:
 +
@@ -141,6 +141,8 @@ No action is needed.
 a|
 The default protocol is not the protocol you want
 a|You need to change it using the link:io-module-change-protocol.html[Change the host protocol] procedure.
+
+NOTE: Changing the host port protocol involves preparing for the protocol change, stopping the host I/O operations, changing the protocol, and then configuring the host to use the new protocol.
 |===
 
 //+

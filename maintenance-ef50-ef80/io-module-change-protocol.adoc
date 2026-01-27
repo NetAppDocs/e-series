@@ -22,9 +22,7 @@ You can change the protocol on the host I/O modules in your EF50 or EF80 storage
 
 * Host I/O protocol is changed on all host I/O modules in your storage system.
 
-* Both controllers are rebooted.
-
-* Host access to all volumes is disrupted...
+* Changing the host port protocol temporarily disrupts host access to all volumes and causes the storage system to be unavailable during the reboot process (both controllers are rebooted), which can take a few minutes.
 
 //* New storage system installations and new controllers being used in a controller upgrade ship with a default host protocol. You need to check if the default host protocol is what you want and if not, you need to change it.
 
@@ -37,9 +35,27 @@ Prepare to change the protocol on the host I/O modules in your storage system by
 
 . If you do not know the current protocol on the host I/O modules in your storage system, verify it now using SANtricity System Manager.
 
-.. Step
+.. Select *Settings* > *System*.
+.. In the *Additional Settings* section, choose *Change host I/O protocol* to open that page.
+.. See the default host I/O protocol used on the host I/O modules in your storage system displayed in the *Host I/O Protocol* field.
 
-.. step
+. The next step depends on whether the default protocol is the protocol you want or not:
++
+[options="header" cols="1,2"]
+|===
+|If...| Then...
+a| 
+The default protocol is the protocol you want
+a|
+No action is needed. You can exit this procedure
+a|
+The default protocol is not the protocol you want
+a|You need to change it using SANtricity System Manager:
+
+.. On the *Change host I/O protocol* page, click on the drop-down menu in the *Host I/O Protocol* field to see the supported protocol options.
+.. Click the protocol you want to use.
+.. Type *CHANGE* in the open field to confirm your change. 
+.. Click the *Change* button.
 
 . If the current protocol is not the protocol you want, continue with the next step; otherwise, you are done with this procedure.
 //+
