@@ -117,21 +117,31 @@ Use SANtricity System Manager to configure and manage your storage system.
 You can refer to the online help included with SANtricity System Manager.
 
 
-== Step 3: Verify the protocol on the host I/O modules is correct
+== Step 3: Verify host I/O module protocol is correct
 
 Your storage system ships with a default protocol on the host I/O modules. If the default protocol is not the protocol you want, you can change it.
 
 .Steps
 
-. Check to see the default protocol being used by the type of host I/O modules on your storage system by using SANtricity System Manager.
+. Verify the default protocol being used on the host I/O modules in your storage system by using SANtricity System Manager.
 
 .. SAM
 
 .. SAM
 
-. If you verifies your storage system is running the host protocol you want, no further action is needed.
-
-. If the default protocol is not the protocol you want, change it using the link:io-module-change-protocol.html[Change the host protocol] procedure.
+. The next step depends on whether the default protocol is the protocol you want or not:
++
+[options="header" cols="1,2"]
+|===
+|If...| Then...
+a| 
+The default protocol is the protocol you want
+a|
+No action is needed.
+a|
+The default protocol is not the protocol you want
+a|You need to change it using the link:io-module-change-protocol.html[Change the host protocol] procedure.
+|===
 
 //+
 //Go to the Change the protocol procedure, section xyz to see the default protocols for the supported host I/O modules and the optional protocols you can choose from. Or you can see the same information in SANtricity System Manager.

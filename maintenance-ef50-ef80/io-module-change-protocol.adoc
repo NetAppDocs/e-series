@@ -2,7 +2,7 @@
 permalink: maintenance-ef50-ef80/io-module-change-protocol.html
 sidebar: sidebar
 keywords: host protocol change, EF50, EF80
-summary: You can change the host port protocol on I/O modules using either Infiniband (IB) or Fibre Channel (FC) in an EF50 or EF80 storage system.
+summary: You can change the protocol on the host I/O modules in your EF50 or EF80 storage system when you need to use a different protocol on your existing I/O modules, as part of an I/O module upgrade, or when the default protocol on new controllers part of a new storage system installation or controller upgrade on an existing storage system is not the protocol you want.
 ---
 = Change the host protocol - EF50 and EF80
 :experimental:
@@ -12,31 +12,57 @@ summary: You can change the host port protocol on I/O modules using either Infin
 [.lead]
 // You can change the host port protocol on I/O modules using either Infiniband (IB) or Fibre Channel (FC) in an EF50 or EF80 storage system.
 
-You can change the protocol on I/O modules used for host connectivity when you need to use a different protocol on your existing I/O modules, as part of an I/O module upgrade or when the default protocol on new controllers part of a new storage system installation or controller upgrade on an existing storage system is not the protocol you want.
+You can change the protocol on the host I/O modules in your EF50 or EF80 storage system when you need to use a different protocol on your existing I/O modules, as part of an I/O module upgrade, or when the default protocol on new controllers part of a new storage system installation or controller upgrade on an existing storage system is not the protocol you want.
 
 // BUT I'm not addressing all these use cases here, only the change on existing modules? For the other 3 use cases, I need to embed steps in the right place for each procedure and each version of steps would mostly be unique per the use case? I need to understand if I got the uses cases right. TK seemed to think upgrading a module had nothing to do with changing the protocol, but customer would upgrade 
 
-.Before you begin
-
-* You have scheduled a downtime maintenance window for this procedure.
-* You must stop host I/O operations when you perform a protocol change. You cannot access data on the storage system until you have successfully completed the protocol change.
-* You have obtained the necessary hardware for the conversion, which might include a new set of I/O modules and/or SFPs. Your NetApp Sales Representative can help you determine what hardware you need and help you order the correct parts.
-
 .About this task
 
-* Changing the host port protocol involves stopping the host I/O, changing the protocol, and then configuring the host to use the new protocol.
+* Changing the host port protocol involves preparing for the protocol change, stopping the host I/O operations, changing the protocol, and then configuring the host to use the new protocol.
 
 * Host I/O protocol is changed on all host I/O modules in your storage system.
 
-* Both Controllers are rebooted.
+* Both controllers are rebooted.
 
 * Host access to all volumes is disrupted...
 
-* New storage system installations and new controllers being used in a controller upgrade ship with a default host protocol dictated by the make of the I/O module. You need to check if the default host protocol is what you want (for your storage system) and if not, you need to change it. The following table shows the default host protocol for the different I/O module makes and the supported protocol options.
+//* New storage system installations and new controllers being used in a controller upgrade ship with a default host protocol. You need to check if the default host protocol is what you want and if not, you need to change it.
 
-== Step 1: Stop host I/O
 
-Stop all I/O operations from the host before changing the protocol of the host ports.
+== Step 1: Prepare for the protocol change
+
+Prepare to change the protocol on the host I/O modules in your storage system by verifying the current protocol on the host I/O modules, determining if you need to change the protocol, and if yes, then stopping host I/O operations, and obtaining any necessary hardware.
+
+.Steps
+
+. If you do not know the current protocol on the host I/O modules in your storage system, verify it now using SANtricity System Manager.
+
+.. Step
+
+.. step
+
+. If the current protocol is not the protocol you want, continue with the next step; otherwise, you are done with this procedure.
+//+
+//. The next step depends on whether you need to change the protocol or not:
+//+
+//[options="header" cols="1,2"]
+//|===
+//|If...| Then...
+//a|
+//If you need to change the protocol
+//a|
+//Continue to the next step and then complete this procedure.
+//a| If you do not need to change the protocol...| Then you can skip to the next section.
+//|===
+//+
+. Schedule a downtime maintenance window for this procedure.
+
+. If needed, obtain the necessary hardware for the conversion, which might include a new set of I/O modules and/or SFPs. Your NetApp Sales Representative can help you determine what hardware you need and help you order the correct parts.
+
+
+== Step 2: Stop host I/O operations
+
+You must stop all I/O operations from the host before changing the protocol of the host ports.
 
 NOTE: You cannot access data on the storage system until you successfully complete the protocol change.
 
@@ -59,7 +85,7 @@ The green Cache Active LED on the back of each controller is on when cached data
 . From the Home page of SANtricity System Manager, select *View Operations in Progress*.
 . Wait for all operations to complete before continuing with the next step.
 
-== Step 2: Change the protocol
+== Step 3: Change the protocol
 
 Change the protocol of the host ports to a supported protocol.
 
@@ -78,7 +104,7 @@ The host protocol field shows you the protocol currently on the host I/O modules
 .. Type "CHANGE" to confirm your choice.
 .. Click the Change button.
 
-== Step 3: Configure the host to use the new protocol
+== Step 4: Configure the host to use the new protocol
 
 After changing the protocol of the host ports, you must configure the host to use the new protocol.
 
