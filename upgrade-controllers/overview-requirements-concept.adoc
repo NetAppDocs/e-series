@@ -60,6 +60,72 @@ Review the supported upgrade paths for each storage array model.
 [role="tabbed-block"]
 ====
 
+.EF50 and EF80 controller upgrade compatibility
+--
+[cols=4*,cols="h,d,d,d",options="header"]
+|===
+| Upgrade path 
+| Battery 
+| Feature Support
+| SAS-3 shelves
+
+| From EF300 to EF50 or EF80
+
+a| Order a new battery.
+
+a|
+* EF50 and EF80 support duplex configurations only
++
+* EF50 and EF80 support dual-100Gbe NVMe over RoCE host interface cards
++
+* EF50 and EF80 support 64Gb Fibre Channel host interface cards
++
+* EF80 supports dual-200Gbe NVMe over RoCE and NVMe over Infiniband host interface cards
++
+* EF50 and EF80 support up to 24 NVMe drives per controller 
++
+* EF50 and EF80 do not support baseboard host ports
++
+* EF50 and EF80 do not support synchronous or asynchronous mirroring  
++
+* EF50 and do not support Remote Storage Volumes
++
+* EF50 and EF80 do not support Thin Provisioned Volumes
+
+a|
+* EF50 and EF80 do not support SAS expansion. 
+
+| From EF600 to EF80 
+
+a|
+Order a new battery.
+
+a|
+* EF80 support duplex configurations only
++
+* EF80 support dual-100Gbe NVMe over RoCE host interface cards
++
+* EF80 support 64Gb Fibre Channel host interface cards
++
+* EF80 supports dual-200Gbe NVMe over RoCE and NVMe over Infiniband host interface cards
++
+* EF80 support up to 24 NVMe drives per controller
++
+* EF80 do not support baseboard host ports
++
+* EF80 do not support synchronous or asynchronous mirroring  
++
+* EF80 do not support Remote Storage Volumes
++
+* EF80 do not support Thin Provisioned Volumes
+
+a|
+* EF80 do not support SAS expansion.
+
+|===
+
+--
+
 .E4000 controller upgrade compatibility
 --
 [cols=4*,cols="h,d,d,d",options="header"]
@@ -216,7 +282,7 @@ a|
 Legacy snapshots are not supported on the E2700.
 
 a|
-5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
+E5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
 
 | From E5x00 to E5x00
 
