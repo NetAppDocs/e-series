@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host protocol change, EF50, EF80
 summary: You can change the protocol on the host I/O modules in your EF50 or EF80 storage system when you need to use a different protocol on your existing I/O modules, as part of an I/O module upgrade, or when the default protocol on new controllers part of a new storage system installation or controller upgrade is not the protocol you want.
 ---
-= Change the host protocol - EF50 and EF80
+= Change the host I/O module protocol - EF50 and EF80
 :experimental:
 :icons: font
 :imagesdir: ../media/
