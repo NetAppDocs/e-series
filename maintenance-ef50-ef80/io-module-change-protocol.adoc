@@ -2,7 +2,7 @@
 permalink: maintenance-ef50-ef80/io-module-change-protocol.html
 sidebar: sidebar
 keywords: host protocol change, EF50, EF80
-summary: You can change the protocol on the host I/O modules in your EF50 or EF80 storage system when you need to use a different protocol on your existing I/O modules, as part of an I/O module upgrade, or when the default protocol on new controllers part of a new storage system installation or controller upgrade on an existing storage system is not the protocol you want.
+summary: You can change the protocol on the host I/O modules in your EF50 or EF80 storage system when you need to use a different protocol on your existing I/O modules, as part of an I/O module upgrade, or when the default protocol on new controllers part of a new storage system installation or controller upgrade is not the protocol you want.
 ---
 = Change the host protocol - EF50 and EF80
 :experimental:
@@ -12,7 +12,7 @@ summary: You can change the protocol on the host I/O modules in your EF50 or EF8
 [.lead]
 // You can change the host port protocol on I/O modules using either Infiniband (IB) or Fibre Channel (FC) in an EF50 or EF80 storage system.
 
-You can change the protocol on the host I/O modules in your EF50 or EF80 storage system when you need to use a different protocol on your existing I/O modules, as part of an I/O module upgrade, or when the default protocol on new controllers part of a new storage system installation or controller upgrade on an existing storage system is not the protocol you want.
+You can change the protocol on the host I/O modules in your EF50 or EF80 storage system when you need to use a different protocol on your existing I/O modules, as part of an I/O module upgrade, or when the default protocol on new controllers part of a new storage system installation or controller upgrade is not the protocol you want.
 
 // I'm not addressing all these use cases here? Only the change on existing modules? For the other 3 use cases, I need to embed steps in the right place for each procedure and each version of steps would mostly be unique per the use case? I need to understand if I got the uses cases right. TK seemed to think upgrading a module had nothing to do with changing the protocol, but customer would upgrade 
 
@@ -20,7 +20,7 @@ You can change the protocol on the host I/O modules in your EF50 or EF80 storage
 
 * Changing the protocol on the host I/O modules involves preparing for the protocol change, stopping the host I/O operations, changing the protocol, and then configuring the host to use the new protocol.
 
-* Host I/O protocol is changed on all host I/O modules in your storage system.
+* The protocol is changed on all host I/O modules in your storage system.
 
 * Changing the protocol on the host I/O modules temporarily disrupts host access to all volumes and causes the storage system to be unavailable during the reboot process (both controllers are rebooted), which can take a few minutes.
 
@@ -41,7 +41,7 @@ Prepare to change the protocol on the host I/O modules in your storage system by
 
 .. Select *Settings* > *System*.
 .. In the *Additional Settings* section, click *Change host I/O protocol* to open that page.
-.. See the default host I/O protocol used on the host I/O modules in your storage system displayed in the *Host I/O Protocol* field.
+.. See the default protocol used on the host I/O modules in your storage system displayed in the *Host I/O Protocol* field.
 
 . The next step depends on whether the default protocol is the protocol you want or not:
 +
