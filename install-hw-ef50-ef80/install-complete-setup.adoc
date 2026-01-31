@@ -2,14 +2,14 @@
 permalink: install-hw-ef50-ef80/install-complete-setup.html
 sidebar: sidebar
 keywords: 
-summary: Cable and configure the management port on each controller for out-of-band storage system management, and then configure your EF50 or EF80 storage system.
+summary: After you power on your EF50 or EF80 storage system, you complete system setup by cabling and configuring the management port on each controller for out-of-band storage system management, configuring your storage system, and then verifying the host I/O module protocol is correct.
 ---
 = Complete storage system setup - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Cable and configure the management port on each controller for out-of-band storage system management, and then configure your EF50 or EF80 storage system.
+After you power on your EF50 or EF80 storage system, you complete system setup by cabling and configuring the management port on each controller for out-of-band storage system management, configuring your storage system, and then verifying the host I/O module protocol is correct.
 
 == Step 1: Cable and configure the management ports
 
@@ -123,7 +123,7 @@ Your storage system ships with a default protocol on the host I/O modules. If th
 
 .Steps
 
-. Verify the default protocol being used on the host I/O modules in your storage system by using SANtricity System Manager.
+. Verify the default protocol used on the host I/O modules in your storage system, using SANtricity System Manager.
 
 .. Select *Settings* > *System*.
 .. In the *Additional Settings* section, click *Change host I/O protocol* to open that page.
