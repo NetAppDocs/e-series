@@ -41,7 +41,7 @@ Prepare to change the protocol on the host I/O modules in your storage system by
 +
 Use the procedure link:../maintenance-ef50-ef80/io-module-upgrade.html[Upgrade I/O modules for an EF50 or EF80] to upgrade the I/O modules.
 +
-NOTE: The new I/O modules must be installed before you can see their default protocol and the available protocols.
+NOTE: The new I/O modules must be installed before you can see their default protocol and available protocols.
 //+
 //. If you are changing the protocol as part of an I/O module upgrade, complete the following substeps; otherwise, go to the next step:
 //.. Make sure you have already obtained the necessary hardware, which might include a new set of I/O modules and/or SFPs.
@@ -76,11 +76,11 @@ a|
 The default protocol is not the protocol you want
 a|Continue with this procedure to change the protocol. 
 
-If you want to see the available protocols your your host I/O modules, complete the following steps using SANtricity System Manager:
+If you want to see the available protocols for your host I/O modules, complete the following steps using SANtricity System Manager:
 
 . Select *Settings* > *System*.
 . In the *Additional Settings* section, click *Change host I/O protocol* to open that page.
-. In the *Host I/O Protocol* field, click the drop-down menu to see the availableprotocols.
+. In the *Host I/O Protocol* field, click the drop-down menu to see the available protocols.
 |===
 //+
 //+
