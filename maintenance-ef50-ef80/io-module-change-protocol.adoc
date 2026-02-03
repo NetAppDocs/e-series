@@ -71,8 +71,23 @@ a|Continue with this procedure to change the protocol.
 //|===
 //+
 . Schedule a downtime maintenance window for this procedure.
+//+
+//. If needed, obtain the necessary hardware for the protocol conversion, which might include a new set of I/O modules and/or SFPs. Your NetApp Sales Representative can help you determine what hardware you need and help you order the correct parts.
+//+
+. If you are changing the protocol as part of an I/O module upgrade:
+.. Make sure you have already obtained the necessary hardware, which might include a new set of I/O modules and/or SFPs.
++
+Your NetApp Sales Representative can help you determine what hardware you need and help you order the correct parts.
 
-. If needed, obtain the necessary hardware for the conversion, which might include a new set of I/O modules and/or SFPs. Your NetApp Sales Representative can help you determine what hardware you need and help you order the correct parts.
+.. Make sure you have switched the current I/O modules to the new hardware before continuing with this procedure.
++
+Use the link:../maintenance-ef50-ef80/io-module-upgrade.html[I/O module upgrade procedure] to switch the I/O modules.
++
+NOTE: You must switch the I/O modules to the new hardware before changing the protocol.
+
+Change the lead for this section?
+//+
+//NOTE: The available protocol in the drop-down list is based on the hardware currently installed in your storage system. To see the available protocols for the new hardware, you must first switch the hardware. After switching the hardware, you can then change the protocol by completing this procedure.
 
 
 == Step 2: Stop host I/O operations
@@ -116,7 +131,7 @@ NV icon and NV Caching Active LED on the controller
 |===
 +
 
-. Confirm operations on the controllers have completed in SANtricity System Manager:
+. Confirm operations on the controllers have completed, using SANtricity System Manager:
 .. Select *Storage* > *Operations in progress* to see the Overview screen. 
 .. Wait for all operations to complete and the Overview screen displays *No operations currently in progress*, before continuing to the next step.
 
@@ -133,6 +148,9 @@ Change the protocol on the host I/O modules to a supported protocol, using SANtr
 . Select *Settings* > *System*.
 . In the *Additional Settings* section, click *Change host I/O protocol* to open that page.
 . In the *Host I/O Protocol* field, click the drop-down menu and choose the protocol you want to use.
++
+The protocol list is based on the hardware currently installed.
++
 . Type *CHANGE* in the open field to confirm your change. 
 . Click the *Change* button.
 
