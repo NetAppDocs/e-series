@@ -29,7 +29,7 @@ You can change the protocol on the host I/O modules in your EF50 or EF80 storage
 
 == Step 1: Prepare for the protocol change
 
-Prepare to change the protocol on the host I/O modules in your storage system by verifying the current protocol on the host I/O modules, determining if you need to change the protocol, and if yes, scheduling a downtime maintenance window, and obtaining any necessary hardware.
+Prepare to change the protocol on the host I/O modules in your storage system by completing a host I/O module upgrade if needed, verifying the current protocol on the host I/O modules, determining if you need to change the protocol, and if yes, scheduling a downtime maintenance window, and obtaining any necessary hardware.
 
 //Need to create includes
 //syntax example:
@@ -37,18 +37,22 @@ Prepare to change the protocol on the host I/O modules in your storage system by
 
 .Steps
 
-. If you are changing the protocol as part of an I/O module upgrade, complete the following substeps; otherwise, go to the next step:
-.. Make sure you have already obtained the necessary hardware, which might include a new set of I/O modules and/or SFPs.
+. If you are changing the protocol as part of an I/O module upgrade, make sure you have upgraded the current I/O modules with the new I/O modules before continuing with this procedure; otherwise, go to the next step.
 +
-Your NetApp Sales Representative can help you determine what hardware you need and help you order the correct parts.
+Use the procedure link:../maintenance-ef50-ef80/io-module-upgrade.html[Upgrade I/O modules for an EF50 or EF80] to upgrade the I/O modules.
++
+NOTE: You must upgrade the current I/O modules to the new I/O modules in order to determine the default protocol and continue with this procedure.
 
-.. Make sure you have switched the current I/O modules to the new hardware before continuing with this procedure.
-+
-Use the procedure link:../maintenance-ef50-ef80/io-module-upgrade.html[Upgrade I/O modules for an EF50 or EF80] to switch the I/O modules.
-+
-NOTE: You must switch the I/O modules to the new hardware in order to determine the default protocol and continue with this procedure.
-+
-Change the lead for this section?
+//. If you are changing the protocol as part of an I/O module upgrade, complete the following substeps; otherwise, go to the next step:
+//.. Make sure you have already obtained the necessary hardware, which might include a new set of I/O modules and/or SFPs.
+//+
+//Your NetApp Sales Representative can help you determine what hardware you need and help you order the correct parts.
+
+//.. Make sure you have switched the current I/O modules to the new hardware before continuing with this procedure.
+//+
+//Use the procedure link:../maintenance-ef50-ef80/io-module-upgrade.html[Upgrade I/O modules for an EF50 or EF80] to switch the I/O modules.
+//+
+//NOTE: You must switch the I/O modules to the new hardware in order to determine the default protocol and continue with this procedure.
 //+
 //NOTE: The available protocol in the drop-down list is based on the hardware currently installed in your storage system. To see the available protocols for the new hardware, you must first switch the hardware. After switching the hardware, you can then change the protocol by completing this procedure.
 
