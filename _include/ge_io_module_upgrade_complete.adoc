@@ -40,7 +40,7 @@ If there is no Recovery Guru present or if after following the recovery guru ste
 +
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 
-. If you need to verify or change the host I/O module protocol, follow the instructions in the procedure xref:io-module-change-protocol.html[Change the host I/O module protocol for an EF50 or EF80].
+. If you need to verify or change the host I/O module protocol, use the procedure xref:io-module-change-protocol.html[Change the host I/O module protocol for an EF50 or EF80].
 
 
 //== Step 5: Complete the I/O module upgrade

@@ -46,7 +46,7 @@ The file is saved in the Downloads folder for your browser with the name, *confi
 
 * The upgrade procedure involves meeting the Before you begin requirements, powering off both controllers, upgrading I/O modules in both controllers, powering on both controllers, and verifying that the upgrade was successful.
 
-* Some I/O module upgrades might require you to change the host port protocol. After you upgrade the I/O modules, follow the instructions in the xref:io-module-change-protocol.html[Change host protocol for an EF50 or EF80] procedure.
+* If you are upgrading a host I/O module you might need to change the host protocol. At the end of this procedure you are provided with information on how to do this.
 
 * The term _I/O module_ is used instead of host interface cards (HICs) in this procedure.
 
