@@ -20,8 +20,8 @@ CAUTION: *Possible loss of data access*: If the two part numbers are not the sam
 If you need to find this number manually, follow these steps:
 +
 ... Select *Hardware* > *Controllers and components*.
-... Click the controller graphic for the impaired controller (Controller A or Controller B) to view the context menu.
-... Click *View settings*.
+... Select the controller graphic for the impaired controller (Controller A or Controller B) to view the context menu.
+... Select *View settings*.
 ... On the *Base* tab, make a note of the *Replacement Part Number* for the controller.
 
 .. Compare the two part numbers to confirm they are the same.
@@ -51,7 +51,7 @@ If a problem occurs when you remove a controller, you can use the saved file to 
 
 .. Select *Support › Support Center › Diagnostics*.
 .. Select *Collect Configuration Data*.
-.. Click *Collect*.
+.. Select *Collect*.
 +
 The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 

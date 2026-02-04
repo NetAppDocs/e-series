@@ -16,7 +16,7 @@ Whenever you place a controller offline, you need to wait at least one minute be
 
 . If the impaired controller is not already offline, place it offline using SANtricity System Manager:
 .. Select *Hardware* > *Controllers and components* to show the controllers.
-.. Click on the controller that you want to place offline to display its content menu.
+.. Select the controller that you want to place offline to display its content menu.
 .. Select *Place offline*, and then confirm that you want to perform the operation.
 +
 NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to place offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.

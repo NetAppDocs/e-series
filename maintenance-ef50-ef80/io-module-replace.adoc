@@ -38,7 +38,7 @@ If a problem occurs when you remove a controller, you can use the saved file to 
 +
 .. Select *Support* > *Support Center* > *Diagnostics*.
 .. Select *Collect Configuration Data*.
-.. Click *Collect*.
+.. Select *Collect*.
 +
 The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 

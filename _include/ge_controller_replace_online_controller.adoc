@@ -23,7 +23,7 @@ Ask your network administrator to associate the DNS/network and IP address for t
 
 . Place the controller online using SANtricity System Manager.
 .. Select *Hardware* > *Controllers and components* to show the controllers.
-.. Click on the controller that you replaced to display its content menu.
+.. Select the controller that you replaced to display its content menu.
 .. Select *Place online*.
 
 . As the controller boots, check the controller LEDs to make sure communication with the other controller is reestablished:

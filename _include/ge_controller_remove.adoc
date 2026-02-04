@@ -1,9 +1,6 @@
 Remove the impaired controller from the chassis.
 
 .Steps
-//. Wait for any data in cache memory to be written to the drives.
-
-//The green Cache Active LED (NV Caching Active LED) on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
 
 . On the impaired controller, make sure the NV Caching Active (green) LED is off.
 +

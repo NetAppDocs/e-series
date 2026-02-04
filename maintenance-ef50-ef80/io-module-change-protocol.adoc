@@ -2,7 +2,7 @@
 permalink: maintenance-ef50-ef80/io-module-change-protocol.html
 sidebar: sidebar
 keywords: host protocol change, EF50, EF80
-summary: You can change the protocol on the host I/O modules in your EF50 or EF80 storage system when you need to use a different protocol on your existing I/O modules, as part of an I/O module upgrade, or when the default protocol on new controllers part of a new storage system installation or controller upgrade is not the protocol you want.
+summary: You can change the protocol on the host I/O modules in your EF50 or EF80 storage system when you need a different protocol on your existing I/O modules, as part of an I/O module upgrade, or when the default protocol on new controllers part of a new storage system installation or controller upgrade is not the protocol you want.
 ---
 = Change the host I/O module protocol - EF50 and EF80
 :experimental:
@@ -35,7 +35,7 @@ Prepare to change the protocol on the host I/O modules in your storage system by
 
 .Steps
 
-. If you are changing the protocol as part of an I/O module upgrade, upgrade the I/O modules before continuing. If not, continue to the next step.
+. If you are changing the protocol as part of an I/O module upgrade, upgrade the I/O modules before continuing; otherwise, continue to the next step.
 +
 Use the procedure link:../maintenance-ef50-ef80/io-module-upgrade.html[Upgrade I/O modules for an EF50 or EF80] to upgrade the I/O modules.
 +
@@ -58,10 +58,10 @@ NOTE: The new I/O modules must be installed before you can see their default pro
 . If you do not know the protocol on the host I/O modules in your storage system, verify it using SANtricity System Manager.
 
 .. Select *Settings* > *System*.
-.. In the *Additional Settings* section, click *Change host I/O protocol* to open that page.
+.. In the *Additional Settings* section, select *Change host I/O protocol* to open that page.
 .. See the default protocol displayed in the *Host I/O Protocol* field.
 +
-NOTE: If you want to see the list of available protocols for your host I/O modules, click the drop-down menu in the *Host I/O Protocol* field. The protocol list is based on the host I/O modules currently installed.
+NOTE: If you want to see the list of available protocols for your host I/O modules, select the drop-down menu in the *Host I/O Protocol* field. The protocol list is based on the host I/O modules currently installed.
 +
 
 . The next step depends on whether the default protocol is the protocol you want or not:
@@ -77,26 +77,11 @@ a|
 The default protocol is not the protocol you want
 a|Continue with this procedure to change the protocol. 
 |===
-//+
-//+
-//. The next step depends on whether you need to change the protocol or not:
-//+
-//[options="header" cols="1,2"]
-//|===
-//|If...| Then...
-//a|
-//If you need to change the protocol
-//a|
-//Continue to the next step and then complete this procedure.
-//a| If you do not need to change the protocol...| Then you can skip to the next section.
-//|===
-//+
+
 . Schedule a downtime maintenance window for this procedure.
 //+
 //. If needed, obtain the necessary hardware for the protocol conversion, which might include a new set of I/O modules and/or SFPs. Your NetApp Sales Representative can help you determine what hardware you need and help you order the correct parts.
 //+
-
-
 
 == Step 2: Stop host I/O operations
 
@@ -154,15 +139,15 @@ Change the protocol on the host I/O modules in your storage system, using SANtri
 .Steps
 
 . Select *Settings* > *System*.
-. In the *Additional Settings* section, click *Change host I/O protocol* to open that page.
-. In the *Host I/O Protocol* field, click the drop-down menu and choose the protocol you want to use.
+. In the *Additional Settings* section, select *Change host I/O protocol* to open that page.
+. In the *Host I/O Protocol* field, select the drop-down menu and choose the protocol you want to use.
 +
 //The protocol list is based on the hardware currently installed.
 //+
 The protocol list is based on the host I/O modules currently installed.
 +
 . Type *CHANGE* in the open field to confirm your change. 
-. Click the *Change* button.
+. Select the *Change* button.
 
 == Step 4: Configure the host to use the new protocol
 

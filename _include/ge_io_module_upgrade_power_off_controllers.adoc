@@ -12,7 +12,7 @@ NOTE: If the status is not Optimal, use the Recovery Guru or contact https://mys
 //If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the controller.
 //.. Select *Support > Support Center > Diagnostics*.
 //.. Select *Collect Configuration Data*.
-//.. Click *Collect*.
+//.. Select *Collect*.
 //+
 //The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
@@ -54,20 +54,3 @@ NV icon and NV Caching Active LED on the controller
 .. Label and then unplug the power cable from both controllers.
 .. Wait for all LEDs on both controllers to turn off.
 
-//[[step2_remove_controller_canister]]
-//== Step 2: Remove controller - not needed for gE
-
-//Remove the controller from the chassis.
-
-//.Steps
-
-//. If you are not already grounded, properly ground yourself.
-//. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller, keeping track of where the cables were connected.
-//+
-//Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
-//. Remove and set aside the cable management devices from the left and right sides of the controller.
-//. Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller from the midplane, and then, using two hands, pull the controller out of the chassis.
-//. Turn the controller over and place it on a flat, stable surface.
-//. Open the cover by pressing the blue buttons on the sides of the controller to release the cover, and then rotate the cover up and off of the controller.
-//+
-//image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[Open controller cover.]

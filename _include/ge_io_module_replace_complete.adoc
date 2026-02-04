@@ -2,9 +2,9 @@
 
 .Steps
 
-. Ensure that the latest version of SANtricity OS is installed using SANtricity System Manager: 
+. Make sure the latest version of SANtricity OS is installed using SANtricity System Manager: 
 .. Select *Support* > *Upgrade Center*
-..  As needed, install the latest version.
+.. As needed, install the latest version.
 
 . Verify that all volumes have been returned to their preferred owners:
 .. Select *Storage > Volumes*. 
@@ -24,7 +24,7 @@ Go to the next step.
 a|
 None of the volumes are returned to their preferred owners
 a|
-Select *Storage* > *Volumes* > *More* and from the drop-down menu choose *Redistribute volumes* to return the volumes to their preferred owners.
+Select *Storage* > *Volumes* > *More* and from the drop-down menu select *Redistribute volumes* to return the volumes to their preferred owners.
 a|
 Only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution 
 a|
@@ -36,6 +36,6 @@ If there is no Recovery Guru present or if following the recovery guru steps the
 . Collect support data for your storage system:
 .. Select *Support > Support Center > Diagnostics*.
 .. Select *Collect Support Data*.
-.. Click *Collect*.
+.. Select *Collect*.
 +
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.

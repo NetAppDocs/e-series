@@ -37,7 +37,7 @@ If a problem occurs when you remove a controller, you can use the saved file to 
 +
 .. Select *Support* > *Support Center* > *Diagnostics*.
 .. Select *Collect Configuration Data*.
-.. Click *Collect*.
+.. Select *Collect*.
 +
 The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
@@ -45,7 +45,7 @@ The file is saved in the Downloads folder for your browser with the name, *confi
 
 * The replacement process involves meeting the Before you begin requirements, placing the impaired controller offline, removing the controller, replacing the NV battery, reinstalling the controller, placing the controller back online, completing the NV battery replacement, and then returning the failed part to NetApp.
 
-* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, click the *Controller shelf* tab, and from the context menu select *Turn on locator light*.
+* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, select the *Controller shelf* tab, and from the context menu select *Turn on locator light*.
 
 == Step 1: Place the controller offline
  
