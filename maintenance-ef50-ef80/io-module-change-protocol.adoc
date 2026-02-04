@@ -10,11 +10,9 @@ summary: You can change the protocol on the host I/O modules in your EF50 or EF8
 :imagesdir: ../media/
 
 [.lead]
-// You can change the host port protocol on I/O modules using either Infiniband (IB) or Fibre Channel (FC) in an EF50 or EF80 storage system.
 
-You can change the protocol on the host I/O modules in your EF50 or EF80 storage system when you need to use a different protocol on your existing I/O modules, as part of an I/O module upgrade, or when the default protocol on new controllers part of a new storage system installation or controller upgrade is not the protocol you want.
+You can change the protocol on the host I/O modules in your EF50 or EF80 storage system when you need a different protocol on your existing I/O modules, as part of an I/O module upgrade, or when the default protocol on new controllers part of a new storage system installation or controller upgrade is not the protocol you want.
 
-// I'm not addressing all these use cases here? Only the change on existing modules? For the other 3 use cases, I need to embed steps in the right place for each procedure and each version of steps would mostly be unique per the use case? I need to understand if I got the uses cases right. TK seemed to think upgrading a module had nothing to do with changing the protocol, but customer would upgrade 
 
 .About this task
 
@@ -22,14 +20,14 @@ You can change the protocol on the host I/O modules in your EF50 or EF80 storage
 
 * The protocol is changed on all host I/O modules in your storage system.
 
-* Changing the protocol on the host I/O modules temporarily disrupts host access to all volumes and causes the storage system to be unavailable during the reboot process (both controllers are rebooted), which can take a few minutes.
-
-//* New storage system installations and new controllers being used in a controller upgrade ship with a default host protocol. You need to check if the default host protocol is what you want and if not, you need to change it.
+* When you change the protocol on the host I/O modules, you temporarily disrupt host access to all volumes and make the storage system unavailable during the reboot, which takes a few minutes.
 
 
 == Step 1: Prepare for the protocol change
 
 Prepare to change the protocol on the host I/O modules in your storage system by completing a host I/O module upgrade if needed, verifying the current protocol on the host I/O modules, determining if you need to change the protocol, and if yes, scheduling a downtime maintenance window.
+
+// To prepare, upgrade the host I/O modules if needed, check the current protocol, decide if a protocol change is needed, and schedule a downtime window.
 
 //Need to create includes
 //syntax example:
@@ -37,7 +35,7 @@ Prepare to change the protocol on the host I/O modules in your storage system by
 
 .Steps
 
-. If you are changing the protocol as part of an I/O module upgrade, make sure you have upgraded the current I/O modules with the new I/O modules before continuing with this procedure; otherwise, go to the next step.
+. If you are changing the protocol as part of an I/O module upgrade, upgrade the I/O modules before continuing. If not, continue to the next step.
 +
 Use the procedure link:../maintenance-ef50-ef80/io-module-upgrade.html[Upgrade I/O modules for an EF50 or EF80] to upgrade the I/O modules.
 +
@@ -102,7 +100,7 @@ a|Continue with this procedure to change the protocol.
 
 == Step 2: Stop host I/O operations
 
-You must stop all I/O operations from the host before changing the protocol on the host I/O modules.
+You must stop all I/O operations from the host before changing the protocol.
 
 NOTE: You cannot access data on the storage system until you successfully complete the protocol change.
 
@@ -112,7 +110,7 @@ NOTE: You cannot access data on the storage system until you successfully comple
 
 .Steps
 
-. Ensure that no I/O operations are occurring between the storage system and all connected hosts. For example, you can perform these steps:
+. Make sure no I/O operations are happening between the storage system and all connected hosts. For example, you can perform these steps:
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
  ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
  ** Unmount all file systems associated with volumes on the storage system.
