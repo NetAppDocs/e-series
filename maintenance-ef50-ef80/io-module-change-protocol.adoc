@@ -29,7 +29,7 @@ You can change the protocol on the host I/O modules in your EF50 or EF80 storage
 
 == Step 1: Prepare for the protocol change
 
-Prepare to change the protocol on the host I/O modules in your storage system by completing a host I/O module upgrade if needed, verifying the current protocol on the host I/O modules, determining if you need to change the protocol, and if yes, scheduling a downtime maintenance window, and obtaining any necessary hardware.
+Prepare to change the protocol on the host I/O modules in your storage system by completing a host I/O module upgrade if needed, verifying the current protocol on the host I/O modules, determining if you need to change the protocol, and if yes, scheduling a downtime maintenance window.
 
 //Need to create includes
 //syntax example:
@@ -41,7 +41,7 @@ Prepare to change the protocol on the host I/O modules in your storage system by
 +
 Use the procedure link:../maintenance-ef50-ef80/io-module-upgrade.html[Upgrade I/O modules for an EF50 or EF80] to upgrade the I/O modules.
 +
-NOTE: The new I/O modules must be installed before you can see their default protocol and available protocols.
+NOTE: The new I/O modules must be installed before you can see their default protocol and available protocols in SANtricity System Manager.
 //+
 //. If you are changing the protocol as part of an I/O module upgrade, complete the following substeps; otherwise, go to the next step:
 //.. Make sure you have already obtained the necessary hardware, which might include a new set of I/O modules and/or SFPs.
@@ -61,7 +61,10 @@ NOTE: The new I/O modules must be installed before you can see their default pro
 
 .. Select *Settings* > *System*.
 .. In the *Additional Settings* section, click *Change host I/O protocol* to open that page.
-.. See the default protocol used on the host I/O modules in your storage system displayed in the *Host I/O Protocol* field.
+.. See the default protocol displayed in the *Host I/O Protocol* field.
++
+NOTE: If you want to see the available protocols for your host I/O modules, click the drop-down menu in the *Host I/O Protocol* field.
+
 
 . The next step depends on whether the default protocol is the protocol you want or not:
 +
@@ -75,12 +78,6 @@ No action is needed. You can exit this procedure.
 a|
 The default protocol is not the protocol you want
 a|Continue with this procedure to change the protocol. 
-
-If you want to see the available protocols for your host I/O modules, complete the following steps using SANtricity System Manager:
-
-. Select *Settings* > *System*.
-. In the *Additional Settings* section, click *Change host I/O protocol* to open that page.
-. In the *Host I/O Protocol* field, click the drop-down menu to see the available protocols.
 |===
 //+
 //+
@@ -126,7 +123,7 @@ CAUTION: *Possible data loss* -- If you continue this procedure while I/O operat
 
 . On each controller, make sure the NV Caching Active (green) LED is off.
 +
-When the NV Caching Active (green) LED is off, any data in cache memory has been written to the drives and it is safe to continue with the procedure.
+When the NV Caching Active (green) LED is off, any data in cache memory has been written to the drives and it is safe to continue with this procedure.
 +
 NOTE: If the NV Caching Active (green) LED is on, cached data is being written to the drives. You must wait for the process to complete and the NV Caching Active (green) LED to turn off. However, if the LED remains on for longer than five minutes, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 +
@@ -150,7 +147,7 @@ NV icon and NV Caching Active LED on the controller
 
 == Step 3: Change the protocol
 
-Change the protocol on the host I/O modules to a supported protocol, using SANtricity System Manager.
+Change the protocol on the host I/O modules in your storage system, using SANtricity System Manager.
 
 //Need to create includes
 //syntax example:
@@ -162,7 +159,9 @@ Change the protocol on the host I/O modules to a supported protocol, using SANtr
 . In the *Additional Settings* section, click *Change host I/O protocol* to open that page.
 . In the *Host I/O Protocol* field, click the drop-down menu and choose the protocol you want to use.
 +
-The protocol list is based on the hardware currently installed.
+//The protocol list is based on the hardware currently installed.
+//+
+The protocol list is based on the host I/O modules currently installed.
 +
 . Type *CHANGE* in the open field to confirm your change. 
 . Click the *Change* button.
