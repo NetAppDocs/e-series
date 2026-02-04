@@ -63,8 +63,8 @@ NOTE: The new I/O modules must be installed before you can see their default pro
 .. In the *Additional Settings* section, click *Change host I/O protocol* to open that page.
 .. See the default protocol displayed in the *Host I/O Protocol* field.
 +
-NOTE: If you want to see the available protocols for your host I/O modules, click the drop-down menu in the *Host I/O Protocol* field.
-
+NOTE: If you want to see the list of available protocols for your host I/O modules, click the drop-down menu in the *Host I/O Protocol* field. The protocol list is based on the host I/O modules currently installed.
++
 
 . The next step depends on whether the default protocol is the protocol you want or not:
 +
