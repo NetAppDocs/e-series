@@ -57,7 +57,7 @@ Unused I/O slots should have blanking modules installed to prevent possible ther
 +
 Controllers do not need to be removed from the chassis since the I/O modules are accessible with the controllers in place.
 
-* If you are upgrading a host I/O module you might need to change the host protocol. At the end of this procedure you are provided with information on how to do this.
+//* If you are upgrading a host I/O module you might need to change the host protocol. At the end of this procedure you are provided with information on how to do this.
 
 * You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, click the *Controller shelf* tab, and from the context menu select *Turn on locator light*.
 
