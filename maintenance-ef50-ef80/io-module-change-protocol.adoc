@@ -17,9 +17,11 @@ You can change the protocol on the host I/O modules in your EF50 or EF80 storage
 
 //Make sure you have completed any necessary hardware procedures.
 
-If you are changing the host protocol as part of a hardware procedure (I/O module upgrade, new system installation, or controller upgrade), you need to have completed the hardware procedure.
+If you are changing the host protocol as part of a hardware procedure (I/O module upgrade, new system installation, or controller upgrade), you need to have completed the applicable hardware procedure.
 
-NOTE: New hardware must be installed before you can see the default protocol and available protocols for your host I/O modules because SANtricity System Manager displays this information on currently installed hardware.
+NOTE: New hardware must already be installed because the default protocol and list of available protocols (you view in this procedure) are based on the host I/O modules currently installed.
+
+//NOTE: New hardware must be installed before you can see the default protocol and available protocols for your host I/O modules. because SANtricity System Manager displays this information on currently installed hardware.
 
 //NOTE: SANtricity System Manager displays the default host protocol and list of available protocols on currently installed hardware.
 
@@ -62,7 +64,9 @@ Start with the link:../upgrade-controllers/index.html[Learn about upgrading E-Se
 
 == Step 1: Prepare for the protocol change
 
-Prepare to change the protocol on the host I/O modules in your storage system by completing a host I/O module upgrade if needed, verifying the current protocol on the host I/O modules, determining if you need to change the protocol, and if yes, scheduling a downtime maintenance window.
+Prepare to change the protocol on the host I/O modules in your storage system by verifying the current protocol on the host I/O modules, determining if you need to change the protocol, and if yes, scheduling a downtime maintenance window.
+
+//Prepare to change the protocol on the host I/O modules in your storage system by completing a host I/O module upgrade if needed, verifying the current protocol on the host I/O modules, determining if you need to change the protocol, and if yes, scheduling a downtime maintenance window.
 
 // To prepare, upgrade the host I/O modules if needed, check the current protocol, decide if a protocol change is needed, and schedule a downtime window.
 
@@ -72,12 +76,11 @@ Prepare to change the protocol on the host I/O modules in your storage system by
 
 .Steps
 
-. If you are changing the protocol as part of an I/O module upgrade, upgrade the I/O modules before continuing; otherwise, go to the next step.
-+
-Use the procedure link:../maintenance-ef50-ef80/io-module-upgrade.html[Upgrade I/O modules for an EF50 or EF80] to upgrade the I/O modules.
-+
-NOTE: The new I/O modules must be installed before you can see their default protocol and available protocols in SANtricity System Manager.
-
+//. If you are changing the protocol as part of an I/O module upgrade, upgrade the I/O modules before continuing; otherwise, go to the next step.
+//+
+//Use the procedure link:../maintenance-ef50-ef80/io-module-upgrade.html[Upgrade I/O modules for an EF50 or EF80] to upgrade the I/O modules.
+//+
+//NOTE: The new I/O modules must be installed before you can see their default protocol and available protocols in SANtricity System Manager.
 
 
 . If you do not know the protocol on the host I/O modules in your storage system, verify it using SANtricity System Manager.
@@ -155,7 +158,7 @@ NV icon and NV Caching Active LED on the controller
 
 == Step 3: Change the protocol
 
-Change the protocol on the host I/O modules in your storage system, using SANtricity System Manager.
+Change the protocol on the host I/O modules, using SANtricity System Manager.
 
 //Need to create includes
 //syntax example:
