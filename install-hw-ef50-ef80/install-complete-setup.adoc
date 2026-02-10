@@ -26,8 +26,14 @@ Cable and then configure the management ports using a DHCP server.
 
 .Before you begin
 
-* Configure your DHCP server to associate an IP address, subnet mask, and gateway address as a permanent lease for each controller.
 * Obtain the assigned IP addresses to connect to the storage system from your network administrator.
+
+* Make note of the MAC address on the side of each controller. You use the MAC address to identify which IP address is assigned to each controller.
+
+* Configure your DHCP server to associate an IP address, subnet mask, and gateway address as a permanent lease for each controller.
+
+//You can use the MAC address to identify which IP address is assigned to each controller.
+
 
 .Steps
 
@@ -104,13 +110,13 @@ Use SANtricity System Manager to configure and manage your storage system.
 
 .Before You Begin
 
-* Cable and configure your management ports to the network.
+* You must have cabled and configured your management ports to the network.
 // network switch
-* Verify and record your password and IP addresses.
+* Verify and record your password and configured IP addresses.
 
 .Steps
 
-. Access SANtricity System Manager using the same IP addresses that you used to configure your management ports.
+. Access SANtricity System Manager using the configured IP addresses.
 
 . Use SANtricity System Manager to manage your storage system. 
 +

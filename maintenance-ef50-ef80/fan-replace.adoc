@@ -44,8 +44,6 @@ The file is saved in the Downloads folder for your browser with the name, *confi
 
 == Step 1: Place the controller offline
  
-Place the impaired controller offline so you can safely replace a faulty fan.
- 
 include::../_include/ge_internal_frus_controller_offline.adoc[]
  
 

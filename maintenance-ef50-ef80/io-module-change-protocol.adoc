@@ -158,7 +158,7 @@ NV icon and NV Caching Active LED on the controller
 
 == Step 3: Change the protocol
 
-Change the protocol on the host I/O modules, using SANtricity System Manager.
+Using SANtricity System Manager, change the protocol on the host I/O modules, wait for the controllers to complete their reboot cycle and confirm their status is Optimal.
 
 //Need to create includes
 //syntax example:
@@ -176,6 +176,25 @@ The protocol list is based on the host I/O modules currently installed.
 +
 . Type *CHANGE* in the open field to confirm your change. 
 . Select the *Change* button.
+. Wait for the controllers to complete their reboot cycle.
++
+This can take about five minutes.
+
+. When the controllers are back online, confirm their status is Optimal, using SANtricity System Manager.
+//+
+//If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated.
+//+
+//NOTE: If you cannot resolve the problem, contact https://www.netapp.com/company/contact-us/support/[NetApp Support^]. If needed, collect support data for your storage system using SANtricity System Manager.
+
+//and become optimal again in the System Manager. 
+
+//The controllers begin to boot.
+
+//. Check the LEDs on the controllers to make sure communication between the controllers is reestablished:
+
+//** The Attention LED remains on.
+//** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
+
 
 == Step 4: Configure the host to use the new protocol
 

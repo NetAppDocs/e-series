@@ -48,9 +48,7 @@ The file is saved in the Downloads folder for your browser with the name, *confi
 * You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, select the *Controller shelf* tab, and from the context menu select *Turn on locator light*.
 
 == Step 1: Place the controller offline
- 
-Place the impaired controller offline so you can safely replace the NV battery.
- 
+
 include::../_include/ge_internal_frus_controller_offline.adoc[]
 
 

@@ -33,8 +33,6 @@ include::../_include/ge_dimm_replace_prepare.adoc[]
 
 == Step 3: Place the controller offline
  
-Place the impaired controller offline so you can safely replace a faulty DIMM.
- 
 include::../_include/ge_internal_frus_controller_offline.adoc[]
 
 
