@@ -35,7 +35,8 @@ NOTE: Do not use excessive force when sliding the controller into the chassis; i
 +
 .. Rotate the controller handles up and lock in place with the tabs.
 
-. Recable the controller.
+. Reconnect the power cord to the power supply.
+. Reconnect all of the cables to the controller.
 +
 Once power is restored to the PSU, the status LED should be green.
 

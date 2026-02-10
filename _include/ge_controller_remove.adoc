@@ -27,13 +27,9 @@ NV icon and NV Caching Active LED on the controller
 
 . Label each cable that is attached to the impaired controller.
 
-. Disconnect the power on the impaired controller:
+. Disconnect the power cord from the power supply on the impaired controller.
 +
 NOTE: The power supply (PSU) does not have a power switch.
-+
-.. Open the power cord retainer.
-.. Unplug the power cord from the PSU and set it aside.
-
 +
 . Unplug all cables from the impaired controller.
 

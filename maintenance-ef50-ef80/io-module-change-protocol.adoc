@@ -126,7 +126,7 @@ NOTE: You cannot access data on the storage system until you successfully comple
 . Make sure no I/O operations are happening between the storage system and all connected hosts. For example, you can perform these steps:
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
  ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
- ** Unmount all file systems associated with volumes on the storage system.
+ ** Unmount all file systems associated with LUNs on the storage system.
 +
 NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host or contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support^].
 +
