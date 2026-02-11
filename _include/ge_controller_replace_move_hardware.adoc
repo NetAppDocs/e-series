@@ -1,9 +1,4 @@
 
-.Before you begin
-* You must have met the link:controller-replace-requirements.html[requirements] for this procedure.
-* You must have completed the link:controller-replace-prepare.html[preparation] for this procedure.
-* You must have link:controller-replace-offline-controller.html[offlined the impaired controller].
-
 .About this task
 * You should install the replacement controller within 60 minutes of removing the failed controller to maintain proper cooling for the storage system. 
 +

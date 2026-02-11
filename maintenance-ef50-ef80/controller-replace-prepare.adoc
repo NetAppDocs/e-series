@@ -10,9 +10,6 @@ summary: Prepare to replace the impaired controller in your EF50 or EF80 storage
 
 [.lead]
 Prepare to replace the impaired controller in your EF50 or EF80 storage system by unpacking the replacement controller, making note of its MAC address, confirming its part number is correct, and backing up the storage system's configuration database.
- 
-.Before you begin
-You must have met the link:controller-replace-requirements.html[requirements] for this procedure.
 
 include::../_include/ge_controller_replace_prepare.adoc[]
 

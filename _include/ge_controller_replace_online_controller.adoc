@@ -1,10 +1,4 @@
 
-.Before you begin
-* You must have met the link:controller-replace-requirements.html[requirements] for this procedure.
-* You must have completed the link:controller-replace-prepare.html[preparation] for this procedure.
-* You must have link:controller-replace-offline-controller.html[offlined the impaired controller].
-* You must have link:controller-replace-move-hardware.html[replaced the impaired controller].
-
 .Steps
 
 . The next step depends on whether the impaired controller used DHCP for the IP address:
