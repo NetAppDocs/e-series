@@ -36,8 +36,11 @@ NOTE: Do not use excessive force when sliding the controller into the chassis; i
 .. Rotate the controller handles up and lock in place with the tabs.
 
 . Reconnect the power cord to the power supply.
-. Reconnect all of the cables to the controller.
 +
 Once power is restored to the PSU, the status LED should be green.
+. Reconnect all of the cables to the controller.
++
+Reconnecting the cables must be done before placing the controller online. This is especially important for the mirroring cables.
+
 
 
