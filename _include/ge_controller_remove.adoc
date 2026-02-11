@@ -1,4 +1,4 @@
-Remove the impaired controller from the chassis.
+Verify any data in cache memory has been written to the drives, unplug all of the cables from the impaired controller, and then remove the impaired controller from the chassis.
 
 .Steps
 

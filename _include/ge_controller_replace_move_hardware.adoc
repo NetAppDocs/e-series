@@ -1,5 +1,10 @@
 
-== About this task
+.Before you begin
+* You must have met the link:controller-replace-requirements.html[requirements] for this procedure.
+* You must have completed the link:controller-replace-prepare.html[preparation] for this procedure.
+* You must have link:controller-replace-offline-controller.html[offlined the impaired controller].
+
+.About this task
 * You should install the replacement controller within 60 minutes of removing the failed controller to maintain proper cooling for the storage system. 
 +
 CAUTION: To prevent overheating, do not leave the controller bay empty for longer than 60 minutes.
@@ -213,7 +218,7 @@ You can use the tab on the left and the thumbscrew on the right to push in the I
 
 == Step 7: Install the controller
 
-Install the replacement controller into the chassis.
+Install the replacement controller into the chassis and reconnect all cables.
 
 include::../_include/ge_controller_reinstall.adoc[]
 
