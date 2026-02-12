@@ -1,4 +1,4 @@
-Place the impaired controller offline so you can safely remove it.
+Place the impaired controller offline so you can safely unplug its cabling and remove it.
 
 .About this task
 Whenever you place a controller offline, you need to wait at least one minute before placing the controller back online. This waiting period allows the storage system to update the status of the controller and ensure that all cached data is written to the drives.

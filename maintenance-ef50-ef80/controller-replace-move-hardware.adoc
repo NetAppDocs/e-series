@@ -9,7 +9,7 @@ summary: Replace the impaired controller in your EF50 or EF80 storage system by 
 :imagesdir: ../media/
 
 [.lead]
-Replace the impaired controller in your EF50 or EF80 storage system by removing the controller, moving the components to the replacement controller, and installing the replacement controller.
+Replace the impaired controller in your EF50 or EF80 storage system by verifying any data in cache memory has been written to the drives, unplug all of the cables from the impaired controller, removing the impaired controller, moving the components to the replacement controller, and installing the replacement controller.
 
 
 include::../_include/ge_controller_replace_move_hardware.adoc[]
