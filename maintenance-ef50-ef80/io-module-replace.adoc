@@ -64,7 +64,7 @@ include::../_include/ge_io_module_replace_offline_impaired_controller.adoc[]
 
 == Step 2: Replace the I/O module
 
-Replace the failed I/O module with the replacement I/O module.
+Unplug cabling from the failed I/O module, replace it with the replacement I/O module, and then cable the replacement I/O module.
 
 include::../_include/ge_io_module_replace_replace_failed_module.adoc[]
 

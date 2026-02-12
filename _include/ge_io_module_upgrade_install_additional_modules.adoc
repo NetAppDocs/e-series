@@ -5,7 +5,12 @@ You begin with one controller, and then repeat steps for the other controller.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
-. On one of the controllers, remove the I/O module or I/O blanking module from the target slot.
+
+. On one of the controllers, unplug cabling from the I/O module you are removing, unless it's an I/O blanking module.
++
+You can label the cables so that you know where they came from. However, depending on the type of I/O module you are upgrading to, you might not be recabling to the same ports or you might not be able to reuse the same cables.
+
+. Remove the I/O module or I/O blanking module from the target slot.
 +
 The following illustration shows an I/O blanking module being removed.
 +
