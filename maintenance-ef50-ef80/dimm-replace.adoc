@@ -52,7 +52,7 @@ include::../_include/ge_dimm_replace.adoc[]
 
 == Step 6: Reinstall the controller
 
-Reinstall the controller into the chassis.
+Reinstall the controller into the chassis, reconnect the power cord, and all of the cables.
 
 include::../_include/ge_controller_reinstall.adoc[]
 
