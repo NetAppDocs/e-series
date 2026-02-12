@@ -40,7 +40,9 @@ NOTE: Do not use excessive force when sliding the controller into the chassis; i
 Once power is restored to the PSU, the status LED should be green.
 . Reconnect all of the cables to the controller.
 +
-Reconnecting the cables must be done before placing the controller online. This is especially important for the mirroring cables.
+Reconnecting the cables must be done before placing the controller online. This is especially important for the mirroring cable connections because they ensure full system redundancy and are used for cache mirroring and I/O shipping.
+
+//They must be connected for full system redundancy. They're used for cache mirroring and I/O shipping. (I/O shipping in a NetApp E-Series system is a mechanism where the non-owning controller receives host I/O and transfers it to the owning controller via internal, high-speed interconnect channels for processing. This enables active-active access, allowing hosts to access volumes through any controller.)
 
 
 
