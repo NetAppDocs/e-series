@@ -38,6 +38,8 @@ The file is saved in the Downloads folder for your browser with the name, *confi
 .About this task
 * The replacement process involves meeting the Before you begin requirements, placing the controller offline, removing the controller, replacing the fan, reinstalling the controller, placing the controller back online, completing the fan replacement, and then returning the failed part to NetApp.
 
+* You must place the impaired controller offline before unplugging any of its cables.
+
 * Each controller includes five fans. If a fan fails, you must replace it as soon as possible to ensure that the controller has adequate cooling.
 
 * You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, select the *Controller shelf* tab, and from the context menu select *Turn on locator light*.
