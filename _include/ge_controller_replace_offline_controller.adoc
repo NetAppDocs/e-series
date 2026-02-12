@@ -19,4 +19,10 @@ NOTE: If you are accessing SANtricity System Manager using the controller you ar
 +
 CAUTION: Do not begin any other operations until after the status has been updated.
 
-. Select *Recheck* from the Recovery Guru, and confirm that the *OK to remove* field in the Details area displays *Yes*, indicating that it is safe to remove the faulty component.
+. Confirm it is safe to remove the faulty component, using the Recovery Guru:
+.. Select *Recheck*.
+.. Confirm that the *OK to remove* field in the Details area displays *Yes*.
++
+CAUTION: If the *OK to remove* field does not display *Yes*, do not proceed with the removal of the faulty component. Instead, troubleshoot the issue using the Recovery Guru.
++
+CAUTION: Do not unplug any cables from the impaired controller at this time.
