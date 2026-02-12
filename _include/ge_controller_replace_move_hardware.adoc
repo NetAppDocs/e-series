@@ -4,6 +4,8 @@
 +
 CAUTION: To prevent overheating, do not leave the controller bay empty for longer than 60 minutes.
 
+* You must place the impaired controller offline before unplugging any of its cables.
+
 * You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, select the *Controller shelf* tab, and from the context menu select *Turn on locator light*.
 
 == Step 1: Remove the controller

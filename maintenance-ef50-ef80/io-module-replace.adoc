@@ -59,7 +59,7 @@ The file is saved in the Downloads folder for your browser with the name, *confi
 
 == Step 1: Place the controller offline
 
-Place the impaired controller offline so you can safely replace the failed I/O module.
+Place the impaired controller offline so you can safely unplug the cabling from the failed I/O module, and then remove it.
 
 include::../_include/ge_io_module_replace_offline_impaired_controller.adoc[]
 
