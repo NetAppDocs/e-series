@@ -53,6 +53,23 @@ When upgrading your E-Series controller, you should disable any premium features
 +
 Before upgrading to E4000 controllers, unmap the Access volume from all defined hosts and host clusters.
 
+* *EF50 and EF80 mirror cabling*
++
+Both the EF80 and EF50 systems use high-speed (100GbE or 200GbE) external connections to enable inter-controller communication between the two controllers. Each controller is equipped with a dedicated interface card installed in slot 4. This card provides two ports, and includes two 0.5m (100GbE or 200GbE) cables with the system. 
+
++
+Use these cables to connect the controller ports as follows:
+
+** Port P0 on controller A to Port P0 on controller B
+** Port P1 on controller A to Port P1 on controller B
+** Use the interface card installed in slot 4 of each controller to connect the controllers together. 
+
++
+NOTE: It is crucial to connect the cables exactly as described.
+
++
+Do not use the baseboard host ports for inter-controller communication, as this can cause performance issues and trigger Recovery Guru alerts that require attention. Proper inter-controller cabling is essential for the correct operation of both EF50 and EF80 arrays.
+
 == Upgrade compatibility
 
 Review the supported upgrade paths for each storage array model.
@@ -76,21 +93,23 @@ a| Order a new battery.
 a|
 * EF50 and EF80 support duplex configurations only
 +
-* EF50 and EF80 support dual-100Gbe NVMe over RoCE host interface cards
-+
 * EF50 and EF80 support 64Gb Fibre Channel host interface cards
 +
 * EF80 supports dual-200Gbe NVMe over RoCE and NVMe over Infiniband host interface cards
 +
-* EF50 and EF80 support up to 24 NVMe drives per controller 
+* EF50 and EF80 support up to 24 NVMe drives per controller
++
+* EF50 and EF80 support TLC and QLC NVMe drive configurations
 +
 * EF50 and EF80 do not support baseboard host ports
 +
 * EF50 and EF80 do not support synchronous or asynchronous mirroring  
 +
-* EF50 and do not support Remote Storage Volumes
+* EF50 and EF80 do not support Remote Storage Volumes
 +
 * EF50 and EF80 do not support Thin Provisioned Volumes
++
+* EF50 supports up to 2 Host Interface Cards, and EF80 supports up to 3 Host Interface Cards.
 
 a|
 * EF50 and EF80 do not support SAS expansion. 
@@ -103,13 +122,13 @@ Order a new battery.
 a|
 * EF80 support duplex configurations only
 +
-* EF80 support dual-100Gbe NVMe over RoCE host interface cards
-+
 * EF80 support 64Gb Fibre Channel host interface cards
 +
 * EF80 supports dual-200Gbe NVMe over RoCE and NVMe over Infiniband host interface cards
 +
 * EF80 support up to 24 NVMe drives per controller
++
+* EF50 and EF80 support TLC and QLC NVMe drive configurations
 +
 * EF80 do not support baseboard host ports
 +
@@ -118,6 +137,8 @@ a|
 * EF80 do not support Remote Storage Volumes
 +
 * EF80 do not support Thin Provisioned Volumes
++
+* EF80 supports up to 3 Host Interface Cards.
 
 a|
 * EF80 do not support SAS expansion.
