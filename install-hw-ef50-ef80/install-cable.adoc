@@ -22,13 +22,15 @@ As you insert the connector, you should feel it click into place; if you do not 
 image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direction]
 
 
-== Step 1: Cable the mirroring connections
+== Step 1: Cable the inter-controller mirroring connections
 
-Cable the controllers to each other to enable mirroring. The cabling is the same for EF50 and EF80 storage systems.
+Cable the controllers to each other to enable inter-controller mirroring. The cabling is the same for EF50 and EF80 storage systems.
 
-NOTE: No matter the speed of the mirroring I/O modules installed in your storage system, you use the included 200 GbE cables. If the speed of the mirroring I/O modules is 100 GbE, the connection operates at the lower speed.
+Inter-controller mirroring connections ensure full system redundancy and are used for cache mirroring and I/O shipping.
 
-// Dec 17 fdbk: AE - The cables that are included in the box for mirroring are 200Gb speed cables. The EF80 has a choice of either a 100Gb or 200Gb mirroring card, and the EF50 only has 100Gb, but the cables included are all 200Gb capable no matter the card speed. I'm not sure how we would want to specify this difference or this consideration in the documentation. I'm trying to think of how best we can relay to the customer the speed and how it will work with 200Gb connectivity as well.
+NOTE: No matter the speed of the inter-controller mirroring I/O modules installed in your storage system, you use the included 200 GbE cables. If the speed of the inter-controller mirroring I/O modules is 100 GbE, the connection operates at the lower speed.
+
+// Dec 17, 2025 fdbk: AE - The cables that are included in the box for mirroring are 200Gb speed cables. The EF80 has a choice of either a 100Gb or 200Gb mirroring card, and the EF50 only has 100Gb, but the cables included are all 200Gb capable no matter the card speed. I'm not sure how we would want to specify this difference or this consideration in the documentation. I'm trying to think of how best we can relay to the customer the speed and how it will work with 200Gb connectivity as well.
 
 .Steps
 
