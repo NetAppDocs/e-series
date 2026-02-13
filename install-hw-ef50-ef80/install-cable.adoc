@@ -2,14 +2,14 @@
 permalink: install-hw-ef50-ef80/install-cable.html
 sidebar: sidebar
 keywords: ef50, ef80, cabling, cable, host cabling, direct-attached topology, fabric-attached topology
-summary: After you install your EF50 or EF80 storage system hardware, cable the mirroring and host network connections. (You cable the management ports later in the Complete storage system setup section.)
+summary: After you install your EF50 or EF80 storage system hardware, cable the inter-controller mirroring and host network connections. (You cable the management ports later in the Complete storage system setup section.)
 ---
 = Cable the hardware - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After you install your EF50 or EF80 storage system hardware, cable the mirroring and host network connections. (You cable the management ports later in the Complete storage system setup section.)
+After you install your EF50 or EF80 storage system hardware, cable the inter-controller mirroring and host network connections. (You cable the management ports later in the Complete storage system setup section.)
 
 .About this task
 
@@ -24,9 +24,7 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direct
 
 == Step 1: Cable the inter-controller mirroring connections
 
-Cable the controllers to each other to enable inter-controller mirroring. The cabling is the same for EF50 and EF80 storage systems.
-
-Inter-controller mirroring connections ensure full system redundancy and are used for cache mirroring and I/O shipping.
+Cable the controllers to each other to enable inter-controller mirroring. Inter-controller mirroring connections ensure full system redundancy and are used for cache mirroring and I/O shipping. The cabling is the same for EF50 and EF80 storage systems.
 
 NOTE: No matter the speed of the inter-controller mirroring I/O modules installed in your storage system, you use the included 200 GbE cables. If the speed of the inter-controller mirroring I/O modules is 100 GbE, the connection operates at the lower speed.
 
