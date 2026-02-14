@@ -17,5 +17,5 @@ When an I/O module in your storage system fails, you can replace it with the sam
 
 * link:io-module-upgrade.html[Upgrade an I/O module]
 +
-You can upgrade one or more I/O modules in your storage system to increase the number of host ports for enhanced network connectivity and expand your system’s ability to handle data traffic.
+You can upgrade I/O modules in your storage system to increase the number of host ports for enhanced network connectivity and expand your system’s ability to handle data traffic.
  

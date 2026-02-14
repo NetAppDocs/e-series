@@ -15,15 +15,9 @@ You can change the protocol on the host I/O modules in your EF50 or EF80 storage
 
 .Before you begin
 
-//Make sure you have completed any necessary hardware procedures.
-
 If you are changing the host protocol as part of a hardware procedure (I/O module upgrade, new system installation, or controller upgrade), you need to have completed the applicable hardware procedure.
 
 NOTE: New hardware must already be installed because the default protocol and list of available protocols (you view in this procedure) are based on the host I/O modules currently installed.
-
-//NOTE: New hardware must be installed before you can see the default protocol and available protocols for your host I/O modules. because SANtricity System Manager displays this information on currently installed hardware.
-
-//NOTE: SANtricity System Manager displays the default host protocol and list of available protocols on currently installed hardware.
 
 [options="header" cols="1,2"]
 |===
@@ -66,22 +60,11 @@ Start with the link:../upgrade-controllers/index.html[Learn about upgrading E-Se
 
 Prepare to change the protocol on the host I/O modules in your storage system by verifying the current protocol on the host I/O modules, determining if you need to change the protocol, and if yes, scheduling a downtime maintenance window.
 
-//Prepare to change the protocol on the host I/O modules in your storage system by completing a host I/O module upgrade if needed, verifying the current protocol on the host I/O modules, determining if you need to change the protocol, and if yes, scheduling a downtime maintenance window.
-
-// To prepare, upgrade the host I/O modules if needed, check the current protocol, decide if a protocol change is needed, and schedule a downtime window.
-
 //Need to create includes
 //syntax example:
 // include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
 
 .Steps
-
-//. If you are changing the protocol as part of an I/O module upgrade, upgrade the I/O modules before continuing; otherwise, go to the next step.
-//+
-//Use the procedure link:../maintenance-ef50-ef80/io-module-upgrade.html[Upgrade I/O modules for an EF50 or EF80] to upgrade the I/O modules.
-//+
-//NOTE: The new I/O modules must be installed before you can see their default protocol and available protocols in SANtricity System Manager.
-
 
 . If you do not know the protocol on the host I/O modules in your storage system, verify it using SANtricity System Manager.
 
@@ -107,9 +90,6 @@ a|Continue with this procedure to change the protocol.
 |===
 
 . Schedule a downtime maintenance window for this procedure.
-//+
-//. If needed, obtain the necessary hardware for the protocol conversion, which might include a new set of I/O modules and/or SFPs. Your NetApp Sales Representative can help you determine what hardware you need and help you order the correct parts.
-//+
 
 == Step 2: Stop host I/O operations
 
@@ -124,9 +104,9 @@ NOTE: You cannot access data on the storage system until you successfully comple
 .Steps
 
 . Make sure no I/O operations are happening between the storage system and all connected hosts. For example, you can perform these steps:
- ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
- ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
- ** Unmount all file systems associated with LUNs on the storage system.
+** Stop all processes that involve the LUNs mapped from the storage to the hosts.
+** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
+** Unmount all file systems associated with LUNs on the storage system.
 +
 NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host or contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support^].
 +
@@ -170,8 +150,6 @@ Using SANtricity System Manager, change the protocol on the host I/O modules, wa
 . In the *Additional Settings* section, select *Change host I/O protocol* to open that page.
 . In the *Host I/O Protocol* field, select the drop-down menu and choose the protocol you want to use.
 +
-//The protocol list is based on the hardware currently installed.
-//+
 The protocol list is based on the host I/O modules currently installed.
 +
 . Type *CHANGE* in the open field to confirm your change. 
@@ -181,19 +159,6 @@ The protocol list is based on the host I/O modules currently installed.
 This can take about five minutes.
 
 . When the controllers are back online, confirm their status is Optimal, using SANtricity System Manager.
-//+
-//If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated.
-//+
-//NOTE: If you cannot resolve the problem, contact https://www.netapp.com/company/contact-us/support/[NetApp Support^]. If needed, collect support data for your storage system using SANtricity System Manager.
-
-//and become optimal again in the System Manager. 
-
-//The controllers begin to boot.
-
-//. Check the LEDs on the controllers to make sure communication between the controllers is reestablished:
-
-//** The Attention LED remains on.
-//** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
 
 
 == Step 4: Configure the host to use the new protocol
