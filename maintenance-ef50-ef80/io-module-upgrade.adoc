@@ -68,9 +68,7 @@ include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
 
 == Step 2: Upgrade the I/O modules
 
-Unplug cabling from the I/O modules you want to upgrade (if needed), replace them or the I/O blanking modules with the new I/O modules, and then cable the new I/O modules.
-
-// Replace I/O modules or I/O module blanks with the new I/O modules in both controllers.
+Unplug cabling from the I/O modules you want to upgrade (unless you have I/O blanking modules), replace the I/O modules or the I/O blanking modules with the new I/O modules, and then cable the new I/O modules.
 
 include::../_include/ge_io_module_upgrade_install_additional_modules.adoc[]
 
