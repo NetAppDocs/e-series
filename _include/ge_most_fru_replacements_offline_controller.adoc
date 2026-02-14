@@ -1,7 +1,6 @@
 
-
 .About this task
-* Whenever you place a controller offline, you need to wait at least one minute before bringing the controller back online. This waiting period allows the storage system to update the status of the controller and ensure that all cached data is written to the drives.
+Whenever you place a controller offline, you need to wait at least one minute before bringing the controller back online. This waiting period allows the storage system to update the status of the controller and ensure that all cached data is written to the drives.
 
 
 .Steps
