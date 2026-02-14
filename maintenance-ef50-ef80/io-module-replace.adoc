@@ -80,7 +80,7 @@ include::../_include/ge_io_module_replace_online_impaired_controller.adoc[]
 
 Using SANtricity System Manager, ensure the latest version of SANtricity OS is installed, verify that all volumes are returned to their preferred owners and collect support data so that you can resume operations.
 
-include::../_include/ge_io_module_replace_complete.adoc[]
+include::../_include/ge_io_module_upgrade_complete.adoc[]
 
 
 == Step 5: Return the failed part to NetApp

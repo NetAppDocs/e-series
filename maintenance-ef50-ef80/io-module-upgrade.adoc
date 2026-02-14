@@ -86,6 +86,8 @@ Using SANtricity System Manager, ensure the latest version of SANtricity OS is i
 
 include::../_include/ge_io_module_upgrade_complete.adoc[]
 
+. If you need to verify and change the host I/O module protocol, use the procedure xref:io-module-change-protocol.html[Change the host I/O module protocol for an EF50 or EF80].
+
 
 
 

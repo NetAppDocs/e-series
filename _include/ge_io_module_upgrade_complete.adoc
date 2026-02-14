@@ -7,9 +7,9 @@
 .. As needed, install the latest version.
 
 . Verify that all volumes are returned to their preferred owners:
-.. Select *Storage > Volumes*. 
+.. Select *Storage* > *Volumes*. 
 .. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. 
-.. Select *More > Change volume ownership* to view volume owners.
+.. Select *More* > *Change volume ownership* to view volume owners.
 
 . The next step depends on whether the volumes are returned to their preferred owners:
 +
@@ -34,10 +34,10 @@ If there is no Recovery Guru present or if after following the recovery guru ste
 |===
 
 . Collect support data for your storage system:
-.. Select *Support > Support Center > Diagnostics*.
+.. Select *Support* > *Support Center* > *Diagnostics*.
 .. Select *Collect Support Data*.
 .. Select *Collect*.
 +
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 
-. If you need to verify and change the host I/O module protocol, use the procedure xref:io-module-change-protocol.html[Change the host I/O module protocol for an EF50 or EF80].
+//. If you need to verify and change the host I/O module protocol, use the procedure xref:io-module-change-protocol.html[Change the host I/O module protocol for an EF50 or EF80].

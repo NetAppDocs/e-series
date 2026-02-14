@@ -62,7 +62,7 @@ Prepare to change the protocol on the host I/O modules in your storage system by
 
 //Need to create includes
 //syntax example:
-// include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
+// include::../_include/ge_io_module_change_protocol_prepare.adoc[]
 
 .Steps
 
@@ -99,7 +99,7 @@ NOTE: You cannot access data on the storage system until you successfully comple
 
 //Need to create includes
 //syntax example:
-// include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
+// include::../_include/ge_io_module_change_protocol_stop_io_operations.adoc[]
 
 .Steps
 
@@ -142,7 +142,7 @@ Using SANtricity System Manager, change the protocol on the host I/O modules, wa
 
 //Need to create includes
 //syntax example:
-// include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
+// include::../_include/ge_io_module_change_protocol_change_protocol.adoc[]
 
 .Steps
 
@@ -167,7 +167,7 @@ After changing the protocol of the host ports, you must configure the host to us
 
 //Need to create includes
 //syntax example:
-// include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
+// include::../_include/ge_io_module_change_protocol_configure_host.adoc[]
 
 For step-by-step instructions, see the guide appropriate for your storage system:
 
