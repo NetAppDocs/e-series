@@ -51,6 +51,8 @@ The file is saved in the Downloads folder for your browser with the name, *confi
 
 == Step 1: Place the controller offline
 
+Place the impaired controller offline so you can safely unplug its cabling, and then remove it.
+
 include::../_include/ge_most_fru_replacements_offline_controller.adoc[]
 
 
