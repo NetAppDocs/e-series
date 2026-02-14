@@ -46,7 +46,7 @@ The file is saved in the Downloads folder for your browser with the name, *confi
 
 == Step 1: Place the controller offline
  
-include::../_include/ge_internal_frus_controller_offline.adoc[]
+include::../_include/ge_most_fru_replacements_offline_controller.adoc[]
  
 
 == Step 2: Remove the controller

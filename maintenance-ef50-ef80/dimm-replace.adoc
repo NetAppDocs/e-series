@@ -35,7 +35,7 @@ include::../_include/ge_dimm_replace_prepare.adoc[]
 
 == Step 3: Place the controller offline
  
-include::../_include/ge_internal_frus_controller_offline.adoc[]
+include::../_include/ge_most_fru_replacements_offline_controller.adoc[]
 
 
 == Step 4: Remove the controller

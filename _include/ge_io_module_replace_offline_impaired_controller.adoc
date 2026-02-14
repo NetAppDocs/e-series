@@ -10,13 +10,7 @@ Whenever you place a controller offline, you need to wait at least one minute be
 .. Select *Place offline*, and then confirm that you want to perform the operation.
 +
 NOTE: If you are accessing SANtricity System Manager using the controller you are attempting to place offline, a SANtricity System Manager Unavailable message is displayed. Select *Connect to an alternate network connection* to automatically access SANtricity System Manager using the other controller.
-//+
-//** Using CLI commands:
-//+
-//If the impaired controller is *controller A*: `set controller [a] availability=offline`
-//+
-//If the impaired controller is *controller B*: `set controller [b] availability=offline`
-//+
+
 . Wait for SANtricity System Manager to update the controller's status to offline.
 +
 CAUTION: Do not begin any other operations until after the status has been updated.
