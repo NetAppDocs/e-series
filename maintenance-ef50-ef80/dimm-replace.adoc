@@ -35,8 +35,8 @@ include::../_include/ge_dimm_replace_prepare.adoc[]
 
 == Step 3: Place the controller offline
  
- Place the impaired controller offline so you can safely unplug its cabling, and then remove it.
- 
+Place the impaired controller offline so you can safely perform the rest of this procedure.
+
 include::../_include/ge_most_fru_replacements_offline_controller.adoc[]
 
 
