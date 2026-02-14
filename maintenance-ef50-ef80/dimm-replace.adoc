@@ -64,9 +64,7 @@ include::../_include/ge_internal_frus_controller_back_online.adoc[]
 
 == Step 8: Complete the DIMM replacement
 
-Using SANtricity System Manager, ensure the latest version of SANtricity OS is installed, verify that all volumes are returned to their owning controllers and collect support data so that you can resume operations.
-
-include::../_include/ge_io_module_upgrade_complete.adoc[]
+include::../_include/ge_most_fru_replacements_complete_replacement.adoc[]
 
 
 == Step 9: Return the failed part to NetApp

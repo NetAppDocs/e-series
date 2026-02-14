@@ -1,7 +1,8 @@
+Using SANtricity System Manager, make sure the latest version of SANtricity OS is installed, verify that all volumes are returned to their owning controllers, and collect support data so that you can resume operations. 
 
 .Steps
 
-. Ensure that the latest version of SANtricity OS is installed on the storage system: 
+. Make sure the latest version of SANtricity OS is installed on the storage system: 
 .. Select *Support* > *Upgrade Center*
 ..  As needed, install the latest version.
 
@@ -23,7 +24,7 @@ Go to the next step.
 a|
 None of the volumes are returned to their owning controllers
 a|
-Select *Storage* > *Volumes* > *More* and from the drop-down menu choose *Redistribute volumes* to return the volumes to their owning controllers.
+Select *Storage* > *Volumes* > *More* and from the drop-down menu select *Redistribute volumes* to return the volumes to their owning controllers.
 a|
 Only some of the volumes are returned to their owning controllers after auto-distribution or manual distribution 
 a|
@@ -35,6 +36,6 @@ If there is no Recovery Guru present or if following the recovery guru steps the
 . Collect support data for your storage system:
 .. Select *Support* > *Support Center* > *Diagnostics*.
 .. Select *Collect Support Data*.
-.. Click *Collect*.
+.. Select *Collect*.
 +
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.

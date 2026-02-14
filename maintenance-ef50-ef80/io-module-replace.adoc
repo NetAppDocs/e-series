@@ -76,11 +76,9 @@ Place the impaired controller back online using SANtricity System Manager or CLI
 include::../_include/ge_io_module_replace_online_impaired_controller.adoc[]
 
 
-== Step 4: Complete the I/O module replacement
+== Step 4: Complete the I/O module replacement 
 
-Using SANtricity System Manager, ensure the latest version of SANtricity OS is installed, verify that all volumes are returned to their owning controllers and collect support data so that you can resume operations. 
-
-include::../_include/ge_io_module_upgrade_complete.adoc[]
+include::../_include/ge_most_fru_replacements_complete_replacement.adoc[]
 
 
 == Step 5: Return the failed part to NetApp
