@@ -72,7 +72,7 @@ include::../_include/ge_controller_reinstall.adoc[]
 
 == Step 5: Place the controller online
 
-include::../_include/ge_internal_frus_controller_back_online.adoc[]
+include::../_include/ge_most_fru_replacements_online_controller.adoc[]
 
 
 == Step 6: Complete the fan replacement

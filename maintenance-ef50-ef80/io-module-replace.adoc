@@ -71,9 +71,7 @@ include::../_include/ge_io_module_replace_replace_failed_module.adoc[]
 
 == Step 3: Place the controller online
 
-Place the impaired controller back online using SANtricity System Manager or CLI commands.
-
-include::../_include/ge_io_module_replace_online_impaired_controller.adoc[]
+include::../_include/ge_most_fru_replacements_online_controller.adoc[]
 
 
 == Step 4: Complete the I/O module replacement 
