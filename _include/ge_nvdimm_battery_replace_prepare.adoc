@@ -1,6 +1,8 @@
 
 .Steps
 
+. Confirm that the Recovery Guru in SANtricity System Manager reports either a _Battery Failed_ status or a _Battery Replacement Required_ status. If either status is reported, you must replace the affected NV battery.
+
 . Make sure you address any other storage system issues. 
 +
 Using SANtricity System Manager, review the details in the Recovery Guru to see if there are any other issues.
@@ -8,19 +10,16 @@ Using SANtricity System Manager, review the details in the Recovery Guru to see 
 . Make sure that no volumes are in use or that you have a multipath driver installed on all hosts using these volumes.
 
 . Make sure you have the following:
-* A replacement DIMM that is the correct size for your storage system configuration.
-* An ESD wristband or you have taken other antistatic precautions.
+
+* The replacement NV battery.
+* An ESD wristband or other antistatic precautions.
 * A flat static-free work surface.
 * Labels to identify each cable that is connected to the impaired controller.
 * A management station with a browser that can access SANtricity System Manager for the impaired controller.
 +
 To open the System Manager interface, point the browser to the impaired controller's domain name or IP address.
-. Prevent electrostatic discharge (ESD) during handling and installation of a DIMM:
-** Keep the DIMM in the ESD bag until you are ready to install it.
-** Open the ESD bag by hand or cut the top off with a pair of scissors. Do not insert a metal tool or knife into the ESD bag.
-** Keep the ESD bag and any packing materials to return the failed DIMM or use approved packaging when shipping a DIMM.
-** Always wear an ESD wrist strap grounded to an unpainted surface on your storage system chassis.
-** Avoid magnetic fields. Keep DIMMs away from magnetic devices.
+//+
+//Optionally, you can use the command line interface (CLI) to perform some of the steps. To access the CLI, download the CLI package (zip file) from System Manager and then go to *Settings System > Add-ons > Command Line Interface*. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
 
 . Back up the storage system's configuration database using SANtricity System Manager:
 +
@@ -31,3 +30,4 @@ If a problem occurs when you remove a controller, you can use the saved file to 
 .. Select *Collect*.
 +
 The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
+

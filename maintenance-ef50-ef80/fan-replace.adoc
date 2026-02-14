@@ -44,42 +44,49 @@ The file is saved in the Downloads folder for your browser with the name, *confi
 
 * You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, select the *Controller shelf* tab, and from the context menu select *Turn on locator light*.
 
-== Step 1: Place the controller offline
+== Step 1: Prepare to replace the NV battery
+
+Prepare to replace the NV battery by confirming the NV battery needs to be replaced, making sure there are no other storage system issues you need to address, making sure the volumes are in the correct state, gathering the necessary tools and equipment, and backing up the storage system's configuration database.
+
+include::../_include/ge_nvdimm_battery_replace_prepare.adoc[]
+
+
+== Step 2: Place the controller offline
 
 Place the impaired controller offline so you can safely perform the rest of this procedure.
  
 include::../_include/ge_most_fru_replacements_offline_controller.adoc[]
  
 
-== Step 2: Remove the controller
+== Step 3: Remove the controller
 
 include::../_include/ge_controller_remove.adoc[]
 
 
-== Step 3: Replace a fan
+== Step 4: Replace a fan
 
 Locate the faulty fan inside the impaired controller and replace it.
 
 include::../_include/ge_fan_replace.adoc[]
 
 
-== Step 4: Reinstall the controller
+== Step 5: Reinstall the controller
 
 Reinstall the controller into the chassis, reconnect its power cord, and all of its cables.
 
 include::../_include/ge_controller_reinstall.adoc[]
 
 
-== Step 5: Place the controller online
+== Step 6: Place the controller online
 
 include::../_include/ge_most_fru_replacements_online_controller.adoc[]
 
 
-== Step 6: Complete the fan replacement
+== Step 7: Complete the fan replacement
 
 include::../_include/ge_most_fru_replacements_complete_replacement.adoc[]
 
 
-== Step 7: Return the failed part to NetApp
+== Step 8: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]

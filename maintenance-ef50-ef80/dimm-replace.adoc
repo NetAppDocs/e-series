@@ -28,7 +28,7 @@ include::../_include/ge_dimm_replace_determine_if_needed.adoc[]
 
 == Step 2: Prepare to replace a DIMM
 
-Prepare to replace a DIMM by making sure the volumes are in the correct state, making sure there are no other storage system issues you need to address, gathering the necessary tools and equipment, and taking precautions to prevent electrostatic discharge.
+Prepare to replace a DIMM by making sure there are no other storage system issues you need to address, making sure the volumes are in the correct state, gathering the necessary tools and equipment, taking precautions to prevent electrostatic discharge, and backing up the storage system's configuration database.
 
 include::../_include/ge_dimm_replace_prepare.adoc[]
 
