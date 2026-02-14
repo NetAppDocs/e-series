@@ -82,7 +82,7 @@ include::../_include/ge_io_module_upgrade_power_on_controllers.adoc[]
 
 == Step 4: Complete the I/O module upgrade
 
-Using SANtricity System Manager, ensure the latest version of SANtricity OS is installed, verify that all volumes are returned to their preferred owners, collect support data so that you can resume operations, and if needed, verify and change the host I/O module protocol.
+Using SANtricity System Manager, ensure the latest version of SANtricity OS is installed, verify that all volumes are returned to their owning controllers, collect support data so that you can resume operations, and if needed, verify and change the host I/O module protocol.
 
 include::../_include/ge_io_module_upgrade_complete.adoc[]
 
