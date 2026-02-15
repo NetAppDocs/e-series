@@ -11,32 +11,9 @@ summary: Replace a fan module in your EF50 or EF80 storage system when a fan fai
 [.lead]
 Replace a fan module in your EF50 or EF80 storage system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. 
 
-.Before you begin
-
-* Check if Recovery Guru indicates that it is not OK to remove the faulty fan. If so, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
-
-* Make sure you have the following:
-
-** A replacement fan.
-** An ESD wristband or you have taken other antistatic precautions.
-** A flat static-free work surface.
-** Labels to identify each cable that is connected to the impaired controller.
-** A management station with a browser that can access SANtricity System Manager for the impaired controller.
-+
-To open the System Manager interface, point the browser to the impaired controller's domain name or IP address.
-
-* Back up the storage system's configuration database using SANtricity System Manager.
-+
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the impaired controller.
-+
-.. Select *Support* > *Support Center* > *Diagnostics*.
-.. Select *Collect Configuration Data*.
-.. Select *Collect*.
-+
-The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
 .About this task
-* The replacement process involves meeting the Before you begin requirements, placing the controller offline, removing the controller, replacing the fan, reinstalling the controller, placing the controller back online, completing the fan replacement, and then returning the failed part to NetApp.
+* The replacement process involves preparing to replace a fan, placing the controller offline, removing the controller, replacing the fan, reinstalling the controller, placing the controller back online, completing the fan replacement, and then returning the failed part to NetApp.
 
 * You must place the impaired controller offline before unplugging any of its cables.
 
@@ -44,11 +21,13 @@ The file is saved in the Downloads folder for your browser with the name, *confi
 
 * You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, select the *Controller shelf* tab, and from the context menu select *Turn on locator light*.
 
-== Step 1: Prepare to replace the NV battery
+== Step 1: Prepare to replace a fan
 
-Prepare to replace the NV battery by confirming the NV battery needs to be replaced, making sure there are no other storage system issues you need to address, making sure the volumes are in the correct state, gathering the necessary tools and equipment, and backing up the storage system's configuration database.
+Complete the preparation steps to ensure a smooth and successful fan replacement.
 
-include::../_include/ge_nvdimm_battery_replace_prepare.adoc[]
+//Prepare to replace a fan by confirming it is okay to replace the faulty fan, gathering the necessary tools and equipment, and backing up the storage system's configuration database.
+
+include::../_include/ge_fan_replace_prepare.adoc[]
 
 
 == Step 2: Place the controller offline

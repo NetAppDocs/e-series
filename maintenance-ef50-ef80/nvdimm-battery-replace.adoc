@@ -22,7 +22,9 @@ Replace the NV battery in your EF50 or EF80 storage system when the battery begi
 
 == Step 1: Prepare to replace the NV battery
 
-Prepare to replace the NV battery by confirming the NV battery needs to be replaced, making sure there are no other storage system issues you need to address, making sure the volumes are in the correct state, gathering the necessary tools and equipment, and backing up the storage system's configuration database.
+Complete the preparation steps to ensure a smooth and successful NV battery replacement.
+
+//Prepare to replace the NV battery by confirming the NV battery needs to be replaced, making sure there are no other storage system issues you need to address, making sure the volumes are in the correct state, gathering the necessary tools and equipment, and backing up the storage system's configuration database.
 
 include::../_include/ge_nvdimm_battery_replace_prepare.adoc[]
 
