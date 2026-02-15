@@ -14,7 +14,7 @@ Replace a failed I/O module in your EF50 or EF80 storage system with the same ty
 
 .About this task
 
-* The replacement process involves preparing to replace an I/O module, placing the impaired controller offline, replacing the failed I/O module, placing the controller back online, and returning the failed part to NetApp.
+* Replace an I/O module by preparing, placing the impaired controller offline, replacing the failed I/O module, placing the controller back online, and returning the failed part to NetApp.
 
 * The term _I/O module_ is used instead of host interface cards (HICs) in this procedure.
 
@@ -26,10 +26,7 @@ Replace a failed I/O module in your EF50 or EF80 storage system with the same ty
 
 == Step 1: Prepare to replace an I/O module
 
-Complete the preparation steps to ensure a smooth and successful I/O module replacement.
-
-//Prepare to replace an I/O module by gathering the necessary tools and equipment, and backing up the storage system's configuration database. 
-
+Prepare to replace an I/O module by gathering the necessary tools and equipment, and backing up the storage system's configuration database. 
 
 include::../_include/ge_io_module_replace_prepare.adoc[]
 

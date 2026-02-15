@@ -20,7 +20,7 @@ You can upgrade I/O modules in your EF50 or EF80 storage system to increase the 
 +
 Unused I/O slots should have blanking modules installed to prevent possible thermal issues and for EMC compliance.
 
-* The upgrade procedure involves preparing to upgrade I/O modules, powering off both controllers, upgrading I/O modules in both controllers, powering on both controllers, verifying that the upgrade was successful, and if needed, verifying and changing the host I/O module protocol.
+* Upgrade I/O modules by preparing, powering off both controllers, upgrading I/O modules in both controllers, powering on both controllers, verifying that the upgrade was successful, and if needed, verifying and changing the host I/O module protocol.
 +
 Controllers do not need to be removed from the chassis since the I/O modules are accessible with the controllers in place.
 
@@ -30,9 +30,7 @@ Controllers do not need to be removed from the chassis since the I/O modules are
 
 == Step 1: Prepare to upgrade I/O modules
 
-Complete the preparation steps to ensure a smooth and successful I/O module upgrade.
-
-//Prepare to upgrade I/O modules by confirming the I/O modules need to be upgraded, making sure there are no other storage system issues you need to address, making sure the volumes are in the correct state, gathering the necessary tools and equipment, and backing up the storage system's configuration database.
+Prepare to upgrade I/O modules by confirming the I/O modules need to be upgraded, making sure there are no other storage system issues you need to address, making sure the volumes are in the correct state, gathering the necessary tools and equipment, and backing up the storage system's configuration database.
 
 include::../_include/ge_io_module_upgrade_prepare.adoc[]
 

@@ -35,7 +35,7 @@ To open the System Manager interface, point the browser to the impaired controll
 
 * When a power supply fails, you must replace it as soon as possible so the storage system has a redundant power source.
 
-* The replacement process involves unplugging the power cord from the faulty PSU, replacing the faulty PSU, and then reconnecting the power cord.
+* Replace a power supply by unplugging the power cord from the faulty PSU, replacing it, and reconnecting the power cord.
 
 * You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, select the *Controller shelf* tab, and from the context menu select *Turn on locator light*.
 

@@ -13,7 +13,7 @@ Replace a failed drive while your EF50 or EF80 storage system is receiving I/O t
 
 .About this task
 
-* The replacement process involves preparing to replace the drive, safely replacing the drive, completing the drive replacement, and then returning the failed part to NetApp.
+* Replace a drive by preparing, replacing the drive, completing the replacement, and then returning the failed part to NetApp.
 
 * The Recovery Guru in SANtricity System Manager monitors the drives in the storage system and can notify you of an impending drive failure or an actual drive failure. When a drive has failed, its Attention (amber) LED illuminates.
 

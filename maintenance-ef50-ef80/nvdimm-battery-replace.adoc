@@ -14,7 +14,7 @@ Replace the NV battery in your EF50 or EF80 storage system when the battery begi
 
 .About this task
 
-* The replacement process involves preparing to replace the NV battery, placing the impaired controller offline, removing the controller, replacing the NV battery, reinstalling the controller, placing the controller back online, completing the NV battery replacement, and then returning the failed part to NetApp.
+* Replace the NV battery by preparing, placing the impaired controller offline, removing the controller, replacing the battery, reinstalling the controller, placing it online, completing the replacement, and returning the failed part to NetApp.
 
 * You must place the impaired controller offline before unplugging any of its cables.
 
@@ -22,9 +22,7 @@ Replace the NV battery in your EF50 or EF80 storage system when the battery begi
 
 == Step 1: Prepare to replace the NV battery
 
-Complete the preparation steps to ensure a smooth and successful NV battery replacement.
-
-//Prepare to replace the NV battery by confirming the NV battery needs to be replaced, making sure there are no other storage system issues you need to address, making sure the volumes are in the correct state, gathering the necessary tools and equipment, and backing up the storage system's configuration database.
+Prepare to replace the NV battery by confirming the NV battery needs to be replaced, making sure there are no other storage system issues you need to address, making sure the volumes are in the correct state, gathering the necessary tools and equipment, and backing up the storage system's configuration database.
 
 include::../_include/ge_nvdimm_battery_replace_prepare.adoc[]
 

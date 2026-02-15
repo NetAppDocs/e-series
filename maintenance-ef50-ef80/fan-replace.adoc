@@ -13,7 +13,7 @@ Replace a fan module in your EF50 or EF80 storage system when a fan fails or is 
 
 
 .About this task
-* The replacement process involves preparing to replace a fan, placing the controller offline, removing the controller, replacing the fan, reinstalling the controller, placing the controller back online, completing the fan replacement, and then returning the failed part to NetApp.
+* Replace a fan by preparing, placing the impaired controller offline, removing the controller, replacing the fan, reinstalling the controller, placing it online, completing the replacement, and returning the failed part to NetApp.
 
 * You must place the impaired controller offline before unplugging any of its cables.
 
@@ -23,9 +23,7 @@ Replace a fan module in your EF50 or EF80 storage system when a fan fails or is 
 
 == Step 1: Prepare to replace a fan
 
-Complete the preparation steps to ensure a smooth and successful fan replacement.
-
-//Prepare to replace a fan by confirming it is okay to replace the faulty fan, gathering the necessary tools and equipment, and backing up the storage system's configuration database.
+Prepare to replace a fan by confirming it is okay to replace it, gathering the necessary tools and equipment, and backing up the storage system's configuration database.
 
 include::../_include/ge_fan_replace_prepare.adoc[]
 

@@ -49,7 +49,7 @@ Start with the link:../upgrade-controllers/index.html[Learn about upgrading E-Se
 
 .About this task
 
-* Changing the protocol on the host I/O modules involves preparing for the protocol change, stopping the host I/O operations, changing the protocol, and then configuring the host to use the new protocol.
+* Change the protocol on the host I/O modules by preparing, stopping the host I/O operations, changing the protocol, and then configuring the host to use the new protocol.
 
 * The protocol is changed on all host I/O modules in your storage system.
 
@@ -58,7 +58,7 @@ Start with the link:../upgrade-controllers/index.html[Learn about upgrading E-Se
 
 == Step 1: Prepare for the protocol change
 
-Prepare to change the protocol on the host I/O modules in your storage system by verifying the current protocol on the host I/O modules, determining if you need to change the protocol, and if yes, scheduling a downtime maintenance window.
+Prepare to change the protocol on the host I/O modules by verifying the current protocol being used, determining if you need to change the protocol, and if yes, scheduling a downtime maintenance window.
 
 //Need to create includes
 //syntax example:
