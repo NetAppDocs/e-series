@@ -22,7 +22,7 @@ Unused I/O slots should have blanking modules installed to prevent possible ther
 
 * Upgrade I/O modules by preparing, powering off both controllers, upgrading I/O modules in both controllers, powering on both controllers, verifying that the upgrade was successful, and if needed, verifying and changing the host I/O module protocol.
 +
-Controllers do not need to be removed from the chassis since the I/O modules are accessible with the controllers in place.
+Controllers do not need to be removed from the chassis because the I/O modules are accessible with the controllers in place.
 
 * You must power off both controllers before unplugging any I/O module cables.
 
@@ -30,7 +30,7 @@ Controllers do not need to be removed from the chassis since the I/O modules are
 
 == Step 1: Prepare to upgrade I/O modules
 
-Prepare to upgrade I/O modules by confirming the I/O modules need to be upgraded, making sure there are no other storage system issues you need to address, making sure the volumes are in the correct state, gathering the necessary tools and equipment, and backing up the storage system's configuration database.
+Prepare to upgrade I/O modules by scheduling a downtime maintenance window, gathering the necessary tools and equipment, and backing up the storage system's configuration database.
 
 include::../_include/ge_io_module_upgrade_prepare.adoc[]
 

@@ -21,7 +21,7 @@ Replace a DIMM in your EF50 or EF80 storage system when it has failed, it is rep
 
 == Step 1: Determine if you need to replace a DIMM
 
-You need to replace a DIMM when it has failed, it is reporting it is not in an optimal state, or it has a mismatched capacity.
+Replace a DIMM when it fails, reports that it is not in an optimal state, or has a mismatched capacity.
 
 include::../_include/ge_dimm_replace_determine_if_needed.adoc[]
 
@@ -29,6 +29,8 @@ include::../_include/ge_dimm_replace_determine_if_needed.adoc[]
 == Step 2: Prepare to replace a DIMM
 
 Prepare to replace a DIMM by making sure there are no other storage system issues you need to address, making sure the volumes are in the correct state, gathering the necessary tools and equipment, taking precautions to prevent electrostatic discharge, and backing up the storage system's configuration database.
+
+//Before replacing a DIMM, resolve other storage system issues, verify volume states, gather tools, prevent electrostatic discharge, and back up the configuration database.
 
 include::../_include/ge_dimm_replace_prepare.adoc[]
 

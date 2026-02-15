@@ -15,4 +15,4 @@ include::../_include/ge_controller_replace_online_controller.adoc[]
 
 .What's next?
 
-After you've placed the new controller online, you need to link:controller-replace-complete-replacement.html[complete the controller replacement] procedure.
+After placing the new controller online, link:controller-replace-complete-replacement.html[complete the controller replacement].
