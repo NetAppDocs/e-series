@@ -18,8 +18,6 @@ Using SANtricity System Manager, review the details in the Recovery Guru to see 
 * A management station with a browser that can access SANtricity System Manager for the impaired controller.
 +
 To open the System Manager interface, point the browser to the impaired controller's domain name or IP address.
-//+
-//Optionally, you can use the command line interface (CLI) to perform some of the steps. To access the CLI, download the CLI package (zip file) from System Manager and then go to *Settings System > Add-ons > Command Line Interface*. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
 
 . Back up the storage system's configuration database using SANtricity System Manager:
 +
