@@ -32,8 +32,6 @@ Cable and then configure the management ports using a DHCP server.
 
 * Configure your DHCP server to associate an IP address, subnet mask, and gateway address as a permanent lease for each controller.
 
-//You can use the MAC address to identify which IP address is assigned to each controller.
-
 
 .Steps
 

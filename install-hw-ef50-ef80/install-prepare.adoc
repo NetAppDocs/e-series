@@ -26,8 +26,6 @@ If needed, see https://hwu.netapp.com[NetApp Hardware Universe^] for the exact d
 ** 1U for most switches
 
 . Install any required network switches.
-// +
-// See the https://docs.netapp.com/us-en/ontap-systems-switches/index.html[Switch documentation^] for installation instructions and link:https://hwu.netapp.com[NetApp Hardware Universe^] for compatibility information.
 
 . Make sure you have a supported browser for the management software:
 
@@ -99,5 +97,5 @@ The registration process requires the Serial Number (SN) for each controller. Yo
 image::../media/drw_ef50-ef80_sn_label_ieops-2689.svg[example of the serial number label]
 
 .What's next?
-After you’ve prepared to install your storage system, you link:install-hardware.html[install the hardware].
+After preparing to install your storage system, link:install-hardware.html[install the hardware].
 
