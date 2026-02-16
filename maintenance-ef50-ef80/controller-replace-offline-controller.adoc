@@ -19,5 +19,5 @@ include::../_include/ge_most_fru_replacements_offline_controller.adoc[]
 
 .What's next?
 
-After taking the impaired controller offline, link:controller-replace-move-hardware.html[replace the impaired controller].
+After placing the impaired controller offline, link:controller-replace-move-hardware.html[replace the impaired controller].
 
