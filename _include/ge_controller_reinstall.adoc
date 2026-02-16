@@ -35,9 +35,10 @@ NOTE: Do not use excessive force when sliding the controller into the chassis; i
 +
 .. Rotate the controller handles up and lock in place with the tabs.
 
-. Reconnect the power cord to the power supply.
+. Reconnect the power cord to the power supply and secure the power cord with the power cord retainer.
 +
-Once power is restored to the PSU, the status LED should be green.
+Once power is restored to the power supply, the status LED should be green.
+
 . Reconnect all of the cables to the controller.
 +
 Reconnecting the cables must be done before placing the controller online. This is especially important for the mirroring cable connections because they ensure full system redundancy and are used for cache mirroring and I/O shipping.

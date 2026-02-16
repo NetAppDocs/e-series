@@ -46,8 +46,8 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
 .. Rotate the handle down, so it is out of the way of normal operations.
 
 . Reconnect the power cord to the PSU and secure the power cord with the power cord retainer. 
-//+
-//Once power is restored to the PSU, the status LED should be green.
++
+Once power is restored to the PSU, the status LED should be green.
 
 . Confirm that the PSU's status is Optimal and that the storage system's Attention LEDs are off.
 +
