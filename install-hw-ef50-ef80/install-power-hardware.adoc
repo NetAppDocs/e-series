@@ -9,7 +9,7 @@ summary: After you cable the controller's mirroring and host network connections
 :imagesdir: ../media/
 
 [.lead]
-After you cable the controller's mirroring and host connections for your EF50 or EF80 storage system, you power on the controllers.
+After you cable the inter-controller mirroring and host connections for your EF50 or EF80 storage system, you power on the controllers.
 
 .Before you begin
 Take anti-static precautions.

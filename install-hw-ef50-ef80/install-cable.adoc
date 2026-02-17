@@ -298,4 +298,4 @@ image:../media/drw_ef80_4p_64gb_fc_3hic_fabric_ieops-2675.svg[EF80 fabric-attach
 
 .What's next?
 
-After cabling the mirroring and host connections for your storage system, link:install-power-hardware.html[power on your storage system].
+After cabling the inter-controller mirroring and host connections for your storage system, link:install-power-hardware.html[power on your storage system].
