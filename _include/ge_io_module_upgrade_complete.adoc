@@ -2,80 +2,42 @@
 
 .Steps
 
-. Ensure that the latest version of SANtricity OS is installed using SANtricity System Manager: 
-.. Select *Support* > *Upgrade Center*
-..  As needed, install the latest version.
+. Make sure the latest version of SANtricity OS is installed: 
+.. Select *Support* > *Upgrade Center*.
+.. As needed, install the latest version.
 
-. Verify that all volumes have been returned to their preferred owners using SANtricity System Manager:
-.. Select *Storage > Volumes*. 
-.. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. 
-.. Select *More > Change ownership* to view volume owners.
+. Verify that all volumes are returned to their owning controllers:
+.. Select *Storage* > *Volumes*.
+.. From the *All Volumes* page, verify that volumes are distributed to their owning controllers.
+.. Select *More* > *Change volume ownership* to view volume owners.
 
-. The next step depends on whether the volumes are returned to their preferred owners:
-+
-Use SANtricity System Manager as needed.
+. The next step depends on whether the volumes are returned to their owning controllers or not:
 +
 [options="header" cols="1,2"]
 
 |===
 | If...| Then...
 a|
-Volumes are all owned by their preferred owners 
+Volumes are all owned by their owning controllers
 a|
 Go to the next step.
 a|
-None of the volumes are returned to their preferred owners
+None of the volumes are returned to their owning controllers
 a|
-Go to *More > Redistribute volumes* to return the volumes to their preferred owners.
+Select *Storage* > *Volumes* > *More* and from the drop-down menu select *Redistribute volumes* to return the volumes to their owning controllers.
 a|
-Only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution 
+Only some of the volumes are returned to their owning controllers after auto-distribution or manual distribution
 a|
 Check the Recovery Guru for host connectivity issues.
 
-If there is no Recovery Guru present or if after following the recovery guru steps the volumes are still not returned to their preferred owners, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+If there is no Recovery Guru present or if after following the recovery guru steps the volumes are still not returned to their owning controllers, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 |===
 
-. Collect support data for your storage system using SANtricity System Manager.
-.. Select *Support > Support Center > Diagnostics*.
+. Collect support data for your storage system:
+.. Select *Support* > *Support Center* > *Diagnostics*.
 .. Select *Collect Support Data*.
-.. Click *Collect*.
+.. Select *Collect*.
 +
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 
-
-//== Step 5: Complete the I/O module upgrade
-
-//Repeat the procedure for the other controller and then place both controllers online, collect support data, and resume operations.
-
-//.Steps
-
-//. Repeat procedure Step 1 through Step 4 for the second controller.
-//Place both controllers online.
-//.. Plug in power cables.
-//. As the controllers boot, check the controller LEDs.
-//** The amber Attention LED remains on.
-//** The Host Link LEDs might be on, blinking, or off, depending on the host interface.
-//. When the controllers are back online, confirm that their status is Optimal and check the controller's Attention LEDs.
-//+
-//If the status is not Optimal or if any of the Attention LEDs are on, confirm that all cables are correctly seated and the controller is installed correctly. If necessary, remove and reinstall the controller.
-//+
-//NOTE: If you cannot resolve the problem, contact technical support.
-
-
-//. Verify that all volumes have been returned to the preferred owner.
-//.. Select *Storage › Volumes*. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select *More › Change ownership* to view volume owners.
-//.. If volumes are all owned by preferred owner continue to Step 6.
-//.. If none of the volumes are returned, you must manually return the volumes. Go to *More › Redistribute volumes*.
-//.. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution you must check the Recovery Guru for host connectivity issues.
-//.. If there is no Recovery Guru present or if following the recovery guru steps the volumes are still not returned to their preferred owners contact support.
-
-//. Collect support data for your storage array using SANtricity System Manager.
-//.. Select *Support > Support Center > Diagnostics*.
-//.. Select *Collect Support Data*.
-//.. Click *Collect*.
-//+
-//The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
-
-//.What's next?
-
-//The process of upgrading HICs in your storage system is complete. You can resume normal operations.
+. If you need to verify and change the host I/O module protocol, use the procedure xref:io-module-change-protocol.html[Change the host I/O module protocol for an EF50 or EF80].

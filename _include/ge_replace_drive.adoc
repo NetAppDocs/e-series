@@ -1,7 +1,7 @@
 
 == Step 1: Prepare to replace the drive
 
-Prepare for the drive replacement by making sure the drive has failed, confirming you have a supported replacement drive, making sure you have access to SANtricity System Manager, taking electrostatic discharge precautions when handling a drive, and physically locating the failed drive.
+Prepare for the drive replacement by making sure the drive has failed, confirming you have a supported replacement drive, making sure you have access to SANtricity System Manager, taking electrostatic discharge precautions, and physically locating the failed drive.
 
 .Steps
 
@@ -11,7 +11,7 @@ Prepare for the drive replacement by making sure the drive has failed, confirmin
 If needed, you can use SANtricity System Manager to confirm:
 +
 .. Select *Hardware* > *Drives*.
-.. Click the failed drive on the graphic to display its context menu, and then select *View settings*.
+.. Select the failed drive on the graphic to display its context menu, and then select *View settings*.
 .. Confirm that the replacement drive has a capacity equal to or greater than the drive you are replacing and that it has the features you expect.
 +
 For example, if you are replacing a secure-capable drive, make sure the replacement drive is also secure-capable.
@@ -26,9 +26,8 @@ To open the System Manager interface, point the browser to one of the controller
 Always wear an ESD wrist strap grounded to an unpainted surface on your storage system chassis. If a wrist strap is unavailable, touch an unpainted surface on your storage system chassis before handling the drive.
 ** Keep the drive in the ESD bag until you are ready to install it.
 ** Open the ESD bag by hand or cut the top off with a pair of scissors. Do not insert a metal tool or knife into the ESD bag.
-** Make sure you have a flat, static-free work surface.
+** Make sure you have a flat static-free work surface.
 ** Keep the ESD bag and any packing materials to return the failed drive or use approved packaging when shipping a drive.
-//** Always wear an ESD wrist strap grounded to an unpainted surface on your storage system chassis. If a wrist strap is unavailable, touch an unpainted surface on your storage system chassis before handling the drive.
 ** Avoid magnetic fields. Keep drives away from magnetic devices.
 +
 Magnetic fields can destroy all data on the drive and cause irreparable damage to the drive circuitry.
@@ -41,9 +40,9 @@ CAUTION: Drives are fragile; improper drive handling is a leading cause of drive
 ** Never force a drive into a drive bay. Always use gentle, firm pressure to completely engage the drive latch.
 ** Place drives on cushioned surfaces, and never stack drives on top of each other.
 ** Do not bump drives against other surfaces.
-. You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, click the *Controller shelf* tab, and from the drop-down menu select *Turn on locator light*.
+. You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, select the *Controller shelf* tab, and from the context menu select *Turn on locator light*.
 
-. If needed, you can physically locate the failed drive within your storage system by making its Attention (amber) LED blink. Using SANtricity System Manager, select *Hardware* > *Drives*, click the failed drive on the graphic to display its context menu, and then select *Turn on locator light*.
+. If needed, you can physically locate the failed drive within your storage system by making its Attention (amber) LED blink. Using SANtricity System Manager, select *Hardware* > *Drives*, select the failed drive on the graphic to display its context menu, and then select *Turn on locator light*.
 +
 NOTE: You must remove the bezel from the front of the storage system to see the drive LEDs.
 
@@ -82,10 +81,10 @@ c. Using two hands, fully remove the drive from the drive bay.
 
 |===
 
-. Place the drive on an antistatic, cushioned surface away from magnetic fields.
+. Place the drive on an antistatic cushioned surface away from magnetic fields.
 . Wait 60 seconds for the system software to recognize that the drive was removed.
 
-. Unpack the replacement drive, and set it on a flat, static-free surface near the storage system.
+. Unpack the replacement drive and set it on a flat static-free surface near the storage system.
 +
 Save the packing materials to use when returning the faulty drive.
 
@@ -117,42 +116,42 @@ NOTE: When you first insert a drive, its Attention LED might be on. However, the
 [options="header" cols="1,2"]
 
 |===
-|Replacement drive LED behavior...| Action to take...
+|If the replacement drive LED behavior shows...| Then...
 a|
 Power LED is on or blinking, and the Attention LED is off
 a|
-None. Go to the next step.
-
 The replacement drive is working correctly.
+
+Go to the next step.
 a|
 Power LED is off
 a|
-. Remove the drive, wait 60 seconds, and then reinstall it.
-+
 The drive might not be installed correctly.
+
+. Remove the drive, wait 60 seconds, and then reinstall it.
+
 .  If the Recovery Guru in SANtricity System Manager still shows an issue, select *Recheck* to ensure the problem has been resolved.
 a|
 Attention LED is on
 a|
-. Replace the new drive with another new drive.
-+
 The new drive might be defective.
+
+. Replace the new drive with another new drive.
+
 .  If the Recovery Guru in SANtricity System Manager still shows an issue, select *Recheck* to ensure the problem has been resolved.
 
 |===
-//. If the Recovery Guru in SANtricity System Manager still shows an issue, select *Recheck* to ensure the problem has been resolved.
-. If the Recovery Guru in SANtricity System Manager indicates that drive reconstruction did not start automatically, start reconstruction manually.
+
+. If the Recovery Guru in SANtricity System Manager indicates that drive reconstruction did not start automatically, start reconstruction manually, when instructed to do so by NetApp Support or the Recovery Guru and use the following steps:
 +
 NOTE: Depending on your configuration, the controller might automatically reconstruct data to the new drive. If the storage system uses hot spare drives, the controller might need to perform a complete reconstruction on the hot spare before it can copy the data to the replacement drive. This reconstruction process increases the time that is required to complete this procedure.
 +
-NOTE: Perform the following manual reconstruction steps only when instructed to do so by NetApp Support or the Recovery Guru.
-
- .. Select *Hardware*.
- .. Click the replacement drive on the graphic to display its context menu, and then select *Reconstruct*.
- .. Confirm that you want to perform this operation.
+.. Select *Hardware* > *Drive*.
+.. Select the replacement drive on the graphic to display its context menu, and then select *Reconstruct*.
+.. Confirm that you want to perform this operation.
 +
 When the drive reconstruction completes, the volume group is in an Optimal state.
-
++
 . Reinstall the bezel.
 
 

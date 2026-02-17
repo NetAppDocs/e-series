@@ -2,95 +2,91 @@
 permalink: maintenance-ef50-ef80/io-module-change-protocol.html
 sidebar: sidebar
 keywords: host protocol change, EF50, EF80
-summary: You can change the host port protocol on I/O modules using either Infiniband (IB) or Fibre Channel (FC) in an EF50 or EF80 storage system.
+summary: You can change the protocol on the host I/O modules in your EF50 or EF80 storage system when you need a different protocol on your existing I/O modules, as part of an I/O module upgrade, or when the default protocol on new controllers part of a new storage system installation or controller upgrade is not the protocol you want.
 ---
-= Change the host protocol - EF50 and EF80
+= Change the host I/O module protocol - EF50 and EF80
 :experimental:
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-// You can change the host port protocol on I/O modules using either Infiniband (IB) or Fibre Channel (FC) in an EF50 or EF80 storage system.
 
-You can change the protocol on I/O modules used for host connectivity when you need to use a different protocol on your existing I/O modules, as part of an I/O module upgrade or when the default protocol on new controllers part of a new storage system installation or controller upgrade on an existing storage system is not the protocol you want.
-
-// BUT I'm not addressing all these use cases here, only the change on existing modules? For the other 3 use cases, I need to embed steps in the right place for each procedure and each version of steps would mostly be unique per the use case? I need to understand if I got the uses cases right. TK seemed to think upgrading a module had nothing to do with changing the protocol, but customer would upgrade 
+You can change the protocol on the host I/O modules in your EF50 or EF80 storage system when you need a different protocol on your existing I/O modules, as part of an I/O module upgrade, or when the default protocol on new controllers part of a new storage system installation or controller upgrade is not the protocol you want.
 
 .Before you begin
 
-* You have scheduled a downtime maintenance window for this procedure.
-* You must stop host I/O operations when you perform a protocol change. You cannot access data on the storage system until you have successfully completed the protocol change.
-* You have obtained the necessary hardware for the conversion, which might include a new set of I/O modules and/or SFPs. Your NetApp Sales Representative can help you determine what hardware you need and help you order the correct parts.
+If you are changing the host protocol as part of a hardware procedure (I/O module upgrade, new system installation, or controller upgrade), you need to have completed the applicable hardware procedure.
+
+NOTE: New hardware must already be installed because the default protocol and list of available protocols (you view in this procedure) are based on the host I/O modules currently installed.
+
+[options="header" cols="1,2"]
+|===
+|If you are changing the host protocol...| Then...
+a| 
+On your existing host I/O modules (no new hardware needs to be installed)
+a|
+Continue with this procedure.
+a|
+As part of an I/O module upgrade
+a|
+Upgrade the host I/O modules before continuing with this procedure.
+
+Use the link:../maintenance-ef50-ef80/io-module-upgrade.html[Upgrade I/O modules for an EF50 or EF80] procedure.
+a|
+As part of a new storage system installation
+a|
+Complete the system installation and setup before continuing with this procedure.
+
+Use the link:../install-hw-ef50-ef80/install-workflow.html[Install and setup for an EF50 or EF80] procedure.
+a|
+As part of a controller upgrade
+a|
+Complete the controller upgrade before continuing with this procedure.
+
+Start with the link:../upgrade-controllers/index.html[Learn about upgrading E-Series controllers] procedure.
+|===
+
 
 .About this task
 
-* Host I/O protocol is changed on all host I/O modules in your storage system.
+* Change the protocol on the host I/O modules by preparing, stopping the host I/O operations, changing the protocol, and then configuring the host to use the new protocol.
 
-* Both Controllers are rebooted.
+* The protocol is changed on all host I/O modules in your storage system.
 
-* Host access to all volumes is disrupted...
+* When you change the protocol on the host I/O modules, you temporarily disrupt host access to all volumes and make the storage system unavailable during the reboot, which takes a few minutes.
 
-* New storage system installations and new controllers being used in a controller upgrade ship with a default host protocol dictated by the make of the I/O module. You need to check if the default host protocol is what you want (for your storage system) and if not, you need to change it. The following table shows the default host protocol for the different I/O module makes and the supported protocol options.
 
-== Step 1: Stop host I/O
+== Step 1: Prepare for the protocol change
 
-Stop all I/O operations from the host before changing the protocol of the host ports.
+Prepare to change the protocol on the host I/O modules by verifying the current protocol being used, determining if you need to change the protocol, and if yes, scheduling a downtime maintenance window.
+
+include::../_include/ge_io_module_change_protocol_prepare.adoc[]
+
+
+
+== Step 2: Stop host I/O operations
+
+You must stop all I/O operations from the host before changing the protocol.
 
 NOTE: You cannot access data on the storage system until you successfully complete the protocol change.
 
-// include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
+include::../_include/ge_io_module_change_protocol_stop_io_operations.adoc[]
 
-.Steps
 
-. Ensure that no I/O operations are occurring between the storage system and all connected hosts. For example, you can perform these steps:
- ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
- ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
- ** Unmount all file systems associated with volumes on the storage system.
-+
-NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host or contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support^].
-+
-CAUTION: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, you might lose data.
-. Wait for any data in cache memory to be written to the drives.
-+
-The green Cache Active LED on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
+== Step 3: Change the protocol
 
-. From the Home page of SANtricity System Manager, select *View Operations in Progress*.
-. Wait for all operations to complete before continuing with the next step.
+Using SANtricity System Manager, change the protocol on the host I/O modules, wait for the controllers to complete their reboot cycle and confirm their status is Optimal.
 
-== Step 2: Change the protocol
+include::../_include/ge_io_module_change_protocol_change_protocol.adoc[]
 
-Change the protocol of the host ports to a supported protocol.
 
-//Need to create includes
-//syntax example:
-// include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
-
-.Steps
-
-. From the Home page of SANtricity System Manager: 
-.. Select *Settings* > *System*.
-.. Scroll down the page to the "Additional Settings" section and click "Change host I/O protocol".
-.. Choose the host I/O protocol you want from the drop down menu.
-+
-The host protocol field shows you the protocol currently on the host I/O modules in your storage system and the drop down menu lists the supported protocol options to choose from.
-.. Type "CHANGE" to confirm your choice.
-.. Click the Change button.
-
-== Step 3: Configure the host to use the new protocol
+== Step 4: Configure the host to use the new protocol
 
 After changing the protocol of the host ports, you must configure the host to use the new protocol.
 
-// include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
+include::../_include/ge_io_module_change_protocol_configure_host.adoc[]
 
-For step-by-step instructions, see the guide appropriate for your storage system:
 
-* link:../config-linux/index.html[Linux express configuration]
-+
-* link:../config-vmware/index.html[VMware express configuration]
-+
-* link:../config-windows/index.html[Windows express configuration]
-+
-Specific settings might vary. Check the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix^] for specific instructions and additional recommended settings for your solution.
 
 
 

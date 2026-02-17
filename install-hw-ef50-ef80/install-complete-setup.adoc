@@ -2,14 +2,14 @@
 permalink: install-hw-ef50-ef80/install-complete-setup.html
 sidebar: sidebar
 keywords: 
-summary: Cable and configure the management port on each controller for out-of-band storage system management, and then configure your EF50 or EF80 storage system.
+summary: After you power on your EF50 or EF80 storage system, you complete system setup by cabling and configuring the management port on each controller for out-of-band storage system management, configuring your storage system, and then verifying the host I/O module protocol is correct.
 ---
 = Complete storage system setup - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Cable and configure the management port on each controller for out-of-band storage system management, and then configure your EF50 or EF80 storage system.
+After you power on your EF50 or EF80 storage system, you complete system setup by cabling and configuring the management port on each controller for out-of-band storage system management, configuring your storage system, and then verifying the host I/O module protocol is correct.
 
 == Step 1: Cable and configure the management ports
 
@@ -26,8 +26,12 @@ Cable and then configure the management ports using a DHCP server.
 
 .Before you begin
 
-* Configure your DHCP server to associate an IP address, subnet mask, and gateway address as a permanent lease for each controller.
 * Obtain the assigned IP addresses to connect to the storage system from your network administrator.
+
+* Make note of the MAC address on the side of each controller. You use the MAC address to identify which IP address is assigned to each controller.
+
+* Configure your DHCP server to associate an IP address, subnet mask, and gateway address as a permanent lease for each controller.
+
 
 .Steps
 
@@ -82,7 +86,7 @@ NOTE: Because you reset the IP address, System Manager loses connection to the c
 +
 NOTE: If you lose the connection to controller A, you can connect an Ethernet cable to controller B to reestablish connection to controller A through controller B (169.254.128.102).
 
-. Log in using the password you set previously. The Configure Network Settings wizard appears.
+. Log in using the password you set previously. The *Configure Network Settings* wizard appears.
 
 . Use the network settings provided by your network administrator in the *Configure Network Settings* wizard to configure controller B's network settings, and then select *Finish*.
 . Connect controller B to your network.
@@ -104,69 +108,43 @@ Use SANtricity System Manager to configure and manage your storage system.
 
 .Before You Begin
 
-* Cable and configure your management ports to the network.
+* You must have cabled and configured your management ports to the network.
 // network switch
-* Verify and record your password and IP addresses.
+* Verify and record your password and configured IP addresses.
 
 .Steps
 
-. Access SANtricity System Manager using the same IP addresses that you used to configure your management ports.
+. Access SANtricity System Manager using the configured IP addresses.
 
 . Use SANtricity System Manager to manage your storage system. 
 +
 You can refer to the online help included with SANtricity System Manager.
 
 
-== Step 3: Check that the protocol on the host I/O modules is correct
+== Step 3: Verify the host I/O module protocol is correct
 
 Your storage system ships with a default protocol on the host I/O modules. If the default protocol is not the protocol you want, you can change it.
 
-.Before You Begin
-
-.About this task
-
 .Steps
 
-. Check to see the default protocol being used by the type of host I/O modules on your storage system.
-+
-Go to the Change the protocol procedure, section xyz to see the default protocols for the supported host I/O modules and the optional protocols you can choose from. Or you can see the same information in SANtricity System Manager.
-+
-//See the table below for the default protocols for the different types of host I/O modules. Or go into SAM - same steps as to change it, but will see their default protocol in the change field. either way, still need to point to change protocol topic or repeat here. POINT.
-+
-Link to the change protocol topic, table section or repeat the table here and in controller upgrade?
+. Verify the default protocol used on the host I/O modules in your storage system, using SANtricity System Manager.
+
+.. Select *Settings* > *System*.
+.. In the *Additional Settings* section, click *Change host I/O protocol* to open that page.
+.. See the default host I/O protocol used on the host I/O modules in your storage system displayed in the *Host I/O Protocol* field.
+
+. The next step depends on whether the default protocol is the protocol you want or not:
 +
 [options="header" cols="1,2"]
-
 |===
-|If your storage system has host I/O module type...| Then these are the default and optional protocols...
+|If...| Then...
+a| 
+The default protocol is the protocol you want
 a|
-200 GbE IB 2-port CX7 
-
-(Mfg part no. 111-05683)
+No action is needed.
 a|
-Default: NVMe RoCE
+The default protocol is not the protocol you want
+a|You need to change it using the link:../maintenance-ef50-ef80/io-module-change-protocol.html[Change the host protocol^] procedure.
 
-Optional: NVMe IB
-a|
-100 GbE RoCE 2-port CX7 
-
-(Mfg part no. 111-05682)
-a|
-Default: NVMe RoCE
-
-Optional: none
-a|
-64 Gb/s FC 4-port 
-
-(Mfg part no. 111-05342)
-a|
-Default: NVMe FC
-
-Optional: FCP
-a|
-
+NOTE: Changing the host port protocol involves preparing for the protocol change, stopping the host I/O operations, changing the protocol, and then configuring the host to use the new protocol.
 |===
-
-. If the default protocol is not the protocol you want, change it using SANtricity System Manager.
-
-//link to the protocol topic. 

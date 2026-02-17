@@ -12,78 +12,49 @@ summary: Replace a failed I/O module in your EF50 or EF80 storage system with th
 Replace a failed I/O module in your EF50 or EF80 storage system with the same type of I/O module to restore the storage system to its optimal operating state. 
 
 
-.Before you begin
-
-// * Schedule a downtime maintenance window for this procedure. You cannot access data on the storage system until you have successfully completed this procedure. Because both controllers must have the same I/O module configuration when they are powered on, the power must be off when you replace an I/O module.
-
-* Make sure you have the following:
-** The replacement I/O module.
-+
-Make sure that you are replacing the failed I/O module with the same type of I/O module. You cannot install a different type of I/O module. 
-+
-You must have the same type and number of I/O modules in each controller in your storage system.
-+
-CAUTION: *Possible loss of data access* -- The presence of incompatible or mismatched I/O modules causes the controllers to lock down when you apply power.
-+
-** An ESD wristband, or you have taken other antistatic precautions.
-** A flat, static-free work surface.
-** Labels to identify each cable that is connected to the faulty I/O module.
-** A management station with a browser that can access SANtricity System Manager for the impaired controller.
-+
-To open the System Manager interface, point the browser to the impaired controller's domain name or IP address.
-
-* Back up the storage system's configuration database using SANtricity System Manager.
-+
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the impaired controller.
-+
-.. Select *Support* > *Support Center* > *Diagnostics*.
-.. Select *Collect Configuration Data*.
-.. Click *Collect*.
-+
-The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
-
-
-
 .About this task
 
-* The replacement process involves meeting the Before you begin requirements, placing the impaired controller offline, replacing the failed I/O module, bringing the controller back online, and returning the failed part to NetApp.
+* Replace an I/O module by preparing, placing the impaired controller offline, replacing the failed I/O module, placing the controller back online, and returning the failed part to NetApp.
 
 * The term _I/O module_ is used instead of host interface cards (HICs) in this procedure.
 
-* The impaired controller does not need to be removed from the chassis since I/O modules are accessible with the controller in place.
+* The impaired controller does not need to be removed from the chassis because I/O modules are accessible with the controller in place.
 
-* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, click the *Controller shelf* tab, and from the drop-down menu select *Turn on locator light*.
+* You must place the impaired controller offline before unplugging any I/O module cables.
+
+* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, select the *Controller shelf* tab, and from the context menu select *Turn on locator light*.
+
+== Step 1: Prepare to replace an I/O module
+
+Prepare to replace an I/O module by gathering the necessary tools and equipment, and backing up the storage system's configuration database. 
+
+include::../_include/ge_io_module_replace_prepare.adoc[]
+
+== Step 2: Place the controller offline
+
+Place the impaired controller offline so you can safely perform the rest of this procedure.
+
+include::../_include/ge_most_fru_replacements_offline_controller.adoc[]
 
 
-== Step 1: Place the controller offline
+== Step 3: Replace the I/O module
 
-Place the impaired controller offline so you can safely replace the failed I/O module.
-
-include::../_include/ge_io_module_replace_offline_impaired_controller.adoc[]
-
-
-== Step 2: Replace the I/O module
-
-Replace the failed I/O module with the replacement I/O module.
+Unplug cabling from the failed I/O module, replace it with the replacement I/O module, and then cable the replacement I/O module.
 
 include::../_include/ge_io_module_replace_replace_failed_module.adoc[]
 
 
-== Step 3: Place the controller online
+== Step 4: Place the controller online
 
-Place the impaired controller back online using SANtricity System Manager or CLI commands.
-
-include::../_include/ge_io_module_replace_online_impaired_controller.adoc[]
+include::../_include/ge_most_fru_replacements_online_controller.adoc[]
 
 
-== Step 4: Complete the I/O module replacement
+== Step 5: Complete the I/O module replacement 
 
-Using SANtricity System Manager, ensure the latest version of SANtricity OS is installed, verify that all volumes are returned to their preferred owners and collect support data so that you can resume operations.
-
-include::../_include/ge_io_module_replace_complete.adoc[]
+include::../_include/ge_most_fru_replacements_complete_replacement.adoc[]
 
 
-== Step 5: Return the failed part to NetApp
+== Step 6: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
 

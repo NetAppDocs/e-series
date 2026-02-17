@@ -5,7 +5,12 @@ You begin with one controller, and then repeat steps for the other controller.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
-. On one of the controllers, remove the I/O module or I/O blanking module from the target slot.
+
+. On one of the controllers, unplug cabling from the I/O module you are removing, unless it's an I/O blanking module.
++
+You can label the cables so that you know where they came from. However, depending on the type of I/O module you are upgrading to, you might not be recabling to the same ports or you might not be able to reuse the same cables.
+
+. Remove the I/O module or I/O blanking module from the target slot.
 +
 The following illustration shows an I/O blanking module being removed.
 +
@@ -24,7 +29,7 @@ Pull the I/O module or I/O blanking module out of the controller using the tab o
 
 |===
 
-. Unpack the new I/O module, and set it on a flat, static-free surface near the storage system.
+. Unpack the new I/O module and set it on a flat static-free surface near the storage system.
 
 . Install the new I/O module:
 .. Align the I/O module with the edges of the controller slot opening.
@@ -37,4 +42,4 @@ You can use the tab on the left and the thumbscrew to push in the I/O module.
 +
 You can use the link:../install-hw-ef50-ef80/install-cable.html[Cable the hardware^] section of the system installation and setup content for host network cabling.
 
-. Repeat these steps to add an I/O module to the other controller.
+. Repeat these steps to upgrade an I/O module in the other controller.

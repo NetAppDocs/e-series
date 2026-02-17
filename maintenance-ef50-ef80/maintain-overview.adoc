@@ -22,7 +22,7 @@ For your EF50 or EF80 storage system, you can perform maintenance procedures on 
 
 a| link:controller-replace-workflow.html[Controller]
 
-a| A controller consists of a board, firmware, and software. It controls the drives and runs the SANtricity operating system software. A controller also contains the boot media. When the boot media fails, the controller must be replaced.
+a| A controller consists of a board, firmware, and software. It controls the drives and runs the SANtricity operating system software. 
 
 a| link:dimm-replace.html[DIMM]
 
@@ -42,7 +42,7 @@ a| The I/O module (Input/Output module) is a hardware component that acts as an 
 
 a| link:nvdimm-battery-replace.html[NV battery]
 
-a| The non-volatile memory (NV) battery is responsible for providing power to the NVMEM components while data in-flight is being destaged to flash memory after a power loss.
+a| The non-volatile memory (NVMEM) battery is responsible for providing power to the NVMEM components while data in-flight is being destaged to flash memory after a power loss.
 
 
 a| link:power-supply-replace.html[Power supply]

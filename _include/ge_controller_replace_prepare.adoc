@@ -1,23 +1,49 @@
 
 .Steps
 
-. Unpack the replacement controller, and set it on a flat, static-free surface.
+. Unpack the replacement controller and set it on a flat static-free surface.
 +
-Save the packing materials to use when shipping the impaired controller.
-. Confirm that the MAC address and FRU part number on the impaired controller is the same as the replacement controller's part number in SANtricity System Manager:
+Save the packing materials to use when returning the impaired controller.
+
+. Make note of the MAC address on the side of the replacement controller.
 +
-CAUTION: *Possible loss of data access*: If the two part numbers are not the same, do not attempt this procedure. The presence of mismatched controllers causes the replacement controller to lock down when you bring it online.
+You use the MAC address later in the controller replacement procedure.
+
+. Confirm that the part number on the replacement controller is the same as the controller's replacement part number in SANtricity System Manager:
 +
-.. Locate the MAC address and FRU part number labels on the back of the impaired controller.
-.. From SANtricity System Manager, locate the replacement controller part number displayed in the details area of the Recovery Guru. 
+CAUTION: *Possible loss of data access*: If the two part numbers are not the same, do not attempt this procedure. The presence of mismatched controllers causes the replacement controller to lock down when you bring it online.
++
+.. Make note of the part number on the side of the replacement controller.
+
+.. Locate the replacement part number for the impaired controller displayed in the details area of the Recovery Guru. 
 +
 If you need to find this number manually, follow these steps:
 +
 ... Select *Hardware* > *Controllers and components*.
-... Locate the controller, which is marked with the controller icon.
-... Click the controller icon.
-... Select the controller, and click *Next*.
+... Select the controller graphic for the impaired controller (Controller A or Controller B) to view the context menu.
+... Select *View settings*.
 ... On the *Base* tab, make a note of the *Replacement Part Number* for the controller.
+
+.. Compare the two part numbers to confirm they are the same.
+
+.. The next step depends on whether the part numbers are the same or not:
++
+[options="header" cols="1,2"]
+
+|===
+|If...| Then...
+a|
+The two part numbers are the same
+a|
+Continue to the next step.
+a|
+The two part numbers are different
+a|
+You cannot continue with this procedure. 
+
+Contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] for assistance.
+
+|===
 
 . Back up the storage system's configuration database using SANtricity System Manager.
 +
@@ -25,19 +51,7 @@ If a problem occurs when you remove a controller, you can use the saved file to 
 
 .. Select *Support › Support Center › Diagnostics*.
 .. Select *Collect Configuration Data*.
-.. Click *Collect*.
+.. Select *Collect*.
 +
 The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
-
-//From E4000, but might not apply for gE
-
-//. Collect support data for your storage system using SANtricity System Manager.
-//+
-//If a problem occurs when you remove the impaired controller, you can use the saved file to troubleshoot the issue. The system saves inventory, status, and performance data about your storage system in a single file.
-
-//.. Select *Support › Support Center › Diagnostics*.
-//.. Select *Collect Support Data*.
-//.. Click *Collect*.
-//+
-//The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 

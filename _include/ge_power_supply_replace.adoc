@@ -22,7 +22,7 @@ Rotate the PSU handle up, to its horizontal position, and then grasp it.
 a|
 image::../media/icon_round_2.png[Callout number 2]
 a|
-With your thumb, press the orange tab to release the PSU from the controller.
+With your thumb, press the orange locking tab to release the PSU from the controller.
 a|
 image::../media/icon_round_3.png[Callout number 3]
 a|
@@ -37,7 +37,7 @@ Save all packing materials for use when returning the failed power supply.
 +
 . Install the replacement PSU:
 .. Using both hands, support and align the edges of the PSU with the opening in the controller.
-.. Gently push the PSU into the controller until the locking tab clicks into place.
+.. Gently push the PSU into the controller until the orange locking tab clicks into place.
 +
 A PSU will only properly engage with the internal connector and lock in place one way.
 +
@@ -46,8 +46,8 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
 .. Rotate the handle down, so it is out of the way of normal operations.
 
 . Reconnect the power cord to the PSU and secure the power cord with the power cord retainer. 
-//+
-//Once power is restored to the PSU, the status LED should be green.
++
+Once power is restored to the PSU, the status LED should be green.
 
 . Confirm that the PSU's status is Optimal and that the storage system's Attention LEDs are off.
 +

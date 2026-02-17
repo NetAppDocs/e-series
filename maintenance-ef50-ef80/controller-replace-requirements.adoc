@@ -9,10 +9,10 @@ summary: Before replacing the controller in your EF50 or EF80 storage system, en
 :imagesdir: ../media/
 
 [.lead]
-Before replacing the controller in your EF50 or EF80 storage system, ensure you meet the requirements for a successful replacement. This includes verifying you have a failed controller, verifying the state of your storage system, acquiring tools for the procedure, and having a management station and browser to access SANtricity System Manager.
+Before replacing the controller in your EF50 or EF80 storage system, ensure you meet the requirements for a successful replacement. This includes verifying you have a failed controller, verifying the state of your storage system, acquiring items for the procedure, and having a management station and browser to access SANtricity System Manager.
 
 include::../_include/ge_controller_replace_requirements.adoc[]
 
 .What's next?
 
-After you’ve the met the requirements to replace the impaired controller, you need to link:controller-replace-prepare.html[prepare your storage system].
+After meeting the requirements for the controller replacement, link:controller-replace-prepare.html[prepare for the controller replacement].

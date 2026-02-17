@@ -1,16 +1,16 @@
 
-== About this task
-* You should install the replacement controller within 60 minutes of removing the failed controller to maintain proper cooling for the storage system. 
+.About this task
+* Install the replacement controller within 60 minutes of removing the failed controller to maintain proper cooling for the storage system. 
 +
 CAUTION: To prevent overheating, do not leave the controller bay empty for longer than 60 minutes.
 
-* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, click the *Controller shelf* tab, and from the drop-down menu select *Turn on locator light*.
+* You must place the impaired controller offline before unplugging any of its cables.
+
+* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, select the *Controller shelf* tab, and from the context menu select *Turn on locator light*.
 
 == Step 1: Remove the controller
 
-include::../_include/ge_controller_remove.adoc[]
-
-. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover. 
+include::../_include/ge_controller_remove.adoc[] 
 
 == Step 2: Move the power supply
 
@@ -34,7 +34,7 @@ Rotate the PSU handle up, to its horizontal position, and then grasp it.
 a|
 image::../media/icon_round_2.png[Callout number 2]
 a|
-With your thumb, press the orange tab to release the PSU from the controller.
+With your thumb, press the orange locking tab to release the PSU from the controller.
 a|
 image::../media/icon_round_3.png[Callout number 3]
 a|
@@ -45,7 +45,7 @@ CAUTION: The PSU is short. Always use two hands to support it when removing it f
 +
 . Insert the PSU into the replacement controller:
 .. Using both hands, support and align the edges of the PSU with the opening in the controller.
-.. Gently slide the PSU into the controller until the locking tab clicks into place.
+.. Gently slide the PSU into the controller until the orange locking tab clicks into place.
 +
 A PSU must properly engage with the internal connector and locking mechanism. Repeat this step if you feel the PSU is not properly seated.
 +
@@ -160,7 +160,7 @@ The ejector tabs remain in the open position.
 
 .. Make sure that the DIMM ejector tabs on the connector are in the open position.
 
-.. Hold the DIMM by the corners, and then insert the DIMM squarely into the slot.
+.. Hold the DIMM by the corners and insert it squarely into the slot.
 +
 The notch on the bottom of the DIMM, among the pins, should line up with the tab in the slot.
 +
@@ -171,39 +171,6 @@ When inserted correctly, the DIMM goes in easily but fits tightly in the slot. I
 .. Push down carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at both ends of the DIMM.
 
 . Repeat these steps for the remaining DIMMs.
-
-// == Step 6: Move the boot media
-
-//Move the boot media to the replacement controller.
-
-// .Steps
-// . Remove the boot media from the impaired controller:
-// +
-// image::../media/drw_g_boot_media_replace_ieops-1872.svg[Boot media replace graphic]
-// +
-// [cols="1,4"]
-// |===
-// a|
-// image::../media/icon_round_1.png[Callout number 1]
-// a|
-// Boot media location
-// a|
-// image::../media/icon_round_2.png[Callout number 2]
-// a|
-// Press down on the blue tab to release the right end of the boot media.
-// a|
-// image::../media/icon_round_3.png[Callout number 3]
-// a|
-// Lift the right end of the boot media up at a slight angle to get a good grip along the sides of the boot media.
-// a|
-// image::../media/icon_round_4.png[Callout number 4]
-// a|
-// Gently pull the left end of the boot media out of its socket.
-// |===
-// +
-// . Install the boot media into the replacement controller:
-// .. Slide the socket end of the boot media into its socket.
-// .. At the opposite end of the boot media, press down and hold the blue tab (in the open position), gently push down on that end of the boot media until it stops, and then release the tab to lock the boot media into place.
 
 == Step 6: Move the I/O modules
 
@@ -229,7 +196,7 @@ Turn the I/O module thumbscrew counterclockwise to loosen.
 a|
 image::../media/icon_round_2.png[Callout number 2]
 a|
-Pull the I/O module out of the controller using the port label tab on the left and the thumbscrew.
+Pull the I/O module out of the controller using the port label tab on the left and the thumbscrew on the right.
 
 |===
 
@@ -239,17 +206,19 @@ Pull the I/O module out of the controller using the port label tab on the left a
 
 .. Gently push the I/O module all the way into the slot, making sure to properly seat the module into the connector.
 +
-You can use the tab on the left and the thumbscrew to push in the I/O Module.
+You can use the tab on the left and the thumbscrew on the right to push in the I/O Module.
 +
 .. Turn the thumbscrew clockwise to tighten.
 
 . Repeat these steps to move the remaining I/O modules and any I/O blanking modules to the replacement controller. 
 
 
-== Step 8: Install the controller
+== Step 7: Install the controller
 
-Reinstall the controller into the chassis and reboot it.
+Install the replacement controller into the chassis, reconnect its power cord, and all of its cables.
 
-include::../_include/ge_controller_replace_controller_reinstall.adoc[]
+include::../_include/ge_controller_reinstall.adoc[]
+
+
  
 

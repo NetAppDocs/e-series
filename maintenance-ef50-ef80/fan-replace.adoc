@@ -11,75 +11,59 @@ summary: Replace a fan module in your EF50 or EF80 storage system when a fan fai
 [.lead]
 Replace a fan module in your EF50 or EF80 storage system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. 
 
-.Before you begin
-
-* Check if Recovery Guru indicates that it is not OK to remove the faulty fan. If so, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
-
-* Make sure you have the following:
-
-** A replacement fan.
-** An ESD wristband, or you have taken other antistatic precautions.
-** A flat, static-free work surface.
-** Labels to identify each cable that is connected to the impaired controller.
-** A management station with a browser that can access SANtricity System Manager for the impaired controller.
-+
-To open the System Manager interface, point the browser to the impaired controller's domain name or IP address.
-
-* Back up the storage system's configuration database using SANtricity System Manager.
-+
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the impaired controller.
-+
-.. Select *Support* > *Support Center* > *Diagnostics*.
-.. Select *Collect Configuration Data*.
-.. Click *Collect*.
-+
-The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
 .About this task
-* The replacement process involves meeting the Before you begin requirements, placing the impaired controller offline, removing the controller, replacing the fan, reinstalling the controller, placing the controller back online, and then returning the failed part to NetApp.
+* Replace a fan by preparing, placing the impaired controller offline, removing the controller, replacing the fan, reinstalling the controller, placing it online, completing the replacement, and returning the failed part to NetApp.
+
+* You must place the impaired controller offline before unplugging any of its cables.
 
 * Each controller includes five fans. If a fan fails, you must replace it as soon as possible to ensure that the controller has adequate cooling.
 
-* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, click the *Controller shelf* tab, and from the drop-down menu select *Turn on locator light*.
+* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, select the *Controller shelf* tab, and from the context menu select *Turn on locator light*.
 
-== Step 1: Place the controller offline
+== Step 1: Prepare to replace a fan
+
+Prepare to replace a fan by confirming it is okay to replace it, gathering the necessary tools and equipment, and backing up the storage system's configuration database.
+
+include::../_include/ge_fan_replace_prepare.adoc[]
+
+
+== Step 2: Place the controller offline
+
+Place the impaired controller offline so you can safely perform the rest of this procedure.
  
-Place the impaired controller offline so you can safely replace a faulty fan.
- 
-include::../_include/ge_internal_frus_controller_offline.adoc[]
+include::../_include/ge_most_fru_replacements_offline_controller.adoc[]
  
 
-== Step 2: Remove the controller
-
-Remove the impaired controller from the chassis.
+== Step 3: Remove the controller
 
 include::../_include/ge_controller_remove.adoc[]
 
 
-== Step 3: Replace a fan
+== Step 4: Replace a fan
 
 Locate the faulty fan inside the impaired controller and replace it.
 
 include::../_include/ge_fan_replace.adoc[]
 
 
-== Step 4: Reinstall the controller
+== Step 5: Reinstall the controller
+
+Reinstall the controller into the chassis, reconnect its power cord, and all of its cables.
 
 include::../_include/ge_controller_reinstall.adoc[]
 
 
-== Step 5: Place the controller online
+== Step 6: Place the controller online
 
-include::../_include/ge_internal_frus_controller_back_online.adoc[]
-
-
-== Step 6: Complete the fan replacement
-
-Using SANtricity System Manager, ensure the latest version of SANtricity OS is installed, verify that all volumes are returned to their preferred owners and collect support data so that you can resume operations.
-
-include::../_include/ge_io_module_upgrade_complete.adoc[]
+include::../_include/ge_most_fru_replacements_online_controller.adoc[]
 
 
-== Step 7: Return the failed part to NetApp
+== Step 7: Complete the fan replacement
+
+include::../_include/ge_most_fru_replacements_complete_replacement.adoc[]
+
+
+== Step 8: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]

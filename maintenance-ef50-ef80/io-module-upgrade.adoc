@@ -2,51 +2,17 @@
 permalink: maintenance-ef50-ef80/io-module-upgrade.html
 sidebar: sidebar
 keywords: ef50, ef80, upgrade io module, upgrade hic, upgrade host interface card
-summary: The upgrade procedure involves powering off both controllers, upgrading I/O modules in both controllers, powering on both controllers, and verifying that the upgrade was successful.
+summary: You can upgrade I/O modules in your EF50 or EF80 storage system to increase the number of host ports for enhanced network connectivity and expand your system’s ability to handle data traffic. 
 ---
 = Upgrade I/O modules - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can upgrade one or more I/O modules in your EF50 or EF80 storage system to increase the number of host ports for enhanced network connectivity and expand your system’s ability to handle data traffic. 
-
-.Before you begin
-
-* Schedule a downtime maintenance window for this procedure. You cannot access data on the storage system until you have successfully completed this procedure. Because both controllers must have the same I/O module configuration when they are powered on, the power must be off when you upgrade I/O modules.
- 
-* Make sure you have the following:
-** The new I/O modules that you are upgrading to.
-+
-Make sure that the I/O modules you are upgrading to are supported by your storage system, that you have the same type and number of I/O modules for each controller, and that you understand the slot priority (the new I/O module must be installed in the same slot on each controller).
-+
-CAUTION: *Possible loss of data access* -- The presence of incompatible or mismatched I/O modules causes the controllers to lock down when you apply power.
-+
-If needed, you can confirm supported I/O modules and slot priority for your storage system at https://hwu.netapp.com[NetApp Hardware Universe^].
-+
-** Cables to connect the new I/O modules to your network.
-** An ESD wristband, or you have taken other antistatic precautions.
-** A flat, static-free work surface.
-** A management station with a browser that can access SANtricity System Manager for the controllers.
-+
-To open the System Manager interface, point the browser to the target controller's domain name or IP address.
-
-* Back up the storage system's configuration database using SANtricity System Manager.
-+
-If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the impaired controller.
-+
-.. Select *Support* > *Support Center* > *Diagnostics*.
-.. Select *Collect Configuration Data*.
-.. Click *Collect*.
-+
-The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
+You can upgrade I/O modules in your EF50 or EF80 storage system to increase the number of host ports for enhanced network connectivity and expand your system’s ability to handle data traffic. 
 
 
 .About this task
-
-* The upgrade procedure involves meeting the Before you begin requirements, powering off both controllers, upgrading I/O modules in both controllers, powering on both controllers, and verifying that the upgrade was successful.
-
-* Some I/O module upgrades might require a host port protocol conversion. Follow the instructions in the xref:io-module-change-protocol.html[Change host protocol for an EF50 or EF80] for this requirement.
 
 * The term _I/O module_ is used instead of host interface cards (HICs) in this procedure.
 
@@ -54,37 +20,48 @@ The file is saved in the Downloads folder for your browser with the name, *confi
 +
 Unused I/O slots should have blanking modules installed to prevent possible thermal issues and for EMC compliance.
 
-* Controllers do not need to be removed from the chassis since the I/O modules are accessible with the controllers in place.
+* Upgrade I/O modules by preparing, powering off both controllers, upgrading I/O modules in both controllers, powering on both controllers, verifying that the upgrade was successful, and if needed, verifying and changing the host I/O module protocol.
++
+Controllers do not need to be removed from the chassis because the I/O modules are accessible with the controllers in place.
 
-* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, click the *Controller shelf* tab, and from the drop-down menu select *Turn on locator light*.
+* You must power off both controllers before unplugging any I/O module cables.
+
+* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, select the *Controller shelf* tab, and from the context menu select *Turn on locator light*.
+
+== Step 1: Prepare to upgrade I/O modules
+
+Prepare to upgrade I/O modules by scheduling a downtime maintenance window, gathering the necessary tools and equipment, and backing up the storage system's configuration database.
+
+include::../_include/ge_io_module_upgrade_prepare.adoc[]
 
 
-== Step 1: Power off both controllers
+== Step 2: Power off both controllers
 
 Power off both controllers in the storage system so you can safely upgrade the I/O modules in both controllers.
 
 include::../_include/ge_io_module_upgrade_power_off_controllers.adoc[]
 
 
-== Step 2: Upgrade the I/O modules
+== Step 3: Upgrade the I/O modules
 
-Replace I/O modules or I/O module blanks with the new I/O modules in both controllers.
+Unplug cabling from the I/O modules you want to upgrade (unless you have I/O blanking modules), replace the I/O modules or the I/O blanking modules with the new I/O modules, and then cable the new I/O modules.
 
 include::../_include/ge_io_module_upgrade_install_additional_modules.adoc[]
 
 
-== Step 3: Power on both controllers
+== Step 4: Power on both controllers
 
 Power on both controllers.
 
 include::../_include/ge_io_module_upgrade_power_on_controllers.adoc[]
 
 
-== Step 4: Complete the I/O module upgrade
+== Step 5: Complete the I/O module upgrade
 
-Using SANtricity System Manager, ensure the latest version of SANtricity OS is installed, verify that all volumes are returned to their preferred owners and collect support data so that you can resume operations.
+Using SANtricity System Manager, make sure the latest version of SANtricity OS is installed, verify that all volumes are returned to their owning controllers, collect support data so that you can resume operations, and if needed, verify and change the host I/O module protocol.
 
 include::../_include/ge_io_module_upgrade_complete.adoc[]
+
 
 
 

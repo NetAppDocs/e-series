@@ -26,8 +26,6 @@ If needed, see https://hwu.netapp.com[NetApp Hardware Universe^] for the exact d
 ** 1U for most switches
 
 . Install any required network switches.
-// +
-// See the https://docs.netapp.com/us-en/ontap-systems-switches/index.html[Switch documentation^] for installation instructions and link:https://hwu.netapp.com[NetApp Hardware Universe^] for compatibility information.
 
 . Make sure you have a supported browser for the management software:
 
@@ -76,6 +74,7 @@ a|* Storage system with drives
 * Rack-mount hardware with instructions
 * Bezel 
 a|
+* inter-controller mirroring Ethernet cables
 * Management Ethernet cables (RJ-45 cables)
 
 * Network cables 
@@ -98,48 +97,5 @@ The registration process requires the Serial Number (SN) for each controller. Yo
 image::../media/drw_ef50-ef80_sn_label_ieops-2689.svg[example of the serial number label]
 
 .What's next?
-After you’ve prepared to install your storage system, you link:install-hardware.html[install the hardware].
+After preparing to install your storage system, link:install-hardware.html[install the hardware].
 
-//OR use ONTAP-side content as a base and update with above E-Series content as needed.
-
-//== Step 3: Register your storage system
-//After you've ensured that your site meets the requirements for your storage system specifications, and you've verified that you have all the parts you ordered, you should register your storage system.
-
-//.Steps
-
-//. Locate the System Serial Number (SSN) on each controller being installed.
-//+
-//You can find the serial number in the following locations:
-
-//- On the packing slip
-//- In your confirmation email
-//- On each controller
-//+
-//image::../media/drw_ssn_label.svg[Example of the system serial number label,width=200]
-//+
-
-//. Go to the http://mysupport.netapp.com/[NetApp Support Site^].
-//. Determine whether you need to register your storage system:
-//+
-//[cols="1a,2a" options="header"]
-//|===
-//| If you are a...| Follow these steps...
-//a|
-//Existing NetApp customer
-//a|
-
-//.. Sign in with your username and password.
-//.. Select *Systems* > *My Systems*.
-//.. Confirm that the new serial numbers are listed.
-//.. If it is not, follow the instructions for new NetApp customers.
-
-//a|
-//New NetApp customer
-//a|
-
-//.. Click *Register Now*, and create an account.
-//.. Select *Systems* > *Register Systems*.
-//.. Enter the storage system's serial numbers and requested details.
-
-//After your registration is approved, you can download any required software. The approval process might take up to 24 hours.
-//|===

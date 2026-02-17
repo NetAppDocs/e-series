@@ -1,4 +1,3 @@
-Reinstall the controller into the chassis.
 
 .About this task
 
@@ -36,7 +35,15 @@ NOTE: Do not use excessive force when sliding the controller into the chassis; i
 +
 .. Rotate the controller handles up and lock in place with the tabs.
 
-. Recable the controller.
+. Reconnect the power cord to the power supply and secure the power cord with the power cord retainer.
 +
-Once power is restored to the PSU, the status LED should be green.
+Once power is restored to the power supply, the status LED should be green.
+
+. Reconnect all of the cables to the controller.
++
+NOTE: Reconnecting the cables must be done before placing the controller online. This is especially important for the mirroring cable connections because they ensure full system redundancy and are used for cache mirroring and I/O shipping.
+
+//They must be connected for full system redundancy. They're used for cache mirroring and I/O shipping. (I/O shipping in a NetApp E-Series system is a mechanism where the non-owning controller receives host I/O and transfers it to the owning controller via internal, high-speed interconnect channels for processing. This enables active-active access, allowing hosts to access volumes through any controller.)
+
+
 
