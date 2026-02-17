@@ -22,7 +22,7 @@ For your EF50 or EF80 storage system, you can perform maintenance procedures on 
 
 a| link:controller-replace-workflow.html[Controller]
 
-a| A controller consists of a board, firmware, and software. It controls the drives and runs the SANtricity operating system software. A controller also contains the boot media. When the boot media fails, the controller must be replaced.
+a| A controller consists of a board, firmware, and software. It controls the drives and runs the SANtricity operating system software. 
 
 a| link:dimm-replace.html[DIMM]
 

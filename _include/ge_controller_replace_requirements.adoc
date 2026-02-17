@@ -1,18 +1,18 @@
 
 
-* You must verify that you have a failed controller. You can determine this in two ways:
+* Verify that you have a failed controller. You can determine this in two ways:
 
 ** The Recovery Guru in SANtricity System Manager directed you to replace the controller.
 ** The amber Attention LED on the controller is on, indicating that the controller has a fault.
 
 //NOTE: When the boot media device fails, you must replace the controller.
 
-* You must verify that the following conditions of your storage system are true to ensure that you can replace the impaired controller while your storage system is powered on and performing host I/O operations:
+* Verify that the following conditions of your storage system are true to ensure that you can replace the impaired controller while your storage system is powered on and performing host I/O operations:
 +
 ** The second controller in the chassis has Optimal status.
 ** The *OK to remove* field in the Details area of the Recovery Guru in SANtricity System Manager displays *Yes*, indicating that it is safe to remove the impaired controller.
 
-* You must have the following:
+* Make sure you have the following:
 ** A replacement controller with the same part number as the controller you are replacing.
 ** An ESD wristband, or you have taken other antistatic precautions.
 ** A flat, static-free work surface.
