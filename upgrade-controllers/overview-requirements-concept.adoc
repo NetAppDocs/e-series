@@ -55,7 +55,7 @@ Before upgrading to E4000 controllers, unmap the Access volume from all defined 
 
 * *EF50 and EF80 mirror cabling*
 +
-Both the EF80 and EF50 systems use high-speed 200GbE external connections to enable inter-controller communication between the two controllers. Each controller is equipped with a dedicated interface card installed in slot 4. This card provides two ports, and includes two 0.5m 200GbE cables with the system. 
+Both the EF80 and EF50 systems use high-speed 200GbE external connections to enable inter-controller communication between the two controllers. Each controller is equipped with a dedicated interface card installed in slot 4. This card provides two ports and includes two 0.5m 200GbE cables with the system. 
 
 +
 Use these cables to connect the controller ports as follows:
