@@ -20,7 +20,7 @@ Or select *Storage* > *Volumes* > *More* and from the drop-down menu select *Red
 
 NOTE: If after completing the Recovery Guru instructions the volumes are still not returned to their owning controllers, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 a|
-Recovery Guru is not present (it appears that all or volumes are returned to their owning controllers).
+Recovery Guru is not present (it appears that all volumes are returned to their owning controllers).
 a|
 Verify that all volumes are returned to their owning controllers by selecting *Storage* > *Volumes* > *More* and from the drop-down menu select *Change volume ownership* to view volume owners.
 |===
