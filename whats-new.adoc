@@ -24,6 +24,9 @@ a|This release introduces the EF80 and EF50 all-NVMe-flash storage systems. The 
 High-capacity NVMe SSD drives of 30TB or 60TB sizes are also supported with the EF80 and EF30. The EF80 and EF30 is compatible for Dynamic Disk Pool use only with no legacy RAID support.
 a|New user interface for SANtricity System Manager
 a|For the new EF80 and EF50 controllers, the SANtricity System Manager user interface has been redesigned to provide a more modern look and feel. The new interface includes a left-panel navigation and enhanced usability to streamline management tasks.
+
+a|Subject Alternative Names (SANs) for Server certificate now only permits Letters, digits, and hyphen characters
+a|When creating or editing a Server certificate in SANtricity System Manager or Unified Manager, the Subject Alternative Names (SANs) field now only permits letters, digits, and hyphen characters. This change enhances security and ensures compatibility with industry standards for SSL/TLS certificates.
 |===
 
 == New features in Version 11.90R4

@@ -60,8 +60,8 @@ Both the EF80 and EF50 systems use high-speed 200GbE external connections to ena
 +
 Use these cables to connect the controller ports as follows:
 
-** Port P0 on controller A to Port P0 on controller B
-** Port P1 on controller A to Port P1 on controller B
+** Port e4a on controller A to Port e4a on controller B
+** Port e4b on controller A to Port e4b on controller B
 
 +
 NOTE: It is crucial to connect the cables exactly as described.
@@ -110,6 +110,8 @@ a|
 +
 * EF50 supports up to 2 Host Interface Cards, and EF80 supports up to 3 Host Interface Cards.
 
+NOTE: When upgrading from EF300 to EF50 or EF80, you must configure the host port protocol through the SANtricity System Manager user interface. For more information, see https://docs.netapp.com/us-en/e-series//maintenance-ef50-ef80/io-module-change-protocol.html[Change the host I/O module protocol - EF50 and EF80].
+
 a|
 * EF50 and EF80 do not support SAS expansion. 
 
@@ -138,6 +140,9 @@ a|
 * EF80 do not support Thin Provisioned Volumes
 +
 * EF80 supports up to 3 Host Interface Cards.
+
++
+NOTE: When upgrading from EF600 to EF80, you must configure the host port protocol through the SANtricity System Manager user interface. For more information, see https://docs.netapp.com/us-en/e-series//maintenance-ef50-ef80/io-module-change-protocol.html[Change the host I/O module protocol - EF50 and EF80].
 
 a|
 * EF80 do not support SAS expansion.
