@@ -14,11 +14,11 @@ Using SANtricity System Manager, make sure the latest version of SANtricity OS i
 a|
 Recovery Guru is present and indicates that volumes are not on their preferred path (returned to their owning controllers)
 a|
-You need to redistribute the volumes to their owning controllers, using the Recovery Guru instructions. 
+. Redistribute the volumes to their owning controllers, by selecting *Storage* > *Volumes* > *More* and from the drop-down menu select *Redistribute volumes*.
 
-Or select *Storage* > *Volumes* > *More* and from the drop-down menu select *Redistribute volumes* to return the volumes to their owning controllers.
+. Verify that all volumes are returned to their owning controllers by checking if Recovery Guru is present and still indicating that volumes are not on their preferred path (returned to their owning controllers).
 
-NOTE: If after completing the Recovery Guru instructions the volumes are still not returned to their owning controllers, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+NOTE: If the volumes are still not returned to their owning controllers, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support].
 a|
 Recovery Guru is not present (it appears that all volumes are returned to their owning controllers).
 a|
