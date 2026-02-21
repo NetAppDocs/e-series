@@ -25,6 +25,13 @@ a|
 Verify all volumes are returned to their owning controllers by selecting *Storage* > *Volumes* > *More* and from the drop-down menu, select *Change volume ownership* to view volume owners.
 |===
 
+. Collect support data for your storage system:
+.. Select *Support* > *Support Center* > *Diagnostics*.
+.. Select *Collect Support Data*.
+.. Select *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+
 //. Verify that all volumes are returned to their owning controllers:
 //.. Select *Storage* > *Volumes*. 
 //.. From the *All Volumes* page, verify that volumes are distributed to their owning controllers. 
@@ -53,9 +60,3 @@ Verify all volumes are returned to their owning controllers by selecting *Storag
 //|===
 
 
-. Collect support data for your storage system:
-.. Select *Support* > *Support Center* > *Diagnostics*.
-.. Select *Collect Support Data*.
-.. Select *Collect*.
-+
-The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
