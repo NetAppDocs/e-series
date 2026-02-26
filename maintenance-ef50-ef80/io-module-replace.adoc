@@ -18,6 +18,10 @@ Replace a failed I/O module in your EF50 or EF80 storage system with the same ty
 
 * The term _I/O module_ is used instead of host interface cards (HICs) in this procedure.
 
+* The I/O module fault LEDs (for all four slots) are non-functional. They remain off at all times; therefore, they cannot be used to verify a fault condition.
++
+The fault LEDs are located on the controllers: The slot 1 and 2 fault LEDs are located to the right of slot 2. The slot 3 and 4 fault LEDs are located to the left of slot 4.
+
 * The impaired controller does not need to be removed from the chassis because I/O modules are accessible with the controller in place.
 
 * You must place the impaired controller offline before unplugging any I/O module cables.
