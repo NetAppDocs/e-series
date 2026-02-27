@@ -137,9 +137,9 @@ After you complete this task, the host is configured with 2 vSwitches containing
 [role="tabbed-block"]
 ====
 
-.Configuring NVMe over RDMA (RoCE v2) networking for VMware
+.Configuring NVMe over RDMA (RoCE v2) networking on ESXi for VMware
 --
-For information on configuring NVMe over RDMA (RoCE v2) networking for VMware, see the following:
+For information on configuring NVMe over RDMA (RoCE v2) networking on ESXi for VMware, see the following:
 
 * link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi.html[VMware vSphere Documentation for your version of vSphere]. 
 --
