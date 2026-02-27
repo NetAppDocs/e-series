@@ -144,7 +144,7 @@ For information on configuring NVMe over RDMA (RoCE v2) networking for VMware, s
 * link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi.html[VMware vSphere Documentation for your version of vSphere]. 
 --
 
-.Configuring lossless Ethernet for NVMe over RDMA QoS settings to Enable DSCP based Priority Flow Control (PFC)
+.*Recommended* Configuring lossless Ethernet for NVMe over RDMA QoS settings to Enable DSCP based Priority Flow Control (PFC)
 --
 Alternatively, you can configure lossless network using Differentiated Services Code Point (DSCP) based Priority Flow Control (PFC). In this configuration, you set the DSCP value to `26` in the physical switches and hosts. To use this option, see vendor specific driver documentation.
 
