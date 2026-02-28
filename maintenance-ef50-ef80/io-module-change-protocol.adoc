@@ -82,7 +82,7 @@ include::../_include/ge_io_module_change_protocol_change_protocol.adoc[]
 
 == Step 4: Configure the host to use the new protocol
 
-After changing the protocol of the host ports, you must configure the host to use the new protocol.
+After changing the host protocol, you must configure the host to use the new protocol.
 
 include::../_include/ge_io_module_change_protocol_configure_host.adoc[]
 

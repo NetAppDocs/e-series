@@ -14,4 +14,8 @@ This can take about five minutes.
 
 . When the controllers are back online, confirm their status is Optimal, using SANtricity System Manager.
 
+. Recreate the host definitions.
++
+For instructions, see the https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host.html[Create a host manually in SANtricity System Manager^] procedure.
+
 //. Redefine hosts, reconfigure initiator group memberships for all volumes, and then reconfigure the host to use the new protocol before you can access data on the storage system.
