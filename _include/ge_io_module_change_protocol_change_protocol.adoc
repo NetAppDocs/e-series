@@ -13,3 +13,5 @@ The protocol list is based on the host I/O modules currently installed.
 This can take about five minutes.
 
 . When the controllers are back online, confirm their status is Optimal, using SANtricity System Manager.
+
+//. Redefine hosts, reconfigure initiator group memberships for all volumes, and then reconfigure the host to use the new protocol before you can access data on the storage system.

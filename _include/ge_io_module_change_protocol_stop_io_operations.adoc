@@ -32,3 +32,10 @@ NV icon and NV Caching Active LED on the controller
 . Confirm operations on the controllers have completed, using SANtricity System Manager:
 .. Select *Storage* > *Operations in progress* to see the Overview screen. 
 .. Wait for all operations to complete and the Overview screen displays *No operations currently in progress*, before continuing to the next step.
+
+. Delete all defined hosts from the storage system.
+//This is required to prevent host access issues after the protocol change.
++
+For instructions, see the https://docs.netapp.com/us-en/e-series-santricity/sm-storage/delete-host-or-host-cluster.html[Delete a host or host cluster in SANtricity System Manager^] procedure.
+//+
+//NOTE: After you change the protocol, you must redefine hosts and host groups, reconfigure initiator group memberships for all volumes, and then reconfigure the host to use the new protocol before you can access data on the storage system.

@@ -24,9 +24,3 @@ a|Continue with this procedure to change the protocol.
 |===
 
 . Schedule a downtime maintenance window for this procedure.
-
-. Delete all defined hosts from the storage system, and then remove all initiator group (IG) memberships for all volumes. This step is required to prevent host access issues after the protocol change.
-+
-For instructions, see the https://docs.netapp.com/us-en/e-series-santricity/sm-storage/delete-host-or-host-cluster.html[Delete a host or host cluster in SANtricity System Manager^] procedure.
-//+
-//NOTE: After you change the protocol, you must redefine hosts and host groups, reconfigure initiator group memberships for all volumes, and then reconfigure the host to use the new protocol before you can access data on the storage system.
