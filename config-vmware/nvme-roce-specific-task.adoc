@@ -123,12 +123,13 @@ Consult your switch vendor's documentation.
 You use the SANtricity System Manager interface to configure NVMe over RoCE networking on the array side.
 
 .About this task
-This task describes how to access the NVMe over RoCE port configuration from the menu:Hardware[Controllers and components] page. You can also access the configuration from menu:Settings[System › Configure NVMe over RoCE ports].
+
+This task describes how to access the NVMe over RoCE port configuration from the *Controllers & components* page under the SANtricity System Manager. You can also access the configuration from the *Configure NVMe over RoCE ports* page within the SANtricity System Manager.
 
 Before you begin, make sure you have the following:
 
 * The IP address or domain name for one of the storage array controllers.
-* Password for the System Manager GUI, or Role-Based Access Control (RBAC) or LDAP and a directory service is configured for the appropriate security access to the storage array. See the SANtricity System Manager online help for more information about Access Management.
+* Password for the System Manager GUI, or Role-Based Access Control (RBAC) or LDAP and a directory service is configured for the appropriate security access to the storage array. See the SANtricity System Manager online help for more information about link:https://docs.netapp.com/us-en/e-series-santricity/um-certificates/overview-access-management-um.html[Access Management^].
 
 .Steps
 . From your browser, enter the following URL: https://<DomainNameOrIPAddress>
