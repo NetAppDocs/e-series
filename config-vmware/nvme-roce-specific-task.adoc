@@ -25,41 +25,48 @@ image::../media/network_generic_worksheet.gif[NVMe over RoCE port identifiers"]
 
 [options="header"]
 |===
-| Callout No.| Host (initiator) port connections| Notes
+| Callout No.| Host port connections| Software initiator NQN
 a|
 1
 a|
-Host NQN
+Host (initiator) 1
 a|
 
+a|
+1
+a|
+Host (initiator) 2
+a|
 
 |===
 
 === Target identifiers
 [options="header"]
 |===
-| Callout No.| Array controller (target) port connections| Notes
+| Callout No.| Array port connections| Target NQN
 a|
 2
 a|
-Array NQN
-a|
-
-a|
-2
-
-a|
-NVMe over RoCE network port IP address subnet 1
-
+Array controller (target) port 1
 a|
 
 a|
 2
+a|
+Array controller (target) port 2
+a|
 
 a|
-NVMe over RoCE network port IP address subnet 2
+2
+a|
+Array controller (target) port 3
 a|
 
+a|
+2
+a|
+Array controller (target) port 4
+a|
 
 |===
 
