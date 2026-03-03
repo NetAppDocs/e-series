@@ -84,6 +84,10 @@ a|
 a|
 |===
 
+=== Recommended configuration
+
+This can vary based on the array. EF300, EF600, and EF50 will be 2 initiator ports with up to 4 target ports with 1 or more VLANs. EF80 will be 2 initiator ports with up to 6 target ports with 1 or more VLANs.
+
 == Step 2: Configure the NVMe/RoCE switches
 You configure the switches according to the vendor's recommendations for NVMe over RoCE. These recommendations might include both configuration directives as well as code updates.
 
@@ -261,9 +265,7 @@ NOTE: If the command fails with the message `sendto() failed (Message too long)`
 
 . Return to the NVMe over RoCE Configuration procedure to finish target discovery.
 
-=== Recommended configuration
 
-This can vary based on the array. EF300, EF600, and EF50 will be 2 initiator ports with up to 4 target ports with 1 or more VLANs. EF80 will be 2 initiator ports with up to 6 target ports with 1 or more VLANs.
 
 
 
