@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: whats-new.html
-keywords: whats new, new features, SANtricity, 12.00, 11.9, 11.8
+keywords: whats new, new features, SANtricity, 12.0, 11.9, 11.8
 summary: New features in SANtricity OS.
 ---
 
@@ -27,6 +27,10 @@ a|For the new EF80 and EF50 controllers, the SANtricity System Manager user inte
 
 a|Subject Alternative Names (SANs) for Server certificate now only permits Letters, digits, and hyphen characters
 a|When creating or editing a Server certificate in SANtricity System Manager or Unified Manager, the Subject Alternative Names (SANs) field now only permits letters, digits, and hyphen characters. This change enhances security and ensures compatibility with industry standards for SSL/TLS certificates.
+
+a|Script editor now available in SANtricity System Manager
+a|A new script editor is now available within the SANtricity System Manager. The Script editor allows you to create or edit a script file, save a script file to the local disk of the storage management station, or load a script file from disk. The Script editor provides syntax checking and command execution capabilities for managing your storage system. For more information, see link:https://docs.netapp.com/us-en/e-series-santricity/sm-support/use-script-editor.html[Using the Script editor^].
+
 |===
 
 == New features in Version 11.90R4

@@ -15,10 +15,12 @@ A storage array includes shelves, controllers, drives, software, and firmware. T
 
 Some of the available E-Series array models are shown below. For a complete list of E-Series array models and their hardware specifications, see the NetApp Hardware Universe at https://hwu.netapp.com[NetApp Hardware Universe^].
 
+* E4000 series -- entry-level hybrid
+* EF50 series -- entry-level all flash, all NVMe
+* EF80 series -- midrange all flash, all NVMe
 * E2800 series -- entry-level hybrid
 * EF280 series -- entry-level all flash
 * EF300 series -- entry-level all flash, all NVMe
-* E4000 series -- entry-level hybrid
 * E5700 series -- midrange hybrid
 * EF570 series -- midrange all flash
 * EF600 series -- midrange all flash, all NVMe
@@ -30,6 +32,103 @@ NOTE: For SANtricity OS 11.80GA and greater, all USB ports are disabled on the E
 
 [role="tabbed-block"]
 ====
+
+.EF50 models
+--
+
+
+Rack sizes::
++
+* 2U12 (2 rack units; 24 drives)
++
+image::../media/ef50_2u_front.png["EF50 2U"]
+
+Drives::
++
+* Supports NVMe SSD drives with the following capacities:
+** 3.8TB
+** 7.6TB
+** 15.3TB
+** 30TB
+** 60TB
+* Support up to 24 NVMe SSD drives in the controller shelf.
+* Support for one or two host interface cards per controller.
+* Support for inter-controller card and cables for dual controller communication. 
++
+NOTE: It is crucial to connect the mirroring cables properly when configuring your EF50 system. For more information, see https://docs.netapp.com/us-en/e-series/install-hw-ef50-ef80/install-cable.html#step-1-cable-the-inter-controller-mirroring-connections[Cable the inter-controller mirroring connections - EF50 and EF80].
+
+Interfaces::
++
+Available with the following interfaces:
++
+* 64Gb NVMe / Fibre Channel
+* 64Gb FC
+--
+
+.EF80 models
+--
+
+
+Rack sizes::
++
+* 2U12 (2 rack units; 24 drives)
++
+image::../media/ef80_2u_front.png["EF80 2U"]
+
+Drives::
++
+* Supports NVMe SSD drives with the following capacities:
+** 3.8TB
+** 7.6TB
+** 15.3TB
+** 30TB
+** 60TB
+* Support up to 24 NVMe SSD drives in the controller shelf.
+* Support for one, two, or three host interface cards per controller.
+* Support for inter-controller card and cables for dual controller communication. 
++
+NOTE: It is crucial to connect the mirroring cables properly when configuring your EF80 system. For more information, see https://docs.netapp.com/us-en/e-series/install-hw-ef50-ef80/install-cable.html#step-1-cable-the-inter-controller-mirroring-connections[Cable the inter-controller mirroring connections - EF50 and EF80].
+
+Interfaces::
++
+Available with the following interfaces:
++
+* 100Gb, 200Gb NVMe / RoCE
+* 64Gb NVMe / Fibre Channel
+* 200Gb NVMe / IB
+* 64Gb FC
+--
+
+.E4000 models
+--
+
+
+Rack sizes::
++
+* 2U12 (2 rack units; 12 drives)
++
+image::../media/e4000_2u_front.png["E4000 2U"]
+
+* 4U60 (4 rack units; 60 drives)
++
+image::../media/e4000_4u_front.png["E4000 4U"]
+
+Drives::
++
+Supports the following drive types:
++
+* 3.5" NL-SAS (up to 300)
+* 2.5" SAS SSD (up to 120)
+
+Interfaces::
++
+Available with the following interfaces:
++
+* 12Gb SAS
+* 1Gb or 10Gb Base-T iSCSI
+* 1Gb, 10Gb, or 25Gb iSCSI
+* 8Gb, 16Gb, or 32Gb FC
+--
 
 .E2800 models
 --
@@ -312,36 +411,5 @@ Available with the following interfaces:
 * 200Gb NVMe / IB
 * 200Gb NVMe / RoCE
 
---
-
-.E4000 models
---
-
-
-Rack sizes::
-+
-* 2U12 (2 rack units; 12 drives)
-+
-image::../media/e4000_2u_front.png["E4000 2U"]
-
-* 4U60 (4 rack units; 60 drives)
-+
-image::../media/e4000_4u_front.png["E4000 4U"]
-
-Drives::
-+
-Supports the following drive types:
-+
-* 3.5" NL-SAS (up to 300)
-* 2.5" SAS SSD (up to 120)
-
-Interfaces::
-+
-Available with the following interfaces:
-+
-* 12Gb SAS
-* 1Gb or 10Gb Base-T iSCSI
-* 1Gb, 10Gb, or 25Gb iSCSI
-* 8Gb, 16Gb, or 32Gb FC
 --
 ====
