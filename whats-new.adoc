@@ -15,6 +15,8 @@ The following table describes new features in the latest SANtricity OS releases 
 
 == New features in Version 12.0
 
+NOTE: The SANtricity OS 12.0 release is only compatible with the new EF80 and EF50 all-flash storage systems. 
+
 [cols="35h,~",options="header"]
 |===
 |New feature |Description
