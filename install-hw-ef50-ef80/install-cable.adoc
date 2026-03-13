@@ -26,7 +26,7 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direct
 
 Cable the controllers to each other to enable inter-controller mirroring. Inter-controller mirroring connections ensure full system redundancy and are used for cache mirroring and I/O shipping. The cabling is the same for EF50 and EF80 storage systems.
 
-NOTE: No matter the speed of the inter-controller mirroring I/O modules installed in your storage system, you use the included 200 GbE cables. If the speed of the inter-controller mirroring I/O modules is 100 GbE, the connection operates at the lower speed.
+NOTE: No matter the speed of the inter-controller mirroring I/O modules installed in your storage system (100 GbE or 200 GbE, as supported by your storage system), you use the included 200 GbE cables. If the speed of the inter-controller mirroring I/O modules is 100 GbE, the connection operates at the lower speed (100 GbE).
 
 .Steps
 
@@ -180,9 +180,9 @@ If your storage system has one host I/O module installed, you can ignore the cab
 
 * A fabric-attached storage system has two separate switch paths for redundancy: switch 1 path and switch 2 path.
 
-** Switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to controller A's and controller B's a ports.
+** Switch 1 path connectivity is shown with blue cabling and blue ports on the hosts and controllers. It connects HBA ports on each host through switch 1 to controller A's and controller B's a and c ports.
 
-** Switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to controller A's and controller B's b ports.
+** Switch 2 path connectivity is shown with red cabling and red ports on the hosts and controllers. It connects HBA ports on each host through switch 2 to controller A's and controller B's b and d ports.
 
 .Steps
 

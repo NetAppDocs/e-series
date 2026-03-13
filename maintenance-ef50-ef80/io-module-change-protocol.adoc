@@ -66,7 +66,7 @@ include::../_include/ge_io_module_change_protocol_prepare.adoc[]
 
 == Step 2: Stop host I/O operations
 
-You must stop all I/O operations from the host before changing the protocol.
+You must stop all I/O operations from the host and then delete all defined hosts from the storage system before changing the protocol.
 
 NOTE: You cannot access data on the storage system until you successfully complete the protocol change.
 
@@ -75,14 +75,14 @@ include::../_include/ge_io_module_change_protocol_stop_io_operations.adoc[]
 
 == Step 3: Change the protocol
 
-Using SANtricity System Manager, change the protocol on the host I/O modules, wait for the controllers to complete their reboot cycle and confirm their status is Optimal.
+Using SANtricity System Manager, change the protocol on the host I/O modules, wait for the controllers to complete their reboot cycle, confirm their status is Optimal, and then recreate the host definitions.
 
 include::../_include/ge_io_module_change_protocol_change_protocol.adoc[]
 
 
 == Step 4: Configure the host to use the new protocol
 
-After changing the protocol of the host ports, you must configure the host to use the new protocol.
+After changing the host protocol, you must configure the host to use the new protocol.
 
 include::../_include/ge_io_module_change_protocol_configure_host.adoc[]
 

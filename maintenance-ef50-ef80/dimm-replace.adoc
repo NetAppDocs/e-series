@@ -30,8 +30,6 @@ include::../_include/ge_dimm_replace_determine_if_needed.adoc[]
 
 Prepare to replace a DIMM by making sure there are no other storage system issues you need to address, making sure the volumes are in the correct state, gathering the necessary tools and equipment, taking precautions to prevent electrostatic discharge, and backing up the storage system's configuration database.
 
-//Before replacing a DIMM, resolve other storage system issues, verify volume states, gather tools, prevent electrostatic discharge, and back up the configuration database.
-
 include::../_include/ge_dimm_replace_prepare.adoc[]
 
 
