@@ -11,7 +11,7 @@ summary: You can cable a host directly to a controller or use switches.
 [.lead]
 You can cable a host directly to a controller (direct-attached topology) or use switches (switch topology) to connect a host to a controller.
 
-The following information does not apply to all storage systems, for host cabling specific to your storage system, see link:../getting-started/getup-run-concept.html[Quick start for E-Series^] and click the link for your specific storage system.
+NOTE: The following information does not apply to all storage systems, for host cabling specific to your storage system, see link:../getting-started/getup-run-concept.html[Quick start for E-Series^] and click the link for your specific storage system.
 
 == Cabling for a direct-attached topology
 
