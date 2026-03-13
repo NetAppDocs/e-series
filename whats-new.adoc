@@ -38,9 +38,13 @@ a|A new script editor is now available within the SANtricity System Manager. The
 
 |===
 
-== New features in Version 11.90R4
+== New features in Version 11.90R5
  
-This version contains only minor changes and no new features. For more information on the changes in this release, please refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3334464[E-Series 11.90 Release Notes^].
+This version contains only defect fixes and no new features. For more information on the changes in this release, please refer to the E-Series SANtricity OS 11.90R5 README.
+
+== New features in Version 11.90R4
+
+This version contains only minor changes and no new features. For more information on the changes in this release, please refer to the E-Series SANtricity OS 11.90R4 README.
 
 == New features in Version 11.90R3
 
