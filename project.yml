@@ -402,6 +402,8 @@ sidebar:
               url: "/config-vmware/iscsi-perform-specific-task.html"
             - title: Perform SAS-specific tasks
               url: "/config-vmware/sas-perform-specific-task.html"
+            - title: Perform NVMe over RoCE-specific tasks
+              url: "/config-vmware/nvme-roce-perform-specific-task.html"
             - title: Discover storage on the host
               url: "/config-vmware/discover-storage-host-task.html"
             - title: Configure storage on host
