@@ -27,7 +27,7 @@ Some of the available E-Series array models are shown below. For a complete list
 * E5700 series -- midrange hybrid
 * EF570 series -- midrange all flash
 
-NOTE: or SANtricity OS 11.80GA or later, all USB ports are disabled while SANtricity OS is running. 
+NOTE: For SANtricity OS 11.80GA or later, all USB ports are disabled while SANtricity OS is running. 
 
 
 [role="tabbed-block"]
