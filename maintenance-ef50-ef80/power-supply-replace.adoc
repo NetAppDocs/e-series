@@ -1,0 +1,43 @@
+---
+permalink: maintenance-ef50-ef80/power-supply-replace.html
+sidebar: sidebar
+keywords: ef50, ef80, replace a power supply
+summary: Replace a power supply unit (PSU) in your EF50 or EF80 storage system when it fails or becomes faulty, ensuring that your system continues to receive the required power for stable operation.
+---
+= Replace a power supply - EF50 and EF80
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Replace a power supply unit (PSU) in your EF50 or EF80 storage system when it fails or becomes faulty, ensuring that your system continues to receive the required power for stable operation. 
+
+.Before you begin
+* Confirm that there is an issue with the power supply by reviewing the details in the Recovery Guru.
+
+* Check that the Attention (amber) LED on the power supply is on, indicating that the power supply or its integrated fan has a fault.
+
+* Address any other storage system issues.
++
+In the Recovery Guru select *Recheck* to see if there are any other issues.
+
+* Make sure you have the following:
+** A replacement power supply.
++
+NOTE: Do not mix PSUs of different voltage types. Always replace like for like.
++
+** An ESD wristband or you have taken other antistatic precautions.
+** A flat static-free work surface.
+** A management station with a browser that can access SANtricity System Manager for the impaired controller.
++
+To open the System Manager interface, point the browser to the impaired controller's domain name or IP address.
+
+.About this task
+
+* When a power supply fails, you must replace it as soon as possible so the storage system has a redundant power source.
+
+* Replace a power supply by unplugging the power cord from the faulty PSU, replacing it, and reconnecting the power cord.
+
+* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, select the *Controller shelf* tab, and from the context menu select *Turn on locator light*.
+
+
+include::../_include/ge_power_supply_replace.adoc[]

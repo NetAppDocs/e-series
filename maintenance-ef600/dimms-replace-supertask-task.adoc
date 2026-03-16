@@ -60,7 +60,7 @@ If a problem occurs when you remove a controller, you can use the saved file to 
 The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
 . If the controller is not already offline, take it offline now using SANtricity System Manager.
- .. Select *Hardware*.
+ .. Select menu:Hardware[Controllers and components].
  .. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
  .. Select the controller that you want to place offline.
  .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
@@ -144,7 +144,7 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 +
 NOTE: DIMMs fit tightly. You might need to gently press on one side at a time and secure with each tab individually.
 +
-image::../media/dimm_5.png["Insert DIMMS into the slot and secure with tabs""]
+image::../media/dimm_5.png["Insert DIMMS into the slot and secure with tabs"]
 
 == Step 6: Reinstall controller canister
 

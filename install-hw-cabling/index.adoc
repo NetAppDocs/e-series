@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C
 summary: Cable a host directly to a controller or use switches.
 ---
-= Cabling your storage system (E-Series)
+= Cabling your storage system - E-Series
 :icons: font
 :imagesdir: ../media/
 
@@ -18,6 +18,8 @@ The cabling information is intended for a hardware installer or system administr
 == Applicable hardware model
 
 Cabling information applies to the following hardware models.
+
+NOTE: If you do not see your controller shelf (storage system) listed below, see link:../getting-started/getup-run-concept.html[Quick start for E-Series^] and click the link for your specific storage system to access the cabling information.
 
 [options="header"]
 |===
@@ -38,7 +40,7 @@ DE460C
 
 == Additional cabling information
 
-If you are cabling for the following configuration, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf.^]
+If you are cabling for any of the following configurations, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf.^]
 
 [options="header"]
 |===

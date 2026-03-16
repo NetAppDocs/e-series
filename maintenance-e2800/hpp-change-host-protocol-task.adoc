@@ -22,7 +22,7 @@ Use SANtricity System Manager to determine what type of SFP transceivers you hav
 
 . From SANtricity System Manager, select *Support*.
 . Select the *Support Center* tile.
-. On the Support Resources tab, locate and select the *Storage Array Profile* link.
+. On the Support Resources page, locate and select the *Storage Array Profile* link.
 . Type *SFP* in the text box, and click *Find*.
 . For each SFP listed in the Storage Array Profile, locate the entry for *Supported data rate(s)*.
 +

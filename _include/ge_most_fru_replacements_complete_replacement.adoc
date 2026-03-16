@@ -1,0 +1,62 @@
+Using SANtricity System Manager, make sure the latest version of SANtricity OS is installed, verify that all volumes are returned to their owning controllers, and collect support data so that you can resume operations. 
+
+.Steps
+
+. Make sure the latest version of SANtricity OS is installed on the storage system: 
+.. Select *Support* > *Upgrade Center*
+..  As needed, install the latest version.
+. Verify all volumes are returned to their owning controllers:
++
+[options="header" cols="1,2"]
+
+|===
+| If...| Then...
+a|
+Recovery Guru is present and indicates volumes are not on their preferred path (not returned to their owning controllers)
+a|
+. Redistribute the volumes to their owning controllers, by selecting *Storage* > *Volumes* > *More* and from the drop-down menu, select *Redistribute volumes*.
+
+. Verify all volumes are redistributed to their owning controllers by checking if Recovery Guru is present and still indicates volumes are not on their preferred path.
+
+NOTE: If the volumes are still not returned to their owning controllers, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support].
+a|
+Recovery Guru is not present (it appears that all volumes are returned to their owning controllers)
+a|
+Verify all volumes are returned to their owning controllers by selecting *Storage* > *Volumes* > *More* and from the drop-down menu, select *Change volume ownership* to view volume owners.
+|===
+
+. Collect support data for your storage system:
+.. Select *Support* > *Support Center* > *Diagnostics*.
+.. Select *Collect Support Data*.
+.. Select *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
+
+//. Verify that all volumes are returned to their owning controllers:
+//.. Select *Storage* > *Volumes*. 
+//.. From the *All Volumes* page, verify that volumes are distributed to their owning controllers. 
+//.. Select *More* > *Change volume ownership* to view volume owners.
+//+
+//. The next step depends on whether the volumes are returned to their owning controllers or not:
+//+
+//[options="header" cols="1,2"]
+
+//|===
+//| If...| Then...
+//a|
+//All volumes are returned to their owning controllers
+//a|
+//Go to the next step.
+//a|
+//None of the volumes are returned to their owning controllers
+//a|
+//Select *Storage* > *Volumes* > *More* and from the drop-down menu select *Redistribute volumes* to return the volumes to their owning controllers.
+//a|
+//Only some of the volumes are returned to their owning controllers after auto-distribution or manual distribution 
+//a|
+//Check the Recovery Guru for host connectivity issues.
+
+//If there is no Recovery Guru present or if following the recovery guru steps the volumes are still not returned to their owning controllers, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+//|===
+
+

@@ -13,6 +13,19 @@ After preparing for the upgrade, you can remove the controllers, and if necessar
 
 == Step 1: Remove controller
 
+[role="tabbed-block"]
+====
+
+.EF280 and EF50 controller models
+--
+
+For information about removing controllers from EF280 and EF50 storage systems, see link:https://docs.netapp.com/us-en/e-series/maintenance-ef50-ef80/controller-replace-move-hardware.html#step-1-remove-the-controller[EF50 and EF80 - Step 1: Remove the controller^].
+
+--
+
+.Other E-Series controller models
+--
+
 Remove the controller canister so you can upgrade it with a new one. You must disconnect all cables and remove any SFP transceivers. Then, you can slide the controller canister out of the controller shelf.
 
 .Before you begin
@@ -55,7 +68,9 @@ image:../media/28_dwg_e2824_remove_controller_canister_upg-hw.gif["Remove contro
 
 . (Conditional) If you are upgrading controllers in a duplex controller-drive tray, repeat all steps to remove the second controller canister.
 
-If you intend to use the battery from the old controller in the new controller, go to the next part of the section; otherwise go to link:install-controllers-task.html[Install new controllers].
+. If you intend to use the battery from the old controller in the new controller, go to the next part of the section; otherwise go to link:install-controllers-task.html[Install new controllers].
+--
+====
 
 == Step 2: Remove battery
 

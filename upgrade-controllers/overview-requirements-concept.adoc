@@ -53,12 +53,103 @@ When upgrading your E-Series controller, you should disable any premium features
 +
 Before upgrading to E4000 controllers, unmap the Access volume from all defined hosts and host clusters.
 
+* *EF50 and EF80 mirror cabling*
++
+The EF80 and EF50 systems use high-speed 200GbE/100GbE external connections to enable inter-controller communication between the two controllers. Each controller is equipped with a dedicated interface card installed in slot 4. This card provides two ports and includes two 0.5m 200GbE cables with the system. 
+
++
+Use these cables to connect the controller ports as follows:
+
+** Port e4a on controller A to Port e4a on controller B
+** Port e4b on controller A to Port e4b on controller B
+
++
+NOTE: It is crucial to connect the cables exactly as described. For more information, see https://docs.netapp.com/us-en/e-series/install-hw-ef50-ef80/install-cable.html#step-1-cable-the-inter-controller-mirroring-connections[Cable the inter-controller mirroring connections - EF50 and EF80].
+
++
+Do not use any other host ports (Slot 1, Slot 2, or Slot 3) for inter-controller communication as it is not supported. Proper inter-controller cabling is essential for the correct operation of both EF50 and EF80 arrays.
+
 == Upgrade compatibility
 
 Review the supported upgrade paths for each storage array model.
 
 [role="tabbed-block"]
 ====
+
+.EF50 and EF80 controller upgrade compatibility
+--
+[cols=4*,cols="h,d,d,d",options="header"]
+|===
+| Upgrade path 
+| Battery 
+| Feature Support
+| SAS-3 shelves
+
+| From EF300 to EF50 or EF80
+
+a| Order a new battery.
+
+a|
+* EF50 and EF80 support duplex configurations only
++
+* EF50 and EF80 support 64Gb Fibre Channel host interface cards
++
+* EF80 supports dual-200Gbe NVMe over RoCE and NVMe over Infiniband host interface cards
++
+* EF50 and EF80 support up to 24 NVMe drives per controller
++
+* EF50 and EF80 support TLC and QLC NVMe drive configurations
++
+* EF50 and EF80 do not support baseboard host ports
++
+* EF50 and EF80 do not support synchronous or asynchronous mirroring  
++
+* EF50 and EF80 do not support Remote Storage Volumes
++
+* EF50 and EF80 do not support Thin Provisioned Volumes
++
+* EF50 supports up to 2 Host Interface Cards, and EF80 supports up to 3 Host Interface Cards.
+
+NOTE: When upgrading from EF300 to EF50 or EF80, you can configure the host protocol through the SANtricity System Manager user interface. For more information, see https://docs.netapp.com/us-en/e-series/maintenance-ef50-ef80/io-module-change-protocol.html[Change the host I/O module protocol - EF50 and EF80].
+
+a|
+* EF50 and EF80 do not support SAS expansion. 
+
+| From EF600 to EF80 
+
+a|
+Order a new battery.
+
+a|
+* EF80 support duplex configurations only
++
+* EF80 support 64Gb Fibre Channel host interface cards
++
+* EF80 supports dual-200Gbe NVMe over RoCE and NVMe over Infiniband host interface cards
++
+* EF80 support up to 24 NVMe drives per controller
++
+* EF50 and EF80 support TLC and QLC NVMe drive configurations
++
+* EF80 do not support baseboard host ports
++
+* EF80 do not support synchronous or asynchronous mirroring  
++
+* EF80 do not support Remote Storage Volumes
++
+* EF80 do not support Thin Provisioned Volumes
++
+* EF80 supports up to 3 Host Interface Cards.
+
++
+NOTE: When upgrading from EF600 to EF80, you can configure the host protocol through the SANtricity System Manager user interface. For more information, see https://docs.netapp.com/us-en/e-series//maintenance-ef50-ef80/io-module-change-protocol.html[Change the host I/O module protocol - EF50 and EF80].
+
+a|
+* EF80 do not support SAS expansion.
+
+|===
+
+--
 
 .E4000 controller upgrade compatibility
 --
@@ -216,7 +307,7 @@ a|
 Legacy snapshots are not supported on the E2700.
 
 a|
-5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
+E5400, E5500, and E5600 controllers must not be placed into SAS-3 shelves.
 
 | From E5x00 to E5x00
 

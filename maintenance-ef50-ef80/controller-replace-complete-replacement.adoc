@@ -1,0 +1,28 @@
+---
+permalink: maintenance-ef50-ef80/controller-replace-complete-replacement.html
+sidebar: sidebar
+keywords: ef50, ef80, how to complete the controller replacement process
+summary: To complete the controller replacement for your EF50 or EF80 storage system, ensure storage system firmware is current, verify volumes are returned to their owners, collect system support data, and return the failed part to NetApp.
+---
+= Complete the controller replacement - EF50 and EF80
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To complete the controller replacement for your EF50 or EF80 storage system, make sure the latest version of SANtricity OS is installed, verify volumes are returned to their owning controllers, collect system support data, and return the failed part to NetApp.
+
+
+== Step 1: Ensure latest version of SANtricity OS, verify volume ownership, and collect support data
+
+include::../_include/ge_most_fru_replacements_complete_replacement.adoc[]
+
+//Is the include above the same content as Complete replace used for IO module upgrade and replace and other FRU replacements?
+
+== Step 2: Return the failed part to NetApp
+include::../_include/complete_rma.adoc[]
+
+.What's next?
+Your controller replacement is complete. You can resume normal operations.
+
+
+

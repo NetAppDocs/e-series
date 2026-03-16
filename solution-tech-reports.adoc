@@ -75,16 +75,8 @@ E2800 and E5700 hybrid storage arrays.
 |===
 |https://www.netapp.com/pdf.html?item=/media/31665-tr-4884.pdf[*TR-4884: Entry-level HPC systems with NetApp E-Series and IBM Spectrum Scale*^]
 |https://www.netapp.com/pdf.html?item=/media/22029-tr-4859.pdf[*TR-4859: Deploying IBM Spectrum Scale with NetApp E-Series Storage*^]
-|https://www.netapp.com/pdf.html?item=/media/19407-tr-4856-deploy.pdf[*TR-4856: BeeGFS High Availability with E-Series using Red Hat Enterprise Linux Server*^]
-|Describes the reference architecture for entry-level HPC systems based on NetApp E-Series storage systems and IBM Spectrum Scale. |Describes the process of deploying a full parallel file system solution based on IBM’s Spectrum Scale software stack. |Describes  the required configurations for implementing high availability in a BeeGFS architecture backed by the NetApp E-Series system and using RedHat Enterprise Linux for BeeGFS storage, metadata and management services.
-
 | | |
 
 | | |
 
-|https://www.netapp.com/pdf.html?item=/media/19431-tr-4862.pdf[*TR-4862: BeeGFS High Availability with E-Series using SUSE Linux Enterprise Server*^] | |
-
-|Describes the required configurations for implementing high availability in a
-BeeGFS architecture backed by the NetApp E-Series system and using SUSE Linux
-Enterprise Server for BeeGFS storage, metadata, and management services. | |
 |===

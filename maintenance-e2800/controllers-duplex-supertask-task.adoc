@@ -95,7 +95,7 @@ The file is saved in the Downloads folder for your browser with the name, *suppo
 
  * From SANtricity System Manager:
   .. Select *Hardware*.
-  .. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
+  .. If the graphic shows the drives, select *Show back of shelf* to show the controllers
   .. Select the controller that you want to place offline.
   .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 +

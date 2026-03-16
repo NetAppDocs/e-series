@@ -29,7 +29,7 @@ The Pre-Upgrade Health Check dialog box opens and lists all the discovered stora
 +
 The progress is shown in the dialog box while the health check is performed.
 
-. When the health check completes, you can click on the ellipses (...) to the right of each row to view more information and perform other tasks.
+. When the health check completes, you can click on the ellipsis (...) to the right of each row to view more information and perform other tasks.
 
 [NOTE]
 If any arrays fail the health check, you can skip that particular array and continue the upgrade for the others, or you can stop the entire process and troubleshoot the arrays that did not pass.

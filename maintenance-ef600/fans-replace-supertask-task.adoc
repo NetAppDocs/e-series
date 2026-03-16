@@ -128,7 +128,7 @@ image::../media/remove_controller_7.png["Install controller into shelf"]
 Place the controller online, collect support data, and resume operations.
 
 . Place controller online.
- .. In System Manager, navigate to the hardware page.
+ .. In System Manager, navigate to the *Hardware* page.
  .. Select *Show back of controller*.
  .. Select the controller with the replaced fan.
  .. Select *Place online* from the drop-down list.

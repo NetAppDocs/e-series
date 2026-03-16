@@ -1,0 +1,49 @@
+---
+permalink: install-hw-ef50-ef80/install-hardware.html
+sidebar: sidebar
+keywords: 
+summary: After you prepare to install your EF50 or EF80 storage system, install the rack-mount hardware in a cabinet or telco rack, and then install and secure your storage system. 
+---
+= Install the hardware - EF50 and EF80
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After you prepare to install your EF50 or EF80 storage system, install the rack-mount hardware in a cabinet or telco rack, and then install and secure your storage system. 
+
+If your storage system came in a cabinet, you can skip this procedure and go to link:install-cable.html[Cable the hardware].
+
+.Before you begin
+
+* Prepare a flat, static-free work area.
+
+* Obtain an ESD wristband and take anti-static precautions.
+
+* Make sure you have the installation instructions packaged with the rack-mount hardware. If not, see link:../rackmount-hardware.html[Rack-mount hardware^].
+
+* Be aware of the lifting precautions associated with the weight of your storage system. See link:install-prepare.html#step-2-understand-the-lifting-precautions[Understand the lifting precautions^].
+
+* Understand that the airflow through the storage system enters from the front where the drives are installed and exhausts out the rear where the ports are located.
+
+
+.Steps
+
+. Install the rack-mounting hardware for your storage system using the instructions included with the rack-mounting hardware.
++
+CAUTION: Install the rack-mounting hardware in the lowest available space in the cabinet or rack to prevent the storage system from toppling over when it is installed.
+
+. Install and secure your storage system in the cabinet or telco rack:
+
+.. Position the storage system onto the rails and then supporting the storage system from the bottom, slide it into place.
+
+.. Secure the storage system to the cabinet or telco rack using the included mounting screws.
+
++
+. Attach the bezel to the front of the storage system.
+
+.. Position the bezel in front of the storage system so that the holes at each end align with the fasteners on the storage system.
+.. Snap the bezel into place.
+
+
+.What's next?
+After installing the hardware for your storage system, link:install-cable.html[cable the hardware].
