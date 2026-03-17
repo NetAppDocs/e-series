@@ -1,0 +1,45 @@
+
+.Steps
+
+. If you are not already grounded, properly ground yourself.
+
+. Locate the NV battery.
+
+. Remove the NV battery:
++
+image::../media/drw_g_nv_battery_replace_ieops-1864.svg[Replace the NV battery]
++
+[cols="1,4"]
+
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Lift the NV battery up and out of its compartment.
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Remove the wiring harness from its retainer.
+a|
+image::../media/icon_round_3.png[Callout number 3]
+a| 
+a. Push in and hold the tab on the connector.
+
+b. Pull the connector up and out of the socket.
++
+As you pull up, gently rock the connector from end to end (lengthwise) to unseat it.
+
+|===
+
+. Unpack the replacement NV battery and set it on a flat static-free surface near the storage system.
++
+Save the packing materials to use when returning the faulty NV battery.
+
+. Install the replacement NV battery:
+.. Plug the wiring connector into its socket.
++
+.. Route the wiring along the side of the power supply, into its retainer, and then through the channel in front of the NV battery compartment.
+.. Place the NV battery into its compartment.
++
+The NV battery should sit flush in its compartment.
+

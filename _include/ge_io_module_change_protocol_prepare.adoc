@@ -1,0 +1,26 @@
+.Steps
+
+. If you do not know the protocol on the host I/O modules in your storage system, verify it using SANtricity System Manager.
+
+.. Select *Settings* > *System*.
+.. In the *Additional Settings* section, select *Change host I/O protocol* to open that page.
+.. See the default protocol displayed in the *Host I/O Protocol* field.
++
+NOTE: If you want to see the list of available protocols for your host I/O modules, select the drop-down menu in the *Host I/O Protocol* field. The protocol list is based on the host I/O modules currently installed.
++
+
+. The next step depends on whether the default protocol is the protocol you want or not:
++
+[options="header" cols="1,2"]
+|===
+|If...| Then...
+a| 
+The default protocol is the protocol you want
+a|
+No action is needed. You can exit this procedure.
+a|
+The default protocol is not the protocol you want
+a|Continue with this procedure to change the protocol. 
+|===
+
+. Schedule a downtime maintenance window for this procedure.

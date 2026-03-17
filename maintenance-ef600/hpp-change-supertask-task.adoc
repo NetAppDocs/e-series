@@ -26,7 +26,7 @@ To obtain the feature pack key, you need the serial number from the controller s
 image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.gif["Chassis serial number"]
 . Locate the *feature pack submodel ID*.
  .. From the SANtricity System Manager, select *Support*.
- .. Select the *Support Center* tile.
+ .. Select the *Support Resources* tile.
  .. On the Support Resources tab, locate and select the *Storage Array Profile* link.
  .. Type *feature pack submodel ID* in the text box, and click *Find*.
  .. Locate the feature pack submodel ID for the starting configuration.
@@ -448,7 +448,7 @@ CAUTION: *Possible data loss* -- If you continue this procedure while I/O operat
 +
 The green Cache Active LED on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
 
-. From the Home page of SANtricity System Manager, select *View Operations in Progress*.
+. From the Home page of SANtricity System Manager, select menu:Storage[Operations in Progress].
 . Wait for all operations to complete before continuing with the next step.
 
 == Step 3: Change the feature pack

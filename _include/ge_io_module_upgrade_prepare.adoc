@@ -1,0 +1,31 @@
+
+.Steps
+
+. Schedule a downtime maintenance window for this procedure. You cannot access data on the storage system until you have successfully completed this procedure. Because both controllers must have the same I/O module configuration when they are powered on, the power must be off when you upgrade I/O modules.
+ 
+. Make sure you have the following:
+* The new I/O modules that you are upgrading to.
++
+Make sure that the I/O modules you are upgrading to are supported by your storage system, that you have the same type and number of I/O modules for each controller, and that you understand the slot priority (the new I/O module must be installed in the same slot on each controller).
++
+CAUTION: *Possible loss of data access* -- The presence of incompatible or mismatched I/O modules causes the controllers to lock down when you apply power.
++
+If needed, you can confirm supported I/O modules and slot priority for your storage system at https://hwu.netapp.com[NetApp Hardware Universe^].
++
+* Cables to connect the new I/O modules to your network.
+* An ESD wristband or you have taken other antistatic precautions.
+* A flat static-free work surface.
+* A management station with a browser that can access SANtricity System Manager for the controllers.
++
+To open the System Manager interface, point the browser to the target controller's domain name or IP address.
+
+. Back up the storage system's configuration database using SANtricity System Manager:
++
+If a problem occurs when you remove a controller, you can use the saved file to restore your configuration. The system saves the current state of the RAID configuration database, which includes all data for volume groups and disk pools on the impaired controller.
++
+.. Select *Support* > *Support Center* > *Diagnostics*.
+.. Select *Collect Configuration Data*.
+.. Select *Collect*.
++
+The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
+

@@ -1,0 +1,43 @@
+section: maintenance-ef50-ef80
+title: EF50 and EF80
+entries:
+  - title: Maintenance overview
+    url: /maintenance-ef50-ef80/maintain-overview.html
+  - title: Controller
+    pdf-filename: EF50 and EF80 Controller
+    entries:
+      - title: Controller replace workflow
+        url: /maintenance-ef50-ef80/controller-replace-workflow.html
+      - title: Review requirements
+        url: /maintenance-ef50-ef80/controller-replace-requirements.html
+      - title: Prepare system
+        url: /maintenance-ef50-ef80/controller-replace-prepare.html
+      - title: Offline controller
+        url: /maintenance-ef50-ef80/controller-replace-offline-controller.html
+      - title: Replace controller
+        url: /maintenance-ef50-ef80/controller-replace-move-hardware.html
+      - title: Online controller
+        url: /maintenance-ef50-ef80/controller-replace-online-controller.html
+      - title: Complete controller replacement
+        url: /maintenance-ef50-ef80/controller-replace-complete-replacement.html
+  - title: DIMM
+    url: /maintenance-ef50-ef80/dimm-replace.html
+  - title: Drive
+    url: /maintenance-ef50-ef80/drive-replace.html
+  - title: Fan
+    url: /maintenance-ef50-ef80/fan-replace.html
+  - title: I/O module
+    pdf-filename: EF50 and EF80 I/O module
+    entries:
+      - title: I/O module overview
+        url: /maintenance-ef50-ef80/io-module-overview.html
+      - title: Replace I/O module
+        url: /maintenance-ef50-ef80/io-module-replace.html
+      - title: Upgrade I/O module
+        url: /maintenance-ef50-ef80/io-module-upgrade.html
+  - title: I/O module host protocol
+    url: /maintenance-ef50-ef80/io-module-change-protocol.html
+  - title: NV battery
+    url: /maintenance-ef50-ef80/nvdimm-battery-replace.html
+  - title: Power supply
+    url: /maintenance-ef50-ef80/power-supply-replace.html

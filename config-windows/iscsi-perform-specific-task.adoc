@@ -20,7 +20,7 @@ You configure the switches according to the vendor's recommendations for iSCSI. 
 
 Make sure you have the following:
 
-* Two separate networks for high availability. Make sure that you isolate your iSCSI traffic to separate network segments by using VLANs or two separate networks.
+* Two separate networks for high availability. Make sure that you isolate your iSCSI traffic to separate network segments from other types of traffic by using VLANs or two separate networks.
 * Enabled send and receive hardware flow control *end to end*.
 * Disabled priority flow control.
 * If appropriate, enabled jumbo frames.
@@ -62,7 +62,7 @@ You use the SANtricity System Manager GUI to configure iSCSI networking on the a
 
 .About this task
 
-This task describes how to access the iSCSI port configuration from the Hardware page. You can also access the configuration from menu:System[Settings > Configure iSCSI ports].
+This task describes how to access the iSCSI port configuration from the Hardware page. You can also access the configuration from menu:Settings[System > Configure iSCSI ports].
 
 .Steps
 
@@ -80,10 +80,7 @@ When you open System Manager and no pools, volumes groups, workloads, or notific
 +
 You will use the wizard later to complete additional setup tasks.
 
-. Select *Hardware*.
-. If the graphic shows the drives, click *Show back of shelf*.
-+
-The graphic changes to show the controllers instead of the drives.
+. From the left panel, select menu:Hardware[Controllers and components].
 
 . Click the controller with the iSCSI ports you want to configure.
 +
