@@ -13,9 +13,9 @@ summary: New features in SANtricity OS.
 [.lead]
 The following table describes new features in the latest SANtricity OS releases for embedded management of EF80, EF50, E4000, EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
 
-== New features in Version 12.0
+== New features in Version 12.00
 
-NOTE: The SANtricity OS 12.0 release is only compatible with the new EF80 and EF50 all-flash storage systems. 
+NOTE: The SANtricity OS 12.00 release is only compatible with the new EF80 and EF50 all-flash storage systems. 
 
 [cols="35h,~",options="header"]
 |===
