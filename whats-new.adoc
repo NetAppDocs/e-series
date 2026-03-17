@@ -21,9 +21,9 @@ NOTE: The SANtricity OS 12.0 release is only compatible with the new EF80 and EF
 |===
 |New feature |Description
 a|New storage system models – EF80 and EF50 all-flash storage systems
-a|This release introduces the EF80 and EF50 all-NVMe-flash storage systems. The EF80 and EF50 supports 24 NVME SSD drives and a single host interface card (HIC) per controller. The supported NVMe over Fabrics host interfaces include NVMe over RoCE, NVMe over IB for EF80, and NVMe over FC for EF50. The supported SCSI interfaces include Fibre Channel. 
+a|This release introduces the EF80 and EF50 all-NVMe-flash storage systems. The EF80 and EF50 supports 24 NVME SSD drives and a inter-controller mirroring card per controller. The supported NVMe over Fabrics host interfaces include NVMe over RoCE, NVMe over IB, NVMe over FC for EF80, and NVMe over FC for EF50. The supported SCSI interface is Fibre Channel for both systems The EF50 supports up to two host interface cards per controller while the EF80 supports up to three host interface cards per controller. 
 
-High-capacity NVMe SSD drives of 30TB or 60TB sizes are also supported with the EF80 and EF30. The EF80 and EF30 is compatible for Dynamic Disk Pool use only with no legacy RAID support.
+High-capacity NVMe SSD drives of 30TB or 60TB sizes are also supported with the EF80 and EF50. The EF80 and EF50 can only utilize Dynamic Disk Pool when the array is populated with 30TB or 60TB drives.
 a|New user interface for SANtricity System Manager
 a|For the new EF80 and EF50 controllers, the SANtricity System Manager user interface has been redesigned to provide a more modern look and feel. The new interface includes a left-panel navigation and enhanced usability to streamline management tasks.
 
