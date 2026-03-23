@@ -2,15 +2,18 @@
 sidebar: sidebar
 permalink: rackmount-hardware.html
 keywords: rackmount, rack-mount, install in rack, rails
-summary: Rack mount the hardware.
+summary: Rack-mount hardware is used to install your hardware in a rack or cabinet. Installation instructions should be included in the rack-mount hardware box. However, if you need to access installation instructions, use the applicable link below.
 ---
 
-= Rack-mount hardware (E-Series)
+= Rack-mount hardware - E-Series
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-Use the links below to access documentation that describes how to install rack-mounting hardware.
+Rack-mount hardware is used to install your storage system in a rack or cabinet. Installation instructions should be included in the rack-mount hardware box. However, if you need to access installation instructions, use the applicable link below.
+
+For newer storage systems, you can verify the supported rack-mount hardware by seeing the NetApp Hardware Universe at https://hwu.netapp.com[NetApp Hardware Universe^].
+
 
 == Adjustable support rails
 Access https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1652045[Installing adjustable support rails^] for installing a controller-drive tray or a drive tray that was shipped separately (not already installed in the cabinet). This procedure is applicable for the following 2U (9 cm or 3.5 inch) trays:
@@ -27,4 +30,4 @@ Access https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2484194[Installin
 
 == Four-post rack -- SuperRail
 
-Access https://docs.netapp.com/us-en/ontap-systems/platform-supplemental/superrail-install.html[Install SuperRail into a four-post rack (DE224C/DE460C shelves)^].
+Access https://docs.netapp.com/us-en/ontap-systems/platform-supplemental/superrail-install.html[Install SuperRail into a four-post rack^].

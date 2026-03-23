@@ -1,0 +1,19 @@
+.Steps
+
+. Select *Settings* > *System*.
+. In the *Additional Settings* section, select *Change host I/O protocol* to open that page.
+. In the *Host I/O Protocol* field, select the drop-down menu and choose the protocol you want to use.
++
+The protocol list is based on the host I/O modules currently installed.
++
+. Type *CHANGE* in the open field to confirm your change. 
+. Select the *Change* button.
+. Wait for the controllers to complete their reboot cycle.
++
+This can take about five minutes.
+
+. When the controllers are back online, confirm their status is Optimal, using SANtricity System Manager.
+
+. Recreate the host definitions.
++
+For instructions, see the https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host.html[Create a host manually in SANtricity System Manager^] procedure.

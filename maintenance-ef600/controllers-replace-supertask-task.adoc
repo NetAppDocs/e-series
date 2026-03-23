@@ -55,7 +55,7 @@ Save the packing materials to use when shipping the failed controller canister.
 +
 When a controller has a fault and needs to be replaced, the replacement part number is displayed in the Details area of the Recovery Guru. If you need to find this number manually, follow these steps:
 
- .. Select menu:Hardware[Controllers and components].
+ .. Select *Hardware*.
  .. Locate the controller shelf, which is marked with the controller icon image:../media/sam1130_ss_hardware_controller_icon_maint-ef600.gif[].
  .. Click the controller icon.
  .. Select the controller, and click *Next*.
@@ -77,7 +77,8 @@ If a problem occurs when you remove a controller, you can use the saved file to 
 The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
 . If the controller is not already offline, take it offline now using SANtricity System Manager.
- .. Select menu:Hardware[Controllers and components].
+ .. Select *Hardware*.
+ .. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
  .. Select the controller that you want to place offline.
  .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 

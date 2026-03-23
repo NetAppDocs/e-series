@@ -178,7 +178,7 @@ Place the controller online, collect support data, and resume operations.
 .Steps
 
 . Place controller online.
- .. In System Manager, navigate to the hardware page.
+ .. In System Manager, navigate to the *Hardware* page.
  .. Select *Show back of controller*.
  .. Select the controller with the replaced host interface card.
  .. Select *Place online* from the drop-down list.
@@ -200,7 +200,7 @@ NOTE: If you cannot resolve the problem, contact technical support.
 As needed, install the latest version.
 
 . Verify that all volumes have been returned to the preferred owner.
-.. Select menu:Storage[Volumes]. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select menu:elispse icon[Change ownership] to view volume owners.
+.. Select menu:Storage[Volumes]. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select menu:More[Change ownership] to view volume owners.
 .. If volumes are all owned by preferred owner continue to Step 6.
 .. If none of the volumes are returned, you must manually return the volumes. Go to menu:More[Redistribute volumes].
  .. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution you must check the Recovery Guru for host connectivity issues.

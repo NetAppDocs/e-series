@@ -1,0 +1,64 @@
+---
+permalink: maintenance-ef50-ef80/io-module-replace.html
+sidebar: sidebar
+keywords: ef50, ef80 replace io module, replace hic, replace host interface card
+summary: Replace a failed I/O module in your EF50 or EF80 storage system with the same type of I/O module to restore the storage system to its optimal operating state. 
+---
+= Replace an I/O module - EF50 and EF80
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Replace a failed I/O module in your EF50 or EF80 storage system with the same type of I/O module to restore the storage system to its optimal operating state. 
+
+
+.About this task
+
+* Replace an I/O module by preparing, placing the impaired controller offline, replacing the failed I/O module, placing the controller back online, and returning the failed part to NetApp.
+
+* The term _I/O module_ is used instead of host interface cards (HICs) in this procedure.
+
+* The I/O module fault LEDs (for all four slots) are non-functional. They remain off at all times; therefore, they cannot be used to verify a fault condition.
++
+The fault LEDs are located on the controllers: The slot 1 and 2 fault LEDs are located to the right of slot 2. The slot 3 and 4 fault LEDs are located to the left of slot 4.
+
+* The impaired controller does not need to be removed from the chassis because I/O modules are accessible with the controller in place.
+
+* You must place the impaired controller offline before unplugging any I/O module cables.
+
+* You can turn on the storage system location (blue) LEDs (on the front of the storage system and both controllers) to aid in physically locating the affected storage system. Using SANtricity System Manager, select *Hardware* > *Controllers and components*, select the *Controller shelf* tab, and from the context menu select *Turn on locator light*.
+
+== Step 1: Prepare to replace an I/O module
+
+Prepare to replace an I/O module by gathering the necessary tools and equipment, and backing up the storage system's configuration database. 
+
+include::../_include/ge_io_module_replace_prepare.adoc[]
+
+== Step 2: Place the controller offline
+
+Place the impaired controller offline so you can safely perform the rest of this procedure.
+
+include::../_include/ge_most_fru_replacements_offline_controller.adoc[]
+
+
+== Step 3: Replace the I/O module
+
+Unplug cabling from the failed I/O module, replace it with the replacement I/O module, and then cable the replacement I/O module.
+
+include::../_include/ge_io_module_replace_replace_failed_module.adoc[]
+
+
+== Step 4: Place the controller online
+
+include::../_include/ge_most_fru_replacements_online_controller.adoc[]
+
+
+== Step 5: Complete the I/O module replacement 
+
+include::../_include/ge_most_fru_replacements_complete_replacement.adoc[]
+
+
+== Step 6: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
+

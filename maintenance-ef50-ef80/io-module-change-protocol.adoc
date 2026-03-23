@@ -1,0 +1,93 @@
+---
+permalink: maintenance-ef50-ef80/io-module-change-protocol.html
+sidebar: sidebar
+keywords: host protocol change, EF50, EF80
+summary: You can change the protocol on the host I/O modules in your EF50 or EF80 storage system when you need a different protocol on your existing I/O modules, as part of an I/O module upgrade, or when the default protocol on new controllers part of a new storage system installation or controller upgrade is not the protocol you want.
+---
+= Change the host I/O module protocol - EF50 and EF80
+:experimental:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+You can change the protocol on the host I/O modules in your EF50 or EF80 storage system when you need a different protocol on your existing I/O modules, as part of an I/O module upgrade, or when the default protocol on new controllers part of a new storage system installation or controller upgrade is not the protocol you want.
+
+.Before you begin
+
+If you are changing the host protocol as part of a hardware procedure (I/O module upgrade, new system installation, or controller upgrade), you need to have completed the applicable hardware procedure.
+
+NOTE: New hardware must already be installed because the default protocol and list of available protocols (you view in this procedure) are based on the host I/O modules currently installed.
+
+[options="header" cols="1,2"]
+|===
+|If you are changing the host protocol...| Then...
+a| 
+On your existing host I/O modules (no new hardware needs to be installed)
+a|
+Continue with this procedure.
+a|
+As part of an I/O module upgrade
+a|
+Upgrade the host I/O modules before continuing with this procedure.
+
+Use the link:../maintenance-ef50-ef80/io-module-upgrade.html[Upgrade I/O modules for an EF50 or EF80] procedure.
+a|
+As part of a new storage system installation
+a|
+Complete the system installation and setup before continuing with this procedure.
+
+Use the link:../install-hw-ef50-ef80/install-workflow.html[Install and setup for an EF50 or EF80] procedure.
+a|
+As part of a controller upgrade
+a|
+Complete the controller upgrade before continuing with this procedure.
+
+Start with the link:../upgrade-controllers/index.html[Learn about upgrading E-Series controllers] procedure.
+|===
+
+
+.About this task
+
+* Change the protocol on the host I/O modules by preparing, stopping the host I/O operations, changing the protocol, and then configuring the host to use the new protocol.
+
+* The protocol is changed on all host I/O modules in your storage system.
+
+* When you change the protocol on the host I/O modules, you temporarily disrupt host access to all volumes and make the storage system unavailable during the reboot, which takes a few minutes.
+
+
+== Step 1: Prepare for the protocol change
+
+Prepare to change the protocol on the host I/O modules by verifying the current protocol being used, determining if you need to change the protocol, and if yes, scheduling a downtime maintenance window.
+
+include::../_include/ge_io_module_change_protocol_prepare.adoc[]
+
+
+
+== Step 2: Stop host I/O operations
+
+You must stop all I/O operations from the host and then delete all defined hosts from the storage system before changing the protocol.
+
+NOTE: You cannot access data on the storage system until you successfully complete the protocol change.
+
+include::../_include/ge_io_module_change_protocol_stop_io_operations.adoc[]
+
+
+== Step 3: Change the protocol
+
+Using SANtricity System Manager, change the protocol on the host I/O modules, wait for the controllers to complete their reboot cycle, confirm their status is Optimal, and then recreate the host definitions.
+
+include::../_include/ge_io_module_change_protocol_change_protocol.adoc[]
+
+
+== Step 4: Configure the host to use the new protocol
+
+After changing the host protocol, you must configure the host to use the new protocol.
+
+include::../_include/ge_io_module_change_protocol_configure_host.adoc[]
+
+
+
+
+
+

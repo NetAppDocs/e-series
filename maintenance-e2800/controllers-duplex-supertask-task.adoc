@@ -55,7 +55,7 @@ image::../media/28_dwg_e2800_labels_maint-e2800.gif["Mac address and FRU part nu
 +
 When a controller has a fault and needs to be replaced, the replacement part number is displayed in the Details area of the Recovery Guru. If you need to find this number manually, follow these steps:
 
- .. Select menu:Hardware[Controllers and components] under the left panel.
+ .. Select *Hardware*.
  .. Locate the controller shelf, which is marked with the controller icon image:../media/sam1130_ss_hardware_controller_icon_maint-e2800.gif["Controller icon"].
  .. Click the controller icon.
  .. Select the controller, and click *Next*.
@@ -94,7 +94,8 @@ The file is saved in the Downloads folder for your browser with the name, *suppo
 . If the controller is not already offline, take it offline now using SANtricity System Manager.
 
  * From SANtricity System Manager:
-  .. Select menu:Hardware[Controllers and components] under the left panel
+  .. Select *Hardware*.
+  .. If the graphic shows the drives, select *Show back of shelf* to show the controllers
   .. Select the controller that you want to place offline.
   .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 +
@@ -364,7 +365,7 @@ NOTE: If you cannot resolve the problem, contact technical support.
 . If required, redistribute all volumes back to their preferred owner using SANtricity System Manager.
  .. Select menu:Storage[Volumes].
  .. Select menu:More[Redistribute volumes].
-. Click menu:Support[Upgrade Center] to ensure that the firmware and NVSRAM versions on the system are at the desired levels.
+. Click menu:Hardware[Support > Upgrade Center] to ensure that the firmware and NVSRAM versions on the system are at the desired levels.
 +
 As needed, install the latest version.
 

@@ -4,14 +4,20 @@ sidebar: sidebar
 keywords: cabling, cables, ethernet cabling, ethernet cable, out of band, direct topology, fabric topology, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C
 summary: Connect your storage system to an Ethernet network for out-of-band management.
 ---
-= Ethernet cabling for a management station (E-Series)
+= Ethernet cabling for a management station - E-Series
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 You can connect your storage system to an Ethernet network for out-of-band storage array management. You must use Ethernet cables for all storage array management connections.
 
-NOTE: The EF300, EF600, and E4000 have only one out-of-band ethernet management port.
+[NOTE]
+====
+Some storage systems have only one out-of-band Ethernet management port on each controller.
+
+For cabling instructions specific to your storage system, see link:../getting-started/getup-run-concept.html[Quick start for E-Series^] and click the link for your specific storage system.
+====
+
 
 == Direct topology
 

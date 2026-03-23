@@ -20,7 +20,7 @@ You configure the switches according to the vendor's recommendations for iSCSI. 
 
 Make sure you have the following:
 
-* Two separate networks for high availability. Make sure that you isolate your iSCSI traffic to separate network segments by using VLANs or two separate networks.
+* Two separate networks for high availability. Make sure that you isolate your iSCSI traffic to separate network segments from other types of traffic by using VLANs or two separate networks.
 * Enabled send and receive hardware flow control *end to end*.
 * Disabled priority flow control.
 * If appropriate, enabled jumbo frames.
