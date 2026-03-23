@@ -24,8 +24,7 @@ If you converted all host ports from FC to iSCSI, you must configure iSCSI netwo
 +
 You should configure the switches used to transport iSCSI traffic according to the vendor's recommendations for iSCSI. These recommendations might include both configuration directives as well as code updates.
 
-. From SANtricity System Manager, select menu:Hardware[Controllers and Components]
-. Click the switch and select *Configure iSCSI ports*.
+. From SANtricity System Manager, select menu:Hardware[Configure iSCSI ports].
 . Select the port settings.
 +
 You can set up your iSCSI network in many ways. Consult your network administrator for tips on selecting the best configuration for your environment.
@@ -35,11 +34,12 @@ You can set up your iSCSI network in many ways. Consult your network administrat
 NOTE: If you need instructions for add hosts or host clusters, refer to the online help for SANtricity System Manager.
 
  .. Select menu:Storage[Hosts].
- .. Select the host to which the port will be associated, and click *Edit Settings*.
+ .. Select the host to which the port will be associated, and click *View/Edit Settings*.
 +
-The Edit Host settings page appears.
+The Host Settings dialog box appears.
 
- .. Click *Add Host Port* to associate a new host port identifier to the host.
+ .. Click the *Host Ports* tab.
+ .. Click *Add*, and use the *Add Host Port* dialog box to associate a new host port identifier to the host.
 +
 The length of the host port identifier name is determined by the host interface technology. FC host port identifier names must have 16 characters. iSCSI host port identifier names have a maximum of 223 characters. The port must be unique. A port number that has already been configured is not allowed.
 
@@ -66,11 +66,11 @@ Zoning the switches enables the hosts to connect to the storage and limits the n
 
 . Update the host definitions in SANtricity System Manager.
  .. Select menu:Storage[Hosts].
- .. Select the host to which the port will be associated, and click *Edit Settings*.
+ .. Select the host to which the port will be associated, and click *View/Edit Settings*.
 +
-The Edit host settings page appears.
+The Host Edit Settings dialog box appears.
 
- .. Click *Add Host Port* to associate a new host port identifier to the host.
+ .. Click *Add*, and use the *Add Host Port* dialog box to associate a new host port identifier to the host.
 +
 The length of the host port identifier name is determined by the host interface technology. FC host port identifier names must have 16 characters. iSCSI host port identifier names have a maximum of 223 characters. The port must be unique. A port number that has already been configured is not allowed.
 

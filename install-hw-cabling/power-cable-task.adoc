@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, power cable, power cabling, power supply cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C
 summary: Connect each component’s power supplies to separate power circuits.
 ---
-= Power cabling your storage system (E-Series)
+= Power cabling your storage system - E-Series
 :icons: font
 :imagesdir: ../media/
 
@@ -24,6 +24,7 @@ The power source for your storage system must be able to accommodate the power r
 
 . Connect a power cable to each of the power supply units on your storage system.
 . Connect the two power cables for each shelf to different power distribution units (PDUs) in the cabinet or rack.
-. Turn on both power switches.
+. Power on both power supplies.
 +
-NOTE: EF300 and EF600 storage systems do not have power switches. They will power on as soon as the cables are connected.
+NOTE: Depending on your storage system, the power supplies have power switches or there are no power switches and you must connect the power cables to power them on.
+

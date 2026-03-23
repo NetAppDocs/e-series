@@ -1,0 +1,36 @@
+---
+permalink: maintenance-ef50-ef80/controller-replace-workflow.html
+sidebar: sidebar
+keywords: ef50, ef80, replace the controller workflow
+summary: You can replace an impaired controller in your EF50 or EF80 storage system by meeting storage system requirements, preparing the system, placing the impaired controller offline, replacing the controller, placing the new controller online, and completing the replacement process.
+---
+= Controller replacement workflow - EF50 and EF80
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can replace an impaired controller in your EF50 or EF80 storage system by meeting storage system requirements, preparing the system, placing the impaired controller offline, replacing the controller, placing the new controller online, and completing the replacement process.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:controller-replace-requirements.html[Review the controller replacement requirements]
+[role="quick-margin-para"]
+Verify your storage system has a failed controller, verify the state of your storage system, acquire tools for the procedure, and have a management station and browser to access SANtricity System Manager.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:controller-replace-prepare.html[Prepare for the controller replacement]
+[role="quick-margin-para"]
+Unpack the replacement controller, make note of its MAC address, confirm its part number is correct, and back up the storage system's configuration database.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:controller-replace-offline-controller.html[Offline the impaired controller]
+[role="quick-margin-para"]
+Offline the impaired controller to prevent data loss and ensure system stability when replacing the impaired controller.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:controller-replace-move-hardware.html[Replace the impaired controller]
+[role="quick-margin-para"]
+Verify any data in cache memory has been written to the drives, unplug all of the cables from the impaired controller, remove the controller, move the components to the replacement controller, install the replacement controller, and reconnect all cables.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:controller-replace-online-controller.html[Online the replacement controller]
+[role="quick-margin-para"]
+Confirm the IP address for the replacement controller, online the controller, and confirm the storage system status is Optimal.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:controller-replace-complete-replacement.html[Complete the controller replacement]
+[role="quick-margin-para"]
+Ensure the latest version of SANtricity OS is installed, verify volumes are returned to their owning controllers, collect system support data, and return the failed part to NetApp.

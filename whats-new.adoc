@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: whats-new.html
-keywords: whats new, new features, SANtricity, 12.00, 11.9, 11.8
+keywords: whats new, new features, SANtricity, 12.0, 11.9, 11.8, EF80, EF50, E4000, EF300, EF600, E2800, EF280, E5700, EF570, 
 summary: New features in SANtricity OS.
 ---
 
@@ -11,26 +11,40 @@ summary: New features in SANtricity OS.
 :imagesdir: ./media/
 
 [.lead]
-The following table describes new features in the latest SANtricity OS releases for embedded management of E4000, EF300/EF300C, EF600/EF600C, E2800/EF280, and E5700/EF570 controllers.
+The following table describes new features in the latest SANtricity OS releases for embedded management of EF80, EF50, E4000, EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
 
 == New features in Version 12.00
+
+NOTE: The SANtricity OS 12.00 release is only compatible with the new EF80 and EF50 all-flash storage systems. 
 
 [cols="35h,~",options="header"]
 |===
 |New feature |Description
+a|New storage system models – EF80 and EF50 all-flash storage systems
+a|This release introduces the EF80 and EF50 all-NVMe-flash storage systems. The EF80 and EF50 supports 24 NVME SSD drives and a inter-controller mirroring card per controller. The supported NVMe over Fabrics host interfaces include NVMe over RoCE, NVMe over IB, NVMe over FC for EF80, and NVMe over FC for EF50. The supported SCSI interface is Fibre Channel for both systems The EF50 supports up to two host interface cards per controller while the EF80 supports up to three host interface cards per controller. 
+
+High-capacity NVMe SSD drives of 30TB or 60TB sizes are also supported with the EF80 and EF50. The EF80 and EF50 can only utilize Dynamic Disk Pool when the array is populated with 30TB or 60TB drives.
 a|New user interface for SANtricity System Manager
-a|The SANtricity System Manager user interfaces have been redesigned to provide a more modern look and feel. The new interface includes a left-panel navigation and enhanced usability to streamline management tasks.
-a|DULBE support for EF300C and EF600C storage systems
-a|EF300C and EF600C high-capacity flash storage systems now support the Deallocated or Unwritten Logical Block Error (DULBE) feature. This feature allows the storage system to support resource-provisioned volumes, which can improve SSD wear life and increase maximum write performance.
-a|Dynamic Disk Pools segment size now defaults to 32K for SSD and NVMe-based systems
-a|For Dynamic Disk Pools on SSD and NVMe-based systems, the default segment size has been changed to 32K. Previously, the dynamic disk pools default segment size was fixed at 128K for these systems. This change optimizes performance for workloads that involve a mix of small and large I/O operations.
+a|For the new EF80 and EF50 controllers, the SANtricity System Manager user interface has been redesigned to provide a more modern look and feel. The new interface includes a left-panel navigation and enhanced usability to streamline management tasks.
+
 a|Subject Alternative Names (SANs) for Server certificate now only permits Letters, digits, and hyphen characters
 a|When creating or editing a Server certificate in SANtricity System Manager or Unified Manager, the Subject Alternative Names (SANs) field now only permits letters, digits, and hyphen characters. This change enhances security and ensures compatibility with industry standards for SSL/TLS certificates.
+
+a|Dynamic Disk Pools segment size now defaults to 32K for SSD and NVMe-based systems
+a|For Dynamic Disk Pools on SSD and NVMe-based systems, the default segment size has been changed to 32K. Previously, the dynamic disk pools default segment size was fixed at 128K for these systems. This change optimizes performance for workloads that involve a mix of small and large I/O operations. 
+
+a|Script editor now available in SANtricity System Manager
+a|A new script editor is now available within the SANtricity System Manager. The Script editor allows you to create or edit a script file, save a script file to the local disk of the storage management station, or load a script file from disk. The Script editor provides syntax checking and command execution capabilities for managing your storage system. For more information, see link:https://docs.netapp.com/us-en/e-series-santricity/sm-support/use-script-editor.html[Using the Script editor^].
+
 |===
 
-== New features in Version 11.90R4
+== New features in Version 11.90R5
  
-This version contains only minor changes and no new features. For more information on the changes in this release, please refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3334464[E-Series 11.90 Release Notes^].
+This version contains only defect fixes and no new features. For more information on the changes in this release, please refer to the E-Series SANtricity OS 11.90R5 README.
+
+== New features in Version 11.90R4
+
+This version contains only minor changes and no new features. For more information on the changes in this release, please refer to the E-Series SANtricity OS 11.90R4 README.
 
 == New features in Version 11.90R3
 
