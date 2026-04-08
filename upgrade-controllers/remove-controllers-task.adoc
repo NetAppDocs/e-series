@@ -16,10 +16,10 @@ After preparing for the upgrade, you can remove the controllers, and if necessar
 [role="tabbed-block"]
 ====
 
-.EF280 and EF50 controller models
+.EF80 and EF50 controller models
 --
 
-For information about removing controllers from EF280 and EF50 storage systems, see link:https://docs.netapp.com/us-en/e-series/maintenance-ef50-ef80/controller-replace-move-hardware.html#step-1-remove-the-controller[EF50 and EF80 - Step 1: Remove the controller^].
+For information about removing controllers from EF80 and EF50 storage systems, see link:https://docs.netapp.com/us-en/e-series/maintenance-ef50-ef80/controller-replace-move-hardware.html#step-1-remove-the-controller[EF50 and EF80 - Step 1: Remove the controller^].
 
 --
 
