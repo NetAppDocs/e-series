@@ -16,4 +16,4 @@ This can take about five minutes.
 
 . Recreate the host definitions.
 +
-For instructions, see the https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host.html[Create a host manually in SANtricity System Manager^] procedure.
+For instructions, see the https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-manually.html[Create a host manually in SANtricity System Manager^] procedure.
