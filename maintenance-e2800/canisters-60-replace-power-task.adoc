@@ -39,7 +39,7 @@ Prepare to replace a power canister in a 60-drive controller shelf or drive shel
 .Steps
 
 . Collect support data for your storage array using SANtricity System Manager.
- .. Select menu:Support[Support Center > Diagnostics].
+ .. From the left, select menu:Support[Support Center > Diagnostics].
  .. Select *Collect Support Data*.
  .. Click *Collect*.
 +

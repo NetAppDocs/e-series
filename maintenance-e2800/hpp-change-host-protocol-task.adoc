@@ -20,8 +20,7 @@ Use SANtricity System Manager to determine what type of SFP transceivers you hav
 
 .Steps
 
-. From SANtricity System Manager, select *Support*.
-. Select the *Support Center* tile.
+. From SANtricity System Manager, select menu:Support[Support Center].
 . On the Support Resources page, locate and select the *Storage Array Profile* link.
 . Type *SFP* in the text box, and click *Find*.
 . For each SFP listed in the Storage Array Profile, locate the entry for *Supported data rate(s)*.
@@ -74,7 +73,7 @@ To obtain the feature pack, you need the serial number from the controller shelf
 
 . Locate the serial number.
  .. From SANtricity System Manager, select menu:Support[Support Center].
- .. With the *Support Resources* tab selected, scroll to the *View top storage array properties* section.
+ .. On the *Support Resources* page, scroll to the *View top storage array properties* section.
  .. Locate the *Chassis Serial Number*, and copy this value to a text file.
 +
 image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-e2800.gif["Chassis serial number"]
@@ -424,7 +423,7 @@ a|
 Cache Active LED
 |===
 
-. From the Home page of SANtricity System Manager, select *View Operations in Progress*.
+. From the left panel of SANtricity System Manager, select menu:Storage[Operations in Progress].
 . Wait for all operations to complete before continuing with the next step.
 
 == Step 4: Change the feature pack
@@ -445,8 +444,7 @@ image::../media/sam1130_ss_system_change_feature_pack_maint-e2800.gif["Change fe
 The feature pack migration begins. Both controllers automatically reboot twice to allow the new feature pack to take effect. The storage array returns to a responsive state after the reboot is complete.
 
 . Confirm the host ports have the protocol you expect.
- .. From SANtricity System Manager, select *Hardware*.
- .. Click *Show back of shelf*.
+.. From SANtricity System Manager, select menu:Hardware[Controller and components].
  .. Select the graphic for either Controller A or Controller B.
  .. Select *View settings* from the context menu.
  .. Select the *Host Interfaces* tab.

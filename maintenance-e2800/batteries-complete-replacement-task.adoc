@@ -43,8 +43,7 @@ image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif["E2800 LED display"]
 
 . Bring the controller online using SANtricity System Manager.
  * From SANtricity System Manager:
-  .. Select *Hardware*.
-  .. If the graphic shows the drives, select *Show back of shelf*.
+  .. Select menu:Hardware[Controllers and components] under the left panel.
   .. Select the controller you want to place online.
   .. Select *Place Online* from the context menu, and confirm that you want to perform the operation.
 +
@@ -63,7 +62,7 @@ If the status is not Optimal or if any of the Attention LEDs are on, confirm tha
 NOTE: If you cannot resolve the problem, contact technical support.
 
 . If needed, collect support data for your storage array using SANtricity System Manager.
- .. Select menu:Support[Support Center > Diagnostics].
+ .. From the left panel, select menu:Support[Support Center > Diagnostics].
  .. Select *Collect Support Data*.
  .. Click *Collect*.
 +
