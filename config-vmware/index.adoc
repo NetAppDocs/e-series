@@ -21,6 +21,7 @@ The express method includes the following steps, which are also outlined in the 
 * link:fc-perform-specific-task.html[Fibre Channel]
 * link:iscsi-perform-specific-task.html[iSCSI]
 * link:sas-perform-specific-task.html[SAS]
+* link:nvme-perform-specific-task.html[NVMe]
 
 . Create logical volumes on the storage array.
 

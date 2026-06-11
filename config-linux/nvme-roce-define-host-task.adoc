@@ -44,9 +44,6 @@ a|
 Select one of the following options from the drop-down list:
 
 ** *Linux* for SANtricity 11.60 and newer
-+
-
-** *Linux DM-MP (Kernel 3.10 or later)* for pre-SANtricity 11.60
 
 a|
 Host interface type

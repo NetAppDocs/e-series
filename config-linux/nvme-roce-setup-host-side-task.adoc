@@ -13,13 +13,13 @@ NVMe initiator configuration in a RoCE environment includes installing and confi
 
 .Before you begin
 
-You must be running the latest compatible RHEL 8, RHEL 9, SUSE Linux Enterprise Server 12 or 15 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a complete list of the latest requirements.
+You must be running the latest compatible RHEL 9, RHEL 10, SLES 15 or SLES 16 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a complete list of the latest requirements.
 
 .Steps
 
 . Install the rdma and nvme-cli packages:
 +
-*SLES 12 or SLES 15*
+*SLES 15 or SLES 16*
 +
 ----
 
@@ -27,20 +27,17 @@ You must be running the latest compatible RHEL 8, RHEL 9, SUSE Linux Enterprise 
 # zypper install nvme-cli
 ----
 +
-*RHEL 8, and RHEL 9*
+*RHEL 9 and RHEL 10*
 +
 ----
 
 # yum install rdma-core
 # yum install nvme-cli
 ----
-. For RHEL 8 and RHEL 9, install network scripts:
-+
-*RHEL 8*
-+
-----
-# yum install network-scripts
-----
+
+NOTE: If you are using an NVIDIA HCA and wish to use the external DOCA driver, please refer to the link:https://developer.nvidia.com/doca-downloads[NVIDIA DOCA Documentation] for information on how to properly install it in this environment.
+
+. For RHEL 9, install network scripts:
 +
 *RHEL 9*
 +
@@ -60,9 +57,9 @@ NOTE: Network scripts are not available for RHEL 10.
 +
 The variables used in this step are based on server hardware and the network environment. The variables include the `IPADDR` and `GATEWAY`. These are example instructions for SLES and RHEL:
 +
-*SLES 12 and SLES 15*
+*SLES 15*
 +
-Create the example file `/etc/sysconfig/network/ifcfg-eth4` with the following contents.
+Create the example file `/etc/sysconfig/network/ifcfg-eth4` with the following contents, where MTU is set to the highest value that can be achieved without packet fragmentation (usually 9000). 
 +
 ----
 BOOTPROTO='static'
@@ -70,7 +67,7 @@ BROADCAST=
 ETHTOOL_OPTIONS=
 IPADDR='192.168.1.87/24'
 GATEWAY='192.168.1.1'
-MTU=
+MTU=9000
 NAME='MT27800 Family [ConnectX-5]'
 NETWORK=
 REMOTE_IPADDR=
@@ -85,46 +82,14 @@ BROADCAST=
 ETHTOOL_OPTIONS=
 IPADDR='192.168.2.87/24'
 GATEWAY='192.168.2.1'
-MTU=
+MTU=9000
 NAME='MT27800 Family [ConnectX-5]'
 NETWORK=
 REMOTE_IPADDR=
 STARTMODE='auto'
 ----
 +
-*RHEL 8*
-+
-Create the example file `/etc/sysconfig/network-scripts/ifcfg-eth4` with the following contents.
-+
-----
-BOOTPROTO='static'
-BROADCAST=
-ETHTOOL_OPTIONS=
-IPADDR='192.168.1.87/24’
-GATEWAY='192.168.1.1'
-MTU=
-NAME='MT27800 Family [ConnectX-5]'
-NETWORK=
-REMOTE_IPADDR=
-STARTMODE='auto'
-----
-+
-Then, create the example file `/etc/sysconfig/network-scripts/ifcfg-eth5`:
-+
-----
-BOOTPROTO='static'
-BROADCAST=
-ETHTOOL_OPTIONS=
-IPADDR='192.168.2.87/24'
-GATEWAY='192.168.2.1'
-MTU=
-NAME='MT27800 Family [ConnectX-5]'
-NETWORK=
-REMOTE_IPADDR=
-STARTMODE='auto'
-----
-+
-*RHEL 9*
+*RHEL 9, RHEL 10, or SLES 16*
 +
 Use the `nmtui` tool to activate and edit a connection. Below is an example file `/etc/NetworkManager/system-connections/eth4.nmconnection` the tool will generate:
 +
@@ -137,7 +102,7 @@ type=ethernet
 interface-name=eth4
 
 [ethernet]
-mtu=4200
+mtu=9000
 
 [ipv4]
 address1=192.168.1.87/24
@@ -160,7 +125,7 @@ type=ethernet
 interface-name=eth5
 
 [ethernet]
-mtu=4200
+mtu=9000
 
 [ipv4]
 address1=192.168.2.87/24
@@ -177,8 +142,8 @@ method=auto
 +
 ----
 
-# ifup eth4
-# ifup eth5
+# nmcli connection up eth4
+# nmcli connection up eth5 
 ----
 
 . Set up the NVMe-oF layer on the host. Create the following file under `/etc/modules-load.d/` to load the `nvme_rdma` kernel module and make sure the kernel module will always be on, even after a reboot:
@@ -189,9 +154,15 @@ method=auto
   nvme_rdma
 ----
 
-. Reboot the host.  
+. Reboot the host.
+.. Alternatively, you can load the `nvme_rdma` kernel without rebooting by running this command:
 +
-To verify the `nvme_rdma` kernel module is loaded, run this command:
+----
+
+# modeprobe nvme_rdma
+----
+
+. Verify the `nvme_rdma` kernel module is loaded, run this command:
 +
 ----
 # lsmod | grep nvme
