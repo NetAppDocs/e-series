@@ -13,6 +13,12 @@ Before making definitions of each host in SANtricity System Manager, you must di
 
 .Steps
 
+. Verify that you can ping from the host to each array HIC port using your expected MTU rate using the following command:
++
+----
+ping -M do -s <size> <IP of array HIC port>
+----
+
 . Discover available subsystems on the NVMe-oF target for all paths using the following command:
 +
 ----
@@ -54,22 +60,38 @@ rdma_cms:    rdma-cm
 rdma_pkey: 0x0000
 ----
 
-. Repeat step 1 for any other connections.
+. Repeat step 2 for any other connections.
 . Connect to the discovered subsystem on the first path using the command: `nvme connect -t rdma -n discovered_sub_nqn -a target_ip_address -Q queue_depth_setting -l controller_loss_timeout_period`
 +
-NOTE: The command listed above does not persist through reboot. The `NVMe connect` command will need to be executed after each reboot to re-establish the NVMe connections.
+NOTE: The command listed above does not persist through reboot. The `nvme connect` command will need to be executed after each reboot to re-establish the NVMe connections.
 +
 NOTE: Connections are not established for any discovered port inaccessible by the host.
 +
 NOTE: If you specify a port number using this command, the connection fails. The default port is the only port set up for connections.
 +
-NOTE: The recommended queue depth setting is 1024. Override the default setting of 128 with 1024 using the ``-Q 1024``command line option, as shown in the following example.
+NOTE: The recommended queue depth setting is 1024. Override the default setting of 128 with 1024 using the `-Q 1024`command line option, as shown in the following example.
 +
 NOTE: The recommended controller loss timeout period in seconds is 60 minutes (3600 seconds). Override the default setting of 600 seconds with 3600 seconds using the `-l 3600` command line option, as shown in the following example.
 +
 ----
-# nvme connect -t rdma -a 192.168.1.77 -n nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94 -Q 1024 -l 3600
-# nvme connect -t rdma -a 192.168.2.77 -n nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94 -Q 1024 -l 3600
+# nvme connect -t rdma -a 192.168.1.77 -n nqn.1992-
+08.com.netapp:EF80.600a098000a527a7000000005ab3af94 -Q 1024 -l 3600 
 ----
 
-. Repeat step 3 to connect the discovered subsystem on the second path.
+. Repeat step 4 to connect the discovered subsystem on the second path.
+
+. **Optional** - Setup your host to automatically discover and connect to targets on each boot. 
+.. Add the discovery parameters from step 2 and step 3 to `/etc/nvme/discovery.conf` using the following procedure and format:    
++
+----
+# echo "--transport=rdma --traddr= target_ip_address --trsvcid=4420" | sudo tee -a /etc/nvme/discovery.conf
+----
++
+.. Enable the nvmf-autoconnect service after populating the `/etc/nvme/discovery.conf` file using the following command:
++
+----
+sudo systemctl enable nvmf-autoconnect.service
+----
+
+.What's next?
+After you establish the connections, link:nvme-roce-define-host-task.html[define the host].

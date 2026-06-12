@@ -51,3 +51,6 @@ After successfully assigning a volume or volumes to a host or a host cluster, th
 
 * The assigned volume receives the next available NSID. The host uses the NSID to access the volume.
 * The user-supplied volume name appears in volume listings associated to the host.
+
+.What's next?
+After you assign a volume, link:nvme-roce-display-volumes-visible-host-task.html[display the visible volumes to the host].

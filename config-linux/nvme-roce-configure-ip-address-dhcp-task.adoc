@@ -42,3 +42,6 @@ If the storage array cannot get DHCP-assigned IP addresses within 30 seconds, th
 . Locate the MAC address label on the back of each controller, and then provide your network administrator with the MAC address for port 1 of each controller.
 +
 Your network administrator needs the MAC addresses to determine the IP address for each controller. You will need the IP addresses to connect to your storage system through your browser.
+
+.What's next?
+After you configure the IP addresses using DHCP, link:nvme-roce-access-sam-setup-wizard-task.html[configure your storage using SANtricity System Manager].

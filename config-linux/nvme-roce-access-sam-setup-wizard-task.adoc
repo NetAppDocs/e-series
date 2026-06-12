@@ -72,3 +72,6 @@ The Setup wizard launches if there are no pools, volumes groups, workloads, or n
 . If you have not already created a volume, create one by going to menu:Storage[Volumes > Create > Volume].
 +
 For more information, see the online help for SANtricity System Manager.
+
+.What's next?
+After you configure the storage in SANtricity System Manager, link:nvme-roce-configure-switch-task.html[configure the switches].

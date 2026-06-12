@@ -24,3 +24,6 @@ To view information about each NVMe path to an E-Series volume, use the `nvme ne
 /dev/nvme2n3, Array Name ICTM0706SYS04, Volume Name NVMe4, NSID 4, Volume ID 00001bb0593a46f400a0980000af4462, Controller B, Access State unknown, 2.15GB
 /dev/nvme2n4, Array Name ICTM0706SYS04, Volume Name NVMe6, NSID 6, Volume ID 00001696593b424b00a0980000af4112, Controller B, Access State unknown, 2.15GB
 ----
+
+.What's next?
+After you view the visible volumes, link:nvme-roce-setup-failover-host-task.html[set up failover on the host].
