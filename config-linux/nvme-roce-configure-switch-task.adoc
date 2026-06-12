@@ -29,4 +29,5 @@ At this time, you must be using either an EF600 E-Series Array with 200Gb/s Ethe
 . Consult your switch vendor documentation for more information on how to setup your network using the PFC values.
 . Consult your network administrator for tips on selecting the best configuration for your environment.
 
-
+.What's next?
+After you configure the switches, link:nvme-roce-setup-host-side-task.html[set up the NVMe initiator over RoCE on the host].

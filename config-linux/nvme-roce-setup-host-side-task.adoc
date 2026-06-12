@@ -174,3 +174,6 @@ ib_core               393216  15 rdma_cm,ib_ipoib,rpcrdma,ib_srpt,ib_srp,nvme_rd
 t10_pi                 16384  2 sd_mod,nvme_core
 ----
 +
+
+.What's next?
+After you set up the NVMe initiator over RoCE on the host, link:nvme-roce-configure-storage-connections-task.html[configure the NVMe over RoCE port settings].

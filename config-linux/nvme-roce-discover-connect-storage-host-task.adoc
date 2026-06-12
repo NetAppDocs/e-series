@@ -92,3 +92,6 @@ NOTE: The recommended controller loss timeout period in seconds is 60 minutes (3
 ----
 sudo systemctl enable nvmf-autoconnect.service
 ----
+
+.What's next?
+After you establish the connections, link:nvme-roce-define-host-task.html[define the host].
