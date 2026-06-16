@@ -338,6 +338,38 @@ sidebar:
                     url: "/config-linux/nvme-roce-create-filesystems-sles-15-task.html"
                   - title: NVMe over RoCE worksheet for Linux
                     url: "/config-linux/nvme-roce-worksheet-for-concept.html"
+                - title: NVMe over TCP Setup
+                  entries:
+                  - title: Verify Linux configuration
+                    url: "/config-linux/nvme-tcp-verify-linux-config-support-task.html"
+                  - title: Configure IP addresses using DHCP
+                    url: "/config-linux/nvme-tcp-configure-ip-address-dhcp-task.html"
+                  - title: Install SANtricity Storage Manager
+                    url: "/config-linux/nvme-tcp-install-smcli-11-53-task.html"
+                  - title: Access SANtricity System Manager
+                    url: "/config-linux/nvme-tcp-access-sam-setup-wizard-task.html"
+                  - title: Configure switch
+                    url: "/config-linux/nvme-tcp-configure-switch-task.html"
+                  - title: Set up NVMe over TCP on host
+                    url: "/config-linux/nvme-tcp-setup-host-side-task.html"
+                  - title: Configure NVMe port settings
+                    url: "/config-linux/nvme-tcp-configure-storage-connections-task.html"
+                  - title: Connect to storage from host
+                    url: "/config-linux/nvme-tcp-discover-connect-storage-host-task.html"
+                  - title: Define host
+                    url: "/config-linux/nvme-tcp-define-host-task.html"
+                  - title: Assign volume
+                    url: "/config-linux/nvme-tcp-assign-volume-task.html"
+                  - title: Display volumes visible to host
+                    url: "/config-linux/nvme-tcp-display-volumes-visible-host-task.html"
+                  - title: Set up failover on host
+                    url: "/config-linux/nvme-tcp-setup-failover-host-task.html"
+                  - title: Access NVMe volumes for physical device targets
+                    url: "/config-linux/nvme-tcp-access-physical-targets-concept.html"
+                  - title: Create filesystems
+                    url: "/config-linux/nvme-tcp-create-filesystems-sles-15-task.html"
+                  - title: NVMe over TCP worksheet for Linux
+                    url: "/config-linux/nvme-tcp-worksheet-for-concept.html"
                 - title: NVMe over Fibre Channel setup
                   entries:
                   - title: Verify Linux configuration

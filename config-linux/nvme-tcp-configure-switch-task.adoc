@@ -1,0 +1,31 @@
+---
+permalink: config-linux/nvme-tcp-configure-switch-task.html
+sidebar: sidebar
+keywords: configure switch, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: You configure the switches according to the vendor's recommendations for NVMe over TCP. These recommendations might include both configuration directives as well as code updates.
+---
+= Configure the switches in E-Series - Linux (NVMe over TCP)
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You configure the switches according to the vendor's recommendations for NVMe over TCP. These recommendations might include both configuration directives as well as code updates.
+
+== Standard Ethernet switch configuration
+NVMe over TCP operates over standard TCP/IP networks and does not require a lossless Ethernet environment. Unlike NVMe over RoCE, special flow control configurations such as Global Pause Frames or Priority Flow Control (PFC) are not required.
+
+.Steps
+
+. Consult your switch vendor documentation for standard Ethernet configuration guidelines applicable to your environment.
+. Ensure your switch firmware is up to date and that all ports connected to your hosts and storage array are properly configured for Ethernet.
+
+== Optional: Jumbo frames
+For optimal performance, consider enabling jumbo frames (MTU 9000) on switch ports connected to both the NVMe over TCP hosts and the storage array.
+
+.Steps
+
+. Consult your switch vendor documentation for instructions on enabling jumbo frames.
+. Ensure that jumbo frames (MTU 9000) are enabled consistently on all switch ports, host interfaces, and storage array ports in the NVMe over TCP data path.
+
+.What's next?
+After you configure the switches, link:nvme-tcp-setup-host-side-task.html[set up the NVMe initiator over TCP on the host].
