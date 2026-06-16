@@ -35,9 +35,12 @@ Before using NVMe over RoCE, see the https://mysupport.netapp.com/matrix[NetApp 
 
 === Switch restrictions
 
-CAUTION: *RISK OF DATA LOSS.* You must enable flow control for use with Global Pause Control on the switch to eliminate the risk of data loss in an NVMe over RoCE environment.
+CAUTION: *RISK OF DATA LOSS.* You must run NVMe over RoCE in a lossless environment. Enable end to end flow control using Global Pause Frames or Priority Flow Control (PFC) on your network to eliminate the risk of data loss. PFC requires NVMe over RoCE to be tagged as Priority 3 traffic with a DSCP value of `106`.
 
 === Storage and disaster recovery restrictions
 
 * Asynchronous and synchronous mirroring are not supported.
 * Thin provisioning (the creation of thin volumes) is not supported.
+
+.What's next?
+After you verify the Linux configuration support and review restrictions, link:nvme-roce-configure-ip-address-dhcp-task.html[configure IP addresses using DHCP].

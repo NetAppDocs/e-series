@@ -14,14 +14,14 @@ Follow this procedure to replace a failed host interface card (HIC) in an EF300,
 
 .About this task
 
-When you replace a failed HIC, you must power off the storage array, replace the HIC, and reapply power.
+When you replace a failed HIC, you must taking one controller offline to place the system in a non-redundant state, replace the HIC, and bring the controller back online.
 
 NOTE: The EF300 and EF600 storage array does not have to be powered off when replacing a HIC of the same protocol type (for example, replacing a Fibre Channel HIC with another Fibre Channel HIC). 
 
 .Before you begin
 
 * Review link:hics-overview-supertask-concept.html[Requirements for EF300 or EF600 HIC upgrades].
-* Schedule a downtime maintenance window for this procedure. You cannot access data on the storage array until you have successfully completed this procedure. Because both controllers must have the same HIC configuration when they are powered on, the power must be off when you install HICs.
+* Schedule a downtime maintenance window for this procedure. You cannot access data on the storage array until you have successfully completed this procedure. Because both controllers must have the same HIC configuration when they are powered on, you must taking one controller offline to place the system in a non-redundant state when you install HICs.
 * Make sure you have the following:
 ** HICs that are compatible with your controllers.
 ** An ESD wristband, or you have taken other antistatic precautions.
