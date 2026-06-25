@@ -1,10 +1,10 @@
 ---
-permalink: config-linux/nvme-roce-configure-ip-address-dhcp-task.html
+permalink: config-linux/nvme-tcp-configure-ip-address-dhcp-task.html
 sidebar: sidebar
 keywords: IP address, DHCP, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: Use Dynamic Host Configuration Protocol \(DHCP\) to provide IP addresses.
 ---
-= Configure IP addresses using DHCP in E-Series - Linux (NVMe over RoCE)
+= Configure IP addresses using DHCP in E-Series - Linux (NVMe over TCP)
 :icons: font
 :imagesdir: ../media/
 
@@ -44,4 +44,4 @@ If the storage array cannot get DHCP-assigned IP addresses within 30 seconds, th
 Your network administrator needs the MAC addresses to determine the IP address for each controller. You will need the IP addresses to connect to your storage system through your browser.
 
 .What's next?
-After you configure the IP addresses using DHCP, link:nvme-roce-access-sam-setup-wizard-task.html[configure your storage using SANtricity System Manager].
+After you configure the IP addresses using DHCP, link:nvme-tcp-access-sam-setup-wizard-task.html[configure your storage using SANtricity System Manager].

@@ -1,10 +1,10 @@
 ---
-permalink: config-linux/nvme-roce-assign-volume-task.html
+permalink: config-linux/nvme-tcp-assign-volume-task.html
 sidebar: sidebar
 keywords: assign volume Linux, assign namespace Linux, express linux configuration, linux host,
 summary: You must assign a volume \(namespace\) to a host or host cluster so it can be used for I/O operations. This assignment grants a host or host cluster access to one or more namespaces in a storage array.
 ---
-= Assign a volume using SANtricity System Manager - Linux (NVMe over RoCE)
+= Assign a volume using SANtricity System Manager - Linux (NVMe over TCP)
 :experimental:
 :icons: font
 :imagesdir: ../media/
@@ -53,4 +53,4 @@ After successfully assigning a volume or volumes to a host or a host cluster, th
 * The user-supplied volume name appears in volume listings associated to the host.
 
 .What's next?
-After you assign a volume, link:nvme-roce-display-volumes-visible-host-task.html[display the visible volumes to the host].
+After you assign a volume, link:nvme-tcp-display-volumes-visible-host-task.html[display the visible volumes to the host].

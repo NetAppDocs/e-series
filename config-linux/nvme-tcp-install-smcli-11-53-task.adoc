@@ -1,10 +1,10 @@
 ---
-permalink: config-linux/nvme-roce-install-smcli-11-53-task.html
+permalink: config-linux/nvme-tcp-install-smcli-11-53-task.html
 sidebar: sidebar
 keywords: install Storage Manager Linux, install CLI Windows, install command line interface, install Host Context Agent, install HCA, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: Install Storage Manager for CLI and HCA in Linux express method.
 ---
-= Install SANtricity Storage Manager for SMcli (11.53 or earlier) - Linux (NVMe over RoCE)
+= Install SANtricity Storage Manager for SMcli (11.53 or earlier) - Linux (NVMe over TCP)
 :experimental:
 :icons: font
 :imagesdir: ../media/

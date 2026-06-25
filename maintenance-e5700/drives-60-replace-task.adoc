@@ -35,7 +35,7 @@ Prepare to replace a drive in a 60-drive shelf by checking the Recovery Guru in 
 
 . If the Recovery Guru in SANtricity System Manager has notified you of an _impending drive failure_, but the drive has not yet failed, follow the instructions in the Recovery Guru to fail the drive.
 . If needed, use SANtricity System Manager to confirm you have a suitable replacement drive.
- .. Select *Hardware*.
+ .. Select menu:Hardware[Drives].
  .. Select the failed drive on the shelf graphic.
  .. Click the drive to display its context menu, and then select *View settings*.
  .. Confirm that the replacement drive has a capacity equal to or greater than the drive you are replacing and that it has the features you expect.
@@ -136,7 +136,7 @@ Confirm that the new drive is working correctly.
 +
 NOTE: Perform this operation only when instructed to do so by technical support or the Recovery Guru.
 
- .. Select *Hardware*.
+ .. Select menu:Hardware[Drives].
  .. Click the drive that you replaced.
  .. From the drive's context menu, select *Reconstruct*.
  .. Confirm that you want to perform this operation.

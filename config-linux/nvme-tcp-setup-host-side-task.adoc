@@ -1,15 +1,15 @@
 ---
-permalink: config-linux/nvme-roce-setup-host-side-task.html
+permalink: config-linux/nvme-tcp-setup-host-side-task.html
 sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
-summary: NVMe initiator configuration in a RoCE environment includes installing and configuring the rdma-core and nvme-cli packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
+summary: NVMe initiator configuration in a TCP environment includes installing and configuring the nvme-cli package, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
 ---
-= Set up NVMe initiator over RoCE on the host in E-Series - Linux
+= Set up NVMe initiator over TCP on the host in E-Series - Linux
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-NVMe initiator configuration in a RoCE environment includes installing and configuring the rdma-core and nvme-cli packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
+NVMe initiator configuration in a TCP environment includes installing and configuring the nvme-cli package, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
 
 .Before you begin
 
@@ -17,13 +17,12 @@ You must be running the latest compatible RHEL 9, RHEL 10, SLES 15 or SLES 16 se
 
 .Steps
 
-. Install the rdma and nvme-cli packages:
+. If you are using the inbox ethernet driver for your HCA, install the `nvme-cli` package as follows:
 +
 *SLES 15 or SLES 16*
 +
 ----
 
-# zypper install rdma-core
 # zypper install nvme-cli
 ----
 +
@@ -31,11 +30,10 @@ You must be running the latest compatible RHEL 9, RHEL 10, SLES 15 or SLES 16 se
 +
 ----
 
-# yum install rdma-core
 # yum install nvme-cli
 ----
-
-NOTE: If you are using an NVIDIA HCA and wish to use the external DOCA driver, please refer to the link:https://developer.nvidia.com/doca-downloads[NVIDIA DOCA Documentation] for information on how to properly install it in this environment.
++
+If you are using an NVIDIA HCA and wish to use the external DOCA driver, please refer to the link:https://developer.nvidia.com/doca-downloads[NVIDIA documentation] for information how to properly install it in this environment.
 
 . For RHEL 9, install network scripts:
 +
@@ -53,13 +51,13 @@ NOTE: Network scripts are not available for RHEL 10.
 # cat /etc/nvme/hostnqn
 ----
 +
-. Set up IPv4 IP addresses on the ethernet ports used to connect NVMe over RoCE. For each network interface, create a configuration script that contains the different variables for that interface.
+. Set up IPv4 IP addresses on the ethernet ports used to connect NVMe over TCP. For each network interface, create a configuration script that contains the different variables for that interface.
 +
 The variables used in this step are based on server hardware and the network environment. The variables include the `IPADDR` and `GATEWAY`. These are example instructions for SLES and RHEL:
 +
 *SLES 15*
 +
-Create the example file `/etc/sysconfig/network/ifcfg-eth4` with the following contents, where MTU is set to the highest value that can be achieved without packet fragmentation (usually 9000). 
+Create the example file `/etc/sysconfig/network/ifcfg-eth4` with the following contents.
 +
 ----
 BOOTPROTO='static'
@@ -68,7 +66,7 @@ ETHTOOL_OPTIONS=
 IPADDR='192.168.1.87/24'
 GATEWAY='192.168.1.1'
 MTU=9000
-NAME='MT27800 Family [ConnectX-5]'
+NAME='<adapter name>'
 NETWORK=
 REMOTE_IPADDR=
 STARTMODE='auto'
@@ -83,7 +81,7 @@ ETHTOOL_OPTIONS=
 IPADDR='192.168.2.87/24'
 GATEWAY='192.168.2.1'
 MTU=9000
-NAME='MT27800 Family [ConnectX-5]'
+NAME='<adapter name>'
 NETWORK=
 REMOTE_IPADDR=
 STARTMODE='auto'
@@ -146,34 +144,32 @@ method=auto
 # nmcli connection up eth5 
 ----
 
-. Set up the NVMe-oF layer on the host. Create the following file under `/etc/modules-load.d/` to load the `nvme_rdma` kernel module and make sure the kernel module will always be on, even after a reboot:
+. Set up the NVMe-oF layer on the host. Create the following file under `/etc/modules-load.d/` to load the `nvme_tcp` kernel module and make sure the kernel module will always be on, even after a reboot:
 +
 ----
 
-# cat /etc/modules-load.d/nvme_rdma.conf
-  nvme_rdma
+# cat /etc/modules-load.d/nvme_tcp.conf
+  nvme_tcp
 ----
 
 . Reboot the host.
-.. Alternatively, you can load the `nvme_rdma` kernel without rebooting by running this command:
+.. Alternatively, you can load the `nvme_tcp` kernel module without rebooting by running this command:
 +
 ----
 
-# modeprobe nvme_rdma
+# modprobe nvme_tcp
 ----
 
-. Verify the `nvme_rdma` kernel module is loaded, run this command:
+. Verify the `nvme_tcp` kernel module is loaded, run this command:
 +
 ----
 # lsmod | grep nvme
-nvme_rdma              36864  0
-nvme_fabrics           24576  1 nvme_rdma
-nvme_core             114688  5 nvme_rdma,nvme_fabrics
-rdma_cm               114688  7 rpcrdma,ib_srpt,ib_srp,nvme_rdma,ib_iser,ib_isert,rdma_ucm
-ib_core               393216  15 rdma_cm,ib_ipoib,rpcrdma,ib_srpt,ib_srp,nvme_rdma,iw_cm,ib_iser,ib_umad,ib_isert,rdma_ucm,ib_uverbs,mlx5_ib,qedr,ib_cm
+nvme_tcp               45056  0
+nvme_fabrics           24576  1 nvme_tcp
+nvme_core             114688  5 nvme_tcp,nvme_fabrics
 t10_pi                 16384  2 sd_mod,nvme_core
 ----
 +
 
 .What's next?
-After you set up the NVMe initiator over RoCE on the host, link:nvme-roce-configure-storage-connections-task.html[configure the NVMe over RoCE port settings].
+After you set up the NVMe initiator over TCP on the host, link:nvme-tcp-configure-storage-connections-task.html[configure the NVMe over TCP port settings].

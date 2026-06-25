@@ -1,10 +1,10 @@
 ---
-permalink: config-linux/nvme-roce-access-sam-setup-wizard-task.html
+permalink: config-linux/nvme-tcp-access-sam-setup-wizard-task.html
 sidebar: sidebar
 keywords: access System Manager Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: You use the Setup wizard in SANtricity System Manager to configure your storage array.
 ---
-= Configure your storage using SANtricity System Manager - Linux (NVMe over RoCE)
+= Configure your storage using SANtricity System Manager - Linux (NVMe over TCP)
 :experimental:
 :icons: font
 :imagesdir: ../media/
@@ -12,7 +12,7 @@ summary: You use the Setup wizard in SANtricity System Manager to configure your
 [.lead]
 To configure your storage array, you can use the Setup wizard in SANtricity System Manager.
 
-SANtricity System Manager is a web-based interface embedded on each controller. To access the user interface, you point a browser to the controller’s IP address. A setup wizard helps you get started with system configuration.
+SANtricity System Manager is a web-based interface embedded on each controller. To access the user interface, you point a browser to the controller's IP address. A setup wizard helps you get started with system configuration.
 
 .Before you begin
 
@@ -74,4 +74,4 @@ The Setup wizard launches if there are no pools, volumes groups, workloads, or n
 For more information, see the online help for SANtricity System Manager.
 
 .What's next?
-After you configure the storage in SANtricity System Manager, link:nvme-roce-configure-switch-task.html[configure the switches].
+After you configure the storage in SANtricity System Manager, link:nvme-tcp-configure-switch-task.html[configure the switches].

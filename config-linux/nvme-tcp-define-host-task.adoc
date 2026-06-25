@@ -1,10 +1,10 @@
 ---
-permalink: config-linux/nvme-roce-define-host-task.html
+permalink: config-linux/nvme-tcp-define-host-task.html
 sidebar: sidebar
 keywords: define Linux host, configure linux host, express linux configuration, linux host,
 summary: Using SANtricity System Manager, you define the hosts that send data to the storage array. Defining a host is one of the steps required to let the storage array know which hosts are attached to it and to allow I/O access to the volumes.
 ---
-= Create a host using SANtricity System Manager - Linux (NVMe over RoCE)
+= Create a host using SANtricity System Manager - Linux (NVMe over TCP)
 :experimental:
 :icons: font
 :imagesdir: ../media/
@@ -78,4 +78,4 @@ After the host is successfully created, SANtricity System Manager creates a defa
 The default alias is ``<Hostname_Port Number>``. For example, the default alias for the first port created for `host IPT is IPT_1`.
 
 .What's next?
-After you create the host, link:nvme-roce-assign-volume-task.html[assign a volume through SANtricity System Manager].
+After you create the host, link:nvme-tcp-assign-volume-task.html[assign a volume through SANtricity System Manager].

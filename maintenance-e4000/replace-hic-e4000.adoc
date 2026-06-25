@@ -90,7 +90,7 @@ CAUTION: *Possible data loss* — If you continue this procedure while I/O o
 . Wait for any data in cache memory to be written to the drives.
 +
 The green Cache Active LED on the back of the controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
-. From the home page of SANtricity System Manager, select *View Operations in Progress*.
+. From the home page of SANtricity System Manager, select menu:Storage[Operations in Progress].
 . Confirm that all operations have completed before continuing with the next step.
 . Turn off both power switches on the controller shelf.
 . Wait for all LEDs on the controller shelf to turn off.
@@ -111,7 +111,7 @@ Save the packing materials to use when shipping the failed controller canister.
 +
 When a controller has a fault and needs to be replaced, the replacement part number is displayed in the Details area of the Recovery Guru. If you need to find this number manually, follow these steps:
 
-.. Select *Hardware*.
+.. Select menu:Hardware[Controllers and components].
 .. Locate the controller shelf, which is marked with the controller icon.
 .. Click the controller icon.
 .. Select the controller, and click *Next*.
@@ -139,8 +139,7 @@ save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filen
 . If the controller is not already offline, take it offline now using SANtricity System Manager.
 
 ** From SANtricity System Manager:
-.. Select *Hardware*.
-.. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
+.. Select menu:Hardware[Controllers and components].
 .. Select the controller that you want to place offline.
 .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 +
@@ -250,8 +249,7 @@ The file is saved in the Downloads folder for your browser with the name, *suppo
 . Bring the controller online using SANtricity System Manager.
 
 ** From SANtricity System Manager:
-.. Select *Hardware*.
-.. If the graphic shows the drives, select *Show back of shelf*.
+.. Select menu:Hardware[Controllers and components].
 .. Select the controller you want to place online.
 .. Select *Place Online* from the context menu, and confirm that you want to perform the operation.
 +
@@ -270,9 +268,9 @@ If the status is not Optimal or if any of the Attention LEDs are on, confirm tha
 NOTE: If you cannot resolve the problem, contact technical support.
 If needed, collect support data for your storage array using SANtricity System Manager.
 . Verify that all volumes have been returned to the preferred owner.
-.. Select *Storage › Volumes*. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select *More › Change ownership* to view volume owners.
+.. Select *Storage › Volumes*. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select *ellipse icon › Change ownership* to view volume owners.
 .. If volumes are all owned by preferred owner continue to step 5.
-.. If none of the volumes are returned, you must manually return the volumes. Go to *More › Redistribute volumes*.
+.. If none of the volumes are returned, you must manually return the volumes. Go to *ellipse icon › Redistribute volumes*.
 .. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution, you must check the Recovery Guru for host connectivity issues.
 .. If there is no Recovery Guru present or if after following the recovery guru steps the volumes are still not returned to their preferred owners, contact support.
 . Collect support data for your storage array using SANtricity System Manager.

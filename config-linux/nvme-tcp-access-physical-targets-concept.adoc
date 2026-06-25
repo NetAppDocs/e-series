@@ -1,10 +1,10 @@
 ---
-permalink: config-linux/nvme-roce-access-physical-targets-concept.html
+permalink: config-linux/nvme-tcp-access-physical-targets-concept.html
 sidebar: sidebar
 keywords: NVMe volume physical, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: You can configure the I/O directed to the device target based on your Linux version.
 ---
-= Accessing NVMe volumes for an E-Series target from the host - Linux (NVMe over RoCE)
+= Accessing NVMe volumes for an E-Series target from the host - Linux (NVMe over TCP)
 :icons: font
 :imagesdir: ../media/
 
@@ -15,7 +15,7 @@ For RHEL 9, RHEL 10, SLES 15 and SLES 16 a Native NVMe multipathing solution man
 
 == NVMe devices are I/O targets
 
-. Enter the following commannd to locate volumes mapped to this host from an E-Series array.
+. Enter the following command to locate volumes mapped to this host from an E-Series array.
 +  
 The following command provides the low level NVMe device location on your host, the name of the array that device is mapped to, the Volume name, the NSID, the unique Volume ID, the current owning controller and the size of the volume. 
 +
@@ -29,7 +29,7 @@ The following command provides the low level NVMe device location on your host, 
 
 . Run I/O to the links in `/dev/disk/by-id/nvme-eui.[Volume ID#]`.
 +
-The links in `/dev/disk/by-id/nvme-eui.[Volume ID#]` are are deterministic and will not change. Avoid using the low level NVMe device location `(/dev/nvme[subsys#]n[id#])` as it is subject to change. The link between these two locations can be found using the following command:
+The links in `/dev/disk/by-id/nvme-eui.[Volume ID#]` are deterministic and will not change. Avoid using the low level NVMe device location `(/dev/nvme[subsys#]n[id#])` as it is subject to change. The link between these two locations can be found using the following command:
 + 
 ----
 # ls /dev/disk/by-id/ -l
@@ -43,7 +43,7 @@ lrwxrwxrwx 1 root root 13 May 19 15:07 nvme-eui.00001b81606ec75b00a0980000ed289e
 . To view the paths to the NVMe devices, use the `nvme list-subsys` command.
 +
 I/O run to `/dev/disk/by-id/nvme-eui.[uuid#]` will be passed directly through
-`/dev/nvme[subsys#]n[id#]`` which has all paths virtualized underneath it using the Native NVMe multipathing solution.
+`/dev/nvme[subsys#]n[id#]` which has all paths virtualized underneath it using the Native NVMe multipathing solution.
 + 
 ----
 # nvme list-subsys /dev/nvme0n1
@@ -89,4 +89,4 @@ size=4194304 features='n/a' hwhandler='ANA' wp=rw
 NOTE: This command only works on RHEL 9 or earlier and SLES 16 or earlier.  
 
 .What's next?
-With the I/O running to the NVMe devices, link:nvme-roce-create-filesystems-sles-15-task.html[create the filesystems].
+With the I/O running to the NVMe devices, link:nvme-tcp-create-filesystems-sles-15-task.html[create the filesystems].

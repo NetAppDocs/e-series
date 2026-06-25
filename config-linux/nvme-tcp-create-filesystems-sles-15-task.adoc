@@ -1,10 +1,10 @@
 ---
-permalink: config-linux/nvme-roce-create-filesystems-sles-15-task.html
+permalink: config-linux/nvme-tcp-create-filesystems-sles-15-task.html
 sidebar: sidebar
 keywords: file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: For RHEL 9, RHEL 10, SLES 15, and SLES 16, you create a filesystem on the native nvme device and mount the filesystem.
 ---
-= Create filesystems in E-Series - Linux (NVMe over RoCE)
+= Create filesystems in E-Series - Linux (NVMe over TCP)
 :icons: font
 :imagesdir: ../media/
 
@@ -13,7 +13,7 @@ For RHEL 9, RHEL 10, SLES 15, and SLES 16, you create a filesystem on the native
 
 .Before you begin
 
-Make sure you have completed the link:nvme-roce-access-physical-targets-concept.html[accessing NVMe volumes for an E-Series target from the host] task to ensure the NVMe devices are properly configured and accessible.
+Make sure you have completed the link:nvme-tcp-access-physical-targets-concept.html[accessing NVMe volumes for an E-Series target from the host] task to ensure the NVMe devices are properly configured and accessible.
 
 .Steps
 
@@ -48,4 +48,4 @@ Writing superblocks and filesystem accounting information: done
 ----
 
 .What's next?
-After you create the filesystems, link:nvme-roce-worksheet-for-concept.html[record your NVMr over RoCE configuration information].
+After you create the filesystems, link:nvme-tcp-worksheet-for-concept.html[record your NVMe over TCP configuration information].

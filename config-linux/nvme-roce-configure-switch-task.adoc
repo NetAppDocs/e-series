@@ -4,17 +4,30 @@ sidebar: sidebar
 keywords: configure switch, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: You configure the switches according to the vendor’s recommendations for NVMe over RoCE. These recommendations might include both configuration directives as well as code updates.
 ---
-= Configure the switch in E-Series - Linux (NVMe over RoCE)
+= Configure the switches in E-Series - Linux (NVMe over RoCE)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 You configure the switches according to the vendor's recommendations for NVMe over RoCE. These recommendations might include both configuration directives as well as code updates.
 
-CAUTION: *RISK OF DATA LOSS.* You must enable flow control for use with Global Pause Control on the switch to eliminate the risk of data loss in an NVMe over RoCE environment.
+CAUTION: *RISK OF DATA LOSS.* You must run NVMe/RoCE in a lossless environment. Enable end to end flow control using Global Pause Frame based Flow Control or Priority Flow Control (PFC) on your network to eliminate the risk of data loss.
 
-.Steps
+== Global Pause Frames
+Global Pause Frames are the most basic form of flow control and the simplest to implement. When traffic overwhelms a network port, pause frames are generated halting all traffic on that port until the previous traffic has been processed enough for the network port to keep up without dropping incoming traffic.
 
-. Enable Ethernet pause frame flow control *end to end* as the best practice configuration.
+.Steps 
+. Enable Global Pause Frame based flow control *end to end* using the documentation provided by your switch vendor. 
+. Ensure the Global Pause Frame based flow control is enabled on all switch ports connected to your hosts, arrays and inter-switch links in this environment. 
 
+== Priority Flow Control
+Priority Flow Control (PFC) is a more complex form of flow control that assigns different priority levels to different types of traffic. When too much traffic is received on one priority it is paused while traffic corresponding to other priority levels are allowed to continue helping to prevent heavy traffic of certain types from slowing other forms of traffic.
+
+At this time, you must be using either an EF600 E-Series Array with 200Gb/s Ethernet HICs (PN 111-04583) running 11.80.1 or an EF80 E-Series Array running with any supported NVMe/RoCE HIC. PFC parameters are hard coded on the array and require NVMe/RoCE traffic to be tagged as Priority 3 with a DSCP value of `106`. 
+
+.Steps  
+. Consult your switch vendor documentation for more information on how to setup your network using the PFC values.
 . Consult your network administrator for tips on selecting the best configuration for your environment.
+
+.What's next?
+After you configure the switches, link:nvme-roce-setup-host-side-task.html[set up the NVMe initiator over RoCE on the host].
