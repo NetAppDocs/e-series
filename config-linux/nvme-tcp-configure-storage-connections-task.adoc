@@ -57,7 +57,16 @@ Select the desired speed. The options that appear in the drop-down list depend o
  ** 100 Gbps
  ** 200 Gbps
 
-NOTE: The configured NVMe over TCP port speed should match the speed capability of the SFP on the selected port. All ports must be set to the same speed.
+NOTE: The configured NVMe over TCP port speed should match the speed capability of the SFP on the selected port.
+a|
+Configured forward error correction (FEC) mode
+a|
+Select the desired FEC mode. The options that appear in the drop-down list depend on the currently selected speed and only list the options supported with that speed. Not all FEC modes are available for all speeds. Possible values include:
+
+    ** None
+    ** Reed-Solomon
+    ** Fire Code
+    ** Automatic
 a|
 Enable IPv4 and/or Enable IPv6
 a|

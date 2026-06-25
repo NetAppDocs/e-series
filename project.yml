@@ -312,8 +312,6 @@ sidebar:
                     url: "/config-linux/nvme-roce-verify-linux-config-support-task.html"
                   - title: Configure IP addresses using DHCP
                     url: "/config-linux/nvme-roce-configure-ip-address-dhcp-task.html"
-                  - title: Install SANtricity Storage Manager
-                    url: "/config-linux/nvme-roce-install-smcli-11-53-task.html"
                   - title: Access SANtricity System Manager
                     url: "/config-linux/nvme-roce-access-sam-setup-wizard-task.html"
                   - title: Configure switch

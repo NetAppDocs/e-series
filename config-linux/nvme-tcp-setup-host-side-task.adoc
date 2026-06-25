@@ -17,7 +17,7 @@ You must be running the latest compatible RHEL 9, RHEL 10, SLES 15 or SLES 16 se
 
 .Steps
 
-. Install the nvme-cli package:
+. If you are using the inbox ethernet driver for your HCA, install the `nvme-cli` package as follows:
 +
 *SLES 15 or SLES 16*
 +
@@ -32,6 +32,8 @@ You must be running the latest compatible RHEL 9, RHEL 10, SLES 15 or SLES 16 se
 
 # yum install nvme-cli
 ----
++
+If you are using an NVIDIA HCA and wish to use the external DOCA driver, please refer to the link:https://developer.nvidia.com/doca-downloads[NVIDIA documentation] for information how to properly install it in this environment.
 
 . For RHEL 9, install network scripts:
 +

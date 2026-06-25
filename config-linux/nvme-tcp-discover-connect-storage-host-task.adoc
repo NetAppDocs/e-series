@@ -30,26 +30,30 @@ In this command, `target_ip_address` is the IP address of the target port.
 NOTE: The `nvme discover` command discovers all controller ports in the subsystem, regardless of host access.
 +
 ----
-# nvme discover -t tcp -a 192.168.1.77
-Discovery Log Number of Records 2, Generation counter 0
+# nvme discover -t tcp -a 192.168.134.101
+Discovery Log Number of Records 12, Generation counter 0
 =====Discovery Log Entry 0======
 trtype:  tcp
-adrfam:  ipv4
+adrfam:  ipv6
 subtype: nvme subsystem
 treq:    not specified
 portid:  0
 trsvcid: 4420
-subnqn:  nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94
-traddr:  192.168.1.77
+subnqn:  nqn.1992-08.com.netapp:EF80.6d039ea0005d29280000000069ddb538
+traddr:  fe80:0:0:0:200:ff:fe00:1
+eflags:  none
+sectype: none
 =====Discovery Log Entry 1======
 trtype:  tcp
-adrfam:  ipv4
+adrfam:  ipv6
 subtype: nvme subsystem
 treq:    not specified
-portid:  1
+portid:  0
 trsvcid: 4420
-subnqn:  nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94
-traddr:  192.168.2.77
+subnqn:  nqn.1992-08.com.netapp:EF80.6d039ea0005d29280000000069ddb538
+traddr:  fd23:0:0:0:192:168:131:101
+eflags:  none
+sectype: none
 ----
 
 . Repeat step 2 for any other connections.
@@ -66,8 +70,7 @@ NOTE: The recommended queue depth setting is 1024. Override the default setting 
 NOTE: The recommended controller loss timeout period in seconds is 60 minutes (3600 seconds). Override the default setting of 600 seconds with 3600 seconds using the `-l 3600` command line option, as shown in the following example.
 +
 ----
-# nvme connect -t tcp -a 192.168.1.77 -n nqn.1992-
-08.com.netapp:EF80.600a098000a527a7000000005ab3af94 -Q 1024 -l 3600 
+# nvme connect -t tcp -a 192.168.134.101 -n nqn.1992-08.com.netapp:EF80.6d039ea0005d29280000000069ddb538 -Q 128 -l 3600
 ----
 
 . Repeat step 4 to connect the discovered subsystem on the second path.
