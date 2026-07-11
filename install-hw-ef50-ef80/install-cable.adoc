@@ -9,7 +9,7 @@ summary: After you install your EF50 or EF80 storage system hardware, cable the 
 :imagesdir: ../media/
 
 [.lead]
-After you install your EF50 or EF80 storage system hardware, cable the inter-controller mirroring and host network connections. (You cable the management ports later in the Complete storage system setup section.)
+After you install your EF50 or EF80 storage system hardware, cable the inter-controller mirroring, host network connections, and SAS shelves if applicable. (You cable the management ports later in the Complete storage system setup section.)
 
 .About this task
 
