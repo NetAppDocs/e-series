@@ -364,6 +364,7 @@ Connect the three shelves together (shelf-to-shelf connections) and then connect
 .. Cable controller B port 3c to shelf 3 IOMB port 1.
 .. Cable controller B port 3d to shelf 3 IOMB port 2.
 
+When you are done cabling the shelves, the cabling should look like the following:
 +
 image:../media/drw_ef50-ef80_3_de460c_cabling_ieops-xxxx.svg[cable controllers to de460c shelves 1 and 3]
 
