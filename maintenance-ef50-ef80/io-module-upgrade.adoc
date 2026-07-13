@@ -51,7 +51,7 @@ include::../_include/ge_io_module_upgrade_install_additional_modules.adoc[]
 
 == Step 4: Power on both controllers
 
-Power on both controllers, check that communication between the controllers is reestablished, and then confirm the controllers are back online.
+Power on both controllers, check that communication between the controllers is reestablished, and then confirm the controllers are functioning properly.
 
 include::../_include/ge_io_module_upgrade_power_on_controllers.adoc[]
 

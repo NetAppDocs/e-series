@@ -8,7 +8,8 @@
 . Make sure you have the following:
 * The new I/O modules that you are upgrading to.
 +
-Make sure that the I/O modules you are upgrading to are supported by your storage system, that you have the same type and number of I/O modules for each controller, and that you understand the slot priority (the new I/O module must be installed in the same slot on each controller).
+Make sure that the I/O modules you are upgrading to are supported by your storage system and version of SANtricity, that you have the same type and number of I/O modules for each controller, and that you understand the slot priority (the new I/O module must be installed in the same slot on each controller).
+//SAS expansion I/O modules are only supported on SANtricity 12.10 and later.
 +
 You can confirm supported I/O modules and slot priority for your storage system at https://hwu.netapp.com[NetApp Hardware Universe^].
 +

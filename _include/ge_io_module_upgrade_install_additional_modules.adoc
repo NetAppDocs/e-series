@@ -3,7 +3,7 @@
 .About this task
 * You begin with one controller, and then repeat steps for the other controller.
 
-* The illustration shows the removal of an I/O module from controller slot 2. Depending on the type of I/O module you are upgrading to, the controller slot can be different.
+* The illustration shows the removal of an I/O module from slot 2. Depending on the type of I/O module you are upgrading to, the slot can be different.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
@@ -44,6 +44,6 @@ You can use the tab on the left and the thumbscrew to push in the I/O module.
 +
 * For host network cabling, you can use the link:../install-hw-ef50-ef80/install-cable.html[Cable the hardware^] section of the system installation and setup content for host network cabling.
 +
-* For SAS expansion shelf cabling, you can use the Hot-add a drive shelf - IOM12, IM12B, or IOM12C drive shelf link:../install-hw-cabling/driveshelf-cable-task.html[Hot-add a drive shelf - IOM12, IOM12B, or IOM12C drive shelf^] procedure.
+* For SAS expansion shelf cabling, you can use the link:../install-hw-cabling/hotadd-drive-shelf-task.html[Hot-add a drive shelf (E-Series)^] procedure.
 
 . Repeat these steps to upgrade an I/O module in the other controller.
