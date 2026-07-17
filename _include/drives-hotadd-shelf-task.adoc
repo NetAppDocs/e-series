@@ -5,9 +5,11 @@ Due to the complexity of this procedure, the following is recommended:
 * Read all steps before beginning the procedure.
 * Ensure hot adding a drive shelf is the procedure you need.
 * Verify that the version of SANtricity your storage system is running supports SAS expansion shelves. 
-* Your controllers must already have SAS I/O modules installed; otherwise, you need to first install the SAS I/O modules.
+* Your storage system must have available SAS ports. This means SAS I/O modules (cards) must already be installed. If they are not, use the applicable procedure for your storage system model:
 +
-See the _Upgrade I/O Modules_ procedure for your storage system model in the _Maintain systems_ section.
+** For EF50 and EF80 storage systems, use the link:..maintenance-ef50-ef80/io-module-upgrade[Upgrade I/O Modules] procedure.
+** For older storage systems, use the _SAS expansion cards_ procedure for your storage system model in the _Maintain systems_ section.
+
 
 
 .About this task
@@ -18,11 +20,13 @@ See the _Upgrade I/O Modules_ procedure for your storage system model in the _Ma
 +
 NOTE: IOM12C modules are only supported on SANtricity OS 11.90R3 onward. Ensure your controller's firmware has been updated before installing or upgrading to an IOM12C.
 
-* To cable the new shelf, you recable the A-side controller-to-shelf connections and shelf-to-shelf connections, verify the A-side path is active, and then recable the B-side controller-to-shelf connections and shelf-to-shelf connections....and verify?
+* To maintain system integrity during the hot-add procedure, you must always maintain one active path. You must follow the procedure exactly in the order presented.
++
+To cable the new shelf, you recable the A-side controller-to-shelf connections and add shelf-to-shelf connections, verify the A-side path is active, and then recable the B-side controller-to-shelf connections and add shelf-to-shelf connections....and verify?
 
 * If you are cabling an older controller shelf to a DE212C, DE224C, or DE460, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf^].
 
-* To maintain system integrity, you must follow the procedure exactly in the order presented.
+
 
 == Step 1: Prepare to add the drive shelf
 
