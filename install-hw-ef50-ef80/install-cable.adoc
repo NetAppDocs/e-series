@@ -332,7 +332,9 @@ Cable each controller to each IOM12 module on the DE460C shelf.
 . Cable controller B port 3b to shelf IOMA port 4.
 . Cable controller B port 3c to shelf IOMB port 1.
 . Cable controller B port 3d to shelf IOMB port 2.
-+
+
+When you are done cabling the shelf, the cabling should look like the following:
+
 image:../media/drw_ef50-ef80_1_de460c_cabling_ieops-2981.svg[cable controller ports to one DE460C shelf]
 
 --
@@ -365,8 +367,8 @@ Connect the three shelves together (shelf-to-shelf connections) and then connect
 .. Cable controller B port 3d to shelf 3 IOMB port 2.
 
 When you are done cabling the shelves, the cabling should look like the following:
-+
-image:../media/drw_ef50-ef80_3_de460c_cabling_ieops-xxxx.svg[cable controllers to de460c shelves 1 and 3]
+
+image:../media/drw_ef50-ef80_3_de460c_cabling_ieops-2992.svg[cable controllers to de460c shelves 1 and 3]
 
 --
 
