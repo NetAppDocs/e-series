@@ -335,10 +335,6 @@ Internal shelves (storage), which are integrated within the controllers, are ass
 * You must power cycle a shelf (turn off the power switch on each of the power supplies of the SAS shelf, wait the appropriate amount of time, and then switch the power back on) for the shelf ID to take effect.
 
 .Steps
-. Power on the shelf by connecting the power cords first to the shelf, securing them in place with the power cord retainer, connecting the power cords to power sources on different circuits, and then turning on the power switch on each of the power supplies (at the rear of the shelf).
-+
-The shelf powers on and boots automatically when powered on. 
-
 . Remove the left end cap to access the orange shelf ID button on the faceplate.
 +
 image::../media/drw_shelf_id_sas_ieops-2187.svg[Change sas shelf ID]
@@ -407,7 +403,7 @@ When a power supply is powered on, the bicolored LED should illuminate green.
 . Replace the left end cap.
 
 
-== Step 5: Complete hot add
+== Step 5: Complete the hot add
 
 You complete the hot add by checking for any errors and confirming that the newly added drive shelf uses the latest firmware.
 
