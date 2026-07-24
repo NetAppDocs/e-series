@@ -7,9 +7,8 @@
 
 * Your storage system must have available SAS ports. This means SAS I/O modules (cards) must already be installed. If they are not, use the applicable procedure to install the SAS I/O modules:
 +
-** For EF50 and EF80 storage systems, use the link:..maintenance-ef50-ef80/io-module-upgrade.html[Upgrade I/O Modules^] procedure.
+** For EF50 and EF80 storage systems, use the link:../maintenance-ef50-ef80/io-module-upgrade.html[Upgrade I/O Modules^] procedure.
 ** For older storage systems, use the _SAS expansion cards_ procedure for your storage system model in the _Maintain systems_ section.
-
 
 
 .About this task
