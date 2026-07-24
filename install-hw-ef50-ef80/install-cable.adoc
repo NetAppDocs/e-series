@@ -305,7 +305,7 @@ The following procedures show how to cable the controllers to one DE460C shelf o
 
 * For the maximum number of shelves supported for your storage system and all of your cabling options, such as optical, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
-* The graphics show controller A cabling in blue and controller B cabling in yellow.
+* The cabling graphics show controller A cabling in blue and controller B cabling in red.
 
 * You use the storage cables that came with your storage system, which could be the following cable type:
 +
@@ -320,7 +320,7 @@ image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[mini-SAS HD cable,width
 
 .Option 1: One DE460C shelf
 --
-Cable each controller to each IOM12 module on the DE460C shelf. 
+Cable each controller to each IOM12 module on the DE460C shelf so that the controllers have an A-side path (IOMA) and a B-side path (IOMB) to the shelf. 
 
 .Steps
 

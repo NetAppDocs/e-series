@@ -116,7 +116,7 @@ You have updated your firmware to the latest version. To update your firmware, f
 +
 To maintain one active path during this procedure, you recable the A-side (shelf IOMA) controller-to-shelf connections and add shelf-to-shelf connections, verify the A-side path is active, and then recable the B-side (shelf IOMB) controller-to-shelf connections and add shelf-to-shelf connections.
 
-* In the cabling illustrations, the gray ports and cables represent the existing cabling that remains in place while you perform the cabling steps. The dashed lines (blue and red) represent the existing cabling that you are moving in the cabling steps.
+* In the cabling illustrations, controller A connections are shown in blue and controller B connections are shown in red. The dashed lines (blue and red) represent the existing cabling that you are moving to perform cabling steps. The gray ports and lines represent the existing cabling that remains in place while you perform cabling steps.
 
 * This procedure has steps for hot-adding up to two shelves. If you are hot-adding more than two shelves, repeat the steps for hot-adding a second shelf for each additional shelf.
 +
