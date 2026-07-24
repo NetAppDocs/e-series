@@ -104,7 +104,7 @@ If you are cabling an older controller shelf to a DE212C, DE224C, or DE460C, see
 .Connect the drive shelf for EF50 or EF80
 --
 
-This procedure instructs you on how to hot-add an initial external SAS shelf to your EF50 or EF80 storage system and how to recable the initial shelf to hot-add additional shelves.
+This procedure instructs you on how to hot-add an initial SAS expansion shelf to your EF50 or EF80 storage system and how to recable the initial shelf to hot-add a second shelf; however, this procedure can be applied when adding additional shelves.
 
 .Before you begin
 
@@ -112,15 +112,16 @@ You have updated your firmware to the latest version. To update your firmware, f
 
 .About this task
 
-* If you are hot-adding additional shelves to one existing external SAS shelf, this procedure has you recable the controller-to-shelf connections so that you always maintain one active path to the controller shelf. 
+* If you are hot-adding an additional shelf to existing shelves, this procedure has you recable the controller-to-shelf connections so that you always maintain one active path to the controller shelf. 
 +
 To maintain one active path during this procedure, you recable the A-side (shelf IOMA) controller-to-shelf connections and add shelf-to-shelf connections, verify the A-side path is active, recable the B-side (shelf IOMB) controller-to-shelf connections and add shelf-to-shelf connections, and then verify redundancy has been reestablished (Optimal status is indicated).
 
+* This procedure has steps for hot-adding up to two shelves. However, if you are hot-adding an additional shelf, start with step 2 and apply the steps to the additional (new) shelf.
++
+You always move cables from the last shelf in the stack to the same IOMs and IOM ports on the new shelf, and then connect the new shelf to the previous last shelf in the stack (shelf-to-shelf connections).
+
 * In the cabling illustrations, controller A connections are shown in blue and controller B connections are shown in red. The dashed lines (blue and red) represent the existing cabling that you are moving to perform cabling steps. The gray ports and lines represent the existing cabling that remains in place while you perform cabling steps.
 
-* This procedure has steps for hot-adding up to two shelves. If you are hot-adding more than two shelves, repeat the steps for hot-adding a second shelf for each additional shelf.
-+
-You always move cables from the last shelf in the stack to the same IOMs and IOM ports on the new shelf, and then connect the new shelf to the previous last shelf in the stack.
 
 .Steps
 
@@ -138,7 +139,7 @@ When you are done cabling the shelf, the cabling should look like the following:
 +
 image::../media/drw_ef50-ef80_1_de460c_cabling_ieops-2981.svg[cable the initial shelf]
 +
-. To hot-add a second external SAS shelf (shelf 2), recable the A-side controller-to-shelf connections and add A-side shelf-to-shelf connections, as follows:
+. To hot-add a second SAS expansion shelf (shelf 2), recable the A-side controller-to-shelf connections and add A-side shelf-to-shelf connections, as follows:
 .. Disconnect the cable from shelf 1 IOMA port 1 and reconnect it to shelf 2 IOMA port 1.
 .. Disconnect the cable from shelf 1 IOMA port 2 and reconnect it to shelf 2 IOMA port 2.
 .. Connect shelf 1 IOMA port 1 to shelf 2 IOMA port 4.
@@ -151,7 +152,7 @@ image::../media/drw_ef50-ef80_2nd_de460c_cabling_hotadd_a-side_ieops-2998.svg[ad
 
 . In SANtricity System Manager, click menu:Hardware[Controllers and components].
 +
-NOTE: At this point in the procedure, you have only one active path to the controller shelf.
+NOTE: If you are adding a second SAS expansion shelf, at this point in the procedure, you have only one active path to the controller shelf.
 
 . Scroll down, as necessary, to see all the drive shelves in the new storage system. If the new drive shelf is not displayed, resolve the connection issue.
 . Select the *ESMs/IOMs* icon for the new drive shelf.
@@ -162,12 +163,12 @@ The *Shelf Component Settings* dialog box appears.
 
 . Select the *ESMs/IOMs* tab in the *Shelf Component Settings* dialog box.
 . Select *Show more options*, and verify the following:
- ** IOM/ESM A is listed.
+ ** If you are adding the initial SAS expansion shelf, IOM/ESM A and IOM/ESM B are listed. If you are adding a second SAS expansion shelf, IOM/ESM A is listed.
  ** Current data rate is 12 Gbps for a SAS-3 drive shelf.
  ** Card communications is OK.
 
 
-. Recable the B-side controller-to-shelf connections and add B-side shelf-to-shelf connections, as follows:
+. If you are adding a second SAS expansion shelf, recable the B-side controller-to-shelf connections and add B-side shelf-to-shelf connections, as follows:
 .. Disconnect the cable from shelf 1 IOMB port 1 and reconnect it to shelf 2 IOMB port 1.
 .. Disconnect the cable from shelf 1 IOMB port 2 and reconnect it to shelf 2 IOMB port 2.
 .. Connect shelf 1 IOMB port 1 to shelf 2 IOMB port 3.
@@ -177,7 +178,7 @@ When you are done recabling the B-side connections, the cabling should look like
 +
 image::../media/drw_ef50-ef80_2nd_de460c_cabling_hotadd_b-side_ieops-3007.svg[add second shelf and recable the b side connections]
 
-. When you are done recabling the two shelves, the cabling should look like the following:
+. If you are adding a second SAS expansion shelf, when you are done recabling the two shelves, the cabling should look like the following:
 +
 image::../media/drw_ef50-ef80_2nd_de460c_cabling_hotadd_final_ieops-3012.svg[example of cabling for two hot added shelves]
 +
