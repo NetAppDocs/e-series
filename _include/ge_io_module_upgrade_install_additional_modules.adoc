@@ -44,6 +44,6 @@ You can use the tab on the left and the thumbscrew to push in the I/O module.
 +
 * For host network cabling, you can use the link:../install-hw-ef50-ef80/install-cable.html[Cable the hardware^] section of the system installation and setup content for host network cabling.
 +
-* For SAS expansion shelf cabling, you can use the link:../install-hw-cabling/hotadd-drive-shelf-task.html[Hot-add a drive shelf (E-Series)^] procedure.
+* For SAS expansion shelf cabling, you can use the link:../install-hw-cabling/hotadd-drive-shelf-task.html[Hot-add a drive shelf - E-Series^] procedure.
 
 . Repeat these steps to upgrade an I/O module in the other controller.

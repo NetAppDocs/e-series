@@ -26,7 +26,7 @@ NOTE: IOM12C modules are only supported on SANtricity OS 11.90R3 onward. Ensure 
 
 * To maintain system integrity during the hot-add procedure, you must always maintain one active path. You must follow the procedure exactly in the order presented.
 +
-To cable the new shelf, you recable the A-side controller-to-shelf connections and add shelf-to-shelf connections, verify the A-side path is active, and then recable the B-side controller-to-shelf connections and add shelf-to-shelf connections....and verify?
+To cable the new shelf, you recable the A-side (shelf IOM A) controller-to-shelf connections and add shelf-to-shelf connections, verify the A-side path is active, recable the B-side (shelf IOMB) controller-to-shelf connections and add shelf-to-shelf connections, and then verify redundancy has been reestablished (Optimal status is indicated).
 
 * If you are cabling an older controller shelf to a DE212C, DE224C, or DE460C, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf^].
 
@@ -114,7 +114,7 @@ You have updated your firmware to the latest version. To update your firmware, f
 
 * If you are hot-adding additional shelves to one existing external SAS shelf, this procedure has you recable the controller-to-shelf connections so that you always maintain one active path to the controller shelf. 
 +
-To maintain one active path during this procedure, you recable the A-side (shelf IOMA) controller-to-shelf connections and add shelf-to-shelf connections, verify the A-side path is active, and then recable the B-side (shelf IOMB) controller-to-shelf connections and add shelf-to-shelf connections.
+To maintain one active path during this procedure, you recable the A-side (shelf IOMA) controller-to-shelf connections and add shelf-to-shelf connections, verify the A-side path is active, recable the B-side (shelf IOMB) controller-to-shelf connections and add shelf-to-shelf connections, and then verify redundancy has been reestablished (Optimal status is indicated).
 
 * In the cabling illustrations, controller A connections are shown in blue and controller B connections are shown in red. The dashed lines (blue and red) represent the existing cabling that you are moving to perform cabling steps. The gray ports and lines represent the existing cabling that remains in place while you perform cabling steps.
 
