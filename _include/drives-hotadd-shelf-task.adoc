@@ -124,7 +124,7 @@ You always move cables from the last shelf in the stack to the same IOMs and IOM
 
 .Steps
 
-. To hot-add one SAS shelf that is the initial external SAS shelf, complete the following substeps; otherwise, go to the next step.
+. To hot-add one SAS shelf that is the initial SAS expansion shelf, complete the following substeps; otherwise, go to the next step.
 .. Connect controller A port 3a to the shelf IOMA port 1.
 .. Connect controller A port 3b to the shelf IOMA port 2.
 .. Connect controller A port 3c to the shelf IOMB port 3.
