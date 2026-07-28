@@ -340,7 +340,7 @@ image:../media/drw_ef50-ef80_1_de460c_cabling_ieops-2981.svg[cable controller po
 --
 .Option 2: Three DE460C shelves
 --
-Connect the three shelves together (shelf-to-shelf connections) and then connect each controller to each end of the stack (shelf 1 and shelf 3).
+Connect the three shelves together (shelf-to-shelf connections) and then connect each controller to each end of the shelf stack (shelf 1 and shelf 3) so that the controllers have an A-side path (IOMA) and a B-side path (IOMB) to the shelf stack.
 
 . Cable the shelf-to-shelf connections for the IOMA path:
 .. Cable shelf 1 IOMA port 1 to shelf 2 IOMA port 4.
@@ -354,13 +354,13 @@ Connect the three shelves together (shelf-to-shelf connections) and then connect
 .. Cable shelf 2 IOMB port 1 to shelf 3 IOMB port 3.
 .. Cable shelf 2 IOMB port 2 to shelf 3 IOMB port 4.
 
-. Cable controller A to shelf 3 and 1:
+. Cable controller A to shelf 3 (IOMA path) and 1 (IOMB path):
 .. Cable controller A port 3a to shelf 3 IOMA port 1
 .. Cable controller A port 3b to shelf 3 IOMA port 2.
 .. Cable controller A port 3c to shelf 1 IOMB port 3.
 .. Cable controller A port 3d to shelf 1 IOMB port 4.
 
-. Cable controller B to to shelf 1 and 3:
+. Cable controller B to to shelf 1 (IOMA path) and 3 (IOMB path):
 .. Cable controller B port 3a to shelf 1 IOMA port 3.
 .. Cable controller B port 3b to shelf 1 IOMA port 4.
 .. Cable controller B port 3c to shelf 3 IOMB port 1.
