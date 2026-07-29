@@ -13,6 +13,31 @@ summary: New features in SANtricity OS.
 [.lead]
 The following table describes new features in the latest SANtricity OS releases for embedded management of EF80, EF50, E4000, EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
 
+== New features in Version 12.10
+
+[cols="35h,~",options="header"]
+|===
+|New feature |Description
+a|SAS expansion support for EF50 and EF80 storage systems
+a|The EF50 and EF80 storage systems now support SAS expansion, allowing for increased storage capacity and flexibility. With SAS expansion, you can connect additional storage enclosures to the EF50 and EF80 systems, enabling you to scale your storage environment as needed. This feature is particularly beneficial for organizations that require high-capacity storage solutions and want to maximize their investment in the EF50 and EF80 platforms.
+
+a|NVMe over TCP support for E-Series storage systems
+a|The E-Series storage systems now support NVMe over TCP, providing an additional host interface option for high-performance storage access. NVMe over TCP allows for efficient and low-latency communication between the storage system and connected hosts, leveraging the benefits of the NVMe protocol over standard TCP/IP networks. This support enhances the versatility of the E-Series systems, enabling organizations to deploy them in environments where NVMe over TCP is preferred or required.
+
+a|User Interface enhancements for SANtricity System Manager
+a|The SANtricity System Manager user interface has received additional enhancements to improve navigation, usability, and overall user experience. These enhancements include updated layout and organization of management tasks, and more intuitive workflows for common storage management operations. 
+
+a|Expanded E-Series platform support for new SANtricity System Manager user interface
+a|The new user interface for SANtricity System Manager, which was introduced in the SANtricity 12.00 release for the EF80 and EF50 storage systems, has been expanded to support additional E-Series storage platforms. This means that users managing a wider range of E-Series storage systems can now benefit from the modernized interface and enhanced usability features. The expanded support includes compatibility with select models of E-Series storage systems, allowing users to take advantage of the improved navigation and streamlined management tasks across more of their storage infrastructure. 
+
+a|Increased character limit for volume names
+a|The character limit for volume names has been increased from 30 to 60 characters.
+
+a|Minimum inactivity timeout limit for SANtricity System Manager user interface now 10 minutes
+a|The inactivity timeout limit for the SANtricity System Manager user interface has been updated to a minimum of 10 minutes. Previously, the minimum inactivity timeout limit was 15 minutes. This change helps to enhance security by ensuring that the user interface automatically logs out after 10 minutes of inactivity.
+
+|===
+
 == New features in Version 12.0R1
 
 This version contains only minor changes and no new features. For more information on the changes in this release, please refer to the E-Series SANtricity OS 12.0R1 README.

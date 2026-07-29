@@ -63,6 +63,7 @@ Available with the following interfaces:
 +
 * 64Gb NVMe / Fibre Channel
 * 64Gb Fibre Channel
+* 25Gb iSCSI
 --
 
 .EF80 models
@@ -93,7 +94,8 @@ Interfaces::
 +
 Available with the following interfaces:
 +
-* 200Gb NVMe / RoCE
+* 200Gb NVMe / TCP
+* 200Gb or 100Gb NVMe / RoCE
 * 64Gb NVMe / Fibre Channel
 * 200Gb NVMe / IB
 * 64Gb Fibre Channel
@@ -124,6 +126,7 @@ Interfaces::
 +
 Available with the following interfaces:
 +
+* 25Gb iSCSI 
 * 12Gb SAS
 * 1Gb or 10Gb Base-T iSCSI
 * 1Gb, 10Gb, or 25Gb iSCSI
