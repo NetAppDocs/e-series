@@ -305,6 +305,8 @@ The following procedures show how to cable the controllers to one DE460C shelf o
 
 * For the maximum number of shelves supported for your storage system and all of your cabling options, such as optical, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
+* The cabling procedures show controllers with one SAS I/O module in slot 3. To see all supported SAS I/O module configurations, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
+
 * The cabling graphics show controller A cabling in blue and controller B cabling in red.
 
 * You use the storage cables that came with your storage system, which could be the following cable type:
