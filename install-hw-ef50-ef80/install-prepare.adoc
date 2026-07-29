@@ -86,6 +86,10 @@ a|
 == Step 4: Register your storage system
 After you've ensured that your site meets the specifications for your storage system, and you've verified that you have all the parts you ordered, you should register your storage system.
 
+NOTE: You can register your storage system now or later. You will be prompted to register you system when you first log in to the management software after you power on the storage system. IS THIS TRUE????
+
+NEED to finalize this content and then reuse for EF300/600 and E4000!!!!!!!!!!!!!!!!
+
 . Create an account and register your hardware at http://mysupport.netapp.com/[NetApp Support^].
 +
 The registration process requires the Serial Number (SN) for each controller. You can find the serial number in the following locations:
@@ -96,6 +100,10 @@ The registration process requires the Serial Number (SN) for each controller. Yo
 +
 image::../media/drw_ef50-ef80_sn_label_ieops-2689.svg[example of the serial number label]
 
+. Locate your storage system's serial number.
+. See the NetApp Knowledge Base Article link:..https://kb.netapp.com/nss/System_Registration/How_to_register_a_new_system_on_the_NetApp_Support_Site[How to register your system].
+
 .What's next?
 After preparing to install your storage system, link:install-hardware.html[install the hardware].
 
+// Aug 2026: updated to add new system registration content for 12.10
