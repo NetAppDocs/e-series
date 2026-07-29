@@ -19,7 +19,7 @@ NOTE: IOM12C modules are only supported on SANtricity OS 11.70.2 onward. Ensure 
 
 * If you are cabling an older controller shelf to a DE212C, DE224C, or DE460, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf^].
 
-* If you are cabling an EF50 or EF80 storage system to external SAS shelves as part of a new system installation, see link:../install-hw-ef50-ef80/install-cable.html[Cable the hardware - EF50 and EF80] procedure.
+* If you are cabling an EF50 or EF80 storage system to SAS expansion shelves as part of a new system installation, see link:../install-hw-ef50-ef80/install-cable.html[Cable the hardware - EF50 and EF80] procedure.
 
 == Cabling E2800 and E5700
 
