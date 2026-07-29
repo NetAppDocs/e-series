@@ -6,6 +6,8 @@
 To maintain system integrity during the hot-add procedure, you must always maintain one active path. You must follow the procedure exactly in the order presented.
 +
 To cable the new shelf, you recable the A-side (shelf IOM A) controller-to-shelf connections and add shelf-to-shelf connections, verify the A-side path is active, recable the B-side (shelf IOMB) controller-to-shelf connections and add shelf-to-shelf connections, and then verify redundancy has been reestablished.
++
+NOTE: If you are installing a drive shelf that has previously been installed in a storage system, there are additonal steps you must take.
 
 * Ensure hot adding a drive shelf is the procedure you need. 
 
