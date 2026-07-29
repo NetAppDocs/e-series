@@ -24,7 +24,7 @@ To install the hardware, install the rack-mount hardware in the cabinet or rack,
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:install-cable.html[Cable the hardware]
 [role="quick-margin-para"]
 
-To cable the hardware, cable the controllers to each other to enable inter-controller mirroring, which ensures full system redundancy and is used for cache mirroring and I/O shipping, and then cable the controllers to your host network.
+To cable the hardware, cable the controllers to each other to enable inter-controller mirroring, which ensures full system redundancy and is used for cache mirroring and I/O shipping, then cable the controllers to your host network, and then cable the SAS expansion shelves if applicable.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:install-power-hardware.html[Power on the storage system]
 [role="quick-margin-para"]

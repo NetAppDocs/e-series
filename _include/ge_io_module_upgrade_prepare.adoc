@@ -2,17 +2,23 @@
 .Steps
 
 . Schedule a downtime maintenance window for this procedure. You cannot access data on the storage system until you have successfully completed this procedure. Because both controllers must have the same I/O module configuration when they are powered on, the power must be off when you upgrade I/O modules.
+
+. Update the firmware to the latest version. To update the firmware, follow the instructions in link:../upgrade-santricity/index.html[Upgrading SANtricity OS^]
  
 . Make sure you have the following:
 * The new I/O modules that you are upgrading to.
 +
-Make sure that the I/O modules you are upgrading to are supported by your storage system, that you have the same type and number of I/O modules for each controller, and that you understand the slot priority (the new I/O module must be installed in the same slot on each controller).
+Make sure that the I/O modules you are upgrading to are supported by your storage system and version of SANtricity, that you have the same type and number of I/O modules for each controller, and that you understand the slot priority (the new I/O module must be installed in the same slot on each controller).
+//SAS expansion I/O modules are only supported on SANtricity 12.10 and later.
++
+You can confirm supported I/O modules and slot priority for your storage system at https://hwu.netapp.com[NetApp Hardware Universe^].
++
+NOTE: If you are installing SAS I/O modules to support SAS expansion shelves, controller slot 3 is the only supported slot.
 +
 CAUTION: *Possible loss of data access* -- The presence of incompatible or mismatched I/O modules causes the controllers to lock down when you apply power.
+
 +
-If needed, you can confirm supported I/O modules and slot priority for your storage system at https://hwu.netapp.com[NetApp Hardware Universe^].
-+
-* Cables to connect the new I/O modules to your network.
+* Cables to connect the new I/O modules to your network or SAS expansion shelves.
 * An ESD wristband or you have taken other antistatic precautions.
 * A flat static-free work surface.
 * A management station with a browser that can access SANtricity System Manager for the controllers.

@@ -2,14 +2,14 @@
 permalink: maintenance-ef50-ef80/io-module-overview.html
 sidebar: sidebar
 keywords: ef50, ef80, replace io module, upgrade io module, io module overview
-summary: The EF50 and EF80 storage systems offer flexibility in upgrading or replacing I/O modules to enhance network connectivity and performance.
+summary: The EF50 and EF80 storage systems offer flexibility in replacing or upgrading I/O modules to enhance network connectivity and performance, and increase storage capacity.
 ---
 = Overview of I/O module maintenance - EF50 and EF80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The EF50 and EF80 storage systems offer flexibility in replacing or upgrading I/O modules to enhance network connectivity and performance.
+The EF50 and EF80 storage systems offer flexibility in replacing or upgrading I/O modules to enhance network connectivity and performance, and increase storage capacity.
 
 * link:io-module-replace.html[Replace an I/O module]
 +
@@ -17,5 +17,7 @@ When an I/O module in your storage system fails, you can replace it with the sam
 
 * link:io-module-upgrade.html[Upgrade an I/O module]
 +
-You can upgrade I/O modules in your storage system to increase the number of host ports for enhanced network connectivity and expand your system’s ability to handle data traffic.
+You can upgrade I/O modules in your storage system to increase the number of host ports for enhanced network connectivity, expand your system’s ability to handle data traffic, and connect SAS expansion shelves.
++
+NOTE: SAS expansion I/O modules are supported on storage systems running SANtricity 12.10 or later.
  
