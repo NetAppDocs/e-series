@@ -2,10 +2,20 @@
 
 
 * Due to the complexity of this procedure, read all steps before beginning the procedure.
-* Ensure hot adding a drive shelf is the procedure you need.
-* Verify that the version of SANtricity your storage system is running supports SAS expansion shelves. 
++
+To maintain system integrity during the hot-add procedure, you must always maintain one active path. You must follow the procedure exactly in the order presented.
++
+To cable the new shelf, you recable the A-side (shelf IOM A) controller-to-shelf connections and add shelf-to-shelf connections, verify the A-side path is active, recable the B-side (shelf IOMB) controller-to-shelf connections and add shelf-to-shelf connections, and then verify redundancy has been reestablished.
 
-* Your storage system must have available SAS ports. This means SAS I/O modules (cards) must already be installed. If they are not, use the applicable procedure to install the SAS I/O modules:
+* Ensure hot adding a drive shelf is the procedure you need. 
+
+* Verify that your storage system is running a version of SANtricity that supports SAS expansion shelves and that you do not exceed the maximum number of supported SAS shelves. 
++
+For information about the supported versions of SANtricity and maximum number of SAS expansion shelves supported for your storage system, see the NetApp Hardware Universe: https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe^].
++
+NOTE: EF50 and EF80 storage systems running SANtricity 12.10 or later support SAS expansion shelves. 
+
+* Your storage system must have available SAS ports. This means SAS I/O modules must already be installed. If they are not, use the applicable procedure to install the SAS I/O modules:
 +
 ** For EF50 and EF80 storage systems, use the link:../maintenance-ef50-ef80/io-module-upgrade.html[Upgrade I/O Modules^] procedure.
 ** For older storage systems, use the _SAS expansion cards_ procedure for your storage system model in the _Maintain systems_ section.
@@ -13,21 +23,14 @@
 
 .About this task
 
-* This procedure applies to hot adding a DE212C, DE224C, or DE460C drive shelf to an E2800, E2800B, EF280, E5700, E5700B, EF570, EF300, EF600, EF300C, EF600C, E4000, EF50, or EF80 controller shelf.
+* This procedure applies to an E2800, E2800B, EF280, E5700, E5700B, EF570, EF300, EF600, EF300C, EF600C, E4000, EF50, or EF80 controller shelf.
 +
-For information about the supported versions of SANtricity and maximum number of external SAS shelves supported for your storage system, see the NetApp Hardware Universe: https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe^].
-+
-NOTE: EF50 and EF80 storage systems running SANtricity 12.10 or later support external SAS shelves. 
+NOTE: If you are cabling an older controller shelf, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf^].
 
-* This procedure applies to drive shelves with IOM12, IOM12B, or IOM12C modules.
+* This procedure applies to hot adding a DE212C, DE224C, or DE460C drive shelves with IOM12, IOM12B, or IOM12C modules.
 +
 NOTE: IOM12C modules are only supported on SANtricity OS 11.90R3 onward. Ensure your controller's firmware has been updated before installing or upgrading to an IOM12C.
 
-* To maintain system integrity during the hot-add procedure, you must always maintain one active path. You must follow the procedure exactly in the order presented.
-+
-To cable the new shelf, you recable the A-side (shelf IOM A) controller-to-shelf connections and add shelf-to-shelf connections, verify the A-side path is active, recable the B-side (shelf IOMB) controller-to-shelf connections and add shelf-to-shelf connections, and then verify redundancy has been reestablished (Optimal status is indicated).
-
-* If you are cabling an older controller shelf to a DE212C, DE224C, or DE460C, see https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057[Adding IOM Drive Shelves to an Existing E27XX, E56XX, or EF560 Controller Shelf^].
 
 
 
