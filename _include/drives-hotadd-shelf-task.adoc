@@ -143,7 +143,7 @@ When you are done cabling the shelf, the cabling should look like the following:
 +
 image::../media/drw_ef50-ef80_1_de460c_cabling_ieops-2981.svg[cable the initial shelf]
 +
-. To hot-add a second SAS expansion shelf (shelf 2), recable the A-side controller-to-shelf connections and add A-side shelf-to-shelf connections, as follows:
+. To hot-add a second SAS expansion shelf (shelf 2), recable the A-side controller-to-shelf connections and add A-side shelf-to-shelf connections, as follows. Otherwise, go to the next step.
 .. Disconnect the cable from shelf 1 IOMA port 1 and reconnect it to shelf 2 IOMA port 1.
 .. Disconnect the cable from shelf 1 IOMA port 2 and reconnect it to shelf 2 IOMA port 2.
 .. Connect shelf 1 IOMA port 1 to shelf 2 IOMA port 4.
@@ -171,8 +171,7 @@ The *Shelf Component Settings* dialog box appears.
  ** Current data rate is 12 Gbps for a SAS-3 drive shelf.
  ** Card communications is OK.
 
-
-. If you are adding a second SAS expansion shelf, recable the B-side controller-to-shelf connections and add B-side shelf-to-shelf connections, as follows:
+. If you are adding a second SAS expansion shelf, recable the B-side controller-to-shelf connections and add B-side shelf-to-shelf connections, as follows. Otherwise, go to step 10.
 .. Disconnect the cable from shelf 1 IOMB port 1 and reconnect it to shelf 2 IOMB port 1.
 .. Disconnect the cable from shelf 1 IOMB port 2 and reconnect it to shelf 2 IOMB port 2.
 .. Connect shelf 1 IOMB port 1 to shelf 2 IOMB port 3.
@@ -184,7 +183,7 @@ image::../media/drw_ef50-ef80_2nd_de460c_cabling_hotadd_b-side_ieops-3007.svg[ad
 
 . If you are adding a second SAS expansion shelf, when you are done recabling the two shelves, the cabling should look like the following:
 +
-NOTE: If you are hot-adding a third shelf, the cabling should look like the illustration link:../install-hw-ef50-ef80/install-cable.html#step-3-cable-the-sas-shelf-connections[when cabling the hardware for a new storage system installation].
+NOTE: If you are hot-adding a third shelf to a stack of two shelves, the cabling should look like the illustration in the  link:../install-hw-ef50-ef80/install-cable.html#step-3-cable-the-sas-shelf-connections[when cabling the hardware for a new storage system installation^] section.
 +
 image::../media/drw_ef50-ef80_2nd_de460c_cabling_hotadd_final_ieops-3012.svg[example of cabling for two hot added shelves]
 +
