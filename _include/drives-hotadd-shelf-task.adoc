@@ -99,7 +99,9 @@ NOTE: See the installation instructions for your model for the full procedure fo
 
 == Step 3: Cable the drive shelf
 
-To cable the shelf, you connect it to the controllers and existing shelves (if applicable), power it on, set the shelf ID, and then complete the process by checking for errors and confirming the shelf is using the current firmware.
+To cable the new shelf to your storage system, you connect each controller so that they have an A-side path (IOMA) and a B-side path (IOMB) to the single shelf or stack of shelves (as applicable). And if you have a stack of shelves, you then connect the shelves together (shelf-to-shelf connections) through the A-side path and B-side path.
+
+//To cable the shelf, you connect it to the controllers and existing shelves (if applicable).
 
 
 [role="tabbed-block"]
@@ -125,8 +127,6 @@ To maintain one active path during this procedure, you recable the A-side (shelf
 ** You always move cables from the last shelf in the stack to the same IOMs and IOM ports on the new shelf, and then connect the new shelf to the previous last shelf in the stack (shelf-to-shelf connections).
 
 * This procedure has steps for hot-adding up to two shelves. However, if you are hot-adding an additional shelf, start with step 2 and apply the steps to the additional (new) shelf.
-+
-// You always connect each controller to each end of the shelf stack (shelf 1 and shelf 3) so that the controllers have an A-side path (IOMA) and a B-side path (IOMB) to the shelf stack. And then you connect the  shelves together (shelf-to-shelf connections) through the A-side path and B-side path.
 
 * In the cabling illustrations, controller A connections are shown in blue and controller B connections are shown in red. The dashed lines (blue and red) represent the existing cabling that you are moving to perform cabling steps. The gray ports and lines represent the existing cabling that remains in place while you perform cabling steps.
 
@@ -441,4 +441,4 @@ IOM/ESM firmware automatically upgrades to the latest version unless you have di
 
 The hot add procedure is complete. You can resume normal operations.
 
-// Aug 2026: updated to add SAS expansion content for 12.10
+// Aug 2026: updated to add SAS expansion content for 12.10 release.
