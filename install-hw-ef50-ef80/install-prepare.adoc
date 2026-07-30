@@ -86,11 +86,9 @@ a|
 == Step 4: Register your storage system
 After you've ensured that your site meets the specifications for your storage system, and you've verified that you have all the parts you ordered, you should register your storage system.
 
-NOTE: You can register your storage system now or later. At system startup, you are prompted to register your system.
+NOTE: You can register your storage system now or later. Later, at system startup, you are prompted to register your system.
 
-. Locate the Serial Number (SN) for each controller.
-+
-// Create an account and register your hardware at http://mysupport.netapp.com/[NetApp Support^].
+. Make note of the Serial Number (SN) for each controller.
 +
 You can find the serial number in the following locations:
 
@@ -100,7 +98,10 @@ You can find the serial number in the following locations:
 +
 image::../media/drw_ef50-ef80_sn_label_ieops-2689.svg[example of the serial number label]
 
-. Follow the registration instructions in the NetApp Knowledge Base Article link:..https://kb.netapp.com/nss/System_Registration/How_to_register_a_new_system_on_the_NetApp_Support_Site[How to register a new system].
+
+. If needed, create an account at http://mysupport.netapp.com/[NetApp Support^].
+
+. Register your system by following the instructions in the NetApp Knowledge Base Article link:..https://kb.netapp.com/nss/System_Registration/How_to_register_a_new_system_on_the_NetApp_Support_Site[How to register a new system].
 
 
 .What's next?

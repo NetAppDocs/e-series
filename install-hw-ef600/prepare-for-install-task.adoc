@@ -22,7 +22,14 @@ If you are cabling your EF300 for SAS expansion, review the following informatio
 
 .Steps
 
-. Create an account and register your hardware at http://mysupport.netapp.com/[NetApp Support^].
+. Register your system:
++
+NOTE: You can register your system now or later. Later, at system startup, you are prompted to register your system.
++
+.. If needed, create an account at http://mysupport.netapp.com/[NetApp Support^].
+
+.. Register your system by following the instructions in the NetApp Knowledge Base Article link:..https://kb.netapp.com/nss/System_Registration/How_to_register_a_new_system_on_the_NetApp_Support_Site[How to register a new system].
+
 . Ensure that the following items are in the box that you received.
 +
 |===
