@@ -116,13 +116,17 @@ You have updated your firmware to the latest version. To update your firmware, f
 
 .About this task
 
-* If you are hot-adding an additional shelf to existing shelves, this procedure has you recable the controller-to-shelf connections so that you always maintain one active path to the controller shelf. 
+* If you are hot-adding an additional shelf to one or more existing shelves, the following applies:
+
+** This procedure has you recable the controller-to-shelf connections so that you always maintain one active path to the controller shelf. 
 +
 To maintain one active path during this procedure, you recable the A-side (shelf IOMA) controller-to-shelf connections and add shelf-to-shelf connections, verify the A-side path is active, recable the B-side (shelf IOMB) controller-to-shelf connections and add shelf-to-shelf connections, and then verify redundancy has been reestablished.
 
+** You always move cables from the last shelf in the stack to the same IOMs and IOM ports on the new shelf, and then connect the new shelf to the previous last shelf in the stack (shelf-to-shelf connections).
+
 * This procedure has steps for hot-adding up to two shelves. However, if you are hot-adding an additional shelf, start with step 2 and apply the steps to the additional (new) shelf.
 +
-You always move cables from the last shelf in the stack to the same IOMs and IOM ports on the new shelf, and then connect the new shelf to the previous last shelf in the stack (shelf-to-shelf connections).
+// You always connect each controller to each end of the shelf stack (shelf 1 and shelf 3) so that the controllers have an A-side path (IOMA) and a B-side path (IOMB) to the shelf stack. And then you connect the  shelves together (shelf-to-shelf connections) through the A-side path and B-side path.
 
 * In the cabling illustrations, controller A connections are shown in blue and controller B connections are shown in red. The dashed lines (blue and red) represent the existing cabling that you are moving to perform cabling steps. The gray ports and lines represent the existing cabling that remains in place while you perform cabling steps.
 
@@ -143,7 +147,7 @@ When you are done cabling the shelf, the cabling should look like the following:
 +
 image::../media/drw_ef50-ef80_1_de460c_cabling_ieops-2981.svg[cable the initial shelf]
 +
-. To hot-add a second SAS expansion shelf (shelf 2), recable the A-side controller-to-shelf connections and add A-side shelf-to-shelf connections, as follows. Otherwise, go to the next step.
+. To hot-add a second SAS expansion shelf (shelf 2), recable the A-side controller-to-shelf connections and add A-side shelf-to-shelf connections, as follows; otherwise, go to the next step.
 .. Disconnect the cable from shelf 1 IOMA port 1 and reconnect it to shelf 2 IOMA port 1.
 .. Disconnect the cable from shelf 1 IOMA port 2 and reconnect it to shelf 2 IOMA port 2.
 .. Connect shelf 1 IOMA port 1 to shelf 2 IOMA port 4.
@@ -171,7 +175,7 @@ The *Shelf Component Settings* dialog box appears.
  ** Current data rate is 12 Gbps for a SAS-3 drive shelf.
  ** Card communications is OK.
 
-. If you are adding a second SAS expansion shelf, recable the B-side controller-to-shelf connections and add B-side shelf-to-shelf connections, as follows. Otherwise, go to step 10.
+. If you are adding a second SAS expansion shelf, recable the B-side controller-to-shelf connections and add B-side shelf-to-shelf connections, as follows; otherwise, go to step 10.
 .. Disconnect the cable from shelf 1 IOMB port 1 and reconnect it to shelf 2 IOMB port 1.
 .. Disconnect the cable from shelf 1 IOMB port 2 and reconnect it to shelf 2 IOMB port 2.
 .. Connect shelf 1 IOMB port 1 to shelf 2 IOMB port 3.
@@ -183,7 +187,7 @@ image::../media/drw_ef50-ef80_2nd_de460c_cabling_hotadd_b-side_ieops-3007.svg[ad
 
 . If you are adding a second SAS expansion shelf, when you are done recabling the two shelves, the cabling should look like the following:
 +
-NOTE: If you are hot-adding a third shelf to a stack of two shelves, the cabling should look like the illustration in the  link:../install-hw-ef50-ef80/install-cable.html#step-3-cable-the-sas-shelf-connections[when cabling the hardware for a new storage system installation^] section.
+NOTE: If you are hot-adding a third shelf to a stack of two shelves, the cabling should look like the illustration in the link:../install-hw-ef50-ef80/install-cable.html#step-3-cable-the-sas-shelf-connections[Option 2: Three DE460C shelves tab ^] of the Cable the SAS shelf connections section for new system installations.
 +
 image::../media/drw_ef50-ef80_2nd_de460c_cabling_hotadd_final_ieops-3012.svg[example of cabling for two hot added shelves]
 +
