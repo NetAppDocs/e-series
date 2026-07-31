@@ -297,11 +297,11 @@ image:../media/drw_ef80_4p_64gb_fc_3hic_fabric_ieops-2675.svg[EF80 fabric-attach
 
 == Step 3: Cable the SAS shelf connections
 
-The following procedures show how to cable the controllers to one DE460C shelf or a stack of three DE460C shelves.
+The following procedures show how to cable the controllers to one DE460C shelf or to a stack of three DE460C shelves.
 
 .About this task
 
-* The cabling examples show DE460C shelves; however, additional SAS shelves are supported, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
+* The cabling examples show DE460C shelves; however, the same cabling applies to all supported SAS shelves. See link:https://hwu.netapp.com[NetApp Hardware Universe^] for supported SAS shelves.
 
 * For the maximum number of shelves supported for your storage system and all of your cabling options, such as optical, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 

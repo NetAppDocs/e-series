@@ -7,7 +7,7 @@ When you are hot-adding a shelf to one or more existing shelves, to maintain sys
 +
 To cable the new shelf, you recable the A-side (shelf IOM A) controller-to-shelf connections and add shelf-to-shelf connections, verify the A-side path is active, recable the B-side (shelf IOMB) controller-to-shelf connections and add shelf-to-shelf connections, and then verify redundancy has been reestablished.
 +
-NOTE: If you are installing a drive shelf that has previously been installed in a storage system, there are additonal steps you must take.
+NOTE: If you are installing a drive shelf that has previously been installed in a storage system, this procedure has additional steps you must take.
 
 * Ensure hot adding a drive shelf is the procedure you need. 
 
@@ -17,7 +17,7 @@ For information about the supported versions of SANtricity and maximum number of
 +
 NOTE: EF50 and EF80 storage systems running SANtricity 12.10 or later support SAS expansion shelves. 
 
-* Your storage system must have available SAS ports. This means SAS I/O modules must already be installed. If they are not, use the applicable procedure to install the SAS I/O modules:
+* Your storage system must have available SAS ports. This means SAS I/O modules must already be installed. If they are not, use the applicable procedure to install the SAS I/O modules, and then return to this procedure to hot-add the drive shelf.
 +
 ** For EF50 and EF80 storage systems, use the link:../maintenance-ef50-ef80/io-module-upgrade.html[Upgrade I/O Modules^] procedure.
 ** For older storage systems, use the _SAS expansion cards_ procedure for your storage system model in the _Maintain systems_ section.
@@ -99,7 +99,7 @@ NOTE: See the installation instructions for your model for the full procedure fo
 
 == Step 3: Cable the drive shelf
 
-To cable the new shelf to your storage system, you connect each controller so that they have an A-side path (IOMA) and a B-side path (IOMB) to the single shelf or stack of shelves (as applicable). And if you have a stack of shelves, you then connect the shelves together (shelf-to-shelf connections) through the A-side path and B-side path.
+To cable the shelf to your storage system, you connect each controller so that they have an A-side path (IOMA) and a B-side path (IOMB) to the single shelf or stack of shelves (as applicable). And if you have a stack of shelves, you then connect the shelves together (shelf-to-shelf connections) through the A-side path and B-side path.
 
 //To cable the shelf, you connect it to the controllers and existing shelves (if applicable).
 
@@ -110,7 +110,7 @@ To cable the new shelf to your storage system, you connect each controller so th
 .Connect the drive shelf for EF50 or EF80
 --
 
-This procedure instructs you on how to hot-add an initial SAS expansion shelf to your EF50 or EF80 storage system and how to recable the initial shelf to hot-add a second shelf; however, this procedure can be applied when adding additional shelves.
+This procedure instructs you on how to hot-add the initial SAS expansion shelf to your EF50 or EF80 storage system and how to recable the initial shelf to hot-add a second shelf; however, this procedure can be applied when adding additional shelves.
 
 .Before you begin
 
@@ -126,7 +126,9 @@ To maintain one active path during this procedure, you recable the A-side (shelf
 
 ** You always move cables from the last shelf in the stack to the same IOMs and IOM ports on the new shelf, and then connect the new shelf to the previous last shelf in the stack (shelf-to-shelf connections).
 
-* This procedure has steps for hot-adding up to two shelves. However, if you are hot-adding an additional shelf, start with step 2 and apply the steps to the additional (new) shelf.
+* This procedure has steps for hot-adding up to two shelves. However, if you are hot-adding an additional shelf, start with step 2 and apply the steps to the additional shelf.
+
+* This procedure shows controllers with one SAS I/O module in slot 3. To see all supported SAS I/O module configurations, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
 * In the cabling illustrations, controller A connections are shown in blue and controller B connections are shown in red. The dashed lines (blue and red) represent the existing cabling that you are moving to perform cabling steps. The gray ports and lines represent the existing cabling that remains in place while you perform cabling steps.
 
@@ -187,7 +189,7 @@ image::../media/drw_ef50-ef80_2nd_de460c_cabling_hotadd_b-side_ieops-3007.svg[ad
 
 . If you are adding a second SAS expansion shelf, when you are done recabling the two shelves, the cabling should look like the following:
 +
-NOTE: If you are hot-adding a third shelf to a stack of two shelves, the cabling should look like the illustration in the link:../install-hw-ef50-ef80/install-cable.html#step-3-cable-the-sas-shelf-connections[Option 2: Three DE460C shelves tab ^] of the Cable the SAS shelf connections section for new system installations.
+NOTE: If you are hot-adding a third shelf to a stack of two shelves, the cabling should look like the illustration in the link:../install-hw-ef50-ef80/install-cable.html#step-3-cable-the-sas-shelf-connections[Option 2: Three DE460C shelves tab^] of the _Cable the SAS shelf connections_ section for new system installations.
 +
 image::../media/drw_ef50-ef80_2nd_de460c_cabling_hotadd_final_ieops-3012.svg[example of cabling for two hot added shelves]
 +
@@ -335,14 +337,16 @@ NOTE: Optimal status indicates that the loss of redundancy error associated with
 
 == Step 4: Assign drive shelf IDs
 
-Each shelf is distinguished by a unique shelf ID. This ID ensures that the shelf is distinct within your storage system.
+Power on the shelves and then assign unique shelf IDs to each shelf.
 
 .About this task
-* A valid shelf ID is 01 through 99. 
+* Assigning a unique shelf ID to each shelf ensures that the shelf is distinct within your storage system.
++
+A valid shelf ID is 01 through 99. 
 +
 Internal shelves (storage), which are integrated within the controllers, are assigned a fixed shelf ID of 00.
 
-* You must power cycle a shelf (turn off the power switch on each of the power supplies of the SAS shelf, wait the appropriate amount of time, and then switch the power back on) for the shelf ID to take effect.
+* You must power cycle a shelf (turn off the power switch on each of the power supplies of the SAS shelf, wait at least 10 seconds, and then switch the power back on) for the shelf ID to take effect.
 
 .Steps
 . Remove the left end cap to access the orange shelf ID button on the faceplate.
