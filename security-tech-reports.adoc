@@ -16,11 +16,11 @@ Check out the links below to access security technical reports related to E-Seri
 
 [%rotate, grid="none", frame="none", cols="9,9,9",]
 |===
-|https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf[*TR-4474:
+|https://www.netapp.com/pdf.html?item=/media/17162-tr4474.pdf[*TR-4474:
 SANtricity Drive Security Feature Guide*]
-|https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf[*TR-4712:
+|https://www.netapp.com/pdf.html?item=/media/17079-tr4712.pdf[*TR-4712:
 SANtricity Management Security Features*]
-|https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf[*TR-4813:
+|https://www.netapp.com/pdf.html?item=/media/17218-tr4813.pdf[*TR-4813:
 Managing Certificates for E-Series Systems*]
 |Describes the full disk encryption feature for E-Series systems,
 including support for FIPS 140-2 validated drives, and both internal and
