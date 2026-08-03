@@ -1,7 +1,7 @@
 ---
 permalink: config-vmware/sas-perform-specific-task.html
 sidebar: sidebar
-keywords: sas, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries
+keywords: sas, express vmware configuration, software configuration, vmware host, E2800, E5700, E4000, E-Series, eseries
 summary: For the SAS protocol, you determine host port addresses and make the recommended settings.
 ---
 = Perform SAS-specific tasks in E-Series - VMware
@@ -11,27 +11,11 @@ summary: For the SAS protocol, you determine host port addresses and make the re
 [.lead]
 For the SAS protocol, you determine host port addresses and make the recommended settings.
 
-== Step 1: Determine SAS host identifiers--VMware
+== Step 1: Record your configuration
 
-Find the SAS addresses using the HBA utility, and then use the HBA BIOS to make the appropriate configuration settings.
+You can generate and print a PDF of this page, and then use the following worksheet to record your protocol-specific storage configuration information. You need this information as you perform provisioning tasks.
 
-.About this task
-
-Review the guidelines for HBA utilities:
-
-* Most HBA vendors offer an HBA utility.
-
-.Steps
-
-. Download the HBA utility from your HBA vendor's web site.
-. Install the utility.
-. Use the HBA BIOS to select the appropriate settings for your configuration.
-+
-For appropriate settings, see the Notes column of the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for recommendations.
-
-== Step 2: Record your configuration
-
-You can generate and print a PDF of this page, and then use the following worksheet to record your protocol-specific storage configuration information. You need this information to perform provisioning tasks.
+The illustration shows a host directly connected to an E-Series storage array with redundant connections (assuming a 4 port SAS HBA). First redundant connection indicated by the red lines; the second redundant connection is indicated by the blue lines. Number of ports depends on the number of host ports. You may have only 2 host ports. In this case, at least the first redundant connection is recommended.
 
 image::../media/sas_topology_diagram_conf-vmw.gif[Diagram: SAS topology]
 
@@ -55,32 +39,29 @@ a|
 a|
 3
 a|
-Host (initiator) port 1 connected to Controller B, port 1
+Host (initiator) port 2 connected to Controller B, port 1
 a|
 
 a|
 4
 a|
-Host (initiator) port 2 connected to Controller A, port 1
+Host (initiator) port 3 connected to Controller A, port 1
 a|
 
 a|
 5
 a|
-Host (initiator) port 2 connected to Controller B, port 1
+Host (initiator) port 4 connected to Controller B, port 1
 a|
 
 |===
 
-=== Target identifiers
-
-Recommended configurations consist of two target ports.
-
-=== Mapping host name
+=== Host Mapping Information
 
 |===
 a|
-Mapping host name a|
+Mapping host name
+a|
 
 a|
 Host OS type
@@ -88,3 +69,35 @@ a|
 
 a|
 |===
+
+== Step 2: Determine SAS host identifiers--VMware
+
+Find the SAS addresses using esxcli or the HBA utility.
+
+.About this task
+
+Review the guidelines for HBA utilities:
+
+* Most HBA vendors offer an HBA utility.
+
+.Steps
+
+. Connect to the ESXi host using SSH or the ESXi shell. To enable the ESXi shell, see https://knowledge.broadcom.com/external/article/311213/using-esxi-shell-in-esxi.html[Using ESXi Shell in ESXi^].
+. Run the following command:
++
+----
+esxcli storage core adapter list
+----
+
+. Record the initiator SAS address identifier (UID in the format - sas.<SAS_Address>). The output will be similar to this example:
++
+----
+HBA Name  Driver       Link State  UID                   Capabilities         Description
+--------  ----------   ----------  --------------------  -------------------  -----------
+vmhba1    lsi_msgpt35  link-n/a    sas.5b083fe0ca0e7000                       (0000:03:00.0) Avago (LSI Logic) SAS3008 12Gbps SAS HBA external
+----
+
+In the example above, the UID will only show the base SAS address. For the other ports, the first 14 characters remain constant, and only the last two characters vary to represent different ports. Typically, the last digit simply increases by 1 for each port. Having the base SAS address is usually enough to identify the host adapter during host mapping as the E-Series array will automatically detect and list the other port SAS addresses for selection.
+Using a vendor HBA utility may help to obtain the SAS address for each port. 
+
+NOTE: Another command option is `esxcli storage san sas list`. This will display more details and the base SAS address in hexadecimal format separated by colons.

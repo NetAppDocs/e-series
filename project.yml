@@ -420,8 +420,10 @@ sidebar:
               url: "/config-vmware/access-sam-setup-wizard-task.html"
             - title: Perform FC-specific tasks
               url: "/config-vmware/fc-perform-specific-task.html"
-            - title: Perform NMVe over FC-specific tasks
-              url: "/config-vmware/nmve-fc-perform-specific-task.html"
+            - title: Perform NVMe over FC-specific tasks
+              url: "/config-vmware/nvme-fc-perform-specific-task.html"
+            - title: Perform NVMe over TCP-specific tasks
+              url: "/config-vmware/nvme-tcp-perform-specific-task.html"
             - title: Perform iSCSI-specific tasks
               url: "/config-vmware/iscsi-perform-specific-task.html"
             - title: Perform SAS-specific tasks

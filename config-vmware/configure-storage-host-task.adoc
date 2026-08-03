@@ -1,21 +1,27 @@
 ---
 permalink: config-vmware/configure-storage-host-task.html
 sidebar: sidebar
-keywords: configure storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries
-summary: You can use the storage assigned to an ESXi host as either a Virtual Machine File System \(VMFS\) datastore or a raw device mapping \(RDM\). RDMs are not supported on the NVMe over Fibre Channel protocol.
+keywords: configure storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries
+summary: You can use the storage assigned to an ESXi host as either a Virtual Machine File System \(VMFS\) datastore or a raw device mapping \(RDM\). RDMs are not supported on the NVMe over fabric protocols (NVMe over FC, NVMe over RoCE, NVMe over TCP).
 ---
 = Configure storage on the host in E-Series - VMware
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use the storage assigned to an ESXi host as either a Virtual Machine File System (VMFS) datastore or a raw device mapping (RDM). RDMs are not supported on the NVMe over Fibre Channel protocol.
+You can use the storage assigned to an ESXi host as either a Virtual Machine File System (VMFS) datastore or a raw device mapping (RDM). RDMs are not supported on the NVMe over fabric protocols (NVMe over FC, NVMe over RoCE, NVMe over TCP).
 
-All 6._x_ and 7 _x_ versions of ESXi support VMFS versions 5 and 6.
+All current versions of ESXi support VMFS versions 5 and 6.
+
+NOTE: Use of VMFS extents on VMware is not recommended. Rather than adding another volume as an extent to an existing VMFS datastore to increase capacity, it is recommended to perform a DVE operation (https://kb.netapp.com/on-prem/E-Series/Management-Apps-KBs/How_to_expand_Volumes[How to expand Volumes - NetApp Knowledge Base^]) on the existing backing volume and grow the VMFS datastore.
+
+NOTE: It is recommended to use virtual RDMs or virtual disks instead of physical RDMs on Linux Virtual Machines.
 
 
 .Steps
 
 . Make sure the volumes mapped to the ESXi host have been discovered properly.
 
-. For instructions on creating VMFS datastores or using volumes as RDMs with either the vSphere Client or the vSphere Web Client, see the https://docs.vmware.com/index.html[VMware Documentation web site^].
+. For instructions on creating VMFS datastores, see https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/working-with-datastores-in-vsphere-storage-environment/vsphere-vmfs-datastore-concepts-and-operations/create-a-vsphere-vmfs-datastore.html[Create a vSphere VMFS Datastore^].
+
+. For instructions on creating RDMs, see https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/raw-device-mapping-in-vsphere.html[Raw Device Mapping in vSphere^].

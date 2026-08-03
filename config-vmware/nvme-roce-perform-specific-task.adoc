@@ -1,100 +1,57 @@
 ---
 permalink: config-vmware/nvme-roce-perform-specific-task.html
 sidebar: sidebar
-keywords: NVMe over RoCE protocol, switches, zone switches, zoning, host port identifiers, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E4000, EF50, EF80 E-Series, eseries
-summary: For the Fibre Channel protocol, you configure the switches and determine the host port identifiers.
+keywords: NVMe over RoCE protocol, switches, zone switches, zoning, host port identifiers, express vmware configuration, software configuration, vmware host, E5700, EF300, EF600, EF50, EF80, E-Series, eseries
+summary: For the NVMe over RoCE protocol, you configure the switches and determine the host NVMe Qualified Name (NQN).
 ---
 = Perform NVMe over RoCE-specific tasks in E-Series - VMware
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-For the NVMe over RoCE protocol, you configure the switches and determine the host port identifiers.
+For the NVMe over RoCE protocol, you configure the switches and determine the host NVMe Qualified Name (NQN).
+
+NOTE: Volumes must be set to utilize 512 byte emulation (512e) when using 4096 byte drives to ensure compatibility with VMware. Refer to the SANtricity System Manager online help for more information on setting a volume to use 512-byte emulation (512e).
 
 == Step 1: Record your configuration
 
-You can generate and print a PDF of this page, and then use the following worksheet to record your protocol-specific storage configuration information. You need this information to perform provisioning tasks.
+You can generate and print a PDF of this page, and then use the following worksheet to record your protocol-specific storage configuration information. You need this information as you perform provisioning tasks.
 
-=== Recommended configuration
+The illustration shows a host connected to an E-Series storage array separated by VLANs and/or unique subnets. One VLAN/subnet is indicated by the blue line; the other VLAN/subnet is indicated by the red line. Each VLAN/subnet contains at least one initiator port and half of the target ports. Number of host and/or controller ports will vary based on the number of network interfaces and the controller model. You may have more (up to 6 per controller) ports available.
 
-Recommended configurations consist of two initiator ports and four target ports with one or more VLANs.
+image::../media/network_generic_worksheet.gif["NVMe over RoCE port identifiers"]
 
-image::../media/network_generic_worksheet.gif[NVMe over RoCE port identifiers"]
-
-=== Host identifiers
-
-[options="header"]
-|===
-| Callout No.| Host port connections| Software initiator NQN
-a|
-1
-a|
-Host (initiator) 1
-a|
-
-a|
-1
-a|
-Host (initiator) 2
-a|
-
-|===
-
-=== Target identifiers
-[options="header"]
-|===
-| Callout No.| Array port connections| Target NQN
-a|
-2
-a|
-Array controller (target) port 1
-a|
-
-a|
-2
-a|
-Array controller (target) port 2
-a|
-
-a|
-2
-a|
-Array controller (target) port 3
-a|
-
-a|
-2
-a|
-Array controller (target) port 4
-a|
-
-|===
-
-
-=== Mapping host
+=== Host Mapping Information
 
 |===
 a|
-Mapping host name a|
+Mapping host name
+a|
 
 a|
 Host OS type
 a|
 
 a|
+Host NQN
+a|
+
+a|
+Target NQN
+a|
+
+a|
 |===
-
-=== Recommended configuration
-
-This can vary based on the array. EF300, EF600, and EF50 will be 2 initiator ports with up to 4 target ports with 1 or more VLANs. EF80 will be 2 initiator ports with up to 6 target ports with 1 or more VLANs.
 
 == Step 2: Configure the NVMe/RoCE switches
 You configure the switches according to the vendor's recommendations for NVMe over RoCE. These recommendations might include both configuration directives as well as code updates.
 
-.About this 
+.About this task
 This task describes the general steps for configuring the switches for NVMe over RoCE. For specific instructions, see your switch vendor's documentation.
 
-Before you begin, make sure you have the following:
+.Before you begin
+
+Make sure you have the following:
 
 * Two separate networks for high availability. Make sure that you isolate your NVMe over RoCE traffic to separate network segments.
 
@@ -107,12 +64,13 @@ You can set up your NVMe over RoCE network in many ways, depending on your data 
 .About this task
 This task describes the general steps for configuring the network for NVMe over RoCE. For specific instructions, see your switch vendor's documentation.
 
-Before you begin, make sure you have the following:
+.Before you begin
 
-* Switch configured for Lossless Ethernet for NVMe over RDMA. 
+Make sure you have the following:
 
-.About this task
-While planning your NVMe over RoCE networking, remember that the VMware Configuration Maximums guide states that the maximum supported RDMA NVMe initiator ports per server is 2. You must consider this requirement to avoid configuring too many paths.
+* Switch configured for Lossless Ethernet for NVMe over RDMA (if switch in path).
+
+While planning your NVMe over RoCE networking, remember that the https://configmax.broadcom.com/guest[VMware Configuration Maximums Guide^] states that the maximum supported RDMA NVMe initiator ports per server is 2. You must consider this requirement to avoid configuring too many paths.
 
 To ensure a good multipathing configuration, use multiple network segments for the NVMe over RoCE network. Place at least one host-side port and at least one port from each array controller on one network segment, and an identical group of host-side and array-side ports on another network segment. Where possible, use multiple Ethernet switches to provide additional redundancy.
 
@@ -126,7 +84,9 @@ You use the SANtricity System Manager interface to configure NVMe over RoCE netw
 
 This task describes how to access the NVMe over RoCE port configuration from the *Controllers & components* page under the SANtricity System Manager. You can also access the configuration from the *Configure NVMe over RoCE ports* page within the SANtricity System Manager.
 
-Before you begin, make sure you have the following:
+.Before you begin
+
+Make sure you have the following:
 
 * The IP address or domain name for one of the storage array controllers.
 * Password for the System Manager GUI, or Role-Based Access Control (RBAC) or LDAP and a directory service is configured for the appropriate security access to the storage array. See the SANtricity System Manager online help for more information about link:https://docs.netapp.com/us-en/e-series-santricity/um-certificates/overview-access-management-um.html[Access Management^].
@@ -140,7 +100,7 @@ The first time SANtricity System Manager is opened on an array that has not been
 
 . Enter the System Manager password for the admin role in the Set Administrator Password and Confirm Password fields, and then click *Set Password*.
 +
-The Setup wizard launches if there are no pools, volumes groups, workloads, or notifications configured.
+The Setup wizard launches if there are no pools, volume groups, workloads, or notifications configured.
 
 . Close the Setup wizard.
 +
@@ -205,35 +165,42 @@ Select this option, and then enter a static address in the fields. For IPv4, inc
 
 Configuring NVMe over RoCE networking on the host side enables the VMware NVMe over RDMA storage adapter initiator to establish a session with the array.
 
+.Before you begin
+
+If the host connects to the storage array through Ethernet switches, lossless networking must be configured on the switches as described in Step 2 and Step 3. In that case, switch-based lossless networking setup takes precedence, and you do not need to complete the host-side prerequisite below.
+
+If the host has a direct connection to the storage array (no switch in the path), complete the following prerequisite before you configure the host-side NVMe over RDMA adapters.
+
+.Prerequisite: Configure lossless Ethernet for NVMe over RDMA (direct connections only)
+
+You configure lossless networking using Differentiated Services Code Point (DSCP) based Priority Flow Control (PFC).
+
+For more information, see link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/requirements-for-vmware-nvme-storage.html#GUID-B764140D-BCF3-4C99-8169-E5B058757518-en[Configuring Lossless Ethernet for NVMe over RDMA^].
+
 .About this task
-This configuration enables lossless network using Differentiated Services Code Point (DSCP) based Priority Flow Control (PFC). 
+This task creates the NVMe over RDMA host adapters and adds controller connections to storage.
 
 .Steps
 
-. Identify RDMA Network Adapters and record the vmnic paired uplink. 
+. Identify RDMA Network Adapters and record the vmnic paired uplink.
 +
-For more information, see link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/view-rdma-network-adapters.html[View RDMA Network Adapters^].
+For more information, see link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/view-rdma-network-adapters.html[View RDMA Network Adapters^].
 
 . Configure VMkernel port binding for the RDMA adapter using a vSphere standard switch.
 +
-For more information, see link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/configure-vmkernel-binding-for-the-rdma-adapter.html[Configure VMkernel Binding for the RDMA Adapter^].
+For more information, see link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/configure-vmkernel-binding-for-the-rdma-adapter/configure-vmkernel-binding-with-a-vsphere-standard-switch.html[Configure VMkernel Binding for the RDMA Adapter^].
 
 . Add the software NVMe over RDMA adapter.
 +
-For more information, see link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/add-software-nvme-over-rdma-or-nvme-over-tcp-adapters.html[Add Software NVMe over RDMA or NVMe over TCP Adapters^].
+For more information, see link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/add-software-nvme-over-rdma-or-nvme-over-tcp-adapters.html[Add Software NVMe over RDMA or NVMe over TCP Adapters^].
 
 . Add NVMe Controllers for NVMe over RDMA.
 +
-For more information, see link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/add-controller-for-nvme-over-fabrics.html[Add Controllers for NVMe over Fabrics^].
+For more information, see link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/add-controller-for-nvme-over-fabrics.html[Add Controllers for NVMe over Fabrics^].
 
-. Configure lossless Ethernet for NVMe over RDMA.
-+
-You configure lossless network using Differentiated Services Code Point (DSCP) based Priority Flow Control (PFC). 
-+
-To use this option, see the following:
+NOTE: The Host NQN can be acquired during this process from the Add Controller dialog box. This will be needed later when configuring host mappings.
 
-* link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/requirements-for-vmware-nvme-storage.html#GUID-B764140D-BCF3-4C99-8169-E5B058757518-en[Configuring Lossless Ethernet for NVMe over RDMA^].
-
+After successfully adding, the connections can be viewed from the Storage Adapters view on vSphere Client. If unsuccessful, skip to step 6 to verify communication to the ports and correct any connection settings.
 
 == Step 6: Verify IP network connections - ​NVMe over RoCE, VMware
 
@@ -241,7 +208,7 @@ You verify Internet Protocol (IP) network connections by using ping tests to ens
 
 .Steps
 
-. On the host the following command:
+. On the host, run the following command:
 +
 ----
 vmkping <NVMe over RoCE_target_IP_address\>
@@ -264,10 +231,4 @@ round-trip min/avg/max = 0.406/0.721/0.902 ms
 +
 NOTE: If the command fails with the message `sendto() failed (Message too long)`, verify the MTU size for the Ethernet interfaces on the host server, storage controller, and switch ports.
 
-. Return to the NVMe over RoCE Configuration procedure to finish target discovery.
-
-
-
-
-
-
+. If step 5 discovery was unsuccessful, return to the NVMe over RoCE host-side networking configuration procedure to finish adding target controllers.

@@ -1,7 +1,7 @@
 ---
 permalink: config-vmware/overview-concept.html
 sidebar: sidebar
-keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries
+keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries
 summary: Review requirements for using the express method to set up an E-Series array and VMware host.
 ---
 = Assumptions (E-Series and VMware)
@@ -54,9 +54,10 @@ a|
 
 * You will not use shared volumes.
 * You will create pools rather than volume groups.
+* Volumes must be set to utilize 512 byte emulation (512e) when using 4096 byte drives to ensure compatibility with VMware. Refer to the SANtricity System Manager online help for more information on setting a volume to use 512-byte emulation (512e).
 
 a|
-Protocol: FC
+Protocol: Fibre Channel (FCP)
 a|
 
 * You have made all host-side FC connections and activated switch zoning.
@@ -85,5 +86,21 @@ a|
 * You are using NetApp-supported SAS HBAs.
 * You are using SAS HBA driver and firmware versions as listed in the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
+a|
+Protocol: NVMe over RoCE (RDMA over Converged Ethernet)
+a|
+
+* You are using Ethernet switches capable of RDMA traffic
+* You have configured the Ethernet switches for lossless networking using Differentiated Services Code Point (DSCP) based Priority Flow Control (PFC)
+* You are using RDMA driver and firmware versions as listed in the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
+
+a|
+Protocol: NVMe over TCP
+a|
+
+* You are using Ethernet switches capable of TCP traffic
+* You have configured the Ethernet switches according to the vendor's recommendation for TCP.
+* You are using network driver and firmware versions as listed in the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
+
 |===
-If these assumptions are not correct for your installation, or if you want more conceptual background information, see the following technical report: https://www.netapp.com/pdf.html?item=/media/17017-tr4789pdf.pdf[VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.X^]
+If these assumptions are not correct for your installation, or if you want more conceptual background information, see the following technical report: https://www.netapp.com/pdf.html?item=/media/17017-tr4789.pdf[VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.X^]
