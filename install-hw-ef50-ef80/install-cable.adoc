@@ -45,7 +45,9 @@ image:../media/drw_ef50-ef80_mirroring_2p_100gbe_ieops-2659.svg[ef50 and ef80 co
 Cable the host connections for your storage system according to your network topology: direct attached or fabric attached.
 
 .About this task
-* Depending on your storage system model, the type of host I/O modules installed in the storage system can be Ethernet or Fibre Channel (FC). The cabling examples in this procedure show both types of host I/O modules as supported by the storage system models.
+* Depending on your storage system model and version of SANtricity it's running, different types of host I/O modules are supported. The cabling examples in this procedure show Ethernet and Fibre Channel (FC) host I/O modules.
++
+To see all supported host I/O modules and slot priorities for your storage system model, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
 * Cabling examples do not show 4-port 64Gb FC HBAs in host 1 and host 2; however, if you have these installed, you cable every other port in the same manner as shown for the 2-port HBAs.
 
@@ -305,7 +307,7 @@ The following procedures show how to cable the controllers to one DE460C shelf o
 
 * For the maximum number of shelves supported for your storage system and all of your cabling options, such as optical, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
-* The cabling procedures show controllers with one SAS I/O module in slot 3. To see all supported SAS I/O module configurations, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
+* The cabling procedures show controllers with one SAS I/O module in slot 3. This is the only supported SAS I/O module configuration for SANtricity 12.10.
 
 * The cabling graphics show controller A cabling in blue and controller B cabling in red.
 
