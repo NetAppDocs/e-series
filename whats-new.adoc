@@ -42,6 +42,22 @@ a|A new script editor is now available within the SANtricity System Manager. The
 
 |===
 
+== New features in Version 11.90R6
+
+[cols="35h,~",options="header"]
+|===
+|New feature |Description
+
+a|Updated IOM/DCM firmware version support 
+a|New IOM/DCM firmware versions are now supported for the following IOM/DCM models: 
+
+* IOM12A - v0412
+* IOM12B - v0212
+* IOM12C - v0112
+* IOM12G - v0212
+* DCM3 - v01.12.09.02
+|===
+
 == New features in Version 11.90R5
  
 This version contains only defect fixes and no new features. For more information on the changes in this release, please refer to the E-Series SANtricity OS 11.90R5 README.
