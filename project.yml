@@ -11,23 +11,6 @@ sidebar:
   entries:
     - title: E-Series systems docs
       url: /index.html
-#    - section: cloud-connector
-#    - section: config-linux
-#    - section: config-vmware
-#    - section: config-windows
-#    - section: getting-started
-#    - section: install-hw-cabinet
-#    - section: install-hw-cabling
-#    - section: install-hw-e2800-E5700
-#    - section: install-hw-ef600
-#    - section: maintenance-e2800
-#    - section: maintenance-e5700
-#    - section: maintenance-ef600
-#    - section: remote-storage-volumes
-#    - section: upgrade-controllers
-#    - section: upgrade-santricity
-#    - section: web-services-proxy
-# Copied as-is from sold sidebar.yml - cleanup required
     - title: Release notes
       entries:
         - title: What's new

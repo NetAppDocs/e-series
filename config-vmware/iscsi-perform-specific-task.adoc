@@ -28,19 +28,21 @@ image::../media/50001_01_conf-vmw.gif["iSCSI port identifier"]
 a|
 Mapping host name
 a|
-
+{nbsp} 
 a|
 Host OS type
 a|
-
+{nbsp}
 a|
-Host IQN
+Host NQN
 a|
-
+{nbsp}
 a|
-Target IQN
+Target NQN
 a|
-
+{nbsp}
+a|
+{nbsp}
 |===
 
 == Step 2: Configure the switches--iSCSI, VMware

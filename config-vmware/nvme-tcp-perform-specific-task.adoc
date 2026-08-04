@@ -27,20 +27,21 @@ image::../media/network_generic_worksheet.gif["NVMe over TCP port identifiers"]
 a|
 Mapping host name
 a|
-
+{nbsp} 
 a|
 Host OS type
 a|
-
+{nbsp}
 a|
 Host NQN
 a|
-
+{nbsp}
 a|
 Target NQN
 a|
-
+{nbsp}
 a|
+{nbsp}
 |===
 
 == Step 2: Configure the NVMe/TCP switches
