@@ -406,7 +406,7 @@ Confirm that both fans come on and that the amber LED on the back of the fans is
 
 . If you performed the drive drawer replacement procedure online, and if any drives in the replacement drawer are failed, you must reconstruct the drives manually.
 +
-Using SANtricity System Manager, complete the  link:https://docs.netapp.com/us-en/e-series-santricity/sm-hardware/reconstruct-drive-manually.html[Reconstruct a drive manually] procedure.
+Using SANtricity System Manager, complete the  link:https://docs.netapp.com/us-en/e-series-santricity/sm-hardware/reconstruct-drive-manually.html[Reconstruct a drive manually^] procedure.
 
 .What's next?
 
