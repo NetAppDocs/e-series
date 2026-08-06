@@ -404,6 +404,13 @@ Confirm that both fans come on and that the amber LED on the back of the fans is
  .. Wait 10 minutes for the power-on process to complete.
 Confirm that both fans come on and that the amber LED on the back of the fans is off.
 
+. If you performed the drive drawer replacement procedure online, and if any drives in the replacement drawer are failed after you completed the procedure, you must reconstruct the drives manually.
++
+Using SANtricity System Manager, complete the  link:..https://docs.netapp.com/us-en/e-series-santricity/sm-hardware/reconstruct-drive-manually.html[Reconstruct a drive manually] procedure.
+
 .What's next?
 
 Your drive drawer replacement is complete. You can resume normal operations.
+
+
+// 2026-Aug-27: e-series-internal#300
