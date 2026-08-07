@@ -309,7 +309,9 @@ The following procedures show how to cable the controllers to one DE460C shelf o
 
 * The cabling procedures show controllers with one SAS I/O module in slot 3. This is the only supported SAS I/O module configuration for SANtricity 12.10.
 
-* The cabling graphics show controller A cabling in blue and controller B cabling in red.
+* The cabling illustrations show controller A cabling in blue and controller B cabling in red.
+
+* You always cable the controllers and one or more shelves so that there are two cable connections for the A-side path (IOMA) and a B-side path (IOMB), as shown in the cabling illustrations.
 
 * You use the storage cables that came with your storage system, which could be the following cable type:
 +
