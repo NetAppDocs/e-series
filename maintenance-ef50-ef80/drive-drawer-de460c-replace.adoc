@@ -1,0 +1,16 @@
+---
+permalink: maintenance-ef50-ef80/drive-drawer-de460c-replace.html
+sidebar: sidebar
+keywords: EF50 replace drive drawer, replacing EF50 drive drawer, EF80 replace drive drawer, replacing EF80 drive drawer, EF50, EF80, E-Series, eseries
+summary: You can replace a drive drawer in an EF50 or EF80 controller shelf or a DE460C drive shelf.
+---
+= Replace the drive drawer in an DE460C- EF50 and EF80
+:experimental:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can replace a drive drawer in a DE460C drive shelf when the drive shelf is online or offline.
+
+include::../_include/drive_drawer_de460c_replace.adoc[]
+

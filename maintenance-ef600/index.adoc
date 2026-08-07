@@ -36,6 +36,10 @@ a| https://docs.netapp.com/us-en/e-series/maintenance-ef600/drives-overview-supe
 
 a| A drive is a device that provides the physical storage media for data.
 
+a| link:drive-drawer-de460c-replace.html[Drive drawer]
+
+a| A drive drawer is one of five components in a DE460C drive shelf that hold up to 12 drives.
+
 a| https://docs.netapp.com/us-en/e-series/maintenance-ef600/fans-overview-requirements-replacing2-concept.html[Fans]
 
 a| Each EF300 or EF600 controller shelf or drive shelf includes five fans for cooling the controller.
