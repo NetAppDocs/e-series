@@ -14,7 +14,7 @@ You can replace a drive drawer in an E4060 controller shelf or a DE460C drive sh
 
 .About this task
 
-The steps to replace a failed drive drawer in an E4060 controller shelf or a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection. If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must stop all host I/O activity and power off the shelf before replacing the drive drawer.
+The steps to replace a failed drive drawer in an E4060 controller shelf or a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection. If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must stop all host I/O activity and power off the shelf before replacing the drive drawer (perform this procedure offline).
 
 .Before you begin
 
