@@ -1,6 +1,8 @@
+// Aug 2026: include used for EF300-600 and EF50-80. Content is slightly different from E4060 content because E4060 controller is a DE460C shelf chassis and the E4060 procedure has references to that "config", which dies not apply to EF300-600 and EF50-80.
+
 .About this task
 
-The steps to replace a failed drive drawer in an E4060 controller shelf or a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection. If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must stop all host I/O activity and power off the shelf before replacing the drive drawer (perform this procedure offline).
+The steps to replace a failed drive drawer in a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection. If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must stop all host I/O activity and power off the shelf before replacing the drive drawer (perform this procedure offline).
 
 .Before you begin
 
@@ -77,22 +79,14 @@ The green Cache Active LED on the back of each controller is on when cached data
 
 . From the Home page of SANtricity System Manager, select *View Operations in Progress*.
 . Wait for all operations to complete before continuing with the next step.
-. Power off the shelves, using one of the following procedures:
+. Power off the shelves if you have expansion drive shelves *without* _Drawer Loss Protection_:
 +
-* _If you are replacing a drawer in a shelf *with* Drawer Loss Protection_: There is NO need to power off any of the shelves. You can perform the replace procedure while the drive drawer is online, because the Set Drawer Service Action Allowed Indicator CLI command completed successfully.
-+
-* _If you are replacing a drawer in a *controller* shelf *without* Drawer Loss Protection_:
+NOTE: If you are replacing a drawer in a shelf *with* _Drawer Loss Protection_: There is NO need to power off any of the shelves. You can perform the replace procedure while the drive drawer is online, because the Set Drawer Service Action Allowed Indicator CLI command completed successfully.
 
- .. Turn off both power switches on the controller shelf.
- .. Wait for all LEDs on the controller shelf to go dark.
-
-+
-* _If you are replacing a drawer in an *expansion* drive shelf *without* Drawer Loss Protection_:
-
- .. Turn off both power switches on the controller shelf.
- .. Wait for all LEDs on the controller shelf to go dark.
- .. Turn off both power switches on the drive shelf.
- .. Wait two minutes for drive activity to stop.
+.. Turn off both power switches on the controller shelf.
+.. Wait for all LEDs on the controller shelf to go dark.
+.. Turn off both power switches on the drive shelf.
+.. Wait two minutes for drive activity to stop.
 
 == Step 2: Remove cable chains
 
@@ -112,7 +106,7 @@ CAUTION: *Possible hardware damage* -- If the drive shelf is powered on, the cab
 
 .Steps
 
-. Make sure that the drive shelf and controller shelf no longer has I/O activity and is powered off, or you have issued the `Set Drawer Attention Indicator` CLI command.
+. Make sure that the drive shelf no longer has I/O activity and is powered off, or you have issued the `Set Drawer Attention Indicator` CLI command.
 
 . From the rear of the drive shelf, remove the right fan canister:
  .. Press the orange tab to release the fan canister handle.
@@ -372,22 +366,13 @@ image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif["Use the h
 CAUTION: *Risk of equipment malfunction* -- Make sure to completely close the drive drawer by pushing both levers. You must completely close the drive drawer to allow proper airflow and prevent overheating.
 
 . Attach the bezel to the front of the drive shelf.
-. If you have powered down one or more shelves, reapply power using one of the following procedures:
-+
-* _If you replaced a drive drawer in a *controller* shelf without Drawer Loss Protection_:
+. If you have powered down one or more shelves (to replace a drive drawer in an expansion drive shelf without _Drawer Loss Protection_), reapply power:
 
- .. Turn on both power switches on the controller shelf.
- .. Wait 10 minutes for the power-on process to complete.
-Confirm that both fans come on and that the amber LED on the back of the fans is off.
-
-+
-* _If you replaced a drive drawer in an *expansion* drive shelf without Drawer Loss Protection_:
-
- .. Turn on both power switches on the drive shelf.
- .. Confirm that both fans come on and that the amber LED on the back of the fans is off.
- .. Wait two minutes before applying power to the controller shelf.
- .. Turn on both power switches on the controller shelf.
- .. Wait 10 minutes for the power-on process to complete.
+.. Turn on both power switches on the drive shelf.
+.. Confirm that both fans come on and that the amber LED on the back of the fans is off.
+.. Wait two minutes before applying power to the controller shelf.
+.. Turn on both power switches on the controller shelf.
+.. Wait 10 minutes for the power-on process to complete.
 Confirm that both fans come on and that the amber LED on the back of the fans is off.
 
 . If you performed the drive drawer replacement procedure online, and if any drives in the replacement drawer are failed, you must reconstruct the drives manually.
