@@ -507,7 +507,7 @@ sidebar:
                 - title: Hot add a drive shelf
                   url: "/maintenance-ef600/drives-hotadd-drive-shelf-task.html"
               - title: Drive drawer
-                  url: "/maintenance-ef600/drive-drawer-de460c-replace.html"
+                url: "/maintenance-ef600/drive-drawer-de460c-replace.html"
               - title: Fans
                 pdf-filename: EF300-EF600 Maintain Fans
                 entries:
