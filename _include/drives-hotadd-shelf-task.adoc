@@ -34,8 +34,6 @@ NOTE: If you are cabling an older controller shelf, see https://mysupport.netapp
 NOTE: IOM12C modules are only supported on SANtricity OS 11.90R3 onward. Ensure your controller's firmware has been updated before installing or upgrading to an IOM12C.
 
 
-
-
 == Step 1: Prepare to add the drive shelf
 
 To prepare to hot add a drive shelf, you must check for critical events and check the status of the IOMs.
@@ -101,7 +99,7 @@ NOTE: See the installation instructions for your model for the full procedure fo
 
 To cable the shelf to your storage system, you connect each controller so that they have an A-side path (IOMA) and a B-side path (IOMB) to the single shelf or stack of shelves (as applicable). And if you have a stack of shelves, you then connect the shelves together (shelf-to-shelf connections) through the A-side path and B-side path.
 
-//To cable the shelf, you connect it to the controllers and existing shelves (if applicable).
+You always cable the controllers and one or more shelves so that there are two cable connections for the A-side path (IOMA) and the B-side path (IOMB), as shown in the cabling illustrations.
 
 
 [role="tabbed-block"]
