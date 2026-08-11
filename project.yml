@@ -325,8 +325,6 @@ sidebar:
                     url: "/config-linux/nvme-tcp-verify-linux-config-support-task.html"
                   - title: Configure IP addresses using DHCP
                     url: "/config-linux/nvme-tcp-configure-ip-address-dhcp-task.html"
-                  - title: Install SANtricity Storage Manager
-                    url: "/config-linux/nvme-tcp-install-smcli-11-53-task.html"
                   - title: Access SANtricity System Manager
                     url: "/config-linux/nvme-tcp-access-sam-setup-wizard-task.html"
                   - title: Configure switch
