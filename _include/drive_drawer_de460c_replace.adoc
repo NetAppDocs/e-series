@@ -1,8 +1,8 @@
-// Aug 2026: include used for EF300-600 and EF50-80. Content is slightly different from E4060 content because E4060 controller is a DE460C shelf chassis and the E4060 procedure has references to that "config", which dies not apply to EF300-600 and EF50-80.
+// Aug 2026: include used for EF300-600 and EF50-80. Content is slightly different from E4060 content/topic because E4060 controller is a DE460C shelf chassis (the other platforms are not) and the E4060 procedure has references to replacing a drawer in the controller shelf, which does not apply to EF300-600 and EF50-80.
 
 .About this task
 
-The steps to replace a failed drive drawer in a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection. If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must stop all host I/O activity and power off the shelf before replacing the drive drawer (perform this procedure offline).
+The steps to replace a failed drive drawer in a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection. If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must stop all host I/O activity and power off the entire storage system (controller shelf and all expansion shelves) before replacing the drive drawer (performing this procedure offline).
 
 .Before you begin
 
@@ -19,21 +19,21 @@ CAUTION: *Possible loss of data access* -- If a volume is already in a Degraded 
 ** An ESD wristband, or you have taken other antistatic precautions.
 ** A flashlight.
 ** A permanent marker to note the exact location of each drive as you remove the drive from the drawer.
-** Access to the storage array's command line interface (CLI). If you do not have access to the CLI, you can do one of the following:
+** Access to the storage system's command line interface (CLI). If you do not have access to the CLI, you can do one of the following:
 *** *For SANtricity System Manager (version 11.60 and above)* -- Download the CLI package (zip file) from System Manager. Go to menu:Settings[System > Add-ons > Command Line Interface]. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
 
 NOTE: If you need information on how to replace an E-Series DE460C expansion shelf, please refer to the https://kb.netapp.com/on-prem/E-Series/Hardware-KBs/How_to_replace_an_E_Series_DE460c_controller_expansion_shelf[NetApp Knowledge base^].
 
 == Step 1: Prepare to replace drive drawer
 
-Determine if you can perform the replacement procedure while the drive shelf is online or if you need to stop host I/O activity and power off any of the shelves that are powered on (perform the procedure offline).
+Determine if you can perform the replacement procedure while the drive shelf is online or if you need to stop host I/O activity and power off the storage system (perform the procedure offline).
 
-If you are replacing a drawer in a shelf with Drawer Loss Protection, there is no need to stop host I/O activity and power off any of the shelves.
+If you are replacing a drawer in a shelf with Drawer Loss Protection, there is no need to stop host I/O activity and power off the storage system.
 
 .Steps
 
-. Determine if the drive shelf is powered on.
- ** If the power is off, you do not need to issue the CLI command. Go to <<Step 2: Remove cable chains>>.
+. Determine if the target drive shelf is powered on.
+ ** If the power is off, you do not need to issue the CLI command to put the target drawer in service mode. Go to <<Step 2: Remove cable chains>>.
  ** If the power is on, go to the next step.
 . Access the CLI, and then enter the following command to put the target drawer in service mode:
 +
@@ -62,16 +62,16 @@ serviceAllowedIndicator=forceOnWarning;"
 +
 CAUTION: *Possible damage to drives* -- Wait 60 seconds after the command completes before you open the drive drawer. Waiting 60 seconds allows the drives to spin down, which prevents possible damage to the hardware.
 
- ** If a warning is displayed indicating that this command could not be completed, you must stop host I/O activity before removing the drawer. The warning is displayed because one or more drives in the affected drawer are in pools or volume groups without Drawer Loss Protection. To avoid losing data, you must complete the next steps to stop host I/O activity and to power off the drive shelf and the controller shelf.
-. Ensure that no I/O operations are occurring between the storage array and all connected hosts. For example, you can perform these steps:
+ ** If a warning is displayed indicating that this command could not be completed, you must stop host I/O activity before removing the drawer. The warning is displayed because one or more drives in the affected drawer are in pools or volume groups without Drawer Loss Protection. To avoid losing data, you must complete the next steps to stop host I/O activity and to power off the controller shelf and all of the expansion shelves.
+. Ensure that no I/O operations are occurring between the storage system and all connected hosts. For example, you can perform these steps:
  ** Stop all processes that involve the LUNs mapped from the storage to the hosts.
  ** Ensure that no applications are writing data to any LUNs mapped from the storage to the hosts.
- ** Unmount all file systems associated with volumes on the array.
+ ** Unmount all file systems associated with volumes on the storage system.
 +
 NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
-. If the storage array participates in a mirroring relationship, stop all host I/O operations on the secondary storage array.
-+
-CAUTION: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, the host application might lose data because the storage array will not be accessible.
+. If the storage system participates in a mirroring relationship, stop all host I/O operations on the secondary storage system.
+
+CAUTION: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, the host application might lose data because the storage system will not be accessible.
 
 . Wait for any data in cache memory to be written to the drives.
 +
@@ -79,13 +79,13 @@ The green Cache Active LED on the back of each controller is on when cached data
 
 . From the Home page of SANtricity System Manager, select *View Operations in Progress*.
 . Wait for all operations to complete before continuing with the next step.
-. Power off the shelves if you have expansion drive shelves *without* _Drawer Loss Protection_:
+. Power off the entire storage system if you have expansion drive shelves *without* _Drawer Loss Protection_:
 +
 NOTE: If you are replacing a drawer in a shelf *with* _Drawer Loss Protection_: There is NO need to power off any of the shelves. You can perform the replace procedure while the drive drawer is online, because the Set Drawer Service Action Allowed Indicator CLI command completed successfully.
 
 .. Turn off both power switches on the controller shelf.
 .. Wait for all LEDs on the controller shelf to go dark.
-.. Turn off both power switches on the drive shelf.
+.. Turn off both power switches on each of the expansion drive shelves.
 .. Wait two minutes for drive activity to stop.
 
 == Step 2: Remove cable chains
@@ -106,9 +106,9 @@ CAUTION: *Possible hardware damage* -- If the drive shelf is powered on, the cab
 
 .Steps
 
-. Make sure that the drive shelf no longer has I/O activity and is powered off, or you have issued the `Set Drawer Attention Indicator` CLI command.
+. Make sure that the controller shelf and the expansion shelves no longer have I/O activity and are powered off, or you have issued the `Set Drawer Attention Indicator` CLI command.
 
-. From the rear of the drive shelf, remove the right fan canister:
+. From the rear of the target drive shelf, remove the right fan canister:
  .. Press the orange tab to release the fan canister handle.
 +
 The figure shows the handle for the fan canister extended and released from the orange tab on the left.
@@ -120,7 +120,7 @@ image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e2800
  .. Using the handle, pull the fan canister out of the drive shelf, and set it aside.
  .. If the shelf is powered on, ensure that the left fan goes to its maximum speed.
 +
-CAUTION: *Possible equipment damage due to overheating* -- If the tray is powered on, do not remove both fans at the same time. Otherwise, the equipment might overheat.
+CAUTION: *Possible equipment damage due to overheating* -- If the drive shelf is powered on, do not remove both fans at the same time. Otherwise, the equipment might overheat.
 . Determine which cable chain to disconnect:
  ** If the power is on, the amber Attention LED on the front of the drawer indicates the cable chain you need to disconnect.
  ** If the power is off, you must manually determine which of the five cable chains to disconnect.
@@ -366,9 +366,9 @@ image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif["Use the h
 CAUTION: *Risk of equipment malfunction* -- Make sure to completely close the drive drawer by pushing both levers. You must completely close the drive drawer to allow proper airflow and prevent overheating.
 
 . Attach the bezel to the front of the drive shelf.
-. If you have powered down one or more shelves (to replace a drive drawer in an expansion drive shelf without _Drawer Loss Protection_), reapply power:
+. If you have powered off the storage system (controller shelf and the expansion shelves) to replace a drive drawer in an expansion drive shelf without _Drawer Loss Protection_, reapply power:
 
-.. Turn on both power switches on the drive shelf.
+.. Turn on both power switches on all of the expansion shelves.
 .. Confirm that both fans come on and that the amber LED on the back of the fans is off.
 .. Wait two minutes before applying power to the controller shelf.
 .. Turn on both power switches on the controller shelf.
