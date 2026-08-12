@@ -70,9 +70,9 @@ CAUTION: *Possible damage to drives* -- Wait 60 seconds after the command comple
 +
 NOTE: The exact steps to stop host I/O operations depend on the host operating system and the configuration, which are beyond the scope of these instructions. If you are not sure how to stop host I/O operations in your environment, consider shutting down the host.
 . If the storage system participates in a mirroring relationship, stop all host I/O operations on the secondary storage system.
-
++
 CAUTION: *Possible data loss* -- If you continue this procedure while I/O operations are occurring, the host application might lose data because the storage system will not be accessible.
-
++
 . Wait for any data in cache memory to be written to the drives.
 +
 The green Cache Active LED on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
@@ -366,7 +366,7 @@ image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif["Use the h
 CAUTION: *Risk of equipment malfunction* -- Make sure to completely close the drive drawer by pushing both levers. You must completely close the drive drawer to allow proper airflow and prevent overheating.
 
 . Attach the bezel to the front of the drive shelf.
-. If you have powered off the storage system (controller shelf and the expansion shelves) to replace a drive drawer in an expansion drive shelf without _Drawer Loss Protection_, reapply power:
+. If you have powered off the storage system (controller shelf and the expansion shelves) to replace a drive drawer, reapply power:
 
 .. Turn on both power switches on all of the expansion shelves.
 .. Confirm that both fans come on and that the amber LED on the back of the fans is off.
