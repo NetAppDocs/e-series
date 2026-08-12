@@ -328,7 +328,7 @@ The LED could remain on for as long as a minute after you reinstall the fan whil
 
 == Step 6: Complete drive drawer replacement
 
-Reinsert the drives in the correct order, reinstall the drive drawer into the drive shelf, reattach the front bezel, reapply power (if needed), and then manually reconstruct drives (if needed).
+Reinsert the drives in the correct order, reinstall the drive drawer into the drive shelf, reattach the front bezel, reapply power (if needed), manually reconstruct drives (if needed), and then return the failed part to NetApp.
 
 CAUTION: *Possible loss of data access* -- You must install each drive in its original location in the drive drawer.
 
@@ -378,6 +378,8 @@ Confirm that both fans come on and that the amber LED on the back of the fans is
 . If you performed the drive drawer replacement procedure online, and if any drives in the replacement drawer are failed, you must reconstruct the drives manually.
 +
 Using SANtricity System Manager, complete the  link:https://docs.netapp.com/us-en/e-series-santricity/sm-hardware/reconstruct-drive-manually.html[Reconstruct a drive manually^] procedure.
+
+. Return the failed part to NetApp, as described in the RMA instructions shipped with the kit. See the https://mysupport.netapp.com/site/info/rma[Part Return and Replacements] page for further information.
 
 .What's next?
 
