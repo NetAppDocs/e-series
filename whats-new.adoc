@@ -30,8 +30,11 @@ a|The SANtricity System Manager user interface has received additional enhanceme
 a|Expanded E-Series platform support for new SANtricity System Manager user interface
 a|The new user interface for SANtricity System Manager, which was introduced in the SANtricity 12.00 release for the EF80 and EF50 storage systems, has been expanded to support additional E-Series storage platforms. This means that users managing a wider range of E-Series storage systems can now benefit from the modernized interface and enhanced usability features. The expanded support includes compatibility with select models of E-Series storage systems, allowing users to take advantage of the improved navigation and streamlined management tasks across more of their storage infrastructure. 
 
-a|Increased character limit for volume names
-a|The character limit for volume names has been increased from 30 to 60 characters.
+a|Mixed Performance and Capacity drive support for EF80 and EF50 systems
+a|EF80 and EF50 storage systems now support Performance and Capacity NVMe SSD drives in the same storage array, subject to minimum drive counts (6 for Performance, 12 for Capacity). Performance and Capacity drives must remain in separate pools and volume groups.
+
+a|Increased character limit for standard volume names
+a|The character limit for standard volume names has been increased from 30 to 60 characters.
 
 a|Minimum inactivity timeout limit for SANtricity System Manager user interface now 10 minutes
 a|The inactivity timeout limit for the SANtricity System Manager user interface has been updated to a minimum of 10 minutes. Previously, the minimum inactivity timeout limit was 15 minutes. This change helps to enhance security by ensuring that the user interface automatically logs out after 10 minutes of inactivity.
