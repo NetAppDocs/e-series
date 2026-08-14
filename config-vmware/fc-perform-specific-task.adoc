@@ -115,19 +115,19 @@ a|
 
 === Host Mapping Information
 
+[cols="35h,~"]
 |===
-a|
-Mapping host name
-a|
+|Mapping host name|
 
-a|
-Host OS type
-a|
+|Host OS type|
 
-a|
+|Host NQN|
+
+|Target NQN|
+
 |===
 
-== Step 2: Determine the host port WWPNs--FC
+== Step 2: Determine the host port WWPNs
 
 To configure FC zoning, you must determine the worldwide port name (WWPN) of each initiator port.
 
@@ -156,7 +156,7 @@ In the example above, the UID for vmhba4 and vmhba64 as well as vmhba5 and vmhba
 
 NOTE: Another command option is `esxcli storage san fc list`. This will display more details and the WWPN in hexadecimal format separated by colons.
 
-== Step 3: Configure the FC switches--VMware
+== Step 3: Configure the FC switches
 
 Configuring (zoning) the Fibre Channel (FC) switches enables the hosts to connect to the storage array and limits the number of paths. You zone the switches using the management interface for the switches.
 

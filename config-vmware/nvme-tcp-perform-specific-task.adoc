@@ -50,7 +50,7 @@ Make sure you have the following:
 .Steps
 Consult your switch vendor's documentation.
 
-== Step 3: Configure networking - NVMe/TCP, VMware
+== Step 3: Configure networking
 You can set up your NVMe over TCP network in many ways, depending on your data storage requirements. Consult your network administrator for tips on selecting the best configuration for your environment.
 
 .About this task
@@ -69,7 +69,7 @@ To ensure a good multipathing configuration, use multiple network segments for t
 .Steps
 Consult your switch vendor's documentation.
 
-== Step 4: Configure array-side networking - NVMe/TCP, VMware
+== Step 4: Configure array-side networking
 You use the SANtricity System Manager interface to configure NVMe over TCP networking on the array side.
 
 .About this task
@@ -153,7 +153,7 @@ Select this option, and then enter a static address in the fields. For IPv4, inc
 
 . Close System Manager.
 
-== Step 5: Configure host-side networking—​NVMe over TCP, VMware
+== Step 5: Configure host-side networking
 
 Configuring NVMe over TCP networking on the host side enables the VMware NVMe over TCP storage adapter initiator to establish a session with the array.
 
@@ -179,7 +179,7 @@ NOTE: The Host NQN can be acquired during this process from the Add Controller d
 
 After successfully adding, the connections can be viewed from the Storage Adapters view on vSphere Client. If unsuccessful, skip to step 6 to verify communication to the ports and correct any connection settings.
 
-== Step 6: Verify IP network connections - ​NVMe over TCP, VMware
+== Step 6: Verify IP network connections
 
 You verify Internet Protocol (IP) network connections by using ping tests to ensure the host and array are able to communicate.
 

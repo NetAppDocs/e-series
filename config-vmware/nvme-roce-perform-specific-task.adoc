@@ -23,25 +23,16 @@ image::../media/network_generic_worksheet.gif["NVMe over RoCE port identifiers"]
 
 === Host Mapping Information
 
+[cols="35h,~"]
 |===
-a|
-Mapping host name
-a|
-{nbsp} 
-a|
-Host OS type
-a|
-{nbsp}
-a|
-Host NQN
-a|
-{nbsp}
-a|
-Target NQN
-a|
-{nbsp}
-a|
-{nbsp}
+|Mapping host name|
+
+|Host OS type|
+
+|Host NQN|
+
+|Target NQN|
+
 |===
 
 == Step 2: Configure the NVMe/RoCE switches
@@ -59,7 +50,7 @@ Make sure you have the following:
 .Steps
 Consult your switch vendor's documentation.
 
-== Step 3: Configure networking - NVMe/RoCE, VMware
+== Step 3: Configure networking 
 You can set up your NVMe over RoCE network in many ways, depending on your data storage requirements. Consult your network administrator for tips on selecting the best configuration for your environment.
 
 .About this task
@@ -78,7 +69,7 @@ To ensure a good multipathing configuration, use multiple network segments for t
 .Steps
 Consult your switch vendor's documentation.
 
-== Step 4: Configure array-side networking - NVMe/RoCE, VMware
+== Step 4: Configure array-side networking 
 You use the SANtricity System Manager interface to configure NVMe over RoCE networking on the array side.
 
 .About this task
@@ -162,7 +153,7 @@ Select this option, and then enter a static address in the fields. For IPv4, inc
 
 . Close System Manager.
 
-== Step 5: Configure host-side networking—​NVMe over RoCE, VMware
+== Step 5: Configure host-side networking
 
 Configuring NVMe over RoCE networking on the host side enables the VMware NVMe over RDMA storage adapter initiator to establish a session with the array.
 
@@ -203,7 +194,7 @@ NOTE: The Host NQN can be acquired during this process from the Add Controller d
 
 After successfully adding, the connections can be viewed from the Storage Adapters view on vSphere Client. If unsuccessful, skip to step 6 to verify communication to the ports and correct any connection settings.
 
-== Step 6: Verify IP network connections - ​NVMe over RoCE, VMware
+== Step 6: Verify IP network connections 
 
 You verify Internet Protocol (IP) network connections by using ping tests to ensure the host and array are able to communicate.
 

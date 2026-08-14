@@ -58,20 +58,19 @@ a|
 
 === Host Mapping Information
 
+[cols="35h,~"]
 |===
-a|
-Mapping host name
-a|
-{nbsp} 
-a|
-Host OS type
-a|
-{nbsp} 
-a|
-{nbsp} 
+|Mapping host name|
+
+|Host OS type|
+
+|Host NQN|
+
+|Target NQN|
+
 |===
 
-== Step 2: Determine SAS host identifiers--VMware
+== Step 2: Determine SAS host identifiers
 
 Find the SAS addresses using esxcli or the HBA utility.
 

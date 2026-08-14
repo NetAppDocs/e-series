@@ -403,6 +403,8 @@ sidebar:
               url: "/config-vmware/access-sam-setup-wizard-task.html"
             - title: Perform FC-specific tasks
               url: "/config-vmware/fc-perform-specific-task.html"
+            - title: Perform NVMe over RoCE-specific tasks
+              url: "/config-vmware/nvme-roce-perform-specific-task.html"
             - title: Perform NVMe over FC-specific tasks
               url: "/config-vmware/nvme-fc-perform-specific-task.html"
             - title: Perform NVMe over TCP-specific tasks
@@ -411,8 +413,6 @@ sidebar:
               url: "/config-vmware/iscsi-perform-specific-task.html"
             - title: Perform SAS-specific tasks
               url: "/config-vmware/sas-perform-specific-task.html"
-            - title: Perform NVMe over RoCE-specific tasks
-              url: "/config-vmware/nvme-roce-perform-specific-task.html"
             - title: Discover storage on the host
               url: "/config-vmware/discover-storage-host-task.html"
             - title: Configure storage on host

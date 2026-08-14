@@ -24,28 +24,19 @@ image::../media/50001_01_conf-vmw.gif["iSCSI port identifier"]
 
 === Host Mapping Information
 
+[cols="35h,~"]
 |===
-a|
-Mapping host name
-a|
-{nbsp} 
-a|
-Host OS type
-a|
-{nbsp}
-a|
-Host NQN
-a|
-{nbsp}
-a|
-Target NQN
-a|
-{nbsp}
-a|
-{nbsp}
+|Mapping host name|
+
+|Host OS type|
+
+|Host NQN|
+
+|Target NQN|
+
 |===
 
-== Step 2: Configure the switches--iSCSI, VMware
+== Step 2: Configure the switches
 
 You configure the switches according to the vendor's recommendations for iSCSI. These recommendations might include both configuration directives as well as code updates.
 
@@ -63,7 +54,7 @@ NOTE: Port channels/LACP is not supported on the controller's switch ports. Host
 .Steps
 Consult your switch vendor's documentation.
 
-== Step 3: Configure networking--iSCSI VMware
+== Step 3: Configure networking
 
 You can set up your iSCSI network in many ways, depending on your data storage requirements. Consult your network administrator for tips on selecting the best configuration for your environment.
 
@@ -92,7 +83,7 @@ Consult your switch vendor's documentation.
 
 NOTE: Many network switches have to be configured above 9,000 bytes for IP overhead. Consult your switch documentation for more information.
 
-== Step 4: Configure array-side networking--iSCSI, VMware
+== Step 4: Configure array-side networking
 
 You use the SANtricity System Manager GUI to configure iSCSI networking on the array side.
 
@@ -194,7 +185,7 @@ Select this option, and then enter a static address in the fields. For IPv4, inc
 . Click *Finish*.
 . Close System Manager.
 
-== Step 5: Configure host-side networking--iSCSI
+== Step 5: Configure host-side networking
 
 Configuring iSCSI networking on the host side enables the VMware iSCSI initiator to establish a session with the array.
 
@@ -234,7 +225,7 @@ The interfaces vary in functionality and the exact workflow will vary.
 
 After successfully adding, the connections can be viewed from the Storage Adapters view on vSphere Client. If unsuccessful, skip to step 6 to verify communication to the ports and correct any connection settings.
 
-== Step 6: Verify IP network connections--iSCSI, VMware
+== Step 6: Verify IP network connections
 
 You verify Internet Protocol (IP) network connections by using ping tests to ensure the host and array are able to communicate.
 
