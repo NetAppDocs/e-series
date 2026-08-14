@@ -36,5 +36,5 @@ The express method includes the following steps, which are also outlined in the 
 * http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] -- Enables you to search for configurations of NetApp products and components that meet the standards and requirements specified by NetApp.
 * https://www.netapp.com/pdf.html?item=/media/17017-tr4789.pdf[VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.X^] -- Provides technical details on iSCSI integration with VMware.
 * https://configmax.broadcom.com/guest[VMware Configuration Maximums^] -- Describes how to configure virtual and physical storage to stay within the allowed maximums that ESX/ESXi supports.
-* https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/requirements-for-vmware-nvme-storage.html[Requirements of VMware NVMe storage^].
+* https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/requirements-for-vmware-nvme-storage.html[Requirements of VMware NVMe storage^] -- NVMe over fabrics specific configuration requirements.
 * https://techdocs.broadcom.com/[Broadcom Technical Documentation^] -- VMware Cloud Infrastructure Software and vSphere Technical Documentation.
