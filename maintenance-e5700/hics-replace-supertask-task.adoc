@@ -62,7 +62,8 @@ The file is saved in the Downloads folder for your browser with the name, *suppo
 . If the controller is not already offline, take it offline now using SANtricity System Manager.
 
  * From SANtricity System Manager:
-  .. Select menu:Hardware[Controllers and components].
+  .. Select *Hardware*.
+  .. If the graphic shows the drives, select *Show back of shelf* to show the controllers.
   .. Select the controller that you want to place offline.
   .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 +
@@ -226,7 +227,8 @@ image:../media/e5700_hic_3_callouts_maint-e5700.gif[E5700 controller LEDs"]
 
 . Bring the controller online using SANtricity System Manager.
  * From SANtricity System Manager:
-  .. Select menu:Hardware[Controllers and components].
+  .. Select *Hardware*.
+  .. If the graphic shows the drives, select *Show back of shelf*.
   .. Select the controller you want to place online.
   .. Select *Place Online* from the context menu, and confirm that you want to perform the operation.
 +

@@ -46,7 +46,7 @@ image::../media/28_dwg_e2800_labels_maint-e2800.gif["MAC address and FRU part nu
 +
 
 . From SANtricity System Manager, locate the replacement part number for the installed controller canister.
- .. Select menu:Hardware[Controllers and components] under the left panel.
+ .. Select *Hardware*.
  .. Locate the controller shelf, which is marked with the controller icon image:../media/sam1130_ss_hardware_controller_icon_maint-e2800.gif["Controller icon"].
  .. Click the controller icon.
  .. Select the controller, and click *Next*.

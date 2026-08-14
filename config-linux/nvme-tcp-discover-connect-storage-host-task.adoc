@@ -65,15 +65,13 @@ NOTE: Connections are not established for any discovered port inaccessible by th
 +
 NOTE: If you specify a port number using this command, the connection fails. The default port is the only port set up for connections.
 +
-NOTE: The recommended queue depth setting is 1024. Override the default setting of 128 with 1024 using the `-Q 1024` command line option, as shown in the following example.
-+
 NOTE: The recommended controller loss timeout period in seconds is 60 minutes (3600 seconds). Override the default setting of 600 seconds with 3600 seconds using the `-l 3600` command line option, as shown in the following example.
 +
 ----
 # nvme connect -t tcp -a 192.168.134.101 -n nqn.1992-08.com.netapp:EF80.6d039ea0005d29280000000069ddb538 -Q 128 -l 3600
 ----
 
-. Repeat step 4 to connect the discovered subsystem on the second path.
+. Repeat step 4 for any other connections.
 
 . **Optional** - Setup your host to automatically discover and connect to targets on each boot. 
 .. Add the discovery parameters from step 2 and step 3 to `/etc/nvme/discovery.conf` using the following procedure and format:    

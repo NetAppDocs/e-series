@@ -23,25 +23,16 @@ image::../media/network_generic_worksheet.gif["NVMe over TCP port identifiers"]
 
 === Host Mapping Information
 
+[cols="35h,~"]
 |===
-a|
-Mapping host name
-a|
-{nbsp} 
-a|
-Host OS type
-a|
-{nbsp}
-a|
-Host NQN
-a|
-{nbsp}
-a|
-Target NQN
-a|
-{nbsp}
-a|
-{nbsp}
+|Mapping host name|
+
+|Host OS type|
+
+|Host NQN|
+
+|Target NQN|
+
 |===
 
 == Step 2: Configure the NVMe/TCP switches
@@ -182,33 +173,11 @@ For more information, see link:https://techdocs.broadcom.com/us/en/vmware-cis/vs
 
 . Add NVMe Controllers for NVMe over TCP.
 +
-IO queue size is limited on E-Series for NVMe over TCP at 128. VMware does not allow setting of the IO queue size via vSphere Client so this can only be achieved using esxcli. ESXi shell access will need to be enabled for this step. To enable, see https://knowledge.broadcom.com/external/article/311213/using-esxi-shell-in-esxi.html[Using ESXi Shell in ESXi^].
+For more information, see link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-tcp-on-esxi/shared-content/submaps/GUID-23E6D699-BEDC-4B5F-9515-3390C0E73888_copy.html[Add Controllers for NVMe over Fabrics^].
 
-SSH into the `ESXi shell` and run the following, making sure the IO queue size value is set to 128 with `-Q 128`, replacing vmhba<##> with the vmhba number for the NVMe over TCP port, the <IP> with the IP address of the target port, and <TargetNQN> with the E-Series array target NQN:
-+
-----
-# esxcli nvme fabrics connect -a vmhba<##> -i <IP> -s <TargetNQN> -p 4420  -Q 128
-----
-+
+NOTE: The Host NQN can be acquired during this process from the Add Controller dialog box. This will be needed later when configuring host mappings.
 
-This must be performed for each connected target port on the controllers. Example with 2 controllers having 4 target ports each:
-+
-----
-# esxcli nvme fabrics connect -a vmhba65 -i 192.29.11.111 -s nqn.1992-08.com.netapp:EF80.6d039ea0005d29640000000068ddbfec -p 4420  -Q 128
-# esxcli nvme fabrics connect -a vmhba65 -i 192.29.11.112 -s nqn.1992-08.com.netapp:EF80.6d039ea0005d29640000000068ddbfec -p 4420  -Q 128
-# esxcli nvme fabrics connect -a vmhba65 -i 192.29.11.113 -s nqn.1992-08.com.netapp:EF80.6d039ea0005d29640000000068ddbfec -p 4420  -Q 128
-# esxcli nvme fabrics connect -a vmhba65 -i 192.29.11.114 -s nqn.1992-08.com.netapp:EF80.6d039ea0005d29640000000068ddbfec -p 4420  -Q 128
-# esxcli nvme fabrics connect -a vmhba66 -i 192.29.12.111 -s nqn.1992-08.com.netapp:EF80.6d039ea0005d29640000000068ddbfec -p 4420  -Q 128
-# esxcli nvme fabrics connect -a vmhba66 -i 192.29.12.112 -s nqn.1992-08.com.netapp:EF80.6d039ea0005d29640000000068ddbfec -p 4420  -Q 128
-# esxcli nvme fabrics connect -a vmhba66 -i 192.29.12.113 -s nqn.1992-08.com.netapp:EF80.6d039ea0005d29640000000068ddbfec -p 4420  -Q 128
-# esxcli nvme fabrics connect -a vmhba66 -i 192.29.12.114 -s nqn.1992-08.com.netapp:EF80.6d039ea0005d29640000000068ddbfec -p 4420  -Q 128
-----
-+
-
-After successfully adding, the connections can be viewed from the Storage Adapters view on vSphere Client. If unsuccessful, continue to step 6 to verify communication to the ports and correct any connection settings.
-
-NOTE: The Host NQN can be acquired via esxcli with the command `esxcli nvme info get`. This will be needed later when configuring host mappings.
-
+After successfully adding, the connections can be viewed from the Storage Adapters view on vSphere Client. If unsuccessful, skip to step 6 to verify communication to the ports and correct any connection settings.
 
 == Step 6: Verify IP network connections - ​NVMe over TCP, VMware
 

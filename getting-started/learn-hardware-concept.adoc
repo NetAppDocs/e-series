@@ -22,10 +22,10 @@ Some of the available E-Series array models are shown below. For a complete list
 * EF300 series -- entry-level all flash, all NVMe
 * EF300C series -- entry-level all flash, high-density NVMe
 * EF600C series -- midrange all flash, high-density NVMe
-* E2800 series (EOA) -- entry-level hybrid
-* EF280 series (EOA) -- entry-level all flash
-* E5700 series (EOA) -- midrange hybrid
-* EF570 series (EOA) -- midrange all flash
+* E2800 series (End-of-availability) -- entry-level hybrid
+* EF280 series (End-of-availability) -- entry-level all flash
+* E5700 series (End-of-availability) -- midrange hybrid
+* EF570 series (End-of-availability) -- midrange all flash
 
 NOTE: For SANtricity OS 11.80GA or later, all USB ports are disabled while SANtricity OS is running. 
 
@@ -52,7 +52,7 @@ Drives::
 ** 30TB
 ** 60TB
 + 
-NOTE: For 30TB and 60TB drives, the EF80 supports only Dynamic Disk Pool use with no legacy RAID support.
+NOTE: For 30TB and 60TB drives, the EF50 supports only Dynamic Disk Pool use with no legacy RAID support.
 
 * Support up to 24 NVMe SSD drives in the controller shelf.
 * Support for one or two host interface cards per controller.

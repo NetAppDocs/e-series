@@ -85,7 +85,7 @@ image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif["Cache active 
 +
 *(1)* _Cache Active LED_
 
-. From the left panel of SANtricity System Manager, select menu:Storage[Operations in Progress].
+. From the Home page of SANtricity System Manager, select *View Operations in Progress*. Wait for all operations to complete before continuing with the next step.
 +
 Wait for all operations to complete before continuing with the next step.
 . Power down the controller shelf.
@@ -247,7 +247,8 @@ NOTE: If you cannot resolve the problem, contact technical support.
 
 . If the new HIC ports require SFP+ transceivers, install these SFPs.
 . If you installed a HIC with SFP+ (optical) ports, confirm the new ports have the host protocol you expect.
- .. From SANtricity System Manager, select menu:Hardware[Controllers and components].
+ .. From SANtricity System Manager, select *Hardware*.
+ .. If the graphic shows the drives, click *Show back of shelf*.
  .. Select the graphic for either Controller A or Controller B.
  .. Select *View settings* from the context menu.
  .. Select the *Host Interfaces* tab.
