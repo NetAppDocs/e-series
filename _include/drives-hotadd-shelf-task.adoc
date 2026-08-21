@@ -13,7 +13,7 @@
 
 .About this task
 
-* This procedure applies to hot adding a DE212C, DE224C, or DE460C drive shelf to an E2800, E2800B, EF280, E5700, E5700B, EF570, EF300, EF600, EF300C, EF600C, E4000, EF50, or EF80 controller shelf.
+* This procedure applies to hot adding a DE212C, DE224C, or DE460C drive shelf to an E2800, E2800B, EF280, E5700, E5700B, EF570, EF300, EF600, E4000, EF50, or EF80 controller shelf.
 +
 For information about the supported versions of SANtricity and maximum number of external SAS shelves supported for your storage system, see the NetApp Hardware Universe: https://hwu.netapp.com/Controller/Index?platformTypeId=2357027[Hardware Universe^].
 +
