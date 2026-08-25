@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: upgrading E2800 HIC, upgrade E2800 HIC, upgrade host interface card, E2800, E-Series, eseries
 summary: Upgrade a host interface card (HIC) in an E2800 array.
 ---
-= Upgrade the host interface card (HIC) - E2800
+= Upgrade the host interface card in an E2800 array
 :experimental:
 :icons: font
 :imagesdir: ../media/
