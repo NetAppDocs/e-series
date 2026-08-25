@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replacing E2800 HIC, replace E2800 HIC, replace host interface card, E2800, E-Series, eseries
 summary: Replace a host interface card (HIC) that has failed.
 ---
-= Replace the host interface card (HIC) - E2800
+= Replace the host interface card in an E2800 array
 :experimental:
 :icons: font
 :imagesdir: ../media/
