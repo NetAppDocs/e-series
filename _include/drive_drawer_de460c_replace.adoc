@@ -1,8 +1,10 @@
-// Aug 2026: include used for EF300-600 and EF50-80. Content is slightly different from E4060 content/topic because E4060 controller is a DE460C shelf chassis (the other platforms are not) and the E4060 procedure has references to replacing a drawer in the controller shelf, which does not apply to EF300-600 and EF50-80.
+// Aug 2026: include used for EF300-600 and EF50-80. Content is slightly different from E4060 content/topic because the E4060 controller shelf is a DE460C shelf (the other platforms are not); therefore the E4060 procedure has references to replacing a drawer in the controller shelf, which does not apply to EF300-600 and EF50-80.
 
 .About this task
 
-The steps to replace a failed drive drawer in a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection. If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must stop all host I/O activity and power off the entire storage system (controller shelf and all expansion shelves) before replacing the drive drawer (performing this procedure offline).
+The steps to replace a failed drive drawer in a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection. If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must perform this procedure offline by stopping all host I/O activity and powering off the entire storage system (controller shelf and all expansion shelves) before replacing a drive drawer.
+
+// Otherwise, you must stop all host I/O activity and power off the entire storage system (controller shelf and all expansion shelves) before replacing the drive drawer (performing this procedure offline).
 
 .Before you begin
 
