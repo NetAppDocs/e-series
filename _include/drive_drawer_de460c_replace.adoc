@@ -1,4 +1,4 @@
-//Aug 2026: include used for EF300-600 and EF50-80. Content is slightly different from E4060 content/topic because the E4060 controller shelf is a DE460C shelf (the other platforms are not); therefore the E4060 procedure has references to replacing a drawer in the controller shelf, which does not apply to EF300-600 and EF50-80.
+//Aug 2026: include used for EF300-600 and EF50-80. Content is slightly different from E4060 content/topic because the E4060 controller shelf is a DE460C shelf (the other platforms are not); therefore the E4060 procedure has references to replacing a drawer in the controller shelf or expansion shelf, which does not apply to EF300-600 and EF50-80, because they only have expansion shelves.
 
 .About this task
 
