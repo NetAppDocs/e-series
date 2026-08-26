@@ -4,8 +4,6 @@
 
 The steps to replace a failed drive drawer in a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection. If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must perform this procedure offline by stopping all host I/O activity and powering off the entire storage system (controller shelf and all expansion shelves) before replacing a drive drawer.
 
-// Otherwise, you must stop all host I/O activity and power off the entire storage system (controller shelf and all expansion shelves) before replacing the drive drawer (performing this procedure offline).
-
 .Before you begin
 
 * Make sure the drive shelf meets all of these conditions:
