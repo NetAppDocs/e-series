@@ -16,11 +16,11 @@ Ensure that the site and the cabinet or rack that you plan to use meet specifica
 
 .Steps
 
-. Use https://hwu.netapp.com[NetApp Hardware Universe^] to confirm that your site meets the environmental and electrical requirements for your storage system.
+. Use link:https://hwu.netapp.com[NetApp Hardware Universe^] to confirm that your site meets the environmental and electrical requirements for your storage system.
 
 . Make sure you have adequate cabinet or rack space for your storage system and any switches.
 +
-If needed, see https://hwu.netapp.com[NetApp Hardware Universe^] for the exact dimensions of your storage system.
+If needed, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for the exact dimensions of your storage system.
 +
 ** 2U for a storage system
 ** 1U for most switches
@@ -63,7 +63,7 @@ NOTE: If there are any discrepancies, note them down for further action.
 +
 The following items are some of the contents you might see in the boxes. 
 +
-If needed, see https://hwu.netapp.com/[NetApp Hardware Universe^] for other supported cables and identify their use.
+If needed, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for other supported cables and identify their use.
 +
 [%rotate, grid="none", frame="none", cols="9,9,5"]
 |===
