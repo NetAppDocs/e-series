@@ -50,7 +50,7 @@ If you are replacing a drawer in a shelf with Drawer Loss Protection, there is n
 . Access the CLI, and then enter the following command to put the target drawer in service mode:
 +
 ----
-SMcli <ctlr_IP1\> -p "array_password" -c "set tray [trayID] drawer [drawerID]
+SMcli <ctlr_IP1\> -k -u "array_username" -p "array_password" -c "set tray [trayID] drawer [drawerID]
 serviceAllowedIndicator=on;"
 ----
 +

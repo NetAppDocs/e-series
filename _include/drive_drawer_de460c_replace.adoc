@@ -1,4 +1,4 @@
-//Aug 2026: include used for EF300-600 and EF50-80. Content is slightly different from E4060 content/topic because the E4060 controller shelf is a DE460C shelf (the other platforms are not); therefore the E4060 procedure has references to replacing a drawer in the controller shelf or expansion shelf, which does not apply to EF300-600 and EF50-80, because they only have expansion shelves.
+//Aug 2026: include used for EF300-600 and EF50-80. Content is slightly different from E4060 content/topic because the E4060 controller shelf is a DE460C shelf (the other platforms are not); therefore, the E4060 procedure has references to replacing a drawer in the "controller shelf or expansion shelf", which does not apply to EF300-600 and EF50-80, because they only have expansion shelves.
 
 .About this task
 
@@ -38,7 +38,7 @@ If you are replacing a drawer in a shelf with Drawer Loss Protection, there is n
 . Access the CLI, and then enter the following command to put the target drawer in service mode:
 +
 ----
-SMcli <ctlr_IP1\> -p "array_password" -c "set tray [trayID] drawer [drawerID]
+SMcli <ctlr_IP1\> -k -u "array_username" -p "array_password" -c "set tray [trayID] drawer [drawerID]
 serviceAllowedIndicator=on;"
 ----
 +
