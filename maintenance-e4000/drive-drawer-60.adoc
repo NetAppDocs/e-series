@@ -57,6 +57,7 @@ serviceAllowedIndicator=on;"
 where:
 
  ** `<ctlr_IP1>` is the identifier of the controller.
+ ** `array_username` is the username for the storage array. You must enclose the value for `array_username` in double quotation marks ("").
  ** `array_password` is the password for the storage array. You must enclose the value for `array_password` in double quotation marks ("").
  ** `[trayID]` is the identifier of the drive shelf that contains the drive drawer that you want to replace. Drive shelf ID values are 0 to 99. You must enclose the value for `trayID` in square brackets.
  ** `[drawerID]` is the identifier of the drive drawer that you want to replace. Drawer ID values are 1 (top drawer) to 5 (bottom drawer). You must enclose the value for `drawerID` in square brackets.
@@ -65,7 +66,7 @@ This command ensures you can remove the top-most drawer in drive shelf 10:
 
 +
 ----
-SMcli <ctlr_IP1\> -p "safety-1" -c "set tray [10] drawer [1]
+SMcli <ctlr_IP1\> -k -u "DC1-PRD-SAN-01" -p "safety-1" -c "set tray [10] drawer [1]
 serviceAllowedIndicator=forceOnWarning;"
 ----
 
