@@ -12,8 +12,8 @@ Make sure that the I/O modules you are upgrading to are supported by your storag
 //SAS expansion I/O modules are only supported on SANtricity 12.10 and later.
 +
 You can confirm supported I/O modules and slot priority for your storage system at https://hwu.netapp.com[NetApp Hardware Universe^].
-+
-NOTE: If you are installing SAS I/O modules to support SAS expansion shelves, controller slot 3 is the only supported slot.
+//+
+//NOTE: If you are installing SAS I/O modules to support SAS expansion shelves, controller slot 3 is the only supported slot.
 +
 CAUTION: *Possible loss of data access* -- The presence of incompatible or mismatched I/O modules causes the controllers to lock down when you apply power.
 
