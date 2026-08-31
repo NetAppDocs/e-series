@@ -33,8 +33,8 @@ a|The new user interface for SANtricity System Manager, which was introduced in 
 a|Mixed Performance and Capacity drive support for EF80 and EF50 systems
 a|EF80 and EF50 storage systems now support Performance and Capacity NVMe SSD drives in the same storage array, subject to minimum drive counts (6 for Performance, 12 for Capacity). Performance and Capacity drives must remain in separate pools and volume groups.
 
-a|Increased character limit for standard volume names
-a|The character limit for standard volume names has been increased from 30 to 60 characters.
+a|Increased character limit for standard and thin volume names
+a|The character limit for standard and thin volume names has been increased from 30 to 60 characters.
 
 NOTE: Downgrades to SANtricity OS software version 11.90 or earlier is not supported if standard or thin volumes exist with names greater than 30 characters. If you plan to downgrade to SANtricity OS software version 11.90 or earlier, change the names of any standard or thin volumes that have names greater than 30 characters before downgrading.
 
