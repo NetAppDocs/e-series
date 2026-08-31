@@ -9,20 +9,22 @@ summary: After you cable the controller's mirroring and host network connections
 :imagesdir: ../media/
 
 [.lead]
-After cabling your EF50 or EF80 storage system, you power on the shelves and assign shelf IDs (as needed) and power on the controllers.
+After cabling your EF50 or EF80 storage system, you power on the shelves and assign shelf IDs (if applicable) and power on the controllers.
 
 .Before you begin
 Take anti-static precautions.
 
 == Step 1: Power on the shelves and assign shelf IDs
-Each shelf is distinguished by a unique shelf ID. This ID ensures that the shelf is distinct within your storage system.
+Power on the shelves and then assign unique shelf IDs to each shelf. 
 
 .About this task
-* A valid shelf ID is 01 through 99. 
+* Assigning a unique shelf ID to each shelf ensures that the shelf is distinct within your storage system.
++
+A valid shelf ID is 01 through 99. 
 +
 Internal shelves (storage), which are integrated within the controllers, are assigned a fixed shelf ID of 00.
 
-* You must power cycle a shelf (turn off the power switch on each of the power supplies of the SAS shelf, wait the appropriate amount of time, and then switch the power back on) for the shelf ID to take effect.
+* You must power cycle a shelf (turn off the power switch on each of the power supplies of the SAS shelf, wait at least 10 seconds, and then switch the power back on) for the shelf ID to take effect.
 
 .Steps
 . Power on the shelf by connecting the power cords first to the shelf, securing them in place with the power cord retainer, connecting the power cords to power sources on different circuits, and then turning on the power switch on each of the power supplies (at the rear of the shelf).
@@ -124,5 +126,5 @@ During start-up it is normal for the fans to be very loud.
 After powering on your storage system, link:install-complete-setup.html[complete storage system setup].
 
 
-
+// Aug 2026: updated to add SAS expansion content for 12.10 release.
 

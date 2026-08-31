@@ -20,4 +20,6 @@ When an I/O module in your storage system fails, you can replace it with the sam
 You can upgrade I/O modules in your storage system to increase the number of host ports for enhanced network connectivity, expand your system’s ability to handle data traffic, and connect SAS expansion shelves.
 +
 NOTE: SAS expansion I/O modules are supported on storage systems running SANtricity 12.10 or later.
+
+// Aug 2026: updated to add SAS expansion content for 12.10 release.
  
