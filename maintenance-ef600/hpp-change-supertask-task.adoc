@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host protocol change, EF300, EF600, EF600C, EF300C
 summary: Change the host port protocol for an EF300 or EF600 array.
 ---
-= Change the host protocol - EF300 and EF600
+= Change the host protocol on an EF300 or EF600 storage system
 :experimental:
 :icons: font
 :imagesdir: ../media/
