@@ -24,7 +24,7 @@ a|The EF50 and EF80 storage systems now support SAS expansion, allowing for incr
 a|NVMe over TCP support for E-Series storage systems
 a|The E-Series storage systems now support NVMe over TCP, providing an additional host interface option for high-performance storage access. NVMe over TCP allows for efficient and low-latency communication between the storage system and connected hosts, leveraging the benefits of the NVMe protocol over standard TCP/IP networks. This support enhances the versatility of the E-Series systems, enabling organizations to deploy them in environments where NVMe over TCP is preferred or required.
 
-a|User Interface enhancements for SANtricity System Manager
+a|User interface enhancements for SANtricity System Manager
 a|The SANtricity System Manager user interface has received additional enhancements to improve navigation, usability, and overall user experience. These enhancements include updated layout and organization of management tasks, and more intuitive workflows for common storage management operations. 
 
 a|Expanded E-Series platform support for new SANtricity System Manager user interface
@@ -35,6 +35,8 @@ a|EF80 and EF50 storage systems now support Performance and Capacity NVMe SSD dr
 
 a|Increased character limit for standard volume names
 a|The character limit for standard volume names has been increased from 30 to 60 characters.
+
+NOTE: Downgrades to SANtricity OS software version 11.90 or earlier is not supported if standard or thin volumes exist with names greater than 30 characters. If you plan to downgrade to SANtricity OS software version 11.90 or earlier, change the names of any standard or thin volumes that have names greater than 30 characters before downgrading.
 
 a|Minimum inactivity timeout limit for SANtricity System Manager user interface now 10 minutes
 a|The inactivity timeout limit for the SANtricity System Manager user interface has been updated to a minimum of 10 minutes. Previously, the minimum inactivity timeout limit was 15 minutes. This change helps to enhance security by ensuring that the user interface automatically logs out after 10 minutes of inactivity.
