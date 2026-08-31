@@ -17,7 +17,7 @@ Multipath software provides a redundant path to the storage array in case one of
 Details for the multipathing policies are below. For FCP, iSCSI, and SAS protocols, the default is Native Multipathing Plug-Ins (NMP). For NVMe over Fabrics (NVMe over FC, NVMe over RoCE, and NVMe over TCP), the default is High Performance Plug-In (HPP).
 
 === Native Multipathing Plug-Ins (NMP)
-Applicable only for FCP, iSCSI, and SAS protocols, https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/vmware-multipathing-module.html[VMware provides Native Multipathing Plug-Ins (NMP)^], known as Storage Array Type Plug-ins (SATP), to handle the failover implementations of specific vendors`' storage arrays.
+Applicable only for FCP, iSCSI, and SAS protocols, https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/vmware-multipathing-module.html[VMware provides Native Multipathing Plug-Ins (NMP)^], known as Storage Array Type Plug-ins (SATP), to handle the failover implementations of specific vendors' storage arrays.
 
 The SATP you should use is *VMW_SATP_ALUA* (This is the chosen default for NetApp E-Series).
 For more information, see https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/vmware-satps.html[VMware SATPs^].
