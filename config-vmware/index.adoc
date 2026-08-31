@@ -1,7 +1,7 @@
 ---
 permalink: config-vmware/index.html
 sidebar: sidebar
-keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries
+keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries
 summary: Use the express configuration for a VMware host with an E-Series system.
 ---
 = VMware express configuration in E-Series
@@ -9,7 +9,7 @@ summary: Use the express configuration for a VMware host with an E-Series system
 :imagesdir: ../media/
 
 [.lead]
-The VMware express method for installing your storage array and accessing SANtricity System Manager is appropriate for setting up a standalone VMware host to an E-Series storage system. It is designed to get the storage system up and running as quickly as possible with minimal decision points.
+The VMware express method for installing your storage array and accessing SANtricity System Manager is appropriate for setting up a standalone VMware host with an E-Series storage system. It is designed to get the storage system up and running as quickly as possible with minimal decision points.
 
 == Procedure overview
 
@@ -17,11 +17,12 @@ The express method includes the following steps, which are also outlined in the 
 
 . Set up one of the following communication environments:
 
-* link:nmve-fc-perform-specific-task.html[NVMe over Fibre Channel]
-* link:fc-perform-specific-task.html[Fibre Channel]
+* link:nvme-fc-perform-specific-task.html[NVMe over Fibre Channel]
+* link:fc-perform-specific-task.html[Fibre Channel (FCP)]
 * link:iscsi-perform-specific-task.html[iSCSI]
 * link:sas-perform-specific-task.html[SAS]
-* link:nvme-perform-specific-task.html[NVMe]
+* link:nvme-roce-perform-specific-task.html[NVMe over RoCE]
+* link:nvme-tcp-perform-specific-task.html[NVMe over TCP]
 
 . Create logical volumes on the storage array.
 
@@ -33,7 +34,7 @@ The express method includes the following steps, which are also outlined in the 
 * Online help -- Describes how to use SANtricity System Manager to complete configuration and storage management tasks. It is available within the product.
 * https://kb.netapp.com/[NetApp Knowledgebase^] (a database of articles) -- Provides troubleshooting information, FAQs, and instructions for a wide range of NetApp products and technologies.
 * http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] -- Enables you to search for configurations of NetApp products and components that meet the standards and requirements specified by NetApp.
-* https://www.netapp.com/pdf.html?item=/media/17017-tr4789pdf.pdf[VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.X^] -- Provides technical details on iSCSI integration with VMware.
-* https://configmax.broadcom.com/home[VMware Configuration Maximums^] -- Describes how to configure virtual and physical storage to stay within the allowed maximums that ESX/ESXi supports.
-* https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-9AEE5F4D-0CB8-4355-BF89-BB61C5F30C70.html[Requirements and limitations of VMware NVMe storage^].
-* https://docs.vmware.com/en/VMware-vSphere/index.html[VMware vSphere Documentation^] -- Provides ESXi vCenter Server documentation.
+* https://www.netapp.com/pdf.html?item=/media/17017-tr4789.pdf[VMware Configuration Guide for E-Series SANtricity iSCSI Integration with ESXi 6.X^] -- Provides technical details on iSCSI integration with VMware.
+* https://configmax.broadcom.com/guest[VMware Configuration Maximums^] -- Describes how to configure virtual and physical storage to stay within the allowed maximums that ESX/ESXi supports.
+* https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/requirements-for-vmware-nvme-storage.html[Requirements of VMware NVMe storage^] -- NVMe over fabrics specific configuration requirements.
+* https://techdocs.broadcom.com/[Broadcom Technical Documentation^] -- VMware Cloud Infrastructure Software and vSphere Technical Documentation.

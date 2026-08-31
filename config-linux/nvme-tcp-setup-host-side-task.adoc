@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: NVMe initiator configuration in a TCP environment includes installing and configuring the nvme-cli package, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
 ---
-= Set up NVMe initiator over TCP on the host in E-Series - Linux
+= Set up NVMe over TCP initiator on the host in E-Series - Linux
 :icons: font
 :imagesdir: ../media/
 
@@ -172,4 +172,4 @@ t10_pi                 16384  2 sd_mod,nvme_core
 +
 
 .What's next?
-After you set up the NVMe initiator over TCP on the host, link:nvme-tcp-configure-storage-connections-task.html[configure the NVMe over TCP port settings].
+After you set up the NVMe over TCP initiator on the host, link:nvme-tcp-configure-storage-connections-task.html[configure the NVMe over TCP port settings].

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 drive drawer, DE460C drive shelf, replace E5700 drive drawer, failed E5700 drive drawer
 summary: Replace a drive drawer in an E5700.
 ---
-= Replace the drive drawer - E5700 (60-drive)
+= Replace a drive drawer in an E5700
 :experimental:
 :icons: font
 :imagesdir: ../media/
@@ -90,7 +90,7 @@ image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif["Cache active 
 +
 *(1)* _Cache Active LED_
 
-. From the left panel of SANtricity System Manager, select menu:Storage[Operations in Progress].
+. From the Home page of SANtricity System Manager, select *View Operations in Progress*.
 . Wait for all operations to complete before continuing with the next step.
 . Power off the shelves as follows:
 +

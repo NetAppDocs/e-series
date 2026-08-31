@@ -138,9 +138,9 @@ Define the subnet to be used.
 |===
 | Network Address| Netmask
 a|
-
+{nbsp}
 a|
-
+{nbsp}
 |===
 Document the IQNs to be used by the array ports and each host port.
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries
 summary: Complete a battery replacement.
 ---
-= Complete battery replacement - E2800
+= Complete an E2800 battery replacement
 :experimental:
 :icons: font
 :imagesdir: ../media/
@@ -43,7 +43,8 @@ image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif["E2800 LED display"]
 
 . Bring the controller online using SANtricity System Manager.
  * From SANtricity System Manager:
-  .. Select menu:Hardware[Controllers and components] under the left panel.
+  .. Select *Hardware*.
+  .. If the graphic shows the drives, select *Show back of shelf*.
   .. Select the controller you want to place online.
   .. Select *Place Online* from the context menu, and confirm that you want to perform the operation.
 +
@@ -62,7 +63,7 @@ If the status is not Optimal or if any of the Attention LEDs are on, confirm tha
 NOTE: If you cannot resolve the problem, contact technical support.
 
 . If needed, collect support data for your storage array using SANtricity System Manager.
- .. From the left panel, select menu:Support[Support Center > Diagnostics].
+ .. Select menu:Support[Support Center > Diagnostics].
  .. Select *Collect Support Data*.
  .. Click *Collect*.
 +

@@ -2,14 +2,14 @@
 permalink: config-linux/nvme-tcp-configure-switch-task.html
 sidebar: sidebar
 keywords: configure switch, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
-summary: You configure the switches according to the vendor's recommendations for NVMe over TCP. These recommendations might include both configuration directives as well as code updates.
+summary: Configure the switches according to the vendor's recommendations for NVMe over TCP. These recommendations might include both configuration directives as well as code updates.
 ---
 = Configure the switches in E-Series - Linux (NVMe over TCP)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You configure the switches according to the vendor's recommendations for NVMe over TCP. These recommendations might include both configuration directives as well as code updates.
+Configure the switches according to the vendor's recommendations for NVMe over TCP. These recommendations might include both configuration directives as well as code updates.
 
 E-Series has no specific guidance regarding your network configuration. Please consult your network administrator for guidance on selecting the appropriate configuration for your environment.
 

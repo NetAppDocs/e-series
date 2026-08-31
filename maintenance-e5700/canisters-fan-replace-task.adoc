@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 fan, repair E5700 fan, replace E5700 fan, failed E5700 fan
 summary: Replace an E5700 fan.
 ---
-= Replace the fan canister - E5700 (60-drive)
+= Replace the fan canister in an E5700 60-drive shelf
 :experimental:
 :icons: font
 :imagesdir: ../media/
@@ -48,12 +48,13 @@ If a problem occurs during this procedure, you can use the saved file to trouble
 The file is saved in the Downloads folder for your browser with the name, *support-data.7z*.
 
 . From SANtricity System Manager, determine which fan canister has failed.
- .. Select menu:Hardware[Controllers and components].
+ .. Select *Hardware*.
  .. Look at the fan image:../media/sam1130_ss_hardware_fan_icon_maint-e5700.gif["Fan icon"] icon to the right of the *Shelf* drop-down lists to determine which shelf has the failed fan canister.
 +
 If a component has failed, this icon is red.
 
- .. When you find the shelf with a red icon, select either fan canister or the red fan icon.
+ .. When you find the shelf with a red icon, select *Show back of shelf*.
+ .. Select either fan canister or the red fan icon.
  .. On the *Fans* tab, look at the statuses of the fan canisters to determine which fan canister must be replaced.
 +
 A component with a *Failed* status must be replaced.

@@ -20,12 +20,12 @@ Some of the available E-Series array models are shown below. For a complete list
 * E4000 series -- entry-level hybrid
 * EF600 series -- midrange all flash, all NVMe
 * EF300 series -- entry-level all flash, all NVMe
-* EF300C series -- entry-level all flash, all NVMe
-* EF600C series -- midrange all flash, all NVMe
-* E2800 series -- entry-level hybrid
-* EF280 series -- entry-level all flash
-* E5700 series -- midrange hybrid
-* EF570 series -- midrange all flash
+* EF300C series -- entry-level all flash, high-density NVMe
+* EF600C series -- midrange all flash, high-density NVMe
+* E2800 series (End-of-availability) -- entry-level hybrid
+* EF280 series (End-of-availability) -- entry-level all flash
+* E5700 series (End-of-availability) -- midrange hybrid
+* EF570 series (End-of-availability) -- midrange all flash
 
 NOTE: For SANtricity OS 11.80GA or later, all USB ports are disabled while SANtricity OS is running. 
 
@@ -51,11 +51,20 @@ Drives::
 ** 15.3TB
 ** 30TB
 ** 60TB
++ 
+NOTE: For 30TB and 60TB drives, the EF50 supports only Dynamic Disk Pool use with no legacy RAID support.
+
 * Support up to 24 NVMe SSD drives in the controller shelf.
 * Support for one or two host interface cards per controller.
 * Support for inter-controller card and cables for dual controller communication. 
 +
 NOTE: It is crucial to connect the mirroring cables properly when configuring your EF50 system. For more information, see https://docs.netapp.com/us-en/e-series/install-hw-ef50-ef80/install-cable.html#step-1-cable-the-inter-controller-mirroring-connections[Cable the inter-controller mirroring connections - EF50 and EF80].
+
+* Support for an optional SAS expansion card, allowing for SAS expansion shelf connections.
+* A single disk pool is created automatically if there are enough unassigned drives during system boot.
+* Starting with SANtricity OS 12.10, the EF50 supports mixing of 3.8 TB, 7.6TB, and 15.3TB drives with 30TB and 60TB drives. These drives in a mixed shelf will automatically be placed in a single disk pool with no RAID support. 
++
+NOTE: Automatically created disk pools can be deleted through the SANtricity System Manager or SANtricity CLI. For more information, see https://docs.netapp.com/us-en/e-series-cli/commands-a-z/delete-diskpool.html[Delete a disk pool - SANtricity CLI Guide^] and https://docs.netapp.com/us-en/e-series-santricity/sm-storage/delete-pool-or-volume-group.html[Delete a pool or volume group - SANtricity System Manager Guide^].
 
 Interfaces::
 +
@@ -63,11 +72,11 @@ Available with the following interfaces:
 +
 * 64Gb NVMe / Fibre Channel
 * 64Gb Fibre Channel
+* 25Gb iSCSI
 --
 
 .EF80 models
 --
-
 
 Rack sizes::
 +
@@ -83,16 +92,29 @@ Drives::
 ** 15.3TB
 ** 30TB
 ** 60TB
++ 
+NOTE: For 30TB and 60TB drives, the EF80 supports only Dynamic Disk Pool use with no legacy RAID support.
+
+
 * Support up to 24 NVMe SSD drives in the controller shelf.
 * Support for one, two, or three host interface cards per controller.
 * Support for inter-controller card and cables for dual controller communication. 
 +
 NOTE: It is crucial to connect the mirroring cables properly when configuring your EF80 system. For more information, see https://docs.netapp.com/us-en/e-series/install-hw-ef50-ef80/install-cable.html#step-1-cable-the-inter-controller-mirroring-connections[Cable the inter-controller mirroring connections - EF50 and EF80].
 
+* Support for an optional SAS expansion card, allowing for SAS expansion shelf connections.
++ 
+If the SAS expansion card is installed, the maximum number of host interface cards for host connectivity is limited to two per controller. 
+* A single disk pool is created automatically if there are enough unassigned drives during system boot.
+* Starting with SANtricity OS 12.10, the EF80 supports mixing of 3.8 TB, 7.6TB, and 15.3TB drives with 30TB and 60TB drives. These drives in a mixed shelf will automatically be placed in a single disk pool with no RAID support.
+ +
+NOTE: Automatically created disk pools can be deleted through the SANtricity System Manager or SANtricity CLI. For more information, see https://docs.netapp.com/us-en/e-series-cli/commands-a-z/delete-diskpool.html[Delete a disk pool - SANtricity CLI Guide^] and https://docs.netapp.com/us-en/e-series-santricity/sm-storage/delete-pool-or-volume-group.html[Delete a pool or volume group - SANtricity System Manager Guide^].
+
 Interfaces::
 +
 Available with the following interfaces:
 +
+* 200Gb NVMe / TCP
 * 200Gb NVMe / RoCE
 * 64Gb NVMe / Fibre Channel
 * 200Gb NVMe / IB
@@ -124,6 +146,7 @@ Interfaces::
 +
 Available with the following interfaces:
 +
+* 25Gb iSCSI 
 * 12Gb SAS
 * 1Gb or 10Gb Base-T iSCSI
 * 1Gb, 10Gb, or 25Gb iSCSI
@@ -192,7 +215,9 @@ Drives::
 * Support for two host interface cards per controller. 
 ** Alternatively, support for one 200Gb IB host interface card per controller. 
 ** No support for expansion shelf configurations.
-* A single disk pool is created automatically if there are not enough unassigned drives during system boot.  
+* A single disk pool is created automatically if there are enough unassigned drives during system boot.  
++
+NOTE: Automatically created disk pools can be deleted through the SANtricity System Manager or SANtricity CLI. For more information, see https://docs.netapp.com/us-en/e-series-cli/commands-a-z/delete-diskpool.html[Delete a disk pool - SANtricity CLI Guide^] and https://docs.netapp.com/us-en/e-series-santricity/sm-storage/delete-pool-or-volume-group.html[Delete a pool or volume group - SANtricity System Manager Guide^].
 
 Interfaces::
 +
@@ -265,6 +290,8 @@ Drives::
 ** No support for expansion shelf configurations.
 * Support for one host interface card per controller.
 * A single disk pool is created automatically if there are not enough unassigned drives during system boot. 
++
+NOTE: Automatically created disk pools can be deleted through the SANtricity System Manager or SANtricity CLI. For more information, see https://docs.netapp.com/us-en/e-series-cli/commands-a-z/delete-diskpool.html[Delete a disk pool - SANtricity CLI Guide^] and https://docs.netapp.com/us-en/e-series-santricity/sm-storage/delete-pool-or-volume-group.html[Delete a pool or volume group - SANtricity System Manager Guide^].
 
 Interfaces::
 +
@@ -280,7 +307,7 @@ Available with the following interfaces:
 
 --
 
-.E2800 models
+.E2800 models (EOA)
 --
 
 
@@ -313,7 +340,7 @@ Available with the following interfaces:
 
 --
 
-.EF280 models
+.EF280 models (EOA)
 --
 
 Rack sizes::
@@ -339,7 +366,7 @@ Available with the following interfaces:
 
 --
 
-.E5700 models
+.E5700 models (EOA)
 
 --
 
@@ -380,7 +407,7 @@ Available with the following interfaces:
 
 --
 
-.EF570 models
+.EF570 models (EOA)
 --
 
 

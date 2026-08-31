@@ -1,7 +1,7 @@
 ---
 permalink: config-vmware/verify-storage-access-host-task.html
 sidebar: sidebar
-keywords: verify storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries
+keywords: verify storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries
 summary: Before you use a volume, you verify that the host can write data to the volume and read it back.
 ---
 = Verify storage access on the host in E-Series - VMware

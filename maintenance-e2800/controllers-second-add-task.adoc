@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: add E2800 controller, adding E2800 controller, simplex to duplex, convert to duplex, E2800, E-Series, eseries
 summary: Add a second controller to a controller shelf that has only one controller canister, or add a second controller canister to the simplex version.
 ---
-= Add second controller canister - E2800
+= Add a second controller canister to an E2800 array
 :experimental:
 :icons: font
 :imagesdir: ../media/
@@ -46,7 +46,7 @@ image::../media/28_dwg_e2800_labels_maint-e2800.gif["MAC address and FRU part nu
 +
 
 . From SANtricity System Manager, locate the replacement part number for the installed controller canister.
- .. Select menu:Hardware[Controllers and components] under the left panel.
+ .. Select *Hardware*.
  .. Locate the controller shelf, which is marked with the controller icon image:../media/sam1130_ss_hardware_controller_icon_maint-e2800.gif["Controller icon"].
  .. Click the controller icon.
  .. Select the controller, and click *Next*.
