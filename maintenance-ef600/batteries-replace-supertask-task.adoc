@@ -47,7 +47,7 @@ If a problem occurs when you remove a controller, you can use the saved file to 
 The file is saved in the Downloads folder for your browser with the name, *configurationData-<arrayName>-<dateTime>.7z*.
 
 . If the controller is not already offline, take it offline now using SANtricity System Manager.
- .. Select menu:Hardware[Controller and components].
+.. Select menu:Hardware[Controllers and components].
  .. Select the controller that you want to place offline.
  .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 +
