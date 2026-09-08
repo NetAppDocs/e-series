@@ -105,7 +105,7 @@ Save the packing materials to use when shipping the failed controller canister.
 +
 When a controller has a fault and needs to be replaced, the replacement part number is displayed in the Details area of the Recovery Guru. If you need to find this number manually, follow these steps:
 
-.. Select menu:Hardware[Controller and components].
+.. Select menu:Hardware[Controllers and components].
 .. Locate the controller shelf, which is marked with the controller icon.
 .. Click the controller icon.
 .. Select the controller, and click *Next*.
