@@ -30,9 +30,9 @@ image::../media/50001_01_conf-vmw.gif["iSCSI port identifier"]
 
 |Host OS type|
 
-|Host NQN|
+|Host IQN|
 
-|Target NQN|
+|Target IQN|
 
 |===
 
