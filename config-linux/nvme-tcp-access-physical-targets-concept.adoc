@@ -1,0 +1,92 @@
+---
+permalink: config-linux/nvme-tcp-access-physical-targets-concept.html
+sidebar: sidebar
+keywords: NVMe volume physical, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: You can configure the I/O directed to the device target based on your Linux version.
+---
+= Accessing NVMe volumes for an E-Series target from the host - Linux (NVMe over TCP)
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can configure the I/O directed to the device target based on which OS (and by extension multipathing method) you are using.
+
+For RHEL 9, RHEL 10, SLES 15 and SLES 16 a Native NVMe multipathing solution manages the physical paths underlying the single apparent NVMe device displayed by the host. Therefore, we direct I/O straight to the host's NVMe device rather than a multipath device like SCSI-based Device Mapper Multipath (DMMP). The NVMe device locations are detailed below. 
+
+== NVMe devices are I/O targets
+
+. Enter the following command to locate volumes mapped to this host from an E-Series array.
++  
+The following command provides the low level NVMe device location on your host, the name of the array that device is mapped to, the Volume name, the NSID, the unique Volume ID, the current owning controller and the size of the volume. 
++
+----
+# nvme netapp smdevices
+/dev/nvme0n1, Array Name creG63-FN, Volume Name 1, NSID 1, Volume ID 00001b7f606ec75100a0980000ed289e, Controller B, 1.10TB
+/dev/nvme0n2, Array Name creG63-FN, Volume Name 2, NSID 2, Volume ID 0000128a6a0d045500a0980000ed27f4, Controller A, 536.87GB
+/dev/nvme0n3, Array Name creG63-FN, Volume Name 3, NSID 3, Volume ID 00001b81606ec75b00a0980000ed289e, Controller B, 536.87GB
+/dev/nvme0n4, Array Name creG63-FN, Volume Name 4, NSID 4, Volume ID 0000128c6a0d045700a0980000ed27f4, Controller A, 214.75GB
+----
+
+. Run I/O to the links in `/dev/disk/by-id/nvme-eui.[Volume ID#]`.
++
+The links in `/dev/disk/by-id/nvme-eui.[Volume ID#]` are deterministic and will not change. Avoid using the low level NVMe device location `(/dev/nvme[subsys#]n[id#])` as it is subject to change. The link between these two locations can be found using the following command:
++ 
+----
+# ls /dev/disk/by-id/ -l
+
+lrwxrwxrwx 1 root root 13 May 19 15:07 nvme-eui.0000128a6a0d045500a0980000ed27f4 -> ../../nvme0n2
+lrwxrwxrwx 1 root root 13 May 19 15:07 nvme-eui.0000128c6a0d045700a0980000ed27f4 -> ../../nvme0n4
+lrwxrwxrwx 1 root root 13 May 19 15:07 nvme-eui.00001b7f606ec75100a0980000ed289e -> ../../nvme0n1
+lrwxrwxrwx 1 root root 13 May 19 15:07 nvme-eui.00001b81606ec75b00a0980000ed289e -> ../../nvme0n3
+----
+
+. To view the paths to the NVMe devices, use the `nvme list-subsys` command.
++
+I/O run to `/dev/disk/by-id/nvme-eui.[uuid#]` will be passed directly through
+`/dev/nvme[subsys#]n[id#]` which has all paths virtualized underneath it using the Native NVMe multipathing solution.
++ 
+----
+# nvme list-subsys /dev/nvme0n1
+nvme-subsys0 - NQN=nqn.1992-08.com.netapp:EF80.600a098000ed28cb0000000062b24855
+               hostnqn=nqn.2014-08.org.nvmexpress:uuid:5257c202-9d94-ea11-b761-00000000003c
+\
+ +- nvme0 tcp traddr=10.10.10.101,trsvcid=4420,src_addr=10.10.10.100 live non-optimized
+ +- nvme1 tcp traddr=10.10.10.11,trsvcid=4420,src_addr=10.10.10.100 live non-optimized
+ +- nvme2 tcp traddr=10.10.20.201,trsvcid=4420,src_addr=10.10.20.200 live optimized
+ +- nvme3 tcp traddr=10.10.20.21,trsvcid=4420,src_addr=10.10.20.200 live optimized
+ +- nvme4 tcp traddr=10.10.20.39,trsvcid=4420,src_addr=10.10.20.200 live non-optimized
+ +- nvme5 tcp traddr=10.10.20.31,trsvcid=4420,src_addr=10.10.20.200 live non-optimized
+ +- nvme6 tcp traddr=10.10.10.49,trsvcid=4420,src_addr=10.10.10.100 live optimized
+ +- nvme7 tcp traddr=10.10.10.41,trsvcid=4420,src_addr=10.10.10.100 live optimized
+----
+
+. *Optional* - To view the path information for native failover through the legacy Device Mapper Multipath (DMMP) commands, use the `multipath -ll` command.
++ 
+----
+#multipath -ll
+----
++
+NOTE: To view the path information through the legacy DMMP commands, the following must be set in the `/etc/multipath.conf` file:
++
+----
+defaults {
+    enable_foreign nvme
+}
+----
++ 
+*Example output* 
++
+----
+eui.0000a0335c05d57a00a0980000a5229d [nvme]:nvme0n9 NVMe,Netapp E-
+Series,08520001
+size=4194304 features='n/a' hwhandler='ANA' wp=rw
+|-+- policy='n/a' prio=50 status=optimized
+| `- 0:0:1 nvme0c0n1 0:0 n/a optimized    live
+`-+- policy='n/a' prio-10 status=non-optimized
+`- 0:1:1 nvme0c1n1 0:0 n/a non-optimized    live
+----
++
+NOTE: This command only works on RHEL 9 or earlier and SLES 16 or earlier.  
+
+.What's next?
+With the I/O running to the NVMe devices, link:nvme-tcp-create-filesystems-sles-15-task.html[create the filesystems].

@@ -1,71 +1,25 @@
 ---
 permalink: config-vmware/fc-perform-specific-task.html
 sidebar: sidebar
-keywords: Fibre Channel protocol, switches, zone switches, zoning, host port identifiers, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries
-summary: For the Fibre Channel protocol, you configure the switches and determine the host port identifiers.
+keywords: Fibre Channel protocol, switches, zone switches, zoning, host port identifiers, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E4000, EF50, EF80, E-Series, eseries
+summary: For the Fibre Channel Protocol (FCP), you configure the switches and determine the host port identifiers.
 ---
 = Perform FC-specific tasks in E-Series - VMware
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-For the Fibre Channel protocol, you configure the switches and determine the host port identifiers.
+For the Fibre Channel Protocol (FCP), you configure the switches and determine the host port identifiers.
 
-NOTE: For EF300 and EF600, you must set the block size to 512 bytes to ensure compatibility with VMware. Refer to the SANtricity System Manager online help for more information on setting a volume to 512 bytes.
+NOTE: Volumes must be set to utilize 512 byte emulation (512e) when using 4096 byte drives to ensure compatibility with VMware. Refer to the SANtricity System Manager online help for more information on setting a volume to use 512-byte emulation (512e).
 
-== Step 1: Configure the FC switches--VMware
+== Step 1: Record your configuration
 
-Configuring (zoning) the Fibre Channel (FC) switches enables the hosts to connect to the storage array and limits the number of paths. You zone the switches using the management interface for the switches.
+You can generate and print a PDF of this page, and then use the following worksheet to record FC storage configuration information. You need this information as you perform provisioning tasks.
 
-.Before you begin
+The illustration shows a host connected to an E-Series storage array in two zones. One zone is indicated by the red lines; the other zone is indicated by the blue lines. Each zone contains at least one initiator port and half of all target ports. Number of host and/or controller ports will vary based on the number of host bus adapters and the controller model. You may have more (up to 12 per controller) ports available. Print additional PDFs as needed.
 
-Make sure you have the following:
-
-* Administrator credentials for the switches.
-* The WWPN of each host initiator port and of each controller target port connected to the switch. (Use your HBA utility for discovery.)
-
-NOTE: A vendor's HBA utility can be used to upgrade and obtain specific information about the HBA. Refer to the support section of the vendor's website for instructions on how to obtain the HBA utility.
-
-.About this task
-
-Each initiator port must be in a separate zone with all of its corresponding target ports. For details about zoning your switches, see the switch vendor's documentation.
-
-.Steps
-
-. Log in to the FC switch administration program, and then select the zoning configuration option.
-. Create a new zone that includes the first host initiator port and that also includes all of the target ports that connect to the same FC switch as the initiator.
-. Create additional zones for each FC host initiator port in the switch.
-. Save the zones, and then activate the new zoning configuration.
-
-== Step 2: Determine the host port WWPNs--FC
-
-To configure FC zoning, you must determine the worldwide port name (WWPN) of each initiator port.
-
-.Steps
-
-. Connect to the ESXi host using SSH or the ESXi shell.
-. Run the following command:
-+
-----
-esxcfg-scsidevs –a
-----
-
-. Record the initiator identifiers. The output will be similar to this example:
-+
-----
-vmhba3 lpfc link-up  fc.20000090fa05e848:10000090fa05e848 (0000:03:00.0)
-Emulex Corporation Emulex LPe16000 16Gb PCIe Fibre Channel Adapter
-vmhba4 lpfc link-up  fc.20000090fa05e849:10000090fa05e849 (0000:03:00.1)
-Emulex Corporation Emulex LPe16000 16Gb PCIe Fibre Channel Adapter
-----
-
-== Step 3: Record your configuration
-
-You can generate and print a PDF of this page, and then use the following worksheet to record FC storage configuration information. You need this information to perform provisioning tasks.
-
-The illustration shows a host connected to an E-Series storage array in two zones. One zone is indicated by the blue line; the other zone is indicated by the red line. Each zone contains one initiator port and all target ports.
-
-image::../media/port_identifiers_host_and_target_conf-vmw.gif["Fibre channel port identifiers"]
+image::../media/port_identifiers_host_and_target_conf-vmw.gif["Fibre Channel port identifiers"]
 
 === Host identifiers
 
@@ -116,9 +70,21 @@ Controller A, port 1 to FC switch 1
 a|
 
 a|
+5
+a|
+Controller A, port 2 to FC switch 1
+a|
+
+a|
 9
 a|
-Controller A, port 2 to FC switch 2
+Controller A, port 3 to FC switch 2
+a|
+
+a|
+9
+a|
+Controller A, port 4 to FC switch 2
 a|
 
 a|
@@ -128,22 +94,87 @@ Controller B, port 1 to FC switch 1
 a|
 
 a|
+4
+a|
+Controller B, port 2 to FC switch 1
+a|
+
+a|
 8
 a|
-Controller B, port 2 to FC switch 2
+Controller B, port 3 to FC switch 2
+a|
+
+a|
+8
+a|
+Controller B, port 4 to FC switch 2
 a|
 
 |===
 
-=== Mapping host
+=== Host Mapping Information
+
+[cols="35h,~"]
+|===
+|Mapping host name|
+
+|Host OS type|
+
 
 |===
-a|
-Mapping host name a|
 
-a|
-Host OS type
-a|
+== Step 2: Determine the host port WWPNs
 
-a|
-|===
+To configure FC zoning, you must determine the worldwide port name (WWPN) of each initiator port.
+
+.Steps
+
+. Connect to the ESXi host using SSH or the ESXi shell. To enable the ESXi shell, see https://knowledge.broadcom.com/external/article/311213/using-esxi-shell-in-esxi.html[Using ESXi Shell in ESXi^].
+. Run the following command:
++
+----
+esxcli storage core adapter list
+----
+
+. Record the initiator WWPN identifiers (UID in the format - fc.WWNN:WWPN). The output will be similar to this example:
++
+----
+HBA Name  Driver    Link State  UID                                   Capabilities         Description
+--------  --------  ----------  ------------------------------------  -------------------  -----------
+vmhba4    lpfc      link-up     fc.200070b7e4395530:100070b7e4395530  Second Level Lun ID  (0000:5e:00.0) Emulex Corporation Emulex LPe35000/LPe36000 Fibre Channel Adapter
+vmhba5    lpfc      link-up     fc.200070b7e4395531:100070b7e4395531  Second Level Lun ID  (0000:5e:00.1) Emulex Corporation Emulex LPe35000/LPe36000 Fibre Channel Adapter
+vmhba64   lpfc      link-up     fc.200070b7e4395530:100070b7e4395530                       (0000:5e:00.0) Emulex Corporation Emulex LPe35000/LPe36000 Fibre Channel Adapter
+vmhba65   lpfc      link-up     fc.200070b7e4395531:100070b7e4395531                       (0000:5e:00.1) Emulex Corporation Emulex LPe35000/LPe36000 Fibre Channel Adapter
+
+----
+
+In the example above, the UID for vmhba4 and vmhba64 as well as vmhba5 and vmhba65 are identical. This is expected for FC adapters that support both FCP and NVMe over FC. Record each unique WWPN. 
+
+NOTE: Another command option is `esxcli storage san fc list`. This will display more details and the WWPN in hexadecimal format separated by colons.
+
+== Step 3: Configure the FC switches
+
+Configuring (zoning) the Fibre Channel (FC) switches enables the hosts to connect to the storage array and limits the number of paths. You zone the switches using the management interface for the switches.
+
+.Before you begin
+
+Make sure you have the following:
+
+* Administrator credentials for the switches.
+* The WWPN of each host initiator port and of each controller target port connected to the switch.
+
+NOTE: A vendor's HBA utility can be used to upgrade and obtain specific information about the HBA. Refer to the support section of the vendor's website for instructions on how to obtain the HBA utility.
+
+.About this task
+
+Each initiator port must be in a separate zone with all of its corresponding target ports. For details about zoning your switches, see the switch vendor's documentation.
+
+.Steps
+
+. Log in to the FC switch administration program, and then select the zoning configuration option.
+. Create a new zone that includes the first host initiator port and that also includes all of the target ports that connect to the same FC switch as the initiator.
+. Create additional zones for each FC host initiator port in the switch.
+. Save the zones, and then activate the new zoning configuration.
+
+Please consult the switch vendor's documentation for detailed instructions on configuring zones.

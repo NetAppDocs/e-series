@@ -59,7 +59,7 @@ NOTE: If unresolved critical events have occurred within the previous two to thr
 
 . If you have IOMs connected to your hardware, complete the following steps. Otherwise, go to <<step2_install_drive_shelf, Step 2: Install the drive shelf and apply power.>>
 
-.. Select *Hardware*.
+.. Select menu:Hardware[Controllers and components].
 .. Select the *IOMs (ESMs)* icon.
 +
 image::../media/sam1130_ss_hardware_iom_icon.gif[IOM icon]
@@ -102,7 +102,7 @@ The following figure shows an example connection between an additional drive she
 +
 image::../media/hot_e4000_cabling_1.png[Cable drive shelf]
 
-. In SANtricity System Manager, click *Hardware*.
+. In SANtricity System Manager, select menu:Hardware[Controllers and components].
 +
 NOTE: At this point in the procedure, you have only one active path to the controller shelf.
 
@@ -138,7 +138,7 @@ You complete the hot add by checking for any errors and confirming that the newl
 
 . In SANtricity System Manager, click *Home*.
 . If the link labeled *Recover from problems* appears at the center top of the page, click the link, and resolve any issues indicated in the Recovery Guru.
-. In SANtricity System Manager, click *Hardware*, and scroll down, as necessary, to see the newly added drive shelf.
+. In SANtricity System Manager, select menu:Hardware[Controllers and components], and scroll down, as necessary, to see the newly added drive shelf.
 . For drives that were previously installed in a different storage system, add one drive at time to the newly installed drive shelf. Wait for each drive to be recognized before you insert the next drive.
 +
 When a drive is recognized by the storage system, the representation of the drive slot in the *Hardware* page displays as a blue rectangle.

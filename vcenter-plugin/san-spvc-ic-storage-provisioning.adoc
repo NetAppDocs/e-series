@@ -156,6 +156,7 @@ The Configure Hosts page opens.
 +
 The Create Host dialog box appears.
 
+. Click *+Add Host Port* to access the Host ports field and add the host port identifiers for the host. You can add one or more host port identifiers to associate with the host. 
 . Select the settings for the host as appropriate.
 +
 [cols="25h,~",options="header"]

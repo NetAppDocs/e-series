@@ -1,7 +1,7 @@
 ---
 permalink: config-vmware/discover-storage-host-task.html
 sidebar: sidebar
-keywords: discover storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries
+keywords: discover storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries
 summary: After assigning volumes to the host, you perform a rescan so that the host detects and configures the volumes for multipathing.
 ---
 = Discover storage on the host in E-Series - VMware
@@ -9,13 +9,19 @@ summary: After assigning volumes to the host, you perform a rescan so that the h
 :imagesdir: ../media/
 
 [.lead]
-After assigning volumes to the host, you perform a rescan so that the host detects and configures the volumes for multipathing.
+Assign volumes to the host. Perform a rescan so that the host detects and configures the volumes for multipathing.
+
+For information on creating hosts and assigning volumes, see:
+
+* https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-manually.html[Create Host Definitions^]
+* https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-cluster.html[Create Host Cluster^]
+* https://docs.netapp.com/us-en/e-series-santricity/sm-storage/assign-volumes.html[Assign Volumes to Hosts^]
 
 By default, an ESXi host automatically performs a rescan every five minutes. A volume might appear between the time you create it and assign it to a host, before you perform a manual rescan. Regardless, you can perform a manual rescan to ensure all volumes are configured properly.
 
 .Steps
 
-. Create one or more volumes and assign them to the ESXi host.
+. Ensure that volumes are created and assigned to the ESXi host as described in the links above.
 . If using a vCenter Server, add the host to the server's inventory.
 . Use the vSphere Client or the vSphere Web Client to connect directly to the vCenter Server or to the ESXi host.
-. For instructions on how to perform a rescan of the storage on an ESXi host, search for the https://support.broadcom.com/[VMware Knowledge Base^] article on this topic.
+. For instructions on how to perform a rescan of the storage on an ESXi host, see https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/managing-esxi-storage-devices/rescan-operations-for-esxi-storage/perform-storage-rescan.html[Perform Storage Rescan^].

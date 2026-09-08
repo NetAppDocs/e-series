@@ -18,7 +18,7 @@ indexpage:
           url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf
     - title: SANtricity software
       links:
-        - title: SANtricity System Manager 12.00
+        - title: SANtricity System Manager 12.10
           url: https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html
         - title: SANtricity Unified Manager 8
           url: https://docs.netapp.com/us-en/e-series-santricity/unified-manager/index.html

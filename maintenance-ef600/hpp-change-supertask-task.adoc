@@ -26,7 +26,7 @@ To obtain the feature pack key, you need the serial number from the controller s
 image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.gif["Chassis serial number"]
 . Locate the *feature pack submodel ID*.
  .. From the SANtricity System Manager, select *Support*.
- .. Select the *Support Resources* tile.
+ .. Select the *Support Resources* tab.
  .. On the Support Resources tab, locate and select the *Storage Array Profile* link.
  .. Type *feature pack submodel ID* in the text box, and click *Find*.
  .. Locate the feature pack submodel ID for the starting configuration.
@@ -469,8 +469,7 @@ image::../media/sam1130_ss_system_change_feature_pack_maint-ef600.gif["Change fe
 The feature pack migration begins. Both controllers automatically reboot twice to allow the new feature pack to take effect. The storage array returns to a responsive state after the reboot is complete.
 
 . Confirm the host ports have the protocol you expect.
- .. From SANtricity System Manager, select *Hardware*.
- .. Click *Show back of shelf*.
+ .. From SANtricity System Manager, select menu:Hardware[Controllers and components].
  .. Select the graphic for either Controller A or Controller B.
  .. Select *View settings* from the context menu.
  .. Select the *Host Interfaces* tab.

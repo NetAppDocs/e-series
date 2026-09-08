@@ -26,6 +26,9 @@ For information about removing controllers from EF80 and EF50 storage systems, s
 .Other E-Series controller models
 --
 
+[discrete]
+=== E4000, E2800, and E5700 controller models
+
 Remove the controller canister so you can upgrade it with a new one. You must disconnect all cables and remove any SFP transceivers. Then, you can slide the controller canister out of the controller shelf.
 
 .Before you begin
@@ -67,6 +70,37 @@ image:../media/28_dwg_e2824_remove_controller_canister_upg-hw.gif["Remove contro
 . Set the old controller canister on a flat, static-free surface near the controller-drive tray with the release levers up. Position the controller canister so that you can access the top cover.
 
 . (Conditional) If you are upgrading controllers in a duplex controller-drive tray, repeat all steps to remove the second controller canister.
+
+. If you intend to use the battery from the old controller in the new controller, go to the next part of the section; otherwise go to link:install-controllers-task.html[Install new controllers].
+
+[discrete]
+=== EF600 and EF300 controller models
+
+Remove the controller canister so you can replace it with a new one.
+
+.Steps
+
+. Put on an ESD wristband or take other antistatic precautions.
+. Label each cable that is attached to the controller canister.
+. Disconnect all the cables from the controller canister.
++
+CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
+
+. If the controller canister has a HIC that uses SFP+ transceivers, remove the SFPs.
++
+Because you must remove the HIC from the old controller canister, you must remove any SFPs from the HIC ports. When you reconnect the cables, you can move those SFPs to the new controller canister.
+
+. Squeeze the handles on either side of the controller, and pull back until it releases from the shelf.
++
+image::../media/remove_controller_5.png["Squeeze handles to remove controller"]
+
+. Using two hands and the handles, slide the controller canister out of the shelf. When the front of the controller is free of the enclosure, use two hands to pull it out completely.
++
+CAUTION: Always use two hands to support the weight of a controller canister.
++
+image::../media/remove_controller_6.png["Use two hands to support weight of controller as you remove"]
+
+. Place the controller canister on a flat, static-free surface.
 
 . If you intend to use the battery from the old controller in the new controller, go to the next part of the section; otherwise go to link:install-controllers-task.html[Install new controllers].
 --

@@ -16,11 +16,11 @@ Ensure that the site and the cabinet or rack that you plan to use meet specifica
 
 .Steps
 
-. Use https://hwu.netapp.com[NetApp Hardware Universe^] to confirm that your site meets the environmental and electrical requirements for your storage system.
+. Use link:https://hwu.netapp.com[NetApp Hardware Universe^] to confirm that your site meets the environmental and electrical requirements for your storage system.
 
 . Make sure you have adequate cabinet or rack space for your storage system and any switches.
 +
-If needed, see https://hwu.netapp.com[NetApp Hardware Universe^] for the exact dimensions of your storage system.
+If needed, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for the exact dimensions of your storage system.
 +
 ** 2U for a storage system
 ** 1U for most switches
@@ -63,7 +63,7 @@ NOTE: If there are any discrepancies, note them down for further action.
 +
 The following items are some of the contents you might see in the boxes. 
 +
-If needed, see https://hwu.netapp.com/[NetApp Hardware Universe^] for other supported cables and identify their use.
+If needed, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for other supported cables and identify their use.
 +
 [%rotate, grid="none", frame="none", cols="9,9,5"]
 |===
@@ -86,9 +86,11 @@ a|
 == Step 4: Register your storage system
 After you've ensured that your site meets the specifications for your storage system, and you've verified that you have all the parts you ordered, you should register your storage system.
 
-. Create an account and register your hardware at http://mysupport.netapp.com/[NetApp Support^].
+NOTE: You can register your storage system now or later. Later, at system startup, you are prompted to register your system.
+
+. Make note of the Serial Number (SN) for each controller.
 +
-The registration process requires the Serial Number (SN) for each controller. You can find the serial number in the following locations:
+You can find the serial number in the following locations:
 
 - On each controller
 - On the packing slip
@@ -96,6 +98,13 @@ The registration process requires the Serial Number (SN) for each controller. Yo
 +
 image::../media/drw_ef50-ef80_sn_label_ieops-2689.svg[example of the serial number label]
 
+
+. Create an account at http://mysupport.netapp.com/[NetApp Support^] if you don't already have one.
+
+. Register your system by following the instructions in the NetApp Knowledge Base Article https://kb.netapp.com/nss/System_Registration/How_to_register_a_new_system_on_the_NetApp_Support_Site[How to register a new system^].
+
+
 .What's next?
 After preparing to install your storage system, link:install-hardware.html[install the hardware].
 
+// Aug 2026: updated system registration step for 12.10 release.

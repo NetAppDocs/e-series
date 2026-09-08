@@ -1,7 +1,7 @@
 ---
 permalink: config-vmware/verify-vmware-config-support-task.html
 sidebar: sidebar
-keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries
+keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries
 summary: Verify that the VMware configuration is supported.
 ---
 = Verify VMware configuration support in E-Series
@@ -26,13 +26,14 @@ The Refine Search Criteria section is displayed. In this section you may select 
 [options="header"]
 |===
 | Operating system updates| Protocol| Protocol-related updates
-.3+a|
+.6+a|
 
  ** You might need to install out-of-box drivers to ensure proper functionality and supportability. You can install HBA drivers using the ESXi shell or a remote SSH connection to the ESXi host. To access the host using either of those methods, you must enable the ESXi shell and SSH access. For more information about the ESXi shell, refer to the VMware Knowledge Base regarding using the ESXi shell in ESXi. For installation commands, refer to the instructions that accompany the HBA drivers.
- ** Each HBA vendor has specific methods for updating boot code and firmware. Some of these methods could include the use of a vCenter plugin or the installation of CIM provider on the ESXi host. vCenter plugins can be used to obtain information about the vendor's specific HBA. Refer to the support section of the vendor's website to obtain the instructions and software necessary to update the HBA boot code or firmware. Refer to the _VMware Compatibility Guide_ or the HBA vendor's website to obtain the correct boot code or firmware.
+ ** Each HBA vendor has specific methods for updating boot code and firmware. Some of these methods could include the use of a vCenter plugin or the installation of CIM provider on the ESXi host. vCenter plugins can be used to obtain information about the vendor's specific HBA. Refer to the support section of the vendor's website to obtain the instructions and software necessary to update the HBA boot code or firmware. Refer to the https://compatibilityguide.broadcom.com/search?program=io&persona=live&column=brandName&order=asc[_VMware Compatibility Guide_] or the HBA vendor's website to obtain the correct boot code or firmware.
+ ** Review Alerts and Info associated with the selected configuration for any specific OS, Guest OS, HBA, or other related settings or information that may need to be applied to your configuration.
 
 a|
-FC
+FCP
 a|
 Host bus adapter (HBA) driver, firmware, and bootcode
 a|
@@ -43,4 +44,16 @@ a|
 SAS
 a|
 Host bus adapter (HBA) driver, firmware, and bootcode
+a|
+NVMe over FC
+a|
+Host bus adapter (HBA) driver, firmware, and bootcode
+a|
+NVMe over RoCE
+a|
+Remote Direct Memory Access (RDMA) driver, firmware, and bootcode
+a|
+NVMe over TCP
+a|
+Network interface card (NIC) driver, firmware and bootcode
 |===

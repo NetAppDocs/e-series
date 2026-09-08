@@ -22,7 +22,14 @@ If you are cabling your EF300 for SAS expansion, review the following informatio
 
 .Steps
 
-. Create an account and register your hardware at http://mysupport.netapp.com/[NetApp Support^].
+. Register your system:
++
+NOTE: You can register your system now or later. Later, at system startup, you are prompted to register your system.
++
+.. Create an account at http://mysupport.netapp.com/[NetApp Support^] if you don't already have one.
+
+.. Register your system by following the instructions in the NetApp Knowledge Base Article https://kb.netapp.com/nss/System_Registration/How_to_register_a_new_system_on_the_NetApp_Support_Site[How to register a new system^].
+
 . Ensure that the following items are in the box that you received.
 +
 |===
@@ -34,7 +41,7 @@ image:../media/superrails_inst-hw-ef600.png["Rack-mount hardware"]
 a|
 Rack-mount hardware
 |===
-The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see https://hwu.netapp.com/[Hardware Universe] to locate the cable and identify its use.
+The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see link:https://hwu.netapp.com[NetApp Hardware Universe^] to locate the cable and identify its use.
 +
 [options="header"]
 |===
@@ -103,3 +110,6 @@ A supported browser for the management software:
 * Safari (version 14 and later)
 
 |===
+
+
+// Aug 2026: updated system registration step for 12.10 release.
