@@ -2,7 +2,7 @@
 permalink: maintenance-e4000/drive-drawer-60.html
 sidebar: sidebar
 keywords: E4000 replace drive drawer, replacing E4000 drive drawer, E4000 replace drive drawer, replacing E4000 drive drawer, E4000, E-Series, eseries
-summary: Replace a drive drawer in an E2860 controller shelf or a DE460C drive shelf.
+summary: You can replace a drive drawer in an E4060 controller shelf or a DE460C drive shelf.
 ---
 = Replace the drive drawer - E4000 (60-drive shelf)
 :experimental:
@@ -14,7 +14,7 @@ You can replace a drive drawer in an E4060 controller shelf or a DE460C drive sh
 
 .About this task
 
-The steps to replace a failed drive drawer in an E4060 controller shelf or a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection. If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must stop all host I/O activity and power off the shelf before replacing the drive drawer.
+The steps to replace a failed drive drawer in an E4060 controller shelf or a DE460C drive shelf depend on whether the volumes in the drawer are protected by Drawer Loss Protection. If all volumes in the drive drawer are in disk pools or volume groups that have Drawer Loss Protection, you can perform this procedure online. Otherwise, you must perform this procedure offline by stopping all host I/O activity and powering off the entire storage system (controller shelf and all expansion shelves) before replacing a drive drawer.
 
 .Before you begin
 
@@ -34,11 +34,11 @@ CAUTION: *Possible loss of data access* -- If a volume is already in a Degraded 
 ** Access to the storage array's command line interface (CLI). If you do not have access to the CLI, you can do one of the following:
 *** *For SANtricity System Manager (version 11.60 and above)* -- Download the CLI package (zip file) from System Manager. Go to menu:Settings[System > Add-ons > Command Line Interface]. You can then issue CLI commands from an operating system prompt, such as the DOS C: prompt.
 
-NOTE: If you need information on how to replace an E-Series DE460c expansion shelf, please refer to the https://kb.netapp.com/on-prem/E-Series/Hardware-KBs/How_to_replace_an_E_Series_DE460c_controller_expansion_shelf[NetApp Knowledge base^].
+NOTE: If you need information on how to replace an E-Series DE460C expansion shelf, please refer to the https://kb.netapp.com/on-prem/E-Series/Hardware-KBs/How_to_replace_an_E_Series_DE460c_controller_expansion_shelf[NetApp Knowledge base^].
 
 == Step 1: Prepare to replace drive drawer
 
-Determine if you can perform the replacement procedure while the drive shelf is online or if you need to stop host I/O activity and power off any of the shelves that are powered on.
+Determine if you can perform the replacement procedure while the drive shelf is online or if you need to stop host I/O activity and power off any of the shelves that are powered on (perform the procedure offline).
 
 If you are replacing a drawer in a shelf with Drawer Loss Protection, there is no need to stop host I/O activity and power off any of the shelves.
 
@@ -47,16 +47,17 @@ If you are replacing a drawer in a shelf with Drawer Loss Protection, there is n
 . Determine if the drive shelf is powered on.
  ** If the power is off, you do not need to issue the CLI command. Go to <<Step 2: Remove cable chains>>.
  ** If the power is on, go to the next step.
-. Access the CLI, and then enter the following command:
+. Access the CLI, and then enter the following command to put the target drawer in service mode:
 +
 ----
-SMcli <ctlr_IP1\> -p "array_password" -c "set tray [trayID] drawer [drawerID]
+SMcli <ctlr_IP1\> -k -u "array_username" -p "array_password" -c "set tray [trayID] drawer [drawerID]
 serviceAllowedIndicator=on;"
 ----
 +
 where:
 
  ** `<ctlr_IP1>` is the identifier of the controller.
+ ** `array_username` is the username for the storage array. You must enclose the value for `array_username` in double quotation marks ("").
  ** `array_password` is the password for the storage array. You must enclose the value for `array_password` in double quotation marks ("").
  ** `[trayID]` is the identifier of the drive shelf that contains the drive drawer that you want to replace. Drive shelf ID values are 0 to 99. You must enclose the value for `trayID` in square brackets.
  ** `[drawerID]` is the identifier of the drive drawer that you want to replace. Drawer ID values are 1 (top drawer) to 5 (bottom drawer). You must enclose the value for `drawerID` in square brackets.
@@ -65,7 +66,7 @@ This command ensures you can remove the top-most drawer in drive shelf 10:
 
 +
 ----
-SMcli <ctlr_IP1\> -p "safety-1" -c "set tray [10] drawer [1]
+SMcli <ctlr_IP1\> -k -u "DC1-PRD-SAN-01" -p "safety-1" -c "set tray [10] drawer [1]
 serviceAllowedIndicator=forceOnWarning;"
 ----
 
@@ -89,7 +90,7 @@ CAUTION: *Possible data loss* -- If you continue this procedure while I/O operat
 +
 The green Cache Active LED on the back of each controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
 
-. From the Home page of SANtricity System Manager, select *View Operations in Progress*.
+. From the left panel of SANtricity System Manager, select menu:Storage[Operations in Progress].
 . Wait for all operations to complete before continuing with the next step.
 . Power off the shelves, using one of the following procedures:
 +
@@ -121,7 +122,7 @@ The metal ends on the cable chains slide into corresponding vertical and horizon
 * The left and right vertical guide rails connect the cable chain to the enclosure's midplane.
 * The left and right horizontal guide rails connect the cable chain to the individual drawer.
 
-CAUTION: *Possible hardware damage* -- If the drive tray is powered on, the cable chain is energized until both ends are unplugged. To avoid shorting out the equipment, do not allow the unplugged cable chain connector to touch the metal chassis if the other end of the cable chain is still plugged in.
+CAUTION: *Possible hardware damage* -- If the drive shelf is powered on, the cable chain is energized until both ends are unplugged. To avoid shorting out the equipment, do not allow the unplugged cable chain connector to touch the metal chassis if the other end of the cable chain is still plugged in.
 
 
 .Steps
@@ -137,8 +138,8 @@ image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e2800
 +
 *(1)* _Fan canister handle_
 
- .. Using the handle, pull the fan canister out of the drive tray, and set it aside.
- .. If the tray is powered on, ensure that the left fan goes to its maximum speed.
+ .. Using the handle, pull the fan canister out of the drive shelf, and set it aside.
+ .. If the shelf is powered on, ensure that the left fan goes to its maximum speed.
 +
 CAUTION: *Possible equipment damage due to overheating* -- If the tray is powered on, do not remove both fans at the same time. Otherwise, the equipment might overheat.
 . Determine which cable chain to disconnect:
@@ -203,7 +204,7 @@ CAUTION: *Possible equipment damage due to overheating* -- If the shelf is power
  .. To unlatch the cable chain, insert your finger into the orange ring.
  .. To unplug the cable chain, pull toward you approximately 1 inch (2.5 cm). Leave the cable chain connector within the vertical guide rail.
 +
-CAUTION: *Possible hardware damage* -- If the drive tray is powered on, the cable chain is energized until both ends are unplugged. To avoid shorting out the equipment, do not allow the unplugged cable chain connector to touch the metal chassis if the other end of the cable chain is still plugged in.
+CAUTION: *Possible hardware damage* -- If the drive shelf is powered on, the cable chain is energized until both ends are unplugged. To avoid shorting out the equipment, do not allow the unplugged cable chain connector to touch the metal chassis if the other end of the cable chain is still plugged in.
 . Disconnect the left cable chain from the horizontal guide rail, and pull the entire cable chain out of the drive shelf.
 +
 If you are performing this procedure with the power on, all LEDs turn off when you disconnect the last cable chain connector, including the amber Attention LED.
@@ -295,7 +296,7 @@ When attaching a cable chain, reverse the order you used when disconnecting the 
 
 . Make sure that:
 
-* A new drive drawer installed.
+* A new drive drawer is installed.
 * You have two replacement cable chains, marked as LEFT and RIGHT (on the horizontal connector next to the drive drawer).
 
 . From the back of the drive shelf, remove the fan canister on the right side, and set it aside.
@@ -348,7 +349,7 @@ The LED could remain on for as long as a minute after you reinstall the fan whil
 
 == Step 6: Complete drive drawer replacement
 
-Reinsert the drives and replace the front bezel in the correct order.
+Reinsert the drives in the correct order, reinstall the drive drawer into the drive shelf, reattach the front bezel, reapply power (if needed), and then manually reconstruct drives (if needed).
 
 CAUTION: *Possible loss of data access* -- You must install each drive in its original location in the drive drawer.
 
@@ -404,6 +405,13 @@ Confirm that both fans come on and that the amber LED on the back of the fans is
  .. Wait 10 minutes for the power-on process to complete.
 Confirm that both fans come on and that the amber LED on the back of the fans is off.
 
+. If you performed the drive drawer replacement procedure online, and if any drives in the replacement drawer are failed, you must reconstruct the drives manually.
++
+Using SANtricity System Manager, complete the  link:https://docs.netapp.com/us-en/e-series-santricity/sm-hardware/reconstruct-drive-manually.html[Reconstruct a drive manually^] procedure.
+
 .What's next?
 
 Your drive drawer replacement is complete. You can resume normal operations.
+
+
+// 2026-Aug-27: e-series-internal#300

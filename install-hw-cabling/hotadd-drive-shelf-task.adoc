@@ -1,14 +1,17 @@
 ---
 permalink: install-hw-cabling/hotadd-drive-shelf-task.html
 sidebar: sidebar
-keywords: cabling, cables, hot add, hot add drive shelf, E-Series, eseries, E4000, E2800, E5700, EF300, EF300C, EF600, EF600C, DE212C, DE224C, DE460C
+keywords: cabling, cables, hot add, hot add drive shelf, E-Series, eseries, E4000, E2800, E5700, EF300, EF300C, EF600, EF600C, DE212C, DE224C, DE460C, ef50, ef80
 summary: Add a new drive shelf while power is still applied to the other components.
 ---
-= Hot-add a drive shelf - IOM12 or IOM12B modules (E-Series)
+= Hot-add a drive shelf - E-Series
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can add a new drive shelf while power is still applied to the other components of the storage system. You can configure, reconfigure, add, or relocate storage system capacity without interrupting user access to data.
+You can add a new drive shelf while power is still applied to the other components of the storage system when your storage system controllers already have available SAS ports. You can configure, reconfigure, add, or relocate storage system capacity without interrupting user access to data.
 
 include::../_include/drives-hotadd-shelf-task.adoc[]
+
+
+// Aug 2026: updated to add SAS expansion content for 12.10 release.

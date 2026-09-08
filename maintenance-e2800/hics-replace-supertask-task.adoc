@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replacing E2800 HIC, replace E2800 HIC, replace host interface card, E2800, E-Series, eseries
 summary: Replace a host interface card (HIC) that has failed.
 ---
-= Replace the host interface card (HIC) - E2800
+= Replace the host interface card in an E2800 array
 :experimental:
 :icons: font
 :imagesdir: ../media/
@@ -137,7 +137,7 @@ CAUTION: *Possible data loss* -- If you continue this procedure while I/O operat
 +
 The green Cache Active LED on the back of the controller is on when cached data needs to be written to the drives. You must wait for this LED to turn off.
 
-. From the home page of SANtricity System Manager, select *View Operations in Progress*.
+. From the home page of SANtricity System Manager, select *View Operations in Progress*. 
 . Confirm that all operations have completed before continuing with the next step.
 . Turn off both power switches on the controller shelf.
 . Wait for all LEDs on the controller shelf to turn off.

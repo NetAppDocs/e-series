@@ -1,7 +1,7 @@
 ---
 permalink: getting-started/learn-shelf-concept.html
 sidebar: sidebar
-keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, E-series hardware, E-Series shelf, DE212C, DE224C, DE460C, NE224,
+keywords: E-Series, eseries, EF50, EF80, E4000, E2800, E5700, EF300, EF600, E-series hardware, E-Series shelf, DE212C, DE224C, DE460C,
 summary: E-Series systems are available in a variety of shelf sizes.
 ---
 = Learn about E-Series shelf types
@@ -19,7 +19,7 @@ a|
 
 * 2u12 (2 rack units; 12 drives)
 * 3.5" HDDs and/or 2.5" SSDs (with adapter)
-* E4000 and E2800 controllers only
+* EF50, EF80, E4000 and E2800 controllers
 
 a|
 image:../media/e2812_front.gif["DE212C"]
@@ -29,7 +29,7 @@ a|
 
 * 2u24 (2 rack units; 24 drives)
 * 2.5" HDD and/or 2.5" SSD drives
-* E2800, EF280, E5700, and EF570 controllers
+* EF50, EF80, E2800, EF280, E5700, and EF570 controllers
 
 a|
 image:../media/e2824_front.gif["DE224C"]
@@ -38,10 +38,12 @@ a|
 
 * 4u60 (4 rack units; 60 drives)
 * 3.5" and 2.5" drives (NL-SAS, SAS, and SSD)
-* E4000, E2800, and E5700 controllers
+* EF50, EF80, E4000, E2800, and E5700 controllers
 
 a|
 image:../media/de460c.gif["DE460C"]
 a|
 
 |===
+
+// Aug 2026: updated to add EF50 and EF80 references for SAS shelf support in 12.10 release.

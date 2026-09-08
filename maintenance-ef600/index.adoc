@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300 maintenance, EF600 maintenance, repairing EF300, repairing EF600, EF600C, EF300C replace EF300 components, replace EF600 components
 summary: Maintain the EF300 and EF600 hardware
 ---
-= Maintain the hardware - EF300 and EF600
+= Hardware maintenance for EF300 and EF600 systems
 :icons: font
 :imagesdir: ../media/
 
@@ -35,6 +35,10 @@ a| You must replace a DIMM (dual in-line memory module) when a memory mismatch i
 a| https://docs.netapp.com/us-en/e-series/maintenance-ef600/drives-overview-supertask-concept.html[Drives]
 
 a| A drive is a device that provides the physical storage media for data.
+
+a| link:drive-drawer-de460c-replace.html[Drive drawer]
+
+a| A drive drawer is one of five components in a DE460C drive shelf that hold up to 12 drives.
 
 a| https://docs.netapp.com/us-en/e-series/maintenance-ef600/fans-overview-requirements-replacing2-concept.html[Fans]
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800, E5700, installation
 summary: Install and set up the E2800 or E5700 array.
 ---
-= Install and setup - E2800 and E5700 storage systems
+= Installation and setup workflow for E2800 and E5700 storage systems
 :icons: font
 :imagesdir: ../media/
 
@@ -12,6 +12,8 @@ summary: Install and set up the E2800 or E5700 array.
 Learn how to install and set up the E2800 or E5700 storage system.
 
 You can choose one of the following formats to guide you through installing and setting up your new storage system.
+
+NOTE: The E2800 and E5700 storage systems are end-of-availability (EOA) products and are no longer available for purchase, but still supported. The information in this section is provided for reference only.
 
 * *PDF*
 +

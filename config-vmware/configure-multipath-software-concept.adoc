@@ -1,20 +1,38 @@
 ---
 permalink: config-vmware/configure-multipath-software-concept.html
 sidebar: sidebar
-keywords: multipath software for vmware, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries
-summary: Configure m software to provide a redundant path to the storage array in case one of the physical paths is disrupted.
+keywords: multipath software for vmware, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E4000, EF50, EF80, E-Series, eseries
+summary: Configure multipath software to provide a redundant path to the storage array in case one of the physical paths is disrupted.
 ---
 = Configure the multipath software in E-Series - VMware
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To provide a redundant path to the storage array, you can configure multipath software.
+To provide a redundant path to the storage array, configure multipath software.
 
-Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. The multipath software presents the operating system with a single virtual device that represents the active physical paths to the storage. The multipath software also manages the failover process that updates the virtual device. For VMware, NVMe/FC uses High Performance Plugin (HPP).
+Multipath software provides a redundant path to the storage array in case one of the physical paths is disrupted. The multipath software presents the operating system with a single virtual device that represents the active physical paths to the storage. The multipath software also manages the failover process that updates the virtual device.
 
-Applicable only for FC, iSCSI, and SAS protocols, VMware provides plug-ins, known as Storage Array Type Plug-ins (SATP), to handle the failover implementations of specific vendors`' storage arrays.
+== Multipathing Policies
+Details for the multipathing policies are below. For FCP, iSCSI, and SAS protocols, the default is Native Multipathing Plug-Ins (NMP). For NVMe over Fabrics (NVMe over FC, NVMe over RoCE, and NVMe over TCP), the default is High Performance Plug-In (HPP).
 
-The SATP you should use is *VMW_SATP_ALUA*. 
+=== Native Multipathing Plug-Ins (NMP)
+Applicable only for FCP, iSCSI, and SAS protocols, https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/vmware-multipathing-module.html[VMware provides Native Multipathing Plug-Ins (NMP)^], known as Storage Array Type Plug-ins (SATP), to handle the failover implementations of specific vendors' storage arrays.
 
-For more information, see https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-DB5BC795-E4D9-4350-9C5D-12BB3C0E6D99.html[VMware SATPs^].
+The SATP you should use is *VMW_SATP_ALUA* (This is the chosen default for NetApp E-Series).
+For more information, see https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/vmware-satps.html[VMware SATPs^].
+
+==== Path Selection Plug-Ins and Policies (PSP)
+These plug-ins are submodules of the VMware NMP. The NMP assigns a default PSP for each logical device based on the device type. You can override the default PSP. For more information, see https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/viewing-and-managing-storage-paths-on-esxi-hosts/change-the-path-selection-policy.html[Change the Path Selection Policy^].
+NMP assigns the default path selection policy of VMW_PSP_RR (Round Robin) for NetApp devices. This is the recommended PSP.
+
+For more information, see https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/vmware-psps.html[VMware Path Selection Plug-Ins and Policies^].
+
+=== High Performance Plug-In (HPP)
+The HPP replaces the NMP for high-speed devices, such as NVMe. The HPP is the default plug-in that claims NVMe-oF targets. ESX supports end-to-end NVMe without emulation and SCSI to NVMe emulation. The HPP supports only active/active and implicit ALUA targets.
+
+==== Path Selection Schemes (PSS)
+To support multipathing, the HPP uses the Path Selection Schemes (PSS) when selecting physical paths for I/O requests.
+The default scheme for devices claimed by HPP is LB-RR (Load Balance - Round Robin). This is the recommended PSS.
+
+For more information on HPP or PSS, see https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/vmware-hpp.html[VMware High Performance Plug-In and Path Selection Schemes^].

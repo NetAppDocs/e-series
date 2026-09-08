@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: adding E2800 HIC, add E2800 HIC, add host interface card, E2800, E-Series, eseries
 summary: Add a host interface card (HIC) to an E2800 array.
 ---
-= Add host interface card - E2800 (HIC)
+= Add a host interface card to an E2800 array
 :experimental:
 :icons: font
 :imagesdir: ../media/
@@ -85,7 +85,7 @@ image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif["Cache active LE
 +
 *(1)* _Cache Active LED_
 
-. From the Home page of SANtricity System Manager, select *View Operations in Progress*. Wait for all operations to complete before continuing with the next step. 
+. From the Home page of SANtricity System Manager, select *View Operations in Progress*. Wait for all operations to complete before continuing with the next step.
 . Power down the controller shelf.
  .. Turn off both power switches on the controller shelf.
  .. Wait for all LEDs on the controller shelf to turn off.

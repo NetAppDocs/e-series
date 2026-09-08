@@ -11,23 +11,6 @@ sidebar:
   entries:
     - title: E-Series systems docs
       url: /index.html
-#    - section: cloud-connector
-#    - section: config-linux
-#    - section: config-vmware
-#    - section: config-windows
-#    - section: getting-started
-#    - section: install-hw-cabinet
-#    - section: install-hw-cabling
-#    - section: install-hw-e2800-E5700
-#    - section: install-hw-ef600
-#    - section: maintenance-e2800
-#    - section: maintenance-e5700
-#    - section: maintenance-ef600
-#    - section: remote-storage-volumes
-#    - section: upgrade-controllers
-#    - section: upgrade-santricity
-#    - section: web-services-proxy
-# Copied as-is from sold sidebar.yml - cleanup required
     - title: Release notes
       entries:
         - title: What's new
@@ -55,6 +38,7 @@ sidebar:
     - title: Install hardware
       entries:
         - section: install-hw-ef50-ef80
+        - section: install-hw-e4000
         - title: EF300 and EF600
           entries:
               - title: Overview
@@ -69,33 +53,34 @@ sidebar:
                 url: "/install-hw-ef600/power-controller-shelves-task.html"
               - title: Complete storage system setup
                 url: "/install-hw-ef600/complete-setup-task.html"
-        - title: E2800 and E5700
+        - title: End-of-availability systems
           entries:
-              - title: Overview
-                url: "/install-hw-e2800-e5700/index.html"
-              - title: Install process
-                url: "/install-hw-e2800-e5700/install-setup-overview-concept.html"
-              - title: Install and set up 60-drives
+              - title: E2800 and E5700
                 entries:
-                - title: Prepare for install
-                  url: "/install-hw-e2800-e5700/e2860-e5760-prepare-task.html"
-                - title: Install hardware
-                  url: "/install-hw-e2800-e5700/e2860-e5760-install-hardware-task.html"
-                - title: Cable shelves
-                  url: "/install-hw-e2800-e5700/e2860-e5760-connect-cables-task.html"
-                - title: Complete storage system setup
-                  url: "/install-hw-e2800-e5700/e2860-e5760-complete-setup-task.html"
-              - title: Install and set up 12 and 24-drives
-                entries:
-                - title: Prepare for install
-                  url: "/install-hw-e2800-e5700/e2824-e5724-prepare-task.html"
-                - title: Install hardware
-                  url: "/install-hw-e2800-e5700/e2824-e5724-install-hardware-task.html"
-                - title: Connect cables
-                  url: "/install-hw-e2800-e5700/e2824-e5724-connect-cables-task.html"
-                - title: Complete storage system setup
-                  url: "/install-hw-e2800-e5700/e2824-e5724-complete-setup-task.html"
-        - section: install-hw-e4000
+                    - title: Overview
+                      url: "/install-hw-e2800-e5700/index.html"
+                    - title: Install process
+                      url: "/install-hw-e2800-e5700/install-setup-overview-concept.html"
+                    - title: Install and set up 60-drives
+                      entries:
+                      - title: Prepare for install
+                        url: "/install-hw-e2800-e5700/e2860-e5760-prepare-task.html"
+                      - title: Install hardware
+                        url: "/install-hw-e2800-e5700/e2860-e5760-install-hardware-task.html"
+                      - title: Cable shelves
+                        url: "/install-hw-e2800-e5700/e2860-e5760-connect-cables-task.html"
+                      - title: Complete storage system setup
+                        url: "/install-hw-e2800-e5700/e2860-e5760-complete-setup-task.html"
+                    - title: Install and set up 12 and 24-drives
+                      entries:
+                      - title: Prepare for install
+                        url: "/install-hw-e2800-e5700/e2824-e5724-prepare-task.html"
+                      - title: Install hardware
+                        url: "/install-hw-e2800-e5700/e2824-e5724-install-hardware-task.html"
+                      - title: Connect cables
+                        url: "/install-hw-e2800-e5700/e2824-e5724-connect-cables-task.html"
+                      - title: Complete storage system setup
+                        url: "/install-hw-e2800-e5700/e2824-e5724-complete-setup-task.html"
         - title: 3040 40U cabinet
           entries:
               - title: Overview
@@ -312,8 +297,6 @@ sidebar:
                     url: "/config-linux/nvme-roce-verify-linux-config-support-task.html"
                   - title: Configure IP addresses using DHCP
                     url: "/config-linux/nvme-roce-configure-ip-address-dhcp-task.html"
-                  - title: Install SANtricity Storage Manager
-                    url: "/config-linux/nvme-roce-install-smcli-11-53-task.html"
                   - title: Access SANtricity System Manager
                     url: "/config-linux/nvme-roce-access-sam-setup-wizard-task.html"
                   - title: Configure switch
@@ -338,6 +321,36 @@ sidebar:
                     url: "/config-linux/nvme-roce-create-filesystems-sles-15-task.html"
                   - title: NVMe over RoCE worksheet for Linux
                     url: "/config-linux/nvme-roce-worksheet-for-concept.html"
+                - title: NVMe over TCP Setup
+                  entries:
+                  - title: Verify Linux configuration
+                    url: "/config-linux/nvme-tcp-verify-linux-config-support-task.html"
+                  - title: Configure IP addresses using DHCP
+                    url: "/config-linux/nvme-tcp-configure-ip-address-dhcp-task.html"
+                  - title: Access SANtricity System Manager
+                    url: "/config-linux/nvme-tcp-access-sam-setup-wizard-task.html"
+                  - title: Configure switch
+                    url: "/config-linux/nvme-tcp-configure-switch-task.html"
+                  - title: Set up NVMe over TCP on host
+                    url: "/config-linux/nvme-tcp-setup-host-side-task.html"
+                  - title: Configure NVMe port settings
+                    url: "/config-linux/nvme-tcp-configure-storage-connections-task.html"
+                  - title: Connect to storage from host
+                    url: "/config-linux/nvme-tcp-discover-connect-storage-host-task.html"
+                  - title: Define host
+                    url: "/config-linux/nvme-tcp-define-host-task.html"
+                  - title: Assign volume
+                    url: "/config-linux/nvme-tcp-assign-volume-task.html"
+                  - title: Display volumes visible to host
+                    url: "/config-linux/nvme-tcp-display-volumes-visible-host-task.html"
+                  - title: Set up failover on host
+                    url: "/config-linux/nvme-tcp-setup-failover-host-task.html"
+                  - title: Access NVMe volumes for physical device targets
+                    url: "/config-linux/nvme-tcp-access-physical-targets-concept.html"
+                  - title: Create filesystems
+                    url: "/config-linux/nvme-tcp-create-filesystems-sles-15-task.html"
+                  - title: NVMe over TCP worksheet for Linux
+                    url: "/config-linux/nvme-tcp-worksheet-for-concept.html"
                 - title: NVMe over Fibre Channel setup
                   entries:
                   - title: Verify Linux configuration
@@ -390,14 +403,16 @@ sidebar:
               url: "/config-vmware/access-sam-setup-wizard-task.html"
             - title: Perform FC-specific tasks
               url: "/config-vmware/fc-perform-specific-task.html"
-            - title: Perform NMVe over FC-specific tasks
-              url: "/config-vmware/nmve-fc-perform-specific-task.html"
+            - title: Perform NVMe over RoCE-specific tasks
+              url: "/config-vmware/nvme-roce-perform-specific-task.html"
+            - title: Perform NVMe over FC-specific tasks
+              url: "/config-vmware/nvme-fc-perform-specific-task.html"
+            - title: Perform NVMe over TCP-specific tasks
+              url: "/config-vmware/nvme-tcp-perform-specific-task.html"
             - title: Perform iSCSI-specific tasks
               url: "/config-vmware/iscsi-perform-specific-task.html"
             - title: Perform SAS-specific tasks
               url: "/config-vmware/sas-perform-specific-task.html"
-            - title: Perform NVMe over RoCE-specific tasks
-              url: "/config-vmware/nvme-roce-perform-specific-task.html"
             - title: Discover storage on the host
               url: "/config-vmware/discover-storage-host-task.html"
             - title: Configure storage on host
@@ -469,6 +484,7 @@ sidebar:
     - title: Maintain systems
       entries:
         - section: maintenance-ef50-ef80
+        - section: maintenance-e4000
         - title: EF300 and EF600
           pdf-filename: EF300-EF600 Maintain Systems
           entries:
@@ -506,6 +522,8 @@ sidebar:
                   url: "/maintenance-ef600/drives-replace-EF600-supertask-task.html"
                 - title: Hot add a drive shelf
                   url: "/maintenance-ef600/drives-hotadd-drive-shelf-task.html"
+              - title: Drive drawer
+                url: "/maintenance-ef600/drive-drawer-de460c-replace.html"
               - title: Fans
                 pdf-filename: EF300-EF600 Maintain Fans
                 entries:
@@ -544,147 +562,148 @@ sidebar:
                   url: "/maintenance-ef600/sas-overview-supertask-concept.html"
                 - title: Add SAS expansion cards
                   url: "/maintenance-ef600/sas-add-supertask-task.html"
-        - title: E2800
-          pdf-filename: E2800 Maintain System
+        - title: End-of-availability systems
           entries:
-            - title: Overview
-              url: "/maintenance-e2800/index.html"
-            - title: Batteries
-              pdf-filename: E2800 Maintain Batteries
-              entries:
-              - title: Overview and requirements
-                url: "/maintenance-e2800/batteries-overview-requirements-concept.html"
-              - title: Prepare to replace battery
-                url: "/maintenance-e2800/batteries-prepare-replace-task.html"
-              - title: Remove controller canister
-                url: "/maintenance-e2800/batteries-remove-controller-canister-task.html"
-              - title: Remove failed battery
-                url: "/maintenance-e2800/batteries-remove-failed-task.html"
-              - title: Install new battery
-                url: "/maintenance-e2800/batteries-install-new-task.html"
-              - title: Re-install controller canister
-                url: "/maintenance-e2800/batteries-reinstall-controller-canister-task.html"
-              - title: Complete battery replacement
-                url: "/maintenance-e2800/batteries-complete-replacement-task.html"
-            - title: Controllers
-              pdf-filename: E2800 Maintain Controllers
-              entries:
-              - title: Overview and requirements
-                url: "/maintenance-e2800/controllers-overview-supertask-concept.html"
-              - title: Add second controller canister
-                url: "/maintenance-e2800/controllers-second-add-task.html"
-              - title: Replace controller in duplex configuration
-                url: "/maintenance-e2800/controllers-duplex-supertask-task.html"
-              - title: Replace controller in simplex configuration
-                url: "/maintenance-e2800/controllers-simplex-supertask-task.html"
-            - title: Canisters
-              pdf-filename: E2800 Maintain Canisters
-              entries:
-              - title: Overview and requirements
-                url: "/maintenance-e2800/canisters-overview-supertask-concept.html"
-              - title: Replace power supply (12-drive or 24-drive)
-                url: "/maintenance-e2800/canisters-supply-supertask-task.html"
-              - title: Replace power canister (60-drive)
-                url: "/maintenance-e2800/canisters-60-replace-power-task.html"
-              - title: Replace fan canister (60-drive)
-                url: "/maintenance-e2800/canisters-fan-supertask-task.html"
-            - title: Drives
-              pdf-filename: E2800 Maintain Drives
-              entries:
-              - title: Overview and requirements
-                url: "/maintenance-e2800/drives-overview-supertask-concept.html"
-              - title: Replace drive (12-drive or 24-drive)
-                url: "/maintenance-e2800/drives-12-24-supertask-task.html"
-              - title: Replace drive (60-drive)
-                url: "/maintenance-e2800/drives-60-replace-task.html"
-              - title: Replace drive drawer (60-drive)
-                url: "/maintenance-e2800/drives-60-supertask-task.html"
-              - title: Hot add a drive shelf
-                url: "/maintenance-e2800/drives-hotadd-drive-shelf-task.html"
-            - title: Host interface cards
-              pdf-filename: E2800 Maintain HICs
-              entries:
-              - title: Overview and requirements
-                url: "/maintenance-e2800/hics-overview-supertask-concept.html"
-              - title: Add host interface cards
-                url: "/maintenance-e2800/hics-add-supertask-task.html"
-              - title: Upgrade host interface card
-                url: "/maintenance-e2800/hics-upgrade-supertask-task.html"
-              - title: Replace host interface card
-                url: "/maintenance-e2800/hics-replace-supertask-task.html"
-            - title: Host port protocol conversion
-              pdf-filename: E2800 Convert Host Protocol
-              entries:
-              - title: Overview and requirements
-                url: "/maintenance-e2800/hpp-overview-supertask-concept.html"
-              - title: Change host protocol
-                url: "/maintenance-e2800/hpp-change-host-protocol-task.html"
-              - title: Complete host protocol conversion
-                url: "/maintenance-e2800/hpp-complete-protocol-conversion-task.html"
-        - section: maintenance-e4000
-        - title: E5700
-          pdf-filename: E5700 Maintain System
-          entries:
-              - title: Overview
-                url: "/maintenance-e5700/index.html"
-              - title: Batteries
-                pdf-filename: E5700 Maintain Batteries
+              - title: E2800
+                pdf-filename: E2800 Maintain System
                 entries:
-                - title: Overview and requirements
-                  url: "/maintenance-e5700/batteries-intro-concept.html"
-                - title: Replace battery
-                  url: "/maintenance-e5700/batteries-replace-supertask-task.html"
-              - title: Controllers
-                pdf-filename: E5700 Maintain Controllers
+                  - title: Overview
+                    url: "/maintenance-e2800/index.html"
+                  - title: Batteries
+                    pdf-filename: E2800 Maintain Batteries
+                    entries:
+                    - title: Overview and requirements
+                      url: "/maintenance-e2800/batteries-overview-requirements-concept.html"
+                    - title: Prepare to replace battery
+                      url: "/maintenance-e2800/batteries-prepare-replace-task.html"
+                    - title: Remove controller canister
+                      url: "/maintenance-e2800/batteries-remove-controller-canister-task.html"
+                    - title: Remove failed battery
+                      url: "/maintenance-e2800/batteries-remove-failed-task.html"
+                    - title: Install new battery
+                      url: "/maintenance-e2800/batteries-install-new-task.html"
+                    - title: Re-install controller canister
+                      url: "/maintenance-e2800/batteries-reinstall-controller-canister-task.html"
+                    - title: Complete battery replacement
+                      url: "/maintenance-e2800/batteries-complete-replacement-task.html"
+                  - title: Controllers
+                    pdf-filename: E2800 Maintain Controllers
+                    entries:
+                    - title: Overview and requirements
+                      url: "/maintenance-e2800/controllers-overview-supertask-concept.html"
+                    - title: Add second controller canister
+                      url: "/maintenance-e2800/controllers-second-add-task.html"
+                    - title: Replace controller in duplex configuration
+                      url: "/maintenance-e2800/controllers-duplex-supertask-task.html"
+                    - title: Replace controller in simplex configuration
+                      url: "/maintenance-e2800/controllers-simplex-supertask-task.html"
+                  - title: Canisters
+                    pdf-filename: E2800 Maintain Canisters
+                    entries:
+                    - title: Overview and requirements
+                      url: "/maintenance-e2800/canisters-overview-supertask-concept.html"
+                    - title: Replace power supply (12-drive or 24-drive)
+                      url: "/maintenance-e2800/canisters-supply-supertask-task.html"
+                    - title: Replace power canister (60-drive)
+                      url: "/maintenance-e2800/canisters-60-replace-power-task.html"
+                    - title: Replace fan canister (60-drive)
+                      url: "/maintenance-e2800/canisters-fan-supertask-task.html"
+                  - title: Drives
+                    pdf-filename: E2800 Maintain Drives
+                    entries:
+                    - title: Overview and requirements
+                      url: "/maintenance-e2800/drives-overview-supertask-concept.html"
+                    - title: Replace drive (12-drive or 24-drive)
+                      url: "/maintenance-e2800/drives-12-24-supertask-task.html"
+                    - title: Replace drive (60-drive)
+                      url: "/maintenance-e2800/drives-60-replace-task.html"
+                    - title: Replace drive drawer (60-drive)
+                      url: "/maintenance-e2800/drives-60-supertask-task.html"
+                    - title: Hot add a drive shelf
+                      url: "/maintenance-e2800/drives-hotadd-drive-shelf-task.html"
+                  - title: Host interface cards
+                    pdf-filename: E2800 Maintain HICs
+                    entries:
+                    - title: Overview and requirements
+                      url: "/maintenance-e2800/hics-overview-supertask-concept.html"
+                    - title: Add host interface cards
+                      url: "/maintenance-e2800/hics-add-supertask-task.html"
+                    - title: Upgrade host interface card
+                      url: "/maintenance-e2800/hics-upgrade-supertask-task.html"
+                    - title: Replace host interface card
+                      url: "/maintenance-e2800/hics-replace-supertask-task.html"
+                  - title: Host port protocol conversion
+                    pdf-filename: E2800 Convert Host Protocol
+                    entries:
+                    - title: Overview and requirements
+                      url: "/maintenance-e2800/hpp-overview-supertask-concept.html"
+                    - title: Change host protocol
+                      url: "/maintenance-e2800/hpp-change-host-protocol-task.html"
+                    - title: Complete host protocol conversion
+                      url: "/maintenance-e2800/hpp-complete-protocol-conversion-task.html"
+              - title: E5700
+                pdf-filename: E5700 Maintain System
                 entries:
-                - title: Overview and requirements
-                  url: "/maintenance-e5700/controllers-overview-concept.html"
-                - title: Replace controller in duplex configuration
-                  url: "/maintenance-e5700/controllers-duplex-supertask-task.html"
-              - title: Canisters
-                pdf-filename: E5700 Maintain Canisters
-                entries:
-                - title: Overview and requirements
-                  url: "/maintenance-e5700/canisters-overview-supertask-concept.html"
-                - title: Replace power supply (24-drive)
-                  url: "/maintenance-e5700/canisters-supply-replace-task.html"
-                - title: Replace power canister (60-drive)
-                  url: "/maintenance-e5700/canisters-power-supertask-task.html"
-                - title: Replace fan canister (60-drive)
-                  url: "/maintenance-e5700/canisters-fan-replace-task.html"
-              - title: Drives
-                pdf-filename: E5700 Maintain Drives
-                entries:
-                - title: Overview and requirements
-                  url: "/maintenance-e5700/drives-overview-supertask-concept.html"
-                - title: Replace drive (24-drive)
-                  url: "/maintenance-e5700/drives-24-supertask-task.html"
-                - title: Replace drive (60-drive)
-                  url: "/maintenance-e5700/drives-60-replace-task.html"
-                - title: Replace drive drawer (60-drive)
-                  url: "/maintenance-e5700/drives-drawer-supertask-task.html"
-                - title: Hot add a drive shelf
-                  url: "/maintenance-e5700/drives-hotadd-drive-shelf-task.html"
-              - title: Host interface cards
-                pdf-filename: E5700 Maintain HICs
-                entries:
-                - title: Overview and requirements
-                  url: "/maintenance-e5700/hics-overview-supertask-concept.html"
-                - title: Add host interface cards
-                  url: "/maintenance-e5700/hics-add-supertask-task.html"
-                - title: Upgrade host interface card
-                  url: "/maintenance-e5700/hics-upgrade-supertask-task.html"
-                - title: Replace host interface card
-                  url: "/maintenance-e5700/hics-replace-supertask-task.html"
-              - title: Host port protocol
-                pdf-filename: E5700 Change Host Protocol
-                entries:
-                - title: Overview and requirements
-                  url: "/maintenance-e5700/hpp-overview-supertask-concept.html"
-                - title: Change host protocol
-                  url: "/maintenance-e5700/hpp-change-host-protocol-task.html"
-                - title: Complete host protocol conversion
-                  url: "/maintenance-e5700/hpp-complete-protocol-conversion-task.html"
+                    - title: Overview
+                      url: "/maintenance-e5700/index.html"
+                    - title: Batteries
+                      pdf-filename: E5700 Maintain Batteries
+                      entries:
+                      - title: Overview and requirements
+                        url: "/maintenance-e5700/batteries-intro-concept.html"
+                      - title: Replace battery
+                        url: "/maintenance-e5700/batteries-replace-supertask-task.html"
+                    - title: Controllers
+                      pdf-filename: E5700 Maintain Controllers
+                      entries:
+                      - title: Overview and requirements
+                        url: "/maintenance-e5700/controllers-overview-concept.html"
+                      - title: Replace controller in duplex configuration
+                        url: "/maintenance-e5700/controllers-duplex-supertask-task.html"
+                    - title: Canisters
+                      pdf-filename: E5700 Maintain Canisters
+                      entries:
+                      - title: Overview and requirements
+                        url: "/maintenance-e5700/canisters-overview-supertask-concept.html"
+                      - title: Replace power supply (24-drive)
+                        url: "/maintenance-e5700/canisters-supply-replace-task.html"
+                      - title: Replace power canister (60-drive)
+                        url: "/maintenance-e5700/canisters-power-supertask-task.html"
+                      - title: Replace fan canister (60-drive)
+                        url: "/maintenance-e5700/canisters-fan-replace-task.html"
+                    - title: Drives
+                      pdf-filename: E5700 Maintain Drives
+                      entries:
+                      - title: Overview and requirements
+                        url: "/maintenance-e5700/drives-overview-supertask-concept.html"
+                      - title: Replace drive (24-drive)
+                        url: "/maintenance-e5700/drives-24-supertask-task.html"
+                      - title: Replace drive (60-drive)
+                        url: "/maintenance-e5700/drives-60-replace-task.html"
+                      - title: Replace drive drawer (60-drive)
+                        url: "/maintenance-e5700/drives-drawer-supertask-task.html"
+                      - title: Hot add a drive shelf
+                        url: "/maintenance-e5700/drives-hotadd-drive-shelf-task.html"
+                    - title: Host interface cards
+                      pdf-filename: E5700 Maintain HICs
+                      entries:
+                      - title: Overview and requirements
+                        url: "/maintenance-e5700/hics-overview-supertask-concept.html"
+                      - title: Add host interface cards
+                        url: "/maintenance-e5700/hics-add-supertask-task.html"
+                      - title: Upgrade host interface card
+                        url: "/maintenance-e5700/hics-upgrade-supertask-task.html"
+                      - title: Replace host interface card
+                        url: "/maintenance-e5700/hics-replace-supertask-task.html"
+                    - title: Host port protocol
+                      pdf-filename: E5700 Change Host Protocol
+                      entries:
+                      - title: Overview and requirements
+                        url: "/maintenance-e5700/hpp-overview-supertask-concept.html"
+                      - title: Change host protocol
+                        url: "/maintenance-e5700/hpp-change-host-protocol-task.html"
+                      - title: Complete host protocol conversion
+                        url: "/maintenance-e5700/hpp-complete-protocol-conversion-task.html"
     - title: Manage storage
       url: /manage-storage.html
     - title: Use SANtricity solutions

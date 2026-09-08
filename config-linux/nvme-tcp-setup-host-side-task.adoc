@@ -1,0 +1,175 @@
+---
+permalink: config-linux/nvme-tcp-setup-host-side-task.html
+sidebar: sidebar
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
+summary: NVMe initiator configuration in a TCP environment includes installing and configuring the nvme-cli package, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
+---
+= Set up NVMe over TCP initiator on the host in E-Series - Linux
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+NVMe initiator configuration in a TCP environment includes installing and configuring the nvme-cli package, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
+
+.Before you begin
+
+You must be running the latest compatible RHEL 9, RHEL 10, SLES 15 or SLES 16 service pack operating system. See the https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] for a complete list of the latest requirements.
+
+.Steps
+
+. If you are using the inbox ethernet driver for your HCA, install the `nvme-cli` package as follows:
++
+*SLES 15 or SLES 16*
++
+----
+
+# zypper install nvme-cli
+----
++
+*RHEL 9 and RHEL 10*
++
+----
+
+# yum install nvme-cli
+----
++
+If you are using an NVIDIA HCA and wish to use the external DOCA driver, please refer to the link:https://developer.nvidia.com/doca-downloads[NVIDIA documentation] for information how to properly install it in this environment.
+
+. For RHEL 9, install network scripts:
++
+*RHEL 9*
++
+----
+# yum install NetworkManager-initscripts-updown
+----
++
+NOTE: Network scripts are not available for RHEL 10.
++
+. Get the host NQN, which will be used to configure the host to an array.
++
+----
+# cat /etc/nvme/hostnqn
+----
++
+. Set up IPv4 IP addresses on the ethernet ports used to connect NVMe over TCP. For each network interface, create a configuration script that contains the different variables for that interface.
++
+The variables used in this step are based on server hardware and the network environment. The variables include the `IPADDR` and `GATEWAY`. These are example instructions for SLES and RHEL:
++
+*SLES 15*
++
+Create the example file `/etc/sysconfig/network/ifcfg-eth4` with the following contents.
++
+----
+BOOTPROTO='static'
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='192.168.1.87/24'
+GATEWAY='192.168.1.1'
+MTU=9000
+NAME='<adapter name>'
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'
+----
++
+Then, create the example file `/etc/sysconfig/network/ifcfg-eth5`:
++
+----
+BOOTPROTO='static'
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='192.168.2.87/24'
+GATEWAY='192.168.2.1'
+MTU=9000
+NAME='<adapter name>'
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'
+----
++
+*RHEL 9, RHEL 10, or SLES 16*
++
+Use the `nmtui` tool to activate and edit a connection. Below is an example file `/etc/NetworkManager/system-connections/eth4.nmconnection` the tool will generate:
++
+----
+
+[connection]
+id=eth4
+uuid=<unique uuid>
+type=ethernet
+interface-name=eth4
+
+[ethernet]
+mtu=9000
+
+[ipv4]
+address1=192.168.1.87/24
+method=manual
+
+[ipv6]
+addr-gen-mode=default
+method=auto
+
+[proxy]
+----
+Below is an example file `/etc/NetworkManager/system-connections/eth5.nmconnection` the tool will generate:
++
+----
+
+[connection]
+id=eth5
+uuid=<unique uuid>
+type=ethernet
+interface-name=eth5
+
+[ethernet]
+mtu=9000
+
+[ipv4]
+address1=192.168.2.87/24
+method=manual
+
+[ipv6]
+addr-gen-mode=default
+method=auto
+
+[proxy]
+----
++
+. Enable the network interfaces:
++
+----
+
+# nmcli connection up eth4
+# nmcli connection up eth5 
+----
+
+. Set up the NVMe-oF layer on the host. Create the following file under `/etc/modules-load.d/` to load the `nvme_tcp` kernel module and make sure the kernel module will always be on, even after a reboot:
++
+----
+
+# cat /etc/modules-load.d/nvme_tcp.conf
+  nvme_tcp
+----
+
+. Reboot the host.
+.. Alternatively, you can load the `nvme_tcp` kernel module without rebooting by running this command:
++
+----
+
+# modprobe nvme_tcp
+----
+
+. Verify the `nvme_tcp` kernel module is loaded, run this command:
++
+----
+# lsmod | grep nvme
+nvme_tcp               45056  0
+nvme_fabrics           24576  1 nvme_tcp
+nvme_core             114688  5 nvme_tcp,nvme_fabrics
+t10_pi                 16384  2 sd_mod,nvme_core
+----
++
+
+.What's next?
+After you set up the NVMe over TCP initiator on the host, link:nvme-tcp-configure-storage-connections-task.html[configure the NVMe over TCP port settings].

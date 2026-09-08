@@ -94,4 +94,48 @@ Native NVMe Multipathing is disabled by default in RHEL 8 and must be enabled us
 .. If the command output is `N`, then Native NVMe Multipathing is still disabled.
 .. If the command output is `Y`, then Native NVMe Multipathing is enabled and any NVMe devices you discover will use it.
 
-NOTE: For SLES 15, SLES 16, RHEL 9 and RHEL 10, Native NVMe Multipathing is enabled by default and no additional configuration is required.
+NOTE: For RHEL 9 and SLES 15, Native NVMe Multipathing is enabled by default and no additional configuration is required.
+
+== Configure NVMe I/O policy
+
+.About this task
+Linux NVMe native multipathing may default to the `numa` I/O policy. For E-Series/EF-Series NVMe-over-Fabrics configurations, the recommended I/O policy is `round-robin`, which distributes I/O evenly across all available paths.
+
+.Steps
+
+. Verify the current NVMe I/O policy:
++
+----
+# cat /sys/module/nvme_core/parameters/iopolicy
+numa
+----
+
+. Set the `round-robin` I/O policy using one of the following methods:
+
+** *Persistent (recommended)* — Create a udev rules file:
++
+.`/etc/udev/rules.d/71-nvme-io-policy.rules`
+----
+ACTION=="add|change", SUBSYSTEM=="nvme-subsystem", ATTR{iopolicy}="round-robin"
+----
++
+Then reload and apply the rules:
++
+----
+udevadm control --reload
+udevadm trigger --subsystem-match=nvme-subsystem
+----
+
+** *Global setting at boot* — Add the following kernel parameter to your bootloader configuration:
++
+----
+nvme_core.iopolicy=round-robin
+----
+
+** *Non-persistent (online, no I/O interruption)* — Apply immediately without rebooting:
++
+----
+echo "round-robin" > /sys/class/nvme-subsystem/nvme-subsys0/iopolicy
+----
++
+NOTE: This setting does not persist across reboots.

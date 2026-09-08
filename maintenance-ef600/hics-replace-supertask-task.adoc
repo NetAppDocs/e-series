@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace EF300 HIC, replace EF600 HIC, host interface card failed, HIC failure
 summary: Replace a failed EF300 or EF600 host interface card (HIC).
 ---
-= Replace failed host interface card (HIC) - EF300 or EF600
+= Replace a failed HIC in an EF300 or EF600 storage system
 :experimental:
 :icons: font
 :imagesdir: ../media/
@@ -15,6 +15,8 @@ Follow this procedure to replace a failed host interface card (HIC) in an EF300,
 .About this task
 
 When you replace a failed HIC, you must taking one controller offline to place the system in a non-redundant state, replace the HIC, and bring the controller back online.
+
+NOTE: The EF300 and EF600 storage array does not have to be powered off when replacing a HIC of the same protocol type (for example, replacing a Fibre Channel HIC with another Fibre Channel HIC). 
 
 .Before you begin
 
@@ -198,7 +200,7 @@ NOTE: If you cannot resolve the problem, contact technical support.
 As needed, install the latest version.
 
 . Verify that all volumes have been returned to the preferred owner.
-.. Select menu:Storage[Volumes]. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select menu:More[Change ownership] to view volume owners.
+.. Select menu:Storage[Volumes]. From the *All Volumes* page, verify that volumes are distributed to their preferred owners. Select menu:elispse icon[Change ownership] to view volume owners.
 .. If volumes are all owned by preferred owner continue to Step 6.
 .. If none of the volumes are returned, you must manually return the volumes. Go to menu:More[Redistribute volumes].
  .. If only some of the volumes are returned to their preferred owners after auto-distribution or manual distribution you must check the Recovery Guru for host connectivity issues.

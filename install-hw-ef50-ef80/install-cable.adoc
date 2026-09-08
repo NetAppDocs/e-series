@@ -9,7 +9,7 @@ summary: After you install your EF50 or EF80 storage system hardware, cable the 
 :imagesdir: ../media/
 
 [.lead]
-After you install your EF50 or EF80 storage system hardware, cable the inter-controller mirroring and host network connections. (You cable the management ports later in the Complete storage system setup section.)
+After you install your EF50 or EF80 storage system hardware, cable the inter-controller mirroring, host network connections, and SAS shelves if applicable. (You cable the management ports later in the Complete storage system setup section.)
 
 .About this task
 
@@ -45,7 +45,9 @@ image:../media/drw_ef50-ef80_mirroring_2p_100gbe_ieops-2659.svg[ef50 and ef80 co
 Cable the host connections for your storage system according to your network topology: direct attached or fabric attached.
 
 .About this task
-* Depending on your storage system model, the type of host I/O modules installed in the storage system can be Ethernet or Fibre Channel (FC). The cabling examples in this procedure show both types of host I/O modules as supported by the storage system models.
+* Depending on your storage system model and version of SANtricity it's running, different types of host I/O modules are supported. The cabling examples in this procedure show Ethernet and Fibre Channel (FC) host I/O modules.
++
+To see all supported host I/O modules and slot priorities for your storage system model, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
 * Cabling examples do not show 4-port 64Gb FC HBAs in host 1 and host 2; however, if you have these installed, you cable every other port in the same manner as shown for the 2-port HBAs.
 
@@ -295,7 +297,95 @@ image:../media/drw_ef80_4p_64gb_fc_3hic_fabric_ieops-2675.svg[EF80 fabric-attach
 =====
 //closed tabbed block
 
+== Step 3: Cable the SAS shelf connections
+
+The following procedures show how to cable the controllers to one DE460C shelf or to a stack of three DE460C shelves.
+
+.About this task
+
+* The cabling examples show DE460C shelves; however, the same cabling applies to all supported SAS shelves. See link:https://hwu.netapp.com[NetApp Hardware Universe^] for supported SAS shelves.
+
+* For the maximum number of shelves supported for your storage system and all of your cabling options, such as optical, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
+
+* The cabling procedures show controllers with one SAS I/O module in slot 3. This is the only supported SAS I/O module configuration for SANtricity 12.10.
+
+* The cabling illustrations show controller A cabling in blue and controller B cabling in red.
+
+* You always cable the controllers and one or more shelves so that there are two cable connections for the A-side path (IOMA) and the B-side path (IOMB), as shown in the cabling illustrations.
+
+* You use the storage cables that came with your storage system, which could be the following cable type:
++
+*mini-SAS HD cable*
++
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[mini-SAS HD cable,width=100px]
+
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.Option 1: One DE460C shelf
+--
+Cable each controller to each IOM12 module on the DE460C shelf so that the controllers have an A-side path (IOMA) and a B-side path (IOMB) to the shelf. 
+
+.Steps
+
+. Cable controller A port 3a to shelf IOMA port 1.
+. Cable controller A port 3b to shelf IOMA port 2.
+. Cable controller A port 3c to shelf IOMB port 3.
+. Cable controller A port 3d to shelf IOMB port 4.
+. Cable controller B port 3a to shelf IOMA port 3.
+. Cable controller B port 3b to shelf IOMA port 4.
+. Cable controller B port 3c to shelf IOMB port 1.
+. Cable controller B port 3d to shelf IOMB port 2.
+
+When you are done cabling the shelf, the cabling should look like the following:
+
+image:../media/drw_ef50-ef80_1_de460c_cabling_ieops-2981.svg[cable controller ports to one DE460C shelf]
+
+--
+.Option 2: Three DE460C shelves
+--
+Connect the three shelves together (shelf-to-shelf connections) and then connect each controller to each end of the shelf stack (shelf 1 and shelf 3) so that the controllers have an A-side path (IOMA) and a B-side path (IOMB) to the shelf stack.
+
+. Cable the shelf-to-shelf connections for the IOMA path:
+.. Cable shelf 1 IOMA port 1 to shelf 2 IOMA port 4.
+.. Cable shelf 1 IOMA port 2 to shelf 2 IOMA port 3.
+.. Cable shelf 2 IOMA port 1 to shelf 3 IOMA port 4.
+.. Cable shelf 2 IOMA port 2 to shelf 3 IOMA port 3.
+
+. Cable the shelf-to-shelf connections for the IOMB path:
+.. Cable shelf 1 IOMB port 1 to shelf 2 IOMB port 3.
+.. Cable shelf 1 IOMB port 2 to shelf 2 IOMB port 4.
+.. Cable shelf 2 IOMB port 1 to shelf 3 IOMB port 3.
+.. Cable shelf 2 IOMB port 2 to shelf 3 IOMB port 4.
+
+. Cable controller A to shelf 3 (IOMA path) and 1 (IOMB path):
+.. Cable controller A port 3a to shelf 3 IOMA port 1
+.. Cable controller A port 3b to shelf 3 IOMA port 2.
+.. Cable controller A port 3c to shelf 1 IOMB port 3.
+.. Cable controller A port 3d to shelf 1 IOMB port 4.
+
+. Cable controller B to to shelf 1 (IOMA path) and 3 (IOMB path):
+.. Cable controller B port 3a to shelf 1 IOMA port 3.
+.. Cable controller B port 3b to shelf 1 IOMA port 4.
+.. Cable controller B port 3c to shelf 3 IOMB port 1.
+.. Cable controller B port 3d to shelf 3 IOMB port 2.
+
+When you are done cabling the shelves, the cabling should look like the following:
+
+image:../media/drw_ef50-ef80_3_de460c_cabling_ieops-2992.svg[cable controllers to de460c shelves 1 and 3]
+
+--
+
+====
+
+
+// end tabbed area 
+
 
 .What's next?
 
-After cabling the inter-controller mirroring and host connections for your storage system, link:install-power-hardware.html[power on your storage system].
+After cabling your storage system, link:install-power-hardware.html[power on your storage system].
+
+// Aug 2026: updated to add SAS expansion content for 12.10 release.

@@ -23,6 +23,7 @@ The Linux express method includes the following steps.
  ** SRP over Infiniband
  ** NVMe over Infiniband
  ** NVMe over RoCE
+ ** NVMe over TCP
  ** NVMe over Fibre Channel
 . Create logical volumes on the storage array.
 . Make the volumes available to the data host.
