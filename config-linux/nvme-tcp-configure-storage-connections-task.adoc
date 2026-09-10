@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe over TCP, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: If your controller includes a connection for NVMe over TCP, you can configure the NVMe port settings from the Hardware page or the System page in SANtricity System Manager.
 ---
-= Configure storage array NVMe over TCP connections in E-Series - Linux
+= Configure E-Series storage NVMe over TCP connections for Linux hosts
 :experimental:
 :icons: font
 :imagesdir: ../media/
