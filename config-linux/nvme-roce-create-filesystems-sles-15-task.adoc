@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: For RHEL 9, RHEL 10, SLES 15, and SLES 16, you create a filesystem on the native nvme device and mount the filesystem.
 ---
-= Create filesystems in E-Series - Linux (NVMe over RoCE)
+= Create filesystems on a Linux host for E-Series NVMe over RoCE
 :icons: font
 :imagesdir: ../media/
 

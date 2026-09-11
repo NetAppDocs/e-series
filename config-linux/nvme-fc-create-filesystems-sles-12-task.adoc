@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: partitions, file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: You can create a partition on the multipath device, optionally create a file system on the namespace, and mount the partition.
 ---
-= Create filesystems in E-Series - SLES 12 (NVMe over FC)
+= Create filesystems on E-Series volumes for SLES 12 NVMe over FC hosts
 :icons: font
 :imagesdir: ../media/
 
