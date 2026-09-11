@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe over RoCE protocol, switches, zone switches, zoning, host port identifiers, express vmware configuration, software configuration, vmware host, E5700, EF300, EF600, EF50, EF80, E-Series, eseries
 summary: For the NVMe over RoCE protocol, you configure the switches and determine the host NVMe Qualified Name (NQN).
 ---
-= Perform NVMe over RoCE-specific tasks in E-Series - VMware
+= Configure NVMe over RoCE switches for VMware in E-Series
 :icons: font
 :imagesdir: ../media/
 
