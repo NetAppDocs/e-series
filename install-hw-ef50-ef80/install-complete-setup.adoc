@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: 
 summary: After you power on your EF50 or EF80 storage system, you complete system setup by cabling and configuring the management port on each controller for out-of-band storage system management, configuring your storage system, and then verifying the host I/O module protocol is correct.
 ---
-= Complete storage system setup - EF50 and EF80
+= Complete storage system setup for EF50 and EF80 storage systems
 :icons: font
 :imagesdir: ../media/
 
