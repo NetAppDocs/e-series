@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, prerequisite, replace the controller module
 summary: Before replacing the controller in your EF50 or EF80 storage system, ensure you meet the requirements for a successful replacement. This includes verifying you have a failed controller, verifying the state of your storage system, acquiring tools for the procedure, and having a management station and browser to access SANtricity System Manager.
 ---
-= Requirements to replace a controller - EF50 and EF80
+= Controller replacement requirements for EF50 and EF80 storage systems
 :icons: font
 :imagesdir: ../media/
 
