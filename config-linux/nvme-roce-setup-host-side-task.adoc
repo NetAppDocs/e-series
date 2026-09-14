@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: NVMe initiator configuration in a RoCE environment includes installing and configuring the rdma-core and nvme-cli packages, configuring initiator IP addresses, and setting up the NVMe-oF layer on the host.
 ---
-= Set up NVMe initiator over RoCE on the host in E-Series - Linux
+= Set up the NVMe initiator over RoCE on a Linux host in E-Series
 :icons: font
 :imagesdir: ../media/
 
