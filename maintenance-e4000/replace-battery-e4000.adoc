@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: 
 summary: 
 ---
-= Replace the battery - E4000
+= Replace the battery in an E4000 storage system
 :icons: font
 :imagesdir: ../media/
 
@@ -111,7 +111,7 @@ The file is saved in the Downloads folder for your browser with the name, *confi
 The file is saved in the Downloads folder for your browser with the name, support-data.7z.
 . If the controller is not already offline, take it offline now using SANtricity System Manager.
 ** From SANtricity System Manager:
-.. Select menu:Hardware[Controller and components] to show the controllers.
+.. Select menu:Hardware[Controllers and components] to show the controllers.
 .. Select the controller that you want to place offline.
 .. From the context menu, select *Place offline*, and confirm that you want to perform the operation.
 +

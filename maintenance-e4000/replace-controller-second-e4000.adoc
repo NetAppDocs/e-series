@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: 
 summary: 
 ---
-= Add a second canister - E4000
+= Add a second controller canister to an E4000 array
 :icons: font
 :imagesdir: ../media/
 
@@ -34,7 +34,7 @@ Confirm that the new controller has the same part number as the currently instal
 . Unpack the new controller canister, and set it on a flat, static-free surface. Save all packing materials to use when shipping the failed controller canister.
 . Locate the MAC address and FRU part number labels on the back of the controller canister.
 . From SANtricity System Manager, locate the replacement part number for the installed controller canister.
-.. Select menu:Hardware[Controller and components].
+.. Select menu:Hardware[Controllers and components].
 .. Locate the controller shelf, which is marked with the controller icon.
 .. Click the controller icon image:../media/sam1130_ss_hardware_controller_icon_maint-e2800.gif[Gif of controller icon].
 .. Select the controller, and click *Next*.

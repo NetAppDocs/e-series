@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, cabling, cable, host cabling, direct-attached topology, fabric-attached topology
 summary: After you install your EF50 or EF80 storage system hardware, cable the inter-controller mirroring and host network connections. (You cable the management ports later in the Complete storage system setup section.)
 ---
-= Cable the hardware - EF50 and EF80
+= Cable the hardware for EF50 and EF80 storage systems
 :icons: font
 :imagesdir: ../media/
 

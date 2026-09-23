@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe over TCP worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries
 summary: Use this worksheet to record NVMe over TCP storage configuration information.
 ---
-= Record your NVMe over TCP configuration in E-Series - Linux
+= NVMe over TCP configuration worksheet for E-Series Linux hosts
 :icons: font
 :imagesdir: ../media/
 
