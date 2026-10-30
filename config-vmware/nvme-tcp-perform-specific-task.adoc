@@ -173,7 +173,7 @@ For more information, see link:https://techdocs.broadcom.com/us/en/vmware-cis/vs
 
 . Add NVMe Controllers for NVMe over TCP.
 +
-For more information, see link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-tcp-on-esxi/shared-content/submaps/GUID-23E6D699-BEDC-4B5F-9515-3390C0E73888_copy.html[Add Controllers for NVMe over Fabrics^].
+For more information, see link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-tcp-on-esxi.html[Add Controllers for NVMe over Fabrics^].
 
 NOTE: The Host NQN can be acquired during this process from the Add Controller dialog box. This will be needed later when configuring host mappings.
 
