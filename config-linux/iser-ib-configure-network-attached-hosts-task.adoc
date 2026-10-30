@@ -23,7 +23,7 @@ Make sure you have the following:
 
 . Enable and start iSCSI services on the host(s):
 +
-*Red Hat Enterprise Linux 8 and 9 (RHEL 8 and RHEL 9)*
+*Red Hat Enterprise Linux 8, 9 and 10 (RHEL 8, RHEL 9 and RHEL 10)*
 +
 ----
 
@@ -33,7 +33,7 @@ Make sure you have the following:
 # systemctl enable iscsid
 ----
 +
-*SUSE Linux Enterprise Server 12 and 15 (SLES 12 and SLES 15)*
+*SUSE Linux Enterprise Server 12, 15 and 16 (SLES 12, SLES 15 and SLES 16)*
 +
 ----
 

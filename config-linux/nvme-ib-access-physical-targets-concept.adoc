@@ -66,6 +66,8 @@ defaults {
 }
 ----
 
+NOTE: This will no longer work on RHEL 10. It works on RHEL 9 and earlier and SLES 16 and earlier.
+
 Example output:
 
 ----
