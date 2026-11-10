@@ -13,6 +13,10 @@ summary: New features in SANtricity OS.
 [.lead]
 The following table describes new features in the latest SANtricity OS releases for embedded management of EF80, EF50, E4000, EF300, EF600, E2800/EF280, and E5700/EF570 controllers.
 
+== New features in Version 12.10R1
+
+This version contains only minor changes and no new features. For more information on the changes in this release, please refer to the E-Series SANtricity OS 12.10R1 README.
+
 == New features in Version 12.10
 
 [cols="35h,~",options="header"]
